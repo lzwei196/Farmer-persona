@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for fifty years. I know every corner of it. At 71, my back isn't what it was, and my two sons work in the city most of the year, so I have to be practical about what I can manage. My daughter-in-law helps during busy periods.\n\nMy 15.3 mu splits roughly like this in my head: about 10 mu goes to the wheat-maize rotation \u2014 that's the backbone of the household. The rest, about 5.3 mu, I'll put in cotton. Cotton is hard work but I know it. I've been growing it here for decades and I know what my sandy loam needs.\n\n**Wheat (winter):** I'll plant the Jimai variety, same as last few years. In October, after the summer maize comes off, I plough the field and sow. I'll put down compound fertilizer at base, then top-dress in spring at jointing. My neighbor told me to cut back on nitrogen but I don't trust that \u2014 if I under-fertilize and get a poor harvest, that's money gone. I'll do four irrigations: at sowing if the soil is dry, at overwintering, at jointing, and at heading. I'll spray once for rust and once for aphids before harvest.\n\n**Maize (summer):** Right after I cut the wheat in June, I rotary-till lightly and plant the hybrid \u2014 Zhengdan 958, reliable. No time to plough properly, the calendar is tight. I top-dress nitrogen at the big bell stage. Two or three irrigations depending on rain \u2014 usually at sowing and at tasseling. Two pesticide passes: herbicide early, then if corn borer shows up.\n\n**Cotton:** I plough in April, plant in late April or early May with improved Bt cotton seed. Cotton needs the most attention. I'll irrigate three or four times and spray many times \u2014 bollworm, spider mites, aphids. This is where most of my labor goes. My wife helps with topping and harvesting.\n\nI'm not changing much this year. At my age, what works is what I do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 71-year-old Quzhou farmer with 50 years of experience allocates 10 mu to the dominant wheat-maize double-crop rotation and 5.3 mu to cotton, relying on familiar improved and hybrid varieties proven on his sandy loam soil. Fertilizer rates are set at the higher end of local practice as a hedge against yield risk \u2014 a common pattern among older farmers who prefer insurance over input savings. Irrigation is done by well at standard Hebei frequencies for each crop. Cotton receives the most pesticide attention due to multiple pest pressure seasons. Tillage is plough-based for wheat and cotton, and light rotary for maize to fit the tight June calendar between wheat harvest and maize sowing. With limited family labor available, no major changes are made to the existing system \u2014 continuity and reliability are prioritized over optimization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 71-year-old Quzhou farmer with 50 years of experience allocates 10 mu to the dominant wheat-maize double-crop rotation and 5.3 mu to cotton, relying on familiar improved and hybrid varieties proven on his sandy loam soil. Fertilizer rates are set at the higher end of local practice as a hedge against yield risk \u2014 a common pattern among older farmers who prefer insurance over input savings. Irrigation is done by well at standard Hebei frequencies for each crop. Cotton receives the most pesticide attention due to multiple pest pressure seasons. Tillage is plough-based for wheat and cotton, and light rotary for maize to fit the tight June calendar between wheat harvest and maize sowing. With limited family labor available, no major changes are made to the existing system \u2014 continuity and reliability are prioritized over optimization."
+  },
+  "elapsed_seconds": 52.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_3",
+  "tier": 2,
+  "provider": "claude"
+}

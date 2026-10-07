@@ -1,0 +1,40 @@
+{
+  "raw_response": "I\u2019m 69 years old, and I\u2019ve worked this 10.1 mu in Quzhou County for 50 years. I finished middle school, so I can read the numbers on the fertilizer bags and do the cost sums, but most of what I know comes from doing it year after year and watching the neighbors. Last year my wheat made about 500 kg per mu and my maize about 600 kg per mu. This year I will do mostly the same, because change is risky and a bad harvest hurts more than wasting a little fertilizer.\n\nFor my wheat, which I sow in October: I will rotary till the ground first \u2014 I don\u2019t trust no-till for wheat. I will sow an improved variety, about 13 kg of seed per mu. At sowing I will spread one 50 kg bag of 15-15-15 compound fertilizer per mu. That gives 7.5 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu. Then at green-up jointing in March, I will topdress with half a bag \u2014 25 kg \u2014 of urea per mu. Since urea is 46% nitrogen, that is another 11.5 kg nitrogen. So the wheat gets about 19 kg nitrogen total per mu. I will irrigate three times: the winter water before freeze-up, the jointing water, and one at grain filling in May. For sprays, I will do herbicide once in early spring, and fungicide once if I see rust. That is two pesticide applications.\n\nFor my summer maize, planted right after wheat harvest in early June: I will use hybrid seed from the dealer \u2014 the kind in the yellow bag \u2014 about 3 kg per mu. There is no time to till, so I will no-till plant straight into the wheat stubble. At sowing I will put 40 kg of 15-15-15 compound fertilizer per mu, which is 6 kg each of nitrogen, phosphorus, and potassium. At the big trumpet stage in July, I will spread 25 kg of urea per mu, another 11.5 kg nitrogen. Total nitrogen for the maize is about 17.5 kg per mu. I will irrigate twice: once at sowing if June is dry, and again at big trumpet when the heat comes. I will spray herbicide after emergence, and insecticide for corn borer once. Two pesticide applications.\n\nThe compound fertilizer price went up again this year, but I will not cut back. My neighbor Li cut his fertilizer by one bag last year and his maize ears were half-empty. I would rather spend the extra 200 yuan on fertilizer than lose 1,000 yuan on yield. With just the two of us, I will hire the combine at harvest for about 60 yuan per mu, but I won\u2019t skip the inputs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I\u2019m 69 and have farmed this 10.1 mu for 50 years. I finished middle school so I can read fertilizer labels, but my decisions come from last year\u2019s results and what my neighbors do. I apply about 19 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu for wheat using one bag of 15-15-15 compound fertilizer and half a bag of urea, with three irrigations and two pesticide sprays, expecting 500 kg per mu. For maize I apply 17.5 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu using 40 kg compound fertilizer and 25 kg urea, with two irrigations and two pesticide sprays, expecting 600 kg per mu. I rotary till for wheat but no-till for maize to save time after harvest. I won\u2019t cut fertilizer even though prices rose, because a bad harvest costs more than the extra fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I\u2019m 69 and have farmed this 10.1 mu for 50 years. I finished middle school so I can read fertilizer labels, but my decisions come from last year\u2019s results and what my neighbors do. I apply about 19 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu for wheat using one bag of 15-15-15 compound fertilizer and half a bag of urea, with three irrigations and two pesticide sprays, expecting 500 kg per mu. For maize I apply 17.5 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu using 40 kg compound fertilizer and 25 kg urea, with two irrigations and two pesticide sprays, expecting 600 kg per mu. I rotary till for wheat but no-till for maize to save time after harvest. I won\u2019t cut fertilizer even though prices rose, because a bad harvest costs more than the extra fertilizer."
+  },
+  "elapsed_seconds": 131.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_11",
+  "tier": 3,
+  "provider": "kimi"
+}

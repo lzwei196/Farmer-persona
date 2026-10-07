@@ -1,0 +1,73 @@
+{
+  "raw_response": "Alright, let me think about this year...\n\nI've been doing this for thirty years, same land, same wheat-maize. My father did it before me. Six and a half mu isn't much \u2014 my son works in town now, so it's mostly me and my wife in the field. We manage.\n\n**Wheat first.** I'll plant around October 10th, maybe a few days later if it stays warm. I use the seed I bought from the shop \u2014 same variety the village has been planting, I don't remember the name but the shop owner knows what I want. About 30 jin per mu (15 kg). Before planting I spread one bag of compound fertilizer per mu \u2014 the one with three 15s on the bag \u2014 that's always worked. Plow it in with the neighbor's tractor, he does my field for a small fee.\n\nCome spring, when the wheat starts standing up tall at jointing, I put down half a bag of urea per mu. If it looks yellow I put a bit more. Irrigate once before winter, once at jointing, once when the grain is filling \u2014 three times usually, unless the rain helps. The well costs money to run, so I don't waste water. Spray once for weeds when I see them coming up in spring.\n\nLast year I got about 450 kg/mu. Year before was worse, maybe 400, dry spring. If the weather is normal I expect around 450 again.\n\n**Then maize right after wheat harvest in June.** No time to plow \u2014 I have the neighbor drill the maize seed right into the stubble, same day or next day after I finish threshing. Hybrid seed, the red bag kind, that's what everyone plants. One bag compound per mu at planting. When the maize is about knee-high I side-dress half a bag of urea. If July and August rain normally, I don't irrigate. If it's dry at tasseling I'll pump once. Spray herbicide when the weeds come.\n\nMaize usually gives me about 500 kg/mu. Harvest end of September, dry it on the road or the roof, then turn around and plant wheat again.\n\nMoney is tight so I can't put down more fertilizer than this. My neighbor Old Wang tried putting on less one year to save money and his wheat was thin \u2014 I won't risk that. Better to spend the fertilizer money and have grain in the bin.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 6.5,\n      \"planting_date\": \"around October 10\",\n      \"harvest_date\": \"early to mid June\",\n      \"seed_type\": \"local improved variety from village shop\",\n      \"seed_cost_yuan_per_mu\": 60,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 19,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag of 15-15-15 compound per mu plowed in before planting; half a bag of urea per mu topdressed at jointing in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"hire neighbor's tractor to plow and harrow before planting\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 6.5,\n      \"planting_date\": \"mid June, right after wheat harvest\",\n      \"harvest_date\": \"end of September\",\n      \"seed_type\": \"hybrid seed, red bag variety common in village\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 19,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag of compound per mu at planting; half a bag of urea per mu side-dressed when maize is knee-high\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"no tillage, direct-drill seed into wheat stubble using neighbor's planter\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 5100,\n  \"reasoning_summary\": \"I farm the way my father taught me and the way the village does. One bag compound at planting, half a bag urea later \u2014 that's the rhythm for both crops. Six and a half mu is small, my son works in town, so my wife and I handle most of it with the neighbor's machines for plowing and drilling. I can't afford to experiment. Fertilizer costs money but putting on too little means thin crop, and I've seen that happen to others. Three irrigations for wheat, maybe one for maize if it's dry. I expect around 450 kg wheat and 500 kg maize per mu if the weather is normal.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 6.5,
+        "planting_date": "around October 10",
+        "harvest_date": "early to mid June",
+        "seed_type": "local improved variety from village shop",
+        "seed_cost_yuan_per_mu": 60,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 19,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag of 15-15-15 compound per mu plowed in before planting; half a bag of urea per mu topdressed at jointing in spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "hire neighbor's tractor to plow and harrow before planting",
+        "labor_family_days": 20,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 19,
+        "area_mu": 6.5,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 6.5,
+        "planting_date": "mid June, right after wheat harvest",
+        "harvest_date": "end of September",
+        "seed_type": "hybrid seed, red bag variety common in village",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 19,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag of compound per mu at planting; half a bag of urea per mu side-dressed when maize is knee-high",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "no tillage, direct-drill seed into wheat stubble using neighbor's planter",
+        "labor_family_days": 15,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 19,
+        "area_mu": 6.5,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      }
+    ],
+    "total_input_cost_yuan": 5100,
+    "reasoning_summary": "I farm the way my father taught me and the way the village does. One bag compound at planting, half a bag urea later \u2014 that's the rhythm for both crops. Six and a half mu is small, my son works in town, so my wife and I handle most of it with the neighbor's machines for plowing and drilling. I can't afford to experiment. Fertilizer costs money but putting on too little means thin crop, and I've seen that happen to others. Three irrigations for wheat, maybe one for maize if it's dry. I expect around 450 kg wheat and 500 kg maize per mu if the weather is normal."
+  },
+  "elapsed_seconds": 52.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_12",
+  "tier": 4,
+  "provider": "claude"
+}

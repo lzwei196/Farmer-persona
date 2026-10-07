@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 33-year-old farmer in Quzhou County with eight years in the fields and a middle school education. My family has seven people, and with some of us working off-farm in nearby towns or factories, I cannot be in the fields every single day. My 4.1 mu is not much land, so I have to be practical and avoid risky bets. I rely on the wheat-maize rotation on 3.1 mu because it gives me grain for food and feed plus two harvests a year. The remaining 1 mu I plant with cotton for cash income, though it is labor-intensive and needs more watching.\n\nIt is early spring now, and my winter wheat is already in the ground from last autumn. I will irrigate three times using my well\u2014at green-up, jointing, and grain filling\u2014because water is the key to yield here. Fertilizer prices have been high, so I will not overdo it: about 16 kg of nitrogen per mu, split as topdressing, plus phosphorus and potassium. I will spray pesticide twice, once for weeds and once for insects if they show up. I rotary-tilled the plot last autumn, so I only need light harrowing now. I expect around 480 kg per mu if the weather holds.\n\nAfter the wheat harvest in early June, I will immediately plant hybrid maize on the same 3.1 mu using no-tillage direct seeding. There is only a short window between wheat harvest and maize planting, and no-tillage saves me diesel, labor, and soil moisture. Maize needs less hand labor, which is good because my family is busy with off-farm work then. I will irrigate twice\u2014at the jointing-tasseling stage and during grain filling\u2014and apply nitrogen, phosphorus, and potassium. Two pesticide applications should be enough. I expect about 580 kg per mu.\n\nFor cotton, I will rotary-till the 1 mu plot in spring and plant an improved variety. Cotton needs more care: three irrigations, more potassium than the grains, and four pesticide sprays to control bollworms and aphids. My wife and parents can help with pest scouting and picking. I expect about 90 kg of seed cotton per mu. I will not chase maximum yields with costly inputs; I aim for stable, decent returns that feed my family and leave some cash in hand.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 90\n    }\n  ],\n  \"reasoning_summary\": \"This year I will manage 3.1 mu of winter wheat with three well irrigations and moderate fertilizer inputs, followed immediately by no-tillage hybrid maize on the same land with two irrigations, while dedicating 1 mu to cotton for cash income with intensive pest management and three irrigations; my goal is stable yields and practical labor allocation given that some family members work off-farm and I must control costs for fertilizer and electricity.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 90
+      }
+    ],
+    "reasoning_summary": "This year I will manage 3.1 mu of winter wheat with three well irrigations and moderate fertilizer inputs, followed immediately by no-tillage hybrid maize on the same land with two irrigations, while dedicating 1 mu to cotton for cash income with intensive pest management and three irrigations; my goal is stable yields and practical labor allocation given that some family members work off-farm and I must control costs for fertilizer and electricity."
+  },
+  "elapsed_seconds": 207.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

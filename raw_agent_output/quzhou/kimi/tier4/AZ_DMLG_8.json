@@ -1,0 +1,73 @@
+{
+  "raw_response": "I am a 51-year-old woman who has been farming these 8 mu in Quzhou for 20 years. I never went to school, so I don't read those agricultural bulletins. What I know comes from working this land every day and watching what my neighbors do. My husband and eldest son work construction in Handan and send money home when they can, but it's not steady. It's mostly me, my daughter-in-law, and the younger children handling the farm work. Seven people to feed, so every yuan matters.\n\nFor the wheat, I plant right after the corn comes off, like always. Last year we cut corn on October 5th and got the wheat in by the 9th. I'll do the same this year. I saved seed from that good batch I bought from Old Wang's shop a few years back \u2014 the kind with the fat grains. I mix in a little fresh seed every so often, but this year I'm using mostly saved seed. I only bought 20 jin of new seed for the whole plot to make sure it sprouts well.\n\nFor fertilizer, I can't afford to buy everything the shop has. I put down about 50 jin of that black granular compound fertilizer per mu before planting, and work it in with the rotary tiller. Then in spring when the wheat turns green, I spread another 50 jin of the white fertilizer per mu. That's what I've done for years. My neighbor Aunt Li puts down more because her son sends good money from Beijing, but I've learned that if I cut too much, the yield drops and I lose more than I save. I apply twice \u2014 once before planting, once in spring when the wheat wakes up.\n\nI irrigate three times for wheat: once right after planting so it germinates, once before winter if the ground is too dry, and once at jointing when it really needs water. Pumping from the well uses electricity and costs money, so I don't water more than I have to. If it rains enough before winter, I skip that watering and save the cash.\n\nFor the corn, the window is tight. As soon as the wheat is cut in early June, we plant within two or three days. I buy hybrid corn seed every year \u2014 can't save that. I put about 50 jin of compound fertilizer per mu in the row when planting, then side-dress with about 40 jin of white fertilizer per mu when the corn is up to my knee, around early July. I irrigate twice for corn if the summer rains are decent. Last year I only watered once because it rained well in July.\n\nFor pesticides, I spray herbicide on the wheat once in spring \u2014 the wild oats and pigweed come up bad otherwise. For corn, I spray herbicide when it's small. Last year the corn borers weren't bad, so I'll save money and skip the insecticide unless I see damage. Better to keep that cash for fertilizer.\n\nLabor is mostly family. My daughter-in-law and I do the planting, fertilizing, and spraying. The boys help at harvest. I might hire Old Chen's tractor and one or two days of hired help if my husband can't get leave from his job during harvest. Hired labor costs 120 yuan per day, so I avoid it when I can.\n\nI expect about 800 jin per mu of wheat and about 900 jin per mu of corn if the weather is normal. Last year was dry and wheat only gave me 750 jin, so I'm hoping for better this year. Money is tight, but I'd rather spend a bit more on fertilizer than risk a bad harvest. A bad year hurts more than a good year helps.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 8,\n      \"planting_date\": \"early October, within 5 days of maize harvest\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"local improved variety, mostly saved seed with small amount of purchased seed\",\n      \"seed_cost_yuan_per_mu\": 15,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15.5,\n      \"phosphorus_total_kg_per_mu\": 3.75,\n      \"potassium_total_kg_per_mu\": 3.75,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 50 jin compound fertilizer broadcast and tilled in before planting; topdress: 50 jin urea broadcast at green-up in late February or early March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary till once after maize harvest, then broadcast seed and fertilizer\",\n      \"labor_family_days\": 35,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 8,\n      \"planting_date\": \"mid-June, within 2-3 days of wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14.9,\n      \"phosphorus_total_kg_per_mu\": 3.75,\n      \"potassium_total_kg_per_mu\": 3.75,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 50 jin compound fertilizer in furrow at planting; side-dress: 40 jin urea between rows when corn is knee-high, around early July\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage, direct seeding into wheat stubble with one pass if time allows\",\n      \"labor_family_days\": 30,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 4560,\n  \"reasoning_summary\": \"I am a 51-year-old woman farming 8 mu in Quzhou with no schooling and tight cash. My husband and son work off-farm, so farm work falls mainly on me and my daughter-in-law. I rely on what I've learned over 20 years and what my neighbors do. I plant wheat right after maize harvest in early October, using mostly saved seed. I apply compound fertilizer at planting and urea in spring for both crops, because cutting back too much costs me more in lost yield than it saves in input costs. I irrigate three times for wheat and twice for maize, but I skip waterings if rain is good to save on electricity. I use herbicide on both crops but skip insecticide unless I see damage, keeping that money for fertilizer. I hire labor only when family is unavailable. I target about 800 jin per mu of wheat and 900 jin per mu of maize \u2014 enough to feed my family and sell a little, without taking risks I can't afford.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 8,
+        "planting_date": "early October, within 5 days of maize harvest",
+        "harvest_date": "early June",
+        "seed_type": "local improved variety, mostly saved seed with small amount of purchased seed",
+        "seed_cost_yuan_per_mu": 15,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15.5,
+        "phosphorus_total_kg_per_mu": 3.75,
+        "potassium_total_kg_per_mu": 3.75,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 50 jin compound fertilizer broadcast and tilled in before planting; topdress: 50 jin urea broadcast at green-up in late February or early March",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary till once after maize harvest, then broadcast seed and fertilizer",
+        "labor_family_days": 35,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 15.5,
+        "area_mu": 8,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 8,
+        "planting_date": "mid-June, within 2-3 days of wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14.9,
+        "phosphorus_total_kg_per_mu": 3.75,
+        "potassium_total_kg_per_mu": 3.75,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 50 jin compound fertilizer in furrow at planting; side-dress: 40 jin urea between rows when corn is knee-high, around early July",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage, direct seeding into wheat stubble with one pass if time allows",
+        "labor_family_days": 30,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 14.9,
+        "area_mu": 8,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75
+      }
+    ],
+    "total_input_cost_yuan": 4560,
+    "reasoning_summary": "I am a 51-year-old woman farming 8 mu in Quzhou with no schooling and tight cash. My husband and son work off-farm, so farm work falls mainly on me and my daughter-in-law. I rely on what I've learned over 20 years and what my neighbors do. I plant wheat right after maize harvest in early October, using mostly saved seed. I apply compound fertilizer at planting and urea in spring for both crops, because cutting back too much costs me more in lost yield than it saves in input costs. I irrigate three times for wheat and twice for maize, but I skip waterings if rain is good to save on electricity. I use herbicide on both crops but skip insecticide unless I see damage, keeping that money for fertilizer. I hire labor only when family is unavailable. I target about 800 jin per mu of wheat and 900 jin per mu of maize \u2014 enough to feed my family and sell a little, without taking risks I can't afford."
+  },
+  "elapsed_seconds": 131.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_8",
+  "tier": 4,
+  "provider": "kimi"
+}

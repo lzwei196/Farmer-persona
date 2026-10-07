@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 50-year-old farmer in Quzhou County with 30 years of experience. My family has two people and 12 mu of land. I rely on well irrigation because surface water is unreliable here on the North China Plain. Over three decades, I have learned that the wheat-maize rotation is the most reliable system for my main land \u2014 it gives me two crops a year and steady food and income. I plant 9 mu in this rotation and keep 3 mu for cotton because cotton prices have been decent and the cash helps with household expenses, but I do not plant more because with only two of us the weeding, pruning, and constant spraying are too much labor. For wheat, I use improved varieties like luyuan502 or jimai22 because they resist lodging and yield steadily around 1000 jin per mu. I rotary till before autumn sowing and apply compound fertilizer as basal, then topdress with urea at green-up in spring. I irrigate four times \u2014 winter irrigation, green-up, jointing, and grain filling \u2014 because the well water is there and it protects the yield. For summer maize, I use hybrid seed like denghai605 because the hybrids produce bigger ears and tolerate our summer storms better. I plant directly into the wheat stubble with no tillage to save the crucial days between wheat harvest and maize sowing in June; maize only needs two irrigations at tasseling and filling. For cotton, I rotary till in April, sow improved varieties, and irrigate three times, but the real work is pest control \u2014 I spray every ten days or so against bollworm, aphids, and mites, about fifteen times total. These are the practices that have worked for me and my neighbors year after year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 9 mu in wheat-maize rotation and 3 mu in cotton. Wheat is my winter crop with improved seed, rotary tillage, four irrigations, and spring urea topdressing. Maize follows wheat in summer with hybrid seed and no-tillage to save time between harvest and sowing. Cotton brings cash income but demands intensive pest management with about fifteen sprays. My fertilizer and irrigation decisions are based on thirty years of local experience and well water availability.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 9 mu in wheat-maize rotation and 3 mu in cotton. Wheat is my winter crop with improved seed, rotary tillage, four irrigations, and spring urea topdressing. Maize follows wheat in summer with hybrid seed and no-tillage to save time between harvest and sowing. Cotton brings cash income but demands intensive pest management with about fifteen sprays. My fertilizer and irrigation decisions are based on thirty years of local experience and well water availability."
+  },
+  "elapsed_seconds": 175.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_11",
+  "tier": 2,
+  "provider": "kimi"
+}

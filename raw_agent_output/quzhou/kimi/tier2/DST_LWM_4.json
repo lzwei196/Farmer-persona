@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54 years old and have worked this land in Quzhou County for 30 years. With 11 people under my roof and some of the younger generation working off-farm in town, I need to balance food security for the household with cash income, while not taking on more labor than my family can manage. My farm is 10.9 mu, and I have a reliable well for irrigation.\n\nThis year, I will keep my trusted wheat-maize double cropping system on 8 mu of my best land. Wheat and maize are the backbone of my household \u2014 we eat the wheat and feed the maize to our animals. The remaining 2.9 mu I will plant with cotton. Cotton brings good money, but it is labor-intensive, especially the pest spraying. With some family members working outside, 2.9 mu is all I can handle.\n\nFor **winter wheat**, I will use an improved variety and rotary tillage before sowing in October. I sow about 35 jin of seed per mu. I apply compound fertilizer as a basal dressing and topdress with urea at green-up time in spring. I will irrigate three times through the season \u2014 my well water is precious but necessary for a good wheat crop. I expect around 900 kg per mu if the weather cooperates.\n\nFor **summer maize**, I plant right after the wheat harvest in early June. I use Denghai 605 hybrid seed \u2014 it yields well and resists lodging. I sow directly without tillage to save time and fuel. Maize needs less fertilizer than wheat, and I irrigate twice during the summer. I expect about 1,000 kg per mu.\n\nFor **cotton**, I till in spring with the rotary tiller and sow an improved variety at about 3 jin per mu. Cotton needs plenty of fertilizer and I apply a compound dressing. I irrigate twice, but the real work is pest control \u2014 I will spray insecticides and herbicides about 14 times through the season to protect the bolls. I expect around 500 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 900\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 10.9 mu in Quzhou County for 30 years. With 11 household members and some family working off-farm, I must balance labor availability with food security and income. I allocate 8 mu to my reliable wheat-maize double-crop rotation, which feeds the family and our animals, and 2.9 mu to cotton for cash income. Wheat is rotary-tilled and irrigated three times with improved seed; maize is no-till direct-seeded hybrid after wheat harvest with two irrigations; cotton is rotary-tilled and needs intensive pest management with about 14 spray applications but provides valuable income. My well irrigation supports all three crops through dry spells.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 900
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed 10.9 mu in Quzhou County for 30 years. With 11 household members and some family working off-farm, I must balance labor availability with food security and income. I allocate 8 mu to my reliable wheat-maize double-crop rotation, which feeds the family and our animals, and 2.9 mu to cotton for cash income. Wheat is rotary-tilled and irrigated three times with improved seed; maize is no-till direct-seeded hybrid after wheat harvest with two irrigations; cotton is rotary-tilled and needs intensive pest management with about 14 spray applications but provides valuable income. My well irrigation supports all three crops through dry spells."
+  },
+  "elapsed_seconds": 170.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_4",
+  "tier": 2,
+  "provider": "kimi"
+}

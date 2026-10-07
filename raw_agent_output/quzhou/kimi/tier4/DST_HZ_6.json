@@ -1,0 +1,75 @@
+{
+  "raw_response": "I am a 65-year-old woman who has farmed these fields for 40 years. I never went to school, so I don't read books about farming \u2014 I read the soil, the sky, and what my neighbors do. My husband and I have 10.1 mu of land, just the two of us. We are not young anymore, and we don't have much cash to spare, so every decision is about getting through the year without losing money.\n\n**Wheat**\n\nI always sow wheat around October 10, after National Day when the soil is still warm enough for the seed to settle. I save my own seed \u2014 last year's wheat was decent, about 840 jin per mu, so I kept about 35 jin per mu from the harvest. No need to pay for seed when my own grows fine. Before sowing, I hire the rotary tiller to go over the field once. Then I put down one bag of compound fertilizer per mu \u2014 about 100 jin \u2014 broadcast it by hand and mix it in. That's my basal. The shopkeeper knows which bag I take; I don't read the numbers on it, but I know the blue bag is the one I've used for years.\n\nCome March, when the wheat is at jointing, I walk the field. If it looks yellow, I spread another 20 jin of white fertilizer on top. Some years I skip it if the wheat looks green enough, but usually I do it \u2014 I'd rather waste a little money on fertilizer than risk a bad harvest. A hungry year hurts more than a year with a few extra yuan spent.\n\nI irrigate three times: once after sowing before winter sets in, once at jointing in spring, and once when the grain is filling. Well water costs electricity money, so three times is my limit. My neighbor Lao Zhang does four, but he has a bigger farm and more cash. Three is enough if you time it right. I spray herbicide once in early spring, and if I see aphids, I spray insecticide too. Last year I got about 840 jin per mu. This year the soil looks about the same, so I'm hoping for around 420 kg per mu.\n\n**Maize**\n\nThere is no rest between wheat and maize. As soon as the combine takes the wheat off in early June, we plant maize \u2014 by June 13 at the latest. There is no time to plow. I buy hybrid seed from the shop, one small package per mu, costs about 60 yuan. I plant right into the wheat stubble; the stubble helps keep some moisture in the ground. I put one bag of compound fertilizer per mu down with the seed at planting, all at once. I don't topdress maize \u2014 never have, and it grows fine.\n\nI irrigate twice: once when the seedlings are small if it hasn't rained, and once at big trumpet stage. If the summer rains are good, maybe only once \u2014 that saves me money. I spray herbicide right after sowing, and I always spray for corn borer. That pest comes every year like clockwork. If you ignore it, the cobs are half empty. Last year maize gave me about 900 jin per mu. I'm expecting about 450 kg per mu this year if the weather holds.\n\n**What I give up**\n\nI don't hire laborers \u2014 just my husband and me. We work slower than young people, but we know every ridge and furrow. I don't buy the most expensive seed or the newest chemicals. I don't apply as much fertilizer as the young man down the road who went to agricultural college \u2014 he talks about \"split applications\" and \"optimization,\" but I talk about not going broke. I use round numbers, bags and scoops, not kilograms. I do what worked last year, and I only change if I see a neighbor fail or succeed badly. Change is risky when you have no cushion.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 10.1,\n      \"planting_date\": \"October 10-15\",\n      \"harvest_date\": \"June 5-10\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 0,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 11,\n      \"potassium_total_kg_per_mu\": 3.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"basal: broadcast one 50-kg bag of compound fertilizer before sowing; topdress: 10 kg urea at jointing in March if wheat looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary tillage once before sowing\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 10.1,\n      \"planting_date\": \"June 12-15\",\n      \"harvest_date\": \"September 28 - October 5\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 60,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13.5,\n      \"phosphorus_total_kg_per_mu\": 3,\n      \"potassium_total_kg_per_mu\": 3.5,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"all basal, one 50-kg bag of compound fertilizer placed with seed at sowing\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-tillage, sow directly into wheat stubble\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 5400,\n  \"reasoning_summary\": \"I am 65 with no schooling and 40 years of experience. I rely on what I have always done, what my neighbors do, and what I can afford. I save my own wheat seed to avoid cost, but buy hybrid maize seed because it grows better. I use one bag of compound fertilizer per mu for each crop \u2014 enough to avoid a bad year, but not more than I can pay for. I irrigate three times for wheat and twice for maize because well water costs electricity money. I don't hire labor; my husband and I do everything ourselves. I am loss-averse: I would rather spend a bit too much on fertilizer than risk a yield drop, but I also know I cannot spend money I do not have.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 10.1,
+        "planting_date": "October 10-15",
+        "harvest_date": "June 5-10",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 0,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 11,
+        "potassium_total_kg_per_mu": 3.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "basal: broadcast one 50-kg bag of compound fertilizer before sowing; topdress: 10 kg urea at jointing in March if wheat looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary tillage once before sowing",
+        "labor_family_days": 8,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 10.1,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 3.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 10.1,
+        "planting_date": "June 12-15",
+        "harvest_date": "September 28 - October 5",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 60,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13.5,
+        "phosphorus_total_kg_per_mu": 3,
+        "potassium_total_kg_per_mu": 3.5,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "all basal, one 50-kg bag of compound fertilizer placed with seed at sowing",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-tillage, sow directly into wheat stubble",
+        "labor_family_days": 6,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 13.5,
+        "area_mu": 10.1,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3.5
+      }
+    ],
+    "total_input_cost_yuan": 5400,
+    "reasoning_summary": "I am 65 with no schooling and 40 years of experience. I rely on what I have always done, what my neighbors do, and what I can afford. I save my own wheat seed to avoid cost, but buy hybrid maize seed because it grows better. I use one bag of compound fertilizer per mu for each crop \u2014 enough to avoid a bad year, but not more than I can pay for. I irrigate three times for wheat and twice for maize because well water costs electricity money. I don't hire labor; my husband and I do everything ourselves. I am loss-averse: I would rather spend a bit too much on fertilizer than risk a yield drop, but I also know I cannot spend money I do not have."
+  },
+  "elapsed_seconds": 270.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_6",
+  "tier": 4,
+  "provider": "kimi"
+}

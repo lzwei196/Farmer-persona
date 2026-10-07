@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been working this land for nearly fifty years. My father farmed it before me, and his father before that. I know what grows here in Quzhou \u2014 the soil, the rains, the cold winters. I do not need a book to tell me what to do.\n\nIn Quzhou, every farmer grows wheat in the winter and corn in the summer. That is how it has always been. My 5 mu follows the same rotation. The government cooperative sells good certified wheat seed \u2014 it is not the old varieties my grandfather kept, but these new ones give more grain and I have seen it myself over the years. For corn, everyone uses the hybrid seed now. You cannot save it for next year, but the yield is worth buying it fresh each season.\n\nFor fertilizer, I apply what the man at the supply store recommends and what my neighbors use. Compound fertilizer as base, urea when the wheat is jointing. Maybe a bit more nitrogen than the technicians say \u2014 I worry about a poor harvest more than I worry about waste. My children live in the city. I cannot afford a bad year.\n\nFor water \u2014 the well is still working. I will irrigate wheat four times: before sowing, at winter solstice to protect the roots, at jointing, and at heading. Corn needs less. Two waterings is usually enough unless July is very dry.\n\nI will spray herbicide on the wheat in spring, and once for aphids and rust near harvest time. Corn just needs one spray for the stem borer.\n\nI do rotary tillage before wheat. For corn, I plant directly into the wheat stubble. My son bought a small seeder a few years ago and it saves my back.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old farmer with no formal education in Quzhou, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation on 5 mu of household land, as is universal in this part of the North China Plain. He selects government-certified improved wheat varieties and commercial hybrid maize seed because these have demonstrably outperformed older varieties over his lifetime of observation. Fertilizer rates lean slightly above agronomic optimum due to risk aversion \u2014 a bad harvest with grown children in the city is not recoverable. He irrigates wheat four times following the traditional calendar (pre-sowing, winter, jointing, heading) and maize twice, relying on his groundwater well. Pesticide applications are minimal and reactive: a spring herbicide pass and a pre-harvest aphid/rust spray for wheat, one stem-borer spray for maize. Rotary tillage precedes wheat planting; maize is direct-seeded into wheat stubble using a small mechanical seeder to reduce labor demands appropriate to his age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 65-year-old farmer with no formal education in Quzhou, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation on 5 mu of household land, as is universal in this part of the North China Plain. He selects government-certified improved wheat varieties and commercial hybrid maize seed because these have demonstrably outperformed older varieties over his lifetime of observation. Fertilizer rates lean slightly above agronomic optimum due to risk aversion \u2014 a bad harvest with grown children in the city is not recoverable. He irrigates wheat four times following the traditional calendar (pre-sowing, winter, jointing, heading) and maize twice, relying on his groundwater well. Pesticide applications are minimal and reactive: a spring herbicide pass and a pre-harvest aphid/rust spray for wheat, one stem-borer spray for maize. Rotary tillage precedes wheat planting; maize is direct-seeded into wheat stubble using a small mechanical seeder to reduce labor demands appropriate to his age."
+  },
+  "elapsed_seconds": 48.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_4",
+  "tier": 1,
+  "provider": "claude"
+}

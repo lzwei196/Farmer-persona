@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think this through as this farmer would, then give the plan.\n\n---\n\nMy thinking:\n\nI have 12.4 mu total. My main land I do wheat then maize, same as my father and same as everyone in the village. That is about 8 mu of good flat land near the well. The other 4.4 mu is a bit further from water and I plant cotton there, like I did last few years. Cotton gives cash, wheat and maize feed family and sell some.\n\nLast year wheat gave me about 450 kg per mu, maize about 550 kg, cotton about 220 kg seed cotton. I will do the same this year. Fertilizer price went up a bit but I don't want to cut \u2014 if I cut fertilizer and the year is bad, I lose a whole harvest. Wasting some fertilizer is only a little money, losing yield is big money.\n\n**Wheat** (plant October, harvest June): Before planting I spread one bag of compound 40 kg (15-15-15) per mu, then plough it in. In spring when wheat wakes up I spread urea, about 20 kg per mu. Water: winter water before frost, then green-up water, then before heading \u2014 three times. If dry spell comes I add one more. Spray two times \u2014 once for aphid, once when I see rust spots. I buy good seed from the agro-shop, improved Jimai type everyone uses here.\n\n**Maize** (plant June after wheat, harvest October): I rotary till the wheat stubble and direct plant hybrid seed, Zhengdan or whatever Old Wang the dealer sells \u2014 the neighbors got good yield with it. One bag compound 40 kg at planting, then urea 20 kg at big-trumpet stage. Irrigate one time if no rain at tasseling. Spray once for borer.\n\n**Cotton** (plant April, harvest Sept-Oct): Cotton eats more fertilizer and drinks more water. I put compound 50 kg per mu before planting, plus urea 25 kg split in two topdressings. Irrigate 3 times. Pesticide is the big cost \u2014 bollworm, aphid, red spider \u2014 I spray about 8 times, cannot skip or the bolls are ruined. I use improved seed, not hybrid, cotton hybrid is too expensive for me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I do the same as last year \u2014 wheat-maize on 8 mu of good land, cotton on 4.4 mu further from the well. One bag of compound fertilizer plus urea topdress for each grain crop, more fertilizer for cotton because it eats more. I don't cut fertilizer even though price is up \u2014 losing yield costs more than wasting some fertilizer. Cotton needs many pesticide sprays, cannot skip or bollworm ruins it. I follow what works in my village and adjust little by little.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I do the same as last year \u2014 wheat-maize on 8 mu of good land, cotton on 4.4 mu further from the well. One bag of compound fertilizer plus urea topdress for each grain crop, more fertilizer for cotton because it eats more. I don't cut fertilizer even though price is up \u2014 losing yield costs more than wasting some fertilizer. Cotton needs many pesticide sprays, cannot skip or bollworm ruins it. I follow what works in my village and adjust little by little."
+  },
+  "elapsed_seconds": 46.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_11",
+  "tier": 3,
+  "provider": "claude"
+}

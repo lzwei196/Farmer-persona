@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 10.1 mu here in Quzhou, wheat in winter and maize in summer, same as everyone around me. I have been doing this 35 years, so I do not change much. What worked last year I do again.\n\nFor my wheat, I plow once with the small tractor after maize comes off in October, then sow. I buy improved wheat seed from the dealer in town \u2014 the kind everybody here plants, about 30 jin per mu so the stand is thick. Before sowing I spread 2 bags of compound fertilizer (that 15-15-15 kind, 50 jin each bag) on each mu as bottom fertilizer. Then when the wheat turns green in spring I throw down about 40 jin of urea per mu before the irrigation water comes. I water 3 times \u2014 one before winter so roots don't freeze dry, one at returning-green, one at heading when the ear is filling. I spray once against aphids in May, sometimes twice if I see many. Good year I get about 450 kg per mu, my neighbor Old Wang got 480 last year but his land is a bit better.\n\nFor maize, right after wheat harvest in June I do not plow, I just plant directly into the stubble with the seeder \u2014 saves time and diesel, everyone does this now. I use hybrid seed, Zhengdan or whatever the shop is pushing that year, one bag does my whole field. I put 2 bags of compound fertilizer as starter when seeding, then about 50 jin urea per mu at big-trumpet stage before I water. I water once or twice depending on rain, usually once is enough because July-August rain here is good. Spray once for corn borer. Maize gives me more, maybe 550 kg per mu.\n\nI don't have money to waste but I would rather put a little extra fertilizer than lose yield \u2014 a bad harvest costs much more than one extra bag.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year and what my neighbors do. Two bags of compound fertilizer as base for each crop plus urea topdressing \u2014 wheat gets about 40 jin urea at green-up, maize gets 50 jin at big-trumpet. Three waterings for wheat because winter is dry here, only one for maize because summer rain usually covers it. I plow for wheat but direct-seed maize into the stubble like everyone does now. Improved wheat seed and hybrid maize seed from the town dealer. One spray each crop, sometimes two if pests are bad. I'd rather spend a little more on fertilizer than risk a thin harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what worked last year and what my neighbors do. Two bags of compound fertilizer as base for each crop plus urea topdressing \u2014 wheat gets about 40 jin urea at green-up, maize gets 50 jin at big-trumpet. Three waterings for wheat because winter is dry here, only one for maize because summer rain usually covers it. I plow for wheat but direct-seed maize into the stubble like everyone does now. Improved wheat seed and hybrid maize seed from the town dealer. One spray each crop, sometimes two if pests are bad. I'd rather spend a little more on fertilizer than risk a thin harvest."
+  },
+  "elapsed_seconds": 36.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

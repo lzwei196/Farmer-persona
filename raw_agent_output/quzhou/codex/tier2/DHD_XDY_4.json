@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will keep most of my land in the wheat-maize rotation because that is the system I know best, it fits Quzhou well, and at my age with only two people in the household I do not want to spread labor too thin. I will put `47 mu` into winter wheat followed by summer maize on the same land, and I will keep `10 mu` for scallion as my cash crop. I have well irrigation, so I will use water where it matters most instead of watering too many times. For wheat, I will use an improved variety, give it moderate but not excessive nitrogen, and irrigate twice around the key stages because I want steady yield without wasting groundwater. After wheat harvest, I will plant hybrid maize on the same `47 mu`, keep tillage light with no-tillage after harvest to save labor and time, and give one irrigation unless the season turns very dry. For scallion, I will stay more intensive because it is a cash crop, but I will limit the area to `10 mu` so the work stays manageable. I will fertilize scallion more heavily with nitrogen and especially potassium, irrigate several times in small amounts, and keep the field clean with more pest control than grain crops. This is the balance I would choose: stable grain from most of the farm, some cash income from scallion, and a workload I can still handle.\n\nSources used for calibration: [MOA fertilizer guidance](https://www.moa.gov.cn/gk/nszd_1/2023/202309/t20230928_6437564.htm), [winter wheat fertilization guidance summary](https://www.scnjw.com/.content/myarticle/myarticle/854f0928-9363-11f0-8f2b-04d9f5394155/), [wheat-maize irrigation study](https://www.sciopen.com/article/10.3880/j.issn.1006-7647.2025.04.014?issn=1006-7647), [wheat-maize N and irrigation study](https://www.sciencedirect.com/science/article/abs/pii/S0378377419307073), [scallion nutrient guidance summary](https://news.ymt.com/new_arg_tech/17582900940112102720).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 47,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 47,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"scallion\",\n      \"season\": \"autumn\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 22,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 4500\n    }\n  ],\n  \"reasoning_summary\": \"I will keep 47 mu in the wheat-maize rotation and only 10 mu in scallion because I am 69, my household labor is limited, and I want steady grain first and cash income second. I will manage wheat with moderate fertilizer and two irrigations, then follow with hybrid maize on the same land using light tillage and one irrigation to save labor and groundwater. I will keep scallion on a smaller area because it needs more labor, more water, and more crop protection, but it gives me better cash return, so I will manage that block more intensively.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 47,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 47,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "scallion",
+        "season": "autumn",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 22,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 4500
+      }
+    ],
+    "reasoning_summary": "I will keep 47 mu in the wheat-maize rotation and only 10 mu in scallion because I am 69, my household labor is limited, and I want steady grain first and cash income second. I will manage wheat with moderate fertilizer and two irrigations, then follow with hybrid maize on the same land using light tillage and one irrigation to save labor and groundwater. I will keep scallion on a smaller area because it needs more labor, more water, and more crop protection, but it gives me better cash return, so I will manage that block more intensively."
+  },
+  "elapsed_seconds": 44.3,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_4",
+  "tier": 2,
+  "provider": "codex"
+}

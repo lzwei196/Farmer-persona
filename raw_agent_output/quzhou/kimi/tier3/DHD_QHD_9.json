@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 63 years old. I have farmed these 12 mu in Quzhou for 45 years. My mother taught me everything. I never went to school. I cannot read the words on the bags, but I know the pictures and I know my land. My old man and I are two people. We have a well. Last year my wheat made about 1100 jin per mu and my maize made about 1200 jin per mu. I do not change what works. I watch my neighbor Old Li. His family always has good fields.\n\nFor winter wheat, I sow in October. I use the same white-seed wheat I have bought from the seed shop for ten years. It is the improved kind, not the old traditional kind. Before sowing, I rotary till the field. I put one full bag of compound fertilizer per mu \u2014 the dealer tells me it is 50 kilograms. At green-up time in March, when the wheat turns green, I spread half a bag of urea per mu, about 20 kilograms. I water four times: the wintering water in November, the green-up water in March, the booting water in April when the heads are coming out, and one more at grain filling in May if the sky stays dry. I spray herbicide after sowing, and I spray two more times for bugs and rust in spring, so three sprays total. I expect about 1100 jin per mu this year too.\n\nFor summer maize, as soon as the wheat is cut in early June, I plant. There is no time to plough. I plant right into the stubble, no-tillage. I use hybrid corn seed, the red-cob kind Old Li uses, about 4 jin per mu. At sowing, I put 40 jin of compound fertilizer per mu in the furrow. When the plants are knee-high and the ear is forming \u2014 what they call the big trumpet stage \u2014 I spread 20 jin of urea per mu. I water three times in summer. July is hot and dry and the well must keep up. I spray herbicide at sowing, and I spray for corn borer twice in July and August. I expect about 1200 jin per mu.\n\nFertilizer is expensive. A big bag of compound is 180 yuan, urea is 110 yuan. I spend about 300 yuan per mu on fertilizer. I would rather spend a little more than risk losing yield. If the harvest fails, I have to borrow money. That is a disaster. Wasting some fertilizer is just a cost. I copy what Old Li does. If he puts more, I put more. I do not trust new ideas unless I see them work on his field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I am 63 and have farmed 12 mu in Quzhou for 45 years without schooling. I copy my neighbor Old Li and never change what works. Last year wheat gave 1100 jin per mu and maize 1200 jin. For wheat I rotary till and put one 50kg bag of compound fertilizer and 20kg urea per mu, water four times, and spray three times. For maize I no-till into wheat stubble, use hybrid red-cob seed, put 40 jin compound and 20 jin urea per mu, water three times, and spray twice for borers. I spend about 300 yuan per mu on fertilizer and would rather over-apply slightly than risk a bad harvest, because borrowing money is worse than wasting some fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I am 63 and have farmed 12 mu in Quzhou for 45 years without schooling. I copy my neighbor Old Li and never change what works. Last year wheat gave 1100 jin per mu and maize 1200 jin. For wheat I rotary till and put one 50kg bag of compound fertilizer and 20kg urea per mu, water four times, and spray three times. For maize I no-till into wheat stubble, use hybrid red-cob seed, put 40 jin compound and 20 jin urea per mu, water three times, and spray twice for borers. I spend about 300 yuan per mu on fertilizer and would rather over-apply slightly than risk a bad harvest, because borrowing money is worse than wasting some fertilizer."
+  },
+  "elapsed_seconds": 141.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_9",
+  "tier": 3,
+  "provider": "kimi"
+}

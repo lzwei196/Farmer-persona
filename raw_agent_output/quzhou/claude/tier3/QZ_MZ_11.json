@@ -1,0 +1,53 @@
+{
+  "raw_response": "My farm is only 4.1 mu, so I have to think carefully how to split it. I will put about 1.5 mu to cotton because cotton price is decent and my family has grown it for years \u2014 we know how to manage it. The other 2.6 mu I keep for wheat-maize rotation like most people around here in Quzhou. This way I get grain for the family and cash from cotton.\n\nFor wheat this winter, I plan to use improved variety \u2014 Jimai or Shi-series, whatever the dealer has that my neighbors used well last year. I will put about two bags of compound fertilizer (15-15-15, 50 kg each) as base plus one bag of urea at jointing. That gives me around 16 kg N per mu. I irrigate 3 times: winter water, spring jointing, and grain filling. Sprayed two times for aphids and powdery mildew usually enough.\n\nFor summer maize after wheat, I use Zhengdan or Xianyu hybrid \u2014 everyone buys hybrid now, the old seed gives too little. I put compound fertilizer at planting and top-dress urea when it is knee-high, total about 18 kg N per mu. Rainy season helps, so I only irrigate once if dry. One or two sprays for borer and armyworm.\n\nCotton needs more work. I buy Bt hybrid seed, costs more but saves pesticide for bollworm. Still I spray 5-6 times for aphids, mites, and lygus. I put more potassium on cotton \u2014 it helps boll development. Plough the cotton field deep before planting, rotary for wheat after maize straw.\n\nI want decent yield but I will not waste money. A bit extra fertilizer is fine, but I won't double it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I split my 4.1 mu into 2.6 mu wheat-maize rotation for family grain and 1.5 mu Bt hybrid cotton for cash. I follow what works for my neighbors: improved wheat seed, hybrid maize and cotton. Fertilizer rates around 16-18 kg N per mu with extra potassium for cotton. I irrigate wheat 3 times from my well, maize once since summer rain helps, cotton 3 times. Cotton needs 5-6 sprays even with Bt seed because of aphids and mites. I would rather spend a little more on fertilizer than lose yield \u2014 a bad harvest hurts much more than wasting one bag of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I split my 4.1 mu into 2.6 mu wheat-maize rotation for family grain and 1.5 mu Bt hybrid cotton for cash. I follow what works for my neighbors: improved wheat seed, hybrid maize and cotton. Fertilizer rates around 16-18 kg N per mu with extra potassium for cotton. I irrigate wheat 3 times from my well, maize once since summer rain helps, cotton 3 times. Cotton needs 5-6 sprays even with Bt seed because of aphids and mites. I would rather spend a little more on fertilizer than lose yield \u2014 a bad harvest hurts much more than wasting one bag of urea."
+  },
+  "elapsed_seconds": 33.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

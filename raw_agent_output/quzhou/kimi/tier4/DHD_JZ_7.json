@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm a 72-year-old farmer in Quzhou County with a high education level and 50 years of experience, farming 6.5 mu alone in a wheat-maize double cropping system. Let me think through my season.\n\nAt my age, with only myself to work the land, I have to be careful. I know the technical recommendations\u2014I've read the extension materials over the years, and I understand the science. But 6.5 mu isn't a business farm; it's barely enough to keep me fed and cover my basic expenses. Every yuan I spend on inputs must be justified. I can't afford to chase maximum yields. I aim for stable, reasonable yields with minimal risk and labor.\n\n**Wheat (6.5 mu, planted early October, harvested mid-June):**\nI plant winter wheat on all 6.5 mu. I saved some seed from last year, but I'll buy improved variety seed this year\u2014about 15 kg total for the plot, costing roughly 80 yuan. I know the soil here; it's loam, decent fertility but not rich. I'll apply compound fertilizer as base: roughly 25 kg of a 15-15-15 compound fertilizer per mu (about 3.75 kg N, 3.75 kg P\u2082O\u2085, 3.75 kg K\u2082O per mu), then topdress with urea at jointing\u2014maybe 8-10 kg urea per mu. Total N around 12-13 kg/mu. It's lower than the extension target of 18-20 kg/mu, but at my scale, the marginal return on extra fertilizer doesn't justify the cash outlay. I irrigate three times: once at planting if it's dry, once at wintering if needed, once at jointing, and maybe a light one at grain filling if the spring is dry. I do the irrigating myself; the pump is old but works. For pesticides, I'll spray herbicide once in early spring and watch for aphids\u2014maybe one insecticide spray if I see them. I expect around 420 kg/mu. Last year I got 400 kg/mu; conditions look similar.\n\n**Maize (6.5 mu, planted mid-June right after wheat harvest, harvested late September):**\nThe turnaround is brutal\u2014sometimes only 3-4 days. I'll hire a combine for wheat harvest (costs about 50 yuan/mu) and then till quickly with my small tiller. I plant hybrid maize seed; I buy it fresh each year, about 2.5 kg/mu, costing around 60 yuan total. Base fertilizer: I apply another round of compound fertilizer, about 20 kg/mu, and that's often it for the season. If the season looks good and I have cash, I might side-dress a little urea at the V6 stage, but honestly, at my age and with labor just me, I often skip it. Total N around 10 kg/mu. Maize here relies on summer rainfall, but if there's a dry spell in July or August, I'll irrigate once or twice. I spray herbicide at pre-emergence and maybe once more if weeds come up. I expect around 480 kg/mu if the weather cooperates.\n\n**Labor and Costs:**\nI do all the fieldwork myself except wheat harvest and sometimes maize harvest if my nephew can help. Hired labor is expensive\u2014120-150 yuan per day\u2014and I avoid it. My total input budget is tight: I can spend about 2,800-3,000 yuan for the whole year on both crops. Seeds, fertilizer, pesticide, fuel for irrigation, and combine hire. I don't have much margin for error.\n\n**Tradeoffs:**\nI know I could probably push yields to 500 kg/mu for wheat and 550 kg/mu for maize with more fertilizer and irrigation, but that would cost another 800-1,000 yuan in inputs, and on 6.5 mu, the extra revenue doesn't cover the extra cost and labor. At 72, I value stability and my health more than optimization.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 6.5,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"mid-June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 12,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12.5,\n      \"phosphorus_total_kg_per_mu\": 3.75,\n      \"potassium_total_kg_per_mu\": 3.75,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: 25 kg/mu compound fertilizer (15-15-15) at planting; Topdress: 8-10 kg/mu urea at jointing stage in early spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"light tillage with small power tiller before planting\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 6.5,\n      \"planting_date\": \"mid-June (immediately after wheat harvest)\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 9,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10,\n      \"phosphorus_total_kg_per_mu\": 3,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"Base: 20 kg/mu compound fertilizer at planting; topdressing skipped due to labor constraints\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"quick tillage with small tiller after wheat harvest, planted within 3-4 days\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 480\n    }\n  ],\n  \"total_input_cost_yuan\": 2850,\n  \"reasoning_summary\": \"I've farmed this land for 50 years and I understand the science, but at 72 years old, working 6.5 mu alone, I prioritize stability and manageable labor over optimization. I apply modest fertilizer rates\u2014below the technical optimum\u2014because on a smallholding, the marginal return on extra inputs doesn't justify the cash cost or the physical effort. I irrigate when necessary but rely partly on rainfall for maize. I hire a combine for wheat harvest because I can no longer cut and thresh by hand, but I do everything else myself. My goal is a reliable harvest: about 420 kg/mu for wheat and 480 kg/mu for maize, enough to cover my needs with a small surplus to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 6.5,
+        "planting_date": "early October",
+        "harvest_date": "mid-June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 12,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12.5,
+        "phosphorus_total_kg_per_mu": 3.75,
+        "potassium_total_kg_per_mu": 3.75,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: 25 kg/mu compound fertilizer (15-15-15) at planting; Topdress: 8-10 kg/mu urea at jointing stage in early spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "light tillage with small power tiller before planting",
+        "labor_family_days": 18,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 12.5,
+        "area_mu": 6.5,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 6.5,
+        "planting_date": "mid-June (immediately after wheat harvest)",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 9,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10,
+        "phosphorus_total_kg_per_mu": 3,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "Base: 20 kg/mu compound fertilizer at planting; topdressing skipped due to labor constraints",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "quick tillage with small tiller after wheat harvest, planted within 3-4 days",
+        "labor_family_days": 12,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 480,
+        "nitrogen_kg_per_mu": 10,
+        "area_mu": 6.5,
+        "expected_yield_kg_per_mu": 480,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3
+      }
+    ],
+    "total_input_cost_yuan": 2850,
+    "reasoning_summary": "I've farmed this land for 50 years and I understand the science, but at 72 years old, working 6.5 mu alone, I prioritize stability and manageable labor over optimization. I apply modest fertilizer rates\u2014below the technical optimum\u2014because on a smallholding, the marginal return on extra inputs doesn't justify the cash cost or the physical effort. I irrigate when necessary but rely partly on rainfall for maize. I hire a combine for wheat harvest because I can no longer cut and thresh by hand, but I do everything else myself. My goal is a reliable harvest: about 420 kg/mu for wheat and 480 kg/mu for maize, enough to cover my needs with a small surplus to sell."
+  },
+  "elapsed_seconds": 67.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_7",
+  "tier": 4,
+  "provider": "kimi"
+}

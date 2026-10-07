@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 5 mu for 35 years. My husband and I, we know every corner of this field. Last year the wheat gave us about 800 jin per mu, and the maize was around 900 jin. I am not going to change much \u2014 why fix what is not broken? I watch what my neighbors do, and they are doing the same as last year.\n\nFor the wheat: I buy the seed from the shop in town, the kind that Old Wang and everyone else plants. I sow about 25 jin per mu. Before planting, I plough the land deep \u2014 always have, always will. I put down two bags of compound fertilizer for the whole 5 mu as base, that is about 40 jin per mu. Then when the wheat wakes up after winter, I spread one bag of urea per mu. At heading time, I put another half bag per mu. I would rather put a bit too much than risk a thin harvest \u2014 a bad year means no money for medicine or repairs. I irrigate four times: once before winter so the wheat can survive the cold, once in spring when it starts shooting up, once when the ears come out, and once when the grains are filling. I spray pesticide twice, if the bugs show up.\n\nFor the maize: After we cut the wheat in early June, I plant the hybrid maize seed right away \u2014 about 3 jin per mu. I do not plough again, just plant into the stubble. At planting I put one bag of compound fertilizer per mu. When the maize is knee-high, I top-dress with one bag of urea per mu. I irrigate three times: right after planting if the ground is dry, once when it is growing fast, and once when the tassels come out. Two pesticide sprays. I expect the maize to do better than wheat, maybe 1000 jin per mu if the weather is good.\n\nEverything costs money. The urea, the compound fertilizer, the seed, the well electricity \u2014 I count every yuan. But I cannot afford to lose yield. I do what I did last year, and what my neighbors do. That is how I have farmed for 35 years, and that is how I will farm this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I follow last year's practice and what my neighbors do. For wheat, I plough before planting, apply compound fertilizer as base and urea twice as top-dressing, irrigate four times, and spray twice. For maize, I plant hybrid seed directly into wheat stubble, apply compound at planting and urea at knee-high stage, irrigate three times, and spray twice. I would rather spend a bit more on fertilizer than risk losing yield, because a bad harvest is a disaster for my two-person household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I follow last year's practice and what my neighbors do. For wheat, I plough before planting, apply compound fertilizer as base and urea twice as top-dressing, irrigate four times, and spray twice. For maize, I plant hybrid seed directly into wheat stubble, apply compound at planting and urea at knee-high stage, irrigate three times, and spray twice. I would rather spend a bit more on fertilizer than risk losing yield, because a bad harvest is a disaster for my two-person household."
+  },
+  "elapsed_seconds": 51.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_10",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 42 years old, been farming since I was small, never went to school. My man and me work this 8 mu, two of the older ones go to town for work. I grow wheat and maize together like everyone here, and some cotton on the side because my mother always kept cotton for the quilts and I can sell some too.\n\nI don't read the bags good. The dealer in town tells me what to buy and I look at what my neighbors carry home. Last year wheat give me maybe 450 kg one mu, maize a bit more, cotton not so much but the price was okay. I do same this year, maybe little more fertilizer because the ground feel tired.\n\nFor wheat I put the big bag of compound before planting, then urea when it green up in spring. I water from the well two three times \u2014 before winter, at jointing, and when the head come out. My neighbor Wang sao say this year pests bad so I spray little more.\n\nMaize come after wheat, hot time, I don't plough deep, just the small machine turn the top. I put urea twice, water two times if no rain. The hybrid seed from the dealer \u2014 everyone buy that one, red bag.\n\nCotton I keep small, maybe 1 mu, my own saved kind mixed with some new seed. Cotton eat a lot of worm so I spray many times, my back hurt from it but what can do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I do same like last year, little bit more fertilizer because ground feel tired. Wheat and maize on 3.5 mu each, cotton 1 mu for home and some selling. I buy the red bag hybrid maize seed like my neighbors, use compound fertilizer before planting and urea when plants green up. I water from the well when I can. Cotton need much spray for worms, I spray six times maybe. I don't want waste money but I don't want bad harvest more, so I put enough fertilizer to be safe.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I do same like last year, little bit more fertilizer because ground feel tired. Wheat and maize on 3.5 mu each, cotton 1 mu for home and some selling. I buy the red bag hybrid maize seed like my neighbors, use compound fertilizer before planting and urea when plants green up. I water from the well when I can. Cotton need much spray for worms, I spray six times maybe. I don't want waste money but I don't want bad harvest more, so I put enough fertilizer to be safe."
+  },
+  "elapsed_seconds": 21.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_11",
+  "tier": 3,
+  "provider": "claude"
+}

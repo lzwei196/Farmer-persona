@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land in Quzhou my whole life. I'm 64 now and my son helps when he can, but mostly it's me. I have about 8 mu. I'm not going to experiment at my age \u2014 wheat and corn, same as always, same as my father. That's what this land knows and what I know.\n\nFor winter wheat, I'll plant in October after the corn is off. I'll plough the field properly \u2014 I don't trust this no-till business the extension office keeps pushing. I buy Jimai improved seed from the village supply store. Been using it for years. I'll put down compound fertilizer at planting and top-dress with urea at green-up and jointing. I always do the winter irrigation in November before the ground freezes, then water again at jointing and at heading \u2014 three times. Aphids get bad in May so I spray twice, once for weeds in autumn, once for disease and insects in spring. I expect around 480 jin per mu if weather cooperates.\n\nAfter wheat harvest in June I go straight to corn. No time to waste. I use Zhengdan 958 hybrid \u2014 reliable, everyone around here uses it. Rotary till after the wheat stubble, plant the same day. Corn mostly gets rain in July and August but I'll pump groundwater once if it's dry. One pesticide pass for corn borer. Pull it in late September.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old smallholder in Quzhou County farms 8 mu under the standard North China Plain winter wheat\u2013summer maize double-cropping rotation, using locally trusted improved wheat and hybrid maize varieties. Fertilizer rates lean slightly above extension recommendations, reflecting the older-farmer tendency to prioritize yield security over input savings. Wheat receives three groundwater irrigations (winter, jointing, heading) following deep ploughing; maize is planted immediately after wheat harvest into rotary-tilled stubble and receives two irrigations to buffer against summer drought risk. Pesticide use is minimal but consistent: two applications on wheat for weeds and aphid/fungal pressure, one on maize for borer control.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 64-year-old smallholder in Quzhou County farms 8 mu under the standard North China Plain winter wheat\u2013summer maize double-cropping rotation, using locally trusted improved wheat and hybrid maize varieties. Fertilizer rates lean slightly above extension recommendations, reflecting the older-farmer tendency to prioritize yield security over input savings. Wheat receives three groundwater irrigations (winter, jointing, heading) following deep ploughing; maize is planted immediately after wheat harvest into rotary-tilled stubble and receives two irrigations to buffer against summer drought risk. Pesticide use is minimal but consistent: two applications on wheat for weeds and aphid/fungal pressure, one on maize for borer control."
+  },
+  "elapsed_seconds": 48.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_1",
+  "tier": 1,
+  "provider": "claude"
+}

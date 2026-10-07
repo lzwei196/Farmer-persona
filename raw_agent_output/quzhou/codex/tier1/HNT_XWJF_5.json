@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the usual `winter wheat + summer maize` rotation. In Quzhou County, this is the crop pattern I trust most because the land, machines, water, and weather all fit it. Wheat gives me a steady harvest first, then maize follows in the rainy season, so I can use one mu of land for two grain crops in one year. At my age, I do not want to chase complicated crops that need more labor, more market judgment, or more hand management. I will plant improved grain varieties, keep fertilization moderate instead of excessive, irrigate wheat more than maize, and use simple field management that I understand well and can finish on time. For wheat, I will plough and return straw because that helps the soil and gives me a better seedbed. For maize after wheat harvest, I will use no-tillage to save time and moisture. I will aim for stable yield, not the highest possible yield, because steady production is what I would choose for myself.\n\nSources I relied on for local fit: Quzhou County\u2019s dominant system is winter wheat and summer maize, with county-level reports showing about 42\u4e07\u4ea9 wheat and 38\u4e07\u4ea9 maize and official \u201c\u5428\u534a\u7cae\u201d work centered on the wheat-maize double-cropping system; recent Hebei/Quzhou reports also cite demonstration fields around `725 kg/mu` wheat and `797 kg/mu` maize with about `14 kg/mu` nitrogen for each crop. Links: https://www.moa.gov.cn/xw/qg/202107/t20210720_6372348.htm , https://www.agri.cn/zx/xxlb/hb/202410/t20241011_8677909.htm , https://pmc.ncbi.nlm.nih.gov/articles/PMC5290742/\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 620\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 720\n    }\n  ],\n  \"reasoning_summary\": \"I will grow winter wheat and summer maize on the same 10 mu because this is the most familiar, reliable, and locally suitable system in Quzhou County. I want a simple plan I can manage well at 72 years old, with stable grain output, moderate fertilizer use, more irrigation for wheat than maize, ploughing for wheat, and no-tillage maize after wheat harvest to save labor and protect moisture.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 620
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 720
+      }
+    ],
+    "reasoning_summary": "I will grow winter wheat and summer maize on the same 10 mu because this is the most familiar, reliable, and locally suitable system in Quzhou County. I want a simple plan I can manage well at 72 years old, with stable grain output, moderate fertilizer use, more irrigation for wheat than maize, ploughing for wheat, and no-tillage maize after wheat harvest to save labor and protect moisture."
+  },
+  "elapsed_seconds": 34.3,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_5",
+  "tier": 1,
+  "provider": "codex"
+}

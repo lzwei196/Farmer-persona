@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 18 mu here in Quzhou. I only went through primary school, so I do what my father taught me and what I see my neighbors doing. I will not change much from last year \u2014 last year was alright, the cotton gave me almost 280 jin per mu.\n\nMost of my land goes to cotton \u2014 that is my main crop and what pays for the year. I will put 12 mu in cotton. The other 6 mu I keep for winter wheat and then summer corn right after, for our own flour and for pig feed. With 6 mouths at home we need some grain of our own.\n\nFor cotton I plough deep in spring \u2014 cotton likes loose soil, the roots go deep. I put down 2 bags of compound 15-15-15 per mu when I plough, then when the bolls start forming I top-dress with about half a bag of urea per mu. That comes to roughly 18 jin of nitrogen. Cotton is the one crop where I do not save on spray \u2014 bollworm and aphids will eat everything if you are lazy. I spray 7 times, that is what Old Zhang next to me does and his cotton is always clean. I water from my well 2 times if the rain is short. I use the Bt hybrid seed, everyone uses it now, the old kind cannot stand the pests.\n\nFor wheat I rotary till the stubble and drill the improved seed in October. One bag of compound when sowing, then urea at green-up in spring \u2014 about 16 jin nitrogen total. I water 3 times: before winter, at green-up, and at grain fill. Spray 2 times for aphids and rust. I expect 450 jin per mu like last year.\n\nAfter wheat, corn goes straight in, no ploughing \u2014 I just push the seed into the stubble. Hybrid seed, one bag of compound at sowing, urea at knee-high. Corn here gets enough rain in summer, I only water 1 time if July is dry. 2 sprays for borer. I look for 500 jin per mu.\n\nI do not want to spend too much on fertilizer, but I would rather use a bit extra than see my cotton short \u2014 one bad cotton year and I lose real money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I go by what worked last year and what my neighbors do. Cotton is my main crop so 12 mu goes to it \u2014 I plough deep, use Bt hybrid seed, and do not save on sprays because bollworm ruins everything. The other 6 mu I keep in wheat-corn rotation for our own flour and feed since we are 6 people at home. I use one to two bags of compound plus urea top-dressing on each crop, like always. I would rather spend a little extra on fertilizer than risk a thin cotton harvest \u2014 one bad cotton year hurts too much.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I go by what worked last year and what my neighbors do. Cotton is my main crop so 12 mu goes to it \u2014 I plough deep, use Bt hybrid seed, and do not save on sprays because bollworm ruins everything. The other 6 mu I keep in wheat-corn rotation for our own flour and feed since we are 6 people at home. I use one to two bags of compound plus urea top-dressing on each crop, like always. I would rather spend a little extra on fertilizer than risk a thin cotton harvest \u2014 one bad cotton year hurts too much."
+  },
+  "elapsed_seconds": 48.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_14",
+  "tier": 3,
+  "provider": "claude"
+}

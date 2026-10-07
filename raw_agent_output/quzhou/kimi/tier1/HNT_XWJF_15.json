@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old and I have farmed this land in Quzhou County for over 50 years. I only finished primary school, but I know this soil and this weather better than any book. I have about 15 mu of good flat land. Every year I do the same thing my father did: I plant winter wheat in October, harvest it in early June, and immediately plant summer maize on the same plots. This double-cropping system works here because we have the water and the heat.\n\nRight now it is early spring and my wheat is already in the ground. I grow Luyuan502, an improved wheat variety that my neighbors and I have used for years. It is reliable. Before sowing I always do rotary tillage to break up the soil. I put down compound fertilizer at sowing time, and now in spring I will topdress with urea when the wheat greens up \u2014 about 25 kg of nitrogen per mu. I do not bother buying straight phosphate or potash; the compound fertilizer has enough, and my soil has always been decent. I will irrigate three times before harvest: once now at green-up, once at jointing, and once at heading if the rain does not come. I also spray pesticides about four times for weeds, aphids, and rust.\n\nAfter I harvest the wheat in June, I plant Denghai605 hybrid maize directly into the wheat stubble with no-tillage. Everyone here does it this way now \u2014 it saves fuel, time, and labor. I put compound fertilizer down at planting, and that is usually enough for the maize. I do not topdress with urea on maize anymore; at my age I want to make fewer trips to the field, and the compound does the job. I irrigate maize twice, in July and August. I spray pesticides three times for corn borers and weeds. \n\nI stopped growing cotton years ago. Cotton needs 14 or 15 sprays and hand-picking \u2014 too much work for an old man like me. I also do not fool around with vegetables or chili for the market; the prices jump up and down and I do not want the risk. Wheat and maize are safe because the machines do the sowing and harvesting, and I can sell them easily to the grain dealers who come to the village. If the weather is normal, I expect about 500 kg per mu of wheat and 550 kg per mu of maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize rotation on my 15 mu because it is reliable and mechanized, which matters at my age. I use improved wheat and hybrid maize seeds that my neighbors trust. I topdress wheat with urea but rely only on compound fertilizer for maize to save labor. No-tillage for maize is standard here. I avoid cotton and vegetables because they demand too much hand labor and spraying.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize rotation on my 15 mu because it is reliable and mechanized, which matters at my age. I use improved wheat and hybrid maize seeds that my neighbors trust. I topdress wheat with urea but rely only on compound fertilizer for maize to save labor. No-tillage for maize is standard here. I avoid cotton and vegetables because they demand too much hand labor and spraying."
+  },
+  "elapsed_seconds": 245.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_15",
+  "tier": 1,
+  "provider": "kimi"
+}

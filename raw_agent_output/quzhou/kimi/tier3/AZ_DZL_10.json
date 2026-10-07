@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 61 years old. I never went to school. I have farmed for 40 years, and I learned everything by watching and doing. My family has 13.1 mu of land. I put 10 mu into wheat and maize, one after the other, and I keep 3.1 mu for cotton. My son and daughter-in-law work in the city, but they send money. Still, I count every yuan.\n\nFor wheat, I buy the improved seed from the dealer \u2014 the same kind my neighbor Old Wang used. Before October sowing, I have the tractor man rotary-till the 10 mu. I spread one 50-kilogram bag of compound fertilizer on each mu as base. In spring, when the wheat turns green, I broadcast 25 kilograms of urea per mu. I irrigate three times: winter water, jointing water, and one more when the grain is filling. I spray twice for weeds and bugs. I hire three people for two days to help harvest in June. I expect about 450 kilograms per mu.\n\nFor maize, right after the wheat comes off in June, I plant hybrid maize seed on the same 10 mu. I put 40 kilograms of compound fertilizer per mu in the rows at sowing. When the plants are knee-high, I side-dress 25 kilograms of urea per mu. I irrigate twice \u2014 once after sowing if it is dry, and once at the big trumpet stage. Two sprays. I expect about 550 kilograms per mu.\n\nFor cotton, I plough the 3.1 mu deep because cotton likes loose soil. I plant hybrid cotton in April. I put one 50-kilogram bag of compound fertilizer per mu as base. At flowering, I spread 25 kilograms of urea per mu. I irrigate three times and spray three times for insects. Last year I tried to save on spray and the worms ate the bolls, so I will not cut back. I hire local women to help pick in autumn. I expect about 280 kilograms of seed cotton per mu.\n\nFertilizer is expensive, but a bad harvest is worse than wasting a little fertilizer. I watch my neighbors. If they put more, I put more. If they irrigate, I irrigate.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed for 40 years with no schooling, so I copy what works and watch my neighbors. I keep 10 mu for wheat-maize double cropping and 3.1 mu for cotton. I use one bag of compound fertilizer per mu for wheat and cotton base, and slightly less for maize, plus urea topdressing, because cutting fertilizer is too risky. I irrigate wheat three times, maize twice, and cotton three times, spraying twice for grain crops and three times for cotton since last year worms hurt my crop when I skipped a spray. I rotary-till the grain fields for speed and plough the cotton field deep. I hire extra hands for wheat harvest and cotton picking. I would rather spend a bit more on inputs than lose yield, because a bad year is a disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I have farmed for 40 years with no schooling, so I copy what works and watch my neighbors. I keep 10 mu for wheat-maize double cropping and 3.1 mu for cotton. I use one bag of compound fertilizer per mu for wheat and cotton base, and slightly less for maize, plus urea topdressing, because cutting fertilizer is too risky. I irrigate wheat three times, maize twice, and cotton three times, spraying twice for grain crops and three times for cotton since last year worms hurt my crop when I skipped a spray. I rotary-till the grain fields for speed and plough the cotton field deep. I hire extra hands for wheat harvest and cotton picking. I would rather spend a bit more on inputs than lose yield, because a bad year is a disaster."
+  },
+  "elapsed_seconds": 296.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_10",
+  "tier": 3,
+  "provider": "kimi"
+}

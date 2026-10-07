@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am thinking about this year's planting. I am 63, been farming 40 years here in Quzhou. My middle school learning helps me read the fertilizer bags and understand what the dealer tells me, but most of what I know comes from working the land.\n\nI have 10.1 mu. My main system is wheat-maize rotation \u2014 winter wheat then summer maize on the same ground. I also keep some cotton because the price can be good and it spreads my risk. I will put about 7 mu to wheat-maize rotation and 3.1 mu to cotton.\n\nFor wheat: Last year I used about 2 bags of compound fertilizer (15-15-15) per mu as base, that is 50 kg, then topdressed with one bag of urea (about 20 kg) at jointing. That gave me around 450 kg per mu. I will do the same \u2014 no reason to change what works. Neighbors who cut fertilizer last year got less grain. Well water for 3-4 irrigations: before winter, at greening, jointing, and grain filling if dry. I spray 2 times for aphids and rust. I plough before wheat, it breaks up the soil better than rotary for winter crop.\n\nFor maize: After wheat I go straight in, no time to plough \u2014 rotary only. Xianyu or Zhengdan hybrid seed, the dealer recommends it and neighbors get good ears. 25 kg urea base plus one topdressing of 15 kg at big trumpet stage. Some DAP, maybe 15 kg. Irrigate 2 times \u2014 after sowing and at tasseling. Spray once for corn borer. I expect 550 kg per mu.\n\nFor cotton: I use improved seed, about 1.5 kg per mu. Cotton needs more work \u2014 I plough deep in spring. Base fertilizer 40 kg compound, then urea at flowering 15 kg. Cotton needs more pesticide, 4-5 sprays for bollworm and aphids. Irrigate 3 times. Maybe 250 kg seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.7,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20.9,\n      \"phosphorus_kg_per_mu\": 6.9,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12.9,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am sticking close to what worked last year because changing too much is risky at my age and farm size. Wheat-maize on 7 mu is my main grain, I plough for wheat and rotary for the quick maize turnaround. Cotton on 3.1 mu spreads risk and brings cash but needs more spray and work. I use a bit extra fertilizer rather than too little \u2014 a bad harvest hurts far more than some wasted bags. Well irrigation lets me water when needed, 4 times for wheat, 2 for maize, 3 for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.7,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20.9,
+        "phosphorus_kg_per_mu": 6.9,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12.9,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am sticking close to what worked last year because changing too much is risky at my age and farm size. Wheat-maize on 7 mu is my main grain, I plough for wheat and rotary for the quick maize turnaround. Cotton on 3.1 mu spreads risk and brings cash but needs more spray and work. I use a bit extra fertilizer rather than too little \u2014 a bad harvest hurts far more than some wasted bags. Well irrigation lets me water when needed, 4 times for wheat, 2 for maize, 3 for cotton."
+  },
+  "elapsed_seconds": 24.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

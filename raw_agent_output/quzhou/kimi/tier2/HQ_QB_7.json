@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old. I have farmed these fields in Quzhou for 50 years, and I know every inch of my 8 mu. My wife and I are the only ones left at home \u2014 our child works in the city and sends money back, but they cannot help in the fields. My back is not what it used to be, and I do not have the strength to bend over cotton plants all season anymore.\n\nThis year, I will plant **7 mu with my wheat-maize double crop** and keep only **1 mu of cotton**. The wheat-maize system is easier for us because I can hire the combine harvester from the village cooperative for both harvests \u2014 the machines do the heavy work. Cotton is too much labor: thinning, spraying for bollworm every few days, and picking by hand at my age is exhausting. But I will keep 1 mu because the cotton price has been decent, and every mu counts on a small farm.\n\nFor **winter wheat**, I will rotary-till the soil in late October and sow an improved variety like *Zhongxinmai* at about 30 jin per mu. I will put down compound fertilizer as a base and topdress with urea at green-up. Wheat needs water at jointing and grain-filling, so I will irrigate four times from my well. I expect about 500 kg per mu if the weather cooperates.\n\nFor **summer maize**, I will plant a hybrid like *Denghai 605* immediately after the wheat harvest in early June. I will use no-tillage \u2014 just drill the seeds into the wheat stubble. This saves diesel, time, and my energy. Maize needs less water than wheat, so two irrigations will be enough, plus the summer rains. I should get around 580 kg per mu.\n\nFor **cotton** on the 1 mu, I will rotary-till in spring and plant a hybrid Bt cotton variety. But I will not expand beyond this 1 mu. Cotton needs constant spraying for pests \u2014 probably 10 to 12 times this season \u2014 and I will have to do most of that myself. I expect about 250 kg of seed cotton per mu, which is modest but acceptable for the labor I can spare.\n\nI will not push the fertilizer too hard. At my age, I have learned that more fertilizer does not always mean more profit \u2014 the soil is already decent from decades of careful management. I will apply moderate rates of N, P, and K for each crop, enough to maintain yields without wasting money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.0,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 4.0,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15.0,\n      \"phosphorus_kg_per_mu\": 5.0,\n      \"potassium_kg_per_mu\": 4.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18.0,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"At 76 years old with only my wife and me working the land, I must choose crops that match our labor capacity. The wheat-maize double crop covers 7 mu because it can be largely mechanized \u2014 rotary tillage for wheat, no-tillage for maize, and combine harvesting for both \u2014 whereas cotton demands constant hand labor for pest control and picking. I reduced cotton to just 1 mu because my back cannot handle more. I rely on my well for irrigation, giving wheat four critical irrigations and maize two, while cotton gets two as well. I use moderate fertilizer rates based on 50 years of observing what this soil actually needs, and I choose improved wheat seed and hybrid maize and cotton varieties that I have seen perform reliably in Quzhou's climate.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.0,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 4.0,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15.0,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 4.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18.0,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "At 76 years old with only my wife and me working the land, I must choose crops that match our labor capacity. The wheat-maize double crop covers 7 mu because it can be largely mechanized \u2014 rotary tillage for wheat, no-tillage for maize, and combine harvesting for both \u2014 whereas cotton demands constant hand labor for pest control and picking. I reduced cotton to just 1 mu because my back cannot handle more. I rely on my well for irrigation, giving wheat four critical irrigations and maize two, while cotton gets two as well. I use moderate fertilizer rates based on 50 years of observing what this soil actually needs, and I choose improved wheat seed and hybrid maize and cotton varieties that I have seen perform reliably in Quzhou's climate."
+  },
+  "elapsed_seconds": 299.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_7",
+  "tier": 2,
+  "provider": "kimi"
+}

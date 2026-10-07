@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 76 years, but I still manage my 4.1 mu myself with my wife helping. My body is not what it was, so I keep to what I know works. My land is split \u2014 about 3.1 mu I run on the wheat\u2013maize rotation like most of the village, and 1 mu I keep for cotton because the price is still decent and my son-in-law buys the lint through a small broker.\n\nFor the **winter wheat**, I buy Jimai 22 seed at the agricultural supply shop \u2014 everyone around here uses it, it handles our cold winters and the yield is steady. Last year I put down 2 bags of diammonium phosphate per mu before ploughing (that is about 36 jin, giving me roughly 6\u20137 kg nitrogen and 8 kg phosphorus from the base), then topdressed about 20 jin of urea per mu at jointing. That works out to around 16 kg N total. I add about 6 kg potash per mu \u2014 not much, but our soil here is not too short of potassium. I irrigate 3 times with my well: one winter watering before the frost, one at jointing, one at grain filling. If aphids or rust come I spray, usually 2 times. I expect around 450 kg per mu \u2014 some years 500, some years 400 if the spring is dry.\n\nFor the **summer maize**, I plant Zhengdan 958 or whatever hybrid the shop pushes that year \u2014 no-tillage, drill it straight into the wheat stubble the same week I harvest wheat. I apply compound fertilizer at sowing and top-dress urea at the big trumpet stage. All together about 18 kg N, 6 kg P, 5 kg K per mu. Usually 1 good irrigation at tasseling, sometimes a second if July is dry. I spray once for corn borer, once for armyworm if I see it. 500 kg per mu is a reasonable year.\n\nFor the **cotton**, I use Bt hybrid seed \u2014 without it the bollworm eats everything. I plough deep in spring, apply manure if I have any plus compound fertilizer \u2014 about 14 kg N, 7 kg P, 8 kg K per mu (cotton wants more potash for boll setting). Three irrigations through the summer. Cotton needs spraying often \u2014 5 times at least for aphids, mites, and bollworm late season. I expect maybe 220 kg seed cotton per mu; my eyes are not good for picking anymore so my wife and I work slow.\n\nI do not want to cut fertilizer. Saving 30 yuan on urea is not worth losing 50 kg of grain. Better to put enough on and sleep easy.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I keep to the wheat\u2013maize rotation on 3.1 mu like my neighbors and save 1 mu for Bt cotton since the price still pays. I use improved Jimai wheat and a standard maize hybrid from the shop. Fertilizer rates follow what I did last year \u2014 enough base compound plus urea topdressing \u2014 because cutting back to save a few yuan is not worth risking the harvest. I irrigate from my well 3 times for wheat, once for maize, three for cotton. At 76 I cannot experiment; I do what has worked for 50 years and only adjust a little each season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I keep to the wheat\u2013maize rotation on 3.1 mu like my neighbors and save 1 mu for Bt cotton since the price still pays. I use improved Jimai wheat and a standard maize hybrid from the shop. Fertilizer rates follow what I did last year \u2014 enough base compound plus urea topdressing \u2014 because cutting back to save a few yuan is not worth risking the harvest. I irrigate from my well 3 times for wheat, once for maize, three for cotton. At 76 I cannot experiment; I do what has worked for 50 years and only adjust a little each season."
+  },
+  "elapsed_seconds": 44.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_6",
+  "tier": 3,
+  "provider": "claude"
+}

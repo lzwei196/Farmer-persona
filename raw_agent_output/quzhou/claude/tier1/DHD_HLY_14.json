@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has worked this land for generations. Here in Quzhou, everyone grows winter wheat and summer maize \u2014 that's the rotation. The land is flat, we have wells for irrigation, and there's a grain buyer who comes through the village. I don't think about doing anything different. My husband goes to the city for work most of the year, so I handle the fields myself with help from my mother-in-law during busy periods.\n\nI have about 10 mu of flat dryland. After the wheat comes off in June, I turn around and put the maize in the same fields. That's how we do it here \u2014 two crops on the same land each year.\n\nFor wheat, I buy the improved seed from the village cooperative \u2014 they carry Jimai varieties, which do well here. I don't know how to select seed myself, so I trust what they sell. I put down compound fertilizer at planting and then urea at jointing. I irrigate three times: before winter to help rooting, once at jointing in spring, and once at heading. Less than three times and I worry the yield drops. I spray twice \u2014 once for aphids and once for rust, which hits us most years.\n\nFor maize, everyone buys hybrid seed. The salesman at the supply store says Zhengdan 958 is reliable and I've used it before with good results. I put urea down in two splits. Summer gets rain so I only irrigate once if July is dry. After wheat harvest I seed directly into the stubble \u2014 no time for deep ploughing in summer, and my neighbor says it's fine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10 mu in Quzhou following the standard winter wheat\u2013summer maize double-cropping rotation that all households here use. I buy improved wheat seed and hybrid maize seed from the village cooperative, apply compound fertilizer plus urea splits at rates I have used for years, irrigate wheat three times to compensate for the dry springs, and rely on summer monsoon rainfall for most of the maize water. I rotary-till before wheat planting in autumn and direct-seed maize into wheat stubble in June to save time and cost. Pesticide applications target aphids and rust on wheat and fall armyworm on maize, timed when I see the problem or when neighbors start spraying.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 10 mu in Quzhou following the standard winter wheat\u2013summer maize double-cropping rotation that all households here use. I buy improved wheat seed and hybrid maize seed from the village cooperative, apply compound fertilizer plus urea splits at rates I have used for years, irrigate wheat three times to compensate for the dry springs, and rely on summer monsoon rainfall for most of the maize water. I rotary-till before wheat planting in autumn and direct-seed maize into wheat stubble in June to save time and cost. Pesticide applications target aphids and rust on wheat and fall armyworm on maize, timed when I see the problem or when neighbors start spraying."
+  },
+  "elapsed_seconds": 66.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_14",
+  "tier": 1,
+  "provider": "claude"
+}

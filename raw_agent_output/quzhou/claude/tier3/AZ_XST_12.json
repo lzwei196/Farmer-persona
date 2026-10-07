@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 14 mu for fifty years. Last year was alright, so I will not change much. My neighbors all do about the same.\n\nFor wheat, I plant in October after I rotary till the maize stubble. I use the improved Jimai seed the dealer sells \u2014 everyone here uses it, about 15 kg per mu. For base fertilizer I put down 2 bags of diammonium (DAP, 50 kg bag) every mu before sowing, then one bag of urea (50 kg) topdressing at spring green-up. That comes out to about 25 kg nitrogen per mu. I add a half bag of potash too because the soil here is getting tired. I water four times \u2014 the winter water, green-up, jointing, and grain-filling \u2014 I have the well so it is only the electricity cost. Spray twice for weeds and aphids. I expect around 480 kg per mu, same as last year.\n\nFor maize, I direct-seed right after the wheat combine, no tillage, hybrid seed from the same dealer. One bag of compound 15-15-15 at planting, then a bag of urea at the big flare stage \u2014 about 22 kg nitrogen per mu. Summer rains give me most of the water but I run the well once or twice if July is dry. One spray for borers and weeds is enough. I get 550 kg per mu usually.\n\nI would rather spend a little extra on fertilizer than lose the harvest. Losing yield costs much more than one bag.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am doing what I have done for years and what my neighbors do. Improved wheat seed and hybrid maize seed from the dealer. For wheat, 2 bags DAP at sowing plus 1 bag urea at green-up, four waterings from my well, two sprays. For maize, no-till after wheat, one bag compound plus one bag urea, one or two waterings depending on summer rain, one spray. I would rather use a little extra fertilizer than lose yield \u2014 a bad harvest costs much more than one bag of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am doing what I have done for years and what my neighbors do. Improved wheat seed and hybrid maize seed from the dealer. For wheat, 2 bags DAP at sowing plus 1 bag urea at green-up, four waterings from my well, two sprays. For maize, no-till after wheat, one bag compound plus one bag urea, one or two waterings depending on summer rain, one spray. I would rather use a little extra fertilizer than lose yield \u2014 a bad harvest costs much more than one bag of urea."
+  },
+  "elapsed_seconds": 41.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_12",
+  "tier": 3,
+  "provider": "claude"
+}

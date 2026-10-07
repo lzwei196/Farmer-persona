@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 68 and only started farming last year, so honestly I am still learning. I watch what my neighbor Old Chen does and I ask the young man at the seed supply shop in town. I do not know fancy techniques. I just want to make sure the land produces enough to cover our costs and have some left over. There are only two of us at home, so labor is tight \u2014 my back is not what it was.\n\nMy land is 10.1 mu. The wheat and maize rotate on the same 6 mu, and I keep 4.1 mu separate for cotton. The cotton brings cash, so I keep it even though it is hard work.\n\nFor **wheat**, I will plant in October what the seed shop tells me is a good local variety \u2014 probably Kenong 199 or similar. I will rotary-till before planting. I will apply fertilizer in one base dressing and one topdressing at jointing. I will irrigate four times: before winter, at jointing, heading, and grain fill. I have well water so this I can do.\n\nFor **maize**, I plant straight after wheat harvest in June. I will not till again \u2014 the soil is soft enough and I am tired from wheat harvest. I will use a hybrid seed because I heard it yields more. I will put fertilizer down at planting and again at the big-bell stage.\n\nFor **cotton**, I will rotary-till in spring, plant in late April. Cotton needs more spraying \u2014 worms and aphids are bad. I will spray when I see trouble, probably five times. I will irrigate more carefully because cotton doesn't like waterlogging but needs water at flowering and boll set.\n\nI am not trying to be scientific. I am trying not to make mistakes in my second year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 290\n    }\n  ],\n  \"reasoning_summary\": \"I am 68 years old with only one year of farming experience and a primary education, so I follow what neighbors and the local seed shop advise rather than any advanced plan. I rotate wheat and maize on 6 mu of my land \u2014 winter wheat planted in October with rotary tillage, four irrigations using my well, and modest fertilizer; summer maize direct-seeded after wheat harvest with no additional tillage, hybrid seed for better yield, and three irrigations. On the remaining 4.1 mu I grow cotton for cash income, using hybrid Bt seed to reduce some pest pressure, but I still expect to spray five times for aphids and bollworm. Input rates are close to what I see neighbors apply \u2014 perhaps slightly heavy on nitrogen because I worry about low yield more than I worry about cost. Expected yields are conservative since I am still learning.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 290
+      }
+    ],
+    "reasoning_summary": "I am 68 years old with only one year of farming experience and a primary education, so I follow what neighbors and the local seed shop advise rather than any advanced plan. I rotate wheat and maize on 6 mu of my land \u2014 winter wheat planted in October with rotary tillage, four irrigations using my well, and modest fertilizer; summer maize direct-seeded after wheat harvest with no additional tillage, hybrid seed for better yield, and three irrigations. On the remaining 4.1 mu I grow cotton for cash income, using hybrid Bt seed to reduce some pest pressure, but I still expect to spray five times for aphids and bollworm. Input rates are close to what I see neighbors apply \u2014 perhaps slightly heavy on nitrogen because I worry about low yield more than I worry about cost. Expected yields are conservative since I am still learning."
+  },
+  "elapsed_seconds": 64.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_6",
+  "tier": 2,
+  "provider": "claude"
+}

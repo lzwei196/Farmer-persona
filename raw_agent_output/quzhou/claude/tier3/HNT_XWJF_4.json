@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 79 years old. I farm 4.1 mu in Quzhou with my wife. Just the two of us. I went to primary school, so I can read the bag labels and count the money. Seventy years I have been doing this.\n\nMy land is small. Every bag of fertilizer is money out of my pocket. But a bad harvest is worse than spending a few extra yuan. So I do not cut back too much.\n\nFor wheat in winter \u2014 I plant the improved variety, same one the seed shop in town sells. Jimai or whatever they have. My neighbors all use it, gives good yield. I plant maybe 15 kg seed per mu, a bit thick because I am old and cannot always replant gaps.\n\nBefore planting wheat I spread compound fertilizer, the 15-15-15 kind. About 50 kg per mu as base. Then in spring when wheat turns green, I top-dress urea, maybe 20 kg per mu. That is what I always do.\n\nWater \u2014 I irrigate wheat 3 times. Once before winter to keep it warm, once at returning green in spring, once at filling. The well is there, the electricity is not too expensive.\n\nPesticide \u2014 I spray maybe 2 times. Once for weeds in spring, once for aphids and rust around April-May. If I see bugs I spray, if not I save the money.\n\nTillage \u2014 I pay the tractor man to rotary till. My back cannot plough anymore. \n\nFor maize after wheat harvest \u2014 summer maize, I plant Zhengdan or Xianyu hybrid seed. Direct seed into the wheat stubble, no plough. I put compound fertilizer when planting, about 40 kg per mu, then urea top-dress at big trumpet stage, 25 kg per mu.\n\nMaize I water 2 times if no rain \u2014 at jointing and tasseling. If summer rain is good, maybe only once.\n\nPesticide on maize \u2014 1 or 2 times. Mostly for armyworm and corn borer.\n\nWheat I expect 450 kg per mu in a normal year. Maize 550 kg per mu. That is about what I get.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am old and the farm is small, only 4.1 mu, just me and my wife. I do what I have always done and what my neighbors do. For wheat I use improved seed from the town shop, spread 50 kg of 15-15-15 compound at planting and top-dress 20 kg urea in spring, irrigate 3 times from the well, and spray twice for weeds and aphids. For summer maize I direct seed hybrid into the wheat stubble with no plough, put 40 kg compound at planting and 25 kg urea at big trumpet stage, water 1-2 times depending on the rain, and spray for borer. Tractor man does the rotary tilling because my back is finished. I expect about 450 kg wheat and 550 kg maize per mu like usual.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am old and the farm is small, only 4.1 mu, just me and my wife. I do what I have always done and what my neighbors do. For wheat I use improved seed from the town shop, spread 50 kg of 15-15-15 compound at planting and top-dress 20 kg urea in spring, irrigate 3 times from the well, and spray twice for weeds and aphids. For summer maize I direct seed hybrid into the wheat stubble with no plough, put 40 kg compound at planting and 25 kg urea at big trumpet stage, water 1-2 times depending on the rain, and spray for borer. Tractor man does the rotary tilling because my back is finished. I expect about 450 kg wheat and 550 kg maize per mu like usual."
+  },
+  "elapsed_seconds": 27.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_4",
+  "tier": 3,
+  "provider": "claude"
+}

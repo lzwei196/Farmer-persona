@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed this land in Quzhou my whole life. The North China Plain gives us one reliable system: winter wheat followed by summer maize on the same plots. I'm not changing that \u2014 it's what the market wants, what the land supports, and what I know how to do well.\n\nI have 8 mu of arable land. The wheat goes in around mid-October; I harvest it in early June. Then I plant maize immediately \u2014 no-till, right into the stubble \u2014 and harvest in late September. Same 8 mu, two crops per year.\n\nFor wheat, I'll buy certified improved seed from the county station \u2014 probably Hengguan 35 or whatever the extension office is recommending this year for disease resistance. Hybrid wheat isn't standard here and the seed cost isn't worth it. For maize, hybrid is the only choice that makes sense for yield \u2014 I'll use Xianyu 335 or Zhengdan 958.\n\nOn fertilizer, I had my soil tested two years ago and I follow those numbers closely. I'm not a heavy hand with nitrogen \u2014 I've seen neighbors burn crops and waste money. I split my nitrogen on wheat: base dressing at planting, then topdress at jointing.\n\nOn irrigation: I'm doing three waterings for wheat, not four. I skip the wintering irrigation. The groundwater table has dropped noticeably in the past ten years and I feel responsible for that. Summer maize mostly runs on rainfall here \u2014 one irrigation at silking if July is dry.\n\nPesticide: seed treatment counts as one application. I spray herbicide in early spring for wheat, then a fungicide at heading. For maize, one herbicide pass after emergence, and I watch for corn borer but usually don't need a second application.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou County under the standard winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. I choose improved certified wheat seed for disease resistance and hybrid maize seed for yield, reflecting my familiarity with county extension recommendations. Fertilizer rates follow soil-test guidance \u2014 moderate nitrogen split between base and topdress applications to avoid waste and leaching. I deliberately reduce wheat irrigation to three passes, skipping the wintering water, because I have watched the local water table fall over decades and feel an obligation to reduce groundwater extraction. Maize is planted no-till directly after wheat harvest to preserve soil moisture and save time, relying primarily on summer rainfall with one supplemental irrigation at silking if needed. Pesticide use is limited to seed treatment plus targeted herbicide and fungicide applications at critical growth stages.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou County under the standard winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. I choose improved certified wheat seed for disease resistance and hybrid maize seed for yield, reflecting my familiarity with county extension recommendations. Fertilizer rates follow soil-test guidance \u2014 moderate nitrogen split between base and topdress applications to avoid waste and leaching. I deliberately reduce wheat irrigation to three passes, skipping the wintering water, because I have watched the local water table fall over decades and feel an obligation to reduce groundwater extraction. Maize is planted no-till directly after wheat harvest to preserve soil moisture and save time, relying primarily on summer rainfall with one supplemental irrigation at silking if needed. Pesticide use is limited to seed treatment plus targeted herbicide and fungicide applications at critical growth stages."
+  },
+  "elapsed_seconds": 56.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_9",
+  "tier": 1,
+  "provider": "claude"
+}

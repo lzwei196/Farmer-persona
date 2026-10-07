@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 50 years old and have been farming these 17 mu in Quzhou for 35 years. I never went to school, but I know my land and the seasons by heart. My family has four people, and some of them work off-farm in the township or do construction jobs, so I handle most of the farm work myself. We have a well, so water is not a big problem for us.\n\nIt is now April \u2014 the start of the season. My wheat is already in the field from last October. I will keep 9 mu for the wheat-maize rotation. The wheat needs topdressing and one more irrigation now, and I will harvest it in early June. Right after that, I will plant maize on the same 9 mu without ploughing again \u2014 there is no time to waste between the two crops, so I sow directly into the wheat stubble. For cotton, I will plant 6.5 mu of single cotton and another 1.5 mu where I intercrop mungbean with cotton. The mungbean comes up early and I harvest it in July, while the cotton keeps growing until October. I save my own mungbean seeds, but I buy cotton seeds and maize seeds from the dealer. The maize seeds are hybrid \u2014 they cost more but they give better yield. I use compound fertilizer (15-15-15) for all crops except mungbean, which does not need it. Cotton and wheat get basal fertilizer at planting and one topdressing later. Maize only gets basal fertilizer because the summer season is short. Cotton needs the most pesticides because of bollworms and aphids \u2014 I spray many times. Wheat needs much less, and mungbean needs almost none. This is what I have always done, and it has fed my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 27,\n      \"potassium_kg_per_mu\": 27,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 17,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 27,\n      \"potassium_kg_per_mu\": 27,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 9,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1135\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 0,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 150\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 17 mu with a wheat-maize double crop on 9 mu, single cotton on 6.5 mu, and cotton intercropped with mungbean on 1.5 mu. I use rotary tillage for cotton, wheat, and mungbean, but no-tillage for maize because it is sown immediately after wheat harvest in June. I apply 15-15-15 compound fertilizer as basal to cotton, wheat, and maize, and topdress cotton and wheat once more. Mungbean gets no fertilizer because I use my own saved seeds and it grows well with just the residual fertility. Cotton needs the most pesticides due to bollworms and aphids, while mungbean needs almost none. I irrigate from my well \u2014 wheat needs the most water, maize the least. These are the practices I have followed for many years and they give me stable yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 27,
+        "potassium_kg_per_mu": 27,
+        "irrigation_times": 3,
+        "pesticide_applications": 17,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 27,
+        "potassium_kg_per_mu": 27,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 1,
+        "pesticide_applications": 9,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1135
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 1,
+        "pesticide_applications": 0,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 150
+      }
+    ],
+    "reasoning_summary": "I manage my 17 mu with a wheat-maize double crop on 9 mu, single cotton on 6.5 mu, and cotton intercropped with mungbean on 1.5 mu. I use rotary tillage for cotton, wheat, and mungbean, but no-tillage for maize because it is sown immediately after wheat harvest in June. I apply 15-15-15 compound fertilizer as basal to cotton, wheat, and maize, and topdress cotton and wheat once more. Mungbean gets no fertilizer because I use my own saved seeds and it grows well with just the residual fertility. Cotton needs the most pesticides due to bollworms and aphids, while mungbean needs almost none. I irrigate from my well \u2014 wheat needs the most water, maize the least. These are the practices I have followed for many years and they give me stable yields."
+  },
+  "elapsed_seconds": 241.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "YZ_SZ_5",
+  "tier": 2,
+  "provider": "kimi"
+}

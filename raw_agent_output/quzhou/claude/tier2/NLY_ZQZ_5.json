@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 55 years. My hands know what to do before my head finishes thinking. Let me go through what I'll do this year.\n\n**Wheat** \u2014 I plant wheat every October on most of my land, 7.5 mu. I'll use the same improved variety I've used for several years now \u2014 the seed station sells it and it handles the dry spells here in Quzhou better than the old stuff my father used. I do rotary tillage after maize harvest to break up the stubble. I put down compound fertilizer at planting and then urea when the plants joint in spring. I irrigate four times: once before winter sets in to protect the roots, once at jointing, once at heading, once filling out the grain. Three rounds of spraying \u2014 herbicide early on, then aphids and powdery mildew in spring. I expect around 450 jin per mu, same as most years.\n\n**Maize** \u2014 Same 7.5 mu, right after wheat harvest in June. I direct-seed hybrid maize, no ploughing, the soil is fine from the wheat rotation. My son used to help me with this but he's in the city now so I hire a seeder. I put fertilizer down with the seed and top-dress urea at tasseling. Summer rains usually come, so I only need to pump the well twice \u2014 at planting if it's dry, and at silking. One herbicide spray, one for corn borer. I figure around 550 jin per mu.\n\n**Cotton** \u2014 I keep 2.6 mu in cotton on the separate plot. It's hard work at my age, lots of bending and spraying, but cotton money is still good and I've grown it my whole life. I plough that plot in spring, use hybrid seed, and plant in late April. Cotton drinks water so I pump four times across the season. The bollworm and aphids mean I spray five or six times \u2014 that's just the cost of cotton. I put more potassium in cotton than the other crops, it needs it. I expect about 300 jin of seed cotton per mu.\n\nMy household is big but it's mostly the young ones who've left. My wife and I manage what we can. I'm not changing anything dramatic this year \u2014 at 73, what works, works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"A 73-year-old farmer with 55 years of experience in Quzhou County allocates 7.5 mu to a wheat-maize double-cropping rotation on the same plot and keeps 2.6 mu in cotton on a separate plot, totalling 10.1 mu. Wheat is planted in October using an improved variety with rotary tillage, moderate nitrogen, and four well irrigations across the season. Maize follows immediately after wheat harvest using hybrid seed with no-till direct seeding, relying partly on summer rainfall and requiring only two supplemental irrigations. Cotton receives the most intensive management \u2014 plough tillage, higher potassium, four irrigations, and five pesticide applications to control bollworm and aphids \u2014 reflecting the farmer's lifelong familiarity with the crop despite its labour demands. Input rates and yield expectations are grounded in decades of local practice rather than extension recommendations, with no major changes from prior years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 2.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "A 73-year-old farmer with 55 years of experience in Quzhou County allocates 7.5 mu to a wheat-maize double-cropping rotation on the same plot and keeps 2.6 mu in cotton on a separate plot, totalling 10.1 mu. Wheat is planted in October using an improved variety with rotary tillage, moderate nitrogen, and four well irrigations across the season. Maize follows immediately after wheat harvest using hybrid seed with no-till direct seeding, relying partly on summer rainfall and requiring only two supplemental irrigations. Cotton receives the most intensive management \u2014 plough tillage, higher potassium, four irrigations, and five pesticide applications to control bollworm and aphids \u2014 reflecting the farmer's lifelong familiarity with the crop despite its labour demands. Input rates and yield expectations are grounded in decades of local practice rather than extension recommendations, with no major changes from prior years."
+  },
+  "elapsed_seconds": 48.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_5",
+  "tier": 2,
+  "provider": "claude"
+}

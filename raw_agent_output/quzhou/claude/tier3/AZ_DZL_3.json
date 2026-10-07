@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land for 30 years, so I know what works here in Quzhou. Let me think through each crop.\n\nMy 19.1 mu \u2014 I'll put about 15 mu in the wheat-maize rotation like always, and keep 4.1 mu for cotton on the sandier piece that doesn't do as well for grain. Cotton needs that lighter soil anyway.\n\n**Wheat (winter, 15 mu):** Last year I got about 480 kg/mu, decent year. I'll sow Jimai improved variety around early October after the maize comes off. Base fertilizer I'll put 2 bags of compound (that's about 40 kg per bag, 15-15-15) per mu before ploughing, then topdress urea at greening in March. That gives me roughly 27 kg N, 10 kg P, 8 kg K per mu. Well water irrigation \u2014 I'll water before winter (dongshui), then at greening, jointing, and grain filling. Four waterings. Spray for aphids and powdery mildew, usually 2-3 times. I plough after maize harvest since wheat needs a proper seedbed.\n\n**Maize (summer, 15 mu):** Straight after wheat harvest in June. I use Zhengdan hybrid seed \u2014 neighbor got 620 kg/mu with it. No-till, just direct seed into the wheat stubble, saves time and diesel. One bag compound at sowing, then urea topdress at big trumpet stage \u2014 around 28 kg N, 7 kg P, 5 kg K per mu. Irrigate twice if the rain is poor, maybe once if July rains come. Spray once or twice for corn borer.\n\n**Cotton (spring, 4.1 mu):** Cotton is more work but the price can be good. Plant late April after ploughing. Improved variety (Lumianyan). Fertilizer lower than grain \u2014 about 18 kg N, 8 kg P, 6 kg K per mu, most as base with some topdressing at flowering. Irrigate 3 times through the season. Cotton needs many sprays \u2014 bollworm, aphids, spider mites \u2014 I usually spray 6 times. Expect around 230 kg seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what has worked on my land for 30 years \u2014 wheat-maize rotation on 15 mu of better soil, cotton on 4.1 mu of lighter ground. I use improved wheat and hybrid maize seed because neighbors get good results. My fertilizer rates come from long habit: two bags compound as base plus urea topdressing, a little extra N to be safe because losing yield hurts far more than spending a few extra yuan on urea. I plough for wheat and cotton but no-till the summer maize to save time between harvests. Cotton takes the most pesticide because bollworm and aphids will destroy it otherwise. Irrigation depends on the rain but I plan for 4 waterings on wheat, 2 on maize, 3 on cotton from my well.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I stick with what has worked on my land for 30 years \u2014 wheat-maize rotation on 15 mu of better soil, cotton on 4.1 mu of lighter ground. I use improved wheat and hybrid maize seed because neighbors get good results. My fertilizer rates come from long habit: two bags compound as base plus urea topdressing, a little extra N to be safe because losing yield hurts far more than spending a few extra yuan on urea. I plough for wheat and cotton but no-till the summer maize to save time between harvests. Cotton takes the most pesticide because bollworm and aphids will destroy it otherwise. Irrigation depends on the rain but I plan for 4 waterings on wheat, 2 on maize, 3 on cotton from my well."
+  },
+  "elapsed_seconds": 36.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_3",
+  "tier": 3,
+  "provider": "claude"
+}

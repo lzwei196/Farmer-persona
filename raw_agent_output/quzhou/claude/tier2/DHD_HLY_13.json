@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for fifty years. I know what the soil needs, what the weather does, and what my body can handle at seventy-five. My sons and daughters mostly work away in the city now, so I cannot count on them for the heavy seasons. My wife and one younger person in the house help me. I must plan carefully.\n\nMy fourteen mu is split between two systems. Ten mu runs the wheat-maize rotation \u2014 that is my stable income and our food. The other four mu I grow cotton. Cotton is hard work, but I have grown it my whole life and the price is still worth it for a small plot. I will not expand it because picking is too difficult with just a few hands.\n\n**Wheat (planted October, harvested June):** I will buy improved seed from the township seed station \u2014 same variety I have used for many years, good straw strength, decent yield. I apply base fertilizer before sowing and topdress at jointing. I irrigate four times: before sowing to ensure germination, then again in winter to protect against frost heave, at jointing, and at heading. Two pesticide passes \u2014 one herbicide in winter, one for aphids and mildew in spring.\n\n**Maize (planted June after wheat, harvested October):** I use hybrid seed, everyone does now and the yield is much better. I seed directly into the stubble without plowing \u2014 saves my back and saves time during the tight wheat-maize turnover window. I topdress nitrogen at the V6 stage and again near tasseling. Two irrigations \u2014 one at silking if rain is short, one at grain fill. Two pesticide applications for corn borer and herbicide.\n\n**Cotton (planted April, harvested September-October):** Hybrid Bt seed, saves me from the worst of the bollworm. Plough in early spring to break up the winter soil. Cotton needs more water than maize \u2014 I irrigate four times across the season. Pesticide I apply five times, it still needs it even with Bt for aphids and spider mites. I apply heavy potassium because I have found my cotton lint quality is better for it.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 75-year-old farmer with 50 years of experience in Quzhou, Hebei, allocates 10 mu to a winter wheat and summer maize rotation and 4 mu to cotton, keeping cotton area modest due to reduced household labor. Wheat uses an improved locally-adapted variety with rotary tillage, four irrigations, and split nitrogen application; maize uses hybrid seed with no-till direct seeding to speed the tight rotation window and reduce labor; cotton receives plough tillage, heavy potassium for lint quality, and five pesticide passes to manage aphids and mites alongside Bt bollworm resistance. All input rates reflect decades of practice-based calibration rather than extension guidance.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 75-year-old farmer with 50 years of experience in Quzhou, Hebei, allocates 10 mu to a winter wheat and summer maize rotation and 4 mu to cotton, keeping cotton area modest due to reduced household labor. Wheat uses an improved locally-adapted variety with rotary tillage, four irrigations, and split nitrogen application; maize uses hybrid seed with no-till direct seeding to speed the tight rotation window and reduce labor; cotton receives plough tillage, heavy potassium for lint quality, and five pesticide passes to manage aphids and mites alongside Bt bollworm resistance. All input rates reflect decades of practice-based calibration rather than extension guidance."
+  },
+  "elapsed_seconds": 55.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_13",
+  "tier": 2,
+  "provider": "claude"
+}

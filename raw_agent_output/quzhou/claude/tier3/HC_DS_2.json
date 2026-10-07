@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm this land 45 years. My father farm before me. I do same thing every year, change little bit when need.\n\nMy land is 3.5 mu. Small piece. Two mouths to feed, my wife and me. Son work in city, send money sometime. I have the well, can pump water when need.\n\nFor my wheat in winter: I plant after maize come off in October. I use the seed from dealer in town, everyone buy same kind \u2014 \u6d4e\u9ea6 something, I don't remember number, but it is the one that work here. My neighbor get 400-500 jin per mu, I get similar. For fertilizer, I put one bag of compound fertilizer \u2014 50 jin, the one with three 15 on the bag \u2014 when I plant. Then when wheat wake up in spring I put one bag of urea, 50 jin. That's how my neighbor \u8001\u738b do it, he get good wheat. I water three time \u2014 after plant, in spring when wheat green up, and when grain fill. Maybe four time if no rain. I spray for the aphid one time, and one time for the disease on leaf. I plough before plant, the small tractor come from village for 40 yuan.\n\nFor my maize in summer: Right after wheat harvest, I plant maize in the stubble, no plough, save money and time. I use hybrid seed, \u90d1\u5355 or \u5148\u7389 \u2014 whatever dealer have that year, all my neighbor use hybrid, traditional seed nobody plant anymore. I put one bag compound fertilizer at plant, then when maize knee-high I put one bag urea, maybe little less, 40 jin. Maize need water less than wheat, summer have rain. I water one time if July dry. Spray one time for borer, one time weed. Maize give me 500-600 jin per mu usually.\n\nI don't want take chance. Little extra fertilizer cost some yuan, but bad harvest is disaster. Better safe.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what my neighbors do, what worked for me 45 years. One bag compound fertilizer plus one bag urea per crop, little less urea for maize because summer have rain. Plough before wheat, no-till maize direct into wheat stubble to save money and time. Water wheat three times because winter dry, maize only one time if no rain. Spray two times each crop, one for bug one for disease. I put bit more fertilizer than maybe need \u2014 wasting some yuan is fine, losing the harvest is disaster. Use hybrid maize seed and improved wheat seed like everyone in village.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what my neighbors do, what worked for me 45 years. One bag compound fertilizer plus one bag urea per crop, little less urea for maize because summer have rain. Plough before wheat, no-till maize direct into wheat stubble to save money and time. Water wheat three times because winter dry, maize only one time if no rain. Spray two times each crop, one for bug one for disease. I put bit more fertilizer than maybe need \u2014 wasting some yuan is fine, losing the harvest is disaster. Use hybrid maize seed and improved wheat seed like everyone in village."
+  },
+  "elapsed_seconds": 37.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_2",
+  "tier": 3,
+  "provider": "claude"
+}

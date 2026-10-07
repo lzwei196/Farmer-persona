@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am thinking about this year the same way I think every year. My two crops, wheat and maize, one after the other. 9.8 mu is what my husband and I can handle, the children are working in the city.\n\nI plant wheat in October after maize comes off. I use the seed from the dealer in town, the same kind my neighbor Old Wang uses \u2014 he gets good harvest so I follow him. Before planting I spread my base fertilizer, I use the compound fertilizer 15-15-15, about 2 bags for the whole wheat season, that is 50 kg each bag. For 9.8 mu that is about 10 kg per mu of each. Then in spring when wheat turns green I put urea, one bag for the wheat, spread it before the rain or before I water. I water the wheat 3 times \u2014 before winter, green-up, and when the head is filling. Sometimes 4 if the spring is dry. I spray once for aphids when I see them on the heads, sometimes twice if bad.\n\nMaize I plant in June right after wheat harvest, no ploughing, just the seed drill behind the tractor, the man from the village does it for me. Maize eats more fertilizer than wheat, everyone knows this. I put one bag of compound at planting and then two bags of urea when it is knee-high. Maize I water maybe 2 times if the rain is not enough. Spray once for the borer worm.\n\nI do not waste fertilizer but I do not want my harvest to be small either. A little extra urea costs less than losing grain. Last year wheat gave me about 450 kg per mu and maize about 550 kg per mu, this year I hope the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked before and what my neighbors do. Wheat gets one base fertilizer of compound 15-15-15 and one top-dressing of urea in spring, three waterings, and a spray for aphids. Maize gets more urea because it eats more, no-till drilling right after wheat, two waterings if the rain is short, one spray for borer. I would rather spend a little extra on urea than lose grain \u2014 a bad harvest is much worse than wasting some fertilizer. 9.8 mu is what me and my husband can manage with the children working outside.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what worked before and what my neighbors do. Wheat gets one base fertilizer of compound 15-15-15 and one top-dressing of urea in spring, three waterings, and a spray for aphids. Maize gets more urea because it eats more, no-till drilling right after wheat, two waterings if the rain is short, one spray for borer. I would rather spend a little extra on urea than lose grain \u2014 a bad harvest is much worse than wasting some fertilizer. 9.8 mu is what me and my husband can manage with the children working outside."
+  },
+  "elapsed_seconds": 21.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_13",
+  "tier": 3,
+  "provider": "claude"
+}

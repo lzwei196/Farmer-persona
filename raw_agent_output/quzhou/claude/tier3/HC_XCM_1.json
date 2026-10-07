@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think through this year's plan the way I always do \u2014 start from what I did last year and adjust for what I see in the soil and in fertilizer prices.\n\nMy 7.5 mu is mostly wheat-maize rotation, but I keep about 1 mu near the house for kohlrabi in spring. That patch brings in cash at the market and keeps something on the table. The other 6.5 mu stays in the wheat-maize double crop \u2014 it's what the land here does best, and the well irrigation makes it reliable.\n\n**Winter wheat (6.5 mu):** Last year I got around 480 kg/mu, which is normal for our soil. I will put down compound fertilizer (15-15-15) at about 40 kg/mu as base before planting \u2014 that gives me roughly 6 kg N, 6 kg P\u2082O\u2085, 6 kg K\u2082O. Then I top-dress with 20 kg urea/mu at jointing \u2014 that's another 9 kg N. Total N about 15-16 kg/mu. I know from the extension station that our soil here has enough potassium so I don't push K higher. I irrigate three times: after sowing, before winter, and at jointing. Two pesticide sprays \u2014 one for aphids and one combined weed/fungus spray. Rotary tillage after maize stubble, I don't have time to deep plough every year.\n\n**Summer maize (6.5 mu):** I do no-till direct seeding right after wheat harvest to save water and time. Zhengdan hybrid seed, I've used it for years. Base fertilizer 30 kg compound, then side-dress 20 kg urea at big trumpet stage. About 15 kg N total. Two irrigations usually \u2014 seedling and tasseling. Two sprays for corn borer and armyworm. I expect 550 kg/mu if the August rain comes normal.\n\n**Spring kohlrabi (1 mu):** Vegetables eat fertilizer. I use more manure here, plus heavier NPK. About 20 kg N, 10 kg P, 15 kg K per mu, four irrigations, two sprays for flea beetles and aphids. Deep plough because vegetables need loose soil. I target about 3000 kg/mu of heads.\n\nI keep a little extra fertilizer on wheat and maize \u2014 a bad harvest costs much more than a bag or two of urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"kohlrabi\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 3000\n    }\n  ],\n  \"reasoning_summary\": \"I keep 6.5 mu in the wheat-maize rotation I know works here in Quzhou, and 1 mu for spring kohlrabi as a cash crop near the house. My fertilizer rates come from what gave me good yields the last few years \u2014 about 15 kg N on wheat and maize with compound fertilizer as base and urea top-dress, more NPK on kohlrabi because vegetables demand it. Well irrigation lets me water wheat three times and maize twice. I use rotary for wheat and no-till for maize to save time between the two crops, deep plough only on the vegetable plot. I would rather spend an extra bag of urea than lose yield to hunger in the crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "kohlrabi",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 3000
+      }
+    ],
+    "reasoning_summary": "I keep 6.5 mu in the wheat-maize rotation I know works here in Quzhou, and 1 mu for spring kohlrabi as a cash crop near the house. My fertilizer rates come from what gave me good yields the last few years \u2014 about 15 kg N on wheat and maize with compound fertilizer as base and urea top-dress, more NPK on kohlrabi because vegetables demand it. Well irrigation lets me water wheat three times and maize twice. I use rotary for wheat and no-till for maize to save time between the two crops, deep plough only on the vegetable plot. I would rather spend an extra bag of urea than lose yield to hunger in the crop."
+  },
+  "elapsed_seconds": 41.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_1",
+  "tier": 3,
+  "provider": "claude"
+}

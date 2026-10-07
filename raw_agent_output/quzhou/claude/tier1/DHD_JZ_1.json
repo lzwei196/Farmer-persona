@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land in Quzhou for three generations. I know this soil \u2014 it's the North China Plain, flat, deep loam, fed by groundwater wells. My father grew wheat and maize here. I do the same. It works. The grain station takes everything, the price is stable enough, and I know exactly what to do from October to October without guessing.\n\nI have 6 mu under my name. I do wheat in winter, then maize on the same plots in summer. That's the rotation everyone here does. No tricks. I tried cotton once in my thirties \u2014 too much hand labor, my back won't take it anymore at 51. My wife still helps but we're not young. Wheat and maize I can mostly manage with the village machinery cooperative.\n\nFor wheat, I'll use \u826f\u661f99 \u2014 the seed dealer in town has been pushing it for years and my neighbor's yields are good. I put down compound fertilizer at sowing and urea at jointing. I water three times: before winter freeze, at jointing, and at heading. I spray herbicide in February and do one fungicide pass before harvest.\n\nFor maize, I direct-seed right after the wheat combine leaves the field \u2014 no time to plough in summer. I use \u90d1\u5355958, it's been reliable. Summer rains are usually enough but I'll run the pump once at seeding if the ground is dry. One herbicide pass, one for corn borer.\n\nI don't overthink this. I've seen neighbors try new things and lose money. I just need steady yield to cover costs and have something left.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 51-year-old farmer with 6 mu of flat loam land on the North China Plain in Quzhou County. I grow winter wheat followed by summer maize on the same plots every year \u2014 the standard double-cropping rotation in this region. I chose improved wheat seed (\u826f\u661f99) and hybrid maize (\u90d1\u5355958) because they are proven in local conditions and widely available from my usual dealer. I apply compound fertilizer at sowing and urea as topdressing, irrigate wheat three times and maize once, and control weeds and pests with two pesticide passes each crop. I use rotary tillage before wheat and direct-seed maize with no tillage to save time and fuel in the short summer window. This system is familiar, low-risk, and matched to my physical capacity and available machinery from the village cooperative.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 51-year-old farmer with 6 mu of flat loam land on the North China Plain in Quzhou County. I grow winter wheat followed by summer maize on the same plots every year \u2014 the standard double-cropping rotation in this region. I chose improved wheat seed (\u826f\u661f99) and hybrid maize (\u90d1\u5355958) because they are proven in local conditions and widely available from my usual dealer. I apply compound fertilizer at sowing and urea as topdressing, irrigate wheat three times and maize once, and control weeds and pests with two pesticide passes each crop. I use rotary tillage before wheat and direct-seed maize with no tillage to save time and fuel in the short summer window. This system is familiar, low-risk, and matched to my physical capacity and available machinery from the village cooperative."
+  },
+  "elapsed_seconds": 41.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_1",
+  "tier": 1,
+  "provider": "claude"
+}

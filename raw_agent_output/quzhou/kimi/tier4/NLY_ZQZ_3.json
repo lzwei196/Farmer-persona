@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm a 50-year-old woman farming 10.9 mu here in Quzhou. My husband works at a factory in town, so most days it's just me and my mother-in-law handling the fields. My daughter is away at university and my son is in middle school. We don't have much cash to spare, so I have to watch every yuan. I've been farming this land for 20 years, wheat and maize double crop, same as most people around here.\n\nThe wheat went in last October, around the 10th. I used Jinmai 47, same seed I've used for three years now. Cost me about 40 yuan per mu. Before planting, I plowed the field and put down about 50 kg of compound fertilizer per mu \u2014 that's one bag per mu, 15-15-15. In March when the wheat turned green, I topdressed about 20 kg of urea per mu. The wheat looks pretty good right now, nice and green, better than last year actually. I'll irrigate it once more at heading time in early May, and if June is dry, I'll water again at grain filling. Each irrigation costs me diesel money for the pump, about 40 yuan per mu, so I don't water more than I have to \u2014 but I also don't want to lose yield. I sprayed herbicide in March, and if I see rust or aphids I'll spray fungicide or insecticide, but so far it looks clean. I hire a combine for harvest in early June, about 60 yuan per mu. I expect around 400 kg per mu, same as my average.\n\nFor the summer maize, I'll plant Zhengdan 958 hybrid right after wheat harvest in mid-June. The window is tight \u2014 sometimes only five or six days between harvest and planting. I either do a quick rotavator pass or hire a custom no-till planter if I'm running late. Seed costs about 50 yuan per mu. At planting, I put down about 40 kg of compound fertilizer per mu. Then at the big trumpet stage in July, I topdress about 18 kg of urea per mu. I'll irrigate twice \u2014 once at trumpet stage and once at grain filling in August if it doesn't rain. Maize usually brings me 450 kg per mu, sometimes 500 if the weather cooperates. I spray herbicide after emergence and insecticide if I see borers.\n\nI have to balance everything against what I can afford. Seed, fertilizer, diesel for the pump, pesticides, and hiring the combine \u2014 it all adds up to about 8,000 to 9,000 yuan for the year. I can't spend more than that or I won't have enough for my son's school fees and my mother-in-law's blood pressure medicine. Some years I think about putting on more fertilizer, but then I think \u2014 last year's amount was fine, why risk the cash? Better to be a little safe. My neighbor with the 20-mu farm puts on more fertilizer and gets slightly better yield, but he's got more land and his son helps full-time. I can't copy him exactly.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 10.9,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 40,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 17,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"50 kg compound fertilizer (15-15-15) per mu as base at planting in October; 20 kg urea per mu topdressed at green-up in March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"moldboard plow before October planting\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 10.9,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"40 kg compound fertilizer (15-15-15) per mu at planting in June; 18 kg urea per mu topdressed at trumpet stage in July\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"quick rotavator after wheat harvest, or no-till with custom planter due to tight turnaround\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 8800,\n  \"reasoning_summary\": \"I manage 10.9 mu of wheat-maize double crop with mostly family labor, since my husband works off-farm. I stick to what has worked for 20 years \u2014 Jinmai 47 wheat and Zhengdan 958 maize, with fertilizer rates I can afford and that have given me stable yields. I irrigate when the crops really need it but watch the diesel cost carefully. I keep total spending around 8,800 yuan because I need cash reserves for household expenses. I'd rather apply slightly more fertilizer than risk a bad year, but I don't chase maximum yield \u2014 I chase enough yield to get by.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 10.9,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 40,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 17,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "50 kg compound fertilizer (15-15-15) per mu as base at planting in October; 20 kg urea per mu topdressed at green-up in March",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "moldboard plow before October planting",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 17,
+        "area_mu": 10.9,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 10.9,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "40 kg compound fertilizer (15-15-15) per mu at planting in June; 18 kg urea per mu topdressed at trumpet stage in July",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "quick rotavator after wheat harvest, or no-till with custom planter due to tight turnaround",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 10.9,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      }
+    ],
+    "total_input_cost_yuan": 8800,
+    "reasoning_summary": "I manage 10.9 mu of wheat-maize double crop with mostly family labor, since my husband works off-farm. I stick to what has worked for 20 years \u2014 Jinmai 47 wheat and Zhengdan 958 maize, with fertilizer rates I can afford and that have given me stable yields. I irrigate when the crops really need it but watch the diesel cost carefully. I keep total spending around 8,800 yuan because I need cash reserves for household expenses. I'd rather apply slightly more fertilizer than risk a bad year, but I don't chase maximum yield \u2014 I chase enough yield to get by."
+  },
+  "elapsed_seconds": 104.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_3",
+  "tier": 4,
+  "provider": "kimi"
+}

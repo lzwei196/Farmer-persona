@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have worked this land for forty years. I know every uneven patch of my 10.1 mu. My husband and I are the only ones left in the house \u2014 our children went to the city \u2014 so I must be careful with labor and money. We have a well, but pumping water costs electricity, and I do not waste a single kilowatt.\n\nFor wheat, I will sow improved seeds from the supply store in town, the kind my neighbors also plant. I prepare the field with rotary tillage before October sowing. I put down compound fertilizer as a base and top-dress with urea in spring when the wheat turns green and again at jointing \u2014 about 15 kg of nitrogen per mu in total. I also apply about 8 kg of phosphorus and 5 kg of potassium per mu with the basal fertilizer. I irrigate three times: once before winter freeze to protect the roots, once at jointing, and once at grain filling. I spray pesticides three times \u2014 herbicide in early spring, then insecticide and fungicide when the weather turns warm. If frost and drought stay away, I expect about 500 kg per mu.\n\nFor summer maize, the window after wheat harvest in early June is short \u2014 only six or seven days. I plant hybrid maize seed right away using no-tillage; there is no time to plow, and at my age I need to save labor. Maize needs more nitrogen than wheat, so I apply about 18 kg per mu \u2014 compound fertilizer at sowing and urea at the big trumpet stage. I put down about 6 kg of phosphorus and 5 kg of potassium per mu with the basal compound fertilizer. The summer rains usually help, but I will irrigate twice if they fail, at jointing and filling. I spray three times: herbicide, insecticide for corn borer, and a growth regulator. I expect about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"After forty years on this farm, I manage for reliability and labor savings rather than maximum output. With only two of us at home, I use rotary tillage for wheat and no-tillage for maize to save time and energy during the rushed wheat-to-maize transition. I keep irrigation to the minimum that experience has shown me is necessary \u2014 three times for wheat and twice for maize \u2014 because well water is available but pumping is costly. I use improved wheat seed and hybrid maize seed from the local store, apply moderate fertilizer rates that I know this soil responds to, and spray three times per crop to control the main pests and weeds without over-spending on chemicals.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "After forty years on this farm, I manage for reliability and labor savings rather than maximum output. With only two of us at home, I use rotary tillage for wheat and no-tillage for maize to save time and energy during the rushed wheat-to-maize transition. I keep irrigation to the minimum that experience has shown me is necessary \u2014 three times for wheat and twice for maize \u2014 because well water is available but pumping is costly. I use improved wheat seed and hybrid maize seed from the local store, apply moderate fertilizer rates that I know this soil responds to, and spray three times per crop to control the main pests and weeds without over-spending on chemicals."
+  },
+  "elapsed_seconds": 175.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_6",
+  "tier": 2,
+  "provider": "kimi"
+}

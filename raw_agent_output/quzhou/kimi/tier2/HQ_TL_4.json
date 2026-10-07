@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 58 years old and I've been farming these 40 mu in Quzhou for 30 years. It's just me now, so I have to be smart about labor and machinery. I rely on custom hiring for harvest and planting, especially for the wheat-maize double crop where the window between wheat harvest and maize planting is barely a week. My well gives me water, but pumping is expensive, so I don't irrigate more than I have to.\n\nFor my 30 mu of winter wheat, it's already in the ground from last October. The extension agent says 15 kg of nitrogen per mu, but last year I used 14 and the wheat looked yellow at jointing, so I'm going back to 16 kg N per mu. I'll top-dress at green-up and irrigate four times \u2014 green-up, jointing, heading, and grain filling. The wheat is an improved variety, Jimai series, same as my neighbors use. I don't till it now; it's already growing. I'll spray herbicide once in early spring and maybe fungicide once later if it looks necessary. If the weather is normal I expect about 500 kg per mu.\n\nAfter wheat harvest in early June, I need to move fast. I'll rotary-till the stubble and plant hybrid maize the same week \u2014 if you wait, you lose yield. For the 30 mu of summer maize, I put about 15 kg N, 5 kg phosphorus, and 4 kg potassium per mu. Maize is tougher than wheat, so I'll only irrigate twice \u2014 once at sowing if it's dry, and once at the big flare stage. Two pesticide sprays should be enough, herbicide at planting and insecticide if the borers show up. With decent rain I can get 550 kg per mu.\n\nI keep 10 mu of cotton for cash income. Cotton is hard work at my age, especially the pest scouting and the picking, but the price has been decent. I'll plough that field deep in spring to prepare a good seedbed and plant an improved cotton variety in late April. Cotton likes potassium, so I give it 7 kg per mu, plus 12 kg N and 5 kg phosphorus. I irrigate three times \u2014 at sowing, at flowering, and during the boll period. Cotton pests are relentless here, so I'll spray four times: herbicide once, then insecticide for bollworm, aphids, and mites. I hire pickers for harvest because my back can't handle it anymore. I expect around 180 kg per mu of seed cotton if I stay on top of the pests.\n\nI watch my costs closely. Fertilizer and pumping aren't cheap, and at my age I can't afford a bad year. But I've learned that going too cheap on wheat nitrogen or cotton pesticides costs more in lost yield than it saves.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 180\n    }\n  ],\n  \"reasoning_summary\": \"With 40 mu and only myself at 58, I rely on the mechanized wheat-maize double crop on 30 mu and keep 10 mu of cotton for cash income. I use improved wheat seeds and hybrid maize, applying slightly more nitrogen to wheat than the extension recommendation based on last year's experience. I irrigate wheat four times because it's sensitive to drought, but only twice for maize to save pumping costs. Cotton gets more potassium and more pesticide applications due to heavy pest pressure in Quzhou. I hire labor for cotton picking and mechanized operations, and I tillage cotton with plough in spring, rotary-till for maize after wheat, and leave the growing wheat untilled.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 180
+      }
+    ],
+    "reasoning_summary": "With 40 mu and only myself at 58, I rely on the mechanized wheat-maize double crop on 30 mu and keep 10 mu of cotton for cash income. I use improved wheat seeds and hybrid maize, applying slightly more nitrogen to wheat than the extension recommendation based on last year's experience. I irrigate wheat four times because it's sensitive to drought, but only twice for maize to save pumping costs. Cotton gets more potassium and more pesticide applications due to heavy pest pressure in Quzhou. I hire labor for cotton picking and mechanized operations, and I tillage cotton with plough in spring, rotary-till for maize after wheat, and leave the growing wheat untilled."
+  },
+  "elapsed_seconds": 130.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_4",
+  "tier": 2,
+  "provider": "kimi"
+}

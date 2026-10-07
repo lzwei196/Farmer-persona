@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 54 years old and have farmed these lands in Quzhou for 35 years. My father taught me, and now I know every mu. With 64 mu and only part of my household labor available \u2014 my children work in the city \u2014 I cannot take too many risks or manage overly complex intercropping. Cotton is my backbone; it always has been. This year I will plant 34 mu of cotton with improved seeds, not the newest hybrids because I know what works. I will apply fertilizer generously but not wastefully \u2014 about 20 kg nitrogen per mu plus some phosphorus and potassium \u2014 and irrigate four times from my well. The well water is precious, so cotton gets priority. I will spray five times because bollworms and aphids never rest. For food security, I keep 15 mu of winter wheat with improved seed; I rotary till in autumn, irrigate three times, and expect about 520 kg per mu. Immediately after wheat harvest in early June, I plant hybrid maize on that same 15 mu using no-tillage \u2014 there is no time to plough, and the machine can sow directly into stubble. Maize needs less water, so two well irrigations plus summer rain should give me 600 kg per mu. Stevia brings good cash income \u2014 the company sends trucks to our village \u2014 so I devote 15 mu to it. Stevia needs moderate fertilizer, three irrigations, and two pesticide sprays. I expect about 200 kg of dry leaves per mu. Keeping crops in separate blocks is easier for my wife and me to manage without help during peak seasons.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 34,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I base my plan on 35 years of experience managing 64 mu in Quzhou with limited household labor and well irrigation. Cotton remains my primary income source on 34 mu, receiving the most fertilizer and irrigation priority. I maintain 15 mu of winter wheat for food security, followed immediately by no-till summer maize on the same land to maximize annual output from that plot. Stevia occupies 15 mu as a reliable cash crop with established local buyers. I avoid complex intercropping because off-farm work by family members constrains our labor availability during peak seasons, and I use proven improved varieties rather than risky new seeds.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 34,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "stevia",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I base my plan on 35 years of experience managing 64 mu in Quzhou with limited household labor and well irrigation. Cotton remains my primary income source on 34 mu, receiving the most fertilizer and irrigation priority. I maintain 15 mu of winter wheat for food security, followed immediately by no-till summer maize on the same land to maximize annual output from that plot. Stevia occupies 15 mu as a reliable cash crop with established local buyers. I avoid complex intercropping because off-farm work by family members constrains our labor availability during peak seasons, and I use proven improved varieties rather than risky new seeds."
+  },
+  "elapsed_seconds": 152.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_15",
+  "tier": 2,
+  "provider": "kimi"
+}

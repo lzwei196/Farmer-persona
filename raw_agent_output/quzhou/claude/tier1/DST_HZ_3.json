@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land since I was maybe fifteen years old, helping my father. I know this land. I know what works here. Quzhou soil is decent \u2014 loam, good for wheat and corn. My father grew wheat and corn, my neighbors grow wheat and corn, and I grow wheat and corn. That's how it is here.\n\nI have about 12 mu. I'll put 10 mu into the winter wheat now, then after the June harvest I'll turn that same ground over to summer maize. That's the only rotation that makes sense here \u2014 two crops on the same land, same family has done it this way forever.\n\nMaybe 2 mu I'll keep for vegetables behind the house \u2014 garlic, beans, cabbage \u2014 for the family to eat. That's not really a cash crop, so I won't count it in the plan.\n\nFor wheat seeds I'll buy what the village seed shop has \u2014 Kenong 199 is what most people around here use now. For maize I'll buy Zhengdan 958 hybrid seed. The hybrid costs a bit more but the yield is better. I've used it three years running.\n\nFertilizer \u2014 I buy compound fertilizer in bags and spread it at planting, then add urea when the wheat starts jointing in spring. More fertilizer means more grain. I don't want to risk a thin harvest. Same for maize \u2014 I put down compound at seeding and urea when the plant is knee-high.\n\nWater is the worry. Hebei is dry. I'll pump groundwater three times for wheat \u2014 once before sowing if the soil is dry, once in March at jointing, once when the heads are forming. For maize the summer rains help, but I'll pump at least twice to be safe.\n\nPests \u2014 I spray for aphids on wheat in May, and maybe once more if I see disease. Maize I usually only spray once, maybe not at all if the year is good.\n\nTillage \u2014 I hire a rotary tiller from the village cooperative before I plant wheat in October. For maize after wheat harvest I rotary till again to break up the stubble.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 490\n    }\n  ],\n  \"reasoning_summary\": \"A 58-year-old farmer with no formal schooling in Quzhou County defaults to the only rotation he has ever known: winter wheat followed by summer maize on the same 10 mu, using locally popular improved wheat seed and hybrid maize seed purchased from the village shop. Fertilizer rates are on the heavy side because his lifetime experience tells him thin applications risk thin harvests, and he cannot afford a bad year. He irrigates three times for wheat and twice for maize from a shared electric pump, because Hebei summers and springs are dry and he does not trust the rain. He hires a rotary tiller twice a year \u2014 once in autumn before wheat sowing and once after wheat harvest before maize \u2014 because that is how the village cooperative machine is rented. Pest control is minimal: two sprays for wheat aphids and potential mildew, one precautionary spray for maize. The expected yields are modest but safe and consistent with what he sees in neighbors' fields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 490
+      }
+    ],
+    "reasoning_summary": "A 58-year-old farmer with no formal schooling in Quzhou County defaults to the only rotation he has ever known: winter wheat followed by summer maize on the same 10 mu, using locally popular improved wheat seed and hybrid maize seed purchased from the village shop. Fertilizer rates are on the heavy side because his lifetime experience tells him thin applications risk thin harvests, and he cannot afford a bad year. He irrigates three times for wheat and twice for maize from a shared electric pump, because Hebei summers and springs are dry and he does not trust the rain. He hires a rotary tiller twice a year \u2014 once in autumn before wheat sowing and once after wheat harvest before maize \u2014 because that is how the village cooperative machine is rented. Pest control is minimal: two sprays for wheat aphids and potential mildew, one precautionary spray for maize. The expected yields are modest but safe and consistent with what he sees in neighbors' fields."
+  },
+  "elapsed_seconds": 60.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_3",
+  "tier": 1,
+  "provider": "claude"
+}

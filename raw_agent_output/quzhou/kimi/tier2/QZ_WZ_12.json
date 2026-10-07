@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 71 years old. I never went to school, but I have worked this land in Quzhou for 55 years, and the land has taught me everything I need to know. My farm is only two mu \u2014 just enough for me and my wife to live on. We have no one else to help, so I cannot manage too much work or spend too much cash on fancy inputs. I watch what my neighbors do, and I stick with what has worked before. Change is risky when you are old and your stomach depends on the harvest.\n\nFor the winter wheat, I will rotary till the field after the maize comes off in October. I buy improved seed from the county shop every year \u2014 I tried saving my own seed once and the yield dropped, so I never do that anymore. Before sowing, I spread base fertilizer: about half a bag of compound fertilizer per mu. I irrigate three times from my well: once before the ground freezes so the young wheat survives the winter, once in early spring when it turns green, and once at jointing when the stalks shoot up. I topdress with urea at green-up. Two sprays are enough: a herbicide when the wheat is small, and another spray later if I see aphids or rust on the leaves. I expect about 500 kg per mu, about the same as last year if the frost does not bite too hard.\n\nFor the summer maize, there is no time to waste after wheat harvest in early June \u2014 the season is short and the rains will not wait for me. I plant hybrid seed directly into the wheat stubble with no tillage. Plowing takes too long and costs too much, and the stubble helps keep moisture anyway. I put compound fertilizer in the row at planting, then side-dress urea when the plants are knee-high. I irrigate twice from the well: once when the ears are forming, and once during grain filling if the summer drought comes. Two sprays: a herbicide at seedling stage, and an insecticide before the corn borers bore into the stalks. If the weather is fair, I should get about 550 kg per mu.\n\nAt my age, I do not chase new tricks. I use what my father used, adjusted by what my neighbors have proven. I would rather put down a little extra fertilizer than risk an empty granary. The well water is reliable, and that is what matters most on the North China Plain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage my two mu with the same wheat-maize rotation I have used for decades. For wheat, I rely on rotary tillage, improved seed, three well irrigations, and two pesticide sprays to get about 500 kg per mu. For maize, the window after wheat harvest is too tight for plowing, so I use no-tillage seeding of hybrid maize with two irrigations and two sprays, expecting around 550 kg per mu. At 71 years old with no schooling, I stick to proven practices I have seen work with my own eyes, and I would rather apply a bit more fertilizer than risk a hungry year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage my two mu with the same wheat-maize rotation I have used for decades. For wheat, I rely on rotary tillage, improved seed, three well irrigations, and two pesticide sprays to get about 500 kg per mu. For maize, the window after wheat harvest is too tight for plowing, so I use no-tillage seeding of hybrid maize with two irrigations and two sprays, expecting around 550 kg per mu. At 71 years old with no schooling, I stick to proven practices I have seen work with my own eyes, and I would rather apply a bit more fertilizer than risk a hungry year."
+  },
+  "elapsed_seconds": 239.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_12",
+  "tier": 2,
+  "provider": "kimi"
+}

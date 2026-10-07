@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 35-year-old farmer in Quzhou County, and I have been working my family\u2019s land since I left middle school. I farm about 7 mu of flat, irrigated land at the edge of our village. Like my father and grandfather before me, I stick to the wheat\u2013maize double-cropping system because it is the most reliable way to feed my family and earn cash from the grain station. My winter wheat is already in the ground from last October; right now it is greening up, and I will top-dress urea at the jointing stage and irrigate three times before harvest in early June. Seed and fertilizer costs have gone up, so I use improved wheat seed and hybrid maize seed to get the best yield for my money. I do not waste money on deep ploughing\u2014rotary tillage is fast and good enough for our soil. After the wheat comes off, I will immediately plant summer maize and irrigate twice during its growth. I spray pesticides when I see insects or when my neighbors start spraying, usually twice per crop. I expect my wheat to yield around 500 kg per mu and the maize about 600 kg per mu if the weather cooperates.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize on 7 mu of irrigated land using the standard double-cropping rotation of the North China Plain. I choose improved wheat seed and hybrid maize seed to maximize yields per unit cost. I apply nitrogen in split doses, phosphorus and potassium as base fertilizer, irrigate three times for wheat and twice for maize, and spray pesticides twice per crop when pests appear. I use rotary tillage because it is faster and cheaper than ploughing, and I expect about 500 kg/mu of wheat and 600 kg/mu of maize under normal weather.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize on 7 mu of irrigated land using the standard double-cropping rotation of the North China Plain. I choose improved wheat seed and hybrid maize seed to maximize yields per unit cost. I apply nitrogen in split doses, phosphorus and potassium as base fertilizer, irrigate three times for wheat and twice for maize, and spray pesticides twice per crop when pests appear. I use rotary tillage because it is faster and cheaper than ploughing, and I expect about 500 kg/mu of wheat and 600 kg/mu of maize under normal weather."
+  },
+  "elapsed_seconds": 70.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_1",
+  "tier": 1,
+  "provider": "kimi"
+}

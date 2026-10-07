@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am fifty-four this year. I have never been to school \u2014 my father needed me in the fields when I was young, and that is where I have stayed. I farm about eight mu of land in our village in Quzhou, the same plots my family has worked for generations. I do not read books and I do not trust numbers on paper, but I remember every harvest since I was a boy, and I watch what my neighbors do. That is how I decide.\n\nThis year I will do what I have always done: winter wheat on all eight mu, then summer maize on the same eight mu right after the wheat comes off. I thought about cotton because Old Wang down the lane talks about the price, but cotton is too much work for just my wife and me, and if the price falls you are stuck. Wheat and maize are safe. I can grind the wheat for our own flour and steamed bread, and the maize dealer comes to the village with his truck every autumn \u2014 I never worry about selling maize.\n\nFor the wheat, I will plough after the maize comes out, then run the rotary tiller before sowing in mid-October. I buy the improved wheat seed from the supply shop in town \u2014 not the fancy kinds, just the ones most people in the village use, the ones with the red bag. I put down one bag of compound fertilizer per mu at sowing, and then at jointing time I topdress with urea. If the wheat looks yellow I give it a bit more; if it looks green I hold back. I will irrigate three times: once in the winter to keep the seedlings from freezing dry, once at jointing when the stems shoot up, and once when the heads are filling. That is what everyone here does. I also spray four times \u2014 herbicide once after sowing, fungicide once in the spring, and insecticide twice when the aphids come. I expect about 450 jin per mu, maybe a bit more if the spring rain is good.\n\nFor the maize, there is no time to till. As soon as the wheat is cut in early June, I hire the seeding machine to drill the maize directly into the stubble. I use hybrid seed, Zhengdan or whatever the shop has this year \u2014 hybrid seed is the only way to get good maize. I put down compound fertilizer at planting and then side-dress urea when the plants are knee-high. I will irrigate twice, at jointing and when the ears are filling, because summer rains are never enough anymore. Three sprays: herbicide once, insecticide twice for the corn borers. I expect about 500 jin per mu. I know some people get more, but 500 is what I count on, and anything extra is a gift from heaven.\n\nI do not have much cash, so I do not buy the most expensive inputs, but I also do not skimp on fertilizer or water \u2014 a bad harvest hurts more than spending a little extra on a bag of urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these eight mu for over thirty years and I trust what I know. Wheat and maize together feed my family and bring steady cash from the maize dealer, so I will not gamble on cotton or other crops. I use improved wheat seed and hybrid maize seed because that is what works here. I apply enough fertilizer and water to avoid a bad year \u2014 losing a crop hurts more than saving a few yuan on inputs. I rotary till before wheat but plant maize directly into the wheat stubble because the window between harvest and sowing is only a few days. I follow the same schedule as my neighbors: three irrigations for wheat, two for maize, and sprays when the weeds and insects appear.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed these eight mu for over thirty years and I trust what I know. Wheat and maize together feed my family and bring steady cash from the maize dealer, so I will not gamble on cotton or other crops. I use improved wheat seed and hybrid maize seed because that is what works here. I apply enough fertilizer and water to avoid a bad year \u2014 losing a crop hurts more than saving a few yuan on inputs. I rotary till before wheat but plant maize directly into the wheat stubble because the window between harvest and sowing is only a few days. I follow the same schedule as my neighbors: three irrigations for wheat, two for maize, and sprays when the weeds and insects appear."
+  },
+  "elapsed_seconds": 127.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DWB_1",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,73 @@
+{
+  "raw_response": "I'm a 38-year-old farmer in Xichengmeng, Houcun Township, Quzhou County. I graduated from Hebei Agricultural University with a degree in agricultural management, and I've been back on the farm for five years now. My family has four people \u2014 my wife, my parents, and me \u2014 but with 220 mu under management, we couldn't survive without machinery and hired labor. I own a rotary tiller and a precision planter, and I contract harvester crews at peak season. My wife handles procurement and bookkeeping.\n\nI split my land roughly evenly: **110 mu of spring soybean** and **110.1 mu of millet** (huangjinmiao variety). I chose this split because the local oil processing plant gives me a stable purchase contract for soybean at about 2.5 yuan/kg, and the huangjinmiao millet fetches a premium from health-food buyers in Handan at 2.2 yuan/kg. Growing both insulates me if one market drops. Last year my millet yielded about 800 kg/mu and my soybean about 450 kg/mu. I'm targeting the same this year \u2014 I don't chase maximum yields because the marginal input cost isn't worth it at current prices.\n\nFor planting, I'll sow both crops around **April 20th**. I monitor soil temperature at 5 cm depth; once it holds above 10\u00b0C for three consecutive days, I know it's safe for soybean. I do a light **rotary tillage** first to break the surface crust, then machine sowing. The soybean seed rate is about 7 jin/mu (3.5 kg/mu), and the millet is only 1 jin/mu (0.5 kg/mu) because the seeds are tiny and the huangjinmiao variety costs about 50 yuan/mu.\n\nFor fertilizer, I base my rates on soil tests I paid for two years ago. I use a **balanced 15-15-15 compound fertilizer** applied entirely as basal at sowing \u2014 no topdressing. The millet gets **50 kg/mu** because it's a heavier feeder, especially for phosphorus and potassium. The soybean gets **40 kg/mu** \u2014 as a legume, it fixes most of its own nitrogen, and I've learned that pushing more N just causes lodging and reduces nodulation. I used to calculate exact NPK splits, but honestly, the compound is simpler, the price is predictable, and the results are consistent.\n\nFor irrigation, I pump from my well. Water is reliable but electricity isn't cheap \u2014 about 20 yuan/mu per irrigation. I budget **one irrigation for soybean at the flowering stage** (critical for pod set) and **one for millet at the booting stage** in mid-summer. The millet can survive dry spells, but that booting irrigation is what determines grain fill. I might skip it if July brings good rains, but I'm planning for one.\n\nFor pest management, my millet fields get weedy with chenopodium, so I'll spray **herbicide twice**. For soybean, I'll do **one insecticide spray at pod-filling** to control pod borers. I don't use fungicide unless I see disease during my weekly scouting \u2014 and I haven't needed it the past two years.\n\nLabor is tight with only four of us. My family handles supervision, irrigation scheduling, and input delivery \u2014 about **5 days per mu** across the season. I hire labor for harvest, spraying, and some tillage \u2014 roughly **15 days per mu** total. At 220 mu, that's a lot of hired hands, but it's the only way to get the work done in the narrow windows.\n\nMy total input cost this season should run about **42,000 yuan**. I need to keep cash ready because the seed and fertilizer dealers want payment in March, and the harvest crews want cash on the day.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"soybean\",\n      \"field_area_mu\": 110,\n      \"planting_date\": \"April 20\",\n      \"harvest_date\": \"September 15-20\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 24.5,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 6.0,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"basal application at planting, all 15-15-15 compound\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"insecticide\"],\n      \"tillage_method\": \"rotary tillage with machine, then mechanical sowing\",\n      \"labor_family_days\": 5,\n      \"labor_hired_days\": 15,\n      \"yield_expectation_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"millet\",\n      \"field_area_mu\": 110.1,\n      \"planting_date\": \"April 19-20\",\n      \"harvest_date\": \"September 5-10\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 7.5,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"basal application at planting, all 15-15-15 compound\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary tillage with machine, then mechanical sowing\",\n      \"labor_family_days\": 5,\n      \"labor_hired_days\": 15,\n      \"yield_expectation_kg_per_mu\": 800\n    }\n  ],\n  \"total_input_cost_yuan\": 42000,\n  \"reasoning_summary\": \"I run a 220-mu business farm with high education and five years of experience. I split land evenly between spring soybean and huangjinmiao millet to diversify market risk. I use machine rotary tillage and sowing, apply balanced 15-15-15 compound fertilizer as basal at moderate rates, irrigate once per crop at critical growth stages from my well, and hire significant labor for harvest and spraying. I don't chase maximum yields \u2014 I target consistent, cost-effective production based on what this land has delivered the past three years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "soybean",
+        "field_area_mu": 110,
+        "planting_date": "April 20",
+        "harvest_date": "September 15-20",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 24.5,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 6.0,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "basal application at planting, all 15-15-15 compound",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "insecticide"
+        ],
+        "tillage_method": "rotary tillage with machine, then mechanical sowing",
+        "labor_family_days": 5,
+        "labor_hired_days": 15,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 6.0,
+        "area_mu": 110,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      },
+      {
+        "crop": "millet",
+        "field_area_mu": 110.1,
+        "planting_date": "April 19-20",
+        "harvest_date": "September 5-10",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 7.5,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "basal application at planting, all 15-15-15 compound",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary tillage with machine, then mechanical sowing",
+        "labor_family_days": 5,
+        "labor_hired_days": 15,
+        "yield_expectation_kg_per_mu": 800,
+        "nitrogen_kg_per_mu": 7.5,
+        "area_mu": 110.1,
+        "expected_yield_kg_per_mu": 800,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      }
+    ],
+    "total_input_cost_yuan": 42000,
+    "reasoning_summary": "I run a 220-mu business farm with high education and five years of experience. I split land evenly between spring soybean and huangjinmiao millet to diversify market risk. I use machine rotary tillage and sowing, apply balanced 15-15-15 compound fertilizer as basal at moderate rates, irrigate once per crop at critical growth stages from my well, and hire significant labor for harvest and spraying. I don't chase maximum yields \u2014 I target consistent, cost-effective production based on what this land has delivered the past three years."
+  },
+  "elapsed_seconds": 86.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_6",
+  "tier": 4,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll think this through like the farmer would, then give the plan.\n\n---\n\nMy land is 4.1 mu, not much. Me and my wife, two mouths. I've been doing this wheat-then-maize thing for 35 years. Last year was alright, wheat gave me around 450 kg per mu, maize close to 550 kg per mu. I'll do about the same as last year. No reason to change what works.\n\n**Wheat (winter, October planting):**\n\nI buy seed from the dealer in town \u2014 improved variety, the one most neighbors plant. Costs a bit more than saving my own, but the yield is better. I use about 15 kg seed per mu because our soil here is heavy and I want a thick stand.\n\nFor base fertilizer before sowing, I spread 2 bags of diammonium (50 kg bag) across my 4.1 mu. That works out to about 24 kg per mu of the compound. Then in spring when the wheat wakes up (March, jointing time), I put down urea \u2014 one bag (50 kg) over the whole field, so maybe 12 kg per mu. I give it water at that time too, pumped from my well. Another watering before the grain fills in May.\n\nTotal nitrogen on wheat: the diammonium has about 18% N, so 24 \u00d7 0.18 \u2248 4.3 kg N, plus urea 12 \u00d7 0.46 \u2248 5.5 kg. Plus I throw a half bag of urea at sowing too. Call it around 14 kg N per mu. Phosphorus from diammonium about 11 kg per mu. Potassium I don't buy separately \u2014 too expensive and my soil has some.\n\nSpray for weeds once in spring, and one spray for aphids and disease around heading time. Two sprays total. I plough before sowing \u2014 the soil needs turning after maize stubble.\n\n**Maize (summer, June right after wheat harvest):**\n\nI plant hybrid seed, everybody does \u2014 you can't save maize seed and get anything. One bag covers my field. I drill it in right after wheat combine, no tillage, just straight into the stubble. Saves time and water.\n\nBase fertilizer at planting: one bag of compound (15-15-15), about 12 kg per mu. Then at big trumpet stage (July), I topdress urea \u2014 15 kg per mu. Maize eats a lot of nitrogen. Total N maybe 18-19 kg per mu. I water once after planting to get it up, once more in July if no rain. The summer rains usually come.\n\nOne spray for corn borer, maybe one for weeds early. Two sprays.\n\nI don't waste money on things I don't need, but I won't be stingy on fertilizer \u2014 if the crop is short, that's real loss. Better a little extra than not enough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 4.1 mu with my wife, and I do what worked last year because changing is risky. For wheat I plough, sow improved seed, use 2 bags of diammonium as base and about 1.5 bags of urea across the season for topdressing, with 3 waterings from my well and 2 sprays for weeds and aphids. For maize I drill hybrid seed straight into wheat stubble with no tillage, use a bag of 15-15-15 compound plus urea at trumpet stage, water once or twice depending on rain, and spray twice. I'd rather spend a little extra on fertilizer than risk a short crop \u2014 a bad harvest hurts much more than some wasted fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 4.1 mu with my wife, and I do what worked last year because changing is risky. For wheat I plough, sow improved seed, use 2 bags of diammonium as base and about 1.5 bags of urea across the season for topdressing, with 3 waterings from my well and 2 sprays for weeds and aphids. For maize I drill hybrid seed straight into wheat stubble with no tillage, use a bag of 15-15-15 compound plus urea at trumpet stage, water once or twice depending on rain, and spray twice. I'd rather spend a little extra on fertilizer than risk a short crop \u2014 a bad harvest hurts much more than some wasted fertilizer."
+  },
+  "elapsed_seconds": 33.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_9",
+  "tier": 3,
+  "provider": "claude"
+}

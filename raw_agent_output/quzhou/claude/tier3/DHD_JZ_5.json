@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think through this as the farmer would, then give the JSON.\n\n**My reasoning (as the farmer):**\n\nI have 10.9 mu. About 3 mu I keep for cotton \u2014 that piece is sandy and the wheat does not do well there. The other 7.9 mu I plant wheat in winter and maize in summer, same as everyone in my village.\n\nFor wheat, I do what I have done for many years. When I plough in the autumn I put down two bags of compound fertilizer per mu \u2014 the 15-15-15 kind, that's about 100 jin a bag, so 200 jin per mu. Then after the spring when the wheat turns green I spread one bag of urea per mu, about 50 jin. My neighbor Old Wang put less one year and his wheat was yellow, so I never cut this. I water four times \u2014 once before winter so it doesn't freeze dry, once after greening, once at jointing, and once when the grain is filling. I have the well so I can water. For bugs and rust I spray two times, sometimes three if I see the leaves turning. I use improved seed from the dealer in town, everyone does. I expect about 900 jin per mu \u2014 last year I got a bit more.\n\nFor maize I plant right after wheat harvest, no ploughing, just push the seed in. I use the hybrid seed, the one with the red bag that the dealer sells \u2014 all my neighbors buy the same. I put two bags of compound at sowing and then one bag of urea when the maize is waist-high, at the big trumpet time. I water once or twice if rain is short. Spray for the borer one or two times. I expect 1000 jin per mu, sometimes more.\n\nFor cotton I plough deep. I use the pest-resistant seed, the Bt kind \u2014 before that came, the worms ate everything. Cotton eats a lot, so I put compound fertilizer and also more potash because the dealer said cotton needs it and my husband agreed. I water two or three times. Cotton needs many sprays \u2014 four or five times at least, for aphids and mites and boll worms. I expect 500 jin of seed cotton per mu, if the weather is good.\n\nI do not try new things. What worked last year I do this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I have farmed for thirty years and the way my neighbors farm. On the 7.9 mu of flat land I do wheat then maize, two bags of compound plus one bag of urea for each crop, because that is what gives a full harvest \u2014 if I cut fertilizer and the crop turns yellow I lose much more than I save. I water the wheat four times from my well and the maize once or twice if rain is short. The 3 mu sandy piece is for cotton with the pest-resistant seed; cotton needs more potash and many sprays against the worms. I use improved wheat seed and hybrid maize seed from the town dealer, same as everyone. I do not change what works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm the way I have farmed for thirty years and the way my neighbors farm. On the 7.9 mu of flat land I do wheat then maize, two bags of compound plus one bag of urea for each crop, because that is what gives a full harvest \u2014 if I cut fertilizer and the crop turns yellow I lose much more than I save. I water the wheat four times from my well and the maize once or twice if rain is short. The 3 mu sandy piece is for cotton with the pest-resistant seed; cotton needs more potash and many sprays against the worms. I use improved wheat seed and hybrid maize seed from the town dealer, same as everyone. I do not change what works."
+  },
+  "elapsed_seconds": 42.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_5",
+  "tier": 3,
+  "provider": "claude"
+}

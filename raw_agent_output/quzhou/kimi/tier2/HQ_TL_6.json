@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old, and I have worked these fields in Quzhou for 40 years. My wife and I are the only labor left on our 15 mu, so I must plan with our backs in mind. I know this soil, and I know what it can give me if I do not get greedy.\n\nI will put 10 mu into my wheat-maize rotation. That is my foundation \u2014 wheat keeps us fed, and maize brings steady money. I sow improved wheat in October, after rotary tilling and spreading basal compound fertilizer. My well is my lifeline, so I irrigate four times: once before winter to protect the seedlings from the cold, once at jointing when the spring warms up, once at heading, and once at grain filling. I spray herbicide once and insecticide twice \u2014 that is enough if you walk the fields every morning. I topdress with urea at jointing. With good weather, I expect about 950 jin of wheat per mu.\n\nAfter harvest in early June, I sow hybrid maize the same week. I do not till \u2014 I plant straight into the wheat stubble. That saves me precious days and diesel, and the stubble mulch keeps moisture in the ground. Maize is simpler: two irrigations, one when it reaches my knee and one at grain filling, plus three pesticide applications. Hybrid seed costs more, but it pays me back \u2014 I have seen over 1000 jin per mu on this land before.\n\nThe remaining 5 mu I plant with cotton. Cotton is heavy work \u2014 hand picking, many sprays \u2014 but the price at the gin is better than grain. I plant hybrid Bt cotton in late April after rotary tilling. I irrigate three times and spray five times total. The Bt gene helps with bollworm, so I do not need the 15 sprays we used to do. I fertilize with compound and a side-dressing of urea when it flowers. I expect about 500 jin of seed cotton per mu.\n\nI have learned that fertilizer is not a place to save money, but I also do not throw it away. Compound fertilizer goes down at sowing for all three crops, and I topdress wheat and cotton with urea when they need it most. That is my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"With only two of us working and me being 63, I keep 10 mu in the reliable wheat-maize double crop that I have managed for decades, using rotary tillage for wheat and no-tillage for maize to save labor and time. I allocate 5 mu to cotton for cash income despite the higher labor, because Bt hybrid seed has reduced the spray burden. I rely on my well for border irrigation and apply compound basal plus urea topdressing, matching fertilizer to what 40 years of experience tells me this soil needs without waste.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "With only two of us working and me being 63, I keep 10 mu in the reliable wheat-maize double crop that I have managed for decades, using rotary tillage for wheat and no-tillage for maize to save labor and time. I allocate 5 mu to cotton for cash income despite the higher labor, because Bt hybrid seed has reduced the spray burden. I rely on my well for border irrigation and apply compound basal plus urea topdressing, matching fertilizer to what 40 years of experience tells me this soil needs without waste."
+  },
+  "elapsed_seconds": 112.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_6",
+  "tier": 2,
+  "provider": "kimi"
+}

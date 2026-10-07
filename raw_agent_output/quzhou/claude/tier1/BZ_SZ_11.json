@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land my whole life. My father farmed it before me. I know this soil and I know this sky. I am getting old \u2014 76 years \u2014 my back is not what it was, my son helps me sometimes, but mostly I manage myself.\n\nHere in Quzhou, I grow wheat in winter and corn in summer. That is what I have always done. That is what everyone does here. The wheat goes in around Cold Dew (\u5bd2\u9732), the corn goes in after wheat harvest in June. I have about 6 mu. I will not try to do more \u2014 I cannot manage more at my age.\n\nFor wheat, I will use the improved seed I buy from the village supply station. The same kind I have used for several years now. Good enough. For corn, I buy the hybrid bags \u2014 even I know the hybrid corn gives more grain. The whole village uses it.\n\nFertilizer \u2014 I put down compound fertilizer at planting and urea when the wheat is jointing. For corn I put urea when it is knee-high. I probably put down more than necessary but I have always done it this way and my yields are decent.\n\nIrrigation \u2014 wheat needs water at jointing, heading, maybe one more. Corn I water at the silking stage if there is no rain. We pump from the well.\n\nI also keep a small plot near the house for vegetables \u2014 garlic, cabbage, a few rows of beans. Just for the family. I do not count this as a main crop.\n\nI will plough the wheat field before planting, and for corn I will just rotary till after wheat harvest \u2014 easier on my body.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"mixed vegetables\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer in Quzhou County with no formal education stays with the only rotation he has ever known: winter wheat followed by summer maize on 6 mu of flat, irrigated land, supplemented by a small home vegetable plot. Seed choices follow decades of habit and village norm \u2014 improved wheat from the supply station, hybrid maize because the whole village switched to it years ago. Fertilizer rates are moderately high by textbook standards, reflecting a lifetime of learning that 'more is safer.' Irrigation follows crop growth stages rather than any soil moisture measurement. Total area is kept modest because his body and energy no longer allow more. There is no experimentation, no new crop, no new technique \u2014 only the continuation of what has fed his family for fifty years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "mixed vegetables",
+        "season": "spring",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 5,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer in Quzhou County with no formal education stays with the only rotation he has ever known: winter wheat followed by summer maize on 6 mu of flat, irrigated land, supplemented by a small home vegetable plot. Seed choices follow decades of habit and village norm \u2014 improved wheat from the supply station, hybrid maize because the whole village switched to it years ago. Fertilizer rates are moderately high by textbook standards, reflecting a lifetime of learning that 'more is safer.' Irrigation follows crop growth stages rather than any soil moisture measurement. Total area is kept modest because his body and energy no longer allow more. There is no experimentation, no new crop, no new technique \u2014 only the continuation of what has fed his family for fifty years."
+  },
+  "elapsed_seconds": 41.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_11",
+  "tier": 1,
+  "provider": "claude"
+}

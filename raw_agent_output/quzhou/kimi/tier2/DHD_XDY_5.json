@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 55, been farming this land for 30 years, and I have a university degree. That means I don't just do what my father did \u2014 I read the labels, I calculate rates, and I've been to enough extension trainings to know the science. But I'm also practical. My farm is only 4.1 mu, tiny by any standard, so I farm it intensively. Every jin of yield matters because my household has six mouths, and while some family members earn off-farm wages, the farm still puts food on the table and covers its own costs.\n\nThe wheat is already in the ground \u2014 I planted it last October, as always. Now it's early spring, and the wheat is waking up from winter dormancy. I will irrigate once at green-up to get it moving, then topdress with urea around jointing \u2014 about 16 kg of nitrogen per mu total, split between base and topdress. I'll also put down compound fertilizer with phosphorus and potassium, roughly 6 kg P\u2082O\u2085 and 4 kg K\u2082O per mu. I have my own tube well, so water is secure but pumping isn't free; I'll irrigate three times total \u2014 green-up, jointing, and grain filling. I'll spray herbicide once in early spring, insecticide twice as the weather warms, and fungicide once at heading to protect against fusarium. I expect about 520 kg per mu if the spring doesn't turn dry. For tillage, I rotary-tilled before planting last autumn; there's nothing more to do now but manage the standing crop.\n\nAfter I harvest the wheat in early June, the turnaround is brutal \u2014 maybe ten days. I will plant hybrid maize immediately, no-tillage direct seeding. I've learned over the years that wasting time on tillage between wheat and maize costs me yield more than it helps. The maize gets similar fertilizer \u2014 about 16 kg N, 5 kg P\u2082O\u2085, 4 kg K\u2082O per mu \u2014 banded at planting. I'll irrigate twice: once right after sowing if the soil is too dry, and again at the big flare stage. Three pesticide applications total: pre-emergence herbicide, and two insecticide sprays for corn borer and armyworm. With good weather and timely water, I expect around 580 kg per mu from the maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"With 30 years of experience and a university education, I manage my small 4.1 mu farm intensively. I split nitrogen for wheat and rely on well irrigation for three timely waterings. After wheat harvest in early June, I plant hybrid maize using no-tillage to save time in the tight double-cropping window, with two irrigations and targeted pest control. My input levels are moderate-to-high for the area because off-farm family income gives me enough cash to buy fertilizer and seed, and loss aversion means I'd rather spend a bit more than risk a bad year on such a small plot.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "With 30 years of experience and a university education, I manage my small 4.1 mu farm intensively. I split nitrogen for wheat and rely on well irrigation for three timely waterings. After wheat harvest in early June, I plant hybrid maize using no-tillage to save time in the tight double-cropping window, with two irrigations and targeted pest control. My input levels are moderate-to-high for the area because off-farm family income gives me enough cash to buy fertilizer and seed, and loss aversion means I'd rather spend a bit more than risk a bad year on such a small plot."
+  },
+  "elapsed_seconds": 224.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_5",
+  "tier": 2,
+  "provider": "kimi"
+}

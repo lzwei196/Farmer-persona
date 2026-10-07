@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am Old Wang, 45 years old, farming these 6 mu in Quzhou for 15 years now. Let me think about this year.\n\nMy land is split between winter wheat and summer maize \u2014 that is what everyone does here, two crops one year on the same ground. 6 mu is not big, not small. With 7 people in the house, the grain mostly feeds us and the pigs; only a little gets sold. Every bag of fertilizer costs real money, so I cannot be careless, but I also cannot afford a bad harvest.\n\nFor wheat, I planted Jimai 22 last year \u2014 neighbor Old Liu got good yield from it, around 450 kg/mu, so I stick with it. I use the compound fertilizer 15-15-15, two bags (100 kg) per mu as base before planting, then top-dress with urea about 15 kg/mu at jointing stage. That gives me roughly 22 kg N, 15 kg P, 15 kg K per mu. I irrigate 3 times \u2014 before winter, jointing, and grain-filling. The well water is reliable. I spray pesticide twice, once for aphids and once for rust if I see it. I plough before wheat, deep plough every 2-3 years, rotary in between. This year I'll rotary since I ploughed last autumn.\n\nFor maize, I go with Zhengdan 958, a hybrid everyone trusts. I direct-seed no-till into the wheat stubble right after harvest \u2014 saves time, saves money on tillage. Base fertilizer one bag of compound (50 kg/mu) at sowing, then urea 20 kg/mu at big flare stage. That's about 18 kg N, 7.5 kg P, 7.5 kg K. Maize eats nitrogen heavily so I put more urea on top. Irrigate twice \u2014 after sowing if no rain, and at tasseling. One pesticide spray for corn borer. Expect around 550 kg/mu, neighbors get similar.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 6 mu wheat-maize rotation in Quzhou, feeding 7 people mostly from this land. I stick with what works for my neighbors \u2014 Jimai 22 wheat and Zhengdan 958 maize hybrid. I use compound fertilizer 15-15-15 as base for both crops plus urea top-dressing, heavier nitrogen on maize since it needs more. Wheat gets 3 well irrigations, maize gets 2. I rotate tillage \u2014 rotary for wheat this year since I ploughed last autumn, no-till for maize straight into wheat stubble to save cost and time. Pesticide only when I see the pest, not on a fixed schedule. I'd rather spend a bit extra on fertilizer than risk a poor harvest \u2014 a bad year hurts my family more than wasted fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 6 mu wheat-maize rotation in Quzhou, feeding 7 people mostly from this land. I stick with what works for my neighbors \u2014 Jimai 22 wheat and Zhengdan 958 maize hybrid. I use compound fertilizer 15-15-15 as base for both crops plus urea top-dressing, heavier nitrogen on maize since it needs more. Wheat gets 3 well irrigations, maize gets 2. I rotate tillage \u2014 rotary for wheat this year since I ploughed last autumn, no-till for maize straight into wheat stubble to save cost and time. Pesticide only when I see the pest, not on a fixed schedule. I'd rather spend a bit extra on fertilizer than risk a poor harvest \u2014 a bad year hurts my family more than wasted fertilizer."
+  },
+  "elapsed_seconds": 23.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_2",
+  "tier": 3,
+  "provider": "claude"
+}

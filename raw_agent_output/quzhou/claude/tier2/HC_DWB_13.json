@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 45 years. I know this soil, I know this climate. My father farmed before me, and I learned by watching and doing, not from books. My wife and I manage everything ourselves now \u2014 the children are in the city. At my age, I have to be smart about what I take on.\n\nMy 15 mu breaks into two pieces: 10 mu I rotate between wheat and maize, and 5 mu I keep in cotton for cash. Cotton is hard work at harvest time, but I've always grown it and I know how to handle it. I won't expand it \u2014 my back isn't what it was.\n\nFor **wheat**, I plant in October after I rotary-till the field. I'll use the improved certified seed from the county supply store, same type I've used the last several years. I water it three times: once after planting to help it establish before the cold, once at jointing in spring, once at heading. I put down base fertilizer before planting and top-dress urea in spring. I spray twice \u2014 once for weeds early on, once for aphids and disease in April. I expect around 420 jin per mu.\n\nAfter wheat harvest in June, I go straight into **maize** on the same land without plowing \u2014 I just direct-seed the hybrids into the stubble. Less work, and it gets the maize in fast. Zhengdan 958 or similar, whatever the seed shop recommends that year. I water twice \u2014 once to get it up, once during grain fill if it's dry. Two sprays for pests. I get 550 jin per mu most years.\n\nFor **cotton**, I plow in spring and plant in late April. I use hybrid Bt seed now \u2014 it really does reduce the worm pressure compared to the old days. Cotton drinks water and needs feeding. I water four times through the season, spray five times for pests and disease, and apply more potassium than for the grain crops because cotton needs it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"A 66-year-old farmer with 45 years of experience in Quzhou County allocates 10 mu to a winter wheat-summer maize double-cropping rotation and 5 mu to spring-planted cotton, keeping cotton area stable but not expanding it due to labor constraints with only two household members. Wheat is planted into rotary-tilled ground in October using improved certified varieties, receiving three irrigations and two pesticide applications, with split nitrogen application at base and jointing. Maize is direct-seeded into wheat stubble in June using locally trusted hybrids, requiring minimal tillage and two irrigations. Cotton is planted after spring plowing using hybrid Bt seed, receiving the most intensive management including four irrigations, five pesticide sprays, and higher potassium fertilization. All input rates reflect local experience-based practice rather than extension recommendations.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "A 66-year-old farmer with 45 years of experience in Quzhou County allocates 10 mu to a winter wheat-summer maize double-cropping rotation and 5 mu to spring-planted cotton, keeping cotton area stable but not expanding it due to labor constraints with only two household members. Wheat is planted into rotary-tilled ground in October using improved certified varieties, receiving three irrigations and two pesticide applications, with split nitrogen application at base and jointing. Maize is direct-seeded into wheat stubble in June using locally trusted hybrids, requiring minimal tillage and two irrigations. Cotton is planted after spring plowing using hybrid Bt seed, receiving the most intensive management including four irrigations, five pesticide sprays, and higher potassium fertilization. All input rates reflect local experience-based practice rather than extension recommendations."
+  },
+  "elapsed_seconds": 50.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_13",
+  "tier": 2,
+  "provider": "claude"
+}

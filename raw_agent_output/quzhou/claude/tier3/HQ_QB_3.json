@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 64, been farming this 6 mu in Quzhou for 40 years. Wheat-maize rotation, same as everyone around here. My son is grown and gone, just me working the land, but the well water is reliable and I hire the combine at harvest time.\n\nLast year wheat gave me about 480 kg/mu, maize about 580 kg/mu. That is normal for our village. I will do similar this year \u2014 no reason to change what works.\n\nFor wheat (winter), I plant in early October. I use improved seed from the agro-shop, the Jimai variety most neighbors plant. I put down compound fertilizer (15-15-15) at sowing, about 50 kg/mu \u2014 that gives me roughly 7.5 kg N, P, and K. Then I topdress with urea around jointing in March, about 25 kg/mu (that's about 11.5 kg N). So total nitrogen comes to around 19 kg/mu. I irrigate three times \u2014 before winter, at jointing, and at grain filling. I spray once for aphids and powdery mildew, sometimes twice if the weather is wet.\n\nFor maize (summer), I plant right after wheat harvest in mid-June, no tilling, just direct seed into the stubble. Hybrid seed, Zhengdan or similar. I apply compound fertilizer with the seeder, about 40 kg/mu, then topdress urea at the big trumpet stage, about 30 kg/mu. Total N around 20 kg/mu. Maize here needs less irrigation because of summer rain \u2014 usually 2 times if the rain is enough. One spray for borer and armyworm.\n\nI do not want to cut fertilizer. If I save 50 yuan and lose 50 kg of grain, that is a bad trade. Better to put on enough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I farm 6 mu alone in Quzhou, wheat-maize rotation like all my neighbors. I stick close to last year's plan because it gave me 480 kg/mu wheat and 580 kg/mu maize, which is decent for our area. I use compound 15-15-15 at sowing plus urea topdress for both crops, totaling around 19-20 kg N per mu. I irrigate wheat three times from the well and maize twice since summer rain helps. I will not cut fertilizer to save money \u2014 losing yield costs more than the fertilizer I would save. I plant improved wheat seed and hybrid maize, direct-seed maize into wheat stubble to save time since I work alone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I farm 6 mu alone in Quzhou, wheat-maize rotation like all my neighbors. I stick close to last year's plan because it gave me 480 kg/mu wheat and 580 kg/mu maize, which is decent for our area. I use compound 15-15-15 at sowing plus urea topdress for both crops, totaling around 19-20 kg N per mu. I irrigate wheat three times from the well and maize twice since summer rain helps. I will not cut fertilizer to save money \u2014 losing yield costs more than the fertilizer I would save. I plant improved wheat seed and hybrid maize, direct-seed maize into wheat stubble to save time since I work alone."
+  },
+  "elapsed_seconds": 22.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_3",
+  "tier": 3,
+  "provider": "claude"
+}

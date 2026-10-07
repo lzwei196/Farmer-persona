@@ -1,0 +1,40 @@
+{
+  "raw_response": "I think about this year like I thought about last year. My land is 6 mu \u2014 same as always. I plant wheat in October, then maize after wheat harvest in June. This is what my father did, what my neighbors do, what I do.\n\nFor seeds, I buy from the shop in town. Everyone around here uses the hybrid maize seed \u2014 Zhengdan or whatever the dealer has that year. For wheat I use the improved seed the shop sells, same as my neighbors. I don't save seed anymore, the shop seed grows better.\n\nFor fertilizer, I go by bags. For wheat, I put down 2 bags of compound fertilizer before planting \u2014 that's about 100 kg on each mu, the big 50 kg bags. Then in spring when the wheat is greening up, I spread 1 bag of urea per mu, maybe a bit more. Urea is 46% nitrogen, I know this because the dealer told me years ago. For maize, same idea \u2014 2 bags compound at planting, then urea at big trumpet stage, about 25-30 kg per mu. If I put less, I worry the leaves turn yellow and I lose grain. Fertilizer costs money but losing harvest costs more. My neighbor Old Wang tried using less last year and his yield was lower than mine, so I keep doing what I do.\n\nWater \u2014 I have the well. Wheat I water before winter, then in spring when it jointing, then at grain filling. Three times usually, sometimes four if the spring is dry. Maize needs less water because summer rains come, but I water once or twice if it gets dry in July.\n\nFor pesticide, I spray when I see bugs. Wheat gets one spray for aphids in spring, sometimes two. Maize I spray once for borers. I don't spray if I don't see problems.\n\nTillage \u2014 I hire the rotary tiller machine from the village, it comes through and works the field. No more ploughing by hand like when I was young.\n\nMy yield is usually around 450 kg wheat and 550 kg maize per mu. Good years a bit more, bad years less. I don't expect miracles, I just want a normal harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 6 mu same as every year, wheat then maize. I buy 2 bags of compound fertilizer per mu at planting and top-dress with urea later \u2014 about 1 bag for wheat in spring, a bit less for maize at trumpet stage. I do what my neighbors do because it works. I water wheat three times from the well, maize once or twice if July is dry. I spray when I see bugs, not before. I hire the rotary tiller for wheat ground, and for maize I just plant into the wheat stubble. I would rather use a little extra fertilizer than risk a poor harvest \u2014 a bad year hurts much more than a few extra yuan on urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 6 mu same as every year, wheat then maize. I buy 2 bags of compound fertilizer per mu at planting and top-dress with urea later \u2014 about 1 bag for wheat in spring, a bit less for maize at trumpet stage. I do what my neighbors do because it works. I water wheat three times from the well, maize once or twice if July is dry. I spray when I see bugs, not before. I hire the rotary tiller for wheat ground, and for maize I just plant into the wheat stubble. I would rather use a little extra fertilizer than risk a poor harvest \u2014 a bad year hurts much more than a few extra yuan on urea."
+  },
+  "elapsed_seconds": 32.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_7",
+  "tier": 3,
+  "provider": "claude"
+}

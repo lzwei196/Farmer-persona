@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will still base this year on what worked for me before, not start from zero. On my side in Quzhou, wheat and maize are the main money on the land, so I will keep most of the ground in the wheat-maize rotation and leave a smaller piece for cotton. I have 16.9 mu total, and with some people working off-farm, I cannot make the plan too fussy. I will put about 12 mu into wheat-maize rotation and 4.9 mu into cotton. I do have well irrigation, so I will use that advantage. If I spend money, I would rather spend it on fertilizer and water first, because if yield falls, that loss hurts more than using a bit extra fertilizer.\n\nFor wheat, I will not cut fertilizer short. Wheat here needs a solid base if I want stable ears and grain fill. I will use improved seed, plough or deep till before sowing, put most phosphorus and potassium in as base fertilizer, and split nitrogen between base and jointing. I will water about 3 times if the year is normal: once after sowing if moisture is short, once at jointing, once at grain filling depending on weather. I usually watch neighbors closely on wheat, and around me the people who get decent yield do not save on the jointing fertilizer.\n\nFor summer maize after wheat, I will move fast after harvest. I will use hybrid seed because the common hybrids around here usually stand better and yield more. I will do no-tillage or very light strip work after wheat harvest so I do not lose time or moisture. Maize needs fertilizer too, but I will keep it a bit tighter than wheat because there is still some leftover fertility from the wheat field. I will give nitrogen in two parts, with the bigger share before the big growth stage. If rainfall is normal, I will water 2 times; if rain is enough, maybe one irrigation will be saved, but at the start of the year I will plan for 2.\n\nFor cotton, I will keep a smaller area because it takes more watching, more spraying, and more labor. Since my family labor is limited, I will not expand cotton. I will still plant it because it spreads risk. Cotton needs more pesticide passes than wheat and maize, and I know from experience that once insects get ahead of me, I lose both yield and money. I will use hybrid cotton seed, keep potassium a bit higher than maize, and water about 3 times with the well. I will manage cotton more carefully but on less land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 320\n    }\n  ],\n  \"reasoning_summary\": \"I will keep most of my 16.9 mu in the wheat-maize rotation because that is still my steady base, and I will leave a smaller 4.9 mu piece for cotton so I do not take on too much labor. I will use improved or hybrid seed on all three crops, put enough fertilizer to protect yield, and make use of my well irrigation because water is one of the few things I can control. Wheat will get the strongest fertilizer plan and 3 irrigations for stable grain yield, maize will follow quickly after wheat with hybrid seed and 2 irrigations, and cotton will stay on limited area because it needs more spraying and labor even though it helps spread my risk.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 320
+      }
+    ],
+    "reasoning_summary": "I will keep most of my 16.9 mu in the wheat-maize rotation because that is still my steady base, and I will leave a smaller 4.9 mu piece for cotton so I do not take on too much labor. I will use improved or hybrid seed on all three crops, put enough fertilizer to protect yield, and make use of my well irrigation because water is one of the few things I can control. Wheat will get the strongest fertilizer plan and 3 irrigations for stable grain yield, maize will follow quickly after wheat with hybrid seed and 2 irrigations, and cotton will stay on limited area because it needs more spraying and labor even though it helps spread my risk."
+  },
+  "elapsed_seconds": 33.5,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_5",
+  "tier": 3,
+  "provider": "codex"
+}

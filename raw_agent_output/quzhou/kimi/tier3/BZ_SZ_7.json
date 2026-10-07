@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 78 years old. I have farmed my 3 mu in Quzhou for 55 years, and I finished middle school back when I was young, so I can read fertilizer labels and do my own sums. But I learned this work by doing it, year after year, and by watching what happens in the fields around mine. My wife and I do everything ourselves. We have no hired labor \u2014 cannot afford it on 3 mu.\n\nRight now it is autumn, time to sow winter wheat. I will rotary till the land first, then plant the improved wheat seed I buy from the county supply shop \u2014 the same kind my neighbor Zhang used last year and got a good stand. For fertilizer, I put down one 50 kg bag of compound fertilizer per mu. The bag says 16-16-16, so that gives 8 kg of nitrogen, 8 kg of phosphorus, and 8 kg of potassium per mu. Then next spring, when the wheat greens up, I will topdress with half a bag \u2014 25 kg \u2014 of urea per mu. Urea is 46% nitrogen, so that is about 12 kg of nitrogen. Total nitrogen is about 20 kg per mu. Yes, fertilizer prices have gone up, but last year Old Wang across the lane tried to save money on urea and his wheat turned yellow before heading. With only 3 mu, a bad harvest is a disaster I cannot afford. I will irrigate three times: once after sowing if the weather stays dry, once at jointing stage in spring, and once when the grain is filling. I spray pesticide twice \u2014 herbicide after sowing, and one spray for insects if I see them in spring. I expect about 500 kg per mu if the winter is not too cold.\n\nThen in June, right after wheat harvest, I will rotary till the stubble under and plant hybrid maize the same day. Every day delayed is a day lost in this double-crop system. I will put 40 kg of compound fertilizer per mu in the furrow at sowing \u2014 that gives about 6 kg each of nitrogen, phosphorus, and potassium. At the big trumpet stage, I spread another 25 kg of urea per mu, giving about 12 kg more nitrogen. Total nitrogen is about 18 kg per mu. I do not add extra potassium for maize \u2014 the compound has some, and separate potash costs too much money. I irrigate twice: once after sowing if the soil is dry, and once at trumpet stage. Two pesticide sprays: one is herbicide with the sowing, and one later for corn borers if they show up. I expect about 550 kg per mu.\n\nWhy these amounts? Because this is what I did last year, and this is what the neighbors around me do. I am 78. I do not have years left to experiment with new tricks that might fail. A handful of extra fertilizer is just money; an empty grain bin is hunger.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 78-year-old farmer with middle school education and 55 years of experience on a 3 mu farm in Quzhou County. I manage wheat and maize in a double-cropping system, doing all labor with my wife. I base decisions on last year's practice and neighbor observations, not on outside advice. I apply one 50 kg bag of 16-16-16 compound fertilizer per mu for wheat (8 kg N, P, K each) plus 25 kg urea topdress (12 kg N), totaling 20 kg nitrogen per mu. For maize, I apply 40 kg compound per mu at sowing (6 kg N, P, K each) plus 25 kg urea at trumpet stage (12 kg N), totaling 18 kg nitrogen per mu. I irrigate wheat three times and maize twice, with two pesticide applications per crop. I use rotary tillage for both. I prioritize avoiding yield loss over saving on input costs because with only 3 mu, a bad harvest is catastrophic while excess fertilizer is merely an expense.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 78-year-old farmer with middle school education and 55 years of experience on a 3 mu farm in Quzhou County. I manage wheat and maize in a double-cropping system, doing all labor with my wife. I base decisions on last year's practice and neighbor observations, not on outside advice. I apply one 50 kg bag of 16-16-16 compound fertilizer per mu for wheat (8 kg N, P, K each) plus 25 kg urea topdress (12 kg N), totaling 20 kg nitrogen per mu. For maize, I apply 40 kg compound per mu at sowing (6 kg N, P, K each) plus 25 kg urea at trumpet stage (12 kg N), totaling 18 kg nitrogen per mu. I irrigate wheat three times and maize twice, with two pesticide applications per crop. I use rotary tillage for both. I prioritize avoiding yield loss over saving on input costs because with only 3 mu, a bad harvest is catastrophic while excess fertilizer is merely an expense."
+  },
+  "elapsed_seconds": 115.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_7",
+  "tier": 3,
+  "provider": "kimi"
+}

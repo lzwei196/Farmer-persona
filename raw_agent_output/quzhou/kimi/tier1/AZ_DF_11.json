@@ -1,0 +1,40 @@
+{
+  "raw_response": "I\u2019m 46 years old, got only primary schooling, and I\u2019ve been farming these 6 mu in Quzhou my whole life. I don\u2019t trust book learning much\u2014what I know comes from my father, from my own eyes, and from watching the neighbors. Old Wang down the road has good wheat every year, so if he does something, I pay attention.\n\nIt\u2019s early spring now. My winter wheat went in last October, same as always. I ploughed the field in the fall and sowed an improved variety my cousin gave me\u2014nothing fancy, but it\u2019s reliable. The wheat is greening up and looks all right, though a bit thin in one corner. I\u2019ll irrigate three times in total: I already did the winter irrigation, and now I\u2019ll water at jointing and again at grain filling. For fertilizer, I put down compound fertilizer at planting\u2014about 100 jin per mu\u2014and I\u2019ll topdress with urea when the wheat starts jointing. I figure that\u2019s about 18 jin of pure nitrogen per mu all told. I thought about cutting back after fertilizer prices went up, but two years ago I tried less and the yield dropped badly. I\u2019d rather waste a little money than risk going hungry. I\u2019ll spray herbicide once and insecticide once or twice if I see aphids.\n\nFor summer, I\u2019ll plant maize on the same 6 mu right after wheat harvest in mid-June. There\u2019s barely a week between harvest and planting, so I\u2019ll use rotary tillage\u2014no time for deep ploughing. I buy hybrid seed every year, usually whatever the shop in town recommends. I\u2019ll put down one basal dressing of compound fertilizer, about 16 jin of nitrogen per mu, and irrigate twice if July is dry. One pesticide spray for weeds, and maybe another for corn borers if they show up. I\u2019ve thought about cotton, but my wife works in the factory and I can\u2019t manage the picking alone. Wheat-maize is what I know, and it feeds my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double crop on my 6 mu because it\u2019s what I know and what my neighbors do. I\u2019m not educated enough to read extension leaflets, so I copy Old Wang and rely on my own memory. I apply moderate fertilizer\u2014enough to be safe but not so much that I can\u2019t pay for my daughter\u2019s school fees. I irrigate wheat three times because it needs the water, and maize twice if the weather is dry. I plough for wheat in the fall and rotary till for maize because the window between harvest and planting is too tight for anything else. I use improved wheat seed and hybrid maize seed because they give better yields than the old varieties. I don\u2019t grow cotton because I don\u2019t have enough family labor for the picking.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double crop on my 6 mu because it\u2019s what I know and what my neighbors do. I\u2019m not educated enough to read extension leaflets, so I copy Old Wang and rely on my own memory. I apply moderate fertilizer\u2014enough to be safe but not so much that I can\u2019t pay for my daughter\u2019s school fees. I irrigate wheat three times because it needs the water, and maize twice if the weather is dry. I plough for wheat in the fall and rotary till for maize because the window between harvest and planting is too tight for anything else. I use improved wheat seed and hybrid maize seed because they give better yields than the old varieties. I don\u2019t grow cotton because I don\u2019t have enough family labor for the picking."
+  },
+  "elapsed_seconds": 113.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_11",
+  "tier": 1,
+  "provider": "kimi"
+}

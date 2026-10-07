@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 76 years, and I farm the same 8 mu with my wife. My back is not what it was, so I do what I know works. I went to school only a few years, so I mostly do what my father did and what I see my neighbors doing.\n\nI will keep 2 mu for cotton \u2014 we have grown cotton on that plot for many years, the soil suits it. The other 6 mu I do wheat and then maize, same as everyone here. Two crops from one land in one year \u2014 that is how we eat and sell a little.\n\nFor wheat, I sow in October. I use the improved seed from the dealer in town \u2014 everyone uses it now, the old seeds give too little. Before sowing I spread compound fertilizer, about 2 bags for my 6 mu, that is around 17 kg of nitrogen per mu with some phosphorus and potassium mixed in. In spring when wheat turns green I top-dress urea, about half a bag per mu. I water 3 times \u2014 before winter, at jointing, and at filling. My well works well. Pesticide I spray 2 times, for aphids and the head disease.\n\nFor maize after wheat, I plant quickly in June, hybrid seed, no time to waste. I put fertilizer at sowing and again at big trumpet stage. About 18 kg nitrogen per mu total \u2014 maize is hungry, if I give too little the cobs are small. Water 2 times if rain is not enough. Spray 1 time for the borer.\n\nCotton on 2 mu \u2014 I know cotton is troublesome, many sprays for bollworm, but the price is good some years. I use the Bt seed, less spraying than before but still I spray 4 times. Fertilizer about 15 kg N. Water 2 or 3 times.\n\nI plough-turn the soil only for cotton before spring planting. For wheat and maize I just use rotary from the tractor man in the village \u2014 cheaper and my land is small.\n\nI do not change much from last year. Changing is risky at my age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am old and do what has worked for 50 years. I split my 8 mu into 6 mu wheat-maize rotation and 2 mu cotton on the plot that suits cotton. I use improved wheat seed and hybrid maize seed like everyone in the village, and Bt cotton to save some spraying. I apply compound fertilizer before sowing and top-dress urea at the right stage \u2014 better a little too much than a bad harvest. I irrigate from my well 2-3 times per crop depending on rain. Rotary tillage for wheat and maize from the village tractor man, plough only for cotton. I do not change from last year because change is risky at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am old and do what has worked for 50 years. I split my 8 mu into 6 mu wheat-maize rotation and 2 mu cotton on the plot that suits cotton. I use improved wheat seed and hybrid maize seed like everyone in the village, and Bt cotton to save some spraying. I apply compound fertilizer before sowing and top-dress urea at the right stage \u2014 better a little too much than a bad harvest. I irrigate from my well 2-3 times per crop depending on rain. Rotary tillage for wheat and maize from the village tractor man, plough only for cotton. I do not change from last year because change is risky at my age."
+  },
+  "elapsed_seconds": 33.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_5",
+  "tier": 3,
+  "provider": "claude"
+}

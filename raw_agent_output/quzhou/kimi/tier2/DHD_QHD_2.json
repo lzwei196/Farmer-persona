@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming these 3 mu in Quzhou for 18 years, so I know what works on my land. With only 3 mu and some family members working off-farm, I cannot take big risks or try fancy new methods. I need reliable crops that fit the local wheat-maize rotation and a small cotton patch for cash.\n\nThis year I will keep my usual split: **2 mu for the wheat-maize rotation** and **1 mu for cotton**. The wheat-maize system feeds my family and gives steady grain income, while cotton brings in cash. I have a well, so water is not my biggest worry, though I watch the electricity cost for the pump.\n\nFor **winter wheat** on the 2 mu, I will use rotary tillage before sowing\u2014this is what everyone in my village does. I will plant an improved variety like the ones my neighbors use; they are reliable and yield well here. I will put down compound fertilizer as a base and top-dress with urea, which comes to about 17 kg of nitrogen, 9 kg of phosphorus, and 5.5 kg of potassium per mu. I will irrigate three times: once before winter, once at jointing, and once during grain filling. Wheat also needs some spraying, so I will apply pesticide about four times in total for weeds, insects, and disease. If the weather is normal, I expect around 540 kg per mu.\n\nFor **summer maize** on the same 2 mu, there is no time to plough after wheat harvest, so I will direct-seed with no-tillage. I will use a hybrid maize seed\u2014hybrids grow fast and give good yields. Fertilizer will be about 11 kg nitrogen, 3 kg phosphorus, and 3 kg potassium per mu, again using compound fertilizer and a urea top-dressing. Maize does not need as much water as wheat, so I will irrigate twice, mainly during the critical flowering and grain-filling stages. I will spray pesticide three times. I expect about 550 kg per mu.\n\nFor **cotton** on the remaining 1 mu, I will rotary till the soil in spring and plant a hybrid cotton variety. Cotton needs more care than grain crops, especially pest control, so I will spray pesticide about twelve times through the season to fight bollworms and aphids. I will apply roughly 7.5 kg each of nitrogen, phosphorus, and potassium per mu, using compound fertilizer. I will irrigate twice\u2014once at flowering and once during the boll stage. I hope for about 240 kg of seed cotton per mu, which is a decent yield for my village.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17.0,\n      \"phosphorus_kg_per_mu\": 9.0,\n      \"potassium_kg_per_mu\": 5.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 540\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11.0,\n      \"phosphorus_kg_per_mu\": 3.0,\n      \"potassium_kg_per_mu\": 3.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 7.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"With 3 mu of land and some family members working off-farm, I split my field into 2 mu for the reliable wheat-maize rotation and 1 mu for cotton cash income. I use well irrigation, rotary tillage for wheat and cotton, and no-tillage for summer maize to save time. I apply moderate fertilizer rates using compound fertilizer and urea, irrigate according to each crop's needs, and spray pesticides intensively on cotton because bollworms are a constant threat. These practices match what other middle-educated women farmers in Quzhou with similar small farms do, and they give steady yields without requiring more labor than I can manage.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17.0,
+        "phosphorus_kg_per_mu": 9.0,
+        "potassium_kg_per_mu": 5.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 540
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11.0,
+        "phosphorus_kg_per_mu": 3.0,
+        "potassium_kg_per_mu": 3.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 7.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "With 3 mu of land and some family members working off-farm, I split my field into 2 mu for the reliable wheat-maize rotation and 1 mu for cotton cash income. I use well irrigation, rotary tillage for wheat and cotton, and no-tillage for summer maize to save time. I apply moderate fertilizer rates using compound fertilizer and urea, irrigate according to each crop's needs, and spray pesticides intensively on cotton because bollworms are a constant threat. These practices match what other middle-educated women farmers in Quzhou with similar small farms do, and they give steady yields without requiring more labor than I can manage."
+  },
+  "elapsed_seconds": 290.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_QHD_2",
+  "tier": 2,
+  "provider": "kimi"
+}

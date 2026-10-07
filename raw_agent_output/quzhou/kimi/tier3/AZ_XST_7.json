@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 30 mu for 30 years, since I was 18. My father taught me, and now I learn from the input dealer and watching what works on my neighbors' fields. I finished primary school, so I can read fertilizer bags and do the calculations, but at the end of the day I trust what I have done before and what the successful farmers around me are doing.\n\nI plant wheat in October and maize in June right after the wheat harvest. That is how everyone does it here in Quzhou, and that is how I do it. My 30.4 mu is a good-sized piece of land \u2014 bigger than many around here. I use machinery for ploughing and harvesting, and I hire a few people during busy times, but I manage the inputs myself.\n\nFor **winter wheat**, I use an **improved variety** \u2014 the same one that Old Wang from the next village used last year and got good results. I buy the seeds from the county seed station. For the base fertilizer, I spread **one 50kg bag of compound fertilizer per mu** \u2014 it is the 15-15-15 kind, so that gives me **7.5 kg of nitrogen, 7.5 kg of phosphorus, and 7.5 kg of potassium per mu**. Then at green-up time in spring, I top-dress with **another 25 kg of urea per mu**, which is about **11.5 kg more nitrogen**. So in total that is about **19 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu**. I know the dealer says I could use less, but I would rather put a little too much than risk a bad harvest. A bad year means losing tens of thousands of yuan. Wasting a few bags of fertilizer is just a small cost.\n\nI **irrigate wheat three times**: once after planting if it is dry, once at jointing stage in spring, and once at heading. That has worked for me for years. I spray **twice** \u2014 once with herbicide after planting, and once with fungicide and insecticide mixed together at heading stage if I see problems. For tillage, I use **rotary tillage** before wheat planting. I expect about **550 kg per mu** from wheat if the weather is normal.\n\nFor **summer maize**, I always use **hybrid seeds**. Everyone uses hybrid now \u2014 the yield is much better than the old traditional kinds, and the seed dealer guarantees it. I plant right after wheat harvest, sometimes the same day. I put down **50 kg of compound fertilizer per mu** again as base \u2014 the 15-15-15 type \u2014 so that is **7.5 kg N, 7.5 kg P, 7.5 kg K per mu**. Then at the big trumpet stage, I side-dress with **20 kg of urea per mu**, which is about **9 kg more nitrogen**. Total for maize is about **16.5 kg nitrogen, 7.5 kg phosphorus, 7.5 kg potassium per mu**. Some years I add a bit more urea if the plants look yellow.\n\nI **irrigate maize twice**: once at jointing if the rain does not come, and once at filling stage. Sometimes three times if it is very dry, but usually twice is enough with the rains here. I spray **twice** \u2014 herbicide at seeding, and one insecticide spray if the corn borer shows up. For tillage, I do **light rotary tillage** right after wheat harvest before planting maize \u2014 just enough to break up the stubble. I expect about **650 kg per mu** from maize in a normal year.\n\nMy total input cost is high on 30 mu, but so is the output. I sell most of it, keep some for family and feed. I do not experiment much \u2014 change is risky. If what I did last year gave me 550 kg wheat and 650 kg corn, I will do almost the same this year, maybe adjust a little if the fertilizer price went up too much.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what worked last year and what my neighbors do. On my 30.4 mu, I plant improved wheat in winter and hybrid maize in summer. I use one bag of 15-15-15 compound fertilizer per mu for each crop as base, then top-dress with urea. I would rather apply a bit too much fertilizer than risk losing yield. I irrigate wheat three times and maize twice, spray twice per crop, and use rotary tillage. I expect 550 kg/mu of wheat and 650 kg/mu of maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what worked last year and what my neighbors do. On my 30.4 mu, I plant improved wheat in winter and hybrid maize in summer. I use one bag of 15-15-15 compound fertilizer per mu for each crop as base, then top-dress with urea. I would rather apply a bit too much fertilizer than risk losing yield. I irrigate wheat three times and maize twice, spray twice per crop, and use rotary tillage. I expect 550 kg/mu of wheat and 650 kg/mu of maize."
+  },
+  "elapsed_seconds": 70.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_7",
+  "tier": 3,
+  "provider": "kimi"
+}

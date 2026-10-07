@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm sixty-four, I've farmed in Quzhou County since I was twenty, and I finished senior high school \u2014 back then that meant something in the village. I've kept up with every extension training course the county offers, and I write down my input costs and yields every year. My family has fifteen mu of good irrigated land. Twelve mu stays in the wheat\u2013maize double crop because that's the backbone of our farm; the other three mu goes to cotton, which spreads our cash flow into the autumn and the prices have been decent lately.\n\nThe winter wheat went in last October \u2014 I planted an improved semi-dwarf variety at about thirty jin per mu. Now it's early spring and the wheat is greening up. I'll irrigate four times this season: green-up, jointing, heading, and grain filling, depending on rainfall. Last fall I put down compound fertilizer as a base, and at jointing I'll topdress with urea to bring the total nitrogen to about twenty kilograms per mu. That gives me roughly ten kilograms of phosphorus and five of potassium per mu from the compounds. I'll spray four times \u2014 herbicide once in spring, then fungicide and insecticide as I scout the fields. I rotary-tilled before planting last fall. If the weather holds, I expect about a thousand kilograms per mu.\n\nAfter wheat harvest in early June, the window to plant maize is less than a week, so I'll hire the custom planter for no-tillage seeding straight into the wheat stubble. I'll use a hybrid variety \u2014 Denghai 605 has done well for me \u2014 and put all the fertilizer down at planting: about eighteen kilograms of nitrogen, six of phosphorus, and five of potassium per mu. Maize needs two irrigations, one around the V6 stage and one at tasseling, and I'll spray three times for weeds and borers. I expect about eleven hundred kilograms per mu.\n\nOn the three mu of cotton, I'll rotary till in mid-April and plant an improved fiber variety. Cotton needs about fifteen kilograms of nitrogen, eight of phosphorus, and eight of potassium per mu. The big cost with cotton is pesticide \u2014 I'll spray eight times through the season for bollworm, aphids, and weeds \u2014 and I'll irrigate twice. I should get around five hundred fifty kilograms of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 15 mu in Quzhou County. I keep 12 mu in wheat-maize double cropping because it is the most reliable system, with winter wheat managed through four irrigations and split nitrogen application totaling 20 kg N/mu, and summer maize planted no-till immediately after wheat harvest with 18 kg N/mu and two irrigations. The remaining 3 mu goes to cotton for autumn cash income, requiring eight pesticide sprays. My decisions come from forty years of experience, extension training, and watching what works on my fields and my neighbors'.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 15 mu in Quzhou County. I keep 12 mu in wheat-maize double cropping because it is the most reliable system, with winter wheat managed through four irrigations and split nitrogen application totaling 20 kg N/mu, and summer maize planted no-till immediately after wheat harvest with 18 kg N/mu and two irrigations. The remaining 3 mu goes to cotton for autumn cash income, requiring eight pesticide sprays. My decisions come from forty years of experience, extension training, and watching what works on my fields and my neighbors'."
+  },
+  "elapsed_seconds": 185.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DWB_7",
+  "tier": 1,
+  "provider": "kimi"
+}

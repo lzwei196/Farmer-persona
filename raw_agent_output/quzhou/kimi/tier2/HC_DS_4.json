@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am sixty-five years old. I have worked this land for forty years, and I never went to school, but the fields have taught me everything I need. My farm is fifteen mu, and it is just my husband and me at home now\u2014our children work in the factories in the city. We have a good well, so I do not worry about water.\n\nMy wheat is already in the ground from last October. I have twelve mu of wheat, planted with the improved seed I get from the county supply shop. It grows well here. This spring, when the wheat turns green, I will spread urea by hand and run the rotary tiller between the rows. I will irrigate three times from the well\u2014once when it greens up, once at jointing, and once when the grain is filling. I spray twice for insects and once for weeds. I do not change what works. I expect about five hundred kilograms per mu if the weather holds.\n\nI keep three mu for garlic. Garlic is my cash crop\u2014it brings more money than grain. I plant my own cloves that I saved from last year\u2019s harvest; they are clean and sprout well. Garlic needs more food and water than wheat. I spread compound fertilizer and urea, and I irrigate three times because garlic must not dry out. I also spray three times for weeds and diseases. I till that plot with the rotary tiller too. Last year I got about fifteen hundred kilograms per mu, and I will do the same this year.\n\nAfter the wheat and garlic are harvested in early summer, I plant maize on all fifteen mu. For maize, you must use hybrid seed from the shop\u2014if you plant your own saved seed, the yield drops by half. I broadcast compound fertilizer as basal dressing and plant right after harvest without much tillage; there is no time to waste between crops. Maize needs two irrigations in summer, and I spray twice for weeds and insects. I expect about six hundred kilograms per mu.\n\nI am getting old, and my back is not what it used to be. My husband helps when he is not working odd jobs in the village. I keep my methods simple and stick to what I know. I do not waste money on fancy inputs, and I do not take risks.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 18,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these fifteen mu for forty years and know them well. I plant twelve mu of winter wheat with improved seed and three mu of garlic with my own saved cloves. After harvest, I put hybrid maize on all fifteen mu. I rely on my well for three irrigations on wheat and garlic and two on maize. I use compound fertilizer and urea on wheat and garlic, and only compound on maize. I keep tillage simple\u2014rotary for the winter crops and no-tillage for maize planted after harvest. I do not take risks; I follow the methods that have fed my family for decades.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "garlic",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 18,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed these fifteen mu for forty years and know them well. I plant twelve mu of winter wheat with improved seed and three mu of garlic with my own saved cloves. After harvest, I put hybrid maize on all fifteen mu. I rely on my well for three irrigations on wheat and garlic and two on maize. I use compound fertilizer and urea on wheat and garlic, and only compound on maize. I keep tillage simple\u2014rotary for the winter crops and no-tillage for maize planted after harvest. I do not take risks; I follow the methods that have fed my family for decades."
+  },
+  "elapsed_seconds": 282.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DS_4",
+  "tier": 2,
+  "provider": "kimi"
+}

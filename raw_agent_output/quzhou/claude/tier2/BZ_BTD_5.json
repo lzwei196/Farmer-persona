@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for fifty years. My body tells me things now that it did not at thirty. There are only two of us \u2014 my wife and I. We cannot do what a younger household can do. But I know this land. I know what it needs.\n\nMy 8 mu is split the way it has always been: 6 mu for wheat and maize in rotation, and 2 mu for cotton. I have thought about giving up the cotton many times. It is hard work, especially picking in September. But it brings cash. Without cotton money I feel uneasy. 2 mu I can manage. My son comes back sometimes to help.\n\n**Wheat (6 mu, planted October):** I always use the improved varieties from the township supply station \u2014 the same ones I have used for years. I will apply compound fertilizer as base and urea at jointing. Three irrigations: before winter freeze, at jointing, at heading. That is what I have always done. My hands know this. Two sprays \u2014 one for aphids in spring, one for powdery mildew. I use the rotary tiller now, not the deep plough. My back cannot manage deep ploughing anymore.\n\n**Maize (6 mu, planted June after wheat):** I buy hybrid seed. Everyone does now \u2014 yields are better. The village machine station broadcasts the seed directly after wheat harvest without tilling. I leave it to them. I apply fertilizer once at planting and once when the plant is knee-high. Two irrigations if rain is short. One spray for corn borer.\n\n**Cotton (2 mu, planted April):** This is the hardest. I plant improved seed \u2014 same as last year. I fertilize three times through the season. I irrigate four times. Cotton needs more spraying: aphids early, bollworm through summer. I do four applications. My wife helps with topping the plants and picking. We take it slow.\n\nI do not try to maximize yields. I try to have a manageable season and bring in enough to live comfortably.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer with 50 years of experience and only two people in the household allocates 6 mu to wheat-maize double cropping and 2 mu to cotton, balancing cash income from cotton against the physical limits of aging. Wheat is grown with improved varieties, rotary tillage, moderate fertilizer split across basal and topdressing applications, three irrigations, and two pesticide sprays. Maize follows wheat using no-tillage direct seeding by the village machine station, hybrid seed, two fertilizer applications, and minimal spraying. Cotton is kept at 2 mu to remain manageable \u2014 planted in spring, fertilized three times, irrigated four times, and sprayed four times for aphids and bollworm. Input rates and yield expectations are conservative and based on decades of local practice rather than optimized recommendations.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer with 50 years of experience and only two people in the household allocates 6 mu to wheat-maize double cropping and 2 mu to cotton, balancing cash income from cotton against the physical limits of aging. Wheat is grown with improved varieties, rotary tillage, moderate fertilizer split across basal and topdressing applications, three irrigations, and two pesticide sprays. Maize follows wheat using no-tillage direct seeding by the village machine station, hybrid seed, two fertilizer applications, and minimal spraying. Cotton is kept at 2 mu to remain manageable \u2014 planted in spring, fertilized three times, irrigated four times, and sprayed four times for aphids and bollworm. Input rates and yield expectations are conservative and based on decades of local practice rather than optimized recommendations."
+  },
+  "elapsed_seconds": 54.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_5",
+  "tier": 2,
+  "provider": "claude"
+}

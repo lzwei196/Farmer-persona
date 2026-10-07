@@ -1,0 +1,53 @@
+{
+  "raw_response": "I\u2019ve farmed these 30 mu in Quzhou for 40 years now. I only finished primary school, but I know my land better than any book. I rent some plots from relatives and neighbors, so altogether I have 20 mu in the wheat-maize rotation and 10 mu in stevia. My son and his wife work in a factory over in Handan, so it\u2019s mostly me and my wife doing the day-to-day work, though I hire people with machines at harvest and planting time when it\u2019s busy.\n\nI don\u2019t change what works. Last year my wheat gave me about 500 kg per mu, the maize gave 600 kg per mu, and the stevia dried to about 300 kg per mu. The stevia buyer already called to say he\u2019s coming again this autumn, so I keep that 10 mu.\n\nFor wheat, I plant the improved seed everyone in the village uses \u2014 I forget the name, I just tell the dealer \u201cthe red bag, same as last year.\u201d I rotary till in October before planting. Base fertilizer is one full 50-kg bag of compound fertilizer per mu, the 15-15-15 kind. Then I irrigate four times: winter water, jointing, heading, and filling. At jointing I spread half a bag of urea per mu, and another half bag at heading. The dealer told me that\u2019s enough nitrogen. I spray pesticide twice, once for aphids and once when the dealer says rust might come. Some neighbors spray three times, but twice was fine for me last year and I save money.\n\nFor maize, there is no time to plough after wheat harvest in June \u2014 the season is too short. I hire the no-till seeder to drill the hybrid seed straight into the wheat stubble the day after harvest. I put 40 kg of compound per mu down with the seed, then side-dress 25 kg of urea at the big trumpet stage. Three irrigations: right after sowing, big trumpet, and filling. Two pesticide sprays for armyworm and other bugs. No-tillage saves me days and diesel money.\n\nStevia is different. I plough those 10 mu fine in April and plant the improved seedlings. The dealer warned me that stevia doesn\u2019t like too much nitrogen or the sweetness in the leaves drops, so I only put 30 kg of compound per mu at planting and top-dress once with 15 kg of urea. It drinks a lot of water, especially in July, so five irrigations. Three pesticide sprays because the buyer checks the leaves \u2014 dirty or spotted leaves and he cuts my price.\n\nFertilizer is more expensive this year, but I\u2019d rather spend the money than risk a bad harvest. I thought about trying that new seed the dealer pushed, but my neighbor tried it last year and got no better yield. I\u2019ll stick with what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I run a 30-mu farm with 20 mu in wheat-maize double cropping and 10 mu in stevia. With only primary schooling, I rely on what worked last year and what my neighbors do. For wheat I rotary till and apply one 50-kg bag of 15-15-15 compound fertilizer per mu as a base, plus half a bag of urea at jointing and again at heading, with four irrigations and two pesticide sprays. For maize I use no-till planting immediately after wheat harvest to save time, put 40 kg compound per mu with the seed, side-dress 25 kg urea at big trumpet, irrigate three times, and spray twice. For stevia I plough fine and use less nitrogen \u2014 30 kg compound plus 15 kg urea once \u2014 because the dealer says too much hurts leaf sweetness, with five irrigations and three pesticide sprays to keep leaves clean for the buyer. I keep the same varieties as last year because change is risky and a bad harvest is worse than spending extra on fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "stevia",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 5,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I run a 30-mu farm with 20 mu in wheat-maize double cropping and 10 mu in stevia. With only primary schooling, I rely on what worked last year and what my neighbors do. For wheat I rotary till and apply one 50-kg bag of 15-15-15 compound fertilizer per mu as a base, plus half a bag of urea at jointing and again at heading, with four irrigations and two pesticide sprays. For maize I use no-till planting immediately after wheat harvest to save time, put 40 kg compound per mu with the seed, side-dress 25 kg urea at big trumpet, irrigate three times, and spray twice. For stevia I plough fine and use less nitrogen \u2014 30 kg compound plus 15 kg urea once \u2014 because the dealer says too much hurts leaf sweetness, with five irrigations and three pesticide sprays to keep leaves clean for the buyer. I keep the same varieties as last year because change is risky and a bad harvest is worse than spending extra on fertilizer."
+  },
+  "elapsed_seconds": 213.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_1",
+  "tier": 3,
+  "provider": "kimi"
+}

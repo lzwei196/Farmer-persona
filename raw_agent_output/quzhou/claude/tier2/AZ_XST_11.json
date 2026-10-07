@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land since I was little, following my parents around the fields. Eight mu isn't much, but it's mine and I know every corner of it. Let me think through what I'll do this year.\n\nMy main rotation is wheat and maize on about five mu \u2014 that's the reliable income and what we eat. The other three mu I keep in cotton. My son and daughter-in-law do work in the city some months, so I need crops I can manage mostly myself, but cotton brings in cash that the grain can't always match.\n\n**Wheat:** I'll plant in October after the maize comes off. I buy improved seed from the county seed station \u2014 I switched away from the old saved seed maybe fifteen years ago and the yields got better, so I keep doing it. I apply compound fertilizer as a base when I sow, then push urea at jointing. I irrigate three times: once before winter sets in to help the roots, once at jointing, and once when the grain is filling. Two pesticide passes \u2014 one herbicide early and one for aphids in spring. Rotary till after the maize harvest to break up the stubble.\n\n**Maize:** Goes in right after wheat harvest in June, same five mu. I use hybrid seed, everyone around here does. I plant without tillage \u2014 just straight into the ground, saves time and the soil is already loose enough. Summer rains usually help but I'll pull water from the well twice if it's dry like last year. One spray for pests if needed.\n\n**Cotton:** Three mu, spring planting around April. I plough this field in spring \u2014 cotton roots need loose soil. I use the Bt hybrid cotton, it cuts down on how many times I need to spray for bollworm. Still need four pesticide applications though \u2014 aphids, spider mites, and late-season bollworm pressure. Cotton drinks more water than the grains, so three irrigations from the well. I put more potassium on cotton, learned that from watching the neighbors \u2014 the bolls fill better.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 5 mu to the winter wheat\u2013summer maize rotation that anchors my household food and grain income, and 3 mu to cotton for cash. I use improved wheat seed and hybrid maize and cotton seed because the yields are consistently better than what I used to save myself. Wheat gets three irrigations at the critical winter, jointing, and grain-filling stages; maize relies mainly on summer rain with two well-water irrigations as backup; cotton needs three well irrigations through the long growing season. I apply heavier potassium on cotton because the bolls fill better. I use Bt hybrid cotton to reduce bollworm spraying but still apply four pesticide treatments for aphids, mites, and remaining bollworm pressure. Tillage follows what works for each crop: rotary after maize for wheat planting, no-till direct seeding for summer maize to save labor while family members are off-farm, and spring ploughing for cotton to loosen the soil before transplant.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate 5 mu to the winter wheat\u2013summer maize rotation that anchors my household food and grain income, and 3 mu to cotton for cash. I use improved wheat seed and hybrid maize and cotton seed because the yields are consistently better than what I used to save myself. Wheat gets three irrigations at the critical winter, jointing, and grain-filling stages; maize relies mainly on summer rain with two well-water irrigations as backup; cotton needs three well irrigations through the long growing season. I apply heavier potassium on cotton because the bolls fill better. I use Bt hybrid cotton to reduce bollworm spraying but still apply four pesticide treatments for aphids, mites, and remaining bollworm pressure. Tillage follows what works for each crop: rotary after maize for wheat planting, no-till direct seeding for summer maize to save labor while family members are off-farm, and spring ploughing for cotton to loosen the soil before transplant."
+  },
+  "elapsed_seconds": 56.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_11",
+  "tier": 2,
+  "provider": "claude"
+}

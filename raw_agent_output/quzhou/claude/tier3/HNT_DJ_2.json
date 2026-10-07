@@ -1,0 +1,66 @@
+{
+  "raw_response": "I'll think through this as the farmer, then give the plan.\n\n**My thinking:**\n\nLast year went alright so I do mostly the same this year. I have 8.5 mu. Most of it I keep for wheat-maize \u2014 that's what everyone in our village does, and two harvests a year is better than one. I'll put 6 mu in wheat-maize rotation. Then 1.5 mu cotton \u2014 my wife helps pick and it brings cash. The last 1 mu I plant mungbean after we harvest the wheat on a small corner, it doesn't need much and the family eats some.\n\nFor wheat, I buy the improved seed from the dealer in town, same brand neighbor Wang uses, he got over 450 kg last year. I spread about 2 bags of compound fertilizer (diammonium) before sowing, then topdress urea at green-up \u2014 works out to around 20 kg nitrogen per mu. Better a little extra than short. I water 4 times \u2014 winter water is important, then green-up, jointing, and when grain fills. Spray 2-3 times for aphids and powdery mildew.\n\nMaize I plant right after wheat harvest, no plough \u2014 just seed into the stubble, saves diesel. Hybrid seed, one bag does maybe 3 mu. Fertilize at planting and once more when knee-high. Rain does most of the watering in summer, maybe one extra if dry in August.\n\nCotton needs more work \u2014 plough properly, plastic mulch, and I spray many times for bollworm. It's costly but price is okay.\n\nMungbean is easy, low input, fixes its own nitrogen my father said.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 110\n    }\n  ],\n  \"reasoning_summary\": \"I follow what worked last year and what my neighbors do. Most of my 8.5 mu goes to wheat-maize because two crops a year feeds the family and sells well. I keep 1.5 mu cotton for cash and 1 mu mungbean because it's easy and needs little. I use improved wheat seed and hybrid maize from the dealer in town. On fertilizer I don't skimp \u2014 better spend a bit extra than lose yield, a bad harvest is a disaster but wasted fertilizer is only money. I water wheat 4 times because winter water matters here, maize mostly gets rain. Cotton I spray many times because bollworm eats everything if you don't. Mungbean I barely touch, my father said beans make their own nitrogen.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 110
+      }
+    ],
+    "reasoning_summary": "I follow what worked last year and what my neighbors do. Most of my 8.5 mu goes to wheat-maize because two crops a year feeds the family and sells well. I keep 1.5 mu cotton for cash and 1 mu mungbean because it's easy and needs little. I use improved wheat seed and hybrid maize from the dealer in town. On fertilizer I don't skimp \u2014 better spend a bit extra than lose yield, a bad harvest is a disaster but wasted fertilizer is only money. I water wheat 4 times because winter water matters here, maize mostly gets rain. Cotton I spray many times because bollworm eats everything if you don't. Mungbean I barely touch, my father said beans make their own nitrogen."
+  },
+  "elapsed_seconds": 39.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_2",
+  "tier": 3,
+  "provider": "claude"
+}

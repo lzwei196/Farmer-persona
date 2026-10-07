@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 30 years, and I know what works around here. My 6 mu in Quzhou County \u2014 I split it the same way every year: all 6 mu for winter wheat in the cool season, then I turn it right around into summer maize after the wheat comes off in early June. It's the only way to get two crops in one year on this plain, and I've got the well to water them when the rains don't cooperate.\n\nFor the wheat, I'll use the improved variety I've been buying from the county seed station \u2014 it's not the fanciest hybrid, but it yields steady and I can save some seed if I need to. I'll rotary till before planting in mid-October. Fertilizer? I'll put down about 18 kg of nitrogen per mu, plus 6 kg of phosphorus and 4 kg of potassium at the base. I'll irrigate four times: once after sowing to get it germinated, once before winter to protect the seedlings from freezing, once at jointing in spring when the wheat really needs a push, and once at grain filling. I'll spray pesticides twice \u2014 once in early spring for aphids and diseases, and once before heading. I expect about 500 kg per mu from the wheat if the weather holds.\n\nAs soon as the wheat is harvested in early June, I'll rotary till again and plant summer maize with a hybrid seed \u2014 the county extension office recommends hybrids for summer maize, and I agree, they give better yield in the short summer window. Maize needs heat, and we've got that, but it also needs water at the right times. I'll irrigate three times: at sowing, at the big trumpet stage, and at grain filling. Fertilizer will be 16 kg nitrogen per mu, 5 kg phosphorus, and 4 kg potassium. I'll spray pesticides twice \u2014 once when the armyworms show up, and once for corn borers. With a good summer, I can get 550 kg per mu from the maize.\n\nMy wife and I can't do everything alone anymore \u2014 my son works in the city \u2014 so I hire a combine for harvest and a tractor for tillage. The off-farm income helps pay for the fertilizer and seed, but I still do the irrigating and spraying myself because I know every corner of these 6 mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage all 6 mu under a wheat-maize double cropping system, which is standard for Quzhou County on the North China Plain. I use improved wheat seed and hybrid maize seed because hybrids perform best in the short summer season. I rely on rotary tillage for both crops since it is practical and commonly used here. Irrigation is critical, so I water wheat four times and maize three times using my well. Fertilizer rates follow local practices: moderate NPK for both crops. Pesticide applications are kept to two per crop to control the main pests I usually encounter. Expected yields reflect 30 years of experience on this land with decent weather and management.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage all 6 mu under a wheat-maize double cropping system, which is standard for Quzhou County on the North China Plain. I use improved wheat seed and hybrid maize seed because hybrids perform best in the short summer season. I rely on rotary tillage for both crops since it is practical and commonly used here. Irrigation is critical, so I water wheat four times and maize three times using my well. Fertilizer rates follow local practices: moderate NPK for both crops. Pesticide applications are kept to two per crop to control the main pests I usually encounter. Expected yields reflect 30 years of experience on this land with decent weather and management."
+  },
+  "elapsed_seconds": 27.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_14",
+  "tier": 2,
+  "provider": "kimi"
+}

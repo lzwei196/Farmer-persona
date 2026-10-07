@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 10 mu in Quzhou for over 25 years. I'm 50 now, finished middle school, so I can read the numbers on fertilizer bags and understand what the extension people say \u2014 but honestly, I trust what I've seen with my own eyes more than I trust their charts.\n\nThis year I'm keeping things the same as last year. Eight mu will go to my wheat-maize rotation, like everyone else in the village. The other two mu I'll plant cotton. Not more than that because picking cotton kills my back, and it's just me and my wife doing the work. We can't afford to hire laborers for picking.\n\nFor the wheat, I'll sow in early October after rotary tilling the field. I use an improved variety \u2014 I save some seed from last year but I mix in fresh bought seed every few years to keep vigor. Before sowing I put down about 100 jin of compound fertilizer per mu as basal, and at jointing stage I'll topdress with another 40 jin of urea. That works out to roughly 20 kg of nitrogen per mu, plus 8 kg of phosphorus and 5 kg of potassium from the compound. I irrigate three times: overwintering water, jointing, and grain filling. Two insecticide sprays and one herbicide spray. If the spring rain comes on time I should get about 450 kg per mu.\n\nRight after wheat harvest in early June, I plant maize on the same 8 mu. There's no time to plow \u2014 the window is too tight \u2014 so I do no-tillage planting. I buy hybrid seed from the dealer, one package per mu. Basal fertilizer is another 80 jin of compound per mu. I irrigate twice, at jointing and filling stage. Two insecticide sprays and one herbicide. Maize usually gives me 500 kg per mu, sometimes 550 if the summer rain is good.\n\nThe two mu of cotton I'll rotary till and plant in mid-April. I use an improved variety. Fertilizer is about 80 jin of compound basal plus one topdress of urea \u2014 that's about 15 kg nitrogen, 6 kg phosphorus, 4 kg potassium per mu. I irrigate twice, but cotton needs a lot of spraying for bollworm and weeds \u2014 maybe eight applications through the season. Cotton brings better money per jin than grain, but it's risky and labor-intensive. I expect about 300 kg of seed cotton per mu.\n\nWhy this plan? Wheat and maize are my insurance. Even in a bad year I have grain to eat and sell. Cotton gives me cash for school fees and medicine, but I don't bet the whole farm on it. The extension agent told me I could cut nitrogen to 15 kg per mu, but two years ago I tried that on one plot and the yield dropped by nearly 50 kg. So I'm sticking to 20 kg for wheat and 18 kg for maize. Better to spend a bit more on fertilizer than to risk a bad harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I keep 8 mu in the reliable wheat-maize rotation that feeds my family and provides steady income, using no-tillage for maize to save time between the tight harvest-planting window. The other 2 mu goes to cotton for cash diversification, though I limit the area because of labor constraints. I apply slightly more nitrogen than extension recommendations based on my own experience of yield losses from cutting back, and I prioritize wheat and maize as my food security base while accepting cotton's higher risk and labor for its better price per jin.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I keep 8 mu in the reliable wheat-maize rotation that feeds my family and provides steady income, using no-tillage for maize to save time between the tight harvest-planting window. The other 2 mu goes to cotton for cash diversification, though I limit the area because of labor constraints. I apply slightly more nitrogen than extension recommendations based on my own experience of yield losses from cutting back, and I prioritize wheat and maize as my food security base while accepting cotton's higher risk and labor for its better price per jin."
+  },
+  "elapsed_seconds": 258.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_11",
+  "tier": 1,
+  "provider": "kimi"
+}

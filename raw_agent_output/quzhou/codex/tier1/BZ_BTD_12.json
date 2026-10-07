@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will plant the standard Quzhou pattern and keep the whole year simple: winter wheat followed by summer maize on the same land. I am in Quzhou County on the North China Plain, where winter wheat and summer maize already dominate most fields, and local demonstration fields have recently shown that this rotation is still the steadiest way to get yield with controlled water and fertilizer input. I do not want to gamble on a more complicated cash-crop plan at my age and with ordinary schooling; I would rather run a familiar grain system that I can manage tightly and mechanize well. Because you did not give my land size, I am assuming I farm 20 mu. I will put all 20 mu into winter wheat, then all 20 mu into summer maize after wheat harvest. For wheat I will use an improved local variety, return straw, plough the land, and push management around the key water and fertilizer periods; for maize I will switch to a hybrid, seed directly after wheat harvest with minimal disturbance, and rely on fewer irrigations because summer rain usually carries more of the season here. My nutrient rates are set close to the recent Quzhou \u201c\u5428\u534a\u7cae\u201d practice for nitrogen and within current water-fertilizer integration ranges for phosphorus and potassium, but I keep yield targets a little below the top demonstration numbers because I am planning as an ordinary farmer, not a show field. Sources I used: China Agricultural University Quzhou Experimental Station on Quzhou\u2019s wheat-maize system and recent measured yields in the county (https://qzsyz.cau.edu.cn/art/2024/10/8/art_46317_1039835.html, https://qzsyz.cau.edu.cn/art/2024/2/25/art_46232_1012984.html), a Quzhou-based North China Plain study noting that over 80% of fields are in winter wheat-summer maize rotation (https://pmc.ncbi.nlm.nih.gov/articles/PMC5290742/), and Ministry of Agriculture / technical guidance ranges for wheat and maize water-fertilizer management (https://www.moa.gov.cn/xw/zxfb/202504/t20250407_6472869.htm, https://www.moa.gov.cn/xw/zxfb/202504/t20250410_6473061.htm). My inference is the 20 mu scale and the slightly conservative yield targets.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 700\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13.8,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 780\n    }\n  ],\n  \"reasoning_summary\": \"I will farm 20 mu in the usual Quzhou winter wheat-summer maize rotation because it matches the local climate, fits my experience, is easy to mechanize, and has the lowest production risk for me. I will use improved wheat and hybrid maize, keep fertilizer near the local high-yield but not extreme range, irrigate wheat more heavily than maize, and aim for solid ordinary-farmer yields rather than top demonstration-field numbers.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 700
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13.8,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 780
+      }
+    ],
+    "reasoning_summary": "I will farm 20 mu in the usual Quzhou winter wheat-summer maize rotation because it matches the local climate, fits my experience, is easy to mechanize, and has the lowest production risk for me. I will use improved wheat and hybrid maize, keep fertilizer near the local high-yield but not extreme range, irrigate wheat more heavily than maize, and aim for solid ordinary-farmer yields rather than top demonstration-field numbers."
+  },
+  "elapsed_seconds": 61.0,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_12",
+  "tier": 1,
+  "provider": "codex"
+}

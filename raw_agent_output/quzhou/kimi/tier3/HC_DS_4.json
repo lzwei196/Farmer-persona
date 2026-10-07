@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old and have worked this land for 40 years. I never went to school, so I don't read books or those papers they hand out at the township office. I learned everything by doing it and watching the old folks before me. My husband and I farm 15 mu in Quzhou County. My son works construction in Handan and sends some money home, but the farm is what feeds us. We have a well, so I can water when I need to.\n\nThis year I have 13 mu in wheat and 2 mu in garlic that went in last autumn. After the wheat comes off in June, I will plant maize on those same 13 mu.\n\nFor the wheat: I used an improved variety that I have grown for three years now. It gave me 1000 jin per mu last year, and the ears are full. Before planting, I put one bag of compound fertilizer on each mu \u2014 a bag is 100 jin, costs 100 yuan. This spring, when the wheat turns green, I will spread one bag of urea on each mu too. Fertilizer is dear now, but I saw what happened to Old Wang from West Village. He tried to save money and put less last year, and his wheat looked like grass. I would rather waste some fertilizer than lose the crop. A bad harvest is a disaster; wasting fertilizer is just a cost. I will water three times: once after New Year if there is no good snow, once when the stems shoot up, and once when the grain is filling. I will spray twice: first for the weeds, then for the rust that came two years ago and made everyone lose yield. I till with the rotary machine after the maize is harvested in autumn.\n\nFor the garlic: I keep 2 mu by the well for garlic because at the Quzhou market it sells for good money, better than grain. I plant the big white cloves I saved myself \u2014 I never buy garlic seed, that is foolish. Garlic needs a lot of food to make big bulbs. I put two bags of compound fertilizer per mu, one bag of urea, and two cartloads of pig manure from my pen. I water four times: before winter to help it root, when spring wakes it up, when I cut the flower stems so the bulb grows fat, and one more time when the bulbs are swelling. I spray three times: for weeds, for the root flies, and for the white rot that can ruin a whole field. I till it with the rotary machine too.\n\nFor the maize: As soon as the wheat is cut in early June, I plant hybrid maize seed. I buy it from the seed dealer \u2014 whatever hybrid number they have this year, usually 40 yuan a bag and one bag plants 2 mu. I don't till the ground for maize anymore. The machine plants right into the wheat stubble, no-till, saves time and diesel. I put one bag of compound per mu at planting, then half a bag of urea when the plants are knee-high. Two waters is usually enough in summer because the rains come, but I have the well if it turns dry. Two sprays: one for weeds and one for the bugs that eat the cobs.\n\nI watch my neighbors. If Aunt Zhang puts more fertilizer, I think about it. If everyone is spraying for bugs, I spray too. Change is risky, so I mostly do what I did last year. I expect the wheat to give me 1000 jin per mu, the maize 1200 jin, and the garlic 2000 jin. If prices don't drop, we will be fine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 38,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed for 40 years without school, so I do what worked before and watch my neighbors. This year my 13 mu of wheat gets one bag of compound and one bag of urea per mu, three waters and two sprays, then I plant hybrid maize no-till on the same land with one bag of compound and half a bag of urea, two waters and two sprays. My 2 mu of garlic gets two bags of compound and one bag of urea because it pays better than grain, plus four waters and three sprays. I would rather spend too much on fertilizer than risk a bad harvest, since losing yield is a disaster but wasting a little fertilizer is only a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "garlic",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 38,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed for 40 years without school, so I do what worked before and watch my neighbors. This year my 13 mu of wheat gets one bag of compound and one bag of urea per mu, three waters and two sprays, then I plant hybrid maize no-till on the same land with one bag of compound and half a bag of urea, two waters and two sprays. My 2 mu of garlic gets two bags of compound and one bag of urea because it pays better than grain, plus four waters and three sprays. I would rather spend too much on fertilizer than risk a bad harvest, since losing yield is a disaster but wasting a little fertilizer is only a cost."
+  },
+  "elapsed_seconds": 137.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DS_4",
+  "tier": 3,
+  "provider": "kimi"
+}

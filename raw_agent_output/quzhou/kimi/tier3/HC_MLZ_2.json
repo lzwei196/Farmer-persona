@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 55 years old and I have farmed my 7 mu in Quzhou County for 35 years. I only finished primary school. I learned everything from my father and from watching my neighbors. My wife works with me, and my son does construction in Shijiazhuang and sends some money home. I have a well for irrigation.\n\nFor winter wheat, I do what I did last year. In October, I rotary till all 7 mu. I buy improved wheat seed from the dealer in town \u2014 about 12 kg per mu. Before sowing, I spread one 50 kg bag of compound fertilizer on each mu. The bag says 15-15-15. Then in March, when the wheat turns green, I topdress with 30 kg of urea per mu. Two years ago I used only 15 kg of urea to save money, and my yield dropped badly. My neighbor Wang used his normal amount and his wheat was much greener. I lost more than 100 jin per mu. So now I make sure to put enough. I would rather waste some fertilizer than risk a bad harvest. I irrigate three times: once before winter freeze, once in April at jointing, and once in May at heading. I spray three times \u2014 herbicide after sowing, and two more times in spring for aphids and rust. I expect about 550 kg per mu.\n\nFor summer maize, I plant right after wheat harvest in early June. There is no time to plow. I hire the no-till planter that drills through the wheat straw. Everyone uses it now. I buy hybrid seed, about 2.5 kg per mu. I put down one 50 kg bag of compound fertilizer per mu when planting. Then in late July, when the maize is knee-high, I side-dress with 20 kg of urea per mu. I irrigate twice \u2014 once when the plants are tasseling, and once at flowering if it is dry. I spray twice: herbicide at sowing, and once in August for corn borer. I expect about 600 kg per mu.\n\nMy fertilizer costs about 220 yuan per mu for wheat and 190 yuan for maize. It is a big expense. But a bad harvest is a disaster. Wasting some fertilizer is just money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21.3,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.7,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to what worked before, using one 50 kg bag of 15-15-15 compound fertilizer per mu for both crops plus urea topdressing. I would rather spend more on fertilizer than risk losing yield, since a bad harvest is a disaster but wasted fertilizer is just a cost. I follow my neighbors' practices and adjust based on last year's results.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21.3,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.7,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to what worked before, using one 50 kg bag of 15-15-15 compound fertilizer per mu for both crops plus urea topdressing. I would rather spend more on fertilizer than risk losing yield, since a bad harvest is a disaster but wasted fertilizer is just a cost. I follow my neighbors' practices and adjust based on last year's results."
+  },
+  "elapsed_seconds": 271.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_2",
+  "tier": 3,
+  "provider": "kimi"
+}

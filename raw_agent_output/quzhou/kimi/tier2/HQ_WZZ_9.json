@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have worked this land for twenty years. I know every corner of my 16.1 mu. My household has four people, but my son and daughter work in a factory in Handan city and only come back for the busiest periods, so most days it is just me and my wife. That means I cannot take risks with crops that need too much labor.\n\nI will keep 12 mu in my wheat-maize double crop. This system is my family's foundation. For the winter wheat, I will sow an improved variety I have trusted for years from the county seed station. After the maize harvest, I will do rotary tillage to prepare the seedbed and sow in early October. I will apply nitrogen at about 18 kg per mu, split between base fertilizer and topdressing at jointing. Phosphorus and potassium go in at planting, about 8 kg and 6 kg per mu. I will irrigate three times: the crucial winter irrigation before the ground freezes, then at jointing in spring, and once at grain filling. Two well-timed pesticide sprays are enough\u2014one early herbicide and one fungicide at flag leaf stage. If the weather holds, I expect around 460 kg per mu.\n\nImmediately after wheat harvest in early June, I plant summer maize on the same 12 mu. The season is short, so I use no-tillage planting with a machine to save time and moisture. I plant hybrid maize\u2014everyone has switched to hybrid now, the yield advantage is clear. I side-dress urea at the big trumpet stage, totaling about 16 kg nitrogen per mu, with 6 kg phosphorus and 6 kg potassium applied at planting. I will irrigate twice if the summer turns dry, especially at tasseling and grain filling. Two sprays: a pre-emergence herbicide and one insecticide for armyworm. I expect about 520 kg per mu.\n\nThe remaining 4.1 mu I plant to cotton. Cotton brings good cash income, but it demands intensive labor for spraying and hand-picking, so I deliberately limit it to this smaller plot. I plough deeply in spring to warm the soil and break up compaction. I use an improved Bt cotton variety, which helps with bollworm, but I still need to spray five times for aphids, spider mites, and other pests. I apply about 14 kg nitrogen per mu, 7 kg phosphorus, and 7 kg potassium. I will irrigate twice, at flowering and peak boll stage. The picking falls between the maize harvest and wheat sowing, which strains our labor, but 4.1 mu is manageable for me and my wife. I expect about 250 kg of seed cotton per mu.\n\nThis plan balances stability and cash income. The wheat-maize double crop gives me grain security and fits the rhythm of the North China Plain. Keeping cotton to 4.1 mu ensures I can handle the spraying and picking without hiring too many workers, since my children are away. I have well irrigation, so when the rain fails, I can protect the yields. After two decades, I know what works on my farm.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"With 20 years of experience and limited daily labor since my children work off-farm, I manage 12 mu as a reliable wheat-maize double crop for grain security, using an improved wheat variety and hybrid maize with efficient tillage and targeted irrigation. The remaining 4.1 mu is planted to cotton for cash income, deliberately kept small because cotton requires intensive spraying and hand-picking. This balance allows my wife and me to manage the farm without excessive hired labor while maintaining both stable food production and supplementary earnings.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "With 20 years of experience and limited daily labor since my children work off-farm, I manage 12 mu as a reliable wheat-maize double crop for grain security, using an improved wheat variety and hybrid maize with efficient tillage and targeted irrigation. The remaining 4.1 mu is planted to cotton for cash income, deliberately kept small because cotton requires intensive spraying and hand-picking. This balance allows my wife and me to manage the farm without excessive hired labor while maintaining both stable food production and supplementary earnings."
+  },
+  "elapsed_seconds": 85.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_9",
+  "tier": 2,
+  "provider": "kimi"
+}

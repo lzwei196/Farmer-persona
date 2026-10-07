@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 6 mu in the wheat-maize rotation, so I will use the same 6 mu for wheat and then maize. I do not start from zero each year. I start from what has worked here in Quzhou County and then I adjust a little based on cost, water, and the stand I want. Since I have well irrigation and I have farmed 30 years, I will push fertilizer enough to protect yield, not cut too hard and gamble on a bad harvest. For wheat, I will keep a fairly solid base fertilizer with nitrogen, phosphorus, and some potassium, then topdress nitrogen at jointing and give 3 irrigations if the season is normal. Wheat is where I will not save too much, because if the population is weak in winter or spring, I cannot fully fix it later. For maize, I will use hybrid seed, keep nitrogen strong, and place more of the fertilizer early so the crop does not fall behind after wheat harvest. Around here, if neighbors are managing seriously, nobody is starving maize for fertilizer. On 6 mu, I can still afford to manage carefully, and I would rather spend a bit more on fertilizer and water than lose 50 to 100 kg per mu in yield. I will use rotary tillage before wheat, and for summer maize I will go no-tillage or very light disturbance after wheat harvest to save time and hold moisture. I will plan pesticide sprays based on the usual pressure: wheat for weeds plus disease/insects, maize for weeds and then one more pass if armyworm, aphids, or leaf disease shows up.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will manage my 6 mu as a wheat-maize rotation the same way I have seen work reliably in Quzhou, with enough fertilizer and water to protect yield first and then watch costs second. For wheat I will keep a strong base fertilizer program, topdress nitrogen, irrigate 3 times in a normal year, and control weeds, disease, and insects in time. For maize I will use hybrid seed, keep nitrogen reasonably high, save time after wheat harvest with no-tillage planting, irrigate 2 times if rainfall is not enough, and spray according to field pressure. Since my land is irrigated and my farm is not large, I will manage carefully and prefer slightly higher input over the risk of yield loss.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will manage my 6 mu as a wheat-maize rotation the same way I have seen work reliably in Quzhou, with enough fertilizer and water to protect yield first and then watch costs second. For wheat I will keep a strong base fertilizer program, topdress nitrogen, irrigate 3 times in a normal year, and control weeds, disease, and insects in time. For maize I will use hybrid seed, keep nitrogen reasonably high, save time after wheat harvest with no-tillage planting, irrigate 2 times if rainfall is not enough, and spray according to field pressure. Since my land is irrigated and my farm is not large, I will manage carefully and prefer slightly higher input over the risk of yield loss."
+  },
+  "elapsed_seconds": 30.4,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_3",
+  "tier": 3,
+  "provider": "codex"
+}

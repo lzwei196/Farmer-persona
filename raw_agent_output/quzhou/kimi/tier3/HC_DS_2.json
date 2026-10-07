@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 69, never went to school, and I have farmed this same 3.5 mu for 45 years. My son works in a factory in Handan and sends money home, but this land still feeds us. I grow wheat in winter and maize in summer on the same piece \u2014 always wheat first, then maize right after.\n\nFor wheat this year: I will sow in early October. I buy the improved seed from the shop in town, the kind everyone uses, about 15 jin per mu. Before sowing I spread one full bag of compound fertilizer on each mu \u2014 the 50kg bag with 15-15-15 printed on it. That costs about 100 yuan a bag. In March when the wheat turns green, I will topdress with half a bag of urea per mu, 25kg. Last year I put less urea and the wheat was yellow and thin, so I am not cutting back. Better to spend the money. I irrigate three times: once when it greens up, once when it shoots up tall, and once when the grain is filling. I spray twice: once for weeds right after sowing, and once in spring for the bugs that chew the leaves. I do rotary tillage before sowing, pay the machine 30 yuan per mu. I expect about 1000 jin per mu, that is 500kg, same as last year.\n\nFor maize: I plant right after wheat harvest in June. Hybrid seed, about 3 jin per mu. I put 40kg of compound fertilizer per mu at planting time, and when the maize is knee-high I put 30kg of urea per mu between the rows. I do not till for maize \u2014 I plant straight into the wheat stubble with the no-till machine. The stubble keeps the ground moist and I save 30 yuan per mu on tillage. I irrigate twice: once when it is tasseling, and once when the grain is filling. One spray for the corn borer and weeds together. I expect about 1100 jin per mu, that is 550kg.\n\nWhy these amounts? Because this is what I did last year and it was okay. I watch Old Zhang and the others on this road. They put one bag of compound on their wheat, so do I. If I use less and the yield drops, I lose hundreds of yuan. If I use a bit more fertilizer, I only lose a few tens of yuan. The math is simple. Fertilizer is expensive now, 3.5 mu is small, but I cannot afford a bad year. My family depends on it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19.8,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 3.5 mu for 45 years and I copy what works. For wheat I put one 50kg bag of 15-15-15 compound fertilizer and 25kg urea per mu because that is what my neighbors do and last year it gave me 500kg per mu. For maize I put 40kg compound and 30kg urea per mu, plant no-till into wheat stubble to save money, and irrigate twice. I would rather spend a bit more on fertilizer than risk a bad harvest because on a small farm every jin of grain matters and my family depends on it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19.8,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this 3.5 mu for 45 years and I copy what works. For wheat I put one 50kg bag of 15-15-15 compound fertilizer and 25kg urea per mu because that is what my neighbors do and last year it gave me 500kg per mu. For maize I put 40kg compound and 30kg urea per mu, plant no-till into wheat stubble to save money, and irrigate twice. I would rather spend a bit more on fertilizer than risk a bad harvest because on a small farm every jin of grain matters and my family depends on it."
+  },
+  "elapsed_seconds": 80.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DS_2",
+  "tier": 3,
+  "provider": "kimi"
+}

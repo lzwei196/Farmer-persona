@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming these 60 mu in Quzhou for 30 years. I know every piece of this land. My husband and my children sometimes work off-farm in the city, so I cannot manage too much labor-heavy cotton. Wheat and maize are my backbone \u2014 they give us grain to eat and sell, and the machines can do most of the work now. I will put 45 mu into my wheat-maize rotation and keep 15 mu for cotton. That is enough cotton to bring in cash, but not so much that I break my back picking it at my age.\n\nFor wheat, I will rotary till the land before sowing in October, like everyone else here. I will sow an improved variety from the seed shop \u2014 the yield is steady and the grain buyer recognizes it. I will put down compound fertilizer as a base and topdress urea in spring when the wheat turns green. Water is precious even though I have a well, so I will irrigate four times: once before winter to protect the seedlings, once at green-up, once at jointing, and once at grain filling. I will spray herbicide early and watch for aphids and rust \u2014 about four sprays in total. I expect around 1000 jin per mu if the weather behaves.\n\nFor maize, there is no time to plough after harvesting wheat in June. I will direct-seed hybrid maize into the wheat stubble \u2014 no-tillage, using the machine service. I will apply starter fertilizer with the seed and topdress with urea at the big trumpet stage. Maize does not need as much water as wheat; I will irrigate twice, at jointing and filling, unless the summer rain is generous. Three pesticide sprays should do \u2014 herbicide at sowing and one or two insecticide sprays for corn borers. With good sun, I expect about 1100 jin per mu.\n\nFor cotton, I will rotary till in spring and plant hybrid Bt cotton seed. Cotton is thirsty when it flowers and sets bolls, so I will irrigate twice during those key periods. But the real trouble is pests \u2014 aphids, mites, and whatever else shows up \u2014 so I will spray about ten times through the season. I will use compound fertilizer at planting and add urea later. I hope for about 550 jin of seed cotton per mu. If the price drops, I might regret planting even this much, but 15 mu is manageable for us.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 45,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 45,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I keep most of my land in the wheat-maize double crop because it is reliable, mechanized, and fits our household labor after my children leave for off-farm work. Wheat is rotary tilled and irrigated four times with moderate fertilizer to ensure a stable grain yield. Maize is no-till direct seeded immediately after wheat harvest to save time and labor, with two irrigations and minimal pesticide. I limit cotton to 15 mu because it demands heavy manual labor for pest management and harvesting, which at 53 years old I must balance carefully against my physical limits and the help my husband and I can manage alone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 45,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 45,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I keep most of my land in the wheat-maize double crop because it is reliable, mechanized, and fits our household labor after my children leave for off-farm work. Wheat is rotary tilled and irrigated four times with moderate fertilizer to ensure a stable grain yield. Maize is no-till direct seeded immediately after wheat harvest to save time and labor, with two irrigations and minimal pesticide. I limit cotton to 15 mu because it demands heavy manual labor for pest management and harvesting, which at 53 years old I must balance carefully against my physical limits and the help my husband and I can manage alone."
+  },
+  "elapsed_seconds": 236.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DWB_10",
+  "tier": 2,
+  "provider": "kimi"
+}

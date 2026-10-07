@@ -1,0 +1,103 @@
+{
+  "raw_response": "I am 49 years old, been farming this land for 20 years since my father passed it to me. I only finished primary school, so I don't know much about those book calculations, but I know my fields. I have 9 mu and four mouths to feed. My eldest son works in a factory in Handan, and my wife sometimes does odd jobs in the village, so it's mostly me and my younger child working the land during busy times. We need cash, but we also need to eat, so I can't put everything into one crop.\n\nI put 6 mu in cotton because that's our main cash crop. Cotton needs a lot of work and money, but the price last year was decent, and I got about 500 jin of seed cotton per mu. Old Wang down the road, who has better land, got nearly 600 jin, so I think if I spend a bit more on fertilizer this year I might get closer to that. But I can't spend too much because we need cash for my younger child's school fees and for medicine if someone gets sick. I will use about one and a half bags of urea per mu, same as what I've been doing, plus some compound fertilizer as a base. I apply three times: base before planting, once when the flowers open, and once when the bolls are setting. For water, I irrigate three times from the well \u2014 at planting time, at flowering, and at boll stage. The electricity for pumping costs money, so I don't water more than needed, but if it doesn't rain for two weeks in July or August, I have to. For pests, cotton bollworm is the worst enemy. I spray insecticide four or five times through the season, and I use herbicide before the seedlings come up so I don't have to weed by hand too much. Picking is the hardest part. My family can handle the early picks, but I'll need to hire about four or five people for a few days each during the peak picking time in September and October. That's expensive \u2014 about 80 yuan per day per person \u2014 but there's no other way with my son away working.\n\nI keep 2 mu for maize. We need maize for our own food and to feed the chickens and maybe the pig. Maize doesn't need as much care as cotton. I plant hybrid seed in late April and harvest in late August before the cotton is done. I put fertilizer down twice \u2014 base before planting and a topdress at jointing \u2014 and water twice, maybe three times if it's very dry. One spray of herbicide is enough, and I don't usually need insecticide for maize. My family can manage the 2 mu without hiring much help, maybe just one day for harvest if my wife is busy.\n\nThe last 1 mu I plant mungbean. Mungbean is good because it doesn't need much fertilizer since it fixes nitrogen, and we can eat it in summer and sell a small bag in the market. I plant in early May and harvest in late July. Just a little phosphate fertilizer at planting, water once if it's dry in June, and not much else. Low cost, low risk. If the weather is bad, I don't lose much.\n\nTotal cost will be about 5,200 yuan this year. Cotton eats up most of it \u2014 seed, fertilizer, pesticide, and hired picking labor. I worry about the weather and whether cotton prices will hold, but this is what we always do. If cotton fails or the price drops, at least we have maize to eat and mungbean to sell for small cash.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"mid to late April\",\n      \"harvest_date\": \"September to October (multiple picks)\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 3,\n      \"fertilizer_timing\": \"Base: compound fertilizer before planting. First topdress: urea at flowering. Second topdress: urea at boll setting stage.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"plow and harrow before planting\",\n      \"labor_family_days\": 22,\n      \"labor_hired_days\": 5,\n      \"yield_expectation_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"maize\",\n      \"field_area_mu\": 2.0,\n      \"planting_date\": \"late April\",\n      \"harvest_date\": \"late August\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base fertilizer applied before planting. Topdress at jointing stage.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plow before planting\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"field_area_mu\": 1.0,\n      \"planting_date\": \"early May\",\n      \"harvest_date\": \"late July\",\n      \"seed_type\": \"local\",\n      \"seed_cost_yuan_per_mu\": 15,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 0,\n      \"phosphorus_total_kg_per_mu\": 3,\n      \"potassium_total_kg_per_mu\": 0,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"Phosphate fertilizer applied as base before planting\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"harrow and prepare fine seedbed\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 100\n    }\n  ],\n  \"total_input_cost_yuan\": 5200,\n  \"reasoning_summary\": \"I put most land in cotton because it brings the most cash, but it costs the most too. I kept 2 mu for maize so my family has grain to eat, and 1 mu of mungbean because it's cheap to grow and low risk. With my son working off-farm and my wife doing odd jobs, I have to hire some labor for cotton picking, which is my biggest expense. I didn't change much from last year because change is risky when you don't have extra money to spare.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "field_area_mu": 6.0,
+        "planting_date": "mid to late April",
+        "harvest_date": "September to October (multiple picks)",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 3,
+        "fertilizer_timing": "Base: compound fertilizer before planting. First topdress: urea at flowering. Second topdress: urea at boll setting stage.",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "plow and harrow before planting",
+        "labor_family_days": 22,
+        "labor_hired_days": 5,
+        "yield_expectation_kg_per_mu": 250,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 250,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4
+      },
+      {
+        "crop": "maize",
+        "field_area_mu": 2.0,
+        "planting_date": "late April",
+        "harvest_date": "late August",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base fertilizer applied before planting. Topdress at jointing stage.",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plow before planting",
+        "labor_family_days": 10,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 2.0,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3
+      },
+      {
+        "crop": "mungbean",
+        "field_area_mu": 1.0,
+        "planting_date": "early May",
+        "harvest_date": "late July",
+        "seed_type": "local",
+        "seed_cost_yuan_per_mu": 15,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 0,
+        "phosphorus_total_kg_per_mu": 3,
+        "potassium_total_kg_per_mu": 0,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "Phosphate fertilizer applied as base before planting",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "harrow and prepare fine seedbed",
+        "labor_family_days": 6,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 100,
+        "nitrogen_kg_per_mu": 0,
+        "area_mu": 1.0,
+        "expected_yield_kg_per_mu": 100,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 0
+      }
+    ],
+    "total_input_cost_yuan": 5200,
+    "reasoning_summary": "I put most land in cotton because it brings the most cash, but it costs the most too. I kept 2 mu for maize so my family has grain to eat, and 1 mu of mungbean because it's cheap to grow and low risk. With my son working off-farm and my wife doing odd jobs, I have to hire some labor for cotton picking, which is my biggest expense. I didn't change much from last year because change is risky when you don't have extra money to spare."
+  },
+  "elapsed_seconds": 238.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_14",
+  "tier": 4,
+  "provider": "kimi"
+}

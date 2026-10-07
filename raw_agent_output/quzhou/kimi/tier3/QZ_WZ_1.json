@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 60 this year. I have farmed these 7.5 mu in Quzhou for 40 years. I never went to school. My father taught me everything, and I learned the rest by watching my neighbors and doing it myself. I do not trust strangers who come with notebooks \u2014 I only trust what I see work on someone else's field.\n\nThe wheat is already in the ground. I planted 5 mu last October with improved seed I bought from the dealer in town. Right now it is greening up. At sowing I put one 100-jin bag of compound fertilizer \u2014 the kind with the three numbers on it \u2014 into the soil. When the wheat wakes up in spring I will spread half a bag of urea. At jointing stage, another half bag. That is one full bag of urea per mu for the year. I always irrigate three times: once before winter to keep it from freezing dry, once at jointing, and once when the grain is filling. I spray pesticide twice \u2014 once for aphids, once for the rust. I rotary-till before I sow. Last year I got about 900 jin per mu, so 450 kg. If the weather is like last year, I will get the same.\n\nAfter we harvest the wheat in June, I plant 5 mu of hybrid maize on that same land. I buy new hybrid seed every year \u2014 everyone does, you cannot save your own maize seed. I do not till much for maize, just plant right into the wheat stubble. I put one 50-jin bag of compound in the row at planting. Then when the plants are knee-high I top-dress with one big bag of urea. I irrigate twice if the rains are thin. Two sprays \u2014 one for armyworm, one for the ear rot. I usually get about 1,000 jin per mu, so 500 kg.\n\nMy cotton is 2.5 mu. Cotton is hard work, and with just my wife and me, I cannot handle more. I plough deep in spring to break up the soil. I plant an improved variety \u2014 not the old local cotton my grandfather grew, but not those fancy expensive hybrid seeds either. I put one 100-jin bag of compound as base, then two top-dressings of urea \u2014 half a bag at flowering, half a bag when the bolls are setting. Cotton needs more potash, so I make sure the compound bag has that third number. I irrigate four times: at planting, at flowering, at boll setting, and when the bolls are opening. Five pesticide sprays \u2014 the bollworm never sleeps, and if you miss one spray you lose the crop. Last year I got about 520 jin of seed cotton per mu, so 260 kg. I expect the same.\n\nFertilizer is expensive now. Every bag is real money out of my pocket. But I would rather put a little too much than risk losing yield. A bad harvest at my age is a disaster; wasting some fertilizer is just a cost. I do what I did last year. I watch Old Wang across the road. If he puts more urea on his wheat, I think about it. If he cuts back, I wonder why. Change is dangerous when you have only this land to live on.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I farm 7.5 mu with 5 mu in wheat-maize rotation and 2.5 mu in cotton. I learned everything from my father and 40 years of doing it. I copy what my neighbors do and I do not change what worked last year. For wheat I use one bag of compound and one bag of urea per mu, with three irrigations and two sprays. For maize I use hybrid seed, half a bag of compound and one bag of urea, two irrigations and two sprays, planted without tillage right after wheat. For cotton I plough deep, use one bag of compound and one bag of urea split twice, four irrigations and five sprays. Fertilizer costs are high but I would rather spend too much than lose the crop at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I farm 7.5 mu with 5 mu in wheat-maize rotation and 2.5 mu in cotton. I learned everything from my father and 40 years of doing it. I copy what my neighbors do and I do not change what worked last year. For wheat I use one bag of compound and one bag of urea per mu, with three irrigations and two sprays. For maize I use hybrid seed, half a bag of compound and one bag of urea, two irrigations and two sprays, planted without tillage right after wheat. For cotton I plough deep, use one bag of compound and one bag of urea split twice, four irrigations and five sprays. Fertilizer costs are high but I would rather spend too much than lose the crop at my age."
+  },
+  "elapsed_seconds": 118.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_1",
+  "tier": 3,
+  "provider": "kimi"
+}

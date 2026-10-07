@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 63 years old and have been farming these 3 mu in Quzhou for 45 years. I know every inch of this land. My husband and I are the only ones at home now \u2014 our children work in the city \u2014 so I cannot manage anything too complicated. I must be practical.\n\nIt is early spring, and my wheat is starting to green up. I will give it three irrigations from the well: one at jointing, one at heading, and one during grain filling. I will spread nitrogen fertilizer three times \u2014 a base dressing and two topdressings \u2014 totaling about 15 kg per mu of pure nitrogen, plus some phosphorus and potassium at the base. I will spray herbicide once in early spring and perhaps one fungicide if the weather turns humid. I expect about 460 kg per mu from this wheat if the weather cooperates.\n\nAfter I harvest the wheat in early June, I will quickly rotary-till the field and plant hybrid maize the same day \u2014 time is tight. For the maize, I will irrigate twice: once if it is dry at sowing, and once at the big trumpet stage when the plants need it most. I will put down about 13 kg of nitrogen per mu, split between base and ear stage, plus some P and K. I will spray herbicide once and watch for corn borers. I hope for about 520 kg per mu of maize. This double-cropping system is hard work, but it feeds us and brings in some cash.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"With 45 years of experience on this 3 mu plot in Quzhou, I rely on the wheat-maize double-cropping system that local farmers have used for generations. I keep inputs moderate because my household has only two people and some off-farm work, so I cannot afford risky experiments or excessive labor. I use the well for three wheat irrigations at critical growth stages and two for maize, apply split nitrogen to improve efficiency, and use improved wheat seed and hybrid maize seed to maintain stable yields without spending too much. My tillage choices reflect the seasonal time pressure: ploughing before wheat sowing when I have more time in autumn, and rotary tillage for maize right after the wheat harvest when every day counts.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "With 45 years of experience on this 3 mu plot in Quzhou, I rely on the wheat-maize double-cropping system that local farmers have used for generations. I keep inputs moderate because my household has only two people and some off-farm work, so I cannot afford risky experiments or excessive labor. I use the well for three wheat irrigations at critical growth stages and two for maize, apply split nitrogen to improve efficiency, and use improved wheat seed and hybrid maize seed to maintain stable yields without spending too much. My tillage choices reflect the seasonal time pressure: ploughing before wheat sowing when I have more time in autumn, and rotary tillage for maize right after the wheat harvest when every day counts."
+  },
+  "elapsed_seconds": 59.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_MZ_6",
+  "tier": 2,
+  "provider": "kimi"
+}

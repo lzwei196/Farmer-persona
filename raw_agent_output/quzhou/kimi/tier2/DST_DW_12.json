@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 68 years old. I have farmed these fields in Quzhou for 55 years, and I know every inch of them. My bones ache in the winter, and my wife and I are the only two left in the household to do the work, so I cannot afford to take risks or try fancy new methods. I stick to what the land has rewarded me with, year after year.\n\nMy wheat is already in the ground from last autumn. It is the backbone of my farm. I keep about 6 mu in the wheat\u2013maize rotation because that is what my well and my two old backs can manage. The wheat will need its spring top-dressing when it greens up, two more irrigations at jointing and grain-filling, and a couple of sprays for aphids and rust. I always use the improved Jimai varieties\u2014reliable, not fancy, but they do not fail me. I ploughed the land well before sowing, so the roots can reach deep.\n\nAfter the wheat comes off in early June, I will immediately put in summer maize on that same 6 mu. There is no time to waste between harvests. I use hybrid seed\u2014Zhengdan 958 or something like it from the seed dealer. I will run the rotary tiller once after the wheat straw is cleared, spread the fertilizer, and sow. Two irrigations will be enough for the maize if the summer rains cooperate, and I will spray twice for armyworm and weeds.\n\nI still keep 2 mu of cotton because the lint money helps when the grain prices are low, but at my age I cannot handle more. I will plough the cotton plot in April, lay the plastic mulch, and sow the hybrid Bt cotton. Cotton is thirsty and greedy for potash, so I give it plenty of K and three irrigations\u2014seedling, flowering, and boll stage. I spray four times for bollworm and mites, though the Bt cotton saves me some of that trouble now compared to the old days. My wife and I will pick it by hand in the autumn. It is hard work, but we manage 2 mu between us.\n\nI do not chase the highest possible yield anymore. I chase stability. I know exactly how much fertilizer to put down so I do not waste money, and I know the rhythm of my well. That is my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am an elderly farmer with only my wife and me to work 8 mu of land in Quzhou County. I rely on the proven wheat-maize double-cropping system on 6 mu because it is efficient, mechanizable, and fits my well irrigation. I keep only 2 mu of cotton because hand-picking is extremely labor-intensive and my wife and I can barely manage that much. I choose stable, familiar varieties and moderate, experience-based inputs rather than high-risk strategies. My goal is a reliable harvest I can achieve with two old pairs of hands, not maximum yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am an elderly farmer with only my wife and me to work 8 mu of land in Quzhou County. I rely on the proven wheat-maize double-cropping system on 6 mu because it is efficient, mechanizable, and fits my well irrigation. I keep only 2 mu of cotton because hand-picking is extremely labor-intensive and my wife and I can barely manage that much. I choose stable, familiar varieties and moderate, experience-based inputs rather than high-risk strategies. My goal is a reliable harvest I can achieve with two old pairs of hands, not maximum yield."
+  },
+  "elapsed_seconds": 68.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DST_DW_12",
+  "tier": 2,
+  "provider": "kimi"
+}

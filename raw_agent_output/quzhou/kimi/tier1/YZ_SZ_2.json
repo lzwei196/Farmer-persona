@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 65 years old and I've been working these fields since I was fifteen. My family has six mu of good flat land here in Quzhou. I only finished primary school, so I don't bother with those books and charts from the county station \u2014 I watch what my neighbors do, especially Old Wang down the road who always gets good harvests, and I do what has worked for me these past fifty years.\n\nMy winter wheat is already in the ground from last October. It's looking decent this spring. I'll keep managing it the same way I always have \u2014 I rotary till the land before planting, but for wheat that was already done last autumn. For the wheat, I put down compound fertilizer as base and then topdress with urea at green-up and jointing. I figure about 15 kg of nitrogen per mu, plus some phosphorus and potassium. I can't afford to put too much \u2014 fertilizer prices keep going up \u2014 but I also don't want to risk a bad yield. Water is expensive now with the electric pumps, so I'll irrigate three times: once when it greens up, once at heading, and once during grain filling. I spray twice \u2014 herbicide early and fungicide if the weather turns damp. I expect around 450 kg per mu if the weather holds.\n\nRight after I harvest the wheat in early June, I plant summer corn. Everyone here uses hybrid corn seed now \u2014 you have to, or the yield is too low. I don't till much between wheat and corn because there's barely a week to get the corn in the ground; I mostly plant directly. Corn needs less fuss than wheat. I give it about 12 kg nitrogen per mu, less phosphorus and potassium. I'll irrigate twice if it's dry, especially at the big trumpet stage, and spray once for weeds. If things are normal I should get about 500 kg per mu.\n\nI thought about planting some vegetables on a corner plot, but at my age the labor is too much and my son works in the city and can't help. Wheat and corn are safe \u2014 we eat some, sell some to the grain station, and the price is steady. Cotton is too much work with all the picking. So I'll stick to my wheat-corn rotation on all six mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double crop on all six mu because it is what I know and what my neighbors do. I am too old to take risks with vegetables or cotton, and my son is not here to help with heavy labor. I apply enough fertilizer to protect against a bad year but not so much that I cannot pay for it, and I irrigate only at the key stages because water pumping costs have risen. I use improved wheat seed and hybrid corn seed because that is what the seed station sells and everyone in the village uses them.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double crop on all six mu because it is what I know and what my neighbors do. I am too old to take risks with vegetables or cotton, and my son is not here to help with heavy labor. I apply enough fertilizer to protect against a bad year but not so much that I cannot pay for it, and I irrigate only at the key stages because water pumping costs have risen. I use improved wheat seed and hybrid corn seed because that is what the seed station sells and everyone in the village uses them."
+  },
+  "elapsed_seconds": 83.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "YZ_SZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

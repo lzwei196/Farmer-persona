@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 60-year-old farmer in Quzhou County with primary schooling. I have farmed these lands for over 40 years, and I know what works here on the North China Plain. I hold about 10 mu of land, and I will plant my main 8-mu plot with the double-cropping system we have always relied on: winter wheat followed by summer maize. I am not growing cotton this year \u2014 at my age, the 16-plus spray rounds and hand pruning that cotton demands are too much for my back. Wheat and maize can be handled with machines, and the inputs are predictable.\n\nFor wheat, I will rotary-till the soil in early October and sow improved seeds \u2014 Luyuan502 has done well for me in recent years. I will spread about 100 jin of compound fertilizer per mu as a basal dose, then topdress with urea at green-up in spring. Water is precious, so I irrigate three times: once before winter to protect the seedlings, and twice in spring at jointing and grain-filling. I spray four times total \u2014 insecticide twice, herbicide once, and fungicide once \u2014 because aphids and powdery mildew come every year. I expect around 1,000 jin per mu, which is 500 kg.\n\nFor maize, I plant Denghai 605 hybrid seeds right after the wheat harvest in June. I do not till for maize \u2014 no-tillage planting into the wheat stubble saves diesel and time when the heat is worst. I put down about 80 jin of compound fertilizer per mu at planting. Two irrigations are enough: one when the plants are knee-high, and one at filling. Four pesticide applications keep the borers and weeds under control. I expect about 1,200 jin per mu, which is 600 kg.\n\nThis is the system I trust. It feeds my household, the inputs are available at the village supply store, and I can manage the labor myself.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou for over 40 years and I stick with the wheat-maize double-cropping rotation on my 8-mu main plot because it is reliable, mechanized, and well-suited to the North China Plain. I use improved wheat seeds and hybrid maize seeds, apply compound fertilizer as basal with urea topdressing for wheat, irrigate three times for wheat and twice for maize, and spray pesticides four times per crop to control insects, weeds, and disease. I avoid cotton because the labor and spray burden is too heavy at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou for over 40 years and I stick with the wheat-maize double-cropping rotation on my 8-mu main plot because it is reliable, mechanized, and well-suited to the North China Plain. I use improved wheat seeds and hybrid maize seeds, apply compound fertilizer as basal with urea topdressing for wheat, irrigate three times for wheat and twice for maize, and spray pesticides four times per crop to control insects, weeds, and disease. I avoid cotton because the labor and spray burden is too heavy at my age."
+  },
+  "elapsed_seconds": 275.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

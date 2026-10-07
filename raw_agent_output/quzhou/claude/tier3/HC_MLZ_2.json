@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 7 mu here in Quzhou, same as my father did. Wheat in winter, maize in summer \u2014 this is what we always do. My two oldest help when they can but mostly it's me and my wife. The third one works in Handan city now.\n\nLast year I got about 500 kg of wheat per mu and around 600 kg of maize. Not bad. I will do similar this year. No need to change much when it worked.\n\nFor wheat, I plant Jimai variety \u2014 the seed dealer in town sells it, most neighbors use it too. I plough the land once before sowing in October. For fertilizer, I use one bag of compound fertilizer (diammonium, 50 kg) per mu before planting, then top-dress with urea in spring when wheat starts growing again \u2014 about 20 kg urea per mu. That gives me roughly 18 kg N, 12 kg P, and a little K. I water 3 times \u2014 before winter, at jointing, and at grain filling. The well is there, water is not the big worry. I spray once for aphids and once for rust if I see it \u2014 so 2 sprays.\n\nFor maize after wheat harvest in June, I don't plough \u2014 no time. I use rotary tiller and plant directly. Zhengdan or Xianyu hybrid seed, whatever the dealer has. One bag compound fertilizer at planting, then 25 kg urea at big trumpet stage. That's maybe 20 kg N, 10 kg P. I water 2 times if rain is short. Spray once for corn borer.\n\nI would rather put a little extra urea than lose yield. Fertilizer costs money but losing half the harvest is much worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year. Wheat-maize rotation like always \u2014 plough and plant wheat in October with one bag compound fertilizer, top-dress urea in spring, water 3 times from the well, spray for aphids and rust. After wheat harvest I use rotary tiller for maize, hybrid seed from the dealer, one bag compound plus urea at big trumpet stage, water when dry, one spray for borer. I put enough fertilizer because losing yield hurts more than spending a bit extra. 7 mu is not big so I count every bag but I don't cut corners on what the crop needs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I do what worked last year. Wheat-maize rotation like always \u2014 plough and plant wheat in October with one bag compound fertilizer, top-dress urea in spring, water 3 times from the well, spray for aphids and rust. After wheat harvest I use rotary tiller for maize, hybrid seed from the dealer, one bag compound plus urea at big trumpet stage, water when dry, one spray for borer. I put enough fertilizer because losing yield hurts more than spending a bit extra. 7 mu is not big so I count every bag but I don't cut corners on what the crop needs."
+  },
+  "elapsed_seconds": 27.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_2",
+  "tier": 3,
+  "provider": "claude"
+}

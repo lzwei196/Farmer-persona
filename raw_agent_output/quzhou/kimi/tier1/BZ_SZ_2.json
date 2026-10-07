@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm sixty years old and I've farmed in Quzhou County my whole life. I finished high school and have attended county agricultural extension trainings for years, so I understand soil fertility and crop physiology \u2014 but I also know that what matters is what happens in my own fields. It's mid-April now, so my winter wheat is already well into green-up after breaking dormancy. I planted 6 mu of an improved wheat variety, Jimai 22, last October, and the stand looks strong \u2014 about 800,000 stems per mu, which is right where I want it.\n\nFor fertilizer, I'm applying 18 kg of nitrogen per mu to the wheat. I already put down 8 kg N as diammonium phosphate at planting, and topdressed 10 kg N as urea at green-up in late March. I won't add more unless the flag leaves look pale at heading. Phosphorus is 8 kg P\u2082O\u2085 per mu and potassium is 6 kg K\u2082O per mu, both applied at planting. I know the extension station recommends 15 kg N/mu for wheat, but three years ago when I tried that, my yield dropped from 500 to 430 kg/mu. That 70 kg loss cost me more than the extra 3 kg of nitrogen, so I've settled on 18 kg as my safe rate.\n\nI'll irrigate the wheat three times total \u2014 the winter irrigation was done in December, the jointing irrigation went in two weeks ago, and I'll do one more at heading if May stays dry. Groundwater pumping is expensive, but wheat can't be short of water at heading. I've sprayed herbicide once already and will do one more application for aphids or powdery mildew if I see signs.\n\nAfter harvesting the wheat in early June, I'll immediately plant summer maize \u2014 hybrid Zhengdan 958 \u2014 on the same 6 mu. The turnaround window is only five to seven days, so I'll use rotary tillage rather than deep ploughing. Maize gets 20 kg N/mu, 6 kg P\u2082O\u2085/mu, and 6 kg K\u2082O/mu, with the N split between base dressing and a V8 stage topdress. I'll irrigate twice: once at the V6 stage and once at tasseling. Two pesticide applications will cover pre-emergence weeds and corn borer control.\n\nI don't grow cotton anymore \u2014 the picking labor is too much at my age, and the price fluctuates too much. Wheat and maize give me two harvests a year, grain security for the family, and a stable income. I expect 500 kg/mu from the wheat and 550 kg/mu from the maize if the weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double cropping system on my 6 mu because it provides two reliable harvests and fits my labor capacity at age 60. My education helps me understand the science, but my decisions are grounded in personal experience \u2014 I apply 18 kg N/mu to wheat because cutting to 15 kg three years ago cost me 70 kg of yield, and I'd rather waste a little fertilizer than risk a big loss. I irrigate wheat three times and maize twice because water at heading and tasseling is non-negotiable, even though pumping costs are rising. I use rotary tillage for maize to fit the tight 5-7 day turnaround after wheat harvest. I avoid cotton due to labor constraints and price volatility.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double cropping system on my 6 mu because it provides two reliable harvests and fits my labor capacity at age 60. My education helps me understand the science, but my decisions are grounded in personal experience \u2014 I apply 18 kg N/mu to wheat because cutting to 15 kg three years ago cost me 70 kg of yield, and I'd rather waste a little fertilizer than risk a big loss. I irrigate wheat three times and maize twice because water at heading and tasseling is non-negotiable, even though pumping costs are rising. I use rotary tillage for maize to fit the tight 5-7 day turnaround after wheat harvest. I avoid cotton due to labor constraints and price volatility."
+  },
+  "elapsed_seconds": 84.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

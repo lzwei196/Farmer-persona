@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for forty years. I know what Quzhou's soil and weather demand. My sons and daughter-in-law work in the city, so I need to keep things manageable \u2014 I can't be running the sprayer every other week like I used to. But I won't cut corners either. Let me think through each crop.\n\n**Wheat (winter, ~10 mu):** I'll plant Jimai 22 again \u2014 it's reliable here, the neighbors all use it. I put down compound fertilizer at sowing and top-dress urea at jointing. I always irrigate before winter, again at jointing, and at heading \u2014 three times is usually enough unless spring is dry, then I do a fourth. I'll spray once for aphids and once for rust, same as always. After maize harvest I use the rotary tiller to chop the stalks into the soil.\n\n**Maize (summer, same 10 mu):** Right after I cut wheat in June, I drill maize into the stubble \u2014 no-tillage saves my back and time. I use Zhengdan 958, proven hybrid. I top-dress twice with urea. I need to water at emergence if it's dry, and again at silking. Corn borer is the main pest \u2014 one or two sprays covers it.\n\n**Cotton (6.9 mu, separate plot):** Cotton is more work but the price has held up. I'll use an improved Bt variety to keep bollworm spraying down. Cotton needs more potassium than the grain crops. I irrigate at flowering and boll setting mostly. I'll still spray 4 times \u2014 aphids early, then bollworm even with Bt, then spider mites in August. I'll plough this field in spring before transplanting.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 290\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old experienced farmer in Quzhou County allocates 10 mu to a winter wheat\u2013summer maize double-cropping rotation and 6.9 mu to spring-planted cotton. With some household labor working off-farm, the farmer favors labor-saving practices where possible \u2014 no-tillage direct seeding of maize after wheat harvest and an improved Bt cotton variety to reduce bollworm spraying. Proven local varieties (Jimai 22 for wheat, Zhengdan 958 for maize) are chosen for reliability over novelty. Fertilizer rates reflect conventional North China Plain practice with moderate nitrogen use across all three crops. Well irrigation supports three applications for wheat, two for maize, and four for cotton. Pesticide applications are kept at the minimum the farmer judges necessary from long experience, with cotton still receiving four sprays to manage aphids, bollworm, and mites through the season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 290
+      }
+    ],
+    "reasoning_summary": "A 64-year-old experienced farmer in Quzhou County allocates 10 mu to a winter wheat\u2013summer maize double-cropping rotation and 6.9 mu to spring-planted cotton. With some household labor working off-farm, the farmer favors labor-saving practices where possible \u2014 no-tillage direct seeding of maize after wheat harvest and an improved Bt cotton variety to reduce bollworm spraying. Proven local varieties (Jimai 22 for wheat, Zhengdan 958 for maize) are chosen for reliability over novelty. Fertilizer rates reflect conventional North China Plain practice with moderate nitrogen use across all three crops. Well irrigation supports three applications for wheat, two for maize, and four for cotton. Pesticide applications are kept at the minimum the farmer judges necessary from long experience, with cotton still receiving four sprays to manage aphids, bollworm, and mites through the season."
+  },
+  "elapsed_seconds": 44.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_1",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 66 years old and I never went to school. I learned farming from my father and from watching my neighbors. I have 14.5 mu of land in Quzhou, me and my wife work it. We plant wheat in winter and maize in summer, same as everyone here. I always start from what I did last year \u2014 change is risky.\n\nFor wheat, after the maize comes off in October, I plough the field deep. I spread one bag of compound fertilizer per mu \u2014 50 jin bags, the 15-15-15 kind from the shop in the village. I sow the improved wheat seed, same as last year. In spring, when the wheat turns green, I spread half a bag of urea per mu, that is 25 jin. I irrigate three times: green-up, jointing, and filling. I spray twice, once for weeds and once for bugs. Last year I got 450 kg per mu, I hope for the same.\n\nFor maize, after wheat harvest in June, I rotary till quick because the season is short. I plant hybrid maize seed, the kind everyone buys, the red bag from the seed shop. I put down 40 jin of compound fertilizer per mu in the row when planting, and when the corn is knee-high I spread 25 jin of urea per mu and hoe it in. I irrigate twice, three times only if it is very dry. Two sprays: herbicide at planting, insecticide later. I expect 550 kg per mu.\n\nI do not trust new ideas. If the dealer pushes some new fertilizer, I wait to see if my neighbor uses it and gets more yield. Last year cost me enough already \u2014 compound fertilizer went up. But I would rather put a little too much than too little. A bad harvest means I lose everything; wasting a few jin of fertilizer is just money spent. I watch my costs, but yield comes first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I never went to school, I just do what my father did and what the neighbors do. Last year my wheat gave 450 kg per mu and maize 550 kg per mu, so this year I do the same. I plough before wheat and spread one bag of compound fertilizer per mu, then top dress with half a bag of urea, water three times, spray twice. For maize I rotary till after wheat harvest, put 40 jin of compound fertilizer in the row and later 25 jin of urea, water twice, spray twice. I do not try new things because change is risky, and I would rather waste a little fertilizer than lose yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I never went to school, I just do what my father did and what the neighbors do. Last year my wheat gave 450 kg per mu and maize 550 kg per mu, so this year I do the same. I plough before wheat and spread one bag of compound fertilizer per mu, then top dress with half a bag of urea, water three times, spray twice. For maize I rotary till after wheat harvest, put 40 jin of compound fertilizer in the row and later 25 jin of urea, water twice, spray twice. I do not try new things because change is risky, and I would rather waste a little fertilizer than lose yield."
+  },
+  "elapsed_seconds": 70.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_8",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 75 years old this year. My legs are not as strong as before, and my son works in Shijiazhuang, so most days it is just me and my wife working the land. We have about 5 mu of good flat land here in Quzhou. I only finished primary school, but I have been farming this soil for over 50 years, and I know what works.\n\nThis year, I will stick to what I know: **winter wheat followed by summer maize** on all 5 mu. I am too old for cotton now. My neighbor BZ still grows 3 mu of cotton, but he is 76 and his wife complains about his back every day from all the pesticide spraying and hand-picking. Cotton needs 15 or more sprays \u2014 I counted last year \u2014 and at my age, carrying that sprayer is too much. Wheat and maize are reliable, and the grain station buys them without me needing to negotiate prices.\n\nFor the **winter wheat**, I already rotary-tilled the land last October and sowed *Jimai 22*, an improved variety that gives steady yields. I put down 100 jin of compound fertilizer as basal dressing. Now that spring is here, I will topdress with about 50 jin of urea when the wheat turns green, and irrigate three times total: once now at green-up, once at jointing, and once at grain filling. I will spray pesticides three times when I see aphids or rust. I expect about 1000 jin per mu if the weather cooperates.\n\nFor **summer maize**, after I harvest the wheat in early June, I will no-till plant *Denghai 605* directly into the wheat stubble. Everyone here uses Denghai 605 now \u2014 it is a hybrid with good drought tolerance. I will not add extra nitrogen because the leftover fertility from the wheat is usually enough. I will irrigate twice if it is dry, and spray for armyworm twice. I expect around 1100 jin per mu.\n\nI thought about renting out the land, but the rent is low and I still need to eat. This plan keeps the workload manageable for an old man and his wife.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"At 75 years old with only my wife to help, I choose the reliable wheat-maize double-cropping system on my 5 mu of land and avoid cotton because its intensive labor demands are too strenuous for my age. I use improved wheat seed with rotary tillage and modest nitrogen fertilization, and hybrid maize with no-tillage planting to save labor, following the standard practice of farmers like me in Quzhou County.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "At 75 years old with only my wife to help, I choose the reliable wheat-maize double-cropping system on my 5 mu of land and avoid cotton because its intensive labor demands are too strenuous for my age. I use improved wheat seed with rotary tillage and modest nitrogen fertilization, and hybrid maize with no-tillage planting to save labor, following the standard practice of farmers like me in Quzhou County."
+  },
+  "elapsed_seconds": 159.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_1",
+  "tier": 1,
+  "provider": "kimi"
+}

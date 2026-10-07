@@ -1,0 +1,40 @@
+{
+  "raw_response": "Alright, let me think through this year's plan.\n\nI have 20 mu, wheat-maize rotation like everyone around here in Quzhou. I've done this 10 years. Last year wheat gave me about 480 kg/mu, maize around 600 kg/mu. Not bad, but my neighbor Old Wang got 520 on wheat \u2014 he put on a bit more urea at jointing. I might try that.\n\nFor wheat, I always use improved seed from the dealer in town \u2014 \"Jimai 22\" type varieties do well here. At planting I spread compound fertilizer 15-15-15, about 50 kg/mu as base. Then topdress urea around jointing in March, maybe 20 kg/mu. That gives me roughly 27 kg N, 7.5 P, 7.5 K per mu. Phosphorus I keep steady \u2014 soil here isn't short. I irrigate 4 times: winter water before freeze, then jointing, heading, grain-filling. Well irrigation so I control it. Spray 2 times for aphids and rust, once for weeds \u2014 call it 3 applications. Rotary till after maize harvest, quick turnaround.\n\nFor summer maize, I plant right after wheat harvest, no tillage, direct seed with hybrid \u2014 \"Zhengdan 958\" or similar, everyone plants hybrid now. Base fertilizer 40 kg/mu compound at sowing, then topdress urea 25 kg at big flare stage. That's about 24 kg N, 6 P, 6 K. Summer rains usually enough, but I irrigate once or twice if dry in July. Spray for corn borer once, maybe armyworm \u2014 2 applications.\n\n20 mu is enough I can afford decent inputs. I'd rather spend a bit extra on fertilizer than lose yield \u2014 a bad harvest hurts much worse than 200 yuan extra urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 620\n    }\n  ],\n  \"reasoning_summary\": \"I farm 20 mu wheat-maize rotation like most households in Quzhou. I stick close to what worked last year \u2014 wheat got 480 kg/mu, maize 600 kg/mu \u2014 but push a little more urea at jointing since neighbor Old Wang saw better results that way. Wheat uses improved variety with compound base plus urea topdressing, four irrigations from the well, three sprays for aphids/rust/weeds. Maize goes in no-till right after wheat with hybrid seed, base compound plus urea at big flare, summer rain covers most water needs. I'd rather spend a bit extra on fertilizer than risk a bad harvest \u2014 losing yield hurts far more than some wasted urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 620
+      }
+    ],
+    "reasoning_summary": "I farm 20 mu wheat-maize rotation like most households in Quzhou. I stick close to what worked last year \u2014 wheat got 480 kg/mu, maize 600 kg/mu \u2014 but push a little more urea at jointing since neighbor Old Wang saw better results that way. Wheat uses improved variety with compound base plus urea topdressing, four irrigations from the well, three sprays for aphids/rust/weeds. Maize goes in no-till right after wheat with hybrid seed, base compound plus urea at big flare, summer rain covers most water needs. I'd rather spend a bit extra on fertilizer than risk a bad harvest \u2014 losing yield hurts far more than some wasted urea."
+  },
+  "elapsed_seconds": 28.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_7",
+  "tier": 3,
+  "provider": "claude"
+}

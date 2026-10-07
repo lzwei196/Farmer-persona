@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 61-year-old farmer in Quzhou, and I have been working this land for 40 years. My father taught me, and I have watched the fields change with the weather every year. I know this soil like I know my own hands. My farm is 7.8 mu, and I grow wheat and maize in rotation \u2014 that is the way here on the North China Plain. With only my wife and me at home now, I cannot afford to waste labor or money, but I also cannot afford a bad harvest.\n\nFor the wheat, I will plant the whole 7.8 mu in autumn with an improved variety \u2014 maybe something like Jimai 22 or what the seed station recommends this year. I trust the improved seeds because they resist lodging better than the old kinds, and at my age I cannot afford to lose a crop to wind. I will plough the field first to bury the maize stubble and break the hardpan, then rotary till to make a good seedbed. For fertilizer, I will put down compound fertilizer as a base, then top-dress with urea at green-up and jointing. In total, I use about 18 kg of nitrogen per mu, 6 kg of phosphorus, and 4 kg of potassium \u2014 that is what this soil needs after all these years. I irrigate three times: once before winter to help the seedlings survive the cold, once at jointing when the wheat is hungry for water, and once at flowering to fill the grain. I spray pesticide once or twice if I see aphids or rust, but I do not spray for nothing. I expect about 480 kg per mu from the wheat if the spring rains do not fail.\n\nAfter the wheat harvest in early June, I immediately plant maize on the same 7.8 mu. I use hybrid seed \u2014 the yield is too good to ignore, and everyone around here uses it now. I do not plough after wheat; I plant no-tillage directly into the stubble to save time and keep moisture in the ground. The soil is already loose from the wheat season. For fertilizer, I spread compound fertilizer at planting and side-dress urea when the maize is knee-high. In total, about 15 kg nitrogen per mu, 5 kg phosphorus, and 4 kg potassium. I irrigate twice if it is dry: once when the maize is jointing, and once at tasseling and silking \u2014 that is the most critical time. I spray pesticide two or three times because the corn borer and armyworm have been worse these past years. I expect about 580 kg per mu if the summer storms come right.\n\nI keep some grain for our own food and sell the rest. With only two of us, we do not need much, but we need cash for medicine and daily expenses. I do what the land tells me, and after 40 years, it usually tells me the truth.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 7.8 mu in Quzhou for 40 years and know the wheat-maize double cropping system well. I plant improved wheat in autumn with ploughing and three irrigations, expecting 480 kg/mu. After June harvest, I plant hybrid maize no-tillage into wheat stubble with two irrigations and three pesticide applications, expecting 580 kg/mu. My inputs are moderate because with only two people in the household and my age, I balance labor, cost, and reliable yields based on decades of local experience.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I have farmed this 7.8 mu in Quzhou for 40 years and know the wheat-maize double cropping system well. I plant improved wheat in autumn with ploughing and three irrigations, expecting 480 kg/mu. After June harvest, I plant hybrid maize no-tillage into wheat stubble with two irrigations and three pesticide applications, expecting 580 kg/mu. My inputs are moderate because with only two people in the household and my age, I balance labor, cost, and reliable yields based on decades of local experience."
+  },
+  "elapsed_seconds": 50.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HC_DS_15",
+  "tier": 2,
+  "provider": "kimi"
+}

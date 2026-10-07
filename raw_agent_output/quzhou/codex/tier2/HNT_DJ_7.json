@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 71, and with only two people in the household, I will keep the plan steady and manageable. I have farmed here a long time, so I will not chase the highest-input approach. I have well irrigation, so I will rely on that to protect yield on wheat and maize, but I will still keep fertilizer and spraying moderate because my land is only 10.5 mu and I want stable production more than extra risk. Since my usual system is wheat-millet, I will keep that as the main rotation on part of the land, and I will keep some maize because it is familiar, dependable, and fits my labor. I will use better seed where it helps me most, keep tillage simple with rotary work, and aim for yields that are realistic for my age, my labor, and my conditions.\n\nFor wheat, I will put 6 mu into winter wheat because it is the base of my wheat-millet rotation and I have irrigation to support it. I will use improved seed, give it moderate nitrogen with balanced phosphorus and some potassium, irrigate three times, and spray twice because I want stable stands and grain filling without overdoing costs. After wheat harvest, I will plant millet back on those same 6 mu. Millet is easier for me to manage than a very input-heavy crop, so I will keep fertilizer and irrigation lower than wheat and maize, and I will spray only as needed. On the remaining 4.5 mu, I will grow maize in summer. I will use hybrid seed there because maize responds well and gives me a strong yield on irrigated land. I will feed it better than millet, irrigate twice, and keep pest control moderate. Across all three crops, I will use rotary tillage because it saves labor and suits my scale better than deep ploughing.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I will keep a stable, labor-manageable plan that fits my age, small household, long experience, and irrigated conditions in Quzhou. I will keep wheat-millet as the main rotation on 6 mu because it is familiar and reliable for me, and I will use improved seed with moderate fertilizer and irrigation to protect yield without taking on too much cost. I will grow maize on the remaining 4.5 mu because it performs well on irrigated land and gives me dependable production, so I will use hybrid seed and somewhat stronger fertilizer there. I will use rotary tillage across all crops to reduce labor, and I will keep pesticide use moderate, only enough to hold the crop steady.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I will keep a stable, labor-manageable plan that fits my age, small household, long experience, and irrigated conditions in Quzhou. I will keep wheat-millet as the main rotation on 6 mu because it is familiar and reliable for me, and I will use improved seed with moderate fertilizer and irrigation to protect yield without taking on too much cost. I will grow maize on the remaining 4.5 mu because it performs well on irrigated land and gives me dependable production, so I will use hybrid seed and somewhat stronger fertilizer there. I will use rotary tillage across all crops to reduce labor, and I will keep pesticide use moderate, only enough to hold the crop steady."
+  },
+  "elapsed_seconds": 27.3,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_7",
+  "tier": 2,
+  "provider": "codex"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 55 and have farmed this same land in Quzhou County for 30 years. My 10.1 mu is all under the wheat-maize double-crop rotation \u2014 that is how we farm here on the North China Plain. With only three in my household and some family working off-farm, I must be careful with labor and time, but my well gives me reliable irrigation when the rain is not enough.\n\nFor the winter wheat, I will sow an improved local variety in mid-October. I will prepare the field with rotary tillage and then apply about 16 kg of nitrogen, 6 kg of phosphorus, and 4 kg of potassium per mu. I will irrigate three times: once before winter to protect the seedlings from the cold, once at the jointing stage in spring, and once during heading or grain filling depending on how dry the weather turns. I will spray pesticide twice if I see aphids or powdery mildew. I know this land well, and if the year is normal I should get about 520 kg per mu.\n\nFor the summer maize, I will plant a hybrid variety right after the wheat harvest in early June. Because labor is tight and the season is short, I will use no-tillage direct seeding into the wheat stubble to save time and keep soil moisture. I will apply around 18 kg of nitrogen, 5 kg of phosphorus, and 5 kg of potassium per mu. I will irrigate three times: at the jointing stage, at tasseling and silking, and during grain filling if the heat is strong. Two pesticide applications will be enough for corn borers and leaf spot. On this soil, I expect about 600 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 10.1 mu plot for 30 years and know that wheat-maize double cropping is the only sensible system here. With limited household labor because some family works off-farm, I use rotary tillage for wheat but no-tillage for maize to save time and moisture. I rely on my well to irrigate at the most critical growth stages \u2014 three times for each crop \u2014 and apply moderate fertilizer rates based on local practice. I choose improved wheat seed and hybrid maize seed for stable yields, and expect around 520 kg/mu for wheat and 600 kg/mu for maize under normal weather.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed this 10.1 mu plot for 30 years and know that wheat-maize double cropping is the only sensible system here. With limited household labor because some family works off-farm, I use rotary tillage for wheat but no-tillage for maize to save time and moisture. I rely on my well to irrigate at the most critical growth stages \u2014 three times for each crop \u2014 and apply moderate fertilizer rates based on local practice. I choose improved wheat seed and hybrid maize seed for stable yields, and expect around 520 kg/mu for wheat and 600 kg/mu for maize under normal weather."
+  },
+  "elapsed_seconds": 39.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DMLG_10",
+  "tier": 2,
+  "provider": "kimi"
+}

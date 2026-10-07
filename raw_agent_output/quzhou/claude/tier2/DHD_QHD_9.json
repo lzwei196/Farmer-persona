@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 45 years. My mother farmed it before me. I don't need to think too hard about this \u2014 my hands know what to do with wheat and maize in Quzhou. The land is the same land, same well, same seasons. Two mouths to feed, 12 mu to work. My son-in-law sometimes helps with the heavy machinery.\n\n**Wheat first** \u2014 I put in winter wheat every October after the maize comes off. All 12 mu goes to wheat. I've always used the improved seed from the village cooperative \u2014 the old varieties got disease and we stopped growing them years ago. I do three or four waterings: once when I sow and the seedlings establish, once in spring when they green up, once at jointing, and once at heading if the weather is dry. Four times is safe. I split my urea \u2014 put base fertilizer down with the phosphate before sowing, then top-dress in spring. I spray for weeds in winter and spray for aphids and rust before heading. I plough before sowing wheat because the maize stalks need turning under. I expect about 450 jin per mu \u2014 that's what I usually get.\n\n**Maize second** \u2014 Right after wheat harvest in June I plant maize on the same 12 mu. No time to waste, the season is short. I use hybrid seed, everyone in the village does now, it yields much better. I don't plough \u2014 I just do rotary tillage to break up the surface, it's faster and the soil is already loose enough. I put fertilizer down at planting and top-dress when the plant is knee-high. Maize doesn't need as much water from the well if the summer rains come, but I'll irrigate at least twice \u2014 once at emergence if it's dry, and once at silking. I spray once or twice for corn borer and sometimes for weeds early on. I expect around 600 jin per mu.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"A 63-year-old farmer with 45 years of experience in Quzhou County, Hebei follows the standard winter wheat and summer maize double-cropping rotation on all 12 mu of her land. She uses improved wheat varieties from the village cooperative and hybrid maize seed, both of which have proven themselves over many years. Fertilizer is applied in split doses for both crops, at rates consistent with local practice \u2014 heavier on nitrogen, moderate phosphorus and potassium. Wheat receives four irrigations from the well across the growing season for reliable yield; maize relies partly on summer rainfall with two supplemental irrigations at critical stages. Tillage is plough-based for wheat to incorporate maize residue, and rotary for maize to save time in the tight June window. Pesticide applications target established problems: weeds and aphids/rust in wheat, corn borer and early weeds in maize. Expected yields reflect the historical average for her fields under these practices.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "A 63-year-old farmer with 45 years of experience in Quzhou County, Hebei follows the standard winter wheat and summer maize double-cropping rotation on all 12 mu of her land. She uses improved wheat varieties from the village cooperative and hybrid maize seed, both of which have proven themselves over many years. Fertilizer is applied in split doses for both crops, at rates consistent with local practice \u2014 heavier on nitrogen, moderate phosphorus and potassium. Wheat receives four irrigations from the well across the growing season for reliable yield; maize relies partly on summer rainfall with two supplemental irrigations at critical stages. Tillage is plough-based for wheat to incorporate maize residue, and rotary for maize to save time in the tight June window. Pesticide applications target established problems: weeds and aphids/rust in wheat, corn borer and early weeds in maize. Expected yields reflect the historical average for her fields under these practices."
+  },
+  "elapsed_seconds": 38.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_9",
+  "tier": 2,
+  "provider": "claude"
+}

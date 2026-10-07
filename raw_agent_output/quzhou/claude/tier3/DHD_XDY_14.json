@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming these 5 mu for 35 years, same wheat-maize rotation my father did. Let me think through this year.\n\nFor **winter wheat** \u2014 I planted it last October already, so I'm just managing now. I use Jimai 22, the improved variety the seed shop sells. Everyone around here uses it, gives good yield. Last year I got about 450 kg/mu, decent enough.\n\nFertilizer \u2014 I put down compound fertilizer (diammonium) before planting, about 40 kg/mu, then I topdress with urea at jointing stage, around 20 kg. So that works out to about 28 kg N, 8 kg P, 6 kg K per mu. My soil here is not bad, been farming it long time. I won't cut back because wheat is my food and my income \u2014 if I lose yield I lose more than the fertilizer cost.\n\nIrrigation \u2014 I have the well, so I water 3 times: overwintering, jointing (green-up), and grain filling. If spring is dry, maybe 4 times. Pesticide I spray 2 times, once for aphids and once for wheat scab when flowering.\n\nFor **summer maize** after wheat harvest in June \u2014 I do no-till, just drill seeds into the wheat stubble with the machine service. Cheaper than ploughing and saves time. I plant Zhengdan 958 or similar hybrid, everyone uses hybrid now, traditional seeds nobody plants anymore.\n\nMaize needs less fertilizer than wheat because summer rain helps. I side-dress urea once at big flare stage, about 30 kg. Plus a bit of compound at planting. Roughly 22 kg N, 6 kg P, 5 kg K per mu. Maize yield here is usually better than wheat, 550-600 kg/mu if weather cooperates.\n\nIrrigation on maize \u2014 usually 1 time if July is dry, sometimes I don't need to water if rain is enough. Pesticide 2 times, for corn borer and armyworm.\n\n5 mu is small. My wife and I work it, kids are in town with jobs. I don't waste money but I don't starve my crops either. Same as last year, same as neighbors.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5 mu wheat-maize like my neighbors in Quzhou. Wheat gets more fertilizer because it grows through winter and spring with less rain \u2014 I use compound fertilizer at planting plus urea topdress at jointing, and I water 3 times from my well. Maize gets less because summer rain helps, and I no-till directly into wheat stubble to save money and time. I stick close to what worked last year and what my neighbors do. I would rather spend a bit more on fertilizer than risk a bad harvest \u2014 losing yield hurts much more than extra fertilizer cost. Hybrid maize and improved wheat seed are standard, nobody uses old varieties anymore.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 5 mu wheat-maize like my neighbors in Quzhou. Wheat gets more fertilizer because it grows through winter and spring with less rain \u2014 I use compound fertilizer at planting plus urea topdress at jointing, and I water 3 times from my well. Maize gets less because summer rain helps, and I no-till directly into wheat stubble to save money and time. I stick close to what worked last year and what my neighbors do. I would rather spend a bit more on fertilizer than risk a bad harvest \u2014 losing yield hurts much more than extra fertilizer cost. Hybrid maize and improved wheat seed are standard, nobody uses old varieties anymore."
+  },
+  "elapsed_seconds": 29.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_14",
+  "tier": 3,
+  "provider": "claude"
+}

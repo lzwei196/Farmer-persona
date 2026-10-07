@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 54 years old and have been farming my land in Quzhou for more than 30 years. I only went to primary school, so I do not read many books about farming \u2014 everything I know comes from my own experience and from watching what my neighbors do. I have about 5.7 mu of land, which is about average for a smallholder in my village.\n\nThis year I will grow the same crops I always grow: winter wheat and summer maize in rotation. I will not try anything new like cotton or vegetables because the market for those is uncertain and I cannot afford a bad year. Wheat gives my family flour to eat, and maize gives us cash income. That combination has kept us fed for decades, so I stick with it.\n\nFor the wheat, I will rotary till the soil in early October and sow an improved wheat variety \u2014 the same kind my neighbor Zhang used last year, which yielded well. I will put down about 50 kg of compound fertilizer per mu as a basal dose and topdress with urea in the spring if the wheat looks yellow. I will irrigate three times: at sowing, at jointing, and at grain filling. The electricity for pumping water is expensive, but without irrigation the yield drops too much, so I pay it. I will also spray pesticides three times \u2014 for weeds, insects, and to prevent disease.\n\nFor the maize, there is no time to till after the wheat harvest \u2014 the window is only about one week. So I will plant no-till using a hybrid variety like Nongda 372. I will apply compound fertilizer at planting, about 40\u201350 kg per mu, and irrigate twice. If the summer rains are good, two times is enough. I will spray for weeds and insects two or three times as needed.\n\nI expect about 450 kg per mu of wheat and 500 kg per mu of maize. That is not the highest yield in the village, but it is steady and safe, and that is what matters for my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I stick with winter wheat and summer maize because this double-cropping system has fed my family for decades and I know it well. I am cash-constrained and primary-educated, so I follow what my neighbors do and avoid risky new crops. I rotary till for wheat and plant no-till maize because the turnaround between harvest and planting is too tight. I apply enough fertilizer and irrigation to protect my yield, but I do not chase maximum output because the extra cost and risk are not worth it for a smallholder like me.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I stick with winter wheat and summer maize because this double-cropping system has fed my family for decades and I know it well. I am cash-constrained and primary-educated, so I follow what my neighbors do and avoid risky new crops. I rotary till for wheat and plant no-till maize because the turnaround between harvest and planting is too tight. I apply enough fertilizer and irrigation to protect my yield, but I do not chase maximum output because the extra cost and risk are not worth it for a smallholder like me."
+  },
+  "elapsed_seconds": 65.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_5",
+  "tier": 1,
+  "provider": "kimi"
+}

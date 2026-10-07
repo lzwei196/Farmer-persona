@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old and I have farmed this land in Quzhou for over fifty years. I only finished primary school, but I know my fields better than any book. I have about 6 mu of land, and every year I grow winter wheat and then summer maize on the same plot. This is what my father did, what my neighbors do, and it has always put food on the table. I do not try new things easily \u2014 change is risky when you are my age and do not have much cash to spare.\n\nMy wheat went into the ground last October after rotary tillage. I use an improved variety called Luyuan 502. My neighbor across the road used it last year and got a good harvest, over 1000 jin per mu, so I bought the same seed. Before sowing I spread about 100 jin of compound fertilizer per mu, and I will topdress with urea when the wheat greens up in spring and again at jointing. All together that is about 45 kg of nitrogen per mu. I will irrigate three times \u2014 once when the wheat wakes up, once at jointing, and once at heading \u2014 because the well water costs money but drying out at those stages will ruin the yield. I spray once for weeds and twice for insects when the weather warms up and the bugs arrive.\n\nAfter harvesting wheat in early June, I will plant maize right away with no-tillage. There is no time to plow \u2014 the window is only a few days, and if you miss it the maize will not mature before frost. I buy hybrid seed, Deng Hai 605, from the shop in town. It costs more than saving my own seed, but the yield is better and the stalks stand strong. Maize needs less fertilizer than wheat \u2014 about 30 kg of nitrogen per mu is enough. I will irrigate twice if the rain does not come, and spray pesticides three times total. I thought about cotton like some people grow in the southern villages, but at my age I do not have the back for all that spraying and hand-picking. Wheat and maize are easier \u2014 the harvester comes right to the field for both. If the weather is normal, I expect about 1000 kg per mu from wheat and 1100 kg per mu from maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 45,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double crop rotation on my 6 mu because it is what I have done for decades and what my neighbors do. I use improved wheat seed and hybrid maize seed because they give reliable yields even though the hybrid seed costs money. I apply more fertilizer to wheat than maize since wheat responds better, and I irrigate three times for wheat but only twice for maize to save on pumping costs. I avoid cotton because at 70 I cannot manage the heavy pesticide and labor demands. I use rotary tillage for wheat in the fall and no-tillage for maize in June because there is no time to plow between wheat harvest and maize planting.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 45,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double crop rotation on my 6 mu because it is what I have done for decades and what my neighbors do. I use improved wheat seed and hybrid maize seed because they give reliable yields even though the hybrid seed costs money. I apply more fertilizer to wheat than maize since wheat responds better, and I irrigate three times for wheat but only twice for maize to save on pumping costs. I avoid cotton because at 70 I cannot manage the heavy pesticide and labor demands. I use rotary tillage for wheat in the fall and no-tillage for maize in June because there is no time to plow between wheat harvest and maize planting."
+  },
+  "elapsed_seconds": 177.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_10",
+  "tier": 1,
+  "provider": "kimi"
+}

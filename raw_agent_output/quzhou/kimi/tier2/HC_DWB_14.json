@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 65 years old and have been farming this land in Quzhou for 40 years. I never went to school, but I know my fields the way you know your own face in the mirror. My farm is 13.1 mu \u2014 not big, but it is all I have. It is just me and my wife at home now. Our children work in the city and send a little money back when they can, but I do not count on that for farming. I have to make do with what I have.\n\nThis year, like every year, I will plant wheat in autumn and maize in summer on the same land. It is the only system I know, and it is what everyone in the village does. \n\nFor the wheat, I will rotary till the field before planting in early October. I will buy improved wheat seed \u2014 the kind they call 502 at the shop, the same kind my neighbors use. I always put down two bags of urea per mu before planting. That is what I did last year and the year before, and it has worked. I will irrigate three times: once before winter so the wheat can survive the cold, once in spring when it greens up, and once when the grain is filling. Pumping water costs electricity, so I do not waste it, but three times is what the wheat needs. I will spray for weeds once, for bugs twice, and if I see any disease I will spray once for that too. I expect about 1000 jin per mu if the weather treats us kindly.\n\nFor the maize, there is no time to plow after wheat harvest \u2014 the window is too tight, maybe less than a week. I plant hybrid maize seed, denghai 605, right into the wheat stubble without tilling. I will put down a little bit of fertilizer, maybe a small handful per mu at planting, but not much \u2014 the wheat already took most of the nutrients out, and fertilizer bags are expensive. I will irrigate twice, at the jointing stage and when it is silking. I will spray twice for corn borers and once for weeds. No-tillage saves me diesel and time. I hope for about 1100 jin per mu.\n\nI do not use phosphorus or potassium. Those colored bags cost too much, and I have never seen my neighbors get much better yield from them. My well gives me water when I need it, but I watch every yuan I spend on pumping. This is my plan. It is not fancy, but it has kept food on my table for 40 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 50,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 5,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 13.1 mu plot for 40 years with no formal schooling, so I follow what I have always done and what my neighbors do. I grow wheat in winter and maize in summer on the same land. For wheat, I rotary till and apply about two bags of urea per mu, irrigate three times, and spray four times total for weeds, bugs, and disease. For maize, I use no-tillage because the window after wheat harvest is too tight, plant hybrid denghai 605, apply only a small amount of nitrogen, irrigate twice, and spray three times. I skip phosphorus and potassium because they are too expensive and I have not seen clear benefits. My expectations are modest \u2014 about 500 kg per mu for wheat and 550 kg per mu for maize \u2014 because I am cash-constrained and cannot afford to push for higher yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 50,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 5,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this 13.1 mu plot for 40 years with no formal schooling, so I follow what I have always done and what my neighbors do. I grow wheat in winter and maize in summer on the same land. For wheat, I rotary till and apply about two bags of urea per mu, irrigate three times, and spray four times total for weeds, bugs, and disease. For maize, I use no-tillage because the window after wheat harvest is too tight, plant hybrid denghai 605, apply only a small amount of nitrogen, irrigate twice, and spray three times. I skip phosphorus and potassium because they are too expensive and I have not seen clear benefits. My expectations are modest \u2014 about 500 kg per mu for wheat and 550 kg per mu for maize \u2014 because I am cash-constrained and cannot afford to push for higher yields."
+  },
+  "elapsed_seconds": 168.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HC_DWB_14",
+  "tier": 2,
+  "provider": "kimi"
+}

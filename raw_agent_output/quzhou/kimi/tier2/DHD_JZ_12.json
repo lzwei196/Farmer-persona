@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 57-year-old woman who has farmed these same plots in Quzhou for 35 years. My family has 5.5 mu of good flat land on the North China Plain, and we have always done wheat-maize double cropping \u2014 it is the only way to feed the family and have something left to sell. My husband and son work in construction in the county town, so most days it is just me and my daughter-in-law looking after the fields. We are not rich, but we know this land well.\n\nThe wheat went in last October with rotary tillage, about 30 jin of improved seed per mu, just like every year. I put down compound fertilizer at planting \u2014 I learned long ago that phosphorus needs to go in the ground early. Now it is mid-April and the wheat is at jointing. I will topdress with urea soon, about 10 kg of nitrogen per mu, because the extension worker always says 15 kg total is enough but I have seen that a bit more at jointing gives me fuller grain heads. I will irrigate twice more from my well: once right after topdressing so the fertilizer melts in, and once at flowering in May. Electricity for pumping is expensive, so I do not waste water. I also spray three times: herbicide once to clean the spring weeds, insecticide once for aphids, and fungicide once if the weather turns humid. I expect about 460 kg per mu if no late frost hits \u2014 about what I got last year.\n\nFor maize, the day the wheat comes off in early June, I plant immediately. There is no time to plough; everyone in our village now does no-tillage for summer maize to catch the season and keep soil moisture. I buy hybrid seed \u2014 Nongda or something similar from the shop \u2014 about one package per mu. I put compound fertilizer in the planting furrow, then sidedress urea when the maize is knee-high. Two irrigations from the well: one at seedling stage if June is dry, and one at tasseling in late July when the rains sometimes fail. I spray herbicide once after emergence and insecticide twice for corn borer. I hope for 510 kg per mu, which is a decent year for our village. I do not gamble on new tricks \u2014 I do what has kept my family fed for three decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 510\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize rotation I know best, using rotary tillage for wheat and no-tillage for maize to save time between crops. I apply moderate fertilizer \u2014 enough to protect yield but not so much that I strain our family budget, since my husband and son send money from off-farm work but cash is still tight. I irrigate from my well only at critical growth stages because pumping costs electricity. My yields are conservative based on what this 5.5 mu plot has given me in normal years, and I rely on experience and what my neighbors do rather than taking risks.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 510
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize rotation I know best, using rotary tillage for wheat and no-tillage for maize to save time between crops. I apply moderate fertilizer \u2014 enough to protect yield but not so much that I strain our family budget, since my husband and son send money from off-farm work but cash is still tight. I irrigate from my well only at critical growth stages because pumping costs electricity. My yields are conservative based on what this 5.5 mu plot has given me in normal years, and I rely on experience and what my neighbors do rather than taking risks."
+  },
+  "elapsed_seconds": 279.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_JZ_12",
+  "tier": 2,
+  "provider": "kimi"
+}

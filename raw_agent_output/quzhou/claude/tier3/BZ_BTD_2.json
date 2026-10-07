@@ -1,0 +1,66 @@
+{
+  "raw_response": "I've been working this land for 37 years, so I know what each plot can give me. With 12 mu total and my wheat-maize rotation as the backbone, I split it this way: 8 mu for the wheat-maize double cropping on my better land near the well, 2 mu chili on the plot closer to the village where I can watch for pests, and 2 mu cotton on the sandier corner where wheat doesn't do as well.\n\nFor winter wheat, I aim for around 500 kg/mu \u2014 that's realistic here, not the 600 the demonstration plots claim. I'll use improved varieties like Jimai 22 \u2014 hybrids for wheat aren't worth it here. I apply about 12 kg N/mu as base (diammonium phosphate plus urea, about one bag of DAP per mu), then top-dress 10 kg N/mu at jointing when the rain comes or after irrigation. That's 22 kg N total. Phosphorus 8 kg/mu from the DAP, potassium 6 kg/mu \u2014 our soil has some K already but wheat still responds. I irrigate 3 times: pre-sowing, jointing, grain-filling. Two pesticide sprays \u2014 one for aphids and powdery mildew at heading, one earlier for weeds. Rotary tillage after maize harvest, I can't afford the time for deep ploughing every year.\n\nFor summer maize after wheat, I use Zhengdan 958 or similar hybrid \u2014 everyone around here does, yields 550 kg/mu reliably. N about 20 kg/mu split as base and big-flare stage top-dress. P 6 kg/mu, K 6 kg/mu. Irrigate twice if the summer rain is weak \u2014 tasseling is critical. Two pesticide sprays for corn borer and armyworm. No-tillage direct seeding into wheat stubble saves me 3 days.\n\nCotton: I use Bt hybrid, about 15 kg N/mu split across the season \u2014 too much nitrogen makes it grow tall with no bolls. P 8 kg/mu, K 10 kg/mu because cotton really needs potassium for boll filling. 4 irrigations, 5 pesticide sprays (mirids and aphids now that bollworm is less). Plough deeply \u2014 cotton wants loose soil.\n\nChili needs the most care and money. Improved variety, transplanted. N 20 kg/mu, P 12 kg/mu, K 18 kg/mu \u2014 chili loves potassium and phosphorus for fruit set. 6 irrigations, 6 pesticide sprays for anthracnose and aphids. Plough and bed up. I expect about 2000 kg fresh/mu \u2014 this is my cash crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 2000\n    }\n  ],\n  \"reasoning_summary\": \"I split my 12 mu based on land quality: 8 mu wheat-maize double crop on good land, 2 mu cotton on sandy ground, 2 mu chili as my cash crop near the village. For wheat-maize I follow what works \u2014 improved wheat variety with 22 kg N/mu targeting 500 kg yield, hybrid maize with 20 kg N/mu targeting 550 kg, no-till maize into wheat stubble to save time. Cotton gets less nitrogen but more potassium since too much N makes it run to vine; chili gets the heaviest potassium and phosphorus because that's where fruit quality comes from, plus 6 irrigations and 6 sprays because a chili crop is made or lost by how well you watch it. Every input is weighed against what it returns \u2014 I don't over-apply but I don't skimp where it matters.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 6,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 2000
+      }
+    ],
+    "reasoning_summary": "I split my 12 mu based on land quality: 8 mu wheat-maize double crop on good land, 2 mu cotton on sandy ground, 2 mu chili as my cash crop near the village. For wheat-maize I follow what works \u2014 improved wheat variety with 22 kg N/mu targeting 500 kg yield, hybrid maize with 20 kg N/mu targeting 550 kg, no-till maize into wheat stubble to save time. Cotton gets less nitrogen but more potassium since too much N makes it run to vine; chili gets the heaviest potassium and phosphorus because that's where fruit quality comes from, plus 6 irrigations and 6 sprays because a chili crop is made or lost by how well you watch it. Every input is weighed against what it returns \u2014 I don't over-apply but I don't skimp where it matters."
+  },
+  "elapsed_seconds": 38.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_2",
+  "tier": 3,
+  "provider": "claude"
+}

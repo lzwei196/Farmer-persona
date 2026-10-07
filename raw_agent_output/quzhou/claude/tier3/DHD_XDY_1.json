@@ -1,0 +1,66 @@
+{
+  "raw_response": "I have 340 mu \u2014 that is a lot of land for one household, so I rent most of it and use machine services for plowing and harvest. Three years in, I mostly copy what the older growers around Quzhou do, and I change little things when I see something work on a neighbor's field. My main system is wheat-maize double cropping, which is what everyone does here. I keep a small piece in soybean to rest the soil a bit, and I try peanut for oil because the price has been decent and my uncle grows it.\n\nFor **winter wheat** on about 300 mu \u2014 I buy improved seed (Jimai or Shixin kind, whatever the dealer has), sow in early October after maize harvest. I put down compound fertilizer 50 kg/mu (15-15-15) as base, then top dress urea 20 kg/mu at jointing. That gives roughly 15 kg N, 7.5 kg P, 7.5 kg K per mu. I water at planting, then green-up, jointing, and filling \u2014 four times with the well. Spray herbicide once in spring, plus one fungicide/insecticide mix at heading. I expect about 500 kg/mu in a normal year.\n\nFor **summer maize** on 270 mu after the wheat \u2014 I use hybrid seed (Zhengdan or Xianyu type), no-till direct seed into the wheat stubble right after harvest. Base fertilizer 40 kg compound at sowing, then 25 kg urea at big-trumpet stage. One irrigation at tasseling if rain is short. Two sprays \u2014 one for armyworm/borer, one for leaf disease. Expect 550 kg/mu.\n\nFor **soybean** on 30 mu \u2014 I do not put much nitrogen, the plant makes its own. Just 25 kg compound at sowing. One irrigation, one spray for aphid. Expect 170 kg/mu.\n\nFor **peanut** (oilseed) on 40 mu \u2014 needs more potassium and calcium. I put 40 kg compound plus some gypsum. Two or three sprays because leaf spot is a problem here. Expect 280 kg/mu.\n\nI would rather spend a bit extra on fertilizer than lose yield \u2014 a bad wheat harvest across 300 mu would ruin the year. But on this scale I cannot afford to waste either, so I stick close to what my neighbors do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 300,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 270,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"soybean\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 170\n    },\n    {\n      \"crop\": \"oilseed\",\n      \"season\": \"summer\",\n      \"area_mu\": 40,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I run a large rented farm so I mostly follow what the experienced Quzhou growers do \u2014 wheat-maize double crop on most of the 340 mu, with small plots of soybean and peanut. I use improved wheat seed and hybrid maize because that is standard here. Fertilizer is compound at base plus urea topdress, rates close to neighbors'. I would rather over-apply a little than lose yield at this scale. Wheat gets 4 irrigations from the well, maize 1, because summer rain usually helps. I expect 500 kg wheat and 550 kg maize per mu in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 300,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 270,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "soybean",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 170
+      },
+      {
+        "crop": "oilseed",
+        "season": "summer",
+        "area_mu": 40,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I run a large rented farm so I mostly follow what the experienced Quzhou growers do \u2014 wheat-maize double crop on most of the 340 mu, with small plots of soybean and peanut. I use improved wheat seed and hybrid maize because that is standard here. Fertilizer is compound at base plus urea topdress, rates close to neighbors'. I would rather over-apply a little than lose yield at this scale. Wheat gets 4 irrigations from the well, maize 1, because summer rain usually helps. I expect 500 kg wheat and 550 kg maize per mu in a normal year."
+  },
+  "elapsed_seconds": 46.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_1",
+  "tier": 3,
+  "provider": "claude"
+}

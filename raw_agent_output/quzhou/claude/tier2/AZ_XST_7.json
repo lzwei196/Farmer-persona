@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 30 years. My father farmed it before me. I know what this soil wants, I know Quzhou's water situation, and I know what my neighbors are doing. Some of my family works in the city now, so I'm managing more of this alone than I used to be. That changes a few things \u2014 I don't want to waste time or water.\n\n**My thinking on wheat:**\nI plant wheat every October on all my land, then follow with maize. That's how it's always been done here and it works. I'll use the improved seed I bought from the county extension station \u2014 Jimai variety. I'm not going back to the old seed, the yield difference is real. For fertilizer, I put down compound fertilizer at sowing and top-dress with urea at jointing. I use 3 irrigations \u2014 one at sowing to get good germination, one at jointing, one at heading. The groundwater here is getting harder to pull up, so I don't water more than I have to. Two pesticide sprays: one herbicide in early spring, one fungicide when powdery mildew shows up. I'll rotary till before sowing to work in the maize stubble.\n\n**My thinking on maize:**\nRight after wheat harvest in June, I plant maize directly without tilling. No time and the moisture is better preserved. Hybrid seed \u2014 Xianyu 335, same as last year, good yield. Maize gets more nitrogen than wheat because it's a heavy eater. Rainfall June through August usually covers some irrigation, but I'll pump twice if it's dry at tasseling or grain fill. Two pesticide passes \u2014 herbicide early, and I watch for corn borer.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"All 30.4 mu rotates between winter wheat and summer maize on the same land each year. For wheat I use improved seed from the county station, apply compound fertilizer plus urea top-dressing at jointing, irrigate three times with the well to protect groundwater, and rotary till after maize harvest to manage stubble. For maize I switch to hybrid seed and no-till direct seeding right after wheat harvest to save time and soil moisture \u2014 some family labor has moved off-farm so efficiency matters. Maize gets heavier nitrogen and only two irrigations since summer rain usually helps. Pesticide use is minimal and targeted: herbicide plus one disease or pest spray per crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "All 30.4 mu rotates between winter wheat and summer maize on the same land each year. For wheat I use improved seed from the county station, apply compound fertilizer plus urea top-dressing at jointing, irrigate three times with the well to protect groundwater, and rotary till after maize harvest to manage stubble. For maize I switch to hybrid seed and no-till direct seeding right after wheat harvest to save time and soil moisture \u2014 some family labor has moved off-farm so efficiency matters. Maize gets heavier nitrogen and only two irrigations since summer rain usually helps. Pesticide use is minimal and targeted: herbicide plus one disease or pest spray per crop."
+  },
+  "elapsed_seconds": 43.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_7",
+  "tier": 2,
+  "provider": "claude"
+}

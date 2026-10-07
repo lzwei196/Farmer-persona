@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is in Quzhou \u2014 flat, dry, North China Plain. I have about 8 mu. I've been working this soil since I was twenty years old. My father grew wheat and corn here, and his father before him. I don't need anyone to tell me what to grow.\n\nIn October I plant winter wheat. In June I harvest it, then immediately put in summer corn on the same ground. That is the rotation. It's always been this way in Quzhou. The grain station buys both. I know these two crops. I'm not going to try something new at my age.\n\nFor seeds \u2014 I go to the village seed shop. They have improved wheat seed, the kind most people around here use now. Better yield than the old stuff my father used, and I've seen it work on my own land for fifteen years. For corn I buy hybrid seed, everyone uses hybrid now, the yields are much better.\n\nFertilizer \u2014 I apply compound fertilizer as the base before planting, then add urea when the crop is growing. I use more rather than less. My soil has been farmed a long time and needs feeding. I have learned from watching my crops what they need.\n\nWheat needs water three times \u2014 when it starts to joint, when it heads out, and once more after. Corn I water when it joints and once more if summer is dry. The groundwater is still reachable with my pump.\n\nI spray the wheat twice \u2014 once early for weeds, once before heading for rust. Corn gets sprayed twice too, mostly for the stem borer.\n\nAfter corn harvest I plough before planting wheat. After wheat harvest I do rotary tillage quickly so I can get the corn in fast \u2014 the summer season is short.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old farmer with no formal education in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation on 8 mu of flat, irrigated North China Plain land. Seed choices reflect what is now conventional in the village \u2014 improved wheat varieties and hybrid corn, both adopted over the past decade for better yield. Fertilizer rates are on the higher end of common local practice, reflecting the tendency of experienced but formally uneducated farmers to over-apply rather than risk a poor harvest. Irrigation follows the well-established local schedule tied to wheat growth stages and summer rainfall patterns. Tillage switches from plough before wheat to quick rotary after wheat harvest to minimize the gap before corn planting. This plan is entirely determined by decades of personal experience, family tradition, and what neighbors and the local seed shop provide \u2014 not by any external advice.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 64-year-old farmer with no formal education in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation on 8 mu of flat, irrigated North China Plain land. Seed choices reflect what is now conventional in the village \u2014 improved wheat varieties and hybrid corn, both adopted over the past decade for better yield. Fertilizer rates are on the higher end of common local practice, reflecting the tendency of experienced but formally uneducated farmers to over-apply rather than risk a poor harvest. Irrigation follows the well-established local schedule tied to wheat growth stages and summer rainfall patterns. Tillage switches from plough before wheat to quick rotary after wheat harvest to minimize the gap before corn planting. This plan is entirely determined by decades of personal experience, family tradition, and what neighbors and the local seed shop provide \u2014 not by any external advice."
+  },
+  "elapsed_seconds": 47.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_7",
+  "tier": 1,
+  "provider": "claude"
+}

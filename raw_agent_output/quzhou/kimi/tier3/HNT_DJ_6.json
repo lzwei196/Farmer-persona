@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming these 13.1 mu for 30 years now \u2014 me and my wife, just the two of us. I only finished middle school, but I've sat through enough village trainings and talked to enough dealers and neighbors to know what works on this land. I don't need any book to tell me what my own eyes have seen.\n\nThe winter wheat went in last October. I used an improved variety, same type as Old Wang on the east end of the village \u2014 if his yields are steady, mine will be too. Before planting, I put down 80 jin of compound fertilizer per mu, that's one and a half bags. Come spring when it greens up, I topdress with another 40 jin of urea per mu. The dealer told me that works out to about 18 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I know that's not cheap \u2014 fertilizer prices have gone up \u2014 but I'd rather put on a bit too much than risk a thin harvest. A bad year means I dig into my savings; wasting some fertilizer is just money I spent, not a disaster. I irrigate three times: once at green-up in March, once at jointing in April, and once during grain filling in May. I spray twice for pests and disease. Before last fall's planting I ran the rotary tiller. I'm expecting around 550 kg per mu if the weather holds.\n\nFor the summer maize, right after wheat harvest in early June, I hire the machine to plant direct \u2014 no-tillage. In double-cropping, three days saved is everything, and with only two of us I can't afford to be turning soil by hand. I plant hybrid seed, about 2 jin per mu. At sowing I put down 50 jin of compound fertilizer per mu, and at the big flare stage I topdress 35 jin of urea. That's about 17 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. I irrigate twice: once right after sowing if it's dry, and once at tasseling in late July or early August. Two pesticide sprays \u2014 one for weeds early, one for corn borers later. I expect about 650 kg per mu.\n\nI thought about cutting fertilizer back to save money, but then I looked at my whole budget. If I spend less on fertilizer and the yield drops, I lose more than I saved. So I kept fertilizer the same as last year and decided not to hire extra labor for hand-weeding \u2014 me and my wife will do that ourselves. That's the tradeoff. Last year my neighbor Zhang used similar rates and did fine, so I'm sticking with what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I kept my fertilizer rates close to last year's because cutting back risks yield loss, which is worse than wasting some fertilizer. With only two people on 13.1 mu, I save labor time by using no-tillage for maize and doing the weeding myself rather than hiring help. I follow what worked for successful neighbors and stick to familiar improved wheat and hybrid maize varieties.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I kept my fertilizer rates close to last year's because cutting back risks yield loss, which is worse than wasting some fertilizer. With only two people on 13.1 mu, I save labor time by using no-tillage for maize and doing the weeding myself rather than hiring help. I follow what worked for successful neighbors and stick to familiar improved wheat and hybrid maize varieties."
+  },
+  "elapsed_seconds": 94.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_6",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 50 years. My back isn't what it used to be, and it's just me and my wife now. We hire machines for the heavy work \u2014 plowing, seeding, harvesting. That's normal here in Quzhou now. I don't change what works.\n\n**Wheat (plant October, harvest June):**\nThe full 24 mu goes to wheat first. I'll use the improved variety from the county seed station \u2014 I stopped saving my own seed about 15 years ago because the station variety outyields it. I do rotary tillage after maize harvest, then I apply base fertilizer before sowing: urea and diammonium phosphate, a little potash. I irrigate right after sowing to get emergence, again at jointing in April, and once more at heading. That's three waterings \u2014 less than I used to do, the well is getting harder to pump. Two pesticide passes: one herbicide in early spring, one fungicide spray if there's powdery mildew around heading. My neighbors do the same. I expect around 450 jin per mu \u2014 sorry, 450 kg.\n\n**Maize (plant June, harvest September):**\nRight after wheat comes off, I plant maize on the same 24 mu. I use hybrid seed \u2014 everyone does for maize now, the yield difference is too big to ignore. I do rotary tillage to break up the wheat stubble. I apply phosphorus and potash as base, then topdress nitrogen twice \u2014 at jointing and at tasseling. Two irrigations: one at emergence if it's dry, one at tasseling. Two pesticide applications: herbicide early, then check for corn borer. I expect around 550 kg per mu.\n\nTwo crops, same land, every year. That's what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 24.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 24.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer in Quzhou County running a standard wheat-maize double-cropping rotation on 24 mu with well irrigation and mechanized field operations. Wheat is planted in October using county-supplied improved varieties with rotary tillage, three irrigations, base plus topdress nitrogen totaling 14 kg/mu, and two pesticide passes targeting weeds and fungal disease. Maize follows immediately after wheat harvest in June using hybrid seed, rotary tillage to incorporate stubble, two irrigations, nitrogen split-applied at jointing and tasseling, and two pesticide passes. Input levels reflect decades of local practice rather than precision management, with moderate fertilizer rates typical of smallholder North China Plain cultivation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 24.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 24.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer in Quzhou County running a standard wheat-maize double-cropping rotation on 24 mu with well irrigation and mechanized field operations. Wheat is planted in October using county-supplied improved varieties with rotary tillage, three irrigations, base plus topdress nitrogen totaling 14 kg/mu, and two pesticide passes targeting weeds and fungal disease. Maize follows immediately after wheat harvest in June using hybrid seed, rotary tillage to incorporate stubble, two irrigations, nitrogen split-applied at jointing and tasseling, and two pesticide passes. Input levels reflect decades of local practice rather than precision management, with moderate fertilizer rates typical of smallholder North China Plain cultivation."
+  },
+  "elapsed_seconds": 42.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_7",
+  "tier": 2,
+  "provider": "claude"
+}

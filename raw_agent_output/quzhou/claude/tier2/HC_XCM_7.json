@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 40 years. My father farmed it before me. I don't need books to tell me what to do \u2014 I know this soil, I know Quzhou's weather, I know what works.\n\nMy 6 mu runs wheat in winter and maize in summer, same as always. The wheat and maize share the same ground \u2014 they just take turns.\n\n**For wheat:** I'll plant in mid-October once the soil cools down. I'll buy improved seed from the county supply store \u2014 the local variety everyone around here uses. I know how it grows. Before planting I'll do a rotary pass and put down diammonium phosphate and some urea as base fertilizer. Then I'll topdress urea again at jointing. Four irrigations: once at planting to get germination, once in December before the ground freezes, once at jointing in April, once at heading in May. I'll spray herbicide in early spring and check for powdery mildew and aphids before harvest. Two of us can handle this.\n\n**For maize:** Right after wheat harvest in June, I'll direct-seed hybrid maize into the stubble. No need to till again \u2014 saves time on a hot June day, and the ground is fine. Hybrid seed is the only thing worth planting for maize now. I'll put fertilizer down at planting and topdress at tasseling. Summer rains usually help \u2014 I'll irrigate at planting and once more at grain fill if it looks dry. One herbicide spray right after emergence. Most years that's enough.\n\nTwo people, 6 mu \u2014 we manage fine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old farmer with 40 years of experience in Quzhou County, Hebei, managing a 6 mu wheat-maize rotation on the same land year-round. Wheat is planted in mid-October with rotary tillage and base fertilizer, relying on four well irrigations across the season and two pesticide applications for weeds and disease. Maize follows immediately after wheat harvest using no-tillage direct seeding to save labor in peak summer heat, with hybrid seed that has been standard in the region for decades, moderate fertilizer split across planting and topdressing, and only two irrigations supplementing summer rainfall. Input levels reflect learned local practice rather than extension advice, with fertilizer rates slightly above agronomic optimum as is typical for experienced smallholders in this region.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 64-year-old farmer with 40 years of experience in Quzhou County, Hebei, managing a 6 mu wheat-maize rotation on the same land year-round. Wheat is planted in mid-October with rotary tillage and base fertilizer, relying on four well irrigations across the season and two pesticide applications for weeds and disease. Maize follows immediately after wheat harvest using no-tillage direct seeding to save labor in peak summer heat, with hybrid seed that has been standard in the region for decades, moderate fertilizer split across planting and topdressing, and only two irrigations supplementing summer rainfall. Input levels reflect learned local practice rather than extension advice, with fertilizer rates slightly above agronomic optimum as is typical for experienced smallholders in this region."
+  },
+  "elapsed_seconds": 48.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_7",
+  "tier": 2,
+  "provider": "claude"
+}

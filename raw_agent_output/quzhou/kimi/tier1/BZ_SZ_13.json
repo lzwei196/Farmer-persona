@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 75 years old, and I have farmed these same plots in Quzhou County for more than fifty years. I finished middle school, so I can read the numbers on the fertilizer bags and understand what the extension agent says when he visits the village, but my real teacher has always been the field itself. Last year my winter wheat gave me about 480 jin per mu and my summer maize about 500 jin per mu. That was acceptable, but I am getting older and I cannot afford a bad season, so I play it safe.\n\nThis year I will keep my 8 mu under the wheat-maize double-cropping system, just like my neighbors and just like I have done for decades. I know every mu of this land. For the winter wheat, I will plant an improved variety in early October, using about 35 jin of seed per mu bought from the county supply store. Before sowing I will rotary-till the soil to break up the stubble and level the ground. The extension man told me 15 kg of nitrogen per mu is enough, but I still remember 2019 when I cut back to save money and the wheat turned yellow at jointing \u2014 I lost nearly a whole mu of yield. So I will put down 50 kg of compound fertilizer per mu as base dressing, which gives me about 16 kg nitrogen, 6 kg phosphorus, and 4 kg potassium per mu, and at green-up in spring I will topdress another 15 kg of urea if the plants look like they need it. I will irrigate four times: the winter irrigation before the freeze, the return-green water in March, one at jointing, and one at grain filling. Pumping water is expensive, but losing the crop is worse.\n\nFor summer maize, I will plant a hybrid variety \u2014 probably Nongda 372 \u2014 right after the wheat comes out in early June. The turnaround is only five or six days, so there is no time for ploughing. I will use no-tillage and plant directly into the wheat stubble. I will apply 40 kg of compound fertilizer per mu at planting, about 12 kg nitrogen, 4 kg phosphorus, and 3 kg potassium, and I will irrigate twice if the rain does not come: once when the seedlings are small, and once at flowering if the weather turns dry. For pesticides, I spray about four times on wheat and three times on maize \u2014 herbicide, insecticide, and fungicide when I see disease spots. I know fertilizer and chemicals take a big bite out of my pension, but at my age I cannot gamble on a poor harvest. Better to spend a little more and sleep soundly.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 75-year-old smallholder in Quzhou County with 8 mu of land and over fifty years of experience. I stick to the wheat-maize double-cropping system because it is the proven rotation in my village and gives me two harvests a year. I am loss-averse: I apply slightly more fertilizer than the extension recommendation because I remember the yield loss when I cut back in 2019. I irrigate wheat four times and maize twice, use rotary tillage for wheat and no-tillage for maize to fit the tight June turnaround, and spray pesticides as needed. My expected yields are 500 kg/mu for wheat and 550 kg/mu for maize, consistent with what I and my neighbors usually achieve.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 75-year-old smallholder in Quzhou County with 8 mu of land and over fifty years of experience. I stick to the wheat-maize double-cropping system because it is the proven rotation in my village and gives me two harvests a year. I am loss-averse: I apply slightly more fertilizer than the extension recommendation because I remember the yield loss when I cut back in 2019. I irrigate wheat four times and maize twice, use rotary tillage for wheat and no-tillage for maize to fit the tight June turnaround, and spray pesticides as needed. My expected yields are 500 kg/mu for wheat and 550 kg/mu for maize, consistent with what I and my neighbors usually achieve."
+  },
+  "elapsed_seconds": 185.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_13",
+  "tier": 1,
+  "provider": "kimi"
+}

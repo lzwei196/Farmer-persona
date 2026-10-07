@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed in Quzhou County on the North China Plain for over thirty years. I am fifty-three now, with no schooling, but the land is my school. My household has about six mu of flat irrigated land. Every year I follow the same rotation that my neighbors and my parents followed: winter wheat and then summer corn. I do not grow cotton or vegetables like some younger farmers \u2014 those crops need more labor and more watching, and with my husband working construction in town and my children away, I must stick to what I know I can manage alone. Wheat and corn have steady buyers who come to the village, and I understand their moods.\n\nThe wheat went into the ground last October after I rotary-tilled the field. I sowed improved wheat seed at about thirty jin per mu. Now it is spring, the growing season has started, and the wheat is greening up. I will topdress it with urea at green-up and again at jointing, and irrigate three times: green-up, jointing, and heading. I will spray twice for insects, once for weeds, and once for disease. If the weather treats us fairly, I expect about one thousand jin of wheat per mu.\n\nAfter harvest in early June, I will plant summer corn the same week without ploughing \u2014 we direct-seed into the wheat stubble. I always buy Denghai 605 hybrid seed, one package per mu. I apply compound fertilizer at sowing and irrigate twice if the rains do not come. Corn needs two insecticide sprays and one herbicide spray. Last year it gave me about one thousand one hundred jin per mu, and I expect the same this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat followed by summer maize on six mu of flat irrigated land, the standard double-cropping rotation in Quzhou County. Wheat is sown in October and managed through spring with rotary tillage, improved seed, three irrigations, four pesticide applications, and heavy nitrogen topdressing at green-up. Maize is direct-seeded without tillage immediately after wheat harvest in June using Denghai 605 hybrid seed, with two irrigations and three pesticide applications. I do not grow vegetables or cotton because I lack the extra labor, and grain crops are safe, familiar, and easily sold at the village collection point.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat followed by summer maize on six mu of flat irrigated land, the standard double-cropping rotation in Quzhou County. Wheat is sown in October and managed through spring with rotary tillage, improved seed, three irrigations, four pesticide applications, and heavy nitrogen topdressing at green-up. Maize is direct-seeded without tillage immediately after wheat harvest in June using Denghai 605 hybrid seed, with two irrigations and three pesticide applications. I do not grow vegetables or cotton because I lack the extra labor, and grain crops are safe, familiar, and easily sold at the village collection point."
+  },
+  "elapsed_seconds": 211.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_10",
+  "tier": 1,
+  "provider": "kimi"
+}

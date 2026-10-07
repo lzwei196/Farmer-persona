@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning as this farmer:**\n\nMy family has farmed this land in Quzhou for generations. I have about 10 mu of flat irrigated field. I finished primary school but I've been farming since I was a boy \u2014 I know this land better than any book.\n\nHere in Quzhou we do wheat and maize. That's what everyone does, that's what the land is suited for, that's what the grain stations buy. I'm not going to experiment with something fancy. My wheat goes in around October and comes off in June, then I turn around and plant maize on the same ground. By October I harvest maize, then back to wheat. This rotation has worked my whole life.\n\nI'll plant the improved wheat variety the seed shop in town has been selling the last few years \u2014 my neighbor Old Liu used it and got good yields. For maize I'll use hybrid seed, that\u90d1\u5355958 type, same as always. The hybrids yield better than open-pollinated, everyone knows this.\n\nFor fertilizer I'll put down compound fertilizer before planting wheat, then top-dress with urea at jointing. For maize I'll do the same \u2014 base fertilizer plus a top-dress. I put maybe a little more nitrogen than the extension posters say because my yields drop if I cut back \u2014 I learned that the hard way years ago.\n\nI'll irrigate wheat four times: the seedling water, the winter water before it freezes, jointing water, and grain-fill water. The groundwater here is still accessible. Maize needs less since it rains in summer, but I'll do one supplemental irrigation if July is dry.\n\nI'll spray pesticides on wheat twice \u2014 once for aphids around heading, once for disease. Maize once for corn borer.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu of irrigated flatland in Quzhou using the standard winter wheat\u2013summer maize rotation that has sustained my family for decades. I choose improved wheat varieties and hybrid maize seed because the yield difference is real and the seed shop carries them reliably. Fertilizer rates reflect what I have learned from experience on my own soil \u2014 I apply nitrogen at 16 kg/mu for wheat and 18 kg/mu for maize, which is somewhat above the extension office posters but consistent with what actually protects my yields. Wheat gets four irrigations drawing on local groundwater; maize relies mostly on summer rain with one backup irrigation. I spray twice on wheat for aphids and disease at heading, and once on maize for borer. I do rotary tillage before wheat planting to break up the hard surface after the dry summer, but go no-till for maize since I seed directly into wheat stubble right after harvest to save time and moisture.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu of irrigated flatland in Quzhou using the standard winter wheat\u2013summer maize rotation that has sustained my family for decades. I choose improved wheat varieties and hybrid maize seed because the yield difference is real and the seed shop carries them reliably. Fertilizer rates reflect what I have learned from experience on my own soil \u2014 I apply nitrogen at 16 kg/mu for wheat and 18 kg/mu for maize, which is somewhat above the extension office posters but consistent with what actually protects my yields. Wheat gets four irrigations drawing on local groundwater; maize relies mostly on summer rain with one backup irrigation. I spray twice on wheat for aphids and disease at heading, and once on maize for borer. I do rotary tillage before wheat planting to break up the hard surface after the dry summer, but go no-till for maize since I seed directly into wheat stubble right after harvest to save time and moisture."
+  },
+  "elapsed_seconds": 49.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_10",
+  "tier": 1,
+  "provider": "claude"
+}

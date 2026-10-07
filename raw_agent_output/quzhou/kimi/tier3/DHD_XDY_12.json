@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 59 years old, I never went to school, and I have been working this land for 35 years. I have 13.1 mu, all wheat-maize rotation. My son and his wife work in the city, so it is mostly me and my old man doing the farm work, though they send money home. We have a well, so water is not my biggest worry, but diesel for the pump costs money.\n\nFor **winter wheat**, I will do what I did last year. I sow around October 10th. I use improved seed \u2014 last year I used about 30 jin per mu, and it came up nice and even, so I will do the same. That is about 15 kg per mu. Before sowing, I hire the rotary tiller to go over the field \u2014 50 yuan per mu, done in one pass. For fertilizer, I put one big bag of compound fertilizer per mu as basal, that is 100 jin. The dealer sells a bag that says 18-22-5 or something like that, I do not read the numbers but I know the blue bag. Then in spring, when the wheat turns green, I spread another bag of urea, about 80 jin per mu. I know it is a lot, but my neighbor Li Sao put less two years ago and her wheat was thin as grass. I would rather waste a little fertilizer than cry over an empty grain bin. I irrigate four times: once before winter to help it survive the cold, once when it greens up in March, once at jointing, and once when the grain is filling. I spray pesticide three times \u2014 once for weeds right after sowing, and twice later when the bugs come. Last year my wheat made nearly 1000 jin per mu, so I expect about the same, around 500 kg per mu.\n\nFor **summer maize**, I plant right after cutting the wheat in early June. I buy hybrid corn seed in packages, one package per mu, about 2.5 kg. I do not till again \u2014 I just plant into the wheat stubble. That saves time and diesel. I put one bag of compound fertilizer per mu at sowing, about 80 jin, the kind with the red bag that the dealer says is good for corn. Some years I add a little urea at the big trumpet stage if the leaves look yellow, but last year I did not and it was fine, so this year I will just use the basal compound. I irrigate twice: once right after sowing if it is dry, and once when the tassels come out. I spray pesticide twice, mainly for corn borers. Last year the corn made about 1100 jin per mu, so I expect around 550 kg per mu.\n\nEverything costs money. The compound fertilizer is 130 yuan per bag, urea is 65 yuan. But if I cut back and the crop fails, I lose everything. So I copy what the good farmers around me do, and I sleep better.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this wheat-maize rotation for 35 years with no schooling, so I copy what works. For wheat, I rotary till and apply compound fertilizer plus urea topdressing, irrigating four times because dry spells hurt grain filling. For maize, I no-till plant hybrid seed immediately after wheat harvest with basal compound fertilizer, irrigating twice. I would rather spend a bit more on inputs than risk a bad harvest, since my neighbors who skimped on fertilizer regretted it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this wheat-maize rotation for 35 years with no schooling, so I copy what works. For wheat, I rotary till and apply compound fertilizer plus urea topdressing, irrigating four times because dry spells hurt grain filling. For maize, I no-till plant hybrid seed immediately after wheat harvest with basal compound fertilizer, irrigating twice. I would rather spend a bit more on inputs than risk a bad harvest, since my neighbors who skimped on fertilizer regretted it."
+  },
+  "elapsed_seconds": 129.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_12",
+  "tier": 3,
+  "provider": "kimi"
+}

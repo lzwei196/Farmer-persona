@@ -1,0 +1,53 @@
+{
+  "raw_response": "My land is about 10 mu here in Quzhou. I have been farming this same land since I was young, watching my parents do it, and their parents before them. I do not read, but I know this soil.\n\nThe only real question is how much wheat and how much maize \u2014 and the answer is the same as last year, and the year before. Everyone here does wheat and maize. The land tells you what it wants. In winter I put in wheat, in summer I rotate to maize. That is how we do it.\n\nI will plant 8 mu of wheat starting in October. I buy the improved seed from the village supply store \u2014 the man there tells me which one, and I trust him because my neighbor used the same one and got a good harvest. For fertilizer I apply the compound bag at planting, then urea again in spring when the stalks start shooting up. For water I pump three times \u2014 once before sowing to wet the ground, once in spring, once when the heads come out. I spray twice: once in winter for the weeds, once before summer for the bugs and rust.\n\nAfter the wheat comes off in June, I plant maize on the same 8 mu right away without tilling \u2014 the soil is already loose and I do not want to waste time or diesel. The hybrid seed is more expensive but the yield is worth it. My son helped me buy the right bags last year and I will do the same again. Maize needs less water in summer because the rains come, but I still pump twice to be safe.\n\nI keep 2 mu near the house for vegetables \u2014 eggplant, beans, garlic \u2014 mostly to eat, maybe sell a little at the village market.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    },\n    {\n      \"crop\": \"mixed vegetables\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"A 54-year-old farmer in Quzhou County with no formal education follows the established winter wheat\u2013summer maize double-cropping rotation on 8 mu, reflecting decades of household and village tradition on the North China Plain. Improved wheat seed and hybrid maize seed are purchased from the village supply store based on neighbor recommendations. Nitrogen application is moderately high following local norms, with a compound fertilizer base-dressing plus urea topdressing for wheat. Maize is direct-seeded into wheat stubble without tillage to save time and fuel. Three irrigations sustain the wheat through dry spring conditions; maize relies partly on summer rainfall with two supplemental pumping cycles. Two pesticide applications on wheat address winter weeds and pre-harvest aphids and rust; maize receives one application. Two mu near the house grow mixed vegetables for household consumption and occasional market sale using traditional seed and hand management.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      },
+      {
+        "crop": "mixed vegetables",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "A 54-year-old farmer in Quzhou County with no formal education follows the established winter wheat\u2013summer maize double-cropping rotation on 8 mu, reflecting decades of household and village tradition on the North China Plain. Improved wheat seed and hybrid maize seed are purchased from the village supply store based on neighbor recommendations. Nitrogen application is moderately high following local norms, with a compound fertilizer base-dressing plus urea topdressing for wheat. Maize is direct-seeded into wheat stubble without tillage to save time and fuel. Three irrigations sustain the wheat through dry spring conditions; maize relies partly on summer rainfall with two supplemental pumping cycles. Two pesticide applications on wheat address winter weeds and pre-harvest aphids and rust; maize receives one application. Two mu near the house grow mixed vegetables for household consumption and occasional market sale using traditional seed and hand management."
+  },
+  "elapsed_seconds": 51.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_6",
+  "tier": 1,
+  "provider": "claude"
+}

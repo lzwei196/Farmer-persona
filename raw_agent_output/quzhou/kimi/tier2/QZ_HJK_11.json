@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am sixty years old, and I have worked these three *mu* in Quzhou County for forty years. My household has six people, and some of the younger ones have off-farm jobs in town, so I must manage the labor peaks myself. I have a well, and I know the soil here \u2014 it is good North China Plain loam, but the groundwater is not infinite, so I do not waste water.\n\nIt is the start of the season. For me, that means autumn wheat sowing is approaching. After the maize is harvested and the stalks are chopped, I will **plough** the entire three *mu* to prepare a clean seedbed for wheat. I will sow an **improved** wheat variety around early October. I apply base fertilizer \u2014 compound fertilizer and some potash \u2014 and I split the nitrogen: half at sowing, half topdressed at jointing in spring. I will irrigate three times: the overwinter water before the deep cold, the jointing water in March, and the heading water in April. I will spray herbicide once in early spring, and if powdery mildew or aphids appear, I will spray once more. I expect about **500 kg per mu** if the winter is kind.\n\nImmediately after wheat harvest in early June, I cannot rest. I will sow **hybrid** maize the same day or the next into the wheat stubble using **no-tillage** direct seeding. I learned long ago that losing even three days at this transition costs yield in September. I put down starter fertilizer with the seed, then topdress with urea at the big-trumpet stage. I will irrigate twice if the summer rains are insufficient \u2014 once around tasseling, once at grain filling. I will spray herbicide after emergence and insecticide for corn borer once in July. I expect **550 kg per mu** from the maize.\n\nThis is the rhythm I have followed for decades. The key is discipline at the harvest-sowing gap.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"With 40 years of experience on this 3-mu plot in Quzhou, I manage a tight wheat-maize double-cropping system. I plough before wheat to control residue and weeds, use no-tillage for maize to save the critical 1-3 days after wheat harvest, split nitrogen for both crops to match growth stages, and limit irrigation to essential timings due to well-water constraints. I use improved wheat seed and hybrid maize for stable yield and market acceptance, and I keep pesticide use to targeted applications based on observed pest pressure.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "With 40 years of experience on this 3-mu plot in Quzhou, I manage a tight wheat-maize double-cropping system. I plough before wheat to control residue and weeds, use no-tillage for maize to save the critical 1-3 days after wheat harvest, split nitrogen for both crops to match growth stages, and limit irrigation to essential timings due to well-water constraints. I use improved wheat seed and hybrid maize for stable yield and market acceptance, and I keep pesticide use to targeted applications based on observed pest pressure."
+  },
+  "elapsed_seconds": 132.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_HJK_11",
+  "tier": 2,
+  "provider": "kimi"
+}

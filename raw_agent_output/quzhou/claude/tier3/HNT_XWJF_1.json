@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 75 years, but I still farm my 6 mu. My sons work in town, so I do most of the work with my wife. I cannot change much \u2014 I do what I did last year, what worked.\n\nMy land: I keep about 4.5 mu for wheat in winter and maize in summer \u2014 that is the main system here, everyone does it. The other 1.5 mu I still plant cotton, the way I always have, even though many neighbors gave it up. Cotton gives me cash if the price is fair.\n\n**Wheat (winter, 4.5 mu):** I sow improved seed from the agro-shop, \u6d4e\u9ea6 type, what the dealer recommends. At sowing I put 1 bag of compound fertilizer (50 kg, 15-15-15) per mu \u2014 that is 7.5 kg each of N, P, K. In spring at jointing I top-dress 2 bags of urea per mu (about 100 kg urea = 46 kg N). Total nitrogen near 53 kg. Maybe a little much, but if I cut back and the wheat turns yellow I will lose more than the fertilizer cost. I water 4 times \u2014 winter water, jointing, heading, grain filling. Spray for weeds once, aphids once, sometimes scab once. Rotary till after maize harvest. I expect about 450 kg/mu.\n\n**Maize (summer, 4.5 mu):** Hybrid seed, \u90d1\u5355 type. Direct seed into wheat stubble, no plough \u2014 that is how everyone does it now, saves money. I put 1 bag compound at sowing (7.5-7.5-7.5) and top-dress 2 bags urea at big trumpet stage (46 kg N). Total ~53 N. Water 2 times if rain is short. Spray once for borer. Expect 500 kg/mu.\n\n**Cotton (spring, 1.5 mu):** I use Bt cotton seed, the kind that resists bollworm \u2014 neighbors had good results years back. I plough this land, cotton wants deep soil. I put 1 bag compound + 1.5 bags urea (about 42 N, 7.5 P, 7.5 K). Water 3 times. Cotton needs many sprays \u2014 at least 5 times for aphids, mites, bollworm even with Bt. Expect 220 kg seed cotton/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 53,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 53,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 42,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I am 75 with primary schooling, so I farm the way that has fed my family for fifty years and copy what neighbors do. Wheat-maize on 4.5 mu is our main system \u2014 I use one bag of 15-15-15 compound at sowing and two bags of urea topdressing for each crop, because cutting back risks a yellow field and a bad harvest, and that loss is worse than a little wasted fertilizer. I keep 1.5 mu in Bt cotton out of habit and for cash, ploughing deep and spraying often because cotton pests never rest. I use well irrigation only when rain is short to save the electricity cost, and I buy improved or hybrid seed from the dealer because everyone here has seen these varieties yield well.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 53,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 53,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 42,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I am 75 with primary schooling, so I farm the way that has fed my family for fifty years and copy what neighbors do. Wheat-maize on 4.5 mu is our main system \u2014 I use one bag of 15-15-15 compound at sowing and two bags of urea topdressing for each crop, because cutting back risks a yellow field and a bad harvest, and that loss is worse than a little wasted fertilizer. I keep 1.5 mu in Bt cotton out of habit and for cash, ploughing deep and spraying often because cotton pests never rest. I use well irrigation only when rain is short to save the electricity cost, and I buy improved or hybrid seed from the dealer because everyone here has seen these varieties yield well."
+  },
+  "elapsed_seconds": 42.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_1",
+  "tier": 3,
+  "provider": "claude"
+}

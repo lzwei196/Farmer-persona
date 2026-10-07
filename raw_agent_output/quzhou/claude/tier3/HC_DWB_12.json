@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 70 years. I farm alone on my 10.1 mu. My back is not what it was, so I do what I know. I do not try new things. What worked last year, I do again.\n\nMy land \u2014 I split it. About 8 mu I do wheat then maize, one after the other, like always. The other 2.1 mu I keep in cotton. Cotton I have grown my whole life, even if picking is hard now. My neighbor's son helps me pick in autumn, I pay him some.\n\nFor seeds \u2014 I buy from the same shop in town. The maize I plant is the hybrid kind, everyone uses it, the old seed gives nothing now. Wheat same, the shop gives me the improved kind, I do not know the name, but it is what grows here. Cotton seed also from shop.\n\nFor fertilizer \u2014 I buy compound fertilizer, the 15-15-15 bag. One bag is 50 jin, I mean 50 kg. For wheat, before planting I put down 2 bags per mu as base, then in spring when it greens up I spread urea, maybe half bag per mu. For maize, same thing \u2014 1 bag compound at planting, then urea at knee-high, almost one bag per mu because maize eats a lot. Cotton I give 1 bag compound at planting and urea twice when it flowers.\n\nI do not measure like a scientist. I go by the bag. If last year was good, I do same. If wheat looked yellow, I add a bit more urea. Too little fertilizer and the harvest is poor \u2014 that is disaster. Too much is just money lost, but at least grain comes.\n\nWater \u2014 I have my well. Wheat needs water 3 times: after planting, in spring, and when heading. Maize mostly gets the rain in summer, but if dry, I pump once or twice. Cotton I water 2 times, it does not like too much wet.\n\nPesticide \u2014 wheat I spray once for aphid in spring. Maize one spray for borer. Cotton is the hard one, bollworm comes many times, I spray 4-5 times, my neighbor tells me when his field has bugs and I spray same day.\n\nTillage \u2014 the tractor man comes and ploughs for me before wheat. For maize after wheat harvest I do not plough, just drill in the stubble. Cotton I plough in spring.\n\nYield \u2014 if heaven gives good weather, wheat maybe 450 kg per mu, maize 550 kg, cotton 250 kg of seed cotton. This is what I got last year. If less rain, less harvest, nothing I can do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am 70 and farm alone, so I do what I did last year. I count in bags, not kilograms like the young people. I put 2 bags of compound fertilizer per mu as base, then add urea when crops look hungry. I would rather spend a bit extra on fertilizer than lose the harvest \u2014 a bad harvest is a disaster, wasted fertilizer is only money. I split my 10.1 mu: 8 mu wheat-maize rotation like my neighbors, 2.1 mu cotton because I have always grown cotton. Seeds I buy from the town shop, whatever improved kind they sell. Water comes from my well, wheat three times, maize when dry, cotton twice. Cotton needs much spraying for bollworm, other crops not so much.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am 70 and farm alone, so I do what I did last year. I count in bags, not kilograms like the young people. I put 2 bags of compound fertilizer per mu as base, then add urea when crops look hungry. I would rather spend a bit extra on fertilizer than lose the harvest \u2014 a bad harvest is a disaster, wasted fertilizer is only money. I split my 10.1 mu: 8 mu wheat-maize rotation like my neighbors, 2.1 mu cotton because I have always grown cotton. Seeds I buy from the town shop, whatever improved kind they sell. Water comes from my well, wheat three times, maize when dry, cotton twice. Cotton needs much spraying for bollworm, other crops not so much."
+  },
+  "elapsed_seconds": 43.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_12",
+  "tier": 3,
+  "provider": "claude"
+}

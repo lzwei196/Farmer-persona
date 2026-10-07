@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for four years now, and I know Quzhou's conditions well enough to have a clear picture of what I'm doing this season. I have 225 mu total. The wheat-maize rotation runs on the same 110 mu \u2014 winter wheat goes in October, summer maize follows right after the June wheat harvest on the same ground. That leaves 115 mu for cotton, which I keep as a cash crop to diversify income.\n\nI'll use improved varieties for wheat (something like Shi 4185 or a local certified variety) and hybrid seed for maize \u2014 no question there. For cotton I'll go with hybrid Bt varieties to reduce bollworm pressure. My education means I actually read the agronomic guides and extension bulletins, so I calibrate fertilizer more carefully than some neighbors. I won't over-apply nitrogen on wheat \u2014 I've seen what lodging does to yield. Maize I'll push a bit harder on nitrogen since the summer heat and my well irrigation let me support it.\n\nFor irrigation: wheat needs three passes (pre-winter, jointing, heading). Maize is lower \u2014 two applications targeting tasseling and grain fill. Cotton needs four \u2014 bud stage, flowering, boll development, and one late. My well covers all of it without stress.\n\nOn tillage: after maize harvest in September, I'll do rotary tillage before wheat seeding. After wheat harvest in June, time is tight, so I direct-seed maize with no-tillage to stay on schedule. For cotton, I'll do rotary in spring to break the winter crust.\n\nCotton gets the most pesticide attention \u2014 five applications across the season to manage aphids, bollworm, and spider mites. Wheat and maize each get two applications (seed treatment plus one in-season fungicide/herbicide pass).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 110,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 110,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 115,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I allocate my 225 mu between a 110 mu wheat-maize double-cropping rotation and 115 mu of cotton as a cash crop. I select improved wheat and hybrid maize and cotton seed for better yield potential and pest resistance. Fertilizer rates are calibrated to agronomic guidelines rather than maximized \u2014 I keep wheat nitrogen moderate to avoid lodging and push maize nitrogen slightly higher given summer growing conditions and reliable well irrigation. Tillage is rotary before wheat and no-till for maize to meet the tight turnaround after wheat harvest in June. Cotton receives the heaviest pesticide management at five applications to control bollworm and aphids across the long growing season. Overall, the plan balances food grain production from the rotation with cash income from cotton under well-irrigated conditions in Quzhou County.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 110,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 110,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 115,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I allocate my 225 mu between a 110 mu wheat-maize double-cropping rotation and 115 mu of cotton as a cash crop. I select improved wheat and hybrid maize and cotton seed for better yield potential and pest resistance. Fertilizer rates are calibrated to agronomic guidelines rather than maximized \u2014 I keep wheat nitrogen moderate to avoid lodging and push maize nitrogen slightly higher given summer growing conditions and reliable well irrigation. Tillage is rotary before wheat and no-till for maize to meet the tight turnaround after wheat harvest in June. Cotton receives the heaviest pesticide management at five applications to control bollworm and aphids across the long growing season. Overall, the plan balances food grain production from the rotation with cash income from cotton under well-irrigated conditions in Quzhou County."
+  },
+  "elapsed_seconds": 41.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_3",
+  "tier": 2,
+  "provider": "claude"
+}

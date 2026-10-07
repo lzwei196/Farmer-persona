@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 26 years, and at 46 I know what the soil in Quzhou County will give me. With 7 mu total and four people in my household\u2014some of us working off-farm when the busy season is over\u2014I need a plan that balances grain for eating and cotton for cash without taking more labor than we have.\n\nI will put **5 mu into my wheat-maize rotation** and keep **2 mu for cotton**. The wheat-maize double crop is the backbone of our farm; it is reliable and the government supports it. The 2 mu of cotton gives us better money per mu, but it needs hand-picking and many pesticide sprays, so I cannot expand it beyond what my family can manage.\n\nFor the **winter wheat on 5 mu**, I will sow an improved variety in autumn\u2014the same kind my neighbors plant. Before sowing I will do rotary tillage to break up the stubble and level the field. Wheat is hungry, so I will put down about 35 kg of nitrogen per mu, 18 kg of phosphorus, and 8 kg of potassium. Because I have a well, I will irrigate three times: once at green-up in spring, once at jointing, and once at grain filling. I will spray pesticides four times to keep aphids and rust away. I expect around 1000 kg per mu if the weather holds.\n\nRight after wheat harvest in early June, I will plant **hybrid maize on the same 5 mu**. Here we use no-tillage; there is no time to plough between crops, and the maize seeds go straight into the wheat stubble. Maize needs roughly 22 kg nitrogen, 22 kg phosphorus, and 6 kg potassium per mu. Summer brings some rain, so two irrigations\u2014at tasseling and grain filling\u2014are enough. Four pesticide applications will handle corn borers and weeds. I expect about 1100 kg per mu.\n\nFor my **2 mu of cotton**, I will rotary till in April and plant a good improved variety. Cotton is a cash crop but it is thirsty for chemicals. I will apply about 18 kg nitrogen, 15 kg phosphorus, and 15 kg potassium per mu. I will irrigate twice during the hot months and spray pesticides about 16 times through the season to control bollworms and mites\u2014that is simply what cotton demands in this area. I expect roughly 550 kg of seed cotton per mu.\n\nThis is my plan. It keeps us fed, uses our well water wisely, and brings in cash without overloading the family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 18,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"With 7 mu and limited labor because some family members work off-farm, I am dedicating 5 mu to the reliable wheat-maize double-cropping system and 2 mu to cotton for cash income. Wheat gets rotary tillage, heavy fertilization, three irrigations, and four pesticide sprays, aiming for 1000 kg/mu. Maize follows immediately with no-tillage planting, moderate fertilizer, two irrigations, and four pesticide sprays, targeting 1100 kg/mu. Cotton receives rotary tillage, balanced fertilizer, two irrigations, and intensive pest management with 16 sprays, expecting 550 kg/mu of seed cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 18,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "With 7 mu and limited labor because some family members work off-farm, I am dedicating 5 mu to the reliable wheat-maize double-cropping system and 2 mu to cotton for cash income. Wheat gets rotary tillage, heavy fertilization, three irrigations, and four pesticide sprays, aiming for 1000 kg/mu. Maize follows immediately with no-tillage planting, moderate fertilizer, two irrigations, and four pesticide sprays, targeting 1100 kg/mu. Cotton receives rotary tillage, balanced fertilizer, two irrigations, and intensive pest management with 16 sprays, expecting 550 kg/mu of seed cotton."
+  },
+  "elapsed_seconds": 103.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_6",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 62 years old and I have farmed in Quzhou County for more than forty years. I finished middle school, so I can read the numbers on fertilizer bags and understand what the extension people tell me, but I still trust my own eyes and what my neighbors do more than any book. I have about ten mu of good irrigated land, and it is just me and my wife working it now \u2014 my son is in Shijiazhuang working construction.\n\nMy winter wheat went in last October. I rotary-tilled the soil before sowing and put down about thirty jin of improved wheat seed per mu. Now it is early spring and the wheat is greening up. I will irrigate it three times in total this cycle: the winter irrigation is already done, and I will do two more \u2014 one at jointing and one at heading if the dry wind keeps up. For fertilizer, I broadcast about one hundred jin of compound fertilizer per mu at planting, and I will topdress another thirty jin of urea per mu when the wheat starts jointing. The extension agent keeps saying I should cut back on nitrogen, but two years ago I tried using less and my yield dropped by nearly a hundred jin per mu, so I went back to my usual amount. I expect about one thousand jin per mu if we do not get a late frost. I will spray pesticides four times: herbicide once, and insecticide two or three times if I see aphids.\n\nAfter I harvest the wheat in early June, I will plant summer maize on the same eight mu. There is no time to waste \u2014 if you wait more than three or four days, the maize will not mature before the cold comes. I buy hybrid seed every year, Denghai or Nongda, about one package per mu. I do not till for maize; I plant straight into the wheat stubble to save time. I put down compound fertilizer with the planter, about eighty to one hundred jin per mu. Maize is easier than wheat \u2014 two irrigations if it does not rain, and three pesticide sprays. I expect about eleven hundred jin per mu.\n\nI still keep two mu of cotton because the price was decent last year, though at my age the work is getting hard. Cotton needs constant attention \u2014 pruning, and spraying for insects almost every week in July and August. I rotary-till that plot in spring and plant guoxinmian in April. I use about one hundred jin of compound fertilizer per mu. The cotton needs two irrigations and I will spray pesticides about twelve times. I am telling my wife this might be the last year for cotton \u2014 my back is not what it used to be, and hired labor is too expensive.\n\nWheat and maize are my bread and butter. They are stable, I have the tractor for them, and I know them like the back of my hand. Cotton is my gamble for extra cash, but the labor is wearing me down.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I am 62 years old with about ten mu of irrigated land in Quzhou County. I rely on the wheat-maize double cropping system on eight mu because it is stable, mechanized, and I know it well after forty years of farming. I apply fertilizer generously because I am loss-averse \u2014 cutting back two years ago cost me yield. I use rotary tillage for wheat and no-tillage for maize to save time during the tight June turnaround. I keep two mu of cotton for extra income, but at my age the intense labor and twelve pesticide sprays are becoming too much, so I am considering giving it up next year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I am 62 years old with about ten mu of irrigated land in Quzhou County. I rely on the wheat-maize double cropping system on eight mu because it is stable, mechanized, and I know it well after forty years of farming. I apply fertilizer generously because I am loss-averse \u2014 cutting back two years ago cost me yield. I use rotary tillage for wheat and no-tillage for maize to save time during the tight June turnaround. I keep two mu of cotton for extra income, but at my age the intense labor and twelve pesticide sprays are becoming too much, so I am considering giving it up next year."
+  },
+  "elapsed_seconds": 186.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_8",
+  "tier": 1,
+  "provider": "kimi"
+}

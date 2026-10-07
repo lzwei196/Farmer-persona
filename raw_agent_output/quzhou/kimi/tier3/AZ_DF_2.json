@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old and I have farmed these 12 mu in Quzhou for 50 years. I never went to school. What I know, I learned from my father and from watching the fields with my own eyes. I do not trust advice from outsiders who do not get their hands dirty. I trust what worked before and what my neighbors do.\n\nMy farm has 10 mu that I plant wheat and then maize on, every year, same as everyone around here. I also keep 2 mu near the house for cotton. My son and his wife work in a factory in Handan sometimes and send money home, but this land is how we eat.\n\nFor the wheat on those 10 mu: I will buy the improved wheat seed from the shop in town. It costs more, but last year old Wang used the new seed and his grain was heavy and full. For fertilizer, I will put down one full bag of compound fertilizer per mu before planting \u2014 that is 50 kg per mu. Then when the wheat starts to joint in spring, I will spread half a bag of urea on each mu, about 25 kg. I know that is a lot, but two years ago I put less and the heads were small. I would rather waste some fertilizer than lose the crop. A bad harvest is a disaster; wasting fertilizer is just money spent. I will irrigate three times from my well: once before winter so the seedlings do not freeze, once when the stems shoot up fast, and once when the grain is filling. I will spray twice \u2014 once for weeds right after planting, and once for bugs in the spring. After the maize comes off in autumn, I will run the rotary tiller. It is fast and my nephew can help. I expect 450 kg per mu if the weather is normal.\n\nFor the maize on those same 10 mu: Maize must be hybrid seed. Everyone knows that now. If you plant your own saved maize, the ears are small and the yield is poor. I learned that 20 years ago when my neighbor tried it and got almost nothing. I will put down 40 kg of compound fertilizer per mu when I plant after the wheat harvest, and one top dressing of 20 kg urea per mu when the plants are knee-high. Summer has some rain, so I only irrigate twice if it stays dry \u2014 once when the plants are growing fast, and once when the tassels come out. Two sprays for bugs. I will rotary till quick after the wheat is cut because the season is short and you cannot waste days. I expect 500 kg per mu.\n\nFor the cotton on the 2 mu: I use my own saved cotton seed. I know this seed. It grows steady and the fiber is long. Cotton does not need as much food as grain. I will plough the 2 mu deep in spring and put 40 kg of compound fertilizer per mu. That is enough. Cotton roots like loose soil, so I plough, I do not rotary till. I will irrigate twice \u2014 once when the flowers open, and once when the bolls are fat. I will spray three times for bollworms. Cotton always needs more spraying than grain. I expect 200 kg of seed cotton per mu.\n\nI watch what my neighbors do. If they are all putting urea on their wheat at jointing, I do it too. Change is risky. I would rather do what I did last year and adjust a little bit, than try something new and fail. Fertilizer costs real money, but losing the whole yield costs everything.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I put my 10 main mu into wheat-maize double cropping and kept 2 mu for cotton near the house. For wheat I use improved seed, one bag of compound fertilizer per mu at planting plus half a bag of urea at jointing, three irrigations, and two sprays, rotary tilled after maize. For maize I use hybrid seed, 40 kg compound per mu plus 20 kg urea top dressing, two irrigations, two sprays, and quick rotary till after wheat harvest. For cotton I use my own saved seed, 40 kg compound per mu, deep ploughing, two irrigations, and three sprays for bollworms. I would rather spend a bit more on fertilizer than risk losing yield, and I copy what my successful neighbors do because change is dangerous.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I put my 10 main mu into wheat-maize double cropping and kept 2 mu for cotton near the house. For wheat I use improved seed, one bag of compound fertilizer per mu at planting plus half a bag of urea at jointing, three irrigations, and two sprays, rotary tilled after maize. For maize I use hybrid seed, 40 kg compound per mu plus 20 kg urea top dressing, two irrigations, two sprays, and quick rotary till after wheat harvest. For cotton I use my own saved seed, 40 kg compound per mu, deep ploughing, two irrigations, and three sprays for bollworms. I would rather spend a bit more on fertilizer than risk losing yield, and I copy what my successful neighbors do because change is dangerous."
+  },
+  "elapsed_seconds": 189.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DF_2",
+  "tier": 3,
+  "provider": "kimi"
+}

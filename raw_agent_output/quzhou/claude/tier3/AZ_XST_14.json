@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54, been farming these 24 mu for 30 years. My son works in the city, only me and my wife at home, so I cannot do too much heavy work anymore. Let me think about this year.\n\nI keep my fields the same as last year \u2014 6 mu for cotton on the sandy piece near the road, and 18 mu for wheat and maize rotation on the better ground. Cotton price is not so good these years but I already have the sprayer and I know how to grow it, so I keep some.\n\nFor wheat, I will plant Jimai seed, the improved kind my neighbor Old Wang used last year, he got over 500 kg per mu. I put one bag of compound fertilizer 15-15-15 per mu as base when I plough, that is 40 kg. Then when wheat turns green in spring I put one bag of urea per mu, 40 kg, that gives about 18 kg nitrogen. So total nitrogen about 24 kg per mu. Phosphorus and potassium about 6 kg each from the compound. I irrigate 3 times \u2014 before winter, returning green, and filling grain. I spray 2 times for aphids and rust. Better to spray one extra time than lose the crop, pesticide is cheap compared to losing wheat.\n\nFor maize after wheat, I use hybrid seed Zhengdan, everyone around here plants it. I put half bag compound at sowing and one bag urea when knee-high. Maize needs less water than wheat, I water 1 time if the rain is enough, 2 times if dry. Spray 1 time for corn borer.\n\nCotton needs more care and more fertilizer. I put 2 bags of compound as base and top-dress urea twice. Cotton eats a lot. I spray 7 times for bollworm and aphid \u2014 cotton without spray is finished. I water 3 times.\n\nI use rotary tiller, the tractor man comes and does all 24 mu in one day, cheaper than plough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 18.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 18.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I keep my layout same as last year \u2014 18 mu wheat-maize rotation on good ground, 6 mu cotton on the sandy piece. Wheat gets 1 bag compound fertilizer as base plus 1 bag urea topdress in spring, same as what works for my neighbors. Maize after wheat gets half bag compound and 1 bag urea, hybrid seed everyone plants. Cotton needs double fertilizer and 7 sprays or bollworm ruins it. I would rather spend a little extra on fertilizer and pesticide than lose harvest \u2014 a bad year is a disaster, wasted input is only some yuan. Rotary tilling for wheat and cotton, no-till direct seed for maize after wheat because I have no time to plough in June.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 18.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 18.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I keep my layout same as last year \u2014 18 mu wheat-maize rotation on good ground, 6 mu cotton on the sandy piece. Wheat gets 1 bag compound fertilizer as base plus 1 bag urea topdress in spring, same as what works for my neighbors. Maize after wheat gets half bag compound and 1 bag urea, hybrid seed everyone plants. Cotton needs double fertilizer and 7 sprays or bollworm ruins it. I would rather spend a little extra on fertilizer and pesticide than lose harvest \u2014 a bad year is a disaster, wasted input is only some yuan. Rotary tilling for wheat and cotton, no-till direct seed for maize after wheat because I have no time to plough in June."
+  },
+  "elapsed_seconds": 36.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_14",
+  "tier": 3,
+  "provider": "claude"
+}

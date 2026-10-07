@@ -1,0 +1,66 @@
+{
+  "raw_response": "I'll answer in character as this farmer.\n\n**My reasoning:**\n\nI have been farming these 30 mu for 35 years, so I know what works here in Quzhou. My father planted garlic, my neighbors plant garlic, and it brings good money \u2014 so I keep 5 mu for garlic every year. It is hard work but my wife and daughter-in-law help in the harvest. Garlic needs heavy fertilizer and lots of water, I know this from experience.\n\nThe biggest piece of land, 20 mu, I do wheat and then maize, same as everyone around me. This is the safest way. Wheat goes in October after maize harvest, maize goes in June right after wheat. The well is close so I can water when I need to.\n\nCotton I keep only 5 mu now. Cotton is too much trouble \u2014 many times spraying for bollworm, picking by hand, my back is not what it was. But the price is still okay and I know this crop well.\n\nFor fertilizer, I buy the compound fertilizer (diammonium, 15-15-15) at the township dealer, and urea for topdressing. I use a bit more than the bag says \u2014 if I put too little and the wheat turns yellow, I lose much more than the cost of one extra bag. My neighbor Old Wang uses about 3 bags compound plus 1 bag urea per mu for wheat, I do similar. A bag of fertilizer is 50 jin, I count in bags not kg but I know one bag urea is about 22 kg N.\n\nFor garlic I put the most fertilizer because garlic eats a lot. I also put some chicken manure I get cheap from my nephew's farm.\n\nI use improved seed for wheat (Jimai type) and hybrid for maize \u2014 the seed dealer brings good varieties each year and my neighbors test them. I still plow deep before wheat, rotary for the others.\n\nWater: wheat needs 3-4 times (winter water, green-up, jointing, filling). Maize usually 1-2 times if rain is short. Garlic needs 5-6 times, very thirsty. Cotton 2-3 times.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 1700\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way my neighbors farm and the way I have done for many years. Wheat-maize on 20 mu is the main thing, safe and steady. Garlic on 5 mu makes the cash \u2014 it eats a lot of fertilizer and water but the price pays back. Cotton I keep only 5 mu now because spraying and picking are too much work at my age. I use a little extra fertilizer to be safe \u2014 losing yield scares me more than one extra bag of urea. I buy improved wheat seed and hybrid maize seed from the township dealer like everyone else.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "garlic",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 6,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 1700
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I farm the way my neighbors farm and the way I have done for many years. Wheat-maize on 20 mu is the main thing, safe and steady. Garlic on 5 mu makes the cash \u2014 it eats a lot of fertilizer and water but the price pays back. Cotton I keep only 5 mu now because spraying and picking are too much work at my age. I use a little extra fertilizer to be safe \u2014 losing yield scares me more than one extra bag of urea. I buy improved wheat seed and hybrid maize seed from the township dealer like everyone else."
+  },
+  "elapsed_seconds": 40.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

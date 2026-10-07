@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old and have been farming these fields in Quzhou County since I was a teenager. Over the decades, I have learned what this land can do. The North China Plain gives us two crops a year if you work it right: winter wheat followed by summer maize. That is the system my father used, and it is the system I trust. I have about 12 mu of good irrigated land, and I will plant all of it to this double-cropping rotation again this year.\n\nFor the winter wheat, I will rotary till the soil after the autumn harvest to prepare a fine seedbed. I will sow *Jimai 22*, an improved variety that has done well here\u2014good resistance and stable yield. I will put down compound fertilizer as a basal dressing and topdress with urea at the jointing stage. Wheat needs water, so I will irrigate four times: once before winter to help it survive the cold, once at green-up, once at jointing, and once at flowering. I will spray herbicide and insecticide two or three times to keep weeds and aphids under control. I expect about 1,100 kg per mu if the weather cooperates.\n\nAfter harvesting the wheat in early June, there is no time to waste. I will plant *Denghai 605*, a hybrid maize, directly into the wheat stubble without tillage. No-tillage saves time, keeps moisture in the soil, and everyone around here does it for maize. Maize needs less fertilizer than wheat because the wheat residue returns some nutrients, so I will apply compound fertilizer at sowing and a side-dressing of urea at the big-flare stage. Two irrigations should be enough\u2014one at jointing and one at tasseling. A couple of pesticide sprays for corn borers and weeds will do. With this hybrid, I expect around 1,150 kg per mu.\n\nI thought about cotton, but at my age I do not have the energy for all the hand-picking and the fifteen sprays it seems to need. Wheat and maize are mechanized from sowing to harvest, which is what my back needs now.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 65,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou County my whole life and know the land well. The wheat-maize double-cropping system is reliable and profitable on the North China Plain. I plant improved wheat in winter with rotary tillage, four irrigations, and moderate fertilization, then follow with hybrid maize in summer using no-tillage to save time and moisture. I avoid cotton because the labor and pesticide costs are too high for a man my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 65,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou County my whole life and know the land well. The wheat-maize double-cropping system is reliable and profitable on the North China Plain. I plant improved wheat in winter with rotary tillage, four irrigations, and moderate fertilization, then follow with hybrid maize in summer using no-tillage to save time and moisture. I avoid cotton because the labor and pesticide costs are too high for a man my age."
+  },
+  "elapsed_seconds": 101.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_12",
+  "tier": 1,
+  "provider": "kimi"
+}

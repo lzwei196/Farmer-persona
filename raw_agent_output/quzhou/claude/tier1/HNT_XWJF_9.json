@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land in Quzhou for three generations. I know this soil, I know this weather. At 76, my back isn't what it was \u2014 my son helps when he visits from the city, and I hire the village machine cooperative for plowing and seeding. I'm not going to try anything clever. I grow what I've always grown, what this land and this county are known for: winter wheat and summer corn.\n\nI have 8 mu of contracted land. Last autumn I planted wheat on all of it, as I do every year. Now it's spring, the wheat is in the jointing stage. After I harvest it in June, I'll turn around immediately and plant corn on the same fields \u2014 the rotation we've done here for decades. This is the safest path. Both crops have government purchase prices, both I can sell to the grain station in town without worrying about finding a buyer.\n\nI'll use the improved wheat seed I bought from the township supply store \u2014 same variety I used last year, it performed well. For corn I always use hybrid seed, everyone here does, the yields are much better than the old varieties my father used.\n\nI apply fertilizer the way I learned: base fertilizer before seeding, then top-dress the wheat in spring. My amounts haven't changed much in years. I irrigate wheat three times \u2014 the winter water to protect roots from freezing, jointing water, and grain-filling water. We draw from the well using the village irrigation group. Corn gets natural summer rainfall mostly, just one extra irrigation if August is dry.\n\nI don't over-apply pesticide \u2014 it's expensive \u2014 but I spray the wheat for aphids and rust, and treat the corn for armyworm if needed.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer in Quzhou County with primary education and limited physical capacity chooses the standard wheat-maize double-cropping rotation on all 8 mu of contracted land, relying on the village machine cooperative for mechanized operations. Wheat is grown in the winter season using locally available improved varieties with three irrigations from the village groundwater system, and maize follows immediately after the June wheat harvest using hybrid seed with minimal irrigation given summer rainfall. Fertilizer rates and pesticide applications reflect conservative local practice learned over decades, prioritizing yield stability and low risk over optimization, with both crops sold to the township grain station at government purchase prices.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer in Quzhou County with primary education and limited physical capacity chooses the standard wheat-maize double-cropping rotation on all 8 mu of contracted land, relying on the village machine cooperative for mechanized operations. Wheat is grown in the winter season using locally available improved varieties with three irrigations from the village groundwater system, and maize follows immediately after the June wheat harvest using hybrid seed with minimal irrigation given summer rainfall. Fertilizer rates and pesticide applications reflect conservative local practice learned over decades, prioritizing yield stability and low risk over optimization, with both crops sold to the township grain station at government purchase prices."
+  },
+  "elapsed_seconds": 53.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_9",
+  "tier": 1,
+  "provider": "claude"
+}

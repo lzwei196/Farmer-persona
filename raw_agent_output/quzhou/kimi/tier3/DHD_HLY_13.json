@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 75. I never went to school, not one day. My father put the hoe in my hand when I was small, and I have farmed this ground for 50 years. I know every corner of my 14 mu. Ten mu I plant with wheat after the autumn, and when the wheat comes off in June I put maize straight into the same ground. The other 4 mu I plant cotton so my wife and daughter-in-law can pick it, and we sell it to the buyer who drives his truck to the village.\n\nI don't read books. I watch what works. For wheat, I spread one full bag of compound fertilizer and half a bag of urea on each mu before sowing. When the wheat turns green after winter, I spread another half bag of urea. I run the rotary tiller before planting. I water three times from my well: once after sowing if the autumn is dry, once when the wheat shoots up in spring, and once when the heads fill. I spray twice, for weeds and bugs. Last year I got about 500 kg per mu, and I expect the same if the frost doesn't cheat me.\n\nFor maize, I buy hybrid seeds from the shop, the yellow kind with fat ears. I put one bag of compound in the row when planting, and when the plants are knee-high I spread more urea, about one and a half bags per mu. There is no time to plow between wheat harvest and maize sowing, so the machine drills it straight into the wheat stubble. I water twice: when the stalks grow fast, and when the ears swell. I spray twice. I expect 600 kg per mu.\n\nFor cotton, I plough deep first because cotton roots need soft soil. I plant the same seeds I have used for years, the kind that fights bollworms. Each mu gets one bag of compound and half a bag of urea. I water three times: when the seedlings are small, when the white flowers open, and when the bolls get fat. I spray three times. My women pick it by hand. I expect 250 kg of seed cotton per mu.\n\nI watch my neighbors. Old Li used less fertilizer last year to save money, and his wheat turned yellow and short. I will not make that mistake. Every bag of fertilizer costs real money, but losing yield is a disaster. My son works in the city and sends money home, so I buy what I need. If last year was good, I change nothing.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 14 mu in Quzhou the same way I have for half a century. Ten mu goes to wheat in winter and maize in summer, and 4 mu grows cotton for cash and family labor. I use improved wheat seed, hybrid maize, and the same insect-resistant cotton I always buy. I put one bag of compound and half to one and a half bags of urea on each mu because cutting back is too risky. I irrigate wheat three times, maize twice, and cotton three times from my well. I spray twice for grain and three times for cotton. I rotavate before wheat, plant maize no-till right after the combine, and plough deep for cotton. I expect 500 kg of wheat, 600 kg of maize, and 250 kg of seed cotton per mu, the same as last year if the weather holds.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 14 mu in Quzhou the same way I have for half a century. Ten mu goes to wheat in winter and maize in summer, and 4 mu grows cotton for cash and family labor. I use improved wheat seed, hybrid maize, and the same insect-resistant cotton I always buy. I put one bag of compound and half to one and a half bags of urea on each mu because cutting back is too risky. I irrigate wheat three times, maize twice, and cotton three times from my well. I spray twice for grain and three times for cotton. I rotavate before wheat, plant maize no-till right after the combine, and plough deep for cotton. I expect 500 kg of wheat, 600 kg of maize, and 250 kg of seed cotton per mu, the same as last year if the weather holds."
+  },
+  "elapsed_seconds": 138.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_13",
+  "tier": 3,
+  "provider": "kimi"
+}

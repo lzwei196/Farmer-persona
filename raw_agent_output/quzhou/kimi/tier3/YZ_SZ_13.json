@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 and I never went to school. I have worked these 14 mu in Quzhou for 40 years. My father taught me how to read the soil and the sky, and now I watch what my neighbors do. Some of my family work in the city and send money home, but this land is still my responsibility and I cannot afford a bad year.\n\nLast year I put 10 mu into wheat and then maize, and 4 mu into cotton. The wheat gave me about 500 kg per mu, the maize about 600 kg, and the cotton about 260 kg. This year I will keep the same split because that is what my well, my labor, and my money allow.\n\nFor wheat, I always plough the land deep before sowing in October. I put one 40 kg bag of compound fertilizer on each mu as base, and then at green-up time in March I spread another 25 kg of urea per mu. I do not know the numbers written on the bag, but that is what I have always done and it works. My neighbor Lao Wang does the same and his wheat is always strong. I irrigate three times from the well: once when the wheat wakes up in spring, once when it shoots up tall, and once when the grain is filling. I spray twice: herbicide first, then one more time for bugs and rust. I expect 500 kg per mu if the frost does not kill it early.\n\nFor maize, as soon as the wheat comes off in June, I plant the maize without ploughing again. I put 25 kg of compound fertilizer in the row at planting and then when the plants are knee-high I top-dress with 25 kg of urea per mu. I irrigate two times: one when it tassels, one when the grain fills. Two sprays: herbicide at the start, then something for the armyworms later. I expect 600 kg per mu.\n\nFor cotton, I keep 4 mu because the price is okay and my wife can help pick it. I rotary-till that ground in April because cotton needs loose soil. I put one 40 kg bag of compound fertilizer per mu at planting, then I feed it twice more with urea: 15 kg each time, so 30 kg urea total per mu. Cotton stays longer and needs strength. It drinks more water, so I irrigate three times. It also gets more bugs than grain, so I spray four times. I hope for 280 kg of seed cotton per mu.\n\nMoney is tight. Every bag of fertilizer is real cash out of my pocket. But I would rather put a little too much than too little. A bad harvest means I cannot pay for medicine or repairs. Wasting some fertilizer just means I earn less. When I am unsure, I do what I did last year. If I see everyone in the village putting 25 kg of urea on wheat, I put 25 kg too. I do not trust new ideas unless I saw them work on Lao Wang's field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I am a 63-year-old farmer with no schooling and 40 years on 14 mu in Quzhou. I learned from my father and by watching neighbors like Lao Wang. I keep 10 mu in wheat-maize rotation and 4 mu in cotton because that is what my labor and well can handle. I plough for wheat, no-till for maize after wheat harvest, and rotary-till for cotton. I use compound fertilizer and urea at rates I have always used: about 40 kg compound plus 25 kg urea for wheat, 25 kg compound plus 25 kg urea for maize, and 40 kg compound plus 30 kg urea for cotton. I would rather spend a bit more on fertilizer than risk losing yield, since a failed crop is a disaster but extra fertilizer is only a small loss. I irrigate wheat three times, maize twice, and cotton three times, and spray cotton more often because it gets more pests. I expect 500 kg/mu of wheat, 600 kg/mu of maize, and 280 kg/mu of seed cotton. If I am unsure about anything, I do exactly what I did last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I am a 63-year-old farmer with no schooling and 40 years on 14 mu in Quzhou. I learned from my father and by watching neighbors like Lao Wang. I keep 10 mu in wheat-maize rotation and 4 mu in cotton because that is what my labor and well can handle. I plough for wheat, no-till for maize after wheat harvest, and rotary-till for cotton. I use compound fertilizer and urea at rates I have always used: about 40 kg compound plus 25 kg urea for wheat, 25 kg compound plus 25 kg urea for maize, and 40 kg compound plus 30 kg urea for cotton. I would rather spend a bit more on fertilizer than risk losing yield, since a failed crop is a disaster but extra fertilizer is only a small loss. I irrigate wheat three times, maize twice, and cotton three times, and spray cotton more often because it gets more pests. I expect 500 kg/mu of wheat, 600 kg/mu of maize, and 280 kg/mu of seed cotton. If I am unsure about anything, I do exactly what I did last year."
+  },
+  "elapsed_seconds": 292.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "YZ_SZ_13",
+  "tier": 3,
+  "provider": "kimi"
+}

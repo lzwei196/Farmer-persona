@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 57-year-old farmer in Quzhou with 8 mu of good irrigated land. I only finished primary school, but I have farmed here for more than 30 years and I know what works on my fields. Last October I planted winter wheat with improved seed \u2014 I stopped using the old traditional varieties years ago because my neighbor switched and his yield was much better. Now it is spring, the wheat is turning green, and I need to water and fertilize it. I thought about planting some cotton on a piece of land this year like a few people in my village do, but cotton needs too much pesticide and my wife and I are getting old \u2014 our backs cannot handle all that bending to pick cotton. I will stick with winter wheat and then summer maize on all 8 mu. This double cropping is safe. Even if the weather is bad for one crop, the other usually keeps us from losing everything.\n\nFor my wheat, I will irrigate three times: once now to wake it up, once at jointing, and once during grain filling. I use about 16 kg of nitrogen per mu total, putting some compound fertilizer down as a base and topdressing with urea when the wheat starts to joint. I also need phosphorus and potassium from the compound fertilizer. I will spray three times for weeds, insects, and rust if I see it. I rotary-tilled the land before sowing last autumn. If the weather is normal, I expect about 500 kg per mu.\n\nAfter I harvest the wheat in early June, I will plant hybrid maize immediately. There is no time to waste \u2014 the growing season is tight \u2014 so I will use no-tillage and sow straight into the wheat stubble. The maize needs about 18 kg of nitrogen per mu, plus some compound fertilizer. I will irrigate twice and spray twice for weeds and bugs. I should get around 550 kg per mu of maize. I know fertilizer is expensive this year, but I cannot afford to under-apply and lose the crop. It is better to spend the money and make sure my family has enough to eat and some grain left to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 8 mu in Quzhou for over 30 years with only primary schooling, so I rely on experience and what my neighbors do. Last October I already planted improved winter wheat, and now in spring I will manage it with three irrigations, about 16 kg N/mu, and three pesticide sprays, expecting 500 kg/mu. I decided against cotton because at my age the labor is too hard. After harvesting wheat in June, I will plant hybrid summer maize using no-tillage due to the tight turnaround, with two irrigations, about 18 kg N/mu, two pesticide applications, and an expected yield of 550 kg/mu. Wheat-maize double cropping is my safe, proven system.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed 8 mu in Quzhou for over 30 years with only primary schooling, so I rely on experience and what my neighbors do. Last October I already planted improved winter wheat, and now in spring I will manage it with three irrigations, about 16 kg N/mu, and three pesticide sprays, expecting 500 kg/mu. I decided against cotton because at my age the labor is too hard. After harvesting wheat in June, I will plant hybrid summer maize using no-tillage due to the tight turnaround, with two irrigations, about 18 kg N/mu, two pesticide applications, and an expected yield of 550 kg/mu. Wheat-maize double cropping is my safe, proven system."
+  },
+  "elapsed_seconds": 153.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_10",
+  "tier": 1,
+  "provider": "kimi"
+}

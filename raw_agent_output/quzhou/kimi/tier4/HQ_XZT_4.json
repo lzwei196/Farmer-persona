@@ -1,0 +1,74 @@
+{
+  "raw_response": "I am 55 years old, farming these 4.1 mu for 30 years since my twenties. Never went to school, can't read, but I know this land. It's just me and my husband now, two of us working this little plot. We do wheat in winter, then maize right after \u2014 same as my neighbors, same as always. Every year we wonder if we have enough cash for inputs, but we manage.\n\nFor the wheat, I plant around October 10th when the autumn rain softens the ground. I use the seed we saved from last year, about 30 jin per mu, and bought a little extra from the village shop to fill the gap. Costs me about 20 yuan per mu this year. Before planting, I spread half a big bag of that three-number fertilizer on each mu \u2014 the shopkeeper calls it compound fertilizer, I just ask for the wheat fertilizer. That's about 40 jin per mu. Then in spring, around Qingming when the wheat starts growing tall, I scatter one more small bag of white fertilizer \u2014 urea \u2014 about 14 jin per mu. I wanted to skip the topdressing last year to save money, but the wheat turned yellow and I lost yield. So this year I won't cut back. I irrigate three times: once in winter if the ground is dry, once at jointing, and once when the grain fills. Pumping costs electricity money, so I watch the sky. If Heaven gives rain, I skip a turn and save.\n\nFor maize, the minute wheat comes off in mid-June, we rush. I hire the combine harvester for wheat \u2014 50 yuan per mu, no choice, we can't cut by hand anymore with just us two. Two days later the maize goes in. I buy hybrid seed from the shop, one small packet per mu, about 30 yuan. You can't save maize seed, I learned that years ago \u2014 it won't grow right. I put fertilizer in the holes when planting \u2014 about 50 jin of compound per mu \u2014 and that's it, no topdressing for maize. I know some neighbors do more, but maize grows strong on less and I need to save money for wheat fertilizer and for living. I irrigate twice if it's dry, once if it rains. Last year I only did once and still got nearly 900 jin per mu.\n\nI spray herbicide once for each crop. For wheat I use the grass-killer, for maize I buy whatever the co-op recommends. No insecticide unless I see worms with my own eyes \u2014 that stuff is expensive and I'm not made of money. All work is me and my husband. For 4 mu we don't hire labor for fieldwork, though my back hurts for days after planting and maize harvest. I expect about 400 kg per mu for wheat, maybe 450 kg for maize if rain is good. Total cost for seed, fertilizer, pumping, spray, and wheat harvest hire is about 1,500 yuan for the year. That's a lot for us \u2014 nearly half our savings \u2014 but if we don't spend it, we don't eat.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 4.1,\n      \"planting_date\": \"early October, around October 8-12\",\n      \"harvest_date\": \"early June, around June 8-12\",\n      \"seed_type\": \"local/improved mix\",\n      \"seed_cost_yuan_per_mu\": 20,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12.4,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: 40 kg compound fertilizer spread before planting. Topdress: 14 kg urea broadcast at wheat jointing in spring.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary tiller pass before wheat planting\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 4.1,\n      \"planting_date\": \"mid-June, right after wheat harvest, around June 12-15\",\n      \"harvest_date\": \"late September to early October\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 30,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 7.5,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"50 kg compound fertilizer placed in planting holes at sowing, no topdressing\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage \u2014 wheat stubble left, light rotary pass then plant immediately\",\n      \"labor_family_days\": 7,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 1500,\n  \"reasoning_summary\": \"I am 55, never went to school, farming 4.1 mu with just my husband. We are cash-constrained so I keep inputs low \u2014 saved wheat seed, only one fertilizer application for maize, and I skip insecticide unless I see bugs. I learned last year that cutting wheat topdressing loses yield, so I keep the urea at jointing. I hire the combine for wheat harvest because we can't do it by hand anymore, but we pick maize ourselves to save money. Pumping costs electricity, so I pray for rain and irrigate only when the crops really need it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 4.1,
+        "planting_date": "early October, around October 8-12",
+        "harvest_date": "early June, around June 8-12",
+        "seed_type": "local/improved mix",
+        "seed_cost_yuan_per_mu": 20,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12.4,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: 40 kg compound fertilizer spread before planting. Topdress: 14 kg urea broadcast at wheat jointing in spring.",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary tiller pass before wheat planting",
+        "labor_family_days": 6,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 12.4,
+        "area_mu": 4.1,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 4.1,
+        "planting_date": "mid-June, right after wheat harvest, around June 12-15",
+        "harvest_date": "late September to early October",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 30,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 7.5,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "50 kg compound fertilizer placed in planting holes at sowing, no topdressing",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage \u2014 wheat stubble left, light rotary pass then plant immediately",
+        "labor_family_days": 7,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 7.5,
+        "area_mu": 4.1,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      }
+    ],
+    "total_input_cost_yuan": 1500,
+    "reasoning_summary": "I am 55, never went to school, farming 4.1 mu with just my husband. We are cash-constrained so I keep inputs low \u2014 saved wheat seed, only one fertilizer application for maize, and I skip insecticide unless I see bugs. I learned last year that cutting wheat topdressing loses yield, so I keep the urea at jointing. I hire the combine for wheat harvest because we can't do it by hand anymore, but we pick maize ourselves to save money. Pumping costs electricity, so I pray for rain and irrigate only when the crops really need it."
+  },
+  "elapsed_seconds": 146.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_4",
+  "tier": 4,
+  "provider": "kimi"
+}

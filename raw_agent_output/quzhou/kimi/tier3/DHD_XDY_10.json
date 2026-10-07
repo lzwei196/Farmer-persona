@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 67 years old and I have been farming in Quzhou for 20 years. I finished primary school. My family has 16.1 mu of flat land and we have a well for irrigation. There are seven people in my house. My sons work in factories in Shijiazhuang and send money home, which helps me buy fertilizer and seed.\n\nI don't read farming books. I watch my neighbors. If Old Zhang's wheat looks better than mine, I ask him what he did. Last year my wheat gave about 500 jin per mu, maize about 600 jin per mu, and cotton about 280 jin per mu of seed cotton. This year I will do the same as last year, maybe a little more fertilizer because I don't want to take risks.\n\nI plant 10 mu with wheat in October, then put maize in that same land in June after harvest. The other 6.1 mu I keep for cotton.\n\nFor wheat, I rotary till the land first. I plant an improved variety \u2014 I used Jimai 22 last year and it was fine. Before planting I spread one bag of compound fertilizer per mu, about 50 kg. In the spring, when the wheat turns green, I topdress with urea. I put about 15 kg per mu at green-up, and another 15 kg at jointing. That is about 22 kg of nitrogen, 8 kg of phosphorus, and 7 kg of potassium in total per mu. I know it is a lot, but I would rather waste a little fertilizer than see yellow leaves and lose yield. My neighbor cut back two years ago and his harvest was terrible. I irrigate three times: green-up water in March, jointing water in April, and grain-filling water in May. I spray pesticide twice \u2014 once for weeds when the wheat is small, and once for bugs before heading. I expect 500 kg per mu.\n\nFor summer maize, I plant a hybrid variety right after the wheat comes out in early June. There is no time to plough, so I plant directly into the wheat stubble without tillage. I put compound fertilizer in the seed furrow, about 50 kg per mu. When the plants are knee-high, I spread urea, about 25 kg per mu. That gives about 20 kg nitrogen, 7 kg phosphorus, 7 kg potassium per mu. Maize grows fast in summer, so I irrigate twice if the rain is not enough. I spray twice for weeds and corn borers. I expect 600 kg per mu.\n\nFor cotton, I plough deep in spring because cotton roots need loose soil down deep. I plant hybrid cotton in April. I put one bag of compound fertilizer per mu as base, about 50 kg. I topdress with urea twice \u2014 once when the flowers open, and once when the bolls are growing \u2014 about 30 kg total per mu. That is 22 kg nitrogen, 8 kg phosphorus, 8 kg potassium per mu. Cotton drinks a lot in July and August, so I irrigate three times. It also gets more bugs than grain crops, so I spray four times for aphids, bollworms, and red spider mites. Picking is hard work, but my wife and daughter-in-law help. I expect 280 kg of seed cotton per mu.\n\nI think about costs. A bag of urea is more expensive than five years ago. But I have 16 mu, so the input dealer gives me a small discount when I buy twenty bags at once. Still, every bag is real money. But what can I do? A bad harvest means I lose thousands of yuan. Wasting one or two bags of fertilizer only costs a few hundred. I only change what I do if I saw it work on someone else's field first. This year, everything stays the same as last year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"This year I kept my plan almost the same as last year because last year's harvests were acceptable and change is risky. I allocated 10 mu to wheat followed by summer maize, and 6.1 mu to cotton. I applied sufficient fertilizer to each crop to protect yield, preferring to spend more on inputs than risk a bad harvest that would cost far more than the extra fertilizer. I watched my neighbors' results and copied what worked, and I managed my budget by buying in bulk and using family labor for cotton picking.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "This year I kept my plan almost the same as last year because last year's harvests were acceptable and change is risky. I allocated 10 mu to wheat followed by summer maize, and 6.1 mu to cotton. I applied sufficient fertilizer to each crop to protect yield, preferring to spend more on inputs than risk a bad harvest that would cost far more than the extra fertilizer. I watched my neighbors' results and copied what worked, and I managed my budget by buying in bulk and using family labor for cotton picking."
+  },
+  "elapsed_seconds": 110.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_10",
+  "tier": 3,
+  "provider": "kimi"
+}

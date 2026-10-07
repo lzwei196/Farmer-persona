@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know Quzhou's soil and weather better than I know most people. My 9 mu is all in the wheat-maize rotation \u2014 same land, same rhythm every year. Wheat goes in after autumn, maize after wheat harvest. That's how it's always been on the North China Plain, and it works.\n\nMy sons help when they're back from the city, but mostly it's me. I can't work as hard as I used to at 65, so I don't want to complicate things. I stick to what I know delivers.\n\n**Wheat:** I plant improved seed \u2014 I've used Jimai 22 type varieties for years, they suit our soils and the county seed station carries them. I do four irrigations: before winter, green-up in spring, jointing, and grain fill. The well is right there, so I use it. I apply base fertilizer before plowing and topdress at jointing. Rotary tillage after maize stover \u2014 I don't own a deep plow and neither do my neighbors. Two pesticide passes: herbicide early, one more for rust and aphids in spring.\n\n**Maize:** I go straight to hybrid seed \u2014 Zhengdan 958 or whatever the seed shop recommends that year, they're all similar. After wheat I do a light rotary pass and seed quickly before the rains start. Maize doesn't need as much irrigation here in summer \u2014 two times is enough unless it's a dry year. One herbicide application when it's young, one more later for borers.\n\nI'm not trying to maximize yield at all costs. I'm trying to keep costs manageable and get a stable harvest. Seven mouths, but the young ones earn money in the city. The farm just needs to pay its way.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old farmer with 40 years on the same Quzhou land follows the established wheat-maize rotation across all 9 mu, planting improved wheat varieties and hybrid maize seed sourced locally. Wheat receives four well irrigations across the winter-spring cycle and rotary tillage after maize harvest; maize follows wheat quickly with light tillage and two summer irrigations, relying on seasonal rainfall for the rest. Fertilizer rates reflect decades of local practice \u2014 moderate nitrogen with base-plus-topdress for wheat, higher nitrogen for maize \u2014 without chasing maximum inputs. Two pesticide passes per crop cover the main threats without overcomplicating the workload for an aging farmer whose adult children are partially off-farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 65-year-old farmer with 40 years on the same Quzhou land follows the established wheat-maize rotation across all 9 mu, planting improved wheat varieties and hybrid maize seed sourced locally. Wheat receives four well irrigations across the winter-spring cycle and rotary tillage after maize harvest; maize follows wheat quickly with light tillage and two summer irrigations, relying on seasonal rainfall for the rest. Fertilizer rates reflect decades of local practice \u2014 moderate nitrogen with base-plus-topdress for wheat, higher nitrogen for maize \u2014 without chasing maximum inputs. Two pesticide passes per crop cover the main threats without overcomplicating the workload for an aging farmer whose adult children are partially off-farm."
+  },
+  "elapsed_seconds": 41.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_3",
+  "tier": 2,
+  "provider": "claude"
+}

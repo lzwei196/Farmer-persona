@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 50, been farming this land for 20 years. My husband helps some but my older boy works in the city now, sends money home. Primary school is all I finished, but I know my fields. 10.9 mu is not small, not big either \u2014 enough to feed us and sell some.\n\nI plant wheat in October, then maize right after wheat harvest in June. Same as everyone in our village. Same as my mother did.\n\nFor wheat: I use the improved seed from the agro-station, \"Jimai\" kind. Costs more but the grain is fuller. I spread about 2 bags of compound fertilizer (that 15-15-15 one) before plowing \u2014 that is 100 jin, so 50 kg per mu maybe. Then in spring when the wheat turns green, I topdress with urea, about 30 jin per mu. I water 3 times \u2014 before winter, at jointing, and when grain is filling. Our well is good, no problem. Spray pesticide 2 times, once for aphids, once for the rust if I see yellow spots. Plow with the rented tractor. Last year I got about 450 kg per mu, hoping same this year.\n\nFor maize: After wheat I do no-till, just plant straight through the stubble. Everyone does it now, saves time and the machine is cheap to rent. I use hybrid seed, Zhengdan or whatever the dealer has good stock of. Put compound fertilizer with the seed, then topdress urea when the maize is knee-high \u2014 maize is hungry, needs more than wheat. I water 2 times if the rain is poor. Spray once for the borer worm. Last year about 550 kg per mu.\n\nI do not want to cut fertilizer. Grain price is not high but losing yield is worse. My neighbor tried less fertilizer two years ago, her wheat was thin, she regretted it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10.9 mu wheat-maize rotation same as my village, 20 years now. Wheat I plow and use improved seed, compound fertilizer before planting plus urea topdress in spring, water 3 times from the well. Maize I plant no-till into wheat stubble, hybrid seed, more nitrogen because maize eats more, water 2 times. I spray pesticide when I see pests, not before. I do not cut fertilizer \u2014 neighbor tried that and her yield dropped, not worth the risk. Last year wheat gave 450 kg, maize 550 kg per mu, I expect similar.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 10.9 mu wheat-maize rotation same as my village, 20 years now. Wheat I plow and use improved seed, compound fertilizer before planting plus urea topdress in spring, water 3 times from the well. Maize I plant no-till into wheat stubble, hybrid seed, more nitrogen because maize eats more, water 2 times. I spray pesticide when I see pests, not before. I do not cut fertilizer \u2014 neighbor tried that and her yield dropped, not worth the risk. Last year wheat gave 450 kg, maize 550 kg per mu, I expect similar."
+  },
+  "elapsed_seconds": 23.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_3",
+  "tier": 3,
+  "provider": "claude"
+}

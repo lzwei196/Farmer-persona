@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the usual Quzhou pattern: winter wheat first, then summer maize on the same field. I would not split into cash crops this year. For me, wheat-maize rotation is the safest choice because it fits local weather, local machinery, and how water comes here. In Quzhou, winter wheat and summer maize are the main system on most farmland, and most rain comes in the maize season, while irrigation pressure is heavier in the wheat season. That matches how I would manage risk: I carry the wheat already planted last autumn through harvest, then I seed maize right after wheat harvest and use the same 10 mu for both seasons.\n\nI will use improved wheat seed and hybrid maize seed. I will not chase the very highest demonstration yields. I would rather use moderate fertilizer, keep two irrigations for wheat, keep maize mostly on rainfall with one backup irrigation, and spray only when the key weed, disease, and insect windows come. For wheat, I will use rotary tillage in the autumn seedbed and manage it with one herbicide pass and two disease/insect passes. For maize, I will direct-seed after wheat with no-tillage to save time and moisture, then I will focus fertilizer around sowing and big bell stage, with fewer sprays than wheat. I\u2019m basing this on the local Quzhou wheat-maize pattern and regional guidance for wheat spring management and Huanghuaihai maize production and fertilization: [Scientific Reports on Quzhou cropping system](https://www.nature.com/articles/srep41587), [Ministry of Agriculture note on Quzhou crop structure](https://www.moa.gov.cn/xw/qg/202107/t20210720_6372348.htm), [Hebei winter wheat spring management guidance](https://nync.xingtai.gov.cn/news_show.aspx?id=7886), [MOA Huanghuaihai summer maize guidance](https://www.moa.gov.cn/gk/nszd_1/2019/201906/t20190606_6316285.htm), [summer maize fertilization ranges](https://nyncj.chengde.gov.cn/art/2012/7/9/art_667_93731.html).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I will use the same 10 mu in a winter wheat-summer maize rotation because that is the main and most stable system in Quzhou County. I will keep inputs moderate instead of pushing extreme yield: improved wheat and hybrid maize seed, two irrigations in wheat because spring is drier, one backup irrigation in maize because summer rain does most of the work, moderate nitrogen with lower phosphorus and potassium carried through the rotation, rotary tillage before wheat, and no-tillage direct seeding for maize after wheat harvest. This plan fits local weather, water conditions, and the kind of risk I would rather take on my farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I will use the same 10 mu in a winter wheat-summer maize rotation because that is the main and most stable system in Quzhou County. I will keep inputs moderate instead of pushing extreme yield: improved wheat and hybrid maize seed, two irrigations in wheat because spring is drier, one backup irrigation in maize because summer rain does most of the work, moderate nitrogen with lower phosphorus and potassium carried through the rotation, rotary tillage before wheat, and no-tillage direct seeding for maize after wheat harvest. This plan fits local weather, water conditions, and the kind of risk I would rather take on my farm."
+  },
+  "elapsed_seconds": 85.9,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_7",
+  "tier": 1,
+  "provider": "codex"
+}

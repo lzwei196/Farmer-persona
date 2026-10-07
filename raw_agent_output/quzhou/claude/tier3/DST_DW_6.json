@@ -1,0 +1,53 @@
+{
+  "raw_response": "My name does not matter. I am old now, 63 years, and my hands know this land better than my head knows numbers. Let me tell you how I will do things this year.\n\nI have 12.4 mu. That is not small, not big. My husband and I are two mouths. Our son works in the city in Shijiazhuang, he sends money sometimes but he does not come back to help in the field much. So the work falls on me and some hired hands at busy time.\n\nI will plant cotton on about 2 mu \u2014 the piece near the road where the soil is lighter and not so good for wheat. The rest, about 10.4 mu, I do wheat in winter and maize in summer. This is what everyone does here. This is what my neighbors do. I do the same.\n\nFor seeds \u2014 I buy from the shop in town. They sell me the improved ones. The old village seeds, nobody keeps them anymore. The shop man tells me which one is good this year and I buy what my neighbor Aunt Zhang bought last year because her wheat was thick and heavy.\n\nFor fertilizer, I think in bags. One bag is 50 jin \u2014 no wait, the compound fertilizer bag is 40 kilo. I count by bags.\n\n**Wheat:** I put about 2 bags of compound fertilizer per mu before planting, then one bag of urea at the spring green-up time. That is maybe 18 kilo nitrogen per mu, 7 kilo phosphate, 6 kilo potash. I water 3 times \u2014 once before winter, once at green-up, once when the head comes. My well is good so water is no problem, only the electricity cost. Spray pesticide 2 times, once for aphids, once for rust if I see yellow spots.\n\n**Maize:** After wheat harvest, I plant right away, no plough, just rotary cultivator \u2014 that is what the machine man does now. Base fertilizer one and half bag compound, then top-dress one bag urea when maize is knee high. About 16 kilo nitrogen, 6 phosphate, 5 potash. Water 2 times if the summer is dry. Spray 1 time for the borer worm.\n\n**Cotton:** Cotton is more trouble. I put 1.5 bag compound at planting, and some more nitrogen when it starts flowering. About 14 kilo nitrogen. I water 3 times. Cotton needs many sprays for the bollworm \u2014 I spray 5 times, sometimes 6. Cotton price is not so good anymore but I keep a small patch, old habit.\n\nI would rather put one extra half-bag than have a thin crop. Fertilizer money I can make back, but if the wheat is yellow and short, the whole year is finished. This is what my mother-in-law taught me and it is still true.\n\nPlough \u2014 I do not plough deep anymore. The machine man comes with rotary, cheaper. Only cotton field I plough once in autumn because that land gets hard.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way my neighbors farm and the way my mother-in-law taught me. I count fertilizer in bags, not in exact kilos, and I put a little extra to be safe because a thin crop is a disaster but extra fertilizer is only money. I use improved seeds from the town shop because nobody keeps old seed anymore. Wheat-maize on the good land, cotton on the lighter piece by the road. My son is away in the city so I hire machine service for tillage and harvest, and I spray cotton many times because bollworm ruins everything if you skip.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I farm the way my neighbors farm and the way my mother-in-law taught me. I count fertilizer in bags, not in exact kilos, and I put a little extra to be safe because a thin crop is a disaster but extra fertilizer is only money. I use improved seeds from the town shop because nobody keeps old seed anymore. Wheat-maize on the good land, cotton on the lighter piece by the road. My son is away in the city so I hire machine service for tillage and harvest, and I spray cotton many times because bollworm ruins everything if you skip."
+  },
+  "elapsed_seconds": 38.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_6",
+  "tier": 3,
+  "provider": "claude"
+}

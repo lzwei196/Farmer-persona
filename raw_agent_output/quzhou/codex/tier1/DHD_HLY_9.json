@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the familiar `winter wheat -> summer maize` rotation. I am in Quzhou on the North China Plain, so this is the crop pattern I trust most: wheat sells steadily, maize fits the summer rain, and both can be handled with machinery without needing the kind of labor and market timing that vegetables or cotton would demand. At 55, I care more about a stable harvest and manageable work than chasing a risky high price. I would rather do the common system well than spread myself thin.\n\nFor wheat, I will use an improved local variety, prepare the field with rotary tillage, put most of the fertilizer in as base fertilizer, and then topdress nitrogen once around jointing. Wheat here still needs irrigation, so I will plan three irrigations if water is available: one after sowing or before winter if the soil is dry, one at jointing, and one around grain filling. I will keep pesticide use limited, mainly one herbicide pass and one fungicide/insecticide pass only if pressure shows up. After wheat harvest, I will move quickly into summer maize on the same land, using hybrid seed and mostly no-tillage direct seeding to save time and hold moisture. Maize depends more on summer rain, so I will only plan one irrigation as backup. Fertilizer will be moderate, not excessive, because too much nitrogen wastes money and causes lodging or weak roots. I will keep pest control to a couple of targeted sprays if needed, and I will aim for solid, realistic yields rather than the highest possible input system.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I will grow winter wheat followed by summer maize on the same 12 mu because that is the most reliable and workable system for my place in Quzhou County. It matches the local climate, uses summer rainfall well for maize, has stable grain markets, and can be managed with machinery and moderate labor. I will use improved wheat seed and hybrid maize seed, keep fertilizer at solid but not excessive rates, irrigate wheat three times and maize once as backup, and limit pesticide use to necessary field operations. My goal is steady income, controlled costs, and a harvest I can manage confidently.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I will grow winter wheat followed by summer maize on the same 12 mu because that is the most reliable and workable system for my place in Quzhou County. It matches the local climate, uses summer rainfall well for maize, has stable grain markets, and can be managed with machinery and moderate labor. I will use improved wheat seed and hybrid maize seed, keep fertilizer at solid but not excessive rates, irrigate wheat three times and maize once as backup, and limit pesticide use to necessary field operations. My goal is steady income, controlled costs, and a harvest I can manage confidently."
+  },
+  "elapsed_seconds": 43.9,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_9",
+  "tier": 1,
+  "provider": "codex"
+}

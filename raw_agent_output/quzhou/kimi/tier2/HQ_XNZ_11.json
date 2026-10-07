@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 52-year-old farmer in Quzhou County with 35 years of experience and a high school education. My farm is 18.4 mu, and my household has only two people\u2014my spouse works part-time off-farm, so labor is tight. I rely on my well for irrigation, which gives me reliable water, but pumping costs money, so I do not waste it.\n\nI have learned over the decades that cotton is my most reliable cash crop, so I keep the majority of my land\u201414.4 mu\u2014in cotton monoculture. The remaining 4 mu I run as winter wheat followed by summer maize. I do this for two reasons: first, the wheat-maize rotation gives me grain for household use and a safety net if cotton prices fall; second, with only two of us, I cannot manage much more than 14 mu of cotton because it demands so much hand labor for pruning and pest control. I rotary till the cotton field in mid-April and the wheat field in October. For maize, I plant no-till directly into the wheat stubble in mid-June to save time and preserve soil moisture during the tight turnaround.\n\nFor seed, I use improved varieties for cotton and wheat that I know perform well on my plots, and I buy hybrid maize seed by the packet\u2014one package per mu is enough because those hybrids are vigorous. Fertilizer is my biggest input decision. Based on what I have observed over the years and what the extension materials suggest, I apply compound fertilizer as a base dressing and supplement with urea where needed. For wheat, I target about 35 kg of nitrogen per mu because it is a heavy feeder; for maize, around 22 kg N per mu is sufficient; and for cotton, about 16 kg N per mu along with balanced phosphorus and potassium to support boll development. I make sure phosphorus and potassium are adequate\u2014roughly 19 kg P and 12 kg K per mu for wheat, about 5 kg P and 5 kg K for maize, and 15 kg each for cotton.\n\nWater management is critical on the North China Plain. I irrigate my wheat four times\u2014winter irrigation if the soil is dry, plus at jointing, heading, and grain filling. Maize gets three irrigations: at sowing, jointing, and tasseling. Cotton receives three irrigations as well\u2014at planting, early flowering, and peak boll formation. Pest control is where experience really matters. Cotton bollworm pressure is relentless here, so I spray insecticide about twelve times through the season, plus two herbicide applications and occasionally a fungicide if humidity is high\u2014fourteen total spray operations. Wheat requires less attention: one herbicide pass, one or two insecticide sprays for aphids, and one fungicide for rust\u2014about four total. Maize is simpler still: one herbicide and two insecticide applications for stem borers.\n\nI expect my wheat to yield around 500 kg per mu, my maize about 550 kg per mu, and my cotton around 300 kg per mu of seed cotton. These targets are realistic based on my varieties, water access, and the soil I have farmed for over three decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 14.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 19,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 14.4 mu to cotton because it is my main cash crop and expertise, while keeping 4 mu in wheat-maize rotation for household grain security and income diversification. With only two people and off-farm work, I choose labor-efficient practices like no-till maize and targeted irrigation. My fertilizer rates reflect years of observation and local extension guidance, and my pest management schedule is built around the heavy bollworm pressure on cotton and the lighter needs of grain crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 14.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 19,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I allocate 14.4 mu to cotton because it is my main cash crop and expertise, while keeping 4 mu in wheat-maize rotation for household grain security and income diversification. With only two people and off-farm work, I choose labor-efficient practices like no-till maize and targeted irrigation. My fertilizer rates reflect years of observation and local extension guidance, and my pest management schedule is built around the heavy bollworm pressure on cotton and the lighter needs of grain crops."
+  },
+  "elapsed_seconds": 240.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

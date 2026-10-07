@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old and I have farmed this 4.1 mu in Quzhou County for 50 years. My wife and I do most of the work ourselves because hired labor costs money we don't have. We are lucky to have well water, but pumping costs electricity, so I count every irrigation.\n\nMy land is in two pieces. About 3 mu I keep for wheat and then maize, back to back every year. The other 1.1 mu I plant cotton for cash.\n\nThe wheat is already in the ground from last October. I sowed improved Jimai seed at about 15 kg per mu. Before sowing I had the tractor run the rotary tiller, and I put down base fertilizer \u2014 50 jin of compound fertilizer per mu. Now in spring, I will top-dress the wheat with urea: 80 jin per mu total, half when the wheat greens up in March and half at jointing in April. All together that is about 20 kg of nitrogen per mu, plus 5 kg phosphorus and 4 kg potassium from the base and top dress. I will irrigate three times from my well: once in March when the wheat wakes up, once at jointing in April, and once at flowering in May. I spray herbicide once in early spring for weeds, and if I see aphids I spray insecticide once more. Last year I got 430 kg per mu. This year I expect 450 kg per mu if the frost stays away.\n\nAfter I cut the wheat in early June, I immediately plant hybrid maize. I buy Zhengdan 958 hybrid seed from the dealer \u2014 everyone around here uses hybrid now, and I saw Old Wang's field last summer, his ears were big and full. I use 2.5 kg seed per mu. After wheat harvest I have the tractor rotary till fast and sow right away. I put 50 jin compound fertilizer per mu at sowing, then top dress with 50 jin urea at jointing. That gives about 15 kg nitrogen, 4 kg phosphorus, and 4 kg potassium per mu. I irrigate twice: once after sowing if the soil is dry, and once at tasseling in late July. I spray herbicide right after sowing, and once for corn borer. I expect 500 kg per mu.\n\nFor cotton on 1.1 mu, I plough deep in April because cotton likes loose, deep soil. I plant improved Lumianyan seed at 1.5 kg per mu. I put down 60 jin compound fertilizer and 40 jin urea per mu, which comes to about 12 kg nitrogen, 5 kg phosphorus, and 6 kg potassium. I learned from the input dealer that cotton needs more potassium, so I buy compound fertilizer with a bit more K. I irrigate three times: at flowering, at peak boll, and once in August if it doesn't rain. Cotton pests are bad here \u2014 bollworm, aphids, mites \u2014 so I spray four times. I expect 250 kg of seed cotton per mu.\n\nEvery bag of fertilizer is real money. On 4.1 mu I cannot afford waste. But I would rather put a little too much fertilizer than risk losing yield. A bad harvest is a disaster; wasting some fertilizer is just a cost. When I am unsure, I watch what Old Wang and the others do, and I do the same. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I split my 4.1 mu into 3 mu of wheat-maize rotation and 1.1 mu of cotton. Wheat gets 20 kg N, 5 kg P, 4 kg K per mu with 3 irrigations and 2 sprays, expected to yield 450 kg/mu. Maize gets 15 kg N, 4 kg P, 4 kg K per mu with 2 irrigations and 2 sprays, expected to yield 500 kg/mu using hybrid seed. Cotton gets 12 kg N, 5 kg P, 6 kg K per mu with 3 irrigations and 4 sprays after deep ploughing, expected to yield 250 kg seed cotton/mu. I base these rates on what I did last year and what my neighbors do, spending carefully but never risking yield loss from under-fertilization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I split my 4.1 mu into 3 mu of wheat-maize rotation and 1.1 mu of cotton. Wheat gets 20 kg N, 5 kg P, 4 kg K per mu with 3 irrigations and 2 sprays, expected to yield 450 kg/mu. Maize gets 15 kg N, 4 kg P, 4 kg K per mu with 2 irrigations and 2 sprays, expected to yield 500 kg/mu using hybrid seed. Cotton gets 12 kg N, 5 kg P, 6 kg K per mu with 3 irrigations and 4 sprays after deep ploughing, expected to yield 250 kg seed cotton/mu. I base these rates on what I did last year and what my neighbors do, spending carefully but never risking yield loss from under-fertilization."
+  },
+  "elapsed_seconds": 228.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "BZ_BTD_6",
+  "tier": 3,
+  "provider": "kimi"
+}

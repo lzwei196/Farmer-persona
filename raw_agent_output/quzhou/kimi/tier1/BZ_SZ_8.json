@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 42, been farming this land in Quzhou since I was young. I only finished primary school, but I know what works here. Everyone around me grows the wheat-corn rotation\u2014that's the backbone of our farming. I planted winter wheat last October on most of my land, and now that spring is here, I need to topdress it and get the irrigation going. I'll harvest it in early June, then immediately put in summer corn. I also keep a small plot of cotton because the price can be good and I've grown it for years, though it takes more work.\n\nI don't try anything fancy. I use rotary tillage before wheat planting, but for corn I plant no-till right into the wheat stubble\u2014saves time and diesel. I buy hybrid corn seeds from the supply shop because they yield better, but for wheat I mostly use improved varieties I know. I fertilize with the compound blends from the local shop and irrigate from our well using border flooding. For pests, I spray when I see them\u2014wheat and corn need a few sprays each, but cotton needs spraying almost every week.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"In Quzhou County, the wheat-maize double cropping system is what every farmer relies on for stable food and income. I already planted 4.5 mu of winter wheat last fall, so my main summer crop will be hybrid maize planted right after the June harvest. I keep 1.5 mu of cotton because I have experience with it and the market price is acceptable, even though it requires much more labor and pesticide. I manage the crops with practices I learned from my father and neighbors\u2014rotary tillage for wheat and cotton, no-tillage for corn to save costs, well water with border irrigation, and local compound fertilizers.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "In Quzhou County, the wheat-maize double cropping system is what every farmer relies on for stable food and income. I already planted 4.5 mu of winter wheat last fall, so my main summer crop will be hybrid maize planted right after the June harvest. I keep 1.5 mu of cotton because I have experience with it and the market price is acceptable, even though it requires much more labor and pesticide. I manage the crops with practices I learned from my father and neighbors\u2014rotary tillage for wheat and cotton, no-tillage for corn to save costs, well water with border irrigation, and local compound fertilizers."
+  },
+  "elapsed_seconds": 70.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 1,
+  "provider": "kimi"
+}

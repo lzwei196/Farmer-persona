@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 60 years old. I have farmed this land in Quzhou for 35 years. I never went to school, but I know every corner of my 12 mu. I learned everything by doing it and watching my neighbors. If Lao Wang's wheat looks good, I do what Lao Wang does. I do not trust new ideas unless I saw them work on someone else's field first.\n\nI keep 8 mu for wheat and then maize, and 4 mu for cotton. That is how I have done it for many years. My household has four mouths, so a bad harvest is a disaster. I would rather spend a little more on fertilizer than risk losing yield. Fertilizer is money, but an empty granary is worse.\n\nThe wheat is already in the ground from last October. I used improved seed, about 30 jin per mu. Before sowing, I spread one bag of compound fertilizer on each mu \u2014 the one from the dealer that says 18-22-5 on it. Now that spring is here, I will topdress with half a bag of urea per mu when the wheat turns green. Last year I did this and got about 2000 jin per mu. I irrigate three times from my well: greening water, jointing water, and grain-filling water. I spray three times for bugs, weeds, and that white powder disease.\n\nAfter I cut the wheat in June, I plant maize the same day. No time to waste. I buy hybrid seed from the shop, two and a half jin per mu. I put one bag of compound fertilizer in the furrow when planting \u2014 the 27-6-7 kind. I do not plough for maize anymore. I plant straight into the wheat stubble, like everyone else now. The summer rains help, so I only water twice if it gets dry. I spray three times: herbicide once, and insecticide twice.\n\nFor cotton, I plant 4 mu in April. I use improved cotton seed, about 4 jin per mu. Cotton needs more food and more medicine than grain. I put one bag of compound fertilizer per mu at planting \u2014 the one with 16-14-18 \u2014 then later I add half a bag of urea when it flowers. I irrigate three times. Cotton has many bugs, bollworms and aphids, so I spray ten times from June to August. Last year my cotton gave me about 1000 jin per mu of seed cotton. I hope for the same this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 34,\n      \"phosphorus_kg_per_mu\": 14,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 12 mu the same way I have for 35 years. I put one bag of compound fertilizer per mu on all my crops, and I topdress wheat and cotton with urea because that is what gave me good yields before. I watch my neighbors and do what they do. I irrigate wheat three times and maize twice because maize gets summer rain. Cotton needs ten sprays because the bugs never stop. I use hybrid maize seed and improved wheat and cotton seed from the dealer. I would rather spend extra on fertilizer than risk a bad harvest, but I do not buy fancy things I do not understand.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 34,
+        "phosphorus_kg_per_mu": 14,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm 12 mu the same way I have for 35 years. I put one bag of compound fertilizer per mu on all my crops, and I topdress wheat and cotton with urea because that is what gave me good yields before. I watch my neighbors and do what they do. I irrigate wheat three times and maize twice because maize gets summer rain. Cotton needs ten sprays because the bugs never stop. I use hybrid maize seed and improved wheat and cotton seed from the dealer. I would rather spend extra on fertilizer than risk a bad harvest, but I do not buy fancy things I do not understand."
+  },
+  "elapsed_seconds": 106.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_4",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 35 years. I know every corner of my 10.1 mu. My back is not what it was, and with only the two of us at home, I have to be careful about how much I take on. Cotton is hard work \u2014 picking especially. But I still grow it because we need the cash. I will keep a small cotton plot, maybe 3 mu, and put the rest, 7.1 mu, into my wheat-maize rotation. That rotation I can manage well. I know when the wheat looks thirsty, I know when the maize ears are setting. I do not need paper to tell me.\n\nFor wheat, I plant in October as always. I buy the improved seed from the village supply station \u2014 the same variety I have used for several years now, it does well here. I put down compound fertilizer at sowing and then urea when the stalks start growing tall in spring. I irrigate at winter freeze-in, at jointing, at heading, and once at grain fill \u2014 four times. Two pesticide sprays, once for aphids in spring, once for rust if it comes. I rotary-till before planting, it is easier on my body than deep ploughing.\n\nFor maize, right after wheat harvest in June I plant quickly. Maize takes hybrid seed now, everyone does that. I topdress nitrogen at the big-bell stage. Three irrigations \u2014 at planting, big bell, and grain fill. Two pesticide sprays for corn borer. Rotary tillage, the soil is still loose from wheat.\n\nFor cotton, I plough properly in spring to break up the bed. I use improved cotton seed. Cotton eats fertilizer and needs spraying often \u2014 five pesticide applications for bollworm and aphid. Four irrigations. But I keep it to 3 mu because I cannot pick more than that by myself anymore. Sometimes my neighbor's daughter helps at picking time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"A 78-year-old farmer with 35 years of experience and a 2-person household allocates 7.1 mu to the established wheat-maize winter-summer rotation and limits cotton to 3 mu due to the physical demands of picking at advanced age; seed choices follow local habit (improved wheat, hybrid maize, improved cotton); fertilizer rates reflect North China Plain smallholder practice using compound fertilizer at sowing plus urea topdressing; irrigation draws on well water across 3-4 events per crop following visual soil and plant cues rather than schedules; pesticide applications address the main pressure crops (aphid and rust on wheat, corn borer on maize, bollworm and aphid on cotton); tillage defaults to rotary for the quick wheat-maize turnaround and conventional ploughing for cotton beds.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "A 78-year-old farmer with 35 years of experience and a 2-person household allocates 7.1 mu to the established wheat-maize winter-summer rotation and limits cotton to 3 mu due to the physical demands of picking at advanced age; seed choices follow local habit (improved wheat, hybrid maize, improved cotton); fertilizer rates reflect North China Plain smallholder practice using compound fertilizer at sowing plus urea topdressing; irrigation draws on well water across 3-4 events per crop following visual soil and plant cues rather than schedules; pesticide applications address the main pressure crops (aphid and rust on wheat, corn borer on maize, bollworm and aphid on cotton); tillage defaults to rotary for the quick wheat-maize turnaround and conventional ploughing for cotton beds."
+  },
+  "elapsed_seconds": 48.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_13",
+  "tier": 2,
+  "provider": "claude"
+}

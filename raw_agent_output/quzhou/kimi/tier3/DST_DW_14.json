@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 51 years old, and I have farmed these 16.9 mu in Quzhou County for 35 years. I finished middle school, so I can read a fertilizer bag and I talk to the input dealer in town, but mostly I go by what I have seen work with my own eyes and what my neighbors do. My household is just my wife and me. We both do off-farm work when we can get it, so for the heavy jobs on 16.9 mu I hire machinery services. With this much land, I have to think about my whole budget and be efficient, but I can also absorb a small loss if the weather turns bad.\n\nIt is March now, and the winter wheat I planted last October is turning green. Here is what I will do this year.\n\nFor the wheat: I sowed an improved variety \u2014 the same kind most people around here plant, what the seed dealer calls a high-yield line. Last autumn at sowing, I put down one bag of compound fertilizer per mu, 50 kg of the 15-15-15 type. That gave me my base phosphorus and potassium. This spring I will topdress with urea twice: at green-up, I will spread half a bag, 25 kg per mu, and at jointing stage another 10 kg per mu. In total that comes to about 18 kg of nitrogen per mu for the whole wheat season. The phosphorus and potassium from autumn are enough, about 6 kg P and 5 kg K per mu. I will irrigate three times from now until harvest: green-up water in March, jointing water in April, and grain-filling water in May. I pump from my well. I will spray pesticide twice \u2014 once for weeds and once later for aphids and disease when it warms up. I expect about 550 kg per mu if we do not get a late frost.\n\nFor the summer maize: Right after wheat harvest in early June, I will plant hybrid maize seed. Everyone uses hybrids now \u2014 you cannot get good yield without them. I hire the no-tillage seeder that comes right behind the combine harvester. It saves time and labor, which matters since my wife and I cannot do everything ourselves. At planting I will put down about 40 kg per mu of compound fertilizer. Then when the maize reaches the big trumpet stage, I will topdress with 30 kg per mu of urea. Total nitrogen for maize will be about 20 kg per mu, phosphorus about 5 kg, potassium about 5 kg. I will irrigate twice if the rain is not enough \u2014 once after emergence and once at jointing. Summer rains usually help. I will spray twice: herbicide at seedling stage and insecticide for corn borer. I expect about 650 kg per mu.\n\nI watch my costs carefully. Spending more on fertilizer means less cash for pesticide or hired labor. But I would rather put a bit too much fertilizer than risk losing yield. A bad harvest is a disaster; wasting some fertilizer is just money I spent for insurance. I watch what my neighbors do \u2014 if everyone around me applies roughly this much, then I do the same. Change is risky, and I only change when I see it work on someone else's field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I manage 16.9 mu of wheat-maize rotation in Quzhou County. For my winter wheat, I apply 18 kg N, 6 kg P, and 5 kg K per mu, irrigate three times, spray pesticide twice, and expect 550 kg per mu. For summer maize, I use hybrid seed with no-tillage, apply 20 kg N, 5 kg P, and 5 kg K per mu, irrigate twice, spray twice, and expect 650 kg per mu. I base these decisions on last year's practice, what my neighbors do, and my budget, preferring to slightly over-fertilize rather than risk yield loss.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I manage 16.9 mu of wheat-maize rotation in Quzhou County. For my winter wheat, I apply 18 kg N, 6 kg P, and 5 kg K per mu, irrigate three times, spray pesticide twice, and expect 550 kg per mu. For summer maize, I use hybrid seed with no-tillage, apply 20 kg N, 5 kg P, and 5 kg K per mu, irrigate twice, spray twice, and expect 650 kg per mu. I base these decisions on last year's practice, what my neighbors do, and my budget, preferring to slightly over-fertilize rather than risk yield loss."
+  },
+  "elapsed_seconds": 147.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_14",
+  "tier": 3,
+  "provider": "kimi"
+}

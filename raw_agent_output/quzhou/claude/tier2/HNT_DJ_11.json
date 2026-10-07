@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 25 years. I know this soil, I know this weather, and I know what gives me a decent harvest without running me into the ground \u2014 especially now that I'm doing this alone.\n\nMy 16.1 mu runs the same rotation every year: wheat goes in around the first of October, I harvest it in June, then I turn around and plant maize on the same ground right away. Same land, both seasons. That's just how we do it here in Quzhou.\n\n**For wheat:** I'll do rotary tillage after the maize comes off. I buy improved variety seeds from the county supply station \u2014 the same kind I've been using the past several years, nothing fancy but it reliably gives me around 450 jin per mu. I put down base fertilizer before planting: compound fertilizer and urea. I top-dress again at jointing. Altogether maybe 18 kg of nitrogen per mu across both applications, 8 phosphorus, 5 potassium. I pump the well three times \u2014 once before winter sets in, once at jointing, once near heading. I spray herbicide in early spring and do one more spray near heading for rust and aphids. Two pesticide runs total.\n\n**For maize:** Right after wheat harvest I do rotary tillage again and plant hybrid seed \u2014 Zhengdan 958 or whatever the station has that's similar. I put base fertilizer down at planting and top-dress at the big bell stage. Nitrogen runs higher for maize, around 22 kg per mu. Summer has more rain so I only pump twice \u2014 once at silking if it's dry, once at grain filling. I spray herbicide right after emergence and do one treatment for corn borer. Figure I'll get around 600 jin per mu if the summer isn't too hot and dry.\n\nAt my age, with just me working the land, I'm not going to experiment. I do what I know works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I run a continuous wheat-maize rotation on all 16.1 mu, planting winter wheat in October after rotary tillage and switching to summer hybrid maize immediately after the June wheat harvest. With 25 years on this land I stick to what I know: improved wheat varieties and proven hybrid maize seed from the local supply station, split nitrogen applications timed to key growth stages, and well irrigation used conservatively given I operate the pump alone. Fertilizer rates are based on what has consistently given me acceptable yields \u2014 higher nitrogen on maize than wheat reflecting the crop's heavier demand in the summer growing period. Two pesticide applications per crop handles the main threats without overcomplicating things for a single-person operation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I run a continuous wheat-maize rotation on all 16.1 mu, planting winter wheat in October after rotary tillage and switching to summer hybrid maize immediately after the June wheat harvest. With 25 years on this land I stick to what I know: improved wheat varieties and proven hybrid maize seed from the local supply station, split nitrogen applications timed to key growth stages, and well irrigation used conservatively given I operate the pump alone. Fertilizer rates are based on what has consistently given me acceptable yields \u2014 higher nitrogen on maize than wheat reflecting the crop's heavier demand in the summer growing period. Two pesticide applications per crop handles the main threats without overcomplicating things for a single-person operation."
+  },
+  "elapsed_seconds": 46.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_11",
+  "tier": 2,
+  "provider": "claude"
+}

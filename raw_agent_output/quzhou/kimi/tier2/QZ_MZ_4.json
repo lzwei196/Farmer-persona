@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 9 mu in Quzhou for 35 years. It is just me and my wife now, and we are not young anymore, so I have to choose what we can manage with our own hands. I only went to primary school, but I know this field better than any book.\n\nFor winter wheat, I will rotary till the land after the maize comes off in October and sow improved wheat seed\u2014nothing fancy, just the same kind my neighbor Lao Zhang uses, which I buy from the township supply store. I will spread compound fertilizer as a base before sowing, then top-dress urea when the wheat greens up and again at jointing. That comes to about 16 kg of nitrogen per mu in total. I will irrigate three times: once before winter if the soil is dry, once at jointing, and once at grain filling. The well water costs electricity, but three times is what everyone here does, and less than that is risky. I will spray herbicide once after sowing and fungicide once in spring; bending down to weed by hand is too hard for us now. I expect about 450 kg per mu in a normal year.\n\nFor summer maize, as soon as the wheat is harvested in early June, I will hire the no-till seeder from the village to plant hybrid maize the same day. There is no time to plough, and every day you wait costs yield. I put compound fertilizer down with the seed and sidedress more nitrogen at the big trumpet stage, about 15 kg nitrogen per mu total. I will irrigate twice\u2014at big trumpet and grain filling\u2014because July usually brings some rain, and I have to watch the electric bill. I spray herbicide at sowing and insecticide once for corn borer. I expect around 500 kg per mu.\n\nI farm this way because after 35 years I know what this land can give. I do not have money to waste on extra inputs, but I also cannot afford to lose the crop by cutting too much. I do what my neighbors do, I watch costs, and I stick with what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 9 mu with my wife alone, so I choose practices that save labor and avoid risk. I use rotary tillage for wheat and no-tillage for maize to manage the tight turnaround between crops. I apply moderate fertilizer and irrigate wheat three times and maize twice because that is what my neighbors do and what I can afford with costly well water. I rely on herbicides and some pesticide sprays since hand weeding is too difficult for just two people. My expected yields are conservative because I cannot afford a bad year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I manage my 9 mu with my wife alone, so I choose practices that save labor and avoid risk. I use rotary tillage for wheat and no-tillage for maize to manage the tight turnaround between crops. I apply moderate fertilizer and irrigate wheat three times and maize twice because that is what my neighbors do and what I can afford with costly well water. I rely on herbicides and some pesticide sprays since hand weeding is too difficult for just two people. My expected yields are conservative because I cannot afford a bad year."
+  },
+  "elapsed_seconds": 167.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_MZ_4",
+  "tier": 2,
+  "provider": "kimi"
+}

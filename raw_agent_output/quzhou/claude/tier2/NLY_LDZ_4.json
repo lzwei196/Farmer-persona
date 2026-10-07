@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been doing this for 15 years. My father did it before me. I know this land.\n\nMy 10.1 mu grows wheat then maize on the same plots \u2014 that's just how we do it here in Quzhou. Wheat goes in October after summer harvest, maize goes in June after wheat harvest. Same land, twice a year.\n\n**Wheat:** I'll plant the improved variety everyone in the village uses \u2014 better than the old seeds my father used, gives me more yield. I rotary till before planting, same as always. I'll water three times: once before the ground freezes, once at jointing, once at heading. If I skip one, I lose yield and I can't afford that with six mouths. I put down compound fertilizer at planting and push more urea at jointing. I spray once for weeds early, once more for aphids and powdery mildew heading into May. That's what I've always done.\n\n**Maize:** After the combine rolls through in June, I direct-seed maize \u2014 no need to till, saves me time and money. I use hybrid seed, the kind from the ag store. Everybody uses hybrid now. Summer rains help, so I irrigate maybe twice \u2014 once at jointing if it's dry, once during grain fill. I spread compound fertilizer as base and chase it with urea at jointing. One herbicide spray right after emergence, that's usually enough.\n\nSome of my sons work in the city. I manage the farm mostly myself. I keep costs down where I can but I won't cut fertilizer \u2014 that's where yield comes from.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same 10.1 mu for both crops in rotation, as is standard in Quzhou. For wheat I rotary till in autumn, plant an improved local variety, irrigate three times from the well, and apply split nitrogen with compound fertilizer at base and urea topdress at jointing \u2014 roughly 20 kg N per mu total \u2014 along with two pesticide applications for weeds and disease. For summer maize I direct-seed a hybrid variety right after wheat harvest without tillage to save labor and time, rely on summer rainfall with two supplemental irrigations, apply 18 kg N per mu split between base compound fertilizer and a jointing-stage urea top-dress, and spray herbicide once after emergence. These practices follow what I have done for 15 years and what my neighbors do; I expect about 450 kg per mu wheat and 550 kg per mu maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the same 10.1 mu for both crops in rotation, as is standard in Quzhou. For wheat I rotary till in autumn, plant an improved local variety, irrigate three times from the well, and apply split nitrogen with compound fertilizer at base and urea topdress at jointing \u2014 roughly 20 kg N per mu total \u2014 along with two pesticide applications for weeds and disease. For summer maize I direct-seed a hybrid variety right after wheat harvest without tillage to save labor and time, rely on summer rainfall with two supplemental irrigations, apply 18 kg N per mu split between base compound fertilizer and a jointing-stage urea top-dress, and spray herbicide once after emergence. These practices follow what I have done for 15 years and what my neighbors do; I expect about 450 kg per mu wheat and 550 kg per mu maize."
+  },
+  "elapsed_seconds": 44.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_4",
+  "tier": 2,
+  "provider": "claude"
+}

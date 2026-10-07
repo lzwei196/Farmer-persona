@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou my whole life. My father grew wheat and corn, I grow wheat and corn, and that's what the soil here knows. The North China Plain \u2014 this is wheat-corn country. I'm 69 now, my back isn't what it was, and I'm not about to start experimenting with something new. My land is about 16 mu. My son lives in the city but comes back for the big harvests when he can.\n\nWinter wheat goes in around October. I'll plant an improved variety \u2014 the seed station in town sells Jimai 22 or something similar, I'll ask what they have. I always do three irrigations: one before winter sets in to help the roots, one at jointing, one at heading. I spray twice \u2014 once for aphids in spring, once for powdery mildew. I use rotary tillage before planting to break up the soil after summer.\n\nAfter wheat harvest in June, I plant summer maize right away \u2014 no time to waste, you need the full growing season. I go hybrid seed, everyone around here does, the yields are better. Maize gets summer rain so I only irrigate once if it's dry, maybe not at all. I throw down fertilizer at planting and top-dress at the 8-leaf stage. One pesticide spray for armyworm if needed.\n\nI won't try vegetables or cotton \u2014 too much bending, too much daily work. Wheat and corn, that's my plan. Hire the machine for plowing and harvesting, do the rest myself.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"A 69-year-old farmer in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. With 16 mu of land and declining physical capacity, he avoids risky or labor-intensive crops, relying on hired machinery for tillage and harvest. Wheat uses rotary tillage and three irrigations to compensate for Hebei's dry winters; maize is planted no-till directly after wheat harvest to maximize the summer growing window, relying mainly on monsoon rainfall with one supplemental irrigation. Fertilizer rates reflect typical smallholder practice in the region \u2014 adequate but not optimized. Improved wheat seed and hybrid maize seed are the local norm and give reliable, familiar yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "A 69-year-old farmer in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. With 16 mu of land and declining physical capacity, he avoids risky or labor-intensive crops, relying on hired machinery for tillage and harvest. Wheat uses rotary tillage and three irrigations to compensate for Hebei's dry winters; maize is planted no-till directly after wheat harvest to maximize the summer growing window, relying mainly on monsoon rainfall with one supplemental irrigation. Fertilizer rates reflect typical smallholder practice in the region \u2014 adequate but not optimized. Improved wheat seed and hybrid maize seed are the local norm and give reliable, familiar yields."
+  },
+  "elapsed_seconds": 41.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_2",
+  "tier": 1,
+  "provider": "claude"
+}

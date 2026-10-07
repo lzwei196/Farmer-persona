@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old, my back hurts, but I still work the land like I always did. Let me think how I will do this year, same way I been doing.\n\nMy 12 mu \u2014 I split it like always. About 8 mu I do wheat then maize same land, the double crop like everyone in our village. The other 4 mu I keep for cotton, because cotton bring cash money and my daughter-in-law help me with the picking.\n\n**Wheat (winter):** I plant the same seed my neighbor Wang give me last autumn, improved kind, everyone around here use it. I put down 2 bag of compound fertilizer before ploughing \u2014 that's one bag for every 2 mu, maybe little more. Then when wheat turn green in spring I spread 1 bag urea for every 2 mu. So my nitrogen, altogether, is what you get from those bags. I water 3 times \u2014 once after planting, once at jointing, once when grain filling. If I don't water, wheat die, simple as that. I spray 2 time for aphid and the rust disease. Tractor man come plough for me, 40 yuan per mu, I pay him.\n\n**Maize (summer):** After wheat cut, I just scatter seed in the stubble, no ploughing, save money and time. Seed is hybrid one from the dealer in town \u2014 everyone buy this one. I put 1 bag compound at sowing, then 2 bag urea when it reach my knee. That's what my son say to do, same as neighbor. Water maybe 2 time if rain not come. Spray once for the borer worm.\n\n**Cotton (spring):** Cotton I been growing my whole life. I use the seed left from last year plus buy little new. I put 1 and half bag compound fertilizer per mu before planting \u2014 cotton eat a lot. Then topdress urea when it flower. I water 3 or 4 time, cotton need water. Spray many times, maybe 5 or 6, because bollworm and aphid always come. I plough proper with tractor, cotton need loose soil.\n\nI spend maybe too much on fertilizer some say, but I rather have full wheat head than save few yuan and cry at harvest. My whole life I do it this way.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I split my 12 mu same as always \u2014 8 mu wheat-then-maize double crop, 4 mu cotton for cash. I buy fertilizer by the bag and use what my neighbors use, little bit heavy on nitrogen because I cannot afford thin wheat head. Wheat I plough and water 3 times, maize I just drop seed in the stubble to save money and time, cotton I take care of most because it need many spray for the bollworm. I do what worked for me 50 years, no reason to change now.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I split my 12 mu same as always \u2014 8 mu wheat-then-maize double crop, 4 mu cotton for cash. I buy fertilizer by the bag and use what my neighbors use, little bit heavy on nitrogen because I cannot afford thin wheat head. Wheat I plough and water 3 times, maize I just drop seed in the stubble to save money and time, cotton I take care of most because it need many spray for the bollworm. I do what worked for me 50 years, no reason to change now."
+  },
+  "elapsed_seconds": 38.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_13",
+  "tier": 3,
+  "provider": "claude"
+}

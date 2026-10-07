@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for generations. I have about 10 mu \u2014 same as always. Around here, everyone grows winter wheat and summer corn on the same fields, one after the other. That's what my father did, that's what my neighbors do, and that's what works. I'm not going to try anything new at my age.\n\nFor the wheat, I'll plant in October after the autumn rain. I'll use the improved seeds from the county seed station \u2014 not the old varieties, those yields are too low. I'll apply urea and compound fertilizer like I always do. Three or four waterings: before winter sets in, again at jointing, then heading. Maybe one more if it's dry at grain fill. I'll spray herbicide in spring and fungicide once I see any rust or powdery mildew signs.\n\nAfter wheat harvest in June, I'll plant corn immediately. I'll use hybrid seed \u2014 no question on that, yields are much better. Corn gets summer rain so I only irrigate once or twice if there's a drought. I'll put down fertilizer at planting and top-dress urea when it's about knee-high. One pesticide spray for stem borer if needed.\n\nI use rotary tillage for wheat bed prep. For corn I direct-seed into the wheat stubble \u2014 saves time and keeps the soil from drying out too fast.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10 mu in Quzhou, Hebei, the same way farmers here have for decades \u2014 winter wheat followed by summer maize on the same land. I use improved wheat seed and hybrid corn from the county station because the yields justify the cost. I apply urea and compound fertilizer at typical local rates, irrigate wheat three times from the groundwater well, and rely mostly on summer rain for the corn. Rotary tillage prepares the wheat seedbed; I direct-seed corn into stubble to save moisture and labor. Pesticide use is minimal \u2014 herbicide and fungicide for wheat, one insecticide pass for corn if borer pressure is high. I expect around 420 kg/mu wheat and 550 kg/mu corn, which is normal for this area.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 10 mu in Quzhou, Hebei, the same way farmers here have for decades \u2014 winter wheat followed by summer maize on the same land. I use improved wheat seed and hybrid corn from the county station because the yields justify the cost. I apply urea and compound fertilizer at typical local rates, irrigate wheat three times from the groundwater well, and rely mostly on summer rain for the corn. Rotary tillage prepares the wheat seedbed; I direct-seed corn into stubble to save moisture and labor. Pesticide use is minimal \u2014 herbicide and fungicide for wheat, one insecticide pass for corn if borer pressure is high. I expect around 420 kg/mu wheat and 550 kg/mu corn, which is normal for this area."
+  },
+  "elapsed_seconds": 38.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_14",
+  "tier": 1,
+  "provider": "claude"
+}

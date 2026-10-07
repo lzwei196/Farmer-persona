@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm the same wheat-maize rotation every year, so I do not start from zero. I start from what has worked on land like mine in Quzhou, then I adjust a little for cost, water, and how much grain I want to hold onto. I have 30 mu and a well, so I will not farm too light. If I save too much on fertilizer and water, the loss in yield is bigger than the money I saved. For wheat, I will hold the stand steady, use an improved variety, put enough bottom fertilizer in, then chase the crop again at jointing with water. Wheat here can give good yield if I do not let it dry out at the key stages. For maize, I will use hybrid seed like most people around here, grab the season quickly after wheat harvest, keep the field clean, and feed it enough nitrogen for ear growth. I will not push to demonstration-field levels, because that costs money and management, but I will aim above an ordinary careless field. All the fertilizer numbers below are pure nutrient per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 700\n    }\n  ],\n  \"reasoning_summary\": \"I will keep my usual wheat-maize rotation on all 30 mu and manage it a bit tighter because I have well irrigation and enough area to justify proper input use. For wheat I will use improved seed, enough base fertilizer, three irrigations around key stages, and three pesticide passes because protecting the stand is cheaper than losing yield. For maize I will use hybrid seed, rush sowing after wheat harvest with no-tillage, keep nitrogen steady for ear growth, give two irrigations if rain is not enough, and spray twice for the main pests and diseases. I will aim for solid farm yield, not extreme demonstration yield, because I still have to watch the full household budget.\"\n}\n```\n\nSources used: [MOA winter wheat fertilization guidance](https://www.moa.gov.cn/gk/nszd_1/2023/202309/t20230928_6437567.htm), [MOA wheat technical opinion](https://www.moa.gov.cn/gk/nszd_1/nszd_2/202409/t20240924_6463166.htm), [MOA Huanghuaihai maize guidance](https://www.moa.gov.cn/ztzl/ddymdzfhjs/jszd_29063/202206/t20220601_6401266.htm), [Hebei/Quzhou yield context](https://www.moa.gov.cn/xw/qg/202406/t20240613_6457129.htm), [Quzhou \u201c\u5428\u534a\u7cae\u201d context](https://news.cau.edu.cn/zhxwnew/f6d1da1ed30c43c499ce936f3664373b.htm)",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 700
+      }
+    ],
+    "reasoning_summary": "I will keep my usual wheat-maize rotation on all 30 mu and manage it a bit tighter because I have well irrigation and enough area to justify proper input use. For wheat I will use improved seed, enough base fertilizer, three irrigations around key stages, and three pesticide passes because protecting the stand is cheaper than losing yield. For maize I will use hybrid seed, rush sowing after wheat harvest with no-tillage, keep nitrogen steady for ear growth, give two irrigations if rain is not enough, and spray twice for the main pests and diseases. I will aim for solid farm yield, not extreme demonstration yield, because I still have to watch the full household budget."
+  },
+  "elapsed_seconds": 53.9,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_12",
+  "tier": 3,
+  "provider": "codex"
+}

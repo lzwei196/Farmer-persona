@@ -1,0 +1,73 @@
+{
+  "raw_response": "I am a 45-year-old woman farming 5 mu in Quzhou County. My husband and I have worked this land for 25 years, and our son works in a factory in Shijiazhuang, sending some money home. My daughter-in-law also helps when she is not working at the garment workshop. We grow wheat in winter and maize in summer on all 5 mu \u2014 that is what everyone around here does, and it keeps us fed.\n\n**Winter wheat:** I will plant wheat around October 10th, after the National Day holiday. My son might come home to help for a day. I use the seed I saved from last year \u2014 it is a good variety I bought from the county supply store three years ago. Saved seed costs almost nothing, just some medicine to treat it before sowing. I put down about 20 kg of compound fertilizer per mu before planting \u2014 that is two 50-kg bags for the whole 5 mu. I buy the fertilizer from the village cooperative. At Qingming Festival, when the wheat starts jointing, I topdress with about 10 kg of urea per mu \u2014 one bag total. My neighbor Li Sao does about the same, and she gets good yields, so I follow her. I irrigate three times: once in late November before the freeze, once at jointing in March or April, and once at grain filling in May. Water costs money now \u2014 the well is metered \u2014 so I do not waste it. I spray herbicide once in early spring for weeds. My husband and I do all the work except harvest, when we hire two people for two days because we need to get the wheat out fast before the rain comes. I expect about 420 kg per mu if the weather is normal. Last year we got 410, so 420 is reasonable.\n\n**Summer maize:** The day after we finish wheat harvest in early June, we plant maize. The window is very tight \u2014 sometimes only three or four days. We usually do light rotary tillage or just plant directly if we are running late. Maize seed I always buy new \u2014 hybrid seed from the county store, usually Zhengdan or Yudan brand. It costs about 50 yuan per mu. You cannot save hybrid seed, it does not work the next year. I put compound fertilizer down at planting, about 20 kg per mu. I do not usually topdress maize unless the leaves turn yellow, then I might add a handful of urea, but usually the base fertilizer is enough. I irrigate once or twice \u2014 definitely at the big trumpet stage in July, and maybe at filling in August if there is no rain. Last year it rained enough, so I only irrigated once. I spray herbicide once after emergence. Maize is less work than wheat. My family handles it all \u2014 no hired labor needed. Harvest is in late September. I expect about 480 kg per mu.\n\n**Money:** I am careful with cash. The factory sent less work last month, so my son's remittance was smaller. I have about 2,000 yuan for farm inputs this season. Fertilizer is the biggest cost, then maize seed and irrigation. I would like to put more fertilizer on, but I need to keep some cash for my grandson's school fees and for medicine if someone gets sick. I would rather apply a little too much fertilizer than too little \u2014 a bad yield means we eat less, but wasting some fertilizer is better than going hungry.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 5,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early-mid June\",\n      \"seed_type\": \"improved (saved seed)\",\n      \"seed_cost_yuan_per_mu\": 10,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: compound fertilizer broadcast before planting; topdress: urea at jointing stage in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary tillage before wheat planting\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 5,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"base: compound fertilizer at planting\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage or direct planting after wheat harvest due to tight turnaround\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 480\n    }\n  ],\n  \"total_input_cost_yuan\": 2100,\n  \"reasoning_summary\": \"I farm 5 mu of wheat-maize double crop the same way I have for 25 years. I use saved wheat seed to save money but buy hybrid maize seed every year. I apply compound fertilizer at planting for both crops and topdress wheat with urea at jointing. I irrigate three times for wheat and once or twice for maize, watching the weather to save on pumping costs. My family does most of the labor, but I hire two days of help at wheat harvest because the window is tight. I am careful with cash because my son's factory work has been unstable, so I keep input costs around 2,000 yuan and hold some money back for family emergencies.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 5,
+        "planting_date": "early October",
+        "harvest_date": "early-mid June",
+        "seed_type": "improved (saved seed)",
+        "seed_cost_yuan_per_mu": 10,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: compound fertilizer broadcast before planting; topdress: urea at jointing stage in spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary tillage before wheat planting",
+        "labor_family_days": 18,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 5,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 2
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 5,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "base: compound fertilizer at planting",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage or direct planting after wheat harvest due to tight turnaround",
+        "labor_family_days": 12,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 480,
+        "nitrogen_kg_per_mu": 12,
+        "area_mu": 5,
+        "expected_yield_kg_per_mu": 480,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 2
+      }
+    ],
+    "total_input_cost_yuan": 2100,
+    "reasoning_summary": "I farm 5 mu of wheat-maize double crop the same way I have for 25 years. I use saved wheat seed to save money but buy hybrid maize seed every year. I apply compound fertilizer at planting for both crops and topdress wheat with urea at jointing. I irrigate three times for wheat and once or twice for maize, watching the weather to save on pumping costs. My family does most of the labor, but I hire two days of help at wheat harvest because the window is tight. I am careful with cash because my son's factory work has been unstable, so I keep input costs around 2,000 yuan and hold some money back for family emergencies."
+  },
+  "elapsed_seconds": 55.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_8",
+  "tier": 4,
+  "provider": "kimi"
+}

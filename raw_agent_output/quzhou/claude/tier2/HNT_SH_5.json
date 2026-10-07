@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land for 30 years. My father farmed before me. I know this soil, I know the weather in Quzhou, and I know what gets me through the year. My 3.5 mu isn't going to make us rich, but my son and daughter-in-law send money back from the city, so I don't have to gamble with the harvest. I want a solid, reliable yield, not an experiment.\n\n**Wheat (winter):** I'll sow in mid-October after the summer maize is off. I always use improved seed \u2014 Jimai or Shimai varieties that the village seed shop carries. Hybrid isn't really done for wheat here, and traditional seed gives me lower yields. I put down base fertilizer at sowing \u2014 diammonium phosphate and urea mixed in \u2014 then topdress nitrogen at jointing in spring. My total nitrogen comes out around 18 kg per mu, which is what my neighbors do and what I've done for years. I do 4 irrigations: the winter watering before freeze, jointing stage, heading, and grain fill. That's standard here with the wells. I spray herbicide in spring and do one fungicide pass for powdery mildew around heading. Rotary tillage after maize harvest to break up the stubble. I expect around 450 kg per mu.\n\n**Maize (summer):** Right after the wheat combine finishes in June, I direct-seed maize the same week \u2014 no time to waste. I always buy hybrid seed, that's just how it is, everyone does. Yields are better and I can't afford to mess around. I apply less phosphorus and potassium to maize since the soil still has residual from wheat. Nitrogen I split \u2014 base at seeding, topdress at jointing. Summer gets rain, so I only irrigate if it's dry at tasseling or grain fill \u2014 maybe twice in a bad year. One pesticide pass for corn borer, maybe one more if aphids show up bad. No tillage, just direct seeding into the wheat stubble to save fuel and time. I expect 500 kg per mu.\n\nI won't change what works. The land is small, the family depends on it being consistent.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 3.5 mu in Quzhou County under a standard wheat-maize double-cropping rotation, as I have for 30 years. With partial off-farm household income I prioritize yield stability over cost-cutting. I use improved wheat varieties and hybrid maize seed as is normal in this area. Fertilizer rates follow local practice \u2014 18 kg N/mu for both crops, with moderate phosphorus and potassium. Wheat receives 4 irrigations from the well covering critical growth stages; maize relies more on summer rain with 2 supplemental irrigations. Rotary tillage prepares the wheat seedbed after maize harvest; maize is direct-seeded into wheat stubble to save labor and fuel. Pesticide applications cover herbicide and fungicide for wheat and insecticide for maize. Expected yields are 450 kg/mu for wheat and 500 kg/mu for maize, consistent with what I and my neighbors achieve on similar land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm 3.5 mu in Quzhou County under a standard wheat-maize double-cropping rotation, as I have for 30 years. With partial off-farm household income I prioritize yield stability over cost-cutting. I use improved wheat varieties and hybrid maize seed as is normal in this area. Fertilizer rates follow local practice \u2014 18 kg N/mu for both crops, with moderate phosphorus and potassium. Wheat receives 4 irrigations from the well covering critical growth stages; maize relies more on summer rain with 2 supplemental irrigations. Rotary tillage prepares the wheat seedbed after maize harvest; maize is direct-seeded into wheat stubble to save labor and fuel. Pesticide applications cover herbicide and fungicide for wheat and insecticide for maize. Expected yields are 450 kg/mu for wheat and 500 kg/mu for maize, consistent with what I and my neighbors achieve on similar land."
+  },
+  "elapsed_seconds": 48.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_5",
+  "tier": 2,
+  "provider": "claude"
+}

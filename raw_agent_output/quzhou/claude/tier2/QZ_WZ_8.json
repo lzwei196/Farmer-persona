@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've got 6 mu on the North China Plain. The system here is simple and proven \u2014 winter wheat, then summer maize, same land, all year. That's what I do, that's what my neighbors do, and after five years I've gotten comfortable with the rhythm.\n\nI'm not a traditional farmer who inherited land and methods. I came to this with a degree, I read extension materials, and I talk to the agronomists at the county station. My wife and oldest child both work off-farm, so the pressure isn't purely on what I grow \u2014 but I still want to maximize yield because the land is limited and inputs cost money.\n\n**Wheat:** I'll plant in mid-October after I finish maize harvest and rotary-till to bury stubble. I use improved varieties \u2014 something like Jimai 22 or Kenong 199, which are well-adapted here and give consistent yield. I split my nitrogen: base fertilizer at seeding, topdress at jointing. I'll water three times \u2014 once before winter sets in, once at jointing, once at grain filling. I'm not going to irrigate heading unless we get an unusually dry spring; the well is there but electricity costs money. Two pesticide passes \u2014 one herbicide in early spring, one fungicide-insecticide before heading. I expect around 450 kg/mu.\n\n**Maize:** Right after the combine clears the wheat in early June, I direct-seed maize into the stubble \u2014 no-tillage. This saves me time and cost, and the soil structure is better for it. I always use hybrid seed (Zhengdan 958 or Xianyu 335). Summer has more rain so I only irrigate twice \u2014 once at sowing if the soil is dry, once around tasseling if July is harsh. I topdress nitrogen at the V6 stage. Two pesticide applications: post-emergence herbicide, and one spray for corn borer in August. I expect around 550 kg/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a university-educated farmer with 5 years of experience on 6 mu in Quzhou County, I follow the standard wheat-maize double-cropping rotation that dominates this part of the North China Plain. For wheat I use rotary tillage before planting to incorporate maize residue, select improved semi-dwarf varieties suited to the local climate, and apply nitrogen in split doses to improve efficiency; three irrigations cover the critical pre-winter, jointing, and grain-filling stages while keeping electricity costs manageable. For summer maize I adopt no-tillage direct seeding immediately after wheat harvest to save labor and preserve soil moisture, rely on hybrid seed for yield reliability, and limit irrigation to two passes given that summer rainfall reduces demand; nitrogen is topdressed at the V6 stage for uptake efficiency. With some off-farm household income, I am not forced to cut corners on inputs, but I also avoid over-irrigation or over-fertilization that would raise costs without meaningful yield gains.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a university-educated farmer with 5 years of experience on 6 mu in Quzhou County, I follow the standard wheat-maize double-cropping rotation that dominates this part of the North China Plain. For wheat I use rotary tillage before planting to incorporate maize residue, select improved semi-dwarf varieties suited to the local climate, and apply nitrogen in split doses to improve efficiency; three irrigations cover the critical pre-winter, jointing, and grain-filling stages while keeping electricity costs manageable. For summer maize I adopt no-tillage direct seeding immediately after wheat harvest to save labor and preserve soil moisture, rely on hybrid seed for yield reliability, and limit irrigation to two passes given that summer rainfall reduces demand; nitrogen is topdressed at the V6 stage for uptake efficiency. With some off-farm household income, I am not forced to cut corners on inputs, but I also avoid over-irrigation or over-fertilization that would raise costs without meaningful yield gains."
+  },
+  "elapsed_seconds": 44.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_8",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 10.1 mu for 40 years. I am 76 now and I only finished primary school, but I know every corner of my fields. I learned from my father and from watching my neighbors. What works, I keep doing. What fails, I never touch again.\n\nThis year I will manage my crops the same way I did last year, because last year was decent and change is dangerous when you have seven people to feed.\n\nFor the winter wheat, I sow about 25 jin of improved seed per mu \u2014 the kind I buy from the dealer in town, the same one my neighbor Old Wang uses. Before sowing, I spread one 50kg bag of compound fertilizer on each mu. Then in the spring, when the wheat turns green and starts growing fast, I top-dress with 30kg of urea per mu. I used to put less urea, but three years ago Old Wang cut back and his wheat went yellow and thin. I would rather spend the extra 40 yuan per mu than lose yield. I irrigate four times from my well: once before the ground freezes for winter, once at jointing when the stems shoot up, once at heading, and once when the grain is filling. I spray pesticide twice \u2014 herbicide right after sowing, and another time in spring if I see aphids or rust. I run the rotary tiller before I sow. Last year I got about 450kg per mu. This year I expect 480kg per mu if the weather holds.\n\nFor the summer maize, right after we cut the wheat in June, I rotary till and sow hybrid corn seed. I put about 5 jin of seed per mu. At sowing I lay down one 50kg bag of compound fertilizer per mu, and when the corn reaches the big trumpet stage, I spread 25kg of urea per mu. I irrigate three times: after sowing if the soil is dry, at the big trumpet stage, and when the grain fills. Two pesticide sprays: one for weeds early, one later for corn borer if I see moths flying in the evening. I expect about 550kg per mu.\n\nFertilizer costs me over 200 yuan per mu for each crop. That is a lot of money. But I have learned that saving on fertilizer is a false economy. My nephew tried to cut his fertilizer by one-third two years ago and his maize dropped by more than 100kg per mu. A bad harvest is a disaster; wasting a little fertilizer is just a cost. I watch what the people around me do. We all apply about the same amounts. At my age, I do not experiment.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what worked last year and what my neighbors do. I apply one bag of compound fertilizer and urea top-dressing to both crops because I have seen that skipping or reducing fertilizer hurts yield more than it saves money. I irrigate four times for wheat and three times for maize using my well. I use the rotary tiller for both crops. I would rather apply slightly too much fertilizer than risk a bad harvest, because with seven people in my household, every mu must produce.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what worked last year and what my neighbors do. I apply one bag of compound fertilizer and urea top-dressing to both crops because I have seen that skipping or reducing fertilizer hurts yield more than it saves money. I irrigate four times for wheat and three times for maize using my well. I use the rotary tiller for both crops. I would rather apply slightly too much fertilizer than risk a bad harvest, because with seven people in my household, every mu must produce."
+  },
+  "elapsed_seconds": 137.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_6",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old and have farmed in Quzhou County for over 50 years. I only finished primary school, but I know this land better than any book. My son works in Shijiazhuang and only comes back for holidays, so I farm mostly by myself now. I have about 10 mu of land.\n\nMy winter wheat is already in the ground from last October. I planted it after running the rotary tiller. I use improved wheat seeds from the county seed station \u2014 varieties like Jimai 22 that I have grown for years and trust. This spring, I will irrigate the wheat four times: at green-up, jointing, heading, and grain-filling. I will spray pesticides three times to control aphids, weeds, and disease. I spread compound fertilizer as a base before planting and top-dress with urea in spring. I expect about 500 kg per mu.\n\nAfter harvesting the wheat in early June, I will immediately plant summer maize. I use Denghai hybrid seeds \u2014 they yield well and the seed dealer guarantees them. I plant using no-tillage direct seeding right after the combine leaves the field; this saves me time and labor at the hottest time of year. Maize needs less fertilizer than wheat. I will irrigate twice and spray pesticides three times. I expect about 550 kg per mu.\n\nI used to grow cotton, but I stopped two years ago. At my age, bending down to pick cotton hurts my back too much, and it needs nearly twenty pesticide sprays \u2014 too much walking with the sprayer for these old legs. Wheat and maize can be harvested by machine, which is easier for me to manage alone.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 70-year-old farmer in Quzhou County with 10 mu of land and farm mostly alone since my son works in the city. I grow winter wheat and summer maize in a double-cropping rotation because these crops are reliable, can be managed with machinery, and match what my body can still handle at my age. I stopped growing cotton two years ago because the hand-picking and numerous pesticide applications are too physically demanding. My management practices follow the same methods I have used for decades: rotary tillage for wheat, no-tillage maize planting after wheat harvest, irrigation at key growth stages, and standard fertilizer and pest control regimes.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 70-year-old farmer in Quzhou County with 10 mu of land and farm mostly alone since my son works in the city. I grow winter wheat and summer maize in a double-cropping rotation because these crops are reliable, can be managed with machinery, and match what my body can still handle at my age. I stopped growing cotton two years ago because the hand-picking and numerous pesticide applications are too physically demanding. My management practices follow the same methods I have used for decades: rotary tillage for wheat, no-tillage maize planting after wheat harvest, irrigation at key growth stages, and standard fertilizer and pest control regimes."
+  },
+  "elapsed_seconds": 281.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_17",
+  "tier": 1,
+  "provider": "kimi"
+}

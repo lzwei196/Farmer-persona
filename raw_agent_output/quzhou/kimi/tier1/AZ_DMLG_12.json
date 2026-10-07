@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 51 years old and have been farming these lands in Quzhou since I was a young man. I never went to school, but I know these fields. Every year, I grow winter wheat and summer maize on the same plots \u2014 it is the rotation my father taught me, and it feeds my family.\n\nMy wheat went into the ground last October. I have about 8 mu of good flat land. Right now the wheat is greening up, and the first thing I will do when the soil warms is apply top-dressing urea \u2014 about 45 kg per mu of nitrogen. I will irrigate three or four times before harvest: once in spring to help the tillering, once at jointing, and again at filling if the sky stays dry. I always do rotary tillage before sowing wheat, but that was done last autumn. For pests and weeds, I spray herbicide once and insecticide twice \u2014 the aphids and powdery mildew always come if you are not careful. I use improved wheat seed, sowing about 30 jin per mu. If the weather is fair, I expect around 1,000 jin of grain per mu.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize on the same 8 mu. I do not till the soil again for maize \u2014 I plant directly into the wheat stubble. It saves time, saves fuel, and the straw helps keep moisture. I use hybrid maize seed, about 1 kg per mu. Maize does not need as much nitrogen as wheat, but I give it about 15 kg per mu of nitrogen from compound fertilizer at sowing, plus a little phosphorus and potassium. I irrigate twice for maize, usually once right after sowing and once at the big-ear stage. I spray herbicide once and insecticide twice to control weeds and the corn borer. With luck, the maize will yield about 1,100 jin per mu.\n\nI do not try strange new crops. Wheat and maize are safe. The dealers at the market buy them every year. That is my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 45,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize rotation on my 8 mu of land because it is the proven system in Quzhou County. The winter wheat is already sown and needs spring nitrogen topdressing, three to four irrigations, and pest control. After wheat harvest in June, I plant hybrid maize using no-tillage to save time and moisture, with lighter fertilization and two irrigations. I use improved wheat seed and hybrid maize seed, keep inputs moderate but sufficient, and expect about 1,000 kg/mu for wheat and 1,100 kg/mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 45,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize rotation on my 8 mu of land because it is the proven system in Quzhou County. The winter wheat is already sown and needs spring nitrogen topdressing, three to four irrigations, and pest control. After wheat harvest in June, I plant hybrid maize using no-tillage to save time and moisture, with lighter fertilization and two irrigations. I use improved wheat seed and hybrid maize seed, keep inputs moderate but sufficient, and expect about 1,000 kg/mu for wheat and 1,100 kg/mu for maize."
+  },
+  "elapsed_seconds": 123.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_12",
+  "tier": 1,
+  "provider": "kimi"
+}

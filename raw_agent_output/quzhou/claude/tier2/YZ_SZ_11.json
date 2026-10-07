@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for fifty years. I know what works here and what doesn't. My land is 6 mu \u2014 I keep 4 mu in my wheat-maize rotation and 2 mu in cotton. That's what I've always done and it gives me both grain for the household and a bit of cash from the cotton.\n\nI'm 72 now, so I'm careful about how much heavy work I take on. My wife and I manage together. I rely on my well irrigation \u2014 without it, we'd be in trouble some summers.\n\nFor the **wheat**, I plant every October. I use an improved variety I've trusted for years \u2014 better disease resistance than the old seed, and the yield is reliable. I rotary till before planting. I irrigate three times: once before winter sets in to help the roots, once at jointing, and once during grain filling. I apply fertilizer in two splits \u2014 base dressing and a top dressing at jointing. I spray for aphids and powdery mildew in spring, that's about three pesticide passes total.\n\nFor the **maize**, I go straight in after wheat harvest in June with no-tillage. I use a hybrid \u2014 Zhengdan 958 or something similar that my neighbors also use. Good ears, handles the summer heat. I only need to irrigate twice unless it's a dry year. Maize isn't as labor-heavy.\n\nFor the **cotton**, it's the hardest work \u2014 picking by hand in autumn is tough at my age \u2014 but it brings in cash. I use improved Bt cotton seed so I spray less for bollworm. I still spray five times or so across the season for other pests. Cotton needs more potassium on our soils here. I plough that field in spring before transplanting or direct seeding.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I farm 6 mu in Quzhou County as I always have: 4 mu in a winter wheat to summer maize rotation and 2 mu of cotton for cash income. For wheat I use an improved variety, rotary till before planting, split my nitrogen across base and jointing applications, irrigate three times, and spray three times for aphids and fungal disease. For maize I go no-tillage straight after the wheat harvest using a reliable hybrid like Zhengdan 958, irrigate twice, and spray twice. For cotton I rotary till in spring, plant improved Bt cotton seed which saves me some bollworm spraying, irrigate four times, and still spray five times across the season for other pests. At 72 the cotton picking is hard but the cash matters. My well irrigation keeps all three crops stable even in dry spells.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I farm 6 mu in Quzhou County as I always have: 4 mu in a winter wheat to summer maize rotation and 2 mu of cotton for cash income. For wheat I use an improved variety, rotary till before planting, split my nitrogen across base and jointing applications, irrigate three times, and spray three times for aphids and fungal disease. For maize I go no-tillage straight after the wheat harvest using a reliable hybrid like Zhengdan 958, irrigate twice, and spray twice. For cotton I rotary till in spring, plant improved Bt cotton seed which saves me some bollworm spraying, irrigate four times, and still spray five times across the season for other pests. At 72 the cotton picking is hard but the cash matters. My well irrigation keeps all three crops stable even in dry spells."
+  },
+  "elapsed_seconds": 47.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_11",
+  "tier": 2,
+  "provider": "claude"
+}

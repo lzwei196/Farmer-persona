@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 25 years, and Quzhou is wheat-maize country \u2014 that rotation is the backbone of what I do. The well means I'm not gambling on rain. My 232.9 mu breaks down roughly like this in my head: about 200 mu stays in the wheat-maize rotation, and I keep around 33 mu for cauliflower, which I grow in autumn after the summer maize comes off on a separate plot.\n\nFor **wheat**, I plant in October as always. I'll use improved varieties \u2014 the certified seed from the county supply cooperative, probably Jimai series. I plough deep before planting to break up compaction. I irrigate four times: winter water in December to protect against freeze, then jointing, heading, and grain-filling stages. Two pesticide rounds \u2014 one for powdery mildew and rust in spring, one for aphids around heading. Nitrogen goes in split \u2014 base plus topdressing at jointing.\n\nFor **maize**, I plant immediately after wheat harvest in June, no time to waste in this double-crop system. I use hybrid seed, Xianyu 335 is what most of us here buy. After wheat I just do rotary tillage, no time for deep ploughing. Three irrigations \u2014 emergence if it's dry, tasseling, and grain fill. I apply nitrogen in two shots too.\n\nFor **cauliflower**, I start transplants in August on my vegetable plot and harvest late October into November. Vegetables need more water and more spraying \u2014 I irrigate six times and apply pesticide five times. It brings in more cash per mu than grain, which matters for the household.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 200,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 200,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cauliflower\",\n      \"season\": \"autumn\",\n      \"area_mu\": 32.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1200\n    }\n  ],\n  \"reasoning_summary\": \"My 232.9 mu is split between a 200-mu wheat-maize double-crop rotation and a 32.9-mu cauliflower plot. Wheat goes in October with deep ploughing, improved certified seed, split nitrogen application of 16 kg/mu, and four irrigations timed to critical growth stages; maize follows immediately after wheat harvest in June using hybrid seed and rotary tillage to save time, with 18 kg/mu nitrogen and three irrigations. Cauliflower is transplanted in August on the separate vegetable plot, harvested in late October, and receives heavier inputs \u2014 six irrigations and five pesticide applications \u2014 because it commands a higher market price and needs closer management than grain crops. All decisions reflect 25 years of practice on this land and standard input levels for Quzhou County conditions.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 200,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 200,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cauliflower",
+        "season": "autumn",
+        "area_mu": 32.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 6,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1200
+      }
+    ],
+    "reasoning_summary": "My 232.9 mu is split between a 200-mu wheat-maize double-crop rotation and a 32.9-mu cauliflower plot. Wheat goes in October with deep ploughing, improved certified seed, split nitrogen application of 16 kg/mu, and four irrigations timed to critical growth stages; maize follows immediately after wheat harvest in June using hybrid seed and rotary tillage to save time, with 18 kg/mu nitrogen and three irrigations. Cauliflower is transplanted in August on the separate vegetable plot, harvested in late October, and receives heavier inputs \u2014 six irrigations and five pesticide applications \u2014 because it commands a higher market price and needs closer management than grain crops. All decisions reflect 25 years of practice on this land and standard input levels for Quzhou County conditions."
+  },
+  "elapsed_seconds": 40.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_1",
+  "tier": 2,
+  "provider": "claude"
+}

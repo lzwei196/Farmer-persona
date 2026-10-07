@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 10.7 mu in a wheat-maize rotation, so I will use the same 10.7 mu for winter wheat first and then summer maize after wheat harvest. I am 65 and I have farmed for 30 years, so I will keep to a steady, familiar way that protects yield and does not make the work too complicated. I have well irrigation, so I will rely on that to secure the key water stages. For wheat, I will use improved seed, put most of the fertilizer in before sowing, irrigate at the important stages, and keep pesticide use limited to what is needed for weeds and disease. After wheat harvest, I will plant hybrid maize on the same land because hybrid maize gives me more stable yield. I will keep fertilizer moderate, use fewer irrigations than wheat, and control pests when pressure shows up. I will use rotary tillage for wheat to prepare the land well, and no-tillage for maize after wheat harvest to save time and catch the season on time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will keep my full 10.7 mu in the usual wheat-maize rotation because that matches my land, my experience, and my irrigation conditions. I will use improved wheat seed and hybrid maize seed because I want stable production on limited land. I will keep fertilizer at moderate levels, with enough nitrogen to support yield and enough phosphorus and potassium to maintain crop growth, but I will not push too hard because I want reliable returns and manageable costs. I will irrigate wheat more times because it depends more on timely water, and I will irrigate maize fewer times because summer rain can help. I will control weeds, insects, and diseases with a limited number of pesticide applications, and I will use rotary tillage for wheat and no-tillage for maize so I can save time after wheat harvest and plant maize on time.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will keep my full 10.7 mu in the usual wheat-maize rotation because that matches my land, my experience, and my irrigation conditions. I will use improved wheat seed and hybrid maize seed because I want stable production on limited land. I will keep fertilizer at moderate levels, with enough nitrogen to support yield and enough phosphorus and potassium to maintain crop growth, but I will not push too hard because I want reliable returns and manageable costs. I will irrigate wheat more times because it depends more on timely water, and I will irrigate maize fewer times because summer rain can help. I will control weeds, insects, and diseases with a limited number of pesticide applications, and I will use rotary tillage for wheat and no-tillage for maize so I can save time after wheat harvest and plant maize on time."
+  },
+  "elapsed_seconds": 23.4,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_9",
+  "tier": 2,
+  "provider": "codex"
+}

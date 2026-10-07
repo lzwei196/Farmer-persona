@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll speak as this farmer and then give my plan as JSON.\n\n**My reasoning:**\n\nI farm 6 mu with my family. My main money comes from garlic \u2014 Quzhou garlic sells well, the dealers come to the village every summer to buy. So I put 4 mu in garlic this autumn, and keep 2 mu for wheat because we eat our own flour, I don't like buying noodles from the market. After I pull up the garlic in May and cut the wheat in June, I plant summer maize on all 6 mu \u2014 the maize is for feeding and some for selling.\n\nFor garlic, I do like last year because last year the price was good and I got maybe 2000 jin per mu. I buy the compound fertilizer (the 15-15-15 kind) before planting \u2014 about 4 bags per mu, that is 200 jin. Then when the garlic comes up in spring I top-dress with urea, 1 bag per mu. My neighbor Lao Wang's wife said she cut the fertilizer and her garlic was small, so I would rather use a bit more. Garlic also needs water \u2014 I irrigate once before the ground freezes, once when the shoots come out in spring, then two or three more times when the bulbs swell. For pests I spray maybe 4 times \u2014 leaf disease, thrips, and the maggots in the bulb.\n\nFor wheat, I put compound fertilizer as base, then urea at greening-up. Three waterings \u2014 winter water, spring water, and one at filling. Spray twice, mostly for aphids and head blight.\n\nFor summer maize after garlic, the ground is already loose so I just clear it and seed directly, no plough needed. I buy Zhengdan-style hybrid seed from the agro-shop. Fertilizer is less because garlic leftover helps. After wheat I use rotary. I irrigate twice if no rain, and spray once for the borer.\n\nMy husband helps and my son comes back for garlic harvest \u2014 that is the busy time, we hire 2-3 neighbors for a few days.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 2000\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"Garlic is my main cash crop so I put 4 mu in it and fertilize well \u2014 4 bags of compound plus 1 bag of urea per mu, like last year when the price and yield were good. I keep 2 mu for wheat because our family of 7 eats our own flour. After garlic and wheat come off I plant summer maize on all 6 mu with hybrid seed; I use less fertilizer on the maize after garlic since the ground still has strength left. I would rather spend a bit extra on fertilizer than risk a small harvest \u2014 a bad garlic year would really hurt us.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "garlic",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 2000
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "Garlic is my main cash crop so I put 4 mu in it and fertilize well \u2014 4 bags of compound plus 1 bag of urea per mu, like last year when the price and yield were good. I keep 2 mu for wheat because our family of 7 eats our own flour. After garlic and wheat come off I plant summer maize on all 6 mu with hybrid seed; I use less fertilizer on the maize after garlic since the ground still has strength left. I would rather spend a bit extra on fertilizer than risk a small harvest \u2014 a bad garlic year would really hurt us."
+  },
+  "elapsed_seconds": 54.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_14",
+  "tier": 3,
+  "provider": "claude"
+}

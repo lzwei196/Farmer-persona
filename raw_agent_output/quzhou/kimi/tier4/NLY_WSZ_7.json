@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm a 44-year-old woman farming 2.6 mu in Quzhou. I've been doing this for 20 years, and my family has seven mouths to feed, though some of the younger ones work off-farm and send a bit home. I only finished primary school, so I don't read those extension leaflets much \u2014 I watch what my neighbors do and I remember what happened on my own fields.\n\n**This year, here's how I'm thinking:**\n\nThe maize just came off the field \u2014 or it will in the next few days \u2014 and I need to get the wheat in by mid-October. The turnaround is always tight. My neighbor Wang across the lane tried saving money on seed two years ago and bought some cheap stuff from the open market. His wheat was thin and patchy, and he ended up losing more than he saved. I remember that, so I still buy my seed from the county supply store, but I only buy exactly what I need for 2.6 mu.\n\nFor fertilizer, I put down one bag of compound fertilizer per mu at planting \u2014 about 25 kg \u2014 and work it into the soil. Last year the wheat looked a bit yellow at jointing because the spring was dry, so I topdressed with urea. I plan to do the same this year: if the wheat looks off at jointing, I'll put another 15 kg of urea per mu. It costs more, but if I skip it and the weather turns bad, I'll lose a lot more. I'd rather waste a little fertilizer than risk a bad harvest. I can't afford those big losses.\n\nI irrigate wheat three times: once before winter to help it settle, once at jointing, and once at grain filling if it's dry. My well is metered and pumping isn't free, but wheat is my main cash crop for the year, so I give it the water. For the summer maize, the rains usually come in July and August, so I only plan two irrigations \u2014 one right after planting if it's dry, and one during tasseling if the rain doesn't show up.\n\nFor corn, everything has to go fast. Between wheat harvest and corn planting, sometimes I only have two or three days. I do one quick pass with the rotary tiller, or sometimes no-till if the ground is soft, then plant immediately. All the fertilizer for corn goes in at planting \u2014 compound fertilizer in the furrow \u2014 because there's no time to come back and topdress later. The corn season is too short.\n\nI don't hire labor. On 2.6 mu, paying 150 yuan per day for a worker would eat my whole margin. My family does everything \u2014 planting, harvesting, carrying bags. My son sends money from the city, but I don't want to ask him for farm money. This is my responsibility, and I manage with what I have.\n\nHere's my plan:\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 2.6,\n      \"planting_date\": \"mid October, right after the corn comes off\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"improved variety from the county supply store\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 18,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"One bag of compound fertilizer (about 25 kg) spread before planting and worked in. Then at jointing, if the wheat looks yellow, I topdress with urea, about 15 kg per mu.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary till right after maize harvest, broadcast seed and fertilizer, then drag a plank to cover\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 2.6,\n      \"planting_date\": \"mid June, within three days of wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"All the fertilizer goes down at planting \u2014 compound fertilizer in the seed furrow. No time for split application, the season is too short.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-till if possible, or one quick pass with the rotary tiller, then plant immediately with the hand planter\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 480\n    }\n  ],\n  \"total_input_cost_yuan\": 580,\n  \"reasoning_summary\": \"I have only 2.6 mu, so every jin of seed and every bag of fertilizer has to be counted carefully. I remember two years ago when I tried to save money by buying cheap seed from the market \u2014 the yield was terrible, and I lost more than I saved. So now I buy proper seed from the county store, but I only buy what I need for this small plot. For wheat, I put down compound fertilizer at planting because the soil is tired after the corn, and then I watch the color. If it turns yellow at jointing, I topdress with urea. That extra 15 kg per mu costs money, but if I skip it and the weather turns dry, I'll regret it. For corn, the window between wheat harvest and planting is so tight \u2014 sometimes only two or three days \u2014 so everything goes in at once. I irrigate wheat three times because my well can handle it and wheat pays the bills, but I only irrigate corn twice since the summer rains usually help. My son works in the city and sends some money home, but I don't want to ask him for farm money \u2014 this is my responsibility. I use family labor for everything because hiring workers costs at least 150 yuan per day now, and on 2.6 mu there's no margin for that.\"\n}\n```\n\nI also saved this plan to `farmer_plan.json` in your working directory.",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 2.6,
+        "planting_date": "mid October, right after the corn comes off",
+        "harvest_date": "early June",
+        "seed_type": "improved variety from the county supply store",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 18,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "One bag of compound fertilizer (about 25 kg) spread before planting and worked in. Then at jointing, if the wheat looks yellow, I topdress with urea, about 15 kg per mu.",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary till right after maize harvest, broadcast seed and fertilizer, then drag a plank to cover",
+        "labor_family_days": 8,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 18,
+        "area_mu": 2.6,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 2.6,
+        "planting_date": "mid June, within three days of wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "All the fertilizer goes down at planting \u2014 compound fertilizer in the seed furrow. No time for split application, the season is too short.",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-till if possible, or one quick pass with the rotary tiller, then plant immediately with the hand planter",
+        "labor_family_days": 6,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 480,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 2.6,
+        "expected_yield_kg_per_mu": 480,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3
+      }
+    ],
+    "total_input_cost_yuan": 580,
+    "reasoning_summary": "I have only 2.6 mu, so every jin of seed and every bag of fertilizer has to be counted carefully. I remember two years ago when I tried to save money by buying cheap seed from the market \u2014 the yield was terrible, and I lost more than I saved. So now I buy proper seed from the county store, but I only buy what I need for this small plot. For wheat, I put down compound fertilizer at planting because the soil is tired after the corn, and then I watch the color. If it turns yellow at jointing, I topdress with urea. That extra 15 kg per mu costs money, but if I skip it and the weather turns dry, I'll regret it. For corn, the window between wheat harvest and planting is so tight \u2014 sometimes only two or three days \u2014 so everything goes in at once. I irrigate wheat three times because my well can handle it and wheat pays the bills, but I only irrigate corn twice since the summer rains usually help. My son works in the city and sends some money home, but I don't want to ask him for farm money \u2014 this is my responsibility. I use family labor for everything because hiring workers costs at least 150 yuan per day now, and on 2.6 mu there's no margin for that."
+  },
+  "elapsed_seconds": 54.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_7",
+  "tier": 4,
+  "provider": "kimi"
+}

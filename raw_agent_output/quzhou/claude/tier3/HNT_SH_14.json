@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 20 mu here in Quzhou, wheat in winter and maize after. I have been doing this since I was young, same as my father. With 6 mouths to feed and some of us working outside, I cannot take chances with the harvest.\n\nFor the wheat this autumn, I will plant the same Jimai variety the seed shop sells \u2014 most neighbors use it and it does well on our land. I plough before sowing because the maize stubble needs to go in. At sowing I put about 2 bags of compound fertilizer per mu as base \u2014 that is roughly 50 kg of the 18-18-18 type. Then at green-up in spring I top-dress with urea, about 20 kg per mu. That gives me enough nitrogen. I do not want yellow wheat in March \u2014 my neighbor Old Wang had that two years ago and he lost a lot.\n\nIrrigation on wheat: I water before winter to protect the roots, then at jointing in March, and again at heading if the spring is dry. Usually 3 times from the well. Pesticide I spray twice \u2014 once for aphids and once mixed with the herbicide.\n\nFor the summer maize, I do not plough \u2014 just straight seed into the wheat stubble, no-tillage with the seeder. Saves time and diesel. I use Zhengdan or whatever hybrid the dealer recommends that year. At sowing I put compound fertilizer, 40 kg per mu, then top-dress urea 25 kg per mu when the maize is knee-high. Maize eats a lot of nitrogen, I have seen that myself.\n\nMaize I usually only irrigate once, at tasseling if July rain is short. Pesticide twice \u2014 for armyworm and borer. Last year my yield was about 550 kg maize and 470 kg wheat per mu, I expect about the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year and what my neighbors do. Wheat gets ploughed and fertilized heavier because it is in the ground a long time and I water it from the well three times. Maize goes straight into the stubble, no plough, save diesel and time. I put a bit extra fertilizer to be safe \u2014 a yellow field scares me more than spending a few hundred yuan extra on urea. With 6 people at home I cannot risk a bad harvest, so I stick to the hybrid seed the dealer sells and spray pesticide twice each crop like always.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      }
+    ],
+    "reasoning_summary": "I do what worked last year and what my neighbors do. Wheat gets ploughed and fertilized heavier because it is in the ground a long time and I water it from the well three times. Maize goes straight into the stubble, no plough, save diesel and time. I put a bit extra fertilizer to be safe \u2014 a yellow field scares me more than spending a few hundred yuan extra on urea. With 6 people at home I cannot risk a bad harvest, so I stick to the hybrid seed the dealer sells and spray pesticide twice each crop like always."
+  },
+  "elapsed_seconds": 31.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_14",
+  "tier": 3,
+  "provider": "claude"
+}

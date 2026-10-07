@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been doing this for fifty years. My father did it before me, and his father before that. I know this land. I know Quzhou. The soil here is deep and good if you put water and fertilizer in it. My wife and I, just the two of us now, we can manage 10.1 mu fine. It is not too much.\n\nEvery year is the same rotation \u2014 wheat goes in after October, maize goes in after we cut the wheat in June. The whole 10.1 mu does both. That is how you feed yourself and have something left to sell.\n\n**Wheat:** I will use the improved seed variety I buy from the township seed station \u2014 I have been using their seed for over ten years now, it does well here. After the maize is harvested in October, I rotary-till the field, then I put down base fertilizer before seeding. I apply urea in two splits \u2014 base and at jointing. I water three times: once before sowing to get good germination, once at jointing, once at heading. My well reaches the water table fine. Two sprays for disease and aphids in spring, that is standard. I expect around 450 jin per mu if the weather cooperates, maybe more.\n\n**Maize:** Right after wheat harvest, I direct-seed. No time to waste \u2014 the summer is short. I use hybrid seed, everybody does now for maize, the yield difference is real and I have seen it myself. I put base fertilizer in and then top-dress with urea when it reaches knee height. I water at planting if the ground is dry, and again at silking \u2014 that is the critical time. One pesticide spray for corn borer, sometimes a second if bad. I expect around 550 jin per mu.\n\nI do not overthink it. I do what has worked.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old farmer with 50 years of experience on the North China Plain follows the standard winter wheat\u2013summer maize double-cropping rotation across all 10.1 mu. He uses improved wheat seed from the local township station and hybrid maize seed, both long-proven in this area. Fertilizer rates reflect decades of experiential calibration rather than soil testing \u2014 moderate nitrogen split between basal and top-dress applications, with phosphorus and potassium applied as base. Irrigation relies on the household well: three waterings for wheat (pre-sowing, jointing, heading) and two for maize (at planting and silking). Pesticide use is minimal and targeted \u2014 two sprays for wheat disease and aphids in spring, one for maize corn borer. Maize is direct-seeded immediately after wheat harvest with no tillage to save time and labor given the short summer window. Yield expectations of 450 kg/mu for wheat and 550 kg/mu for maize are consistent with what this farmer has achieved over many years under typical Quzhou weather conditions.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 65-year-old farmer with 50 years of experience on the North China Plain follows the standard winter wheat\u2013summer maize double-cropping rotation across all 10.1 mu. He uses improved wheat seed from the local township station and hybrid maize seed, both long-proven in this area. Fertilizer rates reflect decades of experiential calibration rather than soil testing \u2014 moderate nitrogen split between basal and top-dress applications, with phosphorus and potassium applied as base. Irrigation relies on the household well: three waterings for wheat (pre-sowing, jointing, heading) and two for maize (at planting and silking). Pesticide use is minimal and targeted \u2014 two sprays for wheat disease and aphids in spring, one for maize corn borer. Maize is direct-seeded immediately after wheat harvest with no tillage to save time and labor given the short summer window. Yield expectations of 450 kg/mu for wheat and 550 kg/mu for maize are consistent with what this farmer has achieved over many years under typical Quzhou weather conditions."
+  },
+  "elapsed_seconds": 47.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_3",
+  "tier": 2,
+  "provider": "claude"
+}

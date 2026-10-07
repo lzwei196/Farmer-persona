@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning:**\n\nI've been farming this land in Quzhou my whole life, same as my father. Around here, everyone does wheat in winter and corn in summer \u2014 two crops a year on the same fields. The soil here on the North China Plain is good for grain. I don't know why I would change what works.\n\nI have about 8 mu of land. I'll plant all of it to wheat come October, then follow with maize right after the wheat harvest in June. That's the sensible rotation \u2014 the ground doesn't sit idle, and I sell both.\n\nFor wheat, I'll use the improved seed I buy from the supply cooperative \u2014 the same variety as last year, \u6d4e\u9ea622 type. I won't bother trying new fancy seeds I don't know. I'll put down plenty of fertilizer at sowing and again at jointing. Water is tight here, so I'll irrigate three times \u2014 once before sowing to get moisture in the ground, once at jointing, once around heading. That's what I've always done, and my yields are around 450 jin per mu.\n\nFor maize, I'll use hybrid seed \u2014 that's just standard now, everyone does. I'll direct-seed straight into the wheat stubble, no plowing needed in summer, that saves time and fuel. Summer usually gets rain, so I'll only irrigate once unless it's very dry.\n\nI apply pesticide twice on wheat \u2014 once for weeds in winter, once for aphids and rust in spring. Maize just needs one spray for stem borer.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu of flat, irrigated land in Quzhou County using the standard wheat-maize double-cropping rotation that every farmer here follows. I plant improved wheat seed in October using rotary tillage and apply fertilizer in two splits \u2014 at sowing and at jointing \u2014 irrigating three times over the season because rainfall alone is not enough here. After the June wheat harvest I immediately direct-seed hybrid maize into the stubble without plowing to save time and moisture, relying mostly on summer rain with one backup irrigation. I spray wheat twice for weeds and pests and maize once for stem borer. I expect roughly 450 kg/mu of wheat and 550 kg/mu of maize, which is normal for our area and enough to sell the surplus after keeping grain for the household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu of flat, irrigated land in Quzhou County using the standard wheat-maize double-cropping rotation that every farmer here follows. I plant improved wheat seed in October using rotary tillage and apply fertilizer in two splits \u2014 at sowing and at jointing \u2014 irrigating three times over the season because rainfall alone is not enough here. After the June wheat harvest I immediately direct-seed hybrid maize into the stubble without plowing to save time and moisture, relying mostly on summer rain with one backup irrigation. I spray wheat twice for weeds and pests and maize once for stem borer. I expect roughly 450 kg/mu of wheat and 550 kg/mu of maize, which is normal for our area and enough to sell the surplus after keeping grain for the household."
+  },
+  "elapsed_seconds": 38.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 1,
+  "provider": "claude"
+}

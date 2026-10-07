@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know Quzhou's soil and weather like I know my own hands. Let me think through what I'll do this season.\n\nMy 5 mu splits naturally: 2 mu for cotton \u2014 that's my cash crop and why I call myself a cotton farmer \u2014 and 3 mu in the wheat-maize rotation. The kids in the city can't always come back for busy periods, so I need to be realistic about my labor. At 65 my back isn't what it was.\n\n**Cotton (2 mu):** I'll plant Bt hybrid cotton again. It cuts down the bollworm spraying, which matters when I'm working mostly alone. I apply base fertilizer before planting \u2014 phosphorus and potassium worked into the bed \u2014 then split my nitrogen across topdressing at squaring and boll-setting. Four irrigations: at planting, flowering, early boll, late boll. I'll still spray four or five times \u2014 aphids don't care about Bt \u2014 but it's manageable. I'll rotary till rather than deep plough. My target is 250 jin of seed cotton per mu. That's what this land gives me if I do it right.\n\n**Winter wheat (3 mu):** I plant in October after I've deep-ploughed with a hired tractor. Improved variety from the county seed station \u2014 I stopped saving my own seed years ago, the yields just weren't there. Four irrigations: winter water before the freeze, then jointing, heading, and grain fill. Two pesticide passes for powdery mildew and aphids. I expect 450 kg/mu.\n\n**Summer maize (3 mu, same land as wheat):** Soon as wheat comes off in June I get the maize in without ploughing \u2014 no time to lose moisture and I don't have the labor for a full tillage pass. Hybrid seed, Zhengdan or whatever the ag-supply has this year. Three irrigations if the summer rains are weak. Two sprays for armyworm. I expect 550 kg/mu.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 65-year-old farmer with 40 years on this land and reduced household labor due to off-farm migration, I prioritize manageable workloads alongside reliable income. I allocate 2 mu to hybrid Bt cotton as my primary cash crop \u2014 Bt reduces bollworm pressure and saves me spraying labor \u2014 and keep 3 mu in winter wheat followed by summer maize for food security and steady grain income. I use improved and hybrid seeds throughout because yield gains outweigh the cost. Nitrogen rates reflect local experience with Quzhou soils; I split cotton nitrogen across two topdressings to match plant demand. I deep-plough wheat fields in autumn to break pest cycles but use no-tillage for summer maize directly after wheat harvest to conserve moisture and save labor. All three crops draw on my well irrigation, with cotton requiring the most water management across boll development stages.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 65-year-old farmer with 40 years on this land and reduced household labor due to off-farm migration, I prioritize manageable workloads alongside reliable income. I allocate 2 mu to hybrid Bt cotton as my primary cash crop \u2014 Bt reduces bollworm pressure and saves me spraying labor \u2014 and keep 3 mu in winter wheat followed by summer maize for food security and steady grain income. I use improved and hybrid seeds throughout because yield gains outweigh the cost. Nitrogen rates reflect local experience with Quzhou soils; I split cotton nitrogen across two topdressings to match plant demand. I deep-plough wheat fields in autumn to break pest cycles but use no-tillage for summer maize directly after wheat harvest to conserve moisture and save labor. All three crops draw on my well irrigation, with cotton requiring the most water management across boll development stages."
+  },
+  "elapsed_seconds": 58.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_6",
+  "tier": 2,
+  "provider": "claude"
+}

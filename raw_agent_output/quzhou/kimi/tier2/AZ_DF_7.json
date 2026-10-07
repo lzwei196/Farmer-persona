@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am seventy-two years old. My back is not what it used to be, and it is just my wife and me working the land now, so I must be careful with labor. I have farmed these fields for sixty years, and I know what works in Quzhou. My well gives me reliable water, but electricity for the pump costs money, so I do not waste a drop.\n\nThis year I will keep my 6.7 mu in the wheat-maize rotation and my 3.5 mu in stevia. The wheat-maize land is my backbone: I sow wheat in mid-October, harvest it by early June, and plant maize the same day. I cannot afford to let that land sit idle. For the wheat, I will rotary-till the soil and sow the improved seed I have always used\u2014about 30 jin per mu. I will put down 100 kg of compound fertilizer (15-15-15) as a base and another 100 kg of urea for the topdressing, spread across the three irrigations I give it: one at green-up, one at jointing, and one at flowering. I also spray for insects twice, for weeds three times, and for fungus once, because if I let the rust or the aphids in, the crop is finished. I expect around 1,100 jin per mu.\n\nAs soon as the wheat is off the field in early June, I will plant the hybrid maize without tilling\u2014no-tillage saves my back and saves time. I will use one package of seed per mu and spread 80 kg of compound fertilizer (28-6-6) at sowing. Maize here does not need as much water as wheat, so I will irrigate twice: once right after sowing and once at the big-ear stage. Two sprays for insects and one growth regulator should be enough. If the weather cooperates, I hope for about 1,600 jin per mu.\n\nMy 3.5 mu of stevia is my cash crop. It is sown in late March and harvested in early August. I rotary-till that plot because stevia likes loose soil. I plant the Chengguang variety, about 9,333 plants per mu. It is hungry for fertilizer, so I put down 100 kg of compound (18-12-18) at planting and another 240 kg of compound (15-15-15) later in the season. I irrigate four times and spray for pests and fungus seven times each\u2014stevia leaves must be clean to sell to the buyers. I usually get about 600 jin of dry leaves per mu.\n\nThis is the plan I have followed for years, and at my age I see no reason to change what still feeds us and pays the bills.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17.16,\n      \"phosphorus_kg_per_mu\": 2.24,\n      \"potassium_kg_per_mu\": 2.24,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 3.34,\n      \"phosphorus_kg_per_mu\": 0.72,\n      \"potassium_kg_per_mu\": 0.72,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1594\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15.43,\n      \"phosphorus_kg_per_mu\": 13.71,\n      \"potassium_kg_per_mu\": 15.43,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I keep 6.7 mu in wheat-maize double cropping because it is the reliable backbone of my farm, and 3.5 mu in stevia because it brings cash. Wheat gets rotary tillage, three irrigations, and six pesticide sprays. Maize follows immediately after wheat harvest with no-tillage to save labor, two irrigations, and three pesticide applications. Stevia is planted in spring on its own plot, receives heavy fertilizer, four irrigations, and frequent pest and fungus control to keep the leaves marketable.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17.16,
+        "phosphorus_kg_per_mu": 2.24,
+        "potassium_kg_per_mu": 2.24,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 3.34,
+        "phosphorus_kg_per_mu": 0.72,
+        "potassium_kg_per_mu": 0.72,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1594
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15.43,
+        "phosphorus_kg_per_mu": 13.71,
+        "potassium_kg_per_mu": 15.43,
+        "irrigation_times": 4,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I keep 6.7 mu in wheat-maize double cropping because it is the reliable backbone of my farm, and 3.5 mu in stevia because it brings cash. Wheat gets rotary tillage, three irrigations, and six pesticide sprays. Maize follows immediately after wheat harvest with no-tillage to save labor, two irrigations, and three pesticide applications. Stevia is planted in spring on its own plot, receives heavy fertilizer, four irrigations, and frequent pest and fungus control to keep the leaves marketable."
+  },
+  "elapsed_seconds": 176.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_7",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 16 mu in Quzhou for 45 years. I never went to school \u2014 everything I know, I learned by doing and watching my neighbors. My old lady and me are the only ones at home now, so I hire machines for the heavy work and get day-laborers when we need extra hands.\n\nFor winter wheat, I plant the same improved seed Old Wang used last year, about 15 kg per mu. At planting time I spread half a bag of compound fertilizer on each mu, then when the wheat greens up I topdress with half a bag of urea per mu, and another half bag when it joints. I know that is a lot of white fertilizer, but two years ago I tried to save money and used less, and the wheat turned yellow and thin. I lost nearly 100 kg per mu. Never again. A bad harvest is a disaster; wasting some fertilizer is just a cost. I irrigate four times: winter water after the seed is in, jointing, heading, and once more in May if the rain stays away. I spray three times \u2014 herbicide in spring, then bug medicine when the heads come out. I rotary-till before planting. If the weather is normal, I will get about 520 kg per mu.\n\nFor summer corn, there is no time to plow after cutting wheat \u2014 the season is too short. I plant hybrid seed right away with the no-till machine, about 2.5 kg per mu. I put compound fertilizer down with the planter, about half a bag per mu, then side-dress with half a bag of urea when the corn is knee-high. I irrigate three times: after sowing if the ground is dry, at the big flare stage, and when the ears fill. I spray three times for weeds and the corn borer. I expect about 600 kg per mu. That is what my neighbors get, so that is what I aim for.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 16.1 mu wheat-maize rotation the way my neighbors do because that is what I have seen work over 45 years. For wheat, I apply compound fertilizer at planting and topdress with urea twice to make sure I do not lose yield \u2014 I learned the hard way that skimping on fertilizer costs more than it saves. I irrigate four times, spray three times, and rotary-till before planting. For summer maize, I plant hybrid seed immediately after wheat harvest with no-till planting to save time, apply compound fertilizer at sowing and urea at knee-height, irrigate three times, and spray three times. I hire machines and labor since there are only two of us at home.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I manage my 16.1 mu wheat-maize rotation the way my neighbors do because that is what I have seen work over 45 years. For wheat, I apply compound fertilizer at planting and topdress with urea twice to make sure I do not lose yield \u2014 I learned the hard way that skimping on fertilizer costs more than it saves. I irrigate four times, spray three times, and rotary-till before planting. For summer maize, I plant hybrid seed immediately after wheat harvest with no-till planting to save time, apply compound fertilizer at sowing and urea at knee-height, irrigate three times, and spray three times. I hire machines and labor since there are only two of us at home."
+  },
+  "elapsed_seconds": 267.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "AZ_DF_9",
+  "tier": 3,
+  "provider": "kimi"
+}

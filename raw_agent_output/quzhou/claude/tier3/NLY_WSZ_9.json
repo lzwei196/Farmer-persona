@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed these 8 mu for 35 years now. My father farmed before me. I know this land \u2014 it's clay, heavy when wet. Last year wheat gave me around 450 kg per mu, maize about 550. That's normal for around here. My neighbor Old Wang got 480 on wheat but he put on more fertilizer than me, and I'm not sure it paid off after you count the cost.\n\nHere's how I think about it. Two of my kids work in Handan, so it's mostly me and my wife in the field. At busy times \u2014 wheat harvest and maize planting in June, maize harvest in October \u2014 I hire the combine and the seeder, everybody does. 8 mu is not big, not small. I can't afford to waste money on fertilizer I don't need, but I also can't afford a bad harvest. Five mouths.\n\n**For wheat (winter):**\nI plant early October, harvest early June. I use improved seed from the county seed shop \u2014 \"Jimai 22\" or whatever they have, not the old kind my father used. Before sowing I plough deep \u2014 wheat likes a good bed, my father always said so. For base fertilizer I put on 2 bags of compound (15-15-15), that's 100 jin, 50 kg per mu. Then in spring at green-up I top-dress 1 bag of urea per mu, that's 25 kg. So total N is roughly 7.5 from compound plus 11.5 from urea \u2014 call it 19 kg. I know some neighbors put more but my land responds well enough. Irrigation: once at sowing if dry, once at green-up in March, once at jointing if no rain. That's my well. Spray once for weeds in spring, once for aphids and yellow rust around heading. Two sprays.\n\n**For maize (summer):**\nRight after wheat harvest, no time to plough \u2014 I use no-till seeder, everyone does now. Hybrid seed, \"Zhengdan 958\" type. At sowing I put 1 bag of compound as starter, 25 kg per mu. Then at big trumpet stage (about 10 leaves) I top-dress 1.5 bags urea, that's about 37 kg \u2014 maize is a heavy eater. Total N around 20 kg. Irrigate once after sowing to get it up, once more if July is dry. Spray once for armyworm and borer, maybe once for weeds if the pre-emergence didn't hold. Harvest end of September.\n\nI don't buy much potassium separately \u2014 the compound has some, and we return straw to the field now, that gives the soil back something.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 3.75,\n      \"potassium_kg_per_mu\": 3.75,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I follow what has worked on my 8 mu for years and what my neighbors do. Wheat gets a deep plough, 2 bags compound at sowing and 1 bag urea at green-up, three waterings from my well, two sprays. Maize goes in right after wheat with the no-till seeder \u2014 1 bag compound starter and 1.5 bags urea at big trumpet, two waterings, two sprays. I use improved wheat seed and hybrid maize seed from the county shop. I don't buy extra potash because the compound covers it and I return the straw. My yields have been steady around 450 wheat and 550 maize \u2014 no reason to gamble with big changes, fertilizer costs real money and five people depend on this harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I follow what has worked on my 8 mu for years and what my neighbors do. Wheat gets a deep plough, 2 bags compound at sowing and 1 bag urea at green-up, three waterings from my well, two sprays. Maize goes in right after wheat with the no-till seeder \u2014 1 bag compound starter and 1.5 bags urea at big trumpet, two waterings, two sprays. I use improved wheat seed and hybrid maize seed from the county shop. I don't buy extra potash because the compound covers it and I return the straw. My yields have been steady around 450 wheat and 550 maize \u2014 no reason to gamble with big changes, fertilizer costs real money and five people depend on this harvest."
+  },
+  "elapsed_seconds": 35.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_9",
+  "tier": 3,
+  "provider": "claude"
+}

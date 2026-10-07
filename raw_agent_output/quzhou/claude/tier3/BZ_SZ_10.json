@@ -1,0 +1,40 @@
+{
+  "raw_response": "Alright, let me think this through. I have 5 mu, wheat-maize rotation like most folks around here in Quzhou. Last year was okay, wheat gave me about 450 kg per mu and maize around 580 kg. I'll mostly stick with what worked.\n\n**Winter wheat (October to June):**\nI'll plant Jimai-22 or similar improved variety \u2014 the seed shop sells it, neighbors got decent yields. I'll use a rotary tiller before sowing, that's how I always do it, breaks up the stubble from maize.\n\nFor fertilizer, I'll put down a compound fertilizer (like 15-15-15) as base, about 50 jin per mu, then topdress urea at green-up. Total nitrogen works out to around 25 kg/mu. Phosphorus maybe 10 kg, potassium 7 kg. I don't want to skimp \u2014 if the wheat looks yellow in spring I'll regret it. Fertilizer costs money but a bad harvest costs more.\n\nIrrigation: I pump from the well. Overwinter water, green-up water, jointing, and one at grain-filling \u2014 that's 4 times. Can't skip these, wheat needs water here.\n\nPesticide: one spray for aphids and one for rust/powdery mildew, plus a herbicide. Call it 3 applications.\n\n**Summer maize (June to October):**\nHybrid seed, Zhengdan-958 or Denghai. Everyone plants hybrid now, no reason not to. No-till after wheat \u2014 straight seeder through the stubble, saves time and diesel.\n\nNitrogen around 22 kg/mu, split between base and one topdressing at big-trumpet stage. Phosphorus 6, potassium 5. Maize is rain-fed mostly but I'll irrigate once or twice if July is dry. Two pesticide sprays \u2014 one for armyworm/borer, one for leaf spot if needed.\n\nYield target: wheat 450 kg/mu, maize 580 kg/mu. That's what I got last year and the year before.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I'm sticking close to last year since it worked \u2014 5 mu wheat-maize rotation like everyone around me. Improved wheat variety with rotary tillage and compound fertilizer plus urea topdressing, 4 irrigations from my well because wheat here must have water. Hybrid maize no-till straight after wheat harvest to save time and diesel, lighter fertilizer than wheat since maize gets summer rain. I'd rather spend a bit extra on fertilizer than risk a thin harvest \u2014 family of 6 depends on this. Pesticide only when I see the pest, not blanket spraying.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I'm sticking close to last year since it worked \u2014 5 mu wheat-maize rotation like everyone around me. Improved wheat variety with rotary tillage and compound fertilizer plus urea topdressing, 4 irrigations from my well because wheat here must have water. Hybrid maize no-till straight after wheat harvest to save time and diesel, lighter fertilizer than wheat since maize gets summer rain. I'd rather spend a bit extra on fertilizer than risk a thin harvest \u2014 family of 6 depends on this. Pesticide only when I see the pest, not blanket spraying."
+  },
+  "elapsed_seconds": 30.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

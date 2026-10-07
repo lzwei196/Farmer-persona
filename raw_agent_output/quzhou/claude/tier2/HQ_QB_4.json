@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this same land for 15 years. I know what works here and what doesn't. My wife's brother works in the city so it's mostly me and my wife doing the farm work, with help during busy times. Water is getting harder \u2014 the well is deeper than it was ten years ago \u2014 so I try not to waste irrigation.\n\nMy 13.1 mu splits naturally: 8 mu for the wheat-maize rotation, and 5.1 mu for cotton. Cotton prices have been okay the last couple years and I know how to manage it, so I'm keeping it.\n\n**Wheat:** I'll plant Jimai 22 \u2014 it's what most people around here use, the seed station carries it, and I've had good results. I'll do base fertilizer before planting and top-dress at jointing. Three irrigations: winter water in December to protect against freeze, jointing stage, and heading. Rotary till after maize harvest to break up the stubble. I'll spray herbicide in February and do one or two fungicide/aphid treatments in April-May.\n\n**Maize:** Direct seed right after wheat harvest in June \u2014 no time to till, and frankly no-till works fine for summer maize. I'll use Zhengdan 958, it's reliable and everyone here uses it. July and August we usually get rain so I only need to irrigate once or twice. One herbicide pass early on, one pest spray mid-season.\n\n**Cotton:** Plough in March, transplant or direct seed in late April. I'll use a Bt hybrid to reduce bollworm pressure. Cotton needs potassium \u2014 I'll put more K here than on the grain crops. Four irrigations spread from June through August. Even with Bt I'll spray four times \u2014 aphids and mites still show up.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 13.1 mu between an 8 mu wheat-maize rotation and 5.1 mu of cotton, following the same pattern I have used for years in Quzhou. For wheat I use a locally proven improved variety with moderate fertilizer and three irrigations, conserving groundwater while protecting yield. Summer maize goes in directly after wheat harvest with no tillage \u2014 there is no time and it is not necessary \u2014 using a reliable hybrid and relying partly on summer rainfall. Cotton gets deep ploughing in spring, a Bt hybrid to reduce insecticide pressure on bollworm, heavier potassium fertilization that cotton needs, and four irrigations through the boll-filling period; with some family labor off-farm I cannot afford cotton to fail from under-investment.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 13.1 mu between an 8 mu wheat-maize rotation and 5.1 mu of cotton, following the same pattern I have used for years in Quzhou. For wheat I use a locally proven improved variety with moderate fertilizer and three irrigations, conserving groundwater while protecting yield. Summer maize goes in directly after wheat harvest with no tillage \u2014 there is no time and it is not necessary \u2014 using a reliable hybrid and relying partly on summer rainfall. Cotton gets deep ploughing in spring, a Bt hybrid to reduce insecticide pressure on bollworm, heavier potassium fertilization that cotton needs, and four irrigations through the boll-filling period; with some family labor off-farm I cannot afford cotton to fail from under-investment."
+  },
+  "elapsed_seconds": 57.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_4",
+  "tier": 2,
+  "provider": "claude"
+}

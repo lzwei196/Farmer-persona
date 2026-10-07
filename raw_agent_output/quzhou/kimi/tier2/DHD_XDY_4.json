@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 69 years old, and I have been working this land since I was 19. I never went to school, but the land has been my teacher for 50 years. My old woman and I are the only ones left in the house\u2014our children have gone to the city\u2014so I must be smart about how I use my strength. I have 57 mu total. Most of it, 47 mu, I will plant in the wheat-maize rotation that has never failed me. The remaining 10 mu I will grow scallion because it brings better money, though it breaks my back.\n\nThe wheat is already in the ground from last October\u2014I always plough the field deep after the maize harvest and plant the wheat before winter. I use an improved wheat variety that I know well; I do not chase after every new seed that the salesmen push. At my age, I stick with what is reliable. Now that spring has come, I will irrigate the wheat three times: once when it greens up, once at jointing, and once during grain filling. I will top-dress nitrogen at jointing when the wheat is hungry. I apply about 25 jin of pure nitrogen per mu over the season, with some phosphorus and potassium from compound fertilizer. I spray twice\u2014once for weeds and once for insects or rust if the weather turns damp. I expect about 460 jin of wheat per mu if the weather is fair.\n\nAfter I harvest the wheat in early June, I will immediately plant hybrid maize. I learned long ago that hybrid maize is worth the extra cost because the yield jump is real. I will drill the seeds directly into the stubble with no-tillage to save time and keep the soil moisture\u2014there is no time to waste between wheat harvest and maize planting. The maize needs less babysitting. I will irrigate it twice if the summer is dry, and I spray twice for weeds and corn borers. I give it slightly less fertilizer than the wheat, around 22 jin nitrogen per mu. If the summer cooperates, I expect around 520 jin per mu.\n\nThe 10 mu of scallion is my cash crop. It is hard work for two old people, but the buyers from the city pay well for clean, white scallions. I rotary-till the bed until it is fine and loose. I plant in spring and irrigate six times through the season because scallion roots are shallow and cannot stand dry spells. I fertilize heavier, especially potassium, to make the stalks thick and white. I have to spray four times for diseases like downy mildew and for thrips. I use an improved scallion variety that grows straight and uniform. I hope for about 2,800 jin per mu.\n\nI use my well for all irrigation. I pay for electricity to pump the water, so I do not waste a single drop, but I also do not let my crops go thirsty. I know my land like the palm of my hand.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 47,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 47,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"scallion\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 2800\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed for 50 years and know my 57 mu well. With only my wife and me left at home, I dedicate 47 mu to the reliable wheat-maize double-cropping system that feeds us and requires less daily labor, while keeping 10 mu for scallion because it earns more cash despite the harder work. I irrigate from my well only when necessary, use improved wheat and scallion varieties that I trust, and hybrid maize for its proven yield advantage. I keep fertilizer application practical\u2014not too little, not wasteful\u2014and adjust pesticide use to what the season actually demands.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 47,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 47,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "scallion",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 2800
+      }
+    ],
+    "reasoning_summary": "I have farmed for 50 years and know my 57 mu well. With only my wife and me left at home, I dedicate 47 mu to the reliable wheat-maize double-cropping system that feeds us and requires less daily labor, while keeping 10 mu for scallion because it earns more cash despite the harder work. I irrigate from my well only when necessary, use improved wheat and scallion varieties that I trust, and hybrid maize for its proven yield advantage. I keep fertilizer application practical\u2014not too little, not wasteful\u2014and adjust pesticide use to what the season actually demands."
+  },
+  "elapsed_seconds": 80.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "DHD_XDY_4",
+  "tier": 2,
+  "provider": "kimi"
+}

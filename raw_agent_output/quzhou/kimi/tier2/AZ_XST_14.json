@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 24 mu for 30 years now, and at 54 I know what works on my land. With just my wife and me at home \u2014 the kids work off-farm in the city \u2014 I can't be running around on too many different plots. So I keep things simple: 16 mu in the wheat-maize rotation, and 8 mu in cotton. The wheat and maize give me grain I can eat and sell, and the cotton brings in cash. I have a well, so I can irrigate, but pumping costs money, so I don't waste water.\n\nFor the wheat this winter, I'll rotary-till the 16 mu in early October and sow improved wheat seed \u2014 I've been using the same good variety as my neighbor Lao Zhang, and it gives me steady yields around 500 jin per mu. I'll put down about 100 jin of compound fertilizer per mu at planting, and then topdress with urea at green-up and jointing. I usually irrigate four times: once before winter to help the seedlings establish, and three times in spring when the weather gets dry. I spray herbicide once and insecticide two or three times \u2014 the wheat doesn't give too much trouble with pests.\n\nCome June, right after I harvest the wheat, there's no time to plough. Everyone around here plants summer maize with no-tillage \u2014 you just drill the seed straight into the stubble. I buy hybrid maize seed every year; you can't save hybrid seed. One bag per mu is enough. I put down about 80 jin of compound fertilizer when I plant, and irrigate two or three times depending on the rain. Maize needs less spraying than wheat \u2014 maybe three times total, herbicide and insecticide.\n\nMy 8 mu of cotton I rotary-till in April and plant with improved cotton seed. Cotton is more work and more spraying \u2014 I end up going out with the sprayer about 15 or 16 times through the season for insects, weeds, and growth regulators. I fertilize it about the same as the maize, around 100 jin of compound per mu, and irrigate three times. If the weather cooperates I expect around 250-300 jin of seed cotton per mu. It's labor intensive, but with only 8 mu I can manage it between the two of us, and the cotton money pays for the inputs on the grain crops.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I keep 16 mu in wheat-maize double cropping and 8 mu in cotton, which gives me both grain security and cash income. Wheat gets rotary tillage, improved seed, four irrigations, and about four pesticide sprays. Maize is no-till right after wheat harvest with hybrid seed and lighter inputs. Cotton takes more labor and spraying, but 8 mu is manageable for two people, and the cotton money helps pay for the rest of the farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I keep 16 mu in wheat-maize double cropping and 8 mu in cotton, which gives me both grain security and cash income. Wheat gets rotary tillage, improved seed, four irrigations, and about four pesticide sprays. Maize is no-till right after wheat harvest with hybrid seed and lighter inputs. Cotton takes more labor and spraying, but 8 mu is manageable for two people, and the cotton money helps pay for the rest of the farm."
+  },
+  "elapsed_seconds": 112.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_14",
+  "tier": 2,
+  "provider": "kimi"
+}

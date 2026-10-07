@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 60 years, and I been farming here in Quzhou 35 years. I never went to school, but my hands know the soil. My 12 mu, I split them like I always do \u2014 wheat and maize same land, two crop one year, and some cotton on the side for extra money.\n\nLet me think. Last year my wheat did okay, maybe 450 kilo per mu. Maize more, about 550 kilo. Cotton is harder, price not good these years, but I keep 2 mu because my wife picks it and we sell to the buyer who comes.\n\nFor wheat, I plant in October after maize come out. I use the improved seed the dealer sells \u2014 everybody in village use it now, my neighbor Old Zhang say his son bring from town. I put 2 bag of compound fertilizer before planting, that is maybe 50 kilo each bag, and then urea in spring when wheat turn green, one bag. That come to maybe 18 kilo nitrogen I think, phosphorus maybe 8, potassium 6. I water 3 time \u2014 before winter, after green-up, and when grain fill. I spray 2 time for aphid and rust.\n\nFor maize, summer crop after wheat. I use hybrid seed, the kind with red bag. I broadcast compound before planting, then topdress urea when knee-high. Maize eat more nitrogen than wheat, I put more \u2014 maybe 20 kilo. Phosphorus 7, potassium 6. Water 2 time if rain no come. Spray 1 time for borer.\n\nFor cotton, 2 mu only. I do like before. Cotton need more work but I know it. Nitrogen 15, phosphorus 8, potassium 10. Spray many time, 5 time, because bollworm always come. Water 3 time.\n\nI no plough deep \u2014 cost too much diesel. I use rotary, the small tractor come from village service.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm like my father and like my neighbors. Wheat-maize double crop on 10 mu, cotton on 2 mu for side money. I use bags of compound fertilizer before planting and urea on top when the crop need it, same as every year. Better to put little extra fertilizer than lose harvest \u2014 wasted fertilizer just money gone, but bad harvest is whole year gone. I copy what work for Old Zhang and others in village. Rotary tillage only, deep plough cost too much diesel. Water from my well when rain not enough.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm like my father and like my neighbors. Wheat-maize double crop on 10 mu, cotton on 2 mu for side money. I use bags of compound fertilizer before planting and urea on top when the crop need it, same as every year. Better to put little extra fertilizer than lose harvest \u2014 wasted fertilizer just money gone, but bad harvest is whole year gone. I copy what work for Old Zhang and others in village. Rotary tillage only, deep plough cost too much diesel. Water from my well when rain not enough."
+  },
+  "elapsed_seconds": 25.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_4",
+  "tier": 3,
+  "provider": "claude"
+}

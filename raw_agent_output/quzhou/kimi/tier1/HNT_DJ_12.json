@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and I have farmed the land in Quzhou County since I was a young girl. I never went to school, but I know this soil and I know what works. My family has about 6 mu of land in total. Every year I follow the rotation that our village has used for generations.\n\nMy main field is 5 mu, and on that land I grow winter wheat and then summer maize. The wheat is already in the ground from last October. When the weather warms up I will spread ammonium bicarbonate and compound fertilizer on it as topdressing, and I will irrigate it three more times from the well before we harvest in early June. I save some of my own wheat seed, but I also buy improved seed from the shop when my own is not enough. Before sowing wheat in autumn I always use the rotary tiller to prepare the field.\n\nAfter we cut the wheat in June, I will immediately sow hybrid maize seed on that same 5 mu. I do not till the soil for the maize anymore \u2014 I learned years ago that no-tillage saves me a lot of labor and fuel, and the maize still grows well if I manage the weeds. I use compound fertilizer for the maize and irrigate it twice during the summer. I expect the maize to yield better than the wheat.\n\nI also keep 1 mu separate for cotton. Cotton is more work because the insects come constantly, but the price is decent and I have grown it for many years so I know the rhythm of it. I will rotary till that plot in spring, plant the cotton, and apply fertilizer. I will need to spray for pests many times on the cotton \u2014 more than the wheat or maize \u2014 but that is just the nature of cotton.\n\nI do everything based on what I have seen work year after year. I do not try new fancy methods because at my age I cannot afford to take risks with my family's food and income.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou for over 40 years and I follow the wheat-maize rotation on my main 5 mu because it is the most reliable way to feed my family and earn some cash. I use rotary tillage for wheat and no-tillage for maize to save labor. I keep 1 mu of cotton because I know how to grow it and it brings good money, even though it needs many pesticide sprays. I apply ammonium bicarbonate and compound fertilizer to wheat, compound fertilizer to maize, and shop-bought fertilizer to cotton based on what I have always done. I irrigate from the village well using border irrigation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou for over 40 years and I follow the wheat-maize rotation on my main 5 mu because it is the most reliable way to feed my family and earn some cash. I use rotary tillage for wheat and no-tillage for maize to save labor. I keep 1 mu of cotton because I know how to grow it and it brings good money, even though it needs many pesticide sprays. I apply ammonium bicarbonate and compound fertilizer to wheat, compound fertilizer to maize, and shop-bought fertilizer to cotton based on what I have always done. I irrigate from the village well using border irrigation."
+  },
+  "elapsed_seconds": 211.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HNT_DJ_12",
+  "tier": 1,
+  "provider": "kimi"
+}

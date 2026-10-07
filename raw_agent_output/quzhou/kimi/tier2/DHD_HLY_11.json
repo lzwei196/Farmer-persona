@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 12.4 mu in Quzhou for 35 years, and I know what works on this land. With six people in my household and some of my family working off-farm, I need crops that give me steady returns without needing me in the fields every hour. My well gives me water when the rains fail, so I irrigate at the critical moments.\n\nMy wheat is already in the ground from last October. I sowed 10 mu with improved Jimai 22 after rotary tillage. Now that it is turning green in early spring, I will top-dress urea\u2014about 16 kg of nitrogen per mu\u2014because the wheat is hungry after winter and needs strength to grow tillers. I will irrigate three times: at green-up, at jointing, and at grain filling. I will spray once for weeds, twice for insects, and once for fungus if the weather turns damp. I expect about 500 kg per mu if the season is fair.\n\nAfter I cut the wheat in early June, I will immediately plant summer maize on the same 10 mu. There is no time to plough between crops, so I use no-tillage direct seeding. I buy hybrid seed, Denghai 605, because it grows fast and yields well. I apply compound fertilizer at sowing and top-dress urea when the maize is knee-high\u2014about 14 kg nitrogen per mu in total. I irrigate twice during the summer if the rains are sparse, and spray herbicide once and insecticide twice. I expect about 550 kg per mu.\n\nFor cotton, I keep 2.4 mu on the side. The price is usually better than grain, though it needs more labor. I will rotary-till the cotton plot in April and plant improved seed when the soil warms. I apply compound fertilizer at sowing and urea at flowering\u2014about 10 kg nitrogen per mu total. Cotton attracts bollworm and aphids, so I spray pesticide about 12 times through the season. I irrigate twice, once at flowering and once at boll stage. I hope for 260 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I divide my 12.4 mu into 10 mu of wheat-maize double cropping and 2.4 mu of cotton. The wheat is already sown, so I focus on spring top-dressing, three irrigations, and protective sprays. After wheat harvest in June, I plant hybrid maize with no-tillage to save time, using two irrigations and minimal sprays. Cotton demands more pesticides for bollworm, but I keep it for the better price, giving it rotary tillage, two irrigations, and twelve pesticide applications. My well irrigation and family labor let me manage all three crops through the year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I divide my 12.4 mu into 10 mu of wheat-maize double cropping and 2.4 mu of cotton. The wheat is already sown, so I focus on spring top-dressing, three irrigations, and protective sprays. After wheat harvest in June, I plant hybrid maize with no-tillage to save time, using two irrigations and minimal sprays. Cotton demands more pesticides for bollworm, but I keep it for the better price, giving it rotary tillage, two irrigations, and twelve pesticide applications. My well irrigation and family labor let me manage all three crops through the year."
+  },
+  "elapsed_seconds": 249.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_11",
+  "tier": 2,
+  "provider": "kimi"
+}

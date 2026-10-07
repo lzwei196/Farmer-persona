@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 62-year-old farmer in Quzhou County. I have been working this land since I was a teenager, and my family has about 10 mu. My children are working in the city now, so it is mostly me and my wife doing the farm work. I only went to primary school, so I do not read much, but I know my fields well.\n\nThis year, I will keep doing what I have always done: wheat in the winter and maize in the summer. That is what everyone in my village does. My neighbor Lao Wang tried cotton a few years ago, but picking it by hand was too much work for an old man like him, and the prices were not stable. Wheat and maize are safer. Even if one does poorly, the other usually carries us through.\n\nFor the wheat, I will plant an improved variety \u2014 maybe the kind I bought from the county shop last year, it did a bit better than the saved seed. I will hire the rotary tiller to prepare the land in early October, sow the wheat, and then irrigate three times: once before winter to help it survive the cold, once in spring when it turns green, and once at heading if it is dry. For fertilizer, I will put down a bag of compound fertilizer at planting and topdress with urea in spring. I do not know the exact kilos by heart \u2014 I buy by the bag \u2014 but it is about what I did last year. My nephew who went to agricultural school says I use too much, but I would rather put a little extra than risk a bad harvest. A bad year hurts more than a good year helps.\n\nFor the summer maize, there is no time for tillage after the wheat harvest in June. Everyone plants maize no-tillage now \u2014 you just drill the seeds into the wheat stubble. I will buy hybrid maize seed, Denghai 605, from the shop. You cannot save maize seed, that I know. Maize needs less fertilizer than wheat, and the summer rain usually helps, so I will irrigate maybe twice if it gets too dry. I will spray herbicide once and maybe insecticide if the corn borers show up.\n\nIt is not fancy, but it feeds my family and pays the bills. I do not have money to experiment with new crops or fancy machines. I will do what worked before.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double cropping system because it is what I know and what my neighbors do. At 62, I do not want the backbreaking labor of cotton picking, and my family depends on stable yields rather than gambling on new crops. I apply enough fertilizer to avoid a bad year, irrigate when the crops need it, and use no-tillage for maize because there is no time to plow between wheat harvest and maize planting. I buy improved wheat seed and hybrid maize seed from the county shop because they perform better than saved seed.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double cropping system because it is what I know and what my neighbors do. At 62, I do not want the backbreaking labor of cotton picking, and my family depends on stable yields rather than gambling on new crops. I apply enough fertilizer to avoid a bad year, irrigate when the crops need it, and use no-tillage for maize because there is no time to plow between wheat harvest and maize planting. I buy improved wheat seed and hybrid maize seed from the county shop because they perform better than saved seed."
+  },
+  "elapsed_seconds": 198.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_15",
+  "tier": 1,
+  "provider": "kimi"
+}

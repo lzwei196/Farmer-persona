@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 60 years old and have farmed these 3 mu in Quzhou County for 40 years. I know this land well. My wife and I manage it together with our well. We grow wheat in winter and maize in summer \u2014 that is the only sensible way here on the North China Plain, and every household around us does the same.\n\nFor my wheat this year: I will rotary till the field right after the maize harvest in October. I will sow about 30 jin of improved wheat seed per mu. Before sowing, I will spread compound fertilizer as a base \u2014 roughly 50 kg per mu. When the wheat greens up in spring, I will topdress with urea at the jointing stage. All together, that comes to about 18 kg of nitrogen, 7 kg of phosphorus, and 4 kg of potassium per mu. I have a well, so I will irrigate three times: once before winter if the soil is dry, once at jointing, and once during grain filling. I will spray pesticides three times in total \u2014 herbicide once after sowing, and insecticide once or twice when aphids or diseases show up. If the weather is normal, I expect around 1000 kg per mu.\n\nFor my maize: As soon as I harvest the wheat in early June, I will plant hybrid maize seed without tilling. There are barely 100 days before frost, and no-tillage saves time and keeps soil moisture. I will put down compound fertilizer at planting \u2014 about 16 kg of nitrogen, 5 kg of phosphorus, and 4 kg of potassium per mu. I will irrigate twice: once when the tassels come out and once during grain filling. I will spray herbicide once and insecticide once, so two pesticide applications in total. I expect about 1100 kg per mu from the maize.\n\nThis plan has worked for me for decades. I might adjust a little depending on seed prices and the spring rains, but the basics never change. My wife and I can handle this ourselves.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 3 mu plot in Quzhou County for 40 years using a wheat-maize double-cropping system. For wheat, I rotary till in October, sow improved seed at about 30 jin/mu, apply compound fertilizer as base plus urea topdressing at jointing totaling roughly 18 kg N, 7 kg P2O5, and 4 kg K2O per mu, irrigate three times, and make three pesticide applications, expecting around 1000 kg/mu. For maize, I immediately plant hybrid seed after the early June wheat harvest using no-tillage to save time and moisture, apply compound fertilizer at planting totaling roughly 16 kg N, 5 kg P2O5, and 4 kg K2O per mu, irrigate twice at tasseling and grain filling, make two pesticide applications, and expect about 1100 kg/mu. My wife and I manage this with our well irrigation, adjusting slightly each year for weather and input prices.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed this 3 mu plot in Quzhou County for 40 years using a wheat-maize double-cropping system. For wheat, I rotary till in October, sow improved seed at about 30 jin/mu, apply compound fertilizer as base plus urea topdressing at jointing totaling roughly 18 kg N, 7 kg P2O5, and 4 kg K2O per mu, irrigate three times, and make three pesticide applications, expecting around 1000 kg/mu. For maize, I immediately plant hybrid seed after the early June wheat harvest using no-tillage to save time and moisture, apply compound fertilizer at planting totaling roughly 16 kg N, 5 kg P2O5, and 4 kg K2O per mu, irrigate twice at tasseling and grain filling, make two pesticide applications, and expect about 1100 kg/mu. My wife and I manage this with our well irrigation, adjusting slightly each year for weather and input prices."
+  },
+  "elapsed_seconds": 164.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_2",
+  "tier": 2,
+  "provider": "kimi"
+}

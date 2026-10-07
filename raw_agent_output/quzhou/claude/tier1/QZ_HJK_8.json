@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land since I was a girl helping my parents. My husband went to work in Baoding three years ago, so I manage the fields myself now, about 8 mu. I don't take risks with new things I don't understand.\n\nHere in Quzhou, everyone grows wheat in winter and maize in summer. That's what this land is for. The county seed station sells improved wheat varieties \u2014 Shimai or Jimai \u2014 and I'll buy from them again like I always do. For maize, I'll get Zhengdan 958 hybrid seed from the agri-supply shop in town. Everyone uses it, the yield is reliable.\n\nFor wheat, I put down compound fertilizer as base when I till in October, then urea top-dressing in spring when it starts jointing. I irrigate three times: the winter water before freezing, the jointing water in April, and the grain-filling water in May. I spray herbicide in winter and fungicide/insecticide around heading \u2014 the extension station sends messages telling us when.\n\nFor maize after wheat harvest in June, I just direct-seed into the stubble \u2014 no need to till again. I apply base fertilizer and urea when it's knee-high. Summer rain usually handles irrigation but I'll pump once if July is dry. Spray for fall armyworm if needed.\n\nI'll sell grain to the county grain station. The price isn't great but it's guaranteed.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou County under the standard winter wheat\u2013summer maize double-cropping rotation that dominates this part of the North China Plain. With my husband away and primary-school education, I stick to what I know: improved wheat variety from the county seed station and Zhengdan 958 hybrid maize, both proven locally. Fertilizer follows the conventional compound-base plus urea top-dress pattern. Wheat gets three irrigations to compensate for Hebei's dry spring; maize relies largely on summer rain with one supplemental pump if needed. I apply pesticides twice per crop \u2014 herbicide and heading-stage protection for wheat, and fall armyworm control for maize. Rotary tillage before wheat planting, then no-tillage direct seeding for summer maize into the wheat stubble. I sell grain to the county station at set prices, which is less income than the market but more certainty.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou County under the standard winter wheat\u2013summer maize double-cropping rotation that dominates this part of the North China Plain. With my husband away and primary-school education, I stick to what I know: improved wheat variety from the county seed station and Zhengdan 958 hybrid maize, both proven locally. Fertilizer follows the conventional compound-base plus urea top-dress pattern. Wheat gets three irrigations to compensate for Hebei's dry spring; maize relies largely on summer rain with one supplemental pump if needed. I apply pesticides twice per crop \u2014 herbicide and heading-stage protection for wheat, and fall armyworm control for maize. Rotary tillage before wheat planting, then no-tillage direct seeding for summer maize into the wheat stubble. I sell grain to the county station at set prices, which is less income than the market but more certainty."
+  },
+  "elapsed_seconds": 42.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_8",
+  "tier": 1,
+  "provider": "claude"
+}

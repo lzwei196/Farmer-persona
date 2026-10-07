@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 49 years old and have farmed these 7.8 mu in Quzhou for 30 years. I know every corner of this land. With six people in my household and my sons working off-farm in the city, I must be careful with labor. I cannot manage too much cotton because picking it by hand takes time we do not have. So I will keep 5 mu in my reliable wheat-maize double crop and 2.8 mu in cotton. The wheat is already in the ground from last October, and that is fine.\n\nFor the winter wheat, I will top-dress urea at green-up in March because the base fertilizer I put down in autumn is not enough to carry it to harvest. I will irrigate four times total\u2014return-green, jointing, heading, and grain-filling\u2014since my well gives me water and I do not trust the spring rains alone. Three sprays will deal with weeds and aphids. I use an improved Jimai variety; it is not the newest seed on the market, but it is steady and I know how it behaves on my soil.\n\nAfter wheat harvest in early June, I will immediately rotary-till and plant hybrid maize. The turnaround must be fast. I will apply compound fertilizer at sowing and side-dress nitrogen at the big-flush stage. Summer maize usually gets some rain, so two irrigations at jointing and filling will be enough if the skies cooperate. Two sprays\u2014one herbicide, one for corn borer.\n\nFor cotton, I will plant Bt hybrid seed in late April after rotary tillage. I will lay plastic mulch to keep moisture and suppress weeds; this saves me labor later. I will fertilize at planting and top-dress at flowering. Three irrigations and four pesticide applications will see it through, even though the Bt gene helps with bollworm. I expect about 100 kg of lint per mu, which is decent for my ground.\n\nI do not do no-tillage. I tried it once and the soil got too hard and weedy. Rotary tillage works for me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 100\n    }\n  ],\n  \"reasoning_summary\": \"With limited family labor due to off-farm work, I prioritize the reliable wheat-maize double crop on 5 mu while keeping 2.8 mu in cotton for cash income. I use proven seed varieties, apply moderate fertilizer rates based on decades of local experience, irrigate strategically using my well, and rely on rotary tillage because no-tillage led to weed and compaction problems in the past. My plans are conservative and practical, aimed at steady yields without taking risks I cannot afford.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 100
+      }
+    ],
+    "reasoning_summary": "With limited family labor due to off-farm work, I prioritize the reliable wheat-maize double crop on 5 mu while keeping 2.8 mu in cotton for cash income. I use proven seed varieties, apply moderate fertilizer rates based on decades of local experience, irrigate strategically using my well, and rely on rotary tillage because no-tillage led to weed and compaction problems in the past. My plans are conservative and practical, aimed at steady yields without taking risks I cannot afford."
+  },
+  "elapsed_seconds": 70.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_3",
+  "tier": 2,
+  "provider": "kimi"
+}

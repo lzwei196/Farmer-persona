@@ -1,0 +1,73 @@
+{
+  "raw_response": "I'm 59 this year. I've been farming this land for 35 years \u2014 since I was 24. Never went to school, not even one day, but I know these 13.1 mu better than anyone. My husband and I work them together. We have two children in the city who send money home sometimes, which helps, but we're still careful with every yuan. At my age, I don't try new things. I do what worked last year, and the year before that.\n\n**Winter wheat:** I plant in early October, around the 10th. I buy seed from the shop in town \u2014 about 30 jin per mu, same as always. Before planting, I hire the rotary tiller man to come through. Then I spread one bag of compound fertilizer per mu. Plant the wheat, irrigate it once before winter so the roots hold and it doesn't freeze. In spring, when the wheat turns green, I look at the color. If it's a bit yellow, I spread half a bag of urea per mu \u2014 that's what I've always done. Then I irrigate two more times: once when the wheat is about knee-high, and once when the grain is filling. I spray herbicide once in spring, that's usually enough.\n\n**Summer maize:** Wheat harvest is early June. The combine comes through, and then the rush starts \u2014 sometimes we only have three or four days before we must plant the maize. I hire a couple of extra hands because my back isn't what it used to be. We till fast and plant hybrid maize seed \u2014 you can't save maize seed, everyone knows that. I put one bag of compound fertilizer in the row when planting. Maize is easier than wheat. If the rains come, I might only irrigate once, but usually I water twice: once when it's growing fast, and maybe once when it's flowering. One spray of herbicide. Harvest in late September.\n\nI think we'll get about 420 kg per mu of wheat and 480 kg per mu of maize if the weather is normal. I'm not changing anything this year. Fertilizer is expensive again, and at my age I want a stable year, not a big gamble.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"Winter wheat\",\n      \"field_area_mu\": 13.1,\n      \"planting_date\": \"Early October\",\n      \"harvest_date\": \"Early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 19,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: one 50kg bag of compound fertilizer per mu before planting. Topdress: half a bag of urea per mu in spring if wheat looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"Hire rotary tiller after maize harvest, harrow before wheat planting\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"Summer maize\",\n      \"field_area_mu\": 13.1,\n      \"planting_date\": \"Mid June\",\n      \"harvest_date\": \"Late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: one bag of compound fertilizer per mu in planting row at sowing. Topdress: urea at tasseling if irrigating\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"Quick rotary tillage right after wheat harvest, plant same or next day\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 480\n    }\n  ],\n  \"total_input_cost_yuan\": 11800,\n  \"reasoning_summary\": \"I'm 59 with no schooling but 35 years on this land. I do what I always do \u2014 plant wheat in early October with one bag of compound fertilizer per mu, topdress urea in spring, irrigate three times. After wheat harvest in June, I rush to plant hybrid maize with compound fertilizer in the row, irrigate once or twice, and harvest in late September. I hire extra hands for the tight turnaround after wheat harvest because my back isn't strong anymore. I expect about 420 kg/mu wheat and 480 kg/mu maize. I'm not trying anything new \u2014 fertilizer is expensive and I want a stable year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "Winter wheat",
+        "field_area_mu": 13.1,
+        "planting_date": "Early October",
+        "harvest_date": "Early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 19,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: one 50kg bag of compound fertilizer per mu before planting. Topdress: half a bag of urea per mu in spring if wheat looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "Hire rotary tiller after maize harvest, harrow before wheat planting",
+        "labor_family_days": 14,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 19,
+        "area_mu": 13.1,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "Summer maize",
+        "field_area_mu": 13.1,
+        "planting_date": "Mid June",
+        "harvest_date": "Late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: one bag of compound fertilizer per mu in planting row at sowing. Topdress: urea at tasseling if irrigating",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "Quick rotary tillage right after wheat harvest, plant same or next day",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 480,
+        "nitrogen_kg_per_mu": 13,
+        "area_mu": 13.1,
+        "expected_yield_kg_per_mu": 480,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      }
+    ],
+    "total_input_cost_yuan": 11800,
+    "reasoning_summary": "I'm 59 with no schooling but 35 years on this land. I do what I always do \u2014 plant wheat in early October with one bag of compound fertilizer per mu, topdress urea in spring, irrigate three times. After wheat harvest in June, I rush to plant hybrid maize with compound fertilizer in the row, irrigate once or twice, and harvest in late September. I hire extra hands for the tight turnaround after wheat harvest because my back isn't strong anymore. I expect about 420 kg/mu wheat and 480 kg/mu maize. I'm not trying anything new \u2014 fertilizer is expensive and I want a stable year."
+  },
+  "elapsed_seconds": 144.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_12",
+  "tier": 4,
+  "provider": "kimi"
+}

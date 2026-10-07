@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 55 years old, and I have farmed these 16.9 mu in Quzhou County for 30 years. I know every corner of this land. My household has three people, but with some family working off-farm, I do not have unlimited labor, so I must manage my land practically. I have a well, which gives me reliable irrigation when the rain is not enough.\n\nThis year, I will keep 12 mu in my wheat-maize double-cropping system. It is the backbone of my farm. I know this rotation well, and it gives me two harvests a year. I will plant winter wheat in October on those 12 mu. I will use improved wheat seed \u2014 I have had good results with the varieties from the county supply station. For fertilizer, I will apply 18 kg of nitrogen, 7 kg of phosphorus, and 5 kg of potassium per mu. Wheat needs plenty of nitrogen to produce good grain. I will irrigate three times: once before winter to help the seedlings establish, once at jointing in spring, and once during grain filling. I will spray pesticide twice to control aphids and fungus. I will use rotary tillage to prepare the land \u2014 it is faster and uses less diesel than deep ploughing, and after 30 years I know it works fine on my soil.\n\nAfter harvesting the wheat in early June, I will immediately plant hybrid maize on the same 12 mu. I only buy hybrid maize seed now. The old open-pollinated varieties cannot compete with hybrid yields, and the seed cost is worth it. I will apply 17 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. Maize needs less fertilizer than wheat overall, but it needs water at the right time. I will irrigate twice: once at the big trumpet stage and once during grain filling. Two pesticide applications will be enough for the maize.\n\nI will put the remaining 4.9 mu into cotton. I have always kept some cotton land because when the price is good, it earns more money per mu than grain. I will plant improved cotton seed in late April. Cotton is labor-intensive, but 4.9 mu is manageable for me. I will apply 14 kg nitrogen, 5 kg phosphorus, and 8 kg potassium per mu \u2014 cotton needs more potassium for the bolls. I will irrigate three times: at flowering, boll setting, and boll opening. I will spray pesticide four times because bollworm, aphids, and red spider mites are constant threats to cotton in our area. Rotary tillage for the cotton plot as well.\n\nI expect my wheat to yield about 460 kg per mu, the maize about 550 kg per mu, and the cotton about 100 kg per mu of lint. These are honest expectations based on my experience, assuming the weather does not turn extreme.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this land for 30 years and know its limits. With only partial household labor available, I rely on the reliable wheat-maize double crop on 12 mu while keeping 4.9 mu of cotton for cash income. I use improved wheat seed, hybrid maize seed, and improved cotton seed. I apply fertilizer based on what each crop needs\u2014more nitrogen for wheat and maize, more potassium for cotton. I irrigate strategically using my well, more for wheat and cotton and less for maize. I spray pesticides more on cotton because insects are worse there. I use rotary tillage to save labor and fuel. My yield expectations are realistic for Quzhou County if the weather holds.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 100
+      }
+    ],
+    "reasoning_summary": "I have farmed this land for 30 years and know its limits. With only partial household labor available, I rely on the reliable wheat-maize double crop on 12 mu while keeping 4.9 mu of cotton for cash income. I use improved wheat seed, hybrid maize seed, and improved cotton seed. I apply fertilizer based on what each crop needs\u2014more nitrogen for wheat and maize, more potassium for cotton. I irrigate strategically using my well, more for wheat and cotton and less for maize. I spray pesticides more on cotton because insects are worse there. I use rotary tillage to save labor and fuel. My yield expectations are realistic for Quzhou County if the weather holds."
+  },
+  "elapsed_seconds": 42.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_5",
+  "tier": 2,
+  "provider": "kimi"
+}

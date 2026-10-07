@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll think this through as the farmer.\n\n**My reasoning:**\n\nI farm 220 mu here in Quzhou \u2014 that's a big operation for our area, and because I finished school beyond middle school I try to plan it properly instead of just copying my neighbors. Five years in, I have a feel for what this soil does. The ground here is typical North China Plain loam, decent but it needs fertilizer to really produce. I split my land between millet (\u8c37\u5b50) and spring soybean because rotation keeps the soybean disease down and the soybean residue helps the millet the next cycle. I'll put roughly half into each \u2014 110 mu millet, 110.1 mu soybean.\n\nFor millet, I'm planting \u5f20\u6742\u8c37 hybrid seed \u2014 my neighbor tried it two years back and got over 400 kg/mu, far better than the old traditional seed my father used. I'll go with about 10 kg N per mu as urea, 5 kg P2O5, and 5 kg K2O, mostly as a compound fertilizer (15-15-15, around 25 kg/mu) at sowing, then top-dress 8 kg urea at jointing. Millet tolerates drought but I have well water, so I'll irrigate twice \u2014 once before sowing to get moisture, once at heading. Two sprays: one for locusts/armyworm, one for\u7c9f\u7070\u879f. Rotary till is enough, the ground was soybean last cycle so it's loose. I'll aim for 350 kg/mu \u2014 realistic, not greedy.\n\nFor soybean, the plant fixes its own nitrogen so I only give a starter \u2014 3 kg N per mu. But I will not skimp on phosphorus, that's where soybean yield comes from: 6 kg P2O5 and 5 kg K2O. Improved variety (\u4e2d\u9ec4 series). Spring soybean here, I irrigate at flowering and podding \u2014 two times. Three pesticide sprays: aphids early, pod borer mid, and a fungicide at flowering because I'd rather spend 20 yuan a mu than lose pods. I'll plough the soybean ground deeper to break any pan. Target 200 kg/mu \u2014 I won't gamble on 250.\n\nI'd rather spend a bit extra on fertilizer than short the crop. On 220 mu a 10% yield loss is far more money than a bag of urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"millet\",\n      \"season\": \"spring\",\n      \"area_mu\": 110,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13.7,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"soybean\",\n      \"season\": \"spring\",\n      \"area_mu\": 110.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I split my 220 mu roughly evenly between millet and spring soybean to keep a rotation that suppresses soybean disease and feeds the millet with residue N. On millet I use Zhangzagu hybrid with a 15-15-15 compound base plus urea top-dressing at jointing, two irrigations from my well, and two pest sprays \u2014 aiming for 350 kg/mu, realistic not greedy. On soybean I give only a nitrogen starter since the plant fixes its own, but I don't skimp on phosphorus (6 kg/mu) because that drives pod yield; deeper plough tillage, two irrigations at flowering and pod-fill, and three sprays including a fungicide because losing pods costs far more than the 20 yuan per mu the spray costs. Across 220 mu, a small yield loss outweighs any fertilizer savings, so I slightly over-fertilize rather than under.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "millet",
+        "season": "spring",
+        "area_mu": 110,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13.7,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 350
+      },
+      {
+        "crop": "soybean",
+        "season": "spring",
+        "area_mu": 110.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I split my 220 mu roughly evenly between millet and spring soybean to keep a rotation that suppresses soybean disease and feeds the millet with residue N. On millet I use Zhangzagu hybrid with a 15-15-15 compound base plus urea top-dressing at jointing, two irrigations from my well, and two pest sprays \u2014 aiming for 350 kg/mu, realistic not greedy. On soybean I give only a nitrogen starter since the plant fixes its own, but I don't skimp on phosphorus (6 kg/mu) because that drives pod yield; deeper plough tillage, two irrigations at flowering and pod-fill, and three sprays including a fungicide because losing pods costs far more than the 20 yuan per mu the spray costs. Across 220 mu, a small yield loss outweighs any fertilizer savings, so I slightly over-fertilize rather than under."
+  },
+  "elapsed_seconds": 35.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_6",
+  "tier": 3,
+  "provider": "claude"
+}

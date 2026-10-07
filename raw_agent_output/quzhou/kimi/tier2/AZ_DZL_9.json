@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this 10.1 mu in Quzhou for 40 years, and I know what it can bear. At 62, with only two of us in the house and off-farm work to juggle, I cannot afford to chase every new input or tire myself out with extra labor. I keep it simple: wheat in autumn, maize after the wheat comes out in June. The well gives me water when I need it, but electricity costs money, so I irrigate only at the critical times.\n\nFor wheat, I will rotary-till the land before sowing and plant improved seed \u2014 the same reliable variety my neighbors have used for years. I will spread about 55\u201360 jin of urea per mu across the season, which comes to roughly 28 kg of nitrogen. I do not buy phosphate or potash; the soil has enough, and compound fertilizer is too expensive for the return I see. I will irrigate three times from the well: at green-up in spring, at jointing, and at heading. I will spray four times for weeds and insects. In a normal year, this wheat should give me about 500 kg per mu.\n\nFor maize, I will plant hybrid seed immediately after the wheat harvest in early June. There is no time to plough, and at my age I do not have the labor for it, so I will use no-tillage planting to get the crop in fast. The maize gets no extra nitrogen from me \u2014 the leftover fertility from the wheat season is enough, and the summer rains help it grow. I will irrigate twice if the dry spells come, and spray three times for pests. I expect about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat-maize double cropping on 10.1 mu in Quzhou for 40 years. With only two people in my household and off-farm work to manage, I keep inputs and labor moderate but reliable. For wheat, I rotary-till, plant improved seed, apply about 28 kg nitrogen per mu through urea, irrigate three times at critical growth stages, and spray four times for pests, expecting 500 kg per mu. For maize, I plant hybrid seed immediately after wheat harvest using no-tillage to save time and labor, apply no additional fertilizer relying on residual fertility, irrigate twice in summer, spray three times, and expect 550 kg per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat-maize double cropping on 10.1 mu in Quzhou for 40 years. With only two people in my household and off-farm work to manage, I keep inputs and labor moderate but reliable. For wheat, I rotary-till, plant improved seed, apply about 28 kg nitrogen per mu through urea, irrigate three times at critical growth stages, and spray four times for pests, expecting 500 kg per mu. For maize, I plant hybrid seed immediately after wheat harvest using no-tillage to save time and labor, apply no additional fertilizer relying on residual fertility, irrigate twice in summer, spray three times, and expect 550 kg per mu."
+  },
+  "elapsed_seconds": 182.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_9",
+  "tier": 2,
+  "provider": "kimi"
+}

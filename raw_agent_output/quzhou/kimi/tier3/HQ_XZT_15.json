@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 73 years old, finished primary school, and have farmed these fields for 55 years. My 5 mu farm is worked by me and my wife. We keep 3 mu in wheat-maize rotation and 2 mu in cotton. I learned everything from my father and from watching the neighbors \u2014 that is my school.\n\nFor the winter wheat already in the field: last autumn I ploughed deep and sowed the improved Jinmai variety, about 15 jin of seed per mu. I put down base fertilizer then \u2014 half a bag of compound fertilizer per mu. Now at the start of the season, I top dress twice. First at green-up, I spread 30 jin of urea per mu. Then at jointing, another 20 jin of urea. That comes to about 16 kg of nitrogen per mu in total, plus 5 kg of phosphorus and 4 kg of potassium from the compound fertilizer. I irrigate three times from my well \u2014 once in early spring, once at jointing, and once when the grain is filling. I spray pesticide twice: one time for weeds, and one time for aphids when the weather turns warm. Last year I got 450 kg per mu, and I expect the same this year if the frost does not come back.\n\nFor summer maize: after the wheat harvest in June, I rotary till the stubble quickly and plant hybrid maize seed from the dealer \u2014 the kind in the yellow bag, about 2.5 jin per mu. I put one bag of compound fertilizer per mu as base, and then at big flare stage I top dress with 30 jin of urea. That is about 17 kg of nitrogen, 5 kg of phosphorus, and 4 kg of potassium per mu. I irrigate twice \u2014 once after sowing if the rain does not come, and once at tasseling. Two pesticide sprays. I expect 500 kg per mu, same as every good year.\n\nFor cotton: in late April I plough the 2 mu field and level it. I plant Bt hybrid cotton, the seed in the pink bag, 1.5 jin per mu. Base fertilizer is 80 jin of compound fertilizer plus 20 jin of potassium chloride per mu. Then I top dress with 40 jin of urea twice \u2014 once at flowering and once at peak bloom. That comes to about 18 kg of nitrogen, 6 kg of phosphorus, and 9 kg of potassium per mu. I irrigate three times: at flowering, at peak bloom, and again in August if the sky stays dry. Four pesticide sprays \u2014 even with Bt cotton, the aphids and spider mites still come, and I do not take chances. I hope for 300 kg of seed cotton per mu. Last year I tried to save money on fertilizer and only got 280 kg with small bolls \u2014 I lost money. So this year I go back to my usual amounts. My neighbor Zhang uses about the same schedule and his yields are steady. Fertilizer is expensive now, but a bad harvest is a disaster. I do not trust new products from the dealer unless I see them work on Zhang's field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"Last year I tried saving on cotton fertilizer and lost yield, so this year I stick to my usual practice: 3 mu of wheat gets 16 kg nitrogen, 5 kg phosphorus, and 4 kg potassium per mu with three irrigations and two pesticide sprays; the same 3 mu then grows summer maize with 17 kg nitrogen, 5 kg phosphorus, 4 kg potassium, two irrigations, and two sprays; my 2 mu of cotton gets 18 kg nitrogen, 6 kg phosphorus, 9 kg potassium, three irrigations, and four sprays. I learned from my father and neighbors, I trust what I have seen work with my own eyes, and I would rather spend a bit more on fertilizer than risk a bad harvest because there is no money to make up for it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "Last year I tried saving on cotton fertilizer and lost yield, so this year I stick to my usual practice: 3 mu of wheat gets 16 kg nitrogen, 5 kg phosphorus, and 4 kg potassium per mu with three irrigations and two pesticide sprays; the same 3 mu then grows summer maize with 17 kg nitrogen, 5 kg phosphorus, 4 kg potassium, two irrigations, and two sprays; my 2 mu of cotton gets 18 kg nitrogen, 6 kg phosphorus, 9 kg potassium, three irrigations, and four sprays. I learned from my father and neighbors, I trust what I have seen work with my own eyes, and I would rather spend a bit more on fertilizer than risk a bad harvest because there is no money to make up for it."
+  },
+  "elapsed_seconds": 197.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_15",
+  "tier": 3,
+  "provider": "kimi"
+}

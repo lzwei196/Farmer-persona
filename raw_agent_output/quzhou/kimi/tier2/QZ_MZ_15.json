@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62 years old and have farmed this same 2.2 mu in Quzhou for 40 years. My wife and I are the only two in our household, so we do all the labor ourselves. We cannot afford to take big risks or try fancy new methods. I know what works here: wheat in winter, maize in summer, on the same plot. It is autumn now, and the maize has just come off the field.\n\nFor my wheat this year, I will plant the full 2.2 mu with improved seed I buy from the village supply store. I do not save my own wheat seed anymore\u2014the shop seed yields better. I will rotary till first to break up the stubble and make a good seedbed. At planting, I put down one bag of compound fertilizer per mu, about 50 kg. That gives me my phosphorus and potassium. Then at green-up in spring, I topdress with urea\u2014about 20 kg per mu. I know it costs money, but two years ago I cut back and the wheat turned yellow, so I will not risk that again. I will irrigate four times: before winter freeze-up, at jointing, at heading, and once during grain filling if the weather stays dry. The well pump uses electricity, but wheat needs water to pay back. I will spray three times: herbicide once when the weeds first show in spring, and insecticide twice if the aphids or rust look bad. If the frost does not hit hard, I expect about 500 kg per mu.\n\nFor summer maize, I plant right after wheat harvest in early June\u2014there is no time to waste. Because the window is so tight, I do not till; I plant directly into the wheat stubble, no-tillage. I buy hybrid seed, usually Zhengdan 958 or whatever the shop recommends that year. I put down compound fertilizer at planting, about 40 kg per mu, and a small topdress of urea later. Summer rains usually help, but I will irrigate twice if it turns dry, especially when the maize is at the big trumpet stage. I spray pesticide twice: herbicide when the maize is still small, and insecticide if I see armyworms. I expect around 560 kg per mu in a normal year.\n\nI do not have much spare cash, and I am too old to chase every new technique. My neighbor Lao Wang cut his fertilizer last season and did fine, but his soil is different. On my land, I would rather spend a little too much and sleep easy than lose a whole season to thrift.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double crop on my whole 2.2 mu because that is what I know and what fits our two-person household. I use improved wheat seed and hybrid maize seed from the village shop. I apply enough compound fertilizer and urea to avoid the yellowing I saw when I cut back, and I irrigate wheat heavily because it pays for the pumping cost. Maize gets less water and no tillage because the turnaround after wheat harvest is too tight. I spray when I see pests or weeds, not preventively every week. My yields reflect what I usually get in a normal year on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double crop on my whole 2.2 mu because that is what I know and what fits our two-person household. I use improved wheat seed and hybrid maize seed from the village shop. I apply enough compound fertilizer and urea to avoid the yellowing I saw when I cut back, and I irrigate wheat heavily because it pays for the pumping cost. Maize gets less water and no tillage because the turnaround after wheat harvest is too tight. I spray when I see pests or weeds, not preventively every week. My yields reflect what I usually get in a normal year on this land."
+  },
+  "elapsed_seconds": 279.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_15",
+  "tier": 2,
+  "provider": "kimi"
+}

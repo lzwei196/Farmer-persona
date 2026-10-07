@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 70 years old, and I have worked this land in Quzhou County for 40 years. I finished high school back in my youth, so I can read the labels on fertilizer bags and I understand what the extension technician tells me when he comes to the village. But I also know that book knowledge is only worth something if it matches what I see with my own eyes in my fields. My farm is 7.7 mu, which is not large but it is enough to feed my family of five if I manage it carefully. I divide it into two parts: 5 mu I keep for the wheat-maize double-cropping system, and the remaining 2.7 mu I plant to cotton. I do it this way because cotton prices have been unpredictable, and I do not want to gamble the whole farm on it. Wheat and maize give me grain security and a steady baseline.\n\nFor the winter wheat that is already in the ground, I planted it last October after rotary tilling the soil to break up the compaction from the previous maize crop. I used an improved wheat variety at 20 kg per mu. Before planting, I applied 50 kg of compound fertilizer per mu as base dressing \u2014 that gave me roughly 7 kg each of nitrogen, phosphorus, and potassium. Now that spring is here, I will irrigate three times: once at green-up in late March, once at jointing in mid-April, and once during grain filling in mid-May. Pumping water from the well costs electricity, and I have calculated that three irrigations is the right balance for my soil \u2014 four would waste money without adding much yield. At jointing, I will topdress with 25 kg of urea per mu, which adds about 11.5 kg of nitrogen. My total nitrogen for wheat comes to about 18 kg per mu. I will spray pesticide twice: a herbicide in early spring to control weeds, and a fungicide at flag-leaf stage if I see any yellow rust spots. Based on last year's result and the soil moisture this spring, I am targeting 500 kg per mu.\n\nFor summer maize, I will sow hybrid seed immediately after wheat harvest in mid-June. The turnaround is only six or seven days, so there is no time for ploughing \u2014 I will plant no-till into the wheat stubble. I have 2 kg of hybrid maize seed per mu ready. At planting, I put down 40 kg of compound fertilizer per mu, and at the big trumpet stage I will topdress with 15 kg of urea. That brings my total to about 16 kg nitrogen, 6 kg phosphorus, and 5 kg potassium per mu. Maize here does not need as much water as wheat; I will irrigate twice, once at seedling stage if the soil is dry, and once at tasseling. Two pesticide applications: a pre-emergence herbicide and one spray for Asian corn borer if I see moth activity in July. I expect about 550 kg per mu, which is what I have averaged the last three years.\n\nFor cotton on my 2.7 mu plot, I will plough the field in mid-April to warm up the soil and break the weed roots. I plant hybrid cotton at 3 kg of seed per mu. Cotton is tricky \u2014 too much nitrogen and the plants grow tall but drop their bolls. I apply 35 kg of compound fertilizer per mu at planting, and 10 kg of urea at first flowering. That is about 15 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu total. I irrigate twice: at flowering and at peak boll stage. Cotton bollworm is the main enemy here, so I will spray three times \u2014 once at squaring, once at flowering, and once at boll opening if I see worms. I am hoping for 280 kg per mu, which is realistic if the early summer rain is normal.\n\nI always keep my input costs in mind. Fertilizer prices went up again this year, and every yuan I spend on the pump is a yuan I cannot spend on hired labor at harvest. Still, I would rather apply a little too much fertilizer than risk losing yield. A bad harvest is a disaster for my family; wasting a few kilograms of urea is just a cost I can absorb.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 7.7 mu into 5 mu of wheat-maize double cropping and 2.7 mu of cotton to balance steady grain income against cotton price risk. I base my fertilizer rates on last year's results and my soil conditions: 18 kg N, 7 kg P, and 6 kg K per mu for wheat; 16 kg N, 6 kg P, and 5 kg K for maize; and 15 kg N, 5 kg P, and 5 kg K for cotton. I irrigate wheat three times because it is the most water-sensitive crop, while maize and cotton get two irrigations each to save pumping costs. I use no-tillage for maize because the window between wheat harvest and maize planting is too tight for ploughing. I would rather spend a bit more on inputs than risk yield loss, but I do not apply more than my calculations tell me because my farm is only 7.7 mu and every yuan matters.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 7.7 mu into 5 mu of wheat-maize double cropping and 2.7 mu of cotton to balance steady grain income against cotton price risk. I base my fertilizer rates on last year's results and my soil conditions: 18 kg N, 7 kg P, and 6 kg K per mu for wheat; 16 kg N, 6 kg P, and 5 kg K for maize; and 15 kg N, 5 kg P, and 5 kg K for cotton. I irrigate wheat three times because it is the most water-sensitive crop, while maize and cotton get two irrigations each to save pumping costs. I use no-tillage for maize because the window between wheat harvest and maize planting is too tight for ploughing. I would rather spend a bit more on inputs than risk yield loss, but I do not apply more than my calculations tell me because my farm is only 7.7 mu and every yuan matters."
+  },
+  "elapsed_seconds": 245.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_5",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land here in Quzhou for 30 years. 10.9 mu is not big, but with 11 people in the house and some working outside, I need to get good yields so we have enough grain and some cash. Let me think through each crop.\n\nMy main system is winter wheat then summer maize on the same ground \u2014 that's what everyone around here does because the water from the well supports it and the two crops fit in the calendar. I'll put wheat-maize on about 8 mu (the better, flatter piece close to the well) and cotton on the remaining ~3 mu where the soil is a bit sandier and wheat doesn't do as well there.\n\n**Wheat (winter, ~8 mu):** I'll sow improved variety seed \u2014 Jimai or similar, whatever the shop has that my neighbor Old Wang used last year with good results. Last year I got about 480 kg/mu. I'll put down about 2 bags of compound fertilizer (15-15-15, so that's roughly 25 kg of each per bag) as base, then top-dress with urea at jointing. Total about 26 kg N, 8 kg P, 6 kg K per mu. Irrigate 4 times \u2014 before sowing, overwintering, green-up, and grain-filling. Our wheat gets aphids and powdery mildew, so 2-3 spray rounds. Plough before sowing to turn in maize stubble.\n\n**Maize (summer, ~8 mu):** Hybrid seed only \u2014 Zhengdan or Xianyu. No-till direct seed after wheat harvest, saves time. About 20 kg N, 6 kg P, 5 kg K per mu, mostly as compound at sowing with one urea top-dress at big-trumpet stage. Irrigate 2 times if the rain is short. Spray once for corn borer, maybe once for armyworm. Expect around 550 kg/mu.\n\n**Cotton (~3 mu):** Improved Bt variety to save on bollworm sprays. Cotton needs more care \u2014 I'll plough deep, put on about 15 kg N, 7 kg P, 6 kg K per mu, split into base and two top-dresses. Irrigate 3 times through the season. Still need 5 sprays for aphids, spider mites, and other bolls pests even with Bt seed. Expect around 250 kg seed cotton/mu.\n\nI'd rather spend a little extra on fertilizer than lose yield \u2014 a bad harvest hurts the whole family, but an extra half-bag of urea is just a cost I can absorb.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am putting wheat-maize rotation on my 8 mu of better land near the well \u2014 that is what I have done for years and it feeds the family. Cotton goes on the ~3 mu of sandier ground where wheat does poorly. I use improved wheat seed and hybrid maize like my neighbors, and a Bt cotton variety to reduce bollworm sprays. My fertilizer rates are a bit on the high side because with 11 people to feed I cannot afford a bad year \u2014 better to spend a little extra on urea than lose 100 kg of wheat. I irrigate from the well 4 times for wheat, 2 for maize, and 3 for cotton. Cotton still needs 5 sprays because even Bt does not stop aphids and mites.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am putting wheat-maize rotation on my 8 mu of better land near the well \u2014 that is what I have done for years and it feeds the family. Cotton goes on the ~3 mu of sandier ground where wheat does poorly. I use improved wheat seed and hybrid maize like my neighbors, and a Bt cotton variety to reduce bollworm sprays. My fertilizer rates are a bit on the high side because with 11 people to feed I cannot afford a bad year \u2014 better to spend a little extra on urea than lose 100 kg of wheat. I irrigate from the well 4 times for wheat, 2 for maize, and 3 for cotton. Cotton still needs 5 sprays because even Bt does not stop aphids and mites."
+  },
+  "elapsed_seconds": 35.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_4",
+  "tier": 3,
+  "provider": "claude"
+}

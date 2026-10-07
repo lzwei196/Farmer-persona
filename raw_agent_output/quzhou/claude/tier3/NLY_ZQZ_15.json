@@ -1,0 +1,53 @@
+{
+  "raw_response": "This year I plan like I always do \u2014 I start from what worked last year and adjust a little. My 10.1 mu is split: I keep 6 mu for the wheat-maize rotation because that is my main income, and I give 4.1 mu to cotton. Cotton takes more work but the price has been decent and my husband helps on weekends when he is back from the city.\n\nFor my wheat this winter, I will plant Jimai improved seed \u2014 the input dealer in town said it holds up well in our soil, and my neighbor Wang had 450 kg last year with it. I use about 2 bags of compound fertilizer as base (that gives me roughly 18 kg N, 9 kg P, 7 kg K per mu), and then I top-dress urea at green-up, maybe 10 kg per mu. I would rather put a bit extra than see yellow leaves in spring. I irrigate 4 times \u2014 winter water, green-up, jointing, and grain filling. I spray 2 times, once for aphids and once for the wheat scab if weather is wet.\n\nFor summer maize after the wheat, I go with Zhengdan hybrid \u2014 everyone around here uses it. I apply about 16 kg N, 6 kg P, 6 kg K per mu, with the urea side-dressed at knee-high. Maize is thirsty but the summer rains help, so I only pump from the well 2 times. One pesticide spray for corn borer is usually enough.\n\nCotton is different \u2014 I give it more potassium because the bolls need it, and more sprays because the bollworm is bad some years. About 14 kg N, 8 kg P, 10 kg K per mu. I irrigate 3 times and spray 4 times \u2014 cotton without spraying is no cotton at all.\n\nI plough before cotton because the soil needs loosening, but for wheat and maize I just do rotary tillage \u2014 saves diesel money and time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I split my 10.1 mu into 6 mu wheat-maize rotation and 4.1 mu cotton, following what I did last year since it worked. I use improved or hybrid seed that my neighbors had good results with. I apply fertilizer a little on the heavy side \u2014 especially nitrogen on wheat \u2014 because a bad harvest costs me much more than an extra bag of urea. Cotton gets more potassium and more sprays because the bolls need it and bollworm is a real danger. I plough for cotton but use rotary or no-till for grain crops to save on diesel and hired machinery time, since my husband works off-farm and I manage most field work myself.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I split my 10.1 mu into 6 mu wheat-maize rotation and 4.1 mu cotton, following what I did last year since it worked. I use improved or hybrid seed that my neighbors had good results with. I apply fertilizer a little on the heavy side \u2014 especially nitrogen on wheat \u2014 because a bad harvest costs me much more than an extra bag of urea. Cotton gets more potassium and more sprays because the bolls need it and bollworm is a real danger. I plough for cotton but use rotary or no-till for grain crops to save on diesel and hired machinery time, since my husband works off-farm and I manage most field work myself."
+  },
+  "elapsed_seconds": 32.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_15",
+  "tier": 3,
+  "provider": "claude"
+}

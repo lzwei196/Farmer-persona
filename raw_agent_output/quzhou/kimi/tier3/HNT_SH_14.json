@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 20 mu here in Quzhou, all wheat-maize rotation. I only went to primary school, but I've planted these fields for 15 years, and I know them better than I know my own hands. Last year my wheat made about 500 kg per mu and my maize about 600 kg per mu. I don't try new tricks \u2014 I do what worked before and what my neighbors do. If Old Wang and the others use the same seed and fertilizer, I follow them. A bad year means my family of six loses money, and some of them work off-farm but that income isn't guaranteed.\n\nFor wheat, I plant the improved variety from the dealer in town \u2014 I forget the exact name, but it's the one in the red bag that most people buy. I hire the tractor guy for rotary tillage, 40 yuan per mu. It saves time and we need to plant fast after the maize comes off. For fertilizer, I put one 50 kg bag of compound fertilizer per mu as base at planting. Then at green-up I spread half a bag of urea per mu, and at jointing another quarter bag. That comes to about 25 kg of nitrogen per mu, 8 kg of phosphorus, and 8 kg of potassium. I know that's a lot, but two years ago my neighbor cut his urea and his wheat turned yellow \u2014 he lost almost 100 kg per mu. I'd rather waste some fertilizer than risk that. My well pump runs on diesel, so I irrigate four times: before winter freeze, at green-up, at jointing, and at grain filling. I spray fungicide and insecticide twice \u2014 once in early spring for aphids and once when the heads come out.\n\nFor maize, I plant Zhengdan 958 hybrid seed. Everyone around here uses it. I put down about 40 kg of compound fertilizer per mu at planting, then at the big trumpet stage I top-dress with 20 kg of urea per mu. That is about 15 kg of nitrogen, 6 kg of phosphorus, and 6 kg of potassium per mu. I irrigate twice \u2014 once when it's about knee-high and again at filling. Two pesticide sprays: one for corn borer and one later for leaf spot. I expect 600 kg per mu if the rain and sun cooperate.\n\nWith 20 mu, I have to think about my total spending. Fertilizer is my biggest cost, but it's the one thing I won't cut. My family members send some money back from their factory jobs, so I can afford the inputs. I don't trust new methods unless I see them work on someone else's field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 20 mu wheat-maize rotation based on 15 years of experience and what my neighbors do. I use improved wheat and hybrid maize, apply compound fertilizer and urea generously because losing yield is worse than wasting fertilizer, irrigate four times for wheat and twice for maize from my well, and spray pesticides twice per crop. I hire a tractor for rotary tillage and don't change my practices unless I see them work in another farmer's field first.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I manage my 20 mu wheat-maize rotation based on 15 years of experience and what my neighbors do. I use improved wheat and hybrid maize, apply compound fertilizer and urea generously because losing yield is worse than wasting fertilizer, irrigate four times for wheat and twice for maize from my well, and spray pesticides twice per crop. I hire a tractor for rotary tillage and don't change my practices unless I see them work in another farmer's field first."
+  },
+  "elapsed_seconds": 72.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_14",
+  "tier": 3,
+  "provider": "kimi"
+}

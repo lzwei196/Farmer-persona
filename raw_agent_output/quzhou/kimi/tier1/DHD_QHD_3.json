@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old, and I have farmed my 8 mu of irrigated land here in Quzhou County for most of my life. Because I have a high education level, I read the county agricultural bulletins and keep my own notebooks on yields and inputs. I do not chase risky new crops at my age; I stick to the wheat\u2013maize double-cropping system that this North China Plain soil and climate were made for. My winter wheat was sown last October with an improved semi-dwarf variety, and now that it is reviving in April I am busy with the first spring irrigation and top-dressing with urea. After the wheat harvest in early June I will immediately plant a hybrid maize variety using no-tillage to save moisture and labour. I apply compound fertilizer as a basal dose and top-dress according to the crop stage. For wheat I rotary-till before sowing, irrigate four times (including the winter irrigation and two spring irrigations), and spray pesticides three times to control aphids, fusarium head blight, and weeds. For summer maize I use no-tillage, irrigate twice (at jointing and filling), and spray three times for corn borers and herbicides. I expect about 1,100 jin per mu from the wheat and about 1,200 jin per mu from the maize this year if the weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 38,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1200\n    }\n  ],\n  \"reasoning_summary\": \"I have 8 mu of irrigated land in Quzhou County and rely on the proven wheat\u2013maize double-cropping rotation. The wheat is already in the field from last October\u2019s sowing, so I am now managing its spring top-dressing and irrigation. After the June wheat harvest I will plant hybrid maize with no-tillage to preserve soil moisture and save labour. My input levels reflect the county extension recommendations and local averages: higher fertilizer and irrigation for wheat, moderate amounts for the shorter summer maize season, and regular pesticide applications to protect yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 38,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1200
+      }
+    ],
+    "reasoning_summary": "I have 8 mu of irrigated land in Quzhou County and rely on the proven wheat\u2013maize double-cropping rotation. The wheat is already in the field from last October\u2019s sowing, so I am now managing its spring top-dressing and irrigation. After the June wheat harvest I will plant hybrid maize with no-tillage to preserve soil moisture and save labour. My input levels reflect the county extension recommendations and local averages: higher fertilizer and irrigation for wheat, moderate amounts for the shorter summer maize season, and regular pesticide applications to protect yields."
+  },
+  "elapsed_seconds": 67.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_3",
+  "tier": 1,
+  "provider": "kimi"
+}

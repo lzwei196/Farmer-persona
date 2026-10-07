@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 6 mu here in Quzhou, same wheat-maize rotation I've been doing most of my life. I'm alone in the house now, so labor is tight \u2014 whatever I plan, I have to do myself or pay someone, and paying costs money.\n\nI'll start with last year's plan and adjust a little. For wheat I always use improved seed \u2014 I buy from the dealer in town, about 15 kg per mu, drill-sown after maize comes off in October. Before sowing I spread compound fertilizer as base \u2014 I use about 50 kg of 15-15-15 compound per mu, that gives me roughly 7.5 kg each of N, P, K from the base. Then at jointing in spring I topdress urea, about 20 kg per mu (that's about 9 kg N). So total for wheat: around 16-17 kg N, 7-8 kg P, 7-8 kg K per mu. I'd rather put on a bit extra than watch the crop turn yellow \u2014 a bad wheat harvest is real loss, fertilizer is just money spent.\n\nWheat needs water. I irrigate at sowing (tamping water), then winter water before freeze, jointing in spring, and grain-filling \u2014 that's 4 times from the well. Pesticide: one herbicide spray in late winter/early spring for grass weeds, and one mix at heading for aphids and powdery mildew. Two applications. I plough-rotary before sowing wheat since I want a clean seedbed after maize stalks.\n\nFor summer maize after wheat harvest in June \u2014 hybrid seed, everyone around uses Zhengdan or Xianyu type hybrids, they yield well. I direct-seed no-till into the wheat stubble with the planter, saves time since I'm alone. Base fertilizer at sowing, compound 15-15-15 about 40 kg per mu, then big topdress of urea at big-trumpet stage (V12), about 25 kg per mu. Total maize: about 17-18 kg N, 6 kg P, 6 kg K per mu. Irrigate once after sowing if no rain, and once at tasseling if dry \u2014 usually 2 times. Spray: one for corn borer, sometimes one for armyworm if I see them. Two applications.\n\nYields \u2014 my wheat runs around 480 kg/mu in a normal year, maize about 600 kg/mu. I'll plan for that.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 6 mu alone, so I keep my plan close to what worked last year. Wheat gets improved seed, compound base plus urea topdress at jointing, four irrigations from the well, rotary tillage after maize stubble \u2014 I expect about 480 kg/mu. Maize goes in no-till after wheat with hybrid seed, compound base plus big urea topdress at big-trumpet, two irrigations if the rain is short, about 600 kg/mu. I'd rather spend a little extra on fertilizer than lose yield, but with only myself for labor I keep pesticide to two sprays per crop \u2014 one for weeds or early pests, one at the main disease/pest window.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 6 mu alone, so I keep my plan close to what worked last year. Wheat gets improved seed, compound base plus urea topdress at jointing, four irrigations from the well, rotary tillage after maize stubble \u2014 I expect about 480 kg/mu. Maize goes in no-till after wheat with hybrid seed, compound base plus big urea topdress at big-trumpet, two irrigations if the rain is short, about 600 kg/mu. I'd rather spend a little extra on fertilizer than lose yield, but with only myself for labor I keep pesticide to two sprays per crop \u2014 one for weeds or early pests, one at the main disease/pest window."
+  },
+  "elapsed_seconds": 33.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_1",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for fifty years. I know every corner of it. At 73, just me and my wife at home now, I can't push as hard as I used to, so I plan carefully. My 4.1 mu is enough \u2014 the cotton brings in cash, the mungbean fills in the rows between the cotton and puts something back in the soil, and the millet keeps us fed through winter.\n\n**Cotton / Mungbean field (~3 mu):** I plant these together the same way I always have \u2014 cotton in the main rows, mungbean in the spaces between. I use the improved cotton variety I've been getting from the township supply station these past several years, not hybrid \u2014 too expensive and I don't fully trust it. I'll do one rotary tillage pass before planting, easier on my back than ploughing. I put down base fertilizer in the ground before planting, then top-dress with urea when the cotton starts flowering. Bollworms and aphids are always a problem \u2014 I'll spray seven times or so, same as most years. The well gives me enough water. I irrigate before planting to get good germination, then again at bud, flower, boll-set, and late boll stages \u2014 five times is about right. The mungbean I don't fuss over much. I saved my own seed from last year. It takes care of itself mostly. Maybe one spray if I see something bad.\n\n**Millet (~1.1 mu):** This is our food. I use the local variety my family has always grown. I plough this plot properly \u2014 millet does better with a good plough, I've found. Fertilizer is modest, it doesn't need much. I water it two or three times. One pesticide application if anything shows up, but usually millet is not much trouble.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 80\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.1,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"As a 73-year-old farmer with 50 years on this land, I manage my 4.1 mu around what my household needs and what my aging body can sustain. Cotton on 3 mu is my cash crop \u2014 I use an improved (not hybrid) variety I trust, apply fertilizer in two stages, irrigate five times from the well, and spray seven times to stay ahead of bollworms and aphids. Mungbean is intercropped on the same 3 mu using my own saved seed; it needs little fertilizer being a legume, shares irrigation water with the cotton, and needs almost no pest management. The remaining 1.1 mu is millet grown with traditional local seed for household food \u2014 I plough it properly, fertilize modestly, and water it three times. I keep labor manageable because with just two of us at home I cannot afford to overextend.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 80
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 1.1,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "As a 73-year-old farmer with 50 years on this land, I manage my 4.1 mu around what my household needs and what my aging body can sustain. Cotton on 3 mu is my cash crop \u2014 I use an improved (not hybrid) variety I trust, apply fertilizer in two stages, irrigate five times from the well, and spray seven times to stay ahead of bollworms and aphids. Mungbean is intercropped on the same 3 mu using my own saved seed; it needs little fertilizer being a legume, shares irrigation water with the cotton, and needs almost no pest management. The remaining 1.1 mu is millet grown with traditional local seed for household food \u2014 I plough it properly, fertilize modestly, and water it three times. I keep labor manageable because with just two of us at home I cannot afford to overextend."
+  },
+  "elapsed_seconds": 60.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_14",
+  "tier": 2,
+  "provider": "claude"
+}

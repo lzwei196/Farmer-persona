@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 63 years old this year. I have farmed for 35 years. I only finished primary school, but I can read fertilizer bags and count money. My farm is 30 mu. Twenty mu is my wheat-maize rotation, five mu is cotton, and five mu is garlic. There are eight people in my house, and some of my children work in the city and send money home, so I can buy good inputs, but I still watch every yuan because a bad year hurts.\n\nLast year my wheat made 500 jin per mu and my maize made 600 jin per mu. I used one 50-kilogram bag of compound fertilizer on each mu of wheat at planting, and then I topdressed with 25 kilograms of urea when the wheat turned green. This year I will do the same for the wheat. I do not change what works. I bought improved wheat seed because my neighbor Lao Zhang used it last year and his wheat looked better than mine. For maize I use Zhengdan 958 hybrid seed. Everyone around here uses it. It is reliable. After I cut the wheat in June, I will not plow. I will directly plant the maize into the wheat stubble. That saves time and tractor money. I put one bag of compound on the maize at planting and half a bag of urea when the plants are knee-high.\n\nCotton is five mu. I plant hybrid cotton. It needs four sprays because bollworm and red spider always come. I irrigate cotton three times. I use 40 kilograms of compound and 25 kilograms of urea per mu. Garlic needs more food and water for the money it brings. Five mu of garlic gets 50 kilograms of compound at planting, then 40 kilograms of urea in spring split in two topdressings. Four irrigations. I spray garlic three times for disease. I use the rotary machine for wheat and cotton and garlic. No plough for maize. I hire the machine for 60 yuan per mu. Fertilizer is expensive now, but I would rather put a little too much than watch my crops go yellow. If I lose yield, I lose everything. Wasting some fertilizer is just losing a little money. I watch my neighbors. If they all spray, I spray too.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1600\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what worked last year: one bag of compound and half a bag of urea per mu for wheat and maize, using improved wheat seed and Zhengdan 958 hybrid maize. I plant maize without plowing after wheat to save time and money. Cotton gets four sprays and three irrigations because pests are always a problem. Garlic gets the most fertilizer and water since it pays well if it grows big. I use the rotary tiller for wheat, cotton, and garlic, and hire machines because 30 mu is too much to do by hand. I would rather spend extra on fertilizer than risk a bad harvest, and I copy my neighbors when I am unsure.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      },
+      {
+        "crop": "garlic",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1600
+      }
+    ],
+    "reasoning_summary": "I stick with what worked last year: one bag of compound and half a bag of urea per mu for wheat and maize, using improved wheat seed and Zhengdan 958 hybrid maize. I plant maize without plowing after wheat to save time and money. Cotton gets four sprays and three irrigations because pests are always a problem. Garlic gets the most fertilizer and water since it pays well if it grows big. I use the rotary tiller for wheat, cotton, and garlic, and hire machines because 30 mu is too much to do by hand. I would rather spend extra on fertilizer than risk a bad harvest, and I copy my neighbors when I am unsure."
+  },
+  "elapsed_seconds": 208.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_11",
+  "tier": 3,
+  "provider": "kimi"
+}

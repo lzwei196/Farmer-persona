@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 65 years old and I've been farming these fields in Quzhou for more than 40 years. I only went to primary school, but I know this land and these crops better than any book. My wheat is already in the ground \u2014 I sowed about 30 jin of improved seed per mu last October after rotary tilling the soil. I have 7 mu planted to winter wheat, and that's the crop I'm managing right now.\n\nRight now the wheat is greening up, and I need to topdress it with urea and compound fertilizer when the weather warms. I'll irrigate it four times total \u2014 one more winter irrigation if needed, and then three times in spring at jointing, heading, and grain-filling. I'll spray for aphids and powdery mildew about four times. I expect to harvest around 550 kg per mu in early June if the weather cooperates.\n\nAs soon as the wheat comes off, I'll plant summer maize on the same 7 mu. I buy hybrid seed every year \u2014 Denghai or something similar from the seed shop \u2014 and I plant it no-tillage, direct seeding right into the wheat stubble. I'll put down compound fertilizer at planting and side-dress with a bit more nitrogen when the plants are knee-high. Maize needs two good irrigations, one when it's shooting and another at filling. I'll spray for corn borer and weeds three times. I expect about 600 kg per mu by late September.\n\nI don't grow cotton or vegetables like some of my neighbors. I'm getting old, and wheat-maize is what I know. The grain buyers come to the village, and I get a small government subsidy for grain. I keep some wheat for my family's flour, feed the maize to my chickens, and sell the rest. This rotation has fed my family for generations, and I see no reason to change it now.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 18,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou County for over 40 years and rely on the wheat-maize double-cropping system that dominates the North China Plain. My 7 mu of winter wheat was sown last October using improved seed after rotary tillage, and I am now managing it with spring topdressing, four irrigations, and four pesticide applications for an expected yield of 550 kg per mu. After harvesting in early June, I will immediately plant hybrid maize using no-tillage direct seeding, applying compound fertilizer and two irrigations, with three pesticide sprays, expecting 600 kg per mu. I stick to this rotation because it is familiar, less labor-intensive than cotton or vegetables, has reliable local buyers, and qualifies for government grain subsidies, which is important as I get older.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 18,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou County for over 40 years and rely on the wheat-maize double-cropping system that dominates the North China Plain. My 7 mu of winter wheat was sown last October using improved seed after rotary tillage, and I am now managing it with spring topdressing, four irrigations, and four pesticide applications for an expected yield of 550 kg per mu. After harvesting in early June, I will immediately plant hybrid maize using no-tillage direct seeding, applying compound fertilizer and two irrigations, with three pesticide sprays, expecting 600 kg per mu. I stick to this rotation because it is familiar, less labor-intensive than cotton or vegetables, has reliable local buyers, and qualifies for government grain subsidies, which is important as I get older."
+  },
+  "elapsed_seconds": 273.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_9",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "Thirty years I've been working this land. My mother farmed before me, and her mother before that. In Quzhou, everyone does wheat then maize \u2014 that's just how the year goes. My land is flat and the soil is decent. I have a well, so water is not my worry, though pumping costs money.\n\nI only have 4.1 mu and two mouths to feed, plus I need to sell some grain. I have to be careful with spending because my husband and I live on what this land gives us.\n\n**For winter wheat:** I'll plant all 4.1 mu after maize harvest in October. I go to the village supply store and buy whatever improved wheat seeds they are selling this year \u2014 I don't save my own seed anymore, the shop seed gives better yield. I'll rotary-till the field first, mix in compound fertilizer, then sow. In spring I'll spread urea when the wheat starts jointing. For water, I always do four times: before sowing to settle the seed, one winter watering to protect against freeze, jointing, and then again at heading. I spray herbicide in winter while plants are small, and I watch for aphids and rust before summer \u2014 usually one more spray.\n\n**For summer maize:** Right after wheat harvest in June I plant maize. No time to waste, we have to move fast. I always buy hybrid seed \u2014 Zhengdan 958 or whatever the store has. I do direct seeding without plowing, just open furrows. Summer rains help a lot so I only pump water twice: once at sowing if it's dry, and once during silking if there's no rain. I put fertilizer down at planting and add urea when the plants are knee-high. I watch for corn borer and spray once if I see it bad.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm all 4.1 mu in a winter wheat and summer maize rotation, which is what everyone in Quzhou does and what I have done for thirty years. For wheat I rotary-till and apply compound fertilizer as a base, top-dress urea in spring, and irrigate four times using my well \u2014 before sowing, in winter, at jointing, and at heading \u2014 because wheat here needs reliable water. For summer maize I switch to direct seeding right after wheat harvest to save time, use hybrid seed from the village store for reliable yields, rely on summer rainfall and only irrigate twice, and side-dress urea at the knee-high stage. I apply pesticides twice per crop to manage weeds and the most common pests I have seen over the years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm all 4.1 mu in a winter wheat and summer maize rotation, which is what everyone in Quzhou does and what I have done for thirty years. For wheat I rotary-till and apply compound fertilizer as a base, top-dress urea in spring, and irrigate four times using my well \u2014 before sowing, in winter, at jointing, and at heading \u2014 because wheat here needs reliable water. For summer maize I switch to direct seeding right after wheat harvest to save time, use hybrid seed from the village store for reliable yields, rely on summer rainfall and only irrigate twice, and side-dress urea at the knee-high stage. I apply pesticides twice per crop to manage weeds and the most common pests I have seen over the years."
+  },
+  "elapsed_seconds": 43.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_4",
+  "tier": 2,
+  "provider": "claude"
+}

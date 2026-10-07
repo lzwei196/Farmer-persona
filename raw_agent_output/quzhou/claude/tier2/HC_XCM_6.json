@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for 5 years now. I know this county well \u2014 the soils here on the North China Plain are decent but water is always on my mind since I'm pulling from a well. With 220.1 mu split between millet and spring soybean, I need to be efficient with every input.\n\nI'll split my land roughly in half. Soybean fixes its own nitrogen, so I keep fertilizer costs down on that side. For millet, I'll go with an improved variety \u2014 something adapted to our region that gives me better drought tolerance and yield than the old landraces my neighbors still use. My education helped me understand variety selection early on. I use rotary tillage across both crops since I don't have the depth of compaction issues that would justify ploughing, and it saves fuel costs.\n\nIrrigation is my biggest constraint. I'll irrigate millet three times \u2014 at planting, jointing, and grain fill \u2014 and soybean three times as well at germination, flowering, and pod fill. I won't over-irrigate; well water costs money to pump. Two rounds of pesticide per crop is my standard \u2014 one early preventative and one reactive if I see pressure building.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"millet\",\n      \"season\": \"spring\",\n      \"area_mu\": 110.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    },\n    {\n      \"crop\": \"soybean\",\n      \"season\": \"spring\",\n      \"area_mu\": 110.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 175\n    }\n  ],\n  \"reasoning_summary\": \"With 220.1 mu in Quzhou County and well irrigation as my only water source, I split land evenly between spring millet and spring soybean. I choose improved varieties for both crops to maximize yield under our semi-arid conditions. Soybean's nitrogen fixation lets me cut N fertilizer to 3 kg/mu there, while millet gets 10 kg/mu to support grain development. Rotary tillage suits our soil structure and saves fuel cost. I schedule 3 irrigations per crop targeting the most water-sensitive growth stages, keeping pumping costs manageable. Two pesticide applications per crop \u2014 one prophylactic, one reactive \u2014 reflects my five years of learning local pest pressure patterns.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "millet",
+        "season": "spring",
+        "area_mu": 110.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      },
+      {
+        "crop": "soybean",
+        "season": "spring",
+        "area_mu": 110.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 175
+      }
+    ],
+    "reasoning_summary": "With 220.1 mu in Quzhou County and well irrigation as my only water source, I split land evenly between spring millet and spring soybean. I choose improved varieties for both crops to maximize yield under our semi-arid conditions. Soybean's nitrogen fixation lets me cut N fertilizer to 3 kg/mu there, while millet gets 10 kg/mu to support grain development. Rotary tillage suits our soil structure and saves fuel cost. I schedule 3 irrigations per crop targeting the most water-sensitive growth stages, keeping pumping costs manageable. Two pesticide applications per crop \u2014 one prophylactic, one reactive \u2014 reflects my five years of learning local pest pressure patterns."
+  },
+  "elapsed_seconds": 38.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_6",
+  "tier": 2,
+  "provider": "claude"
+}

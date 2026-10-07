@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 35 years. I know what grows here, what the soil wants, and what my neighbors do \u2014 and mostly we all do the same things because they work. I'm one person managing 20 mu alone, so I can't afford to experiment or take risks. I need reliable yields I can count on.\n\nMy plan is simple: keep the wheat-maize rotation on 12 mu \u2014 that's my stable income. Use the remaining 8 mu for cotton, which pays better per mu but takes more work and spraying. I won't change this. It's what I've always done.\n\nFor wheat, I'll plant an improved local variety \u2014 I buy seeds from the township supply station each year, same as always. I'll rotary till after maize harvest, then sow in mid-October. Three irrigations: once at planting, once at jointing, once at heading. Fertilizer goes down at sowing (compound) and I top-dress urea at jointing. Two pesticide passes \u2014 one herbicide in winter, one for aphids and rust in spring.\n\nFor maize, I direct seed right after wheat harvest in June. No-till saves me time and the soil stays moist. Hybrid seed \u2014 the sales rep at the village store recommends the same one every year. Two irrigations if it's dry. I side-dress urea at the V6 stage. Two sprays for stem borer and fall armyworm if needed.\n\nFor cotton, I start seedlings in April and transplant in early May. This crop takes the most work \u2014 I spray 8 times across the season for bollworm, aphids, and whitefly. Five irrigations. I apply base fertilizer before planting, then top-dress twice during boll development.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 12 mu to a wheat-maize double-cropping rotation \u2014 the backbone of farming in this part of Hebei \u2014 and 8 mu to cotton for higher cash income. I follow the same input-intensive practices I have used for decades: improved wheat and hybrid maize and cotton seeds from the local supply station, standard compound fertilizer at sowing plus urea top-dressing at key growth stages, and well irrigation at critical periods. Cotton gets the most attention with 8 pesticide applications to control bollworm and other pests. I use no-till direct seeding for maize after wheat harvest to save time and moisture. As a single-person household, I keep my system predictable and manageable rather than trying anything new.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I allocate 12 mu to a wheat-maize double-cropping rotation \u2014 the backbone of farming in this part of Hebei \u2014 and 8 mu to cotton for higher cash income. I follow the same input-intensive practices I have used for decades: improved wheat and hybrid maize and cotton seeds from the local supply station, standard compound fertilizer at sowing plus urea top-dressing at key growth stages, and well irrigation at critical periods. Cotton gets the most attention with 8 pesticide applications to control bollworm and other pests. I use no-till direct seeding for maize after wheat harvest to save time and moisture. As a single-person household, I keep my system predictable and manageable rather than trying anything new."
+  },
+  "elapsed_seconds": 50.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_6",
+  "tier": 2,
+  "provider": "claude"
+}

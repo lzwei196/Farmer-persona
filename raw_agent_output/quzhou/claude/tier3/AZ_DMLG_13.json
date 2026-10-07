@@ -1,0 +1,40 @@
+{
+  "raw_response": "My man and the kids are mostly away working in town, so I manage these 4.1 mu myself. Same ground I've always worked \u2014 wheat in winter, maize in summer, back and forth.\n\nFor the wheat, I plant in October after the maize comes off. I don't mess with the seed \u2014 I use the improved wheat my neighbor Old Wang gets from the dealer in town, same one most folks on our lane plant. It does well enough. I sow maybe a little thick, around a bag for the whole plot, because the cold can thin it out.\n\nBefore I sow I spread compound fertilizer \u2014 two bags (that's 100 jin) per mu, the 15-15-15 kind from the township shop. That's what my mother-in-law always did, that's what the neighbors do. Then around Qingming when the wheat stands up, I put urea, maybe half a bag per mu, about 20 jin. I'd rather put a little extra than see the leaves yellow and lose grain. Losing grain is real money; a bit more fertilizer is just a few yuan.\n\nI water the wheat from the well \u2014 once before winter so it doesn't freeze dry, once at jointing, once when the head is filling. Three times is enough if the spring rain comes; four if it's dry. I spray once for the aphids when I see them on the heads, sometimes twice if they're bad.\n\nFor the maize I plant right after wheat harvest in June, no plowing \u2014 just drill it in, that's how everyone does it now with the machine service. The seed is the Zhengdan or whatever hybrid the dealer pushes that year; neighbors had good ears last year so I'll buy the same. Two bags of compound at planting, then urea at knee-high, about 30 jin per mu \u2014 maize eats more than wheat, I can tell from the leaves. Water once or twice if July is dry. Spray once for the borer when I see the little holes in the leaves.\n\nWheat usually gives me about 400 kg a mu if the weather is fair, maize a bit more, maybe 550. That's what I got most years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 4.1 mu by myself while my family works in town, so I stick with what my neighbors do and what worked last year. For wheat I sow improved seed a little thick, put down two bags of 15-15-15 compound per mu at planting and top with urea in spring \u2014 I'd rather spend a few extra yuan on fertilizer than watch the leaves yellow. Three irrigations from the well, spray for aphids when I see them. For maize I drill straight into the stubble with hybrid seed from the same dealer my neighbors trust, two bags of compound at planting and more urea at knee-high since maize is hungrier, water once or twice in July if dry, spray once for borer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 4.1 mu by myself while my family works in town, so I stick with what my neighbors do and what worked last year. For wheat I sow improved seed a little thick, put down two bags of 15-15-15 compound per mu at planting and top with urea in spring \u2014 I'd rather spend a few extra yuan on fertilizer than watch the leaves yellow. Three irrigations from the well, spray for aphids when I see them. For maize I drill straight into the stubble with hybrid seed from the same dealer my neighbors trust, two bags of compound at planting and more urea at knee-high since maize is hungrier, water once or twice in July if dry, spray once for borer."
+  },
+  "elapsed_seconds": 32.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_13",
+  "tier": 3,
+  "provider": "claude"
+}

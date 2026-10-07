@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old. I have farmed these same 2 mu in Quzhou for 50 years. I only finished primary school. My father taught me how to farm, and now I watch what my neighbors do. That is my main information source.\n\nThis year I will do exactly what I did last year. Last year my wheat gave me about 430 jin per mu, and my maize gave about 480 jin per mu. It was enough for me and my wife. Change is dangerous on a small farm. If I try something new and it fails, I have no buffer.\n\nFor my winter wheat, I plough deep in October before sowing. I buy improved wheat seed from the dealer in town, about 15 kg per mu. At sowing time I spread one big bag of compound fertilizer per mu \u2014 the 15-15-15 kind, 50 kg per mu. In March when the wheat turns green and starts to joint, I topdress with half a big bag of urea per mu, 25 kg. My neighbor Old Wang uses the same amount on his wheat. I know fertilizer costs real money, but if I use less and the yield drops, I lose much more than I save. A bad harvest is a disaster; wasting a little fertilizer is just a cost.\n\nI irrigate wheat three times. First before winter if the ground is dry. Second at jointing in spring. Third at grain filling in May. For pests, I spray herbicide once in early spring when the wheat is small. If I see aphids or disease later, I spray one more time. Usually two times total.\n\nFor summer maize, right after I cut the wheat in early June, I rotary till quick and plant hybrid maize seed. The season is short, so I must move fast. I put compound fertilizer in the rows at sowing, 40 kg per mu. When the maize reaches big trumpet stage and the ears are forming, I spread urea, 25 kg per mu. I irrigate twice: once right after sowing if it has not rained, and once when the ears are filling. I spray herbicide after sowing, and once more for corn borer when the moths appear.\n\nMy household is only me and my wife. We are old now. We do all the work ourselves \u2014 no hired labor. Every jin of fertilizer and every bucket of water comes from our own backs. I spend carefully, but I learned long ago: on 2 mu, being too cheap with fertilizer is the most expensive mistake you can make.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 2 mu wheat-maize rotation the same way I have for decades because change is too risky on a small farm with only me and my wife to do the work. I apply compound fertilizer at sowing and urea at topdressing for both crops, irrigate wheat three times and maize twice, and spray pesticides twice per crop. I copy what my successful neighbors do, and I would rather spend a little extra on fertilizer than risk losing yield, since a bad harvest would be a disaster while wasting some fertilizer is only a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      }
+    ],
+    "reasoning_summary": "I manage my 2 mu wheat-maize rotation the same way I have for decades because change is too risky on a small farm with only me and my wife to do the work. I apply compound fertilizer at sowing and urea at topdressing for both crops, irrigate wheat three times and maize twice, and spray pesticides twice per crop. I copy what my successful neighbors do, and I would rather spend a little extra on fertilizer than risk losing yield, since a bad harvest would be a disaster while wasting some fertilizer is only a cost."
+  },
+  "elapsed_seconds": 151.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_17",
+  "tier": 3,
+  "provider": "kimi"
+}

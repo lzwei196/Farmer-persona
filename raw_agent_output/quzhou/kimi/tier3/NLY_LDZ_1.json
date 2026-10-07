@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 70 years old this year. I never went to school, not one day. My father taught me to farm, and I have done it for 50 years. I have 6.8 mu in Quzhou, just me and my old woman. We grow wheat in winter, maize in summer on 4.8 mu, and I keep 2 mu for cotton because the price was okay last year and I need the cash.\n\nFor the wheat: it is already in the ground. Last fall I rotary tilled and sowed the improved seed I saved from the year before \u2014 about 25 jin per mu. I put 80 jin of compound fertilizer per mu as base. Now in spring I will irrigate three times from my well: when it turns green, when it shoots up, and when the grain is filling. Each time I flood the furrows. I top-dress with urea twice: 40 jin per mu at green-up, another 40 jin at jointing. That is about 25 kg of nitrogen per mu in total. Some people say it is too much, but last year I put less and my wheat looked yellow next to Lao Wang's field. Better to waste fertilizer than lose grain. I spray once for aphids if I see them. I expect 860 jin per mu, about 430 kg.\n\nFor the maize: after I cut the wheat in June, I plant hybrid maize seed on the same 4.8 mu. I buy the seed from the dealer in town, 3 jin per mu. I do not till the ground \u2014 there is no time, and the neighbors sow directly into the wheat stubble. I put 80 jin of compound fertilizer per mu in the rows at sowing. When the plants are knee-high, I put 60 jin of urea per mu. That is about 20 kg of nitrogen. I irrigate twice: once at the big trumpet stage, once when the tassels come out, if the rain does not come. I spray herbicide once and insecticide once. I expect 1000 jin per mu, about 500 kg.\n\nFor the cotton: I plough the 2 mu deep because cotton needs loose soil. I plant the improved cotton seed in April, the same kind I have used for years. I put 80 jin of compound fertilizer per mu before planting, and 40 jin of urea per mu when it flowers. That is about 15 kg of nitrogen per mu. I irrigate three times: at flowering, at boll-setting, and in August. I spray three times for the bollworm \u2014 that worm eats everything if you let it. Picking cotton is hard for my old hands, but seed cotton sells for good money. I expect 440 jin per mu, about 220 kg.\n\nI do not try new things. The dealer talks about new fertilizer, new seed, but I do not listen unless I see Lao Wang or Old Zhang use it first and their field looks better than mine. Fertilizer costs money, but a bad harvest costs everything. I would rather put one more bag than one less. My well pump costs electricity, but without water in Hebei, nothing grows.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed my 6.8 mu in Quzhou for 50 years without schooling, learning only by doing and watching my neighbors. I split the land into 4.8 mu for wheat-maize rotation and 2 mu for cotton, sticking to what worked last year. For wheat, I apply 80 jin of compound fertilizer as base and top-dress with 80 jin of urea across two applications, totaling about 25 kg of nitrogen per mu, because I would rather waste fertilizer than risk a yellow crop. For summer maize, I sow hybrid seed directly into wheat stubble without tillage, using 80 jin of compound and 60 jin of urea per mu, about 20 kg nitrogen, with two irrigations. For cotton, I plough deep and apply 80 jin compound plus 40 jin urea per mu, irrigating three times and spraying three times for bollworm. I copy what successful neighbors do, I distrust new inputs until I see them work on someone else's field, and I always choose the safety of enough fertilizer and water over saving a few yuan.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I have farmed my 6.8 mu in Quzhou for 50 years without schooling, learning only by doing and watching my neighbors. I split the land into 4.8 mu for wheat-maize rotation and 2 mu for cotton, sticking to what worked last year. For wheat, I apply 80 jin of compound fertilizer as base and top-dress with 80 jin of urea across two applications, totaling about 25 kg of nitrogen per mu, because I would rather waste fertilizer than risk a yellow crop. For summer maize, I sow hybrid seed directly into wheat stubble without tillage, using 80 jin of compound and 60 jin of urea per mu, about 20 kg nitrogen, with two irrigations. For cotton, I plough deep and apply 80 jin compound plus 40 jin urea per mu, irrigating three times and spraying three times for bollworm. I copy what successful neighbors do, I distrust new inputs until I see them work on someone else's field, and I always choose the safety of enough fertilizer and water over saving a few yuan."
+  },
+  "elapsed_seconds": 273.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_1",
+  "tier": 3,
+  "provider": "kimi"
+}

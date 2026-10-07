@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 38 years old and have been farming since I was a teenager. My family has about 8 mu of good flat land here in Quzhou. I did not go far in school, but I know this land and this climate. Every year I do the same thing my father did and what my neighbors do, because it works.\n\nThis year I will grow winter wheat and summer maize on the same 8 mu, just like always. This is the only system I trust. If I tried cotton or vegetables, I might lose everything \u2014 I don't have the money to take that risk, and I don't know those markets. Wheat and maize have buyers who come right to the village, and the government gives us a small subsidy for wheat. I need that steady income to feed my family and pay for my children's school.\n\nFor wheat, I will plant **Jimai 22** in early October. It is a good improved variety that my neighbors have used for years \u2014 it stands up well and gives about 1000 jin per mu if the weather is normal. Before planting, I will do **rotary tillage** to prepare the seedbed. I will put down 100 jin of compound fertilizer as a basal dressing and topdress with urea in the spring. Wheat needs a lot of water, so I will irrigate four times: winter irrigation to protect from freezing, and three more times in spring when the grain is filling. I will spray pesticides four times \u2014 herbicide once, and then insecticide and fungicide two or three times because the aphids and rust always come.\n\nAfter harvesting the wheat in early June, I will immediately plant **Denghai 605** maize with **no-tillage**. There is no time to waste between crops \u2014 only about ten days. Denghai 605 is a hybrid that gives good yield, usually around 1100 jin per mu. I will apply compound fertilizer at sowing and maybe some urea at the jointing stage. Maize needs less water than wheat, so I will irrigate twice \u2014 once when it is young and once during flowering. I will spray pesticides three times: herbicide at the start, then insecticide for the corn borer, and fungicide if it looks necessary.\n\nI use these amounts of fertilizer because that is what the seed shop recommends and what I have always done. I would rather use a little too much than too little \u2014 if I under-fertilize and the yield drops, my family suffers. The government technician came once and said we could use less nitrogen, but I don't trust that. My neighbor cut back two years ago and his wheat was shorter than mine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat and maize in rotation on 8 mu because this is the only cropping system I know and trust for both food security and cash income in Quzhou County. I follow what my father and neighbors do: rotary tillage for wheat, no-tillage for maize, generous fertilizer application to avoid the risk of low yields, and regular irrigation and pesticide use to protect the crop. I cannot afford to experiment with other crops or reduce inputs, because my family's livelihood depends on a reliable harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow wheat and maize in rotation on 8 mu because this is the only cropping system I know and trust for both food security and cash income in Quzhou County. I follow what my father and neighbors do: rotary tillage for wheat, no-tillage for maize, generous fertilizer application to avoid the risk of low yields, and regular irrigation and pesticide use to protect the crop. I cannot afford to experiment with other crops or reduce inputs, because my family's livelihood depends on a reliable harvest."
+  },
+  "elapsed_seconds": 259.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_12",
+  "tier": 1,
+  "provider": "kimi"
+}

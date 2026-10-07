@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land in Quzhou for fifty years, and at seventy I trust my own eyes more than any textbook. With only three of us in the household \u2014 and my son working in a factory most of the year \u2014 I must choose crops that match my labor and the well irrigation I have. The wheat-maize rotation is my backbone: it is highly mechanized, gives two harvests a year from the same field, and the grain stores safely even if market prices dip. Cotton can earn good money, but it is back-breaking work and needs endless pesticide sprays, so I will limit it to a plot I can manage with my wife and a little hired help at picking.\n\nI will put **16 mu into the wheat-maize double crop** and keep **4 mu for cotton**. For the wheat, I will sow an improved *Shimai* variety in mid-October after one pass with the rotary tiller. I have learned that piling on fertilizer wastes money and hurts the soil, so I will apply about **32 kg of nitrogen per mu**, with compound fertilizer providing roughly **20 kg of phosphorus** and **10 kg of potassium**. Wheat needs steady water, so I will irrigate four times \u2014 once in winter to guard against frost, and three times in spring at the critical growth stages. I will spray pesticides about four times to control weeds, aphids, and rust.\n\nAs soon as the wheat comes off in early June, I will plant a **hybrid maize** variety the same day, using **no-tillage** direct seeding to save time and fuel. Hybrid seed gives me the vigor and yield I need on this tight schedule. Maize needs less phosphorus here than wheat, so **25 kg of nitrogen** and about **7 kg each of phosphorus and potassium per mu** is sufficient. Two irrigations \u2014 one at jointing and one at grain-filling \u2014 will carry it through the summer heat.\n\nFor the **4 mu of cotton**, I will rotary-till in April and plant an improved *Guoxinmian* variety. Cotton demands balanced nutrition and relentless pest control, so I will apply **20 kg of nitrogen** and **15 kg each of phosphorus and potassium per mu**, and spray pesticides roughly sixteen times against bollworm, aphids, and mites. I will irrigate twice, timed at flowering and boll-setting. I expect my usual yields: about **1,050 kg/mu for wheat**, **1,150 kg/mu for maize**, and **550 kg/mu of seed cotton**.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"At seventy, I must balance reliability with what my wife and I can physically manage. The 16 mu wheat-maize rotation is mechanized and provides two secure harvests per year from the same land, while the 4 mu of cotton limits labor but still brings cash income. I use well irrigation strategically \u2014 four times for wheat, twice each for maize and cotton \u2014 and apply fertilizers based on what this soil has actually responded to over fifty seasons, not on excessive rates.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "At seventy, I must balance reliability with what my wife and I can physically manage. The 16 mu wheat-maize rotation is mechanized and provides two secure harvests per year from the same land, while the 4 mu of cotton limits labor but still brings cash income. I use well irrigation strategically \u2014 four times for wheat, twice each for maize and cotton \u2014 and apply fertilizers based on what this soil has actually responded to over fifty seasons, not on excessive rates."
+  },
+  "elapsed_seconds": 201.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_3",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 48 years old and have been farming since I was a teenager. My family has about 10 mu of good flat land here in Quzhou. I finished middle school, so I can read seed labels and follow the county's technical guidance, but I am not one for complicated new methods. I stick with what works.\n\nThis year, as every year, I will grow winter wheat and summer maize on my main 7 mu plot. The wheat is already in the ground \u2014 I sowed it last October with an improved variety I bought from the local supply store. It is a reliable variety that yields about 1,000 jin per mu if the weather cooperates. I rotary-tilled before sowing to break up the soil and bury the maize stubble from last summer. For the wheat, I will irrigate three times: once in late winter if it is dry, and twice in spring \u2014 at jointing and at heading. I apply fertilizer in two rounds \u2014 a basal compound dressing at sowing and a urea topdressing in spring \u2014 totaling about 50 kg of nitrogen per mu, plus some phosphorus and potassium from the compound bag. I will spray pesticides four times, mainly for aphids and rust, and for weeds.\n\nAfter I harvest the wheat in early June, I will immediately plant hybrid summer maize on the same 7 mu. There is no time to waste \u2014 the heat arrives fast \u2014 so I will plant no-till directly into the wheat stubble using the seeder. The hybrid maize gives me about 1,100 jin per mu. I irrigate twice, once at the jointing stage and once at filling, and I apply compound fertilizer at planting. I spray three times for borers and weeds. No-tillage saves me time and diesel, and the stubble helps keep moisture.\n\nOn my remaining 3 mu, I will grow cotton. It brings in cash that wheat and maize do not, and the price has been decent. I rotary-till in spring, plant a hybrid cotton variety, irrigate twice, and fertilize lightly. Cotton needs many pesticide sprays \u2014 I will spray about 14 times through the season to control bollworms and aphids \u2014 but my wife and I can manage it. I expect about 550 jin per mu of seed cotton.\n\nThis is my plan. I do not gamble with new crops. Wheat and maize feed my family and the cotton gives us spending money. I follow what my father did and what the county extension office advises.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 50,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 10 mu in Quzhou County for over 30 years. My main rotation is winter wheat followed by summer maize on 7 mu, using improved wheat seed and hybrid maize seed. I rotary-till for wheat, apply about 50 kg N/mu with compound fertilizer, irrigate three times, and spray four times. For maize, I plant no-till immediately after wheat harvest, irrigate twice, spray three times, and expect 1,100 kg/mu. On the remaining 3 mu, I grow cotton for cash income, rotary-tilling, irrigating twice, and spraying about 14 times for pests. This combination provides stable food security and supplementary cash, which is the standard practice for farmers like me in this area.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 50,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed 10 mu in Quzhou County for over 30 years. My main rotation is winter wheat followed by summer maize on 7 mu, using improved wheat seed and hybrid maize seed. I rotary-till for wheat, apply about 50 kg N/mu with compound fertilizer, irrigate three times, and spray four times. For maize, I plant no-till immediately after wheat harvest, irrigate twice, spray three times, and expect 1,100 kg/mu. On the remaining 3 mu, I grow cotton for cash income, rotary-tilling, irrigating twice, and spraying about 14 times for pests. This combination provides stable food security and supplementary cash, which is the standard practice for farmers like me in this area."
+  },
+  "elapsed_seconds": 205.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_2",
+  "tier": 1,
+  "provider": "kimi"
+}

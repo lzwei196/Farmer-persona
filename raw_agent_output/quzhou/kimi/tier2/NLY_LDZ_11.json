@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 52 years old and have farmed this same land in Quzhou for 35 years. I never went to school, but my father taught me how to read the soil and the weather, and I know my 10.1 mu better than anyone. This year will be no different from the last good years: wheat in winter, maize in summer, both on the full plot because that is how the wheat-maize system works here.\n\nMy wheat will go in this autumn with an improved variety \u2014 the same kind most of my neighbors use, because it stands well and gives steady grain. Before sowing I will run the rotary tiller to loosen the soil; wheat needs a fine seedbed. I will spread compound fertilizer as basal and then topdress with urea, about 18 kg of nitrogen per mu in total, plus phosphorus and potassium from the compound. I have a well for irrigation, so I will water three times: once after sowing if the autumn is dry, once at jointing in spring, and once at grain filling. That is what it takes to get around 500 kg per mu. I also spray four times \u2014 herbicide, insecticide, and fungicide \u2014 because if you skip even one, the rust or aphids will take your yield. My son works in the factory in town, so labor is tight, but I can handle the spraying myself and hire a machine for irrigation.\n\nAfter harvesting the wheat in early June, I immediately sow maize. There is no time to plough; everyone here plants maize no-tillage straight into the wheat stubble. The stubble shades the ground and keeps moisture, which matters because June is hot. I always buy hybrid seed from the shop \u2014 never save my own, because hybrid vigor drops in the second year. Maize needs less fertilizer than wheat; I give it about 12 kg nitrogen per mu and some compound for P and K. I irrigate twice if the summer rains are thin, and I spray three times for weeds and the corn borer. If the weather is fair, I expect 550 kg per mu.\n\nSome people say I should cut back on fertilizer to save money, but I have seen what happens when you go cheap: the ears are small and the grains are light. With my family partly working off-farm, we have a little cash to buy inputs, and I would rather spend on fertilizer and water than risk a bad year. That is how I have always done it, and that is how I will do it this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this land for 35 years and follow the standard wheat-maize double-cropping system of Quzhou County. I rely on my well for irrigation and use an improved wheat variety and hybrid maize seed, which is what works here. I rotary till before wheat sowing and plant maize no-tillage immediately after wheat harvest to save time. I apply fertilizer generously because I have learned that under-fertilizing costs more in lost yield than the inputs themselves. With some family members working off-farm, I keep the plan practical and labor-efficient, hiring machinery where needed but doing the spraying myself.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this land for 35 years and follow the standard wheat-maize double-cropping system of Quzhou County. I rely on my well for irrigation and use an improved wheat variety and hybrid maize seed, which is what works here. I rotary till before wheat sowing and plant maize no-tillage immediately after wheat harvest to save time. I apply fertilizer generously because I have learned that under-fertilizing costs more in lost yield than the inputs themselves. With some family members working off-farm, I keep the plan practical and labor-efficient, hiring machinery where needed but doing the spraying myself."
+  },
+  "elapsed_seconds": 242.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

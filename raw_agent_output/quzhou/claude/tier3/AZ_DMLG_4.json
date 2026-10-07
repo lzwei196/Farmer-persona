@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for generations. I do what my father showed me, and what I have watched work in my own fields for fifty years. I do not read books. I do what works.\n\nMy 6 mu \u2014 I put 4 mu into cotton and 2 mu into spring maize. Cotton makes the money. Maize we eat and feed to animals. That is how I always split it.\n\nFor the **maize**: I plough in spring before planting. I use hybrid seed \u2014 everybody around here uses that kind now, the yields are much better than the old seed we used to keep. I put down one bag of compound fertilizer per mu before planting, maybe half a bag of urea when the stalks get tall and another small handful when the tassels come. I water maybe 4 times \u2014 before planting, when it gets knee high, when it flowers, and when the ears are filling. I spray twice, once for the borers when they show up. I get around 600 jin per mu if the rains are okay.\n\nFor the **cotton**: Cotton is hard work. I plough it deep in spring. I use improved seed \u2014 the kind the village dealer sells, most people here buy the same. Cotton needs feeding a lot, especially when it is setting bolls \u2014 I put urea on it 2 or 3 times through summer. I water 5 times. The bugs are always a problem \u2014 aphids early, then bollworms \u2014 so I spray 5 or 6 times. Last year I got about 260 jin of seed cotton per mu. This year I hope for 280.\n\nIf my son had not gone to the city to work, I would hire someone to help pick cotton. Now it is just me and my wife.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"maize\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer with no formal schooling in Quzhou, Hebei splits his 6 mu between 4 mu cotton (the cash crop) and 2 mu spring maize (for household consumption and feed), following the same practice as neighboring farms. He applies hybrid maize seed and improved cotton varieties based on what local dealers sell and what he has seen work. Fertilizer is applied in multiple splits \u2014 compound base plus urea top-dressing \u2014 at rates learned from fifty years of practice and neighbor observation, erring slightly heavy to protect yield. Cotton receives extra pesticide treatments due to recurring aphid and bollworm pressure. Well irrigation covers 4 water events for maize and 5 for cotton. With some family labor off-farm, cotton harvest will be tight and depends on the remaining household members.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "maize",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer with no formal schooling in Quzhou, Hebei splits his 6 mu between 4 mu cotton (the cash crop) and 2 mu spring maize (for household consumption and feed), following the same practice as neighboring farms. He applies hybrid maize seed and improved cotton varieties based on what local dealers sell and what he has seen work. Fertilizer is applied in multiple splits \u2014 compound base plus urea top-dressing \u2014 at rates learned from fifty years of practice and neighbor observation, erring slightly heavy to protect yield. Cotton receives extra pesticide treatments due to recurring aphid and bollworm pressure. Well irrigation covers 4 water events for maize and 5 for cotton. With some family labor off-farm, cotton harvest will be tight and depends on the remaining household members."
+  },
+  "elapsed_seconds": 42.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_4",
+  "tier": 3,
+  "provider": "claude"
+}

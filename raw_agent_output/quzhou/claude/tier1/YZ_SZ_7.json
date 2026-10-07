@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for over fifty years. My father grew wheat and maize, I grow wheat and maize, and that's what I know. The soil here on the North China Plain is suited to it. The government buys it at a set price, so I don't have to worry about finding a market. At my age, I'm not going to start growing something unfamiliar.\n\nMy son works in the city. He helps during harvest if he can, but mostly it's me. I have 6 mu of flat land. Same plot every year \u2014 wheat goes in after the maize, maize goes in after the wheat. That rotation keeps the land working both seasons.\n\nFor wheat, I put in an improved variety \u2014 I've been using Jimai 22 for years, it does well here, good resistance to rust. I'll apply compound fertilizer at sowing and then top-dress with urea at jointing. My neighbor says I use too much nitrogen but I'd rather the crop not go hungry. Wheat needs water at winter freeze, jointing, and heading \u2014 so four irrigations total including at sowing. I'll spray for aphids and powdery mildew when I see them, maybe twice.\n\nFor maize, I buy hybrid seed from the county supply station. Zhengdan 958 or whatever they have that's similar. I use the rotary tiller to work in the wheat stubble, then seed. Summer rains usually help, but I'll irrigate once if July is dry. Maize doesn't need as many sprays \u2014 maybe once for corn borer.\n\nI don't do no-till. I've tried it and I don't trust it. Rotary tillage every time.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer with primary education in Quzhou County follows the dominant winter wheat\u2013summer maize rotation on 6 mu of flat irrigated land. Crop and variety choices reflect decades of habit, local input supply availability, and government grain price supports. Nitrogen rates are slightly elevated relative to agronomic optima, consistent with risk-averse over-fertilization common among older smallholders. Irrigation frequency for wheat reflects standard North China Plain practice across four critical growth stages; maize relies largely on summer monsoon rainfall with one supplemental irrigation. Rotary tillage is used in both seasons, reflecting a deep-rooted distrust of no-till among this cohort. Pesticide applications are modest but reactive. Yield expectations are realistic for a smallholder without precision inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer with primary education in Quzhou County follows the dominant winter wheat\u2013summer maize rotation on 6 mu of flat irrigated land. Crop and variety choices reflect decades of habit, local input supply availability, and government grain price supports. Nitrogen rates are slightly elevated relative to agronomic optima, consistent with risk-averse over-fertilization common among older smallholders. Irrigation frequency for wheat reflects standard North China Plain practice across four critical growth stages; maize relies largely on summer monsoon rainfall with one supplemental irrigation. Rotary tillage is used in both seasons, reflecting a deep-rooted distrust of no-till among this cohort. Pesticide applications are modest but reactive. Yield expectations are realistic for a smallholder without precision inputs."
+  },
+  "elapsed_seconds": 46.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_7",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 72 years old this year. I have farmed these 9 mu in Quzhou County for 50 years. I only went to primary school, but I know my own fields better than any book. I watch what my neighbors do, and I only change if I saw it work on someone else's land first.\n\nLast year my wheat made about 550 jin per mu and my maize made about 650 jin per mu. This year I will do almost the same thing. Change is risky, and a bad harvest is a disaster I cannot afford.\n\nFor winter wheat, I buy improved seed from the dealer in town \u2014 the same kind my neighbor Old Wang used last year. Before planting, I put one 50kg bag of compound fertilizer on every mu. That is 9 bags total for my whole farm. When the wheat greens up in March, I topdress with 25kg of urea per mu. I never cut back on fertilizer. Compound fertilizer is over 150 yuan a bag now, but if I use too little and the yield drops, I lose much more money. Wasting some fertilizer is just a cost; an empty table is a catastrophe. I irrigate three times from my well: once before winter if the soil is dry, once at jointing, and once at heading. The well pump costs electricity, but I cannot skip it. I spray herbicide once after the wheat emerges, and if I see aphids in spring, I spray insecticide once more. After the maize comes off in June, I rotary till the ground before planting wheat.\n\nFor summer maize, I plant hybrid seed right after wheat harvest, around June 10th. I have to hurry \u2014 if I plant after June 20th, everyone knows the yield falls. I put one 50kg bag of compound fertilizer per mu at planting time, and when the maize grows to knee height \u2014 the big trumpet stage \u2014 I spread 20kg of urea per mu. That trumpet-stage topdressing is the most important. If you miss that, the ears do not fill properly. I irrigate twice: once when the seedlings are small if the rain does not come, and once at the big trumpet stage. I spray herbicide once after planting, and I spray insecticide once for corn borers. I do not till the land for maize. There is no time after wheat harvest \u2014 everyone here plants directly or uses no-tillage. That is how it is done.\n\nI think about my whole budget. Nine bags of compound fertilizer for wheat, nine bags for maize, plus all that urea, plus seed, plus electricity for the well, plus pesticide \u2014 it adds up to thousands of yuan. My wife and I do all the labor ourselves. If harvest is very busy I might hire one person for one day, but I try to avoid paying wages. I would rather spend the money on fertilizer than lose yield. Old Wang tried to save money on fertilizer two years ago and his wheat was thin and yellow. I will not make that mistake.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.7,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 9 mu for 50 years and I trust what has always worked. Last year my wheat made about 550 jin per mu and maize about 650 jin, so I will do the same again. For wheat I use improved seed, one 50kg bag of compound fertilizer per mu at planting, and 25kg of urea per mu in spring, with three well irrigations and two pesticide sprays. For maize I plant hybrid seed right after wheat harvest with one 50kg bag of compound fertilizer per mu and 20kg of urea per mu at the big trumpet stage, two irrigations, and two pesticide sprays. I rotary till before wheat but not for maize because there is no time after June harvest. Fertilizer is expensive but cutting back is riskier than wasting some, so I apply enough to protect my yield and do all the labor myself with my wife to save money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.7,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed these 9 mu for 50 years and I trust what has always worked. Last year my wheat made about 550 jin per mu and maize about 650 jin, so I will do the same again. For wheat I use improved seed, one 50kg bag of compound fertilizer per mu at planting, and 25kg of urea per mu in spring, with three well irrigations and two pesticide sprays. For maize I plant hybrid seed right after wheat harvest with one 50kg bag of compound fertilizer per mu and 20kg of urea per mu at the big trumpet stage, two irrigations, and two pesticide sprays. I rotary till before wheat but not for maize because there is no time after June harvest. Fertilizer is expensive but cutting back is riskier than wasting some, so I apply enough to protect my yield and do all the labor myself with my wife to save money."
+  },
+  "elapsed_seconds": 123.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "BZ_BTD_7",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,79 @@
+{
+  "raw_response": "I am 50 years old. I never went to school. I learned everything from my father and from watching the neighbors. My farm is 10.9 mu. I keep 7 mu for wheat and maize \u2014 wheat in the fall, then maize right after harvest. The rest is vegetables: 1.5 mu watermelon, 1.2 mu tomato, and 1.2 mu eggplant. There are only two of us in the house, so that is all the vegetable land we can handle.\n\nFor wheat, last year I spread one 50-kilogram bag of compound fertilizer per mu before sowing. When the wheat turned green in spring, I put 20 kilograms of urea per mu. At heading I put another 10 kilograms. That gave me about 480 kilograms per mu. This year I will do exactly the same. I water four times: green-up, jointing, heading, and grain filling. I spray herbicide once and insecticide once. I use improved seeds from the shop.\n\nFor maize, as soon as the wheat is cut in June, I plant hybrid seeds without plowing \u2014 no time to waste, and the machine can plant through the stubble. I put 40 kilograms of compound fertilizer in the row per mu. When the plants are knee-high, I spread 25 kilograms of urea per mu. I water twice if the summer is dry. I spray once for weeds and once for corn borer. Last year I got about 520 kilograms per mu.\n\nVegetables need more money and more work. For tomatoes, I rotary-till the soil fine and plant hybrid seedlings. I put two 50-kilogram bags of compound fertilizer per mu as base, then I topdress with urea and potassium fertilizer twice. I water ten times and spray seven times for blight and whiteflies. I hope for 3,500 kilograms per mu. Eggplant gets the same: two bags of compound base, then urea and potassium later. I water eight times and spray six times. Expected yield is 3,000 kilograms per mu.\n\nWatermelon needs potassium for sweet fruit. I put one and a half bags of compound fertilizer per mu and extra potassium sulfate. I water six times and spray four times. I expect 2,200 kilograms per mu.\n\nI spend my own money on every bag. I worry about costs. But a bad harvest is worse than wasting a little fertilizer. I would rather put a bit too much than risk losing yield. I watch Old Wang and the others. If they use more fertilizer this year, I will use more too. Change is risky, so I mostly do what I did last year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"tomato\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 10,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3500\n    },\n    {\n      \"crop\": \"eggplant\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 16,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3000\n    },\n    {\n      \"crop\": \"watermelon\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 2200\n    }\n  ],\n  \"reasoning_summary\": \"This year I will manage my 7 mu of wheat-maize rotation with the same fertilizer rates that gave me good yields last year\u2014about 21 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu for wheat, and slightly less for maize\u2014because cutting inputs risks disaster. On my 1.2 mu of tomatoes, 1.2 mu of eggplant, and 1.5 mu of watermelon, I will apply more potassium for the fruit crops and water frequently using my well, while keeping a close eye on what my neighbors do so I don't fall behind.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "tomato",
+        "season": "spring",
+        "area_mu": 1.2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 10,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3500
+      },
+      {
+        "crop": "eggplant",
+        "season": "spring",
+        "area_mu": 1.2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 16,
+        "irrigation_times": 8,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3000
+      },
+      {
+        "crop": "watermelon",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 2200
+      }
+    ],
+    "reasoning_summary": "This year I will manage my 7 mu of wheat-maize rotation with the same fertilizer rates that gave me good yields last year\u2014about 21 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu for wheat, and slightly less for maize\u2014because cutting inputs risks disaster. On my 1.2 mu of tomatoes, 1.2 mu of eggplant, and 1.5 mu of watermelon, I will apply more potassium for the fruit crops and water frequently using my well, while keeping a close eye on what my neighbors do so I don't fall behind."
+  },
+  "elapsed_seconds": 209.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_6",
+  "tier": 3,
+  "provider": "kimi"
+}

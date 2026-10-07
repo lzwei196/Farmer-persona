@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm a 44-year-old man, been farming these fields in Quzhou since I was young. I finished middle school, which is more than enough to manage what we grow here. I have about 12 mu of good flat land on the North China Plain. Around here, there's really only one sensible system: winter wheat followed by summer maize. That's what the climate allows, what the buyers want, and what I've got the equipment for.\n\nMy wheat went into the ground last October after rotary tillage. Now it's the start of spring, so the crop is greening up. I'll give it three more irrigations from the well\u2014one at green-up, one at jointing, and one at flowering\u2014plus the autumn irrigation makes four in total. I'll topdress with urea and make sure the crop gets enough nutrients. I buy improved wheat varieties from the local supply shop; they yield steady and resist lodging.\n\nCome early June, I'll harvest the wheat and immediately plant summer maize using no-tillage direct seeding. There's no time to waste between crops, and the no-till method works fine\u2014saves diesel and keeps moisture in the soil. I use hybrid maize seed; the yield is higher and it's worth the extra cost. The corn will need two irrigations, usually one at the V6 stage and one at tasseling. I'll spray herbicide once and insecticide twice for the corn, and for the wheat I'll do one herbicide, two insecticides, and one fungicide spray over the season.\n\nI thought about growing vegetables like chili or cabbage for higher prices, but the market is risky and they need more labor and pesticides. With my wife helping and my son working in the city, I don't have enough hands for that. Wheat and maize prices are stable because the government sets minimum purchase prices, and the grain traders come right to the village. That's the safe choice.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double-cropping rotation because it is what the climate, soil, and local market in Quzhou County support. Winter wheat is already in the ground, so my immediate work is spring irrigation and topdressing. After the June harvest, I plant hybrid summer maize with no-tillage to save time and fuel. I choose improved wheat and hybrid maize seeds for reliable yields. I keep fertilizer and pesticide inputs at moderate levels based on local recommendations and my own experience. I avoid high-value vegetables because price volatility and labor demands are too risky for my household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double-cropping rotation because it is what the climate, soil, and local market in Quzhou County support. Winter wheat is already in the ground, so my immediate work is spring irrigation and topdressing. After the June harvest, I plant hybrid summer maize with no-tillage to save time and fuel. I choose improved wheat and hybrid maize seeds for reliable yields. I keep fertilizer and pesticide inputs at moderate levels based on local recommendations and my own experience. I avoid high-value vegetables because price volatility and labor demands are too risky for my household."
+  },
+  "elapsed_seconds": 87.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_13",
+  "tier": 1,
+  "provider": "kimi"
+}

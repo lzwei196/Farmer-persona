@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 65 years old, farming these 6 mu in Quzhou for 45 years. I never went to school. My father taught me, and now I watch my neighbors. If Old Wang's wheat looks good, I do what Old Wang does.\n\nFor the winter wheat: I plant improved seed after the maize comes off in autumn. Before sowing, I spread one full bag of compound fertilizer on each mu \u2014 one bag is 50 jin. When the wheat turns green in spring, I topdress half a bag of urea on each mu. That is what I did last year and I got about 1000 jin per mu. I irrigate three times from my well: once before the ground freezes so the wheat can survive winter, once in April when it starts jointing, and once in May when the ears are filling. I spray weed killer once in early spring, and once for bugs when the wheat is heading. After the maize harvest, I rotary till the ground to make it soft for wheat sowing.\n\nFor the summer maize: After I cut the wheat in June, I plant hybrid maize seed the same day. Everyone uses hybrid now \u2014 the old seed cannot compare. I put down one bag of compound fertilizer per mu at planting time, then spread half a bag of urea when the maize is knee-high. I irrigate twice: once in July if the rain does not come, and once in August when the ears need water. I spray herbicide once after the seedlings come up, and once for corn borer when I see the moths flying around the lamp at night. After wheat harvest I rotary till the stubble because I must plant fast before the soil gets too dry.\n\nI worry about money every day. A bag of compound fertilizer costs over 150 yuan now, and urea is more than 120 yuan a bag. For 6 mu of wheat I need 6 bags of compound and 3 bags of urea. The maize needs the same. That is thousands of yuan just for fertilizer. But I dare not use less. If the crop fails, I lose everything. Last year I got about 1000 jin of wheat and 1200 jin of maize per mu. This year I will do the same. Everyone in the village uses about one bag of compound and half a bag of urea per mu. I do what they do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 6 mu in Quzhou for 45 years with no schooling. I learned from my father and neighbors. For both wheat and maize I use one 50kg bag of compound fertilizer and 25kg of urea per mu, because that worked last year and that is what my neighbors do. I irrigate three times for wheat and twice for maize from my well. I spray twice per crop. I use improved wheat seed and hybrid maize seed, rotary till before planting, and expect about 500kg per mu of wheat and 600kg per mu of maize. Fertilizer is costly but I dare not cut back because a bad harvest is a disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed 6 mu in Quzhou for 45 years with no schooling. I learned from my father and neighbors. For both wheat and maize I use one 50kg bag of compound fertilizer and 25kg of urea per mu, because that worked last year and that is what my neighbors do. I irrigate three times for wheat and twice for maize from my well. I spray twice per crop. I use improved wheat seed and hybrid maize seed, rotary till before planting, and expect about 500kg per mu of wheat and 600kg per mu of maize. Fertilizer is costly but I dare not cut back because a bad harvest is a disaster."
+  },
+  "elapsed_seconds": 209.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_4",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54 years old and have worked this land for 35 years. I know every corner of my 12 mu in Quzhou. My husband and I do the heavy work, and our children help during busy times when they are back from town. With five mouths to feed, I must make sure we have enough wheat for flour and maize for the animals, but we also need cotton for cash to pay for school fees and medicine. \n\nThis year, I will put 8 mu into the wheat\u2013maize rotation and keep 4 mu for cotton. Eight mu of wheat gives us grain security, and after the June harvest I can immediately sow summer maize on the same plot. I will use an improved wheat variety that my neighbor saved seed from last year\u2014it lodges less and tastes good. For maize, I always buy hybrid seed from the county supply shop; the yield is much higher and the grain dries well. For cotton, I will plant hybrid Bt cotton in April. It is expensive seed, but it saves labor on pest control, though I still need to watch for aphids and mites.\n\nI will rotary till the wheat field before October sowing, and fertilize with urea, diammonium phosphate, and some potassium chloride\u2014about 16 jin of nitrogen per mu, plus phosphate and potash. I have a well, so I will irrigate the wheat four times: wintering water, reviving green water, jointing water, and grain-filling water. I will spray pesticide two or three times when I see aphids or powdery mildew. \n\nFor the summer maize, time is short after wheat harvest, so I will sow directly into the stubble without ploughing. I will give it similar nitrogen, a little less phosphorus, and irrigate twice\u2014at the big trumpet stage and during grain filling\u2014if the summer rains are not enough. Maize usually needs only one or two pesticide sprays.\n\nThe 4 mu of cotton will be ploughed in spring. Cotton needs less nitrogen than wheat but more potassium to keep the bolls full. I will irrigate three times, at budding, flowering, and boll opening, and spray four times because cotton pests are stubborn even with Bt seed. I expect about 280 jin of seed cotton per mu, which the buyer will collect at the road.\n\nThis plan balances food and cash, and the labor fits what our family can manage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I allocated 8 mu to wheat\u2013maize rotation for household grain security and 4 mu to cotton for cash income, matching our family labor. Wheat receives rotary tillage, four irrigations, and modest fertilization; maize is no-till sown immediately after wheat harvest with hybrid seed and two irrigations; cotton is ploughed in spring, fed with extra potassium, and sprayed more intensively for pests.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I allocated 8 mu to wheat\u2013maize rotation for household grain security and 4 mu to cotton for cash income, matching our family labor. Wheat receives rotary tillage, four irrigations, and modest fertilization; maize is no-till sown immediately after wheat harvest with hybrid seed and two irrigations; cotton is ploughed in spring, fed with extra potassium, and sprayed more intensively for pests."
+  },
+  "elapsed_seconds": 111.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_6",
+  "tier": 2,
+  "provider": "kimi"
+}

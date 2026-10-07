@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 62, been on this land 40 years. My wife passed, kids work in town, so it's just me on these 15 mu. That means I can't spread myself too thin \u2014 I need to keep things simple.\n\nHere's how I think about this year. Stevia is my money crop. Dealers from the factory come to buy dry leaf, price has been okay last few years. I'll put 10 mu in stevia because that's where the real money comes from. The other 5 mu I'll do wheat in winter and maize in summer \u2014 that's how we've always done it here, and I need some grain in my shed.\n\nFor stevia, I transplant seedlings in April after I buy them from the village nursery. I'll put down 3 bags of compound fertilizer per mu before planting \u2014 that's 150 kg of 15-15-15, gives me about 22 kg N, 22 P, 22 K. Then I topdress twice with urea, maybe half a bag (25 kg) each time after cutting. Stevia is thirsty \u2014 I'll water 5 times from my well. Bugs and leaf disease are a problem, so 3 sprays.\n\nFor wheat, I sow in October. I put 2 bags of compound (100 kg of 15-15-15) plus 1 bag urea at planting, then topdress 1 bag urea in spring when it greens up. That's about 30 kg N total, 15 P, 15 K \u2014 same as last year, gave me decent harvest. I plough before sowing because the soil gets hard. Two irrigations \u2014 winter water and spring water. Two sprays for aphids and rust.\n\nFor maize after wheat, I use rotary tiller, saves time since I'm alone. Sow hybrid seed from the dealer, everyone buys Zhengdan or Xianyu. Put 2 bags compound at planting, topdress 1 bag urea at big trumpet stage. Water twice if no rain, one spray for borer.\n\nI won't cut fertilizer \u2014 losing yield would hurt more than the extra yuan for a bag of urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 45,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 22,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am alone on 15 mu so I keep it simple \u2014 10 mu stevia for cash since the factory buys dry leaf, and 5 mu wheat-maize rotation for my own grain. I stick close to what I did last year because changing is risky at my age. I use compound fertilizer bags plus urea topdressing, same as my neighbors. I would rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest is a real loss, extra fertilizer is just money. I plough for wheat and stevia, rotary for maize to save time.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 45,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 22,
+        "irrigation_times": 5,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am alone on 15 mu so I keep it simple \u2014 10 mu stevia for cash since the factory buys dry leaf, and 5 mu wheat-maize rotation for my own grain. I stick close to what I did last year because changing is risky at my age. I use compound fertilizer bags plus urea topdressing, same as my neighbors. I would rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest is a real loss, extra fertilizer is just money. I plough for wheat and stevia, rotary for maize to save time."
+  },
+  "elapsed_seconds": 41.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

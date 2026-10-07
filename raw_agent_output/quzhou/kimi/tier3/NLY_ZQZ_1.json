@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 50 and I have farmed this 10.9 mu for 30 years. I never went to school but I know my land. I do wheat in winter and maize in summer, same as everyone in my village.\n\nFor wheat, I sow in October after the corn comes off. I buy improved seeds from the dealer, about 15 jin per mu. Before sowing I spread 10 bags of compound fertilizer, 50kg each bag. That is almost one bag per mu. In March when the wheat turns green I spread 4 bags of urea, 40kg each. At jointing time in April I spread another 4 bags of urea. I do not want my wheat to starve. A bad harvest is a disaster. I irrigate three times from my well: once in winter if there is no snow, once at jointing, and once when the grain is filling. I spray herbicide once after the wheat comes up, insecticide once when I see bugs, and fungicide once because my neighbors do it too. I rotary till the land after maize harvest. Last year I got 1000 jin per mu. I expect the same this year.\n\nFor maize, after wheat harvest in early June I sow right away. I use hybrid seeds, about 3 jin per mu, new seeds every year. I put 8 bags of compound fertilizer in the furrow at sowing. When the corn is knee high I side-dress 3 bags of urea. At tasseling I put another 3 bags of urea. I irrigate twice: once when it tassels, once when the grain fills. I spray herbicide once after sowing, and insecticide once for the corn borer. I use the no-till seeder because there is no time between wheat harvest and maize sowing. Last year I got about 1100 jin per mu. My sons work in the city so I hire two people for two days at maize harvest. I spend a lot on fertilizer but I would rather waste some money than lose the crop. I do what my neighbors do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20.4,\n      \"phosphorus_kg_per_mu\": 6.9,\n      \"potassium_kg_per_mu\": 6.9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15.6,\n      \"phosphorus_kg_per_mu\": 5.5,\n      \"potassium_kg_per_mu\": 5.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10.9 mu of wheat-maize rotation in Quzhou County the same way I have for 30 years. For wheat, I sow improved seeds in October with 10 bags of compound fertilizer as base, then topdress 8 bags of urea in two splits, irrigate three times from my well, and spray pesticides three times, expecting 500 kg per mu. For maize, I sow hybrid seeds in June with 8 bags of compound fertilizer and 6 bags of urea in two splits, irrigate twice, spray twice, using no-tillage, expecting 550 kg per mu. I follow what my neighbors do and would rather spend extra on fertilizer than risk a bad harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20.4,
+        "phosphorus_kg_per_mu": 6.9,
+        "potassium_kg_per_mu": 6.9,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15.6,
+        "phosphorus_kg_per_mu": 5.5,
+        "potassium_kg_per_mu": 5.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 10.9 mu of wheat-maize rotation in Quzhou County the same way I have for 30 years. For wheat, I sow improved seeds in October with 10 bags of compound fertilizer as base, then topdress 8 bags of urea in two splits, irrigate three times from my well, and spray pesticides three times, expecting 500 kg per mu. For maize, I sow hybrid seeds in June with 8 bags of compound fertilizer and 6 bags of urea in two splits, irrigate twice, spray twice, using no-tillage, expecting 550 kg per mu. I follow what my neighbors do and would rather spend extra on fertilizer than risk a bad harvest."
+  },
+  "elapsed_seconds": 244.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_1",
+  "tier": 3,
+  "provider": "kimi"
+}

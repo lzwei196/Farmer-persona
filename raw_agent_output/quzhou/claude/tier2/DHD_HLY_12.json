@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for nearly half a century. My husband and I know every corner of these 7 mu. The wheat-maize rotation is what I've always done \u2014 it's what my mother did, it's what the whole village does. There's no reason to change that.\n\nFor wheat, I'll plant in October like always, after the maize comes off. I'll hire the village tractor to plough deep \u2014 my back can't take heavy work anymore, and deep ploughing helps the roots. I buy seed from the township supply cooperative. They sell the same improved variety most neighbors use. I won't try something new I don't know.\n\nFor fertilizer, I put down compound fertilizer as base when I plant, then urea in spring when the wheat starts to green up. I know some younger farmers use less, but I've always done it this way and my yields are decent. I can't risk a poor harvest \u2014 it's just the two of us and we need the grain.\n\nFor maize, I plant right after wheat harvest in June. The turnaround is fast so I only do rotary tillage. I always buy hybrid seed \u2014 haven't planted my own saved seed for maize in over twenty years, the hybrid grows much better. I top-dress urea when the stalks are knee-high.\n\nWater I have from the well. I'll irrigate wheat four times \u2014 before winter freeze, before jointing, at heading, and once more if it's dry. Maize I irrigate when I see the leaves start to curl, and at tasseling. Three times is usually enough.\n\nFor pesticides, I spray herbicide early in both crops, and watch for aphids in wheat \u2014 last few years they've been bad. I spray what I need to, when I see the problem.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 69-year-old farmer with 47 years of experience on the North China Plain follows the established wheat-maize double-cropping rotation on all 7 mu, planting improved wheat varieties in October with deep ploughing and hybrid maize in June after a quick rotary pass. Fertilizer rates are moderate-to-high by habit and risk aversion \u2014 split nitrogen applications for both crops, base compound fertilizer at planting plus urea topdressing. Well irrigation is applied four times for wheat across the growing season and three times for maize, timed by crop appearance rather than calendar. Pesticide use is reactive: herbicide early in each crop, insecticide for aphids in wheat as needed. All heavy tillage is contracted to village machinery services due to limited household labor capacity.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 69-year-old farmer with 47 years of experience on the North China Plain follows the established wheat-maize double-cropping rotation on all 7 mu, planting improved wheat varieties in October with deep ploughing and hybrid maize in June after a quick rotary pass. Fertilizer rates are moderate-to-high by habit and risk aversion \u2014 split nitrogen applications for both crops, base compound fertilizer at planting plus urea topdressing. Well irrigation is applied four times for wheat across the growing season and three times for maize, timed by crop appearance rather than calendar. Pesticide use is reactive: herbicide early in each crop, insecticide for aphids in wheat as needed. All heavy tillage is contracted to village machinery services due to limited household labor capacity."
+  },
+  "elapsed_seconds": 51.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_12",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm 70 this year, my back is stiff, and I've been farming these 12 mu for half a century. Never went to school, can't read a word, but I know this land better than any book. My old lady and I do most of the work. Our son works in a factory in Handan and sends money when he can, but I don't like to rely on it.\n\nThe wheat went in last October, around Cold Dew. Same seed as always \u2014 the local improved kind, not the fancy stuff from the ads. I saved some seed but bought new last fall because my saved batch wasn't sprouting well. Before planting, I spread 60 jin of compound fertilizer per mu \u2014 one big bag for every two mu, same as my father did. Now it's spring and the wheat is waking up. I already gave it the winter water before the freeze. Next, when the wheat starts jointing around Qingming, I'll spread about 40 jin of urea per mu. If the wheat looks yellow, I'll add a handful more; if it's dark green, maybe a bit less. I also need to spray herbicide soon \u2014 the chenopodium is already thick in the east field. Then I'll irrigate once more when the grains are filling. The pump diesel costs money, but you can't skip it. I expect about 800 jin per mu if the spring rain comes.\n\nFor maize, it's always a race. The wheat comes off in early June \u2014 I hire the combine now, I can't swing a sickle anymore at my age \u2014 and I plant the maize within two days. No time to plow properly; I just open furrows and drop the seed. I'll buy the same hybrid from the seed shop, the one my neighbor Lao Wang used last year and got a good harvest. I put 50 jin of compound fertilizer per mu in the planting holes. When the maize is knee-high \u2014 the big trumpet stage \u2014 I cultivate between the rows and side-dress about 30 jin of urea per mu. I irrigate twice if it's dry: once when it's shooting up, and once when it's tasseling. If it rains enough, maybe only once. I spray herbicide after it emerges, and if I see corn borer in July, I spray insecticide. But I watch the money \u2014 chemicals are expensive.\n\nI'm thinking about money a lot this year. Fertilizer prices went up again. I have about 6,000 yuan saved for inputs. I'm tempted to use less compound on the maize to save a few hundred yuan, but I'm scared. Three years ago I tried to save 300 yuan on fertilizer and lost nearly 1,000 yuan in yield. I learned my lesson. Better to spend the money and sleep easy. Last year I got 750 jin of wheat per mu and 850 jin of maize. This year I'll be happy with the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 12,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"local improved\",\n      \"seed_cost_yuan_per_mu\": 65,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13.7,\n      \"phosphorus_total_kg_per_mu\": 4.5,\n      \"potassium_total_kg_per_mu\": 4.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 30 kg/mu compound spread before planting in October; topdress: 20 kg/mu urea at jointing in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary till after maize harvest, harrow before wheat planting\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 12,\n      \"planting_date\": \"mid-June, immediately after wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 100,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10.7,\n      \"phosphorus_total_kg_per_mu\": 3.8,\n      \"potassium_total_kg_per_mu\": 3.8,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 25 kg/mu compound in planting holes at sowing; topdress: 15 kg/mu urea at big trumpet stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"minimal tillage, direct furrow planting due to tight window after wheat harvest\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 5800,\n  \"reasoning_summary\": \"I do what I've always done because change is risky. Wheat gets compound before planting and urea at jointing, maize gets compound in the hole and urea when it's knee-high. I irrigate when the crops need it and I can afford the pump diesel. I'm old and cash-constrained, so I don't experiment \u2014 I use round numbers, rules of thumb, and what my neighbor Lao Wang does. Last time I cut fertilizer to save money, I lost more in yield than I saved, so I'd rather spend a bit too much than too little.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 12,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "local improved",
+        "seed_cost_yuan_per_mu": 65,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13.7,
+        "phosphorus_total_kg_per_mu": 4.5,
+        "potassium_total_kg_per_mu": 4.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 30 kg/mu compound spread before planting in October; topdress: 20 kg/mu urea at jointing in spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary till after maize harvest, harrow before wheat planting",
+        "labor_family_days": 8,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 13.7,
+        "area_mu": 12,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 12,
+        "planting_date": "mid-June, immediately after wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 100,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10.7,
+        "phosphorus_total_kg_per_mu": 3.8,
+        "potassium_total_kg_per_mu": 3.8,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 25 kg/mu compound in planting holes at sowing; topdress: 15 kg/mu urea at big trumpet stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "minimal tillage, direct furrow planting due to tight window after wheat harvest",
+        "labor_family_days": 6,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 10.7,
+        "area_mu": 12,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 3.8,
+        "potassium_kg_per_mu": 3.8
+      }
+    ],
+    "total_input_cost_yuan": 5800,
+    "reasoning_summary": "I do what I've always done because change is risky. Wheat gets compound before planting and urea at jointing, maize gets compound in the hole and urea when it's knee-high. I irrigate when the crops need it and I can afford the pump diesel. I'm old and cash-constrained, so I don't experiment \u2014 I use round numbers, rules of thumb, and what my neighbor Lao Wang does. Last time I cut fertilizer to save money, I lost more in yield than I saved, so I'd rather spend a bit too much than too little."
+  },
+  "elapsed_seconds": 293.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_4",
+  "tier": 4,
+  "provider": "kimi"
+}

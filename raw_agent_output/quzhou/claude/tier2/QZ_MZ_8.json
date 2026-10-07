@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 40 years. I know this soil, I know the weather here in Quzhou, and I know what works. My land is 6 mu, and every bit of it runs the same rotation \u2014 wheat in winter, maize in summer. That's how it's always been done here and it works well together.\n\n**Wheat:** I plant in mid-October after the summer maize comes off. I'll use the Jimai or Kenong improved variety \u2014 not the old traditional seed, but also not some new hybrid I don't know yet. I've used improved wheat seed for over 20 years and the yields are reliable. For fertilizer, I apply compound fertilizer as base before planting, then urea topdressing when the wheat starts jointing in spring. I water three times: once before winter sets in to protect the roots, once at jointing, and once during grain fill. I spray herbicide once in early spring and then hit aphids and rust at heading. I use rotary tillage before planting \u2014 my plot is small enough and the soil needs it after the maize.\n\n**Maize:** Right after I harvest the wheat in early June, I rotary till and plant maize. I always use hybrid seed \u2014 Zhengdan 958 or Xianyu 335, whichever I can get cheaper at the village supply station. I apply base fertilizer at planting and topdress with urea around the big bell stage. Summer rains usually help, but I pump water from the well twice \u2014 once at sowing if it's dry, once at silking because that's when missing rain really hurts yield. I spray once or twice \u2014 mostly for corn borer and leaf disease if I see it.\n\nI'm not trying to maximize every last kilogram. I'm trying to keep costs reasonable and get a stable harvest. Two people in the household, 6 mu \u2014 we don't need to gamble.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 62-year-old farmer in Quzhou County with 40 years of experience manages 6 mu under a standard wheat-maize double-cropping rotation on the North China Plain. Wheat is grown on the full 6 mu over winter using locally trusted improved varieties, with split nitrogen application, three well irrigations timed to critical growth stages, and rotary tillage to maintain soil structure. Summer maize follows immediately after wheat harvest using hybrid seed, with nitrogen topdressing at the bell stage, two supplemental irrigations prioritizing the silking period, and rotary tillage before planting. Input levels are moderate rather than maximal, reflecting the farmer's priority of stable, cost-effective yields over high-risk intensification on a small household farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 62-year-old farmer in Quzhou County with 40 years of experience manages 6 mu under a standard wheat-maize double-cropping rotation on the North China Plain. Wheat is grown on the full 6 mu over winter using locally trusted improved varieties, with split nitrogen application, three well irrigations timed to critical growth stages, and rotary tillage to maintain soil structure. Summer maize follows immediately after wheat harvest using hybrid seed, with nitrogen topdressing at the bell stage, two supplemental irrigations prioritizing the silking period, and rotary tillage before planting. Input levels are moderate rather than maximal, reflecting the farmer's priority of stable, cost-effective yields over high-risk intensification on a small household farm."
+  },
+  "elapsed_seconds": 37.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_8",
+  "tier": 2,
+  "provider": "claude"
+}

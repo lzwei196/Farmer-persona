@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 7 mu for 30 years. I never went to school, but I know my land. I watch Old Wang across the road and my cousin \u2014 if their crops look good, I copy them.\n\nLast year I put wheat on 5 mu, then maize after it, and peanut on 2 mu. This year I will do the same. My son works in the city and sends some money, but fertilizer is expensive now. Still, I would rather put a little too much than too little. If the harvest fails, my family has no food. Wasting some fertilizer is just money; losing the yield is a disaster.\n\nFor wheat: I buy the improved seed from the county shop \u2014 the same kind Li Sao bought last year in the red bag. I do not use old seed, it does not grow strong. Before planting in October, I spread one full 50-kilogram bag of compound fertilizer on each mu and rotary till it in. Then in March when the wheat turns green, I spread 20 kilograms of urea on top. That is what I did last year and I got about 450 kilograms per mu. I irrigate three times: once in winter if the ground is dry, once when the wheat is jointing, and once at filling. I spray pesticide twice, when I see aphids and then later for disease. \n\nFor maize: After we cut the wheat in June, I plant hybrid maize seed. I buy new hybrid seed every year \u2014 saved maize seed does not grow well, I learned that the hard way. I have no time to plough deep because the summer season is short, so I plant no-tillage right into the wheat stubble. I put one 50-kilogram bag of compound fertilizer in the row when planting, then at the big leaf stage I put 25 kilograms of urea. I irrigate three times: right after planting, at jointing, and when the tassel comes out. Two pesticide sprays \u2014 one for weeds at the start, one for worms later.\n\nFor peanut: I plant 2 mu with my own saved seed, the big pink peanuts my family has kept for years. I plough the land and make ridges. Each mu gets 25 kilograms of compound fertilizer \u2014 half a bag. My mother-in-law always said peanut does not need as much as corn, or it grows leaves and no pods. I irrigate twice: at flowering and when the pods are fattening. Two pesticide sprays for bugs and leaf spot. At harvest I hire my nephew for two days to help dig, I pay him 100 yuan a day.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"peanut\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year. I put wheat on 5 mu with one bag of compound and 20 kg urea, maize after it with one bag compound and 25 kg urea, and peanut on 2 mu with half a bag compound. I buy improved wheat and hybrid maize seed but keep my own peanut seed. I irrigate wheat and maize three times, peanut twice. I spray twice for each. I till rotary for wheat, no-tillage for maize to save time, and plough for peanut. I would rather spend on fertilizer than risk losing yield, but peanut gets less because my mother-in-law taught me too much makes leaves and no pods.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "peanut",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I do what worked last year. I put wheat on 5 mu with one bag of compound and 20 kg urea, maize after it with one bag compound and 25 kg urea, and peanut on 2 mu with half a bag compound. I buy improved wheat and hybrid maize seed but keep my own peanut seed. I irrigate wheat and maize three times, peanut twice. I spray twice for each. I till rotary for wheat, no-tillage for maize to save time, and plough for peanut. I would rather spend on fertilizer than risk losing yield, but peanut gets less because my mother-in-law taught me too much makes leaves and no pods."
+  },
+  "elapsed_seconds": 251.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_1",
+  "tier": 3,
+  "provider": "kimi"
+}

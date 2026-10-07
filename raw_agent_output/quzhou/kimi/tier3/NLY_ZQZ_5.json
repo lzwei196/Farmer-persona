@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 73 years old. I have farmed this land for 55 years since my father handed it to me when I was 18. I only went to primary school, but I know my fields better than any book. My family has seven mouths, and my son and daughter-in-law work in Handan city sending some money home. My wife and I do most of the work ourselves, and we hire old Li for a few days at harvest when the wheat must come in fast.\n\nI have 10.1 mu total. Seven mu I do wheat then maize, same as always. The other 3.1 mu I grow cotton. I do not change what works. Last year was okay \u2014 not great, not bad \u2014 so this year I do almost the same. I watch my neighbors. If Lao Zhang and the others use about the same amounts, I do not want to be the fool who tries something different and loses his shirt.\n\nFor the wheat, it is already in the ground. I planted Jimai 22, an improved variety I trust. Last fall I rotary tilled the seven mu and put one full bag \u2014 50 kg \u2014 of compound fertilizer per mu as base. Now in spring I irrigate at green-up, and at jointing I spread half a bag of urea, about 25 kg per mu. If the plants look a little yellow at heading I will throw another 10 kg of urea per mu. I irrigate four times total: the winter water, green-up, jointing, and grain filling. Two sprays \u2014 one for weeds, one for rust or bugs. I expect about 450 kg per mu.\n\nFor summer maize, after I cut the wheat in early June there is no time to rest. I plant Zhengdan 958 hybrid seed directly into the wheat stubble, no tillage \u2014 just open the rows and drop the seed. At planting I put 30 kg per mu of compound fertilizer in the rows. At big trumpet stage I topdress with 25 kg of urea per mu. Irrigate twice, three times if July is dry. Two sprays. Should get 500 kg per mu.\n\nFor cotton, I rotary till the 3.1 mu in April. I plant improved cotton seed. Base fertilizer is 30 kg per mu of compound fertilizer. I topdress with urea twice during the season. Irrigate three times \u2014 flowering and boll stages need water most. Four sprays for bollworm, that devil never sleeps. I expect about 250 kg of seed cotton per mu.\n\nWhy these amounts? Because that is what I did last year, and last year was fine. Fertilizer costs real money \u2014 about 200 yuan per mu for wheat \u2014 but losing yield is worse. A bad harvest means I cannot help pay for my grandson's school. Better to put a little too much than too little. I sleep better knowing I fed my crops well.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what worked last year because change is risky on a farm that feeds my family. I would rather spend a bit more on fertilizer than risk yield loss, since a bad harvest is a disaster but extra fertilizer is just a cost. I watch my neighbors and do something similar, because if everyone around me applies a certain amount, there is probably good reason. My budget is tight with seven people in the house, so I do not hire much labor, but I will not cut inputs that protect the main yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I stick with what worked last year because change is risky on a farm that feeds my family. I would rather spend a bit more on fertilizer than risk yield loss, since a bad harvest is a disaster but extra fertilizer is just a cost. I watch my neighbors and do something similar, because if everyone around me applies a certain amount, there is probably good reason. My budget is tight with seven people in the house, so I do not hire much labor, but I will not cut inputs that protect the main yield."
+  },
+  "elapsed_seconds": 196.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_5",
+  "tier": 3,
+  "provider": "kimi"
+}

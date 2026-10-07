@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know what works here in Quzhou. The soil is decent, the well is reliable, and I follow the same rhythm my father taught me, adjusted over decades of my own experience.\n\n**My thinking, crop by crop:**\n\nMy main system is wheat-maize on about 14 mu \u2014 that rotation is the backbone of what I do. The two crops share the same fields across the year. I keep 5.1 mu in cotton on a separate block. My family used to help more with cotton, but two of my sons work in the city now. At 64, I can't do endless spraying trips, so I keep BT hybrid cotton \u2014 less insect pressure, fewer applications.\n\nFor **wheat**, I'll plant improved variety seed, same Jimai series I've used for years. I know it performs here. Three irrigations: pre-winter to establish roots, then jointing, then heading. I'll apply compound fertilizer as base and urea as topdressing at jointing. Two pesticide passes \u2014 one herbicide early, one foliar fungicide near heading. Rotary tillage after maize harvest to turn the stalks in.\n\nFor **maize**, I'll go hybrid \u2014 Zhengdan 958 or similar, everyone around here uses it and it yields reliably. I plant right after wheat harvest in late June, sometimes no-till or light rotary depending on soil condition. Two irrigations. Corn doesn't need as much hand-holding as cotton.\n\nFor **cotton**, I'll plough in spring, plant in late April. Four irrigations throughout the long growing season \u2014 this crop is thirsty. Four pesticide applications even with BT seed; bollworm pressure still comes in late season. Labor is the constraint, so I plan my application windows carefully to avoid the hottest weeks.\n\nMy expected yields are realistic, not optimistic. I've seen bad years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 14 mu to a wheat-maize double-cropping rotation \u2014 the reliable backbone of my income \u2014 and keep 5.1 mu in BT hybrid cotton on a separate block, reduced from past years because fewer family members are available for labor-intensive fieldwork now that two sons work off-farm. For wheat I use a proven local improved variety with three irrigations and moderate fertilizer inputs split between basal compound fertilizer and urea topdressing. Maize follows immediately after wheat harvest using hybrid seed with minimal tillage and two irrigations, which is enough given the well access. Cotton gets a spring plough, four irrigations, and four pesticide passes \u2014 fewer than conventional cotton would need thanks to BT resistance, but still demanding. All inputs are calibrated from 40 years of experience on this specific land rather than extension recommendations, aiming for stable realistic yields rather than maximum output.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I allocate 14 mu to a wheat-maize double-cropping rotation \u2014 the reliable backbone of my income \u2014 and keep 5.1 mu in BT hybrid cotton on a separate block, reduced from past years because fewer family members are available for labor-intensive fieldwork now that two sons work off-farm. For wheat I use a proven local improved variety with three irrigations and moderate fertilizer inputs split between basal compound fertilizer and urea topdressing. Maize follows immediately after wheat harvest using hybrid seed with minimal tillage and two irrigations, which is enough given the well access. Cotton gets a spring plough, four irrigations, and four pesticide passes \u2014 fewer than conventional cotton would need thanks to BT resistance, but still demanding. All inputs are calibrated from 40 years of experience on this specific land rather than extension recommendations, aiming for stable realistic yields rather than maximum output."
+  },
+  "elapsed_seconds": 48.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_7",
+  "tier": 2,
+  "provider": "claude"
+}

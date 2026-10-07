@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou for over 30 years. My father did it, I do it, and I know what works here. The soil is good flat plain soil, the well is there for pumping, and the grain buyers come every year for wheat and corn. I'm not going to try something new at my age with my back the way it is.\n\n**Winter wheat first.** I put it in every October, same as always. I'll use the Jimai improved variety \u2014 the agricultural station has been pushing it for years and my neighbor gets good yields with it. I'll plough and rotary-till before seeding. Fertilizer goes in base and topdress: nitrogen goes in heavy because I want full ears. I'll pump the well four times \u2014 before freeze, green-up, jointing, and heading. I know some younger farmers cut irrigation to three times but I'm not taking that risk. Two or three pesticide passes for rust and aphids in spring.\n\n**Summer maize right after wheat harvest in June.** I plant directly into the stubble \u2014 no need to till, saves diesel money, and the county extension office has been saying this for ten years now. Zhengdan 958 hybrid seed, same as last five years. Corn mostly rains in summer but I'll pump once or twice if July is dry like last year. Less fertilizer work than wheat but I still put in a good dose of urea when the plant is knee-high.\n\n**Small vegetable plot near the house.** Garlic goes in autumn, cabbage and beans in spring. Just for the household, no selling. Maybe half a mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"garlic and cabbage\",\n      \"season\": \"autumn\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 400\n    }\n  ],\n  \"reasoning_summary\": \"A 58-year-old farmer in Quzhou County, Hebei follows the standard North China Plain wheat-maize double rotation on 10 mu of flatland, planting improved winter wheat in October with heavy irrigation (4 times) and fertilizer inputs to secure a reliable harvest, then planting hybrid summer maize directly into the wheat stubble in June with minimal tillage and moderate irrigation relying on summer rainfall. A small 0.5-mu household vegetable plot rounds out subsistence needs. Input levels are informed by decades of local practice and lean toward the higher end of typical rates, reflecting the farmer's risk-averse preference for yield security over input cost savings.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "garlic and cabbage",
+        "season": "autumn",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 400
+      }
+    ],
+    "reasoning_summary": "A 58-year-old farmer in Quzhou County, Hebei follows the standard North China Plain wheat-maize double rotation on 10 mu of flatland, planting improved winter wheat in October with heavy irrigation (4 times) and fertilizer inputs to secure a reliable harvest, then planting hybrid summer maize directly into the wheat stubble in June with minimal tillage and moderate irrigation relying on summer rainfall. A small 0.5-mu household vegetable plot rounds out subsistence needs. Input levels are informed by decades of local practice and lean toward the higher end of typical rates, reflecting the farmer's risk-averse preference for yield security over input cost savings."
+  },
+  "elapsed_seconds": 45.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_9",
+  "tier": 1,
+  "provider": "claude"
+}

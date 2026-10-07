@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know Quzhou's weather, the soil here, what the neighbors grow. I don't need to think too hard \u2014 I just do what has worked.\n\n**Wheat (winter):** I plant wheat every October on my main 10 mu. I'll use the improved seed I buy from the township input shop \u2014 the same variety I've used for several years now. Good yield, doesn't fall over in wind. I'll rotary till before sowing, apply compound fertilizer as base, then topdress with urea at jointing. I irrigate three times: once before sowing to wet the bed, once at jointing, once at heading. Two rounds of pesticide \u2014 one herbicide early, one fungicide before heading. I expect around 450 jin per mu if the spring isn't too dry.\n\n**Maize (summer):** Right after wheat harvest in June, I direct-seed maize into the stubble. No need to till \u2014 I've done no-till for maize the last few years, saves my back and the machine fee. Hybrid seed, same brand as last year. I apply fertilizer once at sowing and topdress at the big bell stage. Two irrigations if it's a dry summer, maybe just one if rain is enough. I'll spray once for stem borer. I expect 550 jin per mu.\n\n**Stevia:** I have a contract with the stevia company, so I know they'll take the leaves. My 6.1 mu goes to stevia. I transplant in spring after the last frost, rotary till the plot beforehand. Stevia needs more water than wheat, so I irrigate five or six times through the season. I fertilize a bit lighter than grain crops \u2014 stevia doesn't need as much nitrogen or the leaves go bitter. Three pesticide rounds. I harvest the leaves twice in a season before frost kills the tops.\n\nMy wife helps with some of the hand work on the stevia. At 67, I can't do everything myself, so I hire the village machine for tillage and harvesting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 120\n    }\n  ],\n  \"reasoning_summary\": \"A 67-year-old farmer with 40 years of experience in Quzhou County follows the standard wheat-maize double-cropping rotation on 10 mu, using improved wheat seed and hybrid maize seed purchased locally, applying compound fertilizer as base with urea topdressing, and relying on well irrigation for 3 wheat irrigations and 2 maize irrigations; no-tillage is used for summer maize to reduce labor given physical limitations and to save on machine hire costs. The remaining 6.1 mu is planted to stevia under a company purchase contract, transplanted in spring after rotary tillage, managed with lighter nitrogen rates to preserve leaf quality, and irrigated 5 times through the growing season with 3 pesticide applications, with leaf harvests taken twice before autumn frost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 6.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 5,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 120
+      }
+    ],
+    "reasoning_summary": "A 67-year-old farmer with 40 years of experience in Quzhou County follows the standard wheat-maize double-cropping rotation on 10 mu, using improved wheat seed and hybrid maize seed purchased locally, applying compound fertilizer as base with urea topdressing, and relying on well irrigation for 3 wheat irrigations and 2 maize irrigations; no-tillage is used for summer maize to reduce labor given physical limitations and to save on machine hire costs. The remaining 6.1 mu is planted to stevia under a company purchase contract, transplanted in spring after rotary tillage, managed with lighter nitrogen rates to preserve leaf quality, and irrigated 5 times through the growing season with 3 pesticide applications, with leaf harvests taken twice before autumn frost."
+  },
+  "elapsed_seconds": 61.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_3",
+  "tier": 2,
+  "provider": "claude"
+}

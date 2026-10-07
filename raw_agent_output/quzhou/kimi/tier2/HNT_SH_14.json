@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 20 mu for 15 years now, and I know this land well. My family has six mouths to feed, and with some of them working off-farm, I cannot waste labor on things that do not pay. I have a well, so water is there when I need it, but pumping costs money and time, so I only irrigate when the crops truly need it.\n\nIt is autumn now, time to plant winter wheat. I will put wheat on all 20 mu because the wheat-maize rotation is what this soil is made for. Before sowing, I will hire the rotary tiller to go over the fields \u2014 50 yuan per mu, but it gives a good seedbed and everyone in the village does it. For seed, I will buy an improved variety from the supply shop, maybe Jimai 22 or Shixin, whatever the dealer says is reliable this year. I do not trust saved seed anymore; the bagged seed sprouts better and resists disease. I will spread about 50 jin of compound fertilizer per mu as basal dressing at sowing, and then in the spring when the wheat starts jointing, I will topdress with urea. For the whole season, that works out to roughly 15 jin of pure nitrogen, 6 jin of phosphorus, and 4 jin of potassium per mu. I will irrigate three times: once before winter if the autumn is dry, once at jointing in March, and once during grain filling in May. For spraying, I will do a pre-emergence or early spring herbicide, one or two insecticide sprays if aphids come, and a fungicide if leaf rust shows up \u2014 about three trips total. If the weather cooperates, I expect around 500 kg per mu.\n\nAfter harvesting the wheat in early June, I will plant summer maize immediately \u2014 no time to waste. I will use a no-till planter right behind the combine. Everyone here switched to no-tillage for maize years ago; it saves diesel, keeps moisture in the ground, and lets me plant fast. I will buy hybrid seed, probably Denghai 605 or something similar, one bag does about one mu. At planting I will put down compound fertilizer, then at the big-flare stage I will side-dress more urea. That comes to about 14 jin nitrogen, 5 jin phosphorus, and 4 jin potassium per mu. I will irrigate twice: once when the plants are knee-high if June is dry, and once at grain filling in August. I will spray herbicide right after emergence, and insecticide two or three times for corn borer and armyworm \u2014 three applications in total. A normal year should give me about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 20 mu of wheat-maize rotation on the North China Plain with the practices that have proven reliable in my village over 15 years. For wheat, I use rotary tillage and an improved variety, apply compound and urea fertilizers in two splits, irrigate three times at critical stages, and make about three pesticide applications. For summer maize, I plant immediately after wheat harvest using no-tillage and hybrid seed, side-dress fertilizer at the big-flare stage, irrigate twice, and spray three times for weeds and insects. These choices balance yield, labor constraints from off-farm family work, and the cost of well irrigation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 20 mu of wheat-maize rotation on the North China Plain with the practices that have proven reliable in my village over 15 years. For wheat, I use rotary tillage and an improved variety, apply compound and urea fertilizers in two splits, irrigate three times at critical stages, and make about three pesticide applications. For summer maize, I plant immediately after wheat harvest using no-tillage and hybrid seed, side-dress fertilizer at the big-flare stage, irrigate twice, and spray three times for weeds and insects. These choices balance yield, labor constraints from off-farm family work, and the cost of well irrigation."
+  },
+  "elapsed_seconds": 288.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_14",
+  "tier": 2,
+  "provider": "kimi"
+}

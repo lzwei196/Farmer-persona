@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 74 years old. My wife and I have six mu of land here in Quzhou. I only finished primary school, but I have farmed this soil for over fifty years, and I know what works and what my body can still handle.\n\nThis year I will grow winter wheat and summer maize, same as always. The wheat is already in the ground\u2014I sowed it last October after running the rotary tiller. I buy hybrid seeds from the county supply shop, the kind my neighbors trust. Now that spring has come, I will irrigate the wheat three more times before harvest and spread urea as topdressing. I do not bother much with phosphate or potash; this soil has grown wheat for decades, and nitrogen is what matters most. I will spray for insects twice, for weeds once, and for fungus once if the weather turns damp. If the season is kind, I expect about 1,000 kilograms per mu.\n\nAfter we harvest the wheat in early June, we will plant maize immediately with no tillage. There is no time to waste between crops, and at my age less labor is a blessing. I will plant Denghai 605 hybrid seeds. Maize is easier on the body than wheat. Two irrigations will be enough, and I will spray for insects and weeds a few times. I hope for about 1,100 kilograms per mu.\n\nI will not grow cotton. My back cannot take thirteen rounds of pesticide spraying anymore. Wheat and maize are the only crops for me now.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 50,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I am 74 years old with six mu of land in Quzhou, and my body cannot handle heavy labor or risky changes. I will stick to the wheat-maize double-cropping system that has fed my family for decades. Winter wheat gets rotary tillage, hybrid seeds, about 50 kg of nitrogen per mu, four irrigations, and four pesticide sprays. Summer maize is planted immediately after wheat harvest with no tillage to save time and labor; it needs less input, only two irrigations, and three pesticide applications. I avoid cotton because the intensive spraying would be too hard on my back at this age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 50,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I am 74 years old with six mu of land in Quzhou, and my body cannot handle heavy labor or risky changes. I will stick to the wheat-maize double-cropping system that has fed my family for decades. Winter wheat gets rotary tillage, hybrid seeds, about 50 kg of nitrogen per mu, four irrigations, and four pesticide sprays. Summer maize is planted immediately after wheat harvest with no tillage to save time and labor; it needs less input, only two irrigations, and three pesticide applications. I avoid cotton because the intensive spraying would be too hard on my back at this age."
+  },
+  "elapsed_seconds": 279.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_9",
+  "tier": 1,
+  "provider": "kimi"
+}

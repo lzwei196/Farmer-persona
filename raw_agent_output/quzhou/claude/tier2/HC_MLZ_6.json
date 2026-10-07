@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land for decades. My father farmed it before me. I know this soil \u2014 it's the North China Plain clay loam, decent enough if you water it right. Two mu isn't much, but it feeds me and gives me a little cash. I live alone now, so I don't need a big harvest, but I still want a good one. I take pride in my crops.\n\n**Wheat (winter):** I'll plant all 2 mu to wheat in October, same as always. I'll buy Jimai 22 seed from the village supply store \u2014 it's an improved variety but not too expensive, and my neighbors use it, so I know it works here. For fertilizer, I'll put down diammonium phosphate as base fertilizer before sowing, then urea at jointing stage. I've learned over the years that skimping on nitrogen means thin ears. I'll irrigate at sowing, winter freeze, jointing, and heading \u2014 four times from my well. I'll spray once for powdery mildew in spring and once for aphids before harvest. I use rotary tillage before planting to break up the soil.\n\n**Maize (summer):** Right after wheat harvest in June, I'll plant maize on the same 2 mu. I'll use Zhengdan 958 hybrid seed \u2014 everyone around here uses it, it's reliable, I've grown it for fifteen years. I'll apply compound fertilizer as base and top-dress with urea at the big-bell stage when the plants are knee-high. I'll irrigate at planting, tasseling, and grain fill \u2014 three times unless it rains well. One herbicide spray early on, and I watch for corn borer. Rotary tillage after wheat straw is chopped by the harvester.\n\nI'm 68 and it's just me, so I'll hire the village machinery team for sowing, harvesting, and straw chopping. That saves my back.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 68-year-old single-household farmer in Quzhou, Hebei follows the standard winter wheat\u2013summer maize rotation on all 2 mu, relying on 50 years of local experience rather than formal advice. He uses improved wheat seed (Jimai 22) and hybrid maize (Zhengdan 958), both proven locally, applies conventional nitrogen-heavy fertilization in two splits for each crop, and irrigates from his well 4 times for wheat and 3 times for maize to meet North China Plain water demands. Pesticide use is modest \u2014 two applications per crop for disease, pest, and weed control. He hires mechanized services for tillage, sowing, and harvest to manage the physical labor alone at his age. Expected yields reflect typical smallholder outcomes in this region without precision inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 68-year-old single-household farmer in Quzhou, Hebei follows the standard winter wheat\u2013summer maize rotation on all 2 mu, relying on 50 years of local experience rather than formal advice. He uses improved wheat seed (Jimai 22) and hybrid maize (Zhengdan 958), both proven locally, applies conventional nitrogen-heavy fertilization in two splits for each crop, and irrigates from his well 4 times for wheat and 3 times for maize to meet North China Plain water demands. Pesticide use is modest \u2014 two applications per crop for disease, pest, and weed control. He hires mechanized services for tillage, sowing, and harvest to manage the physical labor alone at his age. Expected yields reflect typical smallholder outcomes in this region without precision inputs."
+  },
+  "elapsed_seconds": 35.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_6",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 30 years. I know Quzhou's soil \u2014 it's the North China Plain, good loam, but you have to keep it fed. With 10 mouths and some kids working in town sending money back, I need the crops to perform without overspending on inputs.\n\nMy 12 mu all runs wheat-maize rotation. That's how everyone here does it, and it makes sense \u2014 the wheat fixes the calendar and the maize fills out the income. I don't split the land; all 12 mu goes through both crops each year.\n\n**Wheat (autumn planting, June harvest):** I'll use the improved Jimai variety my neighbor has been using \u2014 good lodging resistance and the county extension office pushed it a few years ago. Three irrigations: one at sowing to ensure germination, one at jointing, one at heading. I don't bother with a fourth \u2014 costs money and my well yield isn't unlimited. Two pesticide runs: one herbicide pass in winter, one fungicide/insecticide spray at heading for powdery mildew and aphids. After the maize comes off in October, I do rotary tillage to break up the stubble before planting. Yield should be around 450 kg/mu \u2014 that's what I get in a normal year.\n\n**Maize (June planting, October harvest):** Hybrid seed, Xianyu 335 or similar \u2014 hybrids have been standard here for 20 years, no reason to go back. After wheat harvest I'll direct-seed without tilling \u2014 saves diesel and time, and the soil doesn't need turning again so soon. Two irrigations: one at jointing, one at tasseling and silking \u2014 that's the critical window. Two pesticide applications: herbicide early on, then something for corn borer mid-season. Yield around 550 kg/mu.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"All 12 mu runs a continuous wheat-maize double-cropping rotation typical of Quzhou County on the North China Plain. Wheat is planted in October using an improved certified variety with rotary tillage after maize harvest, three irrigations covering the sowing, jointing, and heading stages, and moderate fertilizer rates reflecting 30 years of local experience. Summer maize follows immediately after wheat harvest using hybrid seed with no-tillage direct seeding to save labor and fuel costs, two irrigations at jointing and tasseling, and two pesticide passes for weeds and corn borer. Input rates and irrigation frequency are calibrated to local norms and well capacity, balancing yield goals against the household's mixed on-farm and off-farm income strategy.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "All 12 mu runs a continuous wheat-maize double-cropping rotation typical of Quzhou County on the North China Plain. Wheat is planted in October using an improved certified variety with rotary tillage after maize harvest, three irrigations covering the sowing, jointing, and heading stages, and moderate fertilizer rates reflecting 30 years of local experience. Summer maize follows immediately after wheat harvest using hybrid seed with no-tillage direct seeding to save labor and fuel costs, two irrigations at jointing and tasseling, and two pesticide passes for weeds and corn borer. Input rates and irrigation frequency are calibrated to local norms and well capacity, balancing yield goals against the household's mixed on-farm and off-farm income strategy."
+  },
+  "elapsed_seconds": 40.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_4",
+  "tier": 2,
+  "provider": "claude"
+}

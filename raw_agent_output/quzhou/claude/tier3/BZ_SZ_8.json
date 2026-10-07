@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 8 mu here in Quzhou, wheat and maize like everyone around me. My father farmed this land, now I farm it. I've been doing this 25 years so I know what works.\n\nFor wheat, I plant in October after the maize comes off. I use improved seed from the dealer in town \u2014 Jimai variety, what most neighbors plant. Works fine here. I put down two bags of compound fertilizer (15-15-15) per mu before sowing, that's about 50 kg. Then in spring when wheat greens up, I topdress with urea, maybe one bag per mu \u2014 40 kg or so. That gives me around 28 kg N total, 8 kg P, 8 kg K per mu. Less and the wheat looks yellow, more is wasting money. I water 3 times usually \u2014 before winter, at greening, and at filling if no rain. Spray for aphids and powdery mildew, 2 times. Harvest around 450-500 kg/mu if weather is normal.\n\nFor maize, plant right after wheat harvest in June. I use hybrid seed, Zhengdan or similar \u2014 everyone uses hybrid now, the old seed gives nothing. One bag compound fertilizer at sowing plus urea at big trumpet stage, one bag. That's about 22 kg N, 7 kg P, 5 kg K. Maize needs less than wheat I find. Water once or twice if July is dry, my well is fine. Spray for borer and armyworm, 2 times. I get about 550 kg/mu normal years.\n\nI use rotary tiller \u2014 village has one for rent, cheap. No one ploughs deep anymore. My wife helps at harvest, sons work in town but come back for busy times.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I follow what has worked on my 8 mu for years. Two bags compound plus urea topdressing for wheat, same pattern for maize but a bit less since maize takes less fertilizer. Improved wheat seed and hybrid maize like my neighbors. Rotary till before wheat, direct seed maize into wheat stubble to save time and cost. Irrigate from my well when rain is short, spray twice for common pests. Changing from this is risky when I already know my yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I follow what has worked on my 8 mu for years. Two bags compound plus urea topdressing for wheat, same pattern for maize but a bit less since maize takes less fertilizer. Improved wheat seed and hybrid maize like my neighbors. Rotary till before wheat, direct seed maize into wheat stubble to save time and cost. Irrigate from my well when rain is short, spray twice for common pests. Changing from this is risky when I already know my yields."
+  },
+  "elapsed_seconds": 27.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 3,
+  "provider": "claude"
+}

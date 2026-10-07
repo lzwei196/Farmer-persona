@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 78 years old and have farmed my land in Quzhou County for more than 50 years. My wheat is already in the ground \u2014 I sowed it last October, and now in early spring it is greening up. I have 5 mu of good flat land on the North China Plain, and I will stick with what I know: winter wheat followed by summer maize. Everyone in my village does this rotation, and at my age I cannot afford to take risks with new crops. My son helps me hire the rotary tiller for wheat planting and the combine for harvest, but I make all the decisions myself.\n\nFor my wheat, I will topdress with urea around jointing stage and irrigate three times \u2014 once now in spring, once at heading, and once at grain filling. Water from the well costs money, but wheat needs it. I use about 100 jin of compound fertilizer as basal and another 50 jin of urea topdressing, which works out to roughly 18 kg of nitrogen per mu, plus the phosphorus and potassium from the compound. I spray insecticide twice and herbicide once, and usually fungicide once if the weather turns humid. I expect about 500 kg per mu if the weather cooperates \u2014 that is what I have gotten in most years.\n\nFor summer maize, I will plant right after wheat harvest in early June. There is no time for tillage \u2014 we always no-till plant maize into the wheat stubble. I buy hybrid seed every year, usually Nongda or Denghai varieties, because saved maize seed does not breed true. I put down about 80 jin of compound fertilizer at planting, which gives me around 12 kg nitrogen per mu. Maize needs less fertilizer than wheat. I irrigate twice and spray for pests and weeds three times total. If the summer rains are normal, I expect about 550 kg per mu.\n\nI would like to apply more fertilizer, but I am cash-constrained and at my age I prefer stability. This plan is enough to feed my family and sell a little grain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double crop rotation on my 5 mu because it is reliable and what everyone around me does. My wheat is already in the field from last autumn, so right now I am managing spring topdressing and irrigation. I use improved wheat seed and hybrid maize seed, rotary tillage for wheat, and no-tillage for maize because the turnaround after wheat harvest is too tight. My input levels are moderate \u2014 enough to get a decent yield without spending more cash than I can afford at 78 years old.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double crop rotation on my 5 mu because it is reliable and what everyone around me does. My wheat is already in the field from last autumn, so right now I am managing spring topdressing and irrigation. I use improved wheat seed and hybrid maize seed, rotary tillage for wheat, and no-tillage for maize because the turnaround after wheat harvest is too tight. My input levels are moderate \u2014 enough to get a decent yield without spending more cash than I can afford at 78 years old."
+  },
+  "elapsed_seconds": 229.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_6",
+  "tier": 1,
+  "provider": "kimi"
+}

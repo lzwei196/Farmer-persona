@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 39 years old, and I have only been farming on my own for three years, so I still follow what the older farmers in my village do. My family has four mouths to feed, and some of us work off-farm when construction jobs come up, so I cannot spend all day in the fields. With just 5 mu of land and a well for irrigation, I need to keep things simple, reliable, and not too costly.\n\nFor winter wheat, I will plant improved seed \u2014 probably something like Shimai or Liangxing, which my neighbors use and which I can get cheaply at the local shop. I will rotary till the field before sowing, because that is what everyone here does. I will put down compound fertilizer as a basal dose and then topdress with urea. I am not precise with the numbers, but I know the bag sizes, and I will use roughly what my uncle uses: about 25 jin of nitrogen fertilizer and 100 jin of compound fertilizer per mu. That should give the wheat enough food. I will irrigate three times \u2014 once before winter to help it survive the cold, once at jointing, and once at heading or filling \u2014 because the well water is not free but three times is enough to get a decent crop. I will spray pesticides about four times over the season for weeds, insects, and disease. I expect about 500 kg per mu if the weather cooperates.\n\nFor summer maize, I plant right after the wheat harvest. There is no time to waste, so I will not till the soil \u2014 I will plant directly into the wheat stubble. I must use hybrid seed, like Nongda or Denghai; everyone says the yield is much better than old varieties. I will apply a starter compound fertilizer at sowing and maybe some urea later if the plants look yellow. I will irrigate twice \u2014 once after sowing to help germination, and once during the big growth period or before grain filling. I will spray pesticides three times to control weeds and the borers that always show up. I hope for about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a relatively young farmer with only three years of experience, so I follow the standard practices of my neighbors in Quzhou County. I grow wheat in winter and maize in summer on all 5 mu using a double-cropping system. For wheat, I use improved seed, rotary tillage, three irrigations from my well, four pesticide sprays, and moderate fertilizer to aim for about 500 kg per mu. For summer maize, time is short after wheat harvest, so I plant hybrid seed with no-tillage, two irrigations, three pesticide applications, and enough fertilizer to target about 550 kg per mu. I keep inputs at a practical level because my household has off-farm income and I cannot afford to take big risks.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a relatively young farmer with only three years of experience, so I follow the standard practices of my neighbors in Quzhou County. I grow wheat in winter and maize in summer on all 5 mu using a double-cropping system. For wheat, I use improved seed, rotary tillage, three irrigations from my well, four pesticide sprays, and moderate fertilizer to aim for about 500 kg per mu. For summer maize, time is short after wheat harvest, so I plant hybrid seed with no-tillage, two irrigations, three pesticide applications, and enough fertilizer to target about 550 kg per mu. I keep inputs at a practical level because my household has off-farm income and I cannot afford to take big risks."
+  },
+  "elapsed_seconds": 132.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for over fifty years. My father farmed it before me. I know this soil \u2014 it's the North China Plain, flat, good for wheat and maize. The well is reliable. Two of us now, just me and my wife. At seventy-one, I can't do as much as before, so I don't take risks or try new things I don't understand.\n\nMy 5 mu breaks down like this: 3 mu I rotate between winter wheat and summer maize \u2014 that's my main system, always has been. The other 2 mu I keep in cotton. Cotton pays better per mu but it wears me out at harvest. I'll keep it at 2 mu because I can still manage that. Any more and my back won't hold.\n\n**Wheat (3 mu, planted October):** I'll use the same improved variety I've been buying from the village supply station \u2014 nothing fancy, but I know it germinates well in my soil. I'll spread base fertilizer before planting \u2014 diammonium phosphate and urea mixed in, then topdress with urea at jointing in April. Four irrigations: the pre-winter water in November, jointing, heading, and grain-filling. I always do four. Three pesticide sprays \u2014 herbicide in winter, then aphids and powdery mildew in spring. I'll rotary till after maize harvest in October to prepare the seedbed.\n\n**Maize (3 mu, planted June after wheat harvest):** I buy hybrid seed \u2014 Zhengdan 958 mostly, everyone around here uses it and it yields well. I plant directly into the wheat stubble, no tilling. I'll apply fertilizer at planting and topdress at the big bell stage. Two extra irrigations if August is dry, otherwise the rain usually handles it. Two pesticide passes \u2014 herbicide early and one for pests if needed.\n\n**Cotton (2 mu, planted April):** I've grown cotton my whole life. Hybrid seed again. Cotton needs a lot of care \u2014 six pesticide applications across the season for bollworm and aphids, you can't skip those. I'll irrigate four times, plough in spring to prepare. It's hard work in September-October picking, but it's worth it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 71-year-old farmer in Quzhou County with 55 years of experience allocates his 5 mu between a 3-mu winter wheat\u2013summer maize double-cropping rotation and 2 mu of spring cotton, following the patterns he has used for decades. He selects improved wheat and hybrid maize and cotton varieties available through local supply channels, applies nitrogen generously based on long-held habit (18\u201322 kg/mu), uses well irrigation to give wheat four waterings and cotton four supplemental irrigations while relying partly on summer rainfall for maize, and manages pests with three sprays on wheat, two on maize, and six on cotton to guard against bollworm and aphids. Tillage is rotary for wheat seedbed preparation and spring cotton ground preparation, with no-tillage direct seeding for summer maize after wheat harvest to save time and labor. Expected yields reflect traditional management: 450 kg/mu wheat, 550 kg/mu maize, and 250 kg/mu seed cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 71-year-old farmer in Quzhou County with 55 years of experience allocates his 5 mu between a 3-mu winter wheat\u2013summer maize double-cropping rotation and 2 mu of spring cotton, following the patterns he has used for decades. He selects improved wheat and hybrid maize and cotton varieties available through local supply channels, applies nitrogen generously based on long-held habit (18\u201322 kg/mu), uses well irrigation to give wheat four waterings and cotton four supplemental irrigations while relying partly on summer rainfall for maize, and manages pests with three sprays on wheat, two on maize, and six on cotton to guard against bollworm and aphids. Tillage is rotary for wheat seedbed preparation and spring cotton ground preparation, with no-tillage direct seeding for summer maize after wheat harvest to save time and labor. Expected yields reflect traditional management: 450 kg/mu wheat, 550 kg/mu maize, and 250 kg/mu seed cotton."
+  },
+  "elapsed_seconds": 68.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_12",
+  "tier": 2,
+  "provider": "claude"
+}

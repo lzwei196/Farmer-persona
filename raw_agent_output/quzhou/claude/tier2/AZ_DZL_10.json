@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know how it behaves. My main system is wheat in winter, then maize on the same ground in summer \u2014 that's 10 mu. The other 3.1 mu I keep in cotton. That's how I've always split it, and it gives me grain for the household and cash from cotton.\n\nCotton picking gets harder every year at my age, and fewer hands are home now with the young ones working in town. But I won't give up cotton entirely \u2014 it pays better than grain when prices are decent.\n\nFor wheat, I plough before planting \u2014 that's how I've always prepared the field and I'm not changing that. I'll use the improved variety from the county seed station, the one everyone around here uses. Three irrigations: once before sowing, once at jointing, once when the heads are forming. I apply fertilizer in two goes \u2014 base before sowing, top dressing at jointing. Two pesticide sprays, one for weeds early on, one for aphids or rust later.\n\nAfter wheat harvest in June, I go straight into maize with rotary tillage \u2014 faster, and I don't have time to plough again. Hybrid seed, that's standard now, no point using anything else for maize. Two irrigations if the summer rains are poor, maybe just one if it rains well. One pesticide application for corn borers.\n\nCotton gets ploughed in spring. More water, more spraying \u2014 that crop needs attention all summer. Five pesticide passes at least, for aphids, bollworm, and mites. Four irrigations spaced through the season.\n\nI won't try anything new this year. What I know has fed nine people for decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 10 mu to my wheat-maize double-cropping rotation and 3.1 mu to cotton, consistent with what I have done for decades. Wheat runs winter through early summer with plough tillage, improved local variety, three irrigations, and split nitrogen application. Maize follows immediately on the same ground using rotary tillage after wheat harvest, hybrid seed, and two irrigations. Cotton occupies the remaining plot, ploughed in spring, with heavier pesticide management and four irrigations to protect yield. I apply familiar input rates based on long experience rather than formal advice, keep cotton area limited given reduced household labor, and choose proven seed varieties over anything new. My goal is stable household food supply from grain and supplementary cash income from cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I allocate 10 mu to my wheat-maize double-cropping rotation and 3.1 mu to cotton, consistent with what I have done for decades. Wheat runs winter through early summer with plough tillage, improved local variety, three irrigations, and split nitrogen application. Maize follows immediately on the same ground using rotary tillage after wheat harvest, hybrid seed, and two irrigations. Cotton occupies the remaining plot, ploughed in spring, with heavier pesticide management and four irrigations to protect yield. I apply familiar input rates based on long experience rather than formal advice, keep cotton area limited given reduced household labor, and choose proven seed varieties over anything new. My goal is stable household food supply from grain and supplementary cash income from cotton."
+  },
+  "elapsed_seconds": 51.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_10",
+  "tier": 2,
+  "provider": "claude"
+}

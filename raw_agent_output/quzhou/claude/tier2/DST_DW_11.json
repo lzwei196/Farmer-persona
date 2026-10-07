@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land for 30 years. I know this soil, I know this weather, and I know what works in Quzhou. My well gives me some control over water, which is good because summers can be dry.\n\nMy 10.1 mu splits roughly like this in my head: about 6 mu goes into my wheat-maize rotation \u2014 wheat in winter, maize on the same ground in summer. I keep about 4 mu separate for spring potato. That's how I've always done it.\n\n**Wheat:** I'll buy improved certified seed from the county agricultural supply store, same variety I've used the last few years \u2014 stable yield, disease tolerant enough. I rotary till after the maize harvest in October to break up the stalks. I apply compound fertilizer as basal before sowing, then topdress urea at jointing. I irrigate three times: once before sowing to get moisture right, once at jointing, once at heading. Two pesticide passes \u2014 herbicide in early winter, then aphid and powdery mildew control in April-May.\n\n**Maize:** I always use hybrid seed. \u90d1\u5355958 or similar. After wheat harvest in June I direct seed into the stubble \u2014 no extra tillage, saves time and my back. I push most nitrogen as topdressing at the V6-V8 stage when the plants really need it. Summer rain usually covers part of the irrigation need, so I watch the sky and use the well maybe twice. Two pesticide applications \u2014 herbicide early, and I check for corn borer.\n\n**Potato:** This plot gets ploughed deep \u2014 potato needs loose soil. Improved variety. Potato eats a lot of potassium so I put more K down here than on my other crops. Four irrigations through the growing cycle. Three pesticide passes to keep late blight under control \u2014 one bad blight year I lost half the crop, I don't let that happen again.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"potato\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 1800\n    }\n  ],\n  \"reasoning_summary\": \"I run 6 mu in a winter wheat to summer maize double-crop rotation and keep 4 mu separate for spring potato, totalling 10 mu of physical land. For wheat I use improved certified varieties, rotary till after the maize harvest, apply nitrogen in two splits, and irrigate three times from my well. For maize I use hybrid seed and direct-seed into wheat stubble with no extra tillage, topdress most nitrogen at V6-V8, and rely partly on summer rainfall. For potato I plough deep, apply high potassium, irrigate four times, and spray three times for blight control after a bad loss years ago taught me not to cut corners there. Input rates and practices follow what I have learned works on this soil over three decades.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "potato",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 1800
+      }
+    ],
+    "reasoning_summary": "I run 6 mu in a winter wheat to summer maize double-crop rotation and keep 4 mu separate for spring potato, totalling 10 mu of physical land. For wheat I use improved certified varieties, rotary till after the maize harvest, apply nitrogen in two splits, and irrigate three times from my well. For maize I use hybrid seed and direct-seed into wheat stubble with no extra tillage, topdress most nitrogen at V6-V8, and rely partly on summer rainfall. For potato I plough deep, apply high potassium, irrigate four times, and spray three times for blight control after a bad loss years ago taught me not to cut corners there. Input rates and practices follow what I have learned works on this soil over three decades."
+  },
+  "elapsed_seconds": 53.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_11",
+  "tier": 2,
+  "provider": "claude"
+}

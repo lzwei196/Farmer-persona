@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 59 years old and have farmed these lands in Quzhou for 30 years. I finished high school, so unlike my father, I read the county extension bulletins and pay attention to fertilizer ratios and seed varieties. With seven people in the household and some of my children working in factories in Handan, labor is tight during the busy seasons, which means I must choose crops and practices that balance income with the hands we actually have.\n\nThis year I will keep **10 mu in the wheat\u2013maize double-cropping system** and plant **3.1 mu to cotton**. Wheat and maize are the safest bet on the North China Plain: the grain station buys wheat at a stable floor price, and hybrid maize sells reliably to traders or feeds our small yard flock. Cotton is more work, but lint prices have been decent, and my wife and I can handle the autumn picking when the children come home for the harvest.\n\nFor the **winter wheat** already in the ground from last October, I sowed an improved semi-dwarf variety. Now that spring is starting, I will top-dress nitrogen at green-up and again at jointing. I will irrigate four times\u2014green-up, jointing, heading, and grain filling\u2014using our well pump. Two pesticide applications will take care of any aphid or rust pressure. I will also run a rotary tiller between the rows once in early spring to break the soil crust and suppress weeds. I expect about 550 kg per mu.\n\nFor **summer maize** on the same 10 mu, timing is everything after the early-June wheat harvest. I will direct-seed a hybrid maize with no-tillage; I have done this for five years now, and it saves three to four precious days, preserves soil moisture, and yields just as well as ploughing. I will apply compound fertilizer at sowing and side-dress urea at the big-flare stage. Three irrigations should be enough\u2014one at sowing if June is dry, one at jointing, and one at grain filling. Two sprays will control weeds and corn borers. I am targeting 650 kg per mu.\n\nFor the **3.1 mu of cotton**, I will deep plough in late March to break up compaction, then plant a Bt hybrid cotton at the end of April. Cotton is hungry for potassium, so I will put extra potash in the base dressing. I will irrigate four times\u2014seedling establishment, budding, peak flowering, and boll development. Despite the Bt trait, bollworm, aphids, and spider mites still appear in this county, so I will spray five times through the season. I expect roughly 320 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 320\n    }\n  ],\n  \"reasoning_summary\": \"I have allocated 10 mu to the reliable wheat-maize double-cropping system and 3.1 mu to cotton. Wheat and maize provide stable grain income with manageable labor, while cotton offers higher cash returns when family labor is available for autumn picking. I use improved and hybrid varieties, apply balanced fertilization with extra potassium for cotton, irrigate strategically using our well, and choose no-tillage for maize to save time after wheat harvest. Pesticide applications are matched to each crop's pest risk in Quzhou County.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 320
+      }
+    ],
+    "reasoning_summary": "I have allocated 10 mu to the reliable wheat-maize double-cropping system and 3.1 mu to cotton. Wheat and maize provide stable grain income with manageable labor, while cotton offers higher cash returns when family labor is available for autumn picking. I use improved and hybrid varieties, apply balanced fertilization with extra potassium for cotton, irrigate strategically using our well, and choose no-tillage for maize to save time after wheat harvest. Pesticide applications are matched to each crop's pest risk in Quzhou County."
+  },
+  "elapsed_seconds": 66.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_16",
+  "tier": 2,
+  "provider": "kimi"
+}

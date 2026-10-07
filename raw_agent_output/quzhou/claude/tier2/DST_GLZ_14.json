@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 45 years. My father farmed before me. I know this soil. Quzhou land is flat, the well is reliable, and wheat-maize is what every family around me does \u2014 I see no reason to change what works.\n\nMy children do some factory work in the city, which helps cover the household costs. But I still need the grain. Two crops a year off 10.7 mu. That's the plan every year.\n\n**Wheat (October planting):**\nI'll rotary-till after I pull the maize in October, mix in base fertilizer \u2014 diammonium phosphate and some potash \u2014 before seeding. I use the improved variety from the supply shop in town, the one most people in the village are buying. I seed it in early October. Come March, when the green starts returning, I'll put down a urea topdressing. Irrigation: I always do four \u2014 the winter water before it freezes to protect the roots, then again at green-up, jointing, and heading. I spray herbicide in late autumn, and if I see rust spots in spring I'll spray again. Two pesticide runs is usually enough.\n\n**Maize (June planting):**\nRight after wheat harvest \u2014 maybe a day or two rest \u2014 I rotary-till and get the maize in. I buy hybrid seed, Zhengdan 958 or whatever the dealer at the market has that year, it's all hybrid now. I put fertilizer down at planting and again at jointing. Summer rain helps some, so I irrigate three times: at planting if the ground is dry, at tasseling, and during grain fill. Two pesticide sprays \u2014 one herbicide early, one for corn borer when I start seeing the moths.\n\nI don't expect to change much. Prices are uncertain, inputs cost more each year, but I know how to get a decent harvest from this soil.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"A 59-year-old farmer with 45 years experience in Quzhou County, Hebei, rotating all 10.7 mu between winter wheat and summer maize as is standard on the North China Plain. Wheat is planted in early October using a locally-popular improved variety, with rotary tillage, split nitrogen application (base plus spring topdressing), four well irrigations covering the overwintering, green-up, jointing, and heading stages, and two pesticide applications for weeds and rust. Summer maize follows immediately after wheat harvest using hybrid seed, with rotary tillage, base-plus-topdress fertilization, three irrigations covering planting, tasseling, and grain fill, and two pesticide applications for weeds and corn borer. Input rates and yields reflect conventional smallholder practice in this region rather than optimized agronomic recommendations.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "A 59-year-old farmer with 45 years experience in Quzhou County, Hebei, rotating all 10.7 mu between winter wheat and summer maize as is standard on the North China Plain. Wheat is planted in early October using a locally-popular improved variety, with rotary tillage, split nitrogen application (base plus spring topdressing), four well irrigations covering the overwintering, green-up, jointing, and heading stages, and two pesticide applications for weeds and rust. Summer maize follows immediately after wheat harvest using hybrid seed, with rotary tillage, base-plus-topdress fertilization, three irrigations covering planting, tasseling, and grain fill, and two pesticide applications for weeds and corn borer. Input rates and yields reflect conventional smallholder practice in this region rather than optimized agronomic recommendations."
+  },
+  "elapsed_seconds": 64.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_14",
+  "tier": 2,
+  "provider": "claude"
+}

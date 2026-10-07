@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 45 years. Quzhou is North China Plain \u2014 same pattern every year: wheat goes in October, comes out June, then I throw maize in right after on the same ground. Both crops use all 19.1 mu, just at different times of year. I know this soil. I know the wells here. I do what works.\n\nI'm 64 and alone now, so I need to keep things manageable. I hire machinery for seeding and harvest \u2014 I can't do it by hand anymore and there's no point trying. But I still do my own spraying and irrigation scheduling because I know exactly when my crops need it.\n\n**Wheat:** I'll use Shimai 22 \u2014 it's proven here in Hebei and resistant to the stripe rust we've had. Not the newest variety, but I trust it. I'll do a base application of phosphorus and potash before seeding, then split my nitrogen: some at planting, rest at jointing. I'll irrigate three times \u2014 pre-winter freeze, jointing, and heading \u2014 that's what I've always done and the yields hold up. I'll spray twice: one herbicide pass in winter rosette stage, one fungicide around flag leaf for powdery mildew.\n\n**Maize:** Straight into wheat stubble with rotary tillage to chop the straw down. I use Zhengdan 958 \u2014 reliable hybrid, good standability for when we get summer storms. Apply compound fertilizer at planting, topdress nitrogen at big bell stage. Rainfall usually covers most of summer water needs, but I'll irrigate once at tasseling if it's dry, maybe again at grain fill. One herbicide pass post-emergence, one spray for corn borer if I see it \u2014 some years I skip the borer spray if pressure is low.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 19.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 19.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"Both crops rotate across the full 19.1 mu sequentially. I use a proven improved wheat variety resistant to local disease pressure, split nitrogen application between basal and jointing, and irrigate three times at the critical stages I have learned over 45 years. For maize I plant a reliable hybrid directly into chopped wheat stubble, rely mainly on summer monsoon rainfall with one supplemental irrigation at tasseling, and apply nitrogen in two passes to match crop demand. My choices prioritize reliability and manageable labor for a single-person household over maximizing yield or experimenting with new inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 19.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 19.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "Both crops rotate across the full 19.1 mu sequentially. I use a proven improved wheat variety resistant to local disease pressure, split nitrogen application between basal and jointing, and irrigate three times at the critical stages I have learned over 45 years. For maize I plant a reliable hybrid directly into chopped wheat stubble, rely mainly on summer monsoon rainfall with one supplemental irrigation at tasseling, and apply nitrogen in two passes to match crop demand. My choices prioritize reliability and manageable labor for a single-person household over maximizing yield or experimenting with new inputs."
+  },
+  "elapsed_seconds": 42.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_15",
+  "tier": 2,
+  "provider": "claude"
+}

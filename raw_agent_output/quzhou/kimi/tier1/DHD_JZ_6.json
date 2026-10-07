@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed in Quzhou County for over 30 years. I never went to school, but I know this land and the seasons better than any book. In our village, everyone follows the wheat\u2013maize double-cropping system: we sow winter wheat in October and plant summer maize immediately after the wheat harvest in early June. That is the only way to make full use of the good flat land here. I have 6 mu of farmland.\n\nMy wheat is already in the ground from last autumn. I sowed *Luyuan 502*, an improved seed that gives me steady yields. Before sowing, I rotary-tilled the soil to break it up and mix in the wheat straw. Now, in early spring, I will topdress with urea and irrigate three times\u2014at green-up, jointing, and flowering. I will spray pesticides four times to control weeds, aphids, and rust. I expect about 1,000 jin per mu.\n\nAfter harvesting the wheat in early June, I will plant *Denghai 605* hybrid maize with no tillage\u2014there is no time between crops, and the maize grows well that way. I will put down compound fertilizer at planting and irrigate twice, at jointing and grain filling. I will spray pesticides three times for weeds and corn borers. I expect about 1,100 jin per mu.\n\nThis is what I do every year, and it works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize on the same 6 mu of land every year, which is the standard double-cropping system in Quzhou County. The wheat is already sown in autumn with an improved variety, and I manage it with rotary tillage, three irrigations, four pesticide sprays, and fertilizer topdressing in spring. After harvesting the wheat in early June, I immediately plant hybrid maize with no tillage, applying compound fertilizer and irrigating twice. These practices match what my neighbors and I have done for decades, and they give reliable yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize on the same 6 mu of land every year, which is the standard double-cropping system in Quzhou County. The wheat is already sown in autumn with an improved variety, and I manage it with rotary tillage, three irrigations, four pesticide sprays, and fertilizer topdressing in spring. After harvesting the wheat in early June, I immediately plant hybrid maize with no tillage, applying compound fertilizer and irrigating twice. These practices match what my neighbors and I have done for decades, and they give reliable yields."
+  },
+  "elapsed_seconds": 114.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_6",
+  "tier": 1,
+  "provider": "kimi"
+}

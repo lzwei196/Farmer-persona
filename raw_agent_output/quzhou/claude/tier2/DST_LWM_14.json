@@ -1,0 +1,53 @@
+{
+  "raw_response": "Thirty years I've been farming this land. I know what works here in Quzhou \u2014 the soil, the timing, the water table. My sons help sometimes but they've got jobs in the city now, so I can't waste labor or money on things that don't pay.\n\nMy main rotation is wheat then maize \u2014 that's what this land is for. Those two crops fill about 25 mu. I keep 6.5 mu aside for zucchini because it sells well at the local market and gives me cash income when the grain prices are bad.\n\n**Wheat:** I plant in October. I use the improved varieties \u2014 Jimai 22 or similar, whatever the seed station recommends this year. Thirty years tells me it yields reliably. I do rotary tillage after maize harvest to break up the stubble. Irrigation here is necessary \u2014 I pump four times: before sowing to settle the soil, again in winter to protect the roots from frost heave, at jointing, and at heading when the grain is forming. Fertilizer I split \u2014 base and topdress. I spray twice for weeds and once for powdery mildew in spring.\n\n**Maize:** Right after wheat harvest in June, I go in with direct seeding \u2014 no-tillage saves me time and the soil moisture stays. I use hybrid seed,\u90d1\u5355958 has been good to me. Three irrigations: at sowing, tasseling, and grain fill. I apply nitrogen in two shots \u2014 base and one topdress at V6. Pest pressure is manageable, usually just one herbicide pass and one for corn borer.\n\n**Zucchini:** I plant this in April on the separate 6.5 mu plot. It's labor-intensive but the margins are better than grain. Hybrid seed, rotary tillage before planting. Zucchini drinks water \u2014 I irrigate every week or two throughout the season, roughly ten times. Powdery mildew hits hard so I spray five times: fungicide rotations I learned the hard way.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 25,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 25,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"zucchini\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 10,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3500\n    }\n  ],\n  \"reasoning_summary\": \"A 53-year-old farmer with 30 years experience in Quzhou, Hebei allocates 25 mu to the standard wheat-maize double-cropping rotation and 6.5 mu to spring zucchini as a cash crop. Wheat uses improved semi-dwarf varieties with rotary tillage and four irrigations covering key growth stages; maize uses hybrid seed with no-tillage direct seeding to save labor and moisture, with three irrigations; zucchini requires intensive irrigation (ten times) and five fungicide applications to manage powdery mildew. Fertilizer rates reflect common Hebei practice \u2014 moderately high nitrogen for grain crops and potassium-emphasized nutrition for zucchini. With family labor partially off-farm, no-tillage on maize and reliable hybrid inputs reduce workload while maintaining stable yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 25,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 25,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "zucchini",
+        "season": "spring",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 10,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3500
+      }
+    ],
+    "reasoning_summary": "A 53-year-old farmer with 30 years experience in Quzhou, Hebei allocates 25 mu to the standard wheat-maize double-cropping rotation and 6.5 mu to spring zucchini as a cash crop. Wheat uses improved semi-dwarf varieties with rotary tillage and four irrigations covering key growth stages; maize uses hybrid seed with no-tillage direct seeding to save labor and moisture, with three irrigations; zucchini requires intensive irrigation (ten times) and five fungicide applications to manage powdery mildew. Fertilizer rates reflect common Hebei practice \u2014 moderately high nitrogen for grain crops and potassium-emphasized nutrition for zucchini. With family labor partially off-farm, no-tillage on maize and reliable hybrid inputs reduce workload while maintaining stable yields."
+  },
+  "elapsed_seconds": 42.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_14",
+  "tier": 2,
+  "provider": "claude"
+}

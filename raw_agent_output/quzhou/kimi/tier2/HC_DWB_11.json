@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 60 years old, and I have farmed these 15 mu in Quzhou County for 40 years. With only my wife and me in the household, and with one of us working off-farm part of the time, labor is tight. I have already planted winter wheat last October on 12 mu\u2014that is the backbone of my farm and my most reliable source of income. My priority now is to manage that wheat through to harvest in early June. I will top-dress it with urea when it greens up and irrigate it three times from my well before harvest. I know this land well, so I do not over-fertilize: about 18 kg of nitrogen per mu, plus phosphate and potash, is enough. I will spray twice\u2014once for weeds and once if I see aphids or rust.\n\nAs soon as the wheat is off in early June, I will immediately plant summer maize on that same 12 mu. There is no time to waste in the double-cropping system. I will use a rotary tiller to prepare the seedbed quickly, plant a hybrid maize variety I trust, and apply about 16 kg nitrogen per mu. The maize will need two irrigations and two pesticide applications\u2014one for weeds and one for corn borers. I expect around 550 kg per mu if the summer rains cooperate.\n\nI keep only 3 mu of cotton. At my age, hand-picking cotton is exhausting work, and my wife and I simply cannot manage more. I plough that ground in spring and plant an improved cotton variety. Cotton needs more attention than grain: I irrigate it three times and spray for bollworm about seven times through the season. I apply 15 kg nitrogen per mu and a bit more potash because cotton depletes it. I expect about 250 kg of seed cotton per mu\u2014enough to make the labor worthwhile, but not so much that it overwhelms us.\n\nI use my well carefully because electricity costs money, but I water when the crops truly need it. After four decades, I do not gamble on new methods. I stick with what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"With only two people in the household and off-farm work limiting our field time, I concentrate 12 mu on the wheat-maize double-cropping system that I can manage efficiently and mechanize where possible. The wheat is already sown and only needs fertilization, irrigation, and pest control before June harvest. Maize follows immediately on the same land with minimal tillage to save time and preserve soil moisture. I limit cotton to 3 mu because hand-picking and intensive pest management exceed what my wife and I can handle at our age. I rely on well irrigation but apply water only at critical growth stages to control costs. My input rates reflect 40 years of experience\u2014enough fertilizer and pesticides to secure the crop, but no more than necessary.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "With only two people in the household and off-farm work limiting our field time, I concentrate 12 mu on the wheat-maize double-cropping system that I can manage efficiently and mechanize where possible. The wheat is already sown and only needs fertilization, irrigation, and pest control before June harvest. Maize follows immediately on the same land with minimal tillage to save time and preserve soil moisture. I limit cotton to 3 mu because hand-picking and intensive pest management exceed what my wife and I can handle at our age. I rely on well irrigation but apply water only at critical growth stages to control costs. My input rates reflect 40 years of experience\u2014enough fertilizer and pesticides to secure the crop, but no more than necessary."
+  },
+  "elapsed_seconds": 199.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DWB_11",
+  "tier": 2,
+  "provider": "kimi"
+}

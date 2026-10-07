@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for over 40 years, since I was a boy helping my father. I only finished primary school, so I can't read those thick agricultural books, but I know my fields. I watch what my neighbors do, especially Lao Zhang down the road \u2014 when he tries something new and it works, I pay attention.\n\nMy wheat is already in the ground \u2014 I planted 10 mu last October with improved seed, did rotary tillage, and put down about 25 kg of nitrogen per mu. It's coming up green now. I'll irrigate four times this spring and summer, and spray for weeds and pests maybe four times. If the weather doesn't turn bad, I should get around 500 kg per mu.\n\nAfter harvest in early June, I'll plant summer maize on that same 10 mu. No time to till \u2014 there's only about a week between wheat harvest and maize planting, so I'll use no-tillage and put in hybrid seed. Denghai 605 or something like it, whatever the seed shop has. I'll give it about 10 kg of nitrogen per mu and irrigate three times. Last year I got 550 kg per mu, and I expect about the same.\n\nI also keep a small cotton plot \u2014 3 mu. I plant it in late April with improved seed, rotary tillage. Cotton is a lot of work, maybe 16 sprays for bollworm and weeds, and I irrigate twice, but the autumn price is usually decent. I hope for 275 kg per mu. I thought about growing vegetables like some younger farmers, but my son works in Shijiazhuang and it's just me and my wife. Too much hand work. Wheat, maize, and a little cotton \u2014 that's what I know, that's what I can handle.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I stick with wheat-maize double cropping on 10 mu because it's reliable insurance \u2014 if one crop struggles, the other usually survives. I use improved seed for wheat and hybrid for maize, since my neighbor had good results. I keep nitrogen moderate at 25 kg/mu for wheat and 10 kg/mu for maize; I tried higher rates before but the yield didn't improve enough to justify the cost. I also grow 3 mu of cotton for diversification and autumn cash income, even though it requires 16 pesticide applications and more labor. I avoid vegetables because at 57 years old with only my wife to help, I don't have the labor for intensive hand work. No-tillage for maize is necessary because the planting window after wheat harvest is less than a week.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I stick with wheat-maize double cropping on 10 mu because it's reliable insurance \u2014 if one crop struggles, the other usually survives. I use improved seed for wheat and hybrid for maize, since my neighbor had good results. I keep nitrogen moderate at 25 kg/mu for wheat and 10 kg/mu for maize; I tried higher rates before but the yield didn't improve enough to justify the cost. I also grow 3 mu of cotton for diversification and autumn cash income, even though it requires 16 pesticide applications and more labor. I avoid vegetables because at 57 years old with only my wife to help, I don't have the labor for intensive hand work. No-tillage for maize is necessary because the planting window after wheat harvest is less than a week."
+  },
+  "elapsed_seconds": 158.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_5",
+  "tier": 1,
+  "provider": "kimi"
+}

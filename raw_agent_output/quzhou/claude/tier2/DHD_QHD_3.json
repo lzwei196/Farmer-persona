@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land in Quzhou for decades. I know this county \u2014 the soil, the water table, the seasons. Let me think through what I'll do this year.\n\nMy 20 mu needs to work hard. The wheat-maize rotation is the backbone \u2014 I'll put 14 mu into that double-cropping system, which gives me two harvests off the same ground. The remaining 6 mu goes to cotton, as it has most years. Cotton prices have been reasonable, and I know how to grow it here.\n\n**Wheat (winter):** I'll plant in early October. I've switched to improved semi-dwarf varieties over the years \u2014 they lodge less and yield better. I'll plough that ground after the maize comes off, then apply base fertilizer before seeding. I irrigate at sowing, jointing, heading, and grain fill \u2014 four times. That's how you get 500 kg/mu here. Aphids and powdery mildew are my main worries, so two pesticide passes minimum.\n\n**Maize (summer):** Straight into the stubble after wheat harvest in June \u2014 I'll use rotary tillage to chop the straw and prepare the bed. Hybrid seed, no question. Summer rains help, but the well gives me insurance for 2 irrigations. Corn borer and armyworm I'll watch closely.\n\n**Cotton (spring):** I'll plough and ridge the cotton plot in late March. Bt hybrid cotton \u2014 I've used it for years, cuts my pesticide burden on bollworm considerably. Still need to spray for aphids and spider mites though, so I'll plan four applications. Cotton drinks water during boll setting \u2014 I'll irrigate four times with the well.\n\nWith some family off-farm, I have less labor, so I lean on machinery and no-till where I can on the maize.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 14 mu to a winter wheat\u2013summer maize double-cropping rotation and 6 mu to cotton, a split I have refined over decades in Quzhou. Wheat is planted in October using improved semi-dwarf varieties with four irrigations timed to critical growth stages; maize follows immediately after harvest using hybrid seed and rotary tillage to handle straw, relying partly on summer rainfall with two supplementary irrigations. Cotton occupies the remaining plot, ploughed in spring and planted with Bt hybrid seed to reduce bollworm pressure, though four pesticide applications are still needed for aphids and mites and four irrigations are required through boll development. Fertilizer rates reflect the moderate-to-high inputs standard in this part of the North China Plain, and my tillage choices balance soil preparation needs against the reduced labor availability from household members working off-farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I allocate 14 mu to a winter wheat\u2013summer maize double-cropping rotation and 6 mu to cotton, a split I have refined over decades in Quzhou. Wheat is planted in October using improved semi-dwarf varieties with four irrigations timed to critical growth stages; maize follows immediately after harvest using hybrid seed and rotary tillage to handle straw, relying partly on summer rainfall with two supplementary irrigations. Cotton occupies the remaining plot, ploughed in spring and planted with Bt hybrid seed to reduce bollworm pressure, though four pesticide applications are still needed for aphids and mites and four irrigations are required through boll development. Fertilizer rates reflect the moderate-to-high inputs standard in this part of the North China Plain, and my tillage choices balance soil preparation needs against the reduced labor availability from household members working off-farm."
+  },
+  "elapsed_seconds": 42.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_3",
+  "tier": 2,
+  "provider": "claude"
+}

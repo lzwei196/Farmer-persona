@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this same 4.5 mu in Quzhou for over three decades, so I know the land well. The wheat-maize rotation is what my family has always done \u2014 wheat in winter, maize in summer, same ground. With my university background I pay attention to soil fertility and try to be precise with inputs rather than just throwing on extra fertilizer hoping for more yield.\n\nMy plot is flat, the well gives reliable water, and I can borrow or hire machines for planting and harvest. Some of my kids work in the city so I can't count on unlimited family labor \u2014 that pushes me toward mechanized sowing and minimum tillage on the maize side.\n\n**Wheat (planted this coming October, harvested June):** I'll use an improved semi-dwarf variety \u2014 something like Jimai 22 or Shimai 15, which performs well here and lodges less. I'll base-apply compound fertilizer before rotary tillage, then topdress nitrogen at jointing. Four irrigations: pre-sowing for good germination, jointing, heading, and grain fill. Disease pressure here means I'll spray fungicide once around flag leaf and do a seed treatment \u2014 two pesticide applications total. Target around 500 kg/mu, which is realistic on my field.\n\n**Maize (planted June after wheat harvest, harvested September):** I use Xianyu 335 or Zhengdan 958 \u2014 proven hybrids, reliable. After the combine takes the wheat, I direct-seed maize into the stubble with no tillage to save time and soil moisture. I'll apply urea as base and then topdress at large trumpet stage. Maize here catches summer rain so I only plan two irrigations \u2014 one at sowing if it's dry, one at silking. Herbicide right after emergence, one insecticide pass for corn borer. Targeting 550 kg/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I run a standard wheat-maize double-cropping rotation on my 4.5 mu in Quzhou, Hebei. For winter wheat I use an improved semi-dwarf variety, apply base fertilizer before rotary tillage, topdress nitrogen at jointing, irrigate four times, and make two pesticide applications targeting seed-borne disease and flag-leaf fungal pressure \u2014 targeting 500 kg/mu. For summer maize I direct-seed a proven hybrid into wheat stubble with no tillage to conserve moisture and save labor, apply nitrogen in split doses, rely mostly on summer rainfall with two supplemental well irrigations, and manage weeds and corn borer with two pesticide passes \u2014 targeting 550 kg/mu. Input levels reflect my experience with local soil fertility and my priority on efficient labor use given that several household members work off-farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I run a standard wheat-maize double-cropping rotation on my 4.5 mu in Quzhou, Hebei. For winter wheat I use an improved semi-dwarf variety, apply base fertilizer before rotary tillage, topdress nitrogen at jointing, irrigate four times, and make two pesticide applications targeting seed-borne disease and flag-leaf fungal pressure \u2014 targeting 500 kg/mu. For summer maize I direct-seed a proven hybrid into wheat stubble with no tillage to conserve moisture and save labor, apply nitrogen in split doses, rely mostly on summer rainfall with two supplemental well irrigations, and manage weeds and corn borer with two pesticide passes \u2014 targeting 550 kg/mu. Input levels reflect my experience with local soil fertility and my priority on efficient labor use given that several household members work off-farm."
+  },
+  "elapsed_seconds": 46.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_11",
+  "tier": 2,
+  "provider": "claude"
+}

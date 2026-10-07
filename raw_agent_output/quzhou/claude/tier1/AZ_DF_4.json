@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land my whole life. My fields are on the flat plain just like everyone else around here. Five mu total \u2014 that's what my family has. I don't need to think hard about what to grow. My mother grew wheat and corn, my neighbors grow wheat and corn, and I will too. That's what this land is for. After the wheat comes off in June, the corn goes in right away on the same ground. That's how we do it here.\n\nFor seeds I go to the seed station in town. The man there tells me what's been working well this year. I don't bother with the old varieties my grandmother used \u2014 the new wheat seeds give a bigger harvest and stand up better when there's wind. For corn I always buy the hybrid bags. They cost more but the yield is worth it.\n\nFertilizer \u2014 I put down the compound fertilizer before planting, then I add urea in spring when the wheat is growing tall. I put a decent amount. You can't be stingy with fertilizer if you want a real harvest.\n\nFor water, wheat needs more attention than corn. I run the pump four times for wheat \u2014 once before seeding to wet the soil, once before the cold sets in, once when it's jointing in spring, and once more when heads form. Corn mostly gets the summer rain but if it's dry in July I'll water it once.\n\nNear the house I have half a mu of vegetables \u2014 cabbage, garlic, beans, some peppers. That's for us to eat. I don't sell it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"mixed vegetables\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 800\n    }\n  ],\n  \"reasoning_summary\": \"A 58-year-old smallholder in Quzhou County, Hebei follows the dominant winter wheat\u2013summer maize double-cropping rotation on 4 mu of flat alluvial plain, planting improved wheat varieties in October and hybrid maize directly into the stubble after the June harvest with no-till seeding. Fertilizer rates reflect common smallholder practice in southern Hebei \u2014 moderately above agronomic optimum for nitrogen, as local convention associates higher inputs with higher yields. Wheat receives four irrigation events drawing on groundwater, while maize relies mainly on summer rainfall with one supplemental watering. A separate 0.5-mu kitchen garden of mixed vegetables near the homestead supplies household food needs using traditional seed and frequent hand-irrigation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "mixed vegetables",
+        "season": "spring",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 8,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 800
+      }
+    ],
+    "reasoning_summary": "A 58-year-old smallholder in Quzhou County, Hebei follows the dominant winter wheat\u2013summer maize double-cropping rotation on 4 mu of flat alluvial plain, planting improved wheat varieties in October and hybrid maize directly into the stubble after the June harvest with no-till seeding. Fertilizer rates reflect common smallholder practice in southern Hebei \u2014 moderately above agronomic optimum for nitrogen, as local convention associates higher inputs with higher yields. Wheat receives four irrigation events drawing on groundwater, while maize relies mainly on summer rainfall with one supplemental watering. A separate 0.5-mu kitchen garden of mixed vegetables near the homestead supplies household food needs using traditional seed and frequent hand-irrigation."
+  },
+  "elapsed_seconds": 73.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_4",
+  "tier": 1,
+  "provider": "claude"
+}

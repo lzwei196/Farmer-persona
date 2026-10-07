@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 64 years old and have farmed this land in Quzhou County all my life. I never went to school, but I know every mu of my field and what it needs. This year, like every year, I will plant winter wheat and summer maize in rotation. That is what our land and water here on the North China Plain are made for. I have 5 mu of good farmland. I do not chase new fancy crops \u2014 wheat and maize have never failed me, and the grain station buys them at steady prices.\n\nFor the winter wheat, I will sow an improved variety in late September or early October. I will rotary-till the soil first to break up the stubble and prepare a fine seedbed. I will apply compound fertilizer as basal dressing and top-dress with urea in spring when the wheat turns green. The wheat needs four good irrigations: the winter irrigation to keep it safe from frost, the green-turn irrigation, the jointing irrigation, and one at grain filling. I will spray pesticides four times to keep away aphids, rust, and weeds.\n\nAs soon as the wheat is harvested in early June, I will plant summer maize directly without tillage \u2014 there is no time to waste because the maize growing season is short. I will use a hybrid variety like Nongda 372, which yields well and resists lodging. The maize will get two irrigations, one at the jointing stage and one at flowering, and I will spray pesticides three times for borers and weeds. I have learned that saving labor on tillage for maize is wise \u2014 the soil keeps its moisture better, and I can get the crop in quickly.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 5 mu in Quzhou County for decades, and the wheat-maize double-cropping system is the only reliable way to feed my family and earn cash. Wheat is rotary-tilled and heavily irrigated because it grows through the dry season, while maize is no-till planted immediately after wheat harvest to catch the summer rains and heat. I use improved wheat seed and hybrid maize seed, apply moderate fertilizers, and spray regularly to protect yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed these 5 mu in Quzhou County for decades, and the wheat-maize double-cropping system is the only reliable way to feed my family and earn cash. Wheat is rotary-tilled and heavily irrigated because it grows through the dry season, while maize is no-till planted immediately after wheat harvest to catch the summer rains and heat. I use improved wheat seed and hybrid maize seed, apply moderate fertilizers, and spray regularly to protect yields."
+  },
+  "elapsed_seconds": 119.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_1",
+  "tier": 1,
+  "provider": "kimi"
+}

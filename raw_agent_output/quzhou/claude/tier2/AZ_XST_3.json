@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 45 years, and I know Quzhou's soil and water situation well. My body is still capable but I'm not going to overextend myself \u2014 my wife and I run this farm mostly on our own now that our son is working in the city.\n\n**My thinking:**\n\nThe wheat-maize rotation on my main plots is non-negotiable. It's stable, mechanizable, and I can manage it with minimal hired labor. I'll keep about 12 mu in that rotation. For the remaining 4.1 mu, I'll stay with cotton \u2014 I know it well, the local market is still reasonable, and I have my irrigation well to carry it through dry spells. I won't expand cotton at my age. Too much hand labor at picking time.\n\nFor wheat, I'll plant a Jimai-series improved variety \u2014 reliable yield and decent disease resistance. I'll plough before sowing since the maize stalks need to be turned under. Base fertilizer goes in before planting, then I top-dress nitrogen at jointing. Three irrigations: pre-sowing if the soil is dry, jointing, and heading. I'll spray herbicide in early spring and hit it with fungicide twice during heading \u2014 powdery mildew and scab are real problems here.\n\nFor maize, I go straight to hybrid \u2014 no reason not to, yields are far better. After wheat harvest I do rotary tillage quickly and get the seed in. I'll split nitrogen into base and two top-dressings. Three irrigations \u2014 tasseling is critical. One herbicide pass early, one insecticide for corn borer.\n\nFor cotton, I'll use a hybrid Bt variety. Cotton needs more potassium than people give it \u2014 I've learned that the hard way. Four irrigations timed around boll setting. Pest pressure is significant so I'll plan five sprays across the season for aphids, bollworm, and spider mites.\n\nI expect about 450 kg/mu wheat, 550 maize, 280 seed cotton. Nothing spectacular, but solid and sustainable for two people managing 16 mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"With 45 years on this land and a two-person household, I allocate 12 mu to a wheat-maize rotation as the reliable income base, using improved wheat and hybrid maize with mechanized tillage and well irrigation. The remaining 4.1 mu stays in cotton, a crop I know well and can manage, using a hybrid Bt variety with higher potassium inputs and more intensive pest management. Labor constraints from my age and family off-farm work drive me toward mechanizable operations on the rotation land and careful sizing of the labor-intensive cotton plot. Fertilizer rates reflect both local soil needs and my experience-informed judgment; irrigation is timed to critical growth stages rather than applied on a fixed schedule.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "With 45 years on this land and a two-person household, I allocate 12 mu to a wheat-maize rotation as the reliable income base, using improved wheat and hybrid maize with mechanized tillage and well irrigation. The remaining 4.1 mu stays in cotton, a crop I know well and can manage, using a hybrid Bt variety with higher potassium inputs and more intensive pest management. Labor constraints from my age and family off-farm work drive me toward mechanizable operations on the rotation land and careful sizing of the labor-intensive cotton plot. Fertilizer rates reflect both local soil needs and my experience-informed judgment; irrigation is timed to critical growth stages rather than applied on a fixed schedule."
+  },
+  "elapsed_seconds": 63.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_3",
+  "tier": 2,
+  "provider": "claude"
+}

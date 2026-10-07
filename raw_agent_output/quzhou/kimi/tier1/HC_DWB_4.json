@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 38-year-old farmer in Quzhou County. I have been working this land since I left middle school at 15, and my father taught me everything he knew before that. I manage about 5 mu of flat, irrigated land on the North China Plain. Every year, I follow the double-cropping system that has fed my family for generations: winter wheat followed by summer corn. I know this land, and I know what works.\n\nThis October, I will plant improved winter wheat varieties because they handle the local climate better and give me stable yields. I will spread base fertilizer and do rotary tillage to prepare the seedbed properly. The wheat will need four irrigations\u2014winter water to protect against frost, then at jointing, heading, and grain filling. I will spray pesticides three times: once for weeds, once for fungus when the weather turns humid, and once for aphids if they appear. I expect about 450 kg per mu if the spring weather cooperates.\n\nCome early June, as soon as the wheat comes off the field, I will plant hybrid summer corn immediately. Time is short, so I will use no-tillage planting to save moisture and get the seeds in the ground fast. Corn needs less phosphorus than wheat but plenty of nitrogen, especially at the big flare stage. I will irrigate three times\u2014at seedling stage, jointing, and filling\u2014and spray twice for weeds and corn borers. Hybrid corn should give me over 500 kg per mu, maybe 520 if the summer rains are good.\n\nI do not experiment with strange crops. Vegetables fetch higher prices but the market is risky and I have no greenhouse. Wheat and corn have guaranteed buyers, and I understand their rhythms. My middle school education is enough to read seed labels and pesticide instructions, and I have learned the rest through 23 years of sweat in these fields.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer corn\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 5 mu in Quzhou County for over twenty years and trust the winter wheat\u2013summer corn double-cropping system because it matches our climate, provides two harvests per year, and has reliable buyers. I use improved wheat seed and hybrid corn seed for higher, stable yields. Rotary tillage before wheat gives a good seedbed, while no-tillage corn planting saves time and soil moisture after the wheat harvest. Fertilizer rates follow what has worked on my field: heavier nitrogen and phosphorus for wheat, slightly adjusted for corn. Irrigation is timed to critical growth stages, and pesticides are applied based on the pests and weeds I see every season. I avoid risky cash crops because my family depends on predictable income.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer corn",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I have farmed 5 mu in Quzhou County for over twenty years and trust the winter wheat\u2013summer corn double-cropping system because it matches our climate, provides two harvests per year, and has reliable buyers. I use improved wheat seed and hybrid corn seed for higher, stable yields. Rotary tillage before wheat gives a good seedbed, while no-tillage corn planting saves time and soil moisture after the wheat harvest. Fertilizer rates follow what has worked on my field: heavier nitrogen and phosphorus for wheat, slightly adjusted for corn. Irrigation is timed to critical growth stages, and pesticides are applied based on the pests and weeds I see every season. I avoid risky cash crops because my family depends on predictable income."
+  },
+  "elapsed_seconds": 40.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_4",
+  "tier": 1,
+  "provider": "kimi"
+}

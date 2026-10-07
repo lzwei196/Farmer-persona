@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 25 years and I know what it can do. My wheat-maize rotation is the backbone \u2014 it fills the grain account and keeps the soil from going lazy. Stevia pays better per mu when the buyers come, so I keep a piece of land in it, but not so much that I'm overwhelmed when the family is away working in town.\n\nMy 90 mu: I put 60 mu into the wheat-maize rotation \u2014 same ground, two crops a year. The other 30 mu goes to stevia. That's been my split for a few years now and it works.\n\nFor winter wheat, I'll use the improved seed I get from the county supply station \u2014 not the most expensive, but it's what my neighbors use and it yields well. I do three irrigations: one before freeze-up, one at jointing, one at heading. Rotary tillage after maize harvest, then I sow. I keep nitrogen at 15 kg per mu, same as last year. Yield should be around 480 kg.\n\nFor summer maize, I drill hybrid seed straight into the stubble \u2014 no plowing, saves fuel and the soil holds moisture better. Rain is usually decent in July-August so I only plan two waterings. Nitrogen higher here, 18 kg, split into base and topdress at V6. I aim for 550 kg per mu.\n\nStevia I plant cuttings in spring. It needs more water than grain crops and the potassium must be right or the leaves go thin. I do five irrigations and watch for aphids \u2014 two pesticide runs are usually enough. I harvest three cuttings through the season. Dried leaf should come to about 200 kg per mu if the weather cooperates.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 60,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 60,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 60 mu to the wheat-maize double-cropping rotation that has anchored my income for two decades, and 30 mu to stevia as a cash crop \u2014 a balance that matches my available family labor since some members work off-farm. Wheat is sown in October using improved county-station seed after rotary tillage, with three well irrigations and moderate nitrogen. Maize follows in June with no-till direct seeding into wheat stubble, hybrid seed, slightly higher nitrogen, and relies on summer rainfall for two of its water needs. Stevia is established from cuttings in spring on a separate plot, with five irrigations and elevated potassium to support leaf quality, targeting three harvests of dried leaf through the season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 60,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 60,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I allocate 60 mu to the wheat-maize double-cropping rotation that has anchored my income for two decades, and 30 mu to stevia as a cash crop \u2014 a balance that matches my available family labor since some members work off-farm. Wheat is sown in October using improved county-station seed after rotary tillage, with three well irrigations and moderate nitrogen. Maize follows in June with no-till direct seeding into wheat stubble, hybrid seed, slightly higher nitrogen, and relies on summer rainfall for two of its water needs. Stevia is established from cuttings in spring on a separate plot, with five irrigations and elevated potassium to support leaf quality, targeting three harvests of dried leaf through the season."
+  },
+  "elapsed_seconds": 49.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_10",
+  "tier": 2,
+  "provider": "claude"
+}

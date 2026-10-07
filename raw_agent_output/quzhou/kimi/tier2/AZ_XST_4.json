@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old and have been farming these fields in Quzhou for 40 years. I never went to school, but I know my land well. My wife and I are the only ones left at home \u2014 our children work in the city \u2014 so we have to be careful with labor. We have 20 mu total.\n\nThis year, I will keep 16 mu in the wheat-maize rotation and 4 mu in cotton. I used to grow more cotton when I was younger and had more hands, but now with just the two of us, 4 mu is all we can manage. Cotton needs too much picking and spraying \u2014 my back can't take more than that.\n\nFor the wheat, I'll plant in mid-October after rotary tilling the maize stubble. I'll use the same improved variety as my neighbors \u2014 something like luyuan502 from the seed station. I always put down one bag of compound fertilizer per mu at planting, and then topdress with about 45 jin of urea when the wheat starts jointing. That's what I've always done and it gives me around 1000 jin per mu. I'll irrigate three times: once in winter, once at jointing, and once at grain filling. The well water costs money, but without it the yield drops badly. I'll spray herbicide once and maybe insecticide once or twice \u2014 about four times total.\n\nFor the summer maize, I plant it right after wheat harvest in early June. There's no time to plough, so I no-till plant directly into the wheat stubble. I use hybrid maize seeds \u2014 denghai or whatever the dealer has. I put down compound fertilizer at planting, about 80 jin per mu. I don't usually topdress maize much because by then we're busy with the cotton and the wheat stubble still has some fertility. Two irrigations are usually enough \u2014 one after sowing if it's dry, and one at the big trumpet stage. Three pesticide sprays should do it.\n\nFor cotton on the 4 mu, I'll rotary till in April and plant the improved cotton seeds. I apply compound fertilizer at planting. Cotton pests are the worst \u2014 bollworms especially \u2014 so I have to spray many times, maybe 12 times through the season. I'll irrigate twice, at budding and flowering. If the weather is good, I expect about 550 jin of seed cotton per mu.\n\nI don't change much from year to year. What worked before will work again. I don't have money to waste on experiments.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I keep most of my land in wheat-maize double cropping because that feeds my family and brings stable income, while limiting cotton to 4 mu since my wife and I cannot manage the heavy labor of picking and frequent spraying on more land. I follow what I have always done: rotary till for wheat and cotton, no-till for maize because the turnaround is too tight, standard fertilizer rates with urea topdress on wheat, and irrigation when the crops look thirsty. I do not try new things at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I keep most of my land in wheat-maize double cropping because that feeds my family and brings stable income, while limiting cotton to 4 mu since my wife and I cannot manage the heavy labor of picking and frequent spraying on more land. I follow what I have always done: rotary till for wheat and cotton, no-till for maize because the turnaround is too tight, standard fertilizer rates with urea topdress on wheat, and irrigation when the crops look thirsty. I do not try new things at my age."
+  },
+  "elapsed_seconds": 220.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_4",
+  "tier": 2,
+  "provider": "kimi"
+}

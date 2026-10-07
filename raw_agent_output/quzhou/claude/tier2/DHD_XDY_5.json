@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for three decades. My farm is small \u2014 4.1 mu \u2014 but my family depends on it for staple food, and the off-farm income from my kids lets me invest a bit more carefully rather than cutting every corner. I'm not running after maximum yield at any cost. I've watched the water table in Quzhou drop for twenty years. I have a university education and I've read the research. I know I need to be smarter about water and fertilizer than older farmers were.\n\nFor **winter wheat**, I'll plant in early October after rotary-tilling the maize stubble back into the soil. I'll use Kenong 199 or a similarly adapted improved variety \u2014 not the cheapest seed, but proven in this county. I'll apply base fertilizer (phosphorus and potassium all at once, plus a third of my nitrogen), then topdress nitrogen at jointing stage. I'll irrigate at sowing, jointing, and heading \u2014 three times. I used to do four, but the research out of China Agricultural University convinced me the third irrigation at grain fill isn't worth the groundwater draw in most years. Three fungicide/herbicide/insecticide passes are standard; I won't skip any of those.\n\nFor **summer maize**, I'll direct-seed into the wheat stubble right after June harvest \u2014 no tillage. I'll use Xianyu 335 hybrid seed. Summer maize in Hebei catches the July\u2013August monsoon, so I'll only irrigate if there's drought stress at emergence or tasseling \u2014 planning for two irrigations but ready to skip one if rains come. I'll apply nitrogen in two splits: base plus a top-dress at the 10-leaf stage.\n\nBoth crops share the same 4.0 mu of cultivated area (0.1 mu is path and well infrastructure).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I run a standard wheat-maize double-crop rotation on 4.0 cultivated mu in Quzhou, Hebei. With 30 years of experience and awareness of declining groundwater, I prioritize water efficiency: three irrigations for wheat (sowing, jointing, heading) and two for summer maize, relying on monsoon rainfall to cover the rest. I use an improved wheat variety suited to local conditions and a high-yielding hybrid for maize, applying fertilizer in splits to reduce loss and improve uptake. No-tillage for summer maize saves labor and preserves soil structure after wheat harvest. My targets \u2014 480 kg/mu wheat and 600 kg/mu maize \u2014 are realistic for this region without pushing unsustainable inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I run a standard wheat-maize double-crop rotation on 4.0 cultivated mu in Quzhou, Hebei. With 30 years of experience and awareness of declining groundwater, I prioritize water efficiency: three irrigations for wheat (sowing, jointing, heading) and two for summer maize, relying on monsoon rainfall to cover the rest. I use an improved wheat variety suited to local conditions and a high-yielding hybrid for maize, applying fertilizer in splits to reduce loss and improve uptake. No-tillage for summer maize saves labor and preserves soil structure after wheat harvest. My targets \u2014 480 kg/mu wheat and 600 kg/mu maize \u2014 are realistic for this region without pushing unsustainable inputs."
+  },
+  "elapsed_seconds": 44.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_5",
+  "tier": 2,
+  "provider": "claude"
+}

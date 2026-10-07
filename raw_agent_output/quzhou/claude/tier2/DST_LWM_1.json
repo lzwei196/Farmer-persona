@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for fifty years. My father farmed it before me, and I know every corner of these 5 mu. I don't read much, but the land tells me what it needs.\n\n**My thinking:**\n\nAll 5 mu rotate \u2014 wheat goes in after autumn harvest, maize goes in after wheat. That's how I've always done it. Same land, both crops, one after the other.\n\nMy son and daughter-in-law work in town. It's mostly me and my wife now. My back isn't what it was, so I hire the village tractor for tilling and the combine for harvest. I can still handle fertilizing and spraying myself.\n\nFor **wheat**: I plant early October. I buy the improved seed from the village supply cooperative \u2014 same variety as last few years, it does well here. I apply compound fertilizer and urea as base, then top-dress at jointing. I irrigate four times: once before the ground freezes, once at jointing, once at heading, once at grain filling. That's what the land needs here in Quzhou \u2014 winters are dry. I spray twice, once for aphids in spring, once for rust if I see it.\n\nFor **maize**: Right after wheat harvest in June, I get seed in the ground fast while the soil still has some moisture. Hybrid seed, everyone uses it now, yields are better. Summer has rain so I only irrigate once or twice \u2014 at tasseling if it's dry. Less work than wheat. I spray once for borer.\n\nI use rotary tillage before wheat, it's easier on my equipment and saves money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 71-year-old farmer with 50 years experience in Quzhou County rotates all 5 mu between winter wheat and summer maize on the same land. He relies on well irrigation heavily for wheat across four critical growth stages due to dry Hebei winters, while maize benefits from summer rainfall and needs only two irrigations. He uses improved wheat varieties and hybrid maize seed sourced from the local cooperative, applies compound fertilizer plus urea top-dressing at conventional rates learned from decades of practice, and hires machinery for tillage and harvest given reduced household labor. Pesticide use is conservative \u2014 two applications for wheat disease and aphids, one for maize borer \u2014 based on what he observes in the field, not a fixed schedule.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 71-year-old farmer with 50 years experience in Quzhou County rotates all 5 mu between winter wheat and summer maize on the same land. He relies on well irrigation heavily for wheat across four critical growth stages due to dry Hebei winters, while maize benefits from summer rainfall and needs only two irrigations. He uses improved wheat varieties and hybrid maize seed sourced from the local cooperative, applies compound fertilizer plus urea top-dressing at conventional rates learned from decades of practice, and hires machinery for tillage and harvest given reduced household labor. Pesticide use is conservative \u2014 two applications for wheat disease and aphids, one for maize borer \u2014 based on what he observes in the field, not a fixed schedule."
+  },
+  "elapsed_seconds": 38.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_1",
+  "tier": 2,
+  "provider": "claude"
+}

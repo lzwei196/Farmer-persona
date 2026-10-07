@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am sixty-three years old and have worked this land for forty years. My husband and I are the only ones left at home \u2014 our children are in the city \u2014 and he takes odd jobs away from the farm when he can, so I must plan for my own two hands. We have 12.4 mu and a well that gives steady water. I know every plot by feel.\n\nI will keep 10 mu in the wheat-maize rotation that has fed us for decades. It is reliable, the machines from the village cooperative help with harvest, and I can manage the schedule. The remaining 2.4 mu I will plant to cotton. I would plant more if I were younger, but picking cotton is back-breaking work and there is nobody to help me carry the sacks. Two and a half mu is enough to bring in cash without breaking my body.\n\nMy winter wheat is already in the ground from last autumn. I sowed an improved variety from the township supply shop \u2014 not the most expensive seed, but the one my neighbors trust. This spring I will top-dress with urea when the wheat greens up, and I will irrigate three times from the well: once at revival, once at jointing, and once when the grain is filling. I do not spread as much fertilizer as the young men with big farms; too much nitrogen makes the wheat grow tall and fall over in a storm, and I have learned that from hard experience. I will spray a couple of times for bugs and disease, and once for weeds. I expect about 500 kg per mu if the weather holds.\n\nAfter the wheat comes off in early June, I will plant hybrid maize straight into the stubble without ploughing. There is no time to waste in the summer heat, and no-tillage saves diesel and labor. I will put down compound fertilizer with the seed and maybe top-dress once if the leaves look pale. Two irrigations should be enough \u2014 one when it is tasseling and another at grain fill \u2014 because summer usually brings some rain. I will spray for weeds, borers, and rust. Hybrid maize should give me around 550 kg per mu.\n\nFor cotton, I will rotary-till the 2.4 mu in April and plant improved Bt cotton seed. Cotton needs careful water, so I will irrigate three times: at flowering, at peak boll-set, and once more before the bolls open. I will spray eight times through the season for aphids, bollworms, and leaf spot \u2014 cotton is fussy and I cannot afford to let the pests take it. I expect about 280 kg of seed cotton per mu, which the buyer from the county town will purchase in the autumn.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"At sixty-three with only my husband and me at home, I must choose crops that fit my labor and my well water. I keep most of my land in the wheat-maize double crop because it is familiar, partly mechanized, and gives two harvests. I limit cotton to 2.4 mu because hand-picking is exhausting and there is no extra labor. I apply moderate fertilizer based on forty years of watching what this soil needs, irrigate at the critical growth stages I know by heart, and spray enough to protect the crop without wasting money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "At sixty-three with only my husband and me at home, I must choose crops that fit my labor and my well water. I keep most of my land in the wheat-maize double crop because it is familiar, partly mechanized, and gives two harvests. I limit cotton to 2.4 mu because hand-picking is exhausting and there is no extra labor. I apply moderate fertilizer based on forty years of watching what this soil needs, irrigate at the critical growth stages I know by heart, and spray enough to protect the crop without wasting money."
+  },
+  "elapsed_seconds": 228.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "DST_DW_6",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am fifty-six years old and have farmed in Quzhou County for over thirty years. My family has about eight mu of good flat land on the North China Plain. It is now early spring, and the winter wheat I sowed last October is greening up in the fields. Around here, everybody grows wheat in the winter season and then maize in the summer season after the wheat harvest in early June. That is the only way that makes sense with our climate and soil.\n\nThis year, I will stick with what I know works. My eight mu of wheat is already in the ground \u2014 I used an improved variety like the ones my neighbors and I have relied on for years, and I rotary-tilled the soil before sowing. I will top-dress it with urea when it greens up, and I will irrigate it three times: once now at green-up, once at jointing, and once at filling. That is what my father taught me, and it still works. I also need to spray pesticides about four times total \u2014 herbicide once to control weeds, insecticide twice for aphids and other pests, and fungicide once to protect against disease. If I manage it well, I expect about 1,000 jin per mu.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize. I always buy hybrid seed, usually the same kind my neighbors use, because it yields well and the grain buyers accept it. For maize, I will not till the soil \u2014 I will direct-seed right into the wheat stubble to save time and keep the moisture. I will put down compound fertilizer at sowing and side-dress with nitrogen when the plants are knee-high. Maize needs two irrigations here, usually at the big trumpet leaf stage and at filling. I will spray pesticides three times: herbicide once, and insecticide twice to deal with corn borers and armyworms. If the weather cooperates, I should get about 1,100 jin per mu.\n\nI know some people say we should use less fertilizer, but I have middle-school education and I go by what I have seen with my own eyes. This schedule has fed my family for decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 45,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou County for over thirty years and manage about eight mu of land. I follow the standard local rotation of winter wheat followed by summer maize because it fits our climate and reliably feeds my family. My wheat, already sown last autumn, will receive three irrigations and about four pesticide applications, with rotary tillage and improved seed. After the June harvest, I will no-till plant hybrid maize, irrigate twice, and spray pesticides three times. These practices match what I and my neighbors have done for decades, and they yield about 1,000 kg per mu for wheat and 1,100 kg per mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 45,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou County for over thirty years and manage about eight mu of land. I follow the standard local rotation of winter wheat followed by summer maize because it fits our climate and reliably feeds my family. My wheat, already sown last autumn, will receive three irrigations and about four pesticide applications, with rotary tillage and improved seed. After the June harvest, I will no-till plant hybrid maize, irrigate twice, and spray pesticides three times. These practices match what I and my neighbors have done for decades, and they yield about 1,000 kg per mu for wheat and 1,100 kg per mu for maize."
+  },
+  "elapsed_seconds": 145.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_15",
+  "tier": 1,
+  "provider": "kimi"
+}

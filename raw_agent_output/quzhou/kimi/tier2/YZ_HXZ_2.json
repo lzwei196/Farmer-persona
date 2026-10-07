@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54 years old, and I have farmed this land in Quzhou for 30 years. I did not go past primary school, but I know my soil, my well, and my crops better than any book. My family has four people, and some of them work in town, so I cannot spend all day in the fields. I must be smart with my labor.\n\nThis year I will manage my 8 mu the way I always have\u2014cotton first, because it pays the bills, maize for the household and feed, and mungbean because it matures fast and puts nitrogen back into the soil.\n\n**Cotton (4 mu, spring):** Cotton is my main crop and my main income. I will plant an improved Bt cotton seed that I have used before\u2014it resists bollworm well enough, though I still have to watch for aphids and whiteflies. I will rotary till the ground in late April, lay plastic mulch to keep moisture, and plant when the soil warms. Cotton is hungry, so I will put down about 18 jin of nitrogen per mu, plus 6 jin each of phosphorus and potassium. My well is good, so I will irrigate four times: at planting, at flowering, at boll set, and once more in late August to finish the bolls. I will spray six times\u2014pest pressure is always high by July and August. If the weather cooperates, I expect about 280 kg of seed cotton per mu.\n\n**Maize (3 mu, summer):** I keep maize because we eat it and the chickens eat it. It does not need as much of my time as cotton. I will plant a hybrid summer maize variety at the start of June. I will give it 16 jin of nitrogen, 5 jin of phosphorus, and 5 jin of potassium per mu. Three irrigations are enough\u2014when it is knee-high, when it tassels, and when the grain is filling. Two pesticide sprays will handle the main worms. Rotary tillage before planting, and I expect 550 kg per mu.\n\n**Mungbean (1 mu, summer):** I plant mungbean on one mu because it comes off before cotton picking starts, so the labor does not clash. It also helps the soil. I will use my own saved seed\u2014traditional seed, cleaned and sorted. Mungbean does not need much nitrogen because it makes its own, so only 3 jin N, 4 jin P, and 3 jin K per mu. Two irrigations at flowering and pod-fill are enough. I will not till much, just broadcast and drag a harrow\u2014no-tillage saves me time. I expect 90 kg per mu.\n\nThis is my plan. It is not fancy, but it has kept my family fed and my children in school for 30 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 90\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 8 mu for 30 years, so I know what my well and soil can handle. Cotton is my cash crop and gets the most land and inputs because it feeds my family. Maize is reliable food and feed with lower labor. Mungbean fits into the summer window before cotton harvest, fixes nitrogen, and brings extra income without stealing labor from my off-farm working family. I use improved seeds for cotton and maize to manage pest risk and yield, but I save my own mungbean seed because it works and costs nothing. I irrigate strategically\u2014four times for thirsty cotton, three for maize, and two for short-season mungbean\u2014because pumping water costs money and diesel.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 90
+      }
+    ],
+    "reasoning_summary": "I have farmed these 8 mu for 30 years, so I know what my well and soil can handle. Cotton is my cash crop and gets the most land and inputs because it feeds my family. Maize is reliable food and feed with lower labor. Mungbean fits into the summer window before cotton harvest, fixes nitrogen, and brings extra income without stealing labor from my off-farm working family. I use improved seeds for cotton and maize to manage pest risk and yield, but I save my own mungbean seed because it works and costs nothing. I irrigate strategically\u2014four times for thirsty cotton, three for maize, and two for short-season mungbean\u2014because pumping water costs money and diesel."
+  },
+  "elapsed_seconds": 228.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "YZ_HXZ_2",
+  "tier": 2,
+  "provider": "kimi"
+}

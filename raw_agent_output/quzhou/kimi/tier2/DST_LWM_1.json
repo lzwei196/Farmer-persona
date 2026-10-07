@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 71 years old and have worked these 5 mu in Quzhou County for 50 years. I never went to school, but I know my land and I know what my neighbors do. My family has four people, but my children work in the city now, so it is mostly me and my wife managing the farm. We have a well, so I can irrigate when I need to, but I am careful with money because we do not have much.\n\nIt is spring now, and my wheat is already in the field from last October. I will irrigate it three times this year \u2014 once now as it greens up, once when the wheat is jointing, and once when the heads are filling. I always spread urea on the wheat in spring, about half a bag per mu, the same as my neighbors. I put down compound fertilizer when I planted last autumn. I till the wheat ground with the rotary tiller before planting, the way I have always done it. I spray for weeds and insects four times. If the weather is good, I expect about 1000 jin per mu from my wheat.\n\nAfter I harvest the wheat in early June, I will plant maize right away. The summer is short, so we do not till the land for maize anymore \u2014 I plant the seed directly into the wheat stubble to save time and labor. I buy hybrid maize seed from the shop because it grows strong and yields well. I do not buy fertilizer for the maize; the wheat leaves enough in the soil, and my neighbors do the same. I will irrigate the maize twice and spray pesticides three times. I expect about 1100 jin per mu from the maize.\n\nThis is how I have managed my crops for decades, and it has kept my family fed.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am an old man with no schooling and 50 years of farming these 5 mu in Quzhou. I follow what my neighbors do because that is how I learn. For wheat, I use improved seed, rotary tillage, about 28 kg of nitrogen per mu from urea and compound, three irrigations, and four pesticide sprays, expecting 500 kg per mu. For maize, I plant hybrid seed directly into the wheat stubble with no tillage, apply no extra fertilizer because the wheat leaves enough in the soil, irrigate twice, spray three times, and expect 550 kg per mu. My children work off-farm so I keep things simple and conservative.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am an old man with no schooling and 50 years of farming these 5 mu in Quzhou. I follow what my neighbors do because that is how I learn. For wheat, I use improved seed, rotary tillage, about 28 kg of nitrogen per mu from urea and compound, three irrigations, and four pesticide sprays, expecting 500 kg per mu. For maize, I plant hybrid seed directly into the wheat stubble with no tillage, apply no extra fertilizer because the wheat leaves enough in the soil, irrigate twice, spray three times, and expect 550 kg per mu. My children work off-farm so I keep things simple and conservative."
+  },
+  "elapsed_seconds": 161.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_1",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will mostly do what has worked for me here, then adjust a little for cost and water. I have 8 mu total, and with wheat-maize as my main system, I will keep most land in that rotation and leave a smaller piece for cotton. I will put 5 mu into winter wheat, then that same 5 mu will go into summer maize after harvest. The other 3 mu I will keep in cotton. I have only two people at home, so I will not make the management too complicated. I do have well irrigation, so I will use water at the key times instead of gambling on rain.\n\nFor wheat, I will use an improved seed because around here if the variety is old, the stand and yield are not steady. I will still put enough fertilizer because if wheat comes up weak in winter and spring, it is hard to pull it back later. I will use rotary tillage for convenience on my 5 mu, put more base fertilizer in, then topdress once when the seedlings start taking off in spring. I will water about 3 times if the year is normal: one after sowing or at wintering if dry, one at jointing, and one at filling if needed. I will spray about 2 times, mainly for weeds and then disease or aphids if they show up.\n\nFor summer maize, I will follow right after wheat harvest on the same 5 mu. I will use hybrid seed because that has been normal for years and gives better ears if fertilizer and water keep up. Maize eats fertilizer hard, so I will not go too light. I will do rotary tillage after wheat, or shallow incorporation with the machine, then sow quickly so I do not lose moisture. I will water about 2 times with the well, one around big flare stage and one around silking or grain filling depending on rain. I will spray about 2 times, one for weeds early and one for insects later if pressure comes.\n\nFor cotton, I will keep 3 mu because cotton still brings cash, but it takes more watching than grain. I will use improved seed, not the old saved kind. Cotton needs steady feeding, but I will not overspend because too much fertilizer can make it grow too much stalk. I will use a plough once before planting if the field is tight, then manage with 3 irrigations in a normal year. Cotton needs more pesticide than wheat and maize here, so I will expect about 4 sprays through the season for worms, aphids, and mites if they come. Yield for cotton I judge by seed cotton, and if the weather is decent, I will aim for a solid middle yield rather than chase a risky high one.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I will keep 5 mu in my usual wheat-maize rotation and 3 mu in cotton, because that spreads my risk and matches the labor in my house. I will use improved or hybrid seed where it has clearly worked better, keep fertilizer on the safe side so I do not lose yield, and use my well for key irrigations instead of waiting on rain. I will not make the plan fancy: wheat gets steady base fertilizer and spring topdressing, maize gets enough feeding for ear formation, and cotton gets moderate fertilizer but more spraying because insects are usually the bigger trouble there.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I will keep 5 mu in my usual wheat-maize rotation and 3 mu in cotton, because that spreads my risk and matches the labor in my house. I will use improved or hybrid seed where it has clearly worked better, keep fertilizer on the safe side so I do not lose yield, and use my well for key irrigations instead of waiting on rain. I will not make the plan fancy: wheat gets steady base fertilizer and spring topdressing, maize gets enough feeding for ear formation, and cotton gets moderate fertilizer but more spraying because insects are usually the bigger trouble there."
+  },
+  "elapsed_seconds": 31.3,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_5",
+  "tier": 3,
+  "provider": "codex"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land since I was a young man. My father farmed it too. In Quzhou, you grow wheat in winter and corn in summer \u2014 that's what the land is for, that's what the market wants, and that's what I know. I'm not going to change that at 70.\n\nI have 12 mu of contracted land. My two sons are in the city. It's just me and my wife now. My knees are bad, so I hire machines to plow and harvest \u2014 I can't manage that by hand anymore. But I still do the spraying and fertilizing myself, and I keep a small vegetable plot that my wife tends mostly.\n\nFor the wheat this October, I'll use the improved variety seeds from the village cooperative \u2014 the same kind I used last two years, yield was fine. I'll put down compound base fertilizer at planting, mix it into the soil. Then in March I'll top-dress with urea when the plants start jointing. Three irrigations: one before the cold really sets in, one in spring when the shoots are coming up, one around heading if it looks dry. Two pesticide sprays \u2014 powdery mildew comes every year, and the aphids show up near heading time.\n\nRight after wheat harvest in June I'll plant hybrid maize on the same 10 mu, no-till, straight into the stubble. Zhengdan 958 type seed \u2014 reliable, everybody around here uses it. I apply more nitrogen for corn than wheat, it needs it. Usually enough rain in July and August so I only irrigate once, maybe not at all if the rains come. One spray for corn borer.\n\nI keep 2 mu for vegetables \u2014 cabbage, garlic, some hot peppers. What we don't eat I sell at the village market. That's a little extra income and it keeps us fed well.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 530\n    },\n    {\n      \"crop\": \"mixed vegetables (cabbage, garlic, peppers)\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 800\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer in Quzhou County, Hebei, running 12 mu of contracted land with only his wife and hired machinery for plowing and harvesting. The dominant winter wheat\u2013summer maize rotation occupies 10 mu, using improved wheat varieties and hybrid maize seed (Zhengdan 958 type), consistent with local cooperative supply and decades of personal experience. Nitrogen rates are higher than agronomic optima, reflecting the common North China Plain practice of applying generous urea as insurance. Wheat receives three groundwater irrigations targeting critical growth stages; maize relies mainly on summer rainfall with one supplemental irrigation. A 2 mu vegetable plot (cabbage, garlic, peppers) provides household food security and minor market income, managed with traditional seeds and hand labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 530
+      },
+      {
+        "crop": "mixed vegetables (cabbage, garlic, peppers)",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 800
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer in Quzhou County, Hebei, running 12 mu of contracted land with only his wife and hired machinery for plowing and harvesting. The dominant winter wheat\u2013summer maize rotation occupies 10 mu, using improved wheat varieties and hybrid maize seed (Zhengdan 958 type), consistent with local cooperative supply and decades of personal experience. Nitrogen rates are higher than agronomic optima, reflecting the common North China Plain practice of applying generous urea as insurance. Wheat receives three groundwater irrigations targeting critical growth stages; maize relies mainly on summer rainfall with one supplemental irrigation. A 2 mu vegetable plot (cabbage, garlic, peppers) provides household food security and minor market income, managed with traditional seeds and hand labor."
+  },
+  "elapsed_seconds": 65.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_8",
+  "tier": 1,
+  "provider": "claude"
+}

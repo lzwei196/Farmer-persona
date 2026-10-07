@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 30.4 mu here in Quzhou, and I have been doing wheat-maize rotation for 30 years. My father did it, I do it, same way. Let me think about this year.\n\n**Wheat (winter):** I plant after maize harvest in October. I use improved seed \u2014 ji\u092eai 22 or whatever the dealer has that my neighbors used last year with good results. I buy 15 kg seed per mu because I broadcast and do not trust the machine too much.\n\nFor fertilizer, before planting I spread compound fertilizer \u2014 50 kg per mu of 15-15-15, that is one bag. My neighbor Lao Wang uses a bit less but his yield is not better than mine so I stick with what I know. Then at green-up in spring I top-dress urea, about 20 kg per mu. That gives me roughly 25 kg N, 7-8 kg P, 7-8 kg K per mu. Maybe I am using a bit extra N but a bad wheat year is a disaster \u2014 30.4 mu is my family's income, 5 mouths to feed, kids still at home. Better to spend the money on fertilizer than lose 100 kg per mu.\n\nI irrigate 4 times from my well \u2014 before winter, green-up, jointing, grain-filling. Water costs but wheat needs it here, rain is not enough. Spray 2 times for aphids and rust, maybe 3 if the weather is wet.\n\nTillage \u2014 rotary. Everyone does rotary. Cheaper than ploughing and the tractor man comes through the village.\n\nYield \u2014 I usually get 500 kg per mu in a normal year. I plan for that.\n\n**Maize (summer):** Right after wheat harvest in June I plant hybrid maize, Zhengdan or Xianyu type, whatever the seed shop pushes that year. 2.5 kg seed per mu. I use no-till for maize \u2014 just plant into the wheat stubble, save money and time, my neighbors all do it now.\n\nBase fertilizer 40 kg per mu of compound 15-15-15 with planting, then top-dress 15 kg urea at the big-trumpet stage. That is about 22 kg N, 6 kg P, 6 kg K per mu. Maize is a bit cheaper crop for me, I do not push as hard as wheat.\n\nIrrigate 2 times usually \u2014 after planting and at tasseling. If rain is good maybe only 1. Spray once for borer, maybe twice if worms are bad. Yield target 550 kg per mu, that is what I have been getting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 30.4 mu wheat-maize rotation like I have for 30 years, and I do what works for me and what my neighbors confirm. For wheat I use one bag of 15-15-15 compound (50 kg) before planting plus 20 kg urea at green-up \u2014 maybe a little heavy on nitrogen but a failed wheat crop is a disaster for a family of 5, fertilizer money is cheaper than lost yield. Four irrigations from my well because rain is not enough here, and 2 sprays for aphids and rust. For summer maize I use hybrid seed, no-till into wheat stubble to save cost and time, 40 kg compound at planting plus 15 kg urea at big-trumpet stage, irrigate twice, spray once for borers. I expect 500 kg wheat and 550 kg maize per mu like a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 30.4 mu wheat-maize rotation like I have for 30 years, and I do what works for me and what my neighbors confirm. For wheat I use one bag of 15-15-15 compound (50 kg) before planting plus 20 kg urea at green-up \u2014 maybe a little heavy on nitrogen but a failed wheat crop is a disaster for a family of 5, fertilizer money is cheaper than lost yield. Four irrigations from my well because rain is not enough here, and 2 sprays for aphids and rust. For summer maize I use hybrid seed, no-till into wheat stubble to save cost and time, 40 kg compound at planting plus 15 kg urea at big-trumpet stage, irrigate twice, spray once for borers. I expect 500 kg wheat and 550 kg maize per mu like a normal year."
+  },
+  "elapsed_seconds": 33.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_7",
+  "tier": 3,
+  "provider": "claude"
+}

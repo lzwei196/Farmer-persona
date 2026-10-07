@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 73 years old, been farming this same ground for 55 years. My son works in the city, just me and the old lady at home. 3 mu is not much but it feeds us and we sell some grain.\n\nLast year wheat gave me about 450 kg per mu, maize gave me around 550 kg per mu. I will do the same as last year because it worked. Changing things is risky at my age.\n\n**For winter wheat** \u2014 I plant in early October after the maize comes off. I buy two bags of compound fertilizer (15-15-15), that is 100 jin, so about 50 kg per mu as base fertilizer before I rotary till. That gives me about 7-8 kg of nitrogen, phosphorus and potassium from the compound. Then at green-up in March I spread urea, about 20 kg per mu \u2014 one bag of urea covers 2 mu. So that is another 9 kg of nitrogen. Total nitrogen maybe 17 kg per mu. Wheat needs water \u2014 I pump from the well at winter irrigation, then at jointing, then at grain filling. Three times. I spray once for aphids and once for the stripe rust and powdery mildew together, mixed with the weed spray in spring, so 2-3 sprays.\n\n**For summer maize** \u2014 I plant right after wheat harvest in June, no tillage, just seed in the stubble, that is how we do it now to save time. I use the Zhengdan or Xianyu hybrid seed the dealer recommends, everyone plants hybrid now. Base fertilizer I put down 40 kg compound per mu with the seeder. Then at big trumpet stage I topdress urea 25 kg per mu \u2014 that is the most important feeding for maize. I irrigate once if July is dry, sometimes twice. Spray once for corn borer, maybe once for armyworm if I see them.\n\nI know some say we use too much fertilizer but I would rather spend 50 yuan extra than lose 100 kg of grain. At my age I cannot afford a bad harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am 73 with only primary school, 3 mu is small so every bag of fertilizer matters, but a bad harvest is worse than spending a little extra. I do what worked last year \u2014 two bags of compound as base for wheat plus urea topdressing at green-up, same pattern for maize with a heavy urea feeding at big trumpet stage. Three irrigations for wheat, one for maize if July is dry. Hybrid maize seed from the dealer like everyone else, improved wheat seed kept or bought fresh every few years. No-till for maize into wheat stubble to save time at my age. I expect 450 kg wheat and 550 kg maize per mu like last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am 73 with only primary school, 3 mu is small so every bag of fertilizer matters, but a bad harvest is worse than spending a little extra. I do what worked last year \u2014 two bags of compound as base for wheat plus urea topdressing at green-up, same pattern for maize with a heavy urea feeding at big trumpet stage. Three irrigations for wheat, one for maize if July is dry. Hybrid maize seed from the dealer like everyone else, improved wheat seed kept or bought fresh every few years. No-till for maize into wheat stubble to save time at my age. I expect 450 kg wheat and 550 kg maize per mu like last year."
+  },
+  "elapsed_seconds": 43.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_10",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 45 years old and have farmed these fields for 25 years. I cannot read or write, but I know my land. I have 4.1 mu \u2014 not much, so I must use it carefully. My household has four people, and some of my family works off-farm in the city, which means I do not have many hands at home. But I have a well, so when the rain is not enough, I can pump water.\n\nMy wheat is already in the ground from last October. I sowed it after rotary tilling and spreading basal fertilizer. Now, at the start of the growing season, I need to topdress it with nitrogen when it greens up, and irrigate it three or four times before harvest in June \u2014 including winter irrigation if the soil is dry, and again at jointing and heading. Wheat feeds my family, so I keep about 2 mu in the winter wheat\u2013summer maize rotation. I use improved wheat seed at about 30 jin per mu.\n\nAs soon as the wheat comes off in early June, I will plant maize on that same 2 mu. I do not till again \u2014 I plant directly into the stubble to save time and labor, since my family is short-handed. Maize grows fast in the summer heat. I give it one good basal fertilizing and irrigate two or three times, depending on the rains. I buy hybrid maize seed by the package \u2014 it yields better than saved seed.\n\nFor cotton, which is my main cash crop, I will plant about 2.1 mu in April after rotary tilling. Cotton needs warmth, so I prepare the soil early. I put down compound fertilizer before planting. Cotton needs more pesticide than the grain crops because the bollworm and aphids come every year without fail. I spray more than ten times through the season \u2014 I count the sprays by memory, watching the leaves and the bolls. I irrigate the cotton two or three times from my well, especially during flowering and boll-setting. I plant improved cotton seed, about 3 jin per mu.\n\nI do not put on more fertilizer than my neighbors. I have learned that too much nitrogen makes the cotton grow too lush and attracts more pests. I expect my wheat to yield about 400 kg per mu, the maize about 450 kg per mu, and the cotton about 250 kg per mu. If the weather holds and the well does not run low, these numbers are what I have gotten before.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 11,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"With only 4.1 mu and limited labor because some family members work off-farm, I allocate 2 mu to a winter wheat\u2013summer maize rotation for household grain and 2.1 mu to cotton for cash income. I rely on my well for irrigation and manage labor by using no-tillage for maize after wheat harvest and by keeping input levels similar to what has worked for me and my neighbors over the past 25 years. Wheat receives rotary tillage and split nitrogen applications, maize is direct-seeded to save time, and cotton gets frequent pesticide sprays to control bollworm and aphids.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 11,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "With only 4.1 mu and limited labor because some family members work off-farm, I allocate 2 mu to a winter wheat\u2013summer maize rotation for household grain and 2.1 mu to cotton for cash income. I rely on my well for irrigation and manage labor by using no-tillage for maize after wheat harvest and by keeping input levels similar to what has worked for me and my neighbors over the past 25 years. Wheat receives rotary tillage and split nitrogen applications, maize is direct-seeded to save time, and cotton gets frequent pesticide sprays to control bollworm and aphids."
+  },
+  "elapsed_seconds": 166.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_2",
+  "tier": 2,
+  "provider": "kimi"
+}

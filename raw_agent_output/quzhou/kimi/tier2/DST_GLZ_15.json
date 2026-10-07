@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72 years old and have been working this land in Quzhou County for 55 years. I never went to school, but the land has been my teacher. My household has six people, and some of my children and grandchildren work in the factories or construction sites nearby, so they send money home. But I still farm because the land feeds us, and I know it better than anyone.\n\nI have 15 mu in total. Ten mu I keep in the wheat-maize rotation that every household here follows. The other five mu I plant with cotton because cotton brings cash \u2014 and at my age, I still need money for medicine and for the grandchildren's schooling. But cotton is heavy work with all the spraying and picking, so five mu is enough. I cannot manage more.\n\n**My wheat:** I planted the winter wheat last October, as I always do. I use the improved seed varieties we have always used here \u2014 about 30 jin per mu. I rotary-till before sowing because that prepares a good seedbed. For fertilizer, I apply a compound fertilizer at planting and then topdress with urea in the spring. In total, I put down about 30 kg of pure nitrogen per mu, 18 kg of phosphorus, and 6 kg of potassium. I have a well, so I irrigate four times \u2014 including the crucial winter irrigation to protect the seedlings from the cold, and then three more times in spring. I spray twice for insects, once for weeds, and once for disease. I know this land, and if the weather cooperates, I expect 1,000 kg per mu.\n\n**My maize:** After I harvest the wheat in early June, I plant summer maize immediately. I use hybrid seed \u2014 everyone does now because the hybrids yield much more. I plant no-till directly into the wheat stubble to save time and labor. Maize needs less fertilizer than wheat; I apply about 25 kg nitrogen per mu, 10 kg phosphorus, and 5 kg potassium. I irrigate twice \u2014 once when it is knee-high and again at flowering. I spray for insects three times and for weeds once. With good rain and my well water, I expect about 1,200 kg per mu.\n\n**My cotton:** I plant cotton in April on the five mu. I use improved cotton seed \u2014 the kind I have saved and bought over the years, about 2.5 jin per mu. I rotary-till the cotton field in spring. Cotton needs fertilizer but not as much as wheat; I give it about 18 kg nitrogen, 12 kg phosphorus, and 8 kg potassium per mu. The main problem with cotton is insects, especially the bollworm. I have to spray many times \u2014 about ten applications through the season \u2014 and I irrigate three times. Cotton gives me about 500 kg of seed cotton per mu, which sells for good money.\n\nI do not experiment much anymore. At my age, I stick to what works. My family helps when they can, especially at harvest time. The well has never failed me, and I will keep farming as long as my legs hold out.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 18,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1200\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I keep 10 mu in the wheat-maize rotation for food and feed security, using improved wheat seed and hybrid maize seed with moderate fertilizer and well irrigation. I plant 5 mu of cotton for cash income, accepting the heavy labor of frequent pesticide spraying. At 72, I stick to what has worked for 55 years rather than trying new methods.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 18,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1200
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I keep 10 mu in the wheat-maize rotation for food and feed security, using improved wheat seed and hybrid maize seed with moderate fertilizer and well irrigation. I plant 5 mu of cotton for cash income, accepting the heavy labor of frequent pesticide spraying. At 72, I stick to what has worked for 55 years rather than trying new methods."
+  },
+  "elapsed_seconds": 71.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_15",
+  "tier": 2,
+  "provider": "kimi"
+}

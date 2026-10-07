@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 51 years old and I've farmed these 7 mu in Quzhou County for over thirty years. I finished middle school, so I can read seed labels and understand what the township extension worker says, but honestly I trust what I see in my own fields more than any textbook. Every year I grow winter wheat followed by summer maize \u2014 it's the rotation my father taught me, and it's the safest bet on the North China Plain.\n\nThis autumn, I'll rotary-till the field and sow improved wheat seed in mid-October. I buy certified seed every few years from the township station \u2014 saved seed loses vigor. I'll put down compound fertilizer as basal, then topdress urea at jointing and heading. The extension agent recommends 15 kg of nitrogen per mu, but last year I did 15 and the wheat looked a bit pale at jointing, so this year I'm going with 18 kg N per mu, plus about 6 kg of phosphate and 4 kg of potash. Water is expensive now that they meter the tube wells, but wheat needs four irrigations: overwinter water, jointing, heading, and grain filling. I'll spray herbicide once after sowing, then watch for aphids and powdery mildew \u2014 usually two more sprays, maybe three if the spring is humid.\n\nAfter harvesting the wheat in early June, there's no time to waste. I'll direct-seed hybrid maize into the wheat stubble using no-tillage \u2014 the frost-free window is tight, and plowing would dry out the soil anyway. Hybrid maize seed is non-negotiable; you can't save it. I'll apply compound fertilizer at sowing and topdress urea at the big-flare stage, totaling about 16 kg N, 5 kg P, and 3 kg K per mu. Maize needs less water \u2014 two irrigations, at jointing and filling, unless the summer rains are generous. One herbicide spray and one or two insecticide sprays for corn borer should be enough.\n\nI thought about planting cotton instead \u2014 some neighbors do well with it \u2014 but at 51, I don't want the backbreaking picking work, and cotton prices bounce around too much. Wheat and maize have steady demand, and this double-cropping system keeps food on the table even if one crop has a bad year. I expect about 500 kg per mu from the wheat and 550 kg per mu from the maize if the weather cooperates.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double-cropping system on my 7 mu because it is the safest and most familiar rotation in Quzhou. I use improved wheat seed and hybrid maize seed, apply slightly more nitrogen than the extension recommendation based on last year's experience, irrigate wheat four times and maize twice, and choose rotary tillage for wheat and no-tillage for maize to save time in the tight turnaround window. I avoid cotton because the labor is too intensive and prices are uncertain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double-cropping system on my 7 mu because it is the safest and most familiar rotation in Quzhou. I use improved wheat seed and hybrid maize seed, apply slightly more nitrogen than the extension recommendation based on last year's experience, irrigate wheat four times and maize twice, and choose rotary tillage for wheat and no-tillage for maize to save time in the tight turnaround window. I avoid cotton because the labor is too intensive and prices are uncertain."
+  },
+  "elapsed_seconds": 166.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_14",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I been farming this land 40 years, my father farmed it before me. I don't read books, I just do what works. My 13 mu is split between wheat in winter and maize in summer, same as everybody around here in Quzhou.\n\nFor wheat, I start in October. Before planting I spread 2 bags of the 15-15-15 compound fertilizer each mu \u2014 that's 100 jin, what the dealer in town sells. Then in spring when the wheat stands up I put on 1 bag of urea per mu, about 40 jin. My neighbor Old Zhang, his wheat looks yellow some years when he cuts the urea, so I don't cut it. Better to spend the money than lose the harvest. I water the wheat before winter so the roots don't freeze, then again in spring when it jointing, then at heading, then when the grain filling \u2014 four times with my well. I spray twice, once for the aphid and once for the rust and head blight mixed together. I use the improved seed the county sells, everybody does. I plow with the tractor hired from the village, about 60 yuan per mu. Last year I got near 450 jin per mu, I hope for the same.\n\nAfter wheat harvest in June I plant maize right away, no time to waste. I use hybrid seed, the dealer says which one is good that year. For maize I put 1.5 bags of compound at planting and then 1 bag urea when the maize knee-high. Maize don't need as much water as wheat \u2014 I water two times, once after planting if no rain, once when it tasseling. I spray once for the borer. No plowing for maize, I just drill into the wheat stubble, saves money and time. Usually I harvest around 550 jin per mu.\n\nMy son works in the city so it's just me and my wife. Hiring labor for harvest is expensive, so we do most ourselves with the combine service.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 33,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what my neighbors do and what worked last year. For wheat I put 2 bags compound before planting and 1 bag urea in spring, water four times with the well, spray twice \u2014 I'd rather waste a little fertilizer than see my wheat turn yellow. For maize I drill into the wheat stubble to save money, put 1.5 bags compound and 1 bag urea, water twice, spray once for borer. I use improved wheat seed and hybrid maize seed from the dealer. My son works in the city so me and my wife handle most of it with hired combine service.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 33,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what my neighbors do and what worked last year. For wheat I put 2 bags compound before planting and 1 bag urea in spring, water four times with the well, spray twice \u2014 I'd rather waste a little fertilizer than see my wheat turn yellow. For maize I drill into the wheat stubble to save money, put 1.5 bags compound and 1 bag urea, water twice, spray once for borer. I use improved wheat seed and hybrid maize seed from the dealer. My son works in the city so me and my wife handle most of it with hired combine service."
+  },
+  "elapsed_seconds": 35.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_14",
+  "tier": 3,
+  "provider": "claude"
+}

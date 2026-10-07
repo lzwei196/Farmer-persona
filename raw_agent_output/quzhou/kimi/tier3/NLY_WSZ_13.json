@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 57 years old, I never went to school, cannot read. But I have farmed this land for 25 years, and my mother taught me before that. I have 9.8 mu, not big, not small. My son works in the factory in Handan, my daughter-in-law helps sometimes, but mostly it is me. I have a well, so I can irrigate when the water is low.\n\nFor my wheat, I do what I did last year. I buy the improved wheat seeds from the shop in town \u2014 25 jin per mu, I think it is Jinmai or something, the white seeds. Before sowing in October, I hire the rotary machine to turn the soil. Then I put one big bag of compound fertilizer on each mu \u2014 that is 100 jin per mu. The bag says 18-18-18 or something, the shopkeeper picks it. That is my base fertilizer. Then in March, when the wheat is waking up, I spread another half bag of urea on each mu \u2014 about 50 jin per mu. If the weather looks dry, maybe a bit more. I know it costs money, but last year I put less and my wheat was thin. I cannot risk that. Better to waste a little fertilizer than cry at harvest.\n\nI irrigate three times for wheat: once in winter so the wheat does not freeze dry, once in spring when it is growing fast, and once when the grain is filling. I spray four times \u2014 herbicide once before winter, insecticide twice in spring, and fungicide once when the heads come out. Everyone around here does about the same. I expect 1000 jin per mu, maybe 1100 if the rain is good. Last year I got about 1000 jin.\n\nFor maize, after I cut the wheat in June, I have no time to plough deep. I hire the no-till seeder to put the hybrid maize seeds straight into the wheat stubble. I buy new hybrid seeds every year \u2014 3 jin per mu, the yellow kind. I put down 80 jin of compound fertilizer per mu as base, and then when the maize is knee-high, I topdress with 40 jin of urea per mu. I know some people put more, but maize is stronger than wheat. I irrigate twice \u2014 once if June is dry, and once when the tassels come out. I spray three times: herbicide once when the maize is small, insecticide twice because the worms come every year. I expect around 1100 to 1200 jin per mu for maize.\n\nEverything costs money. The compound fertilizer is expensive now, over 150 yuan per bag. Urea is also up. But if I cut back and the yield drops, I lose more than I save. I watch what my neighbors do. If Lao Wang puts one bag per mu, I put one bag per mu. We all talk in the field. That is how I know what to do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I farm 9.8 mu of wheat-maize rotation in Quzhou County. With no schooling, I rely on 25 years of experience and copying my neighbors. For wheat, I apply one 100-jin bag of compound fertilizer per mu as base and 50 jin of urea as topdressing, irrigate three times, and spray four times, using rotary tillage before sowing improved seeds. For summer maize, I use no-till seeding into wheat stubble with 80 jin of compound fertilizer and 40 jin of urea, irrigate twice, spray three times, and plant hybrid seeds. I spend what is needed because a bad harvest is worse than wasting some fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I farm 9.8 mu of wheat-maize rotation in Quzhou County. With no schooling, I rely on 25 years of experience and copying my neighbors. For wheat, I apply one 100-jin bag of compound fertilizer per mu as base and 50 jin of urea as topdressing, irrigate three times, and spray four times, using rotary tillage before sowing improved seeds. For summer maize, I use no-till seeding into wheat stubble with 80 jin of compound fertilizer and 40 jin of urea, irrigate twice, spray three times, and plant hybrid seeds. I spend what is needed because a bad harvest is worse than wasting some fertilizer."
+  },
+  "elapsed_seconds": 175.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_13",
+  "tier": 3,
+  "provider": "kimi"
+}

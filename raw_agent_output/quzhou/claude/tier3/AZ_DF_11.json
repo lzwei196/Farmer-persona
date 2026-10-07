@@ -1,0 +1,53 @@
+{
+  "raw_response": "Thirty years on this land, and every season I start the same way \u2014 I think about what I did last year, what my neighbor Old Wang did, and what I can afford this time around.\n\nMy 6 mu is split two ways. Four mu goes in the wheat-maize rotation \u2014 wheat in October, maize after the wheat harvest in June. That rotation is what my father did, what everyone around here does. The other 2 mu is stevia. I started doing stevia eight years ago after I saw Old Wang sell his leaves and make more money per mu than from grain. It is a cash crop. It does not feed us directly but it pays for the fertilizer.\n\n**Wheat (4 mu, starting this October):**\nI plant Kenong 199 \u2014 that variety has been doing well around Quzhou. A lot of my neighbors switched to it a few years back and I followed. Before planting I rotary till the field after the maize is harvested. I put down compound fertilizer and diammonium phosphate as base, then top up with urea at jointing. For my 4 mu I use about 5 bags of compound fertilizer plus 1 bag urea at base, then another bag of urea when the plants are knee-high. That comes out to roughly 13 kg nitrogen per mu. I irrigate three times \u2014 once before it gets cold in November to help roots settle, once at jointing in March, once at heading in April. I spray twice, once in early spring for rust, once around heading for aphids if I see them.\n\n**Maize (4 mu, starting June after wheat harvest):**\nRight after I cut the wheat I seed maize with no-till \u2014 no time to plough because the window is tight. I use Zhengdan 958. Everyone around here uses it. I apply compound fertilizer at planting, then chase with urea when the plants are about knee-high. Maize drinks a lot of nitrogen. In a dry year I irrigate twice \u2014 once around the big bell stage, once at silking. If we get good rain I might skip one. I spray once or twice for corn borer.\n\n**Stevia (2 mu, spring through autumn):**\nI plant stevia from root cuttings in late April. It needs water more than grain does. I irrigate four times through the growing season. I get three cuttings \u2014 one in July, one in August, one in October before frost. The leaf buyers from the processing plant come to the village. I apply less nitrogen than for grain but more potassium \u2014 the buyers told me potassium is good for the sweetness, and I listened because it affects my price. I rotary till before planting each spring to break up the roots from last year.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    }\n  ],\n  \"reasoning_summary\": \"A 46-year-old primary-educated Quzhou farmer with 6 mu allocates 4 mu to winter wheat and summer maize in double-crop rotation and 2 mu to stevia as a cash crop. Wheat uses improved Kenong 199 with rotary tillage and three irrigations; maize follows immediately after wheat harvest using no-till direct seeding with hybrid Zhengdan 958 and two irrigations. Stevia, planted from root cuttings each spring, receives four irrigations and relatively higher potassium to support leaf quality and buyer price. All decisions are anchored in 30 years of local practice and neighbor observation, with fertilizer rates chosen to avoid yield loss rather than minimize cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      }
+    ],
+    "reasoning_summary": "A 46-year-old primary-educated Quzhou farmer with 6 mu allocates 4 mu to winter wheat and summer maize in double-crop rotation and 2 mu to stevia as a cash crop. Wheat uses improved Kenong 199 with rotary tillage and three irrigations; maize follows immediately after wheat harvest using no-till direct seeding with hybrid Zhengdan 958 and two irrigations. Stevia, planted from root cuttings each spring, receives four irrigations and relatively higher potassium to support leaf quality and buyer price. All decisions are anchored in 30 years of local practice and neighbor observation, with fertilizer rates chosen to avoid yield loss rather than minimize cost."
+  },
+  "elapsed_seconds": 70.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_11",
+  "tier": 3,
+  "provider": "claude"
+}

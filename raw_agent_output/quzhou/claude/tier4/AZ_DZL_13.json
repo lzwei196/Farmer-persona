@@ -1,0 +1,73 @@
+{
+  "raw_response": "Well, I'll tell you how I'm thinking about this year. I've only been farming these 5 mu for three years now \u2014 before that I was doing other work \u2014 so I still watch what my neighbors do pretty closely. The old man next to my plot, he's been doing wheat-maize here for thirty years, so I mostly follow what he does and adjust a little.\n\n**Wheat (winter crop):**\nLast year I got about 400 kg per mu, which wasn't bad. I planted around October 10th, same as most folks in the village. This year I'll do about the same. I buy regular seed from the agricultural supply shop \u2014 not the fancy hybrid, the regular kind, costs maybe 5 yuan per mu worth. I put down compound fertilizer before planting, about two bags for my whole 5 mu (that's the 15-15-15 kind, maybe 40 kg per mu of the compound), and then I topdress with urea around jointing time in spring, maybe half a bag per mu. My neighbor says you need to water at jointing and again at heading, so I do that \u2014 two waterings usually, three if spring is dry. The well pumping costs money so I don't overdo it. I spray for weeds once in spring, that's it for pesticide usually unless I see aphids.\n\n**Maize (summer crop):**\nRight after wheat harvest in mid-June, I need to plant maize fast \u2014 my wife and I do it together, sometimes my older brother helps. No time to plow properly, I just direct-seed into the wheat stubble. I hire the neighbor's small planter for a day, costs me maybe 30 yuan per mu. Seed is hybrid, I buy fresh every year because that's what everyone says to do \u2014 about 40 yuan per mu. I put fertilizer in with the planter, compound again, then topdress urea when the maize is about knee-high. Last year I didn't irrigate the maize because rain was okay, but if July is dry I'll water once. Got about 450 kg per mu last year.\n\n**My thinking on cash:**\nMoney is tight. With 5 mu I'm not getting rich from farming \u2014 my brother-in-law works construction in Handan and that's most of our cash income. I keep fertilizer to what I can afford without borrowing. If the wheat price is bad at harvest I might hold some grain instead of selling right away.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 5.0,\n      \"planting_date\": \"around October 10\",\n      \"harvest_date\": \"early to mid June\",\n      \"seed_type\": \"local/conventional (from ag supply shop)\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound 15-15-15 before planting (about 40 kg/mu), urea topdress (about 10 kg/mu) at jointing in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary till after maize harvest, hire neighbor's tractor\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 5.0,\n      \"planting_date\": \"mid June (right after wheat harvest)\",\n      \"harvest_date\": \"late September to early October\",\n      \"seed_type\": \"hybrid (bought fresh)\",\n      \"seed_cost_yuan_per_mu\": 40,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound at planting with the planter, urea topdress when maize is knee-high\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"no-till direct seeding into wheat stubble with hired planter\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 2400,\n  \"reasoning_summary\": \"I only have 5 mu and I'm still kind of new at this \u2014 three years \u2014 so mostly I do what my neighbor does. Wheat goes in around October, maize right after wheat harvest in June. I buy regular wheat seed but hybrid maize seed because everybody says you have to. Fertilizer I keep to about what I can afford without borrowing \u2014 compound at planting, urea topdress later, that's the way it's done here. I water the wheat twice because pumping costs money, and the maize usually gets enough rain. Last year wheat was 400 kg/mu and maize was 450, I'll aim about the same. My wife helps, my brother-in-law sometimes, and I hire the neighbor's planter for the maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 5.0,
+        "planting_date": "around October 10",
+        "harvest_date": "early to mid June",
+        "seed_type": "local/conventional (from ag supply shop)",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound 15-15-15 before planting (about 40 kg/mu), urea topdress (about 10 kg/mu) at jointing in spring",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary till after maize harvest, hire neighbor's tractor",
+        "labor_family_days": 8,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 5.0,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 5.0,
+        "planting_date": "mid June (right after wheat harvest)",
+        "harvest_date": "late September to early October",
+        "seed_type": "hybrid (bought fresh)",
+        "seed_cost_yuan_per_mu": 40,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound at planting with the planter, urea topdress when maize is knee-high",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "no-till direct seeding into wheat stubble with hired planter",
+        "labor_family_days": 6,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 5.0,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5
+      }
+    ],
+    "total_input_cost_yuan": 2400,
+    "reasoning_summary": "I only have 5 mu and I'm still kind of new at this \u2014 three years \u2014 so mostly I do what my neighbor does. Wheat goes in around October, maize right after wheat harvest in June. I buy regular wheat seed but hybrid maize seed because everybody says you have to. Fertilizer I keep to about what I can afford without borrowing \u2014 compound at planting, urea topdress later, that's the way it's done here. I water the wheat twice because pumping costs money, and the maize usually gets enough rain. Last year wheat was 400 kg/mu and maize was 450, I'll aim about the same. My wife helps, my brother-in-law sometimes, and I hire the neighbor's planter for the maize."
+  },
+  "elapsed_seconds": 41.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 4,
+  "provider": "claude"
+}

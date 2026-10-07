@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for fifty years. I know Quzhou's soil and weather like I know my own hands. My farm is 5 mu \u2014 not big, but it is mine, and it is enough for two of us with some to sell.\n\nI will keep the wheat-maize rotation on 3.5 mu. This is what I have always done. Wheat in winter fills the grain bin and maize in summer brings in money. These two crops I can manage mostly myself. My wife helps during busy seasons. I do not need to take risks \u2014 I just need a steady harvest.\n\nFor cotton I will plant 1.5 mu on the other piece of land. Cotton earns more per mu than grain, and I have always grown some. But at my age, picking cotton three or four times through the heat of September is very hard. I will not plant more than 1.5 mu. That is the most my body can manage.\n\nFor wheat, I will use the improved variety from the county seed station \u2014 the same one I used last year, it gave good ears. I apply base fertilizer before planting and top-dress urea at jointing. Three irrigations: winter water before freezing, again at jointing, again at heading. I have seen what happens when farmers skip the jointing water \u2014 the stalks fall over. Two spray treatments, one for weeds early, one for aphids near heading.\n\nFor maize I always use hybrid seed \u2014 even I know hybrid gives a bigger cob. I rotary-till lightly after wheat harvest and sow straight away. Two irrigations if summer rain is short. One herbicide spray early, one for pests later.\n\nFor cotton I plough deep in spring to break up the clay layer. Improved seed, not the expensive hybrid \u2014 I do not want to spend too much. Cotton needs more potassium so I add extra. Four irrigations spaced through the summer. Five pesticide sprays \u2014 bollworm and mites will destroy the bolls if I am not careful.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 73-year-old farmer with 50 years of experience and only two household members allocates 3.5 mu to the familiar wheat-maize double-cropping rotation, which provides food security and reliable income with manageable labour, and reserves 1.5 mu for cotton as a cash crop while capping it there because repeated picking is physically demanding at his age. Improved wheat and cotton seed from the local station reduce input cost without sacrificing too much yield, while hybrid maize seed is accepted as standard practice for larger cobs. Fertiliser rates, irrigation frequency, and pesticide applications follow the practices he has refined over decades for Quzhou's sandy loam soils and semi-arid climate, prioritising consistent yields over experimental high-input strategies.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 73-year-old farmer with 50 years of experience and only two household members allocates 3.5 mu to the familiar wheat-maize double-cropping rotation, which provides food security and reliable income with manageable labour, and reserves 1.5 mu for cotton as a cash crop while capping it there because repeated picking is physically demanding at his age. Improved wheat and cotton seed from the local station reduce input cost without sacrificing too much yield, while hybrid maize seed is accepted as standard practice for larger cobs. Fertiliser rates, irrigation frequency, and pesticide applications follow the practices he has refined over decades for Quzhou's sandy loam soils and semi-arid climate, prioritising consistent yields over experimental high-input strategies."
+  },
+  "elapsed_seconds": 47.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_4",
+  "tier": 2,
+  "provider": "claude"
+}

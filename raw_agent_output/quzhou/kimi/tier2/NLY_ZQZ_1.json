@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am fifty years old and have farmed this land for thirty years. I never went to school, but I know every corner of my 10.9 mu. My household has six people and some of them work in factories in town, so I cannot take risks or try new crops I do not understand. Here in Quzhou, every family grows winter wheat followed by summer maize on the same fields \u2014 that is what the land knows, what the buyers want, and what I have always done.\n\nIt is autumn now. After I harvest the summer maize, I will run the rotary tiller over all 10.9 mu to chop the stalks and loosen the soil. Then I will sow winter wheat in early October. I will buy improved wheat seed from the village co-op \u2014 Jimai 22 or Luyuan 502, the kinds my neighbors plant. Before sowing I spread compound fertilizer as base dressing, and in spring when the wheat turns green I top-dress with urea. I irrigate three times from my well: once after sowing, once at jointing in April, and once at heading in May. I spray herbicide once in early spring, insecticide once for aphids, and if I see rust I spray fungicide too.\n\nIn early June, as soon as the wheat is cut, I will plant summer maize immediately. I will not till \u2014 I direct-seed into the wheat stubble to save diesel and time, because the maize season is short. I buy hybrid seed from the shop, Denghai 605 or Zhengdan 958. I put down compound fertilizer at planting and side-dress urea when the maize is knee-high. Summer brings rain, so I only irrigate twice: once at sowing if the soil is dry, and once at silking if July turns hot. I spray herbicide after emergence and insecticide once for corn borer.\n\nI expect about 450 kg per mu of wheat and 550 kg per mu of maize. That is what I usually get, and I do not gamble with the harvest. My family needs the grain money, and the grain station still buys wheat and maize without trouble.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 10.9 mu in Quzhou County with the standard wheat-maize double-crop rotation, planting improved wheat in October after rotary tillage and direct-seeding hybrid maize into wheat stubble in June with no tillage. I apply compound fertilizer as base dressing and urea as topdressing for both crops, irrigating wheat three times and maize twice from my well, and spraying pesticides when weeds, aphids, rust, or corn borer appear. My input levels follow what my neighbors and the local seed shop recommend, and I target stable yields of about 450 kg/mu for wheat and 550 kg/mu for maize rather than taking risks on unfamiliar crops or techniques.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 10.9 mu in Quzhou County with the standard wheat-maize double-crop rotation, planting improved wheat in October after rotary tillage and direct-seeding hybrid maize into wheat stubble in June with no tillage. I apply compound fertilizer as base dressing and urea as topdressing for both crops, irrigating wheat three times and maize twice from my well, and spraying pesticides when weeds, aphids, rust, or corn borer appear. My input levels follow what my neighbors and the local seed shop recommend, and I target stable yields of about 450 kg/mu for wheat and 550 kg/mu for maize rather than taking risks on unfamiliar crops or techniques."
+  },
+  "elapsed_seconds": 195.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_1",
+  "tier": 2,
+  "provider": "kimi"
+}

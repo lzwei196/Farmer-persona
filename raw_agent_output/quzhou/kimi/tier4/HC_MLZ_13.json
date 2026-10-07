@@ -1,0 +1,45 @@
+{
+  "raw_response": "I'm 65 this year, and I've been working these fields for four decades. Graduated from the agricultural college in my twenties, so I understand the science\u2014soil nutrient balance, crop water requirements, pest population dynamics. But theory and practice diverge when you're farming 5 mu with only two pairs of hands, mine and my wife's. The children are working in Shijiazhuang; they send a little money, but I can't count on it for farm operations. Every yuan I spend on inputs comes from my own pocket, and at my age, I keep a cash reserve for medical expenses. That constraint shapes everything.\n\nFor cotton this year, I'll plant around April 22nd. I've been checking soil temperature\u2014needs to be stable above 12\u00b0C for good germination, and by the third week of April we should be there. I'm using a Bt hybrid variety. The seed costs more\u2014about 45 yuan per mu\u2014but it saves me one or two bollworm sprays later, and with only the two of us, I can't afford the labor for intensive pesticide scouting and repeated spraying. I'll prepare the land with rotary tillage using my small power tiller. It's not precision tillage, but on 5 mu it's what I have.\n\nFor fertilizer, I know the county extension station recommends 18\u201320 kg N per mu for cotton targeting 300 kg/mu yield. But urea and compound fertilizer prices have risen, and I have to pay for hired pickers at harvest. I'm compromising at roughly 13 kg N per mu: 25 kg of 15-15-15 compound fertilizer as a base before planting, giving me about 3.8 kg each of N, P\u2082O\u2085, and K\u2082O, then I'll topdress with 20 kg of urea at the squaring to early flowering stage\u2014that's another 9.2 kg N. It's below the optimal recommendation, but last year I applied similar rates and got 270 kg/mu seed cotton. Given my budget, that's the rational tradeoff. I can't afford potassium sulfate separately, so the compound fertilizer is my only K source.\n\nIrrigation is another cost-pressure point. Electricity for pumping from the tube well keeps increasing. Cotton can handle some drought during vegetative growth, but it's sensitive at flowering and boll development. I'll irrigate twice: once at initial flowering in early July, and once at peak boll in early August, using flood irrigation through furrows. It's inefficient, but furrow irrigation is what my field layout allows. Two times is the minimum I can get away with given the spring drought trend these past years.\n\nFor crop protection, I'll apply a pre-emergence herbicide\u2014acetochol\u2014right after planting to suppress weeds. Even with Bt cotton, I need to watch for aphids and spider mites in the hot, dry midsummer. I'll keep one broad-spectrum insecticide ready and scout weekly. No fungicide unless we get unusual late-summer rain during boll opening.\n\nLabor is my binding constraint. My wife and I can handle land prep, planting, fertilizing, irrigation, and spraying\u2014about 26 days of family labor across the season. But cotton picking in September and October is backbreaking, repetitive work. With only two of us and my back not what it used to be, I'll hire local women for the peak picking period\u2014about 10 days of hired labor. At roughly 80 yuan per day, that's 800 yuan I have to set aside now.\n\nYield expectation: last year I harvested 270 kg/mu of seed cotton. Soil conditions look similar this spring, and my fertilizer rate is comparable. I'm targeting 280 kg/mu. That's conservative, but at my scale, stability matters more than pushing for a record yield that might fail and leave me in debt.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"field_area_mu\": 5.0,\n      \"planting_date\": \"mid-to-late April\",\n      \"harvest_date\": \"September to October (multiple picks)\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13.0,\n      \"phosphorus_total_kg_per_mu\": 3.8,\n      \"potassium_total_kg_per_mu\": 3.8,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: 25 kg/mu 15-15-15 compound fertilizer before planting; Topdress: 20 kg/mu urea at squaring to early flowering stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary tillage with small power tiller, spring land preparation\",\n      \"labor_family_days\": 26,\n      \"labor_hired_days\": 10,\n      \"yield_expectation_kg_per_mu\": 280\n    }\n  ],\n  \"total_input_cost_yuan\": 1860,\n  \"reasoning_summary\": \"I'm running a 5-mu cotton farm with just my wife and me, both in our sixties. My agricultural education tells me what the optimal inputs are, but my smallholder budget and limited labor force force compromises. I cut nitrogen slightly below the extension recommendation to save cash for hired harvest labor, which is non-negotiable. I irrigate only twice\u2014at the two critical reproductive stages\u2014to minimize pumping costs. The Bt hybrid seed is expensive upfront but reduces labor-intensive pesticide applications later. Every decision trades yield potential against cash liquidity and physical capacity.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "field_area_mu": 5.0,
+        "planting_date": "mid-to-late April",
+        "harvest_date": "September to October (multiple picks)",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13.0,
+        "phosphorus_total_kg_per_mu": 3.8,
+        "potassium_total_kg_per_mu": 3.8,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: 25 kg/mu 15-15-15 compound fertilizer before planting; Topdress: 20 kg/mu urea at squaring to early flowering stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary tillage with small power tiller, spring land preparation",
+        "labor_family_days": 26,
+        "labor_hired_days": 10,
+        "yield_expectation_kg_per_mu": 280,
+        "nitrogen_kg_per_mu": 13.0,
+        "area_mu": 5.0,
+        "expected_yield_kg_per_mu": 280,
+        "phosphorus_kg_per_mu": 3.8,
+        "potassium_kg_per_mu": 3.8
+      }
+    ],
+    "total_input_cost_yuan": 1860,
+    "reasoning_summary": "I'm running a 5-mu cotton farm with just my wife and me, both in our sixties. My agricultural education tells me what the optimal inputs are, but my smallholder budget and limited labor force force compromises. I cut nitrogen slightly below the extension recommendation to save cash for hired harvest labor, which is non-negotiable. I irrigate only twice\u2014at the two critical reproductive stages\u2014to minimize pumping costs. The Bt hybrid seed is expensive upfront but reduces labor-intensive pesticide applications later. Every decision trades yield potential against cash liquidity and physical capacity."
+  },
+  "elapsed_seconds": 69.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_13",
+  "tier": 4,
+  "provider": "kimi"
+}

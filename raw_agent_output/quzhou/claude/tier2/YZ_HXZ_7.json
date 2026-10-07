@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land in Quzhou for half a century. I know these fields like I know my own hands. Five mu isn't much, but it's ours, and I know what it can give.\n\n**My thinking:**\n\nCotton is my livelihood \u2014 always has been. Quzhou is cotton country. I'll put 4 mu into cotton. I know the bollworm pressure here gets bad by July, so I plan my pesticide schedule around that. I use improved varieties \u2014 not hybrids, too expensive and I save some seed \u2014 my neighbor's been using the same improved line for years and it does fine. I plough deep in spring before planting, the way I've always done. My well lets me irrigate, but pumping costs money, so I'm careful \u2014 I water before planting, at flowering, at boll setting, and once more in dry August. Four times is usually enough.\n\nThe 1 mu of mungbean I rotate in \u2014 it helps the soil and my wife sells it locally. It's light work compared to cotton, which matters at my age. Traditional seed, I save it myself. Mungbean doesn't need much \u2014 I rotary till, apply modest fertilizer, and water twice if it's dry.\n\nI don't over-fertilize. I know what this soil needs. Too much nitrogen and the cotton grows tall but soft, more pest problems.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 255\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 120\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 4 mu to cotton as my primary cash crop, using locally-adapted improved seed that I partially save myself to cut costs, and deep plough in spring as I have always done. I apply 18 kg nitrogen per mu based on decades of reading this soil \u2014 enough for a solid yield without inviting excessive pest pressure. I irrigate four times using my well, targeting the critical cotton growth stages to keep pump costs down. Pesticide applications are planned at six rounds, timed around the bollworm pressure that peaks in July and August here in Quzhou. The remaining 1 mu goes to mungbean, a light-labor crop well-suited to my household of two and useful for home consumption and local sale; I use traditional saved seed, rotary till, and apply minimal inputs since mungbean fixes its own nitrogen.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 255
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 120
+      }
+    ],
+    "reasoning_summary": "I allocate 4 mu to cotton as my primary cash crop, using locally-adapted improved seed that I partially save myself to cut costs, and deep plough in spring as I have always done. I apply 18 kg nitrogen per mu based on decades of reading this soil \u2014 enough for a solid yield without inviting excessive pest pressure. I irrigate four times using my well, targeting the critical cotton growth stages to keep pump costs down. Pesticide applications are planned at six rounds, timed around the bollworm pressure that peaks in July and August here in Quzhou. The remaining 1 mu goes to mungbean, a light-labor crop well-suited to my household of two and useful for home consumption and local sale; I use traditional saved seed, rotary till, and apply minimal inputs since mungbean fixes its own nitrogen."
+  },
+  "elapsed_seconds": 36.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_7",
+  "tier": 2,
+  "provider": "claude"
+}

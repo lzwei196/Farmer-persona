@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 30 mu here in Quzhou for 55 years now. My land is wheat-maize, same as everyone around here. I will tell you how I do it this year, same as most years with small changes.\n\nFor wheat, I plant in October after maize comes off. I use improved seed \u2014 my son buys it from the same dealer in town, costs about 3-4 yuan per jin. I plant about 15 kg seed per mu because the ground is cold by planting time and some seed won't come up. \n\nBefore planting, I spread diammonium phosphate \u2014 one bag (50 kg) covers about 2.5 mu, that's my base fertilizer. Then in spring when wheat turns green, I put urea, maybe 15-20 kg per mu along with irrigation. Too little and the wheat looks yellow, then the harvest is small \u2014 better to put a little extra. My neighbor Old Wang tried less fertilizer two years ago and his yield dropped, I remember that.\n\nWheat needs water. I irrigate after planting to wet the ground, then winter water before it freezes, then green-up water in spring, then one more at jointing. Four times with the well. Pump costs money but without water wheat gives you nothing here. I expect 450 kg per mu \u2014 a good year maybe 500, bad year 400.\n\nPesticide \u2014 I spray once for aphids in spring, once for wheat head blight around flowering. That's two times. Sometimes I add herbicide early, but I count that separately.\n\nFor maize, I plant right after wheat harvest in June, no ploughing, just rotary tillage and drop the seed in. Hybrid seed, everyone uses hybrid now for maize, the old kinds don't yield. I use compound fertilizer as base when planting, then urea topdressing when the maize is knee-high. Nitrogen maybe 22 kg per mu total. Maize here gives 550 kg per mu normal year.\n\nI irrigate maize 2 times if the rain is normal \u2014 once after planting, once at tasseling. If dry summer, maybe 3 times. I'll say 2. Spray for borers once, sometimes twice if I see them bad.\n\nI have 30 mu so I put maize and wheat on all of it \u2014 double crop every year, that's how we do it here. My sons help with harvest, rest I do myself or hire a machine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm wheat-maize on all 30 mu like my neighbors. For wheat I use one bag of diammonium phosphate per 2.5 mu at planting and top-dress urea in spring \u2014 a bit extra is safer than too little, I saw Old Wang lose yield cutting back. Four irrigations from the well get wheat through to harvest, with two sprays for aphids and head blight. For maize I do no-till right after wheat, drop hybrid seed, base compound fertilizer plus urea at knee-high stage, two irrigations if rain is normal, spray twice for borers. I expect 450 kg wheat and 550 kg maize per mu in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm wheat-maize on all 30 mu like my neighbors. For wheat I use one bag of diammonium phosphate per 2.5 mu at planting and top-dress urea in spring \u2014 a bit extra is safer than too little, I saw Old Wang lose yield cutting back. Four irrigations from the well get wheat through to harvest, with two sprays for aphids and head blight. For maize I do no-till right after wheat, drop hybrid seed, base compound fertilizer plus urea at knee-high stage, two irrigations if rain is normal, spray twice for borers. I expect 450 kg wheat and 550 kg maize per mu in a normal year."
+  },
+  "elapsed_seconds": 33.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_12",
+  "tier": 3,
+  "provider": "claude"
+}

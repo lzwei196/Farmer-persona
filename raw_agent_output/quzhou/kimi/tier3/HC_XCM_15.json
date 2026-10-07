@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 67 years old and I never went to school. I have worked these same 3 mu in Quzhou for 45 years. My father taught me, and I learned by watching and doing.\n\nFor winter wheat, I plant improved seed. I buy one bag of seed wheat, about 45 jin, for the whole 3 mu. Before planting in October, I spread two bags of compound fertilizer \u2014 that is 100 jin \u2014 then I run the rotary tiller. In spring, when the wheat turns green, I spread one bag of urea. When the stems get tall and the heads are coming out, I spread another bag of urea. So two bags of urea in total. Last year I did this and got about 500 kg per mu. Old Wang across the road did the same and his wheat was good, so I will do it again. I water three times: once before the ground freezes hard, once in March when the wheat starts growing fast, and once in May when the grain is filling. My well has water. For weeds and bugs, I spray twice. I do not know the names of the medicines \u2014 I go to the input shop and ask for \"the wheat medicine.\"\n\nFor summer maize, as soon as the wheat is cut in June, I plant hybrid corn. I buy about 8 jin of seed for the 3 mu. When planting, I put one bag of compound fertilizer in the rows. When the corn is knee-high and the tassels are showing, I spread one and a half bags of urea. I water twice \u2014 once when the tassels are out, and once when the ears are getting fat. I spray herbicide right after planting, and then I spray once more for corn borers because last year they ate some ears. I do not till the soil for maize \u2014 there is no time after wheat harvest, and the ground is still soft. I expect about 550 kg per mu.\n\nI do not buy those other fertilizers they talk about at the shop. I only buy compound fertilizer and urea. The compound has some other things mixed in, and that has always been enough for my land. Fertilizer is real money \u2014 two bags of compound and three and a half bags of urea for the whole year costs me over 700 yuan. I would rather put on a little too much than too little, because if the crop fails, my wife and I have nothing to sell and no cash. But I cannot try new things or buy extra. I watch what my neighbors do. If Old Wang and the others use the same amount, then I know it is safe.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20.3,\n      \"phosphorus_kg_per_mu\": 5.0,\n      \"potassium_kg_per_mu\": 5.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14.0,\n      \"phosphorus_kg_per_mu\": 2.5,\n      \"potassium_kg_per_mu\": 2.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on 45 years of experience and what my neighbors do. For wheat, I apply two bags of compound fertilizer and two bags of urea across 3 mu, with three irrigations and two sprays. For maize, I use one bag of compound and one and a half bags of urea, with two irrigations and two sprays. I do not buy separate phosphate or potash because the compound fertilizer contains enough, and I must control costs on my small farm. I would rather apply slightly too much nitrogen than risk a bad harvest, but I cannot afford to deviate from what has worked in the past.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20.3,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 5.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14.0,
+        "phosphorus_kg_per_mu": 2.5,
+        "potassium_kg_per_mu": 2.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I base my decisions on 45 years of experience and what my neighbors do. For wheat, I apply two bags of compound fertilizer and two bags of urea across 3 mu, with three irrigations and two sprays. For maize, I use one bag of compound and one and a half bags of urea, with two irrigations and two sprays. I do not buy separate phosphate or potash because the compound fertilizer contains enough, and I must control costs on my small farm. I would rather apply slightly too much nitrogen than risk a bad harvest, but I cannot afford to deviate from what has worked in the past."
+  },
+  "elapsed_seconds": 226.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_15",
+  "tier": 3,
+  "provider": "kimi"
+}

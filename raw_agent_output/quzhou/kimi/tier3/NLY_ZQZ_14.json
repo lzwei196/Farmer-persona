@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 55 years old. I never went to school, not even one day. But I have farmed this 7.5 mu in Quzhou for 30 years, and I know every corner of my land. I grow wheat in winter and maize in summer \u2014 that is what everyone here does, and I do not try anything fancy.\n\nFor wheat, I buy improved seed from the shop in town, the same kind my neighbor Lao Wang uses. I plant about 15 jin per mu when autumn comes. When I plow the field with the rotary tiller \u2014 my nephew has the machine and does it cheap for family \u2014 I spread half a bag of compound fertilizer on each mu. That bag has three numbers on it, I think it is 15-15-15 or something like that. Then in spring, when the wheat starts turning green, I spread urea. I use one big bag of urea for every 1.5 mu. Some people say that is a lot, but last year Old Zhang used less and his wheat was thin and yellow. I would rather spend the money on fertilizer than risk a bad harvest. A bad harvest means we do not eat well that year. Wasting a little fertilizer is just losing some money. I water three times: once when it greens up, once when the stems get thick, and once when the grain is filling. If it is very dry, maybe four times, but three is usually enough. I spray pesticide twice, once when I see aphids and once later for the rust.\n\nFor maize, right after cutting the wheat in June, I plant hybrid maize seed. I put about 2 jin of seed per mu. When planting, I put one scoop of compound fertilizer in each hole \u2014 that works out to about 20 jin per mu. Then when the maize is knee-high, I spread urea, about 25 jin per mu. I water two times, three if it is very dry like two years ago. I spray pesticide twice: once when the seedlings come up, and once if I see worms later.\n\nMy family has eight mouths. Some work in the factory in town, so we have some cash, but fertilizer is over 100 yuan a bag now. I have to be careful. But I have learned: do not cut back on fertilizer. Better to put a little too much than too little. I watch my neighbors. If everyone is putting about the same amount, I do the same. I expect about 450 kg of wheat per mu and about 500 kg of maize per mu, same as a normal year if the weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 7.5 mu for 30 years and I do what my neighbors do. For wheat I use improved seed, put down half a bag of compound fertilizer per mu when plowing, then spread one bag of urea for every 1.5 mu when the wheat turns green in spring. I water three times and spray twice. For maize I plant hybrid seed right after cutting wheat, put one scoop of compound fertilizer in each hole, then spread more urea when the plants are knee-high. I water two times, three if it is very dry, and spray twice. Fertilizer costs a lot now but I would rather put a little too much than risk a thin crop, because a bad harvest means real trouble for my family.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed this 7.5 mu for 30 years and I do what my neighbors do. For wheat I use improved seed, put down half a bag of compound fertilizer per mu when plowing, then spread one bag of urea for every 1.5 mu when the wheat turns green in spring. I water three times and spray twice. For maize I plant hybrid seed right after cutting wheat, put one scoop of compound fertilizer in each hole, then spread more urea when the plants are knee-high. I water two times, three if it is very dry, and spray twice. Fertilizer costs a lot now but I would rather put a little too much than risk a thin crop, because a bad harvest means real trouble for my family."
+  },
+  "elapsed_seconds": 171.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "NLY_ZQZ_14",
+  "tier": 3,
+  "provider": "kimi"
+}

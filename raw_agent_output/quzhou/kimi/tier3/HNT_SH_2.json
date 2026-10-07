@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 50 years old and I have farmed these 30 years in Quzhou. I finished middle school, then I came home to the fields. My family has four people, some work in town, so I mostly handle the 3 mu myself and hire nobody except my cousin for two days at harvest. I split the land like last year: 2 mu for wheat then summer maize on the same patch, and 1 mu for cotton. The wheat-maize rotation gives me grain to eat and some to sell, and the cotton gives cash for school fees and medicine.\n\nFor the 2 mu of winter wheat, I use an improved variety, the same one my neighbor Old Wang bought at the township seed shop last autumn. I put 16 kg of nitrogen per mu, which means about 35 kg of urea on each mu, so 70 kg of urea total for the 2 mu. For phosphorus I apply 5 kg per mu, that is half a 50-kg bag of diammonium phosphate on each mu. Potassium is 3 kg per mu, so one 50-kg bag of potassium chloride covers both mu with a little left in the corner of the shed. I irrigate three times: once in early November before the ground freezes to help the seedlings sleep through winter, once in late March when the wheat starts jointing, and once in late April at heading. Two pesticide sprays: one herbicide at tillering when the weeds first show, and one fungicide in May when the weather warms up because rust came two years ago and I am not taking chances. I rotary till the 2 mu after the maize comes off in autumn \u2014 the village machine costs 40 yuan per mu and it is fast. I expect 480 kg per mu if the spring wind does not dry us out.\n\nFor the summer maize on the same 2 mu, I plant hybrid seed, 2 kg per mu. Nitrogen is 15 kg per mu, phosphorus 4 kg per mu, potassium 4 kg per mu. I put the phosphorus and potassium down as base fertilizer at sowing, and the nitrogen as a top-dressing when the tassels come out. I do no-tillage because after wheat harvest in early June the season is short \u2014 every day you plant late costs you yield, and I cannot afford that. I irrigate twice: once in mid-July at tasseling, and once in early August during grain fill. Two pesticide sprays: one pre-emergence herbicide right after sowing, and one spray for corn borer in mid-July because last year the worms bit the ears. Expected yield is 550 kg per mu.\n\nFor cotton on the remaining 1 mu, I plant hybrid Bt cotton seed. I apply 12 kg nitrogen per mu, 5 kg phosphorus per mu, and 8 kg potassium per mu \u2014 cotton needs that extra potassium or the bolls do not open right and you get black spots. I plough this mu deep in early April because cotton roots hate hard pans. I irrigate three times: once in late June at budding, once in late July at peak flowering, and once in late August when the bolls are fat. Four pesticide sprays: even with Bt seed, I spray for aphids in May, spider mites in July, and two more times for whatever bug shows up in August. I expect 280 kg of seed cotton per mu.\n\nI keep these numbers because this is what I did last year and the year before, and it worked. I would rather spend an extra 50 yuan on fertilizer than risk losing a hundred kilos of grain. A bad harvest means borrowing money; wasting a little fertilizer just means eating less meat for a month. At the same time, I cannot throw money around \u2014 3 mu is small, fertilizer is expensive this year, and my daughter still needs school fees. I watch Old Wang: he puts about the same on his fields, so I sleep fine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I stuck close to last year's plan because change is risky on a small farm. I put 2 mu into wheat-maize double-cropping for grain security and 1 mu into cotton for cash. Fertilizer rates are what I know works \u2014 slightly more rather than less, because losing yield hurts more than wasting a few kilos of urea. I cut costs where I can by doing no-till on summer maize to save time and using the village rotary rig for wheat, but I kept three irrigations on wheat and cotton because well water is reliable and dry spells are deadly. I matched my neighbor's general levels so I don't get left behind or take a foolish gamble.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I stuck close to last year's plan because change is risky on a small farm. I put 2 mu into wheat-maize double-cropping for grain security and 1 mu into cotton for cash. Fertilizer rates are what I know works \u2014 slightly more rather than less, because losing yield hurts more than wasting a few kilos of urea. I cut costs where I can by doing no-till on summer maize to save time and using the village rotary rig for wheat, but I kept three irrigations on wheat and cotton because well water is reliable and dry spells are deadly. I matched my neighbor's general levels so I don't get left behind or take a foolish gamble."
+  },
+  "elapsed_seconds": 112.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_2",
+  "tier": 3,
+  "provider": "kimi"
+}

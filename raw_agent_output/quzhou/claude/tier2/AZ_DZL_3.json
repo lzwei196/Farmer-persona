@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land in Quzhou for 30 years. I know how the seasons run here on the North China Plain \u2014 dry springs, hot summers, cold winters. My well gives me security most neighbors don't have. Here's how I'm thinking about this season.\n\nMy 19 mu breaks down naturally: about 12 mu for my wheat-maize rotation and 7 mu for cotton on separate plots. The wheat and maize share the same ground, just different seasons \u2014 that's how we do it here.\n\n**Wheat (winter):** I'll plant in mid-October like always. I use the improved varieties that have done well in this area for years \u2014 not the newest experimental stuff, but proven lines. I'll apply base fertilizer at planting, then top-dress at jointing. I'll irrigate four times: before winter sets in, at jointing, at heading, and at grain filling if it's dry. Two pesticide passes \u2014 one herbicide early, one fungicide around heading. I'll rotary-till the maize stubble in before planting.\n\n**Maize (summer):** Right after wheat harvest in June, I'll go in with hybrid seed \u2014 Zhengdan 958 or whatever the supply station has that's similar. Hybrid maize yields much better, worth the extra seed cost. Summer gets more rain so I won't need to irrigate as much, maybe twice. I'll rotary-till lightly or seed directly depending on how the stubble lies.\n\n**Cotton:** This is the labor-heavy one. Seven mu of cotton keeps me and my family busy from April through October. I'll use hybrid cotton seed. Cotton needs more potassium than people think, and pest management is constant \u2014 aphids, bollworm, whitefly. I'll spray five times through the season. I'll plough this ground deep in spring before planting to break up the soil.\n\nI'm not changing much from last year. At 58, I know what works on my land. The well irrigation is my biggest advantage \u2014 I don't have to gamble on rainfall.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate my 19.1 mu across a 12-mu wheat-maize rotation and 7 mu of separate cotton ground, following the same system I have used for decades in Quzhou. Wheat is planted in October with improved local varieties, receiving four irrigations from my well and two pesticide applications, with rotary tillage of the prior maize stubble. Summer maize follows immediately after wheat harvest using hybrid seed for better yield, requiring only two irrigations given summer rainfall, with light rotary tillage. Cotton occupies the remaining 7 mu, planted in spring and managed intensively through autumn: it receives deep plough tillage, four irrigations, five pesticide applications to control bollworm and aphid pressure, and higher potassium rates that cotton requires. Input levels reflect 30 years of practical experience on this soil rather than extension recommendations, and all three crops depend on well irrigation as the primary risk management tool in this dry region.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate my 19.1 mu across a 12-mu wheat-maize rotation and 7 mu of separate cotton ground, following the same system I have used for decades in Quzhou. Wheat is planted in October with improved local varieties, receiving four irrigations from my well and two pesticide applications, with rotary tillage of the prior maize stubble. Summer maize follows immediately after wheat harvest using hybrid seed for better yield, requiring only two irrigations given summer rainfall, with light rotary tillage. Cotton occupies the remaining 7 mu, planted in spring and managed intensively through autumn: it receives deep plough tillage, four irrigations, five pesticide applications to control bollworm and aphid pressure, and higher potassium rates that cotton requires. Input levels reflect 30 years of practical experience on this soil rather than extension recommendations, and all three crops depend on well irrigation as the primary risk management tool in this dry region."
+  },
+  "elapsed_seconds": 60.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_3",
+  "tier": 2,
+  "provider": "claude"
+}

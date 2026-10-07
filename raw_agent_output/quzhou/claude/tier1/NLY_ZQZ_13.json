@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for generations. We have about 8 mu. The soil here in Quzhou is loam \u2014 good for wheat and corn. Everyone around me grows winter wheat then summer corn, and I will do the same. That is what this land is suited for, what the markets expect, and what I know how to do.\n\nFor winter wheat, I will use the improved variety the village extension station recommended last year \u2014 most neighbors switched and their yields were decent. I will plough the field before planting, apply base fertilizer, and irrigate at jointing, heading, and grain fill. Three times is normal here. I will spray once or twice for aphids and rust if I see them.\n\nFor summer maize after the wheat harvest, I will buy hybrid seeds from the county seed shop \u2014 everyone uses hybrid now, you get much better yield. I will plant directly into the stubble with the rotary tiller, since it saves time and the landlord's son has a machine. Summer rain usually helps, so I only irrigate once or twice unless it is dry. One pesticide spray for corn borer in July.\n\nI use a bit more fertilizer than maybe I should \u2014 my neighbor said I could cut back, but I worry about low yield. Better safe.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou County under the standard winter wheat\u2013summer maize double-cropping rotation that all my neighbors follow. I choose an extension-recommended improved wheat variety and commercial hybrid maize seed because hybrids clearly outyield traditional varieties. I plough before wheat planting for good seedbed preparation, then use rotary tillage before maize to save labour and cost. Fertilizer rates are on the higher side because I cannot afford a poor harvest, and I irrigate wheat three times at the critical growth stages while relying partly on summer rainfall for maize. Pesticide use is minimal \u2014 one or two sprays only when I actually see pests.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou County under the standard winter wheat\u2013summer maize double-cropping rotation that all my neighbors follow. I choose an extension-recommended improved wheat variety and commercial hybrid maize seed because hybrids clearly outyield traditional varieties. I plough before wheat planting for good seedbed preparation, then use rotary tillage before maize to save labour and cost. Fertilizer rates are on the higher side because I cannot afford a poor harvest, and I irrigate wheat three times at the critical growth stages while relying partly on summer rainfall for maize. Pesticide use is minimal \u2014 one or two sprays only when I actually see pests."
+  },
+  "elapsed_seconds": 32.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_13",
+  "tier": 1,
+  "provider": "claude"
+}

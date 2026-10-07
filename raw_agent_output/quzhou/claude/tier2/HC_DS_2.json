@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 45 years. My father farmed it before me. I know this soil. I know when to plant by the feel of the air and the color of the sky. No one needs to tell me what to do \u2014 I've done this more times than I can count.\n\nMy farm is small, 3.5 mu. My son works in the city now. It's just me and my wife. I can't manage too much complexity. I do what works and has always worked here in Quzhou.\n\n**Wheat (winter crop):** I plant every October after the maize comes off. I'll buy the improved wheat seed from the village supply cooperative \u2014 the local recommended variety. I've tried saving my own seed but the yields started dropping, so I buy new seed every few years. For fertilizer, I put down compound fertilizer when I prepare the bed, then push urea at jointing time in the spring. I've done this for decades. I'll irrigate before winter sets in to protect the roots from freezing, again at jointing, and again when heads are filling out. Three times is what I always do. I'll spray for aphids once in May if I see them \u2014 I usually do. I use rotary tillage to turn the stubble in. I expect around 450 jin per mu \u2014 that's normal for my land.\n\n**Maize (summer crop):** Right after wheat harvest in June, I plant maize. I always use hybrid seed \u2014 everyone around here does now, yields are much better than the old varieties. Same fertilizer approach: base fertilizer at planting, urea side-dressed when the plant is knee-high. Maize doesn't need as much water as wheat if summer rains are decent, but I'll pump the well once or twice depending on how dry it gets. I'll spray for armyworm if needed \u2014 once is usually enough. I don't do deep tillage for maize, just rotary after wheat harvest to break up the surface. I expect 550-600 jin per mu.\n\nThe plan doesn't change much year to year. Small farm, two old people, keep it simple and reliable.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 69-year-old farmer with 45 years experience and no formal education in Quzhou County follows the standard North China Plain wheat-maize double-cropping rotation on all 3.5 mu. Decisions draw entirely on long-accumulated local practice: improved wheat variety from the cooperative and hybrid maize seed for better yield, compound base fertilizer plus split urea top-dressing for both crops, three irrigations for wheat covering pre-winter, jointing, and grain-fill stages, and one to two irrigations for maize relying partly on summer rainfall. Tillage is rotary for both crops to manage stubble after each harvest. Pesticide use is minimal and reactive \u2014 one spray for wheat aphids in spring and one for maize armyworm if observed. The approach is conservative, labor-appropriate for an aging two-person household with limited off-farm help, and calibrated to historically reliable yields rather than maximum production.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 69-year-old farmer with 45 years experience and no formal education in Quzhou County follows the standard North China Plain wheat-maize double-cropping rotation on all 3.5 mu. Decisions draw entirely on long-accumulated local practice: improved wheat variety from the cooperative and hybrid maize seed for better yield, compound base fertilizer plus split urea top-dressing for both crops, three irrigations for wheat covering pre-winter, jointing, and grain-fill stages, and one to two irrigations for maize relying partly on summer rainfall. Tillage is rotary for both crops to manage stubble after each harvest. Pesticide use is minimal and reactive \u2014 one spray for wheat aphids in spring and one for maize armyworm if observed. The approach is conservative, labor-appropriate for an aging two-person household with limited off-farm help, and calibrated to historically reliable yields rather than maximum production."
+  },
+  "elapsed_seconds": 38.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_2",
+  "tier": 2,
+  "provider": "claude"
+}

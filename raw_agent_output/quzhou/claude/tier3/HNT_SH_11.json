@@ -1,0 +1,53 @@
+{
+  "raw_response": "I think about this year the same way I thought about last year. My land is small \u2014 only 1.8 mu \u2014 so I cannot waste money, but I also cannot afford a bad harvest. Five mouths to feed.\n\nMy main rotation is wheat then maize, like everyone around me in Quzhou. I keep a small strip of cotton because my mother-in-law always grew it and the price has been okay. But most of the land is wheat-maize.\n\nFor wheat, I sow in October. I buy the improved seed from the town dealer \u2014 the same one my neighbor Li uses, because her wheat stood well last year and did not fall over in the rain. I put down one bag of compound fertilizer (about 40 kg, the 15-15-15 kind) before ploughing, and then I topdress urea at jointing \u2014 maybe half a bag. The well is close, so I irrigate 3 times: after sowing if the soil is dry, at jointing, and at grain-filling. I spray for aphids and powdery mildew, usually 2 times. I expect around 450 kg from each mu \u2014 that is what I got last year.\n\nFor summer maize after wheat, I use hybrid seed \u2014 \"Zhengdan\" or whatever the dealer pushes, neighbors get the same. I do not plough, just plant straight into the wheat stubble because I have no time between harvests. I put compound fertilizer in the row at sowing, then urea once when the plants are knee-high. Irrigate 2 times if the rain does not come. Spray once for borer. I hope for 550 kg per mu.\n\nFor cotton on the small strip (0.3 mu), I plough properly. Cotton needs more care \u2014 more fertilizer, more spraying, maybe 4-5 times for bollworm. But only a tiny piece so the cost is not too big.\n\nI would rather put a little extra urea than have yellow leaves. Fertilizer money is real, but a bad harvest is worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"My land is only 1.8 mu so I follow what worked last year and what my neighbors do. Wheat-maize on the main 1.5 mu, with a small cotton strip of 0.3 mu like my mother-in-law always kept. I use one bag of 15-15-15 compound plus urea topdressing on wheat and maize \u2014 a little extra urea is safer than yellow leaves. Well irrigation lets me water the wheat 3 times and maize 2 times. I spray only when I see pests, to save money, but on cotton I must spray more for bollworm. I expect about 450 kg wheat, 550 kg maize, and 220 kg seed cotton per mu \u2014 same as last year, no surprises.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 1.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 0.3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "My land is only 1.8 mu so I follow what worked last year and what my neighbors do. Wheat-maize on the main 1.5 mu, with a small cotton strip of 0.3 mu like my mother-in-law always kept. I use one bag of 15-15-15 compound plus urea topdressing on wheat and maize \u2014 a little extra urea is safer than yellow leaves. Well irrigation lets me water the wheat 3 times and maize 2 times. I spray only when I see pests, to save money, but on cotton I must spray more for bollworm. I expect about 450 kg wheat, 550 kg maize, and 220 kg seed cotton per mu \u2014 same as last year, no surprises."
+  },
+  "elapsed_seconds": 30.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_11",
+  "tier": 3,
+  "provider": "claude"
+}

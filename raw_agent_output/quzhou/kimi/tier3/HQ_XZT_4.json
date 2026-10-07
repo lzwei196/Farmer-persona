@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 55 years old. I have farmed this 4.1 mu for 30 years. I never went to school, not even one day. Everything I know, I learned from my own hands and from watching the neighbors who do well. My husband and I work this land alone. We have no hired help. Last year my wheat gave about 450 kg per mu and my maize about 500 kg per mu. This year I will do the same as last year, because change is dangerous and I cannot afford a bad harvest.\n\nFor the winter wheat: After the maize comes off in autumn, I rotary till the ground and plant the improved wheat seed I buy from the dealer in town. Before planting, I spread one 100-jin bag of compound fertilizer on each mu. The dealer says it has three numbers on the bag, but I just tell him \"give me the wheat fertilizer.\" In the spring, when the wheat turns green and starts growing fast, I topdress with half a 100-jin bag of urea per mu. I irrigate three times: once after planting to help the seed settle, once in spring when the wheat is jumping up, and once when the grain is filling. I spray twice \u2014 once for weeds after the wheat comes up, and once for bugs when the weather gets warm. I expect 450 kg per mu.\n\nFor the summer maize: After we cut the wheat in June, I rotary till fast and plant hybrid corn seed. I put half a 100-jin bag of compound fertilizer per mu in the rows at planting time. When the corn is about knee-high, I side-dress with half a 100-jin bag of urea per mu. I irrigate twice if the sky does not give us enough rain \u2014 once when the stalks are shooting up, and once when the ears are filling. I spray twice, for weeds and then for corn borers. I expect 500 kg per mu.\n\nI do not buy phosphorus or potassium by themselves. The compound fertilizer has some mixed in, and that is enough for me. Every jin of fertilizer costs real money that I could use for food or medicine. But I would rather put a little too much than risk the crop failing, because if the harvest is bad, we have nothing to sell and nothing to eat.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 3.75,\n      \"potassium_kg_per_mu\": 3.75,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 4.1 mu for 30 years and never went to school, but I know what works from watching others and doing it myself. My husband and I work alone. Last year my wheat gave about 450 kg per mu and my maize about 500 kg per mu, so I will do the same this year because change is risky and I cannot afford a bad harvest. For wheat, I spread one 100-jin bag of compound fertilizer per mu before planting and topdress with half a bag of urea in spring. For maize, I use half a bag of compound per mu at planting and half a bag of urea when the corn is knee-high. I do not buy extra phosphorus or potassium \u2014 the compound has enough. I irrigate wheat three times and maize twice, and spray twice for each. Every jin of fertilizer costs real money, but I would rather use a little too much than too little, because losing the yield is a disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed this 4.1 mu for 30 years and never went to school, but I know what works from watching others and doing it myself. My husband and I work alone. Last year my wheat gave about 450 kg per mu and my maize about 500 kg per mu, so I will do the same this year because change is risky and I cannot afford a bad harvest. For wheat, I spread one 100-jin bag of compound fertilizer per mu before planting and topdress with half a bag of urea in spring. For maize, I use half a bag of compound per mu at planting and half a bag of urea when the corn is knee-high. I do not buy extra phosphorus or potassium \u2014 the compound has enough. I irrigate wheat three times and maize twice, and spray twice for each. Every jin of fertilizer costs real money, but I would rather use a little too much than too little, because losing the yield is a disaster."
+  },
+  "elapsed_seconds": 170.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_4",
+  "tier": 3,
+  "provider": "kimi"
+}

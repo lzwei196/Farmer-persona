@@ -1,0 +1,73 @@
+{
+  "raw_response": "I've been farming this land for 30 years, since I was 21. My father taught me everything \u2014 I never went to school, can't read, but I know this 6 mu like the back of my hand. Wheat in winter, maize in summer, every year. It's tight work, especially that week between wheat harvest and maize planting, but me and my wife manage. We have four mouths to feed, so every yuan I spend has to come back.\n\nThis year, I'll do about the same as last year. Last year the wheat was decent \u2014 I got about 420 jin per mu, which is fine. The maize was a bit less because of the dry spell in July, maybe 480 jin per mu. I won't change much. Change is risky.\n\n**For the wheat:** I'll plant around October 8th, same as always. I buy the seed from the shop in town \u2014 it's that improved variety most people use, not the fanciest hybrid but reliable. Costs me about 45 yuan per mu. Before planting I spread about 80 jin of that compound fertilizer (the 15-15-15 kind) per mu as base, and then at jointing time in spring I topdress with about 30 jin of urea. That's roughly 12-13 kg of nitrogen per mu total, I reckon \u2014 the shopkeeper told me once, but I just know it as two big bags for the 6 mu. I irrigate three times: once after planting if it's dry, once at jointing when the wheat is hungry, and once at grain filling. Pumping water is expensive now, about 35 yuan each time for my 6 mu, but you can't skip it. I spray herbicide once in early spring \u2014 the weeds will choke you otherwise. I'll harvest around June 10th. Me and my wife do most of the work, but I might hire Old Wang's combine for one day, costs about 60 yuan per mu.\n\n**For the maize:** Plant right after wheat harvest, probably June 12th or 13th. Three, maybe four days to get it in the ground \u2014 I work from dawn to dark those days. I use hybrid maize seed, about 3.5 kg per mu, costs around 55 yuan. At planting I put down another 60 jin per mu of compound fertilizer. Then at big trumpet stage \u2014 around late July \u2014 I topdress with 25 jin of urea per mu. Total nitrogen is maybe 11 kg per mu. I irrigate twice if it's dry: once right after planting to help it sprout, and once at flowering if the rain doesn't come. Some years I only irrigate once, but last July was dry so I'll plan for two. I spray herbicide once and maybe insecticide if I see worms \u2014 last year I didn't need it, but I'll watch. Harvest late September, probably by hand because the combine for maize costs too much for just 6 mu.\n\n**Money:** I'm careful. Total cash I can spend on inputs this year is about 2,000 yuan, and I need to stay under that. Fertilizer prices went up a bit, so I'm thinking about whether I can cut back on the maize topdress, but no \u2014 last time I skimped on maize fertilizer I lost almost 100 jin per mu. Better to borrow a little from my brother than risk that. Water and fertilizer are the two things you can't cheat on.\n\nMy son is working in the factory now, so it's just me and my wife in the fields most days. My mother is old and stays home. We can handle the 6 mu without hiring much labor \u2014 maybe 3 days total for hired help at harvest time.\n\nHere's my plan:\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"early October (around Oct 8)\",\n      \"harvest_date\": \"early-mid June (around Jun 10)\",\n      \"seed_type\": \"improved variety\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12.5,\n      \"phosphorus_total_kg_per_mu\": 5.0,\n      \"potassium_total_kg_per_mu\": 5.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: 80 jin/mu compound fertilizer at planting; Topdress: 30 jin/mu urea at wheat jointing (late March)\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plow after previous maize harvest, harrow before wheat planting\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"mid June (around Jun 12, right after wheat harvest)\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 11.0,\n      \"phosphorus_total_kg_per_mu\": 4.0,\n      \"potassium_total_kg_per_mu\": 4.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: 60 jin/mu compound fertilizer at planting; Topdress: 25 jin/mu urea at big trumpet stage (late July)\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage \u2014 plant directly after wheat harvest, no time for deep plowing\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 480\n    }\n  ],\n  \"total_input_cost_yuan\": 1860,\n  \"reasoning_summary\": \"I've farmed this 6 mu for 30 years and I stick with what works. Wheat-maize double cropping is our livelihood. I don't read books, but I remember every harvest. Last year wheat gave 420 jin per mu and maize 480 jin per mu, so I'll do the same fertilizer and irrigation as last year. Fertilizer went up in price but I won't cut back \u2014 I'd rather waste a little money than lose yield. Water pumping is expensive at 35 yuan each time, but three times for wheat and twice for maize is what the land needs. Me and my wife do almost all the work ourselves; I only hire help for harvest. My son's factory wages help, but I still keep total spending under 2,000 yuan. No fancy changes this year \u2014 steady and careful is how a small farm survives.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 6.0,
+        "planting_date": "early October (around Oct 8)",
+        "harvest_date": "early-mid June (around Jun 10)",
+        "seed_type": "improved variety",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12.5,
+        "phosphorus_total_kg_per_mu": 5.0,
+        "potassium_total_kg_per_mu": 5.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: 80 jin/mu compound fertilizer at planting; Topdress: 30 jin/mu urea at wheat jointing (late March)",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plow after previous maize harvest, harrow before wheat planting",
+        "labor_family_days": 18,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 12.5,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 5.0
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 6.0,
+        "planting_date": "mid June (around Jun 12, right after wheat harvest)",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 11.0,
+        "phosphorus_total_kg_per_mu": 4.0,
+        "potassium_total_kg_per_mu": 4.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: 60 jin/mu compound fertilizer at planting; Topdress: 25 jin/mu urea at big trumpet stage (late July)",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage \u2014 plant directly after wheat harvest, no time for deep plowing",
+        "labor_family_days": 20,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 480,
+        "nitrogen_kg_per_mu": 11.0,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 480,
+        "phosphorus_kg_per_mu": 4.0,
+        "potassium_kg_per_mu": 4.0
+      }
+    ],
+    "total_input_cost_yuan": 1860,
+    "reasoning_summary": "I've farmed this 6 mu for 30 years and I stick with what works. Wheat-maize double cropping is our livelihood. I don't read books, but I remember every harvest. Last year wheat gave 420 jin per mu and maize 480 jin per mu, so I'll do the same fertilizer and irrigation as last year. Fertilizer went up in price but I won't cut back \u2014 I'd rather waste a little money than lose yield. Water pumping is expensive at 35 yuan each time, but three times for wheat and twice for maize is what the land needs. Me and my wife do almost all the work ourselves; I only hire help for harvest. My son's factory wages help, but I still keep total spending under 2,000 yuan. No fancy changes this year \u2014 steady and careful is how a small farm survives."
+  },
+  "elapsed_seconds": 52.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_15",
+  "tier": 4,
+  "provider": "kimi"
+}

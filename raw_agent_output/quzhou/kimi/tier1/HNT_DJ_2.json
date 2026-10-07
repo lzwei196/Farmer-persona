@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 50-year-old farmer in Quzhou County, and I have been working this land since I was a teenager. My family has about 7 mu of flat, good-quality land here on the North China Plain. I only finished primary school, but I know my fields well \u2014 better than any book.\n\nThe wheat is already in the ground. I sowed it last October, as I always do. This spring, I will topdress it with urea when it greens up and jointing starts, and I will irrigate three times: once now to help it recover from winter, once at jointing, and once at grain filling. I also need to spray for weeds, aphids, and the fungal diseases that always come when the weather turns humid. I use an improved wheat variety that my neighbor saved seed from \u2014 it performs reliably here. Before sowing last autumn, I rotary-tilled the field and put down compound fertilizer as a basal dressing.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize. I never waste time between crops \u2014 the season is short. I buy hybrid maize seed every year; the hybrids yield much more than keeping my own seed, and the seed dealer here sells good ones. I will use no-tillage direct seeding right after the wheat comes off \u2014 that saves me time, fuel, and keeps moisture in the soil. I will spread compound fertilizer at sowing, irrigate twice (once after sowing if it is dry, and once at the big trumpet stage), and spray for weeds and armyworms. \n\nI do not grow vegetables or cotton. Those crops are risky \u2014 the prices jump around, and if I guess wrong, I lose money. Wheat and maize have stable purchase prices, and the grain station buys them every year. I am too old to take big risks with my family's food security.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double-cropping rotation that every experienced farmer in Quzhou uses because it is reliable and the grain station guarantees purchase. My 7 mu of flat land is managed with rotary tillage for wheat and no-tillage for maize to save time and moisture. I apply compound fertilizer as a basal dose and topdress with urea for wheat, while maize gets compound fertilizer at sowing. I irrigate wheat three times and maize twice, and I spray pesticides 2-3 times per crop to control weeds, insects, and diseases. I use improved wheat seed saved from good harvests and buy fresh hybrid maize seed annually for higher yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double-cropping rotation that every experienced farmer in Quzhou uses because it is reliable and the grain station guarantees purchase. My 7 mu of flat land is managed with rotary tillage for wheat and no-tillage for maize to save time and moisture. I apply compound fertilizer as a basal dose and topdress with urea for wheat, while maize gets compound fertilizer at sowing. I irrigate wheat three times and maize twice, and I spray pesticides 2-3 times per crop to control weeds, insects, and diseases. I use improved wheat seed saved from good harvests and buy fresh hybrid maize seed annually for higher yields."
+  },
+  "elapsed_seconds": 236.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HNT_DJ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

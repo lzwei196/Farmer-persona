@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for forty years. I know what it wants.\n\nMy 10.1 mu splits the way it always has \u2014 about 7 mu for the wheat-maize rotation, the other 3 mu for cotton. The wheat-maize land double-crops on itself, so I get three harvests across the year on essentially the same ground.\n\n**Wheat:** I plant in mid-October after the summer maize comes off. I'll use the improved Jimai variety the seed station sells \u2014 I've used it for years, it does well here. I plough before planting, same as always. Three irrigations: the winter water before freeze-up, the jointing water in April, and the grain-fill water in May. I'll put down base fertilizer with the planting, then top-dress urea at jointing. Three spray passes \u2014 herbicide in winter, then fungicide and aphid spray in spring. Should get around 450 jin per mu if the weather cooperates.\n\n**Maize:** Goes in right after wheat harvest in June, no time to waste. Hybrid seed, same brand as last few years. I do rotary tillage after wheat stubble \u2014 no time or energy to plough in summer. Three irrigations. Heavy nitrogen because maize drinks it. Two pesticide passes for stem borer and armyworm. Target 550 jin per mu.\n\n**Cotton:** This is the hard one. My son keeps saying drop it, too much work. But I know cotton and those 3 mu still bring decent cash. Hybrid seed, plough in spring. Cotton needs more water and more spraying than anything \u2014 I'll irrigate five times and spray seven times for bollworm, aphids, red spider mite. It wears me out but I've been doing it since I was young.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"Seven mu runs the wheat-maize double-crop rotation that has anchored my income for decades \u2014 winter wheat planted in October with plough tillage and three irrigations, followed immediately by hybrid summer maize using rotary tillage to save time and energy between harvests. The remaining three mu stays in cotton despite the labor burden, because I know the crop well and it provides cash income distinct from grain price swings; with family off-farm I push through the seven spray passes alone. Fertilizer rates follow what I have found reliable over forty years on this soil, with nitrogen weighted toward maize and potassium weighted toward cotton. All three crops rely on well irrigation to buffer the unreliable summer rainfall of southern Hebei.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "Seven mu runs the wheat-maize double-crop rotation that has anchored my income for decades \u2014 winter wheat planted in October with plough tillage and three irrigations, followed immediately by hybrid summer maize using rotary tillage to save time and energy between harvests. The remaining three mu stays in cotton despite the labor burden, because I know the crop well and it provides cash income distinct from grain price swings; with family off-farm I push through the seven spray passes alone. Fertilizer rates follow what I have found reliable over forty years on this soil, with nitrogen weighted toward maize and potassium weighted toward cotton. All three crops rely on well irrigation to buffer the unreliable summer rainfall of southern Hebei."
+  },
+  "elapsed_seconds": 51.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_10",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou my whole life. I know the North China Plain \u2014 the soil here is deep alluvial loam, good for grain but the aquifer has been dropping for years. That weighs on me every time I open an irrigation valve.\n\nI'm 62, my sons have moved to the city, so I'm managing 20 mu mostly alone with some seasonal hired help. The plan hasn't changed much in thirty years because the land and market haven't given me reason to change it: **winter wheat followed by summer maize on the same ground**. That's what this county does. That's what the soil is set up for. That's what the grain traders buy.\n\n**Wheat (October planting):** I'll use Jimai 22 \u2014 an improved variety that's been reliable here for disease resistance and yield in our climate. I apply fertilizer in two passes: most of it worked into the soil before planting, then a topdress at jointing when the plant tells me it needs nitrogen. I've cut back to two irrigations \u2014 at jointing and heading \u2014 because I've seen neighbors drain their wells and I don't want that for my grandchildren's land. Three pesticide passes: a pre-emergence herbicide, a spring broadleaf application, and a combined fungicide-aphicide spray before harvest.\n\n**Maize (June planting, same 20 mu):** I go straight in with no-tillage after the wheat combine rolls through \u2014 saves time and keeps moisture in. Zhengdan 958 hybrid, it's stable, the seed company supports it locally. Summer rains usually carry the maize through; I'll irrigate once at silking only if the forecast is dry. Maize doesn't need much hand-holding compared to wheat.\n\nI'm not chasing maximum yield. I'm chasing reliable yield with manageable input costs and water use.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I farm 20 mu in Quzhou County using the standard winter wheat \u2013 summer maize double-cropping rotation that dominates the North China Plain. I choose certified improved wheat (Jimai 22) for its proven disease resistance and a stable hybrid maize (Zhengdan 958) that the local market accepts. Fertilizer is applied in split doses to reduce runoff and match crop uptake. I deliberately limit wheat irrigation to two events \u2014 jointing and heading \u2014 because groundwater depletion in Hebei is a long-term threat I take seriously, and summer rainfall is usually sufficient for maize except at silking. No-tillage on the maize keeps soil moisture and cuts labor cost now that I work alone. These choices reflect decades of experience with local conditions, a preference for input efficiency over maximum yield, and concern for sustaining the land for the next generation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I farm 20 mu in Quzhou County using the standard winter wheat \u2013 summer maize double-cropping rotation that dominates the North China Plain. I choose certified improved wheat (Jimai 22) for its proven disease resistance and a stable hybrid maize (Zhengdan 958) that the local market accepts. Fertilizer is applied in split doses to reduce runoff and match crop uptake. I deliberately limit wheat irrigation to two events \u2014 jointing and heading \u2014 because groundwater depletion in Hebei is a long-term threat I take seriously, and summer rainfall is usually sufficient for maize except at silking. No-tillage on the maize keeps soil moisture and cuts labor cost now that I work alone. These choices reflect decades of experience with local conditions, a preference for input efficiency over maximum yield, and concern for sustaining the land for the next generation."
+  },
+  "elapsed_seconds": 57.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_4",
+  "tier": 1,
+  "provider": "claude"
+}

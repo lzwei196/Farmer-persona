@@ -1,0 +1,74 @@
+{
+  "raw_response": "I've farmed these same 6 mu for 50 years. Never went to school, can't read the writing on the fertilizer bags, but I know this soil better than any book. I'm 70 now, and my back aches when the weather turns. My son works construction in Handan, sends home some money every few months. Six people in the house, including two grandkids. We need the cotton for cash and the maize to feed the pig and for eating money.\n\nI stopped doing that wheat-maize double crop years ago \u2014 too much rushing for an old man, and I can't handle harvesting wheat in the June heat then planting maize the same week. So this year, same as last year: 3 mu of cotton and 3 mu of spring maize. Split right down the middle.\n\n**Cotton:** I'll plant around April 22, when the elm trees leaf out. That's my calendar. I buy the seed from the supply shop in town, the same kind my younger brother used last year, about 30 yuan per mu. For fertilizer, I put down one big bag of that compound stuff for every mu and a half \u2014 two bags for the 3 mu. That's what I've always done. If the plants look yellow in July I might throw on a handful of urea, but probably not; fertilizer got expensive again this year. I'll water twice from the well: once after planting if the spring wind dries the soil out, and once when the white flowers open. The electricity for the pump costs too much to water more than that. I'll spray for worms four times \u2014 the bollworms and red spiders never miss a year. Picking is the hard part. My wife and I do most of it, but if the bolls open heavy, I'll hire two women from the village for 5 days at 100 yuan a day. Last year I got 260 kg of seed cotton per mu. This year I hope for 280, but you never know.\n\n**Maize:** I'll plant around May 1, after the cotton is in the ground. Hybrid seed, about 25 yuan per mu. One big bag of compound fertilizer for every 2 mu \u2014 so one and a half bags for the 3 mu. That's it for fertilizer. Maybe throw some urea when the plants are knee-high if we get good rain, but I probably won't spend the money. Water twice if July and August are dry. One spray of herbicide when the maize is small to kill the weeds. My wife and I can handle all the maize work ourselves, no hired help. We should get 400 to 450 kg per mu if the summer storms don't flatten it.\n\nAll together \u2014 seeds, fertilizer, medicine for the plants, electricity for pumping water, and maybe some hired picking \u2014 I reckon about 2,100 yuan. My son sent money home last month, but my granddaughter needs things for school, and my wife's medicine isn't cheap. I can't pour everything into the field. Better to have some cash in the mattress than all of it tied up in the dirt.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"field_area_mu\": 3,\n      \"planting_date\": \"April 22\",\n      \"harvest_date\": \"September to October, multiple picks\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 30,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base application of compound fertilizer at planting; possible topdress with urea at flowering if plants look weak\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary till once with walking tractor, then level by hand\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 5,\n      \"yield_expectation_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"spring maize\",\n      \"field_area_mu\": 3,\n      \"planting_date\": \"May 1\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"single base application of compound fertilizer at planting\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary till once with walking tractor, then level by hand\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 420\n    }\n  ],\n  \"total_input_cost_yuan\": 2100,\n  \"reasoning_summary\": \"I split my 6 mu between cotton and spring maize because double-cropping wheat and maize is too much work at my age. Cotton brings cash but needs hired help for picking and lots of spraying for worms. Maize is easier and feeds the family pig. I kept fertilizer low because prices went up and I need cash in hand for my wife's medicine and my granddaughter's school. I irrigate only twice per crop because well pumping costs electricity money. I expect about the same yield as last year if the weather holds.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "field_area_mu": 3,
+        "planting_date": "April 22",
+        "harvest_date": "September to October, multiple picks",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 30,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base application of compound fertilizer at planting; possible topdress with urea at flowering if plants look weak",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary till once with walking tractor, then level by hand",
+        "labor_family_days": 20,
+        "labor_hired_days": 5,
+        "yield_expectation_kg_per_mu": 280,
+        "nitrogen_kg_per_mu": 12,
+        "area_mu": 3,
+        "expected_yield_kg_per_mu": 280,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5
+      },
+      {
+        "crop": "spring maize",
+        "field_area_mu": 3,
+        "planting_date": "May 1",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "single base application of compound fertilizer at planting",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary till once with walking tractor, then level by hand",
+        "labor_family_days": 8,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 3,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4
+      }
+    ],
+    "total_input_cost_yuan": 2100,
+    "reasoning_summary": "I split my 6 mu between cotton and spring maize because double-cropping wheat and maize is too much work at my age. Cotton brings cash but needs hired help for picking and lots of spraying for worms. Maize is easier and feeds the family pig. I kept fertilizer low because prices went up and I need cash in hand for my wife's medicine and my granddaughter's school. I irrigate only twice per crop because well pumping costs electricity money. I expect about the same yield as last year if the weather holds."
+  },
+  "elapsed_seconds": 249.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_4",
+  "tier": 4,
+  "provider": "kimi"
+}

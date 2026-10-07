@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming for 60 years. I am 70 now, and I only finished primary school, but I can read the numbers on the fertilizer bags and calculate costs. My family has 16.9 mu of good flat land in Quzhou, all in wheat-maize rotation. There are three of us at home \u2014 me, my wife, and my son. We have our own well for irrigation, which is important because rain alone is never enough here.\n\nFor **winter wheat**, I will rotary till the land before sowing in October. I use improved wheat seed, about 30 jin per mu \u2014 that is half a bag. I learned long ago that planting too deep or too shallow costs yield, so I set the machine carefully. For base fertilizer, I spread one bag of compound fertilizer per mu \u2014 100 jin \u2014 the kind the dealer sells for wheat, with more phosphorus in it. Then in spring, when the wheat turns green, I topdress with urea. I put 50 to 60 jin per mu. I would rather put a bit too much than see the wheat turn yellow and lose grain. Fertilizer costs money, but a bad harvest is a disaster. I irrigate three times: once after sowing for winter survival, once at jointing, and once at grain filling. I spray three times \u2014 herbicide once after emergence, insecticide once in spring, and fungicide once if the weather turns humid. I expect about 480 kg per mu if frost does not damage it.\n\nFor **summer maize**, after the wheat harvest in early June, I plant directly without tilling. Everyone around here does no-tillage for maize \u2014 it saves time and diesel, and the wheat stubble keeps moisture. I use hybrid maize seed, one package per mu, about 2.5 kg. I put 80 jin of compound fertilizer per mu at planting, the high-nitrogen kind meant for maize. When the maize reaches the big trumpet stage, if it looks pale, I spread another 30 jin of urea per mu. I irrigate twice \u2014 once after sowing if the soil is dry, and once at grain filling. I spray twice: herbicide once early, insecticide once when the borers come. I expect about 500 kg per mu.\n\nI watch what my neighbors do. If most people around me apply a certain amount, I do the same \u2014 I do not want to take risks. With 16.9 mu, I am not the biggest farmer, but I am not small either. I hire a combine for harvest, but fertilizing and spraying I mostly do myself. Every yuan matters, but going hungry matters more.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 3.5,\n      \"potassium_kg_per_mu\": 3.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I manage 16.9 mu of wheat-maize rotation in Quzhou County. For wheat, I rotary till before October sowing, apply 100 jin per mu of compound base fertilizer plus 50-60 jin per mu of urea topdressing, irrigate three times, and spray three times. For maize, I use no-tillage after wheat harvest, plant hybrid seed with 80 jin per mu of compound fertilizer, add 30 jin per mu of urea if needed, irrigate twice, and spray twice. I would rather apply slightly more fertilizer than risk yield loss, and I follow what successful neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 3.5,
+        "potassium_kg_per_mu": 3.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I manage 16.9 mu of wheat-maize rotation in Quzhou County. For wheat, I rotary till before October sowing, apply 100 jin per mu of compound base fertilizer plus 50-60 jin per mu of urea topdressing, irrigate three times, and spray three times. For maize, I use no-tillage after wheat harvest, plant hybrid seed with 80 jin per mu of compound fertilizer, add 30 jin per mu of urea if needed, irrigate twice, and spray twice. I would rather apply slightly more fertilizer than risk yield loss, and I follow what successful neighbors do."
+  },
+  "elapsed_seconds": 299.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_10",
+  "tier": 3,
+  "provider": "kimi"
+}

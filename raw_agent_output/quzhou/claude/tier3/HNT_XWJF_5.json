@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 72 years, and my back does not bend like before. My son is in town working, only my wife and I are here. So I plan carefully \u2014 cannot do too much heavy work.\n\nI have 9 mu. I will do it like last year, that worked fine. 3 mu I keep in cotton \u2014 I have grown cotton my whole life, I know it. The other 6 mu is my wheat and maize land, same ground, two crops in one year. That is how we do it here in Quzhou.\n\n**Wheat (6 mu):** I plant in October after maize comes off. The seed shop sells good improved wheat, Jimai type, neighbors all use it. Before ploughing I put one bag of compound fertilizer per mu \u2014 that is 50 kg of the 15-15-15 kind. Then at green-up in spring I topdress urea, about half a bag per mu (20 kg). I water the winter water, then green-up water, then the grain-filling water \u2014 three times. I spray twice, once for weeds in spring, once for aphids before harvest. Last year I got about 500 kg per mu. Should be the same.\n\n**Maize (6 mu):** Right after wheat harvest in June I plant maize directly into the stubble \u2014 no ploughing, saves money and time. Hybrid seed, Zhengdan or what the dealer has. At planting I put compound fertilizer 40 kg per mu down with the seed. When stalks are tall, big-bell stage, I topdress urea half a bag per mu (25 kg). Two waters is enough if rain comes. Spray once for armyworm, maybe twice if it is bad. Get about 550 kg per mu.\n\n**Cotton (3 mu):** Cotton is troublesome but I know it. Plant late April. Bt seed \u2014 used to be we sprayed many times for bollworm, now Bt seed is better. Before planting I plough and put one bag compound per mu. At flowering I add urea 15 kg per mu. Cotton still needs spraying for aphids, spider mites, sometimes bollworm \u2014 four or five times. Water three times. About 250 kg seed cotton per mu.\n\nI do not want to waste fertilizer money, but too little and the yield drops \u2014 that is worse. Better one bag extra than a bad crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am 72, only my wife helps me, so I keep to what I know \u2014 3 mu cotton and 6 mu of wheat-maize rotation, same as last year. For wheat and maize I use one bag of compound fertilizer per mu as base, then topdress urea in spring or at big-bell stage. Maize I plant no-till into wheat stubble to save labor. Cotton needs more spraying because of bollworm and aphids, but Bt seed has made it easier than before. I would rather use a little extra fertilizer than risk a thin crop \u2014 a bad harvest hurts more than wasting some bags.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am 72, only my wife helps me, so I keep to what I know \u2014 3 mu cotton and 6 mu of wheat-maize rotation, same as last year. For wheat and maize I use one bag of compound fertilizer per mu as base, then topdress urea in spring or at big-bell stage. Maize I plant no-till into wheat stubble to save labor. Cotton needs more spraying because of bollworm and aphids, but Bt seed has made it easier than before. I would rather use a little extra fertilizer than risk a thin crop \u2014 a bad harvest hurts more than wasting some bags."
+  },
+  "elapsed_seconds": 44.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_5",
+  "tier": 3,
+  "provider": "claude"
+}

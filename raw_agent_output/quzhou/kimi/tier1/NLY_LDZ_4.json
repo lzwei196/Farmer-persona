@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 36-year-old farmer with no schooling. My family has 8 mu of land in Quzhou County, Hebei, and I have farmed this land since I was a teenager. Around here, every household grows winter wheat followed by summer maize \u2014 that is the only system that makes sense for our land, water, and climate on the North China Plain. I thought about cotton, but it needs sixteen or more pesticide sprays and too much hand labor, and with my family size I cannot manage it. Wheat and maize are reliable: the seed shops, fertilizer dealers, and grain buyers all come to our village.\n\nThis autumn, after National Day, I will plant improved wheat seeds on all 8 mu. Before sowing I will rotary till the soil to prepare a good seedbed. I will apply urea and compound fertilizer, about 6 kg of nitrogen per mu. I do not buy separate phosphate or potash \u2014 the compound fertilizer has a little, and our soil has always produced fine wheat without it. I will irrigate four times: once before winter, then at green-up, at jointing, and during grain filling. I will spray pesticides five times to control weeds, insects, and the diseases that always come when the weather turns humid.\n\nIn early June, right after the wheat harvest, I will immediately plant hybrid maize \u2014 I will buy Denghai or Nongda hybrids from the shop in town because they yield much better than ordinary seed. I will plant directly into the wheat stubble without tilling; this saves diesel and time, and everybody in the village does it now. I will not add extra nitrogen to the maize because the wheat fertilizer residue is still in the soil, and I will put down a little compound at planting. I will irrigate twice and spray pesticides about four times. That is my plan \u2014 simple, proven, and what I know works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have 8 mu of land and grow the standard wheat-maize double-cropping system used by every farmer I know in Quzhou County. I apply nitrogen fertilizer to wheat but rely on residual fertility for maize, use improved wheat seeds and hybrid maize seeds, rotary till for wheat and no-till for maize, and avoid cotton because it requires too much labor and pesticide for my household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have 8 mu of land and grow the standard wheat-maize double-cropping system used by every farmer I know in Quzhou County. I apply nitrogen fertilizer to wheat but rely on residual fertility for maize, use improved wheat seeds and hybrid maize seeds, rotary till for wheat and no-till for maize, and avoid cotton because it requires too much labor and pesticide for my household."
+  },
+  "elapsed_seconds": 174.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_4",
+  "tier": 1,
+  "provider": "kimi"
+}

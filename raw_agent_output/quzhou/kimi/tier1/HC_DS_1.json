@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 65 this year, and I've been farming my 8 mu in Quzhou County since I was a teenager. My wheat went into the ground last October like it always does \u2014 I don't even think about whether to plant wheat, it's just what we do here. I'll follow it with summer maize right after harvest in early June; that's the double-cropping system my father did, and his father before him. I finished middle school, so I can read the extension pamphlets the county sends around, but I've learned that what works in the booklet and what works on my field aren't always the same. The extension fellow says 15 kg of nitrogen per mu for wheat, but I've been putting down about 18 kg for years and it hasn't let me down. I'd rather waste a little money on extra fertilizer than lose a whole crop \u2014 a bad year hurts more than a good year helps, and at my age I can't afford a big failure. I buy improved wheat seeds every few years because saved seed loses vigor, but I don't buy new ones every single year \u2014 they're not cheap. For maize I always buy hybrid seed, no question; the yield difference is too big to ignore. I irrigate wheat three times: green-up around Qingming, once at jointing, and once at grain filling. Pumping water costs electricity and the meter keeps going up, but three times is what my neighbors do and it keeps things stable. For maize I'll plan two irrigations, maybe cut it to one if the summer rains are generous. I spray herbicide on the wheat once in early spring, and I'll watch for insects and rust \u2014 if I see them I'll spray once for each, so that's three applications total. For maize I'll do a herbicide and one insecticide spray, two in total. I rotary-tilled before wheat planting last fall, and for maize there won't be time to till \u2014 the window between wheat harvest and maize planting is maybe five days, so I'll plant no-till. I got about 450 kg per mu from wheat last year and 500 kg per mu from maize, and I expect about the same this year if the weather cooperates. It's just me and my wife doing most of the work now, but our son sends money back from the city, so I can afford the inputs without cutting corners.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I stick with wheat-maize double cropping on my 8 mu because it's the only system I know that makes full use of this land. I put slightly more nitrogen than the extension recommends because I've learned that cutting fertilizer is riskier than wasting a few yuan. I buy improved wheat seeds every few years and hybrid maize seeds every year. I irrigate wheat three times and maize twice, spray pesticides when I see problems, and plant maize no-till because the harvest-to-planting window is too tight for any tillage. I expect around 450 kg/mu from wheat and 500 kg/mu from maize based on what I got last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I stick with wheat-maize double cropping on my 8 mu because it's the only system I know that makes full use of this land. I put slightly more nitrogen than the extension recommends because I've learned that cutting fertilizer is riskier than wasting a few yuan. I buy improved wheat seeds every few years and hybrid maize seeds every year. I irrigate wheat three times and maize twice, spray pesticides when I see problems, and plant maize no-till because the harvest-to-planting window is too tight for any tillage. I expect around 450 kg/mu from wheat and 500 kg/mu from maize based on what I got last year."
+  },
+  "elapsed_seconds": 231.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HC_DS_1",
+  "tier": 1,
+  "provider": "kimi"
+}

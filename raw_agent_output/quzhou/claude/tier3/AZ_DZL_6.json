@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think through this as the farmer would.\n\n---\n\nI farm 20 mu alone \u2014 my son works in the city, my wife helps sometimes but mostly it's me. That's a lot of land for one man at 59. I have to be careful not to take on too much work.\n\nMy land is wheat-maize rotation on most of it, like everyone around here in Quzhou. Cotton I keep on a smaller piece \u2014 maybe 4 mu \u2014 because cotton needs more hands for picking and spraying. If I plant too much cotton I can't handle it. Wheat and maize, the machine does most of the work \u2014 I pay the combine man when harvest comes.\n\nSo: 16 mu wheat-maize, 4 mu cotton.\n\n**Wheat (winter, 16 mu):**\nI plant after maize comes off in October. I use improved seed \u2014 the Jimai variety the agro-shop sells, everyone uses it now, gives good yield. Last year I put 2 bags of compound fertilizer (50 kg each, 15-15-15) per mu before ploughing, plus 1 bag urea (50 kg, so 23 kg N) at green-up in spring. That's around 22 kg N, 15 kg P, 15 kg K per mu roughly. I don't want to cut back \u2014 wheat price is not high but if yield drops I lose more than the fertilizer costs. I irrigate 3 times \u2014 before winter, at jointing, and at grain-filling. My well is deep enough. Spray 2 times for aphids and rust. Last year I got around 500 kg per mu, I expect similar.\n\n**Maize (summer, 16 mu):**\nAfter wheat in June. I no-till plant directly \u2014 saves me days of work, I can't plough alone on 16 mu in the short window. Hybrid seed, Zhengdan or Xianyu type, the dealer tells me which is good. I put one bag compound fertilizer at planting and one bag urea at big-trumpet stage \u2014 about 18 kg N per mu. Maize doesn't need as much water as wheat \u2014 1-2 irrigations if the rains are poor. One spray for borer. I usually get 550-600 kg per mu.\n\n**Cotton (spring, 4 mu):**\nThis one I work harder on. Plough it properly \u2014 cotton needs loose soil. I use improved Bt cotton seed \u2014 it saves many sprays, worth the extra seed cost. Compound fertilizer 50 kg per mu as base, urea at bud stage and flowering \u2014 total around 16 kg N per mu. Irrigate 3 times. Still need to spray 4-5 times for aphids, spider mites, even with Bt. Pick by hand \u2014 takes weeks, I sometimes hire a neighbor's wife. Yield maybe 250 kg seed cotton per mu if weather is okay.\n\nI won't change much from last year. What worked worked. Fertilizer got more expensive but I can't cut \u2014 my land is tired, needs feeding.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 20 mu alone so I split it: 16 mu wheat-maize rotation because the machines handle most of that work, and 4 mu cotton because cotton needs too many hands for picking and spraying. I keep fertilizer rates close to what I used last year \u2014 about 2 bags compound plus 1 bag urea per mu for wheat, same for maize, and a bit less for cotton. Fertilizer is expensive but cutting it to save money is how you lose a harvest, and that costs far more. I use improved wheat seed and hybrid maize like all my neighbors, Bt cotton to save on spraying. No-till for maize after wheat \u2014 I don't have time to plough 16 mu by myself in that short window. My yields should be around what I got last year if weather cooperates.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 20 mu alone so I split it: 16 mu wheat-maize rotation because the machines handle most of that work, and 4 mu cotton because cotton needs too many hands for picking and spraying. I keep fertilizer rates close to what I used last year \u2014 about 2 bags compound plus 1 bag urea per mu for wheat, same for maize, and a bit less for cotton. Fertilizer is expensive but cutting it to save money is how you lose a harvest, and that costs far more. I use improved wheat seed and hybrid maize like all my neighbors, Bt cotton to save on spraying. No-till for maize after wheat \u2014 I don't have time to plough 16 mu by myself in that short window. My yields should be around what I got last year if weather cooperates."
+  },
+  "elapsed_seconds": 37.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_6",
+  "tier": 3,
+  "provider": "claude"
+}

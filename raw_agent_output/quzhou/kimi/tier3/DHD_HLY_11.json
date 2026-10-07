@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 56, I only finished primary school, but I've worked these 12.4 mu for 35 years. My father taught me, and now I mostly do what I did last year, adjusting a little when I see a neighbor get better results. My son and daughter-in-law work in a factory in Handan, so they send some money home, but I still count every yuan on inputs.\n\nI split my land into two parts: 10 mu I rotate wheat and maize, and 2.4 mu by the house I plant cotton.\n\n**Wheat:** Last year my wheat gave me just over 500 kg per mu. I use improved seed \u2014 the kind the dealer said is good for this area, not too expensive. I rotary till before sowing. For fertilizer, I put one 50 kg bag of compound fertilizer per mu at sowing, then topdress with half a bag of urea when the wheat turns green. That is about 20 kg of nitrogen per mu, plus 8 kg each of phosphorus and potassium. I will not reduce it \u2014 fertilizer is costly, but a bad wheat harvest is a disaster. I irrigate three times: once when it turns green, once at jointing, and once when the grain is filling. The well has enough water. I spray three times: herbicide first, then once for rust and once for aphids. I expect 520 kg per mu if the weather holds.\n\n**Maize:** After wheat harvest in June, I plant hybrid maize, the kind my neighbor Lao Zhang uses. I do not till for maize \u2014 I plant straight into the wheat stubble with the no-till machine. Saves diesel and time. I put about 40 kg of compound fertilizer per mu at planting, then side-dress with half a bag of urea when the plants are knee-high. That comes to about 18 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I irrigate twice if it does not rain: once after planting to get it up, and once when it is tasseling. Two sprays: herbicide and one for armyworm. I expect around 600 kg per mu.\n\n**Cotton:** My 2.4 mu of cotton is harder work. I plough that plot deep because cotton roots need loose soil. I use hybrid Bt cotton seed. For fertilizer, I use one bag of compound per mu plus some extra potassium chloride because the dealer said cotton needs it for the bolls. That is about 16 kg nitrogen, 7 kg phosphorus, and 12 kg potassium per mu. I irrigate three times \u2014 seedling, flowering, and boll stage. Cotton needs more spraying, about five times, for bollworm, aphids, and whitefly. Last year I got 250 kg per mu of seed cotton; this year I hope for 260 kg.\n\nI do not try new tricks. If it worked last year and my neighbors do the same, I do it again.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I have 12.4 mu and I split it into 10 mu for wheat-maize rotation and 2.4 mu for cotton. I use improved wheat seed and hybrid maize and cotton seeds. I fertilize based on what I did last year: one bag of compound fertilizer per mu for each crop, plus urea topdressing for wheat and maize, and extra potassium for cotton. I would rather spend a bit more on fertilizer than risk losing yield. I irrigate wheat three times, maize twice, and cotton three times from my well. I rotary till for wheat, plough deep for cotton, and plant maize with no-tillage into wheat stubble. I spray wheat three times, maize twice, and cotton five times. My expected yields are 520 kg/mu for wheat, 600 kg/mu for maize, and 260 kg/mu for seed cotton, which is what I got last year or a little better if the weather cooperates.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I have 12.4 mu and I split it into 10 mu for wheat-maize rotation and 2.4 mu for cotton. I use improved wheat seed and hybrid maize and cotton seeds. I fertilize based on what I did last year: one bag of compound fertilizer per mu for each crop, plus urea topdressing for wheat and maize, and extra potassium for cotton. I would rather spend a bit more on fertilizer than risk losing yield. I irrigate wheat three times, maize twice, and cotton three times from my well. I rotary till for wheat, plough deep for cotton, and plant maize with no-tillage into wheat stubble. I spray wheat three times, maize twice, and cotton five times. My expected yields are 520 kg/mu for wheat, 600 kg/mu for maize, and 260 kg/mu for seed cotton, which is what I got last year or a little better if the weather cooperates."
+  },
+  "elapsed_seconds": 85.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_HLY_11",
+  "tier": 3,
+  "provider": "kimi"
+}

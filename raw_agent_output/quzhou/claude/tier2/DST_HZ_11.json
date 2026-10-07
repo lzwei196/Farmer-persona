@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 30 years. I know what it can do. My 9 mu is split the way I always do it \u2014 6 mu on wheat and maize together in rotation, 3 mu on cotton for the cash. Seven mouths to feed, so I can't gamble too much, but I need the cotton money for school fees and household expenses.\n\n**Wheat (winter, 6 mu):** I'll sow Jimai or a similar improved variety the village supply co-op carries \u2014 not traditional seed, too low-yielding, but I can't afford the premium hybrid wheat. I'll plough deep before sowing, apply the usual base fertilizer, and top-dress nitrogen at jointing. I water three times: before sowing, at jointing, and at heading. Two pesticide rounds \u2014 one for aphids in spring, one for rust and powdery mildew. I've seen 450 jin per mu most years when the weather is decent.\n\n**Maize (summer, 6 mu):** Right after wheat harvest I rotary-till and sow hybrid maize \u2014 Zhengdan 958 or whatever the supply station has this year. Hybrid is worth it for maize, the yield difference is real. Summer rain helps but I'll irrigate at tasseling and grain-fill if it's dry. Nitrogen is the main fertilizer \u2014 split it: some at planting, some at tasseling. Two pesticide passes for corn borer and armyworm.\n\n**Cotton (spring-summer, 3 mu):** Cotton is trouble but it pays. I plant Bt hybrid seed \u2014 reduces the bollworm headache somewhat but I still spray often. More water than wheat or maize, more fertilizer too especially potassium. I'll plough this field. Seven or eight pesticide applications is normal \u2014 spider mites come in August if it's hot and dry, aphids early on, stink bugs later. I expect around 250 jin seed cotton per mu if nothing goes badly wrong.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 6 mu to a winter wheat\u2013summer maize rotation for household grain and stable income, and keep 3 mu in cotton as the main cash crop. Wheat gets improved seed and three irrigations with split nitrogen; maize gets hybrid seed and rotary tillage to speed up the turnaround after wheat harvest; cotton gets hybrid Bt seed, heavy potassium, five irrigations, and seven pesticide passes because pest pressure on cotton is high in this area. Yield expectations are based on what I have seen on my own fields over many years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate 6 mu to a winter wheat\u2013summer maize rotation for household grain and stable income, and keep 3 mu in cotton as the main cash crop. Wheat gets improved seed and three irrigations with split nitrogen; maize gets hybrid seed and rotary tillage to speed up the turnaround after wheat harvest; cotton gets hybrid Bt seed, heavy potassium, five irrigations, and seven pesticide passes because pest pressure on cotton is high in this area. Yield expectations are based on what I have seen on my own fields over many years."
+  },
+  "elapsed_seconds": 45.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_11",
+  "tier": 2,
+  "provider": "claude"
+}

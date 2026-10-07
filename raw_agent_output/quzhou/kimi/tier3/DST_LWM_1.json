@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 71 years old. I never went to school, not one day. My father taught me to farm, and I have been doing it for 50 years on my 5 mu in Quzhou. I do not know how to read, but I know my land.\n\nFor wheat, I plant in October. I buy the improved seeds from the shop in town \u2014 the kind everyone in my village uses, not the old seeds we saved ourselves. Before planting, I spread one full bag of compound fertilizer on each mu, 50 jin per mu. That is what I did last year and that is what I will do this year. Then in March, when the wheat turns green and starts growing fast, I topdress with half a bag of urea per mu, about 25 jin. Fertilizer is expensive now, over 100 yuan for a bag of compound and urea is not cheap either. But I would rather spend the money and have thick wheat than save a few yuan and watch my crop grow thin. A bad harvest is a disaster; wasting some fertilizer is just a cost. I irrigate three times: once before winter if the ground is dry, once in spring when I spread the urea, and once when the grain is filling. The pump costs electricity money, but wheat needs water. I spray pesticide twice \u2014 once for weeds when the wheat is still small, and once for bugs when the ears are coming out. After I cut the maize in September, I hire the tractor man to come rotary till the field so it is soft for wheat planting. Last year I got about 450 kg per mu, about 900 jin. This year I expect the same if the weather does not turn bad.\n\nFor maize, I plant right after the wheat comes off in June. There is no time to plow \u2014 if you wait, the corn will not grow enough before autumn. I use hybrid seeds, one bag covers about 2 mu. When planting, I put down about half a bag of compound fertilizer per mu, 25 jin. Then when the corn is up to my knee, I spread about 30 jin of urea per mu. I irrigate twice \u2014 once after planting if the ground is dry, and once when the tassels come out. Some years the summer rain is enough, but last year was a bit dry so I will plan for two times. I spray herbicide once after planting, and insecticide once when I see the worms coming. I do not till for maize, I plant directly in the wheat stubble. Last year my maize made about 500 kg per mu, 1000 jin. I hope for the same.\n\nMy son works in a factory in Handan and sends money home, so I can buy the inputs. But I still watch what Old Wang does next door \u2014 he has 6 mu and farms the same way. If he changes something and it works, I pay attention. This year I am doing what I did last year. Change is risky, and at my age I cannot afford to lose a crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 8.0,\n      \"potassium_kg_per_mu\": 8.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18.0,\n      \"phosphorus_kg_per_mu\": 4.0,\n      \"potassium_kg_per_mu\": 4.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I am a 71-year-old farmer with no schooling and 50 years on my 5 mu in Quzhou. I learned everything from my father and from watching my neighbors. I do what I did last year because change is risky and I cannot afford a bad harvest. For wheat, I apply one 50-jin bag of compound fertilizer per mu before planting and half a bag of urea per mu in spring, irrigate three times, spray twice, and rotary till after the maize comes off. For maize, I plant hybrid seeds immediately after wheat harvest with no tillage, put down half a bag of compound fertilizer at planting and 30 jin of urea when the corn is knee-high, irrigate twice, and spray twice. I would rather spend extra on fertilizer than risk losing yield, but I still count every yuan because my farm is small and every input is real money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 8.0,
+        "potassium_kg_per_mu": 8.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18.0,
+        "phosphorus_kg_per_mu": 4.0,
+        "potassium_kg_per_mu": 4.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I am a 71-year-old farmer with no schooling and 50 years on my 5 mu in Quzhou. I learned everything from my father and from watching my neighbors. I do what I did last year because change is risky and I cannot afford a bad harvest. For wheat, I apply one 50-jin bag of compound fertilizer per mu before planting and half a bag of urea per mu in spring, irrigate three times, spray twice, and rotary till after the maize comes off. For maize, I plant hybrid seeds immediately after wheat harvest with no tillage, put down half a bag of compound fertilizer at planting and 30 jin of urea when the corn is knee-high, irrigate twice, and spray twice. I would rather spend extra on fertilizer than risk losing yield, but I still count every yuan because my farm is small and every input is real money."
+  },
+  "elapsed_seconds": 172.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_1",
+  "tier": 3,
+  "provider": "kimi"
+}

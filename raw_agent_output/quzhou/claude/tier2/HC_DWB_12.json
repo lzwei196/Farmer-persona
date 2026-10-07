@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for more than half a century. My father farmed before me, and I learned by watching and doing. I don't read extension pamphlets. I do what has worked, what my neighbors do, and what my body can still manage at 70 \u2014 I live alone now, so I have to be realistic about how much work I can take on.\n\nMy 10.1 mu splits into two parts in my head: about 7 mu of my flat, good ground runs wheat in winter then maize right after harvest \u2014 same plot, back to back, like always. The other 3.1 mu I keep in cotton. I've thought about dropping the cotton because it wears me out, but it brings cash when prices are decent, so I'll keep it a bit smaller this year and manage it carefully.\n\n**Wheat:** I'll plant in October, after I rotary-till the field following maize harvest. I use the same improved variety I've bought from the village co-op for the last several years \u2014 not hybrid, just a reliable semi-dwarf. I'll put down compound fertilizer at sowing, then come back with urea at jointing. I'll irrigate three times: once at sowing to get a good stand, once at jointing, once at heading. Two pesticide sprays \u2014 one for disease around heading, one if I see aphids. Expecting around 450 jin per mu, maybe a bit more if spring rains cooperate.\n\n**Maize:** Right after I cut the wheat in June, I seed the maize directly into the stubble \u2014 no time for tillage in summer, the rains are coming and the season is short. I use Zhengdan 958 hybrid seed, same as most people around here. I apply more nitrogen for maize \u2014 it's hungry. Two irrigations if summer rain is thin, maybe just one if it's a wet year. Two pesticide passes. Should yield around 550 jin per mu.\n\n**Cotton:** I plough this plot in spring, plant in late April. I use the hybrid Bt cotton seed \u2014 it saves me some pest work, though I still need to spray. Cotton needs a lot of attention I can't always give. I'll water four times \u2014 it's thirsty in the flowering and boll-setting stage. Six pesticide applications is what I usually end up doing. I expect maybe 250 jin of seed cotton per mu if the summer is not too hot and dry.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer farming alone in Quzhou County manages 10.1 mu split between a 7 mu wheat-maize rotation plot and 3.1 mu of cotton. Wheat is sown in October after rotary tillage, using an improved semi-dwarf variety with moderate fertilizer inputs and three irrigations, targeting 450 kg/mu. Summer maize follows immediately after wheat harvest using no-tillage direct seeding with hybrid seed and two irrigations, targeting 550 kg/mu. Cotton on the separate plot is spring-ploughed, planted in late April using hybrid Bt cotton to reduce but not eliminate pest management burden, with four irrigations and six pesticide applications, targeting 250 kg/mu of seed cotton. Input levels and practices reflect decades of local convention and the physical constraints of a single elderly farmer managing without hired help.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer farming alone in Quzhou County manages 10.1 mu split between a 7 mu wheat-maize rotation plot and 3.1 mu of cotton. Wheat is sown in October after rotary tillage, using an improved semi-dwarf variety with moderate fertilizer inputs and three irrigations, targeting 450 kg/mu. Summer maize follows immediately after wheat harvest using no-tillage direct seeding with hybrid seed and two irrigations, targeting 550 kg/mu. Cotton on the separate plot is spring-ploughed, planted in late April using hybrid Bt cotton to reduce but not eliminate pest management burden, with four irrigations and six pesticide applications, targeting 250 kg/mu of seed cotton. Input levels and practices reflect decades of local convention and the physical constraints of a single elderly farmer managing without hired help."
+  },
+  "elapsed_seconds": 58.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_12",
+  "tier": 2,
+  "provider": "claude"
+}

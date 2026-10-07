@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for 50 years. I know every stretch of it. My knees are not what they were, two of my children work in Handan now, so I do not have the hands I once did. I plan carefully to match the work to what I can manage, hiring day labor only at wheat harvest and cotton picking.\n\nMy 14 mu splits the way it always has: 8 mu in the wheat-maize rotation, 6 mu in cotton. The rotation ground is the better-watered plots near the well. Cotton goes on the outer fields where I can move the pump line.\n\n**Wheat:** I sow in mid-October after the maize comes off. I buy the same improved winter wheat variety from the village supply cooperative \u2014 it has been consistent here for years and the local station recommends it. I apply compound fertilizer at sowing and urea at jointing. I irrigate four times: before sowing to settle the seedbed, at winter dormancy break, jointing, and heading. Two pesticide passes \u2014 one herbicide in winter, one aphid-and-rust spray in April. Rotary tillage to work in the maize stubble before sowing.\n\n**Maize:** I plant immediately after wheat harvest in early June, no-till direct seeding. I cannot afford to let the ground sit in July heat. My son-in-law's uncle has the no-till planter and I use it. Hybrid seed, same Zhengdan 958 I have used for years. One herbicide pass, one pest spray mid-season. Three irrigations: at sowing, tasseling, and grain fill if August is dry.\n\n**Cotton:** Ploughed in April, transplanted seedlings in early May. I use the Bt bollworm-resistant improved variety \u2014 it has cut my spraying enormously since I switched fifteen years ago. Cotton needs the most water and the most attention. Four irrigations, three pesticide applications mainly for aphids and spider mites since the bollworm is mostly handled by the variety. I apply more potassium than on the grain crops \u2014 cotton responds well to it here. Picking runs September and October. I hire two neighbors for the first picking flush.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"A 72-year-old farmer with 50 years of experience in Quzhou County allocates his 14 mu as 8 mu in a winter wheat\u2013summer maize double-crop rotation and 6 mu in spring-planted cotton. Labor constraints from aging and off-farm family migration drive the choice of no-tillage direct seeding for summer maize to reduce peak workload. Improved Bt cotton reduces pesticide burden relative to conventional varieties. All three crops rely on well irrigation, with wheat receiving the most irrigations due to its long winter growing period. Fertilizer rates reflect local practice and soil familiarity built over decades. Hired day labor covers wheat harvest and cotton picking, the two most labor-intensive operations.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "A 72-year-old farmer with 50 years of experience in Quzhou County allocates his 14 mu as 8 mu in a winter wheat\u2013summer maize double-crop rotation and 6 mu in spring-planted cotton. Labor constraints from aging and off-farm family migration drive the choice of no-tillage direct seeding for summer maize to reduce peak workload. Improved Bt cotton reduces pesticide burden relative to conventional varieties. All three crops rely on well irrigation, with wheat receiving the most irrigations due to its long winter growing period. Fertilizer rates reflect local practice and soil familiarity built over decades. Hired day labor covers wheat harvest and cotton picking, the two most labor-intensive operations."
+  },
+  "elapsed_seconds": 64.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_7",
+  "tier": 2,
+  "provider": "claude"
+}

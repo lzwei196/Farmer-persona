@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 75 years old. I only finished primary school, but I have farmed these 5 mu in Quzhou for 55 years, and my father taught me everything before that. I do not need books to tell me what this soil wants. I watch what my neighbors do, and I copy what gives a good harvest.\n\nLast year my wheat gave about 1000 jin per mu and my corn gave about 1200 jin per mu, so I will do almost the same again this year. For wheat, I sow the improved seed that I buy from the county supply store, about 15 kg per mu. Before sowing, I spread three 50-kg bags of compound fertilizer \u2014 the one with 15% in each nutrient \u2014 across my 5 mu, which is 30 kg per mu. I work it into the soil with the rotary tiller. When the wheat turns green in March, I top-dress three 50-kg bags of urea on the same 5 mu, another 30 kg per mu. I know some people say that is a lot, but I would rather waste some fertilizer than wake up to a thin crop. A bad harvest is a disaster; a few extra yuan on urea is only money. I irrigate three times from my well: the wintering water before the cold comes, the greening water when the wheat wakes up, and the grain-filling water in May. I spray twice: once for weeds in early spring, and once for aphids or rust if I see them on the leaves.\n\nFor maize, I plant hybrid seed right after wheat harvest in early June, about 2.5 kg per mu. I put down two 50-kg bags of compound fertilizer on the 5 mu, 20 kg per mu, before sowing. At big trumpet stage, I spread three 50-kg bags of urea, 30 kg per mu. I irrigate twice if the sky does not give rain \u2014 once when the plants are knee-high and once when the tassels come out. I spray herbicide once after sowing, and once for corn borer when I see moths flying at night. I rotary till for both crops because two years ago I tried no-till for corn and the wheat straw choked the planter so badly I lost half a day fixing it. Every bag of fertilizer and every hour of pumping costs real money, but I cannot afford to gamble with the crop. My neighbor Lao Zhang does about the same on his 6 mu, and his crops always look green and heavy, so I stick with what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18.3,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.8,\n      \"phosphorus_kg_per_mu\": 3.0,\n      \"potassium_kg_per_mu\": 3.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 5 mu for 55 years and I trust what worked last year. I would rather spend extra on fertilizer than risk losing yield, so I apply three bags of compound fertilizer and three bags of urea per 5 mu for wheat, and two bags of compound plus three bags of urea for maize. I irrigate wheat three times and maize twice from my well, spray twice per crop, and use the rotary tiller because no-till caused trouble with straw before. I copy my neighbors and stick with improved wheat seed and hybrid maize seed.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18.3,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.8,
+        "phosphorus_kg_per_mu": 3.0,
+        "potassium_kg_per_mu": 3.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed these 5 mu for 55 years and I trust what worked last year. I would rather spend extra on fertilizer than risk losing yield, so I apply three bags of compound fertilizer and three bags of urea per 5 mu for wheat, and two bags of compound plus three bags of urea for maize. I irrigate wheat three times and maize twice from my well, spray twice per crop, and use the rotary tiller because no-till caused trouble with straw before. I copy my neighbors and stick with improved wheat seed and hybrid maize seed."
+  },
+  "elapsed_seconds": 152.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_14",
+  "tier": 3,
+  "provider": "kimi"
+}

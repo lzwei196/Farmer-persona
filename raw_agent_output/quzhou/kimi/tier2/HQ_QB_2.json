@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 74 years old and have farmed these 3 mu in Quzhou for half a century. I know every inch of this land. My wife and I manage the farm together, and we rely on the wheat-maize double crop because that is what the North China Plain gives us. We have well water, so we can irrigate when the rains fail, but I do not waste water or money on inputs we do not need.\n\nFor wheat, I will sow an improved variety in early October right after rotary tillage. I will spread compound fertilizer as a base dressing and top-dress with urea at the jointing stage in spring. In total, that comes to about 15 kg of nitrogen, 5 kg of phosphorus, and 5 kg of potassium per mu. I will irrigate three times from my well: once before winter freeze to protect the seedlings, once at jointing, and once at heading. I will spray herbicide once after sowing and fungicide once in late spring if the humidity rises. With good weather, I expect around 480 kg per mu.\n\nFor maize, time is tight after the wheat comes off in early June. I will sow hybrid maize seed directly into the stubble without ploughing\u2014no-tillage keeps moisture and saves labor when the summer heat is pressing. I will apply compound fertilizer at sowing and side-dress nitrogen at the big trumpet stage, for about 14 kg nitrogen, 4 kg phosphorus, and 4 kg potassium per mu. I will irrigate twice, at the jointing/big trumpet stage and during grain filling. Two pesticide sprays will handle weeds and corn borer. I expect about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have managed this 3 mu wheat-maize rotation for 50 years in Quzhou, and I stick with what the land and climate demand. For the winter wheat crop, I use an improved variety with rotary tillage, moderate fertilizer rates, three well irrigations at critical stages, and two pesticide sprays, expecting about 480 kg per mu. For summer maize, I immediately sow hybrid seed using no-tillage after wheat harvest to save time, apply slightly less fertilizer, irrigate twice during the fast growth and grain filling periods, and spray twice for pests and weeds, expecting about 550 kg per mu. At 74 years old with just my wife and me, this plan is intensive enough to feed us and leave some grain to sell, but not so ambitious that we cannot manage it ourselves.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have managed this 3 mu wheat-maize rotation for 50 years in Quzhou, and I stick with what the land and climate demand. For the winter wheat crop, I use an improved variety with rotary tillage, moderate fertilizer rates, three well irrigations at critical stages, and two pesticide sprays, expecting about 480 kg per mu. For summer maize, I immediately sow hybrid seed using no-tillage after wheat harvest to save time, apply slightly less fertilizer, irrigate twice during the fast growth and grain filling periods, and spray twice for pests and weeds, expecting about 550 kg per mu. At 74 years old with just my wife and me, this plan is intensive enough to feed us and leave some grain to sell, but not so ambitious that we cannot manage it ourselves."
+  },
+  "elapsed_seconds": 81.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_2",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old. I started farming when I was twenty, so I have forty-five years doing this. I only went to primary school, but I know my land. My family has four people and 7.7 mu. I grow wheat and maize on 5 mu \u2014 same plot, wheat in winter then maize in summer after we harvest the wheat in June. The other 2.7 mu is cotton. Quzhou ground is good for cotton, I have grown it a long time.\n\nI do what worked last year. I watch my neighbors. Old Li across the way uses about the same fertilizer as me, and his crops always look strong, so I copy him. For wheat, I use improved seed. I rotary till the ground first. For fertilizer, I put one 50-kilogram bag of compound fertilizer on each mu before planting. Then in spring when the wheat turns green, I spread half a bag of urea on each mu. That is about 20 kilograms of nitrogen per mu total. I know it might be a little more than needed, but I would rather waste some fertilizer than lose yield. A bad harvest is a disaster. I irrigate three times: before winter freeze, at jointing, and when the grain is filling. I spray pesticide twice. I expect about 450 kilograms per mu if the weather is decent.\n\nFor maize, I plant hybrid seed straight into the wheat stubble after harvest, no deep tillage. I put about 60 jin of compound fertilizer in the rows when planting, then topdress with 50 jin of urea per mu when the plants are knee-high. That works out to about 16 kilograms of nitrogen per mu. I irrigate twice, maybe three times if it is very dry. Two pesticide sprays. I expect around 550 kilograms per mu.\n\nFor cotton, I rotary till first. I plant improved seed. I use one bag of compound fertilizer per mu as base, then add more urea twice during the growing season. Cotton needs more potassium, so I make sure the fertilizer has enough \u2014 I end up using about 8 kilograms of potassium per mu. I irrigate three times and spray four times because bollworm always comes. I expect about 280 kilograms of seed cotton per mu.\n\nEverything costs money. Fertilizer, seed, pesticide, electricity for the well \u2014 it all adds up. But I have learned that trying to save too much on inputs is foolish. I adjust a little from last year, but not much. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I based my plan on what I did last year because last year was decent and change is risky. I use one 50kg bag of compound fertilizer per mu for wheat and cotton as base, then topdress with urea. For maize I plant directly into wheat stubble with no-tillage, using compound at planting and urea at knee-high stage. I irrigate wheat three times, maize twice, cotton three times. Cotton gets more pesticide sprays because bollworm is always a problem. I would rather spend a bit more on fertilizer than risk losing yield, since a bad harvest is worse than wasting some inputs. I watch what my neighbors do and mostly copy them.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I based my plan on what I did last year because last year was decent and change is risky. I use one 50kg bag of compound fertilizer per mu for wheat and cotton as base, then topdress with urea. For maize I plant directly into wheat stubble with no-tillage, using compound at planting and urea at knee-high stage. I irrigate wheat three times, maize twice, cotton three times. Cotton gets more pesticide sprays because bollworm is always a problem. I would rather spend a bit more on fertilizer than risk losing yield, since a bad harvest is worse than wasting some inputs. I watch what my neighbors do and mostly copy them."
+  },
+  "elapsed_seconds": 240.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_1",
+  "tier": 3,
+  "provider": "kimi"
+}

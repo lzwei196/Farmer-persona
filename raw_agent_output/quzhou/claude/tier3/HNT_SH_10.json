@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am thinking about this year like I always do \u2014 same as last year, maybe a little adjustment.\n\nMy 5 mu is not big. I am 78 now, my back is not what it was, but wheat and maize I have done forty years. The boy works in town, sends money, but the land is still mine to manage. My wife helps at busy times, and I pay the machine man from the village for plowing and harvest.\n\n**Wheat** \u2014 I sow in early October after the maize comes off. I buy the same hybrid seed the shop sells, Jimai type, everyone in my row plants it. I use about 15 kg per mu of seed because my land is a bit tired and I want thick stand.\n\nFor fertilizer, at sowing I spread one bag of compound fertilizer (15-15-15), that is 50 jin, about 25 kg per mu. Then at greening in spring I topdress urea, maybe 20 kg per mu. Total nitrogen comes to maybe 13-14 kg per mu. I do not want to spend more \u2014 urea is not cheap now. But I would rather put a little extra than see yellow wheat.\n\nIrrigation from the well \u2014 winter water before freezing, then spring at jointing, then once at grain filling. Three times usually. If rain is good maybe two, but I do not trust the sky.\n\nPesticide \u2014 spray once for aphids in spring, once mixed herbicide. Two times.\n\nPlowing \u2014 I hire the rotary machine, same as everyone. 40 yuan per mu.\n\nYield I hope for 500 kg per mu. Last year I got 480.\n\n**Maize** \u2014 sow right after wheat harvest in June, no-till direct seeding with the machine, everyone does this now, saves time because the season is tight. Hybrid seed, Zhengdan or Xianyu type, whatever the shop has fresh.\n\nCompound fertilizer at sowing, 25 kg per mu. Then urea at big trumpet stage, 20 kg per mu. Nitrogen about 14 kg.\n\nIrrigation \u2014 if June is dry I water once after sowing. Maybe one more at tasseling. Two times usually.\n\nPesticide \u2014 one spray for corn borer, one herbicide after sowing. Two times.\n\nYield \u2014 I aim for 550 kg per mu. Maize usually does better than wheat on my land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5 mu the same way my neighbors do \u2014 hybrid seed from the village shop, one bag of compound fertilizer at sowing plus urea topdressing, and rotary plowing for wheat, no-till direct seeding for maize to save time between seasons. I would rather put a little extra urea than see the crop go yellow, because a bad harvest costs more than some wasted fertilizer. Three irrigations for wheat from my well, two for maize if the sky is dry. I am 78 and I do what has worked for forty years, adjusting only a little from last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 5 mu the same way my neighbors do \u2014 hybrid seed from the village shop, one bag of compound fertilizer at sowing plus urea topdressing, and rotary plowing for wheat, no-till direct seeding for maize to save time between seasons. I would rather put a little extra urea than see the crop go yellow, because a bad harvest costs more than some wasted fertilizer. Three irrigations for wheat from my well, two for maize if the sky is dry. I am 78 and I do what has worked for forty years, adjusting only a little from last year."
+  },
+  "elapsed_seconds": 32.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_10",
+  "tier": 3,
+  "provider": "claude"
+}

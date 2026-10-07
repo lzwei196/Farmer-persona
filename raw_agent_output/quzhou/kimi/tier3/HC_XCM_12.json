@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 53 this year. I have farmed these 15 mu in Quzhou for 30 years, since I married into this village. I only finished primary school. My household has three people \u2014 my husband does some off-farm work in Handan city, and my son works in Beijing and sends money home. But this land is what we live on.\n\nI have 10 mu that I plant wheat in autumn and maize in summer. The other 5 mu I grow cotton. That is what I have always done.\n\nFor wheat: Last October I sowed an improved variety, about 35 jin per mu. Before sowing I hired the tractor for rotary tillage and put down one 50-kilogram bag of compound fertilizer per mu. Now it is spring and the wheat is greening up. I will top-dress with one 50-kilogram bag of urea per mu \u2014 half at jointing and half at heading. I irrigate three times with my well: jointing water, heading water, and grain-filling water. I spray pesticide twice. I expect about 550 jin per mu. Three years ago I cut back to half a bag of urea to save money and lost almost 100 jin per mu. Never again. Fertilizer is 90 to 100 yuan a bag, but losing yield is a disaster.\n\nFor summer maize: After wheat harvest in early June, I plant hybrid maize seed, about 5 jin per mu. I do not till again \u2014 direct seeding into the wheat stubble. At sowing I put one bag of compound fertilizer per mu. When the plants are knee-high I top-dress with three-quarters of a bag of urea. I irrigate twice if the rain is not enough. Two pesticide sprays. I expect 600 jin per mu, maybe 650 if the weather is good.\n\nFor cotton on the 5 mu: In spring I plough the field deep, then sow hybrid cotton seed about 2.5 jin per mu. Cotton needs more care. I put one bag of compound fertilizer per mu at planting, then top-dress with urea and extra potassium fertilizer when it flowers. I irrigate twice and spray pesticide four times because bollworms love cotton. I expect around 320 jin of seed cotton per mu.\n\nI decide this way because this is what I did last year and it worked. I watch my neighbors. If Lao Zhang and the others use one bag per mu, I use one bag per mu. I do not try new things unless I see them work on someone else's field first. I know fertilizer costs are high, but I would rather spend the money than risk a bad harvest. A bad harvest means I lose everything; wasting a little fertilizer is just a cost I can bear.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 320\n    }\n  ],\n  \"reasoning_summary\": \"I farm 15 mu in Quzhou the same way I have for 30 years. My 10 mu of wheat gets rotary tillage, one bag of compound fertilizer at sowing, one bag of urea split between jointing and heading, three irrigations from my well, and two pesticide sprays, because cutting back on urea three years ago cost me 100 jin per mu. My summer maize is direct-seeded into wheat stubble with no tillage, one bag of compound at sowing, three-quarters of a bag of urea at knee height, two irrigations, and two sprays. My 5 mu of cotton is ploughed in spring, sown with hybrid seed, fed with compound plus extra potassium at flowering, watered twice, and sprayed four times for bollworm. I copy what works and what my neighbors do \u2014 fertilizer is expensive, but a bad harvest is a disaster I cannot afford.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 320
+      }
+    ],
+    "reasoning_summary": "I farm 15 mu in Quzhou the same way I have for 30 years. My 10 mu of wheat gets rotary tillage, one bag of compound fertilizer at sowing, one bag of urea split between jointing and heading, three irrigations from my well, and two pesticide sprays, because cutting back on urea three years ago cost me 100 jin per mu. My summer maize is direct-seeded into wheat stubble with no tillage, one bag of compound at sowing, three-quarters of a bag of urea at knee height, two irrigations, and two sprays. My 5 mu of cotton is ploughed in spring, sown with hybrid seed, fed with compound plus extra potassium at flowering, watered twice, and sprayed four times for bollworm. I copy what works and what my neighbors do \u2014 fertilizer is expensive, but a bad harvest is a disaster I cannot afford."
+  },
+  "elapsed_seconds": 184.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_12",
+  "tier": 3,
+  "provider": "kimi"
+}

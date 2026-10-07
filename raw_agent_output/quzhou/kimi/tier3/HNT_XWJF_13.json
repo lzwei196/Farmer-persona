@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old. I finished primary school. I have farmed these 9 mu in Quzhou County for 40 years. My family has 7 people, and some of my sons work off-farm in the city, so we have a little cash coming in, but I still count every yuan. I learned everything I know by doing it and watching the men who farm around me.\n\nI divide my land like this: 5 mu I rotate wheat and maize on, and 4 mu I plant cotton.\n\nFor wheat, I already sowed it last October, but I am managing it now. Before sowing, I ran the rotary tiller twice to break up the soil. I put 30 jin of improved wheat seed per mu. For fertilizer, I spread one bag \u2014 100 jin \u2014 of 18-18-9 compound fertilizer when I sowed. Then at green-up time in March, I topdress with half a bag of urea, about 40 jin. I irrigate 4 times total: once in winter if the weather is dry, and three more times in spring, using my well. I spray pesticide 3 times \u2014 twice for insects, once for weeds. Last year I got about 900 jin per mu, and I expect about the same this year if we do not get a late frost.\n\nFor maize, I plant it right after wheat harvest in early June. I buy hybrid seed, the kind like Denghai or Nongda, 1 package per mu, about 2.5 kg. I do not till the soil for maize \u2014 I plant directly into the wheat stubble to save time and fuel. I put 80 jin of 28-6-6 compound fertilizer in the row at sowing. When the plants are knee-high, I topdress with 30 jin of urea. I irrigate twice \u2014 once right after sowing if it does not rain within a week, and once when the tassels come out. I spray 3 times for insects and weeds. If the summer rain comes at the right time, I get 950 jin per mu.\n\nCotton is on the other 4 mu. I rotary till in April and sow 3 jin of improved cotton seed per mu. Cotton needs a lot of food, so I put 100 jin of 26-10-15 compound fertilizer at sowing. When it starts flowering in July, I spread another 80 jin of 15-15-15 compound. I irrigate 3 times. But cotton is a headache for pests \u2014 I spray 12 times from June to August, sometimes every 10 days, for bollworm and aphids. The spray costs money, but if I skip even one, the bolls drop and the crop is finished. I expect about 500 jin of seed cotton per mu.\n\nI do what I did last year because it worked. I watch my neighbors. If Old Wang puts more fertilizer on his wheat, I put more on mine. I would rather waste a little fertilizer than risk losing yield. A bad harvest is a disaster for my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22.5,\n      \"phosphorus_kg_per_mu\": 9.0,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 900\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18.1,\n      \"phosphorus_kg_per_mu\": 2.4,\n      \"potassium_kg_per_mu\": 2.4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 11.0,\n      \"potassium_kg_per_mu\": 13.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5 mu of wheat-maize rotation and 4 mu of cotton. For wheat I rotary till and use 30 jin of improved seed per mu, one bag of 18-18-9 compound fertilizer at sowing and half a bag of urea at green-up, irrigate 4 times, spray 3 times, and expect 900 jin per mu. For summer maize I plant hybrid seed right after wheat harvest without tilling, use 80 jin of 28-6-6 compound and 30 jin of urea, irrigate twice, spray 3 times, and expect 950 jin per mu. Cotton takes more work: 3 jin of improved seed per mu, 100 jin of 26-10-15 compound at sowing and 80 jin of 15-15-15 at flowering, 3 irrigations, and 12 sprays for bollworm and aphids, expecting 500 jin of seed cotton per mu. I do what I did last year because it worked, and I watch my neighbors to make sure I do not fall behind.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22.5,
+        "phosphorus_kg_per_mu": 9.0,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 900
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18.1,
+        "phosphorus_kg_per_mu": 2.4,
+        "potassium_kg_per_mu": 2.4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 11.0,
+        "potassium_kg_per_mu": 13.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm 5 mu of wheat-maize rotation and 4 mu of cotton. For wheat I rotary till and use 30 jin of improved seed per mu, one bag of 18-18-9 compound fertilizer at sowing and half a bag of urea at green-up, irrigate 4 times, spray 3 times, and expect 900 jin per mu. For summer maize I plant hybrid seed right after wheat harvest without tilling, use 80 jin of 28-6-6 compound and 30 jin of urea, irrigate twice, spray 3 times, and expect 950 jin per mu. Cotton takes more work: 3 jin of improved seed per mu, 100 jin of 26-10-15 compound at sowing and 80 jin of 15-15-15 at flowering, 3 irrigations, and 12 sprays for bollworm and aphids, expecting 500 jin of seed cotton per mu. I do what I did last year because it worked, and I watch my neighbors to make sure I do not fall behind."
+  },
+  "elapsed_seconds": 163.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_13",
+  "tier": 3,
+  "provider": "kimi"
+}

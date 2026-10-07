@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land in Quzhou my whole life. My mother farmed it, and her mother before her. I know this soil. We get maybe 500mm of rain a year here, most of it in summer. The land is flat, the wells are deep, and the government still gives wheat and maize subsidies. I'm not going to gamble at my age.\n\nI have about 8 mu of cropland plus a small kitchen garden. My husband helps during planting and harvest, but mostly it's me. I can't manage anything complicated \u2014 I need crops I can handle with the neighbors' rotary tiller and the shared irrigation pump.\n\n**Wheat-maize rotation is what I do.** It's what everyone does here. I plant winter wheat in October after the summer maize comes off, then maize goes back in after wheat harvest in June. Same 7 mu, twice a year.\n\nI'll buy the improved wheat seed from the county seed station \u2014 the same variety I used last year, \u77ee\u629758 or whatever they're selling now that's certified. For maize I'll get \u90d1\u5355958 hybrid bags, same as always. These varieties have good yields and I know how to manage them.\n\nFor fertilizer, I put down compound fertilizer as base before planting, then add urea as topdressing. I probably put more than I need to \u2014 my neighbor always says I waste money on fertilizer \u2014 but I'd rather not risk a bad harvest. I'll water wheat four times: once in late November to protect from frost, once at jointing, once at heading, once during grain fill. Maize only needs water once or twice since the summer rains usually help.\n\nI'll spray pesticide for aphids and powdery mildew on wheat, and once on maize for stem borer. The agricultural station truck comes around and tells us when.\n\nI also keep about half a mu for vegetables \u2014 garlic, cabbage, some chili \u2014 for the household and to sell at the village market when there's surplus.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"vegetables (garlic/cabbage/chili)\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 1200\n    }\n  ],\n  \"reasoning_summary\": \"A 50-year-old farmer in Quzhou County, Hebei, with primary education follows the dominant winter wheat\u2013summer maize double-cropping rotation on 7 mu of flatland, using county-supplied improved wheat seed and hybrid maize seed she trusts from experience. Fertilizer inputs are on the high side of local norms \u2014 a common risk-aversion strategy among smallholders who cannot afford yield shortfalls. Wheat receives four irrigations to manage the semi-arid climate; maize relies mainly on summer rainfall with one supplemental watering. Maize is direct-seeded into wheat stubble without tillage to save labor. A small vegetable plot supports household consumption and modest local market sales.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "vegetables (garlic/cabbage/chili)",
+        "season": "spring",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 6,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 1200
+      }
+    ],
+    "reasoning_summary": "A 50-year-old farmer in Quzhou County, Hebei, with primary education follows the dominant winter wheat\u2013summer maize double-cropping rotation on 7 mu of flatland, using county-supplied improved wheat seed and hybrid maize seed she trusts from experience. Fertilizer inputs are on the high side of local norms \u2014 a common risk-aversion strategy among smallholders who cannot afford yield shortfalls. Wheat receives four irrigations to manage the semi-arid climate; maize relies mainly on summer rainfall with one supplemental watering. Maize is direct-seeded into wheat stubble without tillage to save labor. A small vegetable plot supports household consumption and modest local market sales."
+  },
+  "elapsed_seconds": 43.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_3",
+  "tier": 1,
+  "provider": "claude"
+}

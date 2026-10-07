@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 40 years old, been farming since I was a teenager. I only finished primary school, so I don't read those technical booklets from the county. I learn from my own fields and from watching what my neighbors do. My family has about 10 mu of good flat land here in Quzhou. Every year I do the same thing most families do: I plant winter wheat in the fall on 7 mu, harvest it in early June, and immediately put summer maize in the same ground \u2014 there's maybe one week between crops, so there's no time to plough. Everyone uses no-tillage for maize here. The wheat is already in the ground from last October. I bought improved wheat seeds from the village dealer, and I rotary tilled before planting. Now in spring I need to topdress with urea \u2014 about half a bag per mu when the wheat turns green \u2014 and irrigate three or four times before harvest. I also keep 3 mu for cotton. It's a lot more work with all the spraying \u2014 bollworms and aphids are a constant problem, so I spray maybe 15 or 16 times \u2014 but my wife helps, and cotton prices have been decent the last couple years. I buy improved cotton seeds and rotary till in April. For fertilizer, I use compound fertilizer bags from the dealer. I don't know the exact kilograms of N and P, but I put about one bag of compound per mu for each crop, and extra urea for wheat topdressing. Water costs money because we pump from tube wells, so I don't over-irrigate, but I also don't want to lose yield. My neighbor Liu uses about the same amounts and he gets roughly 900 jin of wheat, 1000 jin of maize, and 500-600 jin of seed cotton per mu. I expect about the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what I know works: wheat-maize double cropping on 7 mu because it is the standard system here and gives us two harvests per year, and 3 mu of cotton because my family has experience with it and the income helps. I use improved wheat seeds and hybrid maize seeds from the local dealer. I rotary till before wheat and cotton, but maize is planted no-tillage right after wheat harvest because the window is too tight. Fertilizer comes from compound bags plus urea topdress for wheat. I irrigate wheat four times, maize three times, and cotton twice because pumping water costs money. Cotton needs many pesticide sprays for insects, while wheat and maize need about four each. My yield expectations come from what I and my neighbors usually get.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick with what I know works: wheat-maize double cropping on 7 mu because it is the standard system here and gives us two harvests per year, and 3 mu of cotton because my family has experience with it and the income helps. I use improved wheat seeds and hybrid maize seeds from the local dealer. I rotary till before wheat and cotton, but maize is planted no-tillage right after wheat harvest because the window is too tight. Fertilizer comes from compound bags plus urea topdress for wheat. I irrigate wheat four times, maize three times, and cotton twice because pumping water costs money. Cotton needs many pesticide sprays for insects, while wheat and maize need about four each. My yield expectations come from what I and my neighbors usually get."
+  },
+  "elapsed_seconds": 160.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_9",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm only 2 mu here in Quzhou, so I have to think carefully. Last year my wheat gave me maybe 450 kg per mu, and maize around 550 kg. Not bad. I will do mostly what I did before \u2014 changing things is risky when you only have 2 mu.\n\nFor **wheat**, I plant in October after the maize is out. I buy improved seed from the dealer in town \u2014 everyone around me uses Jimai or Shiluan type, they do well here. I use about 15 kg seed per mu. Before planting I plough once and spread compound fertilizer \u2014 one bag of 15-15-15 per mu, that is 50 kg. Then in spring when the wheat starts jointing I broadcast urea, about 20 kg per mu. My neighbor Old Wang uses a bit more but I cannot afford to waste. I water the wheat 3 times \u2014 once before winter so roots go deep, once at jointing in spring, once when the grain is filling. I have a well so water is not the big worry, but diesel costs money. I spray pesticide 2 times \u2014 once for aphids in spring, once when the head is forming to stop the scab disease.\n\nFor **summer maize**, right after wheat harvest in June I do not plough, just no-till and plant into the stubble \u2014 this saves labor and the ground keeps moisture. I use hybrid seed, Zhengdan or Xianyu type, whatever the dealer has, about 2.5 kg per mu. I put one bag of compound fertilizer 15-15-15 at planting, 50 kg per mu. Then when the maize is at knee-height I topdress urea, maybe 25 kg per mu. Maize eats more nitrogen than wheat, I have seen this. I water 2 times if the rain does not come \u2014 at the big trumpet stage and when the grain is filling. I spray pesticide 2 times \u2014 once for the borer worm, once if armyworm comes.\n\nMy 2 mu is small. The whole fertilizer bill is maybe 600-700 yuan total for both crops. I cannot go cheaper because if yield drops I lose more than I save. Two of my sons work in the city and send money, so I keep farming mainly for our own grain and a little to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.7,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"My farm is only 2 mu so I stick close to what worked last year. For wheat I plough, use improved seed, one bag of 15-15-15 compound at planting plus 20 kg urea topdressing in spring, water 3 times from my well, spray twice for aphids and scab. For maize I no-till straight into the wheat stubble to save labor and moisture, use hybrid seed, same bag of compound at planting plus 25 kg urea at knee-height because maize needs more nitrogen, water twice if rain is short, spray twice for borer and armyworm. I rather spend a little extra on fertilizer than risk a bad harvest \u2014 my sons work in the city but we still want our own grain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.7,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "My farm is only 2 mu so I stick close to what worked last year. For wheat I plough, use improved seed, one bag of 15-15-15 compound at planting plus 20 kg urea topdressing in spring, water 3 times from my well, spray twice for aphids and scab. For maize I no-till straight into the wheat stubble to save labor and moisture, use hybrid seed, same bag of compound at planting plus 25 kg urea at knee-height because maize needs more nitrogen, water twice if rain is short, spray twice for borer and armyworm. I rather spend a little extra on fertilizer than risk a bad harvest \u2014 my sons work in the city but we still want our own grain."
+  },
+  "elapsed_seconds": 30.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_2",
+  "tier": 3,
+  "provider": "claude"
+}

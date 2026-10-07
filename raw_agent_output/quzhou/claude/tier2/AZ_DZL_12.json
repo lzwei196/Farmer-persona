@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for thirty years. My father farmed before me. I know what works here in Quzhou \u2014 the soil, the wells, the seasons. I don't read books about farming. I watch the land, I talk to neighbors, I do what has worked.\n\nMy 6.5 mu all rotates wheat to maize, same land both seasons. That's how everyone here does it. The wheat goes in October after maize harvest, maize goes in June after wheat. Same fields, two crops a year.\n\n**On wheat:** I'll plant an improved variety \u2014 something like what the village seed shop sells that neighbors have been using. Not the old traditional stuff; everyone switched years ago because yields are better. I'll rotary till after maize harvest to break up the stalks, then apply base fertilizer \u2014 compound fertilizer plus some urea. I do this by feel, same amounts I've used for years. I irrigate before winter sets in, again at jointing, and once at heading \u2014 three times usually, maybe four if spring is dry. I spray herbicide once in spring and watch for rust; if I see it spreading I spray again. I expect around 450 jin per mu, maybe more if weather cooperates.\n\n**On maize:** After wheat harvest, I plant hybrid seed \u2014 I've used hybrids for maize my whole life basically, the yields are far better. I seed directly without tilling, saves time and my son and daughter-in-law aren't always home to help. I apply fertilizer in two goes \u2014 base and then topdress when plants are knee-high. I irrigate two or three times depending on summer rain. I spray herbicide right after planting and maybe once more for pests. I aim for around 550 jin per mu.\n\nMy kids working in the city send money back, so I'm not desperate, but I still want good yields. I won't change what's been working.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 56-year-old farmer with 30 years of experience in Quzhou County manages 6.5 mu under a full wheat-maize rotation, applying practices learned through decades of local farming rather than formal training. Wheat is planted with improved varieties in October following rotary tillage to incorporate maize residue, with three well irrigations, heavy conventional nitrogen application split between basal and topdressing, and two pesticide passes for weeds and disease. Maize is direct-seeded after wheat harvest using hybrid seed without tillage to reduce labor in a household where some members work off-farm, with two irrigations from the well, moderately high nitrogen inputs applied in two splits, and two pesticide applications for weed and pest control. Yield expectations reflect local averages under conventional management, informed by personal experience and neighbor benchmarks rather than extension advice.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 56-year-old farmer with 30 years of experience in Quzhou County manages 6.5 mu under a full wheat-maize rotation, applying practices learned through decades of local farming rather than formal training. Wheat is planted with improved varieties in October following rotary tillage to incorporate maize residue, with three well irrigations, heavy conventional nitrogen application split between basal and topdressing, and two pesticide passes for weeds and disease. Maize is direct-seeded after wheat harvest using hybrid seed without tillage to reduce labor in a household where some members work off-farm, with two irrigations from the well, moderately high nitrogen inputs applied in two splits, and two pesticide applications for weed and pest control. Yield expectations reflect local averages under conventional management, informed by personal experience and neighbor benchmarks rather than extension advice."
+  },
+  "elapsed_seconds": 47.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_12",
+  "tier": 2,
+  "provider": "claude"
+}

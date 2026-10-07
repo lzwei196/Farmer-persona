@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming for just two years, so I mostly watch what my neighbors do and follow the village pattern. I'm 61 now \u2014 my back gives me trouble and my son works in the city, so my wife and I handle most of the field work ourselves. I can't afford to experiment or take risks. The land is 7.7 mu and both crops run on the same plots, rotating.\n\nFor **wheat**: I plant in October after maize harvest. I'll do rotary tillage \u2014 a neighbor lends me his machine \u2014 and use an improved variety the seed shop recommends, not old seed. I'll apply compound fertilizer at planting and urea at jointing. I'm not precise about the amounts; I go by the bag labels and what the village technician told me once. I irrigate at sowing, jointing, and heading \u2014 three times is what everyone here does. I spray herbicide in winter and a fungicide before heading because stripe rust hurt people's fields last year.\n\nFor **maize**: I plant right after wheat harvest in June, usually with a seeder the village cooperative has. I use hybrid seed because yields are better \u2014 even I know that. Fertilizer goes in at planting and again at V6 or so. Summer rain usually helps but I pump once if July goes dry. I spray for fall armyworm because it's been bad lately.\n\nI keep inputs modest \u2014 I'm not running a big operation and every yuan I spend I feel it.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 61-year-old farmer with only two years of experience and primary education in Quzhou County, Hebei follows the local wheat-maize rotation on 7.7 mu with limited household labor. He chooses improved wheat varieties and hybrid maize seed as these are standard in the village and require no special knowledge. Fertilizer rates are moderate, following bag labels and informal extension advice rather than soil testing. Wheat receives three irrigations from the household well at the conventional timings of sowing, jointing, and heading; maize relies mainly on summer rain with one supplemental pump irrigation if needed. Rotary tillage is used for wheat to prepare a good seedbed, while maize is drilled no-till directly into wheat stubble to save labor. Two pesticide applications per crop cover herbicide and the disease or pest most recently seen in the area. Yield expectations are conservative, reflecting the farmer's limited experience and modest input levels.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 61-year-old farmer with only two years of experience and primary education in Quzhou County, Hebei follows the local wheat-maize rotation on 7.7 mu with limited household labor. He chooses improved wheat varieties and hybrid maize seed as these are standard in the village and require no special knowledge. Fertilizer rates are moderate, following bag labels and informal extension advice rather than soil testing. Wheat receives three irrigations from the household well at the conventional timings of sowing, jointing, and heading; maize relies mainly on summer rain with one supplemental pump irrigation if needed. Rotary tillage is used for wheat to prepare a good seedbed, while maize is drilled no-till directly into wheat stubble to save labor. Two pesticide applications per crop cover herbicide and the disease or pest most recently seen in the area. Yield expectations are conservative, reflecting the farmer's limited experience and modest input levels."
+  },
+  "elapsed_seconds": 39.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_5",
+  "tier": 2,
+  "provider": "claude"
+}

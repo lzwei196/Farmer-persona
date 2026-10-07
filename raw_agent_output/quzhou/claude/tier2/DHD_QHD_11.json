@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land since I was 18, and I know Quzhou's soils and seasons as well as I know my own hands. My 9 mu breaks down simply: 6 mu in the wheat-maize rotation that anchors everything, and 3 mu of cotton on the side plot. My husband and I can handle this without hiring labor if I plan it right.\n\n**Wheat (6 mu, winter):** I'll plant Jimai 22 \u2014 I've used it for years and it performs reliably in our alkaline soils. I rotary-till after maize harvest in October, apply compound fertilizer as base, then urea at jointing. Three irrigations: one at sowing to ensure germination, one before winter dormancy, one at jointing. Aphids and rust are predictable problems here, so three pesticide applications \u2014 a herbicide early on, then two more through heading. I expect around 450 kg/mu.\n\n**Maize (6 mu, summer):** Right after wheat harvest in June, I direct-seed Xianyu 335 hybrid \u2014 no plowing, straight into stubble. Time is tight during the wheat-maize handoff. I push nitrogen hard at the V6-V8 stage. Summer rainfall helps, but I'll irrigate twice \u2014 once at silking if it's dry, once at grain fill. Two pesticide passes for armyworm and aphids. Targeting 600 kg/mu.\n\n**Cotton (3 mu, spring/summer):** Cotton is getting harder at my age \u2014 the picking especially. But the market was decent last year and I know this crop. I'll plow this plot in spring, plant hybrid seed. Cotton needs real attention: I'll irrigate four times and stay on top of bollworm and spider mites with seven pesticide applications spread through the season. I expect 250 kg/mu of seed cotton.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate my 9 mu as 6 mu wheat-maize double-crop rotation and 3 mu cotton. The wheat-maize system is mechanizable and reliable \u2014 I use an improved wheat variety suited to Quzhou's alkaline soils with rotary tillage and three irrigations, then no-till direct-seed hybrid maize immediately after wheat harvest to avoid losing planting time. Cotton remains on 3 mu because prices were acceptable last season, but I keep it contained given the heavy pest pressure and picking labor it demands at my age. Fertilizer and irrigation rates reflect 45 years of local experience on well-irrigated North China Plain soils, prioritizing nitrogen at key growth stages for cereals and sustained fertility management for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate my 9 mu as 6 mu wheat-maize double-crop rotation and 3 mu cotton. The wheat-maize system is mechanizable and reliable \u2014 I use an improved wheat variety suited to Quzhou's alkaline soils with rotary tillage and three irrigations, then no-till direct-seed hybrid maize immediately after wheat harvest to avoid losing planting time. Cotton remains on 3 mu because prices were acceptable last season, but I keep it contained given the heavy pest pressure and picking labor it demands at my age. Fertilizer and irrigation rates reflect 45 years of local experience on well-irrigated North China Plain soils, prioritizing nitrogen at key growth stages for cereals and sustained fertility management for cotton."
+  },
+  "elapsed_seconds": 48.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_11",
+  "tier": 2,
+  "provider": "claude"
+}

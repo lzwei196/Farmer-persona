@@ -1,0 +1,40 @@
+{
+  "raw_response": "My fields are small, only 4.5 mu, but I have farmed this wheat-maize rotation for 25 years so I know what works. My wife and I do most of the work ourselves. My son sends money sometimes, but I still count every yuan when I buy fertilizer.\n\nFor wheat, I plant in early October after the maize comes off. I buy the improved seed from the agro-shop in town \u2014 everyone on my lane uses the same variety, \"Jimai\" something, and it gives around 450-500 jin per mu if the weather is kind. Before planting I spread compound fertilizer \u2014 two bags per mu, that is about 50 kg of 15-15-15. Then I use rotary tiller service, 40 yuan per mu. In spring when the wheat stands up at jointing, I topdress one bag of urea per mu, about 20 kg. That puts my nitrogen around 17-18 kg per mu total. A little extra is better than too little \u2014 if the wheat turns yellow, I lose more than the cost of one bag.\n\nFor irrigation, I use the well. Wheat needs winter water before freeze, then jointing water, then grain-filling water \u2014 three times. My neighbor Old Wang sometimes skips the third one but last year his grain was shriveled, so I will not skip. Pesticide I spray twice \u2014 once for aphids and mites in April, once for rust and head blight at heading.\n\nFor maize, I plant right after wheat harvest in mid-June, no tillage, just drill into the stubble. This saves labor and water. I use hybrid seed, the dealer says \"Zhengdan\" type. I put one bag of compound fertilizer in the furrow at planting, then topdress urea at big-bellyball stage, about 15 kg. Maize I water once or twice depending on rain. Summer rain is usually enough. Pesticide twice \u2014 for corn borer and armyworm. Yield maybe 500-550 jin per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    }\n  ],\n  \"reasoning_summary\": \"I farm 4.5 mu of wheat-maize the way I have for many years. For wheat I use two bags of 15-15-15 compound before planting plus one bag of urea at jointing, three irrigations from the well, and two pesticide sprays for aphids and rust \u2014 improved seed gives me about 475 jin per mu. For summer maize I drill hybrid seed straight into the wheat stubble with no tillage, put compound in the furrow and topdress urea at big-belly stage, water once or twice if rain is short, and spray twice for borers and armyworm, expecting around 525 jin. I would rather spend a little extra on one more bag of fertilizer than risk a yellow field \u2014 a lost harvest costs much more than a bag of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      }
+    ],
+    "reasoning_summary": "I farm 4.5 mu of wheat-maize the way I have for many years. For wheat I use two bags of 15-15-15 compound before planting plus one bag of urea at jointing, three irrigations from the well, and two pesticide sprays for aphids and rust \u2014 improved seed gives me about 475 jin per mu. For summer maize I drill hybrid seed straight into the wheat stubble with no tillage, put compound in the furrow and topdress urea at big-belly stage, water once or twice if rain is short, and spray twice for borers and armyworm, expecting around 525 jin. I would rather spend a little extra on one more bag of fertilizer than risk a yellow field \u2014 a lost harvest costs much more than a bag of urea."
+  },
+  "elapsed_seconds": 34.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_13",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 30 years. I know what works here in Quzhou. The soil is medium loam, the summers are hot and dry, and the well gives me reliable water if I manage it carefully. My husband and one of my children work in town, so I manage most of the fieldwork myself, sometimes with hired day labor during cotton picking.\n\nCotton is my income. I plant it every year on my best 5 mu. I'll use the improved Bt variety I've been buying from the township supply cooperative \u2014 I've planted it three years running and it performs. I plough deep in spring, apply base fertilizer, then top-dress at budding and boll-setting. I irrigate about 4 times: before planting to settle moisture, at budding, at peak flowering, and once more if August is dry. Aphids and bollworm are always trouble \u2014 I spray roughly 7 times through the season. I expect around 240 kg of seed cotton per mu if the weather holds.\n\nFor the 2 mu of maize \u2014 I plant it in June after the spring work on cotton is settled. I use hybrid seed, the kind sold locally. Maize doesn't need as much care. I apply urea twice and irrigate 2\u20133 times from the well. Two or three pesticide passes handle the corn borer and leaf diseases. I expect around 500 kg per mu.\n\nThe 1 mu of mungbean is more for the household and a little cash. I've grown the same local variety my mother grew. Mungbeans fix their own nitrogen so I go light on fertilizer. One or two irrigations, a couple of pesticide sprays. Maybe 100 kg per mu if it's a decent year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 100\n    }\n  ],\n  \"reasoning_summary\": \"Cotton is my main cash crop and gets the most land, care, and inputs across 5 mu using an improved Bt variety with deep ploughing, split fertilizer applications, 4 well irrigations, and 7 pesticide passes targeting aphids and bollworm. Summer maize fills 2 mu with hybrid seed, moderate fertilizer, and 3 irrigations, requiring minimal labor relative to cotton. Mungbean on 1 mu is grown with a traditional local variety, light fertilizer given its nitrogen-fixing capacity, and 2 irrigations \u2014 serving both household consumption and a small cash sale. Input levels and yield expectations are set from 30 years of experience on this land, not from extension advice.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 100
+      }
+    ],
+    "reasoning_summary": "Cotton is my main cash crop and gets the most land, care, and inputs across 5 mu using an improved Bt variety with deep ploughing, split fertilizer applications, 4 well irrigations, and 7 pesticide passes targeting aphids and bollworm. Summer maize fills 2 mu with hybrid seed, moderate fertilizer, and 3 irrigations, requiring minimal labor relative to cotton. Mungbean on 1 mu is grown with a traditional local variety, light fertilizer given its nitrogen-fixing capacity, and 2 irrigations \u2014 serving both household consumption and a small cash sale. Input levels and yield expectations are set from 30 years of experience on this land, not from extension advice."
+  },
+  "elapsed_seconds": 43.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_2",
+  "tier": 2,
+  "provider": "claude"
+}

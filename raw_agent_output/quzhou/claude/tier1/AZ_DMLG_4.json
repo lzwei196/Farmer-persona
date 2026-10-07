@@ -1,0 +1,40 @@
+{
+  "raw_response": "My whole life I've farmed this same land in Quzhou. I'm 70 years old now, my back isn't what it was, and my two sons are in the city. My wife still helps when she can. I have about 8 mu.\n\nI don't need to think too hard about what to plant. Everyone here plants wheat in winter and corn in summer. That's what my father did. That's what works on this flat ground with our wells. I'm not going to try something new at my age \u2014 if it fails I have nothing to fall back on.\n\nFor wheat, I'll hire a neighbor with a rotary tiller to prepare the ground in October after I pull the corn. I'll buy improved seed from the village supply shop \u2014 same variety I've used the last few years, not the old seeds, those don't yield as well anymore. I'll put down one bag of diammonium phosphate per mu when I sow, and then come spring at jointing I'll spread urea on top. My grandson says I put on too much, but I've seen what a thin crop looks like, and I'm not willing to risk it. I'll pump water four times \u2014 once before the ground freezes, once at jointing, once when it heads out, and once more if it looks dry during grain fill.\n\nAfter wheat harvest in June, I'll plant hybrid corn seed straight into the stubble \u2014 no need to till again, saves money and my knees. I'll apply fertilizer at planting and again when the corn is knee-high. Summer rains usually come, so I'll only pump water if it's dry early or late in the season.\n\nFor pesticides, I'll spray the wheat twice \u2014 herbicide early in spring, then something for rust and aphids before heading. Corn I'll spray once for stem borer and leaf blight if I see it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer with no formal education in Quzhou County follows the region's dominant winter wheat\u2013summer maize double-cropping rotation on all 8 mu of his land, relying entirely on decades of personal experience and local custom rather than agronomic advice. He uses improved wheat seed and hybrid maize seed purchased from the village supply shop, applies diammonium phosphate as a base dressing and urea as a top-dress for both crops at rates higher than agronomists recommend because he fears yield loss more than input cost. He irrigates wheat four times including a pre-freeze application, relies partly on summer rainfall for maize and irrigates twice as insurance. Tillage is rotary for wheat seedbed preparation but no-till for maize to save cost and physical effort. Pesticide use is minimal \u2014 two applications on wheat for weeds and disease, one on maize for pests \u2014 applied reactively based on what he sees in the field.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer with no formal education in Quzhou County follows the region's dominant winter wheat\u2013summer maize double-cropping rotation on all 8 mu of his land, relying entirely on decades of personal experience and local custom rather than agronomic advice. He uses improved wheat seed and hybrid maize seed purchased from the village supply shop, applies diammonium phosphate as a base dressing and urea as a top-dress for both crops at rates higher than agronomists recommend because he fears yield loss more than input cost. He irrigates wheat four times including a pre-freeze application, relies partly on summer rainfall for maize and irrigates twice as insurance. Tillage is rotary for wheat seedbed preparation but no-till for maize to save cost and physical effort. Pesticide use is minimal \u2014 two applications on wheat for weeds and disease, one on maize for pests \u2014 applied reactively based on what he sees in the field."
+  },
+  "elapsed_seconds": 59.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_4",
+  "tier": 1,
+  "provider": "claude"
+}

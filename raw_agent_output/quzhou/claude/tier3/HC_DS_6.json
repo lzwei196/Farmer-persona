@@ -1,0 +1,53 @@
+{
+  "raw_response": "My name is not important, but let me tell you how I think about this year.\n\nI have 12 mu of land. I split it like I always do \u2014 8 mu for wheat then maize after, and 4 mu for cotton. Cotton is more work but the price has been decent the last two years, and my daughter-in-law helps at picking time.\n\nFor my wheat, I plant in October. I use improved seed, \"Jimai 22\" or whatever the agro-shop in town has that year \u2014 my neighbors all use it and get 450 to 500 jin per mu. Before planting I plough the land and spread my base fertilizer: one bag of compound fertilizer (45% total, 15-15-15) per mu, that's 50 jin. Then at green-up in spring I top-dress with urea, about 30 jin per mu. That comes to roughly 20 kg of nitrogen per mu total when I count both. I irrigate at green-up, at jointing, and at grain-filling \u2014 three times. If spring is very dry I add one more. I spray twice, once for aphids, once for scab if the weather turns wet at flowering.\n\nFor my summer maize after wheat, I plant hybrid seed \u2014 \"Zhengdan 958\" type. I do not plough, I just plant directly into the wheat stubble with the seed drill the machine man brings. At the big-trumpet stage I side-dress urea, about 35 jin per mu. I give compound fertilizer 30 jin at planting. That is around 18-20 kg N per mu. I irrigate once at the big-trumpet stage, twice if no rain. Pesticide once for borer.\n\nFor my 4 mu cotton, this is where I spend more. I plough deep in early spring, use one and a half bags of compound fertilizer per mu as base \u2014 cotton eats a lot. Then I top-dress urea 25 jin at bud stage and another 20 jin at flowering. Cotton needs spraying many times for bollworm and aphid \u2014 I do 6 or 7 sprays, that is just how it is. Irrigate 3 times if the well allows. I expect about 250 jin of seed cotton per mu. Less than when I was younger, but my back cannot do what it used to.\n\nI do not change much from last year. My neighbors do the same. Fertilizer is expensive but short harvest is worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I follow what worked last year and what my neighbors do. Wheat-maize rotation on 8 mu, cotton on 4 mu. I use improved wheat seed and hybrid maize because everyone around me gets good yield from them. My fertilizer plan is compound base plus urea top-dressing \u2014 I would rather apply a little extra than lose yield. Cotton gets more fertilizer and many more sprays because the bollworm and aphid are bad and cotton rewards careful tending. I irrigate from the well as needed, more in dry springs. My yields are modest because I am old and my husband is gone, but the land is honest and pays me back for the work I still put in.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I follow what worked last year and what my neighbors do. Wheat-maize rotation on 8 mu, cotton on 4 mu. I use improved wheat seed and hybrid maize because everyone around me gets good yield from them. My fertilizer plan is compound base plus urea top-dressing \u2014 I would rather apply a little extra than lose yield. Cotton gets more fertilizer and many more sprays because the bollworm and aphid are bad and cotton rewards careful tending. I irrigate from the well as needed, more in dry springs. My yields are modest because I am old and my husband is gone, but the land is honest and pays me back for the work I still put in."
+  },
+  "elapsed_seconds": 39.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_6",
+  "tier": 3,
+  "provider": "claude"
+}

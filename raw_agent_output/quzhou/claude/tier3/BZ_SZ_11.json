@@ -1,0 +1,53 @@
+{
+  "raw_response": "I think about this year like I did last year. I am old, 76, only farmed one year alone. Before that my son did most of it but now he went to work in the city so I follow what the neighbors tell me.\n\nMy land is 5.5 mu. Not much. Four mu I grow wheat in winter and maize in summer \u2014 same field, two crops, like everyone here. The other one and a half mu I keep in cotton. That was my wife's idea long ago, we always kept some cotton.\n\nFor wheat, I do what neighbor old Zhang does. When I plant in October I spread two bags of compound fertilizer per mu \u2014 the one with three 15s on the bag, 40 jin each bag I think, no, 50 jin. Two bags. Then in spring when the wheat turns green I put one bag of urea per mu. That's what he told me. I cannot read the bag but the shop man knows what I need. I water the wheat three times \u2014 before winter, green-up, and when it heads. The well is close so water is not too dear.\n\nFor maize after wheat, I do not plow, just push the seed in with the machine the neighbor hires. I put one bag compound when planting, then one bag urea when it is knee-high. Two sprays for the worm, the shop sells me the bottle. Water maybe twice if no rain.\n\nCotton is more trouble. More fertilizer, more spray. I put two bags compound and one bag urea. Spray five or six times because the bugs are bad. Water three times.\n\nI would rather put a little extra fertilizer than lose the harvest. Fertilizer is money but empty grain bin is worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5.5 mu, only one year on my own after my son left for the city, so I copy what neighbor old Zhang does. Wheat and maize rotate on 4 mu, cotton stays on 1.5 mu like always. I buy compound fertilizer in bags from the shop \u2014 the one with three 15s \u2014 two bags per mu at planting, then one bag of urea later when the crop greens up or reaches knee height. I water wheat three times from the well, maize twice, cotton three times. Cotton bugs are bad so I spray five or six times, maize and wheat only two. I would rather spend a bit extra on fertilizer than have a thin harvest \u2014 wasted fertilizer is just money, but empty grain is hunger.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I farm 5.5 mu, only one year on my own after my son left for the city, so I copy what neighbor old Zhang does. Wheat and maize rotate on 4 mu, cotton stays on 1.5 mu like always. I buy compound fertilizer in bags from the shop \u2014 the one with three 15s \u2014 two bags per mu at planting, then one bag of urea later when the crop greens up or reaches knee height. I water wheat three times from the well, maize twice, cotton three times. Cotton bugs are bad so I spray five or six times, maize and wheat only two. I would rather spend a bit extra on fertilizer than have a thin harvest \u2014 wasted fertilizer is just money, but empty grain is hunger."
+  },
+  "elapsed_seconds": 42.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

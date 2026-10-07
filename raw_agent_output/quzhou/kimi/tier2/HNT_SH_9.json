@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 66 years old and have farmed these fields for 35 years. My father taught me, and now my wife and I manage our 4.1 mu plot together. We have always done wheat-maize rotation here in Quzhou \u2014 it is what the land and climate allow. I did not go far in school, but I know my soil and my crops.\n\nFor wheat, I will plant my usual improved variety in early October after rotary tillage. I buy my wheat seed from the village supply shop \u2014 it is not the old traditional seed, but a reliable improved kind that gives steady yields. I will put down compound fertilizer as a base before sowing, and then top-dress with urea in the spring when the wheat greens up. With my well, I can irrigate three times: once before winter to help the seedlings establish, once at jointing, and once during grain filling. That is enough \u2014 electricity for pumping is not cheap, and at my age I cannot manage endless trips to the fields. I will spray herbicide once and maybe one more spray for aphids or rust if I see trouble. I expect about 480 kg per mu if the weather holds.\n\nFor maize, I plant hybrid seed directly after the wheat harvest in early June \u2014 no-tillage, using the machine service that comes through the village. Everyone here uses hybrid maize now; the yield is much better than the old types. I apply compound fertilizer at sowing, and if the rains are poor I will irrigate twice \u2014 at sowing and at the big trumpet stage. Two pesticide sprays: herbicide at sowing and one insecticide spray later when the borers come. I expect around 550 kg per mu. My wife and I are only two people now, so we keep things simple and stick to what has worked for decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 4.1 mu of wheat-maize rotation using practical methods learned over 35 years. For winter wheat, I use an improved variety with rotary tillage, compound fertilizer plus urea top-dressing, three well irrigations, and two pesticide sprays, expecting 480 kg/mu. For summer maize, I use hybrid seed with no-tillage direct seeding after wheat harvest, compound fertilizer, two irrigations, and two pesticide sprays, expecting 550 kg/mu. My decisions are constrained by limited household labor, pumping costs from my well, and a preference for reliable, low-risk practices that my wife and I can manage at our age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 4.1 mu of wheat-maize rotation using practical methods learned over 35 years. For winter wheat, I use an improved variety with rotary tillage, compound fertilizer plus urea top-dressing, three well irrigations, and two pesticide sprays, expecting 480 kg/mu. For summer maize, I use hybrid seed with no-tillage direct seeding after wheat harvest, compound fertilizer, two irrigations, and two pesticide sprays, expecting 550 kg/mu. My decisions are constrained by limited household labor, pumping costs from my well, and a preference for reliable, low-risk practices that my wife and I can manage at our age."
+  },
+  "elapsed_seconds": 210.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HNT_SH_9",
+  "tier": 2,
+  "provider": "kimi"
+}

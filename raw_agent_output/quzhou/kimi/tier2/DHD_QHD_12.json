@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 3 mu in Quzhou for 30 years. I never went to school, but I know this land, the weather, and what my family can manage. We are five people, and the younger ones work off-farm in the city, so I cannot take on too much labor-heavy cropping. I have a well for irrigation, but pumping costs electricity and money, so I must use water carefully and not waste it.\n\nMy plan this year is to keep 2 mu in the wheat-maize system that has always fed us and brought in cash. The winter wheat is already in the ground from last autumn. When it greens up, I will spread urea as a topdressing and irrigate three times \u2014 at green-up, jointing, and grain filling. Two pesticide sprays should be enough if the spring stays dry. After we harvest the wheat in early June, I will plant hybrid maize directly into the wheat stubble without ploughing. No-tillage saves time and labor, and the stubble helps keep moisture in the ground during the hot summer. The maize will need two irrigations and two sprays. \n\nFor cotton, I will only plant 1 mu this year. Cotton needs too much hand-picking, and with my children away working, I do not have enough hands for more. I will plough that field well in spring, plant improved seed from the county supply shop, and fertilize carefully. Cotton pests are stubborn here, especially bollworm, so I will spray four times. This plan keeps us fed with wheat, earns cash from maize and cotton, and uses my well water wisely without wearing me out.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I keep 2 mu in wheat-maize double cropping because it is reliable and provides both food and income, while limiting cotton to 1 mu because hand-picking labor is scarce with my children working off-farm. I use well irrigation three times for wheat, twice for maize, and three times for cotton, being careful not to waste water or electricity. I choose improved wheat seed, hybrid maize for higher yield, and improved cotton from the county shop. No-tillage for maize saves time after wheat harvest and preserves soil moisture, while the cotton field is ploughed in spring to control weeds. I apply more pesticide sprays to cotton because bollworm is a persistent problem in Quzhou, and fewer to the grain crops since dry springs keep pest pressure lower.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I keep 2 mu in wheat-maize double cropping because it is reliable and provides both food and income, while limiting cotton to 1 mu because hand-picking labor is scarce with my children working off-farm. I use well irrigation three times for wheat, twice for maize, and three times for cotton, being careful not to waste water or electricity. I choose improved wheat seed, hybrid maize for higher yield, and improved cotton from the county shop. No-tillage for maize saves time after wheat harvest and preserves soil moisture, while the cotton field is ploughed in spring to control weeds. I apply more pesticide sprays to cotton because bollworm is a persistent problem in Quzhou, and fewer to the grain crops since dry springs keep pest pressure lower."
+  },
+  "elapsed_seconds": 83.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_12",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 71 years old. I never went to school. My father put the hoe in my hand when I was sixteen and I have farmed these same 2 mu in Quzhou ever since. My wife and I do all the work ourselves. We have a well for water but pumping costs diesel, so I count every time I turn on the pump.\n\nFor winter wheat, I plant the improved seed that everyone in the village gets from the shop. I sow about 25 jin per mu. I always buy one big bag of urea \u2014 that is 100 jin \u2014 for the 2 mu, and I spread half before sowing and half in March when the wheat turns green. I also buy one bag of compound fertilizer, 100 jin for the 2 mu, and put it all down before sowing. That is 50 jin of each per mu. I irrigate three times: once after sowing if the soil is dry, once in March, and once in May when the grain is filling. I spray twice \u2014 herbicide right after sowing and insecticide in spring when the bugs come. After the maize comes off in October, I hire the rotary tiller to soften the ground for wheat.\n\nFor summer maize, I plant hybrid seed, about 4 jin per mu, dropped by the machine right after wheat harvest in June. I buy another 100 jin bag of urea for the 2 mu and put it down when the maize is knee-high. I do not buy new compound for maize; the wheat ground still has some food in it. I irrigate twice if the rain does not come \u2014 once when the stalks are tall and once when the cobs need filling. I spray once for weeds and once for the bugs that eat the leaves. I do not till for maize; there is no time after wheat harvest, so the planter goes straight into the wheat stubble.\n\nI expect my wheat to give me about 900 jin per mu and my maize about 1000 jin per mu. Last year was about the same. I do not change what works. My nephew tried to save money on fertilizer two years ago and his wheat was thin like grass. I would rather spend the extra yuan on one more bag of urea than risk losing the harvest. This land is all my wife and I have.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I do what I have always done because change is dangerous. I buy one bag of urea and one bag of compound for my wheat, and another bag of urea for my maize. I water wheat three times and maize twice. I spray for weeds and bugs on both crops. I rotary till after maize for the wheat seedbed, but I plant maize straight into wheat stubble because there is no time to till. I expect about 900 jin per mu of wheat and 1000 jin per mu of maize. I would rather spend the money on fertilizer than risk a thin crop, because my nephew proved that skimping on inputs loses yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I do what I have always done because change is dangerous. I buy one bag of urea and one bag of compound for my wheat, and another bag of urea for my maize. I water wheat three times and maize twice. I spray for weeds and bugs on both crops. I rotary till after maize for the wheat seedbed, but I plant maize straight into wheat stubble because there is no time to till. I expect about 900 jin per mu of wheat and 1000 jin per mu of maize. I would rather spend the money on fertilizer than risk a thin crop, because my nephew proved that skimping on inputs loses yield."
+  },
+  "elapsed_seconds": 188.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_12",
+  "tier": 3,
+  "provider": "kimi"
+}

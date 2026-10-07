@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72, started farming when I was 22, never went to school. I got 20 mu, too much for just me and the old woman, so I hire the machine crew from the village for plowing and harvest. I keep 14 mu for wheat then corn, and 6 mu for cotton, same as last year. I don't trust new ideas from outside \u2014 I do what I did before, and I watch Old Wang and the others. If their wheat looks good, I sleep fine.\n\nFor wheat, I sow right after National Day with the improved seed everyone buys from the shop in town. At planting, I spread one bag of compound fertilizer per mu \u2014 that's the one with the three numbers on it, 50 kilos a bag. Then when the wheat turns green in March, I broadcast almost a full bag of urea per mu. I know it costs money, but two years ago I listened to someone saying use less, and the heads came out small. I lost more on yield than I saved on fertilizer. Better waste a little fertilizer than cry over a bad harvest. I irrigate three times: the overwintering water, then at jointing, then when the grain is filling. I spray twice for weeds and bugs. The tractor does rotary tillage, quick and neat. I expect about 450 kilos per mu if the weather plays fair.\n\nFor corn, I plant right after cutting wheat in early June. Everyone uses hybrid seed now, you get big ears. I don't have time to plow \u2014 the season is short \u2014 so I no-till plant. I put half a bag of compound per mu at planting, then when the plants are knee-high I spread urea. Irrigate twice if the rain stays away. Spray twice. Should get 550 kilos per mu, maybe more.\n\nFor cotton, I plow deep in April and plant improved seed. Cotton needs potash, so I use one bag of compound plus extra potash fertilizer. I spray four times because the bollworms and aphids love cotton. Irrigate three times. Cotton is hard work, but last year's price was alright, so I keep my 6 mu. I hire people to help pick. Hope for 280 kilos of seed cotton per mu.\n\nThat's my plan. I don't change what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"At 72 with no schooling and 50 years of experience, I manage 20 mu by hiring machinery services and following last year's proven split of 14 mu for wheat-maize double cropping and 6 mu for cotton. I rely on neighborhood practices, preferring to slightly over-apply fertilizer rather than risk yield loss, and I adjust only based on what I observe working in nearby fields. Wheat receives rotary tillage, improved seed, and heavy fertilization with three irrigations; maize is no-till planted with hybrid seed and two irrigations; cotton gets deep plowing, improved seed, extra potash, and four pesticide applications with hired picking labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "At 72 with no schooling and 50 years of experience, I manage 20 mu by hiring machinery services and following last year's proven split of 14 mu for wheat-maize double cropping and 6 mu for cotton. I rely on neighborhood practices, preferring to slightly over-apply fertilizer rather than risk yield loss, and I adjust only based on what I observe working in nearby fields. Wheat receives rotary tillage, improved seed, and heavy fertilization with three irrigations; maize is no-till planted with hybrid seed and two irrigations; cotton gets deep plowing, improved seed, extra potash, and four pesticide applications with hired picking labor."
+  },
+  "elapsed_seconds": 172.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_8",
+  "tier": 3,
+  "provider": "kimi"
+}

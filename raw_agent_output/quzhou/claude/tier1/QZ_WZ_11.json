@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this land since I was a young woman. My plot is about 3 mu. I do not read books or government pamphlets. I watch what my neighbors plant and I remember what my mother and husband taught me. I do what I know.\n\nEvery year I plant wheat in October after the summer corn comes off. Then when the wheat is harvested in June, I plant corn right away on the same ground. I have done this my whole life. There is no reason to change. My son borrows the tractor from the village contractor to plow and plant for me \u2014 I cannot do that heavy work anymore.\n\nFor seeds, I buy whatever the cooperative store in town sells. They have the better seeds now, the ones that yield more. I do not save my own seed anymore like I did when I was young \u2014 those old varieties gave less. For fertilizer, I ask my neighbor Wang's son what he uses and I do the same. We put down the compound fertilizer when planting and then spread some urea when the wheat is tall. For corn I do the same. I use a bit more than they say because I want to make sure it grows well \u2014 I cannot afford a bad harvest.\n\nWater \u2014 I pump from the well three times for wheat: once before the ground freezes, once when it joints, once when it heads. For corn I usually water once if the summer rains are late.\n\nFor pests I spray twice on wheat \u2014 once for weeds after it comes up in autumn, once in spring for aphids and rust. For corn just once for the army worm if it comes.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"A 74-year-old woman with no formal education in Quzhou County follows the dominant North China Plain double-cropping rotation she has practiced her entire life: winter wheat sown in October on 3 mu, harvested in June, immediately followed by summer maize on the same 3 mu until October. Seed selection defers to whatever improved and hybrid varieties the village cooperative sells. Fertilizer rates are slightly above recommended levels because she applies extra 'to be safe,' as is common among older uneducated farmers who cannot verify agronomic guidance. Irrigation follows traditional calendar timing for wheat (pre-freeze, jointing, heading) and is minimal for maize given summer rainfall. Tillage is rotary before wheat and no-tillage for maize sown directly into wheat stubble, reflecting the mechanized contracted services available in the village. Pesticide use is conservative: two applications on wheat (autumn herbicide, spring aphid/fungicide), one on maize (fall armyworm if present).\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "A 74-year-old woman with no formal education in Quzhou County follows the dominant North China Plain double-cropping rotation she has practiced her entire life: winter wheat sown in October on 3 mu, harvested in June, immediately followed by summer maize on the same 3 mu until October. Seed selection defers to whatever improved and hybrid varieties the village cooperative sells. Fertilizer rates are slightly above recommended levels because she applies extra 'to be safe,' as is common among older uneducated farmers who cannot verify agronomic guidance. Irrigation follows traditional calendar timing for wheat (pre-freeze, jointing, heading) and is minimal for maize given summer rainfall. Tillage is rotary before wheat and no-tillage for maize sown directly into wheat stubble, reflecting the mechanized contracted services available in the village. Pesticide use is conservative: two applications on wheat (autumn herbicide, spring aphid/fungicide), one on maize (fall armyworm if present)."
+  },
+  "elapsed_seconds": 46.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_11",
+  "tier": 1,
+  "provider": "claude"
+}

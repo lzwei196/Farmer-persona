@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 50-year-old farmer in Quzhou County with ten mu of land. I finished middle school, which is more than many my age around here, so I can read the seed labels and fertilizer instructions myself without always asking my neighbor. I have been farming this land for nearly thirty years, and I know what works on the North China Plain.\n\nThis spring, I am looking at my wheat field that I sowed last October. It is coming up green, and if the weather holds, I should harvest around 500 kg per mu in early June. I always plant improved wheat varieties \u2014 these days I like Jimai 22 or Luyuan 502 because they handle our dry springs better. Before sowing, I rotary till the soil to break up the corn stalks from the previous summer. I put down about 100 kg of compound fertilizer per mu as a basal dose, and I will topdress with urea once at green-up. That gives me enough nitrogen, phosphorus, and potassium to carry the crop. Wheat needs water at critical times, so I irrigate four times: winter irrigation to protect against frost, then green-up water, jointing water, and one more at heading if the sky stays clear too long. I spray insecticide twice and herbicide once \u2014 that is usually enough if you catch the weeds early.\n\nAfter I harvest the wheat in June, I will plant maize on that same eight mu. Everyone here uses hybrid maize seed now \u2014 Denghai 605 or something similar from the seed shop \u2014 because the yield is just too good to pass up. I expect about 550 kg per mu. I do not till after wheat harvest; I plant directly into the stubble to save time and fuel. I apply compound fertilizer at sowing and that is usually enough nitrogen for maize \u2014 I do not topdress like I do with wheat. Maize only needs two irrigations, one at jointing and one at grain filling. A couple of insecticide sprays and one herbicide application keeps the pests down.\n\nOn my remaining two mu, I will plant cotton in April. Cotton is labor-intensive \u2014 I spray pesticides fifteen times or more through the season for aphids and bollworms \u2014 but the cash income is worth it on a small plot. I expect about 275 kg of seed cotton per mu. I rotary till those plots, apply compound fertilizer, and irrigate three times through the summer.\n\nI do not try anything fancy. The wheat-maize rotation is the backbone of my farm because it is reliable, and the two mu of cotton gives me cash when the fiber prices are decent. This is what my father did, and what my neighbors do, and it feeds my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I have ten mu of land and stick to what I know works on the North China Plain. Eight mu follow the wheat-maize rotation that is the backbone of farming here \u2014 wheat in winter, maize in summer on the same plot. I use improved wheat seed with rotary tillage and topdress urea in spring, while maize is direct-seeded with hybrid seed and no-tillage after wheat harvest. On the remaining two mu I grow cotton for cash income, accepting the heavy pesticide workload because the returns on a small plot are worthwhile. This mix gives me stable grain production and some market income without taking unnecessary risks.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I have ten mu of land and stick to what I know works on the North China Plain. Eight mu follow the wheat-maize rotation that is the backbone of farming here \u2014 wheat in winter, maize in summer on the same plot. I use improved wheat seed with rotary tillage and topdress urea in spring, while maize is direct-seeded with hybrid seed and no-tillage after wheat harvest. On the remaining two mu I grow cotton for cash income, accepting the heavy pesticide workload because the returns on a small plot are worthwhile. This mix gives me stable grain production and some market income without taking unnecessary risks."
+  },
+  "elapsed_seconds": 225.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_9",
+  "tier": 1,
+  "provider": "kimi"
+}

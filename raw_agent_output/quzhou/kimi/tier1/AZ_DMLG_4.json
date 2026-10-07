@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy years old and have farmed this same land in Quzhou County since I was a young man. I never went to school, so I cannot read the characters on fertilizer bags, but I know this soil by feel and smell, and I watch what my neighbors do. I have five *mu* of good flat land that my family has worked for generations. I will grow the same double crop as always: winter wheat followed by summer maize. That is the backbone of life here. If one crop fails, the other usually saves us.\n\nFor the wheat, I will rotary till the ground in early October and sow the improved *shimai* variety that my neighbor Lao Wang recommended\u2014his wheat looked strong last year. I put down about one large bag of compound fertilizer per *mu* before planting, and when the wheat turns yellow at jointing time in spring, I spread another half bag of ammonium bicarbonate. I irrigate three times: once before winter so the seedlings do not freeze, once at jointing, and once when the grain is filling. I spray herbicide once and insecticide two or three times when I see aphids. If the weather is normal I expect about one thousand *jin* per *mu*.\n\nAfter harvesting the wheat in early June, there is no time to waste. I plant the maize the same week without tilling\u2014there is only a narrow window before the rains stop. I use hybrid seed, *nongda372*, one small package per *mu*. The maize gets about eighty *jin* of compound fertilizer at planting, and I topdress with a little urea if the leaves look pale. Two irrigations is enough: one when the stalk is knee-high and one before the tassels come out. I spray for weeds and bugs three times in total. Last year I got about eleven hundred *jin* per *mu* of maize, and I hope for the same this year. I do not try new tricks. This system has fed my family for fifty years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I stick to wheat-maize double cropping on my 5 mu because it is what I know and what everyone in the village does. I use improved wheat seed and hybrid maize seed, apply compound fertilizer and some straight nitrogen based on what worked last year, irrigate wheat three times and maize twice, and spray when I see pests or weeds. At my age with no schooling, I follow tradition and my neighbors rather than trying anything new.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I stick to wheat-maize double cropping on my 5 mu because it is what I know and what everyone in the village does. I use improved wheat seed and hybrid maize seed, apply compound fertilizer and some straight nitrogen based on what worked last year, irrigate wheat three times and maize twice, and spray when I see pests or weeds. At my age with no schooling, I follow tradition and my neighbors rather than trying anything new."
+  },
+  "elapsed_seconds": 279.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DMLG_4",
+  "tier": 1,
+  "provider": "kimi"
+}

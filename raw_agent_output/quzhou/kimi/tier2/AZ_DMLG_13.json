@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 32-year-old woman farmer in Quzhou County. Though I never went to school, I have been working these fields since I was a small child helping my parents, so I know every mu of my 4.1 mu farm. It is just my household of two now\u2014my husband works off-farm at a factory in town, so I manage most of the cropping myself. With only 4.1 mu, I cannot afford to waste land or time, and because my husband is away, I choose labor-saving methods wherever they do not hurt the yield.\n\nFor wheat, I plant the full 4.1 mu in October after the maize comes off. I use our own saved improved wheat seeds\u2014about 30\u201335 jin per mu\u2014because they have performed reliably for years and I do not have to buy them. I rotary-till the field before sowing to prepare a good seedbed. For fertilizer, I broadcast compound fertilizer at basal and topdress with urea in spring; altogether I apply about 18 kg of nitrogen, 10 kg of phosphorus, and 4 kg of potassium per mu. I irrigate three times from our well: once in winter, and twice more at green-up and grain-filling. I spray three times for weeds and insects. I expect around 950 kg per mu if the weather holds.\n\nFor maize, time is tight after wheat harvest in June, so I plant immediately using no-tillage direct seeding into the wheat stubble. I always buy hybrid maize seed from the agricultural shop\u2014saved maize seed loses too much yield. I apply compound fertilizer at planting, about 15 kg nitrogen, 4 kg phosphorus, and 3 kg potassium per mu. I irrigate twice during the summer, at the big trumpet and filling stages. I spray three times to control weeds and corn borers. I expect about 1,100 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"With only 4.1 mu and my husband working off-farm, I manage the farm alone and must save labor while maximizing output. I use rotary tillage for wheat and no-tillage for maize to fit the tight double-cropping window. I save my own improved wheat seeds but buy hybrid maize seeds because hybrids lose vigor if saved. I rely on well irrigation and apply compound fertilizers plus topdressing at rates that have given me good yields in the past, expecting around 950 kg/mu for wheat and 1,100 kg/mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "With only 4.1 mu and my husband working off-farm, I manage the farm alone and must save labor while maximizing output. I use rotary tillage for wheat and no-tillage for maize to fit the tight double-cropping window. I save my own improved wheat seeds but buy hybrid maize seeds because hybrids lose vigor if saved. I rely on well irrigation and apply compound fertilizers plus topdressing at rates that have given me good yields in the past, expecting around 950 kg/mu for wheat and 1,100 kg/mu for maize."
+  },
+  "elapsed_seconds": 193.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_13",
+  "tier": 2,
+  "provider": "kimi"
+}

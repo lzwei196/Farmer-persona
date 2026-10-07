@@ -1,0 +1,53 @@
+{
+  "raw_response": "I never went to school. I learned everything from my mother and from watching the neighbors with my own eyes. I have been in the fields since before I could carry a full bucket, and now I manage our 8 mu. I put 6 mu into wheat and then maize because we need to fill our own bellies. The other 2 mu I plant cotton so we have cash for salt, oil, and school fees for the little ones.\n\nLast year my wheat got about 450 kg each mu, and this year I will do the same thing. I sow the improved wheat seed that Old Zhang used \u2014 his wheat stood taller and heavier than mine. Before sowing last autumn, I rotavated the land. Now I will irrigate three times: when the wheat turns green and wakes up, when the stems shoot up, and when the heads are filling. I spread one big 50-jin bag of compound fertilizer on every mu as base, and then I topdress with urea two times. Better to put a bit too much than too little. Wasting fertilizer costs money, but a bad harvest means my children go hungry.\n\nAfter we cut the wheat in June, there is no time to rest. I plant hybrid maize seed the same day or the next morning, using the no-till machine that drills straight into the wheat stubble. I learned this from watching everyone in the village \u2014 if you stop to plough, you miss the rain window and the season is lost. The maize gets water three times and spray two times. I put compound fertilizer down at planting and urea later when it is knee-high.\n\nCotton is on my south plot, 2 mu. I plough that land deep because cotton roots need loose soil to go down. I plant hybrid cotton seed in April. Cotton needs water two times, but the bugs love it more than I do, so I spray five times. Last year the bollworms came early and chewed half the buds before I caught them. The dealer sells me the spray \u2014 I know the red bottle and the blue bottle, that is enough.\n\nMy husband and his brother work in the city when construction jobs come, so for cotton picking I hire two women from the village to help. But for spraying and watering, I do it myself with my mother. I do not change what works. Everyone around here uses about this much seed, fertilizer, and water, so I do the same. Spending money on extra fertilizer hurts, but losing the whole crop is a disaster I cannot face.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I do what I did last year and what the good farmers around me do. My 6 mu grows wheat then maize for food, and 2 mu grows cotton for money. I buy the seeds that worked for my neighbors. I put enough fertilizer \u2014 losing yield is worse than wasting a few yuan. I water and spray the same times as everyone else. Wheat gets rotavated, maize goes straight into the stubble to save time, and cotton gets ploughed deep.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I do what I did last year and what the good farmers around me do. My 6 mu grows wheat then maize for food, and 2 mu grows cotton for money. I buy the seeds that worked for my neighbors. I put enough fertilizer \u2014 losing yield is worse than wasting a few yuan. I water and spray the same times as everyone else. Wheat gets rotavated, maize goes straight into the stubble to save time, and cotton gets ploughed deep."
+  },
+  "elapsed_seconds": 81.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_8",
+  "tier": 3,
+  "provider": "kimi"
+}

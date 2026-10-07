@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm the way I always have: I start from what worked last year, then I push a little if I think the crop can pay me back. I have 15 mu total, and with wheat-maize rotation I will keep 10 mu in wheat first, then plant maize on that same 10 mu after wheat harvest. The other 5 mu I will keep in cotton. I do not like cutting fertilizer too hard, because if yield falls, that loss hurts more than spending a bit extra on two more bags. Around here, if wheat has water and enough base fertilizer, it can give a steady crop. Maize after wheat has to catch time fast, so I will use hybrid seed and feed it stronger. Cotton is slower and needs more watching for insects, so I will not plant too much of it, only what my family can manage well. With well water in hand, I will give wheat about 3 irrigations, maize 2, and cotton 3, depending on rain. I will plough for wheat and cotton, and after wheat I will mostly use rotary tillage to turn maize around quickly. I watch what fields around me do, but I still hold a little extra fertilizer in mind because a bad harvest is worse than wasting some input.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I will keep 10 mu in wheat-maize rotation and 5 mu in cotton, because that fits my land, my labor, and what I have seen work around me. I will not cut fertilizer too much, since losing yield costs me more than wasting some fertilizer. Wheat will get steady base fertilizer and 3 waters, maize will get hybrid seed and a bit stronger feeding after wheat harvest, and cotton will stay on a smaller area because it needs more spraying and more hand work. With well irrigation, I will aim for stable harvests first and only make small changes from last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I will keep 10 mu in wheat-maize rotation and 5 mu in cotton, because that fits my land, my labor, and what I have seen work around me. I will not cut fertilizer too much, since losing yield costs me more than wasting some fertilizer. Wheat will get steady base fertilizer and 3 waters, maize will get hybrid seed and a bit stronger feeding after wheat harvest, and cotton will stay on a smaller area because it needs more spraying and more hand work. With well irrigation, I will aim for stable harvests first and only make small changes from last year."
+  },
+  "elapsed_seconds": 29.4,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_13",
+  "tier": 3,
+  "provider": "codex"
+}

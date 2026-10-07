@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am getting old now, 63 years, but I have farmed this land for 40 years with my husband. Our two children live in the city. Just us two at home working 8 mu. I do what I always do \u2014 change is risky at my age.\n\n**My wheat (winter, about 8 mu):**\n\nI plant wheat in October after the maize comes off. I use improved seed \u2014 Jimai variety, the one the seed shop sells that my neighbors plant. I buy about 15 kg seed per mu because I broadcast, not drill, and some does not come up.\n\nFor fertilizer at sowing, I put down 2 bags of compound fertilizer per mu. One bag is 50 jin... no wait, 50 kg. So that is 100 kg of 15-15-15 compound per mu. That gives each mu 15 kg nitrogen, 15 kg phosphorus, 15 kg potassium. This is what the dealer sells and what everyone around me uses.\n\nThen at jointing in spring, I topdress with urea \u2014 about 25 kg per mu. Urea is 46% nitrogen, so that is about 11 more kg nitrogen. Total nitrogen is around 26 kg per mu. Maybe too much, but I would rather have good wheat than save a few yuan on fertilizer. A bad harvest is a disaster.\n\nIrrigation from my well: winter water before freeze (1), green-up water in spring (1), jointing water (1), filling water (1). Four times. If rain comes I skip one.\n\nPesticide: I spray once for aphids and powdery mildew at jointing, once for head blight at flowering. Two times.\n\nI plough after maize harvest because stubble is heavy.\n\nI expect 450 kg per mu if weather is good.\n\n**My maize (summer, same 8 mu):**\n\nRight after wheat harvest in June, I plant maize without ploughing \u2014 no-tillage, I just plant between the wheat stubble. Zhengdan 958 or Xianyu hybrid seed \u2014 whatever seed shop recommends, about 2.5 kg per mu.\n\nI use 1 bag of compound fertilizer at sowing (50 kg of 15-15-15 per mu) = 7.5-7.5-7.5. Then when maize is knee-high I topdress 30 kg urea per mu = 14 kg nitrogen. Total about 21 kg nitrogen per mu. Maize eats a lot of nitrogen.\n\nIrrigation: usually summer rain is enough, but I give one watering at tasseling if dry. Sometimes two.\n\nPesticide: one spray for corn borer. Sometimes herbicide early, but I count that separate, so one pesticide.\n\nI expect 550 kg per mu. Last year was good.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I have always farmed, same as my neighbors in Quzhou. Two bags of 15-15-15 compound plus urea topdress for wheat because wheat needs more, one bag plus urea for maize. I would rather spend a bit extra on fertilizer than lose yield \u2014 a bad harvest is a disaster, wasted fertilizer is only a cost. I use improved and hybrid seeds from the dealer, well water for wheat (four times), and count on summer rain for maize. My husband and I handle the 8 mu ourselves, so I keep things simple and do what I know works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the way I have always farmed, same as my neighbors in Quzhou. Two bags of 15-15-15 compound plus urea topdress for wheat because wheat needs more, one bag plus urea for maize. I would rather spend a bit extra on fertilizer than lose yield \u2014 a bad harvest is a disaster, wasted fertilizer is only a cost. I use improved and hybrid seeds from the dealer, well water for wheat (four times), and count on summer rain for maize. My husband and I handle the 8 mu ourselves, so I keep things simple and do what I know works."
+  },
+  "elapsed_seconds": 36.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

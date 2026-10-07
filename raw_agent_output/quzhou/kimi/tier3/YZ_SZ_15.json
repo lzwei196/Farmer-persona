@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 48 years old. I started helping my father in the fields when I was 8, so I have been farming for 40 years now. I only finished primary school, but I know my land well. I have 60 mu in Quzhou County. My household has 4 people \u2014 me, my wife, and two kids. My wife and I do most of the farm work, but one of my sons works in the county town and sends money back when he can.\n\nLast year I planted 25 mu of wheat in the winter, then summer maize on the same land after the wheat harvest. I also had 30 mu of cotton and 5 mu of spring peanut. It worked out fine, so I will do the same this year. Why change what is working? A bad year would hurt me badly. I have a well, so I can irrigate when I need to, but diesel for the pump costs money, so I count every time I water.\n\nFor my **winter wheat** on 25 mu: I use the rotary tiller before sowing. I plant about 26 jin of seed per mu \u2014 I buy good improved seed, not the old traditional kind, because the yield is better. Last year I got about 1000 jin per mu, and I expect the same this year if the weather holds. I put down 100 kg of compound fertilizer as base \u2014 the bag says it has some nitrogen, phosphorus, and a little potassium. Then I topdress with 80 kg of urea per mu because wheat needs nitrogen to fill the grain. I irrigate 3 times: once at sowing to help germination, once at jointing, and once at grain filling. For spraying, I do herbicide once to kill weeds, insecticide once for aphids, and fungicide once to prevent disease. That is 3 sprayings total.\n\nFor **summer maize** on the same 25 mu: After the wheat harvest, I do no-tillage planting \u2014 I just drill the maize seed straight into the stubble. I use Denghai 605 hybrid seed, about 1.2 bags per mu. This variety is good, my neighbor planted it and got over 1700 jin per mu, so I copied him. I expect about 1720 jin per mu. I put 80 kg of compound fertilizer per mu at planting \u2014 this one has more nitrogen and some phosphorus, no potassium. Maize does not need as much water as wheat, so I irrigate twice: once right after sowing, and once at the big\u5587\u53ed\u53e3 stage. I spray herbicide once, insecticide once, and fungicide once \u2014 3 times total.\n\nFor **spring peanut** on 5 mu: This is my small plot. I use the rotary tiller and plant Haihua variety, about 40 jin of seed per mu. I expect around 550 jin per mu. Peanut needs more care. I put 80 kg of compound fertilizer at sowing \u2014 15-15-15, balanced. Then when the flowers start, I topdress with another 80 kg of compound fertilizer. I irrigate 5 times because peanut likes moist soil, especially when the pods are forming. I spray insecticide 3 times, herbicide once, and fungicide 3 times for leaf spot \u2014 that is 7 sprayings.\n\nFor **cotton** on 30 mu: This is my biggest crop. I rotary till and plant Minfeng 12 improved seed, about 2.5 jin per mu. Last year I got 600 jin per mu of seed cotton, and I hope for the same. Cotton is expensive to manage. I put 100 kg of compound fertilizer per mu at planting, then another 80 kg when it starts flowering. I irrigate 4 times \u2014 at planting, at flowering, at boll setting, and once more before the bolls open. Cotton pests are terrible. I spray insecticide 9 times, herbicide twice, and fungicide 9 times. That is 20 sprayings total. I know it costs a lot, but if I skip even one spraying, the bollworms will destroy everything.\n\nSome people say I use too much fertilizer, but I would rather spend a bit more on fertilizer than risk losing half my yield. A bad harvest means I cannot pay for my son's wedding or my daughter's school fees. I watch what my neighbors do, and most people around here use similar amounts. My wife says we should be careful with money, and she is right, but on a 60 mu farm, I cannot afford to be cheap on inputs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 25,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 98,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 25,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22.4,\n      \"phosphorus_kg_per_mu\": 4.8,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1721\n    },\n    {\n      \"crop\": \"peanut\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 31.2,\n      \"phosphorus_kg_per_mu\": 20.8,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30.4,\n      \"phosphorus_kg_per_mu\": 22.4,\n      \"potassium_kg_per_mu\": 28,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 20,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have 60 mu total. I keep 25 mu for wheat in winter and maize in summer because that rotation has always worked on my good land. Cotton takes 30 mu because it brings the most cash, though it needs the most spraying. I keep 5 mu for peanut because my wife likes the oil and we can sell the rest at the market. I use hybrid maize seed because my neighbor got a big yield with it, and I stick to improved varieties for the others. I would rather spend on fertilizer and pesticides than risk a bad harvest, since my family depends on this farm and one son works off-farm to help with cash. I copy what the successful farmers around me do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 25,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 98,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 25,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22.4,
+        "phosphorus_kg_per_mu": 4.8,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1721
+      },
+      {
+        "crop": "peanut",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 31.2,
+        "phosphorus_kg_per_mu": 20.8,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30.4,
+        "phosphorus_kg_per_mu": 22.4,
+        "potassium_kg_per_mu": 28,
+        "irrigation_times": 4,
+        "pesticide_applications": 20,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have 60 mu total. I keep 25 mu for wheat in winter and maize in summer because that rotation has always worked on my good land. Cotton takes 30 mu because it brings the most cash, though it needs the most spraying. I keep 5 mu for peanut because my wife likes the oil and we can sell the rest at the market. I use hybrid maize seed because my neighbor got a big yield with it, and I stick to improved varieties for the others. I would rather spend on fertilizer and pesticides than risk a bad harvest, since my family depends on this farm and one son works off-farm to help with cash. I copy what the successful farmers around me do."
+  },
+  "elapsed_seconds": 270.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "YZ_SZ_15",
+  "tier": 3,
+  "provider": "kimi"
+}

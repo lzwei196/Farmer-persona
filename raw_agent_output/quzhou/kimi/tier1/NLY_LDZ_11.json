@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am fifty-two years old, and I have worked these fields in Quzhou since I was a young boy. My father taught me everything I know about farming \u2014 I never went to school, but I know the smell of rain on dry soil and I can tell when the wheat needs water just by looking at the color of the leaves. Here on the North China Plain, we get two crops from the same piece of ground if we do not waste a single day.\n\nMy wheat is already in the ground from last October. I always plant winter wheat \u2014 that is the root of everything here. I have about eight mu of land in total. Six mu I keep in the wheat\u2013summer maize rotation, because that rotation feeds my family and gives us grain to sell. The other two mu I plant with cotton, because cotton brings cash money that pays for medicine, school fees, and repairs to the house.\n\nFor the wheat, I bought improved seed from the dealer in town \u2014 not the most expensive kind, but the kind my neighbors use and trust. Before planting last autumn I rotary-tilled the soil to break up the corn stubble and level the field. Now that spring has come and the wheat is greening up, I will topdress with nitrogen when the shoots are strong, and I will run the irrigation pump three times before harvest. The groundwater is deep here but the pump still works. I will spray four times for pests and weeds \u2014 aphids and rust always come if you are lazy. I expect about 1000 jin of wheat per mu, which is what I usually get.\n\nAs soon as the wheat is cut in early June, I will plant hybrid maize seed the very same day. There is no time to rest. I will not till the soil for the maize \u2014 I plant directly into the wheat stubble, like everyone has learned to do now, to save diesel and time. The hybrid grows fast and strong. I will irrigate twice, once at planting and once when the tassels come out, and spray three times for insects and weeds. I expect about 1100 jin per mu from the maize.\n\nThe two mu of cotton need more care than I would like at my age, but the price is good. I will rotary-till that field and plant improved cotton seed in April. Cotton drinks water and must be sprayed many times \u2014 probably fourteen times or more \u2014 because the bollworms and aphids never give up. I will irrigate twice when the weather turns dry. Picking cotton is hard on my back, but my wife helps, and we manage. I expect about 550 jin of cotton per mu.\n\nThis is the same plan I have followed for thirty years. I do what my father did, and I do what my neighbors do. We watch each other\u2019s fields, and when everyone is planting, I plant too.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 9,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm about 8 mu in Quzhou County on the North China Plain. Six mu are in the traditional winter wheat\u2013summer maize double-cropping rotation, and 2 mu are planted to cotton for cash income. I use improved wheat seed and hybrid maize seed, rotary till before wheat planting, and plant maize with no-tillage directly into wheat stubble to save time and fuel. I irrigate wheat three times and maize twice, using groundwater from the well. Pest pressure here is constant, so I spray wheat four times and maize three times; cotton requires intensive spraying\u2014about fourteen times\u2014to control bollworms. Fertilizer decisions follow what my neighbors and I have always done: heavy compound fertilizer for wheat, moderate for maize, and balanced application for cotton. Expected yields are what I normally achieve: 1000 kg/mu for wheat, 1100 kg/mu for maize, and 550 kg/mu for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 9,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm about 8 mu in Quzhou County on the North China Plain. Six mu are in the traditional winter wheat\u2013summer maize double-cropping rotation, and 2 mu are planted to cotton for cash income. I use improved wheat seed and hybrid maize seed, rotary till before wheat planting, and plant maize with no-tillage directly into wheat stubble to save time and fuel. I irrigate wheat three times and maize twice, using groundwater from the well. Pest pressure here is constant, so I spray wheat four times and maize three times; cotton requires intensive spraying\u2014about fourteen times\u2014to control bollworms. Fertilizer decisions follow what my neighbors and I have always done: heavy compound fertilizer for wheat, moderate for maize, and balanced application for cotton. Expected yields are what I normally achieve: 1000 kg/mu for wheat, 1100 kg/mu for maize, and 550 kg/mu for cotton."
+  },
+  "elapsed_seconds": 258.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "NLY_LDZ_11",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 5 mu in Quzhou for 40 years, and at 65 I know every corner of my land. My sons work off-farm in the city, so it is mostly me and my wife managing the fields now. I cannot take on too much heavy labor, but I also cannot afford to waste money on inputs that do not pay back.\n\nThis spring, my wheat is already in the ground on 3 mu\u2014planted last October as usual. I will not till it now; the autumn ploughing was enough. I will top-dress urea at green-up and irrigate three times from the well: at jointing, heading, and grain-filling. Too much nitrogen makes the wheat lodge, so I keep it moderate. I spray twice for weeds and aphids. After harvest in early June, I will rotary till quickly and plant hybrid maize. Summer maize has a short season, so I give it two irrigations and two pesticide applications. It is a reliable rotation.\n\nOn the remaining 2 mu, I will plant cotton in late April. Cotton earns more cash per mu than grain if the lint price holds, but picking it by hand in autumn is hard work at my age. Two mu is my limit now. I plough deeply in spring to warm the soil and break the hardpan, then plant hybrid Bt cotton to cut down on bollworm sprays. I fertilize with compound fertilizer at planting and top-dress urea at flowering. I irrigate three times\u2014seedling, flowering, and boll\u2014and spray four times for aphids and spider mites. I expect around 280 kg of seed cotton per mu, which is an honest yield for my soil.\n\nI have a well, so I have water, but pumping costs electricity. I only irrigate when the topsoil is dry past my second knuckle. After four decades, I know that saving a little on water and fertilizer is better than pushing for maximum yield and risking lodging, disease, or wasted money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 540\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"With 5 mu and limited labor at age 65, I allocate 3 mu to the reliable wheat-maize rotation and 2 mu to higher-value cotton. I apply moderate fertilizer based on decades of experience watching for lodging in wheat and excessive vegetative growth in cotton. I irrigate from my well only when necessary to save electricity, and I choose hybrid Bt cotton to reduce pesticide use while still protecting yields. Tillage matches each crop\u2019s needs: no-tillage for the standing wheat, quick rotary tillage after wheat for maize, and deep spring ploughing for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 540
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "With 5 mu and limited labor at age 65, I allocate 3 mu to the reliable wheat-maize rotation and 2 mu to higher-value cotton. I apply moderate fertilizer based on decades of experience watching for lodging in wheat and excessive vegetative growth in cotton. I irrigate from my well only when necessary to save electricity, and I choose hybrid Bt cotton to reduce pesticide use while still protecting yields. Tillage matches each crop\u2019s needs: no-tillage for the standing wheat, quick rotary tillage after wheat for maize, and deep spring ploughing for cotton."
+  },
+  "elapsed_seconds": 103.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "QZ_WZ_6",
+  "tier": 2,
+  "provider": "kimi"
+}

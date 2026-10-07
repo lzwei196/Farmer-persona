@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 64 this year, and I have worked my 7.5 mu in Quzhou for 40 years. I finished middle school, so I can read the numbers on fertilizer bags and keep my own accounts, but I did not learn farming from books. I learned it from my father, from doing it myself, and from watching what the good farmers around me do.\n\nI split my land into 5 mu of cotton and 2.5 mu of stevia. The cotton is what pays for my wife and me to live through the year. The stevia I started three years ago because a buyer from Shandong drives to the village and pays cash for the dried leaves.\n\nFor my cotton, I start from what I did last year. Last spring I put down two 50-jin bags of compound fertilizer per mu as base dressing \u2014 the kind that says 15-15-15 on the bag, so that is 100 jin per mu. Then I top-dressed twice with urea, about 25 jin per mu each time, 50 jin total. The crop was decent; I got about 450 jin of seed cotton per mu. This year the fertilizer dealer tried to sell me some new brand with a shiny bag, but I said no. My neighbor Wang used the same 15-15-15 and urea as me last year and his cotton looked good, so I will do the same. If you force me to translate my bags into those kilograms, it comes to about 20 kg of nitrogen, 8 kg of phosphate, and 10 kg of potash per mu. I plant hybrid Bt cotton seeds from the seed station \u2014 the kind with the poison built in to kill bollworm. I still spray pesticide four times: once early for aphids, twice in the hot months for mites and other worms, and once more late if I see damage. I irrigate three times from my well \u2014 once after sowing if the spring is dry, once when the cotton flowers, and once when the bolls are filling. My well has never let me down. I do rotary tillage. My nephew brings his small tractor and I pay him 50 yuan per mu. I expect about 460 jin of seed cotton per mu this year, which is 230 kg. I would rather put down a little too much fertilizer than risk the bolls not setting. A bad year means I cannot pay for my wife's medicine and I have to borrow money. Wasting some fertilizer is just a cost I accept.\n\nFor the stevia on the other 2.5 mu, it is a lighter crop. I give it one 50-jin bag of compound fertilizer per mu and about 20 jin of urea. That is enough. I irrigate twice, in June and August, and I spray pesticide twice for leaf spots and insects. I expect about 200 kg of dried leaves per mu. The buyer pays 12 yuan per kg, so that is 2,400 yuan per mu after drying, which is decent money for not too much work.\n\nI think about my whole budget. The cotton will cost me about 700 yuan per mu in fertilizer, pesticide, and seed. The stevia is about 400 yuan per mu. I have some savings from last year. I will do the labor myself and my wife will help, but at cotton picking time in October I will hire two women from the village for about 10 days at 150 yuan per day. My back is not what it was at 40, and I cannot pick 5 mu alone anymore.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 230\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I manage 5 mu of cotton and 2.5 mu of stevia. For cotton, I follow last year's proven practice of 100 jin of 15-15-15 compound fertilizer per mu as base dressing plus 50 jin of urea in two top dressings, giving roughly 20 kg nitrogen, 8 kg phosphorus, and 10 kg potassium per mu. I use hybrid Bt cotton seeds, irrigate three times from my well, spray four times, and rotary till. I expect 230 kg of seed cotton per mu. For stevia, I apply lighter inputs with one bag of compound fertilizer and 20 jin of urea per mu, irrigate twice, spray twice, and expect 200 kg of dried leaves per mu. I worry about every yuan but will not cut fertilizer rates because a failed crop is a disaster while extra fertilizer is only a cost, and I copy what my successful neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 230
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I manage 5 mu of cotton and 2.5 mu of stevia. For cotton, I follow last year's proven practice of 100 jin of 15-15-15 compound fertilizer per mu as base dressing plus 50 jin of urea in two top dressings, giving roughly 20 kg nitrogen, 8 kg phosphorus, and 10 kg potassium per mu. I use hybrid Bt cotton seeds, irrigate three times from my well, spray four times, and rotary till. I expect 230 kg of seed cotton per mu. For stevia, I apply lighter inputs with one bag of compound fertilizer and 20 jin of urea per mu, irrigate twice, spray twice, and expect 200 kg of dried leaves per mu. I worry about every yuan but will not cut fertilizer rates because a failed crop is a disaster while extra fertilizer is only a cost, and I copy what my successful neighbors do."
+  },
+  "elapsed_seconds": 175.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_5",
+  "tier": 3,
+  "provider": "kimi"
+}

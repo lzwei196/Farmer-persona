@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and I have been working this soil for 40 years. I never went to school, but my hands know this land. Let me think about each field.\n\nMy 14 mu \u2014 I keep 3 mu for cotton like I always do (the western strip, the soil there drains better), and the other 11 mu I do wheat then maize, wheat then maize, every year. That is what everyone here does. It works.\n\n**Wheat (11 mu, winter):**\nLast year was alright \u2014 maybe 450 kg per mu. I will plant the same seed my son-in-law brought from the dealer last autumn. He said it is \"improved,\" good for our land. Before planting, I spread one bag (50 kg) of compound fertilizer \u2014 the one with three 15s on the bag \u2014 on each mu. Then I plough it in. After the spring, when the wheat starts standing up, I put urea, maybe half a bag per mu. That is about 25 kg. If the leaves look pale after the rain, I add a little more. Better to spend 20 yuan extra on urea than lose half the harvest. I water it 3 or 4 times from the well \u2014 before winter, at green-up, at jointing, and at grain filling. For the bugs and the rust, I spray twice with what the shop sells me.\n\n**Maize (11 mu, summer):**\nAfter I cut the wheat in June I put the maize seed straight in \u2014 no ploughing, my neighbor Old Wang does it that way and his maize is good. I use hybrid seed, the yellow bag from the township shop. I throw one bag of compound per mu before or at planting, then topdress urea, maybe 20 kg per mu, when the plant is knee-high. Water once or twice if the rain does not come. Spray once for the borer. Last year maize gave me 550 kg per mu. Hopefully same this year.\n\n**Cotton (3 mu, spring):**\nCotton is more work, more worry. I plough this ground \u2014 cotton wants loose soil. I use improved seed from the co-op. Cotton eats more, especially in summer when the bolls form. I put one and a half bags of compound per mu at planting, and topdress urea twice \u2014 about 15 kg each time. Potassium is important for cotton, so I add a bag of potassium fertilizer across the 3 mu. Water 3 times from the well. Spray 5 or 6 times \u2014 the bollworm, the aphid, they come every year. Cotton gives me maybe 250 kg per mu of seed cotton if the weather is kind.\n\nMy wife helps with the picking. The children send money for the inputs when I am short. I do not gamble with fertilizer \u2014 a little extra costs money but saves the harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 11.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 11.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I always have \u2014 wheat then maize on 11 mu, cotton on 3 mu on the western strip. I use one bag of compound fertilizer per mu at planting for wheat and maize, with urea topdressing when the crop needs a push. Cotton gets more because it eats more and the bolls need potassium. I would rather put a little extra fertilizer than risk a thin harvest \u2014 that is real money lost. I copy what works for my neighbors like Old Wang and buy seed from the township shop my son-in-law trusts. Pesticide for cotton is the heaviest cost, but the bollworm does not wait.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 11.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 11.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm the way I always have \u2014 wheat then maize on 11 mu, cotton on 3 mu on the western strip. I use one bag of compound fertilizer per mu at planting for wheat and maize, with urea topdressing when the crop needs a push. Cotton gets more because it eats more and the bolls need potassium. I would rather put a little extra fertilizer than risk a thin harvest \u2014 that is real money lost. I copy what works for my neighbors like Old Wang and buy seed from the township shop my son-in-law trusts. Pesticide for cotton is the heaviest cost, but the bollworm does not wait."
+  },
+  "elapsed_seconds": 43.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_13",
+  "tier": 3,
+  "provider": "claude"
+}

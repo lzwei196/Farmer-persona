@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 52-year-old woman who has farmed these same plots in Quzhou County since I was a young girl. I never went to school, but I know this land. My husband and I have 4 mu of good flat land, and every year we follow the rotation our parents taught us: winter wheat followed by summer maize. I do not know fancy words, but I know what works.\n\nMy wheat is already in the ground \u2014 I sowed it last October after the rotary machine turned the soil. I used about 30 jin of wheat seed per mu, the kind we have been using for years. Now that spring has come, I need to water it three times before harvest in early June, and I will topdress with urea when the wheat is jointing. The insects come every year, so I will spray twice for bugs and once for weeds. I also need one more spray to prevent disease when the weather turns humid.\n\nAfter we harvest the wheat in June, I will hire the machine to chop the straw and spread it on the field. Then I will plant maize right away \u2014 no need to plough again, I just seed directly into the stubble. Everyone around here uses Denghai 605 hybrid maize seed now; it costs more but yields better and the grain dealer pays well for it. The maize will need two irrigations during the summer, and I will put down compound fertilizer at planting. I will spray for insects two or three times, and once for weeds when the seedlings are small. By October, the maize will be dry and ready to harvest.\n\nThis is the same plan as last year and the year before. The prices for grain are stable, and I know this rotation feeds my family and gives us enough to sell. I do not want to try new crops \u2014 vegetables are risky, and cotton needs too much spraying. Wheat and maize are safe.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat and maize in rotation on 4 mu of land because this is the system my family has used for generations and it provides stable food and income. Wheat was sown last October and will be harvested in June, followed immediately by no-till maize planting. I use rotary tillage for wheat, improved wheat seed saved from prior years, and hybrid Denghai 605 maize seed purchased from the local dealer. Fertilizer is applied as compound basal dressing and urea topdressing, with irrigation from the village well using border flooding. Pest and weed control follows the schedule I have used for years, with 3-4 spray applications per crop. I avoid cash crops like vegetables or cotton because they are too risky and labor-intensive for me to manage alone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow wheat and maize in rotation on 4 mu of land because this is the system my family has used for generations and it provides stable food and income. Wheat was sown last October and will be harvested in June, followed immediately by no-till maize planting. I use rotary tillage for wheat, improved wheat seed saved from prior years, and hybrid Denghai 605 maize seed purchased from the local dealer. Fertilizer is applied as compound basal dressing and urea topdressing, with irrigation from the village well using border flooding. Pest and weed control follows the schedule I have used for years, with 3-4 spray applications per crop. I avoid cash crops like vegetables or cotton because they are too risky and labor-intensive for me to manage alone."
+  },
+  "elapsed_seconds": 87.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_9",
+  "tier": 1,
+  "provider": "kimi"
+}

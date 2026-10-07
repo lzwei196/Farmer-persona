@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 40 years. I know this soil, I know this weather, and I know what gives me a decent harvest. My wife and two sons help when they're not working in town, so I can't do anything too complicated. My well gives me enough water if I plan carefully. Here's how I see this year:\n\n**Wheat and maize on the main plot (about 7 mu):** This rotation is what feeds my family and brings in steady cash. I'll use the improved wheat variety the village has been using for years \u2014 it does well here and the seed dealer knows it. Same with maize \u2014 I buy Zhengdan 958 hybrid seed like always. It's reliable. I apply fertilizer in two batches the way my father taught me, plus what the township agronomist said a few years back. Three irrigations for wheat, two for maize from my well.\n\n**Cotton (the remaining 3.9 mu):** Cotton is harder work and prices have been up and down, but I keep some because it spreads my risk. I use the Bt hybrid cotton \u2014 far fewer bollworm sprays than the old days. But I still have to watch for aphids and whitefly. I plough this plot deeper because cotton roots need room.\n\nI won't change much from last year. At my age, I do what I know works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 10.9 mu between a wheat-maize double-cropping rotation on 7 mu and cotton on the remaining 3.9 mu. Wheat goes in October with improved variety seed and three well irrigations covering pre-sowing, jointing, and heading; maize follows immediately after the June wheat harvest using hybrid seed with two irrigations. Cotton gets deeper plough tillage, four irrigations spread across the growing season, and four pesticide passes targeting aphids and whitefly since I use Bt hybrid seed that handles bollworm. Fertilizer rates follow what I have learned over 40 years and match what works on my specific sandy-loam soil in Quzhou. I keep both cotton and grain crops to spread market risk, and I manage inputs to what my family labor can handle given that my sons work off-farm most months.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 10.9 mu between a wheat-maize double-cropping rotation on 7 mu and cotton on the remaining 3.9 mu. Wheat goes in October with improved variety seed and three well irrigations covering pre-sowing, jointing, and heading; maize follows immediately after the June wheat harvest using hybrid seed with two irrigations. Cotton gets deeper plough tillage, four irrigations spread across the growing season, and four pesticide passes targeting aphids and whitefly since I use Bt hybrid seed that handles bollworm. Fertilizer rates follow what I have learned over 40 years and match what works on my specific sandy-loam soil in Quzhou. I keep both cotton and grain crops to spread market risk, and I manage inputs to what my family labor can handle given that my sons work off-farm most months."
+  },
+  "elapsed_seconds": 46.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_13",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this wheat-maize land for 30 years, so I will start from what has worked for me before and only adjust a little. My land is only 3.8 mu, so every bag of fertilizer costs real money, but I still do not want to hold back too much on fertilizer because if yield drops, that loss is bigger than wasting a little input. Here in Hebei, with well irrigation, I will keep the usual wheat-maize rotation on all 3.8 mu. For wheat, I will use an improved variety, put fertilizer a bit heavier at the base, water about 3 times if the year is normal, and spray 2 times if disease and aphids show up. Wheat needs steady growth through winter and spring, so I will not let it go hungry early. After wheat harvest, I will quickly rotary till and plant summer maize. For maize, I will use hybrid seed because that has been the normal choice around here for years and the yield is better if management keeps up. I will feed maize mainly with nitrogen, keep some phosphorus and potassium under it, irrigate 2 times in a normal year, and spray about 2 times for weeds and insects. I do what I have seen work on fields around me: not too fancy, not too risky, but enough input to protect yield on irrigated land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will keep all 3.8 mu in the usual wheat-maize rotation because that is what suits my land and irrigation condition. I will use improved wheat seed and hybrid maize seed, apply fertilizer on the safe side so I do not risk yield loss, and stay close to what has worked in past years on my own field and nearby fields. On this small area, I can manage water myself, so I will irrigate wheat 3 times and maize 2 times in a normal year. I will rotary till for speed after each harvest, spray about 2 times per crop when needed, and aim for about 550 kg per mu for wheat and 600 kg per mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will keep all 3.8 mu in the usual wheat-maize rotation because that is what suits my land and irrigation condition. I will use improved wheat seed and hybrid maize seed, apply fertilizer on the safe side so I do not risk yield loss, and stay close to what has worked in past years on my own field and nearby fields. On this small area, I can manage water myself, so I will irrigate wheat 3 times and maize 2 times in a normal year. I will rotary till for speed after each harvest, spray about 2 times per crop when needed, and aim for about 550 kg per mu for wheat and 600 kg per mu for maize."
+  },
+  "elapsed_seconds": 31.7,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_3",
+  "tier": 3,
+  "provider": "codex"
+}

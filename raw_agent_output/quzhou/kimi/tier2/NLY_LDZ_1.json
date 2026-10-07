@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 70 years old, and I have worked this land for half a century. My bones know the rhythm of the North China Plain better than any book. My wife and I are the only ones left in the house to do the work, so I cannot chase every mu for maximum yield like the young men with big machines. I need a plan that is steady, that I can manage with my own two hands and my well.\n\n**Wheat and maize** are my backbone. I will put 4.8 mu into the wheat-maize double cropping system that I have used for decades. In early October, after rotary tilling the soil fine, I will sow *Luyuan 502* \u2014 an improved wheat variety that my neighbors and I have trusted for years. I spread compound fertilizer as basal dressing before sowing, and when the wheat wakes up in March, I topdress with urea at jointing. I irrigate three times: before winter to help it survive the cold, at jointing, and once more at heading. That wheat should give me nearly 1,000 jin per mu. As soon as the wheat comes off in early June, I plant *Denghai 605* hybrid maize directly into the stubble without tilling \u2014 there is no time to waste in the short summer season, and this hybrid grows fast and strong. I give it compound fertilizer at planting, water it twice (at the big\u5587\u53ed\u53e3 stage and during grain filling), and spray two or three times for insects and weeds. I expect around 1,050 jin per mu from the maize.\n\n**Cotton** is hard work at my age \u2014 all that spraying and hand-picking \u2014 but the price is good and I know this crop. I keep 2.0 mu for cotton, which is enough for my wife and me to manage without killing ourselves. I use a traditional variety I have saved and bought for years, something like *99-1* that I understand. I rotary till the cotton plot in spring, apply compound fertilizer as basal, and side-dress a little nitrogen when the plants start fruiting. Cotton is thirsty and prone to bollworm, so I irrigate twice and spray every 10 to 12 days during peak season \u2014 about 10 or 12 sprayings total mixing insecticides, herbicides, and whatever else the field needs. If the weather cooperates, I should get about 520 jin of seed cotton per mu.\n\nI do not hire much labor anymore \u2014 just the two of us. I use my well for all irrigation. I keep my fertilizer application moderate; over-fertilizing is throwing money into the wind. At 70, I do not gamble on new fancy methods. I do what has fed my family for 50 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 38,\n      \"phosphorus_kg_per_mu\": 14,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 980\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I am 70 years old with only my wife to help on 6.8 mu, so I allocate 4.8 mu to the reliable wheat-maize double cropping system and keep 2.0 mu for cotton, which I know well but is too labor-intensive to expand at my age. I use an improved wheat variety with rotary tillage and three irrigations, and a hybrid maize planted no-till immediately after wheat harvest with two irrigations. Cotton gets traditional seed, rotary tillage, frequent pesticide sprays for bollworm, and two irrigations. I apply moderate rates of NPK fertilizer based on decades of experience, aiming for steady yields I can achieve without hired labor or excessive physical strain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 38,
+        "phosphorus_kg_per_mu": 14,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 980
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I am 70 years old with only my wife to help on 6.8 mu, so I allocate 4.8 mu to the reliable wheat-maize double cropping system and keep 2.0 mu for cotton, which I know well but is too labor-intensive to expand at my age. I use an improved wheat variety with rotary tillage and three irrigations, and a hybrid maize planted no-till immediately after wheat harvest with two irrigations. Cotton gets traditional seed, rotary tillage, frequent pesticide sprays for bollworm, and two irrigations. I apply moderate rates of NPK fertilizer based on decades of experience, aiming for steady yields I can achieve without hired labor or excessive physical strain."
+  },
+  "elapsed_seconds": 125.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_1",
+  "tier": 2,
+  "provider": "kimi"
+}

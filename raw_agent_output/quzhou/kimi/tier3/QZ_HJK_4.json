@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 73 years old. I have farmed these fields in Quzhou for 50 years, since I was 23. I only finished primary school, but I know my land. I learned everything from my father and from watching the good farmers in our village. If my neighbor Li Laohan has a good harvest, I copy what he did.\n\nMy farm is 5 mu. I have 3.5 mu in wheat-maize rotation, and 1.5 mu I plant with cotton. There are only two of us in the house now, so I cannot manage too much land, and I do not hire much labor \u2014 it costs too much.\n\nFor wheat, I do what I did last year. In October, I rotary till the 3.5 mu and sow improved wheat seed, about 30 jin per mu. When I sow, I spread one bag of compound fertilizer per mu \u2014 that is 100 jin per mu. Then in March, when the wheat turns green, I top-dress with half a bag of urea, about 45 jin per mu. Fertilizer is expensive now, but I would rather use a bit too much than lose yield. A bad harvest is a disaster; wasting some fertilizer is just money. I irrigate three times: once after sowing if the autumn is dry, once at green-up, and once at heading. I spray insecticide twice and herbicide once, and if it looks like disease might come, I spray fungicide once too. I expect about 1000 jin per mu, same as last year if the frost does not kill it.\n\nFor maize, I plant right after the wheat harvest in June on the same 3.5 mu. I do not till again \u2014 I sow directly into the wheat stubble. I use hybrid maize seed, about 2 jin per mu. I put down 80 jin of compound fertilizer per mu at sowing. That is what everyone here does, so I do it too. I irrigate twice, and I spray for insects twice and weeds once. Maize is easier than cotton. I expect about 1100 jin per mu.\n\nFor cotton on my 1.5 mu, I rotary till in April and sow improved cotton seed, about 3 jin per mu. I put 100 jin of compound fertilizer per mu as base, and when it flowers I add another 20 jin of urea per mu. Cotton needs a lot of spraying \u2014 bollworm is terrible here. I spray insecticide 13 times, maybe 14 if the worms are bad, and I spray herbicide once. I irrigate two times. I hope for 550 jin per mu. Cotton uses up a lot of my pesticide budget, so I have to be careful with money on other things, but without those sprays the cotton is ruined.\n\nI watch my neighbors. If they use one bag of compound per mu, I use one bag. If they irrigate three times, I irrigate three times. That is how I have farmed for 50 years, and I am still here.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I manage 5 mu with 3.5 mu in wheat-maize rotation and 1.5 mu in cotton. I learned from 50 years of doing and watching neighbors. For wheat I rotary till, use one bag of compound fertilizer per mu plus urea at green-up, irrigate three times, and spray four times total. For maize I no-till plant after wheat harvest with compound fertilizer only, irrigate twice, and spray three times. Cotton gets compound plus urea at flowering, but needs 14 pesticide sprays for bollworm. I stick to what worked last year because change is risky, and I would rather spend on fertilizer than lose yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I manage 5 mu with 3.5 mu in wheat-maize rotation and 1.5 mu in cotton. I learned from 50 years of doing and watching neighbors. For wheat I rotary till, use one bag of compound fertilizer per mu plus urea at green-up, irrigate three times, and spray four times total. For maize I no-till plant after wheat harvest with compound fertilizer only, irrigate twice, and spray three times. Cotton gets compound plus urea at flowering, but needs 14 pesticide sprays for bollworm. I stick to what worked last year because change is risky, and I would rather spend on fertilizer than lose yield."
+  },
+  "elapsed_seconds": 295.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_HJK_4",
+  "tier": 3,
+  "provider": "kimi"
+}

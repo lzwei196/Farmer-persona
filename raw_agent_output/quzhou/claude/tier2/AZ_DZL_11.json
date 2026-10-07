@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land for 35 years. I know what works here in Quzhou. The soil is familiar to me, and I've seen good years and bad years. My wife handles the household; my son works in the city now, so it's mostly me doing the field work, maybe hiring day labor at peak times.\n\n**How I think through this:**\n\nMy 10.1 mu splits naturally in my head. About 7 mu runs wheat-maize \u2014 I plant wheat in October after the maize comes off, harvest it in June, then go straight into maize. The other 3.1 mu is cotton. Cotton doesn't fit the wheat-maize rotation because it goes in the ground in April and doesn't come off until September or October. That field sits separate.\n\n**Wheat:** I'll use improved seed \u2014 the local agricultural station pushed Jimai 22 a few years back and my neighbors get decent yields. I rotary till after maize harvest, it's faster and I can manage alone. I'll irrigate three times: once before winter sets in to help the roots establish, once at jointing in spring, and once at heading. Maybe a fourth if it's a dry spring, but three is usually enough with my well. Two pesticide passes \u2014 one herbicide in winter, one for aphids and rust in May.\n\n**Maize:** I direct-seed right after wheat harvest \u2014 no tillage. I'm too busy and the stubble holds moisture. Hybrid seed, no question, everyone here uses hybrids now. I'll apply base fertilizer at planting and topdress at the big bell stage. Two irrigations \u2014 one at the seedling stage if it's dry, one at silking. One pesticide application for corn borer, maybe armyworm if it's a bad year.\n\n**Cotton:** This is the labor-heavy one. Six pesticide passes minimum \u2014 bollworm, aphids, spider mites, it never ends with cotton. Four irrigations. I'll plough this field in spring before planting to break up the soil and work in manure if I can get it. Improved Bt cotton variety to reduce bollworm pressure. Yields have been dropping a little the past few years but I keep growing it because the price has been acceptable and I know how to manage it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"My 10.1 mu splits into 7 mu of wheat-maize double cropping and 3.1 mu of cotton on a separate field. For wheat I use improved seed and rotary tillage after maize harvest, irrigating three times and spraying twice for weeds and aphids, expecting around 450 kg/mu. For maize I direct-seed into wheat stubble with no tillage, using hybrid seed, two irrigations, and one pesticide pass for corn borer, expecting 550 kg/mu. Cotton gets plough tillage in spring, improved Bt seed, four irrigations, and six pesticide applications to manage bollworm and other pests through the long growing season, expecting around 280 kg/mu of seed cotton. With my son off-farm, I manage most of this myself plus occasional hired day labor at planting and cotton harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "My 10.1 mu splits into 7 mu of wheat-maize double cropping and 3.1 mu of cotton on a separate field. For wheat I use improved seed and rotary tillage after maize harvest, irrigating three times and spraying twice for weeds and aphids, expecting around 450 kg/mu. For maize I direct-seed into wheat stubble with no tillage, using hybrid seed, two irrigations, and one pesticide pass for corn borer, expecting 550 kg/mu. Cotton gets plough tillage in spring, improved Bt seed, four irrigations, and six pesticide applications to manage bollworm and other pests through the long growing season, expecting around 280 kg/mu of seed cotton. With my son off-farm, I manage most of this myself plus occasional hired day labor at planting and cotton harvest."
+  },
+  "elapsed_seconds": 63.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_11",
+  "tier": 2,
+  "provider": "claude"
+}

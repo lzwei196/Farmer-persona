@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am old now, 83 years, but my hands still know the land. Five mu is all I have, and with only me and my wife at home, I do what I have always done. My son helps bring in the harvest, but the rest is mine.\n\nFor the wheat, I sow in October like every year. I use the improved seed from the agricultural station in town \u2014 the dealer sells the same variety most people here plant, and last year it gave me almost 450 kg per mu, so I keep with it. Before sowing, I spread two bags of compound fertilizer (the 15-15-15 kind, about 50 kg each) per mu as base. That is one bag for two mu... no, wait, I mean two bags for one mu. My memory is not what it was, but my hands remember. Then in spring, at jointing time, I topdress with urea, about one small bag \u2014 20 kg \u2014 per mu. Irrigation I do three times from the well: once before winter so the roots settle, once at jointing in March, and once when the grain is filling if the sky does not give rain. Pesticide I spray twice, once for aphids and once for the rust when I see the leaves yellowing.\n\nFor the maize, I plant right after the wheat comes off in June. I do not plough \u2014 I just use rotary, it saves the tractor fee. The seed I buy is hybrid, the Zhengdan type most neighbors use. Base fertilizer is one bag of compound per mu at sowing, then I topdress urea twice \u2014 once when knee-high, once before tasseling \u2014 maybe 25 kg of urea total per mu. Potassium I do not add separately; the compound fertilizer has some. I irrigate twice from the well, at tasseling and grain-filling. Pesticide maybe two times for the borer.\n\nI could spend less on fertilizer, but a bad harvest scares me more than wasting a few yuan. Better too much than too little.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am 83 and farm 5 mu the way I have for decades. I use two bags of compound fertilizer per mu as base for each crop plus urea topdressing because underfeeding scares me more than overspending. I plant the improved wheat and hybrid maize my neighbors trust, irrigate from my well three times for wheat and twice for maize, rotary-till to save money, and spray pesticide twice per crop when I see pests. I stay with what worked last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am 83 and farm 5 mu the way I have for decades. I use two bags of compound fertilizer per mu as base for each crop plus urea topdressing because underfeeding scares me more than overspending. I plant the improved wheat and hybrid maize my neighbors trust, irrigate from my well three times for wheat and twice for maize, rotary-till to save money, and spray pesticide twice per crop when I see pests. I stay with what worked last year."
+  },
+  "elapsed_seconds": 29.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_9",
+  "tier": 3,
+  "provider": "claude"
+}

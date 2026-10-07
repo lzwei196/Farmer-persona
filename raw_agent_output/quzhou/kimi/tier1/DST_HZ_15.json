@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 40 years old, farming 7 mu in Dongfu village, Anzhai township, Quzhou County. I finished middle school, so I can read the fertilizer bags and understand what the extension agent says at the village meetings, but I still go by what my father taught me and what the successful neighbors do. My wife works part-time at a garment factory in town, and we have two kids in school, so I need steady returns without too much risk.\n\nThis year I'm keeping all 7 mu in wheat\u2013maize double cropping. The wheat went in last October with rotary tillage, using an improved variety. I put down about 100 jin of compound fertilizer per mu as base, and topdressed another 50 jin at green-up in March. I'll irrigate three times total \u2014 winter irrigation is already done, and I'll do two more in spring at jointing and grain-filling. For the summer maize, I'll plant hybrid seed like Nongda 372 right after wheat harvest in early June. There's barely a week between harvest and planting, so there's no time for tillage \u2014 it's no-tillage direct seeding. I'll put down compound fertilizer at sowing and topdress with urea at the big\u5587\u53ed\u53e3 stage. I'll irrigate twice if it doesn't rain, and spray pesticides twice for both crops to control weeds and borers.\n\nI thought about growing cotton like my cousin does, but it needs too much hand-picking labor and the price bounces around too much. Wheat and maize give me food security and a stable market. Last year I got about 420 kg/mu of wheat and 480 kg/mu of maize; this year I'm hoping for 450 kg/mu and 500 kg/mu if the weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I'm a 40-year-old smallholder with 7 mu in Quzhou County. I stick with wheat-maize double cropping because it's reliable and fits my labor constraints. I use improved wheat seed with rotary tillage, and hybrid maize with no-tillage due to the tight turnaround after wheat harvest. My fertilizer rates are a bit above what the extension agent recommends because I'd rather waste a little money than risk a bad yield. I irrigate wheat three times and maize twice, with two pesticide applications for each crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I'm a 40-year-old smallholder with 7 mu in Quzhou County. I stick with wheat-maize double cropping because it's reliable and fits my labor constraints. I use improved wheat seed with rotary tillage, and hybrid maize with no-tillage due to the tight turnaround after wheat harvest. My fertilizer rates are a bit above what the extension agent recommends because I'd rather waste a little money than risk a bad yield. I irrigate wheat three times and maize twice, with two pesticide applications for each crop."
+  },
+  "elapsed_seconds": 75.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_15",
+  "tier": 1,
+  "provider": "kimi"
+}

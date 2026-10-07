@@ -1,0 +1,53 @@
+{
+  "raw_response": "My family has farmed this land for generations and I have done this work for 40 years. My hands know the soil. My husband's cousin works in the city now, so I manage most of the farm myself \u2014 I must keep things simple and steady.\n\nI have 15 mu. I give 12 mu to the wheat-maize rotation \u2014 that is my main food and income. The other 3 mu I plant garlic. Garlic brings good money at market and I know it well.\n\nFor wheat, I use the same improved variety the seed shop in town has sold for years \u2014 I trust it. I apply base fertilizer before planting, then urea in spring when the plants start growing again. I water four times: once before winter freezes, once in early spring, once when stems are rising, once when grain is filling. Two pesticide sprays \u2014 one in spring for disease, one around heading. I rotary till after maize harvest to break up the stubble.\n\nFor maize, I direct seed into the wheat stubble right after harvest in June. No time to plough in summer heat. I buy hybrid seed from the cooperative \u2014 everyone around here does, yields are much better. I water twice when it looks dry. Two sprays for pests.\n\nFor garlic, I use my own saved cloves \u2014 I have been selecting the best ones for thirty years. I plough the 3 mu plot deep before planting in October. Garlic needs water often and I have the well so I water five times through winter and spring. I spray three times for fungal rot, which is the worst problem.\n\nI do not change what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"autumn\",\n      \"area_mu\": 3,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 900\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old farmer with 40 years experience and no formal education in Quzhou County allocates 12 mu to the primary wheat-maize rotation and 3 mu to garlic as a cash supplement. Wheat uses a locally familiar improved variety with four irrigations covering the key growth stages, rotary tillage after maize harvest, and two pesticide applications. Summer maize is direct-seeded into wheat stubble with no tillage to save labor and moisture, using hybrid seed as is universal practice locally, with two supplemental irrigations from the well. Garlic is grown on separate ploughed land using farmer-saved cloves selected over decades, with frequent irrigation and three fungicide applications to prevent rot \u2014 the main risk. All input levels reflect experiential norms for the North China Plain rather than extension recommendations, prioritizing reliability and low risk over optimization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "garlic",
+        "season": "autumn",
+        "area_mu": 3,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 5,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 900
+      }
+    ],
+    "reasoning_summary": "A 65-year-old farmer with 40 years experience and no formal education in Quzhou County allocates 12 mu to the primary wheat-maize rotation and 3 mu to garlic as a cash supplement. Wheat uses a locally familiar improved variety with four irrigations covering the key growth stages, rotary tillage after maize harvest, and two pesticide applications. Summer maize is direct-seeded into wheat stubble with no tillage to save labor and moisture, using hybrid seed as is universal practice locally, with two supplemental irrigations from the well. Garlic is grown on separate ploughed land using farmer-saved cloves selected over decades, with frequent irrigation and three fungicide applications to prevent rot \u2014 the main risk. All input levels reflect experiential norms for the North China Plain rather than extension recommendations, prioritizing reliability and low risk over optimization."
+  },
+  "elapsed_seconds": 52.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_4",
+  "tier": 2,
+  "provider": "claude"
+}

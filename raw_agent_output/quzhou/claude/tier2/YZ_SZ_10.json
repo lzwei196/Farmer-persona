@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 40 years. I know my soil and my weather. Two households, just my wife and me now, so I cannot do the heavy work like I used to. I have to be smart about what I plant and where.\n\nMy 10.1 mu splits naturally: 7 mu for my wheat-maize rotation on the main fields, and 3.1 mu for cotton on the sandier ground near the edge where the rotation does not do as well. This is how I have always done it.\n\n**Wheat:** I plant in October after the maize comes off. I use an improved variety \u2014 the local agricultural station has been pushing Jimai varieties and I have had good results. I do not trust hybrid wheat. I apply compound fertilizer at planting and top-dress urea at jointing. I pump from the well three times: once before winter sets in, once at jointing, once at grain filling. Powdery mildew and aphids are my main worries so I spray three times. I use rotary tillage now \u2014 deep ploughing is too hard on the back at my age.\n\n**Maize:** Right after wheat harvest in June, I direct-seed hybrid maize \u2014 no tillage, straight into the stubble. This saves time and the soil is already loose. I top-dress urea twice. I only pump water if summer rains fail \u2014 usually twice is enough. One herbicide pass, one spray for corn borer.\n\n**Cotton:** I plough in spring and transplant seedlings. Cotton takes the most work and most pesticides \u2014 bollworm, spider mites, aphids, whitefly. I spray five times through the season. I irrigate three times from the well. Cotton income matters for the household, so I keep the 3.1 mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 10.1 mu between a 7-mu wheat-maize double-crop rotation on my main fields and 3.1 mu of cotton on the sandier edge plots. For wheat I use improved varieties with three well irrigations at critical stages and rotary tillage to spare my back. Summer maize is no-till direct-seeded after wheat harvest to save time, relying mostly on summer rain with two supplemental irrigations. Cotton demands the most inputs \u2014 five pesticide passes for bollworm, aphids, mites, and whitefly, three irrigations, and spring ploughing \u2014 but the cash income justifies it for a two-person household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 10.1 mu between a 7-mu wheat-maize double-crop rotation on my main fields and 3.1 mu of cotton on the sandier edge plots. For wheat I use improved varieties with three well irrigations at critical stages and rotary tillage to spare my back. Summer maize is no-till direct-seeded after wheat harvest to save time, relying mostly on summer rain with two supplemental irrigations. Cotton demands the most inputs \u2014 five pesticide passes for bollworm, aphids, mites, and whitefly, three irrigations, and spring ploughing \u2014 but the cash income justifies it for a two-person household."
+  },
+  "elapsed_seconds": 51.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_10",
+  "tier": 2,
+  "provider": "claude"
+}

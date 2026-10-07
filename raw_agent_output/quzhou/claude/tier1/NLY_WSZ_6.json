@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for generations. I'm 50 now \u2014 I started working the fields alongside my father when I was barely tall enough to hold a hoe. I don't read much, but I know this soil. I know when the rains come, I know how the wind smells before a dry spell, and I know what my neighbors plant because we all planted together since we were boys.\n\nI have about 8 mu of contracted land. The land is flat here in Quzhou, good for wheat and maize. Everyone around me does the wheat-maize rotation \u2014 plant wheat in October, harvest it in June, turn around and put maize in right away, harvest in September. My father did this, his father did this. The grain depot buys both, and the seed shop always has the seeds I need.\n\nFor wheat, I'll plant the variety the seed shop was selling last year \u2014 I think it was Jimai 22, or maybe Kenong 199, something like that. Good yield, neighbors were happy with it. I'll plough the field first, mix in the base fertilizer \u2014 urea and the phosphate compound. I always irrigate four times: the winter water before the ground freezes, one at jointing, one at heading, and one more if the grain is filling slowly. I spray for weeds in spring and hit the aphids before harvest. I expect around 450-480 kg per mu if the weather holds.\n\nAfter I cut the wheat with the hired combine in June, I plant maize the same week \u2014 no time to waste. I use the Xianyu 335 hybrid, that's what the dealer always has and it performs well here. Maize gets summer rain mostly, so I only irrigate once unless it's a bad drought year. I top-dress with urea around knee height. I might spray once for corn borer if I see damage.\n\nI don't do vegetables much \u2014 my wife keeps a small patch near the house for the family's own use, but I don't count that as a real field crop.\n\nI fertilize the way I was taught. Maybe more than some books say, but I'd rather not risk a short harvest. A bad year hits hard.\n\n---\n\n**Reasoning as me, this farmer:**\n\nI follow the winter wheat / summer maize double-crop rotation because it is what everyone in Quzhou does, what the infrastructure (wells, canals, combine rentals) is built around, and what the grain depot reliably purchases. I use hybrid seeds because the seed shop stopped selling the old kinds years ago and hybrids yield better anyway. My fertilizer rates are heavy \u2014 I learned from my father that \"feed the crop well\" and I don't have anyone telling me otherwise. I irrigate wheat four times because that is what this dry region needs. Maize mostly rides on summer rain with one backup irrigation.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 50-year-old farmer in Quzhou County with no formal schooling, farming the same 8 mu my father worked before me. I follow the winter wheat and summer maize double-crop rotation because it is the backbone of farming here \u2014 the equipment, the grain buyers, and my neighbors are all organized around it. I plough before wheat and use rotary tillage before maize to save time after the quick June harvest handoff. I plant improved wheat varieties and hybrid maize seed from the local dealer, both for their reliable yields. My fertilizer rates are on the heavy side \u2014 I apply about 19 kg nitrogen per mu on wheat and 17 on maize, along with phosphate and potash \u2014 because that is what I was taught and I cannot afford a poor harvest. Wheat gets four irrigations across the season given Quzhou's dry winters and springs; maize mostly relies on summer rainfall with one supplemental irrigation if needed. I spray herbicide, fungicide, and insecticide on wheat three times and hit maize twice for pests. I expect around 460 kg per mu of wheat and 550 kg per mu of maize, consistent with what I have seen in recent years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 50-year-old farmer in Quzhou County with no formal schooling, farming the same 8 mu my father worked before me. I follow the winter wheat and summer maize double-crop rotation because it is the backbone of farming here \u2014 the equipment, the grain buyers, and my neighbors are all organized around it. I plough before wheat and use rotary tillage before maize to save time after the quick June harvest handoff. I plant improved wheat varieties and hybrid maize seed from the local dealer, both for their reliable yields. My fertilizer rates are on the heavy side \u2014 I apply about 19 kg nitrogen per mu on wheat and 17 on maize, along with phosphate and potash \u2014 because that is what I was taught and I cannot afford a poor harvest. Wheat gets four irrigations across the season given Quzhou's dry winters and springs; maize mostly relies on summer rainfall with one supplemental irrigation if needed. I spray herbicide, fungicide, and insecticide on wheat three times and hit maize twice for pests. I expect around 460 kg per mu of wheat and 550 kg per mu of maize, consistent with what I have seen in recent years."
+  },
+  "elapsed_seconds": 56.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_6",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 74 years old. I have farmed these 6 mu in Quzhou for 55 years. My father taught me everything. I only finished primary school, but I know my land.\n\nThis year I will do mostly what I did last year. My wheat goes on all 6 mu. I plant improved seed, the kind called Jimai 22. Before planting, I spread one bag of compound fertilizer per mu \u2014 that is 100 jin, the big bag from the dealer, the one with 15-15-15 written on it. Then in spring, when the wheat turns green, I top-dress with 50 jin of urea per mu. My neighbor Lao Wang uses about the same, and his wheat always looks strong. I thought about using less because fertilizer got expensive \u2014 100 jin of urea now costs over 200 yuan \u2014 but last year my nephew tried to save money. His wheat turned yellow and he lost two big bags of grain per mu. I cannot risk that. Better to spend more on fertilizer than lose yield.\n\nI irrigate the wheat three times: once after planting if it is dry, once at jointing when the stems shoot up, and once when the grain is filling. The well pump costs electricity, but those three waterings are necessary. I spray twice: once in early spring for weeds, and once later for aphids or rust if they show up.\n\nAfter wheat harvest in June, I plant maize on the same 6 mu. I use hybrid seed \u2014 the yellow bag from the seed dealer that everyone around here buys. I put 80 jin of compound fertilizer per mu at planting, and at the big trumpet stage I spread 40 jin of urea per mu. Maize needs a lot of food when it grows tall. I irrigate twice: once at sowing if the soil is dry, and once when the ears are filling. Summer rain usually helps, but you cannot depend on it. I spray herbicide once after sowing, and if the corn borers come, I spray insecticide once more.\n\nI expect 550 kg of wheat per mu, and 600 kg of maize per mu. That is what I usually get, and I see no reason it should be different this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what has worked for 55 years. My neighbor uses similar fertilizer rates, and when my nephew cut back last year he lost yield. Fertilizer is expensive but a bad harvest is worse. I apply compound fertilizer as a base and urea as top-dressing for both crops, irrigate at the critical growth stages, and spray for weeds and insects as needed. I expect 550 kg/mu of wheat and 600 kg/mu of maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick with what has worked for 55 years. My neighbor uses similar fertilizer rates, and when my nephew cut back last year he lost yield. Fertilizer is expensive but a bad harvest is worse. I apply compound fertilizer as a base and urea as top-dressing for both crops, irrigate at the critical growth stages, and spray for weeds and insects as needed. I expect 550 kg/mu of wheat and 600 kg/mu of maize."
+  },
+  "elapsed_seconds": 174.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "AZ_DMLG_9",
+  "tier": 3,
+  "provider": "kimi"
+}

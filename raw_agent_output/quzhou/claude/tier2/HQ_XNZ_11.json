@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land in Quzhou for over three decades. The soil here is loam, deep, and I know every corner of my 18.4 mu. My cropping system centers on cotton \u2014 that's been my main cash income since the 1990s. The rest I run as wheat-maize double-cropping, which gives me grain security and steady returns when cotton prices dip.\n\nWith just two of us in the household and my wife doing some off-farm work, I can't afford to waste time on inefficient practices. I'll use well irrigation carefully \u2014 electricity costs have gone up, so I won't irrigate more than necessary, but I won't let the crops suffer either.\n\n**Cotton (8 mu):** I'll plant a hybrid BT variety again \u2014 I've used it for years and the pest pressure from bollworm is manageable. I'll rotary till in April, apply base fertilizer, and plant in late April. I'll irrigate four times: pre-plant, bud stage, peak flowering, and boll-filling. Pesticide applications will run about 5 times (aphids and spider mites are my main headaches here). I expect around 280 kg seed cotton per mu in a normal year.\n\n**Winter wheat (10.4 mu):** I'll plough after maize harvest in October to break up the pan layer \u2014 I do this every two years and this is the year for it. I'll use an improved semi-dwarf variety like Jimai 22, which performs well in this county. Four irrigations: seeding water, overwintering, jointing, and heading. Nitrogen split between base and jointing topdress. Targeting 480 kg/mu.\n\n**Summer maize (10.4 mu, same land as wheat):** Right after wheat harvest in June I'll direct-seed a hybrid \u2014 Xianyu 335 or Zhengdan 958 \u2014 no-till to save time and moisture. Only two irrigations needed if summer rains cooperate; I'll add a third at silking if it's dry. Pesticide twice: corn borer treatment and a herbicide pass. Targeting 570 kg/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 570\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 8 mu to cotton as my primary cash crop using hybrid BT seed with rotary tillage, moderate inputs, and 4 irrigations targeting 280 kg seed cotton per mu; the remaining 10.4 mu runs a wheat-maize double-crop rotation where I plough before winter wheat to break compaction and no-till summer maize directly after wheat harvest to conserve moisture and save labor, given that one household member works off-farm and my time is limited. Input levels reflect 35 years of local experience \u2014 enough nitrogen to sustain yields without over-application, and irrigation frequencies calibrated to well costs and seasonal rainfall patterns typical of Quzhou County.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 570
+      }
+    ],
+    "reasoning_summary": "I allocate 8 mu to cotton as my primary cash crop using hybrid BT seed with rotary tillage, moderate inputs, and 4 irrigations targeting 280 kg seed cotton per mu; the remaining 10.4 mu runs a wheat-maize double-crop rotation where I plough before winter wheat to break compaction and no-till summer maize directly after wheat harvest to conserve moisture and save labor, given that one household member works off-farm and my time is limited. Input levels reflect 35 years of local experience \u2014 enough nitrogen to sustain yields without over-application, and irrigation frequencies calibrated to well costs and seasonal rainfall patterns typical of Quzhou County."
+  },
+  "elapsed_seconds": 54.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_11",
+  "tier": 2,
+  "provider": "claude"
+}

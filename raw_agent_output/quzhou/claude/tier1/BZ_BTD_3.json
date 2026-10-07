@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning as this farmer:**\n\nI have farmed this land in Quzhou my whole life. My parents grew wheat and corn, my neighbors grow wheat and corn, and I grow wheat and corn. There is no question about what to plant \u2014 this is what the land here is good for, and this is what I know.\n\nI have about 6 mu of family land. I sow winter wheat in October, harvest it in June, then immediately sow summer maize on the same field. I do this every year. I have no reason to change.\n\nFor wheat seed, I use the improved variety the village cooperative sells \u2014 everyone in my village buys the same bag. I would never go back to saving my own seed; the yields are worse. For maize, I buy hybrid seed from the market in town, same brand as last year, because it did well.\n\nFertilizer, I put down what my neighbor's son-in-law told me \u2014 he farmed for thirty years. For wheat I spread a base compound fertilizer before sowing, then chase with urea at jointing. For maize I apply a compound fertilizer at sowing and topdress once. I do not calculate precisely. I know roughly how many bags per mu.\n\nMy well is shared with two other families. Wheat needs water at sowing, again before winter dormancy, again at jointing, and again at heading. That is four times. Maize gets summer rain mostly, but if August is dry I pump once or twice.\n\nI spray herbicide on both crops. For wheat I also spray fungicide in spring when there is powdery mildew \u2014 I watch what others in the village do and follow. Maize I spray for stem borer if I see damage.\n\nI use rotary tillage before wheat sowing. After wheat harvest I direct-seed the maize without tilling \u2014 saves time and diesel, and my son is not here to help me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"A 57-year-old smallholder farmer in Quzhou County follows the dominant winter wheat\u2013summer maize double-cropping rotation on 6 mu of family land, as her parents did and as her neighbors continue to do. She uses government-subsidized improved wheat varieties and market-purchased hybrid maize seed, both widely adopted in the village. Fertilizer rates are based on accumulated local practice rather than soil testing \u2014 base compound fertilizer plus urea top-dressing for both crops. Wheat receives four well irrigations (sowing, pre-winter, jointing, heading); maize relies on summer rainfall with one supplemental irrigation in a dry year. Pesticide applications cover herbicide and fungicide for wheat and herbicide plus insecticide for maize. Rotary tillage precedes wheat sowing; maize is direct-seeded into wheat stubble to save labor, since no able-bodied family member is present to help.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "A 57-year-old smallholder farmer in Quzhou County follows the dominant winter wheat\u2013summer maize double-cropping rotation on 6 mu of family land, as her parents did and as her neighbors continue to do. She uses government-subsidized improved wheat varieties and market-purchased hybrid maize seed, both widely adopted in the village. Fertilizer rates are based on accumulated local practice rather than soil testing \u2014 base compound fertilizer plus urea top-dressing for both crops. Wheat receives four well irrigations (sowing, pre-winter, jointing, heading); maize relies on summer rainfall with one supplemental irrigation in a dry year. Pesticide applications cover herbicide and fungicide for wheat and herbicide plus insecticide for maize. Rotary tillage precedes wheat sowing; maize is direct-seeded into wheat stubble to save labor, since no able-bodied family member is present to help."
+  },
+  "elapsed_seconds": 51.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_3",
+  "tier": 1,
+  "provider": "claude"
+}

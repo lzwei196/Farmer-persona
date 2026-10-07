@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for fifty years, so I mostly do what worked last year. My middle school studies help me understand the fertilizer bags and what the dealer says, but I trust my own eyes and what my neighbors do more than anything else.\n\nMy 10.1 mu is split up. About 2 mu I keep for chili because it brings cash \u2014 my wife and daughter-in-law help with the picking. The other 8.1 mu I run wheat then maize, same as everyone around me in Quzhou.\n\n**Wheat (winter):** I plant improved seed \u2014 Jimai or Shimai, whatever the agro-supply shop has that the village head planted last year. Before plowing I put down 2 bags of 15-15-15 compound (100 jin \u2248 50 kg) per mu. In spring at jointing I topdress urea, about one bag for every 2 mu, so roughly 25 kg urea per mu \u2014 that gives me maybe 19-20 kg N counting the base, plus about 7-8 kg P and K from the compound. I plough with the tractor, not no-till \u2014 wheat likes a good seedbed. I irrigate 3 times from my well: after sowing, before freeze, and at jointing. Spray twice for aphids and rust. Last year I got about 470 kg/mu, I expect the same.\n\n**Maize (summer):** After wheat harvest time is tight, so I direct-seed with the planter, no tillage. Hybrid seed \u2014 Zhengdan 958 type, everyone plants it. One bag compound as base (about 50 kg/mu) at sowing, then urea 25 kg at big flare stage. That gives me around 18 kg N. One irrigation if July is dry, the rains usually do the rest. Spray twice for corn borer. I get 550-600 kg/mu normally.\n\n**Chili:** This one I give more \u2014 it pays the grandchildren's school. Improved seedling from the dealer. More fertilizer, I use about 30 kg N total across base and topdressing, plenty of phosphorus and potash because the dealer said chili needs K for the fruit. Irrigate often from the well, maybe 7 times. Spray 7-8 times \u2014 chili gets anthracnose, aphids, thrips, you cannot skip. Plough the bed properly before transplanting.\n\nI don't want to change much. If something fails, the family eats the loss.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 7,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    }\n  ],\n  \"reasoning_summary\": \"I follow what worked last year and what my neighbors do. Wheat and maize on 8.1 mu in rotation \u2014 I plough for wheat to make a good seedbed, and no-till the maize because time after wheat harvest is tight. Standard compound 15-15-15 as base plus urea topdressing, nothing fancy. Chili on 2 mu gets more fertilizer, more water from my well, and many pesticide sprays because it pays real cash and loses easily to disease. I would rather spend a little extra on fertilizer than see the harvest fail \u2014 a bad year hurts the family more than wasted inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 7,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      }
+    ],
+    "reasoning_summary": "I follow what worked last year and what my neighbors do. Wheat and maize on 8.1 mu in rotation \u2014 I plough for wheat to make a good seedbed, and no-till the maize because time after wheat harvest is tight. Standard compound 15-15-15 as base plus urea topdressing, nothing fancy. Chili on 2 mu gets more fertilizer, more water from my well, and many pesticide sprays because it pays real cash and loses easily to disease. I would rather spend a little extra on fertilizer than see the harvest fail \u2014 a bad year hurts the family more than wasted inputs."
+  },
+  "elapsed_seconds": 44.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_9",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 45 years, so I know what each crop needs here in Quzhou. Our soil is alright but it has been tired from the wheat-maize rotation, so I pay attention to balance the nutrients, not just throw on more urea like some neighbors do.\n\nI have 9 mu total. I keep 6 mu in the wheat-maize double crop because that is our staple income \u2014 wheat in winter, maize in summer right after harvest. The other 3 mu I plant cotton because the price has been workable and cotton handles our drier patch better. With only 2 people in the household and me being 63, I cannot manage too much cotton \u2014 it needs hand picking.\n\nFor wheat, I sow improved varieties like Jimai 22 in early October. I apply about 15 kg/mu of compound fertilizer (N-P-K roughly 15-15-15) as base, then top-dress 12 kg/mu of urea at jointing in March. That gives me roughly 22 kg N, 9 kg P, 9 kg K per mu. I irrigate from my well 3 times \u2014 at green-up, jointing, and grain-filling. I expect 500 kg/mu in a good year.\n\nFor maize, I plant Zhengdan 958 hybrid right after wheat harvest. I apply 20 kg N, 6 kg P, 6 kg K per mu, mostly as compound at sowing plus urea at big-trumpet stage. Summer rain usually covers most water needs, so I only irrigate once or twice if July is dry. I expect 550 kg/mu.\n\nFor cotton, I use a Bt hybrid because bollworm is too costly to spray for otherwise. I apply 18 kg N, 9 kg P, 10 kg K per mu \u2014 cotton needs more potassium for boll development. I irrigate twice and spray 4 times for aphids and mirid bugs. I expect 250 kg/mu of seed cotton.\n\nI would rather spend a little extra on fertilizer than watch yield drop. Pesticide I am more careful with \u2014 I only spray when I see the pest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I keep 6 mu in the wheat-maize rotation as our main grain, and 3 mu in cotton for cash. Wheat gets the highest fertilizer because it carries the heaviest yield expectation and our winter is long. Maize follows wheat with no-tillage to save time and moisture, and I rely on summer rain so only irrigate once or twice. Cotton needs more potassium and more spraying because of bollworm and aphid pressure. With only 2 of us at home and me at 63, I do not push the area larger \u2014 I would rather farm 9 mu well than 12 mu poorly. I spend on fertilizer to protect yield but I am careful with pesticide, only spraying when I see the pest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I keep 6 mu in the wheat-maize rotation as our main grain, and 3 mu in cotton for cash. Wheat gets the highest fertilizer because it carries the heaviest yield expectation and our winter is long. Maize follows wheat with no-tillage to save time and moisture, and I rely on summer rain so only irrigate once or twice. Cotton needs more potassium and more spraying because of bollworm and aphid pressure. With only 2 of us at home and me at 63, I do not push the area larger \u2014 I would rather farm 9 mu well than 12 mu poorly. I spend on fertilizer to protect yield but I am careful with pesticide, only spraying when I see the pest."
+  },
+  "elapsed_seconds": 31.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_11",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed these 7 mu in Quzhou for 30 years, so I know every plot and what it can handle. My household has four people \u2014 my husband and I do most of the farm work, while our two children work off-farm in the city and send money home. That extra income helps, but I'm still careful with every yuan because pumping well water is expensive and hired labor costs add up fast.\n\nThis year I'm keeping 5.5 mu in my wheat-maize double crop and 1.5 mu in cotton. The wheat-maize is my foundation \u2014 it gives us grain for food and some cash, plus the straw goes back to the field. For winter wheat, I'll rotary till in October and sow an improved variety like Lumai, about 15 kg of seed per mu. The extension agent says 15 kg N per mu is enough, but two years ago I listened to him and cut back, and the wheat turned yellow at jointing. So I'm going back to my usual practice: about 100 kg of 15-15-15 compound fertilizer per mu, which gives 15 kg each of nitrogen, phosphorus, and potassium, plus another 15 kg of urea for an extra 7 kg of nitrogen. That brings me to about 22 kg N, 15 kg P, and 15 kg K per mu. I'll irrigate four times \u2014 winter irrigation, green-up, jointing, and grain filling \u2014 because I can't risk drought on well water I've already paid for. Three pesticide sprays are enough for wheat: herbicide after sowing, insecticide in spring, and fungicide if the weather turns humid. I expect about 450 kg per mu if we don't get a late frost.\n\nFor summer maize, there's no time to plow after wheat harvest in early June \u2014 everyone around here uses no-tillage seeding now because the window is less than a week. I buy hybrid seed by the package, about one package per mu. I put down about 100 kg of 28-6-6 compound at planting, which gives me roughly 28 kg N, 6 kg P, and 6 kg K per mu. Two irrigations are enough in summer: one when the maize is knee-high and one at tasseling. I'll spray herbicide at planting and insecticide twice if aphids show up. I expect around 500 kg per mu.\n\nMy 1.5 mu of cotton is my cash-crop hedge against low grain prices. I rotary till in April and plant guoxinmian, an improved variety. Cotton is labor-intensive \u2014 I spray about 10 times through the season for bollworms, aphids, and weeds. I apply about 100 kg of 15-15-15 compound at planting, giving roughly 15 kg N, 15 kg P, and 15 kg K per mu, and I topdress with a small handful of urea at flowering to push the nitrogen up to about 18 kg total. Two irrigations are critical, one at flowering and one during boll formation. I hope for 550 kg of seed cotton per mu.\n\nI thought about cutting fertilizer to save money, but at 51 years old I can't afford a bad harvest. I'd rather put in a little extra and make sure my family has enough to eat and some to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I keep 5.5 mu in wheat-maize double cropping for stable food and income, and 1.5 mu in cotton as a cash hedge. For wheat, I rotary till and apply about 22 kg N, 15 kg P, and 15 kg K per mu using compound fertilizer and urea, irrigate four times, and spray three times. For summer maize, I use no-tillage seeding right after wheat harvest with 28 kg N, 6 kg P, and 6 kg K from compound fertilizer, two irrigations, and three pesticide sprays. Cotton gets 18 kg N, 15 kg P, and 15 kg K per mu, two irrigations, and ten pesticide applications because bollworms and aphids are a constant threat. I apply slightly more fertilizer than the extension recommendation because I've been burned by yield losses before, and at my age I'd rather waste a little money than risk a bad harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I keep 5.5 mu in wheat-maize double cropping for stable food and income, and 1.5 mu in cotton as a cash hedge. For wheat, I rotary till and apply about 22 kg N, 15 kg P, and 15 kg K per mu using compound fertilizer and urea, irrigate four times, and spray three times. For summer maize, I use no-tillage seeding right after wheat harvest with 28 kg N, 6 kg P, and 6 kg K from compound fertilizer, two irrigations, and three pesticide sprays. Cotton gets 18 kg N, 15 kg P, and 15 kg K per mu, two irrigations, and ten pesticide applications because bollworms and aphids are a constant threat. I apply slightly more fertilizer than the extension recommendation because I've been burned by yield losses before, and at my age I'd rather waste a little money than risk a bad harvest."
+  },
+  "elapsed_seconds": 244.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_12",
+  "tier": 2,
+  "provider": "kimi"
+}

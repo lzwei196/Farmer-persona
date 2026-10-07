@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed this land 40 years, so I know what works here. Let me think this through.\n\nMy 7.8 mu is not big, not small. Just me and my wife at home now, the children live in town. So I do most work myself, hire a little help at harvest and planting.\n\n**Winter wheat first** \u2014 I plant in early October after the maize comes off. I buy the improved seed from the dealer in town, the kind most people around here use. I cannot remember the name but it is the short-stalk kind that does not fall down in wind. About 15 kg seed per mu, I drill it with the tractor service.\n\nFor fertilizer, I do what I always do. Before planting I spread compound fertilizer (the 15-15-15 kind), about 2 bags per mu \u2014 that is 50 kg bag, so 100 kg compound. That gives me roughly 15 kg N, 15 kg P, 15 kg K before sowing. Then in spring when the wheat greens up, around Qingming time, I put urea on top, about 15 kg urea per mu, that is about 7 kg more N. Total N around 22 kg per mu. My neighbor old Wang puts more but I think this is enough, last year my wheat was good.\n\nIrrigation \u2014 I have my own well, so I water 3 times. Before winter (dong shui), then after greening in spring, then when it is filling grain. Three waterings, that is what we do here.\n\nPesticide \u2014 I spray 2 times. One for aphids and red spider in April, one for the head blight and mixed with the grain-filling spray. Mix with fertilizer foliar spray, save a trip.\n\nTillage \u2014 after maize I use rotary till, the machine goes over twice. Deep plough I only do every 3-4 years, this year rotary is enough.\n\nWheat yield \u2014 a good year I get 500 kg per mu, bad year 400. I plan for 480.\n\n**Summer maize** \u2014 right after wheat harvest in June, I plant maize in the stubble. No-till with the seeder, that is what everyone does now, no time to plough before the rains. Hybrid seed, Zhengdan or Xianyu type, whatever the dealer has fresh. About 2.5 kg seed per mu.\n\nFertilizer \u2014 I put compound at sowing, about 1.5 bags per mu (75 kg of 15-15-15), then topdress urea at the big trumpet stage, about 20 kg urea per mu. So N about 20 kg, P about 11, K about 11. Maize eats more N than wheat I think.\n\nIrrigation \u2014 maize gets rain in summer usually, but I water 2 times if it is dry, at jointing and at tasseling. If the rain comes good maybe just 1 time.\n\nPesticide \u2014 corn borer is the main thing, I spray once at whorl stage, drop the granule or spray. Sometimes one more for armyworm if they show up. Say 2 times to be safe.\n\nMaize yield \u2014 550 kg per mu normally, good year 600. I plan 550.\n\nI don't change much year to year. Change is risky at my age, and what I do works. Costs are real \u2014 seed, fertilizer, diesel, pesticide, that all adds up. But skipping fertilizer is worse than spending a bit extra.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what I have done for years because it works on my land. Wheat gets compound fertilizer before planting and urea topdressing in spring, three waterings from my well, two pesticide sprays, rotary till after the maize. Summer maize goes straight into the wheat stubble no-till, compound at sowing and urea at trumpet stage, water twice if the rain is short, spray for borer and armyworm. My farm is 7.8 mu, just me and my wife, so I cannot afford to gamble on a bad harvest \u2014 I put enough fertilizer to be safe rather than save a few yuan and lose yield. My neighbors do about the same, and the dealer in town sells what everyone uses.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what I have done for years because it works on my land. Wheat gets compound fertilizer before planting and urea topdressing in spring, three waterings from my well, two pesticide sprays, rotary till after the maize. Summer maize goes straight into the wheat stubble no-till, compound at sowing and urea at trumpet stage, water twice if the rain is short, spray for borer and armyworm. My farm is 7.8 mu, just me and my wife, so I cannot afford to gamble on a bad harvest \u2014 I put enough fertilizer to be safe rather than save a few yuan and lose yield. My neighbors do about the same, and the dealer in town sells what everyone uses."
+  },
+  "elapsed_seconds": 37.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_15",
+  "tier": 3,
+  "provider": "claude"
+}

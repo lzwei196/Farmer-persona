@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old, finished primary school. I have farmed these 14 mu in Quzhou County for 45 years. My husband is 71 and we do the work ourselves. Our son works in a factory in Handan and sends some money home, but this land is still how we eat and live.\n\nI plant wheat in winter and corn in summer on all 14 mu. I don't read books and I don't trust county officials who come in clean shoes telling me what to do. I learned from my father and I watch my neighbors. If Old Wang's wheat looks heavy and full, I ask him what he used and I copy him.\n\nFor the wheat: Last October I sowed improved seed, 30 jin per mu. I bought it from the seed dealer in town \u2014 the same kind Old Wang used, his wheat stood up well to the wind. Before sowing I ploughed the land deep. I spread one bag of compound fertilizer per mu, that's 100 jin, 50 kilograms. Then in March when the wheat turns green, I topdress 50 jin of urea per mu. I know some people say that's a lot, but I saw what happened two years ago when my neighbor Li used less \u2014 his wheat turned yellow and the heads were small. He lost 100 jin per mu. I would rather waste one bag of fertilizer than lose half my harvest. Fertilizer is money, but an empty grain bin is a disaster. I irrigate three times from my well: March for green-up, April at jointing, and May when the grain fills. Pumping costs electricity, but three times is enough if you do it right. I spray herbicide once in early spring, and spray for aphids and rust twice \u2014 once in April and once in May if the weather turns damp.\n\nFor the corn: Right after we cut the wheat in early June, I sow hybrid corn seed directly without ploughing. Everyone around here switched to no-tillage for corn. It saves diesel and time, and we have to get the seed in fast before the soil dries hard. I use 4 jin of seed per mu. At sowing I put 80 jin of compound fertilizer per mu. When the corn reaches the big trumpet stage, I spread 50 jin of urea per mu. I irrigate twice: once right after sowing if the weather is dry, and once at the big trumpet stage. I spray herbicide once right after sowing, and insecticide once in July when the corn borers and armyworms come. Last year the worms were bad in the next village, so I watch carefully.\n\nLast year my wheat yielded 1000 jin per mu and my corn yielded 1200 jin per mu. This year I expect the same \u2014 about 500 kg for wheat and 600 kg for corn. The dealer tried to sell me a new corn seed for 80 yuan more per mu. I said no. I have farmed long enough to know that fancy seed is a gamble, but urea and compound fertilizer never lie.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what I know works because I learned long ago that losing yield is worse than wasting a little fertilizer. For wheat I use improved seed, one 50-kilogram bag of compound fertilizer at sowing and 25 kilograms of urea at green-up per mu, with three irrigations and three sprays on ploughed land. For corn I use hybrid seed, 40 kilograms of compound fertilizer at sowing and 25 kilograms of urea at the big trumpet stage per mu, with two irrigations and two sprays under no-tillage. I expect 500 kilograms per mu from wheat and 600 kilograms per mu from corn, same as last year. I watch my neighbors and copy the ones who harvest well, and I don't gamble on expensive new inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick with what I know works because I learned long ago that losing yield is worse than wasting a little fertilizer. For wheat I use improved seed, one 50-kilogram bag of compound fertilizer at sowing and 25 kilograms of urea at green-up per mu, with three irrigations and three sprays on ploughed land. For corn I use hybrid seed, 40 kilograms of compound fertilizer at sowing and 25 kilograms of urea at the big trumpet stage per mu, with two irrigations and two sprays under no-tillage. I expect 500 kilograms per mu from wheat and 600 kilograms per mu from corn, same as last year. I watch my neighbors and copy the ones who harvest well, and I don't gamble on expensive new inputs."
+  },
+  "elapsed_seconds": 96.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_15",
+  "tier": 3,
+  "provider": "kimi"
+}

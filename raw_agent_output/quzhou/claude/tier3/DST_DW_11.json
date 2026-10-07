@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 10.1 mu here in Quzhou. Most of my land \u2014 about 8 mu \u2014 I do wheat-maize double crop like everyone around me. That is the way here. The other 2 mu I keep for spring potato because it brings in more cash and my wife and I can manage it by hand. My children work in town so it is mostly me and my wife in the field, with some hired help at wheat harvest.\n\nFor winter wheat, I plant improved seed \u2014 I buy Jimai variety from the same dealer as my neighbor Lao Wang, he got 520 kg last year. I put down compound fertilizer 15-15-15 as base, about 50 kg/mu, then topdress urea at jointing, maybe 20 kg/mu. That comes to around 26 kg N, 7-8 kg P, 7-8 kg K. I know some say less is enough but if the wheat is yellow in spring I lose too much. Better to add a little extra. I irrigate before winter, then at jointing, at heading, and once at grain filling \u2014 four times from the well. Spray two or three times for aphids and rust. Plough after the maize stalks are chopped.\n\nFor summer maize I use hybrid seed, Zhengdan or similar. After wheat harvest I go straight no-till with the planter. I put compound as base about 40 kg/mu and topdress urea at big trumpet stage 15 kg/mu. Maize does not need as much P and K as wheat if I already fertilized well. Irrigate twice usually \u2014 after sowing and at tasseling. One or two sprays for borer and armyworm.\n\nFor spring potato I plant improved seed potatoes. Potato eats a lot of potassium so I use more compound and add potassium sulfate. I plough deep before planting. Irrigate three or four times and spray for late blight three times \u2014 potato disease is the thing that ruins you.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"potato\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 16,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 2200\n    }\n  ],\n  \"reasoning_summary\": \"I do wheat-maize on 8.1 mu like my neighbors and keep 2 mu for spring potato as cash crop. I buy improved wheat seed and hybrid maize seed from the dealer in town \u2014 Lao Wang's yields show they work. I apply a bit more fertilizer than the extension posters say because yellow wheat in spring scares me more than wasting 20 yuan of urea. For potato I use extra potassium sulfate and spray carefully against late blight since one bad disease ruins the whole crop. I irrigate from my well four times for wheat, twice for maize, and four times for potato. Plough before wheat and potato, no-till the maize straight into wheat stubble to save labor since only my wife and I work the land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "potato",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 16,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 2200
+      }
+    ],
+    "reasoning_summary": "I do wheat-maize on 8.1 mu like my neighbors and keep 2 mu for spring potato as cash crop. I buy improved wheat seed and hybrid maize seed from the dealer in town \u2014 Lao Wang's yields show they work. I apply a bit more fertilizer than the extension posters say because yellow wheat in spring scares me more than wasting 20 yuan of urea. For potato I use extra potassium sulfate and spray carefully against late blight since one bad disease ruins the whole crop. I irrigate from my well four times for wheat, twice for maize, and four times for potato. Plough before wheat and potato, no-till the maize straight into wheat stubble to save labor since only my wife and I work the land."
+  },
+  "elapsed_seconds": 40.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_11",
+  "tier": 3,
+  "provider": "claude"
+}

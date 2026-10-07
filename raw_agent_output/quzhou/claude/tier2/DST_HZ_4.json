@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for fifty years. I know every corner of my 6 mu. My children go to work in town sometimes, so I cannot rely on much outside help \u2014 I have to plan around what I can manage with my own two hands and whoever is home.\n\n**My thinking, crop by crop:**\n\n**Cotton** \u2014 this is my main crop. I have grown cotton my whole life. The extension station gave me Bt hybrid cotton seed years ago and I kept buying it. It saves me some spraying on bollworm. I will plant 2 mu of cotton in late April. Cotton needs a lot of my attention but it brings cash. I will plough the plot deep before planting, apply base fertilizer, and top-dress at flowering. I know I need to irrigate at squaring, flowering, and boll-setting \u2014 that is 4 times with my well. Aphids and spider mites always come, so I will spray about 6 times across the season. I expect around 280 kg seed cotton per mu if the weather cooperates.\n\n**Winter Wheat** \u2014 I plant wheat on 2 mu in October. I have done this so long I do it by feel. I use an improved certified variety from the county seed station \u2014 not fancy, but reliable on my soil. I plough and rotary till before sowing. Fertilizer base goes in at sowing, then I top-dress at jointing. I irrigate four times: the winter water before freezing, jointing, heading, and grain fill. Two or three pesticide applications \u2014 seed treatment plus an aphid and scab spray in spring. I expect about 400 kg per mu.\n\n**Summer Maize** \u2014 right after wheat harvest in June, I plant maize on those same 2 mu. No time to rest the land. I use hybrid maize seed \u2014\u90d1\u5355 (Zhengdan) type. I do rotary tillage after wheat straw, then sow quickly. Fertilizer all goes in as base since I am old and it is hot \u2014 hard to go back for top-dressing. I irrigate 3 times if summer is dry, less if we get rain. Fall armyworm has been a problem these past few years, so I spray 3 times now. I expect about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 74-year-old farmer with 50 years of experience in Quzhou County allocates his 6 mu across three crops: 2 mu of Bt hybrid cotton as the primary cash crop (spring through autumn), and 2 mu in a winter wheat\u2013summer maize rotation using the same plots in successive seasons. Labor constraints from partial off-farm household employment drive conservative but proven input strategies \u2014 ploughing for cotton and wheat, rotary tillage for quick turnaround after wheat harvest for maize, reliable improved or hybrid seed varieties, moderate fertilizer rates based on decades of soil familiarity, well irrigation timed to critical growth stages, and pesticide schedules targeting the known local pest pressures (cotton aphid, bollworm, spider mite; wheat aphid and scab; maize fall armyworm). Yield targets are realistic rather than optimistic, reflecting the farmer's experience of year-to-year variability on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 74-year-old farmer with 50 years of experience in Quzhou County allocates his 6 mu across three crops: 2 mu of Bt hybrid cotton as the primary cash crop (spring through autumn), and 2 mu in a winter wheat\u2013summer maize rotation using the same plots in successive seasons. Labor constraints from partial off-farm household employment drive conservative but proven input strategies \u2014 ploughing for cotton and wheat, rotary tillage for quick turnaround after wheat harvest for maize, reliable improved or hybrid seed varieties, moderate fertilizer rates based on decades of soil familiarity, well irrigation timed to critical growth stages, and pesticide schedules targeting the known local pest pressures (cotton aphid, bollworm, spider mite; wheat aphid and scab; maize fall armyworm). Yield targets are realistic rather than optimistic, reflecting the farmer's experience of year-to-year variability on this land."
+  },
+  "elapsed_seconds": 57.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_4",
+  "tier": 2,
+  "provider": "claude"
+}

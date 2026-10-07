@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming these 6 mu for 30 years. Same as last year, I plant wheat after maize \u2014 that's how it goes here in Quzhou. Everyone does wheat-maize.\n\nFor wheat, I use the same hybrid seed my neighbor Old Wang uses \u2014 Jimai type, it grew well last year, around 500 kg per mu. I buy two bags of compound fertilizer (15-15-15) per mu as base fertilizer before planting, that's about 50 kg. Then at jointing in spring I top-dress with urea, maybe 15 kg per mu. Total nitrogen comes to around 14-15 kg per mu. I plough the field before wheat \u2014 the soil needs turning after maize.\n\nIrrigation: wheat needs water at least 3 times \u2014 winter water, jointing, and grain filling. I have the well so this is fine, just the electricity cost. Sometimes 4 times if spring is dry.\n\nPesticide: wheat needs spraying for aphids and powdery mildew, usually 2 times. I also spray herbicide once in spring.\n\nFor maize in summer, I plant right after wheat harvest \u2014 no time to waste. Rotary tillage only, or sometimes direct seeding without tilling. Denghai or Zhengdan hybrid seed, neighbors get 550-600 kg per mu. I put compound fertilizer at planting, maybe 40 kg per mu, then urea at big trumpet stage, 20 kg. Maize eats more nitrogen than wheat.\n\nMaize irrigation 2 times usually \u2014 at jointing and tasseling if no rain. Pesticide twice for corn borer and armyworm.\n\nI don't want to cut fertilizer \u2014 if I save 50 yuan and lose 50 kg grain, that's stupid. Better put enough on.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what has worked for me and my neighbors for years \u2014 wheat after maize, same hybrid seeds Old Wang uses. I put two bags of compound fertilizer as base for each crop plus urea top-dress, because saving a few yuan on fertilizer is not worth losing grain. Plough for wheat, rotary for maize since there is no time after harvest. Irrigate from the well when needed, spray for the usual pests. Six mu is small, I manage it with my wife, and I aim for the yields my neighbors get \u2014 around 500 kg wheat and 550 kg maize per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what has worked for me and my neighbors for years \u2014 wheat after maize, same hybrid seeds Old Wang uses. I put two bags of compound fertilizer as base for each crop plus urea top-dress, because saving a few yuan on fertilizer is not worth losing grain. Plough for wheat, rotary for maize since there is no time after harvest. Irrigate from the well when needed, spray for the usual pests. Six mu is small, I manage it with my wife, and I aim for the yields my neighbors get \u2014 around 500 kg wheat and 550 kg maize per mu."
+  },
+  "elapsed_seconds": 26.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_5",
+  "tier": 3,
+  "provider": "claude"
+}

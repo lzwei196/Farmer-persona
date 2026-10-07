@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 40 years. My father worked it before me. I know what this soil wants, and I know what keeps two people fed and the household going through winter. I don't need anyone to tell me what to plant \u2014 I just need the rain to come when it should and the well to keep working.\n\nMy 7.5 mu is split the way it always has been. Cotton is where I make my money \u2014 I give it 4.5 mu. The other 3 mu I rotate between winter wheat and summer maize. Wheat goes in October after the heat breaks, maize goes straight into the same ground right after wheat harvest in June. No sense leaving that land idle.\n\nFor cotton, I'll plough deep in March like I always do, let the soil breathe. I buy the improved seed from the township store \u2014 the neighbors have used it for years, it handles the bollworm better than the old seed. I'll put down base fertilizer before planting, then chase with urea at squaring and boll set. Cotton drinks a lot \u2014 I'll run the well 5 times through the season, more if July is dry. Pests are the real fight with cotton. I spray for aphids in May, then again and again through summer for bollworm and mites. Seven rounds of pesticide is normal for me, sometimes more.\n\nWheat I don't fuss over much. Rotary till after cotton clears in October, then seed. Three waterings \u2014 once at sowing, once before freeze-up, once at jointing. Two pesticide rounds, usually for aphid and rust. The yield is steady, around 400 jin per mu most years.\n\nFor maize, I don't till after wheat \u2014 I just seed directly into the stubble. The machine at the village can do that now. Two irrigations, two pesticide rounds. Maize mostly takes care of itself in summer.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"Cotton takes 4.5 mu as the main cash crop, ploughed deep in spring and managed intensively through the season with 5 irrigations and 7 pesticide rounds against aphids, bollworm, and mites using improved Bt-tolerant seed bought locally. The remaining 3 mu runs a wheat-maize rotation on the same land: winter wheat seeded in October after rotary tillage with 3 irrigations and light pesticide use, then summer maize direct-seeded into wheat stubble after June harvest with minimal inputs. Fertilizer rates follow 40 years of local practice \u2014 heavier nitrogen on cotton and maize, moderate on wheat, extra potassium for cotton boll development. All irrigation draws from the household well.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "Cotton takes 4.5 mu as the main cash crop, ploughed deep in spring and managed intensively through the season with 5 irrigations and 7 pesticide rounds against aphids, bollworm, and mites using improved Bt-tolerant seed bought locally. The remaining 3 mu runs a wheat-maize rotation on the same land: winter wheat seeded in October after rotary tillage with 3 irrigations and light pesticide use, then summer maize direct-seeded into wheat stubble after June harvest with minimal inputs. Fertilizer rates follow 40 years of local practice \u2014 heavier nitrogen on cotton and maize, moderate on wheat, extra potassium for cotton boll development. All irrigation draws from the household well."
+  },
+  "elapsed_seconds": 61.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_1",
+  "tier": 2,
+  "provider": "claude"
+}

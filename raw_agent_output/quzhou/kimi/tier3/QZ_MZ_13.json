@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 7 mu in Quzhou for 40 years, and after studying agriculture at university, I keep a notebook tracking every jin of input and output. My soil is loamy calcareous alluvial soil \u2014 typical for the North China Plain \u2014 and my well gives me reliable water, though the electricity bill is real money I account for. Last year my wheat made about 560 kg per mu and my summer maize made 620 kg per mu. This year I want to push both crops to get back the cost of fertilizer plus a margin, because my household has six mouths and some of them depend on this land even if they work off-farm.\n\nFor winter wheat, I start right after the maize harvest in late September. I run the rotary tiller once to chop the maize stalks and level the field \u2014 I do not deep plough because it dries out the soil too much before winter. I sow an improved Jimai-type variety around October 10th. At sowing, I spread 45 kg per mu of compound fertilizer (15-15-15) as base, which gives me 6.75 kg nitrogen, 6.75 kg phosphate, and 6.75 kg potash. Then at jointing stage in late March, I topdress with 25 kg per mu of urea, adding another 11.5 kg of nitrogen. So my total nitrogen is just over 18 kg per mu \u2014 I could maybe save 2 kg, but a shortfall in April cannot be fixed, and losing 30 kg of grain costs more than the extra fertilizer. I irrigate three times: the overwinter water in early November, the jointing water in late March, and the grain-filling water in early May. For crop protection, I spray a pre-emergence herbicide right after sowing, a broadleaf herbicide in early spring, and one fungicide for rust at flag leaf stage \u2014 three sprays total. I budget for two hired laborers at harvest because my sons are working in the county town. If the spring wind does not damage the crop, I expect 580 kg per mu.\n\nFor summer maize, timing is everything after wheat harvest in early June. I no-till plant hybrid seed the same day the wheat comes off \u2014 there is no time to plough, and the moisture is too precious to disturb. With the planter, I put down 30 kg per mu of compound fertilizer (15-15-15), then at big trumpet stage in mid-July I side-dress another 25 kg per mu of urea. That gives me about 16 kg nitrogen, 4.5 kg phosphate, and 4.5 kg potash per mu. Maize needs less phosphorus than wheat because the wheat stubble returns some. I irrigate twice: once at seedling stage if the June heat is dry, and once at tasseling in late July. Two pesticide applications \u2014 a post-emergence herbicide at the 3-leaf stage, and one insecticide for corn borer at the big trumpet stage. I expect 650 kg per mu if the August rains do not flood the field.\n\nSome neighbors cut fertilizer to save money, but I watched two of them lose yield last year. My philosophy is simple: fertilizer waste is a cost I can absorb on 7 mu, but yield loss is a disaster I cannot.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on last year's results and input-output calculations, adjusting rates slightly upward to protect yield rather than risk a shortfall. On my 7 mu with well irrigation, I apply full fertilizer rates \u2014 18 kg nitrogen, 7 kg phosphorus, and 6 kg potassium per mu for wheat with rotary tillage and three irrigations, and 16 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu for no-till summer maize with two irrigations. I hire labor for peak seasons since some family members work off-farm, and I watch neighbors but trust my own 40 years of records more than arbitrary cuts to inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I base my decisions on last year's results and input-output calculations, adjusting rates slightly upward to protect yield rather than risk a shortfall. On my 7 mu with well irrigation, I apply full fertilizer rates \u2014 18 kg nitrogen, 7 kg phosphorus, and 6 kg potassium per mu for wheat with rotary tillage and three irrigations, and 16 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu for no-till summer maize with two irrigations. I hire labor for peak seasons since some family members work off-farm, and I watch neighbors but trust my own 40 years of records more than arbitrary cuts to inputs."
+  },
+  "elapsed_seconds": 60.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_13",
+  "tier": 3,
+  "provider": "kimi"
+}

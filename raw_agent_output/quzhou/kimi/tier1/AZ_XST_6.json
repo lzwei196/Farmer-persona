@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 60 years old and have farmed my land in Quzhou County since I was a teenager. I finished middle school, so I can read the fertilizer labels and understand what the extension agents say, but after forty years, I trust my own eyes and what my neighbors do more than anything. I have about 8 mu, and this year I will stick with the wheat-maize double crop on all of it. That is what everyone in my village does, and it has never let me down.\n\nMy winter wheat went in last October \u2014 I planted Jimai 22, an improved variety that my cousin recommended years ago and that has been steady for us. Now it is early spring and the growing season is starting. I will rotary till once before the first topdressing to loosen the soil crust and help the water soak in. I will irrigate four times: green-up water, jointing, heading, and grain filling. The extension station says about 25 kg of nitrogen per mu, but I always add a bit more to be safe \u2014 around 28 kg per mu, split between base and topdressing. I also put down about 10 kg of phosphorus and 6 kg of potassium per mu. I will spray pesticides four times: herbicide once, insecticide twice, and a fungicide if the weather turns humid. If the season is normal, I expect about 550 kg per mu.\n\nFor summer maize, right after wheat harvest in early June, I will plant Deng Hai 605. It is a hybrid seed that most farmers around here use because it grows fast and yields well. There is no time for tillage between wheat harvest and maize planting \u2014 the window is only a few days \u2014 so I will plant no-till straight into the wheat stubble. I will apply about 22 kg of nitrogen, 6 kg of phosphorus, and 4 kg of potassium per mu for the maize. I will irrigate twice if the summer rains are short, and spray pesticides three times to control weeds and corn borers. I expect about 580 kg per mu.\n\nI thought about cutting back on fertilizer to save money for my grandson's school fees, but my neighbor Lao Wang tried that two years ago and lost nearly 100 kg per mu on his wheat. I would rather spend a little more and not worry about going hungry.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I will grow winter wheat and summer maize on my 8 mu of land in Quzhou County this year, following the standard double-cropping system that all my neighbors use. For wheat, I will rotary till, apply 28 kg nitrogen, 10 kg phosphorus, and 6 kg potassium per mu, irrigate four times, and spray pesticides four times, expecting 550 kg per mu. For maize, I will plant no-till into wheat stubble with 22 kg nitrogen, 6 kg phosphorus, and 4 kg potassium per mu, irrigate twice, spray pesticides three times, and expect 580 kg per mu. I am applying slightly more fertilizer than the extension recommendation because I am loss-averse \u2014 I saw my neighbor cut back and suffer a big yield drop, so I would rather spend more and protect my harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I will grow winter wheat and summer maize on my 8 mu of land in Quzhou County this year, following the standard double-cropping system that all my neighbors use. For wheat, I will rotary till, apply 28 kg nitrogen, 10 kg phosphorus, and 6 kg potassium per mu, irrigate four times, and spray pesticides four times, expecting 550 kg per mu. For maize, I will plant no-till into wheat stubble with 22 kg nitrogen, 6 kg phosphorus, and 4 kg potassium per mu, irrigate twice, spray pesticides three times, and expect 580 kg per mu. I am applying slightly more fertilizer than the extension recommendation because I am loss-averse \u2014 I saw my neighbor cut back and suffer a big yield drop, so I would rather spend more and protect my harvest."
+  },
+  "elapsed_seconds": 187.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_6",
+  "tier": 1,
+  "provider": "kimi"
+}

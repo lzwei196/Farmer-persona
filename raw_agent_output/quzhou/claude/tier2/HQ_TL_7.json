@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land since I was a teenager. My father taught me, and his father taught him. I don't read books or go to training sessions, but I know this soil and this climate. Quzhou gets dry fast in spring and summer \u2014 my well is what keeps everything alive. Two of us in the house now, my wife and me. The children left for the city years ago.\n\nMy 34.5 mu is split the way I've always done it: about 20 mu for the wheat-maize rotation, and the rest \u2014 around 14-15 mu \u2014 for cotton. Cotton brings in more cash when the price is right, and I've been growing it long enough to handle it without hired labor most of the year.\n\nFor **wheat**, I'll plant in mid-October like always. I buy the improved seed from the village supply cooperative \u2014 same variety I've used for several years now, it does well here. I'll plough the field after maize harvest, apply compound fertilizer before seeding, then top-dress with urea around jointing stage. I irrigate at sowing, at jointing, and at heading \u2014 three times is usually enough if spring rains come. I spray once for weeds early on and once for aphids and rust near heading.\n\nFor **maize**, I plant right after wheat harvest in June \u2014 no time to waste. I use hybrid seed, everyone in the village does now. I just scatter a bit of urea as topdress when the plant is knee-high, then again before tasseling. I'll water two or three times depending on rain. Maize doesn't need much from me, honestly. One spray for corn borer if it looks bad.\n\nFor **cotton**, this is the hard crop. I plant in late April after the last frost risk. Hybrid seed. Cotton needs me out there all summer \u2014 topping, spraying for bollworm, red spider mites, aphids. I'll spray at least six or seven times. I irrigate more carefully with cotton, maybe four times through the season. I split my fertilizer applications \u2014 some at transplanting, some as a sidedress when bolls are setting.\n\nI don't plan to change much. What I've been doing feeds us and pays the bills. I'm 63 \u2014 I'm not experimenting.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 63-year-old farmer with 45 years of experience and no formal schooling relies entirely on accumulated local knowledge and established habits. The 20 mu wheat-maize double-cropping rotation follows the dominant North China Plain practice, with ploughing before wheat and no-tillage direct seeding for maize immediately after wheat harvest to save time and moisture. Fertilizer applications are split and experience-based rather than soil-test driven, leaning on compound fertilizer at basal and urea topdress. Cotton on the remaining 14.5 mu is managed intensively for pest control \u2014 bollworm and spider mites demand frequent spraying through summer \u2014 and irrigated carefully via well. No changes are planned from prior years; consistency and risk avoidance are the guiding principles at this stage of life.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 14.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 63-year-old farmer with 45 years of experience and no formal schooling relies entirely on accumulated local knowledge and established habits. The 20 mu wheat-maize double-cropping rotation follows the dominant North China Plain practice, with ploughing before wheat and no-tillage direct seeding for maize immediately after wheat harvest to save time and moisture. Fertilizer applications are split and experience-based rather than soil-test driven, leaning on compound fertilizer at basal and urea topdress. Cotton on the remaining 14.5 mu is managed intensively for pest control \u2014 bollworm and spider mites demand frequent spraying through summer \u2014 and irrigated carefully via well. No changes are planned from prior years; consistency and risk avoidance are the guiding principles at this stage of life."
+  },
+  "elapsed_seconds": 46.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_7",
+  "tier": 2,
+  "provider": "claude"
+}

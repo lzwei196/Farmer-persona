@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land in Quzhou for thirty years. I know what the soil needs, what the weather does, and what prices have looked like. My children help some seasons but they also work in town, so I have to be realistic about labor.\n\nMy 10.1 mu is split: about 6 mu stays in the wheat-maize rotation \u2014 wheat in winter, maize right after harvest in summer on the same ground. That rotation is what I know best and it gives two harvests a year. The other 4.1 mu I put into cotton. Cotton is harder work but it brings in cash.\n\n**Wheat**: I plant in mid-October. I use the improved variety I have been using for several years \u2014 it yields well here and I trust it. I apply compound fertilizer at planting and then chase with urea at jointing. In Quzhou the winters are dry, so I water three times: before winter sets in, at jointing, and at grain fill. Two pesticide passes \u2014 one for aphids in spring, one for disease. Rotary tillage before planting.\n\n**Maize**: Goes in right after wheat harvest in June. No time for tillage so I drill it direct. I use a hybrid \u2014 Zhengdan 958 or something similar from the county seed station, same as most years. Summer rains help but I usually irrigate twice. Fertilize at planting and top-dress at tasseling. Pests need two spray rounds.\n\n**Cotton**: Spring planting, April. I use hybrid Bt cotton \u2014 has cut down on the bollworm spraying a lot compared to the old days, but I still spray several times for other insects. Cotton needs more irrigation than grain crops, especially August when it flowers and bolls. I do rotary tillage to prepare the bed properly. It is the most labor-intensive but we manage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 6 mu to the winter wheat\u2013summer maize rotation and 4.1 mu to spring-planted cotton, totaling 10.1 mu. Wheat gets improved varieties I trust, rotary-tilled ground, three irrigations to cover the dry North China Plain winters and spring dry spells, and two pesticide passes for aphids and disease. Summer maize is direct-drilled after wheat harvest with no time for tillage, using a proven hybrid variety, supplemented by two irrigations alongside monsoon rains. Cotton uses Bt hybrid seed which has reduced bollworm pressure significantly over my farming years, but still requires four irrigations through the dry summer growing period and four pesticide applications for secondary pests; rotary tillage in spring prepares the seedbed properly. Fertilizer rates are consistent with what I have applied for many years on this land and produce reliable yields. Because some household members work off-farm, I keep management intensive only where it pays \u2014 cotton for cash income, maize for efficiency, wheat as the reliable staple.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I allocate 6 mu to the winter wheat\u2013summer maize rotation and 4.1 mu to spring-planted cotton, totaling 10.1 mu. Wheat gets improved varieties I trust, rotary-tilled ground, three irrigations to cover the dry North China Plain winters and spring dry spells, and two pesticide passes for aphids and disease. Summer maize is direct-drilled after wheat harvest with no time for tillage, using a proven hybrid variety, supplemented by two irrigations alongside monsoon rains. Cotton uses Bt hybrid seed which has reduced bollworm pressure significantly over my farming years, but still requires four irrigations through the dry summer growing period and four pesticide applications for secondary pests; rotary tillage in spring prepares the seedbed properly. Fertilizer rates are consistent with what I have applied for many years on this land and produce reliable yields. Because some household members work off-farm, I keep management intensive only where it pays \u2014 cotton for cash income, maize for efficiency, wheat as the reliable staple."
+  },
+  "elapsed_seconds": 57.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_5",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm a 49-year-old farmer in Quzhou County. I've been farming this land for nearly 30 years, since I left middle school and came back to help my father. My family has about 12 mu of good flat land on the North China Plain, and I know every plot like the back of my hand.\n\nThis year, I'm sticking with what I know works. I'll put 10 mu into wheat-maize double cropping and keep 2 mu in cotton. The wheat-maize rotation is our bread and butter \u2014 the county extension agent says it's the most efficient system for our soil, and my neighbor Lao Zhang got over 500 kg per mu on his wheat last year doing the same thing. Cotton prices have been up and down, but 2 mu is manageable for my wife and me to handle, and it gives us some cash flow in the autumn when the grain prices are still uncertain.\n\nFor wheat, I'll plant an improved variety around October 10th. I usually buy my wheat seed from the township supply store \u2014 it's not the most expensive hybrid, but it's reliable and I save some seed from the year before to mix in. I'll rotary till the land before planting to break up the corn stubble. Fertilizer-wise, the extension guy told me 15 kg of nitrogen per mu is enough, but I always go a bit more because I'd rather waste a little money than risk a bad harvest. I'll put down compound fertilizer as base \u2014 about 18 kg nitrogen, 13 kg phosphate, and 5 kg potassium per mu \u2014 and topdress once at jointing if the wheat looks yellow. I'll irrigate four times: winter irrigation, then at jointing, heading, and grain filling. Water costs keep going up, but you can't skip irrigation on the North China Plain. For pests, I'll spray herbicide once after planting and maybe insecticide twice if I see aphids.\n\nFor summer maize, I'll plant a hybrid variety \u2014 probably Nongda or Denghai, whatever the dealer has in stock \u2014 right after wheat harvest in early June. The window is tight, maybe five days, so I'll use no-tillage planting to save time. Maize is hungrier than wheat; I'll give it about 16 kg nitrogen, 5 kg phosphate, and 4 kg potassium per mu, all as compound fertilizer at planting. If it doesn't rain for two weeks in July, I'll irrigate twice. Maize usually needs 2 or 3 pesticide sprays \u2014 herbicide at planting, and insecticide for armyworms if they show up.\n\nThe cotton goes in around April 20th. I'll rotary till that plot and plant a hybrid cotton variety. Cotton needs more fertilizer than people think \u2014 I'll use about 20 kg nitrogen, 10 kg phosphate, and 6 kg potassium per mu, split between basal and topdressing at flowering. I'll irrigate twice and spray pesticide about 10 times because bollworms and aphids never leave cotton alone. It's labor-intensive, but the 2 mu is worth it.\n\nI expect about 480 kg per mu for wheat, 520 kg per mu for maize, and around 380 kg per mu of seed cotton. These are reasonable numbers if the weather cooperates \u2014 not great years, not drought years, just normal.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 13,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 380\n    }\n  ],\n  \"reasoning_summary\": \"I grow 10 mu of wheat-maize double cropping and 2 mu of cotton because this mix provides steady grain income and some cash crop diversification. I rely on improved wheat seed and hybrid maize and cotton varieties from the local supply store, apply slightly more fertilizer than extension recommendations to guard against yield loss, and irrigate according to what I've seen work over 30 years on the North China Plain. Maize is no-till planted right after wheat harvest to save time in the tight rotation window, while wheat and cotton get rotary tillage. Pesticide applications are heavier on cotton due to persistent bollworm and aphid pressure.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 13,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 380
+      }
+    ],
+    "reasoning_summary": "I grow 10 mu of wheat-maize double cropping and 2 mu of cotton because this mix provides steady grain income and some cash crop diversification. I rely on improved wheat seed and hybrid maize and cotton varieties from the local supply store, apply slightly more fertilizer than extension recommendations to guard against yield loss, and irrigate according to what I've seen work over 30 years on the North China Plain. Maize is no-till planted right after wheat harvest to save time in the tight rotation window, while wheat and cotton get rotary tillage. Pesticide applications are heavier on cotton due to persistent bollworm and aphid pressure."
+  },
+  "elapsed_seconds": 92.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_8",
+  "tier": 1,
+  "provider": "kimi"
+}

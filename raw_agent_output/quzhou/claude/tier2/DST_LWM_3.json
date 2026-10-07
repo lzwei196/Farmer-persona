@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land since I was nineteen. Thirty years watching the seasons, watching prices, watching my neighbors. I know what this soil wants and what I can manage with the hands I have \u2014 half my family earns wages in town now, so I can't depend on them for peak labor.\n\nMy 7.8 mu splits the way it always has: about 5 mu for my wheat-maize rotation, and 2.8 mu for cotton on the other plots. Cotton's gotten harder every year \u2014 picking is brutal and the price isn't what it used to be \u2014 but I know cotton, and those plots aren't as suitable for wheat anyway.\n\n**Wheat (winter):** I'll buy improved seeds again from the county supply co-op, the Jimai variety \u2014 I trust it. Three irrigations: before the soil freezes in November, again at jointing in April, and once at heading. No more than that; the well pump costs money. I rotary-till after the maize harvest in October to break up the stubble. Two pesticide passes \u2014 one herbicide in winter, one fungicide when I see powdery mildew risk in spring.\n\n**Maize (summer):** Straight to hybrid seed \u2014 that's been settled for years. I direct-seed into the wheat stubble right after June harvest. Two irrigations \u2014 one to get the seedlings up, one at silking when the heat peaks. Maize mostly takes care of itself here. One pesticide spray for fall armyworm if I see it.\n\n**Cotton (spring):** I'll plant in late April as usual. This crop needs the most of me \u2014 four irrigations through the long season, and I budget five pesticide applications because bollworm and aphids don't forgive laziness. I rotary-till the plots in March to warm the soil. I keep the area at 2.8 mu because I can still manage picking myself and with my wife in October before it gets cold.\n\nI'm not changing much this year. Prices are uncertain, my input costs are up, and my body at 49 reminds me not to overextend. Steady is good enough.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 49-year-old farmer with 30 years experience in Quzhou County allocates 5 mu to a wheat-maize double-crop rotation and 2.8 mu to cotton on separate plots, staying with proven improved wheat and hybrid maize varieties while managing labor constraints from off-farm family members by minimizing cotton area to what can be picked by household hands in autumn; irrigation is conservative given well-pumping costs, tillage follows local convention (rotary before wheat, no-till into wheat stubble for maize, rotary for cotton seedbed), and fertilizer rates reflect regional norms without significant deviation, prioritizing stability over experimentation in an uncertain price environment.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 49-year-old farmer with 30 years experience in Quzhou County allocates 5 mu to a wheat-maize double-crop rotation and 2.8 mu to cotton on separate plots, staying with proven improved wheat and hybrid maize varieties while managing labor constraints from off-farm family members by minimizing cotton area to what can be picked by household hands in autumn; irrigation is conservative given well-pumping costs, tillage follows local convention (rotary before wheat, no-till into wheat stubble for maize, rotary for cotton seedbed), and fertilizer rates reflect regional norms without significant deviation, prioritizing stability over experimentation in an uncertain price environment."
+  },
+  "elapsed_seconds": 55.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_3",
+  "tier": 2,
+  "provider": "claude"
+}

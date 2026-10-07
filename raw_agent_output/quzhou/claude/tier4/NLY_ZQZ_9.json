@@ -1,0 +1,75 @@
+{
+  "raw_response": "Alright, let me think through this year's plan. I've been farming these 10 mu for 15 years now, so I mostly know what works.\n\n**Wheat first (it goes in this October, but I'm already thinking about it because what I do with the maize affects it)**\n\nMy wheat ground is the same 10 mu that grew maize last summer. After I harvest the maize in late September, I'll burn off the stubble \u2014 I know they say don't burn, but chopping and incorporating takes equipment I don't have, and custom rotary tilling costs more than I want to pay. I usually rent a tractor to disk and then seed with a drill. My neighbor and I share the cost of the planter driver.\n\nSeed \u2014 I use Jimai 22 or whatever the co-op has in stock that's similar. I don't save seed for wheat because the certified stuff germinates better and I only need about 15 kg/mu. Costs me around 60 yuan/mu for seed.\n\nFertilizer \u2014 I use a compound 15-15-15 as base, about 40 kg/mu, worked in before planting. Then I topdress urea at jointing in March, usually 15 kg/mu if the wheat looks a bit yellow, a little less if it's dark green. The extension guy came to our village a few years back and said 15 kg N total is enough, but I always do a bit more \u2014 maybe 18-19 kg N total across base and topdress. I'd rather spend the extra 20 yuan than see my wheat fall short.\n\nIrrigation \u2014 I have the well, so that's not a worry like it is for some. I'll water at planting to get it up, then winter irrigation in late November if the soil is dry, then at jointing, and at grain filling. That's usually 3-4 times. Each watering is maybe 25-30 yuan/mu when you count electricity and my own time pumping.\n\nPesticide \u2014 I spray herbicide in spring for broadleaf weeds, always. If aphids get bad at heading I'll spray once more. Nothing fancy.\n\nI expect around 450 kg/mu. Last year I got 460, year before 430 because of a dry spell. Decent ground, decent year, that's what I aim for.\n\n**Maize (goes in right after wheat harvest in mid-June)**\n\nThis is the tight part. Wheat comes off around June 10-12, and I have maybe 5-7 days to get maize in or I lose yield at the back end. No time for deep tillage \u2014 I use a no-till planter behind the wheat stubble, rented from the same guy. He plants the seed and drops starter fertilizer in one pass. Saves me maybe three days of work.\n\nSeed \u2014 hybrid maize, Zhengdan 958 or whatever the dealer pushes that year. Everyone around here uses hybrids, saving seed doesn't work. About 8 kg/mu, costs me around 80-90 yuan/mu.\n\nFertilizer \u2014 starter compound at planting (about 30 kg/mu of 15-15-15), then urea topdress at the big flare stage (V8 or so), 20 kg urea/mu. Total nitrogen comes to about 15-16 kg N/mu. Maize here doesn't need as much as wheat in my experience, and the summer rains carry some off anyway.\n\nIrrigation \u2014 depends on the rains. If July and August give us decent rain, maybe just one irrigation at tasseling. If it's dry, two. I watch my neighbor's field and the sky.\n\nPesticide \u2014 herbicide at planting for sure (atrazine mix), and I watch for corn borer in July. If I see damage I spray once.\n\nI expect 500 kg/mu on maize. Good year I've hit 550, bad year 400.\n\n**On the family side** \u2014 my wife and I do most of the work. My oldest is in middle school, helps on weekends during harvest. My parents live with us, my father still helps with irrigation and watching the fields. I hire a combine for wheat harvest (about 50 yuan/mu) and the maize combine too (about 60 yuan/mu). Not worth doing it by hand anymore, the time matters more than the money.\n\nNow here's the plan written out properly:\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 10.1,\n      \"planting_date\": \"mid October 2026\",\n      \"harvest_date\": \"early-mid June 2027\",\n      \"seed_type\": \"improved (certified, Jimai 22 or similar)\",\n      \"seed_cost_yuan_per_mu\": 60,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 18,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"40 kg/mu of 15-15-15 compound as base before planting, then 15 kg/mu urea topdress at jointing in March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 4,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"burn stubble, rented tractor disk, drill-seed with shared planter\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 10.1,\n      \"planting_date\": \"mid June 2026 (right after wheat harvest)\",\n      \"harvest_date\": \"late September-early October 2026\",\n      \"seed_type\": \"hybrid (Zhengdan 958 or similar)\",\n      \"seed_cost_yuan_per_mu\": 85,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 4.5,\n      \"potassium_total_kg_per_mu\": 4.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"30 kg/mu of 15-15-15 compound as starter at planting, 20 kg/mu urea topdress at V8 (big flare) stage in late July\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-till direct seed into wheat stubble with rented planter\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 7200,\n  \"reasoning_summary\": \"Same wheat-maize rotation I've done for years \u2014 it's what the land does well and what I know. I push a bit more nitrogen than the extension guy recommends because I'd rather spend 20 extra yuan than risk a short crop. The tight turnaround between wheat harvest and maize planting is why I no-till the maize \u2014 no time for real tillage, and renting the drill costs less than losing a week of growing season. Wife and I do most of the work, I hire combines because time matters more than the fee. Budget is tight but the well makes irrigation reliable, which is the main thing keeping my yields stable.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 10.1,
+        "planting_date": "mid October 2026",
+        "harvest_date": "early-mid June 2027",
+        "seed_type": "improved (certified, Jimai 22 or similar)",
+        "seed_cost_yuan_per_mu": 60,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 18,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "40 kg/mu of 15-15-15 compound as base before planting, then 15 kg/mu urea topdress at jointing in March",
+        "irrigation_use": true,
+        "irrigation_times": 4,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "burn stubble, rented tractor disk, drill-seed with shared planter",
+        "labor_family_days": 18,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 18,
+        "area_mu": 10.1,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 10.1,
+        "planting_date": "mid June 2026 (right after wheat harvest)",
+        "harvest_date": "late September-early October 2026",
+        "seed_type": "hybrid (Zhengdan 958 or similar)",
+        "seed_cost_yuan_per_mu": 85,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 4.5,
+        "potassium_total_kg_per_mu": 4.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "30 kg/mu of 15-15-15 compound as starter at planting, 20 kg/mu urea topdress at V8 (big flare) stage in late July",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-till direct seed into wheat stubble with rented planter",
+        "labor_family_days": 14,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 10.1,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5
+      }
+    ],
+    "total_input_cost_yuan": 7200,
+    "reasoning_summary": "Same wheat-maize rotation I've done for years \u2014 it's what the land does well and what I know. I push a bit more nitrogen than the extension guy recommends because I'd rather spend 20 extra yuan than risk a short crop. The tight turnaround between wheat harvest and maize planting is why I no-till the maize \u2014 no time for real tillage, and renting the drill costs less than losing a week of growing season. Wife and I do most of the work, I hire combines because time matters more than the fee. Budget is tight but the well makes irrigation reliable, which is the main thing keeping my yields stable."
+  },
+  "elapsed_seconds": 55.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_9",
+  "tier": 4,
+  "provider": "claude"
+}

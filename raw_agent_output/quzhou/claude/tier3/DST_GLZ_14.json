@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 59 years old, been working this same dirt since I was a boy. My father did wheat-maize, I do wheat-maize. Ten mu and a bit \u2014 not big, not small. The well is good, water comes when I need it.\n\nHere is how I think about this year. Last year was alright. Wheat gave me maybe 450 kg per mu, maize close to 550. Not the best in the village but not the worst. Old Wang next to my plot, he got more on maize because he put extra urea \u2014 I saw him carry the bags. Maybe I do a little more this time too.\n\nFor wheat I plant in October like always. Before plowing I spread two bags of the compound stuff \u2014 the 15-15-15 the dealer in town sells \u2014 that is one bag for half my field, so about half a bag per mu, around 25 kg per mu. Then in spring when the wheat starts standing tall I broadcast urea, maybe 15 kg per mu, before an irrigation. The water carries it down. I water the wheat four times \u2014 once before winter so it does not freeze dry, then jointing, then when the head comes out, then when the grain is filling. If rain comes I skip one. Spray two times for aphids and the rust, the shop sells the mix.\n\nFor maize after wheat harvest in June, I plant the hybrid seed \u2014 same kind Old Wang uses, the bag has a red picture. I put compound in the row when planting, half a bag per mu again. Then when the maize is knee-high I side-dress urea, a good amount, maybe 20 kg per mu because maize eats more than wheat. Water once or twice if July is dry, our summer rain usually does most of it. Spray once for borer.\n\nI use the rotary tiller man \u2014 he comes with the machine, costs less than plowing deep. Everyone uses him now.\n\nI do not want to skimp on fertilizer. If I save 50 yuan and lose 100 kg of grain, that is stupid. Better put a little extra and sleep easy.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 570\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way my father did and the way my neighbors do. For wheat I put about half a bag of 15-15-15 compound per mu before planting and topdress urea in spring before watering, four irrigations across the season and two sprays for bugs and rust. For maize after the wheat I drop seed straight into the stubble \u2014 the rotary man already worked the field for wheat, no need to plow again. I put compound at planting and a heavy side-dress of urea when it is knee-high because maize is hungrier than wheat. I would rather spend a little extra on fertilizer than risk a bad harvest \u2014 losing grain hurts much more than wasting some bags.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 570
+      }
+    ],
+    "reasoning_summary": "I farm the way my father did and the way my neighbors do. For wheat I put about half a bag of 15-15-15 compound per mu before planting and topdress urea in spring before watering, four irrigations across the season and two sprays for bugs and rust. For maize after the wheat I drop seed straight into the stubble \u2014 the rotary man already worked the field for wheat, no need to plow again. I put compound at planting and a heavy side-dress of urea when it is knee-high because maize is hungrier than wheat. I would rather spend a little extra on fertilizer than risk a bad harvest \u2014 losing grain hurts much more than wasting some bags."
+  },
+  "elapsed_seconds": 45.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_14",
+  "tier": 3,
+  "provider": "claude"
+}

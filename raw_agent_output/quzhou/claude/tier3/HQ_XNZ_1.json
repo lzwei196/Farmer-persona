@@ -1,0 +1,40 @@
+{
+  "raw_response": "I sit down and think about this year. Last year cotton gave me okay money but the price is uncertain. Maize is steadier \u2014 I can sell or feed it. I have 7 mu, just me and my wife at home, the children work in town. So I cannot do too much heavy work alone.\n\nI will put 4 mu in cotton and 3 mu in spring maize. Cotton needs more hand work \u2014 picking, spraying for bollworm \u2014 but the price per mu is better when it works out. Maize is easier, the harvester comes through the village.\n\nFor maize, last year I used about 2 bags of compound fertilizer (15-15-15) as base, around 50 jin each, then top-dressed with urea at jointing. That comes to roughly 22 kg N, 7 kg P, 7 kg K per mu. I will do the same \u2014 neighbors got 550-600 kg/mu and I did about the same. Rotary till before sowing, that is what the village machine does. Hybrid seed from the dealer in town \u2014 Zhengdan or Xianyu type, everyone uses it. Two irrigations from my well: one after sowing if dry, one at tasseling. One spray for borer is usually enough.\n\nFor cotton, I use less N because too much makes it grow tall with no bolls. About 15 kg N, 7 kg P, 8 kg K. Cotton needs potassium for the bolls. I will spray 6 times \u2014 bollworm, aphids, spider mites come every year, no skipping. Improved seed, Bt cotton, that is standard now. Three irrigations through the season. Plough for cotton \u2014 deeper roots need it. I expect 250 kg seed cotton per mu, that is what I usually get.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"maize\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I split my 7 mu into 4 mu cotton for cash and 3 mu spring maize for steady income, since only my wife and I work the land. I follow what worked last year and what neighbors do \u2014 same compound fertilizer plus urea topdressing on maize, less nitrogen but more potassium on cotton so it sets bolls instead of growing tall. I cannot skip cotton sprays because bollworm and aphids come every year; maize only needs one spray for borer. Hybrid maize seed and Bt cotton seed from the town dealer are standard now. Two well irrigations for maize, three for cotton, rotary till for maize and plough for cotton roots.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "maize",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I split my 7 mu into 4 mu cotton for cash and 3 mu spring maize for steady income, since only my wife and I work the land. I follow what worked last year and what neighbors do \u2014 same compound fertilizer plus urea topdressing on maize, less nitrogen but more potassium on cotton so it sets bolls instead of growing tall. I cannot skip cotton sprays because bollworm and aphids come every year; maize only needs one spray for borer. Hybrid maize seed and Bt cotton seed from the town dealer are standard now. Two well irrigations for maize, three for cotton, rotary till for maize and plough for cotton roots."
+  },
+  "elapsed_seconds": 30.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_1",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this same land in Quzhou my whole life. My father grew wheat and corn here, and his father before him. I have about 12 mu total. There is no question what I will grow \u2014 wheat in winter, corn in summer, same as everyone in my village. That rotation works on this flat ground with our water. I know how to do it, I know what inputs to buy at the supply shop in town, and the grain traders come here to buy. Why would I try something different at my age?\n\nFor the wheat, I plant in mid-October after the corn comes off. I use the improved seed from the county supply cooperative \u2014 I do not save my own seed anymore, the shop seed yields better. I put down compound fertilizer at planting and top-dress urea in spring. I irrigate four times: before winter freeze, when it greens up, at jointing, and at grain-filling. I spray herbicide in early spring and fungicide before heading. I use the rotary tiller to work the maize stubble under before planting.\n\nFor the corn, I plant right after the wheat harvest in June. I use hybrid seed \u2014 always hybrid, everyone does. I direct-seed into the stubble now, no plowing, it saves time and the machine hire is cheap. Summer rains usually carry the crop but I irrigate once if it gets dry. I put on fertilizer twice: at planting and when the plant is knee-high.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 53-year-old smallholder in Quzhou County with no formal education defaults to the dominant winter wheat\u2013summer maize double-cropping rotation on 10 mu of flat North China Plain ground. Wheat uses improved open-pollinated varieties purchased from the county cooperative, receives four irrigations drawing on local groundwater, and is managed with rotary tillage after the preceding maize crop. Maize uses hybrid seed direct-seeded into wheat stubble to save time and hire costs, relies mainly on summer rainfall with one supplemental irrigation, and receives heavier nitrogen application split between planting and topdressing. Input rates reflect typical smallholder practice in Hebei \u2014 somewhat above agronomic optimum \u2014 driven by risk aversion and advice from neighbors and the supply shop rather than formal extension guidance.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 53-year-old smallholder in Quzhou County with no formal education defaults to the dominant winter wheat\u2013summer maize double-cropping rotation on 10 mu of flat North China Plain ground. Wheat uses improved open-pollinated varieties purchased from the county cooperative, receives four irrigations drawing on local groundwater, and is managed with rotary tillage after the preceding maize crop. Maize uses hybrid seed direct-seeded into wheat stubble to save time and hire costs, relies mainly on summer rainfall with one supplemental irrigation, and receives heavier nitrogen application split between planting and topdressing. Input rates reflect typical smallholder practice in Hebei \u2014 somewhat above agronomic optimum \u2014 driven by risk aversion and advice from neighbors and the supply shop rather than formal extension guidance."
+  },
+  "elapsed_seconds": 45.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_2",
+  "tier": 1,
+  "provider": "claude"
+}

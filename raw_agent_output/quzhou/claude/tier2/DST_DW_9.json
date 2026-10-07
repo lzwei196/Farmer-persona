@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land since I was twenty years old. I know what Quzhou's soil needs, what the weather usually brings, and how much my body and my family can manage. Some of my children work in the city now, so I have fewer hands. I have to be practical.\n\nMy 18 mu I split the way I always have: about 10 mu for cotton \u2014 that is the money crop, the one I know best \u2014 and the other 8 mu I put into wheat and maize in rotation. Same land, same rotation I have done for thirty years. Wheat goes in this autumn, maize follows after wheat harvest next summer.\n\nFor cotton, I will plough deep in spring the way my mother taught me, then plant improved seed from the county supply station \u2014 I stopped using my own saved seed years ago after the yield dropped. Cotton drinks a lot of water and draws every pest in the county, so I irrigate five times and spray for bollworm and aphids at least six times. I do not cut corners on cotton pesticides. One bad outbreak and the whole season is gone.\n\nFor wheat, I use rotary tillage and improved seed. I irrigate three times \u2014 once before winter, once at jointing, once at heading. I apply urea in two splits because my neighbor's son told me that's better and I tried it, it worked, so I kept it.\n\nFor maize I do not till at all. I plant straight into the wheat stubble with a simple seeder my son borrowed once. Hybrid seed gives better yield, everybody uses it now. Maize mostly rains well enough here in summer so I only irrigate twice if it is dry.\n\nI am not young, I cannot do heavy work every day. So I choose methods I can manage myself or with occasional help from my grandchildren on weekends.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old farmer in Quzhou with 50 years of experience allocates 10 mu to cotton as the primary cash crop and 8 mu to a winter wheat\u2013summer maize rotation on the same land, following a system proven over decades. Cotton receives deep plough tillage, improved seed, five irrigations, and six pesticide applications because pest pressure and water demand are high and income depends on it. Wheat is planted with rotary tillage and improved seed, irrigated three times at critical growth stages with split nitrogen applications adopted after seeing better results. Maize is direct-seeded into wheat stubble with no tillage using hybrid seed, relying mostly on summer rainfall with two supplemental irrigations. Labor constraints from family members working off-farm reinforce the choice of no-tillage for maize and familiar, manageable practices overall.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "A 70-year-old farmer in Quzhou with 50 years of experience allocates 10 mu to cotton as the primary cash crop and 8 mu to a winter wheat\u2013summer maize rotation on the same land, following a system proven over decades. Cotton receives deep plough tillage, improved seed, five irrigations, and six pesticide applications because pest pressure and water demand are high and income depends on it. Wheat is planted with rotary tillage and improved seed, irrigated three times at critical growth stages with split nitrogen applications adopted after seeing better results. Maize is direct-seeded into wheat stubble with no tillage using hybrid seed, relying mostly on summer rainfall with two supplemental irrigations. Labor constraints from family members working off-farm reinforce the choice of no-tillage for maize and familiar, manageable practices overall."
+  },
+  "elapsed_seconds": 44.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_9",
+  "tier": 2,
+  "provider": "claude"
+}

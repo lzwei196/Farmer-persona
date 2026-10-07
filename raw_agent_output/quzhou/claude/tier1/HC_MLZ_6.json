@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this land in Quzhou for over fifty years. My father farmed it before me. I know this soil. I know what it needs. I do not need to think too hard about what to plant \u2014 it is wheat and maize, same as always, same as every household on this road.\n\nMy land is about five mu. In autumn I put it all into winter wheat. After the wheat comes off in June, I plant maize on the same ground. That is two crops from the same field in one year. That is how we do it here.\n\nFor wheat, I buy improved seed from the village supply cooperative \u2014 the kind the township promotes. I am not going to mess with traditional seed that gives low yield, and I cannot afford the expensive hybrid seed some younger farmers buy. I apply compound fertilizer at planting and then urea when the wheat greens up in spring. I irrigate three times \u2014 once in early spring, once when the stems start to stretch, once when the heads are filling. I do not irrigate more than that because pumping groundwater costs money and my back is not what it was. I spray once for weeds and once for rust or aphids if I see them.\n\nFor maize, I plant right after the wheat is off. I use hybrid seed \u2014\u90d1\u5355958 or whatever the supply store has that year. I scatter the base fertilizer and then top-dress urea when the plant is knee-high. Maize gets rain in summer here so I only irrigate once or twice if it is dry. I spray for fall armyworm if I see the damage.\n\nI use a hired machine for rotary tillage before wheat planting. For maize I plant directly into the stubble \u2014 no extra tillage, saves time and money.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 68-year-old farmer with no formal education in Quzhou County, Hebei follows the deeply entrenched winter wheat\u2013summer maize double-cropping rotation on 5 mu of household land, relying on decades of experiential knowledge, neighbor practices, and village cooperative inputs rather than extension advice. Wheat is grown from government-promoted improved varieties with rotary tillage, three irrigations, and compound fertilizer plus urea top-dressing; maize follows with hybrid seed direct-seeded into wheat stubble, two irrigations, and a similar fertilizer regime. Input rates reflect the tendency of traditional farmers in this region to apply somewhat heavy nitrogen while using minimal potassium, and irrigation frequency reflects both water cost awareness and physical capacity limitations of an elderly farmer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 68-year-old farmer with no formal education in Quzhou County, Hebei follows the deeply entrenched winter wheat\u2013summer maize double-cropping rotation on 5 mu of household land, relying on decades of experiential knowledge, neighbor practices, and village cooperative inputs rather than extension advice. Wheat is grown from government-promoted improved varieties with rotary tillage, three irrigations, and compound fertilizer plus urea top-dressing; maize follows with hybrid seed direct-seeded into wheat stubble, two irrigations, and a similar fertilizer regime. Input rates reflect the tendency of traditional farmers in this region to apply somewhat heavy nitrogen while using minimal potassium, and irrigation frequency reflects both water cost awareness and physical capacity limitations of an elderly farmer."
+  },
+  "elapsed_seconds": 48.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_6",
+  "tier": 1,
+  "provider": "claude"
+}

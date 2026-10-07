@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm a 69-year-old farmer with primary schooling, farming 2 mu of land in Quzhou County with my wife. Our son works off-farm in the city, so it's mostly the two of us. We've been doing wheat-maize double cropping on these 2 mu for as long as I can remember \u2014 50 years now. The land is small, but it's what we have, and we know every corner of it.\n\nFor the **winter wheat**, I'll plant around October 8th, same as always. I save some of my own seed from last year, but I also buy a bit of improved seed from the shop \u2014 about 8 kg per mu. The soil on my plot is decent, not great. I usually put down about 20 kg of compound fertilizer per mu before planting as base fertilizer, and then topdress with urea at jointing time \u2014 maybe another 8-10 kg per mu. I know the extension people say you can use less, but last year I tried cutting back and the wheat looked yellow, so I'm not doing that again. Better to waste a little money than risk going hungry. I'll irrigate three times: once before winter if it's dry, once at green-up around March, and once at jointing. Pumping costs money, but three times is what my neighbors do and it works. For pesticides, I'll spray herbicide once in spring and maybe insecticide if I see aphids. I expect about 380 kg per mu if the weather cooperates \u2014 that's about what I got last year.\n\nFor the **summer maize**, the window is tight. As soon as the wheat comes off in early June, I need to get the maize in the ground within a few days \u2014 around June 12th. I'll hire the tractor guy to plow quick, or sometimes I just plant no-till if I'm running late. I buy hybrid seed, about 2 kg per mu. For fertilizer, I put compound fertilizer at planting, maybe 15 kg per mu, and then topdress with urea at the big trumpet leaf stage, about another 8 kg per mu. Maize needs water, but electricity for the pump is expensive. I'll irrigate twice \u2014 once right after planting if it's dry, and once during tasseling. My neighbor Lao Wang only irrigates once and his yields suffer, so I don't skip the second one. I expect about 420 kg per mu.\n\nLabor is mostly me and my wife. For wheat, we need about 10 family days total spread across the year, plus maybe 2 days of hired help at harvest because I can't carry everything myself anymore at my age. For maize, about 8 family days and 2 hired days at harvest. Hired labor is 120 yuan per day now, so I keep it to a minimum.\n\nMoney is tight. Total input costs for both crops can't go much over 1,800 yuan or we'll have nothing left for medicine and food. I spend more on wheat because it's our staple \u2014 we eat a lot of the wheat ourselves. The maize mostly goes to feed our few chickens and whatever we can sell. I'm not trying to get rich; I'm just trying to keep our heads above water and have enough to eat.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 2.0,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: compound fertilizer before planting; topdress: urea at jointing in March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"plow after maize harvest, then harrow before wheat planting\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 380\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 2.0,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: compound fertilizer at planting; topdress: urea at big trumpet leaf stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"quick plow after wheat harvest or no-till if weather is tight\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 420\n    }\n  ],\n  \"total_input_cost_yuan\": 1850,\n  \"reasoning_summary\": \"I've been farming this 2 mu for 50 years and I know what works. Money is tight with just two of us and our son away working, so I keep costs low but I don't cut fertilizer too much because I've been burned before. I spend more on wheat since we eat it ourselves. I follow what my neighbors do \u2014 three irrigations for wheat, two for maize. I hire a little help at harvest because I'm 69 now and can't carry like I used to. My goal is not to get rich, just to have enough grain for the year and a bit of cash left over.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 2.0,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: compound fertilizer before planting; topdress: urea at jointing in March",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "plow after maize harvest, then harrow before wheat planting",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 380,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 2.0,
+        "expected_yield_kg_per_mu": 380,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 2.0,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: compound fertilizer at planting; topdress: urea at big trumpet leaf stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "quick plow after wheat harvest or no-till if weather is tight",
+        "labor_family_days": 8,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 12,
+        "area_mu": 2.0,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3
+      }
+    ],
+    "total_input_cost_yuan": 1850,
+    "reasoning_summary": "I've been farming this 2 mu for 50 years and I know what works. Money is tight with just two of us and our son away working, so I keep costs low but I don't cut fertilizer too much because I've been burned before. I spend more on wheat since we eat it ourselves. I follow what my neighbors do \u2014 three irrigations for wheat, two for maize. I hire a little help at harvest because I'm 69 now and can't carry like I used to. My goal is not to get rich, just to have enough grain for the year and a bit of cash left over."
+  },
+  "elapsed_seconds": 28.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_15",
+  "tier": 4,
+  "provider": "kimi"
+}

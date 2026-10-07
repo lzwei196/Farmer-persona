@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54 years old and have farmed these fields in Quzhou County for over 30 years. I have about 8 mu of land. This spring, my winter wheat is already in the ground \u2014 I sowed it last October after rotary tilling the maize stubble. I will topdress it with urea when it greens up and irrigate it three more times before harvesting in early June. I expect about 1000 jin per mu. I always grow wheat because the government gives a subsidy for it, and it is a safe crop.\n\nAfter the wheat harvest, I will immediately plant summer maize \u2014 I buy Denghai 605 hybrid seed from the township seed shop because it gives good yield. I do not till for maize; I just clear the wheat stubble and sow directly to save time and fuel. Maize needs less water than wheat, so I will irrigate twice if the rains are poor. I expect around 1100 jin per mu.\n\nOn my other 3 mu, I will plant cotton in April. Cotton brings more cash than grain, but it is labor-intensive and needs many pesticide sprays for bollworms. I will rotary till the cotton plot, apply compound fertilizer as basal dressing, and irrigate four times. I use Guoxinmian improved seed. I expect about 500 jin per mu of seed cotton.\n\nI do not try new crops \u2014 at my age, I stick with what I know. My wife helps with weeding and spraying, and we hire a combine for wheat harvest and a tractor for rotary tillage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize rotation on my best land because it provides two harvests and the government subsidizes wheat. I grow cotton for cash income. I use hybrid maize seed for high yield and improved wheat seed. I till with rotary for wheat and cotton but plant maize without tillage to save time after wheat harvest. I apply compound fertilizer as basal and urea for topdressing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize rotation on my best land because it provides two harvests and the government subsidizes wheat. I grow cotton for cash income. I use hybrid maize seed for high yield and improved wheat seed. I till with rotary for wheat and cotton but plant maize without tillage to save time after wheat harvest. I apply compound fertilizer as basal and urea for topdressing."
+  },
+  "elapsed_seconds": 191.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_10",
+  "tier": 1,
+  "provider": "kimi"
+}

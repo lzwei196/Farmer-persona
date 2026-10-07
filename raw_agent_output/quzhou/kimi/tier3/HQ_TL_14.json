@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62 years old. I have farmed for 50 years since I was 12. My father taught me everything. I finished middle school, so I can read fertilizer bags and calculate money, but the field is my real teacher. I have 25.1 mu in Quzhou County. My wife and I manage it. We are only two people, so for 25 mu I must hire machines. I cannot do this by hand anymore.\n\nI plant wheat in October and maize in June. I have done this wheat-maize rotation for decades. Last year my wheat gave me about 500 kg per mu, and my maize gave me about 600 kg per mu. This year I will do almost the same thing. Change is risky. I only adjust a little based on what I saw last year and what my neighbors do.\n\nFor wheat, I buy improved seeds from the seed shop. I use 30 jin per mu, which is 15 kg. I rotary till the land before sowing. The tractor driver charges 50 yuan per mu. For fertilizer, I spread one bag \u2014 50 kg \u2014 of 18-18-5 compound fertilizer per mu before sowing. That gives 9 kg nitrogen, 9 kg phosphorus, and 2.5 kg potassium per mu. Then at jointing time in March, I spread another half bag of urea, about 25 kg per mu. Urea is 46% nitrogen, so that is 11.5 kg nitrogen. Total nitrogen for wheat is about 20.5 kg per mu. My neighbor Lao Wang uses this much and his wheat is always tall. I would rather spend a little more on fertilizer than have thin wheat. I irrigate four times: winter irrigation once after sowing, then at green-up, jointing, and grain filling. I pump from my well. Each irrigation costs about 12 yuan per mu for electricity. For chemicals, I spray herbicide once after sowing, and fungicide once at heading stage. That is two pesticide sprays.\n\nFor maize, I plant right after wheat harvest in early June. I use hybrid seeds \u2014 Nongda 372 or something similar from the dealer. One small package is about 1.2 kg per mu. I do no-tillage. There is no time to till between wheat harvest and maize sowing. If I till, I miss the good season. I put 40 kg per mu of 15-15-15 compound fertilizer in the row at sowing. That is 6 kg nitrogen, 6 kg phosphorus, 6 kg potassium per mu. Then at big trumpet stage in July, I spread 25 kg urea per mu, which is 11.5 kg nitrogen. Total nitrogen is 17.5 kg per mu. I irrigate twice: once at sowing if the soil is dry, and once at big trumpet when the ears are forming. For pests, I spray herbicide once, and insecticide once for corn borer. That is two pesticide applications.\n\nI expect 550 kg per mu from wheat and 600 kg per mu from maize this year. If weather is good, maybe more. If it is dry, maybe less. But I know this system. It has fed my family for 50 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 25.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20.5,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 2.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 25.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to what worked last year because change is risky on my 25.1 mu farm. For wheat, I rotary till and apply 50 kg of 18-18-5 compound fertilizer per mu as basal and 25 kg urea per mu at jointing, irrigating four times and spraying twice. For maize, I use no-till planting right after wheat harvest with 40 kg of 15-15-15 compound per mu at sowing and 25 kg urea per mu at big trumpet, irrigating twice and spraying twice. I would rather spend a bit more on fertilizer than risk losing yield, and I watch what my neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 25.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20.5,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 2.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 25.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to what worked last year because change is risky on my 25.1 mu farm. For wheat, I rotary till and apply 50 kg of 18-18-5 compound fertilizer per mu as basal and 25 kg urea per mu at jointing, irrigating four times and spraying twice. For maize, I use no-till planting right after wheat harvest with 40 kg of 15-15-15 compound per mu at sowing and 25 kg urea per mu at big trumpet, irrigating twice and spraying twice. I would rather spend a bit more on fertilizer than risk losing yield, and I watch what my neighbors do."
+  },
+  "elapsed_seconds": 233.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_14",
+  "tier": 3,
+  "provider": "kimi"
+}

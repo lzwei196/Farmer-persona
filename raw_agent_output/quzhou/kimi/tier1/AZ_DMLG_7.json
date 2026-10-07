@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 59 years old and have been farming these fields in Quzhou since I was a young girl. I never went to school, but I know this land better than anyone. My family has 8 mu, and I will plant winter wheat on all of it this autumn, just like always. After we harvest the wheat in early June, I will immediately plant summer maize on the same 8 mu \u2014 that is what everyone in our village does, and the turnaround is so tight there is no time to waste.\n\nFor the wheat, I will use an improved variety like Shimai or Lumai \u2014 my neighbors do well with these, and the seed shop has them every year. I will rotary till the ground before sowing in mid-October. I buy one bag of compound fertilizer per mu for the base dressing, and I will topdress with extra nitrogen when the wheat turns yellow at jointing time. I irrigate three times: once before winter to help the wheat survive the cold, once in spring when it starts growing fast, and once when the grain is filling. I spray four times total \u2014 herbicide once, insecticide twice when I see aphids, and fungicide once if the weather turns wet.\n\nFor the maize, I plant hybrid seed \u2014 Nongda 372 or Denghai 605 \u2014 because hybrid maize grows fast and strong. There is no time to till between wheat harvest and maize planting, so we plant no-tillage directly into the wheat stubble. I put down compound fertilizer at planting, and irrigate twice \u2014 once right after sowing and once during the big growth period. I spray three times: herbicide once, insecticide twice for the corn borers.\n\nI expect about 1000 jin of wheat per mu and 1100 jin of maize per mu, which is what I usually get when the weather cooperates. Some years I make a bit more, some years a bit less, but this system feeds my family and brings in cash from selling the extra grain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 8 mu in Quzhou County my whole life, and the wheat-maize double-cropping system is what keeps my family fed and solvent. I follow what my neighbors do because they have good results: improved wheat varieties sown in October with rotary tillage, hybrid maize planted no-tillage right after the June wheat harvest, compound fertilizer as a base plus nitrogen topdressing when needed, three irrigations for wheat and two for maize, and spraying for weeds and insects as they appear. I do not take risks with new crops or methods at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed these 8 mu in Quzhou County my whole life, and the wheat-maize double-cropping system is what keeps my family fed and solvent. I follow what my neighbors do because they have good results: improved wheat varieties sown in October with rotary tillage, hybrid maize planted no-tillage right after the June wheat harvest, compound fertilizer as a base plus nitrogen topdressing when needed, three irrigations for wheat and two for maize, and spraying for weeds and insects as they appear. I do not take risks with new crops or methods at my age."
+  },
+  "elapsed_seconds": 297.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DMLG_7",
+  "tier": 1,
+  "provider": "kimi"
+}

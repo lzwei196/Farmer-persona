@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for 40 years, so I know what it needs. My 10.1 mu is not all the same \u2014 I keep about 7 mu in the wheat-maize rotation because that is our main food and cash, and 3 mu in cotton because the price has been unstable but I still know how to grow it and the ginning station is close.\n\nFor wheat this year, I will plant Jimai variety, the improved seed I bought last autumn from the dealer in town. Everyone in our village plants it, yields are stable around 500 kg per mu if the spring rain is decent. Before planting I put down compound fertilizer 15-15-15, about 50 kg per mu as base, then topdress urea 15 kg per mu at jointing in March. That gives me roughly 18 kg pure nitrogen, 7-8 kg phosphorus, and 7-8 kg potassium. I could use less but last year my neighbor Old Wang tried to save fertilizer and his wheat turned yellow \u2014 I would rather spend 30 yuan extra than lose 50 kg yield. I will irrigate from the well twice: once before winter, once at jointing. Maybe a third time at grain filling if it stays dry. Spray for aphids and powdery mildew about 2 times.\n\nFor maize after wheat harvest in June, I use hybrid seed, Zhengdan or similar. Direct seed with no-tillage into the wheat stubble to save time \u2014 I learned this from the agricultural station training. Base fertilizer 40 kg compound at sowing, then 20 kg urea side-dressed at big trumpet stage. Irrigate once or twice depending on rain. Spray once for borers.\n\nFor cotton, I use improved Bt variety so I spray less for bollworm. Plough the land first, put compound fertilizer 40 kg per mu as base, urea 15 kg topdressed at flowering. Cotton needs more potash for fiber quality so I add 10 kg potassium chloride. Irrigate 3 times. Still need 4-5 sprays for aphids, spider mites, and other pests even with Bt. Expected yield around 220 kg seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I split my 10.1 mu into 7.1 mu of wheat-maize rotation for food security and steady income, and 3 mu of cotton for cash. I follow what has worked for me and my neighbors \u2014 improved wheat and cotton varieties, hybrid maize, compound fertilizer as base plus urea topdressing. I apply a little more nitrogen than strictly necessary because losing yield scares me more than spending a bit extra on fertilizer. I use no-tillage for summer maize to save time after wheat harvest, plough for cotton because it needs loose soil, and rotary till for wheat. Well irrigation lets me water when rain fails, which is most years now.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I split my 10.1 mu into 7.1 mu of wheat-maize rotation for food security and steady income, and 3 mu of cotton for cash. I follow what has worked for me and my neighbors \u2014 improved wheat and cotton varieties, hybrid maize, compound fertilizer as base plus urea topdressing. I apply a little more nitrogen than strictly necessary because losing yield scares me more than spending a bit extra on fertilizer. I use no-tillage for summer maize to save time after wheat harvest, plough for cotton because it needs loose soil, and rotary till for wheat. Well irrigation lets me water when rain fails, which is most years now."
+  },
+  "elapsed_seconds": 39.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_13",
+  "tier": 3,
+  "provider": "claude"
+}

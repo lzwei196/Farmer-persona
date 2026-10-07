@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been doing this for forty years on this same land in Quzhou. My mother farmed before me. I do not need to think too hard \u2014 my hands know what to do.\n\nMy two mu goes to wheat first, then maize. Same ground, same routine, same as always. I split the land evenly in my head but it is all one field, just different times of year.\n\n**Wheat (October to June):** I will buy the same improved wheat seed I bought last year from the village seed shop \u2014 I do not remember the name but the owner knows what I always take. I will rotary-till after the maize is off the field and spread compound fertilizer before seeding, then top-dress urea after the New Year when it starts to green up. I water four times: once before it gets cold to help roots settle, once at jointing, once at heading, once when the grain is filling. I spray herbicide in the fall and then again in spring if the weeds come back. I spray fungicide once around heading because some years the rust comes. My wheat usually gives me about 450 jin per mu, sometimes more.\n\n**Maize (June to September):** Right after I cut the wheat I plant maize without ploughing \u2014 no time and the ground is already loose enough. I use hybrid seed, the kind everyone in the village uses. I put fertilizer down at planting and top-dress once more around knee-height. Summer gets rain so I only water once or twice if it stays dry in August. I spray herbicide right after planting before the seedlings come up, and watch for corn borer \u2014 if I see damage I spray once. Maize gives me about 550 jin per mu in a good year.\n\nMy sons send some money home but I still need this grain for the family \u2014 seven mouths, and I sell whatever is left over.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 60-year-old farmer with 40 years of experience on 2 mu in Quzhou County follows the same wheat-maize rotation she has always used, relying on local seed shop relationships rather than variety names, applying compound fertilizer at planting plus urea top-dressing from habit and observation, irrigating wheat four times across the season using her well, and planting summer maize directly into wheat stubble with no-tillage to save time and labor. Pesticide decisions are reactive and routine \u2014 herbicide and fungicide for wheat, herbicide and a contingency insecticide for maize \u2014 reflecting experience-based risk management rather than scouting protocols. Expected yields of 450 and 550 kg/mu respectively are consistent with smallholder practice in the North China Plain under moderate inputs and well irrigation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 60-year-old farmer with 40 years of experience on 2 mu in Quzhou County follows the same wheat-maize rotation she has always used, relying on local seed shop relationships rather than variety names, applying compound fertilizer at planting plus urea top-dressing from habit and observation, irrigating wheat four times across the season using her well, and planting summer maize directly into wheat stubble with no-tillage to save time and labor. Pesticide decisions are reactive and routine \u2014 herbicide and fungicide for wheat, herbicide and a contingency insecticide for maize \u2014 reflecting experience-based risk management rather than scouting protocols. Expected yields of 450 and 550 kg/mu respectively are consistent with smallholder practice in the North China Plain under moderate inputs and well irrigation."
+  },
+  "elapsed_seconds": 41.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_6",
+  "tier": 2,
+  "provider": "claude"
+}

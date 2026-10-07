@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou my whole life, just like my father before me. I have about 10 mu. There's really only one way to farm here \u2014 winter wheat, then summer corn. Everyone does it. The land doesn't rest; neither do I.\n\nFor wheat, I'll plant after the corn harvest in mid-October. I'll use Jimai 22 \u2014 it's what the county ag store recommends and my neighbors have had good results with it. I'll rotary-till before planting to break up the compacted soil. I'll put down compound fertilizer as a base, then top-dress with urea at jointing. I need to water at least three times \u2014 before winter, at jointing, and at heading. If I skip the jointing irrigation the yield drops badly. I'll spray herbicide early, then fungicide around heading for powdery mildew. Hoping for 450 jin per mu.\n\nFor corn, I plant right after wheat harvest in mid-June, no time to spare. Hybrid seed is the only way \u2014 the old varieties can't compete. I don't till for corn, just plant directly into the stubble with a seeder I borrow from my cousin. I'll apply fertilizer twice \u2014 at planting and when the stalk is knee-high. Two irrigations if the summer rains are weak. I'll spray for corn borer once. I expect about 550 jin per mu if the weather cooperates.\n\nWater is getting harder every year \u2014 the well is deeper than when I was young \u2014 but I don't see a way around it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a lifelong farmer in Quzhou County on the North China Plain, I follow the standard wheat-maize double cropping rotation that dominates this region. My 10 mu of flat irrigated land is planted to winter wheat from October through June, then immediately to summer maize through September, with no fallow. I choose an improved wheat variety (Jimai 22) familiar to local conditions and hybrid maize seed for its superior yield potential. Fertilizer rates reflect local smallholder norms \u2014 moderately high nitrogen to secure yields, with phosphorus and potassium applied mainly as base dressing. Irrigation is essential given the semi-arid climate and declining groundwater, with wheat receiving three waterings at critical growth stages and maize two supplemental irrigations. Pesticide use is modest \u2014 herbicide plus fungicide for wheat, and a single insecticide application for maize borer. No-tillage for maize speeds planting after wheat harvest and reduces labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a lifelong farmer in Quzhou County on the North China Plain, I follow the standard wheat-maize double cropping rotation that dominates this region. My 10 mu of flat irrigated land is planted to winter wheat from October through June, then immediately to summer maize through September, with no fallow. I choose an improved wheat variety (Jimai 22) familiar to local conditions and hybrid maize seed for its superior yield potential. Fertilizer rates reflect local smallholder norms \u2014 moderately high nitrogen to secure yields, with phosphorus and potassium applied mainly as base dressing. Irrigation is essential given the semi-arid climate and declining groundwater, with wheat receiving three waterings at critical growth stages and maize two supplemental irrigations. Pesticide use is modest \u2014 herbicide plus fungicide for wheat, and a single insecticide application for maize borer. No-tillage for maize speeds planting after wheat harvest and reduces labor."
+  },
+  "elapsed_seconds": 46.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_2",
+  "tier": 1,
+  "provider": "claude"
+}

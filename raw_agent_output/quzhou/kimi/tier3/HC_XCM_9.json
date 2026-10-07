@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these same 5 mu in Quzhou for 60 years. I only finished primary school, but I can read the numbers on the fertilizer bags, and I know what works on my land. My father taught me, and now I just copy what I did last year, because at 83 years old, change is risky. Old Wang next door plants the same way, and his yields are always fine.\n\nFor wheat: I sow in October, right after the maize comes off. First I plough the field deep with the small tractor. Then I spread one full bag of compound fertilizer per mu \u2014 50 kg, the kind that says 15-15-15 on the bag. I sow improved wheat seed, the same kind I bought last year from the supply store. In March, when the wheat turns green after winter, I spread half a bag of urea per mu, 25 kg. That is my nitrogen. I irrigate three times from my well: once after sowing if the soil is dry, once at jointing, and once when the grain is filling. I spray pesticides twice \u2014 once for weeds right after sowing, and once later if I see aphids or rust. I expect about 450 kg per mu if the weather is normal. Last year I got about that.\n\nFor maize: In June, right after cutting the wheat, I rotary-till fast and plant hybrid corn seed the same day. You cannot waste time in summer. I put down 40 kg of compound fertilizer per mu at sowing. When the corn reaches the big trumpet stage, I top-dress with 25 kg of urea per mu. I irrigate twice from the well: the first time when it gets dry in mid-summer, and the second time at silking \u2014 that one you cannot skip, or the ears will be half-empty. I spray twice: once for weeds, once for corn borer. I expect 550 kg per mu.\n\nI know fertilizer is expensive now \u2014 one bag of urea costs over 100 yuan. But on 5 mu, I need about two and a half bags of urea and four and a half bags of compound for the whole year. That is around 700 to 800 yuan for fertilizer. I would rather spend that than risk losing 200 kg per mu. A bad harvest is a disaster; wasting some fertilizer is just a cost. With only two of us in the house, we do the work ourselves, so we do not hire labor. We can handle 5 mu, but every yuan counts.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am an 83-year-old farmer with primary school education and 60 years of experience on 5 mu in Quzhou County. I manage wheat in winter and maize in summer on the same land. I base this year's plan entirely on last year's practice because change is risky at my age. I apply 50 kg of 15-15-15 compound fertilizer and 25 kg of urea per mu for wheat, and 40 kg of compound fertilizer plus 25 kg of urea per mu for maize, because I would rather spend the extra money on fertilizer than risk a bad harvest. I irrigate wheat three times and maize twice from my well, and spray twice per crop. I plough before wheat and rotary-till before maize. I expect 450 kg/mu of wheat and 550 kg/mu of maize, similar to last year. With only two people in my household and no hired labor, I keep things simple and stick to what I know works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am an 83-year-old farmer with primary school education and 60 years of experience on 5 mu in Quzhou County. I manage wheat in winter and maize in summer on the same land. I base this year's plan entirely on last year's practice because change is risky at my age. I apply 50 kg of 15-15-15 compound fertilizer and 25 kg of urea per mu for wheat, and 40 kg of compound fertilizer plus 25 kg of urea per mu for maize, because I would rather spend the extra money on fertilizer than risk a bad harvest. I irrigate wheat three times and maize twice from my well, and spray twice per crop. I plough before wheat and rotary-till before maize. I expect 450 kg/mu of wheat and 550 kg/mu of maize, similar to last year. With only two people in my household and no hired labor, I keep things simple and stick to what I know works."
+  },
+  "elapsed_seconds": 136.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_9",
+  "tier": 3,
+  "provider": "kimi"
+}

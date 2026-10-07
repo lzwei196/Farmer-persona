@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 3 mu in Quzhou for 30 years, and at 50 I know what works on this land. With only 3 mu for a family of four, and some of my people working off-farm, I can't afford to gamble. I keep 2 mu in the wheat-maize double crop because that's my food security and feed base \u2014 the North China Plain was made for this rotation. I plant improved wheat in October, and as soon as it's out in early June, I put in hybrid maize. That June window is narrow, so I don't till for the maize \u2014 I plant no-till to save every day I can. The other 1 mu goes to hybrid Bt cotton. Cotton brings cash for school and daily costs, but it's hand-labor intensive for planting, thinning, spraying, and picking, so 1 mu is my limit given that part of my household is away working. My well gives me water when the rains fail. For wheat, I'll irrigate three times \u2014 green-up, jointing, and grain filling. For summer maize, twice is usually enough with the summer rains \u2014 jointing and filling. Cotton is thirsty at flowering and boll-set, so three irrigations there. I fertilize with compound base and urea top-dress: wheat gets about 16-7-4 NPK per mu, maize gets 16-5-5, and cotton needs more potassium for its bolls so 13-6-9. Wheat and maize each need two pesticide passes, but cotton is a pest magnet even with Bt, so I budget four sprays.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"With 3 mu of land and part of my household working off-farm, I prioritize the wheat-maize double crop on 2 mu for household grain and feed security, while dedicating 1 mu to cotton for cash income. I choose no-tillage for summer maize to squeeze it into the narrow post-wheat harvest window, use well irrigation strategically at critical growth stages, and adjust fertilizer rates based on each crop's needs with extra potassium for cotton boll development. Labor limits keep my cotton area small despite good prices, and my 30 years of experience tell me this balance minimizes risk while covering both food and cash needs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "With 3 mu of land and part of my household working off-farm, I prioritize the wheat-maize double crop on 2 mu for household grain and feed security, while dedicating 1 mu to cotton for cash income. I choose no-tillage for summer maize to squeeze it into the narrow post-wheat harvest window, use well irrigation strategically at critical growth stages, and adjust fertilizer rates based on each crop's needs with extra potassium for cotton boll development. Labor limits keep my cotton area small despite good prices, and my 30 years of experience tell me this balance minimizes risk while covering both food and cash needs."
+  },
+  "elapsed_seconds": 43.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_2",
+  "tier": 2,
+  "provider": "kimi"
+}

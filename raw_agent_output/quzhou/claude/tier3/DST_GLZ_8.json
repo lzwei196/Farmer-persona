@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am an old woman, I never went to school, but I have been working these fields for thirty years. My husband and I, just the two of us at home now, we manage 14 mu together. I do what my neighbors do, and what worked last year I will do again.\n\nOf my 14 mu, I plant 11 mu in wheat and maize \u2014 one after the other, every year, the same as everyone in our village. The other 3 mu I keep in cotton, down by the road. I used to plant more cotton but the price is not good anymore and picking it breaks my back, so I only keep a little for my own money.\n\nFor the wheat, after maize comes out in October, my nephew brings the tractor to rotary the ground for me. I sow the improved wheat seed the dealer in town sells \u2014 everyone buys it, it comes up well. I put one bag, maybe a bag and a little more, of compound fertilizer (the 15-15-15 kind, 50 jin in a bag) under the seed for each mu. In spring when the wheat turns green I spread half a bag of urea, maybe 20 jin, per mu. If the plants look yellow I add a little more. I water it three times if the well is working \u2014 once before winter, once at green-up, once when the heads come out. I spray for aphids and the yellow rust, two times usually, sometimes three if the bugs are bad.\n\nFor the maize, soon as the wheat is cut in June I have them no-till sow the hybrid seed right into the stubble \u2014 no plowing, that is what everyone does now. I put one bag of compound under it and then 30 jin of urea at knee-high. Water once or twice depending on the rain. Spray once for the borer.\n\nCotton needs more attention and more spray. I plough that ground because cotton likes loose soil. I use the improved cotton seed, put more fertilizer \u2014 maybe a bag and a half of compound plus 30 jin urea at flowering. I spray many times because the bollworm is bad, five or six times through the summer. Water it two or three times.\n\nI would rather spend a little extra on fertilizer than have a thin harvest. Fertilizer money is money, but a bad crop \u2014 that is the whole year gone.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 11.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 11.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I am old and never went to school, so I farm the way my neighbors farm and the way I did last year. On 11 mu I do wheat then maize like everyone in Quzhou, and I keep 3 mu of cotton for extra cash. I put one bag of compound fertilizer under each crop and top-dress with urea when the plants need it \u2014 a bit more for cotton because it is hungrier and the bollworm eats it. I water from the well when I can, three times for wheat, two for maize, two or three for cotton. I would rather use a little extra fertilizer than lose the harvest \u2014 fertilizer is just money, a bad year is the whole year gone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 11.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 11.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I am old and never went to school, so I farm the way my neighbors farm and the way I did last year. On 11 mu I do wheat then maize like everyone in Quzhou, and I keep 3 mu of cotton for extra cash. I put one bag of compound fertilizer under each crop and top-dress with urea when the plants need it \u2014 a bit more for cotton because it is hungrier and the bollworm eats it. I water from the well when I can, three times for wheat, two for maize, two or three for cotton. I would rather use a little extra fertilizer than lose the harvest \u2014 fertilizer is just money, a bad year is the whole year gone."
+  },
+  "elapsed_seconds": 44.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_8",
+  "tier": 3,
+  "provider": "claude"
+}

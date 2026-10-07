@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 53 years old, I never went to school, and I have farmed these seven *mu* in Quzhou County since I was a boy. I know this land with my hands, not with books. This year, like every year, I will plant winter wheat and then summer maize. That is what every household around me does, and the grain buyers always come for it. You do not change a system that has fed your family for decades.\n\nFor the wheat, I will rotary-till the soil in October before sowing. I will buy improved seeds from the supply shop\u2014maybe *Luyuan 502*, the same kind my neighbors trust. For each *mu*, I will spread about 100\u202fkg of compound fertilizer as a base, and when the wheat starts jointing in the spring, I will topdress it with urea. I will irrigate three times: once before winter so the crop survives the cold, once at jointing, and once when the grain is filling. I will also spray pesticides four times\u2014herbicide first, then insecticide and fungicide\u2014to keep the crop clean. If the weather is fair, I should harvest about 500\u202fkg per *mu*.\n\nAs soon as I cut the wheat in early June, I will sow hybrid maize\u2014*Denghai 605*\u2014straight into the wheat stubble without tilling. There is no time to plough; the summer season is short, and the stubble helps hold the moisture. I will put down compound fertilizer at sowing, irrigate twice during the summer, and spray pesticides three times. I expect about 550\u202fkg per *mu* from the maize.\n\nThis is my plan because it is the only plan I know, and it works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 9.5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 2.5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed seven mu in Quzhou County my whole life. Like my neighbors, I grow winter wheat followed by summer maize because it is the only reliable cropping system here. I stick with improved wheat seeds and hybrid maize, rotary till before wheat, and sow maize directly into the wheat stubble with no tillage. I apply compound fertilizer as a base and topdress wheat with nitrogen at jointing, irrigate three times for wheat and twice for maize, and spray pesticides regularly to protect the crop. This is what I have always done, and it keeps food on the table.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 9.5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 2.5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed seven mu in Quzhou County my whole life. Like my neighbors, I grow winter wheat followed by summer maize because it is the only reliable cropping system here. I stick with improved wheat seeds and hybrid maize, rotary till before wheat, and sow maize directly into the wheat stubble with no tillage. I apply compound fertilizer as a base and topdress wheat with nitrogen at jointing, irrigate three times for wheat and twice for maize, and spray pesticides regularly to protect the crop. This is what I have always done, and it keeps food on the table."
+  },
+  "elapsed_seconds": 267.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

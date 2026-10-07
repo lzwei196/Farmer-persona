@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been working this land for fifty years. I know this soil, I know the seasons in Quzhou, and I know what I can manage with just my wife and me. We do wheat first, then maize on the same ground \u2014 same as always, same as my father did.\n\n**Wheat (October planting):** I will put wheat on all 14 mu. I always use the improved semi-winter variety from the county seed station \u2014 not the old traditional seed, that gives too little. I have learned to apply base fertilizer before sowing and top-dress at jointing. I use about 16 jin of urea equivalent per mu over the season. My well is reliable, so I will water three times: once at sowing to get germination, once at jointing, once at heading. That is usually enough. Two sprays \u2014 one herbicide in winter, one for rust and aphids in spring. I do rotary tillage before sowing, easier on my back than the plough.\n\n**Maize (June planting, right after wheat harvest):** All 14 mu again. I use Zhengdan 958 hybrid seed \u2014 I have used it for over twenty years, good yield, I trust it. Summer has rain here, so I only irrigate twice if it is dry: at tasseling and at grain fill. Two pesticide passes \u2014 one herbicide after emergence, one for corn borer. I seed directly without deep tillage to save time between the wheat harvest and maize planting. The ground stays moist and I cannot afford to lose planting days.\n\nTwo of us cannot do fancy things. I keep it simple and reliable.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm all 14 mu in a wheat-maize rotation on the same ground, the same system I have used my whole life in Quzhou. For wheat I use an improved semi-winter variety, apply fertilizer in two splits, irrigate three times from my well at the critical stages, and spray twice for weeds and disease. For maize I use Zhengdan 958 hybrid, direct-seed right after wheat harvest to save time, rely mainly on summer rain with two backup irrigations, and spray twice for weeds and corn borer. With only two people in the household and fifty years of experience, I keep the system simple, consistent, and matched to what I can physically manage.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm all 14 mu in a wheat-maize rotation on the same ground, the same system I have used my whole life in Quzhou. For wheat I use an improved semi-winter variety, apply fertilizer in two splits, irrigate three times from my well at the critical stages, and spray twice for weeds and disease. For maize I use Zhengdan 958 hybrid, direct-seed right after wheat harvest to save time, rely mainly on summer rain with two backup irrigations, and spray twice for weeds and corn borer. With only two people in the household and fifty years of experience, I keep the system simple, consistent, and matched to what I can physically manage."
+  },
+  "elapsed_seconds": 43.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_12",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am sixty years old and have farmed this land in Quzhou for forty years. I never went to school, but I know these fields better than any book. With 16.9 mu and four mouths to feed, I cannot afford to gamble. I stick to what works, watch what my neighbors do, and borrow a little from my son if a good input costs too much up front.\n\nMy backbone is the wheat-maize rotation on 10 mu. In early October I will rotary-till and sow improved wheat seed \u2014 about 30 jin per mu, the same amount I have used for years. I will put down roughly one and a half bags of compound fertilizer per mu at planting and topdress once in spring. That is about 32 kg of nitrogen, 20 kg of phosphorus, and 8 kg of potassium per mu if you weigh it, but I just call it a big bag and a small bag. I irrigate three times from my well: after sowing, at jointing, and at grain-filling. Water costs money to pump, but without it the wheat turns yellow and the yield drops. I spray pesticide three times \u2014 herbicide once and insecticide twice \u2014 when I see the bugs moving. If the spring rains do not fail, I expect about 1,000 kg per mu.\n\nAfter harvest in early June there is barely a week before the maize must go in. I do not till \u2014 there is no time, and the no-till seeder works fine after forty years of doing it this way. I plant hybrid maize seed, one package per mu, and spread compound fertilizer at planting, about 100 kg per mu. That gives roughly 25 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I irrigate twice and spray twice for insects. I should get about 1,100 kg per mu.\n\nThe remaining 6.9 mu I split between cotton and chili. I put 4 mu into cotton because it is familiar \u2014 my mother grew it, and I know the rhythm. I rotary-till in spring, sow improved cottonseed in late April, and fertilize well: about 28 kg nitrogen, 12 kg phosphorus, and 10 kg potassium per mu, half at planting and half at flowering. I irrigate three times and spray about ten times for bollworms and aphids. I hope for 600 kg of seed cotton per mu.\n\nChili brings the best price, but it is the hardest on my back. On 2.9 mu I rotary-till, transplant in spring, and give it plenty of food \u2014 about 35 kg nitrogen, 18 kg phosphorus, and 18 kg potassium per mu \u2014 and water five times. I spray eight times to keep the rot and worms off. If the weather cooperates, I can get 3,000 kg per mu. I do not grow more because at my age I cannot bend that long, and my daughter-in-law already has enough to do.\n\nI thought about cutting fertilizer to save cash, but two years ago my cousin did that and lost 200 kg per mu on his wheat. I would rather sleep with a little debt than risk an empty table.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 18,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3000\n    }\n  ],\n  \"reasoning_summary\": \"I keep 10 mu in the wheat-maize rotation because it is reliable and feeds the family. Wheat gets rotary tillage, three irrigations, and three pesticide sprays, with enough fertilizer to avoid the yield loss my cousin suffered. Maize is no-till to save time between wheat harvest and planting. I grow 4 mu of cotton because I know the crop well, and 2.9 mu of chili for cash, limited by my age and family labor. I would rather spend more on inputs than risk a bad year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 18,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 5,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3000
+      }
+    ],
+    "reasoning_summary": "I keep 10 mu in the wheat-maize rotation because it is reliable and feeds the family. Wheat gets rotary tillage, three irrigations, and three pesticide sprays, with enough fertilizer to avoid the yield loss my cousin suffered. Maize is no-till to save time between wheat harvest and planting. I grow 4 mu of cotton because I know the crop well, and 2.9 mu of chili for cash, limited by my age and family labor. I would rather spend more on inputs than risk a bad year."
+  },
+  "elapsed_seconds": 206.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_1",
+  "tier": 2,
+  "provider": "kimi"
+}

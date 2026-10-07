@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed these 10.1 mu in Quzhou for 40 years, and at 60, my wife and I have to be realistic about what two people can manage. The wheat-maize double crop is our bread and butter \u2014 it keeps us fed and we don't need to hire much labor. I'll plant 8 mu of winter wheat again. I buy improved seed from the supply station; it costs more than saving my own, but the germination is better. For fertilizer, the extension agent said 15 kg of nitrogen per mu is enough, but I've found 16 kg gives me a fuller stand, so I'll put down about 16 kg nitrogen, 6 kg phosphate, and 4 kg potash. The soil isn't what it used to be, but I can't afford to throw money at it. I'll irrigate three times: the overwinter water is essential, then at jointing, and once more at heading. Three is the sweet spot \u2014 four just wastes electricity. Two pesticide sprays, one for weeds early and one if I see insects.\n\nFor the summer maize after wheat harvest, the window is brutal \u2014 sometimes only five or six days. I'll sow hybrid seed no-till. I started doing this a few years back and it saves me a day of tractor work and the fuel cost, plus the yield is just as good if I irrigate once at the big flare stage. I'll give it roughly 16 kg nitrogen, 5 kg phosphate, and 4 kg potash per mu.\n\nI'll keep 2.1 mu of cotton because the price at the gin was acceptable last year, but I won't expand it \u2014 pruning and picking are young people's work, and we're not young anymore. I'll plough that field deep in April and plant improved Bt cotton. Cotton loves potassium, so I'll give it 8 kg per mu, with 14 kg nitrogen and 5 kg phosphate. I'll irrigate twice: at flowering and during boll filling. Four pesticide applications \u2014 the Bt handles bollworm but aphids still show up. If the weather cooperates, I expect about 260 kg of seed cotton per mu, which is close to what I got two years ago. I'm not changing much this year. I know what works, I know what I can afford, and I know what my back can handle.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I put most of my land into wheat-maize because at 60 years old with just my wife and me, we can't handle too much cotton \u2014 the picking alone would break our backs. I kept my fertilizer rates where they've worked before: around 15\u201316 kg nitrogen per mu for the grains, a bit less phosphate, and I make sure the cotton gets extra potassium. No-till for the maize saves me diesel and precious days between wheat harvest and planting, and I irrigate three times for wheat but only once for maize and twice for cotton to keep the pumping costs from eating my profits.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I put most of my land into wheat-maize because at 60 years old with just my wife and me, we can't handle too much cotton \u2014 the picking alone would break our backs. I kept my fertilizer rates where they've worked before: around 15\u201316 kg nitrogen per mu for the grains, a bit less phosphate, and I make sure the cotton gets extra potassium. No-till for the maize saves me diesel and precious days between wheat harvest and planting, and I irrigate three times for wheat but only once for maize and twice for cotton to keep the pumping costs from eating my profits."
+  },
+  "elapsed_seconds": 191.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_13",
+  "tier": 2,
+  "provider": "kimi"
+}

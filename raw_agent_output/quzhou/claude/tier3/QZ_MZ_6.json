@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am getting old, 63 years now, but I still work my 3 mu like always. My son works in the city, sends some money, but the land is still mine to take care of. Old man helps when he can. Three mu is not much, but every jin of grain counts for us.\n\nI do wheat then maize, same as everyone here in Quzhou. Been doing it this way forty-five years. I will not change what works.\n\nFor the winter wheat, I plant the good seed \u2014 the improved kind the dealer sells. Last year I used about two bags of compound fertilizer before plowing, that is the 15-15-15 kind, so maybe 40 jin per mu before sowing. Then in spring when the wheat stands up, I put urea, one bag for my three mu, about 15 jin per mu. My neighbor Wang puts more, but I think what I do is enough \u2014 wheat here gives me maybe 450 jin per mu if the rains are good and I water three times from the well. Winter water, then jointing water, then when the grain is filling. Sometimes four times if spring is dry.\n\nPesticide \u2014 I spray for aphids once, sometimes twice if I see them bad. Also one time for the weeds after sowing.\n\nFor maize after wheat, I plant hybrid seed, the kind the village shop says is good, Zhengdan or whatever they have that year. I hire the small machine to rotary till quick after wheat harvest, no time to wait. I put compound fertilizer at sowing, then urea when the maize is knee-high \u2014 that is when it really eats. About 20 jin urea per mu at that time. Maize drinks a lot, I water maybe twice if July-August rains are poor, once if rains come. Spray once for the borer worm.\n\nI do not skip fertilizer to save money \u2014 if I save 50 yuan on fertilizer and lose 100 jin of grain, that is stupid. Better put enough and sleep easy.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am 63, only three mu, I do wheat-maize like always. I use improved wheat seed and hybrid maize seed from the village dealer. I put compound fertilizer before sowing and urea as topdressing \u2014 about one bag urea per mu between the two crops. I would rather use a little extra fertilizer than lose grain; a bad harvest hurts more than spending some yuan on urea. Well water three times for wheat, twice for maize if rain is short. Spray for aphids and weeds on wheat, borer on maize. I follow what works year after year and what my neighbors do \u2014 no need to change.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am 63, only three mu, I do wheat-maize like always. I use improved wheat seed and hybrid maize seed from the village dealer. I put compound fertilizer before sowing and urea as topdressing \u2014 about one bag urea per mu between the two crops. I would rather use a little extra fertilizer than lose grain; a bad harvest hurts more than spending some yuan on urea. Well water three times for wheat, twice for maize if rain is short. Spray for aphids and weeds on wheat, borer on maize. I follow what works year after year and what my neighbors do \u2014 no need to change."
+  },
+  "elapsed_seconds": 29.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_6",
+  "tier": 3,
+  "provider": "claude"
+}

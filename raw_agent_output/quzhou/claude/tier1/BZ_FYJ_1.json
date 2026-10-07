@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land since I was a young man helping my father. In Quzhou, everyone around here grows winter wheat and summer corn on rotation \u2014 it's what the land is suited for, it's what the market buys, and I know how to do it properly. I'm not going to experiment.\n\nMy land is about 8 mu. I plant wheat every October after the rains, harvest in June, then put in corn right after on the same fields. That's two crops a year from the same soil \u2014 you can't ask for more than that.\n\nFor wheat I use improved seed from the county seed station, not the old varieties. I learned that lesson \u2014 the certified seed gives better heads and resists lodging better when wind comes. I'll apply base fertilizer before planting, then come back in spring to top-dress with urea at jointing. I irrigate three times: before winter sets in, again at jointing, and once more at heading. Fewer irrigations would worry me \u2014 I've seen neighbors lose yield going dry at filling stage. I'll spray herbicide in autumn, then fungicide and aphicide in spring when rust and aphids show up.\n\nFor corn I use hybrid seed, same as always. I do rotary tillage right after wheat harvest because I need to get seed in the ground fast \u2014 the season is short. Corn needs less hand-holding than wheat so I irrigate twice and spray twice.\n\nI expect roughly 450 jin per mu on wheat and 550 on corn. That's what a normal year gives me here.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou County using the standard winter wheat\u2013summer maize double-crop rotation that has been the backbone of farming here for generations. I choose improved certified wheat seed and hybrid maize seed because I have seen the yield difference myself. My fertilizer rates follow what I have learned works on my soil: a heavy base application before planting plus a urea top-dress at critical growth stages. I irrigate wheat three times \u2014 skipping the heading irrigation has cost me yield before and I will not do it again \u2014 and maize twice since summer rains usually help. I apply pesticides for weeds, rust, aphids, and corn borers as needed each season. I plough before wheat to make a good seedbed and use rotary tillage before maize because time is short after harvest. This plan gives me two reliable harvests per year with inputs I can afford and practices I know well.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou County using the standard winter wheat\u2013summer maize double-crop rotation that has been the backbone of farming here for generations. I choose improved certified wheat seed and hybrid maize seed because I have seen the yield difference myself. My fertilizer rates follow what I have learned works on my soil: a heavy base application before planting plus a urea top-dress at critical growth stages. I irrigate wheat three times \u2014 skipping the heading irrigation has cost me yield before and I will not do it again \u2014 and maize twice since summer rains usually help. I apply pesticides for weeds, rust, aphids, and corn borers as needed each season. I plough before wheat to make a good seedbed and use rotary tillage before maize because time is short after harvest. This plan gives me two reliable harvests per year with inputs I can afford and practices I know well."
+  },
+  "elapsed_seconds": 45.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_FYJ_1",
+  "tier": 1,
+  "provider": "claude"
+}

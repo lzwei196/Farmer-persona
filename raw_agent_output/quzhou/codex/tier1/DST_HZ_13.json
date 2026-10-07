@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the usual Quzhou pattern: winter wheat followed by summer maize on the same fields. I live on the North China Plain, and this rotation fits my place better than anything else. The county is mainly wheat and maize, most of the rain comes in summer, and wheat still gives me a reliable first crop if I irrigate it a few times. At my age, I do not want to scatter my energy across too many crops. I would rather run one stable grain system I know well, use machine services when needed, keep costs under control, and avoid the risk of chasing cash crops that need more labor and tighter management.\n\nSo for this year, I will treat my farm as a smallholder grain farm of about 10 mu. I will finish the winter wheat already in the field, using improved seed, moderate fertilizer, and three irrigations because spring is dry here. After wheat harvest, I will sow hybrid summer maize right away into the same land, using less irrigation because summer rain usually carries the crop. I will not push fertilizer too hard, because too much nitrogen wastes money and can lodge the crop or leave too much salt and residue in the soil. I will keep straw in the field, use rotary tillage for wheat, and use no-tillage or very light disturbance for maize after wheat harvest so I can save moisture and catch the sowing window. I will spray only as needed, usually a couple of times each season, because my goal is steady yield, not extreme yield.\n\nSources used: [Nature/Scientific Reports on Quzhou wheat-maize system](https://www.nature.com/articles/srep41587), [PMC mirror of the same Quzhou study](https://pmc.ncbi.nlm.nih.gov/articles/PMC5290742/), [Quzhou farm survey dataset summary](https://pmc.ncbi.nlm.nih.gov/articles/PMC10964062/), [MDPI Quzhou county overview](https://www.mdpi.com/2073-4395/13/9/2362), [North China Plain N optimization study](https://pubmed.ncbi.nlm.nih.gov/29054672/), [North China Plain irrigation study](https://www.sciencedirect.com/science/article/pii/S0378377424000611)\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will plant winter wheat and summer maize on the same 10 mu because that is the most familiar and dependable system for me in Quzhou County. Our area is dominated by this rotation, wheat can be supported with a few irrigations in the dry season, and maize matches the summer rainy period well. I will keep management simple and steady: improved wheat seed, hybrid maize seed, moderate fertilizer instead of excessive inputs, three irrigations for wheat and one for maize, limited pesticide sprays, rotary tillage for wheat, and no-tillage maize after wheat harvest to save time and moisture. My aim is stable grain output and manageable labor rather than chasing the highest possible yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will plant winter wheat and summer maize on the same 10 mu because that is the most familiar and dependable system for me in Quzhou County. Our area is dominated by this rotation, wheat can be supported with a few irrigations in the dry season, and maize matches the summer rainy period well. I will keep management simple and steady: improved wheat seed, hybrid maize seed, moderate fertilizer instead of excessive inputs, three irrigations for wheat and one for maize, limited pesticide sprays, rotary tillage for wheat, and no-tillage maize after wheat harvest to save time and moisture. My aim is stable grain output and manageable labor rather than chasing the highest possible yield."
+  },
+  "elapsed_seconds": 54.8,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_13",
+  "tier": 1,
+  "provider": "codex"
+}

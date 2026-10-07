@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed these 30 mu in Quzhou for 50 years. I'm 70 now, finished middle school. I can read the numbers on the fertilizer bags and do the cost sums, but I learned the real work from my father and from watching what happens in the field every season.\n\nIt's April, so my winter wheat is already growing \u2014 I planted it last October with improved seed, the kind my neighbor Lao Wang switched to seven years ago and got an extra 80 jin per mu. Last year I put one 50kg bag of 15-15-15 compound fertilizer per mu at planting, then top-dressed with 35 jin of urea at jointing. That gives me about 18 kg nitrogen, 7 kg phosphorus, 5 kg potassium per mu total. The extension agent says 15 kg nitrogen is enough, but I do a bit more. I'd rather waste some fertilizer than risk a bad harvest \u2014 fertilizer is just money, but losing yield means my family has less income and less security. I'll irrigate three times: jointing right now, heading in May, and grain filling in late May. Diesel for the pump costs about 80 yuan each time, but I learned in 2002 that skipping irrigation is a disaster you don't recover from. Two pesticide sprays: one now for aphids, one in May for rust if the humidity picks up. I rotary-tilled before planting last fall, so that work is already done.\n\nFor summer maize, the day I cut the wheat in early June, I plant hybrid seed. No delay \u2014 every day late costs me 20 jin per mu. I put compound fertilizer in the furrow at planting and top-dress with urea when the plants are knee-high. That's about 17 kg nitrogen, 6 kg phosphorus, 4 kg potassium per mu. Two irrigations: one when the plants are waist-high, one at tasseling in late July. Three pesticide sprays for corn borer and armyworm \u2014 they come every summer like clockwork. I don't till for maize; there's no time between wheat harvest and planting, and planting right into the wheat stubble works fine.\n\nMy son works in Handan, so it's just me and my wife at home. Thirty mu is too much for two old people to handle alone. I hire two workers for wheat harvest and two for maize planting, pay them 150 yuan per day each plus lunch. I do the spraying and fertilizing myself with my old tractor-mounted spreader. Total input cost runs about 420 yuan per mu across both crops. It's a big cash outlay, but my neighbor across the road tried saving 40 yuan per mu on fertilizer two years ago and lost 150 jin per mu yield. That taught me something. I'm counting on about 530 kg per mu from wheat and 560 kg per mu from maize if the weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 530\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    }\n  ],\n  \"reasoning_summary\": \"I stick close to what worked last year: 18 kg N, 7 kg P, 5 kg K per mu for wheat with three irrigations and two pesticide sprays, and 17 kg N, 6 kg P, 4 kg K per mu for maize with two irrigations and three pesticide sprays. I hire labor for harvest and planting since my son works off-farm, but I handle chemicals and fertilizer myself with my tractor. I'd rather spend extra on inputs than risk yield loss \u2014 a bad harvest is a disaster, but wasting some fertilizer is just a cost I can absorb.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 530
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      }
+    ],
+    "reasoning_summary": "I stick close to what worked last year: 18 kg N, 7 kg P, 5 kg K per mu for wheat with three irrigations and two pesticide sprays, and 17 kg N, 6 kg P, 4 kg K per mu for maize with two irrigations and three pesticide sprays. I hire labor for harvest and planting since my son works off-farm, but I handle chemicals and fertilizer myself with my tractor. I'd rather spend extra on inputs than risk yield loss \u2014 a bad harvest is a disaster, but wasting some fertilizer is just a cost I can absorb."
+  },
+  "elapsed_seconds": 162.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_8",
+  "tier": 3,
+  "provider": "kimi"
+}

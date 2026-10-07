@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think this through as the farmer and then write out my plan.\n\n**My thinking:**\n\nI've been farming this 8 mu for many years. Cotton is my main crop \u2014 around here everyone grows cotton, the gin station buys it, and I know how to handle it. Last year I put about 5 mu in cotton, 2 mu in maize for our own eating and for feed, and 1 mu in mungbean because mungbean doesn't need much and my husband likes to sell a little at the market. I'll do the same this year \u2014 why change when it worked?\n\nFor cotton, I buy Bt cotton seed from the dealer in town \u2014 the improved kind, everyone uses it now because the bollworm used to eat us alive before. I put on two bags of compound fertilizer (diammonium) before planting, that's about 50 jin per mu, and then I topdress with urea when the cotton starts flowering, maybe another bag across the field. That comes to roughly 18 kg nitrogen per mu, 8 kg phosphorus, 8 kg potassium. Cotton here needs spraying many times \u2014 bollworm, aphid, spider mite \u2014 I spray maybe 6 or 7 times through the season, can't avoid it. I water from the well 3 times if the rain is poor: once after planting, once at flowering, once at bolling. I plough before planting, that's how my husband always does it.\n\nFor maize, I plant hybrid seed, summer maize after wheat-free fallow. I put one bag compound under the row and topdress urea at knee-high. About 15 kg N, 5 kg P, 5 kg K per mu. Two sprays \u2014 one for armyworm, one for borer. Irrigate twice. Rotary till is enough for maize, saves diesel.\n\nFor mungbean, I use the seed I saved from last year, traditional kind. Mungbean makes its own fertilizer from the roots, I don't put much \u2014 just a little compound, maybe 3 kg N, 3 kg P, 2 kg K. One spray if aphids come, one watering. Rotary till.\n\nI expect cotton around 250 kg seed cotton per mu if weather is alright, maize around 500 kg, mungbean around 120 kg. Last year was similar.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 120\n    }\n  ],\n  \"reasoning_summary\": \"I keep the same pattern as last year because it worked \u2014 5 mu cotton as my main crop for cash, 2 mu maize for home and feed, 1 mu mungbean my husband sells at market. Cotton gets the most fertilizer and the most spraying because bollworm and aphid are bad here and I cannot afford to lose the bolls. Maize gets one bag compound plus topdress urea, which everyone around does. Mungbean makes its own fertilizer from the roots so I only put a little. I plough for cotton like always, rotary till is enough for the other two to save diesel. I water from the well when the rain does not come.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 120
+      }
+    ],
+    "reasoning_summary": "I keep the same pattern as last year because it worked \u2014 5 mu cotton as my main crop for cash, 2 mu maize for home and feed, 1 mu mungbean my husband sells at market. Cotton gets the most fertilizer and the most spraying because bollworm and aphid are bad here and I cannot afford to lose the bolls. Maize gets one bag compound plus topdress urea, which everyone around does. Mungbean makes its own fertilizer from the roots so I only put a little. I plough for cotton like always, rotary till is enough for the other two to save diesel. I water from the well when the rain does not come."
+  },
+  "elapsed_seconds": 30.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_2",
+  "tier": 3,
+  "provider": "claude"
+}

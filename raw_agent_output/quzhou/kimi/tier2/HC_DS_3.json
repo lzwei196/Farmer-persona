@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming these fields in Quzhou for 35 years \u2014 since I was 15. My father taught me, and his father taught him. I know every mu of my 20 mu. The soil here is flat loam, and I've got a well with a pump, so water is there when I need it. With eight people in my house and some of the younger ones working off-farm in town, I can't afford to gamble on strange crops or new methods. I need steady grain I can sell to the county purchasing station.\n\nThis land only makes sense as wheat-maize double cropping. I plant winter wheat on all 20 mu in early October after the maize comes off, and I harvest it in early June. The day after wheat harvest, I plant summer maize on the same 20 mu \u2014 no time to waste in this rotation. That's what every household in my village does, and that's what the buyers expect.\n\nFor wheat, I'll buy improved seed from the township supply co-op \u2014 Jimai 22 or whatever certified variety they're stocking this year. It resists rust and lodges less than the old traditional varieties. Before sowing, I'll run the rotary tiller to chop the maize stubble and work in the base fertilizer. I apply compound fertilizer at sowing and then top-dress urea at jointing in March. Wheat needs water, so I'll pump three times: once before winter freeze to help it survive, again at jointing, and once at heading. I'll spray herbicide in early spring and watch for aphids \u2014 one more spray if they show up. I expect about 450 kg per mu if the spring cooperates.\n\nFor maize, I'll buy hybrid seed \u2014 Zhengdan 958 or Denghai 605, whatever the shop has that I know. I direct-seed into the wheat stubble without tilling; it saves diesel, saves time, and I need to get the crop in fast after wheat harvest. I put down compound fertilizer at planting and side-dress urea when the plants are knee-high. Summer rains usually help, but I'll irrigate twice from the well if July turns dry. One herbicide pass after emergence, and I'll spray for corn borer if I see damage. I usually get around 550 kg per mu on this ground.\n\nI don't test my soil \u2014 nobody around here does. I apply what I've learned over three decades: enough fertilizer to be safe, because a thin harvest means a hard year for eight people.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed my 20 mu in Quzhou for 35 years and I know this land. Wheat-maize double cropping is the only system that works here \u2014 every family in the village does it, the grain station buys both crops, and I cannot risk my family's food security on experiments. With eight people at home and some working off-farm, I need reliable yields, not gambles. I use improved wheat seed and hybrid maize seed from the co-op, apply compound fertilizer plus urea topdressing, irrigate from my well when the crops need it, and till with the rotary tiller before wheat while direct-seeding maize into wheat stubble to save time. I aim for about 450 kg/mu of wheat and 550 kg/mu of maize, which is what this ground has given me in good years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed my 20 mu in Quzhou for 35 years and I know this land. Wheat-maize double cropping is the only system that works here \u2014 every family in the village does it, the grain station buys both crops, and I cannot risk my family's food security on experiments. With eight people at home and some working off-farm, I need reliable yields, not gambles. I use improved wheat seed and hybrid maize seed from the co-op, apply compound fertilizer plus urea topdressing, irrigate from my well when the crops need it, and till with the rotary tiller before wheat while direct-seeding maize into wheat stubble to save time. I aim for about 450 kg/mu of wheat and 550 kg/mu of maize, which is what this ground has given me in good years."
+  },
+  "elapsed_seconds": 189.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DS_3",
+  "tier": 2,
+  "provider": "kimi"
+}

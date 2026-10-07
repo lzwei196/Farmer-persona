@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 76 years old. I farmed this land for 40 years. I only went to primary school, but I know my fields better than any young agronomist.\n\nHere is what I do this year, same as most years \u2014 why change what works?\n\n**Wheat (winter, about 10 mu):**\nLast October I planted after the maize came off. I use improved wheat seed from the agro-shop in town \u2014 the shopkeeper Old Wang sells the same variety to everyone in our village, and everyone gets good harvest from it. About 15 kg seed per mu, drilled in by the machine I rent from my nephew.\n\nFor fertilizer, I put down 1 bag (50 kg) of compound 15-15-15 per mu as base when sowing. Then when wheat turns green in spring and starts jointing, I broadcast half a bag of urea, about 25 kg per mu. My neighbor Old Li puts on more, but I think this is enough. If I put too little, the wheat turns yellow and I lose money \u2014 better one extra handful than one short.\n\nI water 4 times: once before winter (winter water is important, old people always say so), once at green-up, once at jointing, once at grain filling. My well still works fine, I paid for it 15 years ago.\n\nSpray 2 times \u2014 once for aphids and rust together in spring, once before heading if I see powdery mildew.\n\nI use the rotary tiller before sowing \u2014 plough is too much work at my age and the soil here doesn't need deep turning every year.\n\nI expect about 450 kg per mu. Last year I got 460, the year before 430. It depends on the rain in May.\n\n**Maize (summer, about 10 mu):**\nAfter wheat harvest in June, I plant hybrid maize right away \u2014 no-till, straight into the wheat stubble. Everyone here does it this way now, saves water and time. The hybrid seed is Zhengdan or similar, whatever Old Wang recommends that year. About 2 kg seed per mu.\n\nAt planting I put one bag compound (40 kg) per mu as base. Then when maize is knee-high, I side-dress 25 kg urea per mu. Maize is hungry, especially when it's tasseling.\n\nI water 2 times if rain is poor \u2014 once at big-trumpet stage, once at grain filling. If rain comes, I skip.\n\nSpray 2 times \u2014 one for corn borer, one for armyworm if I see it.\n\nI expect 550 kg per mu. My land is flat and the well is close, so maize does well here.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am 76 with primary schooling, so I farm the way I have always farmed and the way my neighbors farm. For wheat I use one bag of 15-15-15 compound at sowing plus half a bag of urea at jointing \u2014 enough to keep the leaves dark green, a little extra is better than too little because a bad harvest would be a disaster. I irrigate four times including the important winter water, and rotary till like everyone else. For maize I no-till straight into wheat stubble, apply one bag compound at planting and urea when it is knee-high, and water twice if the summer rain is poor. I buy improved wheat seed and hybrid maize seed from Old Wang at the agro-shop \u2014 same variety the whole village grows. I expect 450 kg/mu wheat and 550 kg/mu maize, close to what I got the last few years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am 76 with primary schooling, so I farm the way I have always farmed and the way my neighbors farm. For wheat I use one bag of 15-15-15 compound at sowing plus half a bag of urea at jointing \u2014 enough to keep the leaves dark green, a little extra is better than too little because a bad harvest would be a disaster. I irrigate four times including the important winter water, and rotary till like everyone else. For maize I no-till straight into wheat stubble, apply one bag compound at planting and urea when it is knee-high, and water twice if the summer rain is poor. I buy improved wheat seed and hybrid maize seed from Old Wang at the agro-shop \u2014 same variety the whole village grows. I expect 450 kg/mu wheat and 550 kg/mu maize, close to what I got the last few years."
+  },
+  "elapsed_seconds": 45.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_6",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72 years old. I have farmed this land for 50 years. Let me think about this year the same way I thought about last year, because what worked before will work again.\n\nMy 14 mu \u2014 I keep about 4 mu for cotton on the sandier piece by the ditch, and the other 10 mu I do wheat and then maize, same as always. This is how my father did it, and how my neighbors do it. If I change too much, I will regret it.\n\n**Wheat (10 mu, winter)** \u2014 I plant in early October after the maize is off. I use the improved seed from the agriculture station \u2014 the one Old Wang across the road used last year, he got about 500 jin per mu. I buy two bags of compound fertilizer (15-15-15) per mu as base, and then one bag of urea per mu at the spring greening. That comes to maybe 18 kg of nitrogen per mu. My neighbor uses a bit less but I would rather be safe. A bad wheat harvest means no flour for the family, no money to sell. I irrigate four times from the well \u2014 winter water, greening, jointing, and filling. I spray twice for aphids and rust. I use the rotary tiller, my son-in-law hires the machine.\n\n**Maize (10 mu, summer)** \u2014 Right after wheat harvest in June, I plant hybrid seed, the Zhengdan type, everyone around here plants it. I apply one bag compound at sowing and topdress urea at the big trumpet stage \u2014 about 16 kg N per mu total. Summer rain usually gives water, but I irrigate twice from the well if dry. Spray once for corn borer, maybe twice if I see worms. No-till planting right into the wheat stubble \u2014 saves diesel, saves time.\n\n**Cotton (4 mu, spring)** \u2014 Cotton eats more fertilizer and more pesticide. Plant hybrid seed in late April. I put down two bags of compound as base and topdress urea twice \u2014 about 20 kg N per mu. Cotton needs spraying many times, the bollworm and aphids come again and again \u2014 I spray maybe five times through the season. Irrigate three times. Plough deep in spring because cotton roots go down. Last year I got about 250 jin of lint per mu, I hope for the same.\n\nMy wife helps, my son works in the city and sends money, so I can afford the fertilizer. I do not gamble with less fertilizer \u2014 the cost of wasted fertilizer is small, the cost of a thin harvest is big.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I do the same as last year and the same as my neighbors because that is what I know works. Wheat-maize on 10 mu, cotton on 4 mu of the sandier land. I apply enough fertilizer to be safe \u2014 a little extra costs some yuan, but a thin harvest costs much more. I use improved wheat seed and hybrid maize and cotton seed because the neighbors got good results. I irrigate from the well when the crop needs it, and spray when I see pests. Cotton needs the most care and the most spraying. My son sends money from the city so I can afford the inputs, and my wife and I handle the field work with a hired machine for tilling.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I do the same as last year and the same as my neighbors because that is what I know works. Wheat-maize on 10 mu, cotton on 4 mu of the sandier land. I apply enough fertilizer to be safe \u2014 a little extra costs some yuan, but a thin harvest costs much more. I use improved wheat seed and hybrid maize and cotton seed because the neighbors got good results. I irrigate from the well when the crop needs it, and spray when I see pests. Cotton needs the most care and the most spraying. My son sends money from the city so I can afford the inputs, and my wife and I handle the field work with a hired machine for tilling."
+  },
+  "elapsed_seconds": 41.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_7",
+  "tier": 3,
+  "provider": "claude"
+}

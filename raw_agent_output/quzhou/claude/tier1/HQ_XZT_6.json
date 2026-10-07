@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for over thirty years. I know what grows here and what sells. The soil is flat, the groundwater well is still working, and I can manage about twelve mu on my own now that my husband is older and the kids have gone to the city.\n\nI'll do what I always do, what everyone on this street does: winter wheat on ten mu, then flip it to summer maize on the same ground after harvest. That rotation makes sense \u2014 the wheat goes in October, comes out in June, then immediately plant maize. Two crops, same field, one year. I've done this my whole life. The grain station still buys both, so I know I'll have cash.\n\nFor wheat I'll use an improved variety \u2014 \u6d4e\u9ea622 or whatever the county seed shop has in stock. I won't try something new I don't know. I'll do three irrigations: once before sowing to wet the bed, once at jointing, once at heading. Four would be better but the water costs money and the village committee keeps warning us about the aquifer. I rotary-till after maize harvest to chop the stubble under.\n\nFor maize I go hybrid, direct seeded into the stubble, no tillage. My neighbor showed me this five years ago and I kept doing it \u2014 saves fuel and the yield is the same. One irrigation at silking if it's dry. Usually the summer rains handle it.\n\nI also keep two mu of vegetables by the house edge \u2014 garlic, cabbage, some beans \u2014 mostly for ourselves and to sell at the Thursday market. This I do by feel, no big plan.\n\nI put fertilizer on heavy because that's how I was taught. I know the agronomist at the township says to use less but I don't want a bad harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"mixed vegetables\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 800\n    }\n  ],\n  \"reasoning_summary\": \"A 59-year-old smallholder farmer in Quzhou County follows the standard winter wheat\u2013summer maize double-cropping rotation on 10 mu of flat, irrigated land, supplemented by 2 mu of household vegetables. Crop and variety choices reflect decades of local practice, risk aversion, and reliance on established grain-station markets. Input rates\u2014particularly nitrogen\u2014are above extension recommendations but consistent with regional smallholder norms. Irrigation is constrained by cost and aquifer concerns, held to three applications for wheat and one for maize. No-tillage direct seeding of maize after wheat harvest reduces labor and fuel cost with no yield penalty, a technique adopted from a neighbor five years ago.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "mixed vegetables",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 8,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 800
+      }
+    ],
+    "reasoning_summary": "A 59-year-old smallholder farmer in Quzhou County follows the standard winter wheat\u2013summer maize double-cropping rotation on 10 mu of flat, irrigated land, supplemented by 2 mu of household vegetables. Crop and variety choices reflect decades of local practice, risk aversion, and reliance on established grain-station markets. Input rates\u2014particularly nitrogen\u2014are above extension recommendations but consistent with regional smallholder norms. Irrigation is constrained by cost and aquifer concerns, held to three applications for wheat and one for maize. No-tillage direct seeding of maize after wheat harvest reduces labor and fuel cost with no yield penalty, a technique adopted from a neighbor five years ago."
+  },
+  "elapsed_seconds": 45.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_6",
+  "tier": 1,
+  "provider": "claude"
+}

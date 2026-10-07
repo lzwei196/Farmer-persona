@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 49 years old and I have farmed my family's land in Quzhou since I was a teenager. I only finished primary school, but I know this soil and this climate better than any book. Around here, the only sensible way is winter wheat followed by summer maize on the same plots \u2014 two crops in one year. My wheat is already in the ground from last October; it is greening now and I will harvest it in early June. The day after harvest, I will plant summer maize. That is how my father did it, that is how my neighbors do it, and that is how I do it.\n\nI buy improved wheat seed varieties from the county supply store \u2014 varieties that resist lodging and do well on the North China Plain. For maize, I always buy fresh hybrid seed every year; you cannot save hybrid seed or the yield drops badly. I apply fertilizer the way I have learned over thirty years: nitrogen for both crops, some phosphate and potassium to keep the soil from getting too tired. I irrigate when the crops tell me they need it \u2014 the wheat gets water at greening, jointing, and grain filling; the maize usually needs two good irrigations if the summer rains do not come. I spray pesticides when I see pests or when the county station warns us \u2014 usually about three times per crop, mixing herbicide, insecticide, and sometimes fungicide. For wheat I rotary till to prepare a fine seedbed; for maize after wheat, I mostly direct-seed without tillage to save time and moisture \u2014 the wheat stubble protects the soil.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize in rotation on my 8 mu because the North China Plain climate and my family's experience have proven this is the only system that reliably feeds my household and earns cash. I use improved wheat seeds and fresh hybrid maize seeds each year, apply nitrogen, phosphate, and potassium based on what I have seen work over three decades, irrigate wheat three times and maize twice depending on rainfall, spray pesticides about three times per crop when pests or weeds appear, rotary till for wheat seedbed preparation, and no-till plant maize immediately after wheat harvest to catch the growing season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize in rotation on my 8 mu because the North China Plain climate and my family's experience have proven this is the only system that reliably feeds my household and earns cash. I use improved wheat seeds and fresh hybrid maize seeds each year, apply nitrogen, phosphate, and potassium based on what I have seen work over three decades, irrigate wheat three times and maize twice depending on rainfall, spray pesticides about three times per crop when pests or weeds appear, rotary till for wheat seedbed preparation, and no-till plant maize immediately after wheat harvest to catch the growing season."
+  },
+  "elapsed_seconds": 269.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_10",
+  "tier": 1,
+  "provider": "kimi"
+}

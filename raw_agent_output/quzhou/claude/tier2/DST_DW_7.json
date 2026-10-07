@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land since I was in my twenties. My husband and son mostly work in town now, so I manage the fields myself with help during harvest. 4.1 mu is not much, but I know every inch of it.\n\nThe wheat-maize rotation is my backbone \u2014 2.5 mu. I plant wheat in October after the maize comes off, harvest it in June, then turn around and plant maize immediately on the same ground. I've done this my whole life. The cotton I keep on the remaining 1.6 mu, separate. It's hard work to pick at my age, but the income helps when grain prices are low.\n\nI switched to improved and hybrid seeds years ago. The old varieties don't keep up. For cotton I use the Bt types so I don't have to spray nearly as much for bollworm \u2014 that alone saves me a lot of effort. For wheat I get improved certified seed from the county station. For maize, hybrid.\n\nOn fertilizer, I know my ground. I split the wheat nitrogen \u2014 some goes in at planting, the rest I topdress at jointing. I don't pour it all in at once the way some younger farmers do. Maize gets a bit more nitrogen because the hybrid varieties need it. Cotton I balance more evenly because it's pickier.\n\nWith my well I can irrigate when I need to. Wheat needs three waterings \u2014 at sowing if it's dry, at jointing, and at heading. Maize usually gets two \u2014 the summer rains cover most of it. Cotton I water three times, watching the weather.\n\nPesticides: wheat twice (aphids and rust), maize twice (stem borer, armyworm), cotton three times even with Bt (aphids, spider mites still come).\n\nFor tillage I rotary till before wheat every year. Maize I go in no-till right after wheat harvest \u2014 no time and it saves moisture. Cotton field I rotary till in spring before transplanting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"A 63-year-old experienced farmer in Quzhou, Hebei allocates 2.5 mu to a wheat-maize double-cropping rotation and 1.6 mu to cotton, matching the 4.1 mu total. Improved and hybrid seeds are used throughout as they are now standard and outperform traditional varieties. Nitrogen is applied conservatively but adequately based on four decades of experience with local soils, split for wheat to improve uptake. Irrigation relies on the household well, with wheat receiving three applications, maize two (supplemented by summer rainfall), and cotton three. Pesticide use is moderate \u2014 reduced on cotton by the use of Bt varieties. No-tillage is used for summer maize to conserve moisture and save labor after the wheat harvest rush; rotary tillage is used before wheat and cotton to prepare a clean seedbed. Yields are consistent with realistic expectations for this region under smallholder management.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "A 63-year-old experienced farmer in Quzhou, Hebei allocates 2.5 mu to a wheat-maize double-cropping rotation and 1.6 mu to cotton, matching the 4.1 mu total. Improved and hybrid seeds are used throughout as they are now standard and outperform traditional varieties. Nitrogen is applied conservatively but adequately based on four decades of experience with local soils, split for wheat to improve uptake. Irrigation relies on the household well, with wheat receiving three applications, maize two (supplemented by summer rainfall), and cotton three. Pesticide use is moderate \u2014 reduced on cotton by the use of Bt varieties. No-tillage is used for summer maize to conserve moisture and save labor after the wheat harvest rush; rotary tillage is used before wheat and cotton to prepare a clean seedbed. Yields are consistent with realistic expectations for this region under smallholder management."
+  },
+  "elapsed_seconds": 59.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_7",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've got 15 mu and two pairs of hands in this house \u2014 mine and my wife's. I'm 66 now, so I farm the same way every year. What worked last year, I do again. Change is what gets you a bad harvest.\n\nTen mu I do wheat in winter and corn in summer, like my father did, like everyone in the village does. Five mu I keep for cotton. I would grow more cotton because it pays better, but cotton needs many sprayings and picking by hand \u2014 too much work for us old people. Five mu is my limit.\n\nFor wheat, before planting I spread 2 bags of compound fertilizer per mu \u2014 the 15-15-15 kind the dealer sells, one bag is about 80 jin. Then in spring when the wheat turns green and stands up, I throw 1 bag of urea per mu. My neighbor Old Zhang does the same and gets 900 jin per mu most years. I water from my well 3 times \u2014 before winter freeze, at green-up, and when the grain fills. If spring is dry I water a 4th time. I spray twice, once when the little bugs come on the leaves, once near flowering for the rust.\n\nCorn I plant right after wheat harvest, no plowing \u2014 just drop the seed in. Hybrid seed from the dealer, same variety the village uses. One bag compound at sowing, one bag urea when corn reaches my knee. Water twice, spray once for corn borer. Usually 1100 jin per mu, good years more.\n\nCotton is the hardest. Bt cotton seed \u2014 the dealer says it handles the bollworm better, and it's true, less spraying than before. Still I spray about 6 times through summer, every 10-12 days when bolls form. 2 bags compound at planting, 1 bag urea when flowering starts. Water 4 times from the well. I hire the tractor man for rotary tillage \u2014 my back can't do the plowing anymore. Seed cotton maybe 450-500 jin per mu.\n\nFertilizer is my biggest worry \u2014 every year it costs more. But I would rather buy an extra bag than see yellow leaves. A bad harvest is a disaster. Wasting a few yuan of fertilizer is just a cost.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I do what I did last year because it worked. Ten mu wheat-corn rotation like the whole village, five mu cotton because my wife and I are old and cotton needs too much spraying and picking. I buy fertilizer in bags from the dealer \u2014 2 bags compound plus 1 bag urea for wheat, 1 bag each for corn, 2 bags compound plus 1 bag urea for cotton. I water from my well whenever the crop looks thirsty. I would rather spend a little extra on fertilizer than risk a bad harvest \u2014 that is the real disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I do what I did last year because it worked. Ten mu wheat-corn rotation like the whole village, five mu cotton because my wife and I are old and cotton needs too much spraying and picking. I buy fertilizer in bags from the dealer \u2014 2 bags compound plus 1 bag urea for wheat, 1 bag each for corn, 2 bags compound plus 1 bag urea for cotton. I water from my well whenever the crop looks thirsty. I would rather spend a little extra on fertilizer than risk a bad harvest \u2014 that is the real disaster."
+  },
+  "elapsed_seconds": 58.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_13",
+  "tier": 3,
+  "provider": "claude"
+}

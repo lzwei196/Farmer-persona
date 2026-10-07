@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land my whole life, learned from my father and grandfather. My farm is small \u2014 4.1 mu \u2014 and I have to be careful because some family members are working in town. I can't afford to lose a season.\n\nMy land splits roughly like this: about 2.5 mu goes into the wheat-maize rotation, and the other 1.6 mu I keep in cotton. That's how I've always done it here in Quzhou. Cotton brings cash income, and wheat-maize feeds the family and covers feed costs.\n\n**Wheat:** I'll buy improved seeds from the township supply cooperative, same brand as last year. I sow in early October. I know I need to water three times \u2014 the wintering water before freeze, again at jointing, and once at heading. No point in fancy calculations, that's just what keeps the grain full. I'll put down compound fertilizer at sowing and topdress urea at jointing. I rotary-till after the maize comes off in October to break up the stubble before sowing.\n\n**Maize:** Right after I harvest wheat in June, I direct-seed maize into the stubble. No-till saves me labor because my family is short-handed with people working off-farm. I use hybrid seed \u2014 everyone around here does, the yields are much better. I'll fertilize twice: at sowing and again when it's knee-high. I water when the tassels come out if it's dry.\n\n**Cotton:** I plough this plot in spring, transplant seedlings in late April. Cotton is the most work \u2014 I have to spray for bollworm and aphids several times through summer. I water it when the bolls are setting. This is my cash crop so I can't slack on it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I split my 4.1 mu between a wheat-maize double-crop rotation on 2.5 mu and cotton on the remaining 1.6 mu, following the practice I have used my entire life in Quzhou County. Wheat is sown in October after rotary tillage of maize stubble, irrigated three times at wintering, jointing, and heading stages, with compound fertilizer at sowing and urea topdressed at jointing. Maize is direct-seeded no-till into wheat stubble in June to save labor since family members work off-farm, using hybrid seed for higher yields, irrigated twice and fertilized twice. Cotton is spring-ploughed and transplanted in late April, requires the most attention with five pesticide applications targeting bollworm and aphids through the summer and four irrigations focused on boll-setting; it is my main cash income crop so I do not cut corners on it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I split my 4.1 mu between a wheat-maize double-crop rotation on 2.5 mu and cotton on the remaining 1.6 mu, following the practice I have used my entire life in Quzhou County. Wheat is sown in October after rotary tillage of maize stubble, irrigated three times at wintering, jointing, and heading stages, with compound fertilizer at sowing and urea topdressed at jointing. Maize is direct-seeded no-till into wheat stubble in June to save labor since family members work off-farm, using hybrid seed for higher yields, irrigated twice and fertilized twice. Cotton is spring-ploughed and transplanted in late April, requires the most attention with five pesticide applications targeting bollworm and aphids through the summer and four irrigations focused on boll-setting; it is my main cash income crop so I do not cut corners on it."
+  },
+  "elapsed_seconds": 45.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_1",
+  "tier": 2,
+  "provider": "claude"
+}

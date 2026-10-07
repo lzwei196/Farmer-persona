@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou my whole life. I'm 71 now \u2014 my back isn't good, my son is working in Shijiazhuang, so I manage mostly alone with some hired machinery help from the village service station.\n\n**My reasoning:**\n\nI grow winter wheat and summer maize. That's what I know. That's what everyone here grows. The two fit together perfectly \u2014 wheat goes in October, comes out in June, then I plant corn right after on the same land. No land wasted. No experiments. I've tried other things before and it never ended well.\n\nI have about 5 mu of contracted land. That's manageable for me at my age. I hire the village machinery cooperative to do the rotary tilling before wheat seeding and to harvest both crops. I can't do that work by hand anymore.\n\nFor wheat seed, I use the improved variety \u2014 Jimai 22 or whatever the township agronomist distributed last year. Not traditional, not the most expensive hybrid. The middle option. For corn, I always buy hybrid seed bags from the agricultural supply shop in town \u2014 everyone does, the yield difference is obvious.\n\nFertilizer: I apply a compound base fertilizer before wheat planting, then urea in March when the wheat starts jointing. For corn I broadcast urea before the big rain in July. I probably use more nitrogen than I should \u2014 my father did it this way, I do it this way.\n\nIrrigation: I share a well with two neighbors. Wheat needs water three times \u2014 before winter freeze, at jointing, and at heading. Corn usually gets by on summer rain, maybe one pump if August is dry.\n\nPesticides: I spray wheat twice \u2014 herbicide in winter and something for the rust and aphids in spring. Corn once, for the fall armyworm they've been warning about lately.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 440\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 530\n    }\n  ],\n  \"reasoning_summary\": \"A 71-year-old farmer in Quzhou County, Hebei, managing 5 mu of contracted land alone with hired machinery services. The winter wheat\u2013summer maize double-cropping rotation is followed exclusively, as it has been for decades: wheat seeded in October on rotary-tilled soil using an improved certified variety, maize direct-seeded into wheat stubble in June using hybrid seed. Nitrogen-heavy fertilization reflects local tradition and is split between basal compound fertilizer and spring/summer urea topdressing. Wheat receives three irrigations from a shared well; maize relies mainly on summer rainfall with one supplemental irrigation if needed. Pesticide use is minimal \u2014 two sprays on wheat (herbicide plus fungicide/aphicide) and one on maize targeting fall armyworm. Expected yields of 440 kg/mu for wheat and 530 kg/mu for maize are modest but realistic given the farmer's age-limited management capacity and reliance on mechanical services.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 440
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 530
+      }
+    ],
+    "reasoning_summary": "A 71-year-old farmer in Quzhou County, Hebei, managing 5 mu of contracted land alone with hired machinery services. The winter wheat\u2013summer maize double-cropping rotation is followed exclusively, as it has been for decades: wheat seeded in October on rotary-tilled soil using an improved certified variety, maize direct-seeded into wheat stubble in June using hybrid seed. Nitrogen-heavy fertilization reflects local tradition and is split between basal compound fertilizer and spring/summer urea topdressing. Wheat receives three irrigations from a shared well; maize relies mainly on summer rainfall with one supplemental irrigation if needed. Pesticide use is minimal \u2014 two sprays on wheat (herbicide plus fungicide/aphicide) and one on maize targeting fall armyworm. Expected yields of 440 kg/mu for wheat and 530 kg/mu for maize are modest but realistic given the farmer's age-limited management capacity and reliance on mechanical services."
+  },
+  "elapsed_seconds": 48.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_3",
+  "tier": 1,
+  "provider": "claude"
+}

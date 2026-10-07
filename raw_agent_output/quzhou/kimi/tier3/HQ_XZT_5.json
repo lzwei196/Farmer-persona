@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 6 mu in Quzhou for 30 years. My father taught me, and now I just do what worked last year and watch what my neighbors do.\n\nFor wheat, I plant in October. I use improved seed, the kind in the red bag from the dealer in town \u2014 my neighbor Lao Zhang used it last year and his wheat looked good. I plant about 15 jin per mu. Before planting, I spread one 50-jin bag of compound fertilizer per mu, the 15-15-15 kind. Then in March when the wheat turns green, I top-dress with half a bag of urea per mu, about 25 jin. The dealer told me 20 jin is enough, but two years ago I used 20 jin and my yield was lower than Lao Zhang's, so now I use 25 jin. I irrigate 3 times: once after planting if the soil is dry, once at jointing in April, and once when the heads come out in May. I spray pesticide twice \u2014 herbicide once right after planting, and insecticide once in spring for the aphids. I hire Old Wang's tractor for rotary tillage, 50 yuan per mu.\n\nFor maize, I plant Zhengdan 958 hybrid seed right after wheat harvest in June. Everyone in my village plants this, it is reliable. I use about 3 jin per mu. I put one bag of compound fertilizer per mu before planting, same as wheat. Then when the maize is knee-high at big trumpet stage, I add half a bag of urea, about 20 jin per mu. I irrigate twice: once after planting if there is no rain, and once at tasseling in August. I spray 3 times: herbicide once at planting, and insecticide twice because the corn borer comes every year.\n\nFertilizer is expensive now, over 100 yuan per bag. But in 2021 I tried to save money and used only half a bag of compound per mu, and my wheat yield dropped by almost 100 jin. That cost me much more than the fertilizer. So now I always use one full bag per mu. Better to waste a little fertilizer than lose the crop. My wife and I do all the spraying and fertilizing ourselves. For harvest I hire the combine. I expect about 450 kg per mu for wheat and 550 kg per mu for maize. If the weather is good like two years ago, maybe 50 kg more.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.7,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on last year's practice and what my neighbors do. I use one bag of compound fertilizer per mu for both crops because cutting back cost me yield in 2021. I top-dress wheat with 25 jin of urea and maize with 20 jin. I would rather spend extra on fertilizer than risk a bad harvest. I irrigate wheat three times and maize twice, and spray pesticides according to the usual problems in my field. I do rotary tillage with a hired tractor. My wife and I handle the labor, and I hire machines only for tillage and harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.7,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I base my decisions on last year's practice and what my neighbors do. I use one bag of compound fertilizer per mu for both crops because cutting back cost me yield in 2021. I top-dress wheat with 25 jin of urea and maize with 20 jin. I would rather spend extra on fertilizer than risk a bad harvest. I irrigate wheat three times and maize twice, and spray pesticides according to the usual problems in my field. I do rotary tillage with a hired tractor. My wife and I handle the labor, and I hire machines only for tillage and harvest."
+  },
+  "elapsed_seconds": 112.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HQ_XZT_5",
+  "tier": 3,
+  "provider": "kimi"
+}

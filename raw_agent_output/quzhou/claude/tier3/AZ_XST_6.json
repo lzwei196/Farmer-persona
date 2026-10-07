@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 15 mu here in Quzhou \u2014 wheat in winter, maize in summer, and I keep a small piece for cotton because the price can be good some years. My middle school education helps me read fertilizer bags and listen at the agro-station meetings, but mostly I go by what works on my land after 40 years.\n\nWheat goes on about 8 mu. I plant Jimai improved variety, same as my neighbors. I put down compound fertilizer (15-15-15) at sowing, about 50 jin per mu, that gives me roughly 7-8 kg N, 7-8 P, 7-8 K. Then I top-dress urea at jointing in spring, about 30 jin (15 kg) per mu \u2014 that's another 7 kg of N. So total around 15 kg N, 8 P, 8 K. I water 3 times: before winter, at jointing, at grain filling. Spray 2 times \u2014 herbicide once, and aphid/powdery mildew once. Plough before sowing. I expect 450-500 kg per mu, last year I got 480.\n\nMaize follows on the same 8 mu. I use Zhengdan or Xianyu hybrid seed. Plant straight after wheat harvest, no-till with the seeder. Compound fertilizer at planting 40 jin (20 kg, so about 3-3-3 of each), then urea side-dress at big trumpet stage 40 jin (20 kg = 9 kg N). Total around 12 kg N, 3 P, 3 K. Water twice if rain is short. Spray once for borer and armyworm. Expect about 550 kg per mu.\n\nCotton on 7 mu. I use improved Bt cotton seed \u2014 saves spray money. Plough in spring, base fertilizer compound 50 jin per mu, then urea twice during boll stage, total maybe 18 kg N, 8 P, 8 K. Water 3 times from well. Spray 4 times \u2014 even with Bt I still need to fight aphids and bollworm late. Expect 250 kg lint per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I follow last year's plan with small adjustments \u2014 wheat-maize rotation on 8 mu and cotton on 7 mu. Fertilizer rates come from what my neighbors use and what the agro-station says: compound fertilizer at sowing plus urea top-dress for each crop. I water from the well 2-3 times depending on the crop, plough for wheat and cotton, no-till the maize after wheat. Yields match what I usually get \u2014 no point chasing higher numbers if it costs me more in fertilizer than I gain in grain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I follow last year's plan with small adjustments \u2014 wheat-maize rotation on 8 mu and cotton on 7 mu. Fertilizer rates come from what my neighbors use and what the agro-station says: compound fertilizer at sowing plus urea top-dress for each crop. I water from the well 2-3 times depending on the crop, plough for wheat and cotton, no-till the maize after wheat. Yields match what I usually get \u2014 no point chasing higher numbers if it costs me more in fertilizer than I gain in grain."
+  },
+  "elapsed_seconds": 28.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_6",
+  "tier": 3,
+  "provider": "claude"
+}

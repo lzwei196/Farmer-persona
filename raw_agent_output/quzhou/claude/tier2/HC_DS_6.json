@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 50 years. I know Quzhou's soil and weather better than any book can tell me. Let me think through what I'll do this year.\n\nMy 12 mu breaks into two parts in my head: 8 mu I rotate between wheat and maize, and 4 mu I keep in cotton. That balance has worked for me for decades. The wheat-maize gives us grain for food and steady income. The cotton brings the cash money I need for household expenses. At my age, I can't take on more cotton \u2014 picking is backbreaking and my household is just two of us now. 4 mu of cotton is as much as we can manage by hand.\n\n**Wheat (winter, 8 mu):** I'll rotary-till in early October after the summer maize comes off, then plant my improved Jimai variety around October 10th \u2014 that's the right window here. I apply compound fertilizer at planting as base, then urea top-dress in March at jointing. I irrigate three times: before winter dormancy, at jointing, and at heading. If it's a dry spring I add one more. Two pesticide passes \u2014 one for aphids in spring, one for powdery mildew before heading.\n\n**Maize (summer, 8 mu):** Right after wheat harvest in June I plant hybrid seed directly, no tillage. The soil is still loose enough and I can't afford to lose time. I apply nitrogen twice \u2014 a small amount at planting, the big top-dress at 6-leaf stage. Two irrigations: at tasseling and grain filling. Two pesticide applications for corn borer and leaf blight.\n\n**Cotton (spring, 4 mu):** I plough these fields in April, let them settle, then transplant seedlings in early May. I use hybrid Bt cotton \u2014 it cuts down on the pest spraying, which matters at my age. Still need four pesticide applications through the season. Four irrigations: seedling establishment, first flowering, peak boll-setting, and late boll. More potassium for cotton than the grain crops \u2014 that's what gives good fiber quality.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 12 mu between an 8-mu wheat-maize rotation and 4 mu of cotton, a balance I have maintained for decades in Quzhou. Wheat goes in October with improved Jimai variety using rotary tillage, three well irrigations at critical stages, and split nitrogen application; maize follows directly after wheat harvest with no-tillage and hybrid seed to save time and moisture. Cotton occupies separate fields ploughed in spring and planted with hybrid Bt seed to reduce the pesticide burden, which matters given my age and small household labor pool. Input levels reflect 50 years of learning what this land needs \u2014 not too much, not too little \u2014 prioritizing labor efficiency on cotton while maintaining reliable grain yields from the rotation fields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 12 mu between an 8-mu wheat-maize rotation and 4 mu of cotton, a balance I have maintained for decades in Quzhou. Wheat goes in October with improved Jimai variety using rotary tillage, three well irrigations at critical stages, and split nitrogen application; maize follows directly after wheat harvest with no-tillage and hybrid seed to save time and moisture. Cotton occupies separate fields ploughed in spring and planted with hybrid Bt seed to reduce the pesticide burden, which matters given my age and small household labor pool. Input levels reflect 50 years of learning what this land needs \u2014 not too much, not too little \u2014 prioritizing labor efficiency on cotton while maintaining reliable grain yields from the rotation fields."
+  },
+  "elapsed_seconds": 50.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_6",
+  "tier": 2,
+  "provider": "claude"
+}

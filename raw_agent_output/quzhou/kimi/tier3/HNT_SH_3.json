@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 73 this year, and I have farmed my little plot in Quzhou for 40 years. I only finished primary school, but I know this land better than any book. My whole farm is 3.1 mu, and I do wheat in the winter and maize in the summer. My son works in a factory in Handan and sends some money home, but I still count every yuan. Last year my wheat gave about 1000 jin per mu and the maize about 1100 jin. I will do the same as last year \u2014 changing things is risky, and a bad harvest is a disaster.\n\nFor wheat, after the corn comes off in June, I rotary-till the field to break up the stubble. I sow about 30 jin of improved wheat seed per mu. That is about 15 kg, so for my whole 3.1 mu I need a bit over 90 jin, almost two bags. For fertilizer, I put one 50 kg bag of urea as base fertilizer before sowing \u2014 that is 46% nitrogen, the dealer told me once. Then when the wheat turns green in March, I topdress with another 40 kg bag of urea and one 25 kg bag of compound fertilizer, the kind that has some phosphorus and potassium in it. All together that is about 28 kg of nitrogen per mu, 9 kg of phosphorus, and 4 kg of potassium. I would rather put a bit too much than risk the yield dropping. Fertilizer costs money, but losing the crop costs more. I irrigate four times: once before winter to help the wheat survive the cold, and three times in spring \u2014 at green-up, jointing, and grain-filling. I have a well, so I pump the water myself, but diesel costs me about 50 yuan each time. For chemicals, I spray twice for insects, once for weeds, and once for that yellow rust if the weather looks damp. That is four times total.\n\nFor maize, I have no time to plow after wheat harvest in early June \u2014 the season is too short. I sow directly into the wheat stubble, no-tillage. I buy one package of Denghai 605 hybrid seed per mu, same as my neighbors Old Wang and Old Li. One package is about 2.5 kg and costs 55 yuan, but the yield is good and everyone uses it. At sowing I put 80 kg of compound fertilizer in the seed furrow \u2014 one big bag \u2014 and then when the corn is knee-high I side-dress with 50 kg of urea. That comes to about 22 kg of nitrogen per mu, 6 kg of phosphorus, and 4 kg of potassium. I irrigate twice: once right after sowing if the soil is dry, and once at the big trumpet stage when the ears are setting. I spray twice for corn borers and once for weeds. That is three pesticide times. I do not usually spray fungicide on corn \u2014 in 40 years it has rarely been a big problem here.\n\nMy whole fertilizer bill for both crops will be over 1200 yuan, and the seed another 200 yuan. It is a lot for 3.1 mu. But I watch what my neighbors do, and they use about the same. If I cut back and the yield drops, my family loses much more than the cost of the fertilizer. So I will stick with this plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what worked last year and what my neighbors do. For wheat, I rotary-till and apply 50 kg urea basal plus 40 kg urea and 25 kg compound topdress, giving about 28 kg N, 9 kg P, and 4 kg K per mu, with 4 irrigations and 4 pesticide sprays. For maize, I no-till sow Denghai 605 hybrid directly after wheat harvest, applying 80 kg compound at sowing and 50 kg urea at side-dressing, totaling about 22 kg N, 6 kg P, and 4 kg K per mu, with 2 irrigations and 3 pesticide sprays. I would rather spend extra on fertilizer than risk yield loss, but on only 3.1 mu I still watch every yuan.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what worked last year and what my neighbors do. For wheat, I rotary-till and apply 50 kg urea basal plus 40 kg urea and 25 kg compound topdress, giving about 28 kg N, 9 kg P, and 4 kg K per mu, with 4 irrigations and 4 pesticide sprays. For maize, I no-till sow Denghai 605 hybrid directly after wheat harvest, applying 80 kg compound at sowing and 50 kg urea at side-dressing, totaling about 22 kg N, 6 kg P, and 4 kg K per mu, with 2 irrigations and 3 pesticide sprays. I would rather spend extra on fertilizer than risk yield loss, but on only 3.1 mu I still watch every yuan."
+  },
+  "elapsed_seconds": 195.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_3",
+  "tier": 3,
+  "provider": "kimi"
+}

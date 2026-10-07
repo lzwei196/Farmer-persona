@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for thirty years. I know what grows here, what the soil needs, and what my body can handle. My children help when they are home, but most of the year it is mostly me and my husband tending the fields when he is not working in town. Six and a half mu is not much, but it is mine and I know every corner of it.\n\nMy wheat and maize rotate on the same five mu \u2014 that is just how we do it here, always has been. I plant wheat after the maize comes off in autumn, then turn around and put maize back in after the wheat harvest in June. The other one and a half mu I keep in cotton for cash. Cotton prices have been rough these past few years and picking it breaks my back, but I know cotton, I know what it needs, and it gives me money when grain prices fall.\n\nFor wheat, I will buy the same improved variety I have used the past several years from the seed shop in town. I put down compound fertilizer at planting and add urea at jointing \u2014 that is what my neighbors do and my yields are decent. I water three times: once before sowing to wet the soil, once at jointing, once at heading. I spray twice \u2014 once for weeds early on, once for rust if I see it starting.\n\nFor maize I use hybrid seed, always hybrid, because the yield difference is real and the seed dealers all carry it now. I sow it directly into the stubble after wheat \u2014 no time to plough, and the rotary tiller is expensive to hire anyway. I apply more urea for maize because it is hungry. I water twice unless summer is dry, then maybe three times.\n\nFor cotton I plough and rotary till in spring before transplanting. Cotton needs the most attention \u2014 bollworm, aphids, you have to spray often or you lose the whole crop. Five times spraying is normal for me. I water it four times through the season.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 575\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 265\n    }\n  ],\n  \"reasoning_summary\": \"I rotate wheat and maize on five mu because that double-cropping system is what everyone around here does and it uses the land twice a year for grain income. I keep one and a half mu in cotton for cash even though it is hard work, because I have grown it my whole life and it balances the household income against grain price swings. I use improved or hybrid seeds from the local shop, apply fertilizer at the rates I have learned from neighbors and my own experience, irrigate from the well as the crop needs it, and spray pesticides based on what I see in the field \u2014 cotton getting the most because of bollworm pressure. My husband's off-farm income helps cover inputs so I do not cut corners on seed or fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 575
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 265
+      }
+    ],
+    "reasoning_summary": "I rotate wheat and maize on five mu because that double-cropping system is what everyone around here does and it uses the land twice a year for grain income. I keep one and a half mu in cotton for cash even though it is hard work, because I have grown it my whole life and it balances the household income against grain price swings. I use improved or hybrid seeds from the local shop, apply fertilizer at the rates I have learned from neighbors and my own experience, irrigate from the well as the crop needs it, and spray pesticides based on what I see in the field \u2014 cotton getting the most because of bollworm pressure. My husband's off-farm income helps cover inputs so I do not cut corners on seed or fertilizer."
+  },
+  "elapsed_seconds": 53.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_5",
+  "tier": 2,
+  "provider": "claude"
+}

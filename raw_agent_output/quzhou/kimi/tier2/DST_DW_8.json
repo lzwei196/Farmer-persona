@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old, and I have worked this land for 40 years. There are only two of us at home now, so I must plan with my own two hands in mind. My farm is 16.1 mu, and I know every corner of it.\n\nMy wheat is already in the field from last autumn. I have 10 mu of it. It is coming up green, and I will top-dress it with urea when the weather settles. I will irrigate three times: the green-up water, the jointing water, and one more when the grain is filling. I use improved wheat seeds\u2014varieties from the local seed station I have trusted for years. I will spray twice: once for weeds and once if I see aphids or rust. The ground was rotary-tilled before I sowed it last year.\n\nI keep 6.1 mu of cotton. Cotton earns more money than grain, but it is backbreaking work with all the spraying and hand-picking. At my age, I will not plant more than I can manage between the two of us. I will rotary-till the cotton field, sow hybrid cotton seed, and put down fertilizer. Cotton is thirsty and the bollworms never sleep, so I will irrigate three times and spray five times through the season. If the weather is fair, I expect about 250 kg of seed cotton per mu.\n\nWhen the wheat is harvested in early June, I will put summer maize on those same 10 mu. Time is short, so I will use no-tillage direct seeding right into the wheat stubble\u2014saves my back, saves time, and keeps the moisture. Hybrid maize seed is the only choice if you want a crop. Two irrigations and two sprays will see it through. I expect about 520 kg per mu.\n\nI have my well, so water is there, but the pump costs electricity. I do not waste a drop. After 40 years, I know that being stingy with fertilizer or pesticide only robs your own table.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"As a 63-year-old farmer with only two people in my household, I manage 16.1 mu by keeping 10 mu in a wheat-maize double-crop system and planting 6.1 mu of cotton, which is all we can hand-pick. I rely on my well for irrigation and use improved wheat seed and hybrid seed for maize and cotton. I use no-tillage for summer maize to save labor and time after wheat harvest, and I apply sufficient fertilizer and pesticide based on 40 years of experience, knowing that skimping on inputs only reduces my own harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "As a 63-year-old farmer with only two people in my household, I manage 16.1 mu by keeping 10 mu in a wheat-maize double-crop system and planting 6.1 mu of cotton, which is all we can hand-pick. I rely on my well for irrigation and use improved wheat seed and hybrid seed for maize and cotton. I use no-tillage for summer maize to save labor and time after wheat harvest, and I apply sufficient fertilizer and pesticide based on 40 years of experience, knowing that skimping on inputs only reduces my own harvest."
+  },
+  "elapsed_seconds": 197.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_8",
+  "tier": 2,
+  "provider": "kimi"
+}

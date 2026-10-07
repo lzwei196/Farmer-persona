@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 40 years in Quzhou. I know what this soil and this climate want from me. The North China Plain's wheat-maize rotation is in my bones \u2014 winter wheat goes in around October, we harvest in June, then I plant summer maize right away and pull it in September. Same 3 mu, two crops, every year.\n\nWith some of my children working in the city, I can't count on as many hands as I used to. I need to be smart \u2014 mechanize where I can, keep things simple without losing yield. My irrigation well gives me control others don't have, and I'll use it carefully because pumping costs money.\n\n**Wheat:** I'll use an improved variety \u2014 the Kenong or Jimai lines have proven themselves here. I'll do rotary tillage after maize harvest to break up the stubble. I apply base fertilizer at sowing and topdress nitrogen at jointing. Three irrigations: one before sowing to ensure germination, one at jointing, one at grain-filling. Two pesticide passes \u2014 herbicide in winter, and a fungicide spray in April for rust and powdery mildew which hit us every few years.\n\n**Maize:** After wheat harvest I go straight to no-till direct seeding \u2014 saves labor and fuel, and the soil structure holds better. I'll use a reliable hybrid like Zhengdan 958. I put most of the fertilizer down at sowing with a topdress at the 10-leaf stage. Summer rains help, but I'll irrigate at silking and grain-fill if we get a dry stretch. Two pesticide applications \u2014 one herbicide early, one for pests if there's pressure.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"With 40 years on this land in Quzhou and fewer family hands available due to off-farm work, I focus on mechanization and efficient inputs. For winter wheat I do rotary tillage after maize harvest, use an improved local variety, apply nitrogen in split doses, and irrigate three times at key growth stages; I expect around 500 kg/mu. For summer maize I shift to no-till direct seeding right after wheat harvest to save labor and preserve soil moisture, use a proven hybrid, topdress nitrogen at the 10-leaf stage, and rely on summer rains supplemented by two well irrigations at silking and grain-fill, targeting 600 kg/mu. Both fertilizer rates reflect what I know from experience balances yield with cost on my soil type.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "With 40 years on this land in Quzhou and fewer family hands available due to off-farm work, I focus on mechanization and efficient inputs. For winter wheat I do rotary tillage after maize harvest, use an improved local variety, apply nitrogen in split doses, and irrigate three times at key growth stages; I expect around 500 kg/mu. For summer maize I shift to no-till direct seeding right after wheat harvest to save labor and preserve soil moisture, use a proven hybrid, topdress nitrogen at the 10-leaf stage, and rely on summer rains supplemented by two well irrigations at silking and grain-fill, targeting 600 kg/mu. Both fertilizer rates reflect what I know from experience balances yield with cost on my soil type."
+  },
+  "elapsed_seconds": 43.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_11",
+  "tier": 2,
+  "provider": "claude"
+}

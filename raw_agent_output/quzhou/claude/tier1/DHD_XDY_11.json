@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for over 30 years. I know what this soil wants and what the market needs. The answer here isn't complicated \u2014 I grow winter wheat followed by summer maize, the same rotation I've always run. This land on the North China Plain is suited for it, the infrastructure supports it (irrigation canals, grain depots nearby), and the input supply chain is built around it. At 56, I'm not experimenting with something new.\n\nI farm 15 mu total. Both crops run on the same land in rotation \u2014 wheat goes in October after the summer heat breaks, maize goes in June right after I combine the wheat. No gap, no wasted land.\n\nBecause I have a university background, I've read the research on nitrogen overuse in Hebei. I used to apply more, but I've pulled my N rates down over the past decade. I still need enough to hit a good yield \u2014 around 450 kg/mu on wheat and 580 on maize is what I'm aiming for \u2014 but I'm not throwing money into the ground anymore.\n\nI use improved varieties for wheat (Jimai series performs well here) and hybrid seed for maize (Zhengdan 958 or similar). No point using traditional seed when improved genetics consistently outperform.\n\nWater is the constraint I worry about most. The aquifer here has been dropping for years. I irrigate wheat three times \u2014 pre-sowing moisture, jointing, and heading stage. Maize I irrigate twice, knowing summer rains carry some of the load. I don't irrigate more than necessary.\n\nFor tillage, I rotary till before wheat sowing to break up the maize stubble. After wheat harvest, I direct seed the maize into the stubble \u2014 no-till saves me fuel, time, and soil moisture.\n\nPesticides: wheat gets three passes (winter herbicide, spring fungicide for powdery mildew, and an aphid spray at heading). Maize gets two (pre-emergence herbicide, then a pest control pass mid-season).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I run the standard winter wheat\u2013summer maize rotation on 15 mu of family land in Quzhou County, Hebei. My university education has led me to moderate my nitrogen applications below the local average after years of overuse, while still targeting competitive yields. I use improved wheat varieties and hybrid maize seed for consistent performance, rotary till before wheat sowing to incorporate maize residue, and direct-seed maize into wheat stubble to conserve moisture. Water scarcity is my primary constraint, so I hold wheat to three irrigations and maize to two, relying on summer rainfall for the rest. Pesticide passes are timed to actual thresholds \u2014 herbicide, fungicide, and aphicide for wheat; pre-emergence herbicide and one mid-season pest pass for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I run the standard winter wheat\u2013summer maize rotation on 15 mu of family land in Quzhou County, Hebei. My university education has led me to moderate my nitrogen applications below the local average after years of overuse, while still targeting competitive yields. I use improved wheat varieties and hybrid maize seed for consistent performance, rotary till before wheat sowing to incorporate maize residue, and direct-seed maize into wheat stubble to conserve moisture. Water scarcity is my primary constraint, so I hold wheat to three irrigations and maize to two, relying on summer rainfall for the rest. Pesticide passes are timed to actual thresholds \u2014 herbicide, fungicide, and aphicide for wheat; pre-emergence herbicide and one mid-season pest pass for maize."
+  },
+  "elapsed_seconds": 59.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_11",
+  "tier": 1,
+  "provider": "claude"
+}

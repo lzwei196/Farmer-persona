@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 14 mu here in Quzhou, and I've been doing wheat-maize rotation for 25 years now. My father did the same thing on this land before me. I finished middle school, so I can read the fertilizer bags and understand what the dealer tells me, but most of what I know comes from doing it year after year.\n\nFor my wheat this winter, I plant an improved variety \u2014 Jimai 22 has done well for me and for my neighbor Old Wang, so I stick with it. I use about 18 kg of urea per mu as base fertilizer, plus a bag of compound fertilizer (15-15-15), about 40 kg per mu. That gives me roughly 24 kg of nitrogen, 6 kg phosphorus, 6 kg potassium as base. Then I topdress with another 10 kg of urea at jointing stage, so that's another 4.6 kg N. Total maybe 28-29 kg N per mu. I'd rather put on a bit extra than see the wheat turn yellow in April \u2014 a thin wheat field means a bad harvest, and that's a disaster for feeding 6 people. Wheat needs 3 irrigations from my well: one before winter, one at jointing, one at filling. Pesticide I spray twice \u2014 once for aphids and red spider, once mixed with the foliar fertilizer near flowering for scab. I use rotary tillage because the ground is already soft after maize and it saves diesel.\n\nFor summer maize, I plant Zhengdan 958 or similar hybrid right after wheat harvest in June \u2014 no-tillage direct seeding saves time because the rains come fast. I apply about 50 kg of compound fertilizer as base through the seeder, then topdress 20 kg urea at big trumpet stage. That gives me roughly 17 kg N base plus 9 kg N topdress, about 26 kg N total. Maize here yields well \u2014 I expect around 600 kg per mu in a normal year. Two irrigations usually enough since summer has rain. I spray pesticide twice \u2014 once for armyworm when seedlings are young, once for borer at tasseling.\n\nI budget carefully. Fertilizer alone costs me over 3000 yuan for the whole farm per season. I cannot afford to waste, but I also cannot afford a poor yield. I do what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I follow the wheat-maize rotation I've done for 25 years on my 14 mu. For wheat I use improved Jimai variety with compound base fertilizer plus urea topdressing at jointing \u2014 a bit extra nitrogen because thin wheat in spring is a disaster I can't afford with 6 mouths to feed. Three irrigations from my well and two pesticide sprays cover aphids and scab. For summer maize I use hybrid seed, no-till direct seeding after wheat harvest to catch the rain, compound base plus urea at big trumpet stage, two irrigations and two sprays for armyworm and borer. My costs run high on fertilizer but a good harvest pays back \u2014 I'd rather spend a bit more than gamble on yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I follow the wheat-maize rotation I've done for 25 years on my 14 mu. For wheat I use improved Jimai variety with compound base fertilizer plus urea topdressing at jointing \u2014 a bit extra nitrogen because thin wheat in spring is a disaster I can't afford with 6 mouths to feed. Three irrigations from my well and two pesticide sprays cover aphids and scab. For summer maize I use hybrid seed, no-till direct seeding after wheat harvest to catch the rain, compound base plus urea at big trumpet stage, two irrigations and two sprays for armyworm and borer. My costs run high on fertilizer but a good harvest pays back \u2014 I'd rather spend a bit more than gamble on yield."
+  },
+  "elapsed_seconds": 29.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_3",
+  "tier": 3,
+  "provider": "claude"
+}

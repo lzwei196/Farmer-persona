@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 54 years old and I never went to school, but I have farmed this land in Quzhou County since I was a young girl. My family has 8 mu, and every year I do what my mother taught me: plant winter wheat in October and then summer maize right after we cut the wheat in early June. I cannot read the labels, but I know which seeds work because I watch my neighbors. I buy the improved wheat variety and the denghai hybrid maize from the village shop \u2014 they grow strong and the grain buyer pays a fair price. For the wheat, I rotary till the soil and put down about one bag of compound fertilizer per mu before sowing, then spread urea when the wheat turns green in spring. There is no time to till for the maize; we plant it directly into the wheat stubble the same week we harvest. I irrigate the wheat four times \u2014 once in winter so it does not freeze, and three more times in spring when the dry wind comes. The maize gets water twice, right after planting and when the tassels come out. I spray for weeds and insects about three times for each crop. It costs money, but losing half the crop would cost more. If the weather is kind, I expect about 550 kg per mu from the wheat and 600 kg per mu from the maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"Winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"Summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to wheat-maize double cropping on my 8 mu because it is what I know and what the village does. I use improved wheat seeds and hybrid maize because my neighbors get good yields with them. I rotary till before wheat and plant maize no-till because the window between harvest and planting is too tight to plough. I apply compound fertilizer and urea to wheat, and mostly compound fertilizer to maize. I irrigate wheat four times and maize twice because water from the tube well costs money but drought loses the crop. I spray three times per crop for weeds and insects as insurance. My yield targets are based on what I and my neighbors usually get in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "Winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "Summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to wheat-maize double cropping on my 8 mu because it is what I know and what the village does. I use improved wheat seeds and hybrid maize because my neighbors get good yields with them. I rotary till before wheat and plant maize no-till because the window between harvest and planting is too tight to plough. I apply compound fertilizer and urea to wheat, and mostly compound fertilizer to maize. I irrigate wheat four times and maize twice because water from the tube well costs money but drought loses the crop. I spray three times per crop for weeds and insects as insurance. My yield targets are based on what I and my neighbors usually get in a normal year."
+  },
+  "elapsed_seconds": 215.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_11",
+  "tier": 1,
+  "provider": "kimi"
+}

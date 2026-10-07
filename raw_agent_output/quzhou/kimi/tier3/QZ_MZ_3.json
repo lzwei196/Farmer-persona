@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this 3.8 mu in Quzhou for 30 years, wheat in winter and maize in summer, just like everyone else around here. I finished middle school, so I can read the labels on fertilizer bags and I talk to the seed dealer in town, but most of what I know comes from doing it year after year and watching Old Wang and the others.\n\nFor wheat this year, I will rotary till the field before sowing in early October. I plant an improved variety, about 30 jin per mu, which is roughly 15 kg per mu. I buy four bags of compound fertilizer \u2014 the kind the dealer says is good for wheat, with more phosphorus in it \u2014 and spread that as base fertilizer at sowing. That is a bit more than one 50-jin bag per mu. Then at green-up in spring I topdress with urea, about 20 jin per mu, and again at jointing stage another 25 jin per mu. I would rather put on a little too much nitrogen than risk thin ears; a bad harvest is a disaster, but wasting some fertilizer is just money. I irrigate four times: winter water after the New Year, then at jointing, heading, and grain filling. Diesel for the pump costs me, but dry wheat is worse. For chemicals, I spray herbicide once after sowing, insecticide once when the aphids show up, and fungicide once if the weather turns damp. I expect about 1000 jin per mu, same as last year if the frost does not kill it.\n\nFor summer maize, I plant hybrid seed straight after wheat harvest in early June without plowing \u2014 I use the no-till planter. I put one bag of compound fertilizer per mu in the row at planting, the high-nitrogen kind for maize. Some people skip topdressing, but I learned that maize gets hungry in July, so I spread another half bag of urea per mu when the plants are knee-high. I irrigate twice: once when the tassels come out and once during grain filling if the summer rain is not enough. I spray herbicide right after planting and insecticide once in August when the worms come. I expect about 1100 jin per mu. My land is small, so every bag of fertilizer and every liter of diesel matters, but I have seen what happens when you cheap out \u2014 you get small ears and you regret it all winter.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I base my plan on what I did last year and what Old Wang and my other neighbors do on similar land. On 3.8 mu every input is a big expense for my household of two, so I calculate carefully, but I would rather spend a bit more on fertilizer and irrigation than risk losing yield. Wheat gets rotary tilled, four irrigations, and three pesticide sprays because it grows through the dry spring. Maize is no-till planted after wheat harvest with two irrigations and two pesticide sprays, which is the standard practice here. I use improved wheat seed and hybrid maize seed from the dealer in town, and I apply compound plus urea for both crops because that is what has worked steadily for 30 years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I base my plan on what I did last year and what Old Wang and my other neighbors do on similar land. On 3.8 mu every input is a big expense for my household of two, so I calculate carefully, but I would rather spend a bit more on fertilizer and irrigation than risk losing yield. Wheat gets rotary tilled, four irrigations, and three pesticide sprays because it grows through the dry spring. Maize is no-till planted after wheat harvest with two irrigations and two pesticide sprays, which is the standard practice here. I use improved wheat seed and hybrid maize seed from the dealer in town, and I apply compound plus urea for both crops because that is what has worked steadily for 30 years."
+  },
+  "elapsed_seconds": 261.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_3",
+  "tier": 3,
+  "provider": "kimi"
+}

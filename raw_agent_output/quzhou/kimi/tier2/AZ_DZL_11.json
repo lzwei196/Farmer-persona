@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 55 years old and have been farming these 10.1 mu in Quzhou County for 35 years. With just my wife and me at home, and one of us picking up off-farm work when we can, I have to be careful with labor. My well gives me reliable water, so I don't worry too much about drought, but I can't be everywhere at once.\n\nMy main system is wheat-maize rotation on 7 mu. The wheat went in last October\u2014I've always used improved varieties, sowing about 15 kg per mu. I rotary till before wheat planting every year because it breaks up the compaction and buries the weeds. For fertilizer, I spread compound fertilizer as basal before sowing, and when the wheat greens up in spring I topdress with urea to give it a boost. I'll irrigate three times: winter irrigation is essential here to protect against the cold, plus two more in spring. This land has always given me steady yields\u2014I expect about 1000 kg per mu.\n\nAfter wheat harvest in early June, I plant hybrid maize directly into the stubble without tilling. No-tillage saves me diesel and time, and with only two of us on the farm, that matters. I apply compound fertilizer at sowing and irrigate twice during the hot summer. Hybrid seed costs more but pays back\u2014I should get around 1200 kg per mu.\n\nI keep 3.1 mu of cotton. It's backbreaking work with all the spraying, pruning, and picking, but the price is still decent so I won't give it up entirely. I'll rotary till in April and plant hybrid cotton at about 1.25 kg per mu. Cotton is hungry and pest-prone\u2014I apply compound fertilizer at planting, side-dress later, irrigate three times, and spray pesticides about eight times because bollworm and aphids always show up. If the weather holds, I expect about 500 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1200\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"With only two people in the household and part-time off-farm work, I prioritize labor efficiency by keeping most of my land in a wheat-maize rotation and maintaining a smaller cotton plot. I rotary till before wheat and cotton planting but use no-tillage for summer maize to save time and fuel. Well irrigation allows me to water reliably, and I apply fertilizer based on what this land has given me over 35 years of experience.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1200
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "With only two people in the household and part-time off-farm work, I prioritize labor efficiency by keeping most of my land in a wheat-maize rotation and maintaining a smaller cotton plot. I rotary till before wheat and cotton planting but use no-tillage for summer maize to save time and fuel. Well irrigation allows me to water reliably, and I apply fertilizer based on what this land has given me over 35 years of experience."
+  },
+  "elapsed_seconds": 199.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "AZ_DZL_11",
+  "tier": 2,
+  "provider": "kimi"
+}

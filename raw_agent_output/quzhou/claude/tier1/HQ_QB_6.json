@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm the same land my father farmed. In Quzhou, everyone plants wheat in the autumn and maize after the wheat comes off in June. That's how it's always been. The soil here is flat and deep, good for both. I don't know much about new techniques \u2014 I learned by working beside my father since I was a boy, and I watch what my neighbors do.\n\nI have about 8 mu. All of it goes into wheat first, then maize on the same ground. No point trying something different \u2014 cotton prices are bad and I don't know how to grow vegetables for market.\n\nFor wheat seed, I'll go to the supply shop in town and buy the improved variety they're pushing this year. Same for maize \u2014 hybrid seeds, that's what everyone uses now. My cousin tried saving his own maize seeds once, the yield was terrible.\n\nFertilizer: I'll spread compound fertilizer before plowing, then add urea when the wheat is jointing and again at heading. For maize I'll put down more urea when it's knee-high. My neighbor uses a lot of urea and his fields look good, so I follow what he does.\n\nWheat needs water badly \u2014 I'll pump from the well at least three times. Maize grows in the rainy season so usually once is enough unless it's a dry summer.\n\nI'll plow deep before wheat so the roots go down. Before maize I'll just rotary till after combining \u2014 faster and the soil is already loose.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu of flat land in Quzhou using the winter wheat\u2013summer maize rotation that everyone here has done for generations. I buy improved wheat seed and hybrid maize seed from the local supply shop because the yields are better than saved seed. I apply compound fertilizer at planting and urea top-dressings during the growing season, following the amounts I have seen my neighbors use. Wheat gets three irrigations from the groundwater well at key growth stages; maize relies mostly on summer rain with one supplemental irrigation if needed. I plough before wheat to loosen the soil deeply, and rotary till before maize to save time. I spray herbicide and a fungicide on the wheat, and just herbicide on the maize. I expect around 450 kg/mu from wheat and 540 kg/mu from maize, which is about what I got last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu of flat land in Quzhou using the winter wheat\u2013summer maize rotation that everyone here has done for generations. I buy improved wheat seed and hybrid maize seed from the local supply shop because the yields are better than saved seed. I apply compound fertilizer at planting and urea top-dressings during the growing season, following the amounts I have seen my neighbors use. Wheat gets three irrigations from the groundwater well at key growth stages; maize relies mostly on summer rain with one supplemental irrigation if needed. I plough before wheat to loosen the soil deeply, and rotary till before maize to save time. I spray herbicide and a fungicide on the wheat, and just herbicide on the maize. I expect around 450 kg/mu from wheat and 540 kg/mu from maize, which is about what I got last year."
+  },
+  "elapsed_seconds": 45.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_6",
+  "tier": 1,
+  "provider": "claude"
+}

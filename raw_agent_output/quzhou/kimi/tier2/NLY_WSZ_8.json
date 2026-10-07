@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 5 mu in Quzhou for 25 years. My family has four people, and some work off-farm, so I plan the farm work around what I can handle myself, with extra help at harvest and sowing. We have our own well, so water is not my biggest worry.\n\nIt is autumn now. After the maize comes off, I will plant all 5 mu with winter wheat. I always buy improved wheat seed from the county supply store \u2014 varieties like Jimai 22 or Luyuan 502 that I have used before and trust. First I plough the stubble under, then I run the rotary tiller to break the soil fine. Before sowing in late October, I spread compound fertilizer as a base. Then I top-dress with urea twice: once when the wheat greens up in spring, and again at jointing. All together that comes to about 16 kg of nitrogen per mu, plus some phosphate and potash. I irrigate four times using the well: at sowing, before winter to help the seedlings survive the cold, at jointing, and at grain filling. I spray four times \u2014 herbicide once, and pesticide for aphids and rust.\n\nAs soon as the wheat is harvested in early June, I immediately plant summer maize. There are only a few days between harvest and sowing, so I use no-tillage planting right behind the combine to save time. I only grow hybrid maize \u2014 Denghai 605 is what most of us use here, and it gives good yield. I put down compound fertilizer at sowing and top-dress with urea at the big trumpet stage, about 18 kg nitrogen per mu in total, plus phosphate and potash. I irrigate twice: once after sowing if the soil is dry, and once at silking. I spray three times for stem borers and leaf blight. If the weather is normal, I expect about 500 kg per mu from the wheat and 550 kg per mu from the maize. This wheat-maize rotation has fed my family for 25 years, so I will stick with it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I plant all 5 mu with winter wheat in autumn using improved seed, rotary tillage, compound fertilizer plus urea topdressing, four irrigations from our well, and four pesticide sprays. After wheat harvest in early June, I immediately plant hybrid summer maize with no-tillage to save time, using compound fertilizer and urea, two irrigations, and three pesticide sprays. This wheat-maize double-cropping system is what I have relied on for 25 years to feed my family.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I plant all 5 mu with winter wheat in autumn using improved seed, rotary tillage, compound fertilizer plus urea topdressing, four irrigations from our well, and four pesticide sprays. After wheat harvest in early June, I immediately plant hybrid summer maize with no-tillage to save time, using compound fertilizer and urea, two irrigations, and three pesticide sprays. This wheat-maize double-cropping system is what I have relied on for 25 years to feed my family."
+  },
+  "elapsed_seconds": 216.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_8",
+  "tier": 2,
+  "provider": "kimi"
+}

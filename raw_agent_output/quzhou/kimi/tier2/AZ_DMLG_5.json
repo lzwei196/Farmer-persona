@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and have farmed these lands in Quzhou County for 40 years. With only my wife and me in the household, and both of us doing some off-farm work when we can, I have learned to manage my time carefully. I rely on the wheat-maize double cropping system for most of my 10.1 mu because it gives us grain security and a steady income, and I keep just a small plot of cotton because it pays well but demands too much labor for picking and spraying.\n\nThis year, I will put 9.6 mu into the wheat-maize rotation and leave 0.5 mu for cotton. For the winter wheat, I will rotary till before sowing in late October and use an improved wheat variety at 35 jin per mu. I will apply 50 kg per mu of 15-15-15 compound fertilizer as a basal dressing, which gives me about 7.5 kg of nitrogen, 7.5 kg of phosphorus, and 7.5 kg of potassium per mu. I will irrigate four times from the well\u2014overwintering, reviving green, jointing, and grain filling\u2014because wheat needs steady water to reach good yield, and I expect about 1,000 kg per mu. I will spray insecticide three times, herbicide once, and fungicide twice to protect the crop.\n\nRight after wheat harvest in early June, I will plant hybrid maize (Longping 318) using no-tillage to save time and labor during the busy summer rush. I will seed 1 package per mu and apply 40 kg per mu of 26-8-8 compound fertilizer as basal, giving roughly 10.4 kg nitrogen, 3.2 kg phosphorus, and 3.2 kg potassium per mu. I will irrigate only once if the summer rains are decent\u2014groundwater is getting costly and maize handles short dry spells better than wheat. I expect about 850 kg per mu. I will spray insecticide twice and herbicide once.\n\nFor the 0.5 mu of cotton, I will rotary till in spring and sow an improved variety at 2 jin per mu. I will apply 50 kg per mu of 15-15-15 compound fertilizer as basal, and irrigate twice. Cotton pests are relentless here, so I will spray insecticide 12 times and herbicide once through the season. If the weather holds, I expect about 550 kg per mu of seed cotton.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 7.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10.4,\n      \"phosphorus_kg_per_mu\": 3.2,\n      \"potassium_kg_per_mu\": 3.2,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 850\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 7.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 13,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"At 63 years old with only two people in the household and some off-farm work, I keep most of my land in the reliable wheat-maize double cropping system that I have managed for decades, while devoting just half a mu to labor-intensive cotton for extra cash. I use rotary tillage for wheat and cotton, but no-tillage for summer maize to save time during the June rush. Fertilizer is applied as compound fertilizer at sowing to keep things simple and efficient. Wheat gets the most irrigation because it is the least drought-tolerant and most important for household grain security, while maize makes do with one well irrigation to cut costs. Pesticide applications reflect the pest pressure typical of Quzhou County, especially the heavy spraying required for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 7.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10.4,
+        "phosphorus_kg_per_mu": 3.2,
+        "potassium_kg_per_mu": 3.2,
+        "irrigation_times": 1,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 850
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 0.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 7.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 13,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "At 63 years old with only two people in the household and some off-farm work, I keep most of my land in the reliable wheat-maize double cropping system that I have managed for decades, while devoting just half a mu to labor-intensive cotton for extra cash. I use rotary tillage for wheat and cotton, but no-tillage for summer maize to save time during the June rush. Fertilizer is applied as compound fertilizer at sowing to keep things simple and efficient. Wheat gets the most irrigation because it is the least drought-tolerant and most important for household grain security, while maize makes do with one well irrigation to cut costs. Pesticide applications reflect the pest pressure typical of Quzhou County, especially the heavy spraying required for cotton."
+  },
+  "elapsed_seconds": 149.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DMLG_5",
+  "tier": 2,
+  "provider": "kimi"
+}

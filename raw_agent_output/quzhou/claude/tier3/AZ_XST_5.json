@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am old now, 78 years, but I still farm my 5 mu like before. My son works in town, sends some money, but the land is mine to manage. I do what I did last year \u2014 no need to change much when the rain and the soil are the same.\n\nI split my land like this: 1 mu for cotton on the sandy patch by the road (cotton likes that soil, I always plant it there), and 4 mu for wheat in winter then maize in summer. That is my pattern for many years.\n\nFor seeds I buy from the same dealer in town. Improved wheat seed \u2014 Jimai variety, what everyone here uses. Maize I buy Zhengdan or Xianyu hybrid, the bag is about 60 yuan, enough for my plot. Cotton I plant Bt cotton seed, it saves spraying for bollworm.\n\nFor fertilizer, I think in bags. One bag of compound fertilizer (15-15-15) is 50 kg, costs around 130 yuan. For wheat I spread 2 bags before planting on my 4 mu \u2014 that is 25 kg per mu of compound. Then in spring when wheat turns green I top-dress urea, half a bag per mu, about 20 kg urea (so about 9 kg N more). For maize same idea \u2014 one bag compound at planting, then urea when knee-high, maybe 25 kg urea per mu. I apply a bit extra because losing the harvest is much worse than spending a little more on fertilizer. My neighbor Old Wang does the same.\n\nCotton needs more \u2014 I put 1.5 bags compound per mu, then urea twice during the season. Cotton on the sandy soil drinks fertilizer fast.\n\nWater \u2014 I have well, electric pump. Wheat I water 3 times: before winter, at green-up, at heading. Maize I water 2 times if no rain. Cotton 3 times.\n\nSpraying \u2014 wheat I spray maybe 2 times for aphid and powdery mildew. Maize 1 time for borer. Cotton even with Bt I still spray 5 times for aphid, mite, and other bugs.\n\nTillage \u2014 I hire the rotary tiller man, 60 yuan per mu. My back cannot plough anymore.\n\nYield \u2014 last year wheat gave me about 450 kg per mu, maize about 550 kg per mu, cotton seed cotton about 250 kg per mu. I expect similar this year if weather is normal.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same way as last year because my land and weather have not changed. I keep cotton on the sandy 1 mu by the road and wheat-maize rotation on the other 4 mu. I buy compound fertilizer (15-15-15) by the bag and add urea as top-dressing \u2014 I always put a little extra because losing the harvest costs much more than the fertilizer money. I copy what my neighbor Old Wang does, use improved wheat and hybrid maize seed from the town dealer, and Bt cotton to spray less. I water from my well 2-3 times each crop, hire the rotary tiller man for 60 yuan per mu since my back is bad, and expect yields close to last year \u2014 wheat 450 kg, maize 550 kg, cotton 250 kg per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm the same way as last year because my land and weather have not changed. I keep cotton on the sandy 1 mu by the road and wheat-maize rotation on the other 4 mu. I buy compound fertilizer (15-15-15) by the bag and add urea as top-dressing \u2014 I always put a little extra because losing the harvest costs much more than the fertilizer money. I copy what my neighbor Old Wang does, use improved wheat and hybrid maize seed from the town dealer, and Bt cotton to spray less. I water from my well 2-3 times each crop, hire the rotary tiller man for 60 yuan per mu since my back is bad, and expect yields close to last year \u2014 wheat 450 kg, maize 550 kg, cotton 250 kg per mu."
+  },
+  "elapsed_seconds": 36.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_5",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72 years old, been on this land 50 years. My son works in the city so it's just me and my wife on 6 mu. I cannot work as hard as before, so I keep things simple and do what I know works.\n\nOf my 6 mu, I plant 4 mu to wheat-maize double crop \u2014 that is my main grain. The other 2 mu I keep in cotton, same as my neighbors on the east side of the village. Cotton price has not been great, but I have the seed and know the work, and my wife helps with picking.\n\n**Wheat (winter):** I plant Jimai 22 type \u2014 improved seed, I buy from the dealer in town every two years. Last autumn I put about 40 jin (20 kg) of compound 15-15-15 per mu before ploughing, plus some urea in spring at jointing, maybe 25 jin (12-13 kg) per mu. So nitrogen comes to around 18 kg, phosphorus 8 kg, potassium 6 kg per mu. I water twice \u2014 once before winter, once at jointing. If spring is dry I add a third. Last year I got about 450 kg per mu, this year I hope for the same.\n\n**Maize (summer):** After wheat I plant Zhengdan 958 or similar hybrid, no-till direct seeding right into the stubble. I side-dress urea at the big bell stage, about 50 jin (25 kg) per mu, that is the main feeding. Phosphorus and potassium I already put plenty in the wheat so maize gets the leftover, I add a little compound at planting, maybe 20 jin. One irrigation at tasseling if no rain. Spray once for borer. I expect 550 kg per mu.\n\n**Cotton (spring):** I use hybrid Bt cotton seed, already have it. Plough the 2 mu once, put compound fertilizer in the row, about 50 jin per mu before planting, then topdress urea at flowering. Cotton needs potassium for bolls so I add potash too. Irrigate 3 times \u2014 seedling, flowering, boll-filling. Pesticide \u2014 even with Bt I still spray 4-5 times for aphids and mirids. Yield maybe 220 kg seed cotton per mu, depends on weather at bolling.\n\nI don't change much from last year. Fertilizer prices are high but I'd rather spend the money than risk a thin harvest \u2014 at my age I cannot recover a lost season.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I am 72 with only my wife to help on 6 mu, so I keep to what I know: 4 mu wheat-maize double crop and 2 mu cotton like my neighbors. I use improved wheat seed and hybrid maize and cotton. I put most fertilizer on the wheat before ploughing with 15-15-15 compound, topdress urea in spring and at maize bell stage, and give cotton a base dose plus urea at flowering with extra potash for bolls. Irrigation is twice for wheat, once for maize, three times for cotton from my well. I would rather spend a bit more on fertilizer than lose yield \u2014 at my age I cannot take a bad harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I am 72 with only my wife to help on 6 mu, so I keep to what I know: 4 mu wheat-maize double crop and 2 mu cotton like my neighbors. I use improved wheat seed and hybrid maize and cotton. I put most fertilizer on the wheat before ploughing with 15-15-15 compound, topdress urea in spring and at maize bell stage, and give cotton a base dose plus urea at flowering with extra potash for bolls. Irrigation is twice for wheat, once for maize, three times for cotton from my well. I would rather spend a bit more on fertilizer than lose yield \u2014 at my age I cannot take a bad harvest."
+  },
+  "elapsed_seconds": 36.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

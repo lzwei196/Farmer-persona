@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will farm my land as a full `winter wheat -> summer maize` rotation this year. I am assuming I have `20 mu` because no land area was given; the per-mu management is the real decision. I would not switch into cotton or a mixed plan. In Quzhou, wheat and maize are the core grain crops, and the winter wheat-summer maize system is the normal local pattern. Our county is in the North China Plain, with about `518.5 mm` annual rainfall, and most rain comes in summer, so wheat needs more irrigation support and maize can lean more on summer rain. I would keep the plan simple and steady: improved winter wheat seed for a reliable stand, hybrid summer maize seed for yield, moderate fertilizer instead of chasing the highest rates, rotary tillage before wheat, and no-tillage sowing for maize right after wheat harvest so I do not lose moisture or time. I would aim for solid farm yields, not demonstration-field yields. This is based on Quzhou and North China Plain sources showing wheat-maize dominance and local work on this rotation, plus 2025 official Chinese technical ranges for wheat and maize water-fertilizer management: China Agricultural University Quzhou station, MOA wheat plan, MOA maize plan, and a Quzhou county study ([CAU Quzhou 1](https://qzsyz.cau.edu.cn/art/2021/12/31/art_46290_874257.html), [CAU Quzhou 2](https://qzsyz.cau.edu.cn/art/2024/2/25/art_46232_1012984.html), [MOA wheat](https://www.moa.gov.cn/xw/zxfb/202504/t20250407_6472869.htm), [MOA maize](https://www.moa.gov.cn/xw/zxfb/202504/t20250410_6473061.htm), [Quzhou study](https://www.mdpi.com/2073-4395/13/9/2362)).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 700\n    }\n  ],\n  \"reasoning_summary\": \"I will plant all 20 mu in the usual Quzhou winter wheat-summer maize rotation because it fits the county\u2019s main grain pattern, matches local rainfall and irrigation conditions, and is the simplest stable system for me to manage and sell. I will use improved wheat seed and hybrid maize seed, keep fertilizer at moderate levels within official local-region ranges, irrigate wheat more than maize because summer rain helps maize, use rotary tillage before wheat and no-tillage sowing for maize after wheat harvest, and target solid ordinary-farm yields instead of pushing high-cost demonstration yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 700
+      }
+    ],
+    "reasoning_summary": "I will plant all 20 mu in the usual Quzhou winter wheat-summer maize rotation because it fits the county\u2019s main grain pattern, matches local rainfall and irrigation conditions, and is the simplest stable system for me to manage and sell. I will use improved wheat seed and hybrid maize seed, keep fertilizer at moderate levels within official local-region ranges, irrigate wheat more than maize because summer rain helps maize, use rotary tillage before wheat and no-tillage sowing for maize after wheat harvest, and target solid ordinary-farm yields instead of pushing high-cost demonstration yields."
+  },
+  "elapsed_seconds": 80.5,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_2",
+  "tier": 1,
+  "provider": "codex"
+}

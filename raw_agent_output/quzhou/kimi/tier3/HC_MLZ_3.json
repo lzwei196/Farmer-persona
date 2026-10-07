@@ -1,0 +1,53 @@
+{
+  "raw_response": "I took over this farm four years ago after working a few years in the city, and I've been building my system ever since. I farm 225 mu total \u2014 170 mu in wheat-maize double crop and 55 mu in cotton. Running a farm this size, I have to think like a businessman, not just a laborer. I hire machinery services for tillage and harvest, and I keep records of input costs and yields every year. I read information online, talk to seed dealers, and compare notes with two other large farmers in the village, but in the end I rely on what the numbers tell me from my own fields.\n\nMy wheat is already in the ground \u2014 I sowed 170 mu last October with an improved variety after rotary tillage. Now it is March and I am planning the management through to harvest. Last year I applied 17 kg nitrogen per mu and got 520 kg yield, but I think I can push to 550 kg this year if I add one more irrigation. I am raising nitrogen to 18 kg per mu, split three ways: base dressing at green-up, topdress at jointing, and a booting-stage flush. I will put down 7 kg phosphorus and 6 kg potassium as base. With my well pump, I will run four irrigations: revival water, jointing, heading, and grain filling. That is a lot of diesel for the pump, but losing 50 kg of yield per mu across 170 mu costs me far more than the water. Three pesticide sprays will handle aphids and rust.\n\nFor summer maize after the wheat comes off in early June, I will switch fast \u2014 no-tillage seeding with a hybrid variety to save time. I will apply 16 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. I tested 18 kg nitrogen two years ago and saw almost no yield bump, so I pulled back to 16 kg. Three irrigations at seedling, tasseling, and grain filling, plus three pesticide applications for corn borer and armyworm. My target is 650 kg per mu.\n\nCotton takes 55 mu. I plough that ground deep in April because cotton roots need to go deep. I am using a hybrid variety. Cotton sucks up potassium, so I budget 9 kg potassium per mu \u2014 more than wheat or maize \u2014 plus 14 kg nitrogen and 6 kg phosphorus. Five pesticide sprays are non-negotiable here; bollworm pressure is heavy in Quzhou. Three irrigations at flowering, peak flowering, and boll stage. I expect 280 kg of seed cotton per mu.\n\nMy total fertilizer spend runs around 75,000 yuan, pesticides about 18,000 yuan, and irrigation diesel another 12,000. It sounds like a lot, but my gross income last year was just under 400,000 yuan. On a 225 mu farm, you cannot afford to underfeed your crops. I would rather spend an extra 2,000 yuan on fertilizer than risk losing 20,000 yuan in grain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 170,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 170,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 55,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I manage 225 mu with a wheat-maize double crop on 170 mu and cotton on 55 mu. As a large farm operator with four years of experience, I rely on my own yield records and cost calculations rather than guessing. I push fertilizer and irrigation enough to protect yield because a shortfall across this much land is financially devastating, but I do not waste money above rates where I have tested and seen no response. Wheat gets 18 kg N, 7 kg P, 6 kg K, four irrigations, and three pesticide sprays targeting 550 kg/mu. Maize is no-till planted immediately after wheat harvest with 16 kg N, 5 kg P, 5 kg K, three irrigations, three pesticide sprays, and a target of 650 kg/mu. Cotton is deep-ploughed in spring, fed 14 kg N, 6 kg P, and a heavy 9 kg K to support boll development, with three irrigations and five pesticide applications for bollworm control, targeting 280 kg/mu of seed cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 170,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 170,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 55,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I manage 225 mu with a wheat-maize double crop on 170 mu and cotton on 55 mu. As a large farm operator with four years of experience, I rely on my own yield records and cost calculations rather than guessing. I push fertilizer and irrigation enough to protect yield because a shortfall across this much land is financially devastating, but I do not waste money above rates where I have tested and seen no response. Wheat gets 18 kg N, 7 kg P, 6 kg K, four irrigations, and three pesticide sprays targeting 550 kg/mu. Maize is no-till planted immediately after wheat harvest with 16 kg N, 5 kg P, 5 kg K, three irrigations, three pesticide sprays, and a target of 650 kg/mu. Cotton is deep-ploughed in spring, fed 14 kg N, 6 kg P, and a heavy 9 kg K to support boll development, with three irrigations and five pesticide applications for bollworm control, targeting 280 kg/mu of seed cotton."
+  },
+  "elapsed_seconds": 148.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_3",
+  "tier": 3,
+  "provider": "kimi"
+}

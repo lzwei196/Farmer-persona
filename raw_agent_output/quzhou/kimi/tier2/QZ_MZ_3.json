@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 55 years old and have farmed these 3.8 mu in Quzhou for 30 years. My wife and I are the only two workers in our household, so I cannot afford complicated or labor-heavy plans. We have a well, which means we can irrigate when needed, but pumping costs electricity, so I do not waste water.\n\nFor **winter wheat**, I will sow around October 10th. I always use an improved variety like Jimai \u2014 not the most expensive seed, but reliable. I need about 30 jin of seed per mu. Before sowing, I will rotary-till the field to break up the wheat stubble from the previous maize season and level the ground. For fertilizer, I will spread compound fertilizer (the special wheat formula, around 18-22-5) as a basal application \u2014 about 100 jin per mu \u2014 and then topdress with urea at the jointing stage in spring. In total, that comes to about 20 kg of nitrogen, 10 kg of phosphorus, and 5 kg of potassium per mu. I will irrigate three times: once right after sowing to ensure good germination, once at green-up/jointing, and once at grain filling. If the winter is unusually dry, I might add a winter irrigation, but three times is usually enough for our soil. For crop protection, I will spray herbicide once after sowing and apply insecticide twice for aphids and other pests. That is three pesticide applications in total. I expect about 500 kg per mu \u2014 not a record yield, but steady and enough for us.\n\nFor **summer maize**, the window between wheat harvest and sowing is only about a week, so there is no time for plowing. I will use the no-tillage seeder directly after the wheat combine leaves the field. I plant hybrid maize, about 1.2 packages per mu. I put compound fertilizer (the 28-6-6 type) down with the seeder as a basal dose of about 100 jin per mu, then topdress with urea at the big trumpet stage. This gives roughly 18 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. Maize needs less irrigation than wheat here; I will irrigate twice \u2014 once after sowing if the soil is dry, and once during filling. For pests, I spray herbicide once and insecticide twice for armyworm and aphids, so three applications total. I expect about 550 kg per mu.\n\nThis is the system I have used for decades. Fertilizer prices have risen, so I do not over-apply, but cutting back too much hurts the yield. With just two of us, this plan is manageable and gives a reliable income.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat-maize rotation on 3.8 mu for 30 years with just my wife and me. For wheat, I rotary-till before October sowing, use an improved variety, apply compound fertilizer plus urea topdressing, irrigate three times, and spray three times. For maize, I no-till plant directly after wheat harvest in June using hybrid seed, apply compound plus urea topdressing, irrigate twice, and spray three times. This is the standard practice in Quzhou that balances yield, cost, and our limited labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat-maize rotation on 3.8 mu for 30 years with just my wife and me. For wheat, I rotary-till before October sowing, use an improved variety, apply compound fertilizer plus urea topdressing, irrigate three times, and spray three times. For maize, I no-till plant directly after wheat harvest in June using hybrid seed, apply compound plus urea topdressing, irrigate twice, and spray three times. This is the standard practice in Quzhou that balances yield, cost, and our limited labor."
+  },
+  "elapsed_seconds": 121.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_3",
+  "tier": 2,
+  "provider": "kimi"
+}

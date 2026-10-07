@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've got 20 mu here in Quzhou County, all in wheat-maize rotation. Ten years I've been at this, and I learned from my father and from watching which neighbors make money and which ones barely break even. I finished middle school, so I can read the fertilizer bags and calculate costs, but I don't trust outside advice unless I see it work in someone else's field first.\n\nMy winter wheat is Jimai 22, an improved variety. I switched to it five years ago when I saw Old Wang across the road get an extra 100 jin per mu with that seed while I was still using the old type. In October I do rotary tillage and sow. For fertilizer, I put down 100 jin of compound fertilizer per mu at sowing time \u2014 that gives me about 6 kg phosphorus and 5 kg potassium per mu. Then I topdress urea twice: 50 jin per mu when the wheat greens up in spring, and another 30 jin at heading stage. All together that's about 15 kg nitrogen per mu. I irrigate four times through the season: winter water, jointing water, heading water, and grain filling water. My diesel pump from the well handles it fine. I spray pesticide twice \u2014 herbicide when the wheat is small, and a fungicide-insecticide mix when the weather warms up and the diseases start showing. If the weather is normal, I get about 550 kg per mu.\n\nFor summer maize, I plant Zhengdan 958 hybrid seed. Everyone around here uses hybrid maize \u2014 the old open-pollinated types are a waste of good land. After wheat harvest in early June, I do quick rotary tillage and sow the same day. Summer season is short, you can't wait even two days. I put 80 jin of compound fertilizer per mu at sowing, then 60 jin of urea at big-ear stage. That's about 16 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. I irrigate three times: after sowing if the soil is dry, at jointing, and at filling stage. I spray twice: herbicide after the seedlings come up, and insecticide for corn borer when the plants are about waist-high. I expect 600 kg per mu.\n\nWhy these amounts? Because I've tested cutting back and it doesn't pay. Two years ago I skipped one urea topdressing on 5 mu to save about 200 yuan, and those 5 mu gave me 80 jin less per mu. At the price maize was that year, I lost over 500 yuan to save 200. That was stupid. Better to put a bit too much fertilizer than risk a bad harvest \u2014 losing crop is a disaster, but wasting some fertilizer is just a cost. I watch Zhang, who farms 18 mu down the road. He uses almost exactly what I use. If next year he changes something and his yield jumps, I'll copy him. That's how I decide.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 20 mu in wheat-maize rotation and base my decisions on ten years of experience and what works for successful neighbors. For wheat, I use an improved variety with rotary tillage, 15 kg nitrogen per mu from base compound fertilizer plus two urea topdressings, 6 kg phosphorus and 5 kg potassium, four well irrigations, and two pesticide sprays, targeting 550 kg per mu. For maize, I use hybrid seed with rotary tillage after wheat harvest, 16 kg nitrogen from compound plus urea at big-ear stage, 5 kg phosphorus and 5 kg potassium, three irrigations, and two pesticide applications, targeting 600 kg per mu. I do not cut fertilizer rates to save money because when I tried that I lost more in yield than I saved, and a bad harvest is far worse than wasting some input costs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 20 mu in wheat-maize rotation and base my decisions on ten years of experience and what works for successful neighbors. For wheat, I use an improved variety with rotary tillage, 15 kg nitrogen per mu from base compound fertilizer plus two urea topdressings, 6 kg phosphorus and 5 kg potassium, four well irrigations, and two pesticide sprays, targeting 550 kg per mu. For maize, I use hybrid seed with rotary tillage after wheat harvest, 16 kg nitrogen from compound plus urea at big-ear stage, 5 kg phosphorus and 5 kg potassium, three irrigations, and two pesticide applications, targeting 600 kg per mu. I do not cut fertilizer rates to save money because when I tried that I lost more in yield than I saved, and a bad harvest is far worse than wasting some input costs."
+  },
+  "elapsed_seconds": 91.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_7",
+  "tier": 3,
+  "provider": "kimi"
+}

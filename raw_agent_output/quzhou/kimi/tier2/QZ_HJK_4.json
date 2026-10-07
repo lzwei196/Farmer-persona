@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 73 years old. My bones ache in the morning, and my wife and I are the only ones left to work this land. After fifty years of farming these 5 mu in Quzhou, I know every patch of soil. I cannot chase high-risk profits anymore\u2014I need crops that give steady returns without breaking my back.\n\nMy wheat is already in the ground from last autumn. It covers 3 mu, the same land I will plant maize on after the June harvest. Wheat and maize are my backbone; the machines can harvest and plant them quickly, and I understand their needs like my own heartbeat. I will top-dress the wheat with urea at green-up and irrigate three times from the well\u2014green-up, jointing, and grain-filling. Two sprays will take care of the aphids and rust that always come. I expect about 480 jin per mu, maybe 500 if the spring rain helps.\n\nFor summer maize, I will buy hybrid seed from the county supply store\u2014Zhengdan or something similar. Time is tight after wheat harvest; I will not waste days ploughing. No-tillage seeding right behind the combine saves precious hours and keeps soil moisture. One round of pesticide at the seedling stage should be enough, and I will irrigate twice when the weather turns dry in July and August. I hope for 520 jin per mu.\n\nI still keep 2 mu of cotton out of habit and because the price was acceptable last year. But cotton is cruel to old hands\u2014picking season exhausts us. I use improved Bt cotton seed to reduce bollworm spraying, though I still need four pesticide applications for other pests. I will rotary-till the cotton plot in early spring, lay down compound fertilizer, and irrigate three times during flowering and boll-setting. I hope for 95 jin of lint per mu, but if my wife's knees act up during picking, we might hire help.\n\nI keep fertilizer moderate. Too much nitrogen wastes money and makes wheat lodge. My well gives water, but pumping costs electricity, so I irrigate only when the crops truly thirst. At my age, I do not gamble on new methods\u2014I do what has fed my family for fifty years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 95\n    }\n  ],\n  \"reasoning_summary\": \"At 73 years old with only my wife to help, I prioritize the reliable wheat-maize double crop on 3 mu because it is mechanized and predictable, while keeping 2 mu of cotton out of long experience despite the heavy labor of hand-picking. I apply moderate fertilizer based on fifty years of local practice, irrigate from my well only at critical stages to save electricity, and choose no-tillage for maize to save time between wheat harvest and summer planting. My choices favor stability over experimentation because I cannot afford crop failures at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 95
+      }
+    ],
+    "reasoning_summary": "At 73 years old with only my wife to help, I prioritize the reliable wheat-maize double crop on 3 mu because it is mechanized and predictable, while keeping 2 mu of cotton out of long experience despite the heavy labor of hand-picking. I apply moderate fertilizer based on fifty years of local practice, irrigate from my well only at critical stages to save electricity, and choose no-tillage for maize to save time between wheat harvest and summer planting. My choices favor stability over experimentation because I cannot afford crop failures at my age."
+  },
+  "elapsed_seconds": 290.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_4",
+  "tier": 2,
+  "provider": "kimi"
+}

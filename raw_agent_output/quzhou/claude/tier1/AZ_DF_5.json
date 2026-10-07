@@ -1,0 +1,53 @@
+{
+  "raw_response": "Looking at my land and my life, I know what I'm doing this year. I've been farming this land for over forty years. My husband passed three years ago, my son works in Shijiazhuang. It's mostly just me now.\n\nIn Quzhou, everyone grows wheat and corn \u2014 that's the rotation here on the plain. Wheat goes in the ground in October, comes up through winter, we harvest in June. Then we put in corn right after on the same land, harvest in September. That's two crops a year off the same mu. That's what my mother did. That's what my neighbors do. I'm not going to try something different at my age.\n\nI have about 7 mu. I'll put 6 mu into the wheat-corn rotation. The other half mu near the house I keep for garlic and some cabbage \u2014 that's for eating, not selling.\n\nThe wheat is already in the ground from last October. Now in spring I need to go out and water it once at jointing, maybe once more before heading if it's dry. I'll put down urea as a topdress \u2014 the bags from the village store. I'll spray for weeds in early spring and then spray fungicide before the wheat heads, because the last two years we had some rust problems.\n\nFor the corn, I'll wait until after wheat harvest, then I call the village machine station to rotary till. I buy hybrid seed \u2014 the dealer comes to the village and everyone buys from him. I don't know which variety exactly, whichever the dealer recommends is cheapest. I'll put in base fertilizer at planting, then topdress with urea at knee height. I water maybe twice if the summer rains don't come enough.\n\nI'm 63, so I hire the tractor for ploughing and harvesting. My back can't do it. I do the spraying and the hand-weeding myself.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 510\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"autumn\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"A 63-year-old woman farming alone on 7 mu in the Hebei Plain follows the only rotation she has ever known: winter wheat planted in October, summer maize planted after the June harvest on the same 6 mu, with a small household garlic plot on the remaining half mu. Seed choices rely on the village supply station rather than personal research. Fertilizer rates follow local habit and neighbor practice \u2014 heavier on nitrogen than agronomists would advise, but consistent with what everyone in the village does. Two irrigations per crop draw on the deep groundwater well shared with neighbors; physical limitations at her age mean she hires the machine station for ploughing and combines, handling spraying and lighter tasks herself.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 510
+      },
+      {
+        "crop": "garlic",
+        "season": "autumn",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "A 63-year-old woman farming alone on 7 mu in the Hebei Plain follows the only rotation she has ever known: winter wheat planted in October, summer maize planted after the June harvest on the same 6 mu, with a small household garlic plot on the remaining half mu. Seed choices rely on the village supply station rather than personal research. Fertilizer rates follow local habit and neighbor practice \u2014 heavier on nitrogen than agronomists would advise, but consistent with what everyone in the village does. Two irrigations per crop draw on the deep groundwater well shared with neighbors; physical limitations at her age mean she hires the machine station for ploughing and combines, handling spraying and lighter tasks herself."
+  },
+  "elapsed_seconds": 50.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_5",
+  "tier": 1,
+  "provider": "claude"
+}

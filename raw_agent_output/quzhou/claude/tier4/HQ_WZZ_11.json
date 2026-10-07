@@ -1,0 +1,74 @@
+{
+  "raw_response": "*sits on the edge of the kang, smoking*\n\nAlright, let me think through this year. I've been doing this 20 years, so I don't need to think too hard about most of it \u2014 I just do what works. But you asked, so let me walk through it.\n\n**About my land.** I've got near 380 mu. Most of it's not my own ancestral land \u2014 I took over parcels from households whose young people went to the cities. I pay them a yearly rent. That much land, with just four of us in the household, I can't work it alone. My wife and I do what we can, our oldest son helps when he's not driving a truck, and for cotton picking I bring in people from poorer villages \u2014 women mostly, paid by the jin they pick.\n\n**Cotton is my main thing.** Around here in western Quzhou, cotton is what we do. The land suits it, and I know it. I'll put cotton on most of my mu \u2014 maybe 320 mu. The rest, around 60 mu, is a lower patch that doesn't drain as well and the cotton never does as good there, so I put maize on it. Maize is easier, less work, and I can sell it or feed it.\n\n**Cotton planting.** Late April, after the Qingming cold snap is over. I buy Bt cotton seed from the agro-supply shop in town \u2014 the boss tells me what's selling this year, I mostly trust him because I've bought from him ten years running. I don't know the variety names, I just know which packet did well last year.\n\n**Fertilizer for cotton.** I put two bags of compound fertilizer down before planting \u2014 that's the base. Then when the cotton starts setting bolls, I topdress with urea, about one bag per mu or a bit less. That works out to, maybe, 15 kg of nitrogen per mu all told? The shop boss told me that number once. I don't count it exactly \u2014 I look at the plants. If they're pale I put more, if they're dark green and shooting up too tall I hold back because tall plants don't make bolls.\n\n**Irrigation.** I've got a well. First watering is right after planting to get them up, then once more around flowering if it hasn't rained, and one more at boll-filling if the summer is dry. So two, maybe three waterings. Pumping costs money \u2014 the electric meter ticks \u2014 so I don't water just because.\n\n**Pesticide.** Cotton needs spraying. Even with Bt seed, I still get aphids and sometimes plant bugs. I spray when I see them, not on a calendar. Also I spray herbicide before the cotton comes up to keep the weeds down, because with this much land I can't hoe it all by hand.\n\n**Picking.** This is the big one. I hire maybe 15-20 women for a few weeks, three picks through September and October. I pay by the jin. This costs me more than the fertilizer.\n\n**Maize on the 60 mu.** Spring maize, planted end of April, same time as the cotton more or less. Regular hybrid seed. One bag of compound at planting, topdress with urea when it's knee-high. Water once or twice. Harvest in September, before I'm too deep into cotton picking. I expect about 450-500 kg/mu \u2014 the land there isn't the best but maize forgives it.\n\n**What I worry about.** Cotton prices. They move, and I can't do anything about it. Also if the picking labor gets scarce or expensive, I'm in trouble. And if one of those summer storms comes through at boll-opening, half my cotton is on the ground.\n\nHere's my plan written out:\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"field_area_mu\": 320,\n      \"planting_date\": \"late April\",\n      \"harvest_date\": \"mid September to late October (3 picks)\",\n      \"seed_type\": \"improved (Bt hybrid from local shop)\",\n      \"seed_cost_yuan_per_mu\": 60,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"two bags of compound fertilizer broadcast before planting; one bag of urea topdressed when bolls start setting, watching the plants\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"tractor plow in late winter, harrow before planting\",\n      \"labor_family_days\": 300,\n      \"labor_hired_days\": 2400,\n      \"yield_expectation_kg_per_mu\": 260\n    },\n    {\n      \"crop\": \"maize\",\n      \"field_area_mu\": 59.9,\n      \"planting_date\": \"late April to early May\",\n      \"harvest_date\": \"mid to late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag of compound at planting, topdress urea at knee-high stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"tractor plow and harrow before planting\",\n      \"labor_family_days\": 60,\n      \"labor_hired_days\": 40,\n      \"yield_expectation_kg_per_mu\": 470\n    }\n  ],\n  \"total_input_cost_yuan\": 360000,\n  \"reasoning_summary\": \"I'm doing what I did last year because last year was alright. Cotton on most of the land where it grows best, maize on the low patch where cotton struggles. I watch the plants and add fertilizer if they look hungry, not by any number on a paper. My biggest worry isn't the growing, it's getting enough hands for the cotton pick in the fall and hoping the price doesn't drop before I sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "field_area_mu": 320,
+        "planting_date": "late April",
+        "harvest_date": "mid September to late October (3 picks)",
+        "seed_type": "improved (Bt hybrid from local shop)",
+        "seed_cost_yuan_per_mu": 60,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "two bags of compound fertilizer broadcast before planting; one bag of urea topdressed when bolls start setting, watching the plants",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "tractor plow in late winter, harrow before planting",
+        "labor_family_days": 300,
+        "labor_hired_days": 2400,
+        "yield_expectation_kg_per_mu": 260,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 320,
+        "expected_yield_kg_per_mu": 260,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      },
+      {
+        "crop": "maize",
+        "field_area_mu": 59.9,
+        "planting_date": "late April to early May",
+        "harvest_date": "mid to late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag of compound at planting, topdress urea at knee-high stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "tractor plow and harrow before planting",
+        "labor_family_days": 60,
+        "labor_hired_days": 40,
+        "yield_expectation_kg_per_mu": 470,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 59.9,
+        "expected_yield_kg_per_mu": 470,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5
+      }
+    ],
+    "total_input_cost_yuan": 360000,
+    "reasoning_summary": "I'm doing what I did last year because last year was alright. Cotton on most of the land where it grows best, maize on the low patch where cotton struggles. I watch the plants and add fertilizer if they look hungry, not by any number on a paper. My biggest worry isn't the growing, it's getting enough hands for the cotton pick in the fall and hoping the price doesn't drop before I sell."
+  },
+  "elapsed_seconds": 63.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_11",
+  "tier": 4,
+  "provider": "claude"
+}

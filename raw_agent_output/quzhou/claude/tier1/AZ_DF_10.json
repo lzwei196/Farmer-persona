@@ -1,0 +1,40 @@
+{
+  "raw_response": "Looking at my situation: I've been farming this land for over 30 years, and my family's land is about 10 mu total in Quzhou. Around here, everyone grows winter wheat then summer corn \u2014 it's the rotation I know, the buyers are reliable, and the input costs are predictable. My neighbors do it, my father did it, and the village cooperative helps us sell both.\n\nI'm not going to try cotton \u2014 prices have been bad and it needs too much hand labor my back can't handle anymore. I've heard about people trying vegetables but that's risky without a contract, and I don't have connections to those markets.\n\nFor wheat this coming winter, I'll plant improved seed (the agricultural station here pushed \"Jimai 22\" and it outyields the traditional seed we used to save). For corn in summer, I've been using hybrid seed for years \u2014 no question there. I use rotary tillage before wheat because my fields get compacted; for corn I just go straight in after wheat harvest since time is tight.\n\nOn fertilizer, I put down a bit more than recommended \u2014 the soil here is thin and I'd rather not risk a bad yield. My irrigation schedule follows what I've always done: wheat needs water 3-4 times (jointing, heading, grain fill, and one in winter), corn only needs 1-2 since summer rains usually help.\n\nFor pesticide, wheat gets sprayed for rust and aphids in spring \u2014 can't skip that. Corn gets one herbicide pass early on.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 52-year-old smallholder farmer in Quzhou County, Hebei, managing 10 mu under the dominant winter wheat / summer maize double-cropping rotation. Improved wheat seed and hybrid maize seed are used for reliable yield gains over traditional varieties. Fertilizer rates are set slightly above extension recommendations reflecting habitual risk-aversion on thin North China Plain soils. Wheat receives four irrigations to cover the water-deficit growing season; maize relies more on summer rainfall with two supplemental irrigations. Rotary tillage prepares the wheat seedbed while no-tillage is used for maize to save time and cost in the tight summer turnaround window. Pesticide use is minimal but not skipped, particularly fungicide and insecticide applications on wheat in spring.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 52-year-old smallholder farmer in Quzhou County, Hebei, managing 10 mu under the dominant winter wheat / summer maize double-cropping rotation. Improved wheat seed and hybrid maize seed are used for reliable yield gains over traditional varieties. Fertilizer rates are set slightly above extension recommendations reflecting habitual risk-aversion on thin North China Plain soils. Wheat receives four irrigations to cover the water-deficit growing season; maize relies more on summer rainfall with two supplemental irrigations. Rotary tillage prepares the wheat seedbed while no-tillage is used for maize to save time and cost in the tight summer turnaround window. Pesticide use is minimal but not skipped, particularly fungicide and insecticide applications on wheat in spring."
+  },
+  "elapsed_seconds": 31.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_10",
+  "tier": 1,
+  "provider": "claude"
+}

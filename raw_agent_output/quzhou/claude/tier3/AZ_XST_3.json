@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this ground for 45 years, so I start from what I did last year and adjust for conditions. My 16.1 mu splits into two systems: 12 mu on the better plots runs wheat-maize double crop like most of our village, and 4.1 mu on the sandier piece I keep in cotton \u2014 it does better there and cotton prices have held up enough to justify the labor.\n\nFor winter wheat, I'll plant an improved variety \u2014 Jimai 22 or similar, something my neighbors had good results with. I'll broadcast a compound fertilizer (15-15-15, about 50 kg/mu) before ploughing, then topdress urea at greening. That gives me roughly 27 kg N, 10 kg P2O5, 7 kg K2O per mu. I irrigate 4 times: after sowing, before winter, at greening, and at heading \u2014 our wells are deep now, so I don't waste water, but wheat cannot short the jointing irrigation or yield drops hard. Two sprays: one herbicide in spring, one fungicide-plus-aphicide mix at booting. I expect 500 kg/mu in a normal year.\n\nFor summer maize after wheat harvest, I no-till direct seed into wheat stubble \u2014 saves me a pass and keeps moisture. Hybrid seed, Zhengdan 958 type. I sidedress urea at the big trumpet stage and use a base compound at sowing. About 22 kg N, 6 kg P2O5, 6 kg K2O per mu. One irrigation at tasseling if July rains are short. One spray for corn borer. 600 kg/mu is my target.\n\nFor cotton, I plough that plot deep in spring, plant an improved Bt variety to save on bollworm sprays. Cotton is hungry for potassium here or the bolls stay small. About 20 kg N, 8 kg P2O5, 10 kg K2O per mu, split base and topdress at squaring. Two irrigations, four sprays (aphid, mite, early bollworm, late boll rot). 240 kg/mu seed cotton is realistic.\n\nOnly 2 people at home and family working off-farm, so I hire the combine at wheat and maize harvest \u2014 no choice. I'd rather put on a bit extra fertilizer than come up short at harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I split 16.1 mu into 12 mu wheat-maize double crop on the better ground and 4.1 mu cotton on the sandier plot where it does better. I adjust from last year rather than starting fresh: improved wheat and hybrid maize varieties my neighbors trust, Bt cotton to cut bollworm sprays. Fertilizer rates follow what has worked \u2014 a bit generous on wheat N because a short ear at jointing costs more than extra urea. Wheat takes 4 irrigations from my well, maize usually one at tasseling, cotton two. With only 2 at home and family off-farm, I hire the combine at harvest and keep tillage simple \u2014 rotary before wheat, no-till maize into stubble, deep plough for cotton. I would rather spend a little extra on inputs than gamble the harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I split 16.1 mu into 12 mu wheat-maize double crop on the better ground and 4.1 mu cotton on the sandier plot where it does better. I adjust from last year rather than starting fresh: improved wheat and hybrid maize varieties my neighbors trust, Bt cotton to cut bollworm sprays. Fertilizer rates follow what has worked \u2014 a bit generous on wheat N because a short ear at jointing costs more than extra urea. Wheat takes 4 irrigations from my well, maize usually one at tasseling, cotton two. With only 2 at home and family off-farm, I hire the combine at harvest and keep tillage simple \u2014 rotary before wheat, no-till maize into stubble, deep plough for cotton. I would rather spend a little extra on inputs than gamble the harvest."
+  },
+  "elapsed_seconds": 38.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_3",
+  "tier": 3,
+  "provider": "claude"
+}

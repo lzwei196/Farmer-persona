@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 9 mu for forty years, and I know what works on this land. My household has seven mouths to feed, and with some of my family working off-farm, I do not have extra labor to waste. The wheat-maize rotation is the only system I have ever trusted here in Quzhou.\n\nFor **winter wheat**, I will sow my 9 mu in early October after rotary tillage. I buy improved wheat seed from the shop every year \u2014 saved seed loses vigor, and I cannot afford a bad stand. I will put down compound fertilizer as a basal dressing, and then top-dress with urea at green-up and jointing. All together that comes to about 17 kg of nitrogen per mu. I do not bother with phosphate or potash \u2014 they cost too much, and on this land I do not see the benefit. Because I have a well, I will irrigate four times: at green-up, jointing, heading, and grain filling. Wheat cannot suffer drought at those stages. I will spray herbicide once after sowing, and apply insecticide two or three times during the growing season if I see aphids or other pests. I expect about 500 kg per mu if the weather cooperates.\n\nFor **summer maize**, I sow right after the wheat harvest in early June. I never till for maize \u2014 there is no time between harvest and sowing, and no-tillage saves me labor when my family is busy. I always buy hybrid seed, usually something like Denghai 605. It costs more, but the yield is worth it. I do not apply extra nitrogen to the maize \u2014 the leftover fertility from the wheat is enough, and adding more just wastes money. I will irrigate two or three times, mainly at the big-trumpet stage and grain filling. I will spray for weeds once and for insects twice. I expect about 550 kg per mu.\n\nThis is the same plan I have followed for years. The inputs are not fancy, but they are what my land and my labor can manage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17.0,\n      \"phosphorus_kg_per_mu\": 1.0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 9 mu wheat-maize rotation the way I have for decades. For wheat, I use rotary tillage, improved seed, about 17 kg N per mu from compound and urea, four irrigations from my well, and four pesticide applications. For maize, I use no-tillage to save labor, hybrid seed for yield, no additional nitrogen, two irrigations, and three pesticide sprays. This matches what works on my land with the labor I have available.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17.0,
+        "phosphorus_kg_per_mu": 1.0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage my 9 mu wheat-maize rotation the way I have for decades. For wheat, I use rotary tillage, improved seed, about 17 kg N per mu from compound and urea, four irrigations from my well, and four pesticide applications. For maize, I use no-tillage to save labor, hybrid seed for yield, no additional nitrogen, two irrigations, and three pesticide sprays. This matches what works on my land with the labor I have available."
+  },
+  "elapsed_seconds": 298.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_3",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 45 years. I know what it needs and what my body can still do. My husband and I are the only two working this farm now \u2014 I have to be realistic about labor, especially with cotton picking in autumn. My wheat and maize go together on the same 20 mu, rotating through the year the way I've always done. The other 13 mu I put into cotton for the cash income.\n\nFor wheat, I sow in early October after rotary-tilling. I buy the improved variety from the township supply co-op \u2014 the old seeds don't yield enough anymore and I've seen that myself. I put down compound fertilizer as base and chase it with urea at jointing. Three waterings: before winter sets in, at jointing, and at heading. A couple of pesticide sprays for the aphids and rust that always come.\n\nMaize I seed straight into the wheat stubble right after June harvest \u2014 no-till, the seeder handles it. Hybrid seed, same as everyone around here. Less fussing than wheat. Two irrigations unless the summer is dry, then three.\n\nCotton is the hardest work. 13 mu is already pushing what the two of us can pick before frost. I plough deep in spring, plant in late April. Cotton needs water through bolling and it needs spraying \u2014 bollworm doesn't forgive laziness. I'll spray six or seven times. The yield won't be spectacular but it pays for the inputs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 13,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"A 67-year-old farmer with 2 household laborers allocates 20 mu to a winter wheat\u2013summer maize rotation and 13 mu to cotton, keeping total managed area at 33 mu. Wheat and maize use improved or hybrid seed reflecting decades of local adoption; rotary tillage precedes wheat while no-till follows wheat harvest into maize to save labor and moisture. Fertilizer rates follow local convention with higher nitrogen on cotton due to its long season and fiber demand. Cotton receives the most irrigation and by far the most pesticide applications \u2014 reflecting the crop's pest pressure from bollworm, aphids, and mites \u2014 but area is capped at 13 mu to stay within what two aging household members can manually harvest before frost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 13,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "A 67-year-old farmer with 2 household laborers allocates 20 mu to a winter wheat\u2013summer maize rotation and 13 mu to cotton, keeping total managed area at 33 mu. Wheat and maize use improved or hybrid seed reflecting decades of local adoption; rotary tillage precedes wheat while no-till follows wheat harvest into maize to save labor and moisture. Fertilizer rates follow local convention with higher nitrogen on cotton due to its long season and fiber demand. Cotton receives the most irrigation and by far the most pesticide applications \u2014 reflecting the crop's pest pressure from bollworm, aphids, and mites \u2014 but area is capped at 13 mu to stay within what two aging household members can manually harvest before frost."
+  },
+  "elapsed_seconds": 43.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_9",
+  "tier": 2,
+  "provider": "claude"
+}

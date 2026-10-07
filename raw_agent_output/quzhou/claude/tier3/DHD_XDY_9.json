@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been doing this 45 years. My man and me work 33 mu. No children here to help, so we do what we can and hire a little help at busy times.\n\nI do like everyone in our village does. The good land we plant wheat in winter, then maize after the wheat comes off in summer \u2014 same ground, two crops. That is 20 mu. The other 13 mu I put in cotton because cotton likes the sandier piece and we have grown cotton there for many years.\n\nFor fertilizer I buy what the shop in town sells, same as my neighbors. For wheat I put two bags of the compound (that is 100 jin, 50 kg) per mu before I plough, and then I top-dress with one bag of urea when it greens up in spring \u2014 that is about half a bag, 25 jin per mu. My neighbor Old Wang did less one year and his wheat was yellow and thin, so I do not cut back. Better to spend the money than see a bad harvest.\n\nFor maize after wheat, I put urea twice \u2014 once at knee-high, once when the tassel comes. Maize here does well, 1000 jin per mu is normal.\n\nFor cotton I put more fertilizer because cotton eats a lot. I also spray many times \u2014 cotton bugs are bad, bollworm and aphid. I spray whenever I see bugs, maybe six times in a season. This is what everyone does or you lose the bolls.\n\nSeeds I buy from the dealer, the improved kind \u2014 the old seeds nobody sells anymore. Plough-man comes with the rotary machine, 40 yuan a mu, everyone uses him.\n\nIrrigation \u2014 we have a well. Wheat I water three or four times: after planting, in spring when it greens up, at jointing, and when the grain fills. Maize one or two waters if the rain is short. Cotton two or three waters.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 13.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I farm 33 mu the way our village always does \u2014 20 mu in wheat-then-maize on the good ground, 13 mu in cotton on the sandy piece. I put two bags of compound fertilizer before planting and top-dress with urea like my neighbors, because I would rather spend a little extra than see yellow crops. Cotton I spray many times because the bugs are bad. I buy improved seeds from the dealer, the rotary man comes to till, and I water from our well when the crops need it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 13.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I farm 33 mu the way our village always does \u2014 20 mu in wheat-then-maize on the good ground, 13 mu in cotton on the sandy piece. I put two bags of compound fertilizer before planting and top-dress with urea like my neighbors, because I would rather spend a little extra than see yellow crops. Cotton I spray many times because the bugs are bad. I buy improved seeds from the dealer, the rotary man comes to till, and I water from our well when the crops need it."
+  },
+  "elapsed_seconds": 32.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_9",
+  "tier": 3,
+  "provider": "claude"
+}

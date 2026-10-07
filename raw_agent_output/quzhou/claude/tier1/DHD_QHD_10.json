@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou my whole life. My family has about 8 mu. My husband does some off-farm work in town now, so I manage most of the fieldwork myself, sometimes hiring day labor at harvest. At 55, I'm not going to change what works \u2014 around here, everyone grows wheat in winter and corn in summer on the same land. That's the rotation. The soil knows it, the market knows it, I know it.\n\nFor wheat I'll use the improved variety seeds I buy from the co-op in town \u2014 same ones I've used the last three years, good against rust. For corn I always buy hybrid seed bags, the\u90d1\u5355 type, from the same shop. I don't save seed.\n\nFertilizer: I apply compound fertilizer as base before sowing, then urea top-dressing at jointing for wheat, and chase-fertilize corn around the 10-leaf stage. I probably put on a bit more than I need to \u2014 my father taught me that skimping on fertilizer is skimping on the harvest.\n\nFor irrigation I pump from the village well. Wheat needs water before freeze, again at jointing, and at heading \u2014 three times minimum, four if spring is dry. Corn I mostly leave to rain except once if July is bad.\n\nPesticides: I spray herbicide on the wheat in spring, and a fungicide pass if I see any yellow rust or powdery mildew. For corn I do one herbicide pass right after emergence and watch for \u7389\u7c73\u879f \u2014 usually one insecticide spray.\n\nTillage: I do rotary tillage with the village's shared machine before each sowing. I haven't tried no-till \u2014 I don't trust it yet.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 570\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou under the standard winter wheat\u2013summer maize rotation that has defined this area for generations. I choose improved wheat varieties with good disease resistance bought from the local co-op, and hybrid maize seed from the same supplier. Fertilizer rates follow what my neighbors and experience suggest \u2014 compound base plus urea top-dress \u2014 erring slightly high because underfertilizing feels riskier than overfertilizing. Wheat gets three groundwater irrigations at critical growth stages; maize relies mostly on summer rain with one supplemental pump if needed. Pest management is two passes each crop: herbicide plus a fungicide or insecticide depending on what I see in the field. I use rotary tillage before every sowing because it is what the shared village machinery does and I trust the result.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 570
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou under the standard winter wheat\u2013summer maize rotation that has defined this area for generations. I choose improved wheat varieties with good disease resistance bought from the local co-op, and hybrid maize seed from the same supplier. Fertilizer rates follow what my neighbors and experience suggest \u2014 compound base plus urea top-dress \u2014 erring slightly high because underfertilizing feels riskier than overfertilizing. Wheat gets three groundwater irrigations at critical growth stages; maize relies mostly on summer rain with one supplemental pump if needed. Pest management is two passes each crop: herbicide plus a fungicide or insecticide depending on what I see in the field. I use rotary tillage before every sowing because it is what the shared village machinery does and I trust the result."
+  },
+  "elapsed_seconds": 43.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_10",
+  "tier": 1,
+  "provider": "claude"
+}

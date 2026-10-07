@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the usual winter wheat and summer maize rotation. I am in Quzhou County on the North China Plain, and this system fits our weather, water pattern, machinery, and selling channels. Wheat uses the winter-spring season, and then maize catches the summer rain. At my age, I would not spread myself across too many crops. Cotton and vegetables need more labor, closer field watching, and more marketing trouble. I would rather run a steady grain plan that I know well and can finish on time.\n\nSo this year I will put all my land into two crops on the same fields: winter wheat first, then summer maize after wheat harvest. For wheat, I will use an improved variety, give moderate fertilizer, irrigate mainly in the key spring stages, control weeds and disease with two sprays, and use rotary tillage because it is faster and easier for me than deep ploughing every time. After wheat harvest, I will sow hybrid summer maize quickly, mostly with no-tillage or very light disturbance so I do not lose soil moisture or delay planting. Maize will need less irrigation because summer rain does more of the work here, but I will still keep one irrigation ready if the rain is short. This is the simplest plan with the best balance of labor, yield, and risk for me. This matches the dominant Quzhou cropping pattern reported for the county, where winter wheat and summer maize are the main rotation and most rainfall comes in the maize season: https://pmc.ncbi.nlm.nih.gov/articles/PMC5290742/ and https://pmc.ncbi.nlm.nih.gov/articles/PMC7988609/\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 18,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 560\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 18,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 680\n    }\n  ],\n  \"reasoning_summary\": \"I will plant a full winter wheat and summer maize rotation on the same 18 mu because it is the most familiar, practical, and lower-labor system for me in Quzhou County. I am 68 years old, so I will avoid labor-intensive cash crops and keep to grain crops that match local machinery, local rainfall, and normal selling channels. I will manage wheat with moderate fertilizer, three irrigations, two pesticide applications, and rotary tillage, then follow quickly with hybrid summer maize under no-tillage to save time and moisture, using one irrigation if needed and two pesticide applications to protect yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 18,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 560
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 18,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 680
+      }
+    ],
+    "reasoning_summary": "I will plant a full winter wheat and summer maize rotation on the same 18 mu because it is the most familiar, practical, and lower-labor system for me in Quzhou County. I am 68 years old, so I will avoid labor-intensive cash crops and keep to grain crops that match local machinery, local rainfall, and normal selling channels. I will manage wheat with moderate fertilizer, three irrigations, two pesticide applications, and rotary tillage, then follow quickly with hybrid summer maize under no-tillage to save time and moisture, using one irrigation if needed and two pesticide applications to protect yield."
+  },
+  "elapsed_seconds": 44.1,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "BZ_FYJ_10",
+  "tier": 1,
+  "provider": "codex"
+}

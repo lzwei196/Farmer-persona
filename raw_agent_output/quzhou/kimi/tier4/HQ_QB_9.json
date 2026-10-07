@@ -1,0 +1,75 @@
+{
+  "raw_response": "I'm 66 this year, been farming these fields for 35 years. It's just me and my wife at home \u2014 our son works in a factory in the city and sends a bit of money back when he can, but we can't count on it. We have 10 mu of good flat land here in Quzhou. I only went to primary school, but I know this soil better than any professor. \n\nFor the winter wheat, I plant in the first week of October, always have. I buy improved seed, about 35 jin per mu. Before planting, I spread one full bag of compound fertilizer per mu \u2014 that's been my base for 20 years. When the wheat starts jointing around Qingming, I topdress about 30 jin of urea per mu. My neighbor Lao Wang uses more, but he has more money and his son helps full-time. I irrigate three times: once before winter if the ground is dry, once at jointing, and once when the grain is filling. Pumping costs electricity money, so three times is my limit. I spray herbicide after planting, and if I see powdery mildew, I get fungicide. I hire the combine for harvest in early June \u2014 my back can't handle swinging a sickle anymore. I expect about 400 kg per mu if the weather is fair.\n\nSummer maize goes in right after wheat comes out, mid-June, sometimes the very next morning. The window is tight, no time for deep plowing. I buy hybrid seed from the shop, about 3 jin per mu. I put about 80 jin of compound fertilizer per mu in the furrow when planting. When the maize is knee-high, I side-dress about 20 jin of urea per mu \u2014 not as much as wheat, but enough. Maize doesn't need as much water, and the summer rains usually come, so I'll irrigate once, maybe at flowering if it's too dry. I spray herbicide, and if armyworms show up, I buy insecticide.\n\nI do most work myself, though I pay for the combine and sometimes hire a neighbor with a tractor planter when I'm running late. My wife helps spread fertilizer and cook. We have to be careful with cash \u2014 she needs medicine, and we must keep some savings. I'd rather use a bit too much fertilizer than too little, because losing a crop would break us. But I also won't spend every yuan on inputs. That's how I've survived 35 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 10.1,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 40,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14.4,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound fertilizer broadcast before planting, urea topdressed at jointing\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"fungicide\"],\n      \"tillage_method\": \"rotary tillage after maize harvest\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 10.1,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10.6,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound fertilizer in planting furrow, urea side-dressed at big-flare stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"shallow rotary tillage after wheat harvest\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 7600,\n  \"reasoning_summary\": \"I've farmed these 10 mu for 35 years and I know what works. Wheat is my main crop and gets the most attention \u2014 one bag of compound fertilizer per mu as a base, plus urea at jointing, and three irrigations. Maize is planted in a rush right after wheat harvest; I use less fertilizer and only one irrigation because summer rain usually helps and I need to save money for my wife's medicine. I hire the combine for harvest but do most other work myself. I keep some cash in reserve rather than spending everything on inputs, because a bad year hurts more than a good year helps.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 10.1,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 40,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14.4,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound fertilizer broadcast before planting, urea topdressed at jointing",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "fungicide"
+        ],
+        "tillage_method": "rotary tillage after maize harvest",
+        "labor_family_days": 15,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 14.4,
+        "area_mu": 10.1,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 10.1,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10.6,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound fertilizer in planting furrow, urea side-dressed at big-flare stage",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "shallow rotary tillage after wheat harvest",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 10.6,
+        "area_mu": 10.1,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      }
+    ],
+    "total_input_cost_yuan": 7600,
+    "reasoning_summary": "I've farmed these 10 mu for 35 years and I know what works. Wheat is my main crop and gets the most attention \u2014 one bag of compound fertilizer per mu as a base, plus urea at jointing, and three irrigations. Maize is planted in a rush right after wheat harvest; I use less fertilizer and only one irrigation because summer rain usually helps and I need to save money for my wife's medicine. I hire the combine for harvest but do most other work myself. I keep some cash in reserve rather than spending everything on inputs, because a bad year hurts more than a good year helps."
+  },
+  "elapsed_seconds": 175.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_9",
+  "tier": 4,
+  "provider": "kimi"
+}

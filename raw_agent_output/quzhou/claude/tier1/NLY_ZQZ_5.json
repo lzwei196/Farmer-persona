@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 73 years old and have been farming this land in Quzhou for more than fifty years. My back is not what it was, and my youngest son helps me when the heavy work comes. I have about 6 mu of flat field \u2014 the same land my father worked.\n\nThere is no question what I grow. I grow winter wheat and summer corn, the same as every year, the same as my neighbors. That is what this land is for. Anyone in Quzhou will tell you the same. I would not try something new at my age \u2014 I do not have the energy to lose a crop on an experiment.\n\nFor the wheat, I plant in early October after the autumn rains. The village agricultural station sells improved seeds \u2014 I buy those, they give better ears than the old varieties I used to save myself. I apply compound fertilizer before plowing and put urea down at jointing in spring. I irrigate three times: once before the ground freezes, once when the plants wake up in March, once when the grain is filling in May. I spray once for weeds in late autumn, once more in spring for powdery mildew and aphids. I hire the neighbor's rotary tiller \u2014 I cannot run the tractor myself anymore.\n\nThe corn goes in immediately after I cut the wheat in June, on the same 6 mu. I use the hybrid seed everyone buys now \u2014 Zhengdan 958, same as last year. It yields well and I know it. I put the fertilizer on in two goes. The summer rains usually water the corn for me; I only irrigate once if August turns dry. I spray herbicide right after planting and watch for the fall armyworm \u2014 if I see it, I spray once more. I do not plow before the corn \u2014 the wheat stubble is short after the machine harvest, I just plant into it directly.\n\nI expect around 420 jin of wheat per mu and maybe 550 jin of corn per mu. That is what I get most years. Not the highest in the village, but steady.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 73-year-old smallholder in Quzhou County, Hebei follows the deeply established winter wheat\u2013summer maize double-cropping rotation on 6 mu of flat irrigated land. Crop choice reflects regional tradition, not experimentation: improved wheat varieties from the county station are planted in October with rotary tillage, receiving three irrigations across the season and two pesticide treatments; hybrid maize (Zhengdan 958) is direct-seeded into wheat stubble in June with no tillage, relying mainly on summer rainfall with one supplemental irrigation. Fertilizer rates, particularly nitrogen, are on the high side of typical smallholder practice, reflecting habits formed over decades without formal agronomic training. Yields are conservative but reliable, consistent with what an older farmer managing hired tractor labor and family help can realistically achieve on North China Plain conditions.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 73-year-old smallholder in Quzhou County, Hebei follows the deeply established winter wheat\u2013summer maize double-cropping rotation on 6 mu of flat irrigated land. Crop choice reflects regional tradition, not experimentation: improved wheat varieties from the county station are planted in October with rotary tillage, receiving three irrigations across the season and two pesticide treatments; hybrid maize (Zhengdan 958) is direct-seeded into wheat stubble in June with no tillage, relying mainly on summer rainfall with one supplemental irrigation. Fertilizer rates, particularly nitrogen, are on the high side of typical smallholder practice, reflecting habits formed over decades without formal agronomic training. Yields are conservative but reliable, consistent with what an older farmer managing hired tractor labor and family help can realistically achieve on North China Plain conditions."
+  },
+  "elapsed_seconds": 51.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_5",
+  "tier": 1,
+  "provider": "claude"
+}

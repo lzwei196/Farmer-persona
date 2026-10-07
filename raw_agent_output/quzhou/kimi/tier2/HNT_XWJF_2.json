@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old and have worked this land for 40 years. My wife and I have only two pairs of hands, so I must be practical. I have 9.5 mu in Quzhou. The wheat is already in the field from last autumn\u2014that is my base. I keep 7 mu in the wheat-maize rotation because that feeds us and brings steady grain income. The other 2.5 mu I plant to cotton, which I know well and which pays when prices are right. I have well water, so I can irrigate when the rains fail, but I do not waste water or money on inputs I do not need.\n\nFor the wheat already growing: I will top-dress with urea at green-up and irrigate three times this spring\u2014green-up, jointing, and filling. I will spray twice, once for weeds and once for insects or disease if I see it. I use an improved wheat variety, not some fancy new thing I do not trust. I rotary-tilled before planting last autumn. I expect about 450 kg per mu if the weather holds.\n\nFor summer maize: As soon as the wheat comes off in early June, I will plant hybrid maize directly into the stubble without ploughing. There is no time to waste between crops, and no-tillage saves me labor. I will give it two irrigations and two pesticide applications. I expect around 550 kg per mu.\n\nFor cotton: In April I will rotary till the 2.5 mu and plant hybrid cotton seed. Cotton is thirsty and attracts bollworm, so I will irrigate three times and spray four times. I expect about 260 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 9.5 mu for 40 years and know what my two-person household can manage. I keep 7 mu in wheat-maize double cropping because it is reliable and provides both food and income, while the remaining 2.5 mu goes to cotton, a crop I understand well and that has historically done well in Quzhou. With well irrigation I can manage water carefully, but at 65 I save labor where possible\u2014using no-tillage for summer maize to meet the narrow planting window after wheat harvest, and keeping pesticide and fertilizer use at practical, moderate levels based on experience rather than excessive spending.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I have farmed these 9.5 mu for 40 years and know what my two-person household can manage. I keep 7 mu in wheat-maize double cropping because it is reliable and provides both food and income, while the remaining 2.5 mu goes to cotton, a crop I understand well and that has historically done well in Quzhou. With well irrigation I can manage water carefully, but at 65 I save labor where possible\u2014using no-tillage for summer maize to meet the narrow planting window after wheat harvest, and keeping pesticide and fertilizer use at practical, moderate levels based on experience rather than excessive spending."
+  },
+  "elapsed_seconds": 165.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HNT_XWJF_2",
+  "tier": 2,
+  "provider": "kimi"
+}

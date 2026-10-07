@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 8 years and I know Quzhou's conditions well \u2014 hot summers, cold winters, limited rainfall, and my well pump to make up the difference. My 4.1 mu isn't much, but between the wheat-maize rotation and some cotton, I keep the household fed and earn some cash. A few family members work in town, so I can't always count on their labor during peak times, which shapes how I plan things.\n\n**My thinking:**\n\nFor the wheat-maize rotation, I'll put about 2.6 mu into it. Wheat goes in October, I harvest it in June, then I plant maize directly into the stubble \u2014 no-till saves me time and diesel. Wheat I'll use Jimai varieties, the kind my neighbors use and that the ag station recommends. For maize I'll buy Zhengdan 958 hybrid seed like I always do \u2014 the yield is reliable.\n\nCotton gets the remaining 1.5 mu. I'll plough it in spring before planting. I use the hybrid Bt cotton seed; it cuts down on bollworm spraying a lot. Cotton brings in more cash per mu than grain but it also takes more labor, especially at harvest. With some family members off-farm, I keep the cotton plot small enough that my wife and I can manage it, maybe with my parents helping during picking.\n\nFor fertilizer I follow roughly what the village tech person suggests \u2014 base fertilizer before sowing, then urea as topdressing. I use the well 3 times for wheat, twice for maize, and 4 times for cotton since it's thirstier during flowering and boll setting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 2.6 mu to the wheat-maize rotation, which is my main food crop and the backbone of my farming calendar, and reserve 1.5 mu for cotton as my primary cash crop. I use improved wheat seed (local Jimai variety) and hybrid maize (Zhengdan 958) because I trust their yields in Quzhou's conditions. For cotton I use Bt hybrid seed to reduce bollworm pressure and keep pesticide costs down. I no-till the maize after wheat harvest to save labor and fuel, since some household members are off-farm and I cannot always get help. Irrigation from my well supplements the limited rainfall, with wheat needing three waterings, maize two, and cotton four across its longer growing period. Fertilizer rates follow local guidance with nitrogen split between base application and topdressing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I allocate 2.6 mu to the wheat-maize rotation, which is my main food crop and the backbone of my farming calendar, and reserve 1.5 mu for cotton as my primary cash crop. I use improved wheat seed (local Jimai variety) and hybrid maize (Zhengdan 958) because I trust their yields in Quzhou's conditions. For cotton I use Bt hybrid seed to reduce bollworm pressure and keep pesticide costs down. I no-till the maize after wheat harvest to save labor and fuel, since some household members are off-farm and I cannot always get help. Irrigation from my well supplements the limited rainfall, with wheat needing three waterings, maize two, and cotton four across its longer growing period. Fertilizer rates follow local guidance with nitrogen split between base application and topdressing."
+  },
+  "elapsed_seconds": 44.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_11",
+  "tier": 2,
+  "provider": "claude"
+}

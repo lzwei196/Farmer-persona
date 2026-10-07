@@ -1,0 +1,74 @@
+{
+  "raw_response": "I am a 62-year-old farmer with a high education level and 40 years of experience. I farm 8 mu in Quzhou County with my wife, running a wheat-maize double-cropping system. Let me think through my plan for this year.\n\n**My reasoning:**\n\nForty years on this land means I know every plot. With my education, I understand nutrient management and crop physiology, but I am still a smallholder \u2014 just two of us, limited cash, and every yuan matters. I target yields of around 450 kg/mu for wheat and 500 kg/mu for maize, which is realistic with decent weather.\n\nFor **winter wheat**, I plant in early October (around October 8) with an improved semi-dwarf variety. I apply a base fertilizer of compound fertilizer before planting \u2014 about 10 kg N, 8 kg P\u2082O\u2085, and 5 kg K\u2082O per mu \u2014 then topdress with 8 kg N per mu at jointing in March if the stand looks good. I irrigate three times: winter irrigation in late November, jointing stage in spring, and heading stage. I use herbicide once in spring. With only two of us, I hire a custom operator for sowing and combine harvesting, but we handle spreading fertilizer and irrigation ourselves.\n\nFor **summer maize**, the turnaround after wheat harvest is brutally tight \u2014 usually 5\u20137 days. I harvest wheat around June 10, shred the straw, and plant hybrid maize by June 14. I apply all fertilizer at planting \u2014 about 15 kg N, 6 kg P\u2082O\u2085, and 4 kg K\u2082O per mu \u2014 because there is no time for split application in this system. I irrigate immediately after planting for emergence, and once more at tasseling if rainfall is insufficient. Labor is tight, so I hire help for the rapid wheat harvest and maize planting sequence.\n\nI am slightly conservative on nitrogen this year \u2014 not because I don't know the optimal rate, but because input prices have been high and at my scale, the risk of cash shortage matters more than chasing the last 5% of yield. I would rather under-apply slightly than run out of money for the maize season.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 8.0,\n      \"planting_date\": \"early October (around Oct 8)\",\n      \"harvest_date\": \"early-mid June (around Jun 10)\",\n      \"seed_type\": \"improved semi-dwarf variety\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 18,\n      \"phosphorus_total_kg_per_mu\": 8,\n      \"potassium_total_kg_per_mu\": 5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: compound fertilizer before planting; topdress: urea at jointing stage in March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plowing after maize harvest, harrowing before wheat sowing\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 8.0,\n      \"planting_date\": \"mid June (around Jun 14, immediately after wheat harvest)\",\n      \"harvest_date\": \"late September to early October (around Sep 30\u2013Oct 5)\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"all applied at planting as compound fertilizer due to tight turnaround\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"minimal tillage \u2014 straw shredding after wheat, direct planting or light cultivation\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 4,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 5200,\n  \"reasoning_summary\": \"I am targeting 450 kg/mu for wheat and 500 kg/mu for maize, which is achievable with good management on my 8 mu. I split nitrogen for wheat because I have time and it improves efficiency, but for maize everything goes at planting due to the tight turnaround. I irrigate three times for wheat and twice for maize. I hire labor for mechanized operations because there are only two of us, but we handle fertilizer and irrigation ourselves to save money. I am keeping N rates slightly conservative this year to protect my cash position \u2014 I know the science says I could push higher, but a smallholder cannot afford to gamble on input prices.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 8.0,
+        "planting_date": "early October (around Oct 8)",
+        "harvest_date": "early-mid June (around Jun 10)",
+        "seed_type": "improved semi-dwarf variety",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 18,
+        "phosphorus_total_kg_per_mu": 8,
+        "potassium_total_kg_per_mu": 5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: compound fertilizer before planting; topdress: urea at jointing stage in March",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plowing after maize harvest, harrowing before wheat sowing",
+        "labor_family_days": 14,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 18,
+        "area_mu": 8.0,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 8.0,
+        "planting_date": "mid June (around Jun 14, immediately after wheat harvest)",
+        "harvest_date": "late September to early October (around Sep 30\u2013Oct 5)",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "all applied at planting as compound fertilizer due to tight turnaround",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "minimal tillage \u2014 straw shredding after wheat, direct planting or light cultivation",
+        "labor_family_days": 12,
+        "labor_hired_days": 4,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 8.0,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4
+      }
+    ],
+    "total_input_cost_yuan": 5200,
+    "reasoning_summary": "I am targeting 450 kg/mu for wheat and 500 kg/mu for maize, which is achievable with good management on my 8 mu. I split nitrogen for wheat because I have time and it improves efficiency, but for maize everything goes at planting due to the tight turnaround. I irrigate three times for wheat and twice for maize. I hire labor for mechanized operations because there are only two of us, but we handle fertilizer and irrigation ourselves to save money. I am keeping N rates slightly conservative this year to protect my cash position \u2014 I know the science says I could push higher, but a smallholder cannot afford to gamble on input prices."
+  },
+  "elapsed_seconds": 87.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_4",
+  "tier": 4,
+  "provider": "kimi"
+}

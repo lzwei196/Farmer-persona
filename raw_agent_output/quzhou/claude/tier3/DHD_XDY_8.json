@@ -1,0 +1,53 @@
+{
+  "raw_response": "I plant like my neighbors plant. I been doing this long time, I know what works in our village.\n\nMy 8 mu \u2014 I put 3 mu for cotton on the sandy piece, and 5 mu I do wheat then maize, like everyone here does.\n\n**Wheat** (the big winter crop):\nI put down 2 bags of compound fertilizer before ploughing, that's one bag each half-mu. Then when the wheat turn green in spring I spread 1 bag of urea per mu, maybe a little more if the leaves look pale. My father-in-law always said \"feed the wheat in spring or it won't fill.\" I water 3 times \u2014 once before winter so roots don't die, once at green-up, once when the ears come out. If bugs come I spray, usually 2 times. I use the same seed the seed shop sell everyone, improved kind, not the old village seed.\n\n**Maize** after wheat:\nI don't plough, just push the seed in right after wheat harvest, time is short, rain coming. One bag compound at planting, one bag urea when it come to my knee. Water 2 times if the rain don't come. Spray once for the borer worm. I buy hybrid seed, everyone does, the old seed give nothing.\n\n**Cotton** on the sandy 3 mu:\nCotton eat a lot but my land is poor there. 1 bag compound before planting, half bag urea at squaring, half bag at boll. Water 3 times. Cotton got many bugs \u2014 I spray 6 times, sometimes 7, my neighbor spray 8. If I spray less the bollworm eat everything. I use the improved seed with the bug-resist in it, cheaper spraying.\n\nI don't waste money but I don't short the fertilizer either. Bad harvest is worse than spending extra 100 yuan on urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5 mu wheat-maize like most people in Quzhou, and 3 mu cotton on the sandy ground. I buy fertilizer by the bag \u2014 2 bags compound plus 1 bag urea for wheat, same for maize, and cotton I spread across the season because the sandy land loses it fast. I water from the well when rain is short, spray more on cotton because of bollworm, less on grain. I don't measure kilos, I follow what my neighbors do and what worked last year \u2014 a little extra fertilizer costs less than losing the harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I farm 5 mu wheat-maize like most people in Quzhou, and 3 mu cotton on the sandy ground. I buy fertilizer by the bag \u2014 2 bags compound plus 1 bag urea for wheat, same for maize, and cotton I spread across the season because the sandy land loses it fast. I water from the well when rain is short, spray more on cotton because of bollworm, less on grain. I don't measure kilos, I follow what my neighbors do and what worked last year \u2014 a little extra fertilizer costs less than losing the harvest."
+  },
+  "elapsed_seconds": 43.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_8",
+  "tier": 3,
+  "provider": "claude"
+}

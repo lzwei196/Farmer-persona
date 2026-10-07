@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 45 years old and have been farming in Quzhou County since I was a teenager. My family has about 12 mu of good flat land on the North China Plain, and I know this soil well. I finished middle school, so I can read seed labels and follow extension recommendations, but I am not one to gamble with new crops I do not trust.\n\nThis year, I will stick to what works: **winter wheat followed by summer maize** on all 12 mu. That is the rotation everyone here relies on. The wheat is already in the ground from last autumn. In March I will top-dress with urea when the wheat greens up, and I will irrigate three times\u2014once at jointing, once at heading, and once at grain filling if the spring is dry. I use improved wheat seed varieties that the local ag-supply shop recommends; they are not the most expensive hybrids, but they give me a stable 500 jin per mu and the grain buyer always takes them. I rotary-till before sowing wheat to break up the corn stubble.\n\nAfter wheat harvest in early June, I will immediately plant summer maize with a no-till seeder. There is no time to waste between crops, and the soil holds enough moisture from the wheat season. I buy hybrid maize seed\u2014usually something like Nongda 372\u2014because the hybrid vigor is obvious; even with only two irrigations and less fertilizer than the wheat, I get 550 jin per mu or better. I spray herbicide and insecticide three times on the maize to control armyworm and weeds. I apply compound fertilizer at maize sowing and that is usually enough; the crop does not need as much fuss as wheat.\n\nI thought about planting a couple of mu of cotton like some neighbors do, but cotton needs more than a dozen pesticide sprays and hiring pickers is expensive now. Wheat and maize have secure markets, the co-op buys them at guaranteed prices, and I can manage almost all the work myself with my small tractor. That is why I will put all my land into the wheat-maize rotation this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3.5,\n      \"potassium_kg_per_mu\": 3.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 45-year-old middle-school-educated farmer in Quzhou County with about 12 mu of land. I grow winter wheat and summer maize in a double-cropping rotation because this system is proven, mechanized, and has stable markets. Wheat receives rotary tillage, improved seed, three irrigations, and about 18 kg N per mu to achieve roughly 500 kg/mu. Maize is direct-seeded without tillage immediately after wheat harvest using hybrid seed, two irrigations, and about 12 kg N per mu to achieve roughly 550 kg/mu. I avoid cotton because its high labor and pesticide costs are risky for my household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3.5,
+        "potassium_kg_per_mu": 3.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 45-year-old middle-school-educated farmer in Quzhou County with about 12 mu of land. I grow winter wheat and summer maize in a double-cropping rotation because this system is proven, mechanized, and has stable markets. Wheat receives rotary tillage, improved seed, three irrigations, and about 18 kg N per mu to achieve roughly 500 kg/mu. Maize is direct-seeded without tillage immediately after wheat harvest using hybrid seed, two irrigations, and about 12 kg N per mu to achieve roughly 550 kg/mu. I avoid cotton because its high labor and pesticide costs are risky for my household."
+  },
+  "elapsed_seconds": 218.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_1",
+  "tier": 1,
+  "provider": "kimi"
+}

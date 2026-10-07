@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 51-year-old woman with no schooling, but I have farmed these 8 mu in Quzhou for 20 years, and I know what works. My household has 7 mouths, and some of my family work in town, which brings in a little cash, but we still watch every yuan. We grow wheat in winter and maize in summer on the same land \u2014 that is what everyone here does. For wheat, I will rotary-till the soil in early October and sow an improved variety like my neighbors use. I will put down one bag of compound fertilizer per mu \u2014 about 50 kg \u2014 and topdress with half a bag of urea at jointing. That gives the crop enough food without breaking my purse. I will irrigate three times from my well: once before winter freeze, once at green-up, and once at grain filling. I will spray herbicide and insecticide two or three times if the bugs show up. For summer maize, there is no time to plow after wheat harvest \u2014 we plant straight into the stubble with hybrid seed from the shop. I will spread one bag of compound fertilizer at sowing and irrigate twice, because maize drinks less than wheat if the summer rains come. I expect about 900 jin of wheat and 1,000 jin of maize per mu in a normal year, which keeps my family fed and leaves some grain to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20.5,\n      \"phosphorus_kg_per_mu\": 11.0,\n      \"potassium_kg_per_mu\": 2.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14.0,\n      \"phosphorus_kg_per_mu\": 3.0,\n      \"potassium_kg_per_mu\": 3.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu of wheat-maize double crop in Quzhou County. With no formal schooling, I rely on 20 years of personal experience and what my neighbors do. For wheat, I rotary-till before October planting, apply about 50 kg of compound fertilizer plus 25 kg of urea per mu, irrigate three times from my well, and spray pesticides as needed. For maize, I plant hybrid seed immediately after wheat harvest with no time to plow, spread one bag of compound fertilizer per mu, irrigate twice, and spray a few times for weeds and insects. I expect roughly 450 kg/mu of wheat and 500 kg/mu of maize, which is enough for my family of seven and leaves some to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20.5,
+        "phosphorus_kg_per_mu": 11.0,
+        "potassium_kg_per_mu": 2.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14.0,
+        "phosphorus_kg_per_mu": 3.0,
+        "potassium_kg_per_mu": 3.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu of wheat-maize double crop in Quzhou County. With no formal schooling, I rely on 20 years of personal experience and what my neighbors do. For wheat, I rotary-till before October planting, apply about 50 kg of compound fertilizer plus 25 kg of urea per mu, irrigate three times from my well, and spray pesticides as needed. For maize, I plant hybrid seed immediately after wheat harvest with no time to plow, spread one bag of compound fertilizer per mu, irrigate twice, and spray a few times for weeds and insects. I expect roughly 450 kg/mu of wheat and 500 kg/mu of maize, which is enough for my family of seven and leaves some to sell."
+  },
+  "elapsed_seconds": 123.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_8",
+  "tier": 2,
+  "provider": "kimi"
+}

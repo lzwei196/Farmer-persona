@@ -1,0 +1,75 @@
+{
+  "raw_response": "Well, I've got these 3 mu of land, been working them for 25 years now. I'm 49, never went to school, but I know this land. My husband and my eldest son both work over in the county town at a construction site, so they send money home, but they're not here for the day-to-day. It's me, my daughter-in-law, and my mother-in-law who do most of the field work, plus the grandchildren when they're not in school. Seven people total, but only us women and old folks for the farming.\n\nIt's October now, time to plant wheat. I always plant right after National Day, around the 10th or 15th. I buy improved wheat seed from Old Wang's shop \u2014 not the most expensive kind, the regular one. For 3 mu I need about half a bag, maybe a bit more. Costs me about 70 or 80 yuan for all the seed. I hire Zhang's tractor to rotary till the field, costs 40 yuan per mu. Then I spread the fertilizer before planting. I use two bags of that compound fertilizer \u2014 the one with the three numbers on the bag, I don't read them but Old Wang knows which one I mean \u2014 for the whole 3 mu. That's what I've always done. Me and my daughter-in-law plant by hand, takes us two days.\n\nFor water, I irrigate three times for wheat. Once before winter so the roots don't freeze. Then in March when the wheat turns green, I water again. And once more when the heads are filling, around May, if it doesn't rain. The well water costs money \u2014 every time I pump it's about 20 yuan per mu \u2014 so I watch the sky. But I'd rather spend on water than lose the crop. Two years ago I only watered twice and the yield was down, so this year I'm doing three.\n\nIn spring, around Qingming, I spread urea. One bag for the 3 mu. If the wheat looks yellow I might add a bit more, but urea is expensive now, so I'll stick to one bag. I spray herbicide once after the wheat comes up. If there are aphids I spray insecticide too \u2014 last year there weren't many, so maybe just herbicide this year. I expect about 700 to 800 jin per mu if the weather is normal. Last year I got about 750 jin.\n\nAfter we harvest wheat in early June \u2014 I hire the combine, costs about 50 yuan per mu \u2014 we plant maize the same day or next day. No time to waste. I buy hybrid maize seed, about 2 jin per mu, costs more than wheat seed, maybe 45 yuan per mu. For maize, I put one bag of compound fertilizer in the furrows when planting, for the 3 mu. Then when the corn is knee-high, around late July, I spread one and a half bags of urea. That's the most important time \u2014 if you miss that, the ears don't fill.\n\nIrrigate maize once or twice. If it rains in July, maybe just once at the knee-high stage. If it's dry like two years ago, twice. I spray herbicide for sure, and last year we had corn borers, so I better keep some insecticide ready. I expect about 800 to 900 jin per mu for maize.\n\nMoney is tight. Fertilizer and seed prices keep going up. With only 3 mu, I can't afford to waste anything. But I also can't afford to use too little \u2014 a bad year means we don't eat well. My son sends some money, but we need cash for the grandchildren's school. So I do what I always do: two bags compound for wheat base, one bag urea in spring; one bag compound for maize base, one and a half bags urea when it's knee-high. It's not the most, but it's what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"Winter wheat\",\n      \"field_area_mu\": 3,\n      \"planting_date\": \"Mid-October\",\n      \"harvest_date\": \"Early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12.7,\n      \"phosphorus_total_kg_per_mu\": 5.0,\n      \"potassium_total_kg_per_mu\": 5.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: two 50kg bags of compound fertilizer (15-15-15) spread before planting and tilled in across 3 mu. Topdress: one 50kg bag of urea spread at wheat green-up/jointing in late March across 3 mu.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"Rotary tillage by hired tractor before planting\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 375\n    },\n    {\n      \"crop\": \"Summer maize\",\n      \"field_area_mu\": 3,\n      \"planting_date\": \"Mid-June\",\n      \"harvest_date\": \"Late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14.0,\n      \"phosphorus_total_kg_per_mu\": 2.5,\n      \"potassium_total_kg_per_mu\": 2.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Base: one 50kg bag of compound fertilizer (15-15-15) placed in planting furrows across 3 mu. Topdress: one and a half 50kg bags of urea spread at knee-high stage in late July across 3 mu.\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"Minimal tillage, planted directly into wheat stubble immediately after harvest\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 425\n    }\n  ],\n  \"total_input_cost_yuan\": 1750,\n  \"reasoning_summary\": \"With 3 mu and seven mouths to feed, I play it safe. I do wheat-maize double cropping because that's what everyone does and we need both crops. I use two bags of compound fertilizer for wheat base and one bag of urea in spring, then one bag compound for maize and one and a half bags urea when the corn is knee-high. I irrigate wheat three times because last time I only did two the yield dropped. For maize I water once or twice depending on rain. I hire the tractor and combine because we don't have machines, but me and my daughter-in-law do everything else. Money is tight so I don't buy the expensive seed, but I won't cut fertilizer too much either \u2014 a bad harvest hurts more than saving a few yuan on urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "Winter wheat",
+        "field_area_mu": 3,
+        "planting_date": "Mid-October",
+        "harvest_date": "Early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12.7,
+        "phosphorus_total_kg_per_mu": 5.0,
+        "potassium_total_kg_per_mu": 5.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: two 50kg bags of compound fertilizer (15-15-15) spread before planting and tilled in across 3 mu. Topdress: one 50kg bag of urea spread at wheat green-up/jointing in late March across 3 mu.",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "Rotary tillage by hired tractor before planting",
+        "labor_family_days": 12,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 375,
+        "nitrogen_kg_per_mu": 12.7,
+        "area_mu": 3,
+        "expected_yield_kg_per_mu": 375,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 5.0
+      },
+      {
+        "crop": "Summer maize",
+        "field_area_mu": 3,
+        "planting_date": "Mid-June",
+        "harvest_date": "Late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14.0,
+        "phosphorus_total_kg_per_mu": 2.5,
+        "potassium_total_kg_per_mu": 2.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Base: one 50kg bag of compound fertilizer (15-15-15) placed in planting furrows across 3 mu. Topdress: one and a half 50kg bags of urea spread at knee-high stage in late July across 3 mu.",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "Minimal tillage, planted directly into wheat stubble immediately after harvest",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 425,
+        "nitrogen_kg_per_mu": 14.0,
+        "area_mu": 3,
+        "expected_yield_kg_per_mu": 425,
+        "phosphorus_kg_per_mu": 2.5,
+        "potassium_kg_per_mu": 2.5
+      }
+    ],
+    "total_input_cost_yuan": 1750,
+    "reasoning_summary": "With 3 mu and seven mouths to feed, I play it safe. I do wheat-maize double cropping because that's what everyone does and we need both crops. I use two bags of compound fertilizer for wheat base and one bag of urea in spring, then one bag compound for maize and one and a half bags urea when the corn is knee-high. I irrigate wheat three times because last time I only did two the yield dropped. For maize I water once or twice depending on rain. I hire the tractor and combine because we don't have machines, but me and my daughter-in-law do everything else. Money is tight so I don't buy the expensive seed, but I won't cut fertilizer too much either \u2014 a bad harvest hurts more than saving a few yuan on urea."
+  },
+  "elapsed_seconds": 89.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_1",
+  "tier": 4,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land here in Quzhou has always been wheat and corn. My father grew wheat and corn, I grew wheat and corn, and I will grow wheat and corn again this year. The winters are cold, the summers are hot, and that's what fits the land and the seasons here. I have 8 mu. I plant wheat in October when the soil cools and the rains have come, then after the June harvest I turn the ground and put in corn right away before the summer heat peaks. I have done this for fifty years.\n\nFor seeds, I go to the village supply station and buy whatever improved variety they have. The hybrid corn and the improved wheat give more grain than the old seeds my grandfather kept. I don't know the science of it, but I know the yields.\n\nFor fertilizer, I spread compound fertilizer at planting and then top-dress with urea later. My son says I put on too much, but I have seen lean years when I applied less, and I don't want to risk it. Better to have a little extra in the ground.\n\nFor wheat I water four times \u2014 once in winter to protect the roots from freezing, again at jointing, at heading, and at grain filling. For corn I water once at planting if it is dry, and once more if August is bad. We have always relied on the summer rains for corn.\n\nI spray herbicide on the wheat in autumn and again in spring, then a fungicide spray before heading because rust and powdery mildew come every few years. For corn, one herbicide pass and one pesticide spray if I see pests.\n\nBefore wheat I rotary till the field. After wheat harvest, I plant the corn with minimal tillage \u2014 the ground is already worked from the wheat season and I want to get the corn in fast.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 67-year-old farmer with no formal education in Quzhou County follows the dominant local wheat-maize double-cropping rotation on 8 mu of land, relying on decades of inherited practice rather than technical guidance. Improved wheat varieties and hybrid maize seed are purchased from the village supply station as they are known to yield better than older varieties. Fertilizer rates are moderately high reflecting a common smallholder tendency to err on the side of generosity to avoid yield loss. Wheat receives four irrigations covering winter freeze-protection, jointing, heading, and grain filling \u2014 standard for the water-stressed North China Plain \u2014 while maize relies mainly on summer rainfall with two supplemental irrigations. Pesticide applications cover herbicide and fungicide needs for wheat and herbicide plus insecticide for maize. Rotary tillage is used before wheat planting while maize follows with minimal tillage to speed planting after the wheat harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 67-year-old farmer with no formal education in Quzhou County follows the dominant local wheat-maize double-cropping rotation on 8 mu of land, relying on decades of inherited practice rather than technical guidance. Improved wheat varieties and hybrid maize seed are purchased from the village supply station as they are known to yield better than older varieties. Fertilizer rates are moderately high reflecting a common smallholder tendency to err on the side of generosity to avoid yield loss. Wheat receives four irrigations covering winter freeze-protection, jointing, heading, and grain filling \u2014 standard for the water-stressed North China Plain \u2014 while maize relies mainly on summer rainfall with two supplemental irrigations. Pesticide applications cover herbicide and fungicide needs for wheat and herbicide plus insecticide for maize. Rotary tillage is used before wheat planting while maize follows with minimal tillage to speed planting after the wheat harvest."
+  },
+  "elapsed_seconds": 44.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_15",
+  "tier": 1,
+  "provider": "claude"
+}

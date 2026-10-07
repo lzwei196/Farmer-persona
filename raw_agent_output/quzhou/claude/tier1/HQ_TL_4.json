@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for over thirty years. My father farmed it before me, and his father before him. In Quzhou, on the Hebei plain, there is really only one system that makes sense: winter wheat followed by summer maize on the same plots. Everyone around me does this. The soil is familiar, the markets are stable, I know how to do it, and the county cooperative supplies the inputs. I am not going to experiment at my age.\n\nI have about 10 mu of contracted land. I will plant all of it to wheat starting in October, then turn it straight to maize after the June wheat harvest. My back is not what it was, so I hire the village machinery service for the rotary tillage before wheat \u2014 I stopped doing it by hand years ago.\n\nFor wheat, I use Jimai 22 seed \u2014 everyone in the township uses it, yields are reliable, and the seed station sells it. I put down diammonium phosphate and potassium chloride as base fertilizer before planting, then I topdress with urea at jointing. I irrigate four times: winter water in November to help the seedlings survive cold, then jointing, heading, and grain fill. Water costs are high because the aquifer is dropping and we pump longer each year, but I cannot risk drought stress on wheat.\n\nFor maize I direct-seed the hybrid Zhengdan 958 right after the combine clears the wheat \u2014 no tillage, because the soil is still loose and I save time. Maize gets less attention. Summer rains help. I topdress urea once at the big flare. Usually one irrigation is enough unless August is very dry.\n\nI spray herbicide once on wheat in winter and a fungicide pass in late April for scab and rust. Maize just needs one pesticide pass for borer.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 58-year-old farmer on the Hebei plain with decades of experience defaults to the standard winter wheat\u2013summer maize double-cropping rotation on all 10 mu of contracted land. Improved wheat variety Jimai 22 is chosen for reliability; hybrid maize Zhengdan 958 for proven yields. Wheat receives heavier fertilizer, four irrigations (critical given declining groundwater), and two pesticide passes for weeds and fungal disease. Maize is direct-seeded no-till after wheat harvest to save time and moisture, relies on summer rainfall with only one supplemental irrigation, and needs only one pesticide application for borer control. Input levels are consistent with local farmer practice in Quzhou \u2014 moderately above extension recommendations, reflecting experience-based risk aversion and limited access to precision agriculture services.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 58-year-old farmer on the Hebei plain with decades of experience defaults to the standard winter wheat\u2013summer maize double-cropping rotation on all 10 mu of contracted land. Improved wheat variety Jimai 22 is chosen for reliability; hybrid maize Zhengdan 958 for proven yields. Wheat receives heavier fertilizer, four irrigations (critical given declining groundwater), and two pesticide passes for weeds and fungal disease. Maize is direct-seeded no-till after wheat harvest to save time and moisture, relies on summer rainfall with only one supplemental irrigation, and needs only one pesticide application for borer control. Input levels are consistent with local farmer practice in Quzhou \u2014 moderately above extension recommendations, reflecting experience-based risk aversion and limited access to precision agriculture services."
+  },
+  "elapsed_seconds": 45.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_4",
+  "tier": 1,
+  "provider": "claude"
+}

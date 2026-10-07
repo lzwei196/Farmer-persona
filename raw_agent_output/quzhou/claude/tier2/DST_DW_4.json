@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land since I was young. Twelve mu isn't much but it feeds my family and earns enough cash to get by. My wheat and maize rotation I could do with my eyes closed at this point. Cotton is harder work every year but I keep a few mu because in a good year it pays better than grain.\n\n**My thinking for this year:**\n\nMy 8 mu of flat ground runs wheat in winter and maize in summer \u2014 same fields, back to back. That's how we've always done it here in Quzhou. I'll plant wheat in October after maize comes off. I always plow first to bury the stubble and then put down compound fertilizer before seeding. I use the improved variety I get from the county seed store \u2014 same one my neighbors use, and it's never let me down. Come spring I'll run the well pump at jointing stage and again near heading. Two sprays: one for weeds in early spring, one for disease control around flowering. I expect around 450 jin per mu, which is normal for my land.\n\nFor summer maize, I plant right after wheat harvest \u2014 no delay, not even a day if I can help it. I use hybrid seed, the same kind I've been buying the last eight or nine years. Good yields, strong stalks. I plant into the stubble directly \u2014 no need to plow again in summer, and it saves time. I'll put down some base fertilizer at planting and top-dress at the big bell stage. The rain usually covers July and August but if it gets dry I'll irrigate once from the well. A couple of sprays \u2014 one for weeds early and one for borers later.\n\nMy 4 mu of cotton I prep in April with the rotary tiller. I use Bt hybrid seed now \u2014 less bollworm spraying than the old days, which is good because I'm not as fast moving around the field anymore at 60. Still need to watch for aphids and spider mites. Cotton needs water at several stages so I'll irrigate four times from the well. Cotton takes more out of the soil so I put down more potassium than with grain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I run a wheat-maize double-cropping rotation on my 8 mu of flat ground and keep 4 mu in cotton for extra cash income. Wheat is ploughed in and planted with improved seed in October, irrigated three times from the well at critical stages, and sprayed twice for weeds and fungal disease. Summer maize follows immediately after wheat harvest with no-tillage direct seeding using hybrid seed, relying mostly on summer rainfall with one backup irrigation. Cotton on the remaining 4 mu is prepared with a rotary tiller in April, planted with Bt hybrid seed to reduce bollworm pressure, irrigated four times, and sprayed four times for secondary pests like aphids and spider mites; higher potassium rates reflect cotton's heavier soil demands.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I run a wheat-maize double-cropping rotation on my 8 mu of flat ground and keep 4 mu in cotton for extra cash income. Wheat is ploughed in and planted with improved seed in October, irrigated three times from the well at critical stages, and sprayed twice for weeds and fungal disease. Summer maize follows immediately after wheat harvest with no-tillage direct seeding using hybrid seed, relying mostly on summer rainfall with one backup irrigation. Cotton on the remaining 4 mu is prepared with a rotary tiller in April, planted with Bt hybrid seed to reduce bollworm pressure, irrigated four times, and sprayed four times for secondary pests like aphids and spider mites; higher potassium rates reflect cotton's heavier soil demands."
+  },
+  "elapsed_seconds": 59.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_4",
+  "tier": 2,
+  "provider": "claude"
+}

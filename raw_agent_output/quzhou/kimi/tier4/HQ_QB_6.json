@@ -1,0 +1,73 @@
+{
+  "raw_response": "I'm 36, been farming these 9.2 mu since I was 16. Never went to school \u2014 can't read the words on the fertilizer bags, but I know the colors and I know what my father and grandfather did before me. My wife and my old man help on the farm, but my younger brother works in a factory in Handan and only comes back for harvest. That means fewer hands, especially when the wheat needs to come out and the maize needs to go in \u2014 that window is maybe five or six days, very tight. My brother sends some money home, but I still have to watch every yuan.\n\nFor the winter wheat, I plant around October 10th, same as everyone in the village. I use my own seed from last year, saved the best ears. For fertilizer, I do what I always do: about half a bag of compound fertilizer per mu at planting time, and I spread another half bag of urea then too. At jointing time in March, if the wheat looks a bit yellow I topdress with another half bag of urea per mu. My neighbor Li tried using less fertilizer last year and his wheat was thin and short \u2014 I'm not taking that risk. I'd rather spend a bit more than lose yield. I irrigate three times: once before winter to help the crop survive the cold, once at jointing, and once when the grain is filling in May. The pumping costs money, but without water you get nothing around here.\n\nFor the summer maize, I plant right after the wheat comes out, around June 12th. I buy hybrid seed from the shop in town \u2014 it's expensive, but if you use old seed you get small ears and nobody wants that. I put down compound fertilizer when I plant, about half a bag per mu, and then at big trumpet stage I topdress with urea. Last year the rain was okay so I only irrigated once, at flowering. If it rains this year maybe once is enough, but I'll watch the sky. For weeds, I spray herbicide once after planting, that's it. I hire two or three laborers for the wheat harvest and maize planting rush \u2014 without them we'd never finish in time with our family hands. I expect the wheat to give me about 400 jin per mu if the weather is normal, and the maize about 450 jin. That's not great, but it's enough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 9.2,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"local (saved seed)\",\n      \"seed_cost_yuan_per_mu\": 15,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15.2,\n      \"phosphorus_total_kg_per_mu\": 3.75,\n      \"potassium_total_kg_per_mu\": 3.75,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: compound + urea at planting; topdress: urea at jointing in March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plow after maize harvest, then harrow before wheat planting\",\n      \"labor_family_days\": 65,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 9.2,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13.0,\n      \"phosphorus_total_kg_per_mu\": 3.75,\n      \"potassium_total_kg_per_mu\": 3.75,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: compound at planting; topdress: urea at big trumpet stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage, direct seeding into wheat stubble\",\n      \"labor_family_days\": 55,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 4500,\n  \"reasoning_summary\": \"I farm 9.2 mu of wheat-maize double crop the way my family always has. I use my own wheat seed and buy hybrid maize seed. I apply compound and urea to both crops \u2014 I'd rather spend a bit more on fertilizer than risk a bad yield like my neighbor did last year. I irrigate wheat three times because water is everything here, and maize once if the rain holds. I have to hire a few laborers during the harvest-planting rush because my brother works off-farm and we don't have enough hands. Money is tight, so I watch every yuan, but I don't cut corners on the basics.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 9.2,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "local (saved seed)",
+        "seed_cost_yuan_per_mu": 15,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15.2,
+        "phosphorus_total_kg_per_mu": 3.75,
+        "potassium_total_kg_per_mu": 3.75,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: compound + urea at planting; topdress: urea at jointing in March",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plow after maize harvest, then harrow before wheat planting",
+        "labor_family_days": 65,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 15.2,
+        "area_mu": 9.2,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 9.2,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13.0,
+        "phosphorus_total_kg_per_mu": 3.75,
+        "potassium_total_kg_per_mu": 3.75,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: compound at planting; topdress: urea at big trumpet stage",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage, direct seeding into wheat stubble",
+        "labor_family_days": 55,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 13.0,
+        "area_mu": 9.2,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75
+      }
+    ],
+    "total_input_cost_yuan": 4500,
+    "reasoning_summary": "I farm 9.2 mu of wheat-maize double crop the way my family always has. I use my own wheat seed and buy hybrid maize seed. I apply compound and urea to both crops \u2014 I'd rather spend a bit more on fertilizer than risk a bad yield like my neighbor did last year. I irrigate wheat three times because water is everything here, and maize once if the rain holds. I have to hire a few laborers during the harvest-planting rush because my brother works off-farm and we don't have enough hands. Money is tight, so I watch every yuan, but I don't cut corners on the basics."
+  },
+  "elapsed_seconds": 126.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_6",
+  "tier": 4,
+  "provider": "kimi"
+}

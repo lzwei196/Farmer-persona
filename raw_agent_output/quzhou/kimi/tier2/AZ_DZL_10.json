@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 13.1 mu in Quzhou for forty years. I never went to school, but I know this soil and this weather better than any book. With nine people in my household, grain comes first\u2014we need to eat, and we need steady income. Some of my family work off-farm, so labor is tight during the busy seasons. I have a well, which means I can irrigate when the rain fails, and that gives me some security.\n\nI will plant **winter wheat** on 10 mu. The wheat went into the ground last autumn with rotary tillage, using improved seed at about 30 jin per mu. Now, at the start of the growing season, I will topdress with compound fertilizer and irrigate three times before the June harvest. I expect about 1,000 jin of wheat per mu if the weather cooperates.\n\nRight after the wheat harvest in early June, I will plant **summer maize** on the same 10 mu. I use hybrid seed because it yields better and resists lodging. To save time and labor when everyone is busy, I plant with no-tillage\u2014just sow directly into the wheat stubble. I will apply compound fertilizer at planting and irrigate twice over the summer. Two pesticide sprays are usually enough for the maize.\n\nThe remaining **3.1 mu** I will plant to cotton in the spring. Cotton needs more attention, but it brings good cash. I will rotary-till the plots and plant hybrid cotton seed. Cotton is hungry for fertilizer and needs more sprays\u2014about eight times\u2014to keep the bollworms and aphids away. I will irrigate it three times. I expect around 520 jin of seed cotton per mu.\n\nI keep my inputs at the level that has worked for decades: solid basal fertilizer and timely topdressing, enough water, and pesticides when I see pests starting. I do not take big risks because my family depends on this land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 18,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 13.1 mu for forty years, and I know what this soil needs. With nine people in my household and some of my children working off-farm, I must balance food for the family with cash income. I will put about 10 mu into the wheat-maize rotation because grain keeps us fed and brings steady money. The remaining 3.1 mu will go to cotton, which pays better per mu but needs more labor and pesticide sprays. I use improved wheat seed sown in autumn with rotary tillage, and after the June harvest I plant hybrid maize using no-tillage to save time during the busy summer. For cotton, I rotary-till in spring and plant hybrid seed. I have a well, so I will irrigate the wheat three times, the maize twice, and the cotton three times when the rains are not enough. I will spray pesticides on the wheat and maize two or three times each, but cotton needs more attention\u2014about eight sprays\u2014to control the bollworms and aphids. I fertilize based on what I have seen work year after year: compound fertilizer for the basal dose and topdressing when the crops are growing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 18,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I have farmed these 13.1 mu for forty years, and I know what this soil needs. With nine people in my household and some of my children working off-farm, I must balance food for the family with cash income. I will put about 10 mu into the wheat-maize rotation because grain keeps us fed and brings steady money. The remaining 3.1 mu will go to cotton, which pays better per mu but needs more labor and pesticide sprays. I use improved wheat seed sown in autumn with rotary tillage, and after the June harvest I plant hybrid maize using no-tillage to save time during the busy summer. For cotton, I rotary-till in spring and plant hybrid seed. I have a well, so I will irrigate the wheat three times, the maize twice, and the cotton three times when the rains are not enough. I will spray pesticides on the wheat and maize two or three times each, but cotton needs more attention\u2014about eight sprays\u2014to control the bollworms and aphids. I fertilize based on what I have seen work year after year: compound fertilizer for the basal dose and topdressing when the crops are growing."
+  },
+  "elapsed_seconds": 222.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_10",
+  "tier": 2,
+  "provider": "kimi"
+}

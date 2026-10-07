@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 16 mu in Quzhou for 45 years, and I learned early on that guessing costs money. My land is split into two blocks: 10 mu in wheat-maize rotation and 6.1 mu in cotton. I keep a notebook every year\u2014what I spent, what the weather did, what yield I got. With just my wife and me at home now, and my son working off-farm in the county town, I hire machinery services for tillage and harvest. Time is money too.\n\nFor wheat, I start from what worked last year and adjust only if I have a clear reason. I plant an improved Jimai variety at 12.5 kg per mu. My soil phosphorus test came back medium-low from the county station last autumn, so I apply compound fertilizer at sowing and topdress urea at jointing. That gives me about 14 kg nitrogen and 6 kg phosphorus per mu. I never skip the wintering irrigation\u2014if the wheat freezes out, the whole year is ruined. I irrigate four times total, spray twice for aphids and powdery mildew, and rotary till before sowing. I budget for 520 kg per mu.\n\nFor summer maize, I seed Zhengdan 958 hybrid right after wheat harvest in early June. I used to broadcast by hand but now I pay for a precision seeder\u2014it saves seed and gives better stands. Maize needs less phosphorus than wheat here, so I cut back to 4 kg P\u2082O\u2085 per mu, but I keep nitrogen at 13 kg because I want the ears full. Two irrigations are usually enough if the summer rains cooperate. Two pesticide sprays. I rotary till lightly after wheat harvest to break up the stubble. I expect 580 kg per mu.\n\nCotton is my cash crop but it is picky. I deep-plough the 6.1 mu in spring because cotton roots need loose soil down deep. I use a hybrid variety. Cotton sucks potash hard, so I push potassium to 7 kg per mu, nitrogen to 12 kg, and phosphorus to 5 kg. I irrigate three times\u2014budding, flowering, and boll filling. Four pesticide sprays because bollworm and aphids come in waves. If the lint price stays where it was last year, 280 kg seed cotton per mu should pay.\n\nI watch every yuan. Fertilizer prices jumped two years ago, so I calculate carefully, but I would rather put down 1 kg too much than lose 50 kg of yield. A bad harvest is a disaster; wasting a little fertilizer is just a cost. I also watch my neighbors\u2014if everyone is cutting nitrogen, I think about why. But mostly I trust my own numbers.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 16.1 mu into 10 mu of wheat-maize rotation and 6.1 mu of cotton. For wheat, I apply 14 kg N, 6 kg P2O5, and 4 kg K2O per mu with four irrigations and two pesticide sprays, expecting 520 kg/mu. For summer maize, I use 13 kg N, 4 kg P2O5, and 3 kg K2O per mu with two irrigations and two pesticide sprays, expecting 580 kg/mu. For cotton, I deep-plough and apply 12 kg N, 5 kg P2O5, and 7 kg K2O per mu with three irrigations and four pesticide sprays, expecting 280 kg seed cotton per mu. I calculate inputs based on soil conditions, last year's results, and what I can afford, and I hire machinery services since only my wife and I provide farm labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 16.1 mu into 10 mu of wheat-maize rotation and 6.1 mu of cotton. For wheat, I apply 14 kg N, 6 kg P2O5, and 4 kg K2O per mu with four irrigations and two pesticide sprays, expecting 520 kg/mu. For summer maize, I use 13 kg N, 4 kg P2O5, and 3 kg K2O per mu with two irrigations and two pesticide sprays, expecting 580 kg/mu. For cotton, I deep-plough and apply 12 kg N, 5 kg P2O5, and 7 kg K2O per mu with three irrigations and four pesticide sprays, expecting 280 kg seed cotton per mu. I calculate inputs based on soil conditions, last year's results, and what I can afford, and I hire machinery services since only my wife and I provide farm labor."
+  },
+  "elapsed_seconds": 119.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "AZ_XST_3",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 4.1 mu here in Quzhou, wheat then maize, same as my father did and same as everyone in the village. I am 68, middle school only, but I have done this 50 years so I know what works on my plot.\n\nLast year the wheat gave me about 450 kg per mu, maize about 550 kg per mu. Nothing went wrong, so this year I mostly keep to what I did. Three people to feed and some to sell \u2014 I cannot afford a bad harvest, so I do not cut fertilizer to save a few yuan. Better to spend a little extra than lose the crop.\n\nFor wheat, I buy the improved variety the seed shop sells \u2014 Jimai type, my neighbor Old Wang used it and got good heads. I plough before sowing in October because the soil gets hard otherwise. I put down compound fertilizer 15-15-15 as base, about 50 kg per mu, that gives me roughly 7-8 kg N, 7-8 kg P, 7-8 kg K. Then at jointing in spring I topdress urea, one bag (about 40 kg) covers maybe 2 mu so say 20 kg urea per mu \u2014 that is another 9 kg of N. Total N around 16-17 kg, maybe I push to 18 because wheat here likes nitrogen. I irrigate from the well three times \u2014 before winter, at jointing, and at grain filling. Spray pesticide twice \u2014 once for aphids, once for the rust and powdery mildew mix.\n\nFor maize after wheat harvest in June, no time to plough, I do rotary tillage and plant directly. Zhengdan or Xianyu hybrid, everyone uses hybrid now. Base compound fertilizer about 40 kg per mu at sowing, then topdress urea at big trumpet stage, maybe 25 kg urea per mu. Total N around 18-19 kg. Summer rain helps so I only irrigate once or twice if July is dry. One spray for corn borer, sometimes a second if armyworm shows up.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I follow last year's plan because it worked \u2014 4.1 mu is too small to gamble. Wheat gets a full plough, compound base plus urea topdress at jointing, three well irrigations, and two sprays for aphids and rust. Maize goes in right after wheat with rotary tillage only, hybrid seed like everyone uses, compound base at sowing plus urea at big trumpet stage, one or two irrigations depending on July rain, and one spray for borer. I apply a bit extra nitrogen on both crops because losing yield costs more than wasting some fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I follow last year's plan because it worked \u2014 4.1 mu is too small to gamble. Wheat gets a full plough, compound base plus urea topdress at jointing, three well irrigations, and two sprays for aphids and rust. Maize goes in right after wheat with rotary tillage only, hybrid seed like everyone uses, compound base at sowing plus urea at big trumpet stage, one or two irrigations depending on July rain, and one spray for borer. I apply a bit extra nitrogen on both crops because losing yield costs more than wasting some fertilizer."
+  },
+  "elapsed_seconds": 25.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_4",
+  "tier": 3,
+  "provider": "claude"
+}

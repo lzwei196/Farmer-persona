@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 36, been farming since I was 21. My father farmed this land before me, and his father before him. I never went to school but I know this land. 10.1 mu, wheat in winter, maize in summer, same as everyone around here in Quzhou.\n\nI do what works. Last year was okay, wheat gave me about 500 kg per mu, maize maybe 550. Not bad. So this year I do mostly the same thing. Changing too much is risky \u2014 if I mess up, my family of 6 eats less or I borrow money.\n\nFor wheat: I plant in October after maize comes off. I use the improved seed from the dealer in town, everyone uses it now, the old seeds nobody sells anymore. I put about 2 bags of compound fertilizer before planting, that's 100 kg, has nitrogen, phosphorus, potassium mixed. Then in spring when wheat greens up, I top-dress with urea, maybe 20 kg per mu. I water 3 times \u2014 after planting if dry, in spring at jointing, and before grain fills. The well is there, I use it. Spray pesticide 2 times, once for aphids, once for the disease that makes leaves yellow. I rotary till, the plough is too much work and my neighbor with the tractor does rotary cheap.\n\nFor maize: June planting right after wheat harvest. Hybrid seed, Zhengdan or whatever the dealer has that year. I put compound fertilizer at planting, 2 bags again, 100 kg. Then urea when it's knee-high, about 25 kg. Maize eats more than wheat, everyone says so. I water 2 times if rain is short, sometimes 3. Spray once for borers, sometimes twice if I see worms. No-till for maize, I just plant into the wheat stubble, saves money and time.\n\nI'd rather put a little extra fertilizer than lose yield. Fertilizer costs maybe 200 yuan per bag, but losing 100 kg of grain is much worse. My wife works in town sometimes, money is tight but we manage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm like my father taught me and like my neighbors do. Wheat-maize every year on all 10.1 mu. I use 2 bags of compound fertilizer at planting for each crop plus urea top-dress, because skimping on fertilizer scares me more than spending too much. Improved wheat seed and hybrid maize seed from the dealer \u2014 that is what everyone uses now. Three waterings for wheat, two for maize unless rain fails. Rotary till for wheat, no-till for maize into the stubble to save money. I stick close to what worked last year because my family of 6 depends on this harvest and change is risky.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm like my father taught me and like my neighbors do. Wheat-maize every year on all 10.1 mu. I use 2 bags of compound fertilizer at planting for each crop plus urea top-dress, because skimping on fertilizer scares me more than spending too much. Improved wheat seed and hybrid maize seed from the dealer \u2014 that is what everyone uses now. Three waterings for wheat, two for maize unless rain fails. Rotary till for wheat, no-till for maize into the stubble to save money. I stick close to what worked last year because my family of 6 depends on this harvest and change is risky."
+  },
+  "elapsed_seconds": 23.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_4",
+  "tier": 3,
+  "provider": "claude"
+}

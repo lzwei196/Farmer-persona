@@ -1,0 +1,40 @@
+{
+  "raw_response": "I think about this year the same way I think every year. Last year's wheat gave me about 450 kg per mu, and my maize was a bit over 500 kg per mu. Not bad. I will do mostly the same things. Changing too much is risky \u2014 my family eats from this land.\n\nMy 2.6 mu is not big. We are 7 people in the house, but some of the young ones work in the city and send money back. So the land mostly feeds us and gives a little cash. I cannot waste money, but I also cannot lose the harvest. If I skimp on fertilizer and the wheat comes out thin, that is a bigger loss than the few yuan I save.\n\n**For the winter wheat:**\nI will buy improved seed from the agricultural store in town \u2014 the same kind my neighbor Wang uses, because her field did well last autumn. I plant in early October after I clear the maize stalks. I use the rotary tiller \u2014 the man with the machine comes around and does the whole village, costs about 50 yuan per mu.\n\nFor fertilizer, I put 2 bags of compound fertilizer (the 15-15-15 kind, 50 kg each bag) across my 2.6 mu as the base \u2014 that is roughly 2 bags per mu or close to it. Then at jointing time in spring, I spread urea, about half a bag per mu (25 kg). That is what everyone around here does. Going less scares me.\n\nWater: I irrigate 3 times \u2014 once before the ground freezes so the roots survive winter, once at jointing when the stalks are rising, and once when the grain is filling. The well is shared but I get my turn.\n\nPesticide: I spray 2 times \u2014 once for aphids and once for rust and powdery mildew when I see spots on the leaves.\n\n**For the summer maize:**\nAfter wheat harvest in June, I plant hybrid maize seed right into the stubble \u2014 no tillage, just the seeder. Zhengdan or similar, the dealer tells me what is selling well.\n\nI use 1 bag of compound fertilizer per mu as base, and one topdressing of urea at the big-trumpet stage, about half a bag per mu. Maize here grows mostly on rain in July-August, but I irrigate once if it stays dry at tasseling. I spray once for corn borer.\n\nI hope wheat gives me 450 kg per mu and maize 520 kg per mu. That is what my land usually does.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I am doing what worked last year because my family depends on this 2.6 mu. I copy what my neighbors do \u2014 2 bags of compound fertilizer per mu on wheat plus urea at jointing, and 1 bag compound plus urea topdressing on maize. Wheat gets 3 irrigations from the well because winter, jointing, and grain-filling water all matter; maize gets 1 if July is dry. I would rather use a little extra fertilizer than see a thin harvest \u2014 fertilizer costs money, but a bad crop costs much more. I use improved wheat seed and hybrid maize seed from the agricultural dealer, rotary tillage before wheat, and direct seeding into wheat stubble for maize. I spray pesticide only when I see the problem on the leaves, to save money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I am doing what worked last year because my family depends on this 2.6 mu. I copy what my neighbors do \u2014 2 bags of compound fertilizer per mu on wheat plus urea at jointing, and 1 bag compound plus urea topdressing on maize. Wheat gets 3 irrigations from the well because winter, jointing, and grain-filling water all matter; maize gets 1 if July is dry. I would rather use a little extra fertilizer than see a thin harvest \u2014 fertilizer costs money, but a bad crop costs much more. I use improved wheat seed and hybrid maize seed from the agricultural dealer, rotary tillage before wheat, and direct seeding into wheat stubble for maize. I spray pesticide only when I see the problem on the leaves, to save money."
+  },
+  "elapsed_seconds": 41.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_7",
+  "tier": 3,
+  "provider": "claude"
+}

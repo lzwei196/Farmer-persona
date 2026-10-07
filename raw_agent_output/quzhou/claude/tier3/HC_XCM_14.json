@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll plant wheat in October and maize in June, same as every year. My land is 6 mu, not too big, not too small. I work it mostly myself with my wife \u2014 our kids work in town.\n\nFor wheat, I usually buy compound fertilizer at the shop, 15-15-15 kind. I put 2 bags per mu as base fertilizer before planting \u2014 each bag is 50 jin so that's about 50 kg per mu of compound. Then at green-up in spring I spread urea, maybe 25-30 jin (about 15 kg) per mu. The old man next door does similar. Too little and the wheat stays yellow, I don't want that.\n\nWater \u2014 I have a well, so I irrigate. Winter water once before freeze, then at jointing, and again at grain filling. Three times usually, four if spring is dry.\n\nSpray \u2014 aphids come in May, I spray once. Sometimes twice if bad. Wheat scab I watch for at flowering.\n\nFor maize, I plant Zhengdan or similar hybrid seed, what the dealer says is good that year. Maize is stronger, needs less babying. I broadcast compound fertilizer when planting, about 40 kg per mu, then urea at big trumpet stage, 20 kg per mu. One irrigation usually enough if rain comes, two if dry. Spray once for borers.\n\nTillage \u2014 I rent the rotary tiller from the village, cheaper than ploughing every year. After maize harvest I chop the stalks and rotary till for wheat.\n\nYield \u2014 good year wheat gives me 450 kg/mu, maize about 550 kg/mu. That's what I count on.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do the same wheat-maize rotation as last year because it works and changing is risky. I use compound fertilizer 15-15-15 as base \u2014 about 2 bags per mu for wheat, a bit less for maize \u2014 then topdress urea in spring for wheat and at trumpet stage for maize. I'd rather put a little extra fertilizer than see yellow crops; losing yield hurts more than fertilizer cost. I irrigate from my well three times for wheat, once or twice for maize depending on rain. I rotary till after maize for wheat planting and do no-till direct seeding for maize into wheat stubble \u2014 saves time and money. I spray when I see pests, not before. My yield target matches what my neighbors get.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do the same wheat-maize rotation as last year because it works and changing is risky. I use compound fertilizer 15-15-15 as base \u2014 about 2 bags per mu for wheat, a bit less for maize \u2014 then topdress urea in spring for wheat and at trumpet stage for maize. I'd rather put a little extra fertilizer than see yellow crops; losing yield hurts more than fertilizer cost. I irrigate from my well three times for wheat, once or twice for maize depending on rain. I rotary till after maize for wheat planting and do no-till direct seeding for maize into wheat stubble \u2014 saves time and money. I spray when I see pests, not before. My yield target matches what my neighbors get."
+  },
+  "elapsed_seconds": 30.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_14",
+  "tier": 3,
+  "provider": "claude"
+}

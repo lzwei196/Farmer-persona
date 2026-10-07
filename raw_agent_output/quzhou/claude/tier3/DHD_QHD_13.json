@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these same fields for 50 years, so I know what each plot can give me. With high school behind me, I read the fertilizer bags carefully and I talk to the agro-technicians when they come through the village. But in the end, I trust what I've seen work on my own land.\n\nMy 9 mu splits into two parts. I put 5 mu into the wheat-maize rotation \u2014 that's the backbone, two harvests a year, and the well water reaches those plots easily. The other 4 mu I keep in cotton because the soil there is a bit saltier and cotton tolerates it better than grain. I've done it this way for over a decade.\n\nFor winter wheat, I sow improved Jimai variety around October 10. I base-apply about 40 kg of compound fertilizer (15-15-15) per mu before plowing, then topdress 15 kg of urea per mu at jointing in spring. That gives me roughly 20 kg N, 8 kg P, 6 kg K per mu. I irrigate four times \u2014 before winter, at jointing, at heading, and at grain filling. Last year I got 480 kg/mu and I expect similar. Two sprays handle aphids and powdery mildew.\n\nFor summer maize, right after wheat harvest in June I direct-seed Zhengdan hybrid without tilling \u2014 no time to plow, and the stubble holds moisture. I side-dress urea at knee-high and again at tasseling, total about 18 kg N per mu, plus 6 kg P and 6 kg K from a base compound. Two irrigations usually \u2014 at the big trumpet stage and grain filling \u2014 unless rain comes. I target 600 kg/mu.\n\nFor cotton, I plough deep in spring, apply base compound giving 15 kg N, 7 kg P, 8 kg K per mu. I know cotton needs more potassium than grain. I irrigate three times through the season. Cotton takes the most spraying \u2014 five rounds for bollworm, aphids, and spider mites. I expect about 260 kg/mu of seed cotton.\n\nI don't chase the highest yields \u2014 at my age I want steady returns and I don't want to pour money into extra fertilizer that just runs off.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I split my 9 mu into 5 mu wheat-maize rotation on the better plots and 4 mu cotton on the saltier ground where grains do poorly. For wheat I use improved variety with base compound plus urea topdress at jointing, four irrigations, targeting 480 kg/mu. For summer maize I no-till into wheat stubble to save time and moisture, side-dress urea twice, and aim for 600 kg/mu. Cotton gets deep plowing, more potassium than the grains, and five pesticide sprays because the pests are heavy. I stick close to what has worked on these fields for years rather than overspending on fertilizer that won't pay back.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I split my 9 mu into 5 mu wheat-maize rotation on the better plots and 4 mu cotton on the saltier ground where grains do poorly. For wheat I use improved variety with base compound plus urea topdress at jointing, four irrigations, targeting 480 kg/mu. For summer maize I no-till into wheat stubble to save time and moisture, side-dress urea twice, and aim for 600 kg/mu. Cotton gets deep plowing, more potassium than the grains, and five pesticide sprays because the pests are heavy. I stick close to what has worked on these fields for years rather than overspending on fertilizer that won't pay back."
+  },
+  "elapsed_seconds": 36.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_13",
+  "tier": 3,
+  "provider": "claude"
+}

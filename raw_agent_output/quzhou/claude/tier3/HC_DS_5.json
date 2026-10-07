@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have 10.1 mu. Same as every year \u2014 winter wheat first, then summer maize right after I cut the wheat in June. This is what everyone here does, has been this way long as I remember.\n\nFor the wheat, before I plant in October, I spread compound fertilizer. I buy 2 bags per mu from the dealer in town, each bag 40 kg. So 80 kg per mu. That's what my neighbor Zhang sao does and her wheat is always good. Then when the wheat turns green in spring, I spread urea \u2014 half a bag per mu, about 20 kg. If I put less I get scared the wheat won't fill. Better to spend the extra money than see thin ears.\n\nMaize I plant right after cutting wheat, no time to plough, I just use the seeder behind the small tractor \u2014 one bag of compound per mu at planting, then when maize is up to my knee I put urea between the rows, maybe 30 kg per mu. Hybrid seed, always. The old kinds don't give anything. The dealer tells me which one everyone is buying this year and I buy that.\n\nWater \u2014 I have the well, thank heaven. Wheat I water 4 times: before winter, when it turns green, at jointing, and when grain is filling. Maize usually gets the summer rain but if July is dry I pump water once or twice.\n\nPesticide \u2014 2 times on wheat, aphids and the yellow disease. 2 times on maize, borer and weeds. The man with the sprayer cart comes through the village, I pay him.\n\nLast year wheat gave me about 480 kg per mu, maize 550. Should be about the same if the rain comes right.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same way every year, wheat then maize, same as all my neighbors in Quzhou. I buy 2 bags of compound fertilizer per mu for wheat base and half a bag urea when it greens up in spring, one bag compound plus 30 kg urea for maize. I use hybrid maize seed from the village dealer because the old kinds give nothing. I water the wheat 4 times from my well and the maize once or twice if July is dry. I would rather spend a little more on fertilizer than risk a thin harvest \u2014 7 people eat from this land. Last year I got about 480 kg wheat and 550 kg maize per mu, I expect the same.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the same way every year, wheat then maize, same as all my neighbors in Quzhou. I buy 2 bags of compound fertilizer per mu for wheat base and half a bag urea when it greens up in spring, one bag compound plus 30 kg urea for maize. I use hybrid maize seed from the village dealer because the old kinds give nothing. I water the wheat 4 times from my well and the maize once or twice if July is dry. I would rather spend a little more on fertilizer than risk a thin harvest \u2014 7 people eat from this land. Last year I got about 480 kg wheat and 550 kg maize per mu, I expect the same."
+  },
+  "elapsed_seconds": 45.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_5",
+  "tier": 3,
+  "provider": "claude"
+}

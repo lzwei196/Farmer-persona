@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 19.1 mu in Quzhou for 40 years, and at 64 I know every ridge and furrow by heart. My bones aren't what they used to be, and with my son and daughter-in-law working off-farm in Handan, labor is tight\u2014just me, my wife, and hired help at harvest. So I rely on what works: good seeds, timely irrigation from my well, and not cutting corners on fertilizer.\n\nThis year I'll keep 15 mu in my wheat-maize double crop. That's the backbone of our income and food security. The winter wheat is already in the ground from last October. Come spring, I'll top-dress with urea at green-up and jointing, irrigate three times, and spray two or three times for weeds, aphids, and powdery mildew. I use improved wheat varieties\u2014hybrids aren't reliable for wheat here. Right after wheat harvest in early June, I'll plant hybrid maize the same day; every hour counts before the autumn cold arrives. I'll no-till plant into the wheat stubble to save moisture and labor, irrigate twice during the summer, and spray once or twice as needed.\n\nThe remaining 4.1 mu I'll plant to cotton. I've grown cotton my whole life and I know the work it takes. I'll plough that field deep because cotton needs loose soil for its taproot. I'm using hybrid Bt cotton\u2014it costs more for seed but saves me from endless bollworm spraying. Still, I'll spray four or five times for aphids and mites. Cotton drinks more potassium than grain crops, so I'll push the potash higher and irrigate three times.\n\nI don't over-fertilize\u2014prices are too high for waste\u2014but I've learned the hard way that stingy farming loses money in the end. My well water is reliable, so I'll use it when the crops tell me they need it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 85\n    }\n  ],\n  \"reasoning_summary\": \"I allocated 15 mu to the wheat-maize double crop that secures my household's staple income, using improved wheat and hybrid maize with no-till for the maize to save labor and moisture. The remaining 4.1 mu goes to cotton, which I know well but requires more hand work and potassium. With reliable well water and careful fertilizer timing, I expect solid yields without wasting money on excessive inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 85
+      }
+    ],
+    "reasoning_summary": "I allocated 15 mu to the wheat-maize double crop that secures my household's staple income, using improved wheat and hybrid maize with no-till for the maize to save labor and moisture. The remaining 4.1 mu goes to cotton, which I know well but requires more hand work and potassium. With reliable well water and careful fertilizer timing, I expect solid yields without wasting money on excessive inputs."
+  },
+  "elapsed_seconds": 126.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_7",
+  "tier": 2,
+  "provider": "kimi"
+}

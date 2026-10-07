@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land since I was ten years old. I know the soil here in Quzhou \u2014 it's sandy loam, low in organic matter, needs water every few weeks in summer or the cotton suffers. My father grew cotton here too. This is what I know.\n\nMy 20 mu is split how I always do it: 12 mu for cotton, which is my main income, and the other 8 mu I rotate wheat in winter and maize in summer. Some of my sons work in the city now, so I can't always count on extra hands during peak seasons. I keep the work manageable.\n\n**Cotton (12 mu):** I buy Bt hybrid seed from the county seed station every year \u2014 it handles the bollworm better than the old varieties. I plow deep in spring before planting. I put down phosphorus and potassium as base fertilizer, then top-dress with urea when the plants flower. I water by well five times: before planting, at bud stage, flowering, boll formation, and boll opening. I still spray four or five times for aphids and red spider mites \u2014 Bt doesn't stop those. I expect around 300 jin of seed cotton per mu, same as last year.\n\n**Wheat (8 mu):** I sow Jimai wheat in October after plowing. Four irrigations \u2014 before winter, at jointing, at heading, at grain filling. I spray twice, once for rust and once at heading for disease. Yield should be around 480 jin per mu.\n\n**Maize (8 mu):** After wheat harvest in June I rotary till and plant Zhengdan 958 straight away. Three irrigations. Two pesticide sprays for corn borer and ear rot. I expect 600 jin per mu if the rain is decent.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 12 mu to cotton as my primary cash crop using Bt hybrid seed, deep spring plowing, split nitrogen application at base and flowering, five well irrigations, and five pesticide sprays targeting aphids and mites; the remaining 8 mu follow a winter wheat to summer maize rotation, with wheat sown after autumn plowing using improved local varieties and four irrigations, followed immediately by hybrid maize under rotary tillage with three irrigations, all inputs set according to what I have seen work on this Quzhou sandy loam over 53 years of farming.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 5,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I allocate 12 mu to cotton as my primary cash crop using Bt hybrid seed, deep spring plowing, split nitrogen application at base and flowering, five well irrigations, and five pesticide sprays targeting aphids and mites; the remaining 8 mu follow a winter wheat to summer maize rotation, with wheat sown after autumn plowing using improved local varieties and four irrigations, followed immediately by hybrid maize under rotary tillage with three irrigations, all inputs set according to what I have seen work on this Quzhou sandy loam over 53 years of farming."
+  },
+  "elapsed_seconds": 46.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_6",
+  "tier": 2,
+  "provider": "claude"
+}

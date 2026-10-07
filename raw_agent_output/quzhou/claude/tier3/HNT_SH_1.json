@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 45, my father taught me farming when I was small, I only went to primary school. My land is 3.5 mu, not big, not small. My wife helps me, my two children go to school so they help only on weekends and summer. Well water I have, so I do not worry like the dryland people.\n\nI grow wheat in winter, then maize after wheat in summer. Cotton I plant on maybe 1 mu separately, because the price is not stable but I keep some for my wife to sell \u2014 she knows the cotton buyer in town.\n\nLast year wheat gave me about 450 kg per mu, maize about 550 kg per mu. Not the best in village but not bad. My neighbor Old Wang got 500 kg wheat, he used a bit more fertilizer than me. I think this year I add a little more, not too much, fertilizer is expensive \u2014 urea is around 2.4 yuan per jin now, DAP even more.\n\nFor wheat I buy the improved seed from the agriculture station, everyone does. I put compound fertilizer 50 jin (25 kg) per mu at planting \u2014 that is about 15 kg N, 7-8 kg P, some K. Then topdress urea maybe 25 jin (12-13 kg) after the green-up. Water 3 times \u2014 winter water, green-up water, and before grain fill. Spray against aphids and rust 2 times.\n\nFor maize I plant Zhengdan or similar hybrid, 2 kg seed per mu. Fertilizer I give compound 30 kg at sowing, then urea 15 kg at big trumpet stage. Maize eats nitrogen more. Irrigate 2 times if no rain. Spray once for borer and armyworm.\n\nCotton I use the Bt seed, costs more but no need to spray bollworm so much. Fertilizer heavier \u2014 cotton wants nitrogen and potassium. Compound 40 kg at planting, urea 20 kg split twice. Water 3 times. Spray 4-5 times for aphid, mite, and boll pests still, cotton is trouble.\n\nI use rotary tiller, rent from the village machine owner, 40 yuan per mu. Ploughing deep I only do once every few years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 570\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I farm 3.5 mu with my wife, so I plan carefully because every bag of fertilizer is real money. I follow what works in my village \u2014 improved wheat seed, hybrid maize, Bt cotton \u2014 and adjust from last year. Old Wang used a little more fertilizer and got 500 kg wheat, so I add a bit more urea on wheat this year, maybe 20 kg N total. Maize eats nitrogen, I give it 22 kg. Cotton I grow on 1 mu only because price is uncertain but my wife sells it in town. I water from my well \u2014 3 times wheat, 2 times maize if no rain, 3 times cotton. I would rather spend a little extra on fertilizer than risk a bad harvest; losing yield hurts much more than wasting 10 jin of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 570
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I farm 3.5 mu with my wife, so I plan carefully because every bag of fertilizer is real money. I follow what works in my village \u2014 improved wheat seed, hybrid maize, Bt cotton \u2014 and adjust from last year. Old Wang used a little more fertilizer and got 500 kg wheat, so I add a bit more urea on wheat this year, maybe 20 kg N total. Maize eats nitrogen, I give it 22 kg. Cotton I grow on 1 mu only because price is uncertain but my wife sells it in town. I water from my well \u2014 3 times wheat, 2 times maize if no rain, 3 times cotton. I would rather spend a little extra on fertilizer than risk a bad harvest; losing yield hurts much more than wasting 10 jin of urea."
+  },
+  "elapsed_seconds": 28.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_1",
+  "tier": 3,
+  "provider": "claude"
+}

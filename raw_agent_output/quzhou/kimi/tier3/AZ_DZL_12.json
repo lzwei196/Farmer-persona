@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 6.5 mu for 30 years. I never went to school, but I know this soil like my own hands. My son and his wife work in a factory in Handan, so they send some money home, but fertilizer is expensive this year \u2014 a bag of compound fertilizer is 150 yuan now, up from 130 last year. I still have to watch every yuan. I don't trust new ideas from outsiders. Last year, Old Li from the village committee told everyone to cut fertilizer, but his wheat was shorter than mine and he got less grain. I do what my neighbors do, and I do what worked last year. Last year my wheat got about 950 jin per mu and my maize got about 1100 jin per mu. This year I will do the same.\n\nFor wheat: In October I hire the rotary tiller for one day to prepare all 6.5 mu. I buy the improved wheat seed from Zhang's shop \u2014 the kind in the red and white bag, I don't read the name but Old Wang used it and his crop was good. I sow about 30 jin per mu. Before sowing, I spread one full 50kg bag of compound fertilizer per mu \u2014 the bag with three numbers, usually 15-15-15 or whatever the shop has. Then in March when the wheat turns green, I spread half a bag of urea per mu, about 20kg. I irrigate three times from my well: once after sowing if the rain doesn't come, once in spring, and once when the wheat starts heading. I spray herbicide once after sowing, and I spray one more time in April for bugs. I expect about 950 to 1000 jin per mu.\n\nFor maize: In June, as soon as the wheat is cut, I plant maize the same day \u2014 no time to till, the season is too short and every day matters. I buy hybrid maize seed, two big bags for my 6.5 mu. I put one 50kg bag of compound fertilizer per mu in the planting holes with the seed \u2014 the high-nitrogen kind the shop sells for corn. I don't top dress maize, I never have, there is no time and the basal fertilizer is enough. I irrigate twice: once right after planting if it is dry, and once when the ears are getting big. I spray herbicide once, and I spray insecticide twice because the corn borers have been bad the last few years \u2014 better to spend the money than lose the ears. I expect about 1100 jin per mu.\n\nI would rather spend a bit too much on fertilizer than risk losing yield. A bad harvest is a disaster. Wasting some fertilizer is just a cost I pay for safety.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what has worked for 30 years on my 6.5 mu. I rotary till before wheat and put 50kg of compound fertilizer per mu as basal, then top dress with 20kg of urea in spring, irrigating three times. For maize I plant immediately after wheat harvest with no tillage, using 50kg of compound fertilizer per mu at planting and irrigating twice. I spray when I see problems. I don't take risks with new methods.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick with what has worked for 30 years on my 6.5 mu. I rotary till before wheat and put 50kg of compound fertilizer per mu as basal, then top dress with 20kg of urea in spring, irrigating three times. For maize I plant immediately after wheat harvest with no tillage, using 50kg of compound fertilizer per mu at planting and irrigating twice. I spray when I see problems. I don't take risks with new methods."
+  },
+  "elapsed_seconds": 254.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_12",
+  "tier": 3,
+  "provider": "kimi"
+}

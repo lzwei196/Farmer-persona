@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed this land since I was young. My mother grew wheat and corn, and her mother before her. In Quzhou, everyone around here grows winter wheat then summer corn on the same fields \u2014 that's just what our land is for. I have about 8 mu. My husband helps when he can, but his back is bad, so mostly it's me and my neighbor's son with the machine.\n\nI'll plant wheat this October the same way I always have. I get the improved seed from the village seed shop \u2014 not the very expensive hybrid kind, but the good improved variety they've been pushing for years, gives me decent yield. I put down compound fertilizer when I sow, then spread urea at jointing and again before heading. I water three times: once in November before the ground freezes (that's the most important one), once when the wheat joints, once when it heads. I spray for weeds in early spring and once for rust before harvest \u2014 rust was bad two years ago and I lost a lot that year, so I don't skip it now.\n\nAfter I harvest the wheat in June, I rotary-till right away and get the corn in the ground fast \u2014 can't waste days. Corn I use hybrid seed, always have for corn, everyone does, the yield difference is obvious. I fertilize corn twice \u2014 compound at planting, urea when it's about knee-high. If July is dry I'll water once at the big bell stage, but most years the summer rains take care of it. I spray once for stem borer if I see the damage starting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"A 56-year-old woman with no formal education farming 8 mu in Quzhou County follows the dominant North China Plain double-cropping system of winter wheat and summer maize on the same land. She uses improved wheat seed and hybrid maize seed purchased from the village shop, applies compound fertilizer at sowing plus urea topdressing, irrigates wheat three times (pre-winter, jointing, heading) and maize once at the bell stage, ploughs before wheat and rotary-tills the stubble quickly before maize to meet the tight summer turnover window, and applies pesticides reactively based on observed or neighbor-reported pest and disease pressure.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "A 56-year-old woman with no formal education farming 8 mu in Quzhou County follows the dominant North China Plain double-cropping system of winter wheat and summer maize on the same land. She uses improved wheat seed and hybrid maize seed purchased from the village shop, applies compound fertilizer at sowing plus urea topdressing, irrigates wheat three times (pre-winter, jointing, heading) and maize once at the bell stage, ploughs before wheat and rotary-tills the stubble quickly before maize to meet the tight summer turnover window, and applies pesticides reactively based on observed or neighbor-reported pest and disease pressure."
+  },
+  "elapsed_seconds": 66.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_11",
+  "tier": 1,
+  "provider": "claude"
+}

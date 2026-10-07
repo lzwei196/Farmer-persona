@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 53 years old, been farming these same fields for 30 years. Never went to school, can't read those papers the county office gives out, but I know this land like my own hands. My wife and me, we are the only ones at home \u2014 our son works in Shijiazhuang at a factory, sends some money back but not much. Ten mu is enough to keep us busy but not so big that we need to hire help, which is good because hired labor costs 150 yuan a day now and we can't afford that.\n\nFor the winter wheat, I plant the whole ten mu in early October, right after the maize comes off. I buy my wheat seed from the county supply store \u2014 I don't save my own seed anymore because after a few years it gets weak and the yield drops. I always put down one bag of compound fertilizer for every two mu before planting, and I run the rotary tiller to work it in. That's what I've always done. Then in late March, when the wheat starts to joint, I walk the fields and look at the color. If it looks yellow and hungry, I topdress with urea \u2014 about half a bag per mu. I irrigate three times for wheat: once before winter to help it survive the cold, once at jointing in spring, and once at grain filling. The well water costs electricity money, but wheat is our main food \u2014 we need the flour, so I don't skip water on wheat. I spray herbicide once after planting, and if I see aphids in spring, I spray insecticide once. I expect about 400 jin per mu if the weather is fair. Last year was dry and I only got 350, but most years it's around 400.\n\nFor the summer maize, the window is tight \u2014 sometimes only two or three days between wheat harvest and planting. I buy hybrid maize seed every year from the supply store; you can't save hybrid seed, everyone knows that. I put all the fertilizer in at planting \u2014 compound fertilizer in the furrow, about one bag for every two and a half mu, and a handful of urea too. No time for split application, the season is too short. I till once quickly with the rotary machine if the stubble is thick, but if the ground is soft enough I plant right away without tilling \u2014 the neighbors do that now and it works fine. I irrigate twice: once right after planting if it's dry, and once at the big trumpet leaf stage. The summer rains usually do the rest. I spray herbicide once and insecticide once for the corn borers. I expect about 450 jin per mu. Two years ago I got 500 jin because the rains were good. I don't gamble on new varieties or fancy methods \u2014 at my age, doing what I know is safer than trying something strange and losing a whole season.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 450\n    }\n  ],\n  \"reasoning_summary\": \"I am a 53-year-old farmer with no formal schooling and 30 years on this land. My wife and I manage ten mu alone \u2014 our son works in the city. I don't read extension leaflets; I learn from watching my neighbors and remembering what happened on my own fields. For wheat, I buy improved seed, apply compound fertilizer at planting plus urea topdressing at jointing, irrigate three times, and spray herbicide and insecticide as needed. For maize, the window after wheat harvest is very tight, so I plant hybrid seed immediately with all fertilizer in the furrow at planting, irrigate twice, and control weeds and insects with two sprayings. I use the rotary tiller for wheat but often no-till for maize to save time. I keep input costs cautious because cash is tight, but I don't under-fertilize either \u2014 a bad year hurts more than saving a few yuan on inputs. I expect about 400 kg per mu of wheat and 450 kg per mu of maize under normal weather.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 450
+      }
+    ],
+    "reasoning_summary": "I am a 53-year-old farmer with no formal schooling and 30 years on this land. My wife and I manage ten mu alone \u2014 our son works in the city. I don't read extension leaflets; I learn from watching my neighbors and remembering what happened on my own fields. For wheat, I buy improved seed, apply compound fertilizer at planting plus urea topdressing at jointing, irrigate three times, and spray herbicide and insecticide as needed. For maize, the window after wheat harvest is very tight, so I plant hybrid seed immediately with all fertilizer in the furrow at planting, irrigate twice, and control weeds and insects with two sprayings. I use the rotary tiller for wheat but often no-till for maize to save time. I keep input costs cautious because cash is tight, but I don't under-fertilize either \u2014 a bad year hurts more than saving a few yuan on inputs. I expect about 400 kg per mu of wheat and 450 kg per mu of maize under normal weather."
+  },
+  "elapsed_seconds": 139.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_8",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 47, been farming these same fields for 30 years since my father told me it was my turn to manage the land. Never went to school \u2014 can't read the words on the fertilizer bags, so I have to ask the shopkeeper or my wife to tell me what's inside. But I know this soil by feel. I can squeeze a handful and tell if it's tired or ready.\n\nMy wife and I do most of the work. We have two children \u2014 my son does construction in Handan, my daughter works in a factory in Shijiazhuang. They send a little money home but not much, and I don't like to ask. We have almost 11 mu. About 8 mu I plant wheat in October, cut it in early June, and put corn in the same ground the next day if I can manage it. The other near-3 mu I plant cotton in April. Cotton brings good money when the price holds, and my wife knows how to pick it clean.\n\nFor wheat, I buy improved seed from the county supply store \u2014 about 30 yuan per mu. Before planting I spread about one big bag of compound fertilizer for every two mu and work it in with the rotary tiller. That's what my father did, and that's what the neighbors around me do. Then in March, when the wheat turns green, I topdress with urea \u2014 about half a small bag per mu. I learned my lesson four years ago when I skipped the topdress to save money and the wheat turned yellow and thin. Lost more than I saved. Never again. I irrigate wheat three times: after planting, in spring, and at heading. The well pump costs electricity but wheat is our main crop \u2014 we need the flour and it pays the bills. I spray twice, once for weeds and once if I see aphids.\n\nFor corn, I buy hybrid seed every year from the village shop \u2014 45 yuan per mu. Everyone knows you can't save corn seed. I put all the fertilizer in at planting because there's no time between wheat harvest and corn planting. Sometimes only two days! If the stubble is thick I might do one quick pass with the tiller, but usually I plant right into the wheat residue. I use about half a bag of compound per mu in the furrow. I irrigate twice if the summer rains don't come. I spray twice \u2014 herbicide when the corn is small, and insecticide if the armyworms show up.\n\nFor cotton, I save my own seed. I plough that land deep in spring \u2014 cotton roots need to go deep, not like wheat. I put down fertilizer before planting, a bit less than wheat. Cotton needs more spraying for bollworms \u2014 I spray three times, four if they're really bad. I irrigate twice, at flowering and when the bolls are filling. My wife and I do the picking ourselves.\n\nI don't hire much labor except at wheat harvest when I pay for the combine to come through, and sometimes at cotton picking if my wife's hands hurt too much. Everything costs money now \u2014 fertilizer, electricity for the pump, seed. I calculate every yuan. But I would rather put a little too much fertilizer than too little. A thin harvest is a disaster I can't afford. Wasting some fertilizer is just a cost you live with.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.9,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm almost 11 mu the way my father taught me. About 8 mu goes to wheat in winter and corn in summer, and the rest is cotton. I never went to school, so I go by what I see and what my neighbors do. I buy improved wheat seed and hybrid corn seed, but I save my own cotton seed. Fertilizer goes down at planting for all crops, and I topdress wheat with urea in spring because I learned the hard way that skipping it costs yield. I irrigate wheat three times because it's our main crop, corn twice, and cotton twice. I'd rather spend a bit more on inputs than risk a bad year \u2014 a thin harvest is a disaster I can't afford. I expect about 420 kg per mu of wheat, 480 kg of corn, and 250 kg of cotton if the weather is decent.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.9,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm almost 11 mu the way my father taught me. About 8 mu goes to wheat in winter and corn in summer, and the rest is cotton. I never went to school, so I go by what I see and what my neighbors do. I buy improved wheat seed and hybrid corn seed, but I save my own cotton seed. Fertilizer goes down at planting for all crops, and I topdress wheat with urea in spring because I learned the hard way that skipping it costs yield. I irrigate wheat three times because it's our main crop, corn twice, and cotton twice. I'd rather spend a bit more on inputs than risk a bad year \u2014 a thin harvest is a disaster I can't afford. I expect about 420 kg per mu of wheat, 480 kg of corn, and 250 kg of cotton if the weather is decent."
+  },
+  "elapsed_seconds": 176.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_9",
+  "tier": 3,
+  "provider": "kimi"
+}

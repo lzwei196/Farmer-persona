@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am old man, never went to school. I farm 42 mu here in Quzhou for 40 years now. My father farm before me, I do what work.\n\nMy main land is wheat and maize, same as everyone around here. I put 35 mu for wheat-maize. Wheat in winter, maize after we cut wheat in June. Cotton I keep 5 mu on the sandy patch near the ditch \u2014 that land no good for wheat, but cotton grow fine. Cucumber 2 mu near the house, my wife sell some in town market, rest we eat.\n\nFor wheat: I plough deep after maize come off, then plant in October. I put two bags compound fertilizer per mu as base \u2014 that is 100 jin, the shopkeeper say it is 15-15-15. Then when wheat stand up tall in spring I broadcast one bag urea per mu, maybe little more if leaves look yellow. I water three times \u2014 after planting, at jointing, at grain filling. Well pump work fine. I spray two times for aphids and rust, my neighbor Old Zhang spray same time I spray. Wheat give me maybe 1000 jin per mu if weather good, less if dry spring.\n\nFor maize: I use hybrid seed, Zhengdan or Xianyu whatever the dealer have this year. Rotary till after wheat, plant right away. One bag compound at planting, then one bag urea when maize knee-high. Water two times if no rain. Spray for borer and armyworm, two times. Maize give 1200 jin per mu usually.\n\nCotton: I plant old improved seed, not hybrid \u2014 hybrid cotton seed too expensive. I plough, put one bag compound, little urea later. Water four times. Cotton need many spray, five-six times, bollworm very bad. Maybe 500 jin seed cotton per mu.\n\nCucumber: I put much manure from pig, plus chemical fertilizer. Water many times, spray often. It is small plot but give good money if price is good.\n\nI always put bit more fertilizer than less. Bad harvest is big loss, little extra fertilizer is small money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 35.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 35.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"cucumber\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3500\n    }\n  ],\n  \"reasoning_summary\": \"I farm like my father teach me and like neighbors do. Wheat-maize on the good 35 mu because that is what everyone grow here and the well can water it. Cotton on 5 mu of sandy ground where wheat no grow well. Cucumber small plot for my wife to sell in market. I always put a little more fertilizer than less \u2014 one extra bag of urea cost some yuan but bad harvest cost whole year. I use hybrid maize seed because dealer say it better and neighbor get more that way, but cotton and wheat I use regular improved seed, cheaper. I irrigate from my well, three times wheat two times maize, more for cucumber. Spray when I see bugs on my field or when Old Zhang spray his.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 35.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 35.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "cucumber",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 8,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3500
+      }
+    ],
+    "reasoning_summary": "I farm like my father teach me and like neighbors do. Wheat-maize on the good 35 mu because that is what everyone grow here and the well can water it. Cotton on 5 mu of sandy ground where wheat no grow well. Cucumber small plot for my wife to sell in market. I always put a little more fertilizer than less \u2014 one extra bag of urea cost some yuan but bad harvest cost whole year. I use hybrid maize seed because dealer say it better and neighbor get more that way, but cotton and wheat I use regular improved seed, cheaper. I irrigate from my well, three times wheat two times maize, more for cucumber. Spray when I see bugs on my field or when Old Zhang spray his."
+  },
+  "elapsed_seconds": 56.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_1",
+  "tier": 3,
+  "provider": "claude"
+}

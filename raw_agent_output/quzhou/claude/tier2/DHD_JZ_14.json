@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been working this land for 55 years. I know Quzhou's soil and seasons like I know my own hands. My wife and I only need so much grain \u2014 but I still farm all 5 mu properly, because that is what a farmer does. The wheat-maize rotation is what my father did and his father before him. I do not change what works.\n\nMy body is slower now. I rely on the village machine station to help me sow and harvest. But the decisions \u2014 when to water, how much fertilizer to put down \u2014 I make those myself.\n\nFor the **winter wheat**, I sow in early October after rotary tilling. I use the improved variety the county has been promoting \u2014 it yields well and I have seen it work on my land for years. I put down base fertilizer at sowing with phosphorus and potassium mixed in, then top-dress nitrogen at jointing. I water three times: once before winter sets in, once at jointing, once at heading. I spray for aphids and powdery mildew at the flag leaf stage \u2014 two passes. I have seen bad rust years and I do not skimp on this.\n\nFor the **summer maize**, I sow right after wheat harvest in June, no-till into the stubble \u2014 less work on my back and the soil holds moisture better. I use a hybrid seed, the same kind everyone in the village uses. I apply most of the nitrogen in two splits: base at sowing and topdress at big bell stage. Summer brings some rain, but I irrigate twice \u2014 once if it is dry at tasseling, once at grain fill if needed. One pesticide pass for stem borer and fall armyworm, which have been worse these past years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm all 5 mu in a wheat-maize double-crop rotation, the same system I have used for decades on the North China Plain. For wheat I rotary till in autumn, use an improved county-promoted variety, apply nitrogen at base and jointing, irrigate three times across the season, and spray twice for disease and aphids. For summer maize I go no-till straight into the wheat stubble to save labor \u2014 my back cannot take what it once did \u2014 using a hybrid variety with split nitrogen applications and two irrigations timed around tasseling and grain fill, plus one pesticide pass for borers. I use the machine station for sowing and harvest. These practices have fed my family reliably and I see no reason to deviate from them.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm all 5 mu in a wheat-maize double-crop rotation, the same system I have used for decades on the North China Plain. For wheat I rotary till in autumn, use an improved county-promoted variety, apply nitrogen at base and jointing, irrigate three times across the season, and spray twice for disease and aphids. For summer maize I go no-till straight into the wheat stubble to save labor \u2014 my back cannot take what it once did \u2014 using a hybrid variety with split nitrogen applications and two irrigations timed around tasseling and grain fill, plus one pesticide pass for borers. I use the machine station for sowing and harvest. These practices have fed my family reliably and I see no reason to deviate from them."
+  },
+  "elapsed_seconds": 50.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_14",
+  "tier": 2,
+  "provider": "claude"
+}

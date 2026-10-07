@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am forty-eight years old and have been working these 10.1 mu in Quzhou since I was eighteen. My mother taught me how to read the land, and over thirty years I have learned what my two hands and my husband\u2019s part-time off-farm wages can manage. With only the two of us at home, I cannot chase labor-intensive crops on every plot. Wheat and maize are my backbone because the machines help with sowing and harvest, and I can get two crops from the same land. Cotton is harder work, but Quzhou soil has always grown it well and it brings cash when grain prices dip, so I keep a small piece.\n\nThis year I will put 8 mu into the wheat\u2013maize rotation and plant 2.1 mu to cotton. For the winter wheat, I will buy improved seed from the county supply station\u2014something I have used before and trust. I will rotary till before sowing in early October. I will spread about 17 jin-equivalent of nitrogen per mu, plus 7 kg phosphorus and 6 kg potassium. Electricity for the well pump is expensive, so I will irrigate only three times: once before winter to protect the seedlings, once at jointing, and once at heading. That is enough if spring does not turn completely dry. I will spray twice for aphids and mildew. If the weather is normal, I should get about 500 kg per mu.\n\nAs soon as the wheat comes off in early June, I will sow summer maize with hybrid seed. No one around here plants the old open-pollinated maize anymore; the hybrids are too much better. I will use no-tillage because there are only a few days between wheat harvest and maize sowing, and I need to get the seed in quickly before the soil dries. I will apply 16 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. Summer brings some rain, so two irrigations\u2014one at jointing and one when the tassels emerge\u2014are usually sufficient. Two pesticide sprays will handle stem borers and leaf blight. I expect about 550 kg per mu.\n\nFor cotton, I will rotary till the 2.1 mu in late April and plant improved seed. Cotton needs attention, but a small plot is manageable. I will fertilize with 13 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I will irrigate three times because cotton is thirsty during flowering and boll-setting, and my well can manage that on this small area. I will spray four times; bollworms and aphids can destroy a cotton crop fast if you let them. A yield of about 95 kg of lint per mu would be fair.\n\nThis plan keeps my family fed, limits my labor to what two people can handle, and gives me both grain security and a little cash from the cotton.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 95\n    }\n  ],\n  \"reasoning_summary\": \"With only two people in the household and limited labor due to off-farm work, I keep most of my 10.1 mu in the mechanized wheat-maize double-cropping system and maintain a small 2.1 mu cotton plot for cash income. I use improved wheat seed and hybrid maize seed, apply moderate fertilizer rates to control costs, irrigate strategically from my well to save electricity, and tailor pesticide applications to each crop's pest pressure. I choose rotary tillage for wheat and cotton and no-tillage for summer maize to save time between the wheat harvest and maize sowing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 95
+      }
+    ],
+    "reasoning_summary": "With only two people in the household and limited labor due to off-farm work, I keep most of my 10.1 mu in the mechanized wheat-maize double-cropping system and maintain a small 2.1 mu cotton plot for cash income. I use improved wheat seed and hybrid maize seed, apply moderate fertilizer rates to control costs, irrigate strategically from my well to save electricity, and tailor pesticide applications to each crop's pest pressure. I choose rotary tillage for wheat and cotton and no-tillage for summer maize to save time between the wheat harvest and maize sowing."
+  },
+  "elapsed_seconds": 82.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HQ_QB_13",
+  "tier": 2,
+  "provider": "kimi"
+}

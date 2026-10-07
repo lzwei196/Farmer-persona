@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land since I was a child, watching my father and grandfather do it. 4.1 mu is not much, and with some family off working in the city now, I do most of the fieldwork myself. I cannot afford to gamble.\n\nMy land splits like this: about 2.5 mu I do wheat in winter and then maize right after harvest \u2014 that is the main thing everyone here does. The other 1.6 mu I put in cotton, same as I have done before.\n\n**Wheat** \u2014 I plant in mid-October. My neighbor Lao Wang uses that Jimai 22 seed and got a good harvest last year, so I switched to that two seasons ago and it did well. At planting I put down one bag of compound fertilizer across the whole 2.5 mu \u2014 that is about 50 jin spread out. Then in March when the plants start to stretch I walk out with another bag of urea and broadcast it. I water three times: once right after planting to help it root in, once in spring, once when heads are filling. I spray for weeds in winter and then spray twice more for rust and aphids before harvest. I use the rotary tiller after maize to turn the stubble under.\n\n**Maize** \u2014 Right after I cut the wheat in June I drop the maize seed in. No plowing \u2014 just seed it straight. I use that Xianyu 335 hybrid because everyone around here uses it and it fills well. One bag of compound at planting across the 2.5 mu, then I throw another bag of urea when the plant is knee-high. I only water twice unless there is a real dry spell \u2014 once around planting and once at silking. Two sprays for corn borer and earworm.\n\n**Cotton** \u2014 This takes more work. I plow it in spring before planting. Cotton here needs feeding in stages \u2014 base fertilizer, then top up twice during boll setting. I also have to spray a lot, six or seven times, because if the bollworm gets in I lose the whole thing. Four waterings \u2014 spring before planting, then during flowering, boll setting, and one more if August is dry. I use the improved hybrid variety from the shop in town \u2014 costs more but the yield difference is real.\n\nMy biggest worry is the cotton pesticide bill. If I cut corners there I lose money on the whole crop. The wheat and maize fertilizer I do not change much \u2014 same bags as last year, same schedule.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"A small-farm operator in Quzhou County with no formal schooling, relying on neighbor observation and prior-year habit. Wheat and maize rotate on 2.5 mu using improved and hybrid seed adopted after seeing good neighbor results; fertilizer applied as whole-field bags of compound plus urea topdressing, matching last year's practice. Cotton occupies 1.6 mu on a separate plot requiring heavier pesticide investment to protect against bollworm \u2014 cutting that spend is not an option. Irrigation draws from the household well. All rates and timings mirror what was done before, with small upward adjustment on cotton potassium after boll-setting looked weak last autumn.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "A small-farm operator in Quzhou County with no formal schooling, relying on neighbor observation and prior-year habit. Wheat and maize rotate on 2.5 mu using improved and hybrid seed adopted after seeing good neighbor results; fertilizer applied as whole-field bags of compound plus urea topdressing, matching last year's practice. Cotton occupies 1.6 mu on a separate plot requiring heavier pesticide investment to protect against bollworm \u2014 cutting that spend is not an option. Irrigation draws from the household well. All rates and timings mirror what was done before, with small upward adjustment on cotton potassium after boll-setting looked weak last autumn."
+  },
+  "elapsed_seconds": 59.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_1",
+  "tier": 3,
+  "provider": "claude"
+}

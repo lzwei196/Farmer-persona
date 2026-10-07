@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 20 mu here in Quzhou, and I've been doing this since I was a teenager. My land splits into two parts. About 15 mu sits on my good flat ground where I do wheat in winter and maize in summer \u2014 that's how everyone around here farms. The other 5 mu I put to stevia because the company comes to buy the dry leaves and the price is better than grain, even though it takes more work.\n\nFor wheat this year, I'll plant Jimai 22 like last year \u2014 my neighbor got over 500 kg and mine was close. I buy the compound fertilizer 15-15-15, about 50 kg per mu before planting with the rotary tiller, then I topdress 15 kg of urea per mu in March when the wheat starts jointing. That comes out to around 20 kg nitrogen, 8 kg phosphorus, 8 kg potassium per mu. I irrigate 4 times from the well \u2014 once before winter, then jointing, heading, and grain filling. Spray 2 or 3 times for aphids and rust. Rotary tillage is enough, I don't plough every year because it costs too much diesel.\n\nFor maize after wheat, I use no-tillage \u2014 drill Zhengdan 958 right into the wheat stubble. This saves time and the soil stays moist. I put 40 kg of compound fertilizer at planting and 20 kg urea at big flare stage, so about 22 kg nitrogen, 6 kg phosphorus, 6 kg potassium. Two irrigations usually, jointing and tasseling, unless the rain comes good. Two sprays for borer and armyworm.\n\nStevia is different \u2014 the buying company tells us what to do and I've learned over the years. It needs more nitrogen and more water. I ploughed that plot to break up the soil. I put on about 25 kg nitrogen, 10 kg phosphorus, 12 kg potassium per mu, some of it as manure I buy from the chicken farm. Irrigate 5 or 6 times through summer because it gets cut twice and needs to regrow fast. Three sprays at least \u2014 the leaves must be clean for the buyer.\n\nI'd rather spend a bit more on fertilizer than end up short \u2014 a bad harvest hurts much more than an extra bag of urea. My wife and I handle most of the work, my older son works in Handan so I hire a couple of neighbors at wheat and maize harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I keep the wheat-maize double crop on 15 mu like everyone in Quzhou \u2014 Jimai 22 wheat with rotary tillage and 4 irrigations from my well, then Zhengdan 958 maize drilled no-till into the stubble to save diesel and water. I put 5 mu to stevia because the buyer pays well, but it needs ploughing, more fertilizer, more water, and cleaner leaves. I apply a little extra fertilizer rather than risk a short harvest \u2014 a bad year hurts far more than a bag of urea costs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 6,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I keep the wheat-maize double crop on 15 mu like everyone in Quzhou \u2014 Jimai 22 wheat with rotary tillage and 4 irrigations from my well, then Zhengdan 958 maize drilled no-till into the stubble to save diesel and water. I put 5 mu to stevia because the buyer pays well, but it needs ploughing, more fertilizer, more water, and cleaner leaves. I apply a little extra fertilizer rather than risk a short harvest \u2014 a bad year hurts far more than a bag of urea costs."
+  },
+  "elapsed_seconds": 38.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_7",
+  "tier": 3,
+  "provider": "claude"
+}

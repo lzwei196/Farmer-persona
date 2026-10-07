@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming these 7.7 mu for forty years, and at seventy I know every inch of this soil. My household has five people, so we still have the hands to manage a little cotton, but I am not young anymore\u2014I need crops that can be mechanized where possible. The wheat is already in the ground from last autumn; this is Quzhou, after all, and winter wheat followed by summer maize is how we make our living. I keep 5 mu in that double-crop system because it is reliable and the machines can do the heavy work. The remaining 2.7 mu I plant to cotton. It is labor-intensive, especially the picking, but my family helps and the income from cotton still pays for school fees and medicine better than grain alone.\n\nFor the wheat already growing: I use an improved semi-dwarf variety I have trusted for years. I will topdress nitrogen at regreening and again at jointing, and I will irrigate four times total\u2014overwinter, regreening, jointing, and grain filling\u2014using my well. I apply phosphorus and potassium as base dressing. Two sprays will do: one herbicide and one fungicide/insecticide mix.\n\nFor summer maize: As soon as the wheat comes off in early June, I plant a hybrid maize variety directly into the wheat stubble without ploughing. No-tillage saves moisture and time, and every day matters before the autumn cold. I side-dress nitrogen at the big-flare stage and irrigate three times. Two pesticide applications are enough with good hybrids.\n\nFor cotton: I deep-plough the 2.7 mu in spring because cotton likes a loose, deep seedbed. I plant an improved Bt variety under plastic mulch to warm the soil and hold moisture. Cotton needs more potassium than grain crops, so I give it plenty. I irrigate three times and spray four times for aphids and mites that the Bt does not control. We will pick it by hand in autumn.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"At seventy years old with forty years of experience, I prioritize the reliable wheat-maize double crop on 5 mu because it is mechanized and feeds the household, while keeping 2.7 mu of cotton for cash income that my family can help pick. I use well irrigation for all crops, apply split nitrogen to wheat and maize, give cotton extra potassium, and choose no-tillage for summer maize to save time after wheat harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "At seventy years old with forty years of experience, I prioritize the reliable wheat-maize double crop on 5 mu because it is mechanized and feeds the household, while keeping 2.7 mu of cotton for cash income that my family can help pick. I use well irrigation for all crops, apply split nitrogen to wheat and maize, give cotton extra potassium, and choose no-tillage for summer maize to save time after wheat harvest."
+  },
+  "elapsed_seconds": 124.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_5",
+  "tier": 2,
+  "provider": "kimi"
+}

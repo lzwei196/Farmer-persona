@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed these 10.1 mu for forty years now, same wheat-maize rotation like everyone around here. With middle school schooling I can read the bag labels and talk with the input dealer in town, but mostly I go by what worked last year and what my neighbors are doing.\n\nFor winter wheat on all 10.1 mu, I'll plant Jimai hybrid seed again \u2014 the dealer brings it and most folks in the village use it, yields around 500 kg per mu in a normal year. Before planting I plough and then rotary-till, work in about 40 kg of compound fertilizer (15-15-15) per mu as base fertilizer, that gives me roughly 6 kg each of N, P, K. Then at jointing in spring I topdress with one bag of urea per mu, about 20 kg, which is another 9 kg N. So total nitrogen around 15 kg per mu \u2014 maybe a bit more if the wheat looks yellow. I'd rather spend the extra 30 yuan on urea than lose 50 kg of grain. Irrigate 3 times from the well: winter water in December, jointing water in March, and grain-filling in May. Spray twice \u2014 once for aphids and powdery mildew at heading, once earlier for weeds.\n\nFor summer maize right after wheat harvest in June, no-till direct seed with Zhengdan or Xianyu hybrid, everyone uses hybrid now, no one plants old varieties. At sowing I put down 30 kg compound per mu, then sidedress 25 kg urea at big trumpet stage around late July. Maize rains usually come so I only irrigate once if July is dry. Spray once for corn borer. Expect around 550 kg per mu.\n\nFamily is just me and my wife, kids work in the city, so I handle most work myself and hire a combine for harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I keep the same wheat-maize rotation I've done for forty years on all 10.1 mu. I use hybrid seed for both crops because that's what the dealer sells and what works for neighbors. For wheat I plough and apply 40 kg compound fertilizer as base plus 20 kg urea topdressing at jointing, irrigate three times from the well, and spray twice. For maize I no-till sow right after wheat, apply 30 kg compound at sowing plus 25 kg urea at big trumpet stage, irrigate once if July is dry, and spray once for corn borer. I'd rather put on a little extra urea than risk a poor harvest \u2014 fertilizer costs money but a bad crop is much worse.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I keep the same wheat-maize rotation I've done for forty years on all 10.1 mu. I use hybrid seed for both crops because that's what the dealer sells and what works for neighbors. For wheat I plough and apply 40 kg compound fertilizer as base plus 20 kg urea topdressing at jointing, irrigate three times from the well, and spray twice. For maize I no-till sow right after wheat, apply 30 kg compound at sowing plus 25 kg urea at big trumpet stage, irrigate once if July is dry, and spray once for corn borer. I'd rather put on a little extra urea than risk a poor harvest \u2014 fertilizer costs money but a bad crop is much worse."
+  },
+  "elapsed_seconds": 31.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_7",
+  "tier": 3,
+  "provider": "claude"
+}

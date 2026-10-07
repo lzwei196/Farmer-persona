@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54 years old, and I have been farming these 8 mu in Quzhou for 30 years. I only finished primary school, so I do not read books about farming \u2014 I watch what my neighbors do, I listen to the seed dealer, and I remember what worked last year. I split my land into two parts: 5 mu in wheat-maize rotation because that brings steady money, and 3 mu in cotton because cotton prices were decent last year and my family can pick it ourselves.\n\nFor wheat, I plant an improved variety in October. Last year I used 80 jin of compound fertilizer per mu as base, and top-dressed with 40 jin of urea in spring. The yield was good \u2014 almost 500 jin per mu. This year fertilizer prices are still high, but I would rather spend more than risk a bad harvest. I will use the same: 80 jin of 15-15-15 compound fertilizer and 40 jin of urea. That is about 15 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I irrigate three times \u2014 before winter, at jointing, and when the grain is filling. I spray twice for aphids and powdery mildew. I rotary till before planting. I expect 500 kg per mu.\n\nFor maize on the same 5 mu after wheat harvest, I plant a hybrid variety right away \u2014 there is no time to waste in June. I do not deep plow; I plant directly into the wheat stubble to save time and keep moisture. I put 70 jin of compound fertilizer per mu and side-dress with 30 jin of urea when the plants are knee-high. That is about 12 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. I irrigate twice if the rain does not come \u2014 once after planting if it is dry, and once at tasseling. I spray herbicide once and insecticide once if I see armyworms. I expect 580 kg per mu.\n\nFor cotton on my 3 mu, I plant a hybrid in April. Cotton needs more pesticide because of bollworms, so I spray three times. I put down 80 jin of compound fertilizer and 20 jin of urea, which is about 11 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I irrigate twice \u2014 once at flowering and once at boll stage. I rotary till before planting. Expected yield is around 280 kg of seed cotton per mu. I watch my neighbors closely, and if everyone around me applies a certain amount, I do something similar. Change is risky, and a bad harvest is a disaster.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I have been farming 8 mu in Quzhou for 30 years with only primary school education, so I rely on experience, neighbor practices, and the seed dealer. I keep 5 mu in wheat-maize rotation and 3 mu in cotton. For wheat, I use 80 jin of 15-15-15 compound fertilizer and 40 jin of urea per mu, irrigate three times, and spray twice, expecting 500 kg/mu. For maize, I plant hybrid seed directly into wheat stubble with 70 jin compound fertilizer and 30 jin urea per mu, irrigate twice, spray twice, and expect 580 kg/mu. For cotton, I apply 80 jin compound fertilizer and 20 jin urea per mu, irrigate twice, spray three times for bollworms, and expect 280 kg/mu of seed cotton. I do not cut fertilizer even when prices are high because a bad harvest is worse than wasting some input, and I follow what successful neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I have been farming 8 mu in Quzhou for 30 years with only primary school education, so I rely on experience, neighbor practices, and the seed dealer. I keep 5 mu in wheat-maize rotation and 3 mu in cotton. For wheat, I use 80 jin of 15-15-15 compound fertilizer and 40 jin of urea per mu, irrigate three times, and spray twice, expecting 500 kg/mu. For maize, I plant hybrid seed directly into wheat stubble with 70 jin compound fertilizer and 30 jin urea per mu, irrigate twice, spray twice, and expect 580 kg/mu. For cotton, I apply 80 jin compound fertilizer and 20 jin urea per mu, irrigate twice, spray three times for bollworms, and expect 280 kg/mu of seed cotton. I do not cut fertilizer even when prices are high because a bad harvest is worse than wasting some input, and I follow what successful neighbors do."
+  },
+  "elapsed_seconds": 141.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_10",
+  "tier": 3,
+  "provider": "kimi"
+}

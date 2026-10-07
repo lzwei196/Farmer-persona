@@ -1,0 +1,40 @@
+{
+  "raw_response": "Looking at this from the farmer's perspective in Quzhou County, Hebei:\n\n---\n\nMy family has farmed this land for generations. I know one system: winter wheat, then summer corn on the same fields, back and forth every year. That's what the land here is for. That's what everyone does. I have about 10 mu \u2014 enough for me to manage alone, since my son moved to the city.\n\nFor wheat, I plant in October like always. I buy the improved seed from the seed shop in town \u2014 same kind most of my neighbors use, reliable. I put down compound fertilizer and urea as base before I plow it under with the rotary machine. I water it before it gets cold, water it again in spring when it wakes up, water at jointing, and once more when the grain is filling. Four waterings. I spray once for aphids in spring \u2014 they always come. Maybe once more if I see leaf disease. Harvest in June.\n\nThe same day or next day after wheat harvest, I plant corn. Everyone uses hybrid seed now. I tried traditional seed years ago \u2014 it doesn't compare. For corn, I don't plow \u2014 I seed directly into the stubble. Saves my back and time. Corn gets more nitrogen \u2014 I split it: some at planting, some when it's knee-high. I water once if summer stays dry, but usually the rains help. I check for corn borer and spray if I see damage.\n\nI don't change much year to year. What worked last year works this year.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 63-year-old farmer with no formal schooling in Quzhou, Hebei, I follow the wheat-maize double cropping rotation that has been the backbone of farming here for decades. I plant improved wheat varieties in October using rotary tillage and apply base fertilizer before seeding, irrigating four times across the growing season and spraying twice for insects and disease. After the June wheat harvest I immediately seed hybrid maize directly into the stubble without plowing, applying split nitrogen doses and irrigating once if rain is insufficient, controlling pests once as needed. My input levels and practices mirror what neighbors and the local seed shop recommend, and I expect yields in line with what I have seen on my land in recent years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 63-year-old farmer with no formal schooling in Quzhou, Hebei, I follow the wheat-maize double cropping rotation that has been the backbone of farming here for decades. I plant improved wheat varieties in October using rotary tillage and apply base fertilizer before seeding, irrigating four times across the growing season and spraying twice for insects and disease. After the June wheat harvest I immediately seed hybrid maize directly into the stubble without plowing, applying split nitrogen doses and irrigating once if rain is insufficient, controlling pests once as needed. My input levels and practices mirror what neighbors and the local seed shop recommend, and I expect yields in line with what I have seen on my land in recent years."
+  },
+  "elapsed_seconds": 53.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_1",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this same ground for sixty years. I know what this soil wants and I know what my body can still do. I'm 83 now, just me and my wife at home. I can't do heavy labor myself anymore \u2014 I hire the village machinery cooperative for plowing, seeding, and harvest. That's how most people do it now anyway.\n\nFive mu. Same land, wheat in winter, maize in summer. That's how my father did it and how I've always done it.\n\n**Wheat (October planting):** I'll get improved seed from the township supply station \u2014 the local Jimai variety. Better than the old stuff. Before planting I have the rotary tiller come through after maize harvest to break up the stalks. I apply compound fertilizer at seeding and then come back with urea when it starts greening up in spring and again at jointing. I'll water four times: once before winter sets in, once at green-up, once at jointing, once at heading. Two pesticide passes \u2014 one for aphids in spring, one for powdery mildew. I expect around 450 jin per mu... I mean kilograms. Around 450 kg.\n\n**Maize (June planting):** Right after wheat harvest, I direct-seed hybrid maize \u2014 Zhengdan 958 or whatever the seed shop has that year, they all know what works here. No tilling, just go straight in. Summer rains do most of the watering but I'll pump from the well twice if it's dry \u2014 usually at seedling stage and tasseling. Two pesticide rounds for corn borer and whatever else shows up. Should get 550 kg per mu if the rain cooperates.\n\nTwo people, five mu, the rotation works. I don't need to change what isn't broken.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"An 83-year-old farmer with 60 years of experience on 5 mu in Quzhou County follows the standard wheat-maize rotation on the same plot year-round. Rotary tillage before winter wheat, then no-till direct seeding for summer maize to save time and moisture. Improved wheat seed and hybrid maize seed purchased from local supply stations. Fertilizer rates based on lifelong local practice: compound base fertilizer plus urea top-dressing. Winter wheat requires four irrigations from the well given the semi-arid climate; summer maize relies mainly on monsoon rains with two supplemental irrigations. Two pesticide applications per crop address common pests and diseases. Physical labor is contracted out to the village machinery cooperative. No changes to a proven system that has sustained this household for decades.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "An 83-year-old farmer with 60 years of experience on 5 mu in Quzhou County follows the standard wheat-maize rotation on the same plot year-round. Rotary tillage before winter wheat, then no-till direct seeding for summer maize to save time and moisture. Improved wheat seed and hybrid maize seed purchased from local supply stations. Fertilizer rates based on lifelong local practice: compound base fertilizer plus urea top-dressing. Winter wheat requires four irrigations from the well given the semi-arid climate; summer maize relies mainly on monsoon rains with two supplemental irrigations. Two pesticide applications per crop address common pests and diseases. Physical labor is contracted out to the village machinery cooperative. No changes to a proven system that has sustained this household for decades."
+  },
+  "elapsed_seconds": 56.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_9",
+  "tier": 2,
+  "provider": "claude"
+}

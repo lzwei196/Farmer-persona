@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming in Quzhou for over forty years. I never went to school, but I know this land and I watch what the good farmers in my village do. I have about eight mu of good flat land, and every year I grow winter wheat and summer maize \u2014 that is the only way to make a living here. \n\nFor the wheat, I will sow in early October after running the rotary tiller to break up the stubble. I use improved wheat seed, about thirty jin per mu, because the old black wheat does not yield enough anymore. I spread compound fertilizer and urea \u2014 about eighteen jin of nitrogen, eleven jin of phosphate, and five jin of potash per mu. Wheat is thirsty, so I irrigate three times: once after sowing, once when it greens up in spring, and once at heading. I also spray three times for pests and weeds \u2014 mixing insecticide, herbicide, and fungicide together when I can to save labor. If the frost does not hurt it, I expect about one thousand jin per mu, which is five hundred kilograms.\n\nAs soon as the wheat comes off in early June, I plant maize without ploughing \u2014 just drill the hybrid seed straight into the wheat stubble. I buy the seed by the package, about one package per mu. Maize needs less fertilizer than wheat: I give it about twelve jin of nitrogen, four jin of phosphate, and three jin of potash per mu. I irrigate twice, at jointing and grain filling, and spray three times for insects and weeds. In a normal year I can get about one thousand one hundred jin per mu, which is five hundred fifty kilograms. This is what I have always done, and I see no reason to change.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou for over forty years with no schooling, so I follow what my neighbors and my own experience have proven. I grow winter wheat and summer maize on my eight mu because that is the standard double-cropping system here and it reliably feeds my family. I rotary-till before wheat and plant maize no-till into the wheat stubble to save time. I use improved wheat seed and hybrid maize seed, apply fertilizer based on what I have always seen work, irrigate wheat three times and maize twice, and spray three times per crop for insects, weeds, and disease. I expect about 500 kg per mu for wheat and 550 kg per mu for maize in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou for over forty years with no schooling, so I follow what my neighbors and my own experience have proven. I grow winter wheat and summer maize on my eight mu because that is the standard double-cropping system here and it reliably feeds my family. I rotary-till before wheat and plant maize no-till into the wheat stubble to save time. I use improved wheat seed and hybrid maize seed, apply fertilizer based on what I have always seen work, irrigate wheat three times and maize twice, and spray three times per crop for insects, weeds, and disease. I expect about 500 kg per mu for wheat and 550 kg per mu for maize in a normal year."
+  },
+  "elapsed_seconds": 202.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_5",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am old now, 69 years, and I farm 7 mu with my husband. We are only two old people in the house. My son works in the city, sends some money but not much. I never went to school, but I have been putting seed in this ground for 47 years. My hands know what to do.\n\nI do wheat in winter, maize in summer, like everyone here in Quzhou. Same as my mother did, same as my neighbors do.\n\nFor wheat, I plant in October after the maize comes off. I buy the seed from the same shop in town \u2014 improved kind, everyone uses it now, the old seed nobody sells anymore. I put about 2 bags of compound fertilizer before plowing, that is around 100 jin per mu, so about 50 kg. Then in spring when the wheat turns green, I spread urea, maybe one bag for 2 mu. I water from the well \u2014 once before winter so the ground does not crack, once in spring at jointing, once when the head fills. Three waterings, that is enough, water costs electricity. Spray once for the aphids when I see them on the leaves, sometimes twice if bad. My wheat gives me maybe 400 kg per mu, sometimes 450 in good years.\n\nFor maize, I plant right after wheat harvest in June, no plowing, just push the seed in with the machine the village hires. Hybrid seed, the dealer brings it. I put compound fertilizer at planting, then urea when the maize is knee-high \u2014 this is the big feeding, maize eats a lot. Two waterings usually, the summer rain helps. Spray once for the borer. Maize gives me 500 kg per mu, good years 550.\n\nI do not change much from year to year. What worked before will work again. Fertilizer is expensive but if I put too little the harvest is bad and that is worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 425\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    }\n  ],\n  \"reasoning_summary\": \"I am 69, never went to school, farm 7 mu with my husband. I do what I always do \u2014 wheat in winter with compound fertilizer at plowing and urea in spring, maize in summer with no plowing and big urea feeding when it is knee-high. Improved wheat seed and hybrid maize seed from the dealer, same as neighbors. Three waterings for wheat, two for maize since summer rain helps. I would rather spend a little extra on fertilizer than have a bad harvest \u2014 that is real loss. Spray when I see pests, not before. My yields are what they have been: about 425 kg wheat, 525 kg maize per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 425
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      }
+    ],
+    "reasoning_summary": "I am 69, never went to school, farm 7 mu with my husband. I do what I always do \u2014 wheat in winter with compound fertilizer at plowing and urea in spring, maize in summer with no plowing and big urea feeding when it is knee-high. Improved wheat seed and hybrid maize seed from the dealer, same as neighbors. Three waterings for wheat, two for maize since summer rain helps. I would rather spend a little extra on fertilizer than have a bad harvest \u2014 that is real loss. Spray when I see pests, not before. My yields are what they have been: about 425 kg wheat, 525 kg maize per mu."
+  },
+  "elapsed_seconds": 22.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_12",
+  "tier": 3,
+  "provider": "claude"
+}

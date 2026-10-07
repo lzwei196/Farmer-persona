@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for thirty years. My mother farmed it before me. I know this soil \u2014 it's good loam on the North China Plain, and with my well I don't have to pray for rain the way people in other counties do.\n\nMy land is 10.1 mu. The wheat-maize rotation takes up 7 mu. Cotton gets the rest, 3.1 mu, in a separate field to the south. My husband does some work in town now. It's mostly me managing the farm day-to-day, so I have to be practical about labor.\n\n**Wheat (planted this October):** I'll buy certified improved seed from the township supply cooperative, same as the last several years. Jimai series does well here. I'll rotary till after the maize harvest in September, then sow in early October. I'll apply compound fertilizer as base and top-dress urea at jointing. Three irrigations: the winter freeze-in water, jointing, and heading. I'll spray herbicide in winter and one fungicide pass in spring for powdery mildew. This I can mostly manage myself with the electric pump.\n\n**Summer maize (after wheat harvest in June):** I'll direct-seed hybrid seed \u2014 my neighbor gets Xianyu 335 and yields well, I'll do the same. No tillage, just seed straight into the wheat stubble. Topdress urea twice. Two irrigations if summer rain is short. One herbicide spray early, one pass for corn borer. Mechanized harvest in September.\n\n**Cotton (planted late April):** Labor is the problem with cotton. Picking especially. I'll keep it at 3.1 mu \u2014 I won't expand because I can't pick more than that alone. I'll use Bt hybrid seed to cut down on bollworm spraying. Spring rotary tillage, transplant seedlings in late April. Cotton needs potassium so I put more in. Five irrigations across the long season. Six pesticide passes for aphids, mites, and late-season bollworm. Expected yield is modest \u2014 cotton prices are unpredictable \u2014 but it gives me some cash income separate from the grain.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 48-year-old female farmer in Quzhou County, Hebei, manages 10.1 mu with a wheat-maize double-cropping rotation on 7 mu and cotton on a separate 3.1 mu plot. With limited household labor due to off-farm work, she prioritizes mechanization-compatible practices: rotary tillage then improved-variety wheat in winter, no-till direct-seeded hybrid maize in summer on the same land, and Bt hybrid cotton in spring to reduce hand-labor pesticide passes. Fertilizer rates and irrigation frequencies follow local conventional norms she has refined over 30 years. Cotton area is held at 3.1 mu \u2014 the maximum she can hand-pick alone \u2014 providing cash income diversification while grain crops provide volume and price stability.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 5,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 48-year-old female farmer in Quzhou County, Hebei, manages 10.1 mu with a wheat-maize double-cropping rotation on 7 mu and cotton on a separate 3.1 mu plot. With limited household labor due to off-farm work, she prioritizes mechanization-compatible practices: rotary tillage then improved-variety wheat in winter, no-till direct-seeded hybrid maize in summer on the same land, and Bt hybrid cotton in spring to reduce hand-labor pesticide passes. Fertilizer rates and irrigation frequencies follow local conventional norms she has refined over 30 years. Cotton area is held at 3.1 mu \u2014 the maximum she can hand-pick alone \u2014 providing cash income diversification while grain crops provide volume and price stability."
+  },
+  "elapsed_seconds": 64.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_13",
+  "tier": 2,
+  "provider": "claude"
+}

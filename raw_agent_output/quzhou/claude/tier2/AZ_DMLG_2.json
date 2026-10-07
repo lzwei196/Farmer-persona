@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for thirty years. I know what works here in Quzhou. My soil, my well, my neighbors \u2014 I learn from all of them.\n\nMy 12.4 mu is split the way I've always done it: about 9 mu for the wheat-maize rotation, and a little over 3 mu set aside for stevia. The stevia land doesn't rotate \u2014 I keep it fixed because transplanting and setting up that field takes real effort, and the contract buyers come directly to collect. It brings in better cash than grain, and with some of my family off the farm, I need that income.\n\n**Wheat:** Every October I rotary-till after the maize comes off, then put in the improved variety I buy from the cooperative in town. Everyone around here uses it. I've tried fancier seeds pushed by salesmen but the local improved variety gives me steady results. I spread compound fertilizer at sowing and top-dress urea at jointing. Three waterings: before sowing to get good germination, at jointing, and at heading. I spray herbicide in early winter and go out again in spring for aphids and powdery mildew \u2014 those two are the real threats here.\n\n**Maize:** Right after wheat harvest in June, I rotary-till and put in hybrid seed \u2014 the same kind my neighbors use, everyone buys it at the township supply station. Base fertilizer goes in at planting, topdress at tasseling. Two waterings are usually enough unless it's a bad dry year \u2014 once at planting if the soil is parched, once at silking. I spray for corn borer and weeds early in the season.\n\n**Stevia:** I transplant cuttings in April. This crop drinks more water than grain \u2014 I water it four times through the season. I harvest leaves twice: once in midsummer and again before the first frost. The fertilizer I put in is lighter on nitrogen, heavier on keeping the soil balanced. Two pesticide rounds keep the aphids off. The company sets a price and I aim to fill my quota.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 9 mu to the standard wheat-maize double-crop rotation that everyone in Quzhou follows, and keep 3.4 mu dedicated to stevia for contract cash income. Wheat goes in October with rotary tillage after maize harvest, using the improved cooperative variety I know well, with three irrigations timed to germination, jointing, and heading. Maize follows in June using hybrid seed with topdress at tasseling and two irrigations. Stevia is transplanted in April from cuttings, harvested twice per season, and needs four waterings; I keep fertilizer balanced but lighter on nitrogen to protect leaf quality for the buyer. All my choices come from thirty years on this land and what I see working around me, not from any book.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 3.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      }
+    ],
+    "reasoning_summary": "I allocate 9 mu to the standard wheat-maize double-crop rotation that everyone in Quzhou follows, and keep 3.4 mu dedicated to stevia for contract cash income. Wheat goes in October with rotary tillage after maize harvest, using the improved cooperative variety I know well, with three irrigations timed to germination, jointing, and heading. Maize follows in June using hybrid seed with topdress at tasseling and two irrigations. Stevia is transplanted in April from cuttings, harvested twice per season, and needs four waterings; I keep fertilizer balanced but lighter on nitrogen to protect leaf quality for the buyer. All my choices come from thirty years on this land and what I see working around me, not from any book."
+  },
+  "elapsed_seconds": 64.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_2",
+  "tier": 2,
+  "provider": "claude"
+}

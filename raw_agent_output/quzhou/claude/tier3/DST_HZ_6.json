@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am old now, 65, and my back is not what it was. My son works in town, so it is just me and my husband. Forty years I have been on this land. I do not read, I do not write, but I know when the wheat is hungry and when the maize is thirsty.\n\nI farm 10 mu and a little. Half for wheat in winter, same land for maize in summer. It has always been this way. My neighbor Old Wang, his family gets good harvest, so I watch what he does and do the same, more or less.\n\nFor the wheat \u2014 I plant after the maize comes off in October. I buy the compound fertilizer, the 15-15-15 kind, two bags for each mu. That is the big bag, 100 jin. I spread it when the land is turned. Then in spring when the wheat wakes up and starts to stand tall, I put urea, maybe 30 jin for each mu. The dealer sells it, everyone buys it. If I put too little, the wheat turns yellow, and then what? A bad harvest is a bad year. Better to put a little extra.\n\nI water the wheat before winter so it survives the cold, then again in spring at jointing, then at heading time. Three waterings from the well, sometimes four if the sky does not give rain. I spray for the aphids and the rust, twice usually. My husband carries the sprayer.\n\nFor the maize \u2014 I plant right after wheat harvest, no time to rest the land, just rotary and put the seed in. I buy the hybrid seed, Zhengdan or Xianyu, whatever the dealer has that year that people say is good. One and a half bags of compound in the row when I plant, then when the maize is knee-high I put urea, about 40 jin per mu. Maize eats a lot. I water two, three times. Spray once for the borer, maybe twice.\n\nWheat I expect 900 jin per mu, maize 1100 jin if the rains come right. Some years less. That is how it goes.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what I have always done and what Old Wang next door does. Two bags of compound for wheat at planting, urea in spring when it stands up, three waterings from the well. For maize after wheat I just rotary and plant the hybrid seed, one and a half bags compound in the row, then urea when it is knee-high. I would rather put a little extra fertilizer than watch my crop turn yellow \u2014 wasting some money on fertilizer hurts, but losing the harvest is much worse. Spray for aphids on wheat, for borer on maize. My husband and I do the work ourselves; we cannot afford to hire much help.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what I have always done and what Old Wang next door does. Two bags of compound for wheat at planting, urea in spring when it stands up, three waterings from the well. For maize after wheat I just rotary and plant the hybrid seed, one and a half bags compound in the row, then urea when it is knee-high. I would rather put a little extra fertilizer than watch my crop turn yellow \u2014 wasting some money on fertilizer hurts, but losing the harvest is much worse. Spray for aphids on wheat, for borer on maize. My husband and I do the work ourselves; we cannot afford to hire much help."
+  },
+  "elapsed_seconds": 43.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_6",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 7 mu, so I will not spread myself too thin. I will keep the main money on the wheat-maize land, because that is what I know best and what people around me do. I will put 5 mu into winter wheat and then summer maize on that same 5 mu, and I will keep 2 mu for peanut. I do not like taking chances at the start of the year. If last year\u2019s seed and fertilizer level gave me a steady harvest, I will stay close to that and only push a little where I think yield can still come. Wheat needs the most careful feeding on my land, so I will give it a full base fertilizer and then chase it once when it turns green. Maize I will also feed enough, because if maize is short of fertilizer after wheat, the ears stay small and I lose money. Peanut I will not push too much nitrogen, because too much vine is no good; I will use more phosphorus and potassium there. Since I have well irrigation, I will not let the wheat suffer for water, and I will give maize water at the key time if rain is short. I watch what the better fields nearby do, and I would rather spend a bit more on fertilizer than watch yield fall.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"peanut\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 320\n    }\n  ],\n  \"reasoning_summary\": \"I will keep 5 mu in the wheat-maize rotation and 2 mu in peanut, because that spreads risk and still keeps most land in the crops I know best. I will stay close to what worked before and what good neighboring farmers do, but I will not cut fertilizer too hard because losing yield costs more than wasting a little fertilizer. I will feed wheat the heaviest, keep maize well supplied after wheat harvest, and hold back nitrogen on peanut while giving it more phosphorus and potassium. Since I have well irrigation, I will water at the key stages so the crop does not get held back by dry weather.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "peanut",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 320
+      }
+    ],
+    "reasoning_summary": "I will keep 5 mu in the wheat-maize rotation and 2 mu in peanut, because that spreads risk and still keeps most land in the crops I know best. I will stay close to what worked before and what good neighboring farmers do, but I will not cut fertilizer too hard because losing yield costs more than wasting a little fertilizer. I will feed wheat the heaviest, keep maize well supplied after wheat harvest, and hold back nitrogen on peanut while giving it more phosphorus and potassium. Since I have well irrigation, I will water at the key stages so the crop does not get held back by dry weather."
+  },
+  "elapsed_seconds": 34.4,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_1",
+  "tier": 3,
+  "provider": "codex"
+}

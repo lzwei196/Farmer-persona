@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 64-year-old farmer in Quzhou County with middle school education. My family has about 10 mu of flat irrigated land on the North China Plain. I have been farming this land for over 40 years, and my father farmed it before me. Here is what I will do this year and why.\n\n**My reasoning:**\n\nI will grow winter wheat followed by summer maize on the same 10 mu of land. That is the rotation everyone in my village does, and it is the only system that makes sense here. The grain purchasing station in town still buys wheat and maize at a guaranteed price, so I know I can sell what I grow. I am not going to experiment with cotton or vegetables \u2014 my neighbor tried cotton five years ago and could not find a buyer. At my age, I cannot afford to take that kind of risk.\n\nFor wheat, I will sow in early October after rotary tilling the field. I will buy improved wheat seed from the county supply co-op \u2014 I have been using *Luyuan 502* or *Jimai 22* for years, and they do well here. I will put down compound fertilizer as a base dressing and then top-dress with urea at green-up and jointing. Wheat needs water, so I will irrigate three times: once before winter freeze, once at jointing in spring, and once at heading. I will spray herbicide once and insecticide once or twice depending on whether aphids show up.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize. I will not plow \u2014 I will direct-seed the hybrid corn into the wheat stubble. That saves diesel and time, and the county extension office has been pushing no-till for maize for years. I will use *Denghai 605* hybrid seed; it is what the seed shop sells and everyone plants it. I will apply compound fertilizer at planting and a little urea at the big-flush stage. Maize usually gets enough rain in July and August, but I will irrigate twice if it turns dry \u2014 once at the V6 stage and once at tasseling. I will spray herbicide once and insecticide once for corn borer.\n\nI do not soil-test \u2014 nobody around here does. I apply fertilizer the way I always have, based on what the co-op recommends and what I can afford. The whole family depends on this harvest, so I stick with what I know works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize in rotation on 10 mu of flat irrigated land in Quzhou County, the same double-cropping system my family has practiced for generations. Wheat is sown in October with rotary tillage using improved varieties like Luyuan 502, receiving compound base fertilizer plus urea topdressing, three irrigations, and two pesticide applications. After early June harvest, I direct-seed hybrid maize Denghai 605 into the stubble with no tillage, applying compound fertilizer and a urea topdress, irrigating twice if summer rainfall is insufficient, and spraying herbicide and insecticide once each. I do not experiment with other crops because the grain purchasing station guarantees a market for wheat and maize, and at 64 years old I cannot afford the risk of untested varieties or unfamiliar crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize in rotation on 10 mu of flat irrigated land in Quzhou County, the same double-cropping system my family has practiced for generations. Wheat is sown in October with rotary tillage using improved varieties like Luyuan 502, receiving compound base fertilizer plus urea topdressing, three irrigations, and two pesticide applications. After early June harvest, I direct-seed hybrid maize Denghai 605 into the stubble with no tillage, applying compound fertilizer and a urea topdress, irrigating twice if summer rainfall is insufficient, and spraying herbicide and insecticide once each. I do not experiment with other crops because the grain purchasing station guarantees a market for wheat and maize, and at 64 years old I cannot afford the risk of untested varieties or unfamiliar crops."
+  },
+  "elapsed_seconds": 158.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_15",
+  "tier": 1,
+  "provider": "kimi"
+}

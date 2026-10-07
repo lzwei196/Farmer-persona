@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old and have farmed in Quzhou County for decades. I have 7 mu of good flat land on the North China Plain. My children have left for the city, so I manage the fields mostly by myself, hiring a machine operator at sowing and harvest. Because I finished more schooling than most of my neighbors, I read the county extension bulletins and understand the value of improved varieties, but at my age I do not take big risks with untested crops. This year, like most years, I will stick to the wheat-maize rotation that has always fed my family and given me a steady income.\n\nMy winter wheat is already in the ground from last October \u2014 I planted an improved semi-dwarf variety that resists lodging. Now that spring has arrived, I will topdress with nitrogen at green-up and again at jointing, irrigate three times, and spray for weeds, aphids, and powdery mildew. After harvesting the wheat in early June, I will immediately plant a hybrid maize variety using no-tillage direct seeding into the wheat stubble. There is no time to waste between crops. For the maize, I will apply compound fertilizer at sowing and topdress at the big-flare stage, irrigate twice, and control weeds and corn borers. I do not grow cotton or vegetables anymore \u2014 my back cannot handle the bending and extra labor, and grain crops give me reliable returns with less risk.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    }\n  ],\n  \"reasoning_summary\": \"I have 7 mu of flat land in Quzhou County and farm alone at age 68, so I stick to the reliable wheat-maize double-cropping system used by most households here. I grow improved winter wheat with rotary tillage, three irrigations, four pesticide applications, and modest fertilizer inputs, expecting about 1050 kg per mu. After the June wheat harvest, I plant hybrid summer maize using no-tillage direct seeding to save time and labor, with two irrigations and three pesticide applications, expecting about 1150 kg per mu. I avoid vegetables or cotton because the labor is too demanding for my age and grain crops provide steady, lower-risk returns.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      }
+    ],
+    "reasoning_summary": "I have 7 mu of flat land in Quzhou County and farm alone at age 68, so I stick to the reliable wheat-maize double-cropping system used by most households here. I grow improved winter wheat with rotary tillage, three irrigations, four pesticide applications, and modest fertilizer inputs, expecting about 1050 kg per mu. After the June wheat harvest, I plant hybrid summer maize using no-tillage direct seeding to save time and labor, with two irrigations and three pesticide applications, expecting about 1150 kg per mu. I avoid vegetables or cotton because the labor is too demanding for my age and grain crops provide steady, lower-risk returns."
+  },
+  "elapsed_seconds": 144.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_8",
+  "tier": 1,
+  "provider": "kimi"
+}

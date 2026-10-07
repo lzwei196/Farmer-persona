@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm only 3.0 mu, so every bag of fertilizer and every irrigation matters. I will start from what has worked around Quzhou and only push a little where I think the return is real. For the wheat-maize land, I will keep most of the area in the usual rotation because that is the steady money and I have well water, so I can hold yield better than dryland fields. I will put 2.0 mu into winter wheat followed by summer maize, and I will leave 1.0 mu for cotton. I do not like cutting fertilizer too hard on grain, because if wheat or maize loses stand or ear size, that loss is bigger than saving a few dozen yuan. So on wheat I will use a bit fuller base, then chase with nitrogen at jointing; on maize I will feed enough for a solid ear but not go crazy on phosphorus because the wheat season already leaves some effect in the soil; on cotton I will not starve potassium because if bolls are weak, the whole field looks empty. Since some family labor is away working, I will also keep the operations simple: rotary tillage for wheat, no-tillage or direct seeding for summer maize if the stubble condition allows, and ordinary spring tillage for cotton. I will use improved or hybrid seed where I have seen neighbors get stable yield, because I trust what I can see in nearby fields more than talk.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 700\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I will keep 2.0 mu in the wheat-maize rotation because that is the safest income on my small farm with well irrigation, and I will keep 1.0 mu of cotton for cash income. I will use improved or hybrid seed that has done well in nearby fields, keep fertilizer at a solid but not extreme level, and avoid cutting nitrogen too much because losing yield costs me more than wasting a little fertilizer. I will simplify field work to fit limited family labor, give wheat three irrigations, maize two, and cotton three, and I will spray enough times to avoid obvious pest loss rather than wait and gamble.\"\n}\n```\n\nSources checked: Ministry of Agriculture and Rural Affairs on Quzhou wheat-cotton results (`moa.gov.cn`), Hebei/Handan reporting on Quzhou wheat-maize yields (`moa.gov.cn` reprint of Hebei Daily), national winter wheat fertilization guidance for the North China irrigated wheat zone (`moa.gov.cn`), and Huang-Huai-Hai maize/cotton fertilization guidance (`gov.cn`/`moa.gov.cn`).",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 700
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I will keep 2.0 mu in the wheat-maize rotation because that is the safest income on my small farm with well irrigation, and I will keep 1.0 mu of cotton for cash income. I will use improved or hybrid seed that has done well in nearby fields, keep fertilizer at a solid but not extreme level, and avoid cutting nitrogen too much because losing yield costs me more than wasting a little fertilizer. I will simplify field work to fit limited family labor, give wheat three irrigations, maize two, and cotton three, and I will spray enough times to avoid obvious pest loss rather than wait and gamble."
+  },
+  "elapsed_seconds": 51.2,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_2",
+  "tier": 3,
+  "provider": "codex"
+}

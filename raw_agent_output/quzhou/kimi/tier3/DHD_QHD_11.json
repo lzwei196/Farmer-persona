@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and have farmed my land in Quzhou for 45 years. I finished high school, so I do my own sums on input costs and yields instead of guessing. My soil is alluvial loam with medium phosphorus but decent potassium, and after decades of wheat-maize double cropping, I know it gets tired if I do not feed it properly. Last year my wheat yielded 480 kg per mu, my maize yielded 580 kg, and my cotton gave 280 kg of seed cotton. This year I am pushing each crop a little harder because seed and fertilizer prices have not jumped, and with only two of us working 9 mu, a bad harvest would hurt more than wasting a few kilos of fertilizer.\n\nMy 6 mu of winter wheat is already in the ground. I planted an improved variety, Jimai 22, last October with a basal dressing of 50 kg per mu of compound fertilizer. Now at jointing stage, I will topdress with 25 kg per mu of urea to bring my nitrogen to 18 kg per mu, with 7 kg of phosphorus and 6 kg of potassium total. I will irrigate four times\u2014greening, jointing, heading, and grain filling\u2014and spray twice, once for weeds and once for insects and scab at heading. I expect 500 kg per mu.\n\nOn my other 3 mu, I will plant hybrid Bt cotton in the next week after one pass of rotary tillage. Cotton needs more potassium or the leaves yellow in August, so I will apply 14 kg nitrogen, 6 kg phosphorus, and 9 kg potassium per mu, using compound fertilizer and a side-dressing of potassium chloride. Cotton takes four irrigations and five pesticide sprays for bollworm, aphids, and spider mites. I am targeting 300 kg per mu of seed cotton.\n\nAfter wheat harvest in early June, I will immediately plant hybrid maize on those same 6 mu using no-tillage direct seeding into the wheat stubble. We have only about ten days between crops, and I cannot afford to lose that window ploughing. I will apply 16 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu, putting down compound at sowing and spreading urea at the big trumpet stage. Maize will get three irrigations and two sprays. I expect 600 kg per mu.\n\nI watch my neighbors closely. Most are applying similar rates this year, so I am not drifting far from the village norm. I figure my total fertilizer bill will run about 2,200 yuan across all 9 mu, which is tight but manageable. I would rather spend an extra 50 yuan per mu on fertilizer than risk a yield drop. A failed crop means borrowing money; extra fertilizer just means slightly less profit.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on last year's results and the specific needs of each crop on my alluvial loam soil. For wheat on 6 mu, I increase nitrogen to 18 kg per mu with a jointing topdressing of urea to push for 500 kg per mu. For summer maize on the same 6 mu, I use no-tillage direct seeding to save the narrow window after wheat harvest, applying 16 kg nitrogen per mu for a target of 600 kg. For cotton on 3 mu, I emphasize potassium at 9 kg per mu to prevent late-season deficiency, with 14 kg nitrogen and five pesticide sprays targeting 300 kg of seed cotton. With only two workers and well irrigation, I prioritize reliable, neighbor-tested practices and accept the cost of slightly higher fertilizer rates rather than risk yield loss.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I base my decisions on last year's results and the specific needs of each crop on my alluvial loam soil. For wheat on 6 mu, I increase nitrogen to 18 kg per mu with a jointing topdressing of urea to push for 500 kg per mu. For summer maize on the same 6 mu, I use no-tillage direct seeding to save the narrow window after wheat harvest, applying 16 kg nitrogen per mu for a target of 600 kg. For cotton on 3 mu, I emphasize potassium at 9 kg per mu to prevent late-season deficiency, with 14 kg nitrogen and five pesticide sprays targeting 300 kg of seed cotton. With only two workers and well irrigation, I prioritize reliable, neighbor-tested practices and accept the cost of slightly higher fertilizer rates rather than risk yield loss."
+  },
+  "elapsed_seconds": 102.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_11",
+  "tier": 3,
+  "provider": "kimi"
+}

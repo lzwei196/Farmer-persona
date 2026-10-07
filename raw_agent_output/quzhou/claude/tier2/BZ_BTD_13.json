@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for over five decades. Quzhou soil I know like my own hands \u2014 the sandy loam, the summer rains that come heavy and then stop, the dry springs that demand the well. My three mu of chili go in first, because that is where the money is. The rest of my land I run the old winter wheat and summer maize rotation I have done since I was a young man.\n\nAt my age I cannot do everything myself anymore. My wife and one other family member help, but heavy tillage I hire out. I am not going to start experimenting with new methods at 72. What has worked for 55 years will work again.\n\n**Chili (4 mu):** This is my main income crop. I use the improved local variety from the county seed station \u2014 not the expensive hybrid, which I don't trust for this field's drainage. I fertilize heavily because chili takes it. I irrigate often during fruit set \u2014 the well is reliable. Pests and disease are my biggest worry, especially aphids and blight in July. I spray five times, maybe six if it's a wet summer.\n\n**Winter wheat (6.1 mu):** I plough this field in October before sowing. I use the county-recommended improved variety. Four irrigations: at sowing, jointing, heading, and grain fill. I keep inputs moderate \u2014 wheat is not my cash crop, it feeds the household and covers costs.\n\n**Summer maize (6.1 mu, same land as wheat):** After wheat harvest in June I go straight to hybrid seed and direct seeding \u2014 no tilling, saves my back and the soil moisture. I top-dress urea at topping stage. Two to three irrigations depending on July rains.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 9,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1800\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 72-year-old Quzhou farmer with 55 years of experience allocates 4 mu to improved-variety chili as the primary cash crop under intensive fertilization and frequent well irrigation, while running the standard winter wheat\u2013summer maize rotation on the remaining 6.1 mu. Chili receives the most inputs and irrigation events given its high value and disease pressure. Wheat is ploughed in autumn and managed with moderate inputs sufficient for household food security and cost recovery. Maize follows wheat via no-tillage direct seeding to conserve moisture and reduce labor burden, using hybrid seed to maximize grain yield on limited land. Input levels and tillage choices reflect decades of local experience, physical capacity constraints of an aging farmer, and a conservative preference for proven practices over new techniques.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 9,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1800
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 72-year-old Quzhou farmer with 55 years of experience allocates 4 mu to improved-variety chili as the primary cash crop under intensive fertilization and frequent well irrigation, while running the standard winter wheat\u2013summer maize rotation on the remaining 6.1 mu. Chili receives the most inputs and irrigation events given its high value and disease pressure. Wheat is ploughed in autumn and managed with moderate inputs sufficient for household food security and cost recovery. Maize follows wheat via no-tillage direct seeding to conserve moisture and reduce labor burden, using hybrid seed to maximize grain yield on limited land. Input levels and tillage choices reflect decades of local experience, physical capacity constraints of an aging farmer, and a conservative preference for proven practices over new techniques."
+  },
+  "elapsed_seconds": 49.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_13",
+  "tier": 2,
+  "provider": "claude"
+}

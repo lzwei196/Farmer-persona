@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 61 this year. I finished primary school and have farmed for 45 years in Quzhou. I have 18 mu of land. Ten mu I plant with cotton \u2014 that is my main crop and my money maker. The other eight mu I do winter wheat and summer maize, one after the other.\n\nIt is spring now. My wheat went in the ground last October. I used an improved variety, the kind from the seed station that my neighbor Old Wang also uses. Before sowing I rotary tilled the field and put down base fertilizer \u2014 one bag of compound fertilizer per mu. Now the wheat is turning green. I will top dress with about 30 kg of urea per mu in total, half at green-up and half at jointing. With the base fertilizer, that is about 20 kg of nitrogen per mu, and about 7 kg each of phosphorus and potassium. I will irrigate three times: green-up water, jointing water, and flowering water. If it stays dry like two years ago I might add a fourth, but three is usually enough. I will spray pesticide twice, once for aphids and once if I see powdery mildew. I expect about 900 jin per mu from the wheat.\n\nFor cotton, I will plough the ten mu field deep in late April. I plant improved Bt cotton seeds, the ones that resist bollworm. Each mu gets one bag of compound fertilizer as base \u2014 that is 50 kg. When the plants flower I will spread half a bag of urea per mu, and another half bag when the bolls set. That is 50 kg urea per mu total. So nitrogen is about 30 kg per mu, and phosphorus and potassium are about 8 kg each from the compound. Cotton drinks a lot of water, so I will irrigate four times: at planting, at flowering, at peak boll, and once in late August to fill the bolls. I will spray pesticide four times. Even with Bt cotton I still need to control aphids and spider mites. Last year I sprayed five times and spent too much money, so this year I will keep it to four. I hire labor for cotton picking in September and October. I expect about 480 jin of seed cotton per mu.\n\nFor summer maize, right after I cut the wheat in early June I plant hybrid maize. I do not have time to plough deep, so I use no-tillage planting. I put half a bag of compound fertilizer per mu in the row at planting, and at the big trumpet stage I top dress with 40 kg of urea per mu. That is about 22 kg nitrogen per mu, and 4 kg each of phosphorus and potassium. Summer maize grows when the rains come, so I only irrigate twice \u2014 once after planting if it is dry, and once at tasseling. I spray twice for armyworm. If the weather is good I can get 1,100 jin per mu.\n\nI learned all this by doing it year after year and watching the neighbors. I do not trust fancy advice from outside \u2014 I trust what I see in the field. If Old Zhang puts more fertilizer on his cotton and his plants look better than mine, next year I might add more too. But I also watch my wallet. Fertilizer is expensive now. Still, I would rather put a little too much than too little. A bad harvest means my family loses money; wasting a little fertilizer is just a cost of doing business.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 18 mu based on 45 years of experience and what my neighbors do. I keep 10 mu for cotton, my main cash crop, and 8 mu for wheat-maize double cropping. For wheat, I top dress urea in spring and irrigate three times. For cotton, I plough in spring, apply compound fertilizer as base and urea twice later, irrigate four times, and spray four times. For maize, I plant hybrid seed immediately after wheat harvest with no-tillage, apply compound at planting and urea at trumpet stage, and irrigate twice. I would rather spend a bit more on fertilizer than risk yield loss, but I watch my total budget carefully.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage my 18 mu based on 45 years of experience and what my neighbors do. I keep 10 mu for cotton, my main cash crop, and 8 mu for wheat-maize double cropping. For wheat, I top dress urea in spring and irrigate three times. For cotton, I plough in spring, apply compound fertilizer as base and urea twice later, irrigate four times, and spray four times. For maize, I plant hybrid seed immediately after wheat harvest with no-tillage, apply compound at planting and urea at trumpet stage, and irrigate twice. I would rather spend a bit more on fertilizer than risk yield loss, but I watch my total budget carefully."
+  },
+  "elapsed_seconds": 193.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_14",
+  "tier": 3,
+  "provider": "kimi"
+}

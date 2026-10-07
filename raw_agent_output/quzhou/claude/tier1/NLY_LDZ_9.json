@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for three generations. My father grew wheat and corn, his father grew wheat and corn, and so will I. The neighbors all do the same \u2014 in Quzhou, that is just what the land is for. I have about 10 mu. I know no other way and have no reason to change.\n\nFor winter wheat, I will plant around October like every year. I will buy the improved seeds from the village supply store \u2014 I do not remember the exact name but I ask the shopkeeper what everyone else is buying and I buy that. I put down plenty of fertilizer in the base dressing, mostly diammonium phosphate and urea, and I top-dress again at jointing. Better to put more than to risk a poor harvest \u2014 fertilizer is cheap compared to losing the crop. I will pump water from the well three times: once at planting to get germination, once in winter so the roots do not dry out, once at heading. I spray herbicide once in spring and maybe something for aphids if I see them.\n\nAfter wheat harvest in June I will plant summer maize immediately. No time to plough properly so I just use the rotary tiller. I throw the seed in, apply urea a couple of times, water once if August is dry. Maize mostly takes care of itself here.\n\nThat is the whole year. I will not try cotton or vegetables \u2014 I do not know them, I have no contract with any buyer, and if I fail there is nothing to fall back on.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 47-year-old farmer with no formal education in Quzhou County, Hebei follows the near-universal winter wheat to summer maize rotation on 10 mu of family land. Seed choices, fertilizer rates, and irrigation timing are copied from neighbors and the village supply store rather than technical guidance, resulting in somewhat elevated nitrogen application rates typical of the region. Wheat receives three irrigations from groundwater wells; maize relies mainly on summer rainfall with one supplemental irrigation. Tillage is rotary for both crops due to time pressure at the wheat-maize transition. No diversification is attempted because lack of knowledge, market contacts, and risk tolerance all point strongly toward the familiar rotation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 47-year-old farmer with no formal education in Quzhou County, Hebei follows the near-universal winter wheat to summer maize rotation on 10 mu of family land. Seed choices, fertilizer rates, and irrigation timing are copied from neighbors and the village supply store rather than technical guidance, resulting in somewhat elevated nitrogen application rates typical of the region. Wheat receives three irrigations from groundwater wells; maize relies mainly on summer rainfall with one supplemental irrigation. Tillage is rotary for both crops due to time pressure at the wheat-maize transition. No diversification is attempted because lack of knowledge, market contacts, and risk tolerance all point strongly toward the familiar rotation."
+  },
+  "elapsed_seconds": 34.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_9",
+  "tier": 1,
+  "provider": "claude"
+}

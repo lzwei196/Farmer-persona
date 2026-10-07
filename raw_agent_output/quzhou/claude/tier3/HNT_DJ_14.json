@@ -1,0 +1,66 @@
+{
+  "raw_response": "I farm 200 mu in Quzhou \u2014 that is a big operation for our area, so I cannot manage it like a small household plot. I have to think about machinery, hired labor for peak seasons, and cash flow across the year. Forty years of farming has taught me that on the North China Plain the limiting factor is usually water and nitrogen timing, not seed.\n\nMy main system is squash, but I also rotate with wheat, summer maize, and a bit of millet on the sandier pieces. Here is how I plan it:\n\n**Squash (about 80 mu, spring planting):** This is my cash crop, so I invest in it. I use hybrid seed from the county dealer \u2014 the F1 types hold up better in transport. Last year I got about 2,500 kg/mu and prices were decent, so I keep the same area. I apply around 18 kg N, 10 kg P2O5, 15 kg K2O per mu \u2014 squash is a heavy potassium feeder, that is what determines fruit quality and shelf life. I irrigate 5-6 times from my wells because squash wilts fast in June heat. Pesticide 4-5 times \u2014 powdery mildew and aphids are my main problems, I cannot afford to lose the crop.\n\n**Winter wheat (about 70 mu):** Standard rotation. Improved variety like Jimai series. I apply 12 kg N as base and another 6 kg topdress at jointing \u2014 splitting N gives better protein and avoids lodging. P 8, K 5. Two irrigations normally \u2014 one at green-up, one at grain filling \u2014 unless spring is wet. Target yield around 500 kg/mu, which is realistic for Quzhou on well irrigation.\n\n**Summer maize (about 40 mu, after wheat):** Hybrid, short-season since I only have 100 days before frost. No-till drilling directly into wheat stubble saves me a tillage pass and preserves moisture \u2014 at 200 mu that saves real money on diesel. N 15 kg, P 6, K 5. One or two irrigations. Target 550 kg/mu.\n\n**Millet (about 10 mu):** I keep a small area on the poorer sandy ground where maize struggles. Traditional variety, low inputs \u2014 N 6, P 3, K 2. One irrigation if rain fails. Millet handles drought, so it is my insurance crop.\n\nI would rather spend a bit extra on fertilizer than lose yield \u2014 a bad harvest on 200 mu is a catastrophe, some wasted urea is just a line on the receipt.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"squash\",\n      \"season\": \"spring\",\n      \"area_mu\": 80.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 2500\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 70.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 40.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I run 200 mu in Quzhou, so I plan for scale and cash flow. Squash is my cash crop at 80 mu with hybrid seed, heavy K for fruit quality, and 5-6 irrigations since it wilts fast. Wheat-maize rotation covers 110 mu: improved wheat with split nitrogen to avoid lodging, then no-till summer maize into the stubble to save diesel and moisture. I keep 10 mu of traditional millet on the sandy ground as drought insurance. After 40 years I know water timing and K on squash matter more than cutting costs \u2014 on 200 mu a bad harvest is a disaster, some wasted fertilizer is just a receipt line.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "squash",
+        "season": "spring",
+        "area_mu": 80.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 6,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 2500
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 70.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 40.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I run 200 mu in Quzhou, so I plan for scale and cash flow. Squash is my cash crop at 80 mu with hybrid seed, heavy K for fruit quality, and 5-6 irrigations since it wilts fast. Wheat-maize rotation covers 110 mu: improved wheat with split nitrogen to avoid lodging, then no-till summer maize into the stubble to save diesel and moisture. I keep 10 mu of traditional millet on the sandy ground as drought insurance. After 40 years I know water timing and K on squash matter more than cutting costs \u2014 on 200 mu a bad harvest is a disaster, some wasted fertilizer is just a receipt line."
+  },
+  "elapsed_seconds": 30.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_14",
+  "tier": 3,
+  "provider": "claude"
+}

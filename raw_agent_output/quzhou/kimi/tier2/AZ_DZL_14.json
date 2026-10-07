@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land in Quzhou for 40 years, and I know what works here. My family has six people, but some of the younger ones work off-farm, so I cannot rely on too much family labor during peak times. That is why I stick to the wheat-maize double cropping on most of my 10.9 mu \u2014 it is reliable, and the inputs are easier to manage. I also keep 2 mu of cotton for cash income, because cotton prices have been decent and I have the well water to support it.\n\nFor the **winter wheat** on 8.9 mu, I will sow an improved variety in mid-October, just like every year. I learned from the extension agent that 15 kg of nitrogen per mu is enough, but I have seen that if I push it a bit higher the wheat fills better and I sleep easier. So I will apply about 25 kg of nitrogen per mu \u2014 some as urea and some in compound fertilizer \u2014 plus about 12 kg of phosphorus and 3 kg of potassium from the compound bag. I will till with rotary tillage before sowing to break up the stubble, and irrigate four times: once before winter freeze, once at jointing, once at heading, and once during grain filling. I expect about 500 kg per mu if the weather cooperates. For pesticides, I spray three times \u2014 herbicide once and insecticide twice \u2014 because the aphids always come back.\n\nFor **summer maize** on the same 8.9 mu, I plant right after wheat harvest in mid-June with no time to waste. I use a hybrid variety because the yield is much better than the old types. I will put down about 18 kg of nitrogen per mu, plus 2 kg each of phosphorus and potassium. Maize does not need as much water as wheat if the summer rains come, but I will irrigate twice to be safe \u2014 once at the big\u5587\u53ed\u53e3 stage and once at flowering. I spray for pests and weeds twice. With good luck, I can get 550 kg per mu.\n\nFor **cotton** on 2 mu, I plant in late April after rotary tillage. I use an improved cotton variety. Cotton is thirsty and needs fertilizer, so I give it about 15 kg nitrogen, 8 kg phosphorus, and 8 kg potassium per mu. I irrigate three times during the growing season, especially when the bolls are forming. Cotton attracts more insects, so I spray five or six times \u2014 I would rather spend a bit more on pesticide than lose the bolls to bollworms. I expect around 250 kg of seed cotton per mu.\n\nI do not change much from year to year because change is risky. I have the well, so water is not my biggest worry; my biggest worry is labor during harvest and whether input prices go up. I use round numbers and buy what I can afford, but I always make sure the wheat gets enough fertilizer \u2014 a bad wheat harvest is a disaster for my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the reliable wheat-maize double crop on most of my 10.9 mu and keep 2 mu of cotton for cash. I apply generous fertilizer to wheat because a poor harvest is worse than wasting some inputs, use hybrid maize for higher yield with no-tillage to save time after wheat harvest, and protect cotton with extra irrigation and pesticide sprays. My decisions are based on 40 years of experience watching what works on this land and what my neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I stick with the reliable wheat-maize double crop on most of my 10.9 mu and keep 2 mu of cotton for cash. I apply generous fertilizer to wheat because a poor harvest is worse than wasting some inputs, use hybrid maize for higher yield with no-tillage to save time after wheat harvest, and protect cotton with extra irrigation and pesticide sprays. My decisions are based on 40 years of experience watching what works on this land and what my neighbors do."
+  },
+  "elapsed_seconds": 199.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_14",
+  "tier": 2,
+  "provider": "kimi"
+}

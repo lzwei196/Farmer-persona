@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65, never spent a day in school. My father taught me everything, and I have worked this land in Quzhou for 40 years. Now it is just me and my wife at home. Twenty mu is too much for two old people, so I pay the tractor driver to come rotary-till and plough, and I hire young workers for harvest time. I do not try new things unless I saw them work on my neighbor's field first.\n\nLast year my wheat did well \u2014 about 1000 jin per mu. I always plant improved wheat seed, the kind everyone buys from the seed shop. Last autumn I had the tractor rotary-till the 16 mu and I spread one bag of compound fertilizer on every mu before sowing. This spring, when the wheat turns green, I will spread half a bag of urea on each mu, and when it starts jointing I will spread another half bag. A 50-jin bag of compound fertilizer and two 20-jin half-bags of urea per mu \u2014 that is what I have done for years. Fertilizer costs real money, but if the wheat is thin you lose everything. Better to waste a little fertilizer than cry over empty grain bags. I will water it three times from the well: once when it greens up, once when it shoots up tall, and once when the grain is filling. I spray herbicide once in early spring, and if the aphids come I spray again. I expect 1000 jin per mu again if the weather holds.\n\nAfter we cut the wheat in June, I plant hybrid maize seed on those same 16 mu. The machine drills it straight into the rotary-tilled ground. I put one bag of compound fertilizer and one bag of urea on each mu for the corn, just like last year. Maize does not need as much water as wheat \u2014 I irrigate twice from the well if the rain does not come. One spray for weeds at sowing, and one more if the corn borers show up. I hope for 1200 jin per mu.\n\nI keep 4 mu of cotton. It is heavy work with only two of us, but the cotton money helps pay for the hired labor. In spring I have the tractor deep-plough that piece. Cotton is greedy \u2014 I give it one and a half bags of compound fertilizer per mu, and half a bag of urea. I water it three times and spray bugs four times. If the price is like last year, I hope for 500 jin of seed cotton per mu. I use improved cotton seed.\n\nI do not know the names on the bags. I just tell the dealer: \"Give me what everyone else is buying.\" That is how I decide.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 20 mu in Quzhou with my wife, so I hire machinery and labor. I stick to what worked last year: one bag of compound fertilizer and one bag of urea per mu for wheat and maize, and one-and-a-half bags of compound plus half a bag of urea for cotton. I would rather spend too much on fertilizer than risk a thin crop. I copy my neighbors on seed choices and amounts. Wheat gets three irrigations, maize two, cotton three. I keep cotton to only 4 mu because the picking is too hard for two old people.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 20 mu in Quzhou with my wife, so I hire machinery and labor. I stick to what worked last year: one bag of compound fertilizer and one bag of urea per mu for wheat and maize, and one-and-a-half bags of compound plus half a bag of urea for cotton. I would rather spend too much on fertilizer than risk a thin crop. I copy my neighbors on seed choices and amounts. Wheat gets three irrigations, maize two, cotton three. I keep cotton to only 4 mu because the picking is too hard for two old people."
+  },
+  "elapsed_seconds": 212.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_XST_4",
+  "tier": 3,
+  "provider": "kimi"
+}

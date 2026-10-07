@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this land my whole life. My father farmed it, and his father before him. I know what grows here \u2014 the Hebei Plain is good for wheat and corn, nothing else makes sense to me. I have about 8 mu, and I plant winter wheat in October after the rains and summer corn right after the wheat comes off in June. Same land, same rotation, every year. That is how it has always been done here, and it feeds my family.\n\nFor wheat, I go to the seed station in town and buy the improved seeds the government recommends \u2014 I cannot read the bags but I ask the man there. My neighbor uses them too. I spread fertilizer in two rounds \u2014 once when I plant, once when the stalks come up. I irrigate three times: once before planting to wet the soil, once when the plants are shooting up, once when the heads form. I spray once for aphids and once for rust. I use the small rotary tiller my son borrowed money to buy.\n\nFor corn in summer, I plant hybrid seed \u2014 everyone does now, the yield is much better than the old kind. I put in fertilizer at planting and again when the corn is knee-high. I do not till deeply, I just open furrows. I water twice, usually when it is dry in July and August. I spray for corn borer once.\n\nI do not grow vegetables to sell \u2014 just a small patch behind the house for us to eat.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old smallholder in Quzhou County with no formal education defaults to the dominant winter wheat\u2013summer maize rotation that has defined farming on the Hebei Plain for generations. All 8 mu rotate through both seasons on the same plots. Improved wheat seed and hybrid maize seed are used because local extension stations and neighbors have normalized them, not because the farmer read agronomic research. Nitrogen applications are moderately high at 18 kg/mu per crop, reflecting common over-application among traditional farmers without soil-testing habits. Wheat receives three irrigations drawing on local groundwater; maize receives two, timed to dry spells in July\u2013August. Pesticide applications target the predictable local threats \u2014 aphids and rust on wheat, corn borer on maize. Tillage for wheat is rotary; maize is direct-seeded into wheat stubble with no-tillage, a practice that spread in the area with small mechanization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 70-year-old smallholder in Quzhou County with no formal education defaults to the dominant winter wheat\u2013summer maize rotation that has defined farming on the Hebei Plain for generations. All 8 mu rotate through both seasons on the same plots. Improved wheat seed and hybrid maize seed are used because local extension stations and neighbors have normalized them, not because the farmer read agronomic research. Nitrogen applications are moderately high at 18 kg/mu per crop, reflecting common over-application among traditional farmers without soil-testing habits. Wheat receives three irrigations drawing on local groundwater; maize receives two, timed to dry spells in July\u2013August. Pesticide applications target the predictable local threats \u2014 aphids and rust on wheat, corn borer on maize. Tillage for wheat is rotary; maize is direct-seeded into wheat stubble with no-tillage, a practice that spread in the area with small mechanization."
+  },
+  "elapsed_seconds": 39.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_4",
+  "tier": 1,
+  "provider": "claude"
+}

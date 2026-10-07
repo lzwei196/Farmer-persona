@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 50 years and I know what grows here. Quzhou sits on the North China Plain \u2014 dry winters, hot summers, and my well keeps me from depending on rain. At 70, my son is off working in the city, so it's mostly just me and my wife now. I can't push myself like I used to, so I keep things practical and familiar.\n\n**Wheat (October planting):**\nI'll put all 30 mu into wheat after the maize comes off. I always use the improved variety \u2014 Jimai 22 is what I've trusted for years. I'll do rotary tillage to turn under the maize stubble, same as always. I'll apply base fertilizer before sowing \u2014 diammonium phosphate and urea \u2014 and topdress at jointing. I need at least 3 irrigations: one before winter sets in, one at jointing, one at heading. I'll spray herbicide in December when the weeds come up, and a fungicide around heading time to hold off the powdery mildew. I expect around 450 jin per mu if the weather cooperates.\n\n**Maize (June planting, right after wheat harvest):**\nNo time to waste between crops \u2014 I'll go straight to planting after wheat harvest without tilling. My knees don't appreciate the extra passes anyway, and the soil is fine. I'll use Xianyu 335, the hybrid \u2014 everyone in the village uses it and it yields well. Summer gets enough rain that I only need to irrigate twice, maybe three times if July turns dry. One herbicide pass early, one insecticide spray when the corn borer pressure picks up around August.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old experienced farmer in Quzhou County follows the standard winter wheat\u2013summer maize rotation across all 30 mu. Wheat receives rotary tillage after maize harvest, an improved variety proven in local conditions, moderately intensive fertilization split between base and topdress applications, and three well irrigations covering the critical winter, jointing, and heading stages. Maize follows wheat immediately with no-tillage to save labor given the reduced household workforce, using a trusted hybrid variety, relying primarily on summer rainfall with two supplemental irrigations, and two pesticide passes for weeds and corn borer. Input levels reflect decades of local experience rather than optimization targets, prioritizing yield stability and manageable workload over maximum output.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 70-year-old experienced farmer in Quzhou County follows the standard winter wheat\u2013summer maize rotation across all 30 mu. Wheat receives rotary tillage after maize harvest, an improved variety proven in local conditions, moderately intensive fertilization split between base and topdress applications, and three well irrigations covering the critical winter, jointing, and heading stages. Maize follows wheat immediately with no-tillage to save labor given the reduced household workforce, using a trusted hybrid variety, relying primarily on summer rainfall with two supplemental irrigations, and two pesticide passes for weeds and corn borer. Input levels reflect decades of local experience rather than optimization targets, prioritizing yield stability and manageable workload over maximum output."
+  },
+  "elapsed_seconds": 51.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_8",
+  "tier": 2,
+  "provider": "claude"
+}

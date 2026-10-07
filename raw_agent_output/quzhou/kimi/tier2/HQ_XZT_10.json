@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 73 years old, and I have worked these 3 mu in Quzhou for 55 years. My back is not what it used to be, but I know this land better than I know my own hands. My wife and I are only two people now, so I cannot afford to waste labor or money on things that do not pay. We have a well, which means we can irrigate when the sky refuses to rain, but pumping costs electricity, so I use water only at the moments that truly matter.\n\nMy wheat is already in the ground\u2014it was sown last autumn after deep ploughing. At my age, I trust improved wheat varieties that I have seen perform steadily in our North China Plain winters. When the wheat greens up this spring, I will spread nitrogen twice: once at reviving and again at jointing, because splitting the fertilizer gives me better ears and less waste. I will irrigate three times from the well\u2014at green-up, jointing, and grain filling. I will spray twice for weeds and aphids, which always show up in our county. After harvest in early June, I must get the summer maize into the ground as fast as possible; every day of delay costs me yield. I will plant hybrid seed directly into the wheat stubble without tillage\u2014this saves my strength, keeps the soil moisture, and lets me finish in one long morning. For the maize, I will apply fertilizer at planting and top-dress once when the plants are knee-high. I will irrigate twice if the summer rains are thin, especially at tasseling. Two pesticide sprays\u2014one for weeds, one for corn borer\u2014are enough. In a normal year, this land gives me about 450 kg of wheat and 550 kg of maize per mu, which feeds us and leaves some grain to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"At 73 years old with 55 years of experience on 3 mu in Quzhou, I rely on proven practices that match my labor capacity and household needs. I use well irrigation strategically at critical growth stages, split nitrogen application for wheat to improve efficiency, and plant no-tillage hybrid maize immediately after wheat harvest to save time and capture the full growing season. My choices reflect a balance between yield security and the physical reality of farming with only two people in the household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "At 73 years old with 55 years of experience on 3 mu in Quzhou, I rely on proven practices that match my labor capacity and household needs. I use well irrigation strategically at critical growth stages, split nitrogen application for wheat to improve efficiency, and plant no-tillage hybrid maize immediately after wheat harvest to save time and capture the full growing season. My choices reflect a balance between yield security and the physical reality of farming with only two people in the household."
+  },
+  "elapsed_seconds": 76.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_10",
+  "tier": 2,
+  "provider": "kimi"
+}

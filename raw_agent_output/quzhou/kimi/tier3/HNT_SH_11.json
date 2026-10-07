@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 45 years old. I finished primary school and that was enough for me \u2014 my mother-in-law taught me the rest. I have worked this 1.8 mu for 20 years, and my family has five mouths to feed, so I do not take risks. Last year I planted wheat after National Day and then maize right after cutting the wheat in early June. This year I will do the same, because that is what my neighbors do and it puts food on the table. I used to grow cotton on a corner of the field, but I stopped years ago \u2014 cotton needs spraying every few days and on such a small plot the labor is not worth it when I can grow grain instead.\n\nFor wheat, I will rotary till the field before sowing. I buy improved wheat seed from the dealer in town \u2014 about 15 jin per mu, so roughly 27 jin for my whole plot. Before sowing I spread one 50 kg bag of compound fertilizer across the 1.8 mu. At green-up time around Qingming I topdress with half a bag of urea, about 25 kg. I irrigate four times: the winter irrigation before the freeze, then at jointing, at heading, and once more at grain filling. The well water costs me diesel for the pump, so I do not waste it, but the wheat will turn yellow without water. I spray pesticide twice, once in spring for aphids and once before flowering when the dealer says rust is going around. I expect about 460 kg per mu.\n\nFor maize, right after cutting the wheat in June I plant Denghai 605 hybrid seed directly into the stubble without tilling again \u2014 everyone plants no-till now. I use about 3 jin per mu. At planting I put down one 50 kg bag of compound fertilizer for the 1.8 mu. At the big trumpet stage I add another 20 kg of urea. I irrigate two times, three if July is dry. I spray for armyworm twice. I expect about 480 kg per mu.\n\nEvery jin of fertilizer is real money. I watch what my neighbors buy at the cooperative and I do the same. I would rather put a little too much fertilizer than risk losing yield, because a bad harvest means my family goes hungry, but wasting some fertilizer is just a cost I can bear.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 1.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 480\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what I did last year and what my neighbors do on their fields. With only 1.8 mu and five people to feed, I grow wheat in winter and maize in summer on the same plot. I use rotary tillage for wheat and no-tillage for maize to save time and fuel. I buy improved wheat seed and hybrid maize seed from the dealer because that is what everyone uses now. I apply compound fertilizer as a base and topdress with urea, irrigating four times for wheat and two to three times for maize. I spray pesticide twice per crop. I stopped growing cotton because it requires too much spraying labor for a plot this small. I keep my input costs low but I do not cut fertilizer too close, because losing yield would be worse than wasting a little fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 1.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 1.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 480
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what I did last year and what my neighbors do on their fields. With only 1.8 mu and five people to feed, I grow wheat in winter and maize in summer on the same plot. I use rotary tillage for wheat and no-tillage for maize to save time and fuel. I buy improved wheat seed and hybrid maize seed from the dealer because that is what everyone uses now. I apply compound fertilizer as a base and topdress with urea, irrigating four times for wheat and two to three times for maize. I spray pesticide twice per crop. I stopped growing cotton because it requires too much spraying labor for a plot this small. I keep my input costs low but I do not cut fertilizer too close, because losing yield would be worse than wasting a little fertilizer."
+  },
+  "elapsed_seconds": 207.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_11",
+  "tier": 3,
+  "provider": "kimi"
+}

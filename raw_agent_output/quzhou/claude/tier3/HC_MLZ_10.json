@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been farming this land 30 years. I do what works. I don't change much from last year because last year the harvest was okay.\n\nMy 8 mu \u2014 I put about 6 mu in wheat-maize rotation, and 2 mu in cotton on the side. Cotton don't do so good with wheat after it, so I keep it separate on the same piece every year.\n\nFor wheat in autumn: I plow the ground with the tractor service, cost about 40 yuan per mu. I plant improved seed \u2014 \"Jimai\" kind, whatever the dealer in town has that everyone buys. I put one bag of compound fertilizer as base, that's 40 jin, 15-15-15. Then in spring at jointing I spread urea, about 40 jin per mu, and irrigate that same time. Before winter I water once, then at jointing, then once more when grain fills. Three waters from the well. Spray once for aphids, once for rust if I see yellow on leaves. Wheat gives me maybe 900 jin per mu if the weather helps \u2014 450 kg.\n\nFor maize after wheat: No time to plow, I just plant right into the stubble with the seeder \u2014 hybrid seed, Zhengdan or whatever my neighbor Old Wang bought. One bag compound at planting, then urea at big trumpet stage, 40 jin. Water once or twice depending on rain. Spray for borer. Gets me 1100 jin per mu, 550 kg.\n\nCotton needs more work and more spray. I plow that ground. I use improved seed from the shop. More fertilizer because cotton is hungry \u2014 bag and a half compound plus urea twice. Water 3 times. Spray maybe 8 times for bollworm and aphids, that's the truth of cotton. Gets me 500 jin seed cotton, 250 kg per mu. The price is okay some years.\n\nI put a little extra fertilizer rather than too little. Fertilizer costs money but a bad harvest costs more.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu same way last 30 years. 6 mu wheat-maize double crop, 2 mu cotton separate. I buy one bag compound fertilizer 15-15-15 for base on wheat and maize, then topdress urea at jointing for wheat and big trumpet stage for maize \u2014 about 40 jin urea each. Cotton needs more fertilizer and lots of spray for bollworm, that's just how cotton is. I use improved wheat seed and hybrid maize seed like my neighbors. Three waters for wheat, two for maize, three for cotton from my well. I rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest hurts my family of 7 more than the extra cost of one bag.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu same way last 30 years. 6 mu wheat-maize double crop, 2 mu cotton separate. I buy one bag compound fertilizer 15-15-15 for base on wheat and maize, then topdress urea at jointing for wheat and big trumpet stage for maize \u2014 about 40 jin urea each. Cotton needs more fertilizer and lots of spray for bollworm, that's just how cotton is. I use improved wheat seed and hybrid maize seed like my neighbors. Three waters for wheat, two for maize, three for cotton from my well. I rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest hurts my family of 7 more than the extra cost of one bag."
+  },
+  "elapsed_seconds": 41.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

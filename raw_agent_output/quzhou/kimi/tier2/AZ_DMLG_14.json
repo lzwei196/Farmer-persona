@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 73-year-old farmer in Dongmaliangu Village, Anzhai Township, Quzhou County. After fifty-five years on this land and with a high-school education, I know every corner of my twelve mu. My wife and I are the only laborers, so we must be efficient. We are fortunate to have a reliable well for irrigation. This year I will stick to what has always worked: eleven mu in the wheat\u2013mazie double crop for grain security, and one mu of cotton for cash income.\n\nFor **winter wheat**, I will rotary till the eleven mu and sow the improved variety *Liangxing 99* in early October. I will spread 150 jin per mu of special compound fertilizer\u201418 % nitrogen, 22 % phosphorus, and 5 % potassium\u2014as a basal dressing. With our well water I will irrigate three times: once in winter to protect against the cold, and twice more at jointing and grain filling. Aphids and powdery mildew are regular threats here, so I will spray five times for insects, twice for weeds, and once with fungicide. I expect about 1,000 kg per mu come early June.\n\nImmediately after the wheat harvest, I will sow **summer mazie** *Denghai 622* on the same eleven mu using no-tillage. This hybrid yields well and saves precious labor between the two crops. I will apply 150 jin per mu of compound fertilizer containing 28 % nitrogen, 6 % phosphorus, and 6 % potassium. I will irrigate twice during silking and grain filling, and spray three times for insects plus once for weeds. I am counting on roughly 1,232.5 kg per mu by early October.\n\nOn the remaining **one mu of cotton**, I will rotary till and sow the improved variety *Lumianyan 27* in early April. I will lay plastic film to conserve heat and moisture, and apply 100 jin per mu of compound fertilizer with 20 % nitrogen, 10 % phosphorus, and 21 % potassium. Cotton is thirsty and prone to bollworm, so I will irrigate twice and spray insecticide thirteen times and herbicide twice. I also apply growth regulator twice to keep the stalks from growing too tall. I expect about 500 kg of seed cotton per mu by late October.\n\nThis plan balances our food supply, cash income, and what the two of us can realistically manage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 11.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13.5,\n      \"phosphorus_kg_per_mu\": 16.5,\n      \"potassium_kg_per_mu\": 3.75,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000.0\n    },\n    {\n      \"crop\": \"mazie\",\n      \"season\": \"summer\",\n      \"area_mu\": 11.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21.0,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1232.5\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10.0,\n      \"phosphorus_kg_per_mu\": 5.0,\n      \"potassium_kg_per_mu\": 10.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500.0\n    }\n  ],\n  \"reasoning_summary\": \"I keep eleven mu in a wheat\u2013mazie double crop and one mu in cotton. Wheat is rotary tilled with improved seed, three irrigations, and eight pesticide sprays. Mazie is no-till hybrid seed with two irrigations and four sprays. Cotton receives rotary tillage, improved seed, two irrigations, and fifteen sprays to control bollworm and weeds. Fertilizer rates are based on compound fertilizer applications of 150 jin/mu for wheat and mazie and 100 jin/mu for cotton, converted to kg/mu nutrient values. Expected yields reflect my long-term experience on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 11.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13.5,
+        "phosphorus_kg_per_mu": 16.5,
+        "potassium_kg_per_mu": 3.75,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000.0
+      },
+      {
+        "crop": "mazie",
+        "season": "summer",
+        "area_mu": 11.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21.0,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1232.5
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10.0,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 10.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500.0
+      }
+    ],
+    "reasoning_summary": "I keep eleven mu in a wheat\u2013mazie double crop and one mu in cotton. Wheat is rotary tilled with improved seed, three irrigations, and eight pesticide sprays. Mazie is no-till hybrid seed with two irrigations and four sprays. Cotton receives rotary tillage, improved seed, two irrigations, and fifteen sprays to control bollworm and weeds. Fertilizer rates are based on compound fertilizer applications of 150 jin/mu for wheat and mazie and 100 jin/mu for cotton, converted to kg/mu nutrient values. Expected yields reflect my long-term experience on this land."
+  },
+  "elapsed_seconds": 249.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DMLG_14",
+  "tier": 2,
+  "provider": "kimi"
+}

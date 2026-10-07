@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 67 years old and have farmed this land in Quzhou for half a century. I know every corner of my 10.1 mu. My children work in the county town, so it is mostly my wife and me during the busy seasons, though they come back for harvest. I cannot afford to gamble, but I also cannot afford to be lazy with inputs.\n\nFor wheat, I will plant 8 mu of winter wheat. I always use improved varieties like Jimai 22 or Luyuan 502 \u2014 they are reliable, and I can buy the seed from the supply shop in the village. I till with rotary tillage before sowing in October, because that is what everyone here does and it works. For fertilizer, the extension technician told me 15 kg of nitrogen per mu is enough, but last year I applied a bit more and the yield was better, so I will do about 17 kg N per mu, plus some compound fertilizer for phosphorus and potassium. I irrigate four times: the overwintering water, the greening water, one at jointing, and one at heading. The pumping costs money, but a dry spring would ruin everything. I spray pesticides three times \u2014 herbicide once early, then fungicide and insecticide as needed.\n\nAfter wheat harvest in early June, the window is very tight. I plant summer maize on the same 8 mu immediately. Everyone around here uses Denghai 605 hybrid seed. It is expensive but the yield is good. I do no-tillage for maize \u2014 there is no time to plough, and the neighbors all direct-seed after wheat now. I apply about 18 kg N per mu, slightly more than wheat because maize responds well. I irrigate twice, usually at the jointing stage and during grain filling, if rainfall is short. Three pesticide applications are enough for maize.\n\nI keep 2.1 mu for chili. It is more work and needs more sprays, but the price is usually good. I use improved chili varieties like Zhinong. I rotary till that plot in spring and plant in April or May. Chili needs more potassium, so I give it about 8 kg K per mu and 16 kg N. I irrigate five times because chili fruits cannot dry out, and I spray six times for insects and disease \u2014 aphids and wilt are the main problems. If the price holds, 2,000 kg per mu of fresh chili should be possible.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 2000\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this land for 50 years and I stick with what works. Wheat and maize on 8 mu give me food security and stable income, while 2.1 mu of chili provides cash when prices are good. I use improved wheat seed and hybrid maize because the yield gain pays for the seed cost. I apply slightly more nitrogen than the extension office recommends because I have seen the difference in my own fields, and I irrigate regularly since my well gives me reliable water even if pumping is expensive. Labor is tight with my children working off-farm, so I use no-tillage for maize to save time after wheat harvest, and I keep pesticide sprays to the minimum that experience tells me is necessary.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 2000
+      }
+    ],
+    "reasoning_summary": "I have farmed this land for 50 years and I stick with what works. Wheat and maize on 8 mu give me food security and stable income, while 2.1 mu of chili provides cash when prices are good. I use improved wheat seed and hybrid maize because the yield gain pays for the seed cost. I apply slightly more nitrogen than the extension office recommends because I have seen the difference in my own fields, and I irrigate regularly since my well gives me reliable water even if pumping is expensive. Labor is tight with my children working off-farm, so I use no-tillage for maize to save time after wheat harvest, and I keep pesticide sprays to the minimum that experience tells me is necessary."
+  },
+  "elapsed_seconds": 131.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_9",
+  "tier": 2,
+  "provider": "kimi"
+}

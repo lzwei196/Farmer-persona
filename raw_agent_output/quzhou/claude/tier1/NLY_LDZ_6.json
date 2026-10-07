@@ -1,0 +1,53 @@
+{
+  "raw_response": "My family has 8 mu of land here in Quzhou. My husband goes to work in the city some months, so I handle the farm myself most of the time. I have been doing this since I was in my twenties. I know this land.\n\nThere is no question about what I grow \u2014 winter wheat and summer corn, one after the other, on the same 7 mu. Everyone here does this. The soil is good for it, the water is manageable, and I know exactly what to do at every stage. I have done it hundreds of times. I do not experiment with unfamiliar crops when this rotation feeds the family and gives us cash income.\n\nFor wheat, I plant in early October, right after the corn comes off. I buy improved seed from the seed shop in the county town \u2014 same variety as the past two years, it did well. I rotary till after the corn to chop up the stalks and prepare the seedbed. I put down compound fertilizer as base fertilizer at planting, then top-dress with urea in early spring at jointing. I irrigate three times: before the ground freezes in November, at jointing in April, and at heading in May. The groundwater here is reliable. I spray herbicide in autumn and fungicide once in spring \u2014 powdery mildew and rust are the main worries.\n\nFor corn, I plant right after wheat harvest in June. No tillage \u2014 I seed directly into the stubble. That saves me work and fuel money. I always buy hybrid seed, that is just how it is done now. Summer rains here are usually enough, so I irrigate only once if July is dry. I spray pre-emergence herbicide at planting and check for corn borer once in summer.\n\nI also keep 1 mu near the house for vegetables \u2014 cabbage, yard-long beans, maybe some garlic \u2014 partly for the family, partly to sell a little at the township market. Nothing large.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"vegetables (cabbage, beans)\",\n      \"season\": \"spring\",\n      \"area_mu\": 1,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1200\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou the same way I have for thirty years: winter wheat on 7 mu followed immediately by summer maize on the same land, with 1 mu of vegetables near the house. I use improved wheat varieties and hybrid maize seed bought from the county seed shop, apply compound base fertilizer at planting and urea top-dressing at key growth stages, irrigate wheat three times from the groundwater well and maize only once if summer rains fall short, rotary till before wheat but go no-till into stubble for maize to save labor and fuel. I spray herbicide and fungicide on wheat in autumn and spring, and herbicide plus one pest check on maize in summer. This rotation is stable, familiar, and consistent with what my neighbors do and what this land reliably produces.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "vegetables (cabbage, beans)",
+        "season": "spring",
+        "area_mu": 1,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1200
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou the same way I have for thirty years: winter wheat on 7 mu followed immediately by summer maize on the same land, with 1 mu of vegetables near the house. I use improved wheat varieties and hybrid maize seed bought from the county seed shop, apply compound base fertilizer at planting and urea top-dressing at key growth stages, irrigate wheat three times from the groundwater well and maize only once if summer rains fall short, rotary till before wheat but go no-till into stubble for maize to save labor and fuel. I spray herbicide and fungicide on wheat in autumn and spring, and herbicide plus one pest check on maize in summer. This rotation is stable, familiar, and consistent with what my neighbors do and what this land reliably produces."
+  },
+  "elapsed_seconds": 68.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_6",
+  "tier": 1,
+  "provider": "claude"
+}

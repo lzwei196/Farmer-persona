@@ -1,0 +1,40 @@
+{
+  "raw_response": "I never went to school. I cannot read or write. I learned farming from my mother-in-law and by watching my neighbors for 20 years. My family has 8 mu of flat land in Quzhou. We grow wheat after National Day and maize after the June harvest. That is what everyone around me does, and I do not try new things because if the crop fails, my family loses real money.\n\nLast year I put one full bag of compound fertilizer on each mu at sowing time \u2014 a 50 kg bag, the one with 15-15-15 written on it. I do not know what those numbers mean, but the dealer says it is good and my neighbor Lao Zhang uses the same. For wheat, when the green shoots start to stand up tall in March, I spread half a bag of urea \u2014 25 kg \u2014 on each mu. For maize, when the leaves make that big trumpet shape, I do the same, half a bag of urea per mu. I would rather use a bit too much fertilizer than risk a bad harvest. A bad harvest means my grandchildren do not have school money. Wasting some fertilizer is just a cost I accept.\n\nI buy improved wheat seed from the shop in town every few years. For maize I buy hybrid seed fresh each year \u2014 I learned 15 years ago that saving your own maize seed gives small ears, so I do not do that anymore. I irrigate wheat three times: once before the cold comes so it does not freeze-dry, once when it starts shooting up, and once when the grain is filling. For maize I water twice: once when the seedlings are small, and once when the tassels come out. My well has enough water for that. I spray medicine twice on each crop, once early for weeds and once later for bugs. I hire the spray machine for 10 yuan per mu each time. Before wheat, I use the rotary tiller to make the field flat. For maize, I plant directly into the wheat stubble without ploughing again \u2014 the seeding machine charges 50 yuan per mu and saves time. My husband and I do most of the work. My daughter-in-law helps when the factory gives her days off. At harvest I hire two workers for 150 yuan per day each because we cannot carry everything alone.\n\nI expect about 520 kg per mu for wheat and about 580 kg per mu for maize. That is what I got last year. I do not expect more. I just hope the weather is normal.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what I did last year and what my neighbor Lao Zhang does. I never went to school, so I think in bags: one 50 kg bag of 15-15-15 compound fertilizer per mu at sowing, plus half a bag of urea for wheat in spring and half a bag for maize at the big trumpet stage. I would rather spend extra on fertilizer than risk a bad harvest. I irrigate wheat three times and maize twice from my well. I spray twice per crop. I use improved wheat seed and hybrid maize seed. I rotary till before wheat, but plant maize directly into the wheat stubble to save time and machine costs. I expect about 520 kg per mu of wheat and 580 kg per mu of maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what I did last year and what my neighbor Lao Zhang does. I never went to school, so I think in bags: one 50 kg bag of 15-15-15 compound fertilizer per mu at sowing, plus half a bag of urea for wheat in spring and half a bag for maize at the big trumpet stage. I would rather spend extra on fertilizer than risk a bad harvest. I irrigate wheat three times and maize twice from my well. I spray twice per crop. I use improved wheat seed and hybrid maize seed. I rotary till before wheat, but plant maize directly into the wheat stubble to save time and machine costs. I expect about 520 kg per mu of wheat and 580 kg per mu of maize."
+  },
+  "elapsed_seconds": 118.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "AZ_DMLG_8",
+  "tier": 3,
+  "provider": "kimi"
+}

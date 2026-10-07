@@ -1,0 +1,73 @@
+{
+  "raw_response": "I'm an 83-year-old man, been farming these same 5 mu in Quzhou for 60 years. My old bones ache in the morning, but I still know every inch of this land. My wife and me, we're the only two left in the house now. The children are working in the city, sending a little money when they can, but we can't count on it. We grow wheat and maize, same as everyone around here. Wheat-maize double crop. It keeps us fed and brings a little cash.\n\nThe maize just came off the field last week. I got about 400 jin per mu this year\u2014not great, the rain at the end was too much, but not a disaster either. Now the window is tight. I need to get the wheat in the ground before mid-October or I'll miss the good soil moisture.\n\nFor the wheat, I'm doing what I always do. I spread about 50 jin of that compound fertilizer per mu before planting\u2014same as my neighbor Old Wang. He tried cutting back last year and his wheat turned yellow by spring. Not me. I know better. That's my base. Then come Qingming around April, if the wheat looks strong, I'll topdress with another 30 jin of urea per mu. If it looks weak, maybe 40 jin. Total nitrogen works out to around 13-14 kg per mu. I don't calculate it fancy, but I know a bag of urea and a bag of compound covers about one mu the way I do it.\n\nI irrigate three times for wheat if I can afford the electricity. Winter irrigation after the New Year\u2014everyone does that here or the wheat freezes. Then once at jointing, once at grain filling. The pump meter is expensive now, so last year I only did twice and the yield dropped a bit. This year I'll try for three, but if the pump bill gets too high I might skip the last one. Better to lose 50 jin than pay 200 yuan I don't have.\n\nFor seed, I buy the improved wheat seed from the seed station. It's about 45 yuan per mu. I used to save my own seed but the yield got worse and worse. The neighbors all buy new seed now, so I do too. I plant by broadcast\u2014my nephew brings his small tractor to till, then my wife and I spread the seed by hand and drag a harrow. We're too old to do heavy plowing ourselves. I hire the tractor work, costs about 100 yuan total for the 5 mu.\n\nCome June, when the wheat comes off\u2014I'll hire the combine, 55 yuan per mu, I can't swing a sickle at my age anymore\u2014we immediately plant maize. The window is maybe 5 days. No time for fancy tillage. My nephew's tractor comes again, one pass, then we plant the hybrid maize seed. Everyone uses hybrid now, you have to. It's about 50 yuan per mu for the seed. I put down compound fertilizer with the seed, about 40 jin per mu, and then side-dress urea when the maize is knee-high. Total nitrogen around 12 kg per mu. For maize I only irrigate once or twice\u2014if the summer rains are good, maybe just once at the big trumpet leaf stage. The groundwater is deep and the pump electricity hurts.\n\nFor both crops, I spray herbicide once. The weeds get bad if you don't. I don't bother with insecticide usually\u2014if I see armyworms I might spray, but most years it's fine. Costs too much anyway.\n\nMy wife and I do all the light work\u2014spreading fertilizer, turning on the pump, spraying, watching the fields. For the heavy stuff, plowing and harvest, I hire help or machinery. We're cash-tight. Total I can spend on inputs for the whole year is maybe 1,200 yuan. More than that and we don't have money for medicine or repairs.\n\nI expect the wheat to give me about 380 kg per mu if the winter isn't too cold and I get my three irrigations in. The maize, maybe 400 kg per mu if the summer rains cooperate. I'm not greedy. At my age, stable is better than risky. I'd rather spend a bit more on fertilizer and sleep easy than try to save 100 yuan and lie awake worrying about a bad crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 5.0,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 50 jin compound fertilizer per mu before planting; topdress: 30-40 jin urea per mu at jointing in early April\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary tillage by hired small tractor, then broadcast seeding and harrowing by hand\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 380\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 5.0,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 40 jin compound fertilizer per mu at planting; side-dress: 25 jin urea per mu at knee-high stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage with tractor immediately after wheat harvest, then mechanical planting\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 400\n    }\n  ],\n  \"total_input_cost_yuan\": 1180,\n  \"reasoning_summary\": \"I stick with what has worked for 60 years. I apply enough fertilizer to avoid a bad year, irrigate three times for wheat if the pump bill doesn't get too high, and hire machinery for heavy work my old body can't do. I buy improved wheat seed and hybrid maize seed because the neighbors do and it pays off. Cash is tight so I don't take risks with new methods\u2014I need stable yields to live on.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 5.0,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 50 jin compound fertilizer per mu before planting; topdress: 30-40 jin urea per mu at jointing in early April",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary tillage by hired small tractor, then broadcast seeding and harrowing by hand",
+        "labor_family_days": 14,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 380,
+        "nitrogen_kg_per_mu": 13,
+        "area_mu": 5.0,
+        "expected_yield_kg_per_mu": 380,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 5.0,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 40 jin compound fertilizer per mu at planting; side-dress: 25 jin urea per mu at knee-high stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage with tractor immediately after wheat harvest, then mechanical planting",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 12,
+        "area_mu": 5.0,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 2
+      }
+    ],
+    "total_input_cost_yuan": 1180,
+    "reasoning_summary": "I stick with what has worked for 60 years. I apply enough fertilizer to avoid a bad year, irrigate three times for wheat if the pump bill doesn't get too high, and hire machinery for heavy work my old body can't do. I buy improved wheat seed and hybrid maize seed because the neighbors do and it pays off. Cash is tight so I don't take risks with new methods\u2014I need stable yields to live on."
+  },
+  "elapsed_seconds": 40.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_9",
+  "tier": 4,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 15 mu in Quzhou County for 40 years, and I know every plot. Ten mu are in the wheat-maize double crop, and five mu go to cotton. Last year my wheat made about 550 kg per mu, the maize about 600 kg per mu, and the cotton gave me about 260 kg of seed cotton per mu. This year I want to push the wheat to 580 kg and the maize to 650 kg, but I have to watch my spending because only my wife and I are working the land full-time, though my son sends some money back from his factory job.\n\nI visited the input dealer in town last month, and I also listened to the county TV extension program. They showed soil tests saying potassium is getting low around here after so many years of wheat-maize without enough K replacement. So I am changing my mix. For the 10 mu of winter wheat, I will sow an improved variety, about 15 kg of seed per mu. I will apply 16 kg of nitrogen per mu total: I put down compound fertilizer at sowing that gives about 8 kg N, then topdress with urea at the jointing stage in late March for another 8 kg N. I am keeping phosphorus at 7 kg P2O5 per mu because my soil still has enough from years of compound use, but I am raising potassium to 7 kg K2O per mu to keep the wheat from lodging. I will irrigate four times with my well\u2014wintering water, jointing, heading, and grain filling. For crop protection, I will spray once with herbicide before winter, once with insecticide for aphids in spring, and once with fungicide for powdery mildew, so three pesticide trips total.\n\nFor the summer maize on the same 10 mu, there is no time to plough after the wheat harvest, so I will use no-tillage direct seeding with a hybrid variety, one package per mu. I will apply 15 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu at sowing, then side-dress another 5 kg N as urea when the plants are at the 8-leaf stage. I will irrigate twice, at jointing and filling, and spray herbicide once plus insecticide twice for corn borers\u2014three pesticide applications in total.\n\nFor the 5 mu of cotton, I will rotary till in mid-April and plant a hybrid Bt cotton, about 1.5 kg of seed per mu. Cotton is a heavy feeder on potassium, so I will apply 18 kg nitrogen, 6 kg phosphorus, and 9 kg potassium per mu, using compound fertilizer as a base and urea at flowering. I will irrigate three times\u2014seedling establishment, flowering, and boll filling. Cotton pests never rest, so I will spray 10 times through the season for bollworm, aphids, and spider mites. If the autumn weather holds, I expect 280 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I manage 10 mu of wheat-maize double cropping and 5 mu of cotton. Based on 40 years of experience, local soil test information, and what successful neighbors are doing, I adjusted my fertilizer rates upward for potassium and held nitrogen steady to avoid lodging and boost yields. I prefer no-tillage for maize to save time after wheat harvest, and I would rather spend a bit more on fertilizer and irrigation than risk a bad harvest, since my household depends on this land and off-farm income is limited.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I manage 10 mu of wheat-maize double cropping and 5 mu of cotton. Based on 40 years of experience, local soil test information, and what successful neighbors are doing, I adjusted my fertilizer rates upward for potassium and held nitrogen steady to avoid lodging and boost yields. I prefer no-tillage for maize to save time after wheat harvest, and I would rather spend a bit more on fertilizer and irrigation than risk a bad harvest, since my household depends on this land and off-farm income is limited."
+  },
+  "elapsed_seconds": 185.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DWB_11",
+  "tier": 3,
+  "provider": "kimi"
+}

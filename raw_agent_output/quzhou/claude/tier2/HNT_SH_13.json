@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land for 25 years. My body isn't what it was, and my son works in the city now, so it's just me and my wife. I can't do everything by hand anymore. I hire machinery for planting and harvesting. I stick to what I know works here in Quzhou.\n\n**Wheat (planted October, harvested June):**\nAll 4.5 mu goes to wheat in winter, same as always. I'll use the certified variety from the township supply cooperative \u2014 not some fancy new thing, just the one that's done well here for years. I spread compound fertilizer before rotary tilling, then topdress with urea at jointing. Three irrigations: once before winter sets in, once at jointing, once at heading. I do two sprays \u2014 one herbicide early, one fungicide later when powdery mildew starts showing up, which it always does.\n\n**Maize (planted June, harvested September):**\nRight after wheat harvest, I plant maize on the same 4.5 mu. I always use hybrid seed \u2014 everyone does now, the yield difference is real. I topdress heavily at the big bell stage. Summer rains help, but I'll irrigate at silking if it's dry \u2014 that's the stage where skipping water costs you. One herbicide spray early, maybe one more if insects show up bad. I use rotary tillage quickly after wheat to get seeds in the ground fast. Every day late in June costs yield.\n\nI won't change much this year. At my age, I'm not experimenting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    }\n  ],\n  \"reasoning_summary\": \"All 4.5 mu rotates between winter wheat and summer maize on the same plots, as I have done for 25 years in Quzhou. I rely on hired machinery for planting and harvest since my son works off-farm and my wife and I cannot manage heavy labor alone at our age. For wheat, I use a locally proven improved variety, apply compound base fertilizer before rotary tillage, topdress urea at jointing, irrigate three times at key stages, and spray twice for weeds and powdery mildew. For maize, I use hybrid seed as everyone does now, topdress nitrogen heavily at the bell stage, rely partly on summer rainfall with one or two well irrigations at silking, and spray herbicide early with a second spray if pests appear. I make no changes to this system because it is reliable, within my physical capacity, and matches the conditions I know well.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      }
+    ],
+    "reasoning_summary": "All 4.5 mu rotates between winter wheat and summer maize on the same plots, as I have done for 25 years in Quzhou. I rely on hired machinery for planting and harvest since my son works off-farm and my wife and I cannot manage heavy labor alone at our age. For wheat, I use a locally proven improved variety, apply compound base fertilizer before rotary tillage, topdress urea at jointing, irrigate three times at key stages, and spray twice for weeds and powdery mildew. For maize, I use hybrid seed as everyone does now, topdress nitrogen heavily at the bell stage, rely partly on summer rainfall with one or two well irrigations at silking, and spray herbicide early with a second spray if pests appear. I make no changes to this system because it is reliable, within my physical capacity, and matches the conditions I know well."
+  },
+  "elapsed_seconds": 44.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_13",
+  "tier": 2,
+  "provider": "claude"
+}

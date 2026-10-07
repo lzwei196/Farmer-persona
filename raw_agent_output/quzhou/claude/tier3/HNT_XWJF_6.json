@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 13.1 mu here in Quzhou. Wheat after maize, maize after wheat \u2014 same as always, same as everyone around me.\n\nFor wheat, I plant in October. I use improved seed from the town shop, Jimai variety, what most of us use. The bag costs more than saving my own grain but the yield is worth it. Before planting I spread about two bags of compound fertilizer per mu \u2014 that's around 25 kg of nitrogen per mu, plus some phosphorus and potassium mixed in. Then in spring when the wheat turns green I topdress urea, maybe another bag per two mu, so another 10 kg nitrogen. Better a bit too much than the wheat turns yellow. I water three or four times \u2014 before winter, at green-up, at jointing, and at grain filling. The well is close so water is not the hard part. I spray twice against aphids and rust, my neighbor Old Wang tells me when to spray and I follow. Last few years I got around 500 kg per mu. I aim for the same.\n\nAfter wheat in June I plant maize right into the stubble \u2014 no ploughing, just the seeder goes through. Hybrid seed, Zhengdan or whatever the dealer has. I put compound fertilizer in the row at planting, then topdress urea when it's waist-high. Maize needs less water than wheat because the rain comes in summer, so I only irrigate once or twice if July is dry. Spray once for borer. I usually get 550 kg per mu, sometimes 600 in a good year.\n\nMy children work in town so for busy days I hire the harvester and the seeder \u2014 cheaper than breaking my back. I do not change much from year to year. What works, works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what I have done for years and what my neighbors do. Wheat gets compound fertilizer at planting plus urea topdress in spring, four irrigations from the well, two sprays when Old Wang says so. Maize goes in straight after wheat with no ploughing, hybrid seed from the dealer, less water because summer rain helps, one spray for borer. I would rather put a little extra fertilizer than see yellow leaves \u2014 a bad harvest hurts more than a bag of urea costs. With children working off-farm I hire the machines for busy days.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what I have done for years and what my neighbors do. Wheat gets compound fertilizer at planting plus urea topdress in spring, four irrigations from the well, two sprays when Old Wang says so. Maize goes in straight after wheat with no ploughing, hybrid seed from the dealer, less water because summer rain helps, one spray for borer. I would rather put a little extra fertilizer than see yellow leaves \u2014 a bad harvest hurts more than a bag of urea costs. With children working off-farm I hire the machines for busy days."
+  },
+  "elapsed_seconds": 28.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_6",
+  "tier": 3,
+  "provider": "claude"
+}

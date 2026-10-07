@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll stay in character as the farmer and give my reasoning, then the JSON.\n\n---\n\nAlright, let me think about this year. I've been doing wheat-maize on these 9.5 mu for many years now. I don't change much because what I do works \u2014 last year wheat gave me about 470 kg per mu and maize about 560 kg per mu. That's normal for around here.\n\n**Wheat (winter crop, planted October, harvested June):**\n\nI use hybrid seed \u2014 \"Jimai 22\" or something similar that my neighbor Old Wang used last year, he got good yield. I buy about 15 kg seed per mu at the county shop.\n\nFor fertilizer, I follow what most people around here do. Before planting I spread compound fertilizer (15-15-15), about 50 kg per mu as base. Then in spring at green-up (around February-March) I topdress urea, maybe 20 kg per mu. That gives me roughly 16 kg N, 7.5 kg P, 7.5 kg K per mu total. I don't skimp on fertilizer \u2014 if the wheat is yellow in spring I lose yield, and losing 50 kg per mu hurts more than an extra bag of urea costs.\n\nIrrigation \u2014 I have well water, so I water 3 times usually: once before winter (November, to help survive cold), once at green-up/jointing (March), and once at heading (April). If April-May is dry I add one more at grain-filling, so sometimes 4. I'll plan for 3 and see how the weather goes.\n\nPesticide: I spray twice usually \u2014 once for aphids and wheat rust around jointing, once combined herbicide/fungicide earlier. So 2 applications.\n\nTillage: after maize harvest I use rotary tiller \u2014 the maize stalks get chopped and I till them in. Everyone does this now, saves labor.\n\n**Maize (summer crop, June to October):**\n\nStraight after wheat harvest I plant maize \u2014 no-till seeding, I hire the machine for about 30 yuan per mu. Hybrid seed, \"Zhengdan 958\" type, 2 kg per mu.\n\nFertilizer: I put compound fertilizer at planting (40 kg per mu of 15-15-15) and then topdress urea at the big flare/jointing stage, around 25 kg per mu. That's about 18 kg N, 6 kg P, 6 kg K per mu.\n\nIrrigation: in summer we get rain, but July-August can be dry. I usually irrigate 1-2 times. Plan for 2.\n\nPesticide: spray once for corn borer and armyworm around tasseling, sometimes twice if bugs are bad. Plan 2.\n\nTillage: no-till direct seeding after wheat \u2014 this is how everyone does it now.\n\n**Why I don't change much:** My household has 7 people but some work off-farm, so I need steady income from this 9.5 mu, not experiments. Fertilizer costs maybe 2000 yuan total across both crops, that's real money. But cutting fertilizer to save 200 yuan and losing 300 yuan of grain \u2014 that's stupid. I'd rather use a bit extra.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    }\n  ],\n  \"reasoning_summary\": \"I farm 9.5 mu wheat-maize rotation same as last 30 years because it works \u2014 last year 470 kg/mu wheat and 560 kg/mu maize. I use hybrid seed my neighbors recommend, compound fertilizer (15-15-15) at planting plus urea topdress at key stages, giving around 16 kg N per mu for wheat and 18 kg N per mu for maize. I won't cut fertilizer to save a little money because losing grain costs more. Well irrigation means 3 waterings for wheat (pre-winter, green-up, heading) and 2 for maize if July-August is dry. Spray 2 times each crop for aphids/borers. Rotary till after maize, no-till direct seed for maize after wheat \u2014 standard around here. Some family works off-farm so I need steady reliable income, not risky changes.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      }
+    ],
+    "reasoning_summary": "I farm 9.5 mu wheat-maize rotation same as last 30 years because it works \u2014 last year 470 kg/mu wheat and 560 kg/mu maize. I use hybrid seed my neighbors recommend, compound fertilizer (15-15-15) at planting plus urea topdress at key stages, giving around 16 kg N per mu for wheat and 18 kg N per mu for maize. I won't cut fertilizer to save a little money because losing grain costs more. Well irrigation means 3 waterings for wheat (pre-winter, green-up, heading) and 2 for maize if July-August is dry. Spray 2 times each crop for aphids/borers. Rotary till after maize, no-till direct seed for maize after wheat \u2014 standard around here. Some family works off-farm so I need steady reliable income, not risky changes."
+  },
+  "elapsed_seconds": 35.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_6",
+  "tier": 3,
+  "provider": "claude"
+}

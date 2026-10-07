@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old and I have farmed these 5 mu in Quzhou County for 50 years. I finished middle school, so I can read the numbers on fertilizer bags and keep track of costs, but most of what I know comes from doing it myself and watching what works on my neighbors' fields. My son and his wife work in Handan city and send some money home, so I have cash to buy inputs, but I still count every yuan because a bad harvest means I lose real money, whereas wasting a little fertilizer is only a small cost.\n\nFor winter wheat, I sow around October 5th after running the rotary tiller twice to break up the maize stubble from the summer crop. I sow about 15 kg per mu of improved wheat seed. I buy new seed every third year, and this year I bought fresh seed because the grain I saved last autumn looked a bit shriveled. Before sowing, I spread one 50 kg bag of 15-15-15 compound fertilizer per mu as base fertilizer. Then in March, when the wheat turns green and starts growing fast, I topdress with half a bag of urea per mu \u2014 25 kg. I know that is a bit heavy on nitrogen, but Lao Zhang down the lane cut his urea back to 15 kg per mu last spring and his wheat came up short and yellow, losing at least 100 jin per mu. I would rather spend the extra 20 yuan per mu than risk that. I irrigate three times from my well: once before the ground freezes in winter, once at jointing stage in late March, and once at heading in late April. I spray herbicide once in early spring when the weeds are small, and fungicide once when the wheat is flowering to keep head blight away. I do the spraying myself with the backpack sprayer.\n\nFor summer maize, right after I harvest the wheat in early June, I plant directly into the stubble without plowing. The no-till seeder saves three days of hard labor, and the wheat straw keeps the soil from drying out in the June heat. I use hybrid seed, about 2.5 kg per mu, one small bag per mu costing around 50 yuan. At sowing, I put 40 kg per mu of compound fertilizer in the seed row. Then when the corn reaches knee height \u2014 the big trumpet stage in mid-July \u2014 I side-dress with 25 kg per mu of urea. I irrigate twice: once right after sowing if the soil is dry, and once at the big trumpet stage when I put down the urea. Pumping water costs electricity, so I do not water more unless the drought is severe. For chemicals, I spray herbicide once after the corn emerges, and insecticide once in July for corn borer. My wife and I do all the fertilizing and spraying ourselves; I only hire two people for harvest because carrying 50 kg bags is hard on my old back now. If the weather is normal, I expect about 500 kg per mu of wheat and 600 kg per mu of maize, about the same as last year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to what worked last year because change is risky on a 5 mu farm that feeds my household. For wheat, I apply one 50 kg bag of 15-15-15 compound fertilizer and 25 kg of urea per mu, irrigate three times, and spray twice, expecting 500 kg per mu. For maize, I no-till plant hybrid seed after wheat harvest, apply 40 kg of compound fertilizer and 25 kg of urea per mu, irrigate twice, spray twice, and expect 600 kg per mu. I would rather spend a bit more on fertilizer than risk losing yield, since a bad harvest is a disaster but extra fertilizer is just a cost I can absorb with my son's off-farm income.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to what worked last year because change is risky on a 5 mu farm that feeds my household. For wheat, I apply one 50 kg bag of 15-15-15 compound fertilizer and 25 kg of urea per mu, irrigate three times, and spray twice, expecting 500 kg per mu. For maize, I no-till plant hybrid seed after wheat harvest, apply 40 kg of compound fertilizer and 25 kg of urea per mu, irrigate twice, spray twice, and expect 600 kg per mu. I would rather spend a bit more on fertilizer than risk losing yield, since a bad harvest is a disaster but extra fertilizer is just a cost I can absorb with my son's off-farm income."
+  },
+  "elapsed_seconds": 71.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_2",
+  "tier": 3,
+  "provider": "kimi"
+}

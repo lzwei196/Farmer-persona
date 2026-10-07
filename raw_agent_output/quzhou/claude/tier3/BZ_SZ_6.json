@@ -1,0 +1,40 @@
+{
+  "raw_response": "I been farming this 3 mu for more than 50 years. My wife and me, that's it. Son is in the city. So I do what I always do, same as my neighbors.\n\nFor the wheat in winter \u2014 I plant after the maize comes off in October. I buy the seed from the dealer in town, the new kind, everybody around here uses it. Costs more than the old seed but gives more grain, I saw it on my brother-in-law's field. I put down 2 bags of compound fertilizer before I plow \u2014 that's about one bag for each mu, a little more. The man at the shop sells the 15-15-15 kind, that's what we all buy. Then when wheat turns green in spring I spread urea, maybe 15 kg each mu, by hand, I know how much a scoop is. If the wheat looks yellow I put a little more. Better to waste some fertilizer than have a thin crop \u2014 one bad harvest and we eat less all year.\n\nWater \u2014 I pump from the well. Winter water before the ground freezes, then when it greens up, then when the head is coming, then one more when the grain is filling. Four times, same as always. For bugs and weeds I spray two times, the sprayer on my back, the shop tells me what to mix.\n\nFor the maize in summer \u2014 I do not plow, I just plant straight into the wheat stubble, the machine man comes and does it for 40 yuan a mu. Use the hybrid seed, everyone does. I put compound fertilizer in the row when planting, then urea once when the maize is knee-high. Water two times if the rain doesn't come. Spray once for the borer, once for weeds.\n\nI get maybe 450 kg wheat each mu in a good year, and 550 kg maize. Some years less. That is enough for us to eat and sell a little.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am old and my farm is small, only 3 mu, so I do the same as last year and the same as my neighbors. I buy the compound fertilizer bags at the shop \u2014 about one bag per mu before planting \u2014 and add urea by hand when the wheat greens up and when the maize is knee-high. I put a little extra if the crop looks weak, because losing yield is worse than wasting some fertilizer. I water the wheat four times from my well and the maize twice if rain is short. I use the improved seed for wheat and hybrid for maize, same as everyone. I plow the ground for wheat but plant maize straight into the stubble, the machine man does it cheap. I spray for weeds and bugs two times each crop. In a normal year this gives me about 450 kg wheat and 550 kg maize per mu, enough to eat and sell a bit.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am old and my farm is small, only 3 mu, so I do the same as last year and the same as my neighbors. I buy the compound fertilizer bags at the shop \u2014 about one bag per mu before planting \u2014 and add urea by hand when the wheat greens up and when the maize is knee-high. I put a little extra if the crop looks weak, because losing yield is worse than wasting some fertilizer. I water the wheat four times from my well and the maize twice if rain is short. I use the improved seed for wheat and hybrid for maize, same as everyone. I plow the ground for wheat but plant maize straight into the stubble, the machine man does it cheap. I spray for weeds and bugs two times each crop. In a normal year this gives me about 450 kg wheat and 550 kg maize per mu, enough to eat and sell a bit."
+  },
+  "elapsed_seconds": 34.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_6",
+  "tier": 3,
+  "provider": "claude"
+}

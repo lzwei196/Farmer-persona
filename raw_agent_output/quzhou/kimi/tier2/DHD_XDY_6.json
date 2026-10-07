@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 76 years old and have farmed this land in Quzhou for 40 years. My family has seven mouths to feed, and my sons help with the heavy work now, though I still make the decisions. With 10.1 mu of good flat land and a well for irrigation, I know this soil well. I always plant wheat in autumn and follow it with maize right after the June harvest \u2014 that is the only way to get two crops from this land in one year. For the winter wheat, I will plough the field after the autumn corn harvest, spread my fertilizer, and sow an improved wheat variety that I have used for years because it withstands the cold and gives steady grain. I will irrigate four times: before winter freeze, at green-up, at jointing, and once more when the grain is filling. Wheat needs water at those key moments or the yield drops. For the summer maize, I will plant hybrid seed immediately after cutting the wheat, without tilling again \u2014 there is no time to waste in June, and the less I disturb the soil, the better moisture I keep. I will irrigate the maize twice, once when it is knee-high and again at flowering, because July rains can be unreliable. I use my fertilizers generously \u2014 nitrogen gives the green growth, phosphorus helps the roots, and potassium keeps the stalks strong. Two sprays on each crop keep the weeds and bugs under control. I expect my wheat to give around 480 jin per mu and the maize around 550 jin per mu if the weather cooperates. That is enough to feed my household and leave some grain to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 10.1 mu in Quzhou for 40 years using a wheat-maize double-cropping system. I plough before wheat planting, use an improved variety, irrigate four times at critical growth stages, and apply ample N-P-K fertilizer. For maize, I immediately no-till plant hybrid seed after wheat harvest, irrigate twice, and apply similar fertilizer and two pesticide rounds. This proven schedule feeds my seven-person household and delivers reliable yields of about 480 kg/mu for wheat and 550 kg/mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed 10.1 mu in Quzhou for 40 years using a wheat-maize double-cropping system. I plough before wheat planting, use an improved variety, irrigate four times at critical growth stages, and apply ample N-P-K fertilizer. For maize, I immediately no-till plant hybrid seed after wheat harvest, irrigate twice, and apply similar fertilizer and two pesticide rounds. This proven schedule feeds my seven-person household and delivers reliable yields of about 480 kg/mu for wheat and 550 kg/mu for maize."
+  },
+  "elapsed_seconds": 56.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_6",
+  "tier": 2,
+  "provider": "kimi"
+}

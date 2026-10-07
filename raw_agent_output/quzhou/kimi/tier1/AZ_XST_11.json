@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 42-year-old woman from Quzhou County, and I have been farming since I was a girl. I never went to school, but I know this land well \u2014 my hands have felt its soil for decades. My family has about 7 mu of good flat land on the North China Plain. Like everyone else in my village, I follow the wheat-maize double-crop system. That is the only way to make full use of our land and feed my family.\n\nIt is now early spring. My winter wheat was sown last October after the autumn rains, and it is greening up now. I will not uproot it \u2014 that would be foolish. I bought improved wheat seed, the kind called *Jimai 22*, from the agricultural supply shop in town because my neighbors say it gives steady yields and resists lodging. For the summer crop, I will plant *Denghai 605* hybrid maize right after the wheat harvest in early June. I have been planting this maize for years; the kernels are full and the buyers pay a fair price.\n\nFor the wheat, I will apply urea and compound fertilizer when the wheat turns green, and top-dress again at jointing. I usually put about 16 kg of nitrogen per mu, plus some phosphorus and potash. The wheat needs three irrigations: one now to wake it up, one at jointing, and one when the grain is filling. I hire the rotary tiller before sowing, but now I only irrigate and spray. I spray herbicide once to control weeds, and insecticide twice \u2014 once for aphids and once for armyworms if they show up. I expect about 500 kg per mu if the weather is kind.\n\nFor the maize, I plant it no-till into the wheat stubble to save time and labor \u2014 the season is short and we must hurry. I apply about 14 kg nitrogen per mu, plus phosphorus and potassium at sowing. Maize needs two good irrigations: one when it is knee-high and one at tasseling. I spray herbicide once before the maize grows tall, and insecticide twice for the corn borer. I expect about 550 kg per mu.\n\nThis is what I have always done, and it puts food on the table and money in my pocket.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat in winter and maize in summer on the same 7 mu of land, which is the standard double-cropping system in Quzhou County. I use improved wheat seed and hybrid maize because they yield reliably and buyers accept them. I apply nitrogen, phosphorus, and potassium fertilizers at key growth stages, irrigate wheat three times and maize twice, and spray pesticides three times per crop to control weeds and insects. Rotary tillage is used for wheat, while maize is planted no-till after wheat harvest to save time during the short summer season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow wheat in winter and maize in summer on the same 7 mu of land, which is the standard double-cropping system in Quzhou County. I use improved wheat seed and hybrid maize because they yield reliably and buyers accept them. I apply nitrogen, phosphorus, and potassium fertilizers at key growth stages, irrigate wheat three times and maize twice, and spray pesticides three times per crop to control weeds and insects. Rotary tillage is used for wheat, while maize is planted no-till after wheat harvest to save time during the short summer season."
+  },
+  "elapsed_seconds": 132.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_11",
+  "tier": 1,
+  "provider": "kimi"
+}

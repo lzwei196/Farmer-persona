@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a farmer here in Quzhou. Forty years on this land, ten mu of it. Let me think how I will do this year.\n\nMy land is split between wheat in winter and maize in summer \u2014 same as always, same as everyone here. I plant wheat after October, harvest in June, then maize goes in right away and comes out in September. Two crops on the same ground.\n\nFor wheat \u2014 I always use the improved seed from the dealer in town. Jimai variety, my neighbor Old Wang got 500 kg from it last year, so I trust it. I put down compound fertilizer before sowing, then urea in spring when the wheat starts to green up. Last year I used about 2 bags of compound (50 kg each) per mu as base, then one bag of urea top-dressing. That comes to maybe 18 kg of nitrogen per mu. I water it 3 times \u2014 once after sowing, once in spring, once when the head is filling. Wheat needs water or the grain stays small.\n\nFor maize \u2014 I use hybrid seed, Zhengdan or Xianyu, whatever the dealer has fresh. Maize eats more nitrogen than wheat. I put urea twice \u2014 once at the small bell stage, once at the big bell. Maybe 20 kg nitrogen per mu total. Maize roots go deep so I do not water as much, just once or twice if no rain comes. Phosphorus and potassium I put in the compound at sowing \u2014 no need to add more, the soil here has enough from years of fertilizing.\n\nPesticide \u2014 wheat I spray once or twice for aphids and rust. Maize I spray once for borer when I see the moths. I do not like spending too much on chemicals.\n\nTillage \u2014 I rent the rotary tiller from the village, everyone does. No-till is for big farms with machines I cannot afford.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same wheat-maize rotation as everyone in Quzhou \u2014 wheat from October to June, maize right after until September. I use improved wheat seed and hybrid maize seed from the town dealer, same kinds my neighbors have good luck with. For both crops I put down compound fertilizer at sowing and top-dress with urea \u2014 about 18 kg nitrogen for wheat and 20 kg for maize, since maize is hungrier. Wheat I water three times because grain filling needs water; maize I only water once or twice if rain is short. I spray pesticide one or two times when I see pests, no more \u2014 chemicals cost money. I rent the rotary tiller from the village. I do what worked last year because changing things is a risk I cannot afford on ten mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the same wheat-maize rotation as everyone in Quzhou \u2014 wheat from October to June, maize right after until September. I use improved wheat seed and hybrid maize seed from the town dealer, same kinds my neighbors have good luck with. For both crops I put down compound fertilizer at sowing and top-dress with urea \u2014 about 18 kg nitrogen for wheat and 20 kg for maize, since maize is hungrier. Wheat I water three times because grain filling needs water; maize I only water once or twice if rain is short. I spray pesticide one or two times when I see pests, no more \u2014 chemicals cost money. I rent the rotary tiller from the village. I do what worked last year because changing things is a risk I cannot afford on ten mu."
+  },
+  "elapsed_seconds": 22.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_1",
+  "tier": 3,
+  "provider": "claude"
+}

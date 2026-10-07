@@ -1,0 +1,75 @@
+{
+  "raw_response": "Ai, what's there to think about? I've been doing this same thing 40 years. Wheat after maize in October, maize after wheat in June. That's how it goes on this plain.\n\nI got 13 mu or so. Not much. Just me and the old lady \u2014 the boy works in the city, sends some money home but don't come back to help except for wheat harvest sometimes. So when the busy time comes I call the combine fellow, pay him by the mu, he cuts and threshes in one go. Can't be bending over all day at my age.\n\n**The wheat** \u2014 it's in the ground already, went in around Cold Dew last October, same variety as before, does fine. Before I planted I spread 2 bags of compound fertilizer per mu \u2014 the 15-15-15, everybody around here uses that one. Now it's April, green-up time, I'll throw down some urea, maybe a small half-bag per mu when the jointing starts. My neighbor Old Wang uses more urea than me but his wheat ain't taller than mine, so why waste money. I'll water it three times from the well \u2014 once now for green-up, once at jointing, once when the grain is filling out. If the sky gives rain I skip one, the electric for the pump ain't cheap. Weeds I already sprayed once in spring. If I see yellow rust on the leaves I'll spray, otherwise leave it. Should get me 400, 420 kg a mu if the weather don't do something stupid in May.\n\n**The maize** \u2014 soon as the wheat comes off in June I got maybe five, six days. Got to hurry. Rent the rotary tiller and the seeder from the village, plant hybrid seed \u2014 you got to buy it every year, can't save it. Put a bag and a half of compound down with the planter, then when the stalks are about knee-high I topdress urea. Water maybe once, twice if July-August is dry. Spray for armyworm if I see them chewing. Harvest end of September when the kernels go hard. Usually gives me 500 kg a mu, sometimes more if the rains come right.\n\nPesticides and all that \u2014 I just buy whatever the agricultural supply store recommends when I go in. I don't read the labels much, I tell them what I'm seeing and they give me a bottle.\n\nThat's the year. Nothing fancy. Same as last year, same as the year before.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 13.1,\n      \"planting_date\": \"mid-October (around Cold Dew)\",\n      \"harvest_date\": \"early-to-mid June (combine-harvested)\",\n      \"seed_type\": \"local/common variety (same as previous years, some saved some bought)\",\n      \"seed_cost_yuan_per_mu\": 60,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 24,\n      \"phosphorus_total_kg_per_mu\": 15,\n      \"potassium_total_kg_per_mu\": 15,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"2 bags of 15-15-15 compound broadcast before planting; about half a bag of urea topdressed around jointing in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"fungicide\"],\n      \"tillage_method\": \"rotary tiller (rented from village) before planting\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 13.1,\n      \"planting_date\": \"mid-June (right after wheat harvest)\",\n      \"harvest_date\": \"late September (combine-harvested)\",\n      \"seed_type\": \"hybrid (bought new each year)\",\n      \"seed_cost_yuan_per_mu\": 80,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 20,\n      \"phosphorus_total_kg_per_mu\": 11,\n      \"potassium_total_kg_per_mu\": 11,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"1.5 bags of 15-15-15 compound with the planter; about half a bag of urea topdressed when plants are knee-high\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"quick rotary till after wheat, then seeder (both rented)\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 13500,\n  \"reasoning_summary\": \"I do what's worked for 40 years. Two bags of compound up front, half a bag of urea later, three waters for wheat and one or two for maize. My neighbors use a bit more fertilizer but I don't see their yields beating mine, and cash is tight with just me and the old lady at home. I hire the combine for both harvests \u2014 can't bend over like I used to \u2014 but everything else I handle myself. Nothing changes unless I have a reason to change it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 13.1,
+        "planting_date": "mid-October (around Cold Dew)",
+        "harvest_date": "early-to-mid June (combine-harvested)",
+        "seed_type": "local/common variety (same as previous years, some saved some bought)",
+        "seed_cost_yuan_per_mu": 60,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 24,
+        "phosphorus_total_kg_per_mu": 15,
+        "potassium_total_kg_per_mu": 15,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "2 bags of 15-15-15 compound broadcast before planting; about half a bag of urea topdressed around jointing in spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "fungicide"
+        ],
+        "tillage_method": "rotary tiller (rented from village) before planting",
+        "labor_family_days": 15,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 24,
+        "area_mu": 13.1,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 13.1,
+        "planting_date": "mid-June (right after wheat harvest)",
+        "harvest_date": "late September (combine-harvested)",
+        "seed_type": "hybrid (bought new each year)",
+        "seed_cost_yuan_per_mu": 80,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 20,
+        "phosphorus_total_kg_per_mu": 11,
+        "potassium_total_kg_per_mu": 11,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "1.5 bags of 15-15-15 compound with the planter; about half a bag of urea topdressed when plants are knee-high",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "quick rotary till after wheat, then seeder (both rented)",
+        "labor_family_days": 12,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 20,
+        "area_mu": 13.1,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11
+      }
+    ],
+    "total_input_cost_yuan": 13500,
+    "reasoning_summary": "I do what's worked for 40 years. Two bags of compound up front, half a bag of urea later, three waters for wheat and one or two for maize. My neighbors use a bit more fertilizer but I don't see their yields beating mine, and cash is tight with just me and the old lady at home. I hire the combine for both harvests \u2014 can't bend over like I used to \u2014 but everything else I handle myself. Nothing changes unless I have a reason to change it."
+  },
+  "elapsed_seconds": 104.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_14",
+  "tier": 4,
+  "provider": "claude"
+}

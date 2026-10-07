@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 43 years old. I never went to school, can't read. I've been farming these 12 mu for 20 years since I married into this village. My mother-in-law taught me, and now I watch what Old Wang and the other neighbors do. My husband and I work the land. My son works in a factory in Shijiazhuang and sends some money home, but fertilizer prices keep going up.\n\nFor the wheat: Every year I plant after the National Day holiday in October. I hire the man with the rotary tiller machine \u2014 40 yuan per mu, he does all 12 mu in one morning. Before he comes, I spread one full bag of compound fertilizer on each mu. The bag says 15-15-15 and weighs 50kg. One bag per mu, that's what I've always done. I plant about 15kg of improved wheat seed per mu, the same kind I bought last year from the dealer. In March when the wheat starts growing fast, I spread half a bag of urea on each mu \u2014 that's 25kg per mu. Old Wang does the same, and his wheat looks good every year. If it doesn't rain, I run the pump three times: once after planting, once in spring when I put the urea, and once more when the grain is filling. I spray twice \u2014 once for weeds when the wheat is small, once later when the dealer says everyone is spraying for rust. Last year I got about 1000 jin per mu, so I expect 500kg per mu this year if the weather holds.\n\nFor the corn: Right after we cut the wheat in early June, I plant corn. No time to till again, I plant straight into the wheat stubble. I put half a bag of that same compound fertilizer in the holes when planting \u2014 25kg per mu. I plant hybrid corn seed, about 3kg per mu, whatever the dealer says is selling good. When the corn is knee-high in July, I put another half bag of urea \u2014 25kg per mu. I irrigate twice if no rain: once after planting, once when the tassels come out. I spray twice \u2014 once for weeds, once for that corn borer worm. I got about 1200 jin per mu last year, so I expect 600kg per mu.\n\nI don't dare cut back on fertilizer. Last year the corn price was OK. If I use less and lose yield, that's a disaster. Wasting a little fertilizer is just money spent. My neighbor Li cut his fertilizer two years ago and his wheat was terrible. I won't make that mistake.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15.3,\n      \"phosphorus_kg_per_mu\": 3.8,\n      \"potassium_kg_per_mu\": 3.8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I learned farming from my mother-in-law and neighbors over 20 years on these 12 mu in Quzhou. For wheat, I rotary till in October and apply one 50kg bag of 15-15-15 compound fertilizer per mu at planting, then 25kg urea per mu in spring, with three irrigations and two pesticide sprays, expecting 500kg per mu. For summer corn planted no-till after wheat harvest, I apply 25kg compound fertilizer and 25kg urea per mu, with two irrigations and two sprays, expecting 600kg per mu. I follow what Old Wang does and what worked before, because cutting inputs risks losing the harvest, and a bad year is worse than spending a bit more on fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15.3,
+        "phosphorus_kg_per_mu": 3.8,
+        "potassium_kg_per_mu": 3.8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I learned farming from my mother-in-law and neighbors over 20 years on these 12 mu in Quzhou. For wheat, I rotary till in October and apply one 50kg bag of 15-15-15 compound fertilizer per mu at planting, then 25kg urea per mu in spring, with three irrigations and two pesticide sprays, expecting 500kg per mu. For summer corn planted no-till after wheat harvest, I apply 25kg compound fertilizer and 25kg urea per mu, with two irrigations and two sprays, expecting 600kg per mu. I follow what Old Wang does and what worked before, because cutting inputs risks losing the harvest, and a bad year is worse than spending a bit more on fertilizer."
+  },
+  "elapsed_seconds": 223.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_12",
+  "tier": 3,
+  "provider": "kimi"
+}

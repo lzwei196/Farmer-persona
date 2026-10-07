@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these same 5 mu in Quzhou for 50 years, and my father farmed them before me. Wheat-maize double cropping is the only system I know \u2014 it keeps the land working and gives my family two chances a year. My wife and I handle most of the day-to-day work because our sons have off-farm jobs in the county town; they can only come back for harvest and planting peaks. At 70, I do not chase new tricks. I do what has not failed me.\n\nFor wheat, I will sow my usual improved variety in mid-October after turning the maize stubble with the rotary tiller. The extension fellow says 15 kg of nitrogen per mu is enough, but I have always done a bit more to be safe \u2014 I will put down about 15 kg N per mu, plus 6 kg of phosphorus and 5 kg of potassium through compound fertilizer. I split it: base dressing at planting, then urea topdressing when the wheat greens up and again at jointing. I irrigate three times \u2014 wintering water, jointing, and grain filling \u2014 because the well water costs money, but wheat cannot dry out at those stages. Two pesticide sprays are enough if you watch the fields: one for weeds, one for aphids or rust if they show up. I expect around 480 kg per mu if spring does not turn too dry.\n\nFor maize, there is no time to waste after wheat harvest in early June. I plant hybrid seed the same day or the next using the no-till seeder \u2014 everyone here does that now, or you miss the heat. I give it about 17 kg N, 6 kg P, and 5 kg K per mu, side-dressed at the big flare stage. Summer rain usually helps, but I will irrigate twice if it turns dry, especially at flowering. Two sprays: one herbicide, one for corn borer. Hybrid seed should give me about 520 kg per mu in a normal year. I keep inputs moderate because my pockets are not deep, and at my age a total crop failure would be hard to recover from.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what has worked on my 5 mu for decades. Wheat gets rotary tillage, an improved variety, three irrigations, and modest fertilizer because pumping water is expensive and I cannot afford to waste inputs. Maize is planted no-till immediately after wheat harvest using hybrid seed, with two irrigations and similar fertilizer rates. My sons work off-farm so my wife and I manage the day-to-day labor; I keep costs conservative because cash is tight and at my age I cannot afford a bad year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I stick with what has worked on my 5 mu for decades. Wheat gets rotary tillage, an improved variety, three irrigations, and modest fertilizer because pumping water is expensive and I cannot afford to waste inputs. Maize is planted no-till immediately after wheat harvest using hybrid seed, with two irrigations and similar fertilizer rates. My sons work off-farm so my wife and I manage the day-to-day labor; I keep costs conservative because cash is tight and at my age I cannot afford a bad year."
+  },
+  "elapsed_seconds": 140.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_2",
+  "tier": 2,
+  "provider": "kimi"
+}

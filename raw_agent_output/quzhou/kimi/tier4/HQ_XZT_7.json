@@ -1,0 +1,73 @@
+{
+  "raw_response": "I am a 35-year-old woman from Quzhou County, Hebei. I have never been to school, can't read characters, but I have been working in the fields since I was five years old. My family has 4.1 mu of land, all planted with wheat and corn in rotation. There are four of us at home: me, my husband, my mother-in-law, and my youngest child. My husband works on construction sites in the county town and only comes back during busy farming seasons, so most of the time it's me and my mother-in-law managing the land.\n\nThis year, for wheat, I planted around October 10th. I used the seed I saved from last year \u2014 buying new wheat seed costs too much, and besides, the seed I save grows just fine. Before planting, I hired Old Zhang's tractor to plow the field once, 50 yuan per mu. For fertilizer, I put down about half a bag of that compound fertilizer on each mu \u2014 the kind they sell at the supply shop with numbers on it. I can't afford a full bag per mu like some families in the village, but half a bag has always been enough for me. Come spring, if the wheat looks yellow and weak, I'll topdress some urea, maybe one bag for every two mu. I irrigate twice: once after planting if the soil is dry, and once at jointing time in spring. Pumping water from the well costs electricity money, and moving those heavy pipes by myself is hard work, so I don't irrigate more than that. I spray herbicide once for weeds \u2014 that's it for chemicals. I don't spray for insects unless I see them with my own eyes, because that costs extra money. I expect about 350 to 400 jin per mu this year, about the same as last year if the weather doesn't turn bad.\n\nFor corn, after we harvest wheat in early June, we only have a few days to plant. It's always a rush. I buy hybrid corn seed \u2014 you can't save hybrid seed, it won't grow right. About two and a half jin per mu. The seed price went up again this year, which hurts, but what can you do? I put some compound fertilizer down at planting, a bit less than for wheat, and then when the corn is knee-high I side-dress urea. I irrigate once or twice, depending on the rain. Last summer it rained well, so I only irrigated once, but if it's dry at flowering, I'll pump water again. One herbicide spray at planting. I hope to get around 400 jin per mu, maybe 450 if the weather is good.\n\nMy husband sends some money home from construction work, but we have to pay for the child's school and my mother-in-law's medicine. I can't spend too much on fertilizer or pump too much water, or we'll run out of cash before the harvest comes in. I'd rather use a little less fertilizer than borrow money from relatives. That's how I've always managed \u2014 not the best, but good enough to get by.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 4.1,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"local\",\n      \"seed_cost_yuan_per_mu\": 5,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 9.3,\n      \"phosphorus_total_kg_per_mu\": 3.8,\n      \"potassium_total_kg_per_mu\": 3.8,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound fertilizer as base before planting; urea topdress at green-up in spring if wheat looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"hired tractor plowing once before planting\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 4.1,\n      \"planting_date\": \"mid June, within days after wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 9.9,\n      \"phosphorus_total_kg_per_mu\": 3.0,\n      \"potassium_total_kg_per_mu\": 3.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound fertilizer at planting; urea side-dress when corn is knee-high\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"quick rotary tillage right after wheat harvest before planting\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 400\n    }\n  ],\n  \"total_input_cost_yuan\": 2300,\n  \"reasoning_summary\": \"I have only 4.1 mu and my husband works off-farm, so cash is tight and I do most of the farm work myself with my mother-in-law's help. I save my own wheat seed to avoid buying, and I use less compound fertilizer than richer families in the village \u2014 about half a bag per mu \u2014 because I have school fees and medical costs to cover. I irrigate only when I must because pumping costs electricity money and moving pipes alone is hard. I only spray herbicide, not insecticide, unless I see bugs myself. I keep my yields modest because I know I can't afford the inputs that bigger farms use, but I'd rather be safe with my spending than borrow money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 4.1,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "local",
+        "seed_cost_yuan_per_mu": 5,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 9.3,
+        "phosphorus_total_kg_per_mu": 3.8,
+        "potassium_total_kg_per_mu": 3.8,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound fertilizer as base before planting; urea topdress at green-up in spring if wheat looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "hired tractor plowing once before planting",
+        "labor_family_days": 8,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 350,
+        "nitrogen_kg_per_mu": 9.3,
+        "area_mu": 4.1,
+        "expected_yield_kg_per_mu": 350,
+        "phosphorus_kg_per_mu": 3.8,
+        "potassium_kg_per_mu": 3.8
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 4.1,
+        "planting_date": "mid June, within days after wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 9.9,
+        "phosphorus_total_kg_per_mu": 3.0,
+        "potassium_total_kg_per_mu": 3.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound fertilizer at planting; urea side-dress when corn is knee-high",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "quick rotary tillage right after wheat harvest before planting",
+        "labor_family_days": 6,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 9.9,
+        "area_mu": 4.1,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 3.0,
+        "potassium_kg_per_mu": 3.0
+      }
+    ],
+    "total_input_cost_yuan": 2300,
+    "reasoning_summary": "I have only 4.1 mu and my husband works off-farm, so cash is tight and I do most of the farm work myself with my mother-in-law's help. I save my own wheat seed to avoid buying, and I use less compound fertilizer than richer families in the village \u2014 about half a bag per mu \u2014 because I have school fees and medical costs to cover. I irrigate only when I must because pumping costs electricity money and moving pipes alone is hard. I only spray herbicide, not insecticide, unless I see bugs myself. I keep my yields modest because I know I can't afford the inputs that bigger farms use, but I'd rather be safe with my spending than borrow money."
+  },
+  "elapsed_seconds": 150.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_7",
+  "tier": 4,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm this land 20 years. I look at what my neighbors do, I look at what my fields gave me last year, and I do the same again. Changing things is how you lose money.\n\nMy land is big \u2014 almost 380 mu. I can't treat every mu the same, but I split it like I did before. About 230 mu goes to cotton, the rest \u2014 about 150 mu \u2014 I put in maize. Cotton is what this ground grows best, that's why everyone around here does cotton.\n\nFor cotton \u2014 I buy the same seed from the dealer in town, the kind that resists the bollworm. Everyone uses it. For fertilizer I put down 2 bags of compound (that's 100 jin per mu, the 15-15-15 kind) before I plough, and then when the cotton is knee-high I put 1 bag of urea per mu. I know some say this is too much. I don't care. One year I tried less and the bolls were small, I lost money. Better to spend a little extra and sleep at night.\n\nWater \u2014 I have my well. Cotton I water 3 times if the sky is dry. Before flowering, at flowering, and when the bolls are filling. If it rains good, maybe only 2.\n\nSpraying cotton is the hard part. Aphid, spider mite, bollworm, the plant bug \u2014 I spray maybe 10 times across the season. This is what everyone does. You cannot skip it or the pests eat your money.\n\nI plough deep after harvest in autumn. This is how my father did it.\n\nFor maize \u2014 hybrid seed, same as last year. 2 bags compound at planting, 1 bag urea when it's knee-high. Water 2 times. Spray 2 times for the borer. Plough the ground same way.\n\nLast year my cotton gave about 500 jin per mu of seed cotton, my maize about 1100 jin. I expect the same this year if the weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 230,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"spring\",\n      \"area_mu\": 149.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year and what my neighbors do. Cotton takes most of my land because this ground is good for it. I use 2 bags of compound plus 1 bag of urea per mu for both crops \u2014 a little extra fertilizer is cheaper than a bad harvest. Cotton needs many sprays for bollworm and aphid, maize only a couple. I water from my well when the sky is dry, plough deep in autumn like my father did. My yields stay steady this way, so I don't change.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 230,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "maize",
+        "season": "spring",
+        "area_mu": 149.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what worked last year and what my neighbors do. Cotton takes most of my land because this ground is good for it. I use 2 bags of compound plus 1 bag of urea per mu for both crops \u2014 a little extra fertilizer is cheaper than a bad harvest. Cotton needs many sprays for bollworm and aphid, maize only a couple. I water from my well when the sky is dry, plough deep in autumn like my father did. My yields stay steady this way, so I don't change."
+  },
+  "elapsed_seconds": 52.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 65 years old, finished middle school, and I have farmed these 2 mu in Quzhou for 45 years. It is just me now, so I do all the work myself. I cannot afford to waste money, but a bad harvest would be a disaster, so I would rather use a bit too much fertilizer than too little. I watch what my neighbors do, and I stick with what worked last year.\n\nFor wheat this year, I will rotary till the land in October and sow Jimai 22, about 15 kg of seed per mu. I will buy one 50-kg bag of 15-15-15 compound fertilizer and spread it on my 2 mu before sowing, so that is 25 kg per mu. When the wheat turns green in March, I will topdress with urea, about 15 kg per mu. I will irrigate three times from my well: once before winter freeze-up, once in spring when the wheat starts growing fast, and once at grain filling if it stays dry. I will spray herbicide once after sowing, and fungicide once in spring for the rust. Most years that is two sprayings total. I expect about 500 kg per mu if the weather is normal.\n\nAfter I harvest the wheat in June, I will sow Denghai 605 hybrid maize right away with no-tillage, the seeding machine drills straight into the stubble. I will use about 2 kg seed per mu. I will put down another 50-kg bag of compound fertilizer, 25 kg per mu, and at the big trumpet leaf stage I will topdress with about 20 kg urea per mu. I will irrigate twice: once right after sowing, and once at flowering in August. For chemicals, I will spray herbicide once, insecticide once for the corn borers, and fungicide once if the summer is humid, so three applications. I expect about 550 kg per mu.\n\nI do not change much from year to year. My neighbor Lao Wang has similar land and does about the same, and his crops always look fine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 2 mu alone and stick to what has worked for 45 years. For wheat, I rotary till and sow Jimai 22 with 25 kg per mu of 15-15-15 compound fertilizer as basal and 15 kg per mu of urea topdressed in spring, irrigating three times and spraying twice. For maize, I no-till sow Denghai 605 after wheat harvest with the same compound rate and 20 kg per mu of urea, irrigating twice and spraying three times. I match my neighbors and avoid risks I cannot afford.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 2 mu alone and stick to what has worked for 45 years. For wheat, I rotary till and sow Jimai 22 with 25 kg per mu of 15-15-15 compound fertilizer as basal and 15 kg per mu of urea topdressed in spring, irrigating three times and spraying twice. For maize, I no-till sow Denghai 605 after wheat harvest with the same compound rate and 20 kg per mu of urea, irrigating twice and spraying three times. I match my neighbors and avoid risks I cannot afford."
+  },
+  "elapsed_seconds": 262.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_4",
+  "tier": 3,
+  "provider": "kimi"
+}

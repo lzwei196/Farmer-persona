@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 40 years. I know what grows here and what doesn't. My body is older now, some of my children earn wages in the city, so I must be practical about what I can manage alone or with my wife.\n\nMy 11.4 mu I will split the usual way \u2014 about 8 mu stays in wheat and maize rotation, the rest I keep in cotton. Cotton prices have been decent and I know how to grow it, even if it wears me out in August.\n\n**Wheat (winter, 8 mu):** I plant every October after the maize comes off. I'll use the Jimai improved variety \u2014 it performs reliably here and the seed station sells it. I apply base fertilizer before sowing: diammonium phosphate plus urea. I top-dress at jointing. I irrigate four times: at sowing, at jointing, at heading, and at grain filling \u2014 that is what we do here, the soil dries out badly in spring. Two sprays for aphids and powdery mildew, that is usually enough. I expect around 450 jin per mu if the weather cooperates.\n\n**Maize (summer, 8 mu):** Goes in right after wheat harvest in June. No time to plough \u2014 I use the rotary cutter and direct seed. Zhengdan 958 hybrid, I have planted it for years. Heavy on nitrogen \u2014 maize here needs it. Two or three irrigations. Usually just two pesticide sprays unless there is armyworm pressure.\n\n**Cotton (spring\u2013autumn, 3.4 mu):** I start preparing in April. Hybrid Bt cotton variety \u2014 fewer sprays needed than the old types, though I still spray seven or eight times over the season because pests here are bad in July. Cotton needs careful irrigation and I have the well, so I manage. It is the most labor-intensive work I do all year, but the income is important.\n\nI will not change much from last year. My yields are steady. At my age I am not experimenting.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old farmer in Quzhou with 40 years of experience allocates 8 mu to the familiar wheat-maize double-crop rotation and 3.4 mu to cotton, a labor-intensive but valuable cash crop managed with Bt hybrid seed to reduce spray burden. Wheat uses an improved regional variety with four irrigations from the well to counter the dry North China Plain springs; maize follows immediately after wheat harvest with no-tillage to save time and uses a proven local hybrid; cotton receives the most pesticide attention due to high summer pest pressure. Fertilizer rates reflect conventional local practice with moderate nitrogen, and yield expectations are conservative and based on personal experience rather than optimistic projections.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 64-year-old farmer in Quzhou with 40 years of experience allocates 8 mu to the familiar wheat-maize double-crop rotation and 3.4 mu to cotton, a labor-intensive but valuable cash crop managed with Bt hybrid seed to reduce spray burden. Wheat uses an improved regional variety with four irrigations from the well to counter the dry North China Plain springs; maize follows immediately after wheat harvest with no-tillage to save time and uses a proven local hybrid; cotton receives the most pesticide attention due to high summer pest pressure. Fertilizer rates reflect conventional local practice with moderate nitrogen, and yield expectations are conservative and based on personal experience rather than optimistic projections."
+  },
+  "elapsed_seconds": 48.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_10",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 52, farmed 30 years. My 8 mu: 5 mu wheat-maize, 2 mu cotton, 1 mu watermelon. Seven people at home, two sons work in Shijiazhuang and send maybe 5,000 yuan a year, but I pay for the inputs myself.\n\nFor winter wheat on 5 mu: Last year I put one 50-kilogram bag of compound fertilizer per mu before planting. At green-up I spread 25 kilograms of urea per mu. That cost about 170 yuan per mu and gave me 500 kilograms per mu. This year I will do the same \u2014 one bag compound, 25 kilograms urea. I irrigate three times: after planting if dry, at green-up, and at jointing. I spray twice \u2014 herbicide once, and one insecticide when the aphids come. I rotary till before planting. Improved seeds, about 15 kilograms per mu.\n\nFor summer maize on the same 5 mu: After wheat harvest in June, I have only a few days \u2014 I plant no-tillage. I use 40-kilogram bags of compound fertilizer, one bag per mu, because I can carry them faster to the field. Then at big trumpet I add 20 kilograms urea per mu. Two irrigations: one after planting if no rain, one at flowering. Two sprays: herbicide and one for corn borer. Hybrid seeds, 2.5 kilograms per mu. Last year I got 550 kilograms per mu, this year I expect the same.\n\nFor cotton on 2 mu: I plough deep in April because cotton roots need soft soil down deep. Bt hybrid seeds, 1 kilogram per mu. One 50-kilogram bag of compound per mu, plus 15 kilograms of potassium fertilizer because the dealer said cotton needs it for the bolls, and his cotton looked good last year. Then 15 kilograms urea at flowering. Three irrigations: seedling, flowering, and boll stage. Three pesticide sprays \u2014 I don't fully trust the Bt cotton, I still spray when I see bollworms. Expected 250 kilograms of seed cotton per mu.\n\nFor watermelon on 1 mu: I rotary till and make ridges. Hybrid seeds from the shop. One bag of compound per mu, plus 25 kilograms potassium fertilizer \u2014 watermelon needs that for sweetness, my cousin who grows melon told me that. Also 10 kilograms urea. Six irrigations, small amounts each time, never flood the melon. Four sprays for the leaf fungus and aphids. If market price is good, 3,500 kilograms per mu. This mu costs the most per mu, but it's only one mu so I manage.\n\nI think about my total money. Fertilizer for all crops costs me about 2,400 yuan this year. Pesticide is another 600 yuan. I do the spraying myself with the backpack sprayer to save labor cost. I would rather put a little too much fertilizer than risk a bad harvest \u2014 if wheat fails, I have no grain for the family. So I copy what worked last year, I watch Lao Zhang's fields and Auntie Wang's fields, and if their wheat looks greener than mine I ask what they used.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 16,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"watermelon\",\n      \"season\": \"spring\",\n      \"area_mu\": 1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu with 5 mu in wheat-maize rotation, 2 mu cotton, and 1 mu watermelon. For wheat I apply one 50kg bag of compound fertilizer per mu before planting and 25kg urea at green-up, irrigating three times and spraying twice with rotary tillage, using improved seeds to get 500kg per mu. For summer maize I plant no-tillage right after wheat harvest with 40kg compound and 20kg urea per mu, two irrigations and two sprays, using hybrid seeds for 550kg per mu. For cotton I deep plough in spring and use Bt hybrid seeds with one bag compound, 15kg potassium fertilizer, and 15kg urea per mu, irrigating three times and spraying three times for 250kg seed cotton per mu. For watermelon I rotary till and ridge, applying one bag compound, 25kg potassium fertilizer, and 10kg urea per mu with six irrigations and four sprays, expecting 3500kg per mu. I copied these amounts from last year and from my neighbors Lao Zhang and Auntie Wang, and the input dealer confirmed the potassium for cotton and melon; I spend about 2400 yuan total on fertilizer because a bad harvest is worse than wasting a little fertilizer, and my sons' off-farm wages cover most of the input costs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 16,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "watermelon",
+        "season": "spring",
+        "area_mu": 1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3500
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu with 5 mu in wheat-maize rotation, 2 mu cotton, and 1 mu watermelon. For wheat I apply one 50kg bag of compound fertilizer per mu before planting and 25kg urea at green-up, irrigating three times and spraying twice with rotary tillage, using improved seeds to get 500kg per mu. For summer maize I plant no-tillage right after wheat harvest with 40kg compound and 20kg urea per mu, two irrigations and two sprays, using hybrid seeds for 550kg per mu. For cotton I deep plough in spring and use Bt hybrid seeds with one bag compound, 15kg potassium fertilizer, and 15kg urea per mu, irrigating three times and spraying three times for 250kg seed cotton per mu. For watermelon I rotary till and ridge, applying one bag compound, 25kg potassium fertilizer, and 10kg urea per mu with six irrigations and four sprays, expecting 3500kg per mu. I copied these amounts from last year and from my neighbors Lao Zhang and Auntie Wang, and the input dealer confirmed the potassium for cotton and melon; I spend about 2400 yuan total on fertilizer because a bad harvest is worse than wasting a little fertilizer, and my sons' off-farm wages cover most of the input costs."
+  },
+  "elapsed_seconds": 210.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_JZ_15",
+  "tier": 3,
+  "provider": "kimi"
+}

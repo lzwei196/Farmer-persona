@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land in Quzhou for 45 years. I am 66 now, and my bones tell me when the weather is turning. My household has seven mouths, and some of my children work in the factories in Handan, so they send money home\u2014but that also means I cannot count on their labor at busy times. With only my wife and me for most of the fieldwork, I must be careful not to bite off more than we can chew.\n\nMy 12 mu of land is divided the way it has been for years: **8 mu in the wheat-maize rotation** and **4 mu in cotton**. I will never give up the wheat-maize system. It feeds my family and gives me two harvests a year. The wheat is already in the ground from last autumn; now it needs spring topdressing, two more irrigations, and a couple of sprays for aphids and rust. I use an improved wheat variety\u2014not the most expensive seed, but one I know performs well on my soil. For the summer maize, I always plant a hybrid, usually Nongda or something similar, and I sow it directly into the wheat stubble with no-tillage. At my age, I cannot afford to waste the seven to ten days between wheat harvest and maize sowing; no-tillage saves my back and catches the summer rains.\n\nThe **4 mu of cotton** I keep because the price of seed cotton has been decent, but I will not expand it. Cotton is a cruel master\u2014it needs spraying every few days once the bollworms arrive, and with 14 or 15 applications, it ties up my labor when the maize also needs attention. I use an improved cotton variety and rotary tillage to warm the soil in April.\n\nI have a well for irrigation, so I am not at the mercy of the sky, but pumping costs money. I irrigate wheat four times\u2014spring green-up, jointing, heading, and grain filling. Maize gets three times\u2014at seedling stage, jointing/tasseling, and grain filling. Cotton gets three good soakings. For fertilizer, I have learned that pouring on more does not always mean more yield. I apply compound fertilizer as a base and topdress with urea at the right growth stages. My targets are modest but reliable: about 460 kg/mu for wheat, 560 kg/mu for maize, and 275 kg/mu of seed cotton. I would rather hit these numbers consistently than gamble for a bumper crop and lose everything to pests or drought.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I keep 8 mu in wheat-maize double cropping because it provides grain security and two incomes per year, using improved wheat seed and hybrid maize with no-tillage to save labor during the narrow sowing window. I limit cotton to 4 mu because at 66 years old with family members working off-farm, I cannot manage the intense pesticide schedule cotton demands on a larger area. My well irrigation gives me reliability, but I control fertilizer and water inputs based on 45 years of experience\u2014enough to achieve steady yields without wasting money on inputs my soil does not need.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I keep 8 mu in wheat-maize double cropping because it provides grain security and two incomes per year, using improved wheat seed and hybrid maize with no-tillage to save labor during the narrow sowing window. I limit cotton to 4 mu because at 66 years old with family members working off-farm, I cannot manage the intense pesticide schedule cotton demands on a larger area. My well irrigation gives me reliability, but I control fertilizer and water inputs based on 45 years of experience\u2014enough to achieve steady yields without wasting money on inputs my soil does not need."
+  },
+  "elapsed_seconds": 216.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_10",
+  "tier": 2,
+  "provider": "kimi"
+}

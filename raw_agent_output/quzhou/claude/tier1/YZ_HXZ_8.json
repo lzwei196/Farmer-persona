@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for generations. My husband and I have about 6 mu, the same fields my in-laws worked. I don't read much, but I know this land. Everyone around me grows winter wheat then summer maize \u2014 that's what we do here. I've never tried anything different. The soil is flat, the well is close, and the grain station buys both crops. There's no reason to change.\n\nFor wheat, I'll ask my neighbor which seeds he bought last year \u2014 he had a good harvest. Probably something from the county seed shop, one of those improved varieties they've been pushing. Not the old seeds, those yield less. For maize I always buy the hybrid packets from the market, same as everyone else.\n\nFertilizer \u2014 I put down more than I probably need, but I'd rather not lose the crop. My mother-in-law always said the land needs to eat too. I'll do a base application before wheat planting and topdress at jointing. For maize I'll apply at planting and again when it's knee-high.\n\nIrrigation: wheat needs water when it's cold (\u51ac\u6c34), at jointing, and at heading. Maize mostly catches summer rain but I'll pump once if it gets dry.\n\nI'll hire a rotary tiller before wheat goes in. For maize I just plant straight into the stubble after wheat harvest \u2014 saves money and time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat followed by summer maize on the same 6 mu, the same rotation my family has always done in Quzhou. I use improved wheat seed from the county shop and hybrid maize seed from the market because they yield better than old varieties. I apply fertilizer on the heavier side \u2014 base plus topdress \u2014 because I cannot afford a bad harvest. Wheat gets three irrigations from our well (winterization, jointing, heading); maize relies on summer rain with one backup pumping if needed. I hire a rotary tiller before wheat planting and sow maize directly into the stubble to save on labor and cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat followed by summer maize on the same 6 mu, the same rotation my family has always done in Quzhou. I use improved wheat seed from the county shop and hybrid maize seed from the market because they yield better than old varieties. I apply fertilizer on the heavier side \u2014 base plus topdress \u2014 because I cannot afford a bad harvest. Wheat gets three irrigations from our well (winterization, jointing, heading); maize relies on summer rain with one backup pumping if needed. I hire a rotary tiller before wheat planting and sow maize directly into the stubble to save on labor and cost."
+  },
+  "elapsed_seconds": 40.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_8",
+  "tier": 1,
+  "provider": "claude"
+}

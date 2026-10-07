@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and I never went to school. I cannot read the words on the fertilizer bags, but I know my land because I have been farming it since I was a girl. My family has 8 mu in Quzhou. Every year, I plant wheat in October and maize in June right after the wheat comes off. That is what my neighbors do and that is what my mother did. I also keep 1.5 mu for cotton because my neighbor across the road gets good money for it, and I need cash for my medicine.\n\nFor wheat, I hire the tractor man to rotary till before planting. I sow about 30 jin of improved wheat seed per mu. I put down one big bag of compound fertilizer per mu when I plant, and another bag later when the wheat starts to grow fast. I also spread ammonium bicarbonate because that is what I have always done. I irrigate three times \u2014 winter, jointing, and filling \u2014 because the well water is there and I would rather waste a little water than lose the crop. I spray four times for weeds and bugs. If the weather is normal, I should get about 1000 jin per mu.\n\nFor maize, there is no time to plough after wheat harvest. We only have five or six days before it is too late. I plant hybrid maize seed directly, no-tillage. The hybrid seed costs more but it grows strong. I use one bag of compound fertilizer per mu. Two irrigations are enough for maize. I spray three times for pests.\n\nFor cotton, I rotary till and sow improved cotton seed. Cotton needs a lot of work \u2014 I spray eight times because the bollworms are trouble every year. I irrigate twice. I hope for 500 jin of seed cotton per mu.\n\nI do not count kilograms. I count bags. But my son told me the extension man said my wheat gets about 18 kg of nitrogen per mu from all that fertilizer. I just buy what I can afford and what the shopkeeper recommends.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat and maize on 6.5 mu because that is the rotation everyone in my village has always done, and I keep 1.5 mu for cotton to earn cash. I use improved wheat seed and hybrid maize seed because they yield better than traditional seed, and I till before wheat but not before maize because there is no time between harvest and planting. I apply fertilizer by the bag as my neighbors do, irrigate wheat three times and maize twice, and spray cotton eight times because the bollworms are bad. I would rather spend a little too much on inputs than risk a bad year because I have no savings to fall back on.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I grow wheat and maize on 6.5 mu because that is the rotation everyone in my village has always done, and I keep 1.5 mu for cotton to earn cash. I use improved wheat seed and hybrid maize seed because they yield better than traditional seed, and I till before wheat but not before maize because there is no time between harvest and planting. I apply fertilizer by the bag as my neighbors do, irrigate wheat three times and maize twice, and spray cotton eight times because the bollworms are bad. I would rather spend a little too much on inputs than risk a bad year because I have no savings to fall back on."
+  },
+  "elapsed_seconds": 255.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_HJK_5",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has worked this land in Quzhou for three generations. I never went to school, but I've been farming since I was a boy following my father through these fields. I know this land the way I know my own hands.\n\nHere in Quzhou, everyone grows wheat in winter and maize in summer on the same plots. That's just how it's done. My land is about 10 mu. I'm not going to change what works \u2014 at 59, I've seen neighbors try new things and lose money. I'll do what I always do.\n\n**Winter wheat:** I'll plant in October after the rains. I'll buy improved seed from the village supply station \u2014 same variety as last year, Jimai or similar, whatever they have. Before planting, I'll broadcast diammonium phosphate and urea as base fertilizer, then mix it in with the rotary tiller. I'll top-dress urea again in spring when the wheat greens up after winter. I'll irrigate at seeding if the soil is dry, then again at jointing, then at heading \u2014 three times is usually enough. I'll spray herbicide in early spring when the weeds come up, and if there are aphids near heading time, I'll spray again.\n\n**Summer maize:** Right after wheat harvest in June, I'll rotary-till and get maize in the ground fast \u2014 you lose yield if you wait. I'll use hybrid seed, everyone does now, the yield is much better than the old varieties. I'll put fertilizer down at planting and side-dress more urea when the plants reach my knee. If it's a dry summer I'll pump water twice, otherwise maybe once. I'll spray herbicide right after planting, and watch for corn borers.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 59-year-old farmer with no formal schooling in Quzhou County, Hebei, I follow the standard winter wheat and summer maize rotation on 10 mu of land, which is what my father did and what all my neighbors do. I use improved wheat seed and hybrid maize seed purchased from the village supply station, apply urea and diammonium phosphate generously as base and topdress applications, irrigate wheat three times and maize twice using groundwater pumped from our well, and apply herbicide and insecticide as needed. I stick to rotary tillage after each harvest because it is fast and I can do it myself. I expect roughly 450 kg/mu for wheat and 550 kg/mu for maize based on recent years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 59-year-old farmer with no formal schooling in Quzhou County, Hebei, I follow the standard winter wheat and summer maize rotation on 10 mu of land, which is what my father did and what all my neighbors do. I use improved wheat seed and hybrid maize seed purchased from the village supply station, apply urea and diammonium phosphate generously as base and topdress applications, irrigate wheat three times and maize twice using groundwater pumped from our well, and apply herbicide and insecticide as needed. I stick to rotary tillage after each harvest because it is fast and I can do it myself. I expect roughly 450 kg/mu for wheat and 550 kg/mu for maize based on recent years."
+  },
+  "elapsed_seconds": 43.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_13",
+  "tier": 1,
+  "provider": "claude"
+}

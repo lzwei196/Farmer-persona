@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has worked this land for three generations. I am 63 now, my knees hurt in the cold, and I cannot afford to gamble. I know what this land gives back.\n\n**Wheat first.** It is always wheat. Every family in our village grows winter wheat \u2014 you sow it in October, and by June you have something to sell and something to eat. I use the county seed station's improved variety, the same Jimai kind I've been using for years. My neighbor switched to some new variety last year and got a poorer stand in the cold snap. I will not do that. I put down base fertilizer before plowing \u2014 diammonium phosphate and urea mixed together \u2014 then top-dress urea at jointing stage. I irrigate four times: once at sowing to get germination, once before winter, once at jointing, once at heading. That is what my father did and what the yields tell me is right. I spray herbicide in winter when the weeds are small, then treat for aphids and rust in spring. Maybe three spray rounds total.\n\n**Then maize on the same land after wheat harvest.** No gap \u2014 I seed directly into the stubble to save time and cost. I buy hybrid seed from the market, Xianyu or Zhengdan type, because everybody knows hybrid corn outyields traditional. Summer rains help a lot, so I only irrigate once at silking if July is dry. Maize gets less fertilizer than wheat from me \u2014 it rains more in summer, leaching is a problem, and I have seen my neighbors burn their stands by overdoing it.\n\nI have about 10 mu total. I plant all of it in this rotation \u2014 wheat in winter, maize in summer. I cannot afford to leave land idle.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I am a 63-year-old farmer in Quzhou County who has grown wheat and maize in rotation on 10 mu my entire life. I follow the same winter wheat and summer maize double-cropping system as every household in my village because it is reliable, the markets are there, and I know this land. I use an established improved wheat variety to avoid risk from untested seeds, apply fertilizer in two splits for wheat (base plus jointing top-dress) to protect yield, and irrigate four times through the wheat season given Hebei's dry winters. After wheat harvest I direct-seed hybrid maize into the stubble with no-tillage to save labor, rely on summer rainfall for most water needs, and irrigate once at silking if conditions are dry. My pesticide use targets the main threats I see every year: winter weeds, spring wheat aphids and rust, and maize pests at establishment.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 470
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I am a 63-year-old farmer in Quzhou County who has grown wheat and maize in rotation on 10 mu my entire life. I follow the same winter wheat and summer maize double-cropping system as every household in my village because it is reliable, the markets are there, and I know this land. I use an established improved wheat variety to avoid risk from untested seeds, apply fertilizer in two splits for wheat (base plus jointing top-dress) to protect yield, and irrigate four times through the wheat season given Hebei's dry winters. After wheat harvest I direct-seed hybrid maize into the stubble with no-tillage to save labor, rely on summer rainfall for most water needs, and irrigate once at silking if conditions are dry. My pesticide use targets the main threats I see every year: winter weeds, spring wheat aphids and rust, and maize pests at establishment."
+  },
+  "elapsed_seconds": 39.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_6",
+  "tier": 1,
+  "provider": "claude"
+}

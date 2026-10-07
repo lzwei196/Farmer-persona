@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for fifty years. I know Quzhou's soil, its dry spells, how the wells hold up in June. At my age, with just my husband and me, I cannot do everything I used to. But I know what this land needs and what I can manage with my own hands and what I hire out for.\n\nMy 6.5 mu is split in my head the way it has always been: about 4 mu runs in the wheat-maize rotation, and I keep 2.5 mu for cotton because cotton money comes in separate from grain and I know how to grow it. The picking is harder now but I manage.\n\nFor **wheat**, I plant in early October after rotary tilling. I use the improved variety from the county seed station \u2014 I stopped saving my own seed about fifteen years ago, the county variety gives better yield. I put down compound fertilizer as base and add urea at jointing. I irrigate three times: once at sowing to get germination, once at jointing, once at heading. Aphids and powdery mildew I spray twice.\n\nFor **maize**, right after wheat harvest in June I seed directly into the stubble \u2014 no tilling, the county extension people showed us this saves time and moisture. I use hybrid seed, everyone around here does. Maize gets most of its rain in July and August so I only irrigate twice if it's dry. Two pesticide sprays for corn borer and leaf blight.\n\nFor **cotton**, I start in late April. Cotton takes more water and more watching than grain. I irrigate four times \u2014 boll-setting is the critical moment. I spray six times across the season for bollworm and aphids. The picking I do slowly now, several rounds through September and October.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer in Quzhou, Hebei, with 50 years of experience and only two household members manages 6.5 mu by splitting land into a 4-mu wheat-maize rotation and a 2.5-mu cotton plot. Wheat is planted in October using county-supplied improved varieties with rotary tillage and three well irrigations; maize follows directly after wheat harvest via no-tillage direct seeding using hybrid seed, relying on summer rainfall with two supplemental irrigations; cotton is sown in late April with four irrigations focused on boll-setting and six pesticide applications targeting bollworm and aphids, hand-picked across multiple rounds in autumn. Fertilizer rates and tillage choices reflect decades of local experience balanced against reduced labor capacity at her age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer in Quzhou, Hebei, with 50 years of experience and only two household members manages 6.5 mu by splitting land into a 4-mu wheat-maize rotation and a 2.5-mu cotton plot. Wheat is planted in October using county-supplied improved varieties with rotary tillage and three well irrigations; maize follows directly after wheat harvest via no-tillage direct seeding using hybrid seed, relying on summer rainfall with two supplemental irrigations; cotton is sown in late April with four irrigations focused on boll-setting and six pesticide applications targeting bollworm and aphids, hand-picked across multiple rounds in autumn. Fertilizer rates and tillage choices reflect decades of local experience balanced against reduced labor capacity at her age."
+  },
+  "elapsed_seconds": 53.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_6",
+  "tier": 2,
+  "provider": "claude"
+}

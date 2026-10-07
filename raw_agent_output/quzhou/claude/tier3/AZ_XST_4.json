@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm these 20 mu like I did last year. Same as my neighbors. I don't go changing things for no reason.\n\nI keep 5 mu for cotton on the sandy piece near the road \u2014 that ground don't hold water well, cotton does alright there. The other 15 mu I plant wheat in autumn, then maize straight after I cut the wheat in June. That's how it's been done here forty years.\n\n**Wheat (15 mu):** Before I plow, I put down 1 bag of compound fertilizer per mu \u2014 that's the 15-15-15 one, 50 jin bag. Some years I use the 45% one if the dealer has it cheap. Then in spring when the wheat starts to green up, I give it 1 bag of urea for every 2 mu. My neighbor Old Wang puts more, but I don't see his wheat any better than mine. I water it 3 times \u2014 once after planting, once in spring green-up, once when the head is coming out. Well water, I got my own pump. Wheat usually gives me 800-900 jin per mu, that's 400-450 kilo. I spray once for aphids in spring, that's usually enough.\n\n**Maize (15 mu):** After wheat I don't plow, just use the no-till planter \u2014 the contractor charges 30 yuan a mu, saves me time. One bag of compound per mu when planting, then top-dress 1 bag urea per mu at the big flare stage when it's about to tassel. Water twice if the rain don't come. Maize gives me 1100-1200 jin, so about 550-600 kilo. Spray once or twice for borers.\n\n**Cotton (5 mu):** Cotton eats money and time but I'm used to it. I plow this ground proper. Half bag compound per mu at planting, then urea maybe 30 jin per mu when it starts to flower. Cotton needs lots of spraying \u2014 bollworm, aphids, whitefly \u2014 I spray maybe 5-6 times through the summer. Water 3 times. I get about 500 jin seed cotton per mu, that's 250 kilo.\n\nI don't buy fancy seeds. I use what the dealer in town sells \u2014 improved wheat seed and the hybrid maize everybody plants here. Cotton seed is hybrid too, Bt cotton, everyone uses that now because of the bollworm.\n\nTwo old mouths to feed, what I sell covers the inputs and a little left over. I don't gamble with new ways.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 425\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 575\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3.75,\n      \"potassium_kg_per_mu\": 3.75,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I do same as last year and same as my neighbors \u2014 one bag of compound fertilizer per mu at planting and top-dress with urea when the crop needs it, because that is what works here and I don't waste money trying new things. Wheat and maize I rotate on 15 mu like always, cotton on the 5 mu sandy piece. I use hybrid maize and cotton seed from the town dealer because everybody plants those. I water from my own well when the rain don't come. Cotton takes the most spraying and worry but gives me cash, wheat and maize fill the grain bin and pay the bills for me and my wife.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 425
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 575
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I do same as last year and same as my neighbors \u2014 one bag of compound fertilizer per mu at planting and top-dress with urea when the crop needs it, because that is what works here and I don't waste money trying new things. Wheat and maize I rotate on 15 mu like always, cotton on the 5 mu sandy piece. I use hybrid maize and cotton seed from the town dealer because everybody plants those. I water from my own well when the rain don't come. Cotton takes the most spraying and worry but gives me cash, wheat and maize fill the grain bin and pay the bills for me and my wife."
+  },
+  "elapsed_seconds": 41.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_4",
+  "tier": 3,
+  "provider": "claude"
+}

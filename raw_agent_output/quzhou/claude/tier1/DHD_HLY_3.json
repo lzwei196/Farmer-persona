@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've worked this land in Quzhou my whole life \u2014 forty years and more. The soil here is good flat ground on the plain, and I know what it wants. My back isn't what it was, and my sons are working in Handan city, so I have to be practical.\n\n**My thinking:**\n\nI'll do what I've always done: winter wheat, then turn the same ground over to summer corn. Every farmer here does this. It makes sense \u2014 the wheat is in the ground through the cold months when there's nothing else to do, and the corn fills the hot summer. Two crops off the same 8 mu every year. I've never seen a reason to change this.\n\nFor wheat seed, I'll get the improved variety from the village co-op store \u2014 the same type my neighbor uses, something like Jimai or Zhengmai. I'm not going to fool around with anything new. For corn, I've been using hybrid seed for maybe fifteen years now. The local agri-station told us to, and the yields are better, so that stuck.\n\nFertilizer: I put down a base compound fertilizer before sowing the wheat, then top-dress with urea in spring when it starts jointing. I probably use more nitrogen than I need to, but a thin crop is a disaster. I can't afford that risk.\n\nI'll hire the village machine contractor to rotary-till and sow the wheat, and again to combine harvest. For the corn, I direct-seed right after wheat harvest \u2014 no tilling, just go straight in. That saves me time and money.\n\nIrrigation: I share a pump with two other households. Wheat needs water three times \u2014 before winter sets in, at jointing, and at heading. Corn I usually water once if August is dry.\n\nPesticide: Wheat gets a herbicide spray in winter and then something for aphids before harvest. Corn I spray once if I see pest pressure.\n\nExpected yields are what I usually get \u2014 around 450 for wheat, 550 for corn. Good enough years.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old smallholder in Quzhou, Hebei defaults to the dominant wheat-maize double-cropping rotation on 8 mu of flat North China Plain land, using improved wheat seed from the co-op and hybrid corn seed as adopted over the past decade. Nitrogen rates are moderately heavy by agronomic standards, reflecting risk-averse traditional practice where yield failure is unacceptable. Wheat receives three irrigations using shared pump infrastructure; corn receives one supplemental irrigation in the dry summer. Wheat ground is rotary-tilled by a contracted machine operator; corn is direct-seeded into wheat stubble to save labor. Pesticide applications cover winter wheat herbicide and spring aphid control, and one corn application if pest pressure warrants it. All heavy field operations are contracted out given reduced physical capacity at age 65.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 65-year-old smallholder in Quzhou, Hebei defaults to the dominant wheat-maize double-cropping rotation on 8 mu of flat North China Plain land, using improved wheat seed from the co-op and hybrid corn seed as adopted over the past decade. Nitrogen rates are moderately heavy by agronomic standards, reflecting risk-averse traditional practice where yield failure is unacceptable. Wheat receives three irrigations using shared pump infrastructure; corn receives one supplemental irrigation in the dry summer. Wheat ground is rotary-tilled by a contracted machine operator; corn is direct-seeded into wheat stubble to save labor. Pesticide applications cover winter wheat herbicide and spring aphid control, and one corn application if pest pressure warrants it. All heavy field operations are contracted out given reduced physical capacity at age 65."
+  },
+  "elapsed_seconds": 52.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_3",
+  "tier": 1,
+  "provider": "claude"
+}

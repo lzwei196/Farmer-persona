@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 7 mu in Quzhou for 35 years. My father taught me, and now I work this land with my wife. Our son works in a factory in town, so it is mostly the two of us, though he comes back for harvest. We have a well, which means I do not have to pray for rain, but pumping costs money, so I am careful with water.\n\nMy cropping system is wheat-maize rotation on all 7 mu. That is the only way to feed three mouths from this land.\n\n**Winter wheat:** I already sowed last October, but if I am planning the year, I will tell you what I always do. I buy improved wheat seed from the local supply shop \u2014 usually whatever variety my neighbors are using, something from the Jimai or Lunxuan families. Before sowing, I till the field with rotary tillage to break up the stubble from the previous maize crop. For fertilizer, I spread compound fertilizer as a base and then top-dress with urea in spring. Over the whole season, that works out to about 18 kg of nitrogen, 8 kg of phosphorus, and 6 kg of potassium per mu. I irrigate three times: the overwintering water before the freeze, the jointing water in spring when the wheat starts shooting up, and the grain-filling water in May. I spray three times \u2014 herbicide in early spring, and then fungicide or insecticide if I spot rust or aphids. If the weather does not play tricks, I expect 450 kg per mu.\n\n**Summer maize:** As soon as the wheat comes off in early June, I race to get the maize in the ground. The season is short, so I do not plough. I sow directly into the wheat stubble with no-tillage; there is no time to waste. I use hybrid seed \u2014 Zhengdan 958 or a similar hybrid that the dealer recommends. It grows fast and strong. I put down compound fertilizer at planting and then spread urea when the plants reach the big-flare stage. That totals about 16 kg nitrogen, 6 kg phosphorus, and 5 kg potassium per mu. I irrigate twice: once if the soil is dry right after sowing, and once at tasseling when the plants need it most. Summer usually brings some rain, so two times from the well is enough. Two pesticide sprays: one herbicide at seedling stage and one insecticide for corn borer. A good summer gives me 550 kg per mu.\n\nI do not experiment much anymore. I know these inputs, and they have kept my family fed for decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 7 mu for 35 years and know what works. I rely on my well for irrigation and follow the wheat-maize rotation that maximizes my land use. I use improved wheat seed with rotary tillage and three irrigations, and hybrid maize planted quickly after wheat harvest with no-tillage to save time. Fertilizer comes from compound fertilizer and urea, applied based on what I have learned from experience and neighbors. My son works off-farm, so efficiency matters.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this 7 mu for 35 years and know what works. I rely on my well for irrigation and follow the wheat-maize rotation that maximizes my land use. I use improved wheat seed with rotary tillage and three irrigations, and hybrid maize planted quickly after wheat harvest with no-tillage to save time. Fertilizer comes from compound fertilizer and urea, applied based on what I have learned from experience and neighbors. My son works off-farm, so efficiency matters."
+  },
+  "elapsed_seconds": 115.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_2",
+  "tier": 2,
+  "provider": "kimi"
+}

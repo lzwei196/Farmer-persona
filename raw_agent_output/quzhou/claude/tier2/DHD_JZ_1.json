@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 35 years. I know Quzhou's soil \u2014 it's calcareous, tends to dry out fast. My 6 mu isn't much, and it's just me running it, so I can't afford mistakes or fancy experiments. I do what I know works.\n\nMy whole farm runs on wheat-maize rotation. Wheat in winter, maize in summer, same ground, year after year. That's how it's done here on the North China Plain. My well gives me irrigation control which is the most important thing \u2014 Hebei summers can be brutal and winters are dry.\n\n**Wheat:** I sow in mid-October, harvest in June. I've been using the same improved variety for years \u2014 a local one that my neighbors and I trust. I'm not chasing whatever new variety the seed shops push. I rotary till after I pull the maize \u2014 the stalks need to go under. I irrigate three times: once before winter sets in to help root establishment, once at jointing in April, once at heading. That's been my pattern. I spread base fertilizer before sowing \u2014 phosphorus and potassium down, part of the nitrogen \u2014 then topdress nitrogen at jointing. Two rounds of pesticide: herbicide in early spring, then something for powdery mildew and aphids around flag leaf stage. I can reliably get 450 kg/mu on this land.\n\n**Maize:** I sow right after wheat harvest in June, no-till directly into the stubble \u2014 saves me time and the soil holds moisture better. Maize is hybrid, always has been, everyone around here uses hybrid. Fertilizer base goes in at sowing, then I topdress heavily at the big-bell stage when the plant really needs it. I irrigate at seedling if it's dry and again at tasseling if there's no rain. Two pesticide passes: herbicide early, then borer control mid-season. I expect around 550 kg/mu.\n\nOne person, 6 mu, well irrigation \u2014 this plan is what I can manage and what I've proven to myself over decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I run a standard wheat-maize double-crop rotation across all 6 mu. For winter wheat I rotary till after maize harvest, use a trusted local improved variety, apply split nitrogen with basal phosphorus and potassium, irrigate three times at the critical stages, and manage powdery mildew and aphids with two pesticide passes, expecting 450 kg/mu. For summer maize I direct-seed no-till into the wheat stubble right after harvest to save labor and retain moisture, use hybrid seed as everyone here does, apply heavy nitrogen topdress at big-bell stage, irrigate twice conditionally on rainfall, and control weeds and borers with two pesticide applications, expecting 550 kg/mu. This plan reflects 35 years of learning what this soil and this climate demand, and what one person alone can realistically execute on 6 mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I run a standard wheat-maize double-crop rotation across all 6 mu. For winter wheat I rotary till after maize harvest, use a trusted local improved variety, apply split nitrogen with basal phosphorus and potassium, irrigate three times at the critical stages, and manage powdery mildew and aphids with two pesticide passes, expecting 450 kg/mu. For summer maize I direct-seed no-till into the wheat stubble right after harvest to save labor and retain moisture, use hybrid seed as everyone here does, apply heavy nitrogen topdress at big-bell stage, irrigate twice conditionally on rainfall, and control weeds and borers with two pesticide applications, expecting 550 kg/mu. This plan reflects 35 years of learning what this soil and this climate demand, and what one person alone can realistically execute on 6 mu."
+  },
+  "elapsed_seconds": 44.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_1",
+  "tier": 2,
+  "provider": "claude"
+}

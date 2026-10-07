@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 6 mu here in Quzhou, and I split it like I have for many years. Three mu I keep for cotton \u2014 that is our main crop, one season, plant in April after the ground warms, pick in October. The other 3 mu I do wheat in winter, then maize straight after in June. That way my family has grain and I still get cash from cotton.\n\nFor cotton, I use Bt hybrid seed \u2014 the bollworm used to eat us alive before, now it is manageable but I still spray maybe 7-8 times for aphids, spider mites, and late bollworm. I put down about 20 kg urea (N), 9 kg DAP for phosphorus, and 8 kg potash per mu. I know cotton eats a lot of potassium or the bolls do not fill. I plough deep in spring. Water from the well 4 times \u2014 before planting, at squaring, flowering, and boll-filling. I expect maybe 270 kg seed cotton per mu if the weather is fair.\n\nFor wheat, I sow improved variety in early October after rotary tillage. Base fertilizer plus topdressing at jointing, about 16 kg N total, 7 kg P, 5 kg K. I irrigate 3 times \u2014 winter water, returning-green, and grain-filling. Spray 2 times for aphids and rust. Expect 450 kg/mu.\n\nFor summer maize, I use hybrid seed, no-till right into the wheat stubble. 17 kg N, 6 kg P, 6 kg K. Two irrigations if the rain is poor. Two sprays for borer and armyworm. Expect 550 kg/mu.\n\nI am 74 \u2014 I cannot work like before, so my sons help at busy times and I hire a machine for ploughing and harvest. I would rather spend a bit extra on fertilizer than lose a harvest. At my age, one bad year hurts more than wasted fertilizer.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I split my 6 mu the way I always have \u2014 3 mu cotton as my cash crop in one long season, and 3 mu in wheat-maize rotation for grain. I use hybrid Bt cotton and hybrid maize, improved wheat. My fertilizer rates follow what has worked for me for years, a little on the heavy side because at 74 I cannot afford a bad harvest \u2014 wasted fertilizer is just money, but a failed crop is a disaster. Cotton needs the most spraying because of pests, and the most potassium for boll-filling. I use my well to irrigate when the rain is short. My sons help at planting and harvest, and I hire machine services for ploughing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I split my 6 mu the way I always have \u2014 3 mu cotton as my cash crop in one long season, and 3 mu in wheat-maize rotation for grain. I use hybrid Bt cotton and hybrid maize, improved wheat. My fertilizer rates follow what has worked for me for years, a little on the heavy side because at 74 I cannot afford a bad harvest \u2014 wasted fertilizer is just money, but a failed crop is a disaster. Cotton needs the most spraying because of pests, and the most potassium for boll-filling. I use my well to irrigate when the rain is short. My sons help at planting and harvest, and I hire machine services for ploughing."
+  },
+  "elapsed_seconds": 45.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_4",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 8 mu in a wheat-maize rotation, so I will use the same 8 mu for both crops across the year. Because I have 25 years of experience and some of my family work off-farm, I will keep my plan practical and not too labor-heavy. I have well irrigation, so I will rely on stable water at the key stages instead of gambling on rainfall. For wheat, I will use improved seed, put enough nitrogen to push tillering and grain filling, and give moderate phosphorus and potassium to hold yield steady. I will use rotary tillage because it fits my usual way of preparing land after maize and keeps the field workable. For maize, I will plant hybrid seed because I care most about stable output, and I will use no-tillage after wheat harvest to save time, keep moisture, and reduce labor pressure during the busy summer changeover. I will not overdo pesticide sprays, but I will spray when I think weeds, insects, or disease could reduce yield. My goal is steady production from both crops, not chasing the highest possible yield with the highest possible cost.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I will keep all 8 mu in the wheat-maize rotation because that is the system I know best and it suits my land and irrigation access. I will use improved wheat seed and hybrid maize seed to keep yields stable, apply medium fertilizer rates to balance cost and output, irrigate at the key growth stages with my well, and avoid unnecessary field operations because some household labor is tied up off-farm. I will use rotary tillage for wheat land preparation and no-tillage for maize after wheat harvest to save labor and moisture, and I will use a limited number of pesticide applications only to protect yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I will keep all 8 mu in the wheat-maize rotation because that is the system I know best and it suits my land and irrigation access. I will use improved wheat seed and hybrid maize seed to keep yields stable, apply medium fertilizer rates to balance cost and output, irrigate at the key growth stages with my well, and avoid unnecessary field operations because some household labor is tied up off-farm. I will use rotary tillage for wheat land preparation and no-tillage for maize after wheat harvest to save labor and moisture, and I will use a limited number of pesticide applications only to protect yield."
+  },
+  "elapsed_seconds": 23.7,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 2,
+  "provider": "codex"
+}

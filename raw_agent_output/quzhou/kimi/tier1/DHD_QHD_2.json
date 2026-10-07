@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 40-year-old woman farming about 8 mu of land here in Quzhou County. My family has been on this plot for generations, and I finished middle school, so I can read the fertilizer bags and understand what the extension agent tells me, but at the end of the day I trust what I see with my own eyes and what the neighbors are doing.\n\nThis year I will stick with the wheat-maize double cropping system on all 8 mu. I thought about trying cotton like some folks in the southern part of the county, but cotton takes too much hand-picking labor and the price fluctuates too much. With wheat and maize, even if one crop has a bad year, the other usually carries us through, and the grain station is reliable. The wheat is already in the ground from last October \u2014 I planted an improved variety, liangxing-series, same as my neighbor Lao Zhang used last year and he got over 1000 jin per mu. For the summer maize, I will plant a hybrid variety like Nongda 372; everyone uses hybrid seed for maize now because the yield is just too good to pass up, even though the seed costs more than saving your own.\n\nFor fertilizer, the extension guy recommended about 15 kg of nitrogen per mu for wheat, but I know from experience that is not quite enough for our soil. I usually put down a compound fertilizer base of about 100 jin per mu \u2014 that gives me roughly 18-20 kg of N, 22 kg of P\u2082O\u2085, and 7-8 kg of K\u2082O per mu. Then at wheat jointing in spring I topdress with another 15 kg of urea per mu. For maize, I apply compound fertilizer at planting for about 22 kg N, 6 kg P\u2082O\u2085, and 6 kg K\u2082O per mu. I would rather apply a little too much than too little \u2014 a bad year hurts more than wasting a few yuan on extra fertilizer.\n\nIrrigation is expensive because we pump groundwater, but you cannot skip it. I will irrigate the wheat three times: one winter irrigation, one at jointing, and one at grain filling. For maize, two times is enough \u2014 one right after planting if it is dry, and one at the big flare stage. \n\nTillage is straightforward: I rotary-tilled before planting wheat last autumn, and for maize there is no time to till after wheat harvest \u2014 we have to plant within a few days, so everyone does no-tillage for maize. I hire a machine for sowing.\n\nFor pesticides, I will spray herbicide once on each crop and insecticide twice \u2014 wheat gets aphids and maize gets armyworms if you are not careful. That is about 3 applications per crop.\n\nI expect about 1000 kg per mu for wheat and 1100 kg per mu for maize if the weather cooperates. Last year was decent and I got close to that, so I am hopeful.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 36,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I stick with wheat-maize double cropping on all 8 mu because it is the safest bet for our family \u2014 the market is stable and if one crop fails, the other usually covers us. I use improved wheat seed and hybrid maize seed because that is what the successful neighbors plant. I apply slightly more fertilizer than the extension recommendation because I am loss-averse: I would rather waste a little money than risk a big yield drop. Irrigation is costly but essential, so I water wheat three times and maize twice. Wheat gets rotary-tilled in autumn, but maize is planted no-tillage right after harvest because the turnaround window is less than a week.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 36,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I stick with wheat-maize double cropping on all 8 mu because it is the safest bet for our family \u2014 the market is stable and if one crop fails, the other usually covers us. I use improved wheat seed and hybrid maize seed because that is what the successful neighbors plant. I apply slightly more fertilizer than the extension recommendation because I am loss-averse: I would rather waste a little money than risk a big yield drop. Irrigation is costly but essential, so I water wheat three times and maize twice. Wheat gets rotary-tilled in autumn, but maize is planted no-tillage right after harvest because the turnaround window is less than a week."
+  },
+  "elapsed_seconds": 133.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_2",
+  "tier": 1,
+  "provider": "kimi"
+}

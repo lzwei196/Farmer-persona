@@ -1,0 +1,24 @@
+I am a {age}-year-old {gender} farmer in Quzhou County, Hebei Province, China. My education level is {education}.
+
+It is the start of the growing season. What crops will I grow this year, and how will I manage them?
+
+Provide your reasoning first, then output your annual plan as JSON with exactly this structure:
+
+{{
+  "annual_plan": [
+    {{
+      "crop": "crop name",
+      "season": "winter/summer/spring/autumn",
+      "area_mu": number,
+      "seed_type": "traditional/improved/hybrid",
+      "nitrogen_kg_per_mu": number,
+      "phosphorus_kg_per_mu": number,
+      "potassium_kg_per_mu": number,
+      "irrigation_times": number,
+      "pesticide_applications": number,
+      "tillage": "rotary/no-tillage/plough",
+      "expected_yield_kg_per_mu": number
+    }}
+  ],
+  "reasoning_summary": "one paragraph"
+}}

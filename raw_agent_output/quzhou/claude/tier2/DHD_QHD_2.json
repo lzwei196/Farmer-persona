@@ -1,0 +1,53 @@
+{
+  "raw_response": "My farm is 3 mu total. I've been doing wheat-maize rotation on most of it for as long as I can remember \u2014 that's just how we do it here in Quzhou. I'll put 2 mu under the wheat-maize rotation and keep 1 mu for cotton, same as last year. Cotton prices have been okay, and we've grown it for years, but my husband is working in the city now so I'm more careful about how much picking labor I commit to. One mu is manageable on my own.\n\nFor **wheat**, I sow in mid-October after rotary tilling the maize stubble. I buy Jimai seeds from the village supply cooperative \u2014 not the cheapest but reliable yield. I apply compound fertilizer at planting, then urea top-dressing at jointing. I irrigate three times: sowing water, jointing, and heading. I spray herbicide in the fall and again in spring if broadleaves come back, then one fungicide pass at heading for rust. Yield around 450 kg/mu is what I'm used to.\n\nFor **maize**, I direct-seed into the wheat stubble right after harvest in June. No-till is easier and saves me work. I use a hybrid \u2014 \u90d1\u5355958 has never let me down. I put fertilizer in at planting and side-dress urea when it's knee-high. One irrigation at grain fill if summer rains fail. One herbicide pass, maybe one insecticide if I see aphids at silk. Expecting around 550 kg/mu.\n\nFor **cotton**, I rotary-till that 1 mu in early April and transplant Bt hybrid seedlings in May. Cotton needs more potassium \u2014 I've learned that the hard way. Three irrigations through the season. Even with Bt seed I still spray four times: aphids and spider mites are my main problem, bollworm less so now. Yield around 240 kg seed cotton per mu if the weather cooperates.\n\nI'm not changing much from last year. Input prices are up a little, but I'm not going to cut fertilizer on wheat \u2014 that's our main staple income. Cotton stays at 1 mu; any more and I won't be able to manage the picking alone.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 2 mu to the wheat-maize double-crop rotation and 1 mu to cotton, keeping total land use at 3 mu. With my husband working off-farm I limit cotton to what I can hand-pick alone. Wheat gets rotary tillage after maize harvest and three irrigations following local Quzhou practice; improved Jimai seed and split nitrogen applications are standard here. Summer maize is no-tilled directly into wheat stubble using a reliable hybrid, with minimal irrigation unless August rains fail. Cotton receives rotary tillage before transplanting Bt hybrid seedlings, higher potassium rates to support boll development, and four pesticide applications targeting aphids and spider mites. Input rates and yield expectations reflect 18 years of local experience with no major changes from last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I allocate 2 mu to the wheat-maize double-crop rotation and 1 mu to cotton, keeping total land use at 3 mu. With my husband working off-farm I limit cotton to what I can hand-pick alone. Wheat gets rotary tillage after maize harvest and three irrigations following local Quzhou practice; improved Jimai seed and split nitrogen applications are standard here. Summer maize is no-tilled directly into wheat stubble using a reliable hybrid, with minimal irrigation unless August rains fail. Cotton receives rotary tillage before transplanting Bt hybrid seedlings, higher potassium rates to support boll development, and four pesticide applications targeting aphids and spider mites. Input rates and yield expectations reflect 18 years of local experience with no major changes from last year."
+  },
+  "elapsed_seconds": 52.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_2",
+  "tier": 2,
+  "provider": "claude"
+}

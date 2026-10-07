@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land since I was 19. My mother farmed it before me, and I know every patch of it. I don't need a book to tell me what to do \u2014 the soil tells me, and so do my neighbors.\n\n**My thinking:**\n\nMy 12 mu splits the way it always has. Nine mu goes into wheat-maize rotation \u2014 that's the backbone, that's what feeds us and pays the bills. I put the other 3 mu in cotton because the price has been decent, and I know cotton. It's hard work but I'm used to it.\n\nFor wheat, I'll do rotary tillage before planting in October, same as always. I use improved varieties \u2014 the seed seller in town has been pushing Jimai 22 and my neighbor Old Liu got good yields last year. I put down base fertilizer at planting, then top-dress urea at jointing. I irrigate at sowing, at overwintering, at jointing, and at grain filling \u2014 four times is what I've always done with the well. Two rounds of pesticide: one for weeds early, one for aphids and rust near heading.\n\nFor summer maize after wheat harvest in June, I drill the hybrid seed directly into the stubble \u2014 no turning the soil. Saves time and the tractor cost. I fertilize twice and water when I see the leaves start to roll. Three irrigations is usually enough unless summer is dry.\n\nCotton goes in the south field in April after frost. I'll plough that one deep because cotton roots need room. Bt hybrid seed \u2014 it handles bollworm better and I don't have to spray as much as my mother used to. But I still spray 8 times through the season for other pests and boll disease. Cotton needs a lot of water too, especially in July.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 54-year-old farmer with 35 years of experience in Quzhou County allocates 9 mu to the standard winter wheat\u2013summer maize double-crop rotation and 3 mu to spring-planted cotton. Wheat is sown in October with rotary tillage and an improved variety, receiving four well irrigations and two pesticide applications. Summer maize is direct-drilled into wheat stubble with no tillage to save labor and costs, irrigated three times, and managed with hybrid seed. Cotton on the remaining 3 mu is deep-ploughed, planted with Bt hybrid seed in April for better bollworm tolerance, and receives four irrigations and eight pesticide applications across the long growing season. Fertilizer rates and management practices reflect local norms accumulated over decades of experience rather than formal agronomic training.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 54-year-old farmer with 35 years of experience in Quzhou County allocates 9 mu to the standard winter wheat\u2013summer maize double-crop rotation and 3 mu to spring-planted cotton. Wheat is sown in October with rotary tillage and an improved variety, receiving four well irrigations and two pesticide applications. Summer maize is direct-drilled into wheat stubble with no tillage to save labor and costs, irrigated three times, and managed with hybrid seed. Cotton on the remaining 3 mu is deep-ploughed, planted with Bt hybrid seed in April for better bollworm tolerance, and receives four irrigations and eight pesticide applications across the long growing season. Fertilizer rates and management practices reflect local norms accumulated over decades of experience rather than formal agronomic training."
+  },
+  "elapsed_seconds": 44.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_6",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 30 years. I know Quzhou's soil \u2014 it's mostly sandy loam, the summers are hot and dry, and if you don't irrigate right, you lose the crop. My well gives me control that rain-dependent farmers don't have. That matters.\n\nMy main cash crop is cotton. I've grown cotton most of my life. It's labor-intensive but it pays better than grain. With my son working in the city now and it being just me and my husband, I can't overextend myself. So I keep cotton at 5.5 mu and put the remaining 4 mu in wheat-maize rotation \u2014 wheat over winter, then maize after I harvest the wheat in June. That way the grain land works twice a year.\n\nFor cotton, I'll plough deep this spring \u2014 I always do, it breaks up the hardpan and cotton roots need depth. I'll use hybrid Bt seed, same type I've used for years. It handles bollworm better and I don't have to spray as many times. Five pesticide sprays across the season \u2014 aphids early, bollworm mid-season, spider mites in the heat. I'll irrigate four times: before planting to wet the seedbed, then at bud stage, flowering, and boll development. Potassium is important for fiber quality so I put more K on cotton than grain.\n\nFor wheat, I rotary-till the soil in October after cotton is cleared from those 4 mu. I use an improved local variety \u2014 reliable, disease-tolerant. Three irrigations: a winter freeze-protection watering in November, then jointing and heading. Two pesticide applications, mostly for rust and aphids in spring.\n\nMaize goes in right after wheat harvest in June \u2014 no-till, straight into the stubble. My husband handles most of the maize since it's low maintenance. Hybrid seed. Two irrigations only \u2014 the summer rains help, and maize in Hebei doesn't need as much as cotton. Two pesticide sprays for corn borer.\n\nI keep inputs moderate. Fertilizer prices have gone up and my household income from off-farm work helps, but I don't want to overspend on inputs and squeeze the margin.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 56-year-old experienced farmer in Quzhou, Hebei allocates 5.5 mu to cotton as the primary cash crop and rotates wheat and maize on the remaining 4 mu, maximizing land use within a two-person household where off-farm labor reduces available farm labor. Cotton receives deep plough tillage, hybrid Bt seed, and relatively high potassium to support fiber quality, with four well irrigations timed to critical growth stages and five pesticide applications targeting bollworm and aphids. Wheat is grown over winter with an improved local variety, rotary tillage, and three irrigations for freeze protection and grain development. Maize follows wheat under no-till direct seeding to save labor and preserve soil moisture, with only two irrigations since summer rainfall supplements the well. Input levels are kept moderate to control costs while maintaining reliable yields based on 30 years of local experience.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 56-year-old experienced farmer in Quzhou, Hebei allocates 5.5 mu to cotton as the primary cash crop and rotates wheat and maize on the remaining 4 mu, maximizing land use within a two-person household where off-farm labor reduces available farm labor. Cotton receives deep plough tillage, hybrid Bt seed, and relatively high potassium to support fiber quality, with four well irrigations timed to critical growth stages and five pesticide applications targeting bollworm and aphids. Wheat is grown over winter with an improved local variety, rotary tillage, and three irrigations for freeze protection and grain development. Maize follows wheat under no-till direct seeding to save labor and preserve soil moisture, with only two irrigations since summer rainfall supplements the well. Input levels are kept moderate to control costs while maintaining reliable yields based on 30 years of local experience."
+  },
+  "elapsed_seconds": 54.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_15",
+  "tier": 2,
+  "provider": "claude"
+}

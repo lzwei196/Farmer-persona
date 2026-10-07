@@ -1,0 +1,75 @@
+{
+  "raw_response": "---\n\n*Sitting down with a cup of tea, looking out at the wheat field that's already greening up...*\n\nAlright, let me think through this year. I've got 12 mu split between wheat and maize \u2014 same rotation I've been doing for decades. With four mouths to feed and only the wife and me really working the land full-time (the kids help during the busy weeks), I have to be efficient. Forty years on this soil teaches you what works.\n\n**Winter wheat (already in the ground from last October)**\n\nI planted \u6d4e\u9ea622 again \u2014 it's reliable on our soil, good cold tolerance, and the millers in Quzhou pay a decent price for it. At sowing I put down about 40 kg of compound 18-18-18 per mu as base, that's roughly 7 kg N, 7 kg P, 7 kg K. Soil organic matter on my fields is okay but not great, so I don't skimp on phosphorus.\n\nNow coming into spring, the wheat is at the green-up stage. I'll topdress urea at jointing \u2014 about 20-22 kg of urea per mu, which gives me another ~10 kg N. So total N ends up around 17-18 kg/mu. I know the extension station recommends 15, but on my better fields I push a bit higher because I'm targeting 480-500 kg/mu yield. The key with N is splitting it \u2014 too much at base just leaches with the spring rain.\n\nIrrigation: I'll water 3 times this year if rainfall stays normal \u2014 once at jointing (just did), once at heading, once during grain-fill if it gets dry. Pumping costs me about 15 yuan/mu each time, so I don't water more than I have to. The well is 80 meters deep now, getting deeper every year \u2014 that worries me long-term, but this year I have water.\n\nWeeds: I'll spray a broadleaf herbicide (\u82ef\u78fa\u9686) at green-up, already planning that for next week. Powdery mildew can hit hard if April is humid \u2014 I keep \u4e09\u5511\u916e on hand and spray if I see it starting.\n\nHarvest will be early-mid June. Combine harvester comes through the village, costs about 50 yuan/mu.\n\n**Summer maize (planting in mid-June)**\n\nRight after wheat harvest \u2014 and I mean within 3-4 days, the window is brutal \u2014 I'll direct-seed \u90d1\u5355958 maize with a no-till planter. The custom operator does my 12 mu in half a day for about 25 yuan/mu. Saves me from having to rotary till, which I don't have time for anyway.\n\nI apply 50 kg of compound 15-15-15 at planting (that's 7.5 kg each of N, P, K), then topdress 20 kg of urea per mu at the V8 stage in late July \u2014 that's another 9 kg N. Total ~16-17 kg N/mu for maize. Maize is greedy for N but the summer rains help with uptake.\n\nIrrigation: usually 1-2 times. Maize gets most of its water from July-August rains. I'll only irrigate if we hit a dry spell at tasseling, which is critical.\n\nPesticide: pre-emergence herbicide (atrazine + acetochlor mix) right after planting, and I watch for fall armyworm \u2014 that pest has been bad the last few years. If I see damage I spray once with chlorantraniliprole.\n\nYield expectation: 520-550 kg/mu if the weather behaves.\n\n**JSON plan:**\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"early-mid October 2025\",\n      \"harvest_date\": \"early-mid June 2026\",\n      \"seed_type\": \"improved variety (Jimai 22)\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 17,\n      \"phosphorus_total_kg_per_mu\": 7,\n      \"potassium_total_kg_per_mu\": 7,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound 18-18-18 (40 kg/mu) at sowing as base; urea (20-22 kg/mu) topdressed at jointing in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"fungicide\"],\n      \"tillage_method\": \"rotary tillage after maize harvest before sowing\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 490\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"mid June 2026 (right after wheat harvest)\",\n      \"harvest_date\": \"late September - early October 2026\",\n      \"seed_type\": \"hybrid (Zhengdan 958)\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 16,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound 15-15-15 (50 kg/mu) at planting; urea (20 kg/mu) topdressed at V8 stage in late July\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-till direct seeding with custom planter\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 530\n    }\n  ],\n  \"total_input_cost_yuan\": 6800,\n  \"reasoning_summary\": \"I run a tight wheat-maize rotation on 12 mu \u2014 6 mu each crop in any given window. With 40 years of experience and senior high education, I plan my N around target yield: about 17 kg N/mu for wheat (split base + jointing topdress) and 16 kg N/mu for maize (base + V8 topdress). I push slightly above the extension recommendation because my soil and management can support 480-530 kg/mu, but I split applications carefully to avoid waste and leaching. Irrigation is the cost I watch most \u2014 pumping is expensive and the water table keeps dropping, so I only water when the crop really needs it. Total input spend is around 6,800 yuan for the year, which leaves me a reasonable margin if grain prices hold.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 6.0,
+        "planting_date": "early-mid October 2025",
+        "harvest_date": "early-mid June 2026",
+        "seed_type": "improved variety (Jimai 22)",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 17,
+        "phosphorus_total_kg_per_mu": 7,
+        "potassium_total_kg_per_mu": 7,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound 18-18-18 (40 kg/mu) at sowing as base; urea (20-22 kg/mu) topdressed at jointing in spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "fungicide"
+        ],
+        "tillage_method": "rotary tillage after maize harvest before sowing",
+        "labor_family_days": 18,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 490,
+        "nitrogen_kg_per_mu": 17,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 490,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 6.0,
+        "planting_date": "mid June 2026 (right after wheat harvest)",
+        "harvest_date": "late September - early October 2026",
+        "seed_type": "hybrid (Zhengdan 958)",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 16,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound 15-15-15 (50 kg/mu) at planting; urea (20 kg/mu) topdressed at V8 stage in late July",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-till direct seeding with custom planter",
+        "labor_family_days": 14,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 530,
+        "nitrogen_kg_per_mu": 16,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 530,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      }
+    ],
+    "total_input_cost_yuan": 6800,
+    "reasoning_summary": "I run a tight wheat-maize rotation on 12 mu \u2014 6 mu each crop in any given window. With 40 years of experience and senior high education, I plan my N around target yield: about 17 kg N/mu for wheat (split base + jointing topdress) and 16 kg N/mu for maize (base + V8 topdress). I push slightly above the extension recommendation because my soil and management can support 480-530 kg/mu, but I split applications carefully to avoid waste and leaching. Irrigation is the cost I watch most \u2014 pumping is expensive and the water table keeps dropping, so I only water when the crop really needs it. Total input spend is around 6,800 yuan for the year, which leaves me a reasonable margin if grain prices hold."
+  },
+  "elapsed_seconds": 68.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_5",
+  "tier": 4,
+  "provider": "claude"
+}

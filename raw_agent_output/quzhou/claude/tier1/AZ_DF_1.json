@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning:**\n\nMy family has been farming this land in Quzhou for generations. I have about 7 mu of flat field, which my father passed to me. I never went to school \u2014 I learned farming by watching and doing. I don't read agricultural bulletins or talk to extension workers much. What I know is what works here: wheat in winter, corn in summer. Every family in my village does this. The soil is good enough, the water table is reachable with our pump, and both crops have a ready buyer at the grain depot in town.\n\nI will plant winter wheat on all 7 mu starting in October. I buy \"Kenong 199\" seeds from the supply shop in town \u2014 the shopkeeper says it resists lodging and yields well, and I've used it for three years now. For fertilizer, I spread compound fertilizer before ploughing and apply urea twice more \u2014 once before the ground freezes, once when the plants green up in spring. I irrigate three times: before winter sets in, again in spring when growth resumes, and once at heading. I spray herbicide early, and spray again later for rust and powdery mildew \u2014 I lost a quarter of my crop to rust five years ago and I won't let that happen again.\n\nAs soon as wheat comes off in June, I plant summer maize on the same 7 mu \u2014 hybrid seeds, no waiting. I don't plough, I just use the seeder directly into the stubble. Rain usually covers most of what the maize needs, but I'll run the pump once if July turns dry. I apply urea in two splits. I spray herbicide once right after emergence. \n\nI don't grow vegetables commercially \u2014 my wife tends a small kitchen plot near the house, but that's for eating, not selling.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"A 33-year-old farmer with no formal education in Quzhou County, Hebei follows the dominant local double-cropping system: winter wheat planted in October on all 7 mu using a locally proven improved variety, followed immediately by summer maize using hybrid seed after wheat harvest in June. Fertilizer rates are set by habit and neighbor practice, running moderately high on nitrogen for both crops. Wheat requires three irrigations from groundwater due to the semi-arid climate, while summer maize relies mostly on seasonal rainfall with one supplemental irrigation. Wheat receives three pesticide applications targeting weeds, rust, and powdery mildew; maize receives two targeting weeds and stem borers. Wheat ground is rotary-tilled before planting; maize is direct-seeded into wheat stubble with no-tillage to save time and cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "A 33-year-old farmer with no formal education in Quzhou County, Hebei follows the dominant local double-cropping system: winter wheat planted in October on all 7 mu using a locally proven improved variety, followed immediately by summer maize using hybrid seed after wheat harvest in June. Fertilizer rates are set by habit and neighbor practice, running moderately high on nitrogen for both crops. Wheat requires three irrigations from groundwater due to the semi-arid climate, while summer maize relies mostly on seasonal rainfall with one supplemental irrigation. Wheat receives three pesticide applications targeting weeds, rust, and powdery mildew; maize receives two targeting weeds and stem borers. Wheat ground is rotary-tilled before planting; maize is direct-seeded into wheat stubble with no-tillage to save time and cost."
+  },
+  "elapsed_seconds": 50.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_1",
+  "tier": 1,
+  "provider": "claude"
+}

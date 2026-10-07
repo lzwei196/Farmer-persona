@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 69 years old, been farming these 2 mu for 50 years. Small plot, just me and my wife, one of the children works in town. Let me think about this year like I always do \u2014 I do what worked last year, maybe adjust a little.\n\nFor wheat, I plant in October after the maize comes off. I use improved seed from the town shop \u2014 the one most neighbors in my village buy, \"Jimai\" type. Two mu is small, I buy about 30 jin of seed. Before planting I put down the base fertilizer \u2014 one bag of compound fertilizer per mu, that's 50 jin, the 15-15-15 kind. Then at returning-green in spring I topdress urea, about 30 jin per mu. That's my habit. My neighbor old Wang uses a bit less and his yield is fine, but I am scared to cut it \u2014 if the wheat is yellow I lose more money than I save. Better put a little extra.\n\nI water the wheat at planting, then at returning-green, then at jointing, then at filling. Four times from the well. The well is ours, electricity is the main cost. I spray for aphids and the wheat head disease once or twice \u2014 depends what I see. Plough with the small tractor before planting, I pay the machine man.\n\nFor maize in summer, I plant right after wheat harvest, no tillage, just drill the seed in. Hybrid seed \u2014 Zhengdan or whatever the dealer has, everyone buys the same. I put compound fertilizer at planting, maybe 40 jin per mu, then topdress urea at big trumpet stage, 40 jin per mu. Maize eats a lot. I water once or twice if no rain in July-August. Spray once for borers.\n\nI don't weigh potash separately \u2014 it's in the compound fertilizer. I never bought straight potash. Phosphorus same \u2014 from the compound.\n\nLast year wheat gave me about 450 jin per mu, maize about 550 jin per mu. I expect the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"My farm is only 2 mu so I do what I've always done and what my neighbors do. For wheat I use improved seed, one bag of 15-15-15 compound as base and about 30 jin urea at returning-green, four waterings from our well, plough before planting. For maize I direct-drill after wheat harvest, use hybrid seed, compound fertilizer at sowing plus urea at big trumpet, water once or twice if July-August is dry. I would rather put a little extra fertilizer than risk a yellow crop \u2014 fertilizer costs some money but a bad harvest is much worse. I don't buy straight potash, it comes in the compound.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "My farm is only 2 mu so I do what I've always done and what my neighbors do. For wheat I use improved seed, one bag of 15-15-15 compound as base and about 30 jin urea at returning-green, four waterings from our well, plough before planting. For maize I direct-drill after wheat harvest, use hybrid seed, compound fertilizer at sowing plus urea at big trumpet, water once or twice if July-August is dry. I would rather put a little extra fertilizer than risk a yellow crop \u2014 fertilizer costs some money but a bad harvest is much worse. I don't buy straight potash, it comes in the compound."
+  },
+  "elapsed_seconds": 29.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_15",
+  "tier": 3,
+  "provider": "claude"
+}

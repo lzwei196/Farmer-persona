@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 56 years old and have farmed these fields in Quzhou for 30 years. My household is just me and my husband now \u2014 our children work off-farm in the city \u2014 so there are only two of us to manage 9.5 mu. We are not young anymore, and we cannot take too much risk, so I divide the land the way I always have: 5.5 mu in the wheat\u2013maize rotation and 4 mu in cotton. The wheat\u2013maize gives us stable grain income and food security, and the cotton pays better when the price is good, though it costs more in labor and pesticides. I have middle school education, so I understand a bit when the extension technician talks about fertilizer rates, but honestly I decide based on what my neighbors do and what worked on my own fields last year. Last year my wheat did about 1000 jin per mu, maize about 1100 jin, and cotton about 560 jin. I want to keep that up, but fertilizer and pumping water keep getting more expensive, and with only two of us, I have to watch costs. For wheat, I will rotary till before sowing in October, put down about 100 jin of compound fertilizer per mu as basal, topdress with urea at jointing, irrigate three times, and spray two insecticides plus one herbicide. For summer maize, there is no time to till after wheat harvest \u2014 I plant no-tillage right away, use compound fertilizer at sowing, maybe a little extra urea if it looks yellow, irrigate twice, and spray about three times total. For cotton, I rotary till in April, plant Guoxinmian improved seed, use compound plus some urea, irrigate twice because pumping costs money, but I must spray often \u2014 probably 12 or 13 times \u2014 because the bollworms here are terrible if you skip even one round. I would rather spend a bit more on fertilizer than lose yield; a bad year hurts us more than saving a few yuan helps.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 2.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 3.5,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 13,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 9.5 mu into 5.5 mu of wheat\u2013maize double cropping and 4 mu of single-crop cotton because that balance has kept my family stable for years. With only two of us and off-farm work, I cannot afford to gamble on new practices, so I stick to rotary tillage for wheat and cotton, no-tillage for maize because the window after wheat harvest is too tight, and input levels close to what my successful neighbors use. I irrigate wheat three times and maize and cotton twice each to save on pumping costs, but I spray cotton heavily because insect pressure here is relentless. I apply slightly more nitrogen than the extension leaflet says because I would rather waste a little fertilizer than risk a big yield drop \u2014 I remember the drought year when we barely broke even, and that loss still stays with me.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 2.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 3.5,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 13,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 9.5 mu into 5.5 mu of wheat\u2013maize double cropping and 4 mu of single-crop cotton because that balance has kept my family stable for years. With only two of us and off-farm work, I cannot afford to gamble on new practices, so I stick to rotary tillage for wheat and cotton, no-tillage for maize because the window after wheat harvest is too tight, and input levels close to what my successful neighbors use. I irrigate wheat three times and maize and cotton twice each to save on pumping costs, but I spray cotton heavily because insect pressure here is relentless. I apply slightly more nitrogen than the extension leaflet says because I would rather waste a little fertilizer than risk a big yield drop \u2014 I remember the drought year when we barely broke even, and that loss still stays with me."
+  },
+  "elapsed_seconds": 279.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_15",
+  "tier": 2,
+  "provider": "kimi"
+}

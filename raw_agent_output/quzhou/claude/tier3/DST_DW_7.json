@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think through this year's plan as this farmer would, then give the JSON.\n\n---\n\nMy land is only 4.1 mu, so I have to use every bit carefully. I keep about 2.5 mu for my wheat-maize rotation \u2014 that is my food and my main cash. The other 1.6 mu I plant cotton, because cotton still brings some money in our area and my husband and I have handled it for many years. I know these crops. I am 63 now, so I do not try new things unless I see them work on the neighbor's plot first.\n\n**Wheat (winter).** I sow Jimai improved variety, same as last year \u2014 everybody on our lane plants it, yield is steady around 450 kg/mu if the spring rain is not too bad. Before sowing I spread about 40 kg of compound fertilizer (15-15-15) per mu as base, that gives me roughly 6 kg N, 6 kg P, 6 kg K. Then in spring when the wheat starts jointing I topdress about 20 kg urea per mu \u2014 that's another 9 kg N. So altogether about 15 kg N, 6 kg P, 6 kg K per mu. I irrigate from the well three times: once before winter, once at jointing, once at grain-filling. I spray pesticide twice \u2014 once for aphids, once for the powdery mildew and wheat midge mixed together. I plough before sowing, the old way, because I feel the seedbed is better that way.\n\n**Maize (summer).** After wheat harvest I no-till seed maize directly \u2014 I cannot afford the machine cost for ploughing between two crops and everyone does it this way now. Zhengdan hybrid seed, it has done well the last five years. At sowing I put 30 kg of compound fertilizer per mu in the rows, then topdress 25 kg urea per mu when the maize is knee-high. That makes roughly 16 kg N, 5 kg P, 5 kg K. Irrigation twice if the summer rain is poor, sometimes only once if rain is good. One spray against borer. Yield target 550 kg/mu.\n\n**Cotton (spring).** Cotton takes more work and more medicine. I plant improved Bt cotton seed from the county dealer, it helps with bollworm. Base fertilizer 35 kg compound plus 15 kg urea per mu before mulching, then topdress 15 kg urea at flowering. Roughly 19 kg N, 5 kg P, 5 kg K per mu. I irrigate three times. Cotton needs many sprays \u2014 I count about six times for aphids, spider mites, and bollworm even with Bt seed. Rotary till before planting. I expect 260 kg seed cotton per mu, that is normal for me.\n\nI would rather put a little extra urea than lose yield \u2014 a bad harvest on 4.1 mu is a real loss for us, but a half-bag of extra fertilizer is only 40-50 yuan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I keep 2.5 mu for wheat-maize rotation and 1.6 mu for cotton, same as the past several years because I know what these plots can give. I use improved wheat seed and hybrid maize like my neighbors, and Bt cotton seed from the county dealer. My fertilizer plan follows what has worked \u2014 a bag of compound as base plus urea topdressing, a little heavier on nitrogen because I fear losing yield more than wasting a few yuan of urea. Irrigation is from the well, timed to the key stages. Pesticide is minimal on wheat and maize but cotton needs six sprays even with Bt seed. I plough for wheat, no-till the maize after wheat harvest to save cost, and rotary till for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I keep 2.5 mu for wheat-maize rotation and 1.6 mu for cotton, same as the past several years because I know what these plots can give. I use improved wheat seed and hybrid maize like my neighbors, and Bt cotton seed from the county dealer. My fertilizer plan follows what has worked \u2014 a bag of compound as base plus urea topdressing, a little heavier on nitrogen because I fear losing yield more than wasting a few yuan of urea. Irrigation is from the well, timed to the key stages. Pesticide is minimal on wheat and maize but cotton needs six sprays even with Bt seed. I plough for wheat, no-till the maize after wheat harvest to save cost, and rotary till for cotton."
+  },
+  "elapsed_seconds": 41.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_7",
+  "tier": 3,
+  "provider": "claude"
+}

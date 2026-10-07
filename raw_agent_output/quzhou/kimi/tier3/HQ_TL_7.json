@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 this year. I never went to school. I started working the land when I was 18, so that is 45 years now. Everything I know, I learned by doing it and watching the old farmers when I was a boy. Now I watch my neighbors. If their wheat looks good, I ask them what seed they bought and how many bags they put down.\n\nI have about 35 mu \u2014 well, 34 and a half mu to be exact. Just me and my old lady, two of us. We cannot do all this work alone, so I hire the machine for ploughing and hire hands for spraying and picking cotton. That costs money, so I have to think about my whole budget. Fertilizer is expensive too, but a bad harvest is worse. I would rather put a bit too much than too little and regret it when the grain comes in thin.\n\nMost of my land, 24 mu, is wheat-maize. That is what my father did, that is what I do. For the winter wheat, I use improved seed \u2014 the same kind Old Wang from the east end of the village used last year, his wheat always stands up straight and does not lodge. When I plant in October, I spread one bag of compound fertilizer per mu, that is 100 jin. Then in spring when the wheat turns green, I spread 80 jin of urea per mu. I know some of the young people say that is too much, but I have done it for ten years and my wheat is always dark green and heavy. I irrigate three times: overwinter water before the freeze, jointing water in spring, and grain-filling water if May stays dry. Two sprays for rust and bugs.\n\nAfter wheat harvest in June, I plant hybrid maize the same day or the next day. No time to plough \u2014 I do no-tillage, the machine puts the seed right into the wheat stubble so I do not miss the rain. Each mu gets 80 jin compound fertilizer and 60 jin urea. Two irrigations, one after planting if it is dry and one at the big trumpet stage. Two pesticide sprays. Last year I got about 1,200 jin per mu. This year I figure about the same.\n\nThe other 10 and a half mu I keep in cotton. Cotton is more work but the price has been steady and I have grown it for years. I plough it deep in spring, plant improved seed. Cotton needs more potassium or the bolls drop off before they open, so I put one bag of compound per mu, half a bag of potassium fertilizer, and about 70 jin of urea. Three irrigations, four sprays for bollworm and aphids. I hope for about 500 jin of seed cotton per mu.\n\nI do not change much from last year. Last year worked. Change is risky. If I see everyone putting more fertilizer this spring, I will put more too.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 24,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 24,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 23,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 34.5 mu with my wife and hire labor for the heavy work. I keep 24 mu in wheat-maize double cropping and 10.5 mu in cotton because that is what has worked for years. I use improved seed for wheat and cotton, hybrid for maize. I would rather apply extra fertilizer than risk a thin harvest \u2014 fertilizer waste is just money, but a bad crop is a disaster. I copy what successful neighbors do and change little from last year. Wheat gets three irrigations and two sprays, maize gets two of each with no-tillage planting to save time after harvest, and cotton gets three irrigations and four sprays because bollworm is always a problem.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 24,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 24,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 23,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 34.5 mu with my wife and hire labor for the heavy work. I keep 24 mu in wheat-maize double cropping and 10.5 mu in cotton because that is what has worked for years. I use improved seed for wheat and cotton, hybrid for maize. I would rather apply extra fertilizer than risk a thin harvest \u2014 fertilizer waste is just money, but a bad crop is a disaster. I copy what successful neighbors do and change little from last year. Wheat gets three irrigations and two sprays, maize gets two of each with no-tillage planting to save time after harvest, and cotton gets three irrigations and four sprays because bollworm is always a problem."
+  },
+  "elapsed_seconds": 270.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_7",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am thinking about this year now. My land is 20.4 mu. I have been farming 40 years so I know what works here in Quzhou. I went to primary school, so I can read the bag labels and count the money, but I do not study books on farming.\n\nMy main crops are wheat and maize \u2014 that is the big rotation. I also keep some millet on a small piece, maybe 2 mu, because my family eats it and millet does not need much water or fertilizer. So wheat about 18 mu, maize about 18 mu (same land, two seasons), millet 2 mu in summer on the drier corner.\n\n**Wheat (winter):** Last year I used about 2 bags of compound fertilizer (40kg each, 15-15-15) per mu before planting, that is 80 kg. Then at returning green in spring I put urea, about 20 kg per mu. So nitrogen is maybe 15 (from compound) + 20\u00d70.46 \u2248 24 kg/mu. I keep it like this \u2014 it worked. I buy Jimai or Shimai improved seed from the dealer, everyone uses it. I water 3 times: before winter, returning green, filling. Spray 2 times for aphids and rust. Plough every 2-3 years, otherwise rotary. I expect 500 kg/mu, good year maybe 550.\n\n**Maize (summer):** After wheat harvest I plant hybrid maize, Zhengdan or Xianyu, no-till with the planter. One bag compound at planting (40 kg/mu of 15-15-15), then urea 25 kg/mu at big trumpet stage. Nitrogen about 17 kg/mu. Water 1-2 times if no rain. Spray once for borer. Expect 550 kg/mu.\n\n**Millet:** Small plot, I save some seed myself, traditional kind. Just a little compound fertilizer, 20 kg/mu. No irrigation, no spray. Maybe 200 kg/mu, enough for the family porridge.\n\nI do not want to change much. Fertilizer price is high but skipping it costs more in yield. Better safe.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 18.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 18.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 0,\n      \"pesticide_applications\": 0,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I have for years in Quzhou. Wheat-maize on the main 18 mu, small millet plot for the family. I use 2 bags compound plus urea topdressing on wheat and maize \u2014 that is what works and what my neighbors do. Improved wheat seed and hybrid maize seed from the dealer. I water wheat 3 times from the well, maize depends on summer rain. Millet gets almost nothing, it is tough. I would rather spend a bit extra on fertilizer than lose yield \u2014 a bad harvest is a real disaster, wasted fertilizer is only some money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 18.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 18.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 0,
+        "pesticide_applications": 0,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I farm the way I have for years in Quzhou. Wheat-maize on the main 18 mu, small millet plot for the family. I use 2 bags compound plus urea topdressing on wheat and maize \u2014 that is what works and what my neighbors do. Improved wheat seed and hybrid maize seed from the dealer. I water wheat 3 times from the well, maize depends on summer rain. Millet gets almost nothing, it is tough. I would rather spend a bit extra on fertilizer than lose yield \u2014 a bad harvest is a real disaster, wasted fertilizer is only some money."
+  },
+  "elapsed_seconds": 25.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_14",
+  "tier": 3,
+  "provider": "claude"
+}

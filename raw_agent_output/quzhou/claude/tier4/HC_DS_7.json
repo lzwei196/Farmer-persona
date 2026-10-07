@@ -1,0 +1,74 @@
+{
+  "raw_response": "*reasoning in the farmer's voice:*\n\nFifty years I've been on this land. Me and the old lady, 24 mu between us. Always split it half wheat, half maize \u2014 that's how everyone does it here, and the ground likes the rotation. We're too old now for heavy work, so the combine and the planter, I hire. Pay some, but my back won't do it anymore.\n\n**Wheat (12 mu).** Plant mid-October, after the autumn rains settle the dust. I put down one bag of compound \u2014 the 15-15-15 \u2014 per mu before plowing, fifty kilos, that's what I always do. Come spring at jointing, if the wheat looks pale I topdress urea, about fifteen kilos a mu. Water three times: once before the freeze so the roots don't dry, once at jointing, once when the grain is filling. My neighbor Old Wang says the grain-filling water matters most, and I agree \u2014 that's where the weight comes from. Combine comes early June. Usually get around 450 kg/mu if the spring isn't too dry.\n\n**Maize (12 mu).** Goes in right after wheat, no more than three-four days' gap \u2014 no time to sit around. The no-till planter drops seed and a bit of fertilizer together, forty kilos compound per mu. When it's knee-high to waist-high I put urea down between the rows, fifteen kilos a mu. Summer rain usually takes care of the rest, but if July turns dry I'll run the well once. Spray herbicide early for weeds. Sometimes corn borer shows, then I spray. Harvest end of September. Five hundred kilos a mu is normal.\n\nSeeds I buy in town \u2014 whatever the agri shop has that everyone's using. Don't save my own, the hybrid maize doesn't work that way anyway. Total cash out maybe ten thousand yuan, give or take. Not much room for mistakes at this age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 12.0,\n      \"planting_date\": \"mid-October\",\n      \"harvest_date\": \"early-mid June\",\n      \"seed_type\": \"local improved (bought from town agri shop)\",\n      \"seed_cost_yuan_per_mu\": 40,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag (50 kg) compound 15-15-15 per mu as base before plowing; about 15 kg urea per mu topdressed at jointing if wheat looks pale\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"shallow plow with hired machinery before planting\",\n      \"labor_family_days\": 25,\n      \"labor_hired_days\": 4,\n      \"yield_expectation_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 12.0,\n      \"planting_date\": \"mid-June (right after wheat harvest)\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid (bought from town agri shop)\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"40 kg compound 15-15-15 per mu placed by no-till planter at sowing; 15 kg urea per mu topdressed between rows at knee-to-waist height\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-till direct seed into wheat stubble with hired planter\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 10200,\n  \"reasoning_summary\": \"At 70 with just the two of us, I can't do the heavy work anymore, so I hire the combine and the planter. I stick to what I've done for decades \u2014 half wheat, half maize, one bag of compound per mu for the base and urea topdress if the crop needs it. Three waters on wheat, usually one on maize. No point changing what works. The ground and I know each other.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 12.0,
+        "planting_date": "mid-October",
+        "harvest_date": "early-mid June",
+        "seed_type": "local improved (bought from town agri shop)",
+        "seed_cost_yuan_per_mu": 40,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag (50 kg) compound 15-15-15 per mu as base before plowing; about 15 kg urea per mu topdressed at jointing if wheat looks pale",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "shallow plow with hired machinery before planting",
+        "labor_family_days": 25,
+        "labor_hired_days": 4,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 12.0,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 12.0,
+        "planting_date": "mid-June (right after wheat harvest)",
+        "harvest_date": "late September",
+        "seed_type": "hybrid (bought from town agri shop)",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "40 kg compound 15-15-15 per mu placed by no-till planter at sowing; 15 kg urea per mu topdressed between rows at knee-to-waist height",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-till direct seed into wheat stubble with hired planter",
+        "labor_family_days": 20,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 13,
+        "area_mu": 12.0,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      }
+    ],
+    "total_input_cost_yuan": 10200,
+    "reasoning_summary": "At 70 with just the two of us, I can't do the heavy work anymore, so I hire the combine and the planter. I stick to what I've done for decades \u2014 half wheat, half maize, one bag of compound per mu for the base and urea topdress if the crop needs it. Three waters on wheat, usually one on maize. No point changing what works. The ground and I know each other."
+  },
+  "elapsed_seconds": 67.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_7",
+  "tier": 4,
+  "provider": "claude"
+}

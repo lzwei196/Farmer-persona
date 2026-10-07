@@ -1,0 +1,40 @@
+{
+  "raw_response": "I been farming this land 30 years. My father farmed it before me. I do what works \u2014 what my neighbors do, what I seen with my own eyes. I got 10.1 mu, just me and my wife at home now, kids gone to the city.\n\nWheat-maize, same as everyone here in Quzhou. You plant wheat in October after maize come off, then maize in June after wheat. Two crops one year, that's how we do it.\n\nFor wheat \u2014 I buy the seed from the shop in town, whatever everyone else buying. The improved kind, not the old seed. Old seed don't yield. I put down fertilizer before planting, the compound kind, maybe 2 bags for the whole field that's 50 kg each bag, so about 10 kg per mu of the compound. Then when wheat turn green in spring I topdress with urea, one bag maybe two across the field \u2014 urea is strong, too much burn the crop but too little and the wheat stay yellow. I figure 15 kg urea per mu for topdress, that's 7 kg nitrogen roughly. Plus the compound got nitrogen too. Total nitrogen maybe 18-20 kg per mu. Phosphorus and potash come from the compound, about 8 kg each per mu.\n\nWater \u2014 wheat need water in winter before freeze, again when it green up in spring, again when it head out, sometimes at grain fill. Four times from the well. Well water cost electricity, but no water no wheat.\n\nPesticide \u2014 I spray for aphids at least once, sometimes the fungus come on the leaf and I spray again. Two sprays usually. Weeds I spray early spring once.\n\nMaize \u2014 I plant hybrid, dealer push the new seed every year. After wheat harvest I don't plough, just plant direct into the stubble, save time save money. I put fertilizer with the seed, compound again, and topdress urea when maize knee-high. Maize eat more than wheat. I put maybe 25 kg urea per mu at topdress, plus the compound. Total nitrogen 22-25 kg per mu.\n\nWater maize 2-3 times, depend on rain. Summer we get some storms but not enough. Pesticide for corn borer once, weed spray once.\n\nYield \u2014 good year wheat give me 450-500 kg per mu, maize 550-600 kg per mu. Bad year less. I plan for normal.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm like my neighbors do, 30 years same way. Wheat-maize rotation on all 10.1 mu. I buy improved wheat seed and hybrid maize seed from the town shop. For wheat I put compound fertilizer at planting then topdress urea in spring, about 18 kg nitrogen per mu total \u2014 too little and the wheat stay yellow, too much waste money. Water wheat 4 times from the well. Maize I plant right into wheat stubble, no plough, saves time and diesel. Maize eat more so I put 24 kg nitrogen per mu. Spray for aphids and borers when I see them. I rather spend a little extra on fertilizer than lose the harvest \u2014 bad year is disaster, extra fertilizer just cost money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm like my neighbors do, 30 years same way. Wheat-maize rotation on all 10.1 mu. I buy improved wheat seed and hybrid maize seed from the town shop. For wheat I put compound fertilizer at planting then topdress urea in spring, about 18 kg nitrogen per mu total \u2014 too little and the wheat stay yellow, too much waste money. Water wheat 4 times from the well. Maize I plant right into wheat stubble, no plough, saves time and diesel. Maize eat more so I put 24 kg nitrogen per mu. Spray for aphids and borers when I see them. I rather spend a little extra on fertilizer than lose the harvest \u2014 bad year is disaster, extra fertilizer just cost money."
+  },
+  "elapsed_seconds": 27.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_8",
+  "tier": 3,
+  "provider": "claude"
+}

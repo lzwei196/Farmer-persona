@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62 years old and have farmed this same 6 mu in Quzhou for 40 years. I finished middle school, so I can read the numbers on fertilizer bags and do my own counting, but honestly I learn most from doing and from watching my neighbors. Last year my wheat made about 530 jin per mu and my maize made about 590 jin per mu. This year I will do what worked last year because change is risky and a bad harvest is a disaster.\n\nFor my winter wheat: After the maize comes off in early June, I rotary till the ground and sow my wheat in October. I plant an improved variety, about 25 jin of seed per mu. For base fertilizer, I spread one full bag of compound fertilizer per mu \u2014 the 15-15-15 kind, 50 kg per bag \u2014 and then at green-up time in March I topdress with half a bag of urea, 25 kg per mu. That gives me about 19 kg of nitrogen per mu, plus 7.5 kg each of phosphorus and potassium. I know fertilizer prices went up, but last year my neighbor Chen tried to save money by skipping urea and his wheat turned yellow and dropped yield. I would rather waste some fertilizer than lose the crop. I irrigate three times: once before winter if the soil is dry, once at jointing, and once at grain filling. I spray twice \u2014 herbicide in early spring and one insecticide spray if I see aphids.\n\nFor my summer maize: I use hybrid seed from the dealer, the same kind my neighbor Lao Zhang planted last year because he got over 600 jin per mu. Right after wheat harvest in June, I sow maize with no-tillage to save time \u2014 you cannot delay in summer because the heat comes fast. At planting I put one bag of 15-15-15 compound fertilizer per mu, 50 kg, in the seed rows. When the plants are knee-high I spread 30 kg of urea per mu as topdressing. That is about 21 kg of nitrogen per mu total. I irrigate three times: once at seedling stage if rain is short, once at big trumpet in July, and once at grain filling. I spray twice \u2014 herbicide right after sowing and insecticide once in summer for corn borer.\n\nMy farm is only 6 mu, so every input is real money. It is just me and my husband working it. We hire nobody unless harvest is rushed. I watch the other families around me \u2014 most use similar amounts, so I stick close to that. Spending more on fertilizer means less left for other things, but going hungry next winter would be worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21.3,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on last year's practice and what my neighbors do. For wheat, I apply 50 kg of 15-15-15 compound fertilizer per mu at sowing and 25 kg of urea at green-up, irrigating three times and spraying twice. For maize, I use no-tillage sowing after wheat harvest with 50 kg of 15-15-15 compound per mu at planting and 30 kg of urea at knee-high stage, plus three irrigations and two sprays. I accept the cost of fertilizer because a yield loss would be far worse than wasting some inputs, and on 6 mu with only two workers, keeping the crop safe is my priority.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21.3,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I base my decisions on last year's practice and what my neighbors do. For wheat, I apply 50 kg of 15-15-15 compound fertilizer per mu at sowing and 25 kg of urea at green-up, irrigating three times and spraying twice. For maize, I use no-tillage sowing after wheat harvest with 50 kg of 15-15-15 compound per mu at planting and 30 kg of urea at knee-high stage, plus three irrigations and two sprays. I accept the cost of fertilizer because a yield loss would be far worse than wasting some inputs, and on 6 mu with only two workers, keeping the crop safe is my priority."
+  },
+  "elapsed_seconds": 102.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_8",
+  "tier": 3,
+  "provider": "kimi"
+}

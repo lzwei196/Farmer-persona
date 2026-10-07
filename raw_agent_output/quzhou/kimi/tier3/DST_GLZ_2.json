@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 53. I have worked these 15 mu in Quzhou since I was a boy. My father taught me, and now I watch my neighbors. If Old Wang buys more urea, I buy more too. Last year was okay. This year I will do the same.\n\nTen mu is for wheat and maize, one after the other. Five mu is for cotton \u2014 me and my wife can still handle that much.\n\nFor wheat: I sow the improved seed that everyone in the village uses. Before sowing, I spread one bag of compound fertilizer on each mu \u2014 the kind with three numbers on it, 15-15-15. When the wheat turns green after winter, I topdress with half a bag of urea, about 30 jin per mu. I know it costs money, but I would rather waste a little fertilizer than see thin ears. I irrigate three times from my well: once when the wheat wakes up, once when it shoots up, and once when the grain is filling. I pay the machine man for rotary tillage. Two pesticide sprays \u2014 one for weeds, and one more if I see bugs. If the weather is normal, I will get about 450 kg per mu.\n\nFor maize: As soon as the wheat is off in June, I plant hybrid seed. Everyone uses hybrid now \u2014 the ears are much fatter. I put one bag of compound down at planting, then when the plants are knee-high I spread 40 jin of urea per mu. Two irrigations, three if July is very dry. Two sprays. Rotary tillage after the wheat straw is chopped. I expect 550 kg per mu.\n\nFor cotton: I plough deep in spring because cotton roots need soft, deep soil. I use improved seed. Each mu gets one and a half bags of compound and 40 jin of urea. I water three times \u2014 at flowering, when the bolls set, and once more before they open. Cotton needs more medicine. I spray five times for bollworm and mites. I hope for 260 kg of seed cotton per mu.\n\nFertilizer, diesel for the pump, machine hire \u2014 it all costs real yuan. But if I cut back and lose yield, that is a disaster. So I do what I did last year, and I watch the neighbors. If they spend more, I spend more.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 15 mu based on 40 years of hands-on experience and what my neighbors do, splitting 10 mu for wheat-maize double cropping and 5 mu for cotton. For wheat I use improved seed with one bag of compound and 30 jin of urea per mu, three well irrigations, two pesticide sprays, and rotary tillage, targeting 450 kg per mu. For maize I plant hybrid seed immediately after wheat harvest with one bag of compound and 40 jin of urea per mu, two irrigations, two sprays, and rotary tillage, expecting 550 kg per mu. Cotton gets deep ploughing, improved seed, one and a half bags of compound plus 40 jin of urea per mu, three irrigations, five sprays, and a goal of 260 kg seed cotton per mu. I always prefer to spend a bit more on inputs than risk losing yield, and I adjust my spending by watching what successful neighbors buy.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I manage my 15 mu based on 40 years of hands-on experience and what my neighbors do, splitting 10 mu for wheat-maize double cropping and 5 mu for cotton. For wheat I use improved seed with one bag of compound and 30 jin of urea per mu, three well irrigations, two pesticide sprays, and rotary tillage, targeting 450 kg per mu. For maize I plant hybrid seed immediately after wheat harvest with one bag of compound and 40 jin of urea per mu, two irrigations, two sprays, and rotary tillage, expecting 550 kg per mu. Cotton gets deep ploughing, improved seed, one and a half bags of compound plus 40 jin of urea per mu, three irrigations, five sprays, and a goal of 260 kg seed cotton per mu. I always prefer to spend a bit more on inputs than risk losing yield, and I adjust my spending by watching what successful neighbors buy."
+  },
+  "elapsed_seconds": 120.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_2",
+  "tier": 3,
+  "provider": "kimi"
+}

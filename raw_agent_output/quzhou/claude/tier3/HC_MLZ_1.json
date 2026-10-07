@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am an old farmer here in Quzhou. I never went to school, but I have been working this land for 25 years. My mother-in-law taught me, and I watch what my neighbors do. We all grow wheat and then maize, same as always.\n\nMy 3 mu is small. With 7 mouths at home, every fen I spend on fertilizer is money not spent on other things. But my husband's brother and some others work in town and send money, so we are not starving. Still, I count carefully.\n\nFor wheat in winter \u2014 I plant after the maize comes off in October. I use the improved seed the village shop sells, same one my neighbor Wang Sao uses, she got good harvest last year. I put down the compound fertilizer before plowing, one bag of 50 jin (25 kg) for my 3 mu of the 15-15-15 kind. Then when wheat is green and standing up in spring, I top-dress with urea, maybe half a bag per mu, that is about 10 kg urea each mu. I water from the well two times \u2014 once after planting if the ground is dry, and once at jointing when the wheat needs it most. Spray once for aphids, once for the disease that makes heads white. Last year I got about 450 kg per mu, this year I hope the same.\n\nFor maize in summer \u2014 I plant right after wheat harvest in June, no plowing, just push the seed in with the little machine my neighbor rents out. Hybrid seed, everyone uses Zhengdan or similar. I put urea down twice \u2014 a handful per hole at planting with some compound fertilizer, then more urea when maize is knee-high. Total I use maybe 25 kg urea per mu and one bag compound for the whole 3 mu. Water two times from the well if no rain. Spray once for borer. Maize usually gives me 500 kg per mu, sometimes more if rain is good.\n\nI do what worked before. Changing is risky when family depends on the harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 3 mu the way my neighbors do and the way I have done for 25 years. Wheat gets plowed in and planted in October with improved seed, one bag compound fertilizer before planting and urea top-dress in spring, two well waterings, two sprays. Maize goes straight in after wheat harvest with no plowing, hybrid seed, urea at planting and again when knee-high, two waterings if rain is short, one spray for borer. I do not change much year to year because my family of 7 needs the harvest to come in, and wasting fertilizer costs less than losing yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm 3 mu the way my neighbors do and the way I have done for 25 years. Wheat gets plowed in and planted in October with improved seed, one bag compound fertilizer before planting and urea top-dress in spring, two well waterings, two sprays. Maize goes straight in after wheat harvest with no plowing, hybrid seed, urea at planting and again when knee-high, two waterings if rain is short, one spray for borer. I do not change much year to year because my family of 7 needs the harvest to come in, and wasting fertilizer costs less than losing yield."
+  },
+  "elapsed_seconds": 23.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_1",
+  "tier": 3,
+  "provider": "claude"
+}

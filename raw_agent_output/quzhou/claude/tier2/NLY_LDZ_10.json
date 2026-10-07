@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this same land for 35 years. My mother farmed it before me. I know this soil. I know what works.\n\nAll 5 mu go into the rotation \u2014 wheat in winter, maize in summer. Same land, same cycle, every year. I have no reason to change this. My neighbors do the same. The cooperative buys both crops at stable prices.\n\n**For wheat:** I will rotary till after the maize comes off in September. The straw from maize, I will chop and leave in the field \u2014 it saves me buying so much fertilizer. I will plant improved wheat seed. I have been buying the same variety from the township supply station for four years now. It does not lodge, the heads are full, and I know what yield to expect. I apply compound fertilizer before planting, then go back with urea at jointing in April. I water three times: once before planting if the ground is dry, once in late winter to protect the roots from freezing, once at jointing. I spray herbicide in March when the weeds come up, and watch for aphids near heading \u2014 if I see them, I spray once more. My wheat gives me around 480 jin per mu most years.\n\n**For maize:** The day after wheat harvest, I plant maize. No tillage \u2014 there is no time and the soil is already worked. I buy hybrid seed every year. I do not save seed for maize \u2014 the hybrid gives much better ears. I put compound fertilizer in at planting. When the maize reaches my knee, I scatter urea between the rows. I water at planting to get germination and once more at silking if the sky does not help me. Two people, 5 mu \u2014 I can manage this. I check for corn borer; if I find it, I spray once.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm all 5 mu in the standard wheat-maize rotation that everyone in Quzhou does. For wheat I rotary till after maize harvest, plant an improved variety I trust, apply compound fertilizer and a urea topdress at jointing, irrigate three times using the well, and spray herbicide plus one insecticide if aphids appear. For maize I direct-seed hybrid seed immediately after wheat harvest with no tillage, apply compound fertilizer at planting and urea at knee height, irrigate twice, and spray for corn borer if needed. These are the same practices I have refined over 35 years on this land and they give me reliable yields I can plan my household around.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm all 5 mu in the standard wheat-maize rotation that everyone in Quzhou does. For wheat I rotary till after maize harvest, plant an improved variety I trust, apply compound fertilizer and a urea topdress at jointing, irrigate three times using the well, and spray herbicide plus one insecticide if aphids appear. For maize I direct-seed hybrid seed immediately after wheat harvest with no tillage, apply compound fertilizer at planting and urea at knee height, irrigate twice, and spray for corn borer if needed. These are the same practices I have refined over 35 years on this land and they give me reliable yields I can plan my household around."
+  },
+  "elapsed_seconds": 50.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_10",
+  "tier": 2,
+  "provider": "claude"
+}

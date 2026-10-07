@@ -1,0 +1,53 @@
+{
+  "raw_response": "Well, let me think about this year. My 3 mu is not much land, so I have to be careful with every yuan. But I also cannot afford a bad harvest \u2014 3 mu is already small, if yield drops I lose a lot.\n\nI split my land like this: 1 mu for cotton by itself (cotton takes the whole season April to October, cannot double-crop with it), and 2 mu for the wheat-maize rotation like most neighbors do here in Quzhou.\n\n**Wheat (2 mu, winter):** I plant Jimai or Shixin variety \u2014 improved seeds, my neighbor got good results last year. I put down compound fertilizer (15-15-15) before sowing, about 50 jin per mu as base, then top-dress with urea at jointing. That comes to roughly 20 kg N, 8 kg P, 7 kg K per mu. I irrigate 3 times \u2014 before winter, at jointing, and grain-filling. I have the well so water is not a problem, just the electricity cost. Two sprayings for aphids and yellow rust. I expect around 500 kg/mu if the weather cooperates \u2014 that is what I got last two years.\n\n**Maize (2 mu, summer):** After wheat harvest I plant Zhengdan or similar hybrid right away, no-till, just sow into the stubble. Maize responds well to nitrogen \u2014 I put about 22 kg N per mu, mostly urea side-dressed at big-bell stage, plus about 6 kg P and 6 kg K from compound fertilizer at planting. One irrigation at tasseling usually enough with summer rain. Spray twice \u2014 once for corn borer, once for aphids. Target 550 kg/mu.\n\n**Cotton (1 mu):** Cotton is more work and more risk, but price is okay. I use improved Bt cotton seed \u2014 saves on bollworm spraying but still need to spray for aphids, spider mites, plant bugs. I apply about 18 kg N per mu (split between base and flowering), 7 kg P, 9 kg K \u2014 cotton needs potassium for the bolls. Irrigate 3 times. I still have to spray 6-7 times total because cotton has many pests besides bollworm. Target 270 kg seed cotton per mu.\n\nPlough for wheat after maize \u2014 deeper tillage helps roots. Rotary for maize into wheat stubble. For cotton I plough in spring.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"My 3 mu is split \u2014 2 mu wheat-maize double crop like most neighbors, 1 mu cotton on its own because cotton takes the whole season. I use improved wheat seed and Bt cotton because neighbors had good results, and hybrid maize is standard here. Fertilizer rates follow what I have done the past few years with small adjustments \u2014 I would rather put a little extra urea than risk the yield, because a bad harvest on only 3 mu hurts much more than spending a few extra yuan on fertilizer. With my own well I can irrigate when needed, but electricity costs money so I do not over-irrigate. Cotton needs the most spraying because of aphids and plant bugs even with Bt seed. I expect yields similar to last year: 500 kg wheat, 550 kg maize, 270 kg seed cotton per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "My 3 mu is split \u2014 2 mu wheat-maize double crop like most neighbors, 1 mu cotton on its own because cotton takes the whole season. I use improved wheat seed and Bt cotton because neighbors had good results, and hybrid maize is standard here. Fertilizer rates follow what I have done the past few years with small adjustments \u2014 I would rather put a little extra urea than risk the yield, because a bad harvest on only 3 mu hurts much more than spending a few extra yuan on fertilizer. With my own well I can irrigate when needed, but electricity costs money so I do not over-irrigate. Cotton needs the most spraying because of aphids and plant bugs even with Bt seed. I expect yields similar to last year: 500 kg wheat, 550 kg maize, 270 kg seed cotton per mu."
+  },
+  "elapsed_seconds": 38.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_2",
+  "tier": 3,
+  "provider": "claude"
+}

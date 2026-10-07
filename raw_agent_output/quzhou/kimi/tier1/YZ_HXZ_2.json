@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have eight mu of land here in Quzhou, and I always plant the same rotation every year because that is what works on the North China Plain. My winter wheat went into the ground last October after the maize came off, and now that spring is here, the green-up has started. I will manage that wheat through to harvest in early June, then immediately put in summer maize on the same plots. That is the double-cropping system my family has relied on for as long as I can remember.\n\nFor the wheat, I sowed an improved variety \u2014 Jimai 22 \u2014 because it yields steadily and I can get the seeds reliably at the county supply store. I will topdress nitrogen twice this spring: once at green-up and again at the jointing stage, for a total of about 65 kg of nitrogen per mu. I also put down phosphate and potash at the base, roughly 22 kg and 8 kg per mu. I will irrigate three times \u2014 green-up water, heading water, and grain-filling water \u2014 because the spring drought here is serious and rain is never enough. I will spray four times: herbicide once to control weeds, and then fungicide and insecticide to protect against rust and aphids. I tilled with the rotary tiller before sowing last autumn.\n\nAfter I harvest the wheat in early June, I will plant summer maize right away without any tillage \u2014 I just clear the stubble and sow directly into the field. I use Denghai 605, a hybrid seed; it grows fast and the kernels are heavy. Maize needs less fertilizer than wheat here: about 22 kg nitrogen per mu, plus 6 kg phosphate and 6 kg potash. I irrigate twice, usually at the jointing stage and during grain filling, because the summer rains help. I will spray three times for weeds and corn borers. If the weather cooperates, I expect about 1,000 kg per mu from the wheat and about 1,100 kg per mu from the maize. That is enough to feed my household and sell the surplus.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 65,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat and maize in a double-crop rotation on eight mu because that is the standard practice in Quzhou County and what my family has always done. Winter wheat is sown in autumn and managed through spring with topdressing, three irrigations, and several sprayings for weeds and pests. Summer maize is planted directly after wheat harvest with no tillage, using a hybrid variety, fewer fertilizers, and two irrigations, which matches the shorter growing window and summer rainfall pattern.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 65,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow wheat and maize in a double-crop rotation on eight mu because that is the standard practice in Quzhou County and what my family has always done. Winter wheat is sown in autumn and managed through spring with topdressing, three irrigations, and several sprayings for weeds and pests. Summer maize is planted directly after wheat harvest with no tillage, using a hybrid variety, fewer fertilizers, and two irrigations, which matches the shorter growing window and summer rainfall pattern."
+  },
+  "elapsed_seconds": 234.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "YZ_HXZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm 42, been farming these 8 mu since I was 17 when my father got too old for the heavy work. My family has seven people \u2014 my wife, my parents, my two children, and my younger brother. Me and my brother do construction work in Handan city when there's no urgent farm work, which brings in cash but also means we're short of hands during busy times.\n\nIt's early October now, time to plant winter wheat. I farm all 8 mu in wheat-maize rotation \u2014 that's the only way to feed everyone and have some grain to sell. I don't have money to try fancy things; every decision is about making sure we have enough to eat and maybe a little profit.\n\nFor wheat, I'll plant around October 10th. I buy the improved seed from the shop in town, about 15 jin per mu, costs 25 yuan. I used to save my own seed but the yield got worse year after year. The seed shop variety gives me about 400 jin per mu when the weather is normal.\n\nFertilizer is my biggest worry. I put down about 100 jin per mu of compound fertilizer \u2014 the 15-15-15 kind \u2014 when I plant. That costs about 1.2 yuan per jin. Then at jointing time in spring, I topdress with about 30 jin per mu of urea. My neighbor Lao Wang cut back on urea last year to save money for his son's wedding, and his wheat was noticeably shorter. I can't take that risk with seven mouths to feed. So I'll stick with what I did last year \u2014 roughly the same amount. I don't buy separate phosphate or potash; whatever is in the compound fertilizer is enough for my land.\n\nIrrigation... I have the tube well, but pumping costs electricity money. I'll irrigate three times for wheat: once right after planting if the soil is dry, once at jointing in late March, and once when the grain is filling. Three times has always been enough for me. Some people do four, but that's too expensive.\n\nFor pests, I spray herbicide once in early spring for the weeds. I also keep insecticide in the shed \u2014 last year there were aphids and I had to spray. I'll watch for them this year too.\n\nThe real headache is always June. We harvest wheat around June 8-10 with a hired combine \u2014 50 yuan per mu \u2014 and then I have maybe five days at most to get the maize in the ground. I hire a tractor with a maize planter, 30 yuan per mu, because planting 8 mu by hand in three days is impossible. For maize seed, I buy hybrid seed every year \u2014 about 3 jin per mu, 40 yuan. You can't save hybrid seed, it doesn't work.\n\nFor maize fertilizer, I put down 100 jin per mu of compound at planting. Then at the big trumpet stage \u2014 that's when the plants are tall and growing fast \u2014 I spread about 25 jin of urea per mu. Last year I skipped the topdressing to save money because my daughter needed school fees, and the maize yield was a bit lower. This year I'll do both.\n\nMaize irrigation depends on the summer rain. If July is dry, I irrigate once at flowering. If it's very dry, maybe twice. But usually once is enough. I spray herbicide right after planting, and if I see armyworm, I'll spray insecticide.\n\nFor labor, my wife and my father help with most things. My mother looks after the children. During the June rush, if my brother is away working, I'll hire two or three people for a couple days to help with the harvest and planting. That costs 120 yuan per day per person. For wheat harvest, the combine does the cutting but we still need to bag and carry the grain home.\n\nI expect about 400 kg per mu for wheat and maybe 450 kg per mu for maize. That's not great but it's stable. With wheat price around 2.4 yuan per kg and maize around 2.2 yuan, I can make some money after costs. My total spending on seeds, fertilizer, pesticides, irrigation, machinery hire, and hired labor will be about 5,000-plus yuan. That's a lot of money for us, but my brother's construction work helps cover it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 8,\n      \"planting_date\": \"October 10\",\n      \"harvest_date\": \"June 8\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14.4,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 50 kg compound fertilizer (15-15-15) at planting; topdress: 15 kg urea at jointing\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary tillage after maize harvest\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 8,\n      \"planting_date\": \"June 12\",\n      \"harvest_date\": \"September 28\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 40,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13.25,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 50 kg compound fertilizer (15-15-15) at planting; topdress: 12.5 kg urea at big trumpet stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage, plant immediately after wheat harvest\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 5200,\n  \"reasoning_summary\": \"I stick with what has worked before because my family depends on it. I match my neighbor's fertilizer levels rather than risk a short crop. The June turnaround is the most stressful time, so I hire machinery even though it costs money. I could save a few hundred yuan by cutting back on fertilizer or irrigation, but the risk of a bad yield is worse than the cost of the inputs. My brother's off-farm income gives me just enough cash to afford the basics without having to borrow.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 8,
+        "planting_date": "October 10",
+        "harvest_date": "June 8",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14.4,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 50 kg compound fertilizer (15-15-15) at planting; topdress: 15 kg urea at jointing",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary tillage after maize harvest",
+        "labor_family_days": 15,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 14.4,
+        "area_mu": 8,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 8,
+        "planting_date": "June 12",
+        "harvest_date": "September 28",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 40,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13.25,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 50 kg compound fertilizer (15-15-15) at planting; topdress: 12.5 kg urea at big trumpet stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage, plant immediately after wheat harvest",
+        "labor_family_days": 20,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 13.25,
+        "area_mu": 8,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      }
+    ],
+    "total_input_cost_yuan": 5200,
+    "reasoning_summary": "I stick with what has worked before because my family depends on it. I match my neighbor's fertilizer levels rather than risk a short crop. The June turnaround is the most stressful time, so I hire machinery even though it costs money. I could save a few hundred yuan by cutting back on fertilizer or irrigation, but the risk of a bad yield is worse than the cost of the inputs. My brother's off-farm income gives me just enough cash to afford the basics without having to borrow."
+  },
+  "elapsed_seconds": 221.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 4,
+  "provider": "kimi"
+}

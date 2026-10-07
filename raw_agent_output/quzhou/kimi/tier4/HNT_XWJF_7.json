@@ -1,0 +1,103 @@
+{
+  "raw_response": "I've farmed these 14 mu in Quzhou for 50 years. I'm 72 now, and my legs aren't what they used to be, but I still know every ridge and hollow of my fields. My son works construction in Handan, so except for busy times it's me and my wife doing the heavy work. Our daughter-in-law helps when she can, but my grandson is in school.\n\nI keep 9 mu in wheat and maize, like everyone around here. The other 5 mu I plant cotton. Cotton brings more cash than grain, and I've grown it for 20 years, but I won't plant more \u2014 at my age, all that bending down to pick is hard on the back.\n\nFor the wheat I'm planting now, in mid-October: I'll use the same improved variety as last year. I saved some seed but I still need to buy about half \u2014 roughly 25 yuan per mu. Before sowing I spread about one bag of compound fertilizer per mu, that's around 20 kg. Then at green-up in spring, if the wheat looks a bit yellow, I'll broadcast another half-bag of urea, about 12 kg per mu. My neighbor Lao Wang does about the same, and his wheat always looks good. I irrigate three times \u2014 after planting to help it come up, once at jointing, and once when the grain is filling if it's dry. Three times is the rule around here. Last year I got about 430 kg per mu. I'll hope for that again.\n\nFor the maize that goes in right after wheat harvest in June: the window is tight, only a few days. I buy hybrid seed from the shop in town \u2014 55 yuan per mu. I put down one bag of compound fertilizer per mu at planting, about 15 kg. Maize in summer usually gets some rain, but I'll irrigate once or twice if July is dry. Last year was 480 kg per mu. I'll expect about 470 this year \u2014 I'm not one to count on good luck.\n\nThe cotton goes in next April. I use local seed, about 30 yuan per mu. One bag of compound fertilizer per mu at planting, around 15 kg. It needs a herbicide spray early, and I watch for insects \u2014 I'll spray if I see them. The picking in September and October is the problem. Me and my wife can't finish 5 mu alone. I'll hire women from the village, maybe 15 days of hired labor. It costs money, but the cotton price is usually decent, and I need the cash. I expect about 260 kg per mu of good lint.\n\nI'm spending about 4,600 yuan this year on seeds, fertilizer, water, spray, and hired help. That's a lot for me. I wanted to fix the roof but the fields come first. If the harvest is decent, maybe next year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 9,\n      \"planting_date\": \"mid-October\",\n      \"harvest_date\": \"early-June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12,\n      \"phosphorus_total_kg_per_mu\": 3,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base dressing of compound fertilizer before planting, topdress urea at green-up in spring if wheat looks pale\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plow after maize harvest, harrow before wheat planting\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 9,\n      \"planting_date\": \"mid-June\",\n      \"harvest_date\": \"late-September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10,\n      \"phosphorus_total_kg_per_mu\": 2,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"all at planting\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage after wheat harvest, plant immediately to catch the season\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 470\n    },\n    {\n      \"crop\": \"cotton\",\n      \"field_area_mu\": 5,\n      \"planting_date\": \"mid-April\",\n      \"harvest_date\": \"September-October\",\n      \"seed_type\": \"local\",\n      \"seed_cost_yuan_per_mu\": 30,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 8,\n      \"phosphorus_total_kg_per_mu\": 2,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"base dressing at planting\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"plow and ridge preparation in spring\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 15,\n      \"yield_expectation_kg_per_mu\": 260\n    }\n  ],\n  \"total_input_cost_yuan\": 4600,\n  \"reasoning_summary\": \"I've farmed these 14 mu for 50 years. At 72, it's mostly me and my wife working the land since my son works off-farm. I keep 9 mu in wheat-maize double cropping and 5 mu in cotton because cotton pays better, though picking is hard on my old body. For wheat I stick with what works \u2014 improved variety, compound fertilizer at planting plus urea topdress in spring, three irrigations. For maize I buy hybrid seed and plant fast after wheat harvest. Cotton gets local seed and hired help for picking. I expect about 430 kg/mu for wheat, 470 kg/mu for maize, and 260 kg/mu for cotton. I'm spending roughly 4,600 yuan on inputs and hired labor this year. That's a big outlay for me, but cutting corners is riskier than spending the money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 9,
+        "planting_date": "mid-October",
+        "harvest_date": "early-June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12,
+        "phosphorus_total_kg_per_mu": 3,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base dressing of compound fertilizer before planting, topdress urea at green-up in spring if wheat looks pale",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plow after maize harvest, harrow before wheat planting",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 430,
+        "nitrogen_kg_per_mu": 12,
+        "area_mu": 9,
+        "expected_yield_kg_per_mu": 430,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 9,
+        "planting_date": "mid-June",
+        "harvest_date": "late-September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10,
+        "phosphorus_total_kg_per_mu": 2,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "all at planting",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage after wheat harvest, plant immediately to catch the season",
+        "labor_family_days": 8,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 470,
+        "nitrogen_kg_per_mu": 10,
+        "area_mu": 9,
+        "expected_yield_kg_per_mu": 470,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2
+      },
+      {
+        "crop": "cotton",
+        "field_area_mu": 5,
+        "planting_date": "mid-April",
+        "harvest_date": "September-October",
+        "seed_type": "local",
+        "seed_cost_yuan_per_mu": 30,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 8,
+        "phosphorus_total_kg_per_mu": 2,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "base dressing at planting",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "plow and ridge preparation in spring",
+        "labor_family_days": 20,
+        "labor_hired_days": 15,
+        "yield_expectation_kg_per_mu": 260,
+        "nitrogen_kg_per_mu": 8,
+        "area_mu": 5,
+        "expected_yield_kg_per_mu": 260,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2
+      }
+    ],
+    "total_input_cost_yuan": 4600,
+    "reasoning_summary": "I've farmed these 14 mu for 50 years. At 72, it's mostly me and my wife working the land since my son works off-farm. I keep 9 mu in wheat-maize double cropping and 5 mu in cotton because cotton pays better, though picking is hard on my old body. For wheat I stick with what works \u2014 improved variety, compound fertilizer at planting plus urea topdress in spring, three irrigations. For maize I buy hybrid seed and plant fast after wheat harvest. Cotton gets local seed and hired help for picking. I expect about 430 kg/mu for wheat, 470 kg/mu for maize, and 260 kg/mu for cotton. I'm spending roughly 4,600 yuan on inputs and hired labor this year. That's a big outlay for me, but cutting corners is riskier than spending the money."
+  },
+  "elapsed_seconds": 72.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_7",
+  "tier": 4,
+  "provider": "kimi"
+}

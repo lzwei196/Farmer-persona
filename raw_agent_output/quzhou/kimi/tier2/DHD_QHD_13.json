@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 70 years old now, and I have been farming these 9 mu for half a century. With only my wife and me in the household, I have learned to be practical. I studied agriculture when I was young, so I understand the science \u2014 but I also know that at our age, we cannot take on too much labor, and we cannot afford to waste money on inputs that do not pay back.\n\nThis year, I will plant 6 mu in the wheat-maize double crop and 3 mu in cotton. Wheat and maize give us grain security and steady income, while cotton brings cash \u2014 but cotton is heavy work with all the spraying and hand-picking, so 3 mu is enough for two old people.\n\nFor the winter wheat on those 6 mu, I will use an improved variety that I know performs well here. I will rotary till before planting in mid-October. I will apply about 12 kg of nitrogen per mu, along with 4 kg of phosphorus and 3 kg of potassium as base fertilizer. I know from my training that balanced nutrition matters, especially on our soils. I will irrigate three times: at planting, at jointing, and at grain filling. That is what my neighbors do, and it has worked for me. I expect about 1000 kg per mu if the weather cooperates. I will spray pesticides four times to control weeds and aphids.\n\nAfter wheat harvest in early June, there is almost no time \u2014 I will plant summer maize using hybrid seed with no-tillage, sowing directly into the wheat stubble. The hybrid vigor is worth the cost. I will apply 10 kg N per mu and a little P and K. With only two people, no-tillage saves us critical days. I will irrigate twice \u2014 once if it is dry at planting, and again at the big trumpet leaf stage. Three pesticide sprays should be enough. I expect around 1050 kg per mu.\n\nFor cotton on the 3 mu, I will rotary till in April and plant an improved variety in mid-to-late April. Cotton needs nitrogen but not too much \u2014 about 10 kg per mu, or it grows too tall and drops bolls. I will add 3 kg P and 2 kg K. I will irrigate twice, and I know I must spray about 15 times for bollworm, aphids, and mites. It is a lot of work, but 3 mu is manageable. I expect about 550 kg of seed cotton per mu.\n\nI am not trying to maximize every yield \u2014 I am trying to avoid a bad year while keeping our costs and labor within what two 70-year-olds can handle.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"After 50 years on this land, I have learned that with only my wife and me working, we must balance yield goals against our physical limits and cash reserves. I studied agriculture in my youth, so I understand fertilizer balance and varietal choice, but I am also conservative \u2014 I would rather apply slightly too much than risk a shortfall. The 6 mu of wheat-maize gives us food security and a reliable base income, while 3 mu of cotton provides cash without overwhelming us with labor. I stick to proven practices: rotary tillage for wheat and cotton, no-tillage for maize to save time after wheat harvest, moderate but adequate fertilizer, and enough irrigation and pesticides to protect against the most common losses.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "After 50 years on this land, I have learned that with only my wife and me working, we must balance yield goals against our physical limits and cash reserves. I studied agriculture in my youth, so I understand fertilizer balance and varietal choice, but I am also conservative \u2014 I would rather apply slightly too much than risk a shortfall. The 6 mu of wheat-maize gives us food security and a reliable base income, while 3 mu of cotton provides cash without overwhelming us with labor. I stick to proven practices: rotary tillage for wheat and cotton, no-tillage for maize to save time after wheat harvest, moderate but adequate fertilizer, and enough irrigation and pesticides to protect against the most common losses."
+  },
+  "elapsed_seconds": 151.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_13",
+  "tier": 2,
+  "provider": "kimi"
+}

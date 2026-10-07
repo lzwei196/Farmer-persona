@@ -1,0 +1,53 @@
+{
+  "raw_response": "I\u2019ve been farming these 5 mu in Quzhou for 30 years. I finished middle school and came straight back to the land. My old man taught me, and I learn by watching what works on my neighbors\u2019 fields. I don\u2019t trust fancy advice unless I saw it grow in someone else\u2019s plot first.\n\nThis year I\u2019ll keep 3 mu in winter wheat that turns into summer maize, and 2 mu in cotton. That\u2019s what I did last year, and it paid out fine. Fertilizer is expensive now \u2014 compound fertilizer is over 200 yuan a bag and urea is about 120 \u2014 but I remember 2019 when I tried to save money by cutting back. The yield dropped hard and I lost more than I saved. A bad harvest is a disaster; wasting a bit of fertilizer is just a cost. My wife works off-farm in town, so labor is tight. I manage most of the field work myself, maybe hiring one person for a day during wheat harvest.\n\nFor the **wheat**: I ploughed and planted last October with one 50-jin bag of compound fertilizer per mu as base. Now it\u2019s waking up. I will top dress with 30 jin of urea per mu at green-up. I will irrigate three times total through the season \u2014 spring green-up, jointing, and grain filling. I will spray pesticides twice for aphids and rust. I expect about 900 jin per mu if the weather is normal.\n\nFor **cotton**: In late April I will rotary till the 2 mu and plant an improved variety \u2014 the same seeds from the supply store that my neighbor Lao Wang used last year, his cotton did well. I will put one bag of compound fertilizer per mu as base, then top dress with urea twice, once at flowering and once when the bolls are setting. Cotton drinks a lot of water and the bollworm is vicious here, so I will irrigate four times and spray pesticides five times. I hope for 500 jin of seed cotton per mu.\n\nFor **maize**: After I cut the wheat in early June, I will plant hybrid maize directly into the wheat stubble with no-tillage. No point ploughing again. I will put one bag of compound fertilizer per mu at planting, then one top dressing of urea when the plants are knee-high. I will irrigate twice and spray for armyworm twice. Hybrid maize grows fast and strong \u2014 I expect about 1,100 jin per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what worked last year: 3 mu in wheat-maize rotation and 2 mu in cotton. Fertilizer is expensive but I would rather spend the money than risk yield loss like I did in 2019. I use one bag of compound fertilizer per mu as base for all crops, adjust urea top dressings by crop, and keep irrigation and pesticide schedules that match what my successful neighbors do. My wife works off-farm so I plan the labor to be manageable by myself, using no-tillage for maize to save time after wheat harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I stick with what worked last year: 3 mu in wheat-maize rotation and 2 mu in cotton. Fertilizer is expensive but I would rather spend the money than risk yield loss like I did in 2019. I use one bag of compound fertilizer per mu as base for all crops, adjust urea top dressings by crop, and keep irrigation and pesticide schedules that match what my successful neighbors do. My wife works off-farm so I plan the labor to be manageable by myself, using no-tillage for maize to save time after wheat harvest."
+  },
+  "elapsed_seconds": 172.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_14",
+  "tier": 3,
+  "provider": "kimi"
+}

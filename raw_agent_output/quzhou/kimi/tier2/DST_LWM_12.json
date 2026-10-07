@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy years old now, and though my knees ache when the weather turns, my hands still remember every ridge of this 10.1 mu. I have farmed it for twenty years, since I was fifty, and before that I watched my father do the same. My household has four people \u2014 my wife, my son, and my daughter-in-law \u2014 and they help me in the fields when the factory does not need them. We have our own well, so when the heavens forget to rain I can pump water, but diesel is dear and I am not young enough to haul pipes around for no good reason.\n\nFor wheat, I sow in early October. I use **improved seed** from the county supply station \u2014 not the old traditional kinds, but the hardy varieties they recommend. After the maize stalks are chopped, I do **rotary tillage** to ready the seedbed. I put down compound fertilizer as a base before sowing, then top-dress nitrogen twice: once when the wheat greens up in spring, and again at jointing. I will **irrigate three times**: the overwinter water in November so the seedlings do not freeze, the jointing water in March, and one more at grain-filling if May is dry. **Two pesticide sprays** are enough \u2014 a herbicide in early spring, and a second only if I see aphids or rust. This land has always been honest with me; if the weather holds, it will give **500 kilograms per mu**.\n\nFor maize, there is no time to dawdle after wheat harvest in early June. I use **no-tillage direct seeding** with **hybrid** corn seed \u2014 the single-cross hybrids the dealer sells. It saves my back and gets the crop in before the summer heat settles. I fertilize at sowing and side-dress more nitrogen when the plants reach the big-flush stage. **Two irrigations** will do: one right after sowing if the soil is dry, and the crucial one at tasseling in late July. **Two pesticide applications** \u2014 a herbicide at the 3-leaf stage, and one for corn borer if the moths appear. I expect **600 kilograms per mu**, maybe a little less if the rains come wrong.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"As a 70-year-old farmer with 20 years of experience on 10.1 mu in Quzhou County, I rely on proven, labor-saving practices. I use improved wheat seed and hybrid maize seed, apply moderate fertilizer rates based on what my soil has given me over the years, irrigate strategically from my well to save costs and labor, and minimize tillage for the summer maize to meet the tight sowing window after wheat harvest. My expectations are grounded in local averages: about 500 kg/mu for wheat and 600 kg/mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "As a 70-year-old farmer with 20 years of experience on 10.1 mu in Quzhou County, I rely on proven, labor-saving practices. I use improved wheat seed and hybrid maize seed, apply moderate fertilizer rates based on what my soil has given me over the years, irrigate strategically from my well to save costs and labor, and minimize tillage for the summer maize to meet the tight sowing window after wheat harvest. My expectations are grounded in local averages: about 500 kg/mu for wheat and 600 kg/mu for maize."
+  },
+  "elapsed_seconds": 48.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_12",
+  "tier": 2,
+  "provider": "kimi"
+}

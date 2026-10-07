@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 55 years old, finished middle school, and have farmed these 40 mu in Quzhou for 30 years. That is a lot of land for just two people, so I hire a tractor service for rotary tillage and combining, and I hire laborers for cotton picking. I cannot do it all with my own hands.\n\nI put 30 mu into the wheat-maize rotation and keep 10 mu for cotton. The wheat-maize land is my main income. Last year my wheat made about 480 kg per mu and maize about 580 kg. This year I want to reach 500 kg for wheat and 600 kg for maize. For wheat I use an improved variety that I have planted for five years \u2014 I know how it behaves here. For maize I use hybrid seed. My neighbor Li tried a new hybrid last year and got 620 kg per mu, so I bought the same bags from the seed dealer. I only change when I see it work in someone else's field first.\n\nFor fertilizer, the input dealer talks about NPK balance, and I listen because he knows the products. But I learned from 30 years that nitrogen is what fills the grain. Wheat gets 20 kg nitrogen per mu \u2014 I spread compound fertilizer at sowing and top-dress with urea at jointing. Phosphate is 6 kg per mu, potassium 5 kg. Maize gets 18 kg nitrogen, 4 kg phosphate, 4 kg potassium. Cotton needs more potassium for the bolls, so I give it 18 kg nitrogen, 6 kg phosphate, and 8 kg potassium. I would rather put a little too much fertilizer than risk a thin harvest. Wasting some fertilizer costs a few hundred yuan; losing a crop costs tens of thousands.\n\nMy well gives reliable water. I irrigate wheat 3 times: after sowing to help it settle, at jointing, and at grain filling. Maize gets 2 times: at the big trumpet leaf stage and at silking. Cotton gets 3 times: at planting, at flowering, and when the bolls are filling. The electricity bill for the pump is real money, but with 40 mu I cannot sit and wait for rain.\n\nFor chemicals, wheat gets 2 sprays \u2014 one herbicide after sowing and one for aphids or rust if they show up. Maize gets 2 sprays. Cotton is the most trouble, needing 4 sprays minimum for bollworm, aphids, and mites. If the weather stays wet and humid, I might need a fifth spray.\n\nFor tillage, I rotary till before wheat sowing. For maize, I plant no-till right behind the combine \u2014 this saves time between the two crops, and the wheat stubble mulch helps keep moisture in the soil. For cotton, I deep plough because the taproots need loose soil down deep.\n\nI do not experiment much. I watch what Li and Old Wang do. If they try something new and it works, I copy it the next year. Change is risky. But on 40 mu, I also have to think about getting the work done fast, so machines and hired help are just part of the business.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I manage 40 mu with 30 mu in wheat-maize rotation and 10 mu in cotton, relying on machinery services and hired labor due to limited household labor. I base decisions on last year's results and what successful neighbors do, preferring proven varieties and slightly generous fertilizer rates to avoid the disaster of yield loss. Wheat gets 20 kg N, 6 kg P, and 5 kg K with 3 irrigations and 2 pesticide sprays under rotary tillage; maize gets 18 kg N, 4 kg P, and 4 kg K with 2 irrigations and 2 sprays using no-tillage to save time between crops; cotton receives 18 kg N, 6 kg P, and 8 kg K with 3 irrigations and 4 sprays after deep ploughing to let the roots grow deep.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I manage 40 mu with 30 mu in wheat-maize rotation and 10 mu in cotton, relying on machinery services and hired labor due to limited household labor. I base decisions on last year's results and what successful neighbors do, preferring proven varieties and slightly generous fertilizer rates to avoid the disaster of yield loss. Wheat gets 20 kg N, 6 kg P, and 5 kg K with 3 irrigations and 2 pesticide sprays under rotary tillage; maize gets 18 kg N, 4 kg P, and 4 kg K with 2 irrigations and 2 sprays using no-tillage to save time between crops; cotton receives 18 kg N, 6 kg P, and 8 kg K with 3 irrigations and 4 sprays after deep ploughing to let the roots grow deep."
+  },
+  "elapsed_seconds": 125.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_4",
+  "tier": 3,
+  "provider": "kimi"
+}

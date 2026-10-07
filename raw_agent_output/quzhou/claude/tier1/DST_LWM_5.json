@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm in Quzhou, Hebei. Everyone here grows winter wheat and summer maize on rotation \u2014 my parents did it, my neighbors do it, and I know how to do it. I have about 10 mu of land and I will plant all of it in wheat this coming October, then turn it straight into maize after the June harvest. That is just how the year goes here.\n\nFor the wheat I will buy the improved seed from the county supply station \u2014 I stopped using my own saved seed years ago because the yields were not as good. I put down compound fertilizer before plowing and then urea at the jointing stage. I irrigate about four times: before winter sets in, at greening, at jointing, and at heading. I spray herbicide in the spring and once more for rust and aphids around heading. I plow deep before seeding \u2014 the soil needs it after the maize stalks are chopped in.\n\nFor the maize I drill it straight into the wheat stubble without plowing. The seeds are hybrid \u2014\u90d1\u5355958 or whatever the shop recommends that is similar. I put down compound fertilizer at planting and come back with urea when it reaches knee height. I only irrigate if it gets very dry around silking. I spray once or twice, usually for corn borer.\n\nI expect around 450 jin of wheat per mu and maybe 550 of maize. Not the best in the county but steady enough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize on the same 10 mu in a continuous rotation, which is the standard practice in Quzhou County and the only system I know well. I use improved wheat seed and hybrid maize seed bought locally because they yield better than saved seed. Fertilizer inputs follow what my neighbors use and what I have learned works \u2014 compound fertilizer as a base plus urea as a top-dress. Wheat needs four irrigations given our dry climate; maize mostly relies on summer rain with one backup irrigation at silking. I plough before wheat to break up the hard pan after the maize season, then drill maize directly into stubble to save time and fuel. Pesticide use is light \u2014 herbicide and one fungicide or insecticide pass per crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize on the same 10 mu in a continuous rotation, which is the standard practice in Quzhou County and the only system I know well. I use improved wheat seed and hybrid maize seed bought locally because they yield better than saved seed. Fertilizer inputs follow what my neighbors use and what I have learned works \u2014 compound fertilizer as a base plus urea as a top-dress. Wheat needs four irrigations given our dry climate; maize mostly relies on summer rain with one backup irrigation at silking. I plough before wheat to break up the hard pan after the maize season, then drill maize directly into stubble to save time and fuel. Pesticide use is light \u2014 herbicide and one fungicide or insecticide pass per crop."
+  },
+  "elapsed_seconds": 47.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_5",
+  "tier": 1,
+  "provider": "claude"
+}

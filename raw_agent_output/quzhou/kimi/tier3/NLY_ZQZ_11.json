@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 53 years old, I went to primary school, and I have farmed this land for 35 years. My 7 mu is all wheat-maize double cropping, same as most families here in Quzhou County. I do not read books about farming. I learned from my father, from doing it myself, and from watching my neighbors. If Lao Wang or my cousin tries something new and their field looks good, then I might try it too. Otherwise I do what I did last year.\n\nRight now it is spring, and my winter wheat is already in the ground since last October. I sowed improved wheat seed at 15 kg per mu. Before sowing I did rotary tillage and put down one 50 kg bag of compound fertilizer per mu as base. That bag is 15-15-15, so it has some of everything. Now at green-up I will spread another half bag of urea per mu \u2014 that is 25 kg. Urea is 46% nitrogen the dealer says, so that is strong. If the wheat looks a little yellow at jointing, I will add another 10 kg urea per mu. So total nitrogen for wheat is about 18 kg per mu. The compound bag gives me about 8 kg phosphorus and 7 kg potassium per mu. I irrigate four times: winter irrigation before the freeze, then at green-up after top dressing, then at jointing, and once more at grain filling. Diesel for the pump is expensive but I dare not skip. Last year my cousin skipped the jointing irrigation to save money and his yield dropped by nearly 100 jin per mu. I spray herbicide once after sowing, and if aphids or rust show up in spring I spray once or twice more. I expect 550 kg per mu if the weather does not turn bad.\n\nFor summer maize, after I harvest wheat in early June, I rotary till immediately and sow hybrid maize seed. Everyone around here uses hybrid now \u2014 my yield went up by a lot after I switched. I use 2.5 kg seed per mu. At sowing I put one 50 kg bag of compound fertilizer per mu. Then at the big trumpet stage I side-dress urea, about 15 kg per mu. Total nitrogen is about 16 kg per mu, phosphorus about 6 kg, potassium about 5 kg. I irrigate twice \u2014 at jointing and at grain filling \u2014 if the rain is not enough. The well gives good water but pumping costs money, so I watch the sky. I spray herbicide after emergence, and insecticide once for corn borer. Most years that is enough. I expect 650 kg per mu.\n\nFertilizer price went up again this year. I thought about using less, maybe cutting back half a bag. But then I remember 2015 when I tried to save money \u2014 the wheat was thin and the yield was terrible. A bad harvest is a disaster for my family of six. Wasting some fertilizer is just a cost I can bear. So I will use the same amounts as last year. I will hire two workers for harvest time because my back is not what it used to be, but for spraying and fertilizing I do it myself.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 7 mu the same way every year because change is risky. For wheat I use improved seed with one bag of compound plus half a bag of urea per mu, irrigating four times and spraying three times. For maize I use hybrid seed with one bag of compound plus side-dressed urea, irrigating twice and spraying twice. Fertilizer is expensive but I would rather spend the money than risk a bad harvest that would hurt my family.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I manage my 7 mu the same way every year because change is risky. For wheat I use improved seed with one bag of compound plus half a bag of urea per mu, irrigating four times and spraying three times. For maize I use hybrid seed with one bag of compound plus side-dressed urea, irrigating twice and spraying twice. Fertilizer is expensive but I would rather spend the money than risk a bad harvest that would hurt my family."
+  },
+  "elapsed_seconds": 107.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "NLY_ZQZ_11",
+  "tier": 3,
+  "provider": "kimi"
+}

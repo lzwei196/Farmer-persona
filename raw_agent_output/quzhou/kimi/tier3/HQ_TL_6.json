@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 this year. My wife and I have worked these 15 mu for 40 years. I only finished primary school, so I do not read books about farming. I do what I have always done, and I watch the neighbors. Last year my wheat gave about 900 jin per mu and the maize gave over 1,000 jin per mu, so I will not change much.\n\nFor the 12 mu of wheat already in the ground since last autumn, I sowed the same improved seed as my neighbor Zhang \u2014 about 25 jin per mu. At sowing time I put one 100-jin bag of compound fertilizer into every mu. Now that spring is here, I will topdress with one 80-jin bag of urea at green-up. That is plenty. I will pump water from my well three times: green-up, jointing, and when the grain is filling. Electricity costs money, but three times is what I have always done. I will spray twice for bugs. I expect 450 kg per mu if the weather holds.\n\nAfter we harvest the wheat in June, I will plant hybrid maize on those same 12 mu. I hire the machine to chop the wheat straw and direct-seed the maize right into the stubble \u2014 there is no time to plow between harvest and sowing, and everyone does it this way now. I give maize one 100-jin bag of compound fertilizer at sowing and one 80-jin bag of urea when the plants are knee-high. Two irrigations, two sprays. I expect about 550 kg per mu.\n\nI keep 3 mu of cotton because the price is decent, but it is hard work for two old people. I plough deep in spring and sow the improved seed from the red bag \u2014 the same one I bought last year. I spread half an 80-jin bag of urea and half a 100-jin bag of compound fertilizer per mu. Cotton needs water at flowering and when the bolls are growing, so three irrigations. I spray three times because aphids and red spiders always show up. I hope for 250 kg of seed cotton per mu.\n\nFertilizer costs more this year, but I would rather spend the money than lose yield. A bad harvest is a disaster. Wasting a little fertilizer is just money down the well. I do what my neighbors do, and this is what we all do around here.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 15 mu for 40 years and trust what I see work in my neighbors' fields. Last year's yields were acceptable, so I will repeat the same practices: 12 mu of winter wheat sown with improved seed and fertilized with one bag of compound and one bag of urea per mu, irrigated three times and sprayed twice; the same 12 mu will then go to hybrid maize direct-seeded after wheat harvest with the same fertilizer rates, two irrigations, and two sprays; and 3 mu of cotton will be deep-ploughed and sown with improved seed, receiving half those fertilizer rates, three irrigations, and three sprays. Fertilizer is expensive, but a bad harvest is worse than wasting some inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I have farmed these 15 mu for 40 years and trust what I see work in my neighbors' fields. Last year's yields were acceptable, so I will repeat the same practices: 12 mu of winter wheat sown with improved seed and fertilized with one bag of compound and one bag of urea per mu, irrigated three times and sprayed twice; the same 12 mu will then go to hybrid maize direct-seeded after wheat harvest with the same fertilizer rates, two irrigations, and two sprays; and 3 mu of cotton will be deep-ploughed and sown with improved seed, receiving half those fertilizer rates, three irrigations, and three sprays. Fertilizer is expensive, but a bad harvest is worse than wasting some inputs."
+  },
+  "elapsed_seconds": 247.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HQ_TL_6",
+  "tier": 3,
+  "provider": "kimi"
+}

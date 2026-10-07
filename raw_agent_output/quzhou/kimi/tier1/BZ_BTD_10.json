@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 76 years old and have farmed these fields in Quzhou for over fifty years. I do not see any reason to change what has always worked. The land I still manage myself is 6 mu \u2014 less than when I was young, but enough for me and my family. I will plant winter wheat this October and follow it with summer maize after the wheat harvest in early June. This wheat-maize rotation is what every household around here does; the machinery, the seed dealers, and the buyers all expect it.\n\nFor wheat, I will rotary-till the soil before sowing, because that is easier on my back than deep ploughing and gives a fine seedbed. I will sow about 30 jin of improved seed per mu \u2014 probably *Jimai 22* or *Luyuan 502*, the same varieties my neighbors use. I will spread a basal compound fertilizer of roughly 100 kg per mu, something like 18-22-5, and topdress once in spring with urea or a compound mix. That comes to about 20 kg of nitrogen, 22 kg of phosphorus, and 8 kg of potassium per mu. I will irrigate four times: the winter irrigation, the jointing water, the heading water, and one grouting water. I will spray twice for insects, once for weeds, and once for fungus \u2014 about four pesticide applications in total. I expect around 1,000 kg per mu if the spring rains cooperate.\n\nFor summer maize, I will no-till plant right after the wheat harvest in mid-June. There is no time to waste \u2014 the heat units are tight. I will use one package per mu of hybrid seed, most likely *Denghai 605*, because it is drought-tolerant and yields well. I will apply basal compound fertilizer at about 80 kg per mu, giving roughly 24 kg nitrogen, 7 kg phosphorus, and 7 kg potassium per mu. Maize needs less irrigation than wheat here; two good irrigations, one at the jointing stage and one at the grain-filling stage, are usually enough. I will spray twice for corn borers and armyworms and once for weeds \u2014 three pesticide rounds. I expect about 1,150 kg per mu.\n\nI keep my inputs moderate. I am not a family farm with new equipment, and I do not chase the highest possible yield with extra fertilizer anymore. I know these numbers by heart, and they give me a stable harvest without emptying my pockets or wearing me out.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    }\n  ],\n  \"reasoning_summary\": \"I am 76 years old and have farmed these fields in Quzhou for over fifty years. I manage 6 mu of land and stick to the proven winter wheat\u2013summer maize double-cropping system that dominates our county. For wheat, I rotary-till before sowing 30 jin/mu of improved seed, apply compound fertilizer split between basal and topdressing, irrigate four times, and make four pesticide applications, expecting about 1,000 kg/mu. For maize, I no-till plant hybrid seed immediately after wheat harvest, apply basal compound fertilizer, irrigate twice, and spray three times, expecting about 1,150 kg/mu. I keep inputs moderate because stability matters more than chasing maximum yields at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      }
+    ],
+    "reasoning_summary": "I am 76 years old and have farmed these fields in Quzhou for over fifty years. I manage 6 mu of land and stick to the proven winter wheat\u2013summer maize double-cropping system that dominates our county. For wheat, I rotary-till before sowing 30 jin/mu of improved seed, apply compound fertilizer split between basal and topdressing, irrigate four times, and make four pesticide applications, expecting about 1,000 kg/mu. For maize, I no-till plant hybrid seed immediately after wheat harvest, apply basal compound fertilizer, irrigate twice, and spray three times, expecting about 1,150 kg/mu. I keep inputs moderate because stability matters more than chasing maximum yields at my age."
+  },
+  "elapsed_seconds": 176.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "BZ_BTD_10",
+  "tier": 1,
+  "provider": "kimi"
+}

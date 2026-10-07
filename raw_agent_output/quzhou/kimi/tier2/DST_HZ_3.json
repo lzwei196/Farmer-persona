@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 58 this year. I have been farming these 9 mu in Quzhou for 30 years. I never went to school, but I know my land and I know what works. My son and his wife work in Handan city, so it is mostly me and my wife in the fields now. They come back for wheat harvest and cotton picking, but day-to-day it is just us two old folks. I split my land into 5 mu for wheat then maize, and 4 mu for cotton. Cotton brings better cash when the price holds, but it is heavy work \u2014 all that picking by hand \u2014 so 4 mu is all we can manage. The wheat went in last October after I ploughed deep with my cousin\u2019s tractor. Now it is greening up, so I will topdress about half a bag of urea per mu when it starts jointing, same as I have done for years. Last year I got about 450 jin per mu, so I will stick with that. I will irrigate three times from my well \u2014 once now in spring, once at jointing, and once when the grain is filling. Pumping costs electricity, so I watch the sky, but you cannot trust the rain on the North China Plain. I will spray twice for weeds and bugs. After I cut the wheat in early June, the maize goes in fast \u2014 only a few days\u2019 window. I will rotary till right after harvest and plant hybrid maize seed. Maize is easier: I put down compound fertilizer at planting, side-dress with urea when it is knee-high, irrigate twice if it is dry, and spray twice for weeds and corn borer. I expect about 500 kg per mu. For cotton, I plough the 4 mu in April and plant hybrid seed in late April. I give it a good base of compound fertilizer, then topdress when it flowers. I irrigate twice \u2014 at flowering and when the bolls are swelling. The bollworm is the worst enemy, so I spray four times, no skimping. Last year I got 280 kg per mu of seed cotton. Fertilizer is expensive this year, but I will not cut back too much \u2014 I have seen what happens when you starve the crop, and losing half the yield hurts more than spending the extra money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I keep 5 mu for wheat-maize double cropping because it feeds the family and is less risky, and 4 mu for cotton because it earns cash but is heavy labor for just me and my wife. I manage the wheat that is already in the ground with spring topdressing, three irrigations, and two sprays. After wheat harvest in June, I rotary till and plant hybrid maize immediately in the narrow window, giving it two irrigations and two sprays. For cotton, I plough in April, plant hybrid seed, fertilize at planting and flowering, irrigate twice, and spray four times for bollworm. I stick to what has worked for 30 years and apply enough inputs to avoid the bigger loss of a failed crop, even when fertilizer prices are high.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I keep 5 mu for wheat-maize double cropping because it feeds the family and is less risky, and 4 mu for cotton because it earns cash but is heavy labor for just me and my wife. I manage the wheat that is already in the ground with spring topdressing, three irrigations, and two sprays. After wheat harvest in June, I rotary till and plant hybrid maize immediately in the narrow window, giving it two irrigations and two sprays. For cotton, I plough in April, plant hybrid seed, fertilize at planting and flowering, irrigate twice, and spray four times for bollworm. I stick to what has worked for 30 years and apply enough inputs to avoid the bigger loss of a failed crop, even when fertilizer prices are high."
+  },
+  "elapsed_seconds": 112.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_3",
+  "tier": 2,
+  "provider": "kimi"
+}

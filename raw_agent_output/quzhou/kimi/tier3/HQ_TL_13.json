@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 59 years old. I never went to school, not even one day. My father taught me to farm, and I have been doing it for 40 years. Our family has 12 mu of good flat land in Quzhou. We grow winter wheat and summer corn, switching every season. My two sons work in a factory in Handan and send money home, so I can buy inputs, but I still count every yuan. I do not trust new ideas unless I see them work on my neighbor's field first.\n\nFor wheat, I do what I did last year. After the corn comes off in June, I run the rotary tiller over the field to break up the stalks. I plant 30 jin of wheat seed per mu \u2014 the kind called Luyuan 502 that my nephew bought last year and had good luck with. It is not the old traditional wheat, it is the improved kind. At sowing in October, I spread one bag of compound fertilizer per mu \u2014 100 jin per mu, the red bags from the dealer that everyone in the village uses. I cannot read the numbers on the bag, but I know it is the wheat fertilizer. Then in March, when the wheat starts growing fast and the stems get long, I topdress half a bag of urea \u2014 50 jin per mu. I would rather put a little too much than too little. Last year Old Wang tried to save money on fertilizer and his wheat turned yellow and short. I irrigate three times from my well: once before winter if the ground is dry, once at jointing when the wheat shoots up, and once when the grain is filling. I spray four times total \u2014 herbicide once when the weeds are small, insecticide twice because the aphids always come, and fungicide once because my brother-in-law lost half his yield to rust two years ago. I expect about 1000 jin per mu this year if the weather holds, which is 500 kg.\n\nFor corn, after we harvest the wheat in early June, I do not till the field anymore. I learned from my cousin that no-tillage works fine for corn and saves diesel money. I plant Denghai 605 hybrid corn, one packet per mu. At planting, I put 80 jin of compound fertilizer per mu in the row \u2014 the dealer gives me the bags for corn. I do not topdress corn because by August the plants are too tall and I am too busy anyway. The soil is still good from the wheat fertilizer. I irrigate twice \u2014 once when the corn is knee-high if there has been no rain, and once when the tassels come out. That is the most important time. I spray three times \u2014 herbicide once, and insecticide twice for the corn borer. I expect about 1100 jin per mu, which is 550 kg.\n\nI watch what my neighbors do. If everyone puts 100 jin of compound on wheat, I do the same. A bad harvest means disaster \u2014 you cannot feed the family or pay for the next year's inputs. Wasting a little fertilizer is just a cost.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20.5,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 2.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I learned farming from my father and by watching neighbors. I never went to school, so I think in bags and jin, not in book knowledge. I start from what worked last year: rotary tillage for wheat, no-tillage for corn after wheat harvest. I use improved wheat seed and hybrid corn seed because that is what the successful farmers around me plant. I apply one 100-jin bag of compound fertilizer per mu for wheat at sowing, plus half a bag of urea at jointing, and 80 jin of compound per mu for corn at planting. I irrigate three times for wheat and twice for corn from my well. I spray wheat four times and corn three times to protect against weeds, aphids, corn borer, and rust. I would rather spend a bit more on fertilizer than risk losing yield, because a bad harvest is a disaster while extra fertilizer is just a cost. I expect 500 kg per mu for wheat and 550 kg per mu for corn if the weather is normal.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20.5,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 2.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I learned farming from my father and by watching neighbors. I never went to school, so I think in bags and jin, not in book knowledge. I start from what worked last year: rotary tillage for wheat, no-tillage for corn after wheat harvest. I use improved wheat seed and hybrid corn seed because that is what the successful farmers around me plant. I apply one 100-jin bag of compound fertilizer per mu for wheat at sowing, plus half a bag of urea at jointing, and 80 jin of compound per mu for corn at planting. I irrigate three times for wheat and twice for corn from my well. I spray wheat four times and corn three times to protect against weeds, aphids, corn borer, and rust. I would rather spend a bit more on fertilizer than risk losing yield, because a bad harvest is a disaster while extra fertilizer is just a cost. I expect 500 kg per mu for wheat and 550 kg per mu for corn if the weather is normal."
+  },
+  "elapsed_seconds": 281.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HQ_TL_13",
+  "tier": 3,
+  "provider": "kimi"
+}

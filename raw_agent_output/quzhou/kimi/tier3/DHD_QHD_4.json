@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old. I finished middle school and I have worked my 4.1 mu in Quzhou County for 50 years. My land grows wheat in the winter half and maize in the summer half. I do not change what works. I watch my neighbors, and if their harvest is good, I do the same.\n\nFor wheat, I will rotary till the field once in early October and sow 30 jin of improved seed per mu. The seed dealer sells the same variety Lao Wang plants, so I trust it. Before sowing, I will spread one 50 kg bag of compound fertilizer per mu. The bag reads roughly 16-18-6. At jointing time in March, I will topdress with 20 kg of urea per mu. I would rather use a bit extra fertilizer than see my wheat go yellow. I will irrigate three times: the winter water, one when the wheat greens up, and one when the grain is filling. I will spray herbicide once after sowing, insecticide twice, and fungicide once because the rust always comes. Last year my wheat gave me 1000 jin per mu, and this year I expect about 500 kg per mu again.\n\nFor maize, I will plant hybrid seed right after wheat harvest in June without tilling. No-tillage saves me diesel and a day of labor. I will plant one bag of hybrid seed per mu, about 2.5 kg. At sowing, I will put down 40 kg of compound fertilizer per mu. When the stalks are knee-high, I will spread 15 kg of urea per mu. I will irrigate twice if the summer is dry. I will spray herbicide once and insecticide twice because the corn borers are heavy this year. I expect about 1100 jin per mu, around 550 kg.\n\nMy family has three people, and every bag of fertilizer is cash out of my pocket. But losing a crop is a disaster I cannot afford. If I am uncertain, I do exactly what I did last year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18.0,\n      \"phosphorus_kg_per_mu\": 9.0,\n      \"potassium_kg_per_mu\": 3.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.0,\n      \"phosphorus_kg_per_mu\": 3.5,\n      \"potassium_kg_per_mu\": 2.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 4.1 mu in Quzhou with a wheat-maize rotation. For wheat, I rotary till, sow 30 jin of improved seed per mu, apply one 50 kg bag of compound fertilizer and 20 kg of urea per mu, irrigate three times, and spray four times. For maize, I no-till plant hybrid seed, apply 40 kg of compound fertilizer and 15 kg of urea per mu, irrigate twice, and spray three times. I follow last year's practice because change is risky on a small farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18.0,
+        "phosphorus_kg_per_mu": 9.0,
+        "potassium_kg_per_mu": 3.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.0,
+        "phosphorus_kg_per_mu": 3.5,
+        "potassium_kg_per_mu": 2.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 4.1 mu in Quzhou with a wheat-maize rotation. For wheat, I rotary till, sow 30 jin of improved seed per mu, apply one 50 kg bag of compound fertilizer and 20 kg of urea per mu, irrigate three times, and spray four times. For maize, I no-till plant hybrid seed, apply 40 kg of compound fertilizer and 15 kg of urea per mu, irrigate twice, and spray three times. I follow last year's practice because change is risky on a small farm."
+  },
+  "elapsed_seconds": 220.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_4",
+  "tier": 3,
+  "provider": "kimi"
+}

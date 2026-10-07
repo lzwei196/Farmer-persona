@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am sixty-nine years old this year. I have been farming this land in Quzhou since I was a young bride, and I never went to school \u2014 I cannot read a single character. But I know my fields. I know which patch stays wet after rain and which dries out first. I watch what my neighbors do, especially Old Li\u2019s family down the road, because their wheat always looks thick and green.\n\nThis year I have ten mu of land. Eight mu I will plant with winter wheat and then summer maize, one after the other, like everyone else in the village. That is my insurance \u2014 if the maize price drops, I still have wheat to eat and sell. The other two mu I will plant cotton. Cotton is more work, especially the spraying, but the price has been steady and my nephew helps me pick it in autumn.\n\nFor the wheat, I will rotary-till the soil in early October, the same as always. I buy improved wheat seed from the supply shop \u2014 about thirty jin per mu. I put down compound fertilizer and urea together; altogether it comes to about two big bags of nutrients per mu. I would rather put a little too much than too little, because a thin wheat crop means a hungry winter. I will irrigate three or four times: once when I plant, once at green-up if the spring is dry, once at jointing, and maybe once more at grain-filling if the sky gives us no rain. I spray insecticide and herbicide four or five times through the season. If the wheat looks yellow, I topdress more urea. I expect about five hundred kilograms per mu if the weather behaves.\n\nFor the summer maize, there is no time to waste after wheat harvest in early June. I plant directly into the stubble without tilling \u2014 no-tillage, the young people call it, but I just know we have only a few days before the rains stop. I buy hybrid maize seed, one package per mu. Maize does not need as much fertilizer as wheat; one bag of compound and a little urea is enough. I irrigate twice, maybe three times if it is very hot. Three pesticide sprays should do it. I hope for about five hundred kilograms per mu.\n\nFor the cotton, I rotary-till in April and plant improved cotton seed. Cotton needs more spraying than the grains \u2014 I spray ten or eleven times for bollworms and weeds \u2014 but the income is good. I irrigate two or three times. I expect around three hundred kilograms of seed-cotton per mu.\n\nI keep some cash back for medicine and emergencies. I do not hire labor if my son and daughter-in-law can help at harvest. That is my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 40,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 2.5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 11,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I follow what my neighbors do because they have succeeded where I might fail. Wheat-maize double cropping is the safest choice for most of my land \u2014 it feeds the family and brings steady income. I apply plenty of nitrogen to the wheat because I remember the year I skimped and the crop turned yellow and thin. For maize, there is no time to till after wheat harvest, so no-tillage planting is the only way. I keep two mu of cotton because the price has been reliable, even though it means more spraying. I am old and have no schooling, so I do not try new tricks; I do what has worked before and keep a little money aside for hard times.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 40,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 2.5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 11,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I follow what my neighbors do because they have succeeded where I might fail. Wheat-maize double cropping is the safest choice for most of my land \u2014 it feeds the family and brings steady income. I apply plenty of nitrogen to the wheat because I remember the year I skimped and the crop turned yellow and thin. For maize, there is no time to till after wheat harvest, so no-tillage planting is the only way. I keep two mu of cotton because the price has been reliable, even though it means more spraying. I am old and have no schooling, so I do not try new tricks; I do what has worked before and keep a little money aside for hard times."
+  },
+  "elapsed_seconds": 174.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_12",
+  "tier": 1,
+  "provider": "kimi"
+}

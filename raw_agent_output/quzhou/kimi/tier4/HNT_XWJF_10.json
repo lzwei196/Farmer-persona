@@ -1,0 +1,103 @@
+{
+  "raw_response": "I'm a 57-year-old farmer in Quzhou County. I only finished primary school, so I don't read those science papers \u2014 I learn by watching and doing. I've farmed for 20 years, and I've got 14 mu of land. There are 8 of us in the house, but my son and his wife work in the factory in Handan, so they're only home for the busy season. My wife, my younger daughter, and I do most of the farm work.\n\nI plant cotton on 8 mu \u2014 that's my cash crop. The other 6 mu I do wheat in winter and maize in summer, mostly for our own food and to feed the pigs.\n\n**Cotton:** I plant around April 20th, same as everyone in the village. I use the same seed as last year \u2014 I save some from my own crop and buy a bit from Old Wang down the road. Before planting, I spread one big bag of compound fertilizer for every two mu, and about half a bag of phosphate per mu. Then when the cotton starts flowering in July, I topdress with another half bag of urea per mu. I irrigate twice \u2014 once at flowering, once when the bolls are growing. Pumping water costs money, so I don't do more unless it's very dry. I spray for insects three or four times; the cotton bollworm can be bad. For picking in September and October, my family does the first round, but I hire women from the village to help with the second and third pickings \u2014 there's just too much for us alone.\n\n**Wheat:** I plant in mid-October right after the maize comes out. I use mostly seed I saved from last year, maybe buy a little if I'm short. I plow quick after maize harvest. Before planting I put down compound fertilizer, about one bag for every three mu. Then in March when the wheat turns green, if it looks yellow I spread some urea. I water three times: at green-up, at jointing, and when the grain is filling. I spray herbicide once in spring \u2014 the weeds are terrible if you skip it.\n\n**Maize:** This is the rush time. We cut wheat around June 8th-10th, and maize has to go in the same day or next day. I hire the tractor guy with the planter \u2014 costs me money but I can't plant fast enough by hand. I put fertilizer down with the planter, about the same amount as for wheat. If July brings rain I might not water, but usually I irrigate once when it gets hot and dry. Maize is easier. We harvest in late September, right when cotton picking is heaviest \u2014 September is always a hard month.\n\nThis year I'm keeping spending tight because my son says the factory might cut overtime. Fertilizer at the shop went up again, so I'm using maybe a little less than last year, but not too much \u2014 I'd rather waste a bit of money than lose half my yield. I need to keep some cash in my pocket for emergencies. I'll be happy if I match last year: about 250 kg of cotton per mu, 380 kg of wheat, and 400-odd kg of maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"field_area_mu\": 8,\n      \"planting_date\": \"mid-late April\",\n      \"harvest_date\": \"September-October, multiple pickings\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 13,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base application of compound and phosphate fertilizer at planting; topdress with urea at flowering in July\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"plow in spring before planting\",\n      \"labor_family_days\": 50,\n      \"labor_hired_days\": 10,\n      \"yield_expectation_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 6,\n      \"planting_date\": \"mid-October\",\n      \"harvest_date\": \"early-mid June\",\n      \"seed_type\": \"local\",\n      \"seed_cost_yuan_per_mu\": 10,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 11,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base application before planting; topdress with urea at green-up in March if wheat looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plow after maize harvest, broadcast seed\",\n      \"labor_family_days\": 20,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 380\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 6,\n      \"planting_date\": \"mid June, immediately after wheat harvest\",\n      \"harvest_date\": \"late September-early October\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 11,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"applied at planting with the mechanical planter\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage, plant directly into wheat stubble using hired tractor planter\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 420\n    }\n  ],\n  \"total_input_cost_yuan\": 4680,\n  \"reasoning_summary\": \"I'm keeping things about the same as last year because change is risky and money is tight with my son's factory cutting overtime. Cotton on 8 mu is my main income, so I won't skimp too much on fertilizer there \u2014 I'd rather waste a bit than lose yield. On the wheat-maize 6 mu I'm using mostly family labor and saved seed to save cash. Fertilizer prices went up, so I'm using slightly less than I used to, but not so little that I risk a bad year. September will be hard with cotton picking and maize harvest together, but that's how it always is. I'm hiring the tractor for maize planting because the window after wheat is too tight to do by hand.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "field_area_mu": 8,
+        "planting_date": "mid-late April",
+        "harvest_date": "September-October, multiple pickings",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 13,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base application of compound and phosphate fertilizer at planting; topdress with urea at flowering in July",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "plow in spring before planting",
+        "labor_family_days": 50,
+        "labor_hired_days": 10,
+        "yield_expectation_kg_per_mu": 250,
+        "nitrogen_kg_per_mu": 13,
+        "area_mu": 8,
+        "expected_yield_kg_per_mu": 250,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4
+      },
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 6,
+        "planting_date": "mid-October",
+        "harvest_date": "early-mid June",
+        "seed_type": "local",
+        "seed_cost_yuan_per_mu": 10,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 11,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base application before planting; topdress with urea at green-up in March if wheat looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plow after maize harvest, broadcast seed",
+        "labor_family_days": 20,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 380,
+        "nitrogen_kg_per_mu": 11,
+        "area_mu": 6,
+        "expected_yield_kg_per_mu": 380,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 6,
+        "planting_date": "mid June, immediately after wheat harvest",
+        "harvest_date": "late September-early October",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 11,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "applied at planting with the mechanical planter",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage, plant directly into wheat stubble using hired tractor planter",
+        "labor_family_days": 15,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 11,
+        "area_mu": 6,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3
+      }
+    ],
+    "total_input_cost_yuan": 4680,
+    "reasoning_summary": "I'm keeping things about the same as last year because change is risky and money is tight with my son's factory cutting overtime. Cotton on 8 mu is my main income, so I won't skimp too much on fertilizer there \u2014 I'd rather waste a bit than lose yield. On the wheat-maize 6 mu I'm using mostly family labor and saved seed to save cash. Fertilizer prices went up, so I'm using slightly less than I used to, but not so little that I risk a bad year. September will be hard with cotton picking and maize harvest together, but that's how it always is. I'm hiring the tractor for maize planting because the window after wheat is too tight to do by hand."
+  },
+  "elapsed_seconds": 73.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_10",
+  "tier": 4,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 11.4 mu in Quzhou for 40 years, and at 64 I know every inch of this land. My household has six people and some of my family works off-farm, so I can't always count on labor at home \u2014 that means I keep things practical and stick with what I know works.\n\nMy main system is wheat-maize on 8 mu. For winter wheat, I always plant an improved variety \u2014 the extension station has been pushing Jimai types and they've done well for me. I'll rotary till before planting in early October, then put down compound fertilizer as basal dressing \u2014 that gives me about 18 kg of nitrogen per mu, a bit more than the 15 kg the extension fellow recommends, because I'd rather spend a little extra than risk losing yield. I'll topdress with urea at jointing if the wheat looks yellow. I irrigate three times from my well: once before winter freeze-up, once at green-up in spring, and once at heading \u2014 pumping costs money, so three is my limit. I spray pesticide three times: herbicide early, insecticide once if I see aphids, and fungicide at heading. I expect about 480 kg per mu.\n\nFor summer maize, there's no time for tillage after wheat harvest in mid-June \u2014 everyone here direct-seeds into the wheat stubble. I buy hybrid seed every year because you can't save it. I apply about 16 kg nitrogen per mu, slightly less than wheat, and irrigate twice: at the big trumpet stage and during grain filling if the weather stays dry. Three pesticide sprays handle weeds and pests. I target 520 kg per mu.\n\nI keep 3.4 mu for cotton because when prices are decent it pays better than grain. I plant hybrid Bt cotton in late April after rotary tilling. Cotton doesn't need as much nitrogen \u2014 about 12 kg per mu \u2014 but it needs more protection. I'll spray five times for bollworm and aphids. Two irrigations, at flowering and boll-setting, are enough. I expect around 260 kg of seed cotton per mu.\n\nI don't change much from last year. The soil is the same, my well is reliable, and my family needs stable output more than experiments.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this land for 40 years and know what works. With 11.4 mu, 8 mu in wheat-maize double cropping and 3.4 mu in cotton, I stick to proven practices. I use improved wheat seed and hybrid maize and cotton seeds. I apply slightly more nitrogen than extension recommends because I am loss-averse and prefer to protect yield. I irrigate 3 times for wheat, twice for maize, and twice for cotton, limited by pumping costs from my well. Cotton needs more pesticide sprays. I till with rotary for wheat and cotton, but maize gets no-tillage because the window after wheat harvest is too tight. My yield expectations are based on what I got last year: about 480 kg/mu for wheat, 520 kg/mu for maize, and 260 kg/mu seed cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I have farmed this land for 40 years and know what works. With 11.4 mu, 8 mu in wheat-maize double cropping and 3.4 mu in cotton, I stick to proven practices. I use improved wheat seed and hybrid maize and cotton seeds. I apply slightly more nitrogen than extension recommends because I am loss-averse and prefer to protect yield. I irrigate 3 times for wheat, twice for maize, and twice for cotton, limited by pumping costs from my well. Cotton needs more pesticide sprays. I till with rotary for wheat and cotton, but maize gets no-tillage because the window after wheat harvest is too tight. My yield expectations are based on what I got last year: about 480 kg/mu for wheat, 520 kg/mu for maize, and 260 kg/mu seed cotton."
+  },
+  "elapsed_seconds": 118.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_10",
+  "tier": 2,
+  "provider": "kimi"
+}

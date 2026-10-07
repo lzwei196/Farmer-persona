@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm a 31-year-old farmer in Quzhou County with four years under my belt. Four years is enough to know that this land rewards discipline but punishes waste. I've got 225 mu, which is a sizable holding for this area, and a household of four that depends on it. My well gives me reliable water, and I intend to use that advantage strategically.\n\nI've decided to put 150 mu into my wheat-maize double-cropping system and keep 75 mu in cotton. The wheat-maize rotation is the backbone\u2014it's stable, the machinery and buyers are here in Handan, and with irrigation I can push yields consistently. Cotton is a cash crop risk; prices swing, but 75 mu gives me diversification without overexposure.\n\nFor the winter wheat already in the ground, I'm using an improved variety. With my well, I'll irrigate three times: the green-up water, the jointing stage, and one at grain filling. I'll top-dress nitrogen accordingly and keep pesticides minimal\u2014two applications, herbicide early and one fungicide if the weather turns humid. I'll rotary-till after harvest to prepare for maize.\n\nSummer maize has to go in fast after wheat harvest, so I'm going no-tillage with a hybrid seed to save time and preserve soil moisture. Two irrigations and two pesticide sprays are enough if I stay on top of it.\n\nFor cotton, I'm planting a hybrid Bt variety in spring. Cotton is hungry for potassium, so I'll push the potash higher. Three irrigations at seedling, flowering, and boll stages, and three pesticide rounds\u2014Bt handles the bollworm, but I still watch for aphids and mites.\n\nMy education tells me that balanced fertilizer beats throwing extra nitrogen at problems. My four years of experience tell me not to bet everything on one crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 150,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 150,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 75,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 225 mu into 150 mu of wheat-maize double cropping for stable grain income and 75 mu of cotton for cash diversification. My well irrigation lets me apply water at critical growth stages, so I pair that with balanced fertilizer rather than cutting corners. I use improved wheat seed and hybrid maize and cotton varieties to maximize returns per mu. For maize, no-tillage saves time between wheat harvest and sowing. For cotton, I increase potassium because it depletes the soil heavily. With four years of experience, I know that managing inputs carefully on this scale beats gambling on one crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 150,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 150,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 75,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 225 mu into 150 mu of wheat-maize double cropping for stable grain income and 75 mu of cotton for cash diversification. My well irrigation lets me apply water at critical growth stages, so I pair that with balanced fertilizer rather than cutting corners. I use improved wheat seed and hybrid maize and cotton varieties to maximize returns per mu. For maize, no-tillage saves time between wheat harvest and sowing. For cotton, I increase potassium because it depletes the soil heavily. With four years of experience, I know that managing inputs carefully on this scale beats gambling on one crop."
+  },
+  "elapsed_seconds": 100.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_3",
+  "tier": 2,
+  "provider": "kimi"
+}

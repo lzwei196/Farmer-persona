@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 49-year-old woman who has farmed these 3 mu in Quzhou for 25 years. I never went to school, but I learned everything from my mother-in-law and from watching my neighbors. My household has seven mouths, and two of my family members work in the county town, so they send money home but cannot help much in the fields. I have a well for irrigation, which is good because the rain here on the North China Plain is never enough.\n\nMy 3 mu are all under wheat-maize rotation. That is the only system that makes sense here \u2014 the land does not rest. I will plant winter wheat in late October after rotary tillage. I use improved seed, usually something like Jimai 22 or Luyuan 502, because the yield is much better than the old traditional wheat my grandmother grew. I will put down compound fertilizer as a basal dose and then topdress with urea at the jointing stage in spring. I irrigate three times for wheat: once before the winter freeze so the seedlings survive, once at jointing when the stems shoot up, and once at grain filling. I also spray four times total \u2014 herbicide once, insecticide twice, and fungicide once \u2014 because if you skip the fungicide in this humid spring, the rust will take half your crop.\n\nRight after I harvest the wheat in early June, I plant maize the same day or the next. Everyone here does no-tillage for summer maize; there is no time to plow, and the maize grows fast enough if you plant into the wheat stubble. I use hybrid seed, Denghai 605, which is what the seed seller recommends and what my neighbors all plant. I spread compound fertilizer at sowing. Maize needs less nitrogen than wheat because I give it a strong basal dose, and I only irrigate twice \u2014 once when the seedlings are knee-high and once at silking if the sky stays dry. I spray three times: herbicide once at the start, insecticide twice because the corn borer is a problem every year. I expect the maize to yield a bit more than the wheat if the autumn weather holds.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 55,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 3 mu with wheat-maize double cropping because this is what the North China Plain allows and what my family depends on. For winter wheat, I use improved seed with rotary tillage, three irrigations from my well, and four pesticide applications to protect against weeds, insects, and rust. For summer maize, I plant hybrid seed immediately after wheat harvest with no-tillage, two irrigations, and three pesticide sprays. My choices follow 25 years of experience and what works for smallholders like me with limited family labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 55,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I manage my 3 mu with wheat-maize double cropping because this is what the North China Plain allows and what my family depends on. For winter wheat, I use improved seed with rotary tillage, three irrigations from my well, and four pesticide applications to protect against weeds, insects, and rust. For summer maize, I plant hybrid seed immediately after wheat harvest with no-tillage, two irrigations, and three pesticide sprays. My choices follow 25 years of experience and what works for smallholders like me with limited family labor."
+  },
+  "elapsed_seconds": 109.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_1",
+  "tier": 2,
+  "provider": "kimi"
+}

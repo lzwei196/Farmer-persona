@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been running this 220 mu operation for 5 years now, and at this size you either keep good records or you go broke. I finished high school, so I work with numbers \u2014 I write down every input cost and yield, I talk with the county agricultural extension office, check fertilizer prices on the internet, and swap notes with the other large farms nearby in Quzhou.\n\nThis season I'm putting 110 mu into spring millet and 110.1 mu into spring soybean. Both are improved varieties. The millet variety I've been using gives me a solid 350 kg per mu when the weather is normal, and the soybean variety is a local high-oil type that should run about 180 kg per mu.\n\nThe soil here is loam, decent but not rich \u2014 after 5 years I can see it's getting tired if I don't feed it properly. For millet I need 12 kg of nitrogen per mu total: I put down compound fertilizer at sowing and top-dress with urea at the booting stage. I also apply 6 kg of phosphorus and 4 kg of potassium per mu. For soybean, the root nodules handle most of the nitrogen, so I only apply 4 kg N per mu as starter, but phosphorus and potassium are critical \u2014 5 kg P and 4 kg K per mu to fill the pods properly.\n\nWater comes from my well. I irrigate millet 3 times \u2014 seedling, booting, and grain filling \u2014 and soybean 3 times \u2014 seedling, flowering, and pod filling. I don't just water on a schedule; I check the soil and only run the pump when it's actually dry below 20 cm.\n\nPest control: millet gets 3 applications for aphids and armyworm. Soybean gets 2 applications, mainly for pod borer. I hire a tractor sprayer service \u2014 220 mu is way too much to cover with a backpack sprayer, and the machine does a better job anyway.\n\nTillage is rotary for both crops. I hire a rotary tiller \u2014 costs about 50 yuan per mu and gets the seedbed ready in a couple of days. I've tried deep plowing and didn't see enough yield increase to justify the extra cost and time.\n\nI did the math on cutting back fertilizer because prices are up this year. If I reduce nitrogen by 2 kg per mu and lose even 25 kg of yield, I'm down about 50-60 yuan per mu net. Multiply by 220 mu and that's over 11,000 yuan. A bad harvest is a disaster I can't afford; wasting a little fertilizer is just a cost of doing business. The other big farms around me are keeping their rates steady too, so I'm confident in my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"millet\",\n      \"season\": \"spring\",\n      \"area_mu\": 110,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"soybean\",\n      \"season\": \"spring\",\n      \"area_mu\": 110.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 180\n    }\n  ],\n  \"reasoning_summary\": \"I split my 220.1 mu evenly between spring millet and spring soybean because both crops fit my well-irrigated land and I have machinery services to handle the scale. I apply 12-6-4 NPK for millet and 4-5-4 for soybean, accounting for the soybean's nitrogen fixation. I irrigate each crop 3 times at critical growth stages and use rotary tillage for efficiency. I maintain these input levels because cutting back risks yield losses that would cost far more than the fertilizer savings, which is a risk I cannot take on a farm this size.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "millet",
+        "season": "spring",
+        "area_mu": 110,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 350
+      },
+      {
+        "crop": "soybean",
+        "season": "spring",
+        "area_mu": 110.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 180
+      }
+    ],
+    "reasoning_summary": "I split my 220.1 mu evenly between spring millet and spring soybean because both crops fit my well-irrigated land and I have machinery services to handle the scale. I apply 12-6-4 NPK for millet and 4-5-4 for soybean, accounting for the soybean's nitrogen fixation. I irrigate each crop 3 times at critical growth stages and use rotary tillage for efficiency. I maintain these input levels because cutting back risks yield losses that would cost far more than the fertilizer savings, which is a risk I cannot take on a farm this size."
+  },
+  "elapsed_seconds": 159.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_6",
+  "tier": 3,
+  "provider": "kimi"
+}

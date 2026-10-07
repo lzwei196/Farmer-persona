@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 38, and I've farmed these 20 mu in Quzhou for a decade now. Middle school education, but I know this land better than any book. There are six of us at home \u2014 my wife, two children, and my parents. My wife and my younger brother work at a factory in the county seat when there's no farmwork, so I handle most of the field labor myself. We have a well, which means I'm not at the mercy of the sky, but the pump runs on electricity and that bill stings if I'm not careful.\n\nIt's April. My winter wheat went in last October \u2014 I used an improved variety, the kind the seed shop always stocks. The wheat looks decent coming out of winter. Here's what I'm doing this year:\n\nFor the wheat already in the ground: I applied base fertilizer last autumn \u2014 compound fertilizer and some organic manure. Now that it's greening up, I'll top-dress with urea at jointing. Total nitrogen for the season will be about 16 kg per mu. I'll irrigate three times total: the spring revival water I just finished, one at jointing, and one at grain filling. Two pesticide sprays \u2014 one now for aphids, and another later for powdery mildew if the weather turns humid. I ploughed this field before sowing last autumn. Harvest will be early June. I expect about 500 kg per mu, which is standard for my land.\n\nFor maize: The day after wheat harvest, I plant. No rest. I'll buy hybrid seed \u2014 probably Zhengdan 958 or similar, whatever the shop has that everyone trusts. I won't deep plough; I'll use rotary tillage to break the wheat stubble quickly. I need the maize in the ground within two days of harvest or I lose too many heat units. I'll put down compound fertilizer at sowing, then side-dress urea when the plants hit the big trumpet stage. Total nitrogen around 16 kg per mu. I'll irrigate twice \u2014 once at sowing if the soil is dry, and once at filling. Two pesticide sprays for corn borer. I should get about 550 kg per mu.\n\nWhy these choices? Hybrid maize gives me the yield I need to make the double-cropping system worthwhile. Improved wheat seed is cheaper and reliable enough. Rotary tillage for maize saves me labor and fuel when I'm racing the calendar. I don't over-irrigate because the well pump costs money, and I keep my fertilizer at moderate levels because prices have been high and my soil still carries some fertility from years of cropping.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 20 mu in Quzhou with a wheat-maize double-cropping rotation. With 10 years of experience and limited labor because some family members work off-farm, I prioritize reliable, cost-effective practices. For winter wheat, I use improved seed with autumn ploughing, apply 16 kg nitrogen per mu including spring topdressing, irrigate three times, spray twice for pests, and expect 500 kg per mu. For summer maize, I plant hybrid seed immediately after wheat harvest using rotary tillage to save time, apply 16 kg nitrogen per mu with side-dressing at the big trumpet stage, irrigate twice depending on rainfall, spray twice for corn borer, and expect 550 kg per mu. Well irrigation gives me control over water timing, but I limit applications to manage electricity costs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 20 mu in Quzhou with a wheat-maize double-cropping rotation. With 10 years of experience and limited labor because some family members work off-farm, I prioritize reliable, cost-effective practices. For winter wheat, I use improved seed with autumn ploughing, apply 16 kg nitrogen per mu including spring topdressing, irrigate three times, spray twice for pests, and expect 500 kg per mu. For summer maize, I plant hybrid seed immediately after wheat harvest using rotary tillage to save time, apply 16 kg nitrogen per mu with side-dressing at the big trumpet stage, irrigate twice depending on rainfall, spray twice for corn borer, and expect 550 kg per mu. Well irrigation gives me control over water timing, but I limit applications to manage electricity costs."
+  },
+  "elapsed_seconds": 63.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_7",
+  "tier": 2,
+  "provider": "kimi"
+}

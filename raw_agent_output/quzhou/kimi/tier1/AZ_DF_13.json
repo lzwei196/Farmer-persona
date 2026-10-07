@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed these same plots in Quzhou for over forty years. My father passed them to me, and now my son helps at harvest when he can get away from his job in town. I've got ten mu total. Seven mu go to the wheat-maize double crop\u2014that's the backbone of my family's food and income. The other three mu I keep in cotton. Cotton is heavy on labor, especially the picking, but my wife and I can manage three mu, and the price was acceptable last year, so I'm not giving it up.\n\nFor the wheat, I'll plant in early October like always. I buy improved seed from the village supply shop\u2014nothing fancy, but it gives me about 1000 jin per mu when the weather cooperates. Before planting I run the rotary tiller over the field. That's just how we've always done it. For fertilizer, I spread compound fertilizer as a base, about one big bag per mu, and then topdress with urea at jointing when the wheat turns a bit yellow. All told it comes to around 15 kg of nitrogen, 5 kg of phosphorus, and 4 kg of potassium per mu. I'll irrigate three times: the winter irrigation is the most important, then two more in the spring. I spray pesticides four times\u2014herbicide once and insecticide three times.\n\nFor maize, there's no time to till after the wheat comes off in mid-June. I hire the machine service to plant denghai605 hybrid seed no-tillage straight into the stubble. The hybrid costs more, but it yields well\u2014I'm expecting about 1200 jin per mu. I give it a bit less fertilizer than the wheat, roughly 14 kg nitrogen, 4 kg phosphorus, and 4 kg potassium per mu. Two irrigations is usually enough for maize, and three pesticide sprays.\n\nThe cotton gets rotary-tilled in April. I use an improved local variety. It needs more spraying than grain\u2014about ten times total\u2014because the bollworms are relentless. I irrigate twice and expect about 500 jin of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what has worked for decades: wheat-maize double cropping on seven mu and cotton on three mu. The wheat and maize give steady grain income, while cotton diversifies risk. I use improved wheat seed, hybrid maize for higher yield, and rotary tillage for wheat and cotton but no-tillage for maize because the turnaround after wheat harvest is too tight. Fertilizer and irrigation rates follow what my neighbors and I have always done\u2014enough to secure the crop without spending more than necessary.\"\n}\n```\n\nWait, I need to correct the yields. In China, farmers typically talk about yields in *jin* (1 jin = 0.5 kg), but the JSON asks for `kg_per_mu`. Let me fix this:\n\n- Wheat: 1000 jin = **500 kg/mu**\n- Maize: 1200 jin = **600 kg/mu**  \n- Cotton: 500 jin seed cotton = **250 kg/mu**\n\nThese corrected numbers align with the survey data I reviewed and are realistic for a smallholder in Quzhou County. The plan above is my final decision.",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I stick with what has worked for decades: wheat-maize double cropping on seven mu and cotton on three mu. The wheat and maize give steady grain income, while cotton diversifies risk. I use improved wheat seed, hybrid maize for higher yield, and rotary tillage for wheat and cotton but no-tillage for maize because the turnaround after wheat harvest is too tight. Fertilizer and irrigation rates follow what my neighbors and I have always done\u2014enough to secure the crop without spending more than necessary."
+  },
+  "elapsed_seconds": 203.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_13",
+  "tier": 1,
+  "provider": "kimi"
+}

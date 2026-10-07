@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming cabbage for 5 years here in Quzhou. My family has 50 mu of good flat land, and we do three seasons of cabbage \u2014 spring, summer, and autumn. I learned this system from my uncle and the seed dealer in town. I plant hybrid seeds, the same kind my neighbors use, mostly Zhonggan 56. A bag of hybrid seed costs more than traditional seed, but the seedlings grow strong and the heads are uniform, which matters when the vegetable broker comes to buy.\n\nFor fertilizer, I do what I did last year because it worked. I put down 50 kg of compound fertilizer per mu as a base \u2014 the bag says 15-15-15, so that gives some nitrogen, phosphorus, and potassium all at once. Then I topdress twice during the growing season with another 100 kg per mu of high-nitrogen compound, something like 22-9-9 that the dealer recommends for leafy vegetables. That is about 30 kg of nitrogen, 15 kg of phosphorus, and 15 kg of potassium per mu in total. I know it is not cheap \u2014 every jin of fertilizer is real money \u2014 but cabbage is a heavy feeder and a bad harvest is a disaster. I would rather spend a bit more on fertilizer than risk small heads. I have a well for irrigation, so I water when the soil starts to look dry. Spring cabbage needs about 5 irrigations because the weather jumps around. Summer cabbage needs 6 times because July and August are scorching. Autumn cabbage usually only needs 4 times since the rain helps and the weather cools down.\n\nFor pests, I spray about 5 or 6 times each season. The cabbage worm is my main enemy, and in wet summers downy mildew shows up too. I hire a worker with a motorized sprayer because 50 mu is too much to do by hand. For tillage, I hire the rotary tiller from the village \u2014 it is 50 yuan per mu and saves time. I do not deep-plough because cabbage roots are shallow and rotary tillage is fast. I hire 10 to 15 people from the village for transplanting and harvest because with only me, my wife, and my parents, we cannot handle 50 mu alone.\n\nI expect my spring cabbage to yield about 6,500 kg per mu, summer around 5,500 kg per mu because the heat hurts the heads, and autumn cabbage about 8,000 kg per mu when the weather is good. I sell almost everything to the broker who drives to the village.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cabbage\",\n      \"season\": \"spring\",\n      \"area_mu\": 50.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 6500\n    },\n    {\n      \"crop\": \"cabbage\",\n      \"season\": \"summer\",\n      \"area_mu\": 50.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 5500\n    },\n    {\n      \"crop\": \"cabbage\",\n      \"season\": \"autumn\",\n      \"area_mu\": 50.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 8000\n    }\n  ],\n  \"reasoning_summary\": \"I base my plan on what I did last year because change is risky. I use hybrid seeds and about 30 kg nitrogen, 15 kg phosphorus, and 15 kg potassium per mu from compound fertilizer because cabbage needs a lot of nutrients to form big heads, and I would rather over-apply slightly than lose yield. I irrigate 4 to 6 times depending on the season, spray pesticides 5 to 6 times to control cabbage worms and mildew, and use rotary tillage because it is fast and cheap. With 50 mu, I must hire labor for transplanting and harvest. I expect autumn cabbage to yield the best at 8000 kg per mu, while summer cabbage drops to about 5500 kg per mu because of heat stress.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cabbage",
+        "season": "spring",
+        "area_mu": 50.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 5,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 6500
+      },
+      {
+        "crop": "cabbage",
+        "season": "summer",
+        "area_mu": 50.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 6,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 5500
+      },
+      {
+        "crop": "cabbage",
+        "season": "autumn",
+        "area_mu": 50.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 8000
+      }
+    ],
+    "reasoning_summary": "I base my plan on what I did last year because change is risky. I use hybrid seeds and about 30 kg nitrogen, 15 kg phosphorus, and 15 kg potassium per mu from compound fertilizer because cabbage needs a lot of nutrients to form big heads, and I would rather over-apply slightly than lose yield. I irrigate 4 to 6 times depending on the season, spray pesticides 5 to 6 times to control cabbage worms and mildew, and use rotary tillage because it is fast and cheap. With 50 mu, I must hire labor for transplanting and harvest. I expect autumn cabbage to yield the best at 8000 kg per mu, while summer cabbage drops to about 5500 kg per mu because of heat stress."
+  },
+  "elapsed_seconds": 256.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "NLY_WSZ_1",
+  "tier": 3,
+  "provider": "kimi"
+}

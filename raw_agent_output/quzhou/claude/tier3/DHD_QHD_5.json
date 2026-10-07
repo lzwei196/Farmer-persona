@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am old, and my back is not what it used to be. But I still work my 4.1 mu with my own hands. My son is gone to the city, so it is just me and my husband now. This is how I farm this year, the same way I have always done it.\n\nFor wheat, I plant in October, after the maize comes off. I buy two bags of compound fertilizer \u2014 the 15-15-15 kind, fifty jin each, one bag for two mu, so I need about two bags for my land. I spread it when I plough. Then in spring, when I turn on the well water the first time, I scatter urea \u2014 half a bag per mu, about twenty-five jin. The seed I buy at the village shop, whatever kind the dealer says is good this year \u2014 everyone in the village plants the same kind. I water three times: once after planting if the soil is dry, once in spring at green-up, and once when the grain is filling. I spray once for the red spider mite and once when I see the wheat aphids on the head. If the year is good I get 450 jin per mu, sometimes a little more.\n\nFor maize, I plant right after I cut the wheat, no ploughing \u2014 I just use the small rotary on the tractor my neighbor drives for me. The seed is hybrid, I buy it every year, you cannot save hybrid seed, even I know that. I put compound fertilizer in the row when I plant, about forty jin per mu. Then when the maize is knee-high I spread urea, about thirty jin per mu, and I water right after so it goes down to the roots. I water two times if the rain is normal, three times if it is dry. I spray once for the corn borer when I see the holes in the leaves. Maize gives me 500 jin per mu usually.\n\nI do not like to use less fertilizer. One bad harvest and I have nothing. A few yuan of urea is nothing compared to losing the crop. My neighbors do about the same as me. That is how we know it works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I do what I have always done, the same as my neighbors. For wheat I put two bags of compound when I plough in October and half a bag of urea per mu in the spring. For maize I drop compound in the row at planting and scatter urea when it is knee-high. I water when the well is running and I spray when I see the bugs. I would rather spend a few extra yuan on fertilizer than risk a thin harvest \u2014 a bad year is a disaster, wasted fertilizer is only money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I do what I have always done, the same as my neighbors. For wheat I put two bags of compound when I plough in October and half a bag of urea per mu in the spring. For maize I drop compound in the row at planting and scatter urea when it is knee-high. I water when the well is running and I spray when I see the bugs. I would rather spend a few extra yuan on fertilizer than risk a thin harvest \u2014 a bad year is a disaster, wasted fertilizer is only money."
+  },
+  "elapsed_seconds": 41.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_5",
+  "tier": 3,
+  "provider": "claude"
+}

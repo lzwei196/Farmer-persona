@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land in Quzhou for 30 years. I know this ground. The wheat-maize rotation is my backbone \u2014 reliable, familiar, and the grain prices have been steady enough. Cotton I still grow on a smaller piece, but at 58 and farming alone, I'm honest with myself: I can't manage too much cotton anymore. Harvest wears me down and hiring hands costs money I'd rather keep.\n\nI'll put 30 mu into wheat-maize rotation \u2014 winter wheat goes in October, summer maize follows right after harvest in June. That leaves 10 mu for cotton. I've thought about dropping cotton entirely, but I know how to grow it, and it gives me some income diversity. 10 mu I can manage.\n\nFor wheat, I'll use improved seed \u2014 Kenong 199 or similar, whatever the village supply station has. I've used it for years. I'll apply fertilizer at base and top-dress at jointing. Irrigation three times: pre-winter watering, jointing stage, and heading. That's what the land needs here.\n\nFor maize after wheat, I go no-till \u2014 straight seeding into the stubble saves me time and my back. Hybrid seed, Zhengdan 958 type. Maize gets summer rains mostly, but I'll irrigate twice to be safe with the well.\n\nCotton gets ploughed land, more potassium than the grain crops, more pesticide too \u2014 aphids and bollworm are always trouble. Six spray rounds is what experience tells me. I'll do the topping myself.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 30 mu to wheat-maize rotation and 10 mu to cotton, limited by my age and single-person labor capacity. Winter wheat uses improved local varieties with rotary tillage after maize, three irrigations, and moderate fertilizer inputs consistent with 30 years of practice on this soil. Summer maize follows with no-till direct seeding to save time and labor, hybrid seed, and two supplemental irrigations given summer rainfall. Cotton occupies only 10 mu \u2014 enough to diversify income without overwhelming me at harvest; it gets ploughed ground, heavier potassium for fiber quality, and six pesticide rounds to manage the aphid and bollworm pressure that is typical in Quzhou every year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I allocate 30 mu to wheat-maize rotation and 10 mu to cotton, limited by my age and single-person labor capacity. Winter wheat uses improved local varieties with rotary tillage after maize, three irrigations, and moderate fertilizer inputs consistent with 30 years of practice on this soil. Summer maize follows with no-till direct seeding to save time and labor, hybrid seed, and two supplemental irrigations given summer rainfall. Cotton occupies only 10 mu \u2014 enough to diversify income without overwhelming me at harvest; it gets ploughed ground, heavier potassium for fiber quality, and six pesticide rounds to manage the aphid and bollworm pressure that is typical in Quzhou every year."
+  },
+  "elapsed_seconds": 42.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_4",
+  "tier": 2,
+  "provider": "claude"
+}

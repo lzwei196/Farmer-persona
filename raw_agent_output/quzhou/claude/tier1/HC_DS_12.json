@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is about 6 mu here on the flat plain. I have farmed this ground for over forty years, first with my husband, now alone. My children left for the city long ago. I am slower now at 68, but I know this soil. My knees hurt in cold weather, so I rely on the village machinery cooperative for plowing and harvesting \u2014 I pay them to do it, I cannot manage that equipment myself anymore.\n\nI will grow winter wheat and summer corn, same as every year, same as my neighbors. Same land, both seasons. That is what this ground is for. I will also keep a small vegetable patch near the house for my own food \u2014 garlic, scallions, a few rows of Chinese cabbage. I do not count that in my plans, it is just the kitchen garden.\n\nFor wheat, I will buy seed from the village agro-shop, whatever improved variety Brother Liu has in stock \u2014 he knows what grows well here. I will spread compound fertilizer before planting and add urea in spring when the wheat greens up. I will irrigate three times: once before winter sets hard, once at jointing, once when the heads are filling. I will spray once for weeds in early spring and once for aphids and rust before harvest. I use rotary tillage before sowing \u2014 the cooperative does it.\n\nFor corn, I plant right after wheat comes off in June. No time to waste. I will use hybrid seed, Zhengdan 958 or whatever the shop has. I scatter fertilizer at planting and top-dress once when the corn is knee-high. I only irrigate if the sky is dry \u2014 usually once at planting if the ground is parched. I spray herbicide and watch for the armyworm. No deep tillage for corn, I just let the stalks get rolled and direct-seed.\n\nI do not experiment. I do not try new things. At my age, a bad harvest is something I cannot recover from.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 68-year-old woman farming 6 mu alone on the North China Plain follows the only rotation she has ever known: winter wheat sown in October, harvested in June, followed immediately by summer maize harvested in September. She relies on the village machinery cooperative for tillage and harvest, manages fertilizer and irrigation herself with rates learned through decades of practice rather than extension advice, and keeps input choices conservative \u2014 familiar improved wheat varieties and proven hybrid maize seed available at the local agro-shop. Three irrigations for wheat reflect the standard groundwater-dependent regime of the Hebei plain; one irrigation for maize assumes normal summer rainfall. Pesticide use is minimal and reactive. She does not experiment with new varieties, reduced inputs, or alternative crops because the downside risk of a failed season at her age and income level is too high to accept.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 68-year-old woman farming 6 mu alone on the North China Plain follows the only rotation she has ever known: winter wheat sown in October, harvested in June, followed immediately by summer maize harvested in September. She relies on the village machinery cooperative for tillage and harvest, manages fertilizer and irrigation herself with rates learned through decades of practice rather than extension advice, and keeps input choices conservative \u2014 familiar improved wheat varieties and proven hybrid maize seed available at the local agro-shop. Three irrigations for wheat reflect the standard groundwater-dependent regime of the Hebei plain; one irrigation for maize assumes normal summer rainfall. Pesticide use is minimal and reactive. She does not experiment with new varieties, reduced inputs, or alternative crops because the downside risk of a failed season at her age and income level is too high to accept."
+  },
+  "elapsed_seconds": 56.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_12",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am sixty-nine years old, and I have never been to school. But I have been working this land in Quzhou since I was a young man, and I know what it will give me and what it will not. My family has six mu of good flat land on the North China Plain, and I do not rent any in or out. I am too old now to be climbing around with cotton picking bags or trying strange new crops that the traders might not buy. I stick to what the soil knows, and what I know.\n\nLast autumn I planted my winter wheat, like I always do. I used the rotary tiller first, then sowed the improved wheat seed \u2014 about thirty jin per mu, the same as always. The wheat is in the ground now, sleeping through the cold. When the spring comes and it turns green, I will irrigate it four times: once when it greens up, again at jointing, once at heading, and a last time when the grain is filling. At green-up and jointing I will spread fertilizer \u2014 I buy compound fertilizer and urea from the village supply store, about what my neighbors use. I also spray for weeds and bugs two or three times. If the weather is fair, I expect to bring in about six hundred jin of wheat per mu by early June.\n\nThe day after the wheat comes off, I will plant summer maize. I do not plough again \u2014 I plant the hybrid maize seed right into the wheat stubble. The maize variety changes depending on what the shop has, but it is always hybrid, and I buy new seed every year. Maize needs less water than wheat; I will irrigate it twice, usually around the big trumpet stage and when the grain is filling. Two rounds of pesticide are enough for maize in summer. If the rains come properly, I should get about seven hundred jin per mu by October.\n\nI do not grow cotton anymore. My back hurts, and cotton needs too much hand labor. I do not try vegetables for the market either \u2014 at my age, I cannot afford to guess wrong on prices. Wheat and maize are safe. The state buys wheat, and there is always a market for maize. That is how I have fed my family for fifty years, and that is how I will do it this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 700\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat and maize in rotation on six mu for over fifty years. At sixty-nine with no schooling, I trust what has always worked: improved wheat sown in autumn with rotary tillage, irrigated four times and fertilized twice in spring, then hybrid maize planted no-till immediately after the June wheat harvest, irrigated twice in summer. I avoid cotton and vegetables because they demand more labor and market risk than I can handle at my age. Wheat and maize have reliable buyers and fit the double-cropping calendar of the North China Plain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 700
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat and maize in rotation on six mu for over fifty years. At sixty-nine with no schooling, I trust what has always worked: improved wheat sown in autumn with rotary tillage, irrigated four times and fertilized twice in spring, then hybrid maize planted no-till immediately after the June wheat harvest, irrigated twice in summer. I avoid cotton and vegetables because they demand more labor and market risk than I can handle at my age. Wheat and maize have reliable buyers and fit the double-cropping calendar of the North China Plain."
+  },
+  "elapsed_seconds": 182.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DS_2",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 35 years old. I never went to school, not even one day. I started following my mother to the field when I was five years old, so I have been farming for 30 years. My family has 4.1 mu of land in Quzhou County, and we grow wheat in winter and corn in summer. My husband and my father-in-law sometimes go out to work construction, so mostly it is me and my mother-in-law doing the farm work.\n\nThe wheat is already in the ground from last October. I sowed improved wheat seed, about 20 kg for each mu. At sowing time I put down one full 50 kg bag of compound fertilizer per mu \u2014 the kind that comes in the white bags from the dealer. I always buy the same kind because that is what my mother used and that is what my neighbors use. This spring, when the wheat starts growing fast, I will spread half a bag of urea per mu on top \u2014 that is 25 kg per mu. I know fertilizer is expensive now, but I would rather put a little too much than too little. Last year my wheat made about 1000 jin per mu, and if I cut back and the yield drops, that is a disaster. A few extra bags of fertilizer is just money; a bad harvest means my family goes hungry. I will irrigate three times from our well: once now in early spring if the ground is dry, once when the wheat is jointing, and once when the grain is filling. I spray pesticide twice \u2014 I already put herbicide when I sowed, and I will spray once more in spring if I see bugs or the leaves start spotting. Before sowing wheat every year I rotary till the land to break up the stubble.\n\nFor the corn, after we harvest the wheat in early June, we have to plant fast \u2014 only about 10 days before it gets too late. I will plant hybrid corn seed, about 2.5 kg per mu. I put compound fertilizer in the planting rows, about 40 kg per mu \u2014 I use slightly less than wheat because we are in a hurry and the machine does not hold as much. When the corn is knee-high, around the big trumpet stage, I will side-dress half a bag of urea per mu, which is 25 kg. I irrigate twice: once right after planting if the rain does not come, and once when the corn is tasseling and the ears are filling. That is the most important time \u2014 if it dries out then, the ears will be empty. I spray twice: herbicide at planting, and once later for armyworm if I see them eating leaves. After wheat harvest we do not have time to plough deep, so we use the no-tillage planter to put corn seed straight into the wheat stubble. Last year my corn made about 1200 jin per mu, and I expect the same this year if the weather cooperates.\n\nMy neighbor has 5 mu and he does almost exactly the same thing. If he changes something and it works better, maybe I will try it next year. But this year I am doing what I always do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have been farming this same 4.1 mu since I was a child and I do what my mother taught me and what my neighbors do. I use one 50 kg bag of compound fertilizer per mu for wheat and 40 kg per mu for corn, plus half a bag of urea per mu for both crops as topdressing, because cutting back is too risky on such a small farm where every jin of grain matters. I would rather spend the money on fertilizer than lose yield. I irrigate wheat three times and corn twice from our well, spray twice for each crop, and plant corn no-tillage right after wheat harvest to save time. Last year wheat made about 1000 jin per mu and corn about 1200 jin per mu, and I expect the same this year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have been farming this same 4.1 mu since I was a child and I do what my mother taught me and what my neighbors do. I use one 50 kg bag of compound fertilizer per mu for wheat and 40 kg per mu for corn, plus half a bag of urea per mu for both crops as topdressing, because cutting back is too risky on such a small farm where every jin of grain matters. I would rather spend the money on fertilizer than lose yield. I irrigate wheat three times and corn twice from our well, spray twice for each crop, and plant corn no-tillage right after wheat harvest to save time. Last year wheat made about 1000 jin per mu and corn about 1200 jin per mu, and I expect the same this year."
+  },
+  "elapsed_seconds": 130.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_7",
+  "tier": 3,
+  "provider": "kimi"
+}

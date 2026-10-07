@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for fifty years. I know what works here in Quzhou. My father farmed this same soil, and his father before him. I don't read the government pamphlets much, but I watch my neighbors, I watch the sky, and I watch my crops.\n\nMy 12 mu \u2014 I'll run 9 mu on the wheat-maize rotation the way I always have. Same land, winter wheat then summer maize. That's the backbone. The other 3 mu stays cotton. Used to do more cotton, but the children went to the city for work. My wife and I can't manage more than 3 mu of cotton anymore \u2014 too much picking, too much spraying. Even 3 mu is a stretch, but cotton still brings in better money than grain.\n\nFor wheat, I'll use the improved variety I bought from the supply store two years ago \u2014 it yielded well. I'll apply fertilizer at planting and then top-dress at jointing like always. I water before winter sets in, then at jointing, then heading, then grain fill \u2014 four times. I've always done four irrigations on wheat when the well holds up.\n\nFor maize, everyone uses hybrid seed now. I'll buy what the village supply store sells \u2014 they stock the same Xianyu or Zhengdan series. I direct-seed right after wheat harvest, no ploughing. Too hot to wait. Three irrigations, once at seedling if it's dry, once at tasseling, once at grain fill.\n\nCotton I'll plough properly in spring before planting. Cotton needs loose soil. I'll spray more often \u2014 aphids and bollworm come every year without fail. Six times minimum. I irrigate when I see the leaves go dull.\n\nI don't use much potassium fertilizer. Never really have. Costs more and I haven't seen a clear difference in fifty years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer with 50 years of experience in Quzhou, Hebei, allocates 9 mu to the familiar wheat-maize double-cropping rotation and reduces cotton to 3 mu due to declining household labor as younger family members work off-farm. Seed choices favor locally proven improved and hybrid varieties from the village supply store rather than new experimental types. Nitrogen rates are higher than extension recommendations, reflecting decades of experience prioritizing yield security. Potassium use is minimal due to longstanding habit and no perceived yield response. Irrigation follows traditional timing benchmarks rather than soil moisture monitoring. Cotton receives intensive pesticide applications from years of experience with aphid and bollworm pressure. Tillage practices are conservative: rotary tillage for wheat, no-till direct seeding for maize after wheat harvest to save time and labor, and full ploughing for cotton to ensure good soil structure.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer with 50 years of experience in Quzhou, Hebei, allocates 9 mu to the familiar wheat-maize double-cropping rotation and reduces cotton to 3 mu due to declining household labor as younger family members work off-farm. Seed choices favor locally proven improved and hybrid varieties from the village supply store rather than new experimental types. Nitrogen rates are higher than extension recommendations, reflecting decades of experience prioritizing yield security. Potassium use is minimal due to longstanding habit and no perceived yield response. Irrigation follows traditional timing benchmarks rather than soil moisture monitoring. Cotton receives intensive pesticide applications from years of experience with aphid and bollworm pressure. Tillage practices are conservative: rotary tillage for wheat, no-till direct seeding for maize after wheat harvest to save time and labor, and full ploughing for cotton to ensure good soil structure."
+  },
+  "elapsed_seconds": 53.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_2",
+  "tier": 2,
+  "provider": "claude"
+}

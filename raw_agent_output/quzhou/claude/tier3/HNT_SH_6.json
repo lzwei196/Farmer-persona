@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed these 8 mu for 40 years now. I finished middle school, so I can read the fertilizer bags and I pay attention when the agro-store owner explains things, but mostly I do what worked last year with small adjustments.\n\nMy land is split. I keep about 6 mu on the wheat-maize rotation \u2014 that's the main business, the grain feeds us and the rest goes to the buyer. The other 2 mu I put in cotton. Cotton used to be bigger around here but the price isn't what it was, still I keep a bit because the soil on that plot is lighter and cotton handles it better, and my wife does the picking.\n\n**Winter wheat (6 mu):** I plant in mid-October after the maize comes off. I use the improved variety everyone here plants \u2014 \u6d4e\u9ea6 type seed from the village dealer, about 15 kg per mu. Before planting I spread 50 kg of compound fertilizer (15-15-15) per mu as base, plus about 20 kg of diammonium phosphate. At green-up in spring I topdress with 15 kg urea per mu \u2014 that gives me roughly 22 kg N, 10 kg P, 8 kg K per mu all told. I irrigate from the well twice \u2014 once before winter to lock in moisture, once at jointing. Spray maybe 2 times for aphids and powdery mildew. I expect around 500 kg per mu. If I skimp on nitrogen the grain is thin, and thin grain means the buyer pays less \u2014 not worth saving 30 yuan.\n\n**Summer maize (6 mu):** Right after wheat harvest I sow maize directly, no-till with the seeder \u2014 saves time and the stubble holds moisture. Hybrid seed, \u90d1\u5355 or \u767b\u6d77 type, about 2.5 kg per mu. I sideband 40 kg of compound (15-15-15) at sowing and topdress 20 kg urea at the big trumpet stage. So about 18 kg N, 6 kg P, 6 kg K. One irrigation at tasseling if the rain doesn't come. Two sprays \u2014 one for armyworm, one for borer. I expect 550 kg per mu. Maize here yields well if you don't run short of water at tasseling.\n\n**Cotton (2 mu):** I plough this plot in spring \u2014 cotton needs loose soil for the roots. Improved variety, not the GM seed my neighbor uses; I stick with what I know. Before planting I put 40 kg compound plus 15 kg urea spread later, and some potash because cotton likes potassium \u2014 about 18 kg N, 7 kg P, 10 kg K per mu. Irrigate 3 times through the season. Cotton needs more spraying than grain \u2014 at least 5 applications for bollworm, aphids, mites. I expect about 260 kg seed cotton per mu. It's more work per mu than grain, but the 2 mu is manageable with family labor.\n\nI'm not going to change much from last year. Fertilizer prices are a bit high this spring but I won't cut back \u2014 a thin crop costs me more than the fertilizer saves.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I keep 6 mu on the wheat-maize rotation that my family has run for years and put 2 mu of cotton on the lighter plot. I stick close to last year's rates because they worked \u2014 improved wheat seed with base compound plus spring urea topdress, no-till hybrid maize straight after wheat harvest, and cotton on ploughed ground with extra potash and more sprays since bollworm pressure is real. Fertilizer is expensive this year but I'd rather spend a bit more than risk a thin harvest; the lost grain price hurts more than the saved input cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I keep 6 mu on the wheat-maize rotation that my family has run for years and put 2 mu of cotton on the lighter plot. I stick close to last year's rates because they worked \u2014 improved wheat seed with base compound plus spring urea topdress, no-till hybrid maize straight after wheat harvest, and cotton on ploughed ground with extra potash and more sprays since bollworm pressure is real. Fertilizer is expensive this year but I'd rather spend a bit more than risk a thin harvest; the lost grain price hurts more than the saved input cost."
+  },
+  "elapsed_seconds": 38.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_6",
+  "tier": 3,
+  "provider": "claude"
+}

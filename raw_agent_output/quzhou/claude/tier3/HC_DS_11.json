@@ -1,0 +1,40 @@
+{
+  "raw_response": "I been farming this land 50 years. Same wheat after maize, maize after wheat, like my father did, like everyone around here does.\n\nMy 8.7 mu, I split it simple \u2014 wheat goes in October after the maize comes off, maize goes in June after I cut the wheat. No changing that.\n\nFor seed, I go to the same dealer in town. For maize I buy the hybrid seed, everyone buys hybrid now, the old seeds don't yield. Wheat I buy the improved variety, whichever bag the dealer says is selling good this year. My neighbor Old Wang had good wheat last year so I ask him what he planted.\n\nFertilizer I think in bags. For wheat base I put one bag of the \u4e8c\u94f5 (DAP, 50 jin \u2014 25 kg) per mu when I plow, then come spring when the wheat greens up I throw urea, maybe 40-50 jin per mu. That's what works. If I put less I worry the yield drops, and a bad harvest hurts more than spending a bit extra on fertilizer. I add some potassium too, maybe 20 jin per mu, the dealer sells a bag.\n\nMaize I put less base fertilizer, the soil already has something left from wheat. One bag compound \u590d\u5408\u80a5 at sowing, then urea at knee-high stage, maybe 40 jin. \n\nWater \u2014 wheat needs watering. I water before winter so it goes through the cold, then green-up water in spring, then one more when the grain fills. Three times. My well works fine. Maize in summer the rain usually comes, I only water once or twice if it's dry, mostly at tasseling.\n\nPesticide \u2014 wheat I spray once for weeds in spring, once for aphids before harvest. Maize I spray once for the borer worm, sometimes twice if I see them bad.\n\nTillage \u2014 after maize comes off I rotary the stalks in and plant wheat right away. After wheat I don't plow, I just drill the maize straight into the stubble, everyone does it this way now, saves diesel and time.\n\nYield \u2014 last few years my wheat gives maybe 900 jin per mu, maize 1100-1200 jin per mu when the weather is good. I expect about the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 575\n    }\n  ],\n  \"reasoning_summary\": \"I do what I always do, same as the neighbors. Wheat after maize, maize after wheat, 8.7 mu both seasons. Hybrid maize seed and improved wheat seed from the dealer in town. For wheat I put one bag DAP at plowing and top with urea in spring, plus some potassium \u2014 about 28 kg N, 11 kg P, 6 kg K per mu. Three waterings for wheat: before winter, green-up, grain fill. For maize less base fertilizer since soil still has something, then urea at knee-high \u2014 22 kg N, 6 kg P, 5 kg K. Two sprays each crop for weeds and bugs. Rotary for wheat after maize stalks, no-till for maize into wheat stubble. I'd rather put a little extra fertilizer than risk a bad harvest \u2014 fertilizer is just money, but a bad year hurts everything.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 575
+      }
+    ],
+    "reasoning_summary": "I do what I always do, same as the neighbors. Wheat after maize, maize after wheat, 8.7 mu both seasons. Hybrid maize seed and improved wheat seed from the dealer in town. For wheat I put one bag DAP at plowing and top with urea in spring, plus some potassium \u2014 about 28 kg N, 11 kg P, 6 kg K per mu. Three waterings for wheat: before winter, green-up, grain fill. For maize less base fertilizer since soil still has something, then urea at knee-high \u2014 22 kg N, 6 kg P, 5 kg K. Two sprays each crop for weeds and bugs. Rotary for wheat after maize stalks, no-till for maize into wheat stubble. I'd rather put a little extra fertilizer than risk a bad harvest \u2014 fertilizer is just money, but a bad year hurts everything."
+  },
+  "elapsed_seconds": 45.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_11",
+  "tier": 3,
+  "provider": "claude"
+}

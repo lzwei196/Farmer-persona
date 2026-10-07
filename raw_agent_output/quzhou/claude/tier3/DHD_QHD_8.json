@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think through this as the farmer, then give my plan.\n\nMy land is 10.1 mu. I put 8 mu into wheat-maize rotation like most folks here \u2014 that's my main food and cash. The other 2.1 mu I keep in cotton because I've grown it for years and my daughter-in-law helps pick it. With 7 mouths and some of the children working in town sending money back, I'm not desperate, but every bag of fertilizer is still 150-180 yuan I have to count.\n\nFor wheat (winter), I'll sow Jimai or Shi-xin improved variety like my neighbors \u2014 about 15 kg seed per mu. I'll spread 40 kg of diammonium phosphate (\u4e8c\u94f5) before ploughing as base fertilizer, then topdress 20 kg of urea at jointing when I irrigate. That gives me roughly 18 kg N, 8 kg P per mu. Potash I add maybe 5 kg as compound fertilizer \u2014 the soil here isn't short of potassium but a little helps. I'll irrigate 3 times: before winter, at jointing, and at grain-filling. Two sprays for aphids and powdery mildew should do.\n\nFor maize (summer) after wheat, I go straight no-till with the planter \u2014 that's how everyone does it now. Zhengdan 958 or Xianyu hybrid seed. I sidedress 25 kg urea at big trumpet stage plus 15 kg compound at planting. One irrigation if July is dry, usually the rain is enough. One spray for corn borer.\n\nFor cotton, I use improved Bt seed \u2014 it saves me many sprays. Cotton eats more fertilizer so I put 50 kg compound plus extra urea. More irrigation and still 4-5 sprays for bollworm and aphids even with Bt. Yield is lower than before but the price is okay.\n\nI put slightly more fertilizer than the extension man says \u2014 at my age I can't risk a bad harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I am 70 and farm 10.1 mu with my family's help. I keep 8 mu in the wheat-maize rotation everyone around me follows and 2.1 mu in Bt cotton that my daughter-in-law helps pick. I use improved wheat seed, hybrid maize, and Bt cotton because my neighbors had good results with them. I apply fertilizer a little heavier than the extension advice \u2014 at my age a bad harvest scares me more than wasting a bag of urea. I irrigate wheat three times from the well, maize usually only once since summer rain is enough, and cotton four times because it drinks more. I spray minimally on grain but cotton still needs 4-5 sprays even with Bt seed.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I am 70 and farm 10.1 mu with my family's help. I keep 8 mu in the wheat-maize rotation everyone around me follows and 2.1 mu in Bt cotton that my daughter-in-law helps pick. I use improved wheat seed, hybrid maize, and Bt cotton because my neighbors had good results with them. I apply fertilizer a little heavier than the extension advice \u2014 at my age a bad harvest scares me more than wasting a bag of urea. I irrigate wheat three times from the well, maize usually only once since summer rain is enough, and cotton four times because it drinks more. I spray minimally on grain but cotton still needs 4-5 sprays even with Bt seed."
+  },
+  "elapsed_seconds": 35.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_8",
+  "tier": 3,
+  "provider": "claude"
+}

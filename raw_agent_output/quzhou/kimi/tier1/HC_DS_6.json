@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy-two years old now, and I have been working this land in Quzhou since I was a young bride. My husband passed years ago, but I still know every corner of our fields. I went to junior high school, so I can read the numbers on the fertilizer bags and I have listened to what the extension people say at the village meetings, but at my age I trust what I have seen with my own eyes more than any book.\n\nThis year I will keep doing what has always worked for our family: winter wheat and summer maize on the same four mu of land. I am too old to start growing cotton or vegetables \u2014 that is too much bending and too much risk. The wheat-maize rotation gives us grain for eating and some cash from selling the surplus. My son helps me during planting and harvest, but most days it is just me out there, so I cannot manage a big area.\n\nFor the wheat, I will rotary till the field in early October after the maize stubble is dealt with. I will sow improved wheat seed, about thirty jin per mu. Before sowing I will spread about fifty kilograms of compound fertilizer per mu \u2014 the bag says it has nitrogen, phosphorus, and potassium mixed together. At jointing time in spring, I will topdress with urea because the wheat needs a boost then. I irrigate three times: once in winter if the soil is too dry, once when the wheat greens up, and once at grain filling. I also spray pesticides three times \u2014 herbicide after sowing, then insecticide and fungicide when the weather turns warm and the pests show up. I expect about 450 kilograms per mu if the weather cooperates.\n\nFor the summer maize, I plant right after wheat harvest in mid-June. There is almost no time between crops, so I do no-tillage planting \u2014 I learned this from my neighbor and it saves my back too. I use hybrid maize seed, one package per mu. I put down compound fertilizer at planting, then side-dress with urea when the maize is knee-high. Maize needs less water than wheat here, so I irrigate twice \u2014 once if it is dry after planting, and again at tasseling. Two pesticide sprays are enough: herbicide once, and insecticide for the corn borers. I expect about 550 kilograms per mu.\n\nSome people say I should cut back on fertilizer to save money, but I would rather put a little too much than risk a bad harvest. A hungry winter is worse than wasting a few yuan on urea. I watch what my neighbors do, and most of them apply about the same amounts. That is good enough for me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double cropping system on my four mu because it is familiar, reliable, and fits my limited labor at age seventy-two. I use rotary tillage for wheat and no-tillage for maize to save time and effort between the tight turnaround. I apply moderate fertilizer rates based on what has worked in past years and what my neighbors use, irrigating three times for wheat and twice for maize. I choose improved wheat seed and hybrid maize seed because they are readily available and give stable yields. I would rather risk slightly over-fertilizing than face a failed harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double cropping system on my four mu because it is familiar, reliable, and fits my limited labor at age seventy-two. I use rotary tillage for wheat and no-tillage for maize to save time and effort between the tight turnaround. I apply moderate fertilizer rates based on what has worked in past years and what my neighbors use, irrigating three times for wheat and twice for maize. I choose improved wheat seed and hybrid maize seed because they are readily available and give stable yields. I would rather risk slightly over-fertilizing than face a failed harvest."
+  },
+  "elapsed_seconds": 131.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DS_6",
+  "tier": 1,
+  "provider": "kimi"
+}

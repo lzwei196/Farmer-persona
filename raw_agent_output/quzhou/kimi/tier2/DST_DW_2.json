@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 45-year-old farmer with 15 years of experience farming these 6 mu in Quzhou. I have a household of seven to feed, so I need to get the most out of this land without taking foolish risks. I have been doing the wheat-maize double crop rotation for years, and it is what works on the North China Plain. My well gives me water when the rains do not come, but I still need to be careful with costs.\n\nFor wheat, I will plant an improved variety in autumn right after deep rotary tillage. I have learned that a well-prepared seedbed matters for winter wheat. I will apply fertilizer\u2014mainly nitrogen, but also some phosphorus and potassium\u2014because the soil here needs it after taking out the maize. I will irrigate four times: before winter, at green-up, at jointing, and at flowering. Those are the critical times. I will spray pesticide three times to deal with aphids and powdery mildew, which always show up.\n\nFor maize, I will plant a hybrid variety immediately after wheat harvest in early June. Timing is everything for the summer crop, so I will use no-tillage planting to save time and keep soil moisture. Maize grows fast and needs water during the big growth period and grain filling, so I will irrigate three times. I will apply nitrogen and some P and K, but not as much as wheat because maize is efficient. I will spray pesticide twice, mainly to control corn borer and armyworm. I expect good yields if the weather cooperates\u2014wheat around 450 jin per mu is normal for me, and maize can reach 550 jin per mu with a hybrid.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 6 mu with a wheat-maize double cropping system to feed my household of seven. For winter wheat, I use improved seed with rotary tillage, apply N-P-K fertilizer, irrigate four times at critical growth stages, and spray pesticide three times against aphids and disease. For summer maize, I plant hybrid seed immediately after wheat harvest using no-tillage to save time and moisture, apply fertilizer, irrigate three times during fast growth and grain filling, and spray twice for corn borer and armyworm. These decisions balance yield, cost, and the limited growing season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 6 mu with a wheat-maize double cropping system to feed my household of seven. For winter wheat, I use improved seed with rotary tillage, apply N-P-K fertilizer, irrigate four times at critical growth stages, and spray pesticide three times against aphids and disease. For summer maize, I plant hybrid seed immediately after wheat harvest using no-tillage to save time and moisture, apply fertilizer, irrigate three times during fast growth and grain filling, and spray twice for corn borer and armyworm. These decisions balance yield, cost, and the limited growing season."
+  },
+  "elapsed_seconds": 45.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_2",
+  "tier": 2,
+  "provider": "kimi"
+}

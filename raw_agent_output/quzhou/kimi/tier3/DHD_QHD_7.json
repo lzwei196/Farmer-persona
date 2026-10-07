@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this 10.1 mu of land in Quzhou County for 40 years. I am 55 now and I finished middle school. My wife and I live here. My son works in a factory in Shijiazhuang and sends money home, but the farm still needs to pay for itself.\n\nRight now it is April and my winter wheat is turning green in the field. I planted it last October after the maize harvest. I used an improved wheat variety \u2014 I bought the seed from the agricultural supply shop in town, about 30 jin per mu. Before sowing, I plowed the field and put down base fertilizer: one 50 kg bag of compound fertilizer per mu, the 15-15-15 type. Now at jointing time, I will top-dress with about 20 kg of urea per mu. In total that comes to about 18 kg of nitrogen, 7 kg of phosphorus, and 7 kg of potassium per mu for the wheat. Some neighbors put more nitrogen, but Lao Wang uses about the same and he got 500 kg per mu last year, so I copy him. I will irrigate three times for this wheat: once before winter, once now at jointing, and once at heading in May. I already sprayed herbicide once in March, and I will spray one more time if I see aphids or rust. I expect about 500 kg per mu.\n\nAfter wheat harvest in early June, I will immediately plant hybrid maize. There is no time to waste \u2014 I use rotary tillage right after the combine leaves, then sow. I buy hybrid seed, about 3 kg per mu. For fertilizer, I put 40 kg of compound fertilizer per mu as base, and at the big trumpet stage in July I spread 20 kg of urea. That is about 15 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. I irrigate twice: once at trumpet stage in July, and once in August during grain filling. I spray pesticide twice \u2014 once for corn borer and once depending on what insects show up. I expect about 580 kg per mu.\n\nI learned all this from doing it year after year and watching what works on my neighbors' fields. I do not trust outside advice unless I saw it work with my own eyes. Fertilizer is expensive now \u2014 urea is over 100 yuan per bag \u2014 but I would rather apply a bit too much than risk losing yield. A bad harvest is a disaster; wasting some fertilizer is just a cost. Last year was decent, so I will do the same this year. My son's off-farm income helps when I need to hire the combine or buy inputs, but I still count every yuan carefully.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 10.1 mu for 40 years and I do what worked before. My wheat is in the field now \u2014 I put one bag of compound fertilizer per mu last fall and I will add 20 kg urea at jointing, giving about 18 kg nitrogen, 7 kg phosphorus, and 7 kg potassium per mu, with three irrigations and two sprays, hoping for 500 kg per mu. After harvest I will rotary-till and plant hybrid maize with 40 kg compound base and 20 kg urea top-dress, about 15 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu, two irrigations, two sprays, expecting 580 kg per mu. I copy my neighbors and I would rather spend too much on fertilizer than risk a bad harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I have farmed this 10.1 mu for 40 years and I do what worked before. My wheat is in the field now \u2014 I put one bag of compound fertilizer per mu last fall and I will add 20 kg urea at jointing, giving about 18 kg nitrogen, 7 kg phosphorus, and 7 kg potassium per mu, with three irrigations and two sprays, hoping for 500 kg per mu. After harvest I will rotary-till and plant hybrid maize with 40 kg compound base and 20 kg urea top-dress, about 15 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu, two irrigations, two sprays, expecting 580 kg per mu. I copy my neighbors and I would rather spend too much on fertilizer than risk a bad harvest."
+  },
+  "elapsed_seconds": 140.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_QHD_7",
+  "tier": 3,
+  "provider": "kimi"
+}

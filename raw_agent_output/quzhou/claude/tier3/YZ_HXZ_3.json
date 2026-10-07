@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am sitting here thinking about this year's planting. My body is not as strong as before, and with just me in the household, I must think carefully about what I can manage alone.\n\nMy land is 10.1 mu. Last year cotton did alright, price was not bad, so I will keep cotton as my main crop. I plan to give cotton about 6 mu \u2014 it is what I know best after 40 years, and the machinery services in our village can help with the heavy work. Chili I will plant on 2.5 mu. Chili brings good money if the price holds, but it takes a lot of picking work. I cannot do more than 2.5 mu alone. The rest, 1.6 mu, I will plant mungbean. Mungbean does not need much care, and it rests the soil \u2014 old people in our village always said beans make the land fatter.\n\nFor **cotton**, I will buy improved hybrid seed from the agricultural supply store \u2014 the Bt type that resists bollworm, everyone around me uses it. I will apply about 2 bags of compound fertilizer (one bag 50 jin) before planting, that gives me roughly 18 kg nitrogen, 9 kg phosphorus, 9 kg potassium per mu. I topdress with urea when flowering starts. I will irrigate from the well 3 times \u2014 before planting, at budding, and at boll-setting. Cotton always needs many pesticide sprays, I expect 6 times for aphids, mirids, and bollworm even with Bt seed. I use the small rotary cultivator, plough every 2-3 years. I hope for 270 kg seed cotton per mu, like last year.\n\nFor **chili**, I plant improved seed from the dealer \u2014 long red type that dries well. Chili is hungry, so I put more fertilizer, about 22 kg N, 12 kg P, 18 kg K per mu, with farmyard manure mixed in if I have any. Chili needs water, I will irrigate 6 times from the well. Pests and disease come often on chili, I spray maybe 7 times. Plough deep before planting. If weather is good, 350 kg dried chili per mu is possible.\n\nFor **mungbean**, I use the local variety my neighbor shares \u2014 it is cheap and does well here. Mungbean does not need much fertilizer because the root makes its own nitrogen, I only put a little compound fertilizer, about 4 kg N, 6 kg P, 4 kg K. One irrigation at flowering if the rain fails. One or two sprays for aphids. Rotary till only. 130 kg per mu is a normal harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 270\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 130\n    }\n  ],\n  \"reasoning_summary\": \"I am 62 and farm alone, so I must match crops to the labor I can give. Cotton takes most of my land at 6 mu because I know it best and machinery helps; I use Bt hybrid seed and follow what my neighbors do with 2 bags compound fertilizer plus urea topdressing. Chili on 2.5 mu is my cash crop, worth the extra fertilizer and spraying if I can manage the picking. Mungbean on 1.6 mu needs little work and rests the soil for next year's cotton. I keep fertilizer close to last year because changing too much is risky \u2014 a bad harvest would hurt more than saving a few yuan on fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 270
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 6,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.6,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 130
+      }
+    ],
+    "reasoning_summary": "I am 62 and farm alone, so I must match crops to the labor I can give. Cotton takes most of my land at 6 mu because I know it best and machinery helps; I use Bt hybrid seed and follow what my neighbors do with 2 bags compound fertilizer plus urea topdressing. Chili on 2.5 mu is my cash crop, worth the extra fertilizer and spraying if I can manage the picking. Mungbean on 1.6 mu needs little work and rests the soil for next year's cotton. I keep fertilizer close to last year because changing too much is risky \u2014 a bad harvest would hurt more than saving a few yuan on fertilizer."
+  },
+  "elapsed_seconds": 37.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_3",
+  "tier": 3,
+  "provider": "claude"
+}

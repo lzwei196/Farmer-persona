@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 75 years old and have been working this land in Quzhou County for 55 years. I never went to school, but the fields have been my only teacher. My plot is just 3 mu \u2014 small, but it feeds me and my wife. We have a well for irrigation, so when the sky doesn't give us water, I can pump it myself. But diesel for the pump costs money, so I don't waste a drop.\n\nFor the winter wheat, I will sow the whole 3 mu after the autumn harvest, once the soil cools down. I buy improved seed from the county supply shop \u2014 not the fancy kinds, but the ones my neighbors and I have grown for years because they don't fail. I run the rotary tiller to break up the stubble and make a smooth bed. Wheat needs its food: I spread fertilizer before sowing and then topdress in the spring when the wheat greens up. I will irrigate three times \u2014 once right after sowing so the seed catches, once at green-up in March, and once when the heads come out. I don't believe in spraying too much poison. Maybe twice: a herbicide after planting, and a fungicide in spring if the leaves start spotting.\n\nFor the summer maize, the race starts the day the wheat comes off in June. Every day lost is a day stolen from the corn. I plant hybrid seed \u2014 my father grew the old traditional corn, but these hybrids give much more grain and resist lodging better. I don't till for the maize; I plant straight into the wheat stubble to save time and keep the moisture in the ground. Corn is hungry, especially when it gets knee-high, so I give it a good dose of nitrogen then. Summer usually brings some rain, so two irrigations from the well should be enough if I time them right \u2014 one at jointing, one at filling. Two sprays: a herbicide at planting, and insecticide if the corn borers appear, which they usually do.\n\nI have learned not to expect miracles. If the weather holds and I do my part, 450 kg per mu of wheat and 550 kg per mu of maize is what this land gives me. Some years are kinder, some are harder, but I know my field.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 3 mu plot for 55 years and know what works. I sow improved wheat in autumn with rotary tillage, fertilize modestly, irrigate three times from my well, and spray twice. After the June wheat harvest, I immediately plant hybrid maize using no-tillage to save time and moisture, feed it nitrogen at jointing, irrigate twice, and spray for weeds and borers. My expectations are 450 kg/mu for wheat and 550 kg/mu for maize \u2014 honest yields from this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this 3 mu plot for 55 years and know what works. I sow improved wheat in autumn with rotary tillage, fertilize modestly, irrigate three times from my well, and spray twice. After the June wheat harvest, I immediately plant hybrid maize using no-tillage to save time and moisture, feed it nitrogen at jointing, irrigate twice, and spray for weeds and borers. My expectations are 450 kg/mu for wheat and 550 kg/mu for maize \u2014 honest yields from this land."
+  },
+  "elapsed_seconds": 86.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_6",
+  "tier": 2,
+  "provider": "kimi"
+}

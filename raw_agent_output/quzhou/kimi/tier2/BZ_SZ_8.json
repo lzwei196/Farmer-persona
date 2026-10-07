@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this land for 25 years, and I know what works here in Quzhou County. With 8 mu of good flat land and a well for irrigation, I stick to the wheat-maize double-cropping system that feeds my household of seven. Some of my family works off-farm, so I cannot afford to waste labor or time. I plant the whole 8 mu to winter wheat in October, harvest it in early June, and immediately put in summer maize on the same 8 mu. That is how we get two crops from one piece of land each year.\n\nFor the winter wheat, I will rotary till the soil before sowing and use an improved local wheat variety \u2014 the same kind my neighbors use, because I trust what I see in the fields around me. I will spread compound fertilizer as a basal dose and then topdress with urea in spring when the wheat greens up. Wheat needs water at key stages, so I will irrigate four times: once before winter to help it survive the cold, once at jointing, once at heading, and once during grain filling if the weather turns dry. I will spray herbicide once after sowing and use insecticide or fungicide twice if I see aphids or rust starting.\n\nFor the summer maize, time is short between wheat harvest and planting, so I will plant directly into the wheat stubble with no-tillage to save labor and catch the season. Everyone here grows hybrid maize now \u2014 the yields are much better than the old types. I will apply compound fertilizer at planting and add urea when the maize is knee-high. Maize does not need as much water as wheat, but I will irrigate twice: once around the jointing stage and again at silking, because that is when the kernels set. I will spray herbicide once and insecticide once or twice, especially if the corn borer shows up.\n\nI expect about 500 kg per mu of wheat and a bit more than 500 kg per mu of maize if the weather cooperates. I do not chase record yields \u2014 I aim for steady, reliable harvests that cover my family\u2019s grain needs and leave some to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.0,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 4.0,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15.0,\n      \"phosphorus_kg_per_mu\": 5.0,\n      \"potassium_kg_per_mu\": 4.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage all 8 mu under wheat-maize double cropping because that is the proven system here in Quzhou County. I rotary till before wheat sowing and use an improved wheat variety, applying compound fertilizer plus urea topdressing and irrigating four times. For summer maize, I plant a hybrid variety immediately after wheat harvest using no-tillage to save time, with compound fertilizer and urea, two irrigations, and two pesticide sprays. This schedule matches what successful neighbors do and fits my household labor constraints.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.0,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 4.0,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15.0,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 4.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage all 8 mu under wheat-maize double cropping because that is the proven system here in Quzhou County. I rotary till before wheat sowing and use an improved wheat variety, applying compound fertilizer plus urea topdressing and irrigating four times. For summer maize, I plant a hybrid variety immediately after wheat harvest using no-tillage to save time, with compound fertilizer and urea, two irrigations, and two pesticide sprays. This schedule matches what successful neighbors do and fits my household labor constraints."
+  },
+  "elapsed_seconds": 283.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 2,
+  "provider": "kimi"
+}

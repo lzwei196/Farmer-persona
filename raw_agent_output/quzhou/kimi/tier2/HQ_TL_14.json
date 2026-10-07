@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62 years old and have been farming these fields in Quzhou since I was a boy. My father taught me, and now my wife and I manage 25 mu of land together. We don't have children working the farm anymore \u2014 it's just the two of us \u2014 so I can't afford to take risks or try fancy new methods. I stick with what I know: wheat in winter, maize in summer.\n\nFor the wheat this year, I will plant an improved variety in mid-October on all 25 mu. I've used saved seed before, but the yield dropped, so now I buy fresh seed from the local seed station. Before sowing, I'll do rotary tillage to prepare the bed. For fertilizer, I will spread about 100 jin of compound fertilizer per mu before planting \u2014 the 19-22-7 type that the shop always has \u2014 and then topdress with another 50 jin of urea at jointing in spring. The extension agent keeps saying we use too much nitrogen, but last year I put down roughly this amount and got nearly 1000 jin per mu. At my age, I'm not going to gamble with less and regret it. I have a well, so I'll irrigate three times: once before winter to help the seedlings survive, once at jointing, and once at flowering. Electricity for pumping costs money, but dry wheat is worthless wheat. I'll spray pesticide three times total \u2014 herbicide once after the wheat comes up, and insecticide twice later when the aphids show up.\n\nFor summer maize, I plant right after the wheat harvest in early June. The window is tight \u2014 sometimes only a few days \u2014 so I use no-tillage planting. Everyone in the village does it this way now. I buy hybrid seed, about one package per mu; the variety depends on what's available at the shop, usually something like Nongda 372. At planting I put down about 100 jin of compound fertilizer per mu. I irrigate twice if the rain is not enough, usually at the big flare stage and during grain filling. I'll spray pesticide twice \u2014 once for weeds and once for corn borers. If the weather is normal, I expect about 1100 jin per mu, same as last year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 25.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 25.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this wheat-maize rotation for 50 years and trust what has worked: improved wheat seed with rotary tillage, hybrid maize with no-tillage after wheat harvest, compound fertilizer plus urea topdressing for wheat and compound at planting for maize, well irrigation three times for wheat and twice for maize, and pesticide spraying when weeds and insects appear. My wife and I are the only laborers, so I avoid risky experiments and stick to the practices that reliably give me about 1000 jin of wheat and 1100 jin of maize per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 25.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 25.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed this wheat-maize rotation for 50 years and trust what has worked: improved wheat seed with rotary tillage, hybrid maize with no-tillage after wheat harvest, compound fertilizer plus urea topdressing for wheat and compound at planting for maize, well irrigation three times for wheat and twice for maize, and pesticide spraying when weeds and insects appear. My wife and I are the only laborers, so I avoid risky experiments and stick to the practices that reliably give me about 1000 jin of wheat and 1100 jin of maize per mu."
+  },
+  "elapsed_seconds": 131.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HQ_TL_14",
+  "tier": 2,
+  "provider": "kimi"
+}

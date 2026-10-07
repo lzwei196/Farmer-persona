@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 56, been working this land 35 years. No school \u2014 I learned from my mother and from watching what works. My 5 mu is everything we eat and everything we sell. My husband helps but our son is in the city so mostly it is me.\n\nLet me think how I do it this year, same as before mostly.\n\nWheat first. I plant in October after the maize comes off. I use the seed the dealer in town sells \u2014 everyone buys from him, good seed, not the old kind my mother used. I put down the compound fertilizer before plowing, maybe 2 bags of the 15-15-15 for the whole 5 mu, that is one bag for 2.5 mu. Then when wheat is growing in spring I top-dress with urea, one bag of urea for the 5 mu. My neighbor Old Wang does the same and his wheat is good.\n\nFor water, I pump from the well. Wheat needs water in winter once before it freezes, then in spring when it is jointing, then when the grain is filling. Three times. If rain comes I skip one.\n\nPesticide \u2014 I spray once for the aphids in spring, sometimes twice if I see many. Weeds I spray once after planting.\n\nPlowing \u2014 I hire the tractor man, he does rotary tilling, 40 yuan per mu I think. Everyone does this now, nobody uses animals anymore.\n\nYield \u2014 good year I get maybe 450 kg per mu of wheat. Bad year 350. I say 420.\n\nMaize in summer after wheat. Same dealer, hybrid seed, everyone uses hybrid now. I put compound fertilizer at planting, about one bag for the 5 mu, then urea when the maize is knee-high, one bag, then another half bag when it tassels. Maize eats a lot, I learned this \u2014 if you skimp on fertilizer the ears are small and you lose more than you save.\n\nWater \u2014 maize in summer sometimes rain is enough, but I irrigate 2 times usually, at jointing and at tasseling. If dry year, 3 times.\n\nPesticide \u2014 maize borer I spray once, sometimes armyworm too, so 2 times.\n\nNo-till for maize, I just plant into the wheat stubble, the machine does it. Saves money, saves time.\n\nMaize yield \u2014 550 kg per mu usual. I say 550.\n\nWhy I do it this way: fertilizer is expensive but losing the harvest is worse. I would rather put a little extra than come up short. I do what works and what Old Wang and the others do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5 mu like my neighbors. I buy compound fertilizer and urea from the town dealer \u2014 2 bags compound plus 1 bag urea for wheat, similar for maize with extra urea at tasseling because maize is hungry. I use improved wheat seed and hybrid maize seed, everyone does now. I irrigate from the well three times for wheat, two times for maize unless it is dry. Spray once or twice for pests. I hire the tractor for rotary tilling before wheat and plant maize no-till into the stubble. I would rather use a little extra fertilizer than lose the harvest \u2014 a bad year is disaster, wasted fertilizer is just a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 5 mu like my neighbors. I buy compound fertilizer and urea from the town dealer \u2014 2 bags compound plus 1 bag urea for wheat, similar for maize with extra urea at tasseling because maize is hungry. I use improved wheat seed and hybrid maize seed, everyone does now. I irrigate from the well three times for wheat, two times for maize unless it is dry. Spray once or twice for pests. I hire the tractor for rotary tilling before wheat and plant maize no-till into the stubble. I would rather use a little extra fertilizer than lose the harvest \u2014 a bad year is disaster, wasted fertilizer is just a cost."
+  },
+  "elapsed_seconds": 27.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

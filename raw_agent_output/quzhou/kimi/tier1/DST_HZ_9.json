@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 41-year-old farmer in Quzhou County. I have been farming this land since I was young, and I know what works here. Everybody around me grows the same thing \u2014 winter wheat followed by summer maize. That is the only sensible system for our land and our climate. We have good well irrigation here, so I can manage two crops a year.\n\nThis spring, my winter wheat is already in the ground. I sowed it last October with an improved variety, and now it is greening up. I will topdress it with urea at jointing and irrigate three more times before harvest in June. After I cut the wheat, I will immediately plant hybrid maize \u2014 no time to waste. I use no-tillage for the maize because the soil is already prepared from the wheat season, and I hire a machine to drill the seed straight into the stubble. For inputs, I follow what my neighbors do. I know fertilizer is expensive, but I would rather apply a bit more than risk losing yield. A bad harvest means I cannot pay for my children's schooling. I buy compound fertilizer from the dealer in town \u2014 the special blend that everyone uses here. I do not write down calculations, but I know roughly how many bags I need for each field.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 3.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 2.4,\n      \"potassium_kg_per_mu\": 2.8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat and maize in double cropping because that is what every farmer in Quzhou does and what our land supports. I use an improved wheat variety and hybrid maize seed, apply compound fertilizer and urea at standard local rates, irrigate regularly from our well, and control pests with 3-4 sprays per crop. I till before wheat with a rotary tiller and plant maize no-till directly after wheat harvest to save time and labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 3.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 2.4,
+        "potassium_kg_per_mu": 2.8,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow wheat and maize in double cropping because that is what every farmer in Quzhou does and what our land supports. I use an improved wheat variety and hybrid maize seed, apply compound fertilizer and urea at standard local rates, irrigate regularly from our well, and control pests with 3-4 sprays per crop. I till before wheat with a rotary tiller and plant maize no-till directly after wheat harvest to save time and labor."
+  },
+  "elapsed_seconds": 85.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_9",
+  "tier": 1,
+  "provider": "kimi"
+}

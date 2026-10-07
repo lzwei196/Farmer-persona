@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 5 mu in Quzhou for 25 years. I went to middle school, then came back to work the land my father left me. I know this soil. It is good flatland, but you cannot trust the rain alone. I have a well, and I use it.\n\nI grow wheat in winter and maize in summer. That is what everyone in this village does. Last year my wheat gave me about 500 kg per mu, and my maize gave me about 600 kg. This year I will do the same thing. Change is risky, and I have a family of five to feed. My son sends some money from his factory job, but the farming income still matters.\n\nFor wheat: I will rotary till the field in October before sowing. I plant an improved variety, not the old traditional kind, because the seed dealer showed me that it stands up better in wind and my neighbor Lao Wang got over 1000 jin per mu with it last year. I will put down 50 kg of compound fertilizer per mu as base\u2014that is one bag per mu, 15-15-15 on the label. Then at green-up time I will spread 20 kg of urea per mu, and another 10 kg at heading if the plants look yellow. That comes to about 18 kg of nitrogen, 7 kg of phosphorus, and 5 kg of potassium per mu. I will irrigate three times: once before winter if the soil is dry, once at jointing, and once at grain filling. I will spray pesticide twice: herbicide in early spring, and fungicide when the weather turns warm and damp. I expect 500 kg per mu if the frost does not kill the seedlings.\n\nFor maize: Right after wheat harvest in June, I plant hybrid maize seed directly into the stubble without tilling. No-tillage saves me two days and keeps the moisture in the ground. I put 40 kg of compound fertilizer per mu at sowing, then 25 kg of urea at the big trumpet stage. That is about 16 kg of nitrogen, 5 kg of phosphorus, and 3 kg of potassium per mu. I will irrigate twice: once after sowing if it does not rain, and once at the filling stage. I spray herbicide once and insecticide once because the corn borer always comes in July. I expect 600 kg per mu.\n\nFertilizer is expensive. Urea went up 20 yuan per bag from last year. But I would rather apply a bit too much than risk losing yield. A bad harvest is a disaster; wasting some fertilizer is just a cost. I watch my neighbors. If everyone on this block is adding more urea because of the dry spring, I will too. I do the work myself with my wife, except at harvest when I hire the combine. Every yuan I spend on inputs means less for other things, so I count carefully.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize rotation I have done for 25 years on my 5 mu in Quzhou. Last year worked, so this year I do the same: improved wheat with rotary tillage, hybrid maize with no-tillage, compound fertilizer plus urea topdress, well irrigation three times for wheat and twice for maize, and two pesticide sprays per crop. I watch my neighbors, I worry about input costs, but I would rather spend a bit more on fertilizer than risk a bad harvest that would hurt my family budget.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize rotation I have done for 25 years on my 5 mu in Quzhou. Last year worked, so this year I do the same: improved wheat with rotary tillage, hybrid maize with no-tillage, compound fertilizer plus urea topdress, well irrigation three times for wheat and twice for maize, and two pesticide sprays per crop. I watch my neighbors, I worry about input costs, but I would rather spend a bit more on fertilizer than risk a bad harvest that would hurt my family budget."
+  },
+  "elapsed_seconds": 94.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_1",
+  "tier": 3,
+  "provider": "kimi"
+}

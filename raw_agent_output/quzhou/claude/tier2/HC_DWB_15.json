@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 30 years. I know what my soil does and what my family needs. My husband and one of my sons work off-farm now, so I need crops I can mostly manage myself, with them helping during the busy times \u2014 wheat harvest and cotton picking.\n\nMy 8.2 mu splits naturally. I put 5 mu into wheat-maize rotation, the way it's always been done around here. The other 3.2 mu I keep in cotton because cotton money is better, even though it wears me out. I can't afford to give up cotton while my grandchildren are still young and expenses are high.\n\nFor wheat, I plant in October the same improved variety I've been buying for years \u2014 it's reliable. I put down phosphate fertilizer at sowing and topdress with urea twice. I irrigate four times: before sowing to get a good seedbed, at jointing, at heading, and once more at filling. I spray herbicide in winter and something for rust or aphids before harvest. My neighbor told me rotary tillage after maize is enough and saves fuel, so I do that.\n\nAfter wheat I go straight to maize in June. I buy hybrid seed, everybody does now, yields are too different not to. Maize is easier \u2014 I broadcast fertilizer, irrigate when it looks dry, and spray twice. No-tillage works fine here, the straw breaks down.\n\nCotton is the hardest. I plough in spring, transplant seedlings in late April. I irrigate five times, and I spray every two or three weeks through summer because bollworm and aphids never let up. It's tiring but I've done it so long I know the rhythm.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I split my 8.2 mu between a 5-mu wheat-maize rotation and 3.2 mu of cotton, the same way I have managed for many years. Wheat and maize follow each other on the same land \u2014 wheat goes in October, maize right after the June harvest \u2014 using improved and hybrid seed respectively, with rotary tillage before wheat and no-tillage into wheat stubble for maize. Fertilizer rates and irrigation timing follow what I have learned works on my soil over three decades, with four irrigations for wheat at the key growth stages and three for maize. Cotton occupies the rest of the land with spring ploughing, five irrigations through the long growing season, and frequent pesticide sprays to keep bollworm and aphids under control, because cotton income matters to the household even though the work is hard.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I split my 8.2 mu between a 5-mu wheat-maize rotation and 3.2 mu of cotton, the same way I have managed for many years. Wheat and maize follow each other on the same land \u2014 wheat goes in October, maize right after the June harvest \u2014 using improved and hybrid seed respectively, with rotary tillage before wheat and no-tillage into wheat stubble for maize. Fertilizer rates and irrigation timing follow what I have learned works on my soil over three decades, with four irrigations for wheat at the key growth stages and three for maize. Cotton occupies the rest of the land with spring ploughing, five irrigations through the long growing season, and frequent pesticide sprays to keep bollworm and aphids under control, because cotton income matters to the household even though the work is hard."
+  },
+  "elapsed_seconds": 52.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_15",
+  "tier": 2,
+  "provider": "claude"
+}

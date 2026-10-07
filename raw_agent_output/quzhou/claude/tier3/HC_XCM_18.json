@@ -1,0 +1,40 @@
+{
+  "raw_response": "I been farming this land 45 years. My back hurts but I still manage with my son's help when he come back from town. 11.9 mu \u2014 some years good, some years bad, but wheat-maize is what we do here in Quzhou, like everyone.\n\nI don't read books. I don't listen to them radio people much. I watch what Old Wang next door does, and what my brother-in-law does. Last year wheat gave me maybe 480 kg per mu, maize close to 550. Not bad. So I do same thing this year.\n\n**Wheat (winter):**\nI plant in early October after maize come off. I buy the improved seed from the same dealer in town \u2014 everyone buy from him, cost about 4 yuan per jin. I don't save seed no more, grandchildren tell me new seed better.\n\nFor fertilizer \u2014 one bag of \u590d\u5408\u80a5 (compound, 15-15-15) per mu when I sow, that's 50 jin, about 25 kg. Then when wheat turn green in spring, I spread urea, maybe 25-30 kg per mu. My nephew carry the bags, I just scatter by hand like always. Too little fertilizer and the wheat look yellow and thin \u2014 I rather spend extra money than watch poor wheat. A bad harvest costs much more than one bag extra.\n\nWater \u2014 I run the well two times. Once before winter so the ground don't dry out, once in spring when it start to stand up. If rain come enough in May I skip the third. Well water cost electricity, not free.\n\nSpray \u2014 herbicide one time in spring for the weeds, and one time for the bugs and rust when I see problem. Two times usually enough.\n\nI use the small tractor man \u2014 he come with rotary tiller after maize, 40 yuan per mu. Easier than the old plough.\n\n**Maize (summer):**\nStraight after wheat harvest in June. Hybrid seed, everybody plant Zhengdan or one of them. The dealer tell me what's selling good.\n\nSame like wheat \u2014 one bag compound fertilizer when I plant, then urea 20-25 kg per mu when maize reach my waist. Maize eat a lot, my father always said maize is hungry.\n\nIrrigate one time for sure when silking, maybe two times if summer dry. Quzhou summer usually get some rain.\n\nSpray one time for the borer worm, one time herbicide. If aphids bad, maybe one more.\n\nNo-till for maize \u2014 I just plant in the wheat stubble, that's how young people do it now, save money on tractor.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 11.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 11.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am old and I do what work last year and what my neighbors do. One bag compound fertilizer per mu when I sow, then urea topdress when the crop wake up or get tall \u2014 better spend extra than see yellow weak crop. Wheat I rotary till after maize come off, maize I just plant into the wheat stubble like the young ones do. Two irrigations for wheat from my well, one for maize because summer usually bring rain. Spray for weeds and bugs only when I see need. I expect around 480 kg wheat and 550 kg maize per mu, same as last year with God's blessing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 11.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 11.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am old and I do what work last year and what my neighbors do. One bag compound fertilizer per mu when I sow, then urea topdress when the crop wake up or get tall \u2014 better spend extra than see yellow weak crop. Wheat I rotary till after maize come off, maize I just plant into the wheat stubble like the young ones do. Two irrigations for wheat from my well, one for maize because summer usually bring rain. Spray for weeds and bugs only when I see need. I expect around 480 kg wheat and 550 kg maize per mu, same as last year with God's blessing."
+  },
+  "elapsed_seconds": 45.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_18",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am a 48-year-old farmer in Quzhou County with four years of experience working this land. My family has four people to feed, and I have 200 mu and a well for irrigation. Out here on the North China Plain, the wheat-maize double crop is the backbone of everything. My winter wheat went into the ground last October, so right now it is greening up and my main job is spring management. I will topdress nitrogen at reviving and again at jointing, irrigate four times through grain filling, and spray three times for aphids and powdery mildew. I use improved wheat varieties because they resist lodging and give steady yields.\n\nCome early June, right after wheat harvest, I have a narrow window to plant summer maize. I plant hybrid seed directly into the wheat stubble with no-tillage \u2014 there is no time to plow, and the straw helps hold moisture. I fertilize at planting, topdress at the big-flare stage, irrigate three times, and spray two or three times depending on corn borer pressure.\n\nI keep 25 mu for spring cabbage. It is labor-heavy but the early crop fetches a good price at market. I plant hybrid varieties, give it heavy fertilizer and five irrigations, and spray four times because caterpillars are relentless.\n\nThe remaining 15 mu I put into stevia. A buyer from Shandong purchases dried leaves at a price better than grain, so it is worth the risk. Stevia is fussy \u2014 it needs steady water, careful weeding, and moderate fertilizer with enough potassium. I plant improved seedlings, irrigate four times, spray twice, and harvest twice over summer and autumn.\n\nThis mix keeps my family fed, covers costs through grain sales, and gives me extra cash from the vegetables and specialty crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 160,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 160,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 620\n    },\n    {\n      \"crop\": \"cabbage\",\n      \"season\": \"spring\",\n      \"area_mu\": 25,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 4800\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I prioritize the wheat-maize double crop on 160 mu as my core income base, using improved wheat and hybrid maize with standard fertilizer splits and reliable irrigation from my well. For summer maize I use no-tillage to save the narrow planting window after wheat harvest. Spring cabbage on 25 mu targets early market prices with intensive inputs and frequent pest control, while 15 mu of stevia serves as a high-value specialty crop with a contracted buyer, requiring moderate nitrogen but steady water and weed management.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 160,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 160,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 620
+      },
+      {
+        "crop": "cabbage",
+        "season": "spring",
+        "area_mu": 25,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 4800
+      },
+      {
+        "crop": "stevia",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I prioritize the wheat-maize double crop on 160 mu as my core income base, using improved wheat and hybrid maize with standard fertilizer splits and reliable irrigation from my well. For summer maize I use no-tillage to save the narrow planting window after wheat harvest. Spring cabbage on 25 mu targets early market prices with intensive inputs and frequent pest control, while 15 mu of stevia serves as a high-value specialty crop with a contracted buyer, requiring moderate nitrogen but steady water and weed management."
+  },
+  "elapsed_seconds": 181.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_XCM_2",
+  "tier": 2,
+  "provider": "kimi"
+}

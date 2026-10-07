@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 72 years old. I finished primary school and then worked outside, but I have been farming my own land here in Quzhou County for 20 years now. It is just me and my wife at home \u2014 two people \u2014 and we have a well for irrigation. My farm is a bit over 10 mu, and everyone around here does wheat in winter and maize in summer, so that is what I do too. I do not try new tricks. I watch what my neighbors do, especially Lao Wang across the road, and I do what I did last year unless something went wrong.\n\nFor the winter wheat, I will rotary till the ground before sowing. I sow about 30 jin of improved wheat seed per mu \u2014 I buy the same kind Lao Wang used because his crop stood well last year. At sowing time, I put down half a bag of compound fertilizer per mu, that is 25 kg. Then in March when the wheat turns green, I spread another 30 kg of urea per mu on top. The dealer told me once that 20 kg is enough, but I would rather put a bit too much than see my wheat turn yellow. A bag of urea is over 100 yuan now, and five bags of compound fertilizer is another big cost, but losing yield is a disaster; wasting some fertilizer is just money out of pocket. I irrigate three times: once before winter to help it survive, once at jointing, and once when the grain is filling. I spray four times in total: herbicide once in early spring, insecticide twice for aphids, and fungicide once because there was rust going around two years ago. I hire a machine to spray now because my back cannot carry the tank anymore. I expect about 1000 jin per mu if the weather is normal.\n\nFor the summer maize, I plant right after the wheat harvest in June. There is no time to plough, and the neighbors all use no-tillage now, so I hire the no-till seeder too. I use hybrid seed \u2014 about 3 jin per mu, which is one and a half of those small packages. I put 20 kg of compound fertilizer per mu in the row at planting, and then when the maize gets to the big trumpet stage, I spread 35 kg of urea per mu. That is a lot of urea, but I want the ears big and full. I irrigate twice: once right after planting if the soil is dry, and once when the tassels come out. I spray three times: herbicide once, and insecticide twice for corn borer. I expect about 1200 jin per mu. All of this \u2014 seed, fertilizer, hired spraying, hired planting \u2014 costs me over 5000 yuan for the year. I have to balance it carefully. If I spend too much on fertilizer, I have less cash for hiring help, but at my age I must hire someone for the heavy work.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10.1 mu with wheat in winter and maize in summer. I use improved wheat seed with rotary tillage, and hybrid maize seed with no-tillage. I put 18 kg nitrogen, 4 kg phosphorus, and 4 kg potassium on the wheat each mu, with 3 irrigations and 4 sprays, hoping for 500 kg per mu. For maize I put 19 kg nitrogen, 3 kg phosphorus, and 3 kg potassium per mu, with 2 irrigations and 3 sprays, hoping for 600 kg per mu. I do what I did last year and what my neighbors do, because changing is risky and a bad harvest is worse than wasting a little fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 10.1 mu with wheat in winter and maize in summer. I use improved wheat seed with rotary tillage, and hybrid maize seed with no-tillage. I put 18 kg nitrogen, 4 kg phosphorus, and 4 kg potassium on the wheat each mu, with 3 irrigations and 4 sprays, hoping for 500 kg per mu. For maize I put 19 kg nitrogen, 3 kg phosphorus, and 3 kg potassium per mu, with 2 irrigations and 3 sprays, hoping for 600 kg per mu. I do what I did last year and what my neighbors do, because changing is risky and a bad harvest is worse than wasting a little fertilizer."
+  },
+  "elapsed_seconds": 281.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_6",
+  "tier": 3,
+  "provider": "kimi"
+}

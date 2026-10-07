@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old and have been farming these 12 mu in Quzhou for half a century. I never went to school, so I don't read books about farming \u2014 I go by what I have seen with my own eyes and what the neighbors do. My household has six people, but my sons and their wives work off-farm in the county town, so it's mostly me and my wife in the fields. That means I can't take on too much heavy labor, especially not all that hand-picking cotton.\n\nThis year I will keep 10 mu in the wheat-maize double crop and 2 mu in cotton. Wheat and maize are my insurance \u2014 I know them like the back of my hand, and the machines can help with harvest. Cotton brings good money per mu, but it needs too much spraying and picking, so 2 mu is enough.\n\nFor wheat, I will plant the improved variety Jimai 22, same as last year, around early October. I will rotary-till the soil before sowing \u2014 that's what everyone does. I will put down about one 50 kg bag of compound fertilizer and roughly 20 kg of urea per mu, which is about 25 kg of nitrogen. I don't bother much with phosphate or potash; the soil has been fine without it, but I'll add a little, maybe 2 kg of phosphate and 1 kg of potash per mu just in case. I will irrigate three times: green-up, jointing, and grain-filling. Pumping costs money, but three times is what my neighbors do and I don't want to risk a dry spell. I'll spray pesticides four times \u2014 herbicide once and insecticide a few times when I see bugs. I expect about 950 kg per mu if the weather holds.\n\nFor summer maize, I plant Denghai 605 hybrid right after wheat harvest in mid-June. There's no time to plough, so I plant no-till directly into the wheat stubble \u2014 that's the only way to fit it in. I will spread about 40 kg of compound fertilizer per mu at planting, and maybe topdress a bit of urea when the corn is knee-high. That comes to about 16 kg of nitrogen per mu. I'll irrigate twice, once when it's shooting up and once when the ears are filling. Three pesticide sprays should be enough. I expect about 1,050 kg per mu.\n\nFor the 2 mu of cotton, I will sow the improved variety 99-1 in late April and rotary-till beforehand. Cotton needs a lot of spray \u2014 I figure about 12 times for bollworms, aphids, and weeds. I'll fertilize it lighter than the grain crops, about 10 kg of nitrogen per mu with a little compound at planting. I'll irrigate twice, at flowering and boll-setting. I hope for 500 kg of seed cotton per mu.\n\nI am a bit cautious with money \u2014 my family has some off-farm income, but I don't want to waste it. I'd rather apply a little too much fertilizer than too little, because a bad year hurts more than a good year helps. That's how I've always managed.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 1,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 1,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I keep 10 mu in wheat-maize double cropping and 2 mu in cotton because my wife and I cannot manage much hand labor. Wheat and maize are familiar and mechanized; cotton pays better but needs too much picking. I follow what my neighbors do: rotary tillage for wheat and cotton, no-till for maize after wheat harvest, three irrigations for wheat, two each for maize and cotton, and plenty of pesticide sprays especially on cotton. I apply roughly one bag of compound plus some urea per mu for wheat, less for maize and cotton. I keep phosphate and potash low because the soil has done fine without much, and I would rather risk a little wasted fertilizer than a failed crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 1,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 1,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I keep 10 mu in wheat-maize double cropping and 2 mu in cotton because my wife and I cannot manage much hand labor. Wheat and maize are familiar and mechanized; cotton pays better but needs too much picking. I follow what my neighbors do: rotary tillage for wheat and cotton, no-till for maize after wheat harvest, three irrigations for wheat, two each for maize and cotton, and plenty of pesticide sprays especially on cotton. I apply roughly one bag of compound plus some urea per mu for wheat, less for maize and cotton. I keep phosphate and potash low because the soil has done fine without much, and I would rather risk a little wasted fertilizer than a failed crop."
+  },
+  "elapsed_seconds": 212.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DF_2",
+  "tier": 2,
+  "provider": "kimi"
+}

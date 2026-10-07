@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is 4.1 mu total. Wheat goes in first, then after I harvest it in June, maize goes into the same ground. That's how I've done it for fifty years, same as my mother before me. The land doesn't rest, but neither do I.\n\n**Wheat (October through June):**\nI'll plant wheat in October when the soil temperature feels right \u2014 I can tell by how the ground feels underfoot. I'll buy improved seed from the township supply shop, same as last few years. The county station handed out leaflets about new varieties but I can't read them, so I ask my son what the neighbors are using. For fertilizer, I put down base fertilizer before planting \u2014 compound fertilizer plus some urea \u2014 and then topdress urea again at jointing in spring. I know I should water at least three times: once before the ground freezes, once at jointing, once at heading. My well reaches water, so I'm not worried. I'll spray herbicide in early spring and one round for powdery mildew near heading. I'll rotary till after the maize stalks are chopped up.\n\n**Maize (June through September/October):**\nRight after wheat harvest I plant maize the same day or next. No time to plow \u2014 I go straight in. I use Zhengdan 958, everyone in the village does. I put fertilizer down at planting and topdress when the maize is knee-high. Summer rains usually help but I'll pump water once or twice if it looks dry. I'll spray for weeds early and watch for corn borer in August.\n\nMy children help during harvest. Otherwise I manage myself.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 4.1 mu in a winter wheat\u2013summer maize rotation on the same ground, as I have for fifty years in Quzhou. For wheat I rotary till after maize, plant improved variety in October, apply compound base fertilizer plus urea topdress at jointing, irrigate three times using my well, and spray once for weeds and once for powdery mildew. For maize I go straight to no-till planting the day wheat is harvested to catch the season, use the hybrid Zhengdan 958 that my neighbors all rely on, fertilize at planting and topdress once, irrigate twice if rains are thin, and spray for weeds and borer. Some of my family works off-farm so I keep operations manageable for one person, and I follow what has worked reliably in this county rather than changing what I cannot fully understand.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 4.1 mu in a winter wheat\u2013summer maize rotation on the same ground, as I have for fifty years in Quzhou. For wheat I rotary till after maize, plant improved variety in October, apply compound base fertilizer plus urea topdress at jointing, irrigate three times using my well, and spray once for weeds and once for powdery mildew. For maize I go straight to no-till planting the day wheat is harvested to catch the season, use the hybrid Zhengdan 958 that my neighbors all rely on, fertilize at planting and topdress once, irrigate twice if rains are thin, and spray for weeds and borer. Some of my family works off-farm so I keep operations manageable for one person, and I follow what has worked reliably in this county rather than changing what I cannot fully understand."
+  },
+  "elapsed_seconds": 47.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_2",
+  "tier": 2,
+  "provider": "claude"
+}

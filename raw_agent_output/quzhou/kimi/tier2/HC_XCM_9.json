@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 83 years old and I've been working this land for 60 years. My bones ache in the winter now, and there's only me and my wife left at home \u2014 our children have gone to the cities. With only 5 mu of land, I can't afford to waste a single fen, but I also know I can't push myself like I used to. I've seen good years and bad years in Quzhou, and I trust what my eyes and hands tell me more than any book.\n\nFor the winter wheat, I'll plant the whole 5 mu. I'll use an improved seed variety \u2014 not the most expensive hybrid, but the one I've saved and selected from good ears over the years, mixed with some bags I bought from the county supply store that my neighbors also use. The soil here is decent but tired, so I need to give it some food. I'll spread about 15 kg of nitrogen per mu, 7 kg of phosphorus, and 5 kg of potassium. I have the well, so I'll irrigate three times: once after sowing to help germination and overwintering, once at green-up in spring, and once at the grain-filling stage. I'll spray pesticide twice \u2014 once for aphids in spring and once for fungal diseases before heading. I'll do rotary tillage before sowing; my neighbor has a small machine and he'll help me. I expect about 500 kg per mu if the spring rain cooperates.\n\nFor summer maize, right after the wheat harvest in early June, I'll plant maize on the same 5 mu. I'll use hybrid seed \u2014 everyone here does, and it gives better ears. For fertilizer, I'll put down about 18 kg nitrogen per mu, 6 kg phosphorus, and 5 kg potassium. I'll irrigate twice because summer rains sometimes come and sometimes don't, and maize is thirsty at tasseling and grain filling. Two pesticide sprays should handle the corn borers and leaf blights. I won't do deep tillage for the maize \u2014 there's no time between wheat harvest and maize sowing, and my old rotary tiller works fine for a light pass. I hope for around 550 kg per mu.\n\nI keep my inputs modest because at my age, carrying heavy fertilizer bags is hard, and my wife and I need to save a little for medicine and food. But I've farmed this land long enough to know its moods.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"At 83 years old with only my wife at home, I manage our 5 mu using practical, labor-conscious methods built on 60 years of local experience. I plant improved wheat in winter with moderate fertilizer, three irrigations from our well, and rotary tillage, expecting 500 kg/mu. Immediately after wheat harvest, I sow hybrid maize with slightly higher nitrogen, two irrigations, and minimal tillage to save time and energy, expecting 550 kg/mu. I keep costs and physical labor manageable while maintaining yields through timing and experience rather than heavy input use.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "At 83 years old with only my wife at home, I manage our 5 mu using practical, labor-conscious methods built on 60 years of local experience. I plant improved wheat in winter with moderate fertilizer, three irrigations from our well, and rotary tillage, expecting 500 kg/mu. Immediately after wheat harvest, I sow hybrid maize with slightly higher nitrogen, two irrigations, and minimal tillage to save time and energy, expecting 550 kg/mu. I keep costs and physical labor manageable while maintaining yields through timing and experience rather than heavy input use."
+  },
+  "elapsed_seconds": 46.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_9",
+  "tier": 2,
+  "provider": "kimi"
+}

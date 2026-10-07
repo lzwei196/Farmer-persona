@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land since I was a teenager helping my father. Forty years of wheat and maize in Quzhou \u2014 I know this soil, I know this weather, and I know what works. My 12 mu runs the full wheat-maize rotation: winter wheat goes in after the maize is off, summer maize goes straight back in after wheat harvest. Same ground, two crops a year, every year.\n\nFor **wheat**, I always do rotary tillage after the maize comes off in late September \u2014 gets the stubble worked in and the seedbed ready. I use the improved varieties, the ones the county extension station has been pushing for years \u2014 Jimai 22 has done well for me. I split my nitrogen: base application at planting, then topdress at jointing when the crop tells me it needs it. My well lets me irrigate four times \u2014 pre-sowing to settle moisture, winterizing water in December, jointing, and once at flowering. I do three pesticide passes: seed treatment, a spring herbicide sweep, and a fungicide at heading for rust and powdery mildew. I expect around 500 jin per mu \u2014 that's what I reliably pull when the season cooperates.\n\nFor **maize**, I go straight in with no-till right after wheat harvest in June. Time is short. I plant hybrid seed \u2014 Xianyu 335 has given me consistent results. July and August bring some rain, so my irrigation burden drops \u2014 I figure three waterings: at planting, at jointing, and at silking if it turns dry. I topdress nitrogen hard at the big leaf stage. Two pesticide rounds handles the aphids and stem borer. I target 550 jin per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I run a standard wheat-maize double-crop rotation across all 12 mu. For winter wheat I use rotary tillage after maize harvest, plant improved locally adapted varieties, split nitrogen between base and jointing-stage topdress, irrigate four times with my well, and apply fungicide at heading to protect yield \u2014 targeting 500 kg/mu. For summer maize I no-till directly into wheat stubble to move fast in the narrow June window, plant proven hybrid seed, rely partly on summer rainfall to reduce irrigation to three events, and push nitrogen hard at the big leaf stage \u2014 targeting 550 kg/mu. These practices reflect forty years of learning what this Quzhou land responds to.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I run a standard wheat-maize double-crop rotation across all 12 mu. For winter wheat I use rotary tillage after maize harvest, plant improved locally adapted varieties, split nitrogen between base and jointing-stage topdress, irrigate four times with my well, and apply fungicide at heading to protect yield \u2014 targeting 500 kg/mu. For summer maize I no-till directly into wheat stubble to move fast in the narrow June window, plant proven hybrid seed, rely partly on summer rainfall to reduce irrigation to three events, and push nitrogen hard at the big leaf stage \u2014 targeting 550 kg/mu. These practices reflect forty years of learning what this Quzhou land responds to."
+  },
+  "elapsed_seconds": 43.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_5",
+  "tier": 2,
+  "provider": "claude"
+}

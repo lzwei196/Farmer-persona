@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 5 mu for three years now. Before that I worked in a factory in Shijiazhuang, but I came back to take care of my parents and the land. I only finished primary school, so I do not read books about farming. I watch what my neighbors do, especially Old Wang and Auntie Liu on the next plot, and I copy what worked last year.\n\nFor winter wheat, I will do exactly what I did last autumn because it gave me a good harvest. I sow the improved wheat seed that everyone in the village uses. Before sowing, I hire the rotary tiller to turn the soil. For base fertilizer, I spread one 50kg bag of compound fertilizer on each mu. That bag says 15-15-15 on it. When the wheat turns green in spring, I top-dress half a bag of urea per mu, which is 25kg. I would rather put a little too much than too little \u2014 if the wheat goes yellow from hunger, I lose everything, but extra fertilizer is just money I spent. I irrigate three times: once after sowing if the autumn is dry, once in March when the wheat wakes up, and once when the grain is filling in May. I spray twice: herbicide once when the wheat is small, and insecticide once before flowering if I see bugs. I expect about 500kg per mu if the weather is normal.\n\nFor summer maize, I plant right after wheat harvest in June. I use hybrid corn seed from the dealer in town \u2014 everyone buys the same kind with the red bag. I do not till the soil much because the wheat stubble is there and the sowing machine can put the corn directly into the rows. This saves time and the soil does not dry out. I put down one bag of compound fertilizer per mu when I sow, and then half a bag of urea later when the corn is knee-high. I irrigate twice: once when the corn is jointing, and once when the tassels come out. If July is very hot and dry, maybe three times. I spray twice: once for weeds and once for corn borers. I expect about 550kg per mu.\n\nI worry about money every time I buy fertilizer. One bag of compound is about 130 yuan now, and urea is over 100 yuan. For 5 mu, wheat and corn together, I need more than 20 bags of fertilizer. That is a lot of cash. But my wife works in the garment factory in the county town and sends money back, so I can manage. I will not try anything new I did not see work on someone else's field first. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on last year's practice and what my neighbors do. For wheat, I apply one 50kg bag of 15-15-15 compound fertilizer and half a bag of urea per mu, irrigate three times, and spray twice, using rotary tillage before sowing. For summer maize, I sow hybrid seed directly after wheat harvest with one bag of compound and half a bag of urea per mu, irrigate twice, spray twice, and use no-tillage to save time and moisture. I would rather spend a bit more on fertilizer than risk yield loss, and I only do what I have seen work on nearby fields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I base my decisions on last year's practice and what my neighbors do. For wheat, I apply one 50kg bag of 15-15-15 compound fertilizer and half a bag of urea per mu, irrigate three times, and spray twice, using rotary tillage before sowing. For summer maize, I sow hybrid seed directly after wheat harvest with one bag of compound and half a bag of urea per mu, irrigate twice, spray twice, and use no-tillage to save time and moisture. I would rather spend a bit more on fertilizer than risk yield loss, and I only do what I have seen work on nearby fields."
+  },
+  "elapsed_seconds": 165.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 3,
+  "provider": "kimi"
+}

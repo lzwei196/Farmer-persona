@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land in Quzhou for 55 years. I know what grows and what doesn't. My wheat-maize rotation runs on 5 mu \u2014 same ground, two crops a year. The other 3 mu I keep in cotton for cash income. With just the two of us at home now, I do not overextend myself.\n\nFor the wheat, I plant in October when the soil cools. I use the improved variety I have been buying from the village supply cooperative for years \u2014 it is reliable and I trust it. I water four times: once before the ground freezes, again at jointing, then at heading, then when the grain is filling. I put down base fertilizer before planting and top-dress with urea at jointing. I spray herbicide early, then watch for rust and powdery mildew in spring \u2014 two or three spray rounds.\n\nAfter wheat harvest in June, I plant maize on the same 5 mu without plowing \u2014 just go in with the planter. Hybrid seed gives better yield and I have used it for many years now. Maize does not need as much work. I fertilize twice, irrigate maybe three times if rain is short, and check for corn borer in late summer.\n\nThe cotton on my 3 mu is the most work \u2014 I have to top the plants, thin the seedlings, and spray for bollworm and aphids many times through summer. I plow that ground in spring before planting. I start harvesting in September and keep picking through October.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 290\n    }\n  ],\n  \"reasoning_summary\": \"I split my 8 mu between a 5-mu wheat-maize double-crop rotation and 3 mu of cotton, which is what I have always done and what the land and my labor allow. For wheat I use improved varieties I trust, apply base fertilizer plus a urea top-dressing at jointing, and irrigate four times hitting the critical stages. After wheat harvest I plant hybrid maize with no-till to save time and my back, fertilizing and irrigating as needed through summer. Cotton on the remaining 3 mu is my main cash crop and needs the most attention \u2014 I plough in spring, use hybrid Bt seed to cut down on bollworm spraying somewhat, but still spray five times across the season for bollworm, aphids, and spider mites. My well gives me enough water for all three crops and I manage inputs at the levels I have settled on over decades of working this ground.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 290
+      }
+    ],
+    "reasoning_summary": "I split my 8 mu between a 5-mu wheat-maize double-crop rotation and 3 mu of cotton, which is what I have always done and what the land and my labor allow. For wheat I use improved varieties I trust, apply base fertilizer plus a urea top-dressing at jointing, and irrigate four times hitting the critical stages. After wheat harvest I plant hybrid maize with no-till to save time and my back, fertilizing and irrigating as needed through summer. Cotton on the remaining 3 mu is my main cash crop and needs the most attention \u2014 I plough in spring, use hybrid Bt seed to cut down on bollworm spraying somewhat, but still spray five times across the season for bollworm, aphids, and spider mites. My well gives me enough water for all three crops and I manage inputs at the levels I have settled on over decades of working this ground."
+  },
+  "elapsed_seconds": 57.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_12",
+  "tier": 2,
+  "provider": "claude"
+}

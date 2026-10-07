@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old now, and I have been farming this land since I was a young man. I never went to school, but the land has been my teacher for over 50 years. I know what works here in Quzhou County, and I do not like to take risks with new crops or fancy methods that the young people talk about.\n\nMy family has about 6 mu of good land on the North China Plain. The winter wheat is already in the ground from last autumn \u2014 I sowed it in October on 4 mu. This spring, I will plant cotton on 2 mu because cotton prices have been decent, though it is hard work at my age. After I harvest the wheat in early June, I will immediately plant summer maize on those same 4 mu. This wheat-maize rotation is what everyone here does, and it feeds my family.\n\nFor the wheat, I will apply compound fertilizer and top-dress with urea as I have always done. I will irrigate four times \u2014 the groundwater is still good here. I will spray for insects twice, for weeds once, and for disease once. For the maize, I will use hybrid seed, sow directly into the wheat stubble without ploughing to save labor and time, and irrigate twice. The maize does not need as much fertilizer as the wheat. For the cotton, I will rotary-till the soil, use compound fertilizer, and spray many times for insects \u2014 probably around 14 or 15 times \u2014 because the bollworms are relentless. I hire young men from the village to help with the spraying and harvesting now that my back is not what it used to be.\n\nI use improved wheat seed and hybrid maize seed because the village supply store sells them, and they yield better than the old varieties. I keep some grain for eating and sell the rest. This is my plan. I trust what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 850\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 900\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this land for over 50 years and stick to the traditional wheat-maize rotation plus cotton that I know well. My 6 mu of land will have 4 mu under wheat-maize rotation and 2 mu in cotton. I use improved and hybrid seeds from the village store, apply compound fertilizer, and manage pests through regular spraying. I hire help for heavy labor due to my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 850
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 900
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed this land for over 50 years and stick to the traditional wheat-maize rotation plus cotton that I know well. My 6 mu of land will have 4 mu under wheat-maize rotation and 2 mu in cotton. I use improved and hybrid seeds from the village store, apply compound fertilizer, and manage pests through regular spraying. I hire help for heavy labor due to my age."
+  },
+  "elapsed_seconds": 194.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_11",
+  "tier": 1,
+  "provider": "kimi"
+}

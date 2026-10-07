@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 16.1 mu here in Quzhou. I keep about 3 mu for cotton on the drier plot near the road, and the other 13.1 mu runs wheat-maize double crop like most everyone around here. My wife and I handle the daily work, kids send money from the city but they don't come back for planting.\n\nFor wheat, I plant Jimai 22 again \u2014 it did alright last year, about 480 kg per mu, and my neighbor Old Wang got 500. I buy compound fertilizer 15-15-15, two bags (100 kg) per mu at sowing, then topdress with urea at green-up, one bag (50 kg) per mu. That gives me roughly 18 kg N, 15 kg P, 15 kg K. I water four times \u2014 before winter, green-up, jointing, and grain filling. The well runs fine. Spray twice for aphids and powdery mildew, maybe three times if the weather is wet.\n\nFor maize after wheat, I go with Zhengdan 958, a hybrid everyone trusts. No-till seeding right into the wheat stubble saves me labor and diesel. One bag compound at planting and one bag urea at big flare stage, about 20 kg N total. I only water once or twice in July if it's dry \u2014 the summer rain usually helps. Spray once for armyworm, once for stem borer.\n\nFor cotton, I stick with the Bt hybrid from the dealer in town. Cotton eats more potash so I put on 15 kg N, 8 kg P, 10 kg K. Plough the cotton land before planting \u2014 cotton likes deep soil. Three irrigations through the season. Cotton always needs more spraying \u2014 four or five times for aphids, bollworm, spider mites. It's work but the price this year looks okay.\n\nI am spending more on fertilizer than some say is needed, but I'd rather have a full harvest than save 100 yuan and lose 50 kg of grain. That's how I've always done it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I split my 16.1 mu into 3 mu cotton on the drier plot and 13.1 mu of wheat-maize double crop, same as last year because it worked. I use improved wheat (Jimai 22) and hybrid seed for maize (Zhengdan 958) and Bt cotton from the town dealer \u2014 neighbors had good results. Fertilizer rates follow what I've always done: heavier N on wheat and maize, more potash on cotton. I'd rather spend a bit extra on fertilizer than risk a thin harvest. Wheat gets four irrigations from my well, maize usually only needs one or two because of summer rain, cotton gets three. Cotton needs the most spraying because of bollworm and aphids. I plough only the cotton ground; wheat stubble I go no-till into maize to save diesel and labor since my kids work off-farm and it's just me and my wife.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I split my 16.1 mu into 3 mu cotton on the drier plot and 13.1 mu of wheat-maize double crop, same as last year because it worked. I use improved wheat (Jimai 22) and hybrid seed for maize (Zhengdan 958) and Bt cotton from the town dealer \u2014 neighbors had good results. Fertilizer rates follow what I've always done: heavier N on wheat and maize, more potash on cotton. I'd rather spend a bit extra on fertilizer than risk a thin harvest. Wheat gets four irrigations from my well, maize usually only needs one or two because of summer rain, cotton gets three. Cotton needs the most spraying because of bollworm and aphids. I plough only the cotton ground; wheat stubble I go no-till into maize to save diesel and labor since my kids work off-farm and it's just me and my wife."
+  },
+  "elapsed_seconds": 34.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_9",
+  "tier": 3,
+  "provider": "claude"
+}

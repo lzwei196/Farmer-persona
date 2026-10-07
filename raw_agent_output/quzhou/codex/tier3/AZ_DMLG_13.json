@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm a small piece of land, only 4.1 mu, so I count every bag and every watering. I do not like changing too much. I start from what worked before and what I see in the next fields. For wheat, I will keep the field in the usual wheat-maize turn, put most of the fertilizer in before or at sowing, then add nitrogen again when the wheat stands up in spring. Wheat in our place is the crop I do not dare starve, so I will keep fertilizer a little on the safe side. With well water, I will plan on 2 irrigations for wheat in a normal year. If spring turns very dry, I will add one more, but for the yearly plan I will count 2. For maize, I will sow soon after wheat harvest, use the hybrid seed people nearby use when it shows a full ear and steady yield, and I will give enough fertilizer at sowing plus one chase later. Summer rain usually helps maize, so I will count 1 irrigation, and only use more if the rain fails. On such a small farm, I will not spend on fancy things, but I will not save money by letting the crop go hungry either. I would rather waste a little fertilizer than lose grain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will keep the usual wheat-maize rotation on all 4.1 mu, follow the kind of seed and input level I see working nearby, and stay a little heavy on the main fertilizer because losing yield costs me more than wasting some fertilizer. Wheat will get stronger feeding and more water because it is the riskier crop in our dry season, while maize will use summer rain and only one planned irrigation from the well. I will keep pesticide use to two sprays each crop unless pressure gets bad, and I will use rotary tillage for wheat and no-tillage after wheat harvest for maize to save labor and time.\"\n}\n```\n\nBackground links: https://www.sciencedirect.com/science/article/pii/S0378377424000611 , https://www.sciencedirect.com/science/article/abs/pii/S0959652614000304",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will keep the usual wheat-maize rotation on all 4.1 mu, follow the kind of seed and input level I see working nearby, and stay a little heavy on the main fertilizer because losing yield costs me more than wasting some fertilizer. Wheat will get stronger feeding and more water because it is the riskier crop in our dry season, while maize will use summer rain and only one planned irrigation from the well. I will keep pesticide use to two sprays each crop unless pressure gets bad, and I will use rotary tillage for wheat and no-tillage after wheat harvest for maize to save labor and time."
+  },
+  "elapsed_seconds": 46.0,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_13",
+  "tier": 3,
+  "provider": "codex"
+}

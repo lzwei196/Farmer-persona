@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning:**\n\nI have farmed this land in Quzhou for over fifty years. My children moved to work in the city years ago, so it is mostly just me now. I cannot do what I used to do \u2014 my back gives me trouble and I tire easily. But I still know this land.\n\nI will grow what I have always grown: **winter wheat** and **summer maize**, rotating on the same 8 mu. This is what makes sense here on the North China Plain. The soil knows these crops and I know them. Anything else would require me to learn new things at my age, and there is no good reason to take that risk.\n\nAfter the wheat is harvested in June, I plant maize directly without plowing \u2014 my neighbor does the machine seeding for a small fee. I cannot operate the heavy tiller myself anymore. For wheat in October, I hire rotary tillage before planting.\n\nFor fertilizer, I apply compound fertilizer as a base when planting wheat, then urea as a topdressing before jointing in spring. For maize, I apply urea once at the big bell stage. These amounts are what I've used for years and the yields have been acceptable.\n\nIrrigation: I pump from the village well. Wheat needs water at wintering, jointing, and heading \u2014 three times. Maize I usually only need to water once if the summer rains are decent. Electricity for pumping costs money, so I try not to over-irrigate.\n\nI buy seeds from the village supply cooperative. Improved wheat variety, hybrid maize \u2014 that is what everyone uses now and the yields are reliable.\n\nI spray herbicide before wheat emergence and fungicide once in spring. For maize I spray for corn borer if I see damage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am 74 years old and farm 8 mu alone in Quzhou, Hebei. I grow winter wheat and summer maize in rotation on the same land \u2014 the standard double-cropping system I have used for decades on the North China Plain. My children have left for the city, so I rely on hired mechanization for tillage, planting, and harvest, which I can still afford and coordinate. I apply compound fertilizer at planting and urea as topdressing, at rates I have used for many years. I irrigate wheat three times from the village well and maize once, since summer rainfall usually helps. I use improved wheat seed and hybrid maize from the village cooperative because they are reliable and widely available. I apply herbicide and fungicide for wheat, and spray maize only if the corn borer appears. My expected yields are modest but stable \u2014 I am not trying to maximize, I am trying to get through another season without problems.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am 74 years old and farm 8 mu alone in Quzhou, Hebei. I grow winter wheat and summer maize in rotation on the same land \u2014 the standard double-cropping system I have used for decades on the North China Plain. My children have left for the city, so I rely on hired mechanization for tillage, planting, and harvest, which I can still afford and coordinate. I apply compound fertilizer at planting and urea as topdressing, at rates I have used for many years. I irrigate wheat three times from the village well and maize once, since summer rainfall usually helps. I use improved wheat seed and hybrid maize from the village cooperative because they are reliable and widely available. I apply herbicide and fungicide for wheat, and spray maize only if the corn borer appears. My expected yields are modest but stable \u2014 I am not trying to maximize, I am trying to get through another season without problems."
+  },
+  "elapsed_seconds": 56.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_2",
+  "tier": 1,
+  "provider": "claude"
+}

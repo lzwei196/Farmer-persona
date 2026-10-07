@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 60 years old and have farmed my whole life in Quzhou County. I never went to school, but I know this land well. My family has about 8 mu of good flat land on the North China Plain. Every year I grow the same rotation as my neighbors \u2014 winter wheat followed by summer maize. That is what this soil and climate are made for. I already sowed my wheat last October before the frost came, and now in early spring the wheat is greening up. I will manage it through to harvest in June, then immediately plant maize in the same fields. I do not experiment with new crops because I cannot afford to lose my family's food and income.\n\nFor my wheat, I use improved varieties like the ones from the county seed station \u2014 they yield better and resist lodging. I rotary till the land before sowing. I put down compound fertilizer at planting, and I topdress with urea when the wheat joints in spring. Water is precious, so I irrigate from my well about four times: the winter irrigation, one at green-up, one at jointing, and one at grain-filling. I spray for insects twice, spray herbicide once to control weeds, and use fungicide if I see disease after rainy spells. I expect about 1000 jin of wheat per mu if the weather cooperates.\n\nFor the summer maize, I plant hybrid seed \u2014 Denghai 605 or something similar from the shop \u2014 right after the wheat comes out in June. I do not till again; I plant no-till to save time and fuel because the rainy season is coming and I must get the seed in quickly. I apply compound fertilizer at sowing, and irrigate twice during the summer if the rains are not enough. I spray for insects two or three times and use herbicide once. I expect about 1100 jin per mu.\n\nThis double-cropping system feeds my family and gives me grain to sell. I have done it for decades and I trust it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow the standard wheat-maize rotation on my 8 mu of land because this is what has always worked in Quzhou County. Wheat is sown in October and harvested in June; maize follows immediately and is harvested in October. I use improved wheat seed and hybrid maize seed from the local shop, apply compound fertilizer plus urea topdressing, irrigate from my well, and control pests with sprays. This system provides both food security and cash income, and I do not take risks with unfamiliar crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow the standard wheat-maize rotation on my 8 mu of land because this is what has always worked in Quzhou County. Wheat is sown in October and harvested in June; maize follows immediately and is harvested in October. I use improved wheat seed and hybrid maize seed from the local shop, apply compound fertilizer plus urea topdressing, irrigate from my well, and control pests with sprays. This system provides both food security and cash income, and I do not take risks with unfamiliar crops."
+  },
+  "elapsed_seconds": 217.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_7",
+  "tier": 1,
+  "provider": "kimi"
+}

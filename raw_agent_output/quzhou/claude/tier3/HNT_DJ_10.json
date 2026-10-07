@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 6 mu here in Quzhou. It is not much land but it feeds the family and my wife and I work it ourselves. The kids help when they come back. Two of them work in town now.\n\nI do wheat in winter and maize in summer like everyone here. That is how we have always done it. My neighbor Old Wang gets good harvests so I watch what he puts down and I do about the same.\n\nFor the wheat I put one bag of compound fertilizer when I plow \u2014 that is 50 jin per mu, the 15-15-15 kind from the shop in town. Then in spring when the wheat wakes up and starts growing tall, I spread urea, about half a bag per mu, maybe 25 jin. If I put less my wheat looks yellow and thin and I lose harvest. Better to put a bit extra. Fertilizer costs money but losing the harvest costs more.\n\nFor maize it is the same idea. One bag compound when I seed, then urea when the maize is knee-high. Maize eats a lot, everybody knows this.\n\nWater \u2014 I have my own well so I can pump. Wheat needs water in winter before freeze, then in spring when it comes up, then when the ear is filling. Three or four times. Maize drinks a lot in July when it is tasseling, I water twice usually, more if no rain.\n\nI spray two times each crop. Once for weeds, once for bugs. Sometimes the wheat gets that yellow rust and I spray again but I try not to because the spray is expensive.\n\nSeeds I buy from the shop \u2014 for maize the hybrid seeds, everyone uses those now, you cannot save your own or it does not grow well. Wheat I get improved seed too, the shop owner tells me which is good this year.\n\nFor the wheat I plow with rotary after maize comes off. For maize I just seed straight into the wheat stubble \u2014 saves time and the ground stays moist.\n\nLast year wheat gave me about 450 jin per mu, maize about 550. If the weather is okay I expect similar this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what my neighbors do and what worked last year. One bag of compound fertilizer per mu when I plant, then urea on top when the crop starts growing fast \u2014 better to put a little extra than see the crop go yellow. I pump water from my well three or four times for wheat and twice for maize, more if the rain does not come. I spray twice each season, once for weeds and once for bugs. Hybrid maize seed and improved wheat seed from the shop in town. Rotary till for wheat after maize harvest, and direct seed the maize into the wheat stubble to save work and keep the ground moist.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what my neighbors do and what worked last year. One bag of compound fertilizer per mu when I plant, then urea on top when the crop starts growing fast \u2014 better to put a little extra than see the crop go yellow. I pump water from my well three or four times for wheat and twice for maize, more if the rain does not come. I spray twice each season, once for weeds and once for bugs. Hybrid maize seed and improved wheat seed from the shop in town. Rotary till for wheat after maize harvest, and direct seed the maize into the wheat stubble to save work and keep the ground moist."
+  },
+  "elapsed_seconds": 43.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_10",
+  "tier": 3,
+  "provider": "claude"
+}

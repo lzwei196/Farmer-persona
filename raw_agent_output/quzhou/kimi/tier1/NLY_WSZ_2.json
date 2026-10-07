@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 49 years old and I've been farming in Quzhou for over 30 years. Middle school means I can read the extension pamphlets and understand what the ag-technician says at the village meetings, but I still go by what my father taught me and what I see in my own fields. I have about 8 mu of land \u2014 6 mu of flat good land where I do wheat-maize double cropping, and 2 mu for cotton to spread my risk.\n\nRight now my winter wheat is at booting stage. I planted Luyuan 502 last October \u2014 it's an improved variety, not hybrid, but it's done well for me the past few years. I rotary-tilled before planting and put down basal compound fertilizer then. In March I gave it the returning-green water and topdressed with urea. Now I'm watching for rust and aphids, and I'll spray if I see problems. I still need one more irrigation at grain filling in May. The extension guy says 12\u201315 kg of nitrogen per mu is enough for wheat, but I apply about 15 kg total across the season \u2014 I'd rather waste a little money than lose a hundred jin of yield. I figure on about 500 kg per mu if the late spring weather holds.\n\nCome early June, I'll harvest the wheat and immediately plant summer maize. The window is only about five to seven days, so I use no-tillage seeding straight into the wheat stubble \u2014 saves time and diesel. I buy Denghai 605 hybrid seed from the seed shop, about 1.2 packages per mu. It's more expensive but the yield is reliable. I band compound fertilizer at planting and side-dress urea at the big trumpet stage. Two irrigations: one to get it established, and one at tasseling if July turns dry. Three pesticide rounds total \u2014 herbicide at seeding, then insecticide for corn borer.\n\nMy 2 mu of cotton I just planted last week with Guoxinmian. Cotton needs a lot of care \u2014 probably 10 pesticide sprays through the season \u2014 but the price has been steady and my wife can help with the picking in autumn. I rotary-tilled that plot and put down compound fertilizer before sowing. Two irrigations should do it. I hope for about 300 kg per mu of seed cotton.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double crop on my best 6 mu because it is the most reliable system I know, and I keep 2 mu of cotton for income diversification. I apply slightly more nitrogen than the extension recommendation on wheat because I am loss-averse \u2014 a bad year hurts more than a good year helps. I use no-tillage for maize because the turnaround between wheat harvest and maize planting is only about a week, and I cannot afford to miss the planting window. Cotton is labor-intensive with many pesticide sprays, but my family has the labor and cotton provides a cash buffer when grain prices are low.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double crop on my best 6 mu because it is the most reliable system I know, and I keep 2 mu of cotton for income diversification. I apply slightly more nitrogen than the extension recommendation on wheat because I am loss-averse \u2014 a bad year hurts more than a good year helps. I use no-tillage for maize because the turnaround between wheat harvest and maize planting is only about a week, and I cannot afford to miss the planting window. Cotton is labor-intensive with many pesticide sprays, but my family has the labor and cotton provides a cash buffer when grain prices are low."
+  },
+  "elapsed_seconds": 258.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "NLY_WSZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

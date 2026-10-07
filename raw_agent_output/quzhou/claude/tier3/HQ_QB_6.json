@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land since I was sixteen. My father showed me, and I watch what the good farmers in our village do. Nine mu is what I have, same as last year. Wheat in winter, corn in summer \u2014 everyone here does it this way.\n\nFor my wheat, I buy two bags of compound fertilizer before sowing \u2014 that's 100 jin per mu of the 15-15-15 stuff from the dealer in town. Then when the wheat stands up in spring, I spread urea, maybe 30 jin per mu. Any less and the leaves turn yellow \u2014 I saw that happen to my cousin two years ago, he tried to save money and lost half a sack per mu. Not worth it.\n\nFor corn, same idea \u2014 one bag compound at planting, then urea when it gets to my chest (what old people call the big trumpet stage). Corn eats more nitrogen than wheat, I can see it in how the leaves stay dark.\n\nSeeds \u2014 I buy hybrid corn from the shop, everybody does, the old seeds give small ears. Wheat I buy improved variety, I pick what the dealer says the other people bought most.\n\nWater \u2014 I have the well, so wheat gets watered three times: once before winter so it doesn't freeze, once in spring when it stands up, and once when the grain fills. Corn is summer, rain comes, but I still water once or twice if July is dry.\n\nSpraying \u2014 once for weeds, once for aphids on wheat. Corn I spray for borer and weeds, two times.\n\nFor the ground \u2014 I rent the rotary tiller from the village service, costs me some yuan but beats hoeing. I don't plough deep every year, too expensive.\n\nYield \u2014 last year wheat gave me about 450 jin per mu, corn about 550. I expect the same, nothing big changed.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what my father did and what the village does. Two bags compound fertilizer plus urea topdressing for each crop \u2014 skimping on fertilizer lost my cousin half a sack per mu, I won't risk that. Hybrid corn seed and improved wheat seed from the town dealer, same as neighbors. Three waterings for wheat from my well, two for corn since summer rain helps. Rent the rotary tiller from the village. Expecting 450 jin wheat and 550 jin corn per mu, same as last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what my father did and what the village does. Two bags compound fertilizer plus urea topdressing for each crop \u2014 skimping on fertilizer lost my cousin half a sack per mu, I won't risk that. Hybrid corn seed and improved wheat seed from the town dealer, same as neighbors. Three waterings for wheat from my well, two for corn since summer rain helps. Rent the rotary tiller from the village. Expecting 450 jin wheat and 550 jin corn per mu, same as last year."
+  },
+  "elapsed_seconds": 41.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_6",
+  "tier": 3,
+  "provider": "claude"
+}

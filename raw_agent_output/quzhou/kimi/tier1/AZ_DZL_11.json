@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm a 55-year-old man, been farming these same fields in Quzhou since I was eighteen. My family has six mu of good flat land on the North China Plain, and my son works in a factory in Shijiazhuang so he sends a bit of money home, but this land is still our main livelihood. I'm not one for taking big risks\u2014I've seen too many neighbors try fancy crops and lose everything. The wheat went in last October like it always does, improved shimai variety, and now that spring is here I need to get the management right for the wheat and plan for the summer maize that follows.\n\nFor the wheat, I'll stick to what I know works. The extension agent came to the village last year and said 15 kg of nitrogen per mu is enough, but honestly, I usually do right around that\u2014maybe 15 kg N, plus about 6 kg phosphorus and 4 kg potassium. I don't want the crop turning yellow at jointing and losing yield; I'd rather waste a few yuan on fertilizer than risk a bad year. I'll irrigate three times: I already gave it the overwinter water, and now I'll do one at green-up/jointing and another at heading. Rotary tillage in early spring to break the crust. Two pesticide sprays\u2014herbicide once when the weeds start coming, and fungicide if the weather turns humid. If things go normal, I expect about 500 kg per mu.\n\nFor the summer maize, as soon as the wheat comes off in early June, I'll plant hybrid seed\u2014something like Denghai 605, same as Old Wang down the road uses. There's no time for ploughing between wheat harvest and maize sowing; everyone does no-tillage now, just plant straight in with the machine. I'll put down about 16 kg nitrogen per mu, 5 kg phosphorus, 4 kg potassium, and irrigate twice\u2014once when it's knee-high and once at flowering. One herbicide application at seedling stage should handle the weeds. With decent rain, I should get around 550 kg per mu. That's my plan. Wheat and maize, six mu, safe and steady.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these six mu in Quzhou for over thirty years, and I stick to the wheat-maize double crop because it is the safest way to feed my family. I use improved wheat seed and hybrid maize seed like my neighbors do, apply slightly more nitrogen than the extension agent recommends to avoid yield loss, irrigate three times for wheat and twice for maize, and keep tillage simple with rotary in spring and no-tillage for the maize due to the tight turnaround. I would rather spend a bit extra on fertilizer and water than risk a bad harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed these six mu in Quzhou for over thirty years, and I stick to the wheat-maize double crop because it is the safest way to feed my family. I use improved wheat seed and hybrid maize seed like my neighbors do, apply slightly more nitrogen than the extension agent recommends to avoid yield loss, irrigate three times for wheat and twice for maize, and keep tillage simple with rotary in spring and no-tillage for the maize due to the tight turnaround. I would rather spend a bit extra on fertilizer and water than risk a bad harvest."
+  },
+  "elapsed_seconds": 86.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_11",
+  "tier": 1,
+  "provider": "kimi"
+}

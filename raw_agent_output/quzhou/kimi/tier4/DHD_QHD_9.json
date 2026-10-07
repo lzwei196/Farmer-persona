@@ -1,0 +1,73 @@
+{
+  "raw_response": "I'm 63 this year. Been farming these 12 mu for 45 years, since I was a young girl. Never went to school, can't read a word. My husband passed on ten years ago. Now it's just me and my daughter-in-law at home \u2014 two women, no men in the house. We manage.\n\nI don't know about kilograms and nitrogen rates. I know bags. I know what my eyes see. I know what the neighbors do, and I know what happened last year.\n\nFor wheat, I plant in early October, same time as everyone in the village. I use my own saved seed, cleaned it myself. Before planting I spread one bag of compound fertilizer per mu \u2014 the kind from the cooperative. That's the base. Then when the wheat starts jointing in spring, if it looks a bit yellow I topdress with half a bag of urea per mu. Last year I did exactly this and got about 800 jin per mu. The year before I tried to save money, only used half a bag of compound \u2014 the wheat was thin and weedy, almost ashamed to look at it. Never again. I'd rather spend the money. But I won't use more than one and a half bags total, that's wasteful and I don't have money to waste.\n\nWater is expensive. The pump runs on diesel, and every time I start it I see the money flowing away. For wheat I water three times \u2014 once before winter so the seedlings don't freeze, once at jointing, and once when the grain is filling. That's the minimum. Old Zhang down the lane waters four times but his son sends money from Beijing. I can't do that. Three times is enough if you time it right.\n\nFor maize, soon as the wheat is cut in early June, we plant. No time to rest. Sometimes we plant the same day the combine leaves the field. I buy hybrid seed from the village shop \u2014 the cheap kind. One bag of compound fertilizer per mu at planting, and that's it. No time for topdressing with double cropping, and my back hurts too much to carry urea buckets through tall maize. For water, if the summer rains come I might only irrigate once. If it's dry, twice. Never more \u2014 pumping costs too much and the well isn't infinite.\n\nI spray herbicide before planting wheat, and another for the maize. I don't buy insecticide or fungicide ahead of time. If I see worms, I'll go to the shop then. No point tying up cash in chemicals I might not need. At my age I need to keep some money for medicine.\n\nAll the planting, fertilizing, and weeding is done by me and my daughter-in-law. At harvest we hire help \u2014 the combine for wheat, a tractor for maize. We hire maybe two or three days of labor total for the heavy work. Hired labor is 100 yuan a day, so I keep it to the minimum.\n\nI expect about 800 jin per mu for wheat, maybe 900 jin per mu for maize if the weather is decent. I don't expect miracles. Just enough to fill our bellies and a little grain to sell for cash.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"field_area_mu\": 12,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"local\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15.2,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag of compound fertilizer before planting, half bag of urea at jointing in spring\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"plow after maize harvest, harrow before wheat planting\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"field_area_mu\": 12,\n      \"planting_date\": \"mid June\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 6.0,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"one bag of compound fertilizer at planting, no time for more\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"no-till, plant directly after wheat harvest\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 5200,\n  \"reasoning_summary\": \"I farm the same way my mother-in-law did and the way that worked last year. I use one bag of compound fertilizer per mu for wheat and maize, plus a half bag of urea for wheat at jointing because I saw what happens when you skimp. I irrigate three times for wheat because that's the minimum to get a crop, and once or twice for maize depending on rain. I only buy herbicide ahead, not insecticide, because cash is tight and I need to keep money for emergencies. Me and my daughter-in-law do all the work except harvest, where we hire a little help. I expect about 800 jin of wheat and 900 jin of maize per mu \u2014 enough to eat and a little to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "field_area_mu": 12,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "local",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15.2,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag of compound fertilizer before planting, half bag of urea at jointing in spring",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "plow after maize harvest, harrow before wheat planting",
+        "labor_family_days": 15,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 15.2,
+        "area_mu": 12,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      },
+      {
+        "crop": "maize",
+        "field_area_mu": 12,
+        "planting_date": "mid June",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 6.0,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "one bag of compound fertilizer at planting, no time for more",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "no-till, plant directly after wheat harvest",
+        "labor_family_days": 12,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 6.0,
+        "area_mu": 12,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      }
+    ],
+    "total_input_cost_yuan": 5200,
+    "reasoning_summary": "I farm the same way my mother-in-law did and the way that worked last year. I use one bag of compound fertilizer per mu for wheat and maize, plus a half bag of urea for wheat at jointing because I saw what happens when you skimp. I irrigate three times for wheat because that's the minimum to get a crop, and once or twice for maize depending on rain. I only buy herbicide ahead, not insecticide, because cash is tight and I need to keep money for emergencies. Me and my daughter-in-law do all the work except harvest, where we hire a little help. I expect about 800 jin of wheat and 900 jin of maize per mu \u2014 enough to eat and a little to sell."
+  },
+  "elapsed_seconds": 127.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_9",
+  "tier": 4,
+  "provider": "kimi"
+}

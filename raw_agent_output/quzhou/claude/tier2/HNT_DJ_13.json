@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 40 years and I know this Quzhou soil well. My 4.5 mu is all double-cropped \u2014 wheat goes in after maize harvest in October, maize follows after wheat harvest in June. Same land, both crops, every year. My household is small now, my son works in the city, so it's mostly me. I rely on mechanized operations and the village cooperative for seeding and harvesting. I can't afford to cut corners on inputs because yield is everything on 4.5 mu \u2014 but I also can't waste money on excess fertilizer, the government inspectors have been watching nitrogen use.\n\n**Wheat:** I'll plant all 4.5 mu with Jimai 22 \u2014 it's a high-yield, disease-resistant improved variety I've trusted for years. I'll do rotary tillage after maize harvest to incorporate the straw, which saves me buying extra organic matter. I'll apply base fertilizer before seeding: compound fertilizer plus urea topdress at jointing in March. Three irrigations \u2014 freeze water in late November, jointing water in April, grain filling water in May. I know from experience that skipping the freeze water is a gamble I'm not willing to take. Two pesticide passes: herbicide in winter, aphid/rust control in late April.\n\n**Maize:** Right after wheat harvest I'll go no-till and direct-seed hybrid Xianyu 335 into the stubble \u2014 saves time and moisture. I'll apply compound fertilizer at seeding and topdress nitrogen at the big bell stage. Two irrigations only \u2014 one at emergence if July is dry, one at tasseling. Summer rains usually help. Two pesticide passes: herbicide and corn borer control.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"On 4.5 mu of double-cropped land in Quzhou, I follow the standard wheat-maize rotation I have practiced for decades. For winter wheat I use the improved Jimai 22 variety with rotary tillage to incorporate maize straw, applying 14 kg N/mu split between base and jointing topdress, and irrigate three times at the freeze, jointing, and grain-filling stages \u2014 skipping any one of these would risk the yield I depend on. For summer maize I switch to no-till direct seeding of hybrid Xianyu 335 immediately after wheat harvest to conserve soil moisture, apply 18 kg N/mu to meet maize's heavier nitrogen demand, and rely mostly on summer rainfall with two supplemental irrigations. Labor is limited since my son works off-farm, so I keep both crops fully mechanized and use the village cooperative for seeding and harvest. My target is 450 kg/mu wheat and 550 kg/mu maize, consistent with what this land has produced over the past several years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "On 4.5 mu of double-cropped land in Quzhou, I follow the standard wheat-maize rotation I have practiced for decades. For winter wheat I use the improved Jimai 22 variety with rotary tillage to incorporate maize straw, applying 14 kg N/mu split between base and jointing topdress, and irrigate three times at the freeze, jointing, and grain-filling stages \u2014 skipping any one of these would risk the yield I depend on. For summer maize I switch to no-till direct seeding of hybrid Xianyu 335 immediately after wheat harvest to conserve soil moisture, apply 18 kg N/mu to meet maize's heavier nitrogen demand, and rely mostly on summer rainfall with two supplemental irrigations. Labor is limited since my son works off-farm, so I keep both crops fully mechanized and use the village cooperative for seeding and harvest. My target is 450 kg/mu wheat and 550 kg/mu maize, consistent with what this land has produced over the past several years."
+  },
+  "elapsed_seconds": 38.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_13",
+  "tier": 2,
+  "provider": "claude"
+}

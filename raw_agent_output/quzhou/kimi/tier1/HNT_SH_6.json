@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old, and I have farmed these lands in Quzhou for more than forty years. My father taught me, and I have seen the seasons turn enough times to know what works here. I finished middle school, which was more than many of my generation, but I do not need books to read this soil.\n\nThis year, I will stick to what I know. The wheat-maize double crop is the backbone of my farm. I have about ten mu of good flat land. I will plant winter wheat on seven mu in early October, after rotary tillage to break up the stubble and level the field. I use improved varieties like the ones my neighbors and I have relied on \u2014 they give stable yields around 500 kg per mu if the weather cooperates. Wheat needs feeding, so I will put down compound fertilizer at sowing and topdress with urea at green-up and jointing. All told, that is about 40 kg of nitrogen, 11 kg of phosphorus, and 5 kg of potassium per mu. I will irrigate four times: once before winter to protect the seedlings from the cold, then at jointing, heading, and grain filling. I also spray three or four times for diseases and weeds.\n\nAfter I harvest the wheat in early June, I will sow summer maize immediately into the stubble without tilling. No-tillage maize saves me time, fuel, and labor when the heat is already coming on. I will use a hybrid variety \u2014 Denghai 605 has done well for me and others around here. It needs less fertilizer than wheat, about 6 kg nitrogen, 3 kg phosphorus, and 3 kg potassium per mu, applied at sowing and once more at the big-flare stage. I will irrigate twice if the rains are scarce. Yield should reach about 550 kg per mu.\n\nThe remaining three mu I will plant with cotton. Cotton gives cash, and I need some income beyond what I store and sell through the grain dealers. But I am 65 now, and cotton is heavy work \u2014 spraying for bollworms and aphids fifteen times or more is hard on my back. So I keep only three mu, not more. I rotary till for cotton, apply compound fertilizer as basal, and side-dress once. It needs about 13 kg nitrogen, 7 kg phosphorus, and 7 kg potassium per mu. I irrigate twice, and if the autumn is dry, maybe a third time. Yield should be around 270 kg per mu.\n\nI do not try new tricks at my age. I watch what my neighbors do, I buy seeds from the same shop in town, and I follow the calendar my father followed. The government still gives a little subsidy for wheat, and the grain dealer comes to the village to pick up the maize. This plan feeds my family, earns some cash, and does not ask more of my body than it can still give.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 41,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 555\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I am a 65-year-old middle-school-educated farmer with about ten mu in Quzhou County. I rely on the traditional wheat-maize double crop on seven mu because it is proven, market-stable, and supported by local experience and modest subsidies. I use rotary tillage for wheat, no-tillage for maize, and apply fertilizers and irrigation according to practices my neighbors and I have followed for decades. I keep three mu of cotton for cash income, but limit the area because its heavy pesticide and labor demands are difficult at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 41,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 555
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I am a 65-year-old middle-school-educated farmer with about ten mu in Quzhou County. I rely on the traditional wheat-maize double crop on seven mu because it is proven, market-stable, and supported by local experience and modest subsidies. I use rotary tillage for wheat, no-tillage for maize, and apply fertilizers and irrigation according to practices my neighbors and I have followed for decades. I keep three mu of cotton for cash income, but limit the area because its heavy pesticide and labor demands are difficult at my age."
+  },
+  "elapsed_seconds": 218.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_6",
+  "tier": 1,
+  "provider": "kimi"
+}

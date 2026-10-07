@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this land in Quzhou for 45 years. I am 67 now, and my bones know the seasons better than any book. My farm is small \u2014 just 3 mu \u2014 but it feeds my wife and me. We grow wheat in the winter half-year and maize in the summer half-year, rotating on the same piece of land. I never went to school, but I learned from my father and from watching the fields.\n\nFor my **winter wheat**, I will plough the field with the rotary tiller after the autumn harvest, then sow **Jimai 22** \u2014 an improved seed I have used for years and trust. I will put down about 100 jin of compound fertilizer per mu as a basal dressing, and topdress once more in spring when the wheat starts to green up. All together that gives about 55 kg of nitrogen, 22 kg of phosphate, and 7 kg of potash per mu. Water is precious, but I have my well. I will irrigate three or four times: once before winter to help the seedlings survive the cold, once at jointing, and once or twice during heading and grain filling if the sky stays dry. For pests and weeds, I usually spray two or three times \u2014 once for insects, once for weeds, and sometimes a fungicide if I see disease. I expect about 1,000 kg per mu if the weather is fair.\n\nFor **summer maize**, I move fast after the wheat comes off in early June. I do not till much \u2014 just plant the **Denghai 605** hybrid maize seed directly into the stubble to save time and keep moisture. I apply about 80 jin of compound fertilizer per mu at planting, which is roughly 22 kg nitrogen, 6 kg phosphate, and 6 kg potash per mu. Maize in summer is hot and thirsty; I will irrigate twice, especially at the big flare stage. Insects are the main worry for maize, so I spray about three times \u2014 herbicide once and insecticide once or twice. If all goes well, I can get about 1,000 kg per mu.\n\nI keep my inputs modest because my land is small and my labor is just the two of us. I do not chase the highest possible yield with expensive chemicals \u2014 I aim for steady, reliable harvests that fill our grain bins and leave some to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 55,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1000\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 3 mu for 45 years and know what works here. I plant improved Jimai 22 wheat in autumn with rotary tillage, applying about 55 kg N, 22 kg P, and 7 kg K per mu, irrigating three times, and spraying three times for pests and weeds. After wheat harvest in June, I sow hybrid Denghai 605 maize with no-tillage to save time and moisture, applying about 22 kg N, 6 kg P, and 6 kg K per mu, irrigating twice, and spraying three times. My wife and I manage this alone, so I keep inputs steady and aim for about 1,000 kg per mu for each crop \u2014 enough for us and some to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 55,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1000
+      }
+    ],
+    "reasoning_summary": "I have farmed these 3 mu for 45 years and know what works here. I plant improved Jimai 22 wheat in autumn with rotary tillage, applying about 55 kg N, 22 kg P, and 7 kg K per mu, irrigating three times, and spraying three times for pests and weeds. After wheat harvest in June, I sow hybrid Denghai 605 maize with no-tillage to save time and moisture, applying about 22 kg N, 6 kg P, and 6 kg K per mu, irrigating twice, and spraying three times. My wife and I manage this alone, so I keep inputs steady and aim for about 1,000 kg per mu for each crop \u2014 enough for us and some to sell."
+  },
+  "elapsed_seconds": 230.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_15",
+  "tier": 2,
+  "provider": "kimi"
+}

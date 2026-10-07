@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land for 55 years, so I know what it needs. Let me think through each crop.\n\n**Winter wheat (planted last October, harvest this June):** I already put the seed in the ground, so the big decisions for this season are topdressing and irrigation. I planted Jimai 22, an improved variety \u2014 everyone in our village uses it, reliable, around 500 kg/mu in a normal year. Base fertilizer went in at planting, about 40 kg of compound 15-15-15 plus 20 kg urea per mu. Come green-up in March, I topdress 15 kg urea per mu with the irrigation. Then another 10 kg at jointing if the crop looks pale. Total N works out to around 18 kg/mu \u2014 our soil here is not poor but wheat needs it. I irrigate three times: winter water in December (already done), green-up in March, and jointing-booting in April. If May is dry I add one more at grain-fill. Spray twice: once for aphids and powdery mildew around booting, once closer to heading for wheat midge. Quzhou has had fusarium head blight risk the last few wet springs, so I keep tebuconazole ready.\n\n**Summer maize (plant right after wheat harvest in June):** I plant Zhengdan 958 or Denghai 605, hybrid \u2014 no one plants traditional maize anymore, yield would be half. I do no-tillage direct seeding into the wheat stubble, it saves two days and keeps moisture. About 4,500 plants per mu. Fertilizer: 30 kg compound at sowing, then 20 kg urea side-dressed at the big trumpet stage (V10-V12). That gives about 18 kg N/mu. I irrigate once at sowing if June is dry, and once more at tasseling if needed \u2014 the well is reliable, but electricity is not free. Spray once for corn borer around tasseling, sometimes twice if armyworm shows up. Expected yield 600 kg/mu, I've been hitting that most years.\n\n**Cotton (2 mu on the sandy corner):** Cotton has become less profitable and I only keep a small plot because that piece of land drains too fast for good wheat. Bt hybrid seed. I plough that plot \u2014 cotton likes loose soil. Base fertilizer: 25 kg compound plus 10 kg urea. Then topdress 15 kg urea at squaring and another 10 kg at flowering. Less N than you'd think because too much N makes it grow tall and hollow. Potassium matters more \u2014 I add 10 kg potassium sulfate. Irrigate 2-3 times, spray 5-6 times through the season \u2014 bollworm, aphids, spider mites. Yield around 250 kg seed cotton per mu, nothing like the old days.\n\nAllocation: 5 mu wheat-maize rotation on the main fields, 2 mu cotton. Wait \u2014 I have 12 mu total, so wheat-maize on 10 mu, cotton on 2 mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 12 mu in Quzhou, wheat-maize rotation on my 10 mu of good land and 2 mu of cotton on the sandy corner that doesn't hold water well. I plant improved wheat (Jimai 22) and hybrid maize (Zhengdan 958) \u2014 the seed costs a little more but the yield difference pays it back three times over. My fertilizer rates match what I've used the last few years: about 18 kg N for wheat and maize, a bit less for cotton because too much N hurts boll set. I stick with no-tillage on maize to save time between wheat harvest and sowing. Three wheat irrigations, two for maize, two-three for cotton \u2014 the well works but pumping costs money. I expect 500 kg wheat, 600 kg maize, 250 kg seed cotton per mu, which is about what I got last year in a normal season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 12 mu in Quzhou, wheat-maize rotation on my 10 mu of good land and 2 mu of cotton on the sandy corner that doesn't hold water well. I plant improved wheat (Jimai 22) and hybrid maize (Zhengdan 958) \u2014 the seed costs a little more but the yield difference pays it back three times over. My fertilizer rates match what I've used the last few years: about 18 kg N for wheat and maize, a bit less for cotton because too much N hurts boll set. I stick with no-tillage on maize to save time between wheat harvest and sowing. Three wheat irrigations, two for maize, two-three for cotton \u2014 the well works but pumping costs money. I expect 500 kg wheat, 600 kg maize, 250 kg seed cotton per mu, which is about what I got last year in a normal season."
+  },
+  "elapsed_seconds": 43.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_14",
+  "tier": 3,
+  "provider": "claude"
+}

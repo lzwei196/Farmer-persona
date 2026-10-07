@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for over fifty years. I know Quzhou soil, I know how the seasons run here. My farm is 5 mu. My body is not as strong as it was, and there are only two of us at home now, so I cannot manage heavy work alone. I have to plan carefully.\n\nI keep 3 mu in the wheat-maize rotation \u2014 that is my steady food-and-cash base. Wheat goes in October after rotary tillage, I pull water from the well three times through the winter and spring. I buy improved seed from the village supply station, the kind I have used for years \u2014 no experiment. I put down base fertilizer before sowing and top-dress at jointing. Maize follows the wheat on the same ground. I do not plough again \u2014 just direct seed after harvest, saves my back and saves moisture. I use the hybrid seed everyone around here uses, Xianyu or something similar. Two irrigations are enough if I time them at tasseling and filling.\n\nThe other 2 mu I put in cotton. Cotton earns more per mu but it is punishing work \u2014 I spray many times and pick by hand. Two of us can manage 2 mu. I plough it deep in spring before transplanting. Cotton drinks a lot of water and needs potassium, I learned that the hard way when my bolls were small years back. I spray for bollworm and aphids \u2014 cannot skip that.\n\nI do not try new things at my age. I do what I know works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 570\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate my 5 mu as 3 mu in wheat-maize double-cropping rotation and 2 mu in cotton, sized to what two elderly people can manage by hand. Wheat is sown in October with rotary tillage, three well irrigations, and moderate fertilizer rates I have used reliably for decades; maize follows directly on the same ground with no-tillage to save labor and soil moisture. Cotton occupies the remaining 2 mu, ploughed deep in spring, receiving heavy potassium dressing and five pesticide applications because bollworm and aphid pressure in Quzhou is consistent and cannot be skipped. All seed choices are standard improved or hybrid types available at the village station \u2014 no untested varieties at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 570
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate my 5 mu as 3 mu in wheat-maize double-cropping rotation and 2 mu in cotton, sized to what two elderly people can manage by hand. Wheat is sown in October with rotary tillage, three well irrigations, and moderate fertilizer rates I have used reliably for decades; maize follows directly on the same ground with no-tillage to save labor and soil moisture. Cotton occupies the remaining 2 mu, ploughed deep in spring, receiving heavy potassium dressing and five pesticide applications because bollworm and aphid pressure in Quzhou is consistent and cannot be skipped. All seed choices are standard improved or hybrid types available at the village station \u2014 no untested varieties at my age."
+  },
+  "elapsed_seconds": 49.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_12",
+  "tier": 2,
+  "provider": "claude"
+}

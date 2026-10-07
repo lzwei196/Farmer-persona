@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've farmed this same land for 45 years. My father farmed it before me. I know what this soil needs, what the weather does here in Quzhou, and I know what works. I don't read books or attend government training sessions \u2014 I watch my crops and I talk to neighbors. My children moved to the city long ago, so it's just me and my wife. Three mu is enough for us.\n\n**Wheat (this winter):**\nI'll plant all 3 mu in wheat, same as always, around mid-October after the maize comes off. I'll buy improved seed from the county seed shop \u2014 I stopped saving my own seed maybe fifteen years ago when the yields from shop seed got much better. Before planting I'll hire the machine to do rotary tillage, chop up the maize stalks. I put down compound fertilizer as base fertilizer before sowing, then come back in spring at jointing stage to top-dress with urea. I water 3 times: once before winter sets in to protect the roots, once at jointing, and once when the heads are filling. I'll spray once for powdery mildew and weeds, maybe twice if the aphids are bad. I expect around 450 jin per mu \u2014 that's normal for me here.\n\n**Maize (this summer):**\nRight after wheat harvest in June I'll seed directly into the stubble without plowing \u2014 my neighbors have been doing this for years and it saves time and money, and at 67 my back is not what it was. I buy Zhengdan 958 hybrid seed from the market, everyone around here uses it. I put down fertilizer at planting and top-dress once more when the plants are knee-high. Summer usually brings rain but I'll run the well pump 2 or 3 times if it's dry, especially when the cobs are forming. I spray herbicide early and check for corn borer. I expect around 550 jin per mu.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 67-year-old farmer with 45 years of experience in Quzhou County follows the established wheat-maize rotation on all 3 mu. For wheat, rotary tillage is used to incorporate maize residue before sowing improved varieties in October, with split nitrogen applications (base compound fertilizer plus spring urea topdressing), three well irrigations at critical growth stages, and two pesticide sprays targeting powdery mildew and aphids. For maize, no-tillage direct seeding into wheat stubble is adopted to reduce labor demands given the farmer's age, using locally dominant Zhengdan 958 hybrid seed, heavier nitrogen application reflecting area norms, two supplemental well irrigations to support summer rainfall, and two pesticide applications for weeds and corn borer. Both crops are managed according to decades of local experience and neighbor practice rather than extension guidance.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 67-year-old farmer with 45 years of experience in Quzhou County follows the established wheat-maize rotation on all 3 mu. For wheat, rotary tillage is used to incorporate maize residue before sowing improved varieties in October, with split nitrogen applications (base compound fertilizer plus spring urea topdressing), three well irrigations at critical growth stages, and two pesticide sprays targeting powdery mildew and aphids. For maize, no-tillage direct seeding into wheat stubble is adopted to reduce labor demands given the farmer's age, using locally dominant Zhengdan 958 hybrid seed, heavier nitrogen application reflecting area norms, two supplemental well irrigations to support summer rainfall, and two pesticide applications for weeds and corn borer. Both crops are managed according to decades of local experience and neighbor practice rather than extension guidance."
+  },
+  "elapsed_seconds": 51.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_15",
+  "tier": 2,
+  "provider": "claude"
+}

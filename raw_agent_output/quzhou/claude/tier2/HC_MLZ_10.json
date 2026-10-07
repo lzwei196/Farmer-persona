@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 30 years. I know what works here in Quzhou. The wheat-maize rotation is the backbone \u2014 reliable, I know every step of it. Cotton brings in the cash money. Some of my children work in the city now, so I have fewer hands at peak times, but I can manage 3 mu of cotton still.\n\nFor the land split: I'll put 5 mu into wheat-maize rotation \u2014 same ground, wheat in winter, maize right after harvest. That leaves 3 mu for cotton. That's 8 mu total, fits perfectly.\n\nWheat I plant in October. I use the improved variety from the seed station \u2014 Kenong series, same as my neighbors. Not going back to traditional seeds, yields are much lower. I water it three times: the winter water before freeze, again at jointing, again when it heads. Two sprays for aphids and mildew. After harvest in June, I put maize in immediately, hybrid seeds, no-till right into the stubble to save time and moisture. Maize practically raises itself compared to cotton.\n\nCotton is the hard work. I plough that ground in spring, transplant in May. Cotton needs my eye on it all season \u2014 bollworm, spider mites, aphids \u2014 so I spray 5 times. Three irrigations from the well. With fewer family hands I have to be efficient, but the cotton money is worth it.\n\nFertilizer I apply the way I always have. Base fertilizer before planting, then topdress at key growth stages. I don't overthink it \u2014 30 years tells me roughly what the land needs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 8 mu between a 5 mu wheat-maize double-crop rotation and 3 mu of cotton, balancing food grain security with cash income while accounting for reduced household labor since some family members work off-farm. I use improved wheat and hybrid maize seeds because yields are substantially better than traditional varieties, and I have irrigated 3, 2, and 3 times respectively using my well, following the timing I have learned over 30 years. Cotton receives 5 pesticide applications due to heavy pest pressure from bollworm and mites. Maize goes in no-till directly after wheat harvest to save labor and conserve soil moisture. Fertilizer rates reflect local norms I have applied consistently and trust from long experience.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 8 mu between a 5 mu wheat-maize double-crop rotation and 3 mu of cotton, balancing food grain security with cash income while accounting for reduced household labor since some family members work off-farm. I use improved wheat and hybrid maize seeds because yields are substantially better than traditional varieties, and I have irrigated 3, 2, and 3 times respectively using my well, following the timing I have learned over 30 years. Cotton receives 5 pesticide applications due to heavy pest pressure from bollworm and mites. Maize goes in no-till directly after wheat harvest to save labor and conserve soil moisture. Fertilizer rates reflect local norms I have applied consistently and trust from long experience."
+  },
+  "elapsed_seconds": 51.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_10",
+  "tier": 2,
+  "provider": "claude"
+}

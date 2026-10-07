@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 55-year-old farmer in Quzhou County, and I have been farming this land for over thirty years. My family has about 16 mu of good flatland on the North China Plain. I did not go to high school, but I know this soil and this climate better than any book. Around here, the only system that makes sense is the wheat-maize double crop \u2014 plant winter wheat in early October, harvest it in early June, then immediately put in summer maize and harvest that by late September or early October. Everyone in my village does this. It is stable, the buyers come to us, and I have the machinery and irrigation wells to support it.\n\nThis year I will stick with what works. For the wheat, I will use an improved local variety like *shimai* or *liangxing*, sow about 30 jin per mu, and do rotary tillage before planting to break up the stubble and prepare a good seedbed. I will put down a basal compound fertilizer \u2014 about 100 kg per mu of the 18-22-5 blend \u2014 and topdress with 50 kg of urea in the spring when the wheat greens up. That gives the crop plenty of nitrogen to push for a high yield. I will irrigate three times: once at sowing or overwintering, once at jointing, and once at grain filling. I will spray herbicide once and insecticide twice, and maybe a fungicide if the weather turns humid.\n\nFor the maize, I will plant a hybrid like *nongda372* or *denghai605* right after the wheat comes out. I use no-tillage for maize \u2014 there is no time to plow again in the hot summer, and the seed drills work fine through the wheat stubble. I will sow about one package of seed per mu and apply roughly 90 kg per mu of the high-nitrogen compound, the 28-6-6 blend. Maize needs less irrigation than wheat here; twice is usually enough, once at seedling stage and once at the big flare stage. I will spray herbicide once and insecticide twice to control armyworm and aphids.\n\nI thought about planting cotton or vegetables on a small plot, but the prices are uncertain and I am getting older \u2014 managing the labor for picky crops is hard. I will put all 16 mu into the wheat-maize rotation. It is boring, but it pays the bills.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 41,\n      \"phosphorus_kg_per_mu\": 9.5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 2.3,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I am sticking with the wheat-maize double-cropping system that dominates Quzhou County because it is the most reliable use of my land and labor. I have about 16 mu, so I will split it evenly between winter wheat and summer maize on the same plots. Wheat gets rotary tillage, improved seed, three irrigations, and a heavy nitrogen regime of compound fertilizer plus urea topdressing to push yield toward 1,000 kg per mu. Maize is planted immediately after wheat harvest with no-tillage, hybrid seed, two irrigations, and a basal high-N compound fertilizer, targeting about 1,100 kg per mu. I avoid specialty crops because price risk and labor demands are too high for a farmer my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 41,
+        "phosphorus_kg_per_mu": 9.5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 2.3,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I am sticking with the wheat-maize double-cropping system that dominates Quzhou County because it is the most reliable use of my land and labor. I have about 16 mu, so I will split it evenly between winter wheat and summer maize on the same plots. Wheat gets rotary tillage, improved seed, three irrigations, and a heavy nitrogen regime of compound fertilizer plus urea topdressing to push yield toward 1,000 kg per mu. Maize is planted immediately after wheat harvest with no-tillage, hybrid seed, two irrigations, and a basal high-N compound fertilizer, targeting about 1,100 kg per mu. I avoid specialty crops because price risk and labor demands are too high for a farmer my age."
+  },
+  "elapsed_seconds": 123.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_4",
+  "tier": 1,
+  "provider": "kimi"
+}

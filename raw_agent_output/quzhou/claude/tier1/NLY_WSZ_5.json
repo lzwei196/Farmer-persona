@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has worked this land in Quzhou for three generations. I know what grows here, and I know what the market wants. There's no mystery to it.\n\n**My thinking:**\n\nQuzhou is North China Plain \u2014 flat, decent soil, but dry. We depend on the groundwater well. Every farmer here does wheat in winter and corn in summer on the same land. That's how my father did it, that's how I do it. Ten mu total \u2014 all of it rotates between the two.\n\nFor wheat, I'll buy improved seeds from the county seed station again \u2014 probably Jimai 22 or whatever they're pushing this year. Better than the old stuff. I'll spread compound fertilizer at planting and top-dress urea at jointing. Four irrigations: one before sowing to get moisture up, one to help it through winter, one at jointing, one at grain filling. Two or three sprays \u2014 one for aphids in spring, maybe a fungicide if the weather's wet.\n\nFor corn, I go straight in after wheat harvest \u2014 no-till, just direct seeding. Hybrid seed, Zhengdan 958 or similar. Summer rains usually carry it through, but I'll pump twice if it's dry at silking. Corn needs a lot of nitrogen. I put down compound at planting and top-dress urea at the big bell stage.\n\nI use rotary tillage on the wheat ground each autumn. Saves time, breaks up the surface well enough.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 48-year-old farmer on the North China Plain in Quzhou County, I follow the standard wheat-maize double-cropping rotation that dominates this region. Both crops occupy the same 10 mu sequentially through the year. I choose improved wheat varieties and hybrid maize seed because the yields are reliably better and seed costs are manageable. Fertilizer application is heavy by some standards \u2014 I've learned from experience that cutting back hurts yields more than it saves money. I rely on four groundwater irrigations for wheat across its long growing season, and depend mainly on summer rainfall for maize with two supplemental pumps. Rotary tillage prepares the wheat seedbed each autumn; maize goes in no-till directly after wheat harvest to save time and keep moisture. Pesticide use is moderate \u2014 aphids and powdery mildew on wheat, and a corn borer spray on maize if needed.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 48-year-old farmer on the North China Plain in Quzhou County, I follow the standard wheat-maize double-cropping rotation that dominates this region. Both crops occupy the same 10 mu sequentially through the year. I choose improved wheat varieties and hybrid maize seed because the yields are reliably better and seed costs are manageable. Fertilizer application is heavy by some standards \u2014 I've learned from experience that cutting back hurts yields more than it saves money. I rely on four groundwater irrigations for wheat across its long growing season, and depend mainly on summer rainfall for maize with two supplemental pumps. Rotary tillage prepares the wheat seedbed each autumn; maize goes in no-till directly after wheat harvest to save time and keep moisture. Pesticide use is moderate \u2014 aphids and powdery mildew on wheat, and a corn borer spray on maize if needed."
+  },
+  "elapsed_seconds": 42.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_5",
+  "tier": 1,
+  "provider": "claude"
+}

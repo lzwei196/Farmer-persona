@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been working this land forty years. My man passed some years back, my boy works in the city, sends money but the farm is mine. Fifteen mu is a lot for an old woman but I manage \u2014 hire the tractor for ploughing, hire help for garlic harvest. Let me think through this year, same as every year really.\n\n**Wheat, 10 mu** \u2014 I plant when the cold comes in October. I buy the seed from the same dealer in town, the one my neighbor Old Wang uses. He gets good wheat so I follow him. I put two bags of the compound fertilizer \u2014 the 15-15-15 kind \u2014 on each mu when I plough, that's one full bag and another half. Then in spring when the wheat wakes up I spread urea, about half a bag each mu. I water three times from the well \u2014 before winter, at jointing, and when the grain fills. I spray once for the yellow mites when I see them. Last year I got about 450 jin per mu, I hope same this year.\n\n**Maize, 10 mu** \u2014 After wheat comes off in June I put maize straight in, no ploughing, just the seed drill. Hybrid seed, the one everyone around here uses. One bag compound at planting, then when it gets to my waist I side-dress urea, maybe half a bag per mu. Summer rain usually enough but I water once if July is dry. Spray once for the borer. Maize gives me maybe 550 jin a mu, it's reliable.\n\n**Garlic, 5 mu** \u2014 This is my cash. Garlic eats a lot so I feed it a lot. Two bags compound per mu before planting in October, plus I spread chicken manure I buy from the chicken farm \u2014 one cart on each mu. In spring I topdress urea twice, total about one bag per mu. I water five times, garlic is thirsty. Spray two times for the rust and the maggot. Good year I get 1300 jin per mu, fresh weight. Garlic pays for everything.\n\nI don't change much from last year. Changing is how you lose money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"garlic\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 14,\n      \"potassium_kg_per_mu\": 14,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 1300\n    }\n  ],\n  \"reasoning_summary\": \"I do what I did last year because it worked. Wheat and maize on ten mu, same rotation as always \u2014 compound fertilizer at planting, urea topdress, water from the well when the crop needs it. Garlic on five mu is my money crop so I spend more on it \u2014 extra fertilizer, chicken manure, more water, two sprays. I follow my neighbors and the dealer I trust. Changing things is how an old woman loses a year's work.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "garlic",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 14,
+        "potassium_kg_per_mu": 14,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 1300
+      }
+    ],
+    "reasoning_summary": "I do what I did last year because it worked. Wheat and maize on ten mu, same rotation as always \u2014 compound fertilizer at planting, urea topdress, water from the well when the crop needs it. Garlic on five mu is my money crop so I spend more on it \u2014 extra fertilizer, chicken manure, more water, two sprays. I follow my neighbors and the dealer I trust. Changing things is how an old woman loses a year's work."
+  },
+  "elapsed_seconds": 39.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_4",
+  "tier": 3,
+  "provider": "claude"
+}

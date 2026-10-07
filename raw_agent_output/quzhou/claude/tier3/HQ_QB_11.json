@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am thinking about this year now. My land is 10.1 mu, and like most of us in Quzhou, I do wheat in winter and maize in summer on the same ground. That is what works here. The cotton I used to grow \u2014 I stopped some years back, the price was no good and it took too much labor. So this year, same as last year, just wheat and maize on all 10.1 mu.\n\nMy wife and I, we are getting older. The children work in town now. So I cannot do too much by hand. I rent a rotary tiller from the village service for both seasons \u2014 it costs money but my back cannot take ploughing anymore.\n\nFor wheat, I plant Jimai 22, an improved variety. The dealer in town sells it and my neighbor Old Wang has been getting 500 kg per mu with it. Last year I used about 25 kg of urea before sowing as base, then 15 kg urea topdress at jointing. Plus one bag of compound fertilizer (15-15-15) per mu as base \u2014 that is 50 kg. So my N comes to about 25+15+7.5=47-48 kg, P about 7.5 kg, K about 7.5 kg per mu. I will do the same \u2014 last year gave me 480 kg per mu, not bad. I irrigate the wheat 3 times: before winter, at jointing, and at grain filling. The well is mine to use. Pesticide \u2014 I spray for aphids and powdery mildew, usually 2 times, sometimes 3 if the weather is bad.\n\nFor maize, I plant Zhengdan 958 \u2014 everyone here plants it, very reliable. After wheat harvest in June, I use the rotary tiller and direct sow. Base fertilizer one bag compound 15-15-15 per mu, then topdress 20 kg urea at the big bell stage. So N about 7.5+9=16-17 kg... no wait, let me think again. Maize needs more N than wheat. I usually put more \u2014 base compound plus 25 kg urea topdress, maybe even split into two applications. Total N around 20 kg per mu. Yield last year was 550 kg per mu. Irrigate 2 times if rain is short. Pesticide 2 times \u2014 for borer and armyworm.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10.1 mu wheat-maize rotation like most households in Quzhou. I dropped cotton years ago \u2014 too much labor and poor price. My wife and I are getting older with children working in town, so I rent rotary tillage from the village service for both seasons. For wheat I sow Jimai 22 with one bag of 15-15-15 compound plus urea base, then urea topdress at jointing, three irrigations from my well, two pesticide sprays for aphids and mildew, expecting around 480 kg/mu like last year. For maize I sow Zhengdan 958 right after wheat harvest, slightly more nitrogen than wheat because maize is hungry, two irrigations and two pesticide sprays for borer and armyworm, expecting 550 kg/mu. I keep close to last year's practice \u2014 it worked, and changing things is risky at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 10.1 mu wheat-maize rotation like most households in Quzhou. I dropped cotton years ago \u2014 too much labor and poor price. My wife and I are getting older with children working in town, so I rent rotary tillage from the village service for both seasons. For wheat I sow Jimai 22 with one bag of 15-15-15 compound plus urea base, then urea topdress at jointing, three irrigations from my well, two pesticide sprays for aphids and mildew, expecting around 480 kg/mu like last year. For maize I sow Zhengdan 958 right after wheat harvest, slightly more nitrogen than wheat because maize is hungry, two irrigations and two pesticide sprays for borer and armyworm, expecting 550 kg/mu. I keep close to last year's practice \u2014 it worked, and changing things is risky at my age."
+  },
+  "elapsed_seconds": 25.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_11",
+  "tier": 3,
+  "provider": "claude"
+}

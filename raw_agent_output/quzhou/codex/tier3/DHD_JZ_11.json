@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm the same 6 mu in wheat-maize rotation every year, so I do not start from zero. I look first at what I did last year, then I adjust a little. I have done this for 30 years, and around Quzhou our land can still give good yield if water and fertilizer keep up at the key stages. I have well irrigation, so I will not hold back too much on fertilizer, because if wheat is short of fertilizer at jointing or maize is short around big flare stage, the yield drops fast and that loss hurts more than spending a bit extra on inputs. I also watch what nearby farmers do. If an improved wheat variety and a hybrid maize did well in fields like mine, I will follow that. For wheat, I will use improved seed, put more fertilizer into the base and then topdress nitrogen once, irrigate about 3 times, and spray 2 times if disease and aphids show up. For maize, I will use hybrid seed, give enough nitrogen, keep one topdressing, irrigate 2 times with the well unless rain is very good, and spray 2 times for weeds and insects. On my 6 mu, rotary tillage is the easiest for me and costs less labor than deep ploughing every season, so I will mostly do that and keep the schedule tight between wheat harvest and maize sowing.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will follow my usual wheat-maize rotation on all 6 mu and adjust from last year instead of changing too much. I have well irrigation, so I will keep fertilizer at a level that protects yield, because losing production costs me more than wasting a little fertilizer. For wheat I will use an improved variety, feed it more steadily, irrigate three times, and control disease and insects with two sprays. For maize I will use hybrid seed, keep nitrogen strong, irrigate twice unless rainfall is enough, and spray twice for weeds and insects. I will use rotary tillage because it fits my labor, my farm size, and the tight turnaround between the two crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will follow my usual wheat-maize rotation on all 6 mu and adjust from last year instead of changing too much. I have well irrigation, so I will keep fertilizer at a level that protects yield, because losing production costs me more than wasting a little fertilizer. For wheat I will use an improved variety, feed it more steadily, irrigate three times, and control disease and insects with two sprays. For maize I will use hybrid seed, keep nitrogen strong, irrigate twice unless rainfall is enough, and spray twice for weeds and insects. I will use rotary tillage because it fits my labor, my farm size, and the tight turnaround between the two crops."
+  },
+  "elapsed_seconds": 26.9,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_11",
+  "tier": 3,
+  "provider": "codex"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 62 years old, and I have worked this land for 40 years. My wife and I are the only ones left at home, so I must be careful with labor. I know every inch of my 16.1 mu. This year, I will keep 6 mu in cotton because the price has been acceptable and I understand the crop, but cotton is heavy work\u2014hand-picking every boll, spraying again and again. The remaining 10.1 mu will stay in my wheat-maize double crop, which is my backbone. The wheat gets a government subsidy, and both wheat and maize can be harvested by machine, which saves my back and fits our two-person household. I have well water, so I can irrigate when the rain fails, but pumping costs diesel and electricity, so I never water more than the crop truly needs.\n\nFor the winter wheat, I will sow an improved variety I have trusted for years. I will rotary-till the field before planting and apply 16 kg of nitrogen, 7 kg of phosphorus, and 5 kg of potassium per mu. I will irrigate three times\u2014once before winter to protect the seedlings, once at jointing, and once at grain filling. I will spray twice: once with herbicide after sowing, and once for insects and disease in spring. I expect about 520 kg per mu if the spring weather holds.\n\nFor the summer maize, I will plant hybrid seed immediately after the wheat comes off in early June. I will use no-tillage planting to save time and keep soil moisture, applying 16 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. I will irrigate twice if the summer rains are normal, and spray twice for weeds and corn borers. I expect about 600 kg per mu.\n\nFor the cotton, I will deep-plough in spring and plant a hybrid Bt cotton to resist bollworm. Cotton needs more potassium for the bolls, so I will apply 14 kg nitrogen, 6 kg phosphorus, and 8 kg potassium per mu. I will irrigate three times during the dry spells in mid-summer, and spray four times for aphids and other secondary pests. I expect about 280 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"With only my wife and me at home, I split the 16.1 mu into 10.1 mu of mechanized wheat-maize double cropping and 6 mu of cotton. The wheat-maize system is reliable and less labor-intensive, while cotton brings better margins but requires more hand labor and sprays. I use well irrigation sparingly to control costs, apply sufficient but not excessive fertilizer based on 40 years of observing this soil, and choose tillage methods that match each crop's timing and labor needs. I expect 520 kg/mu of wheat, 600 kg/mu of maize, and 280 kg/mu of seed cotton under normal weather.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "With only my wife and me at home, I split the 16.1 mu into 10.1 mu of mechanized wheat-maize double cropping and 6 mu of cotton. The wheat-maize system is reliable and less labor-intensive, while cotton brings better margins but requires more hand labor and sprays. I use well irrigation sparingly to control costs, apply sufficient but not excessive fertilizer based on 40 years of observing this soil, and choose tillage methods that match each crop's timing and labor needs. I expect 520 kg/mu of wheat, 600 kg/mu of maize, and 280 kg/mu of seed cotton under normal weather."
+  },
+  "elapsed_seconds": 60.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_9",
+  "tier": 2,
+  "provider": "kimi"
+}

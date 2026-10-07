@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been doing this for 50 years on this same land in Quzhou. My back isn't what it used to be and it's just my wife and me now, so I don't overwork myself. I know this land \u2014 I know when it's thirsty, I know when the wheat is pushing and needs a drink, I know what the millet can handle.\n\nMy main system is wheat in autumn, then millet on that same ground after the June harvest. That's what my father did and what works here. I keep a separate piece \u2014 about 3.5 mu \u2014 in maize because it pays better at market and the buyers come to us.\n\nFor wheat, I get seeds from the county cooperative. Not the old landraces, but the improved variety they sell us \u2014 Jimai or similar. I've seen those give decent yields without too much fuss. I till with the rotary machine my neighbor rents out \u2014 I can't manage the deep plough anymore alone. I put fertilizer down before sowing and again at jointing. Three waterings from the well: before planting to settle the seed bed, once at tillering when it gets cold-dry, and once at heading. I spray twice \u2014 once for rust, once before harvest if there's aphids.\n\nFor millet, I use seed I saved from last year's good plants. Millet is tough. It doesn't need much from me. Two waterings are enough, one fertilizer application at sowing, and I rarely need pesticide \u2014 maybe once if there's midge pressure.\n\nFor the maize plot, I buy hybrid seeds \u2014 Xianyu 335 or whatever the village shop has. Maize needs more from me: three waterings, more nitrogen, two pesticide runs for borer and leaf disease.\n\nI'm not trying to maximize. I'm trying to get through the year with a decent harvest that the two of us can manage without hiring too much help.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 71-year-old two-person household farms 10.5 mu using a wheat-millet double-crop rotation on 7 mu and a separate 3.5 mu maize plot. Labor constraints from age drive choices toward rotary tillage over ploughing, modest but experienced fertilizer rates applied at known critical stages, and well irrigation limited to key phenological windows to control pumping costs. Seed choices reflect decades of local practice: improved wheat variety from the county cooperative, saved traditional millet seed, and hybrid maize for better market returns. Pesticide use is minimal and reactive rather than scheduled. Yield expectations are conservative, reflecting a subsistence-plus-market orientation rather than yield maximization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 71-year-old two-person household farms 10.5 mu using a wheat-millet double-crop rotation on 7 mu and a separate 3.5 mu maize plot. Labor constraints from age drive choices toward rotary tillage over ploughing, modest but experienced fertilizer rates applied at known critical stages, and well irrigation limited to key phenological windows to control pumping costs. Seed choices reflect decades of local practice: improved wheat variety from the county cooperative, saved traditional millet seed, and hybrid maize for better market returns. Pesticide use is minimal and reactive rather than scheduled. Yield expectations are conservative, reflecting a subsistence-plus-market orientation rather than yield maximization."
+  },
+  "elapsed_seconds": 55.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_7",
+  "tier": 2,
+  "provider": "claude"
+}

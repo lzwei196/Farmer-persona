@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 60 years old, and I have farmed these same 3 mu in Quzhou County for 40 years. I finished middle school, so I can read the numbers on the fertilizer bags and understand what the input dealer in town tells me, but I still trust my own eyes and what Lao Zhang does across the road more than any outside expert. Last year my wheat made about 500 kg per mu and my maize made about 600 kg per mu. This year I will do almost exactly the same thing, because change is risky, fertilizer prices have gone up again, and every bag I buy is real money out of my pocket. My wife and I do all the labor ourselves \u2014 3 mu is just enough that we do not need to hire anyone, but it also means we cannot afford a bad harvest.\n\nFor my winter wheat: After the maize comes off in autumn, I will rotary till the ground with my small tiller and sow the improved wheat variety I bought from the dealer \u2014 the same one Lao Zhang planted last year and had good luck with. At sowing, I spread 80 jin per mu of compound fertilizer, the 15-15-15 kind. That is 40 kg per mu, giving me about 6 kg each of nitrogen, phosphate, and potash. Then in spring, when the wheat turns green, I broadcast 20 jin of urea per mu, and another 20 jin at the jointing stage. Each 20 jin is 10 kg, and urea is 46% nitrogen, so that is about 4.6 kg nitrogen each time. Add the 6 kg from the compound, and I am at about 15 kg nitrogen per mu total. I know that is a little more than the poster at the agro-shop says, but last year I did the same and got 520 kg per mu. Better to waste a little fertilizer than to lose grain. I will irrigate three times: the overwintering water, the jointing water, and one at filling time. The well pump costs electricity, but if the wheat dries out at filling, the whole year is lost. I spray herbicide once in early spring, and if I see aphids or rust, I spray one more time \u2014 two pesticide applications in total.\n\nFor my summer maize: Right after wheat harvest in early June, I rotary till quick and plant hybrid maize seed. You cannot grow maize without hybrid seed now; the old varieties are gone. At planting, I put 60 jin per mu of compound fertilizer in the row \u2014 that is 30 kg of 15-15-15, giving me about 4.5 kg each of nitrogen, phosphate, and potash. When the maize hits the big trumpet stage, I side-dress 50 jin of urea per mu \u2014 25 kg, which is about 11.5 kg nitrogen. Total nitrogen is about 16 kg per mu. I irrigate twice: once at jointing if the sky does not give rain, and once at filling. I do one herbicide spray after sowing, and one insecticide spray when the corn borers come, usually around tasseling \u2014 two pesticide applications. I expect 600 kg per mu if the weather holds.\n\nI think about my whole budget. Spending more on fertilizer means less left for medicine or repairs, but a bad harvest is a disaster. I watch what my neighbors do. If Lao Zhang puts down a certain amount, I do something similar. That is how I have stayed alive on 3 mu for 40 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 3 mu the same way I did last year because change is risky and every yuan counts. For wheat, I apply 40 kg per mu of 15-15-15 compound fertilizer at sowing and split 20 kg per mu of urea between green-up and jointing, irrigating three times and spraying twice. For maize, I apply 30 kg per mu of compound at planting and 25 kg per mu of urea at the big trumpet stage, irrigating twice and spraying twice. I use improved wheat seed and hybrid maize seed, rotary till both crops, and target 520 kg per mu for wheat and 600 kg per mu for maize. I would rather spend a little extra on fertilizer than risk losing yield, because a bad harvest on a small farm is a disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I manage my 3 mu the same way I did last year because change is risky and every yuan counts. For wheat, I apply 40 kg per mu of 15-15-15 compound fertilizer at sowing and split 20 kg per mu of urea between green-up and jointing, irrigating three times and spraying twice. For maize, I apply 30 kg per mu of compound at planting and 25 kg per mu of urea at the big trumpet stage, irrigating twice and spraying twice. I use improved wheat seed and hybrid maize seed, rotary till both crops, and target 520 kg per mu for wheat and 600 kg per mu for maize. I would rather spend a little extra on fertilizer than risk losing yield, because a bad harvest on a small farm is a disaster."
+  },
+  "elapsed_seconds": 94.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_2",
+  "tier": 3,
+  "provider": "kimi"
+}

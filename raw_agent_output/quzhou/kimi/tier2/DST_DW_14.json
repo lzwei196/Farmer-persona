@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 51-year-old farmer in Quzhou County, and I have worked this land for 35 years. My farm is 16.9 mu, just me and my wife at home now\u2014our children work off-farm in the city. With only two of us, I have to be smart about labor. I have a well for irrigation, which is my advantage when the rains do not cooperate. I know this soil like the back of my hand.\n\nFor my **winter wheat**, I will plant the full 16.9 mu in October after rotary tillage. I use an improved variety that performs well here\u2014hybrid wheat is not common in our village, and I save some seed from year to year, but I also buy fresh seed when the old batch weakens. Before sowing, I spread compound fertilizer as a base dressing, and at green-up or jointing I topdress with urea. All together, I put down about 18 kg of nitrogen, 7 kg of phosphorus, and 6 kg of potassium per mu. I irrigate four times: once before winter to help the crop survive the cold, once at green-up, once at jointing, and once at grain filling if the weather turns dry. I spray herbicide once after sowing, and I keep an eye out for aphids and powdery mildew\u2014usually two more sprays handle it. I expect about 520 kg per mu if the weather holds.\n\nFor **summer maize**, I plant immediately after wheat harvest in early June. Time is short, so I do not till\u2014I sow directly into the wheat stubble. I use hybrid seed; everyone here does, because the yield difference is too big to ignore. At sowing, I put down fertilizer with the seeder, and when the plants reach the big trumpet stage I topdress with more nitrogen. Total nutrients are about 14 kg nitrogen, 5 kg phosphorus, and 5 kg potassium per mu. I irrigate twice: once if the seedling stage is dry, and the critical one at silking. For pests, I spray herbicide once and insecticide twice for corn borer. I expect around 580 kg per mu.\n\nThis is the system that has fed my family for decades, and I see no reason to change it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"With 35 years of experience on 16.9 mu and only two people in the household, I prioritize reliable, labor-efficient practices. I use rotary tillage for wheat and no-tillage for maize to save time after wheat harvest. Well irrigation lets me apply water at critical growth stages. I use improved wheat seed and hybrid maize seed, apply compound and straight fertilizers in split applications, and control weeds and insects with 3-4 spray applications per crop. These choices reflect what has worked consistently on my farm in Quzhou County.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "With 35 years of experience on 16.9 mu and only two people in the household, I prioritize reliable, labor-efficient practices. I use rotary tillage for wheat and no-tillage for maize to save time after wheat harvest. Well irrigation lets me apply water at critical growth stages. I use improved wheat seed and hybrid maize seed, apply compound and straight fertilizers in split applications, and control weeds and insects with 3-4 spray applications per crop. These choices reflect what has worked consistently on my farm in Quzhou County."
+  },
+  "elapsed_seconds": 124.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "DST_DW_14",
+  "tier": 2,
+  "provider": "kimi"
+}

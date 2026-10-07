@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 50-year-old farmer in Quzhou County with only a primary school education. I have been farming this land for over 30 years, and I know what works here on the North China Plain. My family has about 9 mu of land in total.\n\nRight now it is April, and my winter wheat is already in the ground \u2014 I sowed it last October after rotary tilling the soil. I always use improved wheat varieties like Shimai or Lumai that I get from the local supply store. They are reliable. For fertilizer, I will spread about 100 kg per mu of compound fertilizer as basal dressing, and then topdress with ammonium bicarbonate or urea at green-up time. In total I put down about 35 kg of nitrogen, 20 kg of phosphorus, and 6 kg of potassium per mu. I irrigate three times \u2014 we already did winter irrigation, and now I will water again in spring, plus once more before heading if the weather stays dry. I spray herbicide once and insecticide two or three times, and maybe fungicide if the weather turns wet. I expect about 1,050 kg per mu.\n\nAfter wheat harvest in early June, I will plant summer maize immediately on that same 7 mu. I will not till the land \u2014 I will sow directly into the wheat stubble using my no-till seeder. That saves time and keeps moisture in the soil. I buy hybrid maize seed from the market, varieties like Denghai 605 or Nongda 372. They cost more but they yield better and resist lodging. I apply about 80 kg per mu of compound fertilizer at sowing. Maize needs less water than wheat, so two irrigations should be enough \u2014 one at the jointing stage and one during grain filling. I spray for weeds once and insects two or three times. I expect about 1,050 kg per mu.\n\nI also keep 2 mu for cotton. Cotton brings good cash when the price holds, and I have experience with it. I will rotary till that plot in late April and sow an improved variety like Guoxinmian. I apply about 100 kg per mu of compound fertilizer as basal dressing. Cotton needs a lot of spraying for bollworms \u2014 I will spray about 15 times through the season. I will irrigate twice. I expect about 600 kg per mu of seed cotton.\n\nI do not try fancy new crops because I cannot afford big risks. Wheat and maize give my family grain for food and steady income. Cotton gives me extra cash. This is what my neighbors do and what has worked for decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 35,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize rotation on 7 mu because it is reliable, provides food security, and the inputs and machinery are well understood in my village. I use improved wheat varieties and hybrid maize seed for better yields. For maize, no-tillage saves labor and preserves soil moisture after wheat harvest. I also grow 2 mu of cotton for cash income, which is common among farmers like me in Quzhou, though it requires intensive pest management with about 15 pesticide applications. My input levels follow what I and my neighbors have used for years \u2014 compound fertilizer plus straight nitrogen for wheat, mostly compound fertilizer for maize and cotton \u2014 and my expected yields are based on my actual experience with these crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 35,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize rotation on 7 mu because it is reliable, provides food security, and the inputs and machinery are well understood in my village. I use improved wheat varieties and hybrid maize seed for better yields. For maize, no-tillage saves labor and preserves soil moisture after wheat harvest. I also grow 2 mu of cotton for cash income, which is common among farmers like me in Quzhou, though it requires intensive pest management with about 15 pesticide applications. My input levels follow what I and my neighbors have used for years \u2014 compound fertilizer plus straight nitrogen for wheat, mostly compound fertilizer for maize and cotton \u2014 and my expected yields are based on my actual experience with these crops."
+  },
+  "elapsed_seconds": 256.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_12",
+  "tier": 1,
+  "provider": "kimi"
+}

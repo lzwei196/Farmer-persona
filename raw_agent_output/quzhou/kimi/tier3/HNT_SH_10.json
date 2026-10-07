@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 78 years old. I have farmed these same 5 mu in Quzhou County for 40 years, and my father farmed them before me. I only finished primary school, but I know this soil better than any book. My son and his wife work in a factory in Handan, so mostly it is me and my wife doing the work now. The son sends some money home, but we still have to watch every yuan. We have a well, so we can pump water when the sky does not give us enough.\n\nFor winter wheat, I plant in October after the National Day holiday. I buy improved wheat seeds from the seed dealer in town \u2014 I use about 15 kg per mu. I learned long ago that deep ploughing once before wheat is good for the roots, so I plough deep first, then I rotary till to make the field flat. Before planting, I spread one 50 kg bag of compound fertilizer per mu as base fertilizer. That costs me about 150 yuan per bag, but I do not skip it. In March, when the wheat turns green and the weather warms, I topdress with 25 kg of urea per mu. I would rather put a bit too much fertilizer than risk losing yield \u2014 a bad harvest is a disaster, but wasting some fertilizer is just a cost. I irrigate three times: once before the winter freeze so the wheat can drink enough to survive the cold, once in March at green-up, and once in April when the stems start growing tall. I spray herbicide once right after planting to kill the weeds, and I spray pesticide once in the spring if I see aphids on the leaves. Last year I got about 480 kg per mu, and I expect about the same this year if the weather does not turn bad.\n\nFor summer maize, right after I harvest the wheat in early June, I plant maize immediately \u2014 there is no time to waste. I use hybrid maize seeds, the kind that cost more but grow strong; I plant about 2.5 kg per mu. I do not plough deep for maize \u2014 there is no time \u2014 so I just rotary till the wheat stubble into the soil. At planting, I put 40 kg of compound fertilizer per mu. Then when the maize grows to knee height and the leaves look like a big trumpet, I add 20 kg of urea per mu. Maize grows during the rainy season, so I do not need as much water as wheat. I irrigate twice: once when the stalks shoot up, and once when the tassels come out if the rain does not come. I spray herbicide once after planting, and if I see corn borers later in the summer, I spray insecticide once. I usually get a bit more maize than wheat, around 520 kg per mu.\n\nI watch what my neighbors do. If Lao Wang next door tries something new and his field looks good, I might try it too next year. But mostly I do what I did last year. At my age, change is risky, and I cannot afford a bad year. Every bag of fertilizer and every hour of labor is real money, so I think about my whole budget. If I spend too much on fertilizer, I have less for pesticide or for hiring help at harvest time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I stick to what has worked for 40 years on my 5 mu in Quzhou. For wheat, I plough deep, apply one 50 kg bag of compound fertilizer and 25 kg of urea per mu, irrigate three times, and spray twice. For maize, I rotary till, apply 40 kg of compound fertilizer and 20 kg of urea per mu, irrigate twice, and spray twice. I use improved wheat seed and hybrid maize seed, and I expect about 480 kg per mu of wheat and 520 kg per mu of maize. I watch my neighbors but mostly copy last year because change is risky and every yuan counts.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I stick to what has worked for 40 years on my 5 mu in Quzhou. For wheat, I plough deep, apply one 50 kg bag of compound fertilizer and 25 kg of urea per mu, irrigate three times, and spray twice. For maize, I rotary till, apply 40 kg of compound fertilizer and 20 kg of urea per mu, irrigate twice, and spray twice. I use improved wheat seed and hybrid maize seed, and I expect about 480 kg per mu of wheat and 520 kg per mu of maize. I watch my neighbors but mostly copy last year because change is risky and every yuan counts."
+  },
+  "elapsed_seconds": 80.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_10",
+  "tier": 3,
+  "provider": "kimi"
+}

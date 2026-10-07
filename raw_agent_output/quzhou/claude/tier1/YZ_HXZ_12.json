@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am Zhang, 67 years old. My husband passed six years ago. My son works in Handan city now. I farm our contracted land myself, about 5 mu, with help from my nephew at harvest time.\n\nI have farmed this same land for forty years. I know what grows here. The ground is flat, the well is nearby, and the weather is what it is. I do not read the agricultural newspapers. I watch the sky, I talk to my neighbor Old Liu, and I do what we have always done.\n\nWe grow wheat in winter and corn in summer. That is what everyone here grows. That is what the land is for. I have never tried cotton \u2014 too much trouble, too uncertain with the price. Vegetables I grow behind my house, just enough for myself.\n\nFor wheat, I will plant in early October after the soil cools. I will buy the improved seed from the village store \u2014 not the expensive new kind, just the reliable one they always carry. I fertilize before planting and again when the stalks are rising. Four waterings: before it goes dormant, when it joints, when it heads, and one more when the grain fills. If I miss one, the yield drops badly. I know this.\n\nFor corn, I sow directly into the wheat stubble right after June harvest \u2014 no time to waste. I use hybrid seed. That is the only seed they sell now and the yield is better than the old varieties, I admit that. Summer rains help, so I only irrigate once if it is dry in August.\n\nI spend carefully. I am not young. I cannot carry as much as I used to. But I know this land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow the same winter wheat and summer maize rotation I have farmed for forty years on my 5 mu of contracted land in Quzhou. I plant improved wheat seed and hybrid maize seed from the village store, applying fertilizer at rates I learned from my husband and neighbors. Wheat needs four irrigations from our groundwater well to survive the dry Hebei winter and spring; maize gets one irrigation in August if the summer rains are short. I use rotary tillage before wheat but sow maize directly into the stubble to save time and effort at my age. I apply pesticide twice each crop \u2014 once for weeds, once for disease or insects before harvest. I do not experiment with new crops or new methods. This rotation feeds my household and gives me enough to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow the same winter wheat and summer maize rotation I have farmed for forty years on my 5 mu of contracted land in Quzhou. I plant improved wheat seed and hybrid maize seed from the village store, applying fertilizer at rates I learned from my husband and neighbors. Wheat needs four irrigations from our groundwater well to survive the dry Hebei winter and spring; maize gets one irrigation in August if the summer rains are short. I use rotary tillage before wheat but sow maize directly into the stubble to save time and effort at my age. I apply pesticide twice each crop \u2014 once for weeds, once for disease or insects before harvest. I do not experiment with new crops or new methods. This rotation feeds my household and gives me enough to sell."
+  },
+  "elapsed_seconds": 50.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_12",
+  "tier": 1,
+  "provider": "claude"
+}

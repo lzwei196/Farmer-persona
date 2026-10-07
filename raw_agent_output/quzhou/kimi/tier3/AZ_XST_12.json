@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 67 years old. I went to primary school for a few years when I was young, enough to read the numbers on fertilizer bags and do sums in my head. I have farmed these fields in Quzhou for 50 years, and I learned everything from my father and from watching what the good farmers in my village do. My farm is 14 mu, just me and my old woman working it. When the busy seasons come, we hire a machine or a couple of workers, but mostly it is our own hands.\n\nFor the winter wheat, I will rotary till the land in October before sowing. I buy improved wheat seed from the dealer \u2014 last year I used Jimai 22, and this year I will use the same because my neighbor Lao Wang got 1000 jin per mu with it. For fertilizer, I put half a bag of compound fertilizer per mu at sowing time \u2014 that is 25 kg per mu, one bag is 50 kg. The bag says 16-16-16 on it. Then in spring, when the wheat is jointing and I can see the rows turning green strong, I spread another 20 kg of urea per mu. I know that is about 40 jin total of fertilizer plus the urea, but I do not calculate the exact nitrogen numbers \u2014 the dealer told me this amount is what most people use here. I irrigate three times: once before winter so the wheat does not dry out, once at jointing, and once when the grain is filling. Each time I run the well pump for a few hours. I spray pesticide twice \u2014 once for weeds and once if I see any disease on the leaves. I expect 1000 jin per mu, which is 500 kg, same as last year if the frost does not hit too hard.\n\nFor the summer maize, I have no time to plough after wheat harvest in early June \u2014 the season is too short. I direct-seed into the wheat stubble with a no-till planter. I use Denghai 605 hybrid seed \u2014 everyone around here uses it because it grows fast and strong. I plant about 1.2 bags of seed per mu. At sowing, I put 25 kg of compound fertilizer per mu in the row. When the plants are knee-high, about 20 days later, I top-dress with 20 kg of urea per mu. I irrigate twice: once right after sowing if the soil is dry, and once when the tassels come out. Two pesticide sprays \u2014 one for weeds and one for the borers that always try to eat the stems. I expect about 1100 jin per mu, around 550 kg.\n\nI spend about 280 yuan per mu on fertilizer and seed for wheat, and about 260 yuan for maize. Every yuan matters because our pension is small. But I dare not cut back on fertilizer \u2014 if I lose yield, I lose thousands of yuan. Wasting a little fertilizer is just a cost; a bad harvest is a disaster. I watch what my neighbors do, and I do about the same. If Lao Wang puts more urea this year, I might add a bit too.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 14 mu wheat-maize rotation the way I have done for decades, adjusting only slightly from last year based on what worked for my neighbors. For wheat I rotary till and apply half a bag of compound fertilizer per mu at sowing plus 20 kg of urea at jointing, irrigating three times and spraying twice, expecting 500 kg per mu. For maize I no-till plant immediately after wheat harvest using Denghai 605 hybrid seed, with 25 kg compound and 20 kg urea per mu, two irrigations and two pesticide sprays, expecting 550 kg per mu. I would rather spend a little extra on fertilizer than risk a bad harvest, because every yuan of input is a gamble I take against the weather, and a failed crop would ruin my whole year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage my 14 mu wheat-maize rotation the way I have done for decades, adjusting only slightly from last year based on what worked for my neighbors. For wheat I rotary till and apply half a bag of compound fertilizer per mu at sowing plus 20 kg of urea at jointing, irrigating three times and spraying twice, expecting 500 kg per mu. For maize I no-till plant immediately after wheat harvest using Denghai 605 hybrid seed, with 25 kg compound and 20 kg urea per mu, two irrigations and two pesticide sprays, expecting 550 kg per mu. I would rather spend a little extra on fertilizer than risk a bad harvest, because every yuan of input is a gamble I take against the weather, and a failed crop would ruin my whole year."
+  },
+  "elapsed_seconds": 260.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_12",
+  "tier": 3,
+  "provider": "kimi"
+}

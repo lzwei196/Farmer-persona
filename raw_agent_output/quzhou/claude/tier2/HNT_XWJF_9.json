@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou for fifty years. I know these fields. The wheat goes in come October, maize follows after the wheat harvest in June \u2014 same ground, same rotation I've done my whole life. My children help during the busy seasons since my body isn't what it was, but I still make the decisions.\n\nFor wheat, I'll plant about 16 mu \u2014 the whole plot. I'll buy improved seed from the township supply station, the semi-dwarf variety they've been selling around here for years. Good tillering, doesn't lodge easily. I'll run the rotary tiller after we pull the maize stalks in October, then apply base fertilizer before seeding. I put down compound fertilizer at planting and then urea at jointing \u2014 my father did it this way, I do it this way. With the well, I'll water before winter sets in, again at jointing, and once more at heading. Three times is what wheat needs here. I'll spray for aphids and do one herbicide pass in spring. I expect around 480 jin per mu if the weather holds.\n\nFor maize, same 16 mu starting June. I'll use hybrid seed \u2014 everyone does now, the yield difference is real and I've seen it myself. After we cut wheat I'll direct-seed into the stubble, no need to plow twice in one summer, saves my son a day's work. I apply urea in two shots \u2014 some at planting, the rest when it's knee-high. Summer rains usually carry us through but I'll run the well once if July turns dry. One pesticide pass for corn borer is enough. I expect around 550 jin per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer with 50 years on this land in Quzhou follows the established wheat-maize rotation on all 16.1 mu, relying on accumulated local knowledge rather than outside advice. Wheat uses improved semi-dwarf varieties with rotary tillage and three well irrigations at critical growth stages; maize uses hybrid seed with no-till direct seeding after wheat harvest to conserve labor (important given limited physical capacity and off-farm family members), relying mainly on summer rainfall with one supplemental irrigation. Fertilizer rates reflect the practical experience of a smallholder who applies slightly above agronomic optima as insurance against yield loss \u2014 a common pattern among older North China Plain farmers \u2014 while pesticide use is kept minimal based on decades of field observation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer with 50 years on this land in Quzhou follows the established wheat-maize rotation on all 16.1 mu, relying on accumulated local knowledge rather than outside advice. Wheat uses improved semi-dwarf varieties with rotary tillage and three well irrigations at critical growth stages; maize uses hybrid seed with no-till direct seeding after wheat harvest to conserve labor (important given limited physical capacity and off-farm family members), relying mainly on summer rainfall with one supplemental irrigation. Fertilizer rates reflect the practical experience of a smallholder who applies slightly above agronomic optima as insurance against yield loss \u2014 a common pattern among older North China Plain farmers \u2014 while pesticide use is kept minimal based on decades of field observation."
+  },
+  "elapsed_seconds": 46.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_9",
+  "tier": 2,
+  "provider": "claude"
+}

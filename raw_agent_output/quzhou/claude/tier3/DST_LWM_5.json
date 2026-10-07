@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 36, been farming 15 years, so I know my land. 19.1 mu total. Cotton takes the whole summer, so that field can't do wheat-maize. I keep 5 mu for cotton like last year, and the other 14.1 mu does wheat then maize, same as my neighbors.\n\n**Wheat (winter, 14.1 mu):** Before planting I spread one and a half bags of \u590d\u5408\u80a5 15-15-15 per mu \u2014 that's about 75 kg. Then at green-up I topdress 15 kg urea per mu. So roughly 20 kg nitrogen, 10 kg phosphorus, 6 kg potassium per mu. Better a little extra than lose the harvest. I irrigate 3 times with my well \u2014 winter water, green-up, and filling. Spray 2 times for rust and aphids. I plough before sowing. Last year I got 440 kg, I expect 450 this year.\n\n**Maize (summer, 14.1 mu):** Straight after wheat, no time to plough so rotary only. Zhengdan 958 hybrid seed, everyone uses it here. One bag compound at sowing, then 20 kg urea at big trumpet stage. About 18 kg N, 6 kg P, 6 kg K. Irrigate twice if rain is short. Spray once or twice for borer. Expect 550 kg.\n\n**Cotton (spring, 5 mu):** I use \u6297\u866b\u68c9 Bt seed \u2014 without it the bollworm eats everything. Cotton wants more fertilizer: 16 kg N, 8 kg P, 10 kg K per mu. Spray 6 times through the season \u2014 aphids, spider mites, bollworm, late-season pests. Irrigate 3 times. Plough before planting. Hope for 270 kg seed cotton per mu. It's cash money, so I don't skimp on spray.\n\nFamily has 8 people, some work outside, so for cotton picking I'll need my mother-in-law and sister to help at peak.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I keep 5 mu for cotton and 14.1 mu for the wheat-maize rotation, same as last year \u2014 I don't change a working plan. I apply compound fertilizer at sowing plus urea topdressing, following what my neighbors do and a bit extra because losing yield is worse than wasting a few yuan of fertilizer. Cotton needs the most spraying and care since it's my cash crop, so I pay attention there. Wheat and maize I manage the standard way for Quzhou \u2014 plough the wheat field, rotary the maize after harvest, irrigate from my own well when rain falls short.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I keep 5 mu for cotton and 14.1 mu for the wheat-maize rotation, same as last year \u2014 I don't change a working plan. I apply compound fertilizer at sowing plus urea topdressing, following what my neighbors do and a bit extra because losing yield is worse than wasting a few yuan of fertilizer. Cotton needs the most spraying and care since it's my cash crop, so I pay attention there. Wheat and maize I manage the standard way for Quzhou \u2014 plough the wheat field, rotary the maize after harvest, irrigate from my own well when rain falls short."
+  },
+  "elapsed_seconds": 46.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_5",
+  "tier": 3,
+  "provider": "claude"
+}

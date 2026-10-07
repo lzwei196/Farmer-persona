@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 70 years old now, and I have been farming this land in Quzhou County for half a century. My legs ache when the weather changes, but my hands still remember what to do. I only went to primary school, but the land has been my true teacher. This year, my 18 mu will be split between the winter wheat already in the ground since last autumn, the cotton I will plant this spring, and the summer maize that follows the wheat harvest.\n\nI keep 10 mu for wheat and maize together \u2014 that gives us grain to eat and some to sell. The wheat needs three irrigations from my well: at green-up, at jointing, and when the grains are filling. I buy improved wheat seed from the county supply station because it is reliable, and I spread about 15 kg of nitrogen, 6 kg of phosphate, and 4 kg of potash per mu. I do not chase record yields anymore \u2014 steady and sure is better at my age.\n\nFor cotton, I will plant 8 mu this year. Cotton is backbreaking work \u2014 planting, pruning, spraying, picking \u2014 and with my children working in the county town factories, I cannot manage any more than that. Cotton needs deep ploughing, at least 20 cm, so the roots can dig down deep. I will irrigate three times, especially at flowering and boll-setting, and I must spray five times for bollworms. If I skip even one spraying, the worms will ruin everything.\n\nAfter the wheat comes off in early June, I will plant hybrid maize that very day \u2014 you cannot waste a single day of the summer season. Hybrid maize grows fast, and with two irrigations and some fertilizer, it will give a decent crop by September. I use rotary tillage for wheat and maize to save my old back and save time, but cotton still needs the plough. My well gives me water, but pumping costs electricity, so I only water when the crops truly need it. After 50 years, I can tell by looking at the leaves.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"At 70 years old with 50 years of experience on this land, I split my 18 mu between 10 mu of winter wheat followed by summer maize for food and income security, and 8 mu of cotton which is labor-intensive but familiar. I use improved wheat seed and hybrid maize from the county station, deep plough for cotton, and rely on my well for strategic irrigations. I keep fertilizer moderate, spray cotton heavily for bollworms, and choose rotary tillage for the grain crops to save labor, since my children work off-farm and I must manage alone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "At 70 years old with 50 years of experience on this land, I split my 18 mu between 10 mu of winter wheat followed by summer maize for food and income security, and 8 mu of cotton which is labor-intensive but familiar. I use improved wheat seed and hybrid maize from the county station, deep plough for cotton, and rely on my well for strategic irrigations. I keep fertilizer moderate, spray cotton heavily for bollworms, and choose rotary tillage for the grain crops to save labor, since my children work off-farm and I must manage alone."
+  },
+  "elapsed_seconds": 95.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_9",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62, been working these 8 mu for 40 years now. In Quzhou we do wheat-maize double cropping \u2014 that's what everyone here does, and the land supports it well with our well irrigation. My two sons are in the city so it's just me and my wife now, but I can still manage 8 mu with some machinery services hired in.\n\nLet me think through this year.\n\n**Winter wheat (8 mu, October to June):**\nLast year I got about 500 kg per mu, which is normal for me. I'll plant Jimai 22 again \u2014 it's a good improved variety, many neighbors use it, yields well and resists lodging. I buy seed from the county dealer, about 15 kg per mu for drilling.\n\nFor fertilizer \u2014 at planting I'll put down compound fertilizer (15-15-15) about 40 kg per mu as base, that gives me 6 kg N, 6 kg P, 6 kg K. Then at green-up stage in March I topdress urea about 20 kg per mu, that's another 9 kg N. So total around 15 kg N, 6 kg P, 6 kg K per mu. In Quzhou the soil already has decent phosphorus from years of compound fertilizer, but I still apply because skipping it scares me \u2014 a weak crop is worse than spending a few extra yuan.\n\nIrrigation: winter water before freeze, then green-up water, jointing, and grain-filling. So 4 times. Our well water is reliable but electricity costs money, so I don't over-water.\n\nPesticide: one herbicide spray in spring for broadleaf weeds, one fungicide-insecticide mix at heading for aphids and rust. So 2 applications. If aphids explode I'll do a third.\n\nTillage: rotary after maize harvest, that's standard here. Plowing deep is too expensive and the rotary cultivator does fine for wheat.\n\n**Summer maize (8 mu, June to October):**\nAfter wheat I plant Zhengdan 958 or similar hybrid, no-till direct seeding into wheat stubble \u2014 saves time and moisture. About 4500 plants per mu.\n\nFertilizer: compound 40 kg per mu at planting (6-6-6 NPK), then urea topdress 25 kg per mu at big flare stage (12 kg N). Total about 18 kg N, 6 kg P, 6 kg K. Maize needs more N than wheat.\n\nIrrigation: if June-July rains are good I only water 2 times (jointing and tasseling). If dry, 3 times. I'll plan for 3.\n\nPesticide: one spray for armyworm and corn borer at whorl stage, maybe a second if borer pressure is high. Plan 2.\n\nExpected yield: maize around 600 kg per mu, wheat 500 kg per mu. That's what my land gives with decent management.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu wheat-maize rotation in Quzhou with well irrigation, same as my neighbors. For wheat I use Jimai 22 improved variety, 40 kg compound at planting plus 20 kg urea topdressing at green-up, giving 15 kg N, 6 kg P, 6 kg K per mu, with 4 irrigations and 2 sprays, targeting 500 kg/mu. For summer maize I no-till into wheat stubble using Zhengdan 958 hybrid, 40 kg compound plus 25 kg urea at big flare, total 18 kg N, 6 kg P, 6 kg K per mu, 3 irrigations and 2 sprays, targeting 600 kg/mu. I stick close to last year's practice because it works \u2014 wasting a little fertilizer costs less than losing yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu wheat-maize rotation in Quzhou with well irrigation, same as my neighbors. For wheat I use Jimai 22 improved variety, 40 kg compound at planting plus 20 kg urea topdressing at green-up, giving 15 kg N, 6 kg P, 6 kg K per mu, with 4 irrigations and 2 sprays, targeting 500 kg/mu. For summer maize I no-till into wheat stubble using Zhengdan 958 hybrid, 40 kg compound plus 25 kg urea at big flare, total 18 kg N, 6 kg P, 6 kg K per mu, 3 irrigations and 2 sprays, targeting 600 kg/mu. I stick close to last year's practice because it works \u2014 wasting a little fertilizer costs less than losing yield."
+  },
+  "elapsed_seconds": 27.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_4",
+  "tier": 3,
+  "provider": "claude"
+}

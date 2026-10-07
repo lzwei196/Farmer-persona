@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land in Quzhou for two decades. I know the North China Plain \u2014 hot summers, cold winters, and never enough rain when you need it. My well saves me when the sky doesn't cooperate.\n\nEight mu isn't much, but with 10 people in the household and some of the younger ones in the city now, I manage with machines more than I used to. The wheat-maize rotation is the only system that makes sense here. Same land, two crops a year \u2014 that's how you make 8 mu feed a family and still have something to sell.\n\nFor **wheat**, I plant in October on all 8 mu. I've switched to improved varieties \u2014 the extension station pushed Jimai lines hard and I've seen the yields myself. I'll do rotary tillage after the maize harvest to chop up the stalks and prepare a proper seedbed. I apply base fertilizer before sowing and topdress nitrogen at the jointing stage. Four irrigations: pre-winter to help establishment, jointing, heading, and grain filling. Stripe rust and powdery mildew hit us some years, so three pesticide passes \u2014 herbicide early spring, fungicide at heading, aphid control if needed.\n\nFor **maize**, I go in right after the wheat combine in June. No-till direct seeding \u2014 it saves time and keeps the soil from drying out in that brutal June heat. I use hybrid seed, Zhengdan 958 or similar, same as my neighbors. Maize is heavier on nitrogen so I push that up a bit, split between base and side-dress at V6. Summer gets more rainfall so three irrigations is usually enough \u2014 seedling establishment, tasseling, and grain fill if it's dry. Two pesticide applications: herbicide and one pass for corn borer or aphids.\n\nAt 65, I don't experiment much. I've learned what this soil gives back when you treat it right.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As an experienced 65-year-old farmer in Quzhou County with well irrigation and a high education, I run a standard wheat-maize double-cropping rotation on all 8 mu. I use improved wheat varieties and hybrid maize seed to maximize yields for a 10-person household. For wheat I use rotary tillage to incorporate maize residue and apply 4 irrigations across critical growth stages; for maize I switch to no-till direct seeding after the wheat harvest to conserve soil moisture and save labor, relying on 3 irrigations given summer rainfall. Fertilizer rates reflect local extension guidance with nitrogen split-applied at planting and key growth stages. Pesticide use is targeted \u2014 fungicide and aphid control for wheat, herbicide and borer management for maize. I expect roughly 450 kg/mu wheat and 550 kg/mu maize based on two decades of results on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As an experienced 65-year-old farmer in Quzhou County with well irrigation and a high education, I run a standard wheat-maize double-cropping rotation on all 8 mu. I use improved wheat varieties and hybrid maize seed to maximize yields for a 10-person household. For wheat I use rotary tillage to incorporate maize residue and apply 4 irrigations across critical growth stages; for maize I switch to no-till direct seeding after the wheat harvest to conserve soil moisture and save labor, relying on 3 irrigations given summer rainfall. Fertilizer rates reflect local extension guidance with nitrogen split-applied at planting and key growth stages. Pesticide use is targeted \u2014 fungicide and aphid control for wheat, herbicide and borer management for maize. I expect roughly 450 kg/mu wheat and 550 kg/mu maize based on two decades of results on this land."
+  },
+  "elapsed_seconds": 47.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_16",
+  "tier": 2,
+  "provider": "claude"
+}

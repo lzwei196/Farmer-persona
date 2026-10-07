@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have 10.1 mu of good flat land here in Quzhou, and after thirty years I know every corner of it. My household has five people, but my sons work in the factories in Shijiazhuang now, so it is mainly my wife and me in the fields. We split the land into two blocks: 6.5 mu for the wheat-maize rotation that feeds us and pays for daily expenses, and 3.6 mu for cotton because cotton brings in cash. We pump from our own well, so water is available but electricity is costly\u2014I do not irrigate blindly.\n\nThe wheat went into the ground last October. Now that spring has arrived, I will topdress it with urea at green-up and irrigate three times: at jointing, at heading, and once more during grain filling. I will spray herbicide once, and if I see aphids or rust I will spray one or two more times. I plant improved wheat varieties that give me steady yields of around 520 kg per mu if the weather is normal.\n\nAs soon as the wheat comes off in early June\u2014usually around June 10\u2014I will plant hybrid maize the same day or the next day. There is no time to plough; I sow directly into the wheat stubble with no-tillage. Maize needs less water than wheat, so two irrigations in summer are enough, plus a herbicide spray and an insecticide spray or two. With a good hybrid like Zhengdan 958, I expect about 600 kg per mu.\n\nFor the cotton block, I will rotary-till the soil in late April, then plant hybrid Guoxinmian seeds. Cotton is hungrier for labor and chemicals than grain. I will apply basal compound fertilizer and topdress once later, irrigate three times at seedling, flowering and boll-setting stages, and spray pesticides about five times because bollworms and aphids are fierce around here. In a decent year that 3.6 mu should give me about 380 kg of seed cotton per mu.\n\nI stopped using traditional seeds years ago\u2014they cannot compete. The improved wheat and hybrid maize and cotton seeds cost more, but they pay for themselves. I keep fertilizer at moderate levels; fertilizer prices keep rising, and I have learned that pouring on extra does not always put more money in my pocket.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 380\n    }\n  ],\n  \"reasoning_summary\": \"I divide my 10.1 mu into 6.5 mu for wheat-maize double cropping and 3.6 mu for cotton. Wheat gets three irrigations and moderate fertilizer because it is my staple crop. Maize is no-till sown immediately after wheat harvest to save time and labor. Cotton requires more pesticide sprays and careful irrigation but provides cash income. I use improved seeds for wheat and hybrid seeds for maize and cotton to maximize yields on limited land, while keeping input costs controlled because well irrigation and hired labor are expensive.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 380
+      }
+    ],
+    "reasoning_summary": "I divide my 10.1 mu into 6.5 mu for wheat-maize double cropping and 3.6 mu for cotton. Wheat gets three irrigations and moderate fertilizer because it is my staple crop. Maize is no-till sown immediately after wheat harvest to save time and labor. Cotton requires more pesticide sprays and careful irrigation but provides cash income. I use improved seeds for wheat and hybrid seeds for maize and cotton to maximize yields on limited land, while keeping input costs controlled because well irrigation and hired labor are expensive."
+  },
+  "elapsed_seconds": 257.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_5",
+  "tier": 2,
+  "provider": "kimi"
+}

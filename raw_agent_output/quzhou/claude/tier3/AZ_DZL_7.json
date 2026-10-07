@@ -1,0 +1,53 @@
+{
+  "raw_response": "I think about my land like this. I have 19.1 mu total. Most of it I put in wheat-maize double crop \u2014 that is what everyone around here does and it gives two harvests a year. I will put 15 mu in wheat and maize rotation. The other 4.1 mu I keep for cotton on a separate piece \u2014 the soil there is a bit sandier so cotton does alright.\n\nFor wheat, I plant in October. I buy improved seed from the agricultural supply shop \u2014 Jimai or Hengmai variety, whatever the dealer has that my neighbors used well last year. I put down 50 kg of compound fertilizer (15-15-15) per mu before planting, then topdress 20 kg of urea per mu at the green-up stage in March. That gives me about 17 kg nitrogen. I'd rather put a little extra than see the wheat turn yellow. I irrigate 3 times \u2014 once before winter, once at green-up, once at grain filling. I spray once for aphids and once for wheat scab. I expect about 450 kg per mu if the weather holds.\n\nFor maize after wheat, I plant right after wheat harvest in June. Hybrid seed \u2014 Zhengdan or Xianyu. I use 40 kg compound fertilizer at planting and topdress 15 kg urea at the big trumpet stage. Maize uses a lot of nitrogen. I irrigate once or twice depending on rain. Spray once for borers. I should get 550 kg per mu.\n\nFor cotton, I use hybrid Bt seed \u2014 the bollworm problem is less now but still I spray 4-5 times for aphids and mites. I put 50 kg compound plus 10 kg urea, and some potash because cotton bolls need potassium. I irrigate 2 times from the well. Cotton is more work but the price is better when it's good. Maybe 230 kg seed cotton per mu.\n\nMy son works in the city so labor is mostly me and my wife. I hire a harvester for wheat and maize \u2014 cheaper than doing it ourselves at my age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I keep 15 mu in wheat-maize rotation like my neighbors, and 4.1 mu in cotton on the sandier ground. I buy improved wheat seed and hybrid maize and cotton seed \u2014 the dealer recommends what worked nearby. I use 50 kg compound fertilizer as base for each crop plus urea topdress, a little more than the extension says but I'd rather waste some fertilizer than lose yield. I irrigate from my well 2-3 times depending on the crop and rainfall. Cotton needs the most spraying because of aphids and mites. My wife and I handle the work, and I hire the combine for wheat and maize harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I keep 15 mu in wheat-maize rotation like my neighbors, and 4.1 mu in cotton on the sandier ground. I buy improved wheat seed and hybrid maize and cotton seed \u2014 the dealer recommends what worked nearby. I use 50 kg compound fertilizer as base for each crop plus urea topdress, a little more than the extension says but I'd rather waste some fertilizer than lose yield. I irrigate from my well 2-3 times depending on the crop and rainfall. Cotton needs the most spraying because of aphids and mites. My wife and I handle the work, and I hire the combine for wheat and maize harvest."
+  },
+  "elapsed_seconds": 40.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_7",
+  "tier": 3,
+  "provider": "claude"
+}

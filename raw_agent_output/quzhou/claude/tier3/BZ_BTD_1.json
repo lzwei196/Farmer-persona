@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 60, never went to school, but I have farmed this land 40 years. I know what works here in Quzhou. My husband and I, plus two grown children when they help, work 16.9 mu. We do wheat then maize on most of it, like everyone here. I keep small patches of chili and cotton for extra cash.\n\nI do what my neighbors do, mostly. Last year wheat gave me about 500 kg per mu, maize about 550. Not bad. I will not change much \u2014 changing is how you lose money.\n\nFor wheat (winter), I plant about 10 mu. I use the same improved seed the dealer sells everyone \u2014 Jimai something, I forget the number. Before planting I spread two bags of compound fertilizer per mu, that is about 50 kg. Then in spring when wheat turns green I top-dress with one bag of urea per mu, maybe 20 kg. I water 3 times \u2014 after planting, in spring greening, and at heading. Better to water one extra time than lose the harvest. I spray for aphids and rust, twice usually. We plough after maize harvest.\n\nFor maize (summer), same 10 mu after wheat. Hybrid seed, Zhengdan or whatever the shop has. I sow direct into wheat stubble, no plough, saves money and time. One bag compound at sowing, then one bag urea at knee-high. Water twice if no rain. Spray once for borer.\n\nCotton, 4 mu. I use more fertilizer because cotton eats a lot. Three bags compound, two bags urea over the season. Water 4 times. Spray many times \u2014 cotton has many bugs, 6 or 7 times.\n\nChili, about 2.9 mu. Needs a lot of care. Heavy fertilizer, lots of water, spray often.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way my neighbors farm and the way I farmed last year \u2014 that is the safest way. Wheat-maize rotation on 10 mu, cotton on 4, chili on 2.9. I buy two bags of compound fertilizer per mu for grain, plus one bag of urea top-dress, because too little fertilizer means a bad harvest and that is much worse than wasting some money. Cotton and chili get more fertilizer and more spraying because they bring more cash but also have more pests. I water from the well when the crop needs it, better one extra time than risk drying out.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 6,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I farm the way my neighbors farm and the way I farmed last year \u2014 that is the safest way. Wheat-maize rotation on 10 mu, cotton on 4, chili on 2.9. I buy two bags of compound fertilizer per mu for grain, plus one bag of urea top-dress, because too little fertilizer means a bad harvest and that is much worse than wasting some money. Cotton and chili get more fertilizer and more spraying because they bring more cash but also have more pests. I water from the well when the crop needs it, better one extra time than risk drying out."
+  },
+  "elapsed_seconds": 27.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_1",
+  "tier": 3,
+  "provider": "claude"
+}

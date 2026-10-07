@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am thinking about how to farm this year. My land is only 5 mu, so I cannot afford a bad harvest. Last two years I followed what my uncle and neighbors do, and it worked okay, so I will do mostly the same.\n\nFor wheat, I plant in October after maize comes off. I buy improved seed from the town dealer \u2014 the bag he sells most. I use about 40 kg per mu of seed, maybe a little more because I broadcast and it is not so even. Before planting I put down compound fertilizer, the 15-15-15 kind, about two bags (100 kg) for the 5 mu, so 20 kg per mu. That gives roughly 3 kg of N, 3 kg P, 3 kg K from the base. Then at spring green-up I top-dress urea, one bag (50 kg) for whole field, plus another half bag around jointing. Urea is 46 percent N, so this gives me maybe 20 kg N more per mu. Total N near 23 kg. I would rather put a little extra than see yellow leaves \u2014 bad wheat is a disaster, one bag of urea is only 100 yuan. I water at green-up, at jointing, and at grain-filling if dry. Three times usually. I plow with the tractor man from the village \u2014 he charges by mu. Pesticide I spray twice, once for aphids and once mixed with herbicide. My neighbors get around 450 kg per mu, I hope for the same.\n\nFor maize, I plant right after wheat harvest in June, no-till with the seeder, hybrid seed \u2014 Zhengdan or whatever the dealer has that year, everyone plants it. One bag of compound fertilizer as base, 20 kg per mu, then top-dress urea at big trumpet stage, one full bag across the field plus some more, about 18 kg N per mu added. Maize needs water in summer but rain usually comes; I irrigate maybe twice if July is dry. Spray once for borer, maybe a second time if I see worms. My neighbors get 550 kg per mu, that is my target.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I only have 5 mu and three years of farming, so I copy what my uncle and neighbors do in Quzhou. For wheat I use improved seed, two bags of 15-15-15 as base and one and a half bags of urea as topdressing, irrigate three times from the well, and spray twice. For maize I plant hybrid seed no-till after wheat, same base fertilizer plus urea at big trumpet stage, irrigate if July is dry, and spray for borer. I would rather spend a little extra on urea than lose grain \u2014 a bad harvest hurts much more than one extra bag of fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I only have 5 mu and three years of farming, so I copy what my uncle and neighbors do in Quzhou. For wheat I use improved seed, two bags of 15-15-15 as base and one and a half bags of urea as topdressing, irrigate three times from the well, and spray twice. For maize I plant hybrid seed no-till after wheat, same base fertilizer plus urea at big trumpet stage, irrigate if July is dry, and spray for borer. I would rather spend a little extra on urea than lose grain \u2014 a bad harvest hurts much more than one extra bag of fertilizer."
+  },
+  "elapsed_seconds": 28.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "I'm 39, been farming my own land for only 3 years now. Before that I worked construction in the city, but I came back when my father got too old to manage the fields alone. I only finished primary school, so I don't know much about the technical calculations. I watch what my neighbors do, especially Old Zhang who has the plot next to mine \u2014 he's been farming for over 20 years and his yields are always decent. My family has 4 people: my wife works at a garment factory in town and isn't around much during busy times, my father can help a bit with lighter work, and my son is in middle school. So mostly it's me handling the heavy labor.\n\nI have 5 mu, all in wheat-maize double cropping. That's small, and money is always tight. My wife's factory has been cutting hours lately, so I need to watch every yuan I spend on inputs. But I also can't afford to under-fertilize \u2014 two years ago I tried to save money on fertilizer and the wheat was so yellow and thin that I barely got 300 kg per mu. That hurt. Last year I followed Old Zhang's method more closely and got about 380 kg per mu for wheat and about 420 kg for maize. This year I want to do a bit better, but I can't take big risks.\n\nFor wheat: I'll plant in mid-October, around October 15th, same as everyone else in the village. I buy the improved wheat seed from the county supply store \u2014 not the most expensive kind, but the one most people use. It costs about 60 yuan per mu. I'll plow once with my walking tractor and harrow to level the field. Before planting, I spread about one bag of compound fertilizer per mu \u2014 the 15-15-15 kind. That's 50 kg. Then at jointing in the spring, if the wheat looks a bit yellow, I'll topdress about 15 kg of urea per mu. I usually irrigate three times: once right after planting to help the seeds come up, once at jointing in March or April, and once at grain filling in May. The well water costs me electricity every time, so I don't water more than that. For weeds, I'll spray herbicide once in early spring \u2014 the wild oats were bad last year. For harvest in early June, I'll hire a combine \u2014 it's about 55 yuan per mu, but there's no way I can cut and thresh 5 mu by hand in time, because the maize planting window is so tight.\n\nFor maize: Right after wheat harvest, I have maybe a week to get the maize in the ground. I'll till lightly with the walking tractor \u2014 no deep plowing because there's no time. I plant hybrid maize seed, about 55 yuan per mu. When I plant, I put about 35 kg of compound fertilizer in the furrow. Then at the big trumpet stage, I'll topdress with about 10 kg of urea per mu. I know some people use more, but fertilizer prices have gone up and I need to save some cash for my son's school fees. I'll irrigate twice if it's dry \u2014 once at planting if the rain doesn't come, and once at tasseling in August. If the summer rains are good, maybe I only irrigate once. I watch for armyworms on the maize; if I see damage, I'll spray insecticide. I'll also use herbicide once if the weeds get bad.\n\nFor labor: During wheat planting in October, it's mostly me and my father \u2014 takes about 2 days. My wife helps on weekends when she can. The real rush is wheat harvest and maize planting in June \u2014 that's when I might hire 2-3 people for a couple of days to help, otherwise I can't finish in time. Maize harvest in late September I can mostly do myself, maybe hire one person for a day or two.\n\nI expect about 400 kg per mu for wheat and 450 kg per mu for maize if the weather is normal. That's a bit better than last year because I'm hoping the spring rain is decent. But I'm not counting on it \u2014 you never know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 5,\n      \"planting_date\": \"mid-October\",\n      \"harvest_date\": \"early-mid June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 60,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"50 kg compound fertilizer (15-15-15) as base broadcast before planting; 15 kg urea topdress at jointing stage in March-April\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"single plowing with walking tractor, followed by harrowing to level before wheat planting\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 5,\n      \"planting_date\": \"mid-June, immediately after wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10,\n      \"phosphorus_total_kg_per_mu\": 5.3,\n      \"potassium_total_kg_per_mu\": 5.3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"35 kg compound fertilizer (15-15-15) applied in planting furrow; 10 kg urea topdress at big trumpet stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"light tillage with walking tractor after wheat harvest, no deep plowing due to tight turnaround time\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 450\n    }\n  ],\n  \"total_input_cost_yuan\": 3100,\n  \"reasoning_summary\": \"I mostly do what my neighbor Old Zhang does because he has good yields and I only have 3 years experience. Money is tight this year because my wife's factory cut hours, so I apply conservative fertilizer rates \u2014 enough to avoid a bad yield but not the maximum. I hire a combine for wheat harvest because the turnaround to maize is too tight to do by hand. I irrigate three times for wheat because it's worth the electricity cost, but only twice for maize to save money. I use family labor as much as possible and only hire help during the wheat harvest and maize planting rush.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 5,
+        "planting_date": "mid-October",
+        "harvest_date": "early-mid June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 60,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "50 kg compound fertilizer (15-15-15) as base broadcast before planting; 15 kg urea topdress at jointing stage in March-April",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "single plowing with walking tractor, followed by harrowing to level before wheat planting",
+        "labor_family_days": 14,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 5,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 5,
+        "planting_date": "mid-June, immediately after wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10,
+        "phosphorus_total_kg_per_mu": 5.3,
+        "potassium_total_kg_per_mu": 5.3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "35 kg compound fertilizer (15-15-15) applied in planting furrow; 10 kg urea topdress at big trumpet stage",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "light tillage with walking tractor after wheat harvest, no deep plowing due to tight turnaround time",
+        "labor_family_days": 10,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 10,
+        "area_mu": 5,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 5.3,
+        "potassium_kg_per_mu": 5.3
+      }
+    ],
+    "total_input_cost_yuan": 3100,
+    "reasoning_summary": "I mostly do what my neighbor Old Zhang does because he has good yields and I only have 3 years experience. Money is tight this year because my wife's factory cut hours, so I apply conservative fertilizer rates \u2014 enough to avoid a bad yield but not the maximum. I hire a combine for wheat harvest because the turnaround to maize is too tight to do by hand. I irrigate three times for wheat because it's worth the electricity cost, but only twice for maize to save money. I use family labor as much as possible and only hire help during the wheat harvest and maize planting rush."
+  },
+  "elapsed_seconds": 267.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 4,
+  "provider": "kimi"
+}

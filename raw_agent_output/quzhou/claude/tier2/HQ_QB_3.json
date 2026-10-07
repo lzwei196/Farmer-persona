@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 40 years. I know what works here in Quzhou. The soil is familiar to me, the well is reliable, and I know the weather patterns. My body isn't as strong as it was, and I'm alone now, so I keep things manageable. I split my 6 mu evenly \u2014 3 mu wheat, 3 mu maize \u2014 same as always. No reason to change what has fed me this long.\n\n**Wheat (winter, planted October):** I'll buy improved seed from the county supply station, same variety I've used the past few years \u2014 good resistance, decent yield. I rotary till after maize harvest to break up the stubble. I put down base fertilizer before sowing \u2014 diammonium phosphate and urea together \u2014 then topdress urea again at jointing. I irrigate four times: once before sowing to get good germination, the winter freeze water to protect roots, jointing stage, and heading. I spray herbicide in winter and then a combined fungicide-insecticide at heading for rust and aphids. That's two pesticide runs.\n\n**Maize (summer, planted mid-June):** Right after wheat harvest I plant directly \u2014 no tilling, no time for it in June heat. I use hybrid seed, the kind they sell at the village store. Heavy nitrogen \u2014 I split it, some at planting, the rest at jointing. Three irrigations: one at emergence if it's dry, one at jointing, one at grain fill. Two pesticide applications \u2014 herbicide early, then something for corn borer if I see damage.\n\nI don't experiment at my age. I do what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old experienced farmer in Quzhou County splits 6 mu evenly between winter wheat and summer maize in a standard double-cropping rotation. Wheat receives rotary tillage after maize harvest, improved seed, four irrigations at critical growth stages, split nitrogen applications totaling 14 kg/mu, and two pesticide runs for weeds and disease. Summer maize follows wheat with no-tillage direct seeding using hybrid varieties, higher nitrogen at 18 kg/mu split across planting and jointing, three irrigations, and two pesticide applications. Decisions reflect 40 years of local experience, physical labor constraints of a single-person elderly household, and conservative reliance on proven inputs and practices rather than experimentation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 64-year-old experienced farmer in Quzhou County splits 6 mu evenly between winter wheat and summer maize in a standard double-cropping rotation. Wheat receives rotary tillage after maize harvest, improved seed, four irrigations at critical growth stages, split nitrogen applications totaling 14 kg/mu, and two pesticide runs for weeds and disease. Summer maize follows wheat with no-tillage direct seeding using hybrid varieties, higher nitrogen at 18 kg/mu split across planting and jointing, three irrigations, and two pesticide applications. Decisions reflect 40 years of local experience, physical labor constraints of a single-person elderly household, and conservative reliance on proven inputs and practices rather than experimentation."
+  },
+  "elapsed_seconds": 45.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_3",
+  "tier": 2,
+  "provider": "claude"
+}

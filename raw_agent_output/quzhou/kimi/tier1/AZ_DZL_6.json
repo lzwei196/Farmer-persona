@@ -1,0 +1,40 @@
+{
+  "raw_response": "I\u2019m 59, been farming these plots in Quzhou since I was a teenager. My father and grandfather did the same thing\u2014wheat in the winter, corn in the summer. I went to primary school, enough to read labels and keep simple accounts, but I learned farming from watching and doing. The land here is flat, the soil is loam, and the water table is dropping, so I can\u2019t waste water. I\u2019m not one for fancy experiments; I stick to the rotation that pays the rent and feeds the family. Last year the wheat price was steady and the corn price didn\u2019t collapse, so I\u2019m not changing the main plan. I have about 4 mu of good land.\n\nHere is what I will do:\n\n1. **Winter wheat** on all 4 mu. I\u2019ll plant the improved variety \u201cJimai 22\u201d or whatever the seed shop recommends this year\u2014it\u2019s what my neighbors use and it resists lodging. I\u2019ll plough once after the corn harvest, spread base fertilizer (compound fertilizer with N-P-K), then rotary till and sow in mid-October. I\u2019ll irrigate four times: the overwintering water in late November, the green-up water in March, the jointing water in April, and one more at grain filling in May. I\u2019ll top-dress urea twice. For pests and weeds, I\u2019ll spray herbicide once in early spring and fungicide/insecticide once if I see aphids or rust.\n\n2. **Summer corn** on the same 4 mu right after wheat harvest in early June. I\u2019ll use a hybrid corn seed\u2014probably \u201cZhengdan 958\u201d or the local equivalent\u2014because it gives the highest yield and the seed dealer gives credit. I won\u2019t deep plough; I\u2019ll do rotary tillage or no-till sowing if the stubble isn\u2019t too thick. I\u2019ll irrigate twice: once at the joint stage and once at filling, because water is expensive now. I\u2019ll side-dress nitrogen at the big-flush stage. I\u2019ll spray pesticides twice, once for weeds and once for corn borer if the county ag-station says the forecast is bad.\n\nI won\u2019t plant vegetables or cotton this year. Prices for cotton have been low for years, and vegetables need too much labor and market access. My back isn\u2019t what it used to be, and my son works in the city, so I keep it simple.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"summer corn\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 620\n    }\n  ],\n  \"reasoning_summary\": \"I will plant winter wheat on all 4 mu in autumn and follow it with summer corn after harvest, because this wheat-corn rotation is the reliable system my family and neighbors have used for generations in Quzhou. I will use improved wheat seed and hybrid corn seed from the local dealer, apply standard NPK fertilizer with two top-dressings of urea, irrigate when the crop is most vulnerable to drought, and spray pesticides only when weeds or pests threaten the yield. I am avoiding cotton or vegetables because they demand more labor and market risk than I can handle at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "summer corn",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 620
+      }
+    ],
+    "reasoning_summary": "I will plant winter wheat on all 4 mu in autumn and follow it with summer corn after harvest, because this wheat-corn rotation is the reliable system my family and neighbors have used for generations in Quzhou. I will use improved wheat seed and hybrid corn seed from the local dealer, apply standard NPK fertilizer with two top-dressings of urea, irrigate when the crop is most vulnerable to drought, and spray pesticides only when weeds or pests threaten the yield. I am avoiding cotton or vegetables because they demand more labor and market risk than I can handle at my age."
+  },
+  "elapsed_seconds": 23.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_6",
+  "tier": 1,
+  "provider": "kimi"
+}

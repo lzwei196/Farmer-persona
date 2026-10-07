@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 30 years. I know this soil. I know what it needs and what it doesn't. My plot is small \u2014 1.1 mu \u2014 so I can manage it mostly by myself, especially since my son and daughter-in-law are working in the city. They send money back, which helps, so I don't need to squeeze every jin out of this land. But I'm not going to neglect it either. This is wheat-maize country. That's what I plant. That's what my parents planted.\n\n**Wheat (winter):** I'll plant the whole 1.1 mu in wheat come October. I always use an improved variety \u2014 I switched from saving my own seed years ago when I saw how much better the yields were with Jimai varieties. Basal fertilizer goes in before sowing, then I'll top-dress nitrogen at jointing. Three irrigations: \u51ac\u704c before the ground freezes, then at jointing, then at grain filling. I'll spray herbicide in early spring when the weeds come up, and one round of fungicide when I see the weather getting humid \u2014 powdery mildew and rust can take a lot if you ignore them.\n\n**Maize (summer):** Soon as the wheat comes off in June, I'll go straight to planting maize. No need to deep plow \u2014 I'll do rotary tillage to break up the stubble. I use hybrid seed, same brand I've trusted for the past several years. Summer gets rain here so I won't need to pump as much, maybe twice \u2014 once at germination if it's dry, once at silking. I top-dress nitrogen heavily when the plants are knee-high. I spray herbicide right after planting and maybe one more time for corn borers if I see them.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 1.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As an experienced small-scale farmer in the wheat-maize rotation belt of southern Hebei, I manage both crops across the same 1.1 mu field in sequence. For winter wheat, I rely on improved varieties, three well-timed irrigations using my well, split nitrogen application, and targeted pesticide use for weeds and foliar disease. For summer maize, I use hybrid seed and reduce irrigation since July-August rains are usually adequate, applying most nitrogen as topdressing at the vegetative stage. With some household income from off-farm work, I am not under pressure to over-intensify, so my input levels reflect practical, experience-based norms for this region rather than maximum-yield targets.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 1.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 1.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As an experienced small-scale farmer in the wheat-maize rotation belt of southern Hebei, I manage both crops across the same 1.1 mu field in sequence. For winter wheat, I rely on improved varieties, three well-timed irrigations using my well, split nitrogen application, and targeted pesticide use for weeds and foliar disease. For summer maize, I use hybrid seed and reduce irrigation since July-August rains are usually adequate, applying most nitrogen as topdressing at the vegetative stage. With some household income from off-farm work, I am not under pressure to over-intensify, so my input levels reflect practical, experience-based norms for this region rather than maximum-yield targets."
+  },
+  "elapsed_seconds": 47.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_15",
+  "tier": 2,
+  "provider": "claude"
+}

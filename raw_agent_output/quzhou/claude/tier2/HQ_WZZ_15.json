@@ -1,0 +1,66 @@
+{
+  "raw_response": "I've farmed this land in Quzhou for 35 years. I know the soil, I know how deep the water table sits, and I know which crops pay. Let me think through what I'll do this year.\n\nMy main system is cotton \u2014 that's what I've always centered on. Cotton is labor-heavy, but the price is decent and I know it inside out. With some family members working off-farm, I can't spread myself too thin, so I need to keep things manageable. I'll put 30 mu in cotton. That's my bread and butter.\n\nThe other 20 mu I'll run in the standard wheat-maize rotation the way I've always done. Wheat goes in October after I plough, comes out in June, then I sow maize straight away with minimal tillage because I'm short on time between harvests. The wheat is partly for the household, partly to sell. Maize feeds into the feed market.\n\nStevia I've grown for several years now \u2014 there's a company that buys it under contract, so the price risk is lower. I'll keep 14 mu on it. It needs regular irrigation from the well but it doesn't conflict much with cotton timing.\n\nFor seeds: I'll use hybrid Bt cotton \u2014 the bollworm pressure here means I can't go back to old varieties. Hybrid maize too, same reason. For wheat I buy improved certified seed from the county station. Stevia I'll get seedlings from the same supplier I've used before.\n\nFertilizer: I follow what's worked. Wheat and maize get split applications \u2014 base fertilizer before planting, topdress at jointing. Cotton I top up nitrogen at flowering. I don't reduce inputs because the yield drop costs more than the saving.\n\nIrrigation: the well is reliable. Cotton I'll irrigate four times \u2014 before flowering, boll formation, boll opening, and one late season top-up if it's dry. Wheat needs four irrigations here \u2014 you can't skip the pre-winter one or the heading one. Maize only needs two or three because summer rains cover some of it. Stevia is sensitive, I'll irrigate five times.\n\nPesticides: cotton is the most intensive \u2014 six sprays minimum for aphids, spider mites, and bollworm. Wheat I do three rounds. Maize just two. Stevia is relatively clean, two applications.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 14,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 30 mu to cotton as my primary cash crop using hybrid Bt varieties and intensive management, 20 mu to a winter wheat\u2013summer maize rotation using improved and hybrid seeds respectively on the same land, and 14 mu to stevia under a stable purchase contract to diversify income. Fertilizer rates and irrigation schedules follow practices refined over 35 years in Quzhou's semi-arid conditions, relying on well irrigation for cotton and wheat where natural rainfall is insufficient. Pesticide intensity is highest for cotton given local pest pressure and lower for maize and stevia. No-tillage on maize after wheat harvest saves time during a narrow sowing window when family labor is stretched by off-farm work.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 14,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I allocate 30 mu to cotton as my primary cash crop using hybrid Bt varieties and intensive management, 20 mu to a winter wheat\u2013summer maize rotation using improved and hybrid seeds respectively on the same land, and 14 mu to stevia under a stable purchase contract to diversify income. Fertilizer rates and irrigation schedules follow practices refined over 35 years in Quzhou's semi-arid conditions, relying on well irrigation for cotton and wheat where natural rainfall is insufficient. Pesticide intensity is highest for cotton given local pest pressure and lower for maize and stevia. No-tillage on maize after wheat harvest saves time during a narrow sowing window when family labor is stretched by off-farm work."
+  },
+  "elapsed_seconds": 66.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_15",
+  "tier": 2,
+  "provider": "claude"
+}

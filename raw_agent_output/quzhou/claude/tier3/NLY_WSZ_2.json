@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm here 30 years, so I know what works on my land. My 7.5 mu I split like this: 5 mu for wheat-maize rotation, 2.5 mu for cotton on the sandier plot where cotton does better.\n\nFor wheat this autumn \u2014 I will plant Jimai improved variety, same as last three years, my neighbors got 480 kg with it. I put down 2 bags of compound fertilizer (45% 15-15-15) per mu as base, that is about 30 kg. Then topdress with urea 15 kg per mu at jointing when I irrigate. Total nitrogen maybe 28 kg per mu. I irrigate 4 times \u2014 before sowing, winter water, jointing, grain filling. Two sprays for aphids and rust. Rotary till after maize harvest, no time to deep plough. Expect about 475 kg per mu, similar to last year.\n\nFor summer maize \u2014 Zhengdan hybrid seed, I buy new every year, cannot save it. Direct seed into wheat stubble, no tillage, saves me labor and diesel. 25 kg urea as base plus 20 kg urea topdress at big flare stage. Compound fertilizer 20 kg. Irrigate 2 times if rain is short, the well water costs electricity. Two sprays \u2014 one for borer, one for armyworm if I see them. Should get 525 kg per mu.\n\nFor cotton \u2014 this is more work, more pesticide money. Bt hybrid seed for bollworm resistance. Lower nitrogen because too much makes it grow tall with no bolls, I learned that years ago. 15 kg N, more potassium 10 kg because cotton needs K for bolls. Plough deep before planting, cotton likes loose soil. Irrigate 3 times. Six sprays at least \u2014 aphids, mites, bollworm late season. Expect 280 kg seed cotton per mu, prices are not great but I keep growing it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I stick close to what worked last year. Wheat-maize on 5 mu of better soil, cotton on 2.5 mu sandier plot. For wheat I use compound fertilizer plus urea topdress at jointing, 4 irrigations from the well. Maize goes in as no-till after wheat to save labor and diesel, hybrid seed bought fresh. Cotton gets less nitrogen but more potassium because I learned extra N makes tall plants with few bolls, and it needs more pesticide sprays for bollworm and aphids. I use improved and hybrid seeds because my neighbors had good results. Every input costs real money so I don't over-apply, but I also don't cut fertilizer short \u2014 losing yield hurts more than spending a bit extra.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I stick close to what worked last year. Wheat-maize on 5 mu of better soil, cotton on 2.5 mu sandier plot. For wheat I use compound fertilizer plus urea topdress at jointing, 4 irrigations from the well. Maize goes in as no-till after wheat to save labor and diesel, hybrid seed bought fresh. Cotton gets less nitrogen but more potassium because I learned extra N makes tall plants with few bolls, and it needs more pesticide sprays for bollworm and aphids. I use improved and hybrid seeds because my neighbors had good results. Every input costs real money so I don't over-apply, but I also don't cut fertilizer short \u2014 losing yield hurts more than spending a bit extra."
+  },
+  "elapsed_seconds": 34.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_2",
+  "tier": 3,
+  "provider": "claude"
+}

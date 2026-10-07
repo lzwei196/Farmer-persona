@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land since I was seventeen. I know what these fields want. My sons go to the city to work, but they come back for wheat harvest and corn planting \u2014 I need to plan around that.\n\nMy 15 mu breaks down the way it always has: 10 mu in the wheat-maize rotation, 5 mu in cotton. Cotton prices have not been as good lately, but I know how to grow it and I am not going to change at my age.\n\nFor wheat I will use the same improved variety I have bought from the county cooperative for the past several years \u2014 it has not failed me. I put in base fertilizer before planting and come back with urea at jointing in spring. Three waterings: once before planting to get good emergence, once in early spring when the plants start growing again, and once at heading. Two pesticide rounds \u2014 one for weeds early on, one for aphids in May.\n\nFor maize I buy hybrid seed from the market in town \u2014 everyone does now, has been this way for twenty years. I sow it straight into the stubble after wheat comes off, no ploughing needed. I top-dress urea twice. Usually just two irrigations unless the summer is very dry.\n\nCotton is the hard work. My hands know it. I plough that ground deep in spring, plant seedlings, and then spend the summer managing it \u2014 watering, spraying for bollworm and whitefly, topping the plants. Five spray rounds at minimum. Without that it falls apart.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 10 mu to the wheat-maize rotation and 5 mu to cotton, the same split I have held for decades. Wheat goes in with improved cooperative seed, rotary-tilled ground, and three well irrigations; maize follows directly into the wheat stubble with hybrid seed and no tillage, relying on two waterings and split urea applications. Cotton gets the deepest tillage and the most intensive care \u2014 five pesticide rounds and four irrigations \u2014 because pest pressure here demands it. I am not changing what has fed this family for fifty-five years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I allocate 10 mu to the wheat-maize rotation and 5 mu to cotton, the same split I have held for decades. Wheat goes in with improved cooperative seed, rotary-tilled ground, and three well irrigations; maize follows directly into the wheat stubble with hybrid seed and no tillage, relying on two waterings and split urea applications. Cotton gets the deepest tillage and the most intensive care \u2014 five pesticide rounds and four irrigations \u2014 because pest pressure here demands it. I am not changing what has fed this family for fifty-five years."
+  },
+  "elapsed_seconds": 58.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_15",
+  "tier": 2,
+  "provider": "claude"
+}

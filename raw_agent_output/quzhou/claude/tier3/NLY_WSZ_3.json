@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 8 mu here in Quzhou. Wheat goes in after the maize comes off in October, then maize after wheat harvest in June. This is how everyone does it here, and this is how I do it. I think about what I did last year and what my neighbors do \u2014 that is what works.\n\nFor seed, I buy from the dealer in town. For maize I always buy hybrid seed \u2014 nobody saves their own maize seed anymore, the ears come out small. For wheat I buy improved seed too, the kind my neighbor Old Wang uses, because he gets good yield.\n\nFor fertilizer, I think in bags. One bag is 40 kg. For wheat I put down 1 bag of diammonium (the red bag, for roots) before planting, that is 40 kg per mu. Then when the wheat turns green in spring I spread urea, about half a bag per mu, maybe a bit more \u2014 25 kg. If I put too little the wheat turns yellow and my heart hurts. Better to put a little extra. That gives me around 25 kg of nitrogen, and the phosphorus from the red bag. Potassium I do not add separately \u2014 the compound has some, that is enough, the soil here is not bad.\n\nFor maize it is the hot season, the plant grows fast. I put 1 bag compound fertilizer (the three-fifteen kind, 40 kg) when I plant, then half a bag urea when the plant is waist-high. Same thinking \u2014 do not starve it.\n\nWater: I have a well, thank heavens. Wheat I water 3 times \u2014 winter water before freeze, then spring green-up, then at heading. Maize I water 2 times if the rains come, more if dry.\n\nSpray: wheat I spray 2 times \u2014 once for weeds, once for aphids and the head disease. Maize I spray 1 time for the borer and weeds together.\n\nPloughing I rent the tractor, rotary tiller, that is what the service people bring. No one ploughs deep anymore.\n\nLast year wheat gave me about 450 kg per mu, maize about 550 kg per mu. I expect the same this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu wheat-maize like everyone in Quzhou. I buy hybrid maize seed and improved wheat seed from the dealer, same as my neighbor Old Wang who gets good harvest. I think in bags of fertilizer \u2014 1 bag diammonium under the wheat before planting and half a bag urea in spring, 1 bag compound under the maize and half a bag urea when it is waist-high. I would rather put a little extra than see the crop turn yellow, because a bad harvest costs more than some wasted fertilizer. I water the wheat 3 times from my well and the maize 2 times if rain is short. I spray the wheat twice for weeds and aphids and the maize once for borer and weeds. The tractor man does rotary tillage. Last year wheat gave 450 kg and maize 550 kg per mu, I expect about the same.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu wheat-maize like everyone in Quzhou. I buy hybrid maize seed and improved wheat seed from the dealer, same as my neighbor Old Wang who gets good harvest. I think in bags of fertilizer \u2014 1 bag diammonium under the wheat before planting and half a bag urea in spring, 1 bag compound under the maize and half a bag urea when it is waist-high. I would rather put a little extra than see the crop turn yellow, because a bad harvest costs more than some wasted fertilizer. I water the wheat 3 times from my well and the maize 2 times if rain is short. I spray the wheat twice for weeds and aphids and the maize once for borer and weeds. The tractor man does rotary tillage. Last year wheat gave 450 kg and maize 550 kg per mu, I expect about the same."
+  },
+  "elapsed_seconds": 41.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_3",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the usual Quzhou double-cropping system: winter wheat followed by summer maize. That is the system I trust here. Quzhou is a typical North China Plain wheat-maize county, most rainfall comes in summer, and irrigation pressure is much higher in the wheat season, so I would not switch into a riskier cash crop this year. I would use the same plan across all my land and write it here on a `1 mu` basis so it scales directly. For wheat, I would plant an improved local variety, use moderate fertilizer instead of chasing yield with heavy nitrogen, irrigate mainly in the key spring stages, and keep management steady. For summer maize, I would use a hybrid, sow right after wheat harvest, mostly rely on rainfall, keep one irrigation in reserve for emergence or a dry spell, and stay with no-tillage/standing-stubble planting to save time and moisture. I would not push inputs to the highest possible level, because in my place water matters, fertilizer is easy to overdo, and a stable harvest matters more than gambling on a record year. This is broadly consistent with Quzhou and Hebei wheat-maize research and provincial guidance on climate, fertilizer, irrigation, and seasonal management: [PMC Quzhou site description](https://pmc.ncbi.nlm.nih.gov/articles/PMC5290742/), [Hebei 2026 wheat spring management note](https://nyncj.sjz.gov.cn/columns/86f1c43c-897d-4b4f-b83d-ee6e7fe11683/202602/09/79e5d401-0368-4be7-99f4-7d318cf1d9b1.html), [Hebei summer maize fertilization guidance](https://www.zynylm.com/zhibao/2019/0222/3071.html), [Hebei 2025 maize technical guidance summary](https://www.cfsn.cn/news/detail/616/301792.html), [MOA Huang-Huai-Hai summer maize guidance](https://www.agri.cn/sc/nszd/202206/t20220601_8125506.htm).\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I will keep a winter wheat-summer maize rotation because that is the standard, proven system in Quzhou County, where most rain falls in the maize season and irrigation is more important for wheat. I will use improved wheat seed and hybrid maize seed, keep fertilizer at moderate locally appropriate levels, irrigate wheat three times at key stages, give maize only one irrigation if needed, and avoid excessive inputs so I protect water, control costs, and aim for a steady grain harvest rather than the highest-risk highest-input approach.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I will keep a winter wheat-summer maize rotation because that is the standard, proven system in Quzhou County, where most rain falls in the maize season and irrigation is more important for wheat. I will use improved wheat seed and hybrid maize seed, keep fertilizer at moderate locally appropriate levels, irrigate wheat three times at key stages, give maize only one irrigation if needed, and avoid excessive inputs so I protect water, control costs, and aim for a steady grain harvest rather than the highest-risk highest-input approach."
+  },
+  "elapsed_seconds": 56.2,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_11",
+  "tier": 1,
+  "provider": "codex"
+}

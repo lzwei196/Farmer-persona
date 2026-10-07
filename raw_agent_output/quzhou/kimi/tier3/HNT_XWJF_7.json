@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72 years old this year. I only finished primary school, but I have been farming these 14 mu for 50 years, so I know every piece of land like the back of my hand. My family has five people, but the young ones work in the city, so mostly it is me and my wife doing the work, though my son comes back for harvest.\n\nI plant 10 mu with wheat and maize, one after the other. That is the main food and income. The other 4 mu I grow cotton. I have always grown cotton, and the seed cotton money is good when the price is not bad.\n\nFor the wheat, I sow in October with the improved seeds from the county seed station. I use Jinmai 22 \u2014 that is what my neighbors use, and it has done well for me. Before sowing, I rotary-till the field and spread 50 kg of compound fertilizer per mu. The bag says 15-15-15. Then in March when the wheat turns green, I top-dress with 20 kg of urea per mu. I figure that is about 17 kg of nitrogen total, and about 8 kg of phosphorus and 7 kg of potassium. I do not need a soil test \u2014 my father taught me this, and it works. I irrigate three times: once after winter if the snow is not enough, once at jointing, and once when the ears come out. I spray twice \u2014 herbicide before sowing, and once in spring for bugs and rust. I expect about 500 kg per mu.\n\nFor maize, right after I cut the wheat in June, I rotary-till quick and plant the hybrid seed, Zhengdan 958. Everyone plants this one. I put 35 kg of compound fertilizer per mu in the rows at planting. Then when the plants are knee-high, I add 20 kg of urea per mu. That is about 14 kg nitrogen, 5 kg phosphorus, 5 kg potassium per mu. Summer is hot, so I irrigate three times. Two sprays: herbicide and one for corn borer. I expect 600 kg per mu.\n\nFor cotton, I plough deep in April because cotton likes loose soil. I plant hybrid Bt cotton seed. I put down 50 kg of compound fertilizer per mu at planting, and 20 kg of urea when it flowers. That is about 18 kg nitrogen, 8 kg phosphorus, 8 kg potassium. I irrigate four times because cotton has a long growing season. Even with Bt seed, I spray five times \u2014 aphids, spider mites, and bollworm still come. I expect 250 kg of seed cotton per mu.\n\nI worry about costs. Fertilizer is expensive now. But I would rather use a bit more than risk losing yield. Last year I tried to save on urea on one plot, and the wheat was shorter. Never again. I watch what my neighbors do. If everyone buys a certain seed or adds more fertilizer, I do the same. It is safer that way.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what worked last year and what my neighbors do. On my 10 mu of double-cropped wheat-maize land, I use improved wheat seed with 50 kg compound fertilizer plus 20 kg urea per mu, and hybrid maize with 35 kg compound plus 20 kg urea per mu, irrigating both three times and spraying twice each. On my 4 mu of cotton, I plough deep, apply 50 kg compound plus 20 kg urea per mu, irrigate four times, and spray five times because cotton pests are stubborn. I would rather spend a little more on fertilizer than risk a bad harvest, since fertilizer waste is just lost money but low yield is a disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what worked last year and what my neighbors do. On my 10 mu of double-cropped wheat-maize land, I use improved wheat seed with 50 kg compound fertilizer plus 20 kg urea per mu, and hybrid maize with 35 kg compound plus 20 kg urea per mu, irrigating both three times and spraying twice each. On my 4 mu of cotton, I plough deep, apply 50 kg compound plus 20 kg urea per mu, irrigate four times, and spray five times because cotton pests are stubborn. I would rather spend a little more on fertilizer than risk a bad harvest, since fertilizer waste is just lost money but low yield is a disaster."
+  },
+  "elapsed_seconds": 112.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_7",
+  "tier": 3,
+  "provider": "kimi"
+}

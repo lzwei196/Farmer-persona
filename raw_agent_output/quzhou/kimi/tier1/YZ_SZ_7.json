@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy years old, and I have farmed the land in Quzhou County since I was a boy. My father taught me, and I only finished primary school, but I know the soil and weather here better than any book. I have about five mu of good flat land on the North China Plain. At my age, I do not try new things that might fail. I stick to what has fed my family for decades: winter wheat followed by summer maize.\n\nEvery October, I rotary-till the field and sow improved wheat seed\u2014usually something like Jimai 22 or Luyuan 502 that the seed station sells. I put down compound fertilizer as a basal dressing, then topdress with urea when the wheat greens up in spring. The wheat needs four irrigations: winter water, green-up water, jointing water, and grain-filling water. I spray insecticide twice, herbicide once, and fungicide once. I harvest in early June.\n\nRight after the wheat comes off, I plant hybrid maize\u2014Denghai 605 or similar\u2014using no-tillage. I put compound fertilizer in the furrow at sowing. Maize grows fast in the summer heat and only needs two irrigations. I spray insecticide twice and herbicide once. I harvest in September or October, then the cycle starts again.\n\nThe government buys wheat at a guaranteed price, so that is my safe crop. Maize brings cash and feeds my family. I do not grow cotton anymore\u2014it needs too much labor for an old man. Vegetables are risky; prices go up and down too much. This rotation is simple, and it works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat and maize in rotation all my life in Quzhou County. At seventy years old with only primary schooling, I trust what I know. Winter wheat gives me a safe income because the government purchases it, and summer maize uses the same land without extra tillage. I use improved wheat seed and hybrid maize seed for good yields, apply compound fertilizer plus urea topdressing to wheat, and keep management simple with rotary tillage for wheat and no-tillage for maize. I avoid cotton and vegetables because they demand more labor and carry more risk than I can manage at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat and maize in rotation all my life in Quzhou County. At seventy years old with only primary schooling, I trust what I know. Winter wheat gives me a safe income because the government purchases it, and summer maize uses the same land without extra tillage. I use improved wheat seed and hybrid maize seed for good yields, apply compound fertilizer plus urea topdressing to wheat, and keep management simple with rotary tillage for wheat and no-tillage for maize. I avoid cotton and vegetables because they demand more labor and carry more risk than I can manage at my age."
+  },
+  "elapsed_seconds": 184.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_7",
+  "tier": 1,
+  "provider": "kimi"
+}

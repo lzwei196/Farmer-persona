@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been farming this land 30 years, my father farmed it before me. I do same thing every year mostly, only change a little if last year was bad or if neighbors got better harvest with something different.\n\nMy 10.9 mu \u2014 I split it. About 7 mu I do wheat then maize, one after the other, that is the way everyone here does it. The other 3.9 mu I plant cotton in spring. Cotton takes the whole season so cannot do wheat after.\n\nFor wheat I plant in October. I use the same seed I bought from the dealer in town \u2014 neighbor Wang got 900 jin per mu with it last year so I trust it. Before planting I spread 2 bags of compound fertilizer per mu, that is the 15-15-15 kind, plus 1 bag of urea. Then in spring when wheat starts standing up I broadcast another half bag of urea per mu when I irrigate. I water 4 times \u2014 once before winter, then jointing, then when ear comes out, then when grain filling. If I water less the grain stays small, I saw it happen to my cousin.\n\nFor maize after wheat I just rotary till and plant right away, no time to waste. I use the hybrid seed everyone uses, the dealer tells me which one. I put 2 bags of compound fertilizer in the row when planting and side-dress 1 bag of urea when maize is knee-high. Water 2 times if rain is short. Spray for the borer 2 times.\n\nCotton is the most work. I plough it deep before planting because cotton roots go down. I use 2 bags compound, 1 bag urea base, then more urea later. Cotton needs spraying many times for the bollworm, I spray maybe 6 times through summer, cannot skip or whole crop is lost. I irrigate 3 times.\n\nI would rather spend a little extra on fertilizer than have a bad harvest. Money on fertilizer is just cost, bad harvest is disaster for my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 90\n    }\n  ],\n  \"reasoning_summary\": \"I farm same as last year because change is risky. I split my 10.9 mu \u2014 7 mu for wheat then maize like everyone here does, 3.9 mu for cotton on its own. I use 2 bags compound fertilizer plus 1 bag urea for wheat and maize, and a little more for cotton because cotton is hungry. I water wheat 4 times, that is what my crop needs. Cotton I spray 6 times for bollworm, cannot skip or lose everything. I would rather spend extra on fertilizer than risk a bad harvest \u2014 bad harvest is disaster, extra fertilizer is just money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 90
+      }
+    ],
+    "reasoning_summary": "I farm same as last year because change is risky. I split my 10.9 mu \u2014 7 mu for wheat then maize like everyone here does, 3.9 mu for cotton on its own. I use 2 bags compound fertilizer plus 1 bag urea for wheat and maize, and a little more for cotton because cotton is hungry. I water wheat 4 times, that is what my crop needs. Cotton I spray 6 times for bollworm, cannot skip or lose everything. I would rather spend extra on fertilizer than risk a bad harvest \u2014 bad harvest is disaster, extra fertilizer is just money."
+  },
+  "elapsed_seconds": 38.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_9",
+  "tier": 3,
+  "provider": "claude"
+}

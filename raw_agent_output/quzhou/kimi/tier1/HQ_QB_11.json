@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62 years old and have been farming my land in Quzhou for over forty years. I finished middle school, so I can read the extension pamphlets the county office hands out and I understand what the agronomist says when he visits, but I trust what I see with my own eyes and what my neighbors do more than any paper. My wife and I manage about 10 mu together; our son works in Shijiazhuang and only comes back for harvest, so we cannot take on too much labor-intensive work.\n\nThis year I am putting all 10 mu into wheat-maize double cropping. I used to grow 2 or 3 mu of cotton like old Zhang down the road, but I am getting too old for all that bending and hand-picking. Cotton needs more than a dozen pesticide sprays and my back hurts for weeks after picking. Wheat and maize can be combine-harvested, which is easier on us. The wheat is already in the ground from last October \u2014 I sowed improved Luyuan 502 seed from the county station. For fertilizer, the extension fellow says 15 kg of nitrogen per mu is enough, but I have always done about 20 kg to be safe. I spread 50 kg of compound fertilizer before sowing and topdress with urea at green-up and jointing. I put down some phosphorus and potassium too, about 6\u20138 kg and 3\u20134 kg per mu, because the soil has been cropped hard for decades and needs it. I will irrigate four times for the wheat: green-up, jointing, heading, and grain filling. The diesel for the pump is expensive, but a bad yield hurts more than the fuel cost.\n\nFor summer maize, I will plant Denghai 605 hybrid seed right after wheat harvest in early June \u2014 there is no time for plowing, just direct seeding into the wheat stubble like everyone else does. Maize is simpler than wheat. I will apply about 40 kg of compound fertilizer per mu, which gives roughly 15 kg of nitrogen, and irrigate twice if the rains are decent. I spray herbicide once and insecticide twice; maize does not need much else if the weather is normal. Last year my wheat made about 500 kg per mu and maize about 550 kg per mu. If we do not get a late drought, I expect about the same this year. I do not change what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"At 62 years old with middle-school education, I rely on a mix of extension advice and decades of personal experience. I plant 10 mu of wheat-maize double cropping and skip cotton this year because hand-picking and thirteen pesticide applications are too hard on my aging back. I apply slightly more nitrogen than the extension recommendation to guard against yield loss, irrigate wheat four times and maize twice, and use rotary tillage for wheat and no-tillage for maize to save time during the tight June turnaround.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "At 62 years old with middle-school education, I rely on a mix of extension advice and decades of personal experience. I plant 10 mu of wheat-maize double cropping and skip cotton this year because hand-picking and thirteen pesticide applications are too hard on my aging back. I apply slightly more nitrogen than the extension recommendation to guard against yield loss, irrigate wheat four times and maize twice, and use rotary tillage for wheat and no-tillage for maize to save time during the tight June turnaround."
+  },
+  "elapsed_seconds": 267.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_11",
+  "tier": 1,
+  "provider": "kimi"
+}

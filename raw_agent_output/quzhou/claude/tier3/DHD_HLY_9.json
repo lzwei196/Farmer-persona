@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for 30 years, so I mostly do what worked last year. My 10.1 mu is split \u2014 I keep about 2 mu for chili because it brings cash, and the other 8.1 mu I run wheat in winter and maize in summer, same as my neighbors.\n\nFor wheat, I plant an improved variety like Jimai 22 that the dealer in town sells. I use about 50 jin (25 kg) of seed per mu. Before sowing I spread compound fertilizer 15-15-15, around 50 kg per mu as base fertilizer \u2014 that gives me roughly 7-8 kg N, same P and K. Then at jointing in spring I top-dress urea, about 20 kg per mu, that's another 9 kg N. Total nitrogen around 16-17 kg per mu. I irrigate at sowing, before winter, at jointing, and at grain filling \u2014 four times with the well. I spray once against aphids and powdery mildew, sometimes twice if I see it spreading. I plough before wheat because the stubble needs burying. I expect around 500 kg per mu, like last year.\n\nFor maize after wheat, no time to plough, I plant directly into the stubble \u2014 no-tillage with the seeder. Zhengdan 958 or a similar hybrid, everyone around here uses it. Base fertilizer compound 40 kg per mu at sowing, then urea 25 kg per mu at big trumpet stage. That's about 17 kg N total. Two irrigations usually enough \u2014 at sowing if dry, and at tasseling. One spray for corn borer. I expect 550 kg per mu.\n\nFor chili, this is where I spend the money because the price pays off. I buy hybrid seedlings from the nursery. I put chicken manure 1500 kg per mu before transplanting, plus compound fertilizer 50 kg. Then I top-dress urea and potassium sulfate two-three times during the season. Nitrogen close to 25 kg per mu, potassium heavy at 18 kg because chili needs it for fruit. I irrigate 8 times with the well, chili cannot go dry. Spray 6 times \u2014 aphids, thrips, anthracnose, the pests come one after another. I rotary till before planting. Dry chili 250 kg per mu is my target.\n\nI spend more on chili because the return is better, and I keep wheat-maize costs steady \u2014 no point experimenting on the grain when prices are flat.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I run wheat-maize rotation on 8.1 mu and keep 2 mu for chili as my cash crop. For grain I follow what worked last year \u2014 improved wheat variety and Zhengdan 958 maize, moderate fertilizer rates around 17 kg N per mu, plough before wheat and no-till into the stubble for maize to save time. I spend heavier on chili because the price justifies it: chicken manure base, higher NPK especially potassium, frequent irrigation from the well, and regular spraying against the pests that always come. My targets are 500 kg wheat, 550 kg maize, and 250 kg dry chili per mu, in line with what my neighbors get.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 8,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I run wheat-maize rotation on 8.1 mu and keep 2 mu for chili as my cash crop. For grain I follow what worked last year \u2014 improved wheat variety and Zhengdan 958 maize, moderate fertilizer rates around 17 kg N per mu, plough before wheat and no-till into the stubble for maize to save time. I spend heavier on chili because the price justifies it: chicken manure base, higher NPK especially potassium, frequent irrigation from the well, and regular spraying against the pests that always come. My targets are 500 kg wheat, 550 kg maize, and 250 kg dry chili per mu, in line with what my neighbors get."
+  },
+  "elapsed_seconds": 34.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_9",
+  "tier": 3,
+  "provider": "claude"
+}

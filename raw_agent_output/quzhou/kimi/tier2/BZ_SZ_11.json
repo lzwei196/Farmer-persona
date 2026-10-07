@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old, and my back is not what it used to be. I only started farming last year after I came back to the village\u2014I spent my life doing other work, and now my son helped me get this 5.5 mu of land. I never went to school, so I cannot read the words on the fertilizer bags. I go to the seed shop in town, ask the shopkeeper what my neighbors are buying, and I watch the other farmers in Quzhou closely. My wife and I are just two people, so we cannot handle too much land or too many different things.\n\nThis is how I will manage my land. I will put 4 mu into the wheat-maize rotation, because that is what every household here does\u2014the winter wheat goes in after the autumn harvest, and then the summer maize goes in immediately after we cut the wheat in June. The other 1.5 mu I will plant with cotton, because my wife knows how to pick cotton and we need some cash income, but 1.5 mu is all my old arms can manage for such a labor-heavy crop. I have a well, so when the sky does not give rain, I will pump water. I do not have the strength for deep ploughing anymore, so I will use the rotary tiller for the wheat and the cotton. For the summer maize, everyone plants it directly into the wheat stubble without turning the soil, so I will do no-tillage for the maize just like them.\n\nFor seeds, I will buy the improved wheat variety and the hybrid maize that the agricultural shop recommends\u2014they say these are the kinds tested by the university people in Quzhou, and my neighbors use them too. For cotton, I will use the improved seeds as well. For fertilizer, I will spread compound fertilizer when I sow, and then topdress with urea when the crops are growing tall and look hungry. I will irrigate the wheat three times, the maize twice, and the cotton three times. I will spray pesticides when I see worms or aphids, or when my neighbors start spraying\u2014three times for wheat, twice for maize, and four times for cotton because cotton attracts more pests. I expect my wheat to give about 460 kg per mu, the maize about 500 kg per mu, and the cotton about 95 kg per mu. These are not high numbers, but I am old and still learning, and I know my limits.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 95\n    }\n  ],\n  \"reasoning_summary\": \"I am an old man with no schooling and only one year of farming experience, so I follow my neighbors in Quzhou and use my well when rain is insufficient. I divide my 5.5 mu into 4 mu for the wheat-maize rotation that everyone grows, and 1.5 mu for cotton because my wife can help pick it, but I cannot manage more at my age. I use rotary tillage because deep ploughing is too hard for me, and I plant summer maize with no-tillage right after the wheat harvest like others do. I buy improved wheat seeds and hybrid maize seeds from the local shop, apply compound fertilizer and urea as base and topdressing, irrigate when the crops look thirsty, and spray pesticides when I see pests or when my neighbors spray. My yield expectations are modest because I am still learning and my body is not strong anymore.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 95
+      }
+    ],
+    "reasoning_summary": "I am an old man with no schooling and only one year of farming experience, so I follow my neighbors in Quzhou and use my well when rain is insufficient. I divide my 5.5 mu into 4 mu for the wheat-maize rotation that everyone grows, and 1.5 mu for cotton because my wife can help pick it, but I cannot manage more at my age. I use rotary tillage because deep ploughing is too hard for me, and I plant summer maize with no-tillage right after the wheat harvest like others do. I buy improved wheat seeds and hybrid maize seeds from the local shop, apply compound fertilizer and urea as base and topdressing, irrigate when the crops look thirsty, and spray pesticides when I see pests or when my neighbors spray. My yield expectations are modest because I am still learning and my body is not strong anymore."
+  },
+  "elapsed_seconds": 101.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

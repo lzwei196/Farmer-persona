@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 13 years. I know what works here in Quzhou. The soil is decent, my well pump is reliable, and I know the input costs and what prices I can expect at harvest. Some of my family members pull in wages off-farm, so I can't always count on their labor during peak times. I manage as efficiently as I can.\n\n**Wheat (planted this October, harvested next June):**\nMy whole 5 mu goes into wheat first. I'll use an improved variety \u2014 probably Jimai 22 or whatever the county agricultural station is pushing this year that's locally adapted. Nothing fancy. I'll rotary-till after the maize is off in September, apply base fertilizer, then seed. I do three irrigations: the winter water in November to help it overwinter, jointing water in April, and a grain-filling irrigation in May. Fertilizer-wise, I put base phosphorus and potassium down at planting, split the nitrogen between base and a topdress at jointing. I spray herbicide in early spring and watch for powdery mildew and aphids \u2014 usually two or three pesticide runs total. I expect around 460 kg/mu if the weather cooperates.\n\n**Maize (planted right after wheat harvest in June):**\nSame 5 mu, back-to-back. I'll drill hybrid seed directly into the stubble \u2014 no-till saves me time and my son isn't always around to help. Zhengdan 958 or Xianyu 335, the hybrids I know perform here. Summer rains carry a lot of the water need, but I'll irrigate once or twice if we hit a dry spell at silking or grain fill. I put more nitrogen on maize than wheat \u2014 it needs it. Base fertilizer at planting, then a topdress at the big bell stage. One or two pesticide applications for corn borer and leaf diseases. I'm shooting for 570 kg/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 570\n    }\n  ],\n  \"reasoning_summary\": \"As a farmer with 13 years on this land in Quzhou, I follow a tight wheat-maize rotation across all 5 mu. I use improved wheat varieties and established hybrid maize seed \u2014 nothing experimental, just what I know yields reliably here. With well irrigation available I give wheat three irrigations at the critical stages and limit maize to one or two since summer rainfall usually helps. Fertilizer inputs follow local norms with nitrogen split-applied to maximize uptake and reduce waste. I use no-till for maize after wheat harvest because family labor is limited during that period. My pesticide applications target the known local threats \u2014 wheat aphids, powdery mildew, and maize borer. I manage conservatively: I'm not chasing maximum yield at any cost, I'm keeping input costs in line with what I can realistically earn at market.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 570
+      }
+    ],
+    "reasoning_summary": "As a farmer with 13 years on this land in Quzhou, I follow a tight wheat-maize rotation across all 5 mu. I use improved wheat varieties and established hybrid maize seed \u2014 nothing experimental, just what I know yields reliably here. With well irrigation available I give wheat three irrigations at the critical stages and limit maize to one or two since summer rainfall usually helps. Fertilizer inputs follow local norms with nitrogen split-applied to maximize uptake and reduce waste. I use no-till for maize after wheat harvest because family labor is limited during that period. My pesticide applications target the known local threats \u2014 wheat aphids, powdery mildew, and maize borer. I manage conservatively: I'm not chasing maximum yield at any cost, I'm keeping input costs in line with what I can realistically earn at market."
+  },
+  "elapsed_seconds": 47.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_5",
+  "tier": 2,
+  "provider": "claude"
+}

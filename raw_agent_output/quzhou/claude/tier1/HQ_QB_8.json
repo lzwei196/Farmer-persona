@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou for over fifty years. My husband is gone, my son works in Shijiazhuang, and I manage about 4 mu on my own. I'm 75, my knees ache in the cold, so I pay the village tractor service to do the heavy work \u2014 plowing, seeding, harvesting. That's just how things are now.\n\nI'll do what I've always done: wheat in the ground after the autumn equinox, corn after the wheat comes off in June. The two fit together perfectly, one plot, two crops, one year. I've never tried vegetables or anything else \u2014 I don't have the energy for that kind of daily tending, and I don't know those markets.\n\nFor wheat, I'll buy the improved seeds from the village supply co-op, same variety as last year \u2014 the agent said it did well on heavy clay soil like mine. I apply compound fertilizer when I plant, then spread urea by hand when it starts to green up in spring. I'll call for irrigation three times: once before winter sets in hard, once at jointing, once when the grain is filling. I put on herbicide in early spring and spray once more for aphids if I see them.\n\nFor maize, I use hybrid seed \u2014 I've used hybrid corn for thirty years, the yields are much better. I scatter fertilizer when the seedlings are knee-high. Summer rain usually handles most of the water, but I'll irrigate once if July is dry. One pesticide spray is usually enough unless the corn borer is bad.\n\nI don't plow for maize \u2014 I just plant directly into the wheat stubble after the combine goes through. Saves money, saves my back.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 75-year-old woman farming 4 mu in Quzhou County follows the dominant winter wheat\u2013summer maize rotation she has practiced her whole life, outsourcing mechanized operations to the village tractor service due to age and limited physical capacity. She purchases improved wheat seed and hybrid maize seed from the village co-op, applies compound fertilizer at planting plus a urea topdress, irrigates wheat three times through the season, and relies on summer rainfall for most of the maize water requirement. No-till direct seeding of maize into wheat stubble saves both cost and labor. Pesticide use is minimal and reactive. The plan reflects deep local experience, physical constraints, and risk aversion rather than yield optimization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 75-year-old woman farming 4 mu in Quzhou County follows the dominant winter wheat\u2013summer maize rotation she has practiced her whole life, outsourcing mechanized operations to the village tractor service due to age and limited physical capacity. She purchases improved wheat seed and hybrid maize seed from the village co-op, applies compound fertilizer at planting plus a urea topdress, irrigates wheat three times through the season, and relies on summer rainfall for most of the maize water requirement. No-till direct seeding of maize into wheat stubble saves both cost and labor. Pesticide use is minimal and reactive. The plan reflects deep local experience, physical constraints, and risk aversion rather than yield optimization."
+  },
+  "elapsed_seconds": 40.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_8",
+  "tier": 1,
+  "provider": "claude"
+}

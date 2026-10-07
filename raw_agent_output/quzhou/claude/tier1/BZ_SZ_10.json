@@ -1,0 +1,53 @@
+{
+  "raw_response": "My family has farmed this land for generations. I have about 10 mu, most of it flat, decent soil on the North China Plain. My father grew wheat and corn, his father too. I know what works here.\n\nThis time of year I am getting the fields ready for winter wheat seeding in October. After wheat comes off in June, I put summer maize straight back in. That rotation is what everyone around here does \u2014 two crops a year, same fields. The county extension station pushed some new varieties a few years back and I switched to improved wheat and hybrid maize. Yields went up, so I kept it.\n\nI keep 9 mu in the wheat-maize rotation. I leave 1 mu near the house for vegetables \u2014 garlic, beans, some cabbage \u2014 mostly for the family and a bit to sell at market.\n\nFor fertilizer I apply what my neighbor uses and what the agrochemical shop recommends. Probably more nitrogen than I need, but I don't want to risk a poor harvest. Water is getting harder \u2014 the well is deeper every year \u2014 but I still irrigate wheat three times: before winter sets in, at jointing, and at grain fill. Maize I irrigate twice if it doesn't rain enough.\n\nI rotary-till before wheat planting. For maize I just plant straight into the wheat stubble \u2014 less work and the soil holds moisture better.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"vegetables (garlic/cabbage)\",\n      \"season\": \"autumn\",\n      \"area_mu\": 1,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 800\n    }\n  ],\n  \"reasoning_summary\": \"As a 50-year-old farmer in Quzhou County with 10 mu of flat North China Plain land, I follow the dominant winter wheat\u2013summer maize double-cropping rotation on 9 mu, which my family has practiced for generations and which local conditions \u2014 flat terrain, access to groundwater irrigation, and stable grain markets \u2014 support. I use improved wheat seed and hybrid maize because the yield advantage is proven locally. Fertilizer rates follow local norms and what the agrochemical shop advises; I apply nitrogen in split doses for wheat. I irrigate wheat three times to ensure a full crop despite increasing groundwater depth, and maize twice, relying partly on summer rains. No-tillage for maize saves labor and moisture after wheat harvest. One mu near the house is kept in vegetables for household food security and supplemental cash income.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "vegetables (garlic/cabbage)",
+        "season": "autumn",
+        "area_mu": 1,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 5,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 800
+      }
+    ],
+    "reasoning_summary": "As a 50-year-old farmer in Quzhou County with 10 mu of flat North China Plain land, I follow the dominant winter wheat\u2013summer maize double-cropping rotation on 9 mu, which my family has practiced for generations and which local conditions \u2014 flat terrain, access to groundwater irrigation, and stable grain markets \u2014 support. I use improved wheat seed and hybrid maize because the yield advantage is proven locally. Fertilizer rates follow local norms and what the agrochemical shop advises; I apply nitrogen in split doses for wheat. I irrigate wheat three times to ensure a full crop despite increasing groundwater depth, and maize twice, relying partly on summer rains. No-tillage for maize saves labor and moisture after wheat harvest. One mu near the house is kept in vegetables for household food security and supplemental cash income."
+  },
+  "elapsed_seconds": 41.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_10",
+  "tier": 1,
+  "provider": "claude"
+}

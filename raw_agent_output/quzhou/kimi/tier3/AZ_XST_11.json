@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have 8 mu of land. Six mu I use for wheat and then maize, back to back, that is my main field. Two mu I plant cotton because the price was alright last year and I need cash for my family. I never went to school, so I do what my mother taught me and what I see the good farmers in the east of the village doing. If they use something and their field looks green and heavy, I use it too.\n\nFor wheat, I plant the improved variety I buy from the seed shop in town, the same one as last year. Before sowing I put one 50-kilo bag of compound fertilizer on each mu, the kind with three numbers on the bag. Then at green-up I spread half a 50-kilo bag of urea on each mu. Last year this gave me about 550 kilos per mu, which is enough to feed my family and sell a little. I run the rotary tiller before sowing to break up the maize stubble. I irrigate three times: once in winter if the ground is too dry, once at jointing, and once when the heads are filling. I spray twice, once for weeds after sowing and once in spring if I see aphids. I will do the exact same this year. I would rather put a little too much fertilizer than risk a thin crop. A bad wheat year means we eat less, and that is worse than wasting some money on an extra half bag.\n\nFor summer maize, I plant hybrid seed right after the wheat comes off the field in June. I use the same fertilizer as wheat: one bag of compound per mu at sowing, and half a bag of urea later when the plants are knee-high. Maize grows fast and needs water when it tassels, so I irrigate twice if the summer rains do not come. Two sprays: herbicide at the start, and one for armyworm if I see holes in the leaves. I rotary till quick after wheat harvest so I can get the seed in fast before the soil dries. I expect around 650 kilos per mu. Last year I got about that much.\n\nFor cotton on my two mu, I plough deep in spring because cotton roots go deep and the soil gets hard. I plant the improved cotton seed in April. I put one bag of compound per mu and half a bag of urea, same as my other crops. Some dealer once told me cotton needs different food, but I have always done it this way and it works on my field. Cotton needs more spraying because the bollworms are bad around here \u2014 I will spray four times, more if I see worms. I irrigate three times, at flowering and when the bolls are getting fat. I expect about 280 kilos of seed cotton per mu. My neighbor Lao Wang got nearly 300 last year with the same seed, so I hope I can too.\n\nEverything costs money now. A bag of compound is more than 100 yuan, and urea is not cheap either. But my husband works off-farm and my eldest son sends some money back, so I can buy the inputs. I do not dare cut back. Two years ago I tried saving half a bag of urea on one mu of maize and the plants turned yellow and small. Never again. I watch my neighbors and copy what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 8 mu based on last year's practice and what I see working in my village. I use one 50-kilo bag of compound fertilizer and half a bag of urea per mu for all crops, irrigate wheat and cotton three times and maize twice, and spray cotton four times because of bollworm. I prefer to spend a bit more on fertilizer than risk losing yield, since my family depends on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I manage my 8 mu based on last year's practice and what I see working in my village. I use one 50-kilo bag of compound fertilizer and half a bag of urea per mu for all crops, irrigate wheat and cotton three times and maize twice, and spray cotton four times because of bollworm. I prefer to spend a bit more on fertilizer than risk losing yield, since my family depends on this land."
+  },
+  "elapsed_seconds": 150.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_11",
+  "tier": 3,
+  "provider": "kimi"
+}

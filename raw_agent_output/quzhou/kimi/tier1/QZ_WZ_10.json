@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 35 years old and have farmed my family's land in Quzhou since I finished junior high school. We have six mu of flat, good-quality land here on the North China Plain, and like my father and most of my neighbors, I follow the wheat-maize double-cropping system. My winter wheat went into the ground last October after rotary tilling and sowing with an improved variety I bought from the county supply store. I applied one bag of compound fertilizer per mu as a basal dose then.\n\nNow it is early spring, and the wheat is waking up. This year I will topdress with urea when I do the first irrigation at green-up, then irrigate again at jointing and once more at grain filling\u2014three times total from the well. I will spray herbicide once and insecticide twice; if the weather turns damp, I might add a fungicide spray. I expect about 980 kg per mu from this wheat if the weather cooperates.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize. I always buy hybrid maize seed from the county shop\u2014this year I am thinking of a variety like Nongda 372 or Denghai 605 because they yield well here. I will do rotary tillage before maize sowing to break up the stubble, then apply compound fertilizer as basal. Maize needs less irrigation than wheat, so I will water twice: once around tasseling and once during grain filling. I will spray herbicide once and insecticide twice for the corn borer. I should get around 1,150 kg per mu from the maize. I stick to this rotation because the land and the market here are reliable for these two crops, and I know the inputs and timing by heart.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 980\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1150\n    }\n  ],\n  \"reasoning_summary\": \"I have six mu of land in Quzhou County and follow the standard wheat-maize double-cropping system that my family and neighbors have used for generations. My winter wheat is already in the field from last October, so my focus now is spring topdressing, three irrigations, and pest control to bring it to harvest in June. Immediately after wheat harvest I will rotary-till and plant hybrid maize, which I have found gives the best yield on this land. I manage inputs based on long experience: compound fertilizer as a basal dose and urea topdressing for the wheat, and compound fertilizer for the maize, with two irrigations and herbicide plus insecticide sprays. This system is reliable, the county supply store is nearby for seed and chemicals, and both crops have steady local demand, so I see no reason to change what works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 980
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1150
+      }
+    ],
+    "reasoning_summary": "I have six mu of land in Quzhou County and follow the standard wheat-maize double-cropping system that my family and neighbors have used for generations. My winter wheat is already in the field from last October, so my focus now is spring topdressing, three irrigations, and pest control to bring it to harvest in June. Immediately after wheat harvest I will rotary-till and plant hybrid maize, which I have found gives the best yield on this land. I manage inputs based on long experience: compound fertilizer as a basal dose and urea topdressing for the wheat, and compound fertilizer for the maize, with two irrigations and herbicide plus insecticide sprays. This system is reliable, the county supply store is nearby for seed and chemicals, and both crops have steady local demand, so I see no reason to change what works."
+  },
+  "elapsed_seconds": 268.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_10",
+  "tier": 1,
+  "provider": "kimi"
+}

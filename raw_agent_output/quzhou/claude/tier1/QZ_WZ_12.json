@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is in the North China Plain. My father grew wheat and corn here. His father grew wheat and corn here. I have grown wheat and corn here for fifty years. I know this land. I do not need to think about what to grow \u2014 there is only one answer.\n\nI have 6 mu of contracted land. I am old. My back is not what it was. My son works in Handan city. I manage alone with some help from my nephew at planting and harvest. 6 mu is what I can handle.\n\n**Winter wheat first.** I plant in October after the rains. I buy my seed from the township supply cooperative \u2014 the improved variety, the one everyone around here uses now. I stopped saving my own seed years ago when the cooperative seed started giving better harvests. I rotary-till the field after I pull the corn stalks. I put down compound fertilizer before planting, then spread urea at jointing in April. I water four times: once before the ground freezes, once at jointing, once when it heads, once when the grain is filling. I spray once for aphids in May. I harvest in June. I expect around 430 jin per mu. Some years more, some years less.\n\n**Then summer corn on the same ground.** Right after wheat harvest, I plant hybrid corn seed \u2014 the kind in the yellow bag, Zhengdan 958 or whatever the shop has. I do not till. The ground is already loose enough and I am tired. I put fertilizer down twice. If August is dry I pump water twice from the village well. I spray once if I see worms. I harvest in September before the rains get cold.\n\nThis is my year. It is the same as last year. It is the same as the year before.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 71-year-old Quzhou farmer with no formal education continues the winter wheat\u2013summer maize double-cropping rotation that has defined North China Plain farming for generations. The same 6 mu serves both crops sequentially. Wheat is planted in October using market-bought improved varieties, rotary-tilled into a fertilized seedbed, irrigated four times across the winter\u2013spring cycle, and sprayed once for aphids before the June harvest. Immediately after, hybrid maize is direct-seeded into the standing stubble with no tillage, receiving two fertilizer applications and up to two irrigations if the summer rains fall short, before a September harvest. Input levels reflect the local norm of somewhat heavy nitrogen application, compound fertilizer at planting, and minimal potassium attention \u2014 practices learned from decades of observation and neighbor influence rather than agronomic extension.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 71-year-old Quzhou farmer with no formal education continues the winter wheat\u2013summer maize double-cropping rotation that has defined North China Plain farming for generations. The same 6 mu serves both crops sequentially. Wheat is planted in October using market-bought improved varieties, rotary-tilled into a fertilized seedbed, irrigated four times across the winter\u2013spring cycle, and sprayed once for aphids before the June harvest. Immediately after, hybrid maize is direct-seeded into the standing stubble with no tillage, receiving two fertilizer applications and up to two irrigations if the summer rains fall short, before a September harvest. Input levels reflect the local norm of somewhat heavy nitrogen application, compound fertilizer at planting, and minimal potassium attention \u2014 practices learned from decades of observation and neighbor influence rather than agronomic extension."
+  },
+  "elapsed_seconds": 44.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_12",
+  "tier": 1,
+  "provider": "claude"
+}

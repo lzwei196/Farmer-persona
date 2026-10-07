@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 60-year-old farmer with no schooling, but I have been working this land since I was a boy. My family has about 8 mu of good flat land in Quzhou, and I do not try fancy things \u2014 I plant what I know, what the grain station buys, and what feeds my household.\n\nThe winter wheat went into the ground last October, the way it always does. I used the rotary tiller before sowing and put down compound fertilizer as the base. I plant an improved wheat variety \u2014 maybe Shimai or Jimai \u2014 because the old black wheat does not yield enough anymore, and the seed from the co-op is not expensive. Now it is spring, and the wheat is green. I will topdress with urea at jointing, irrigate three or four times total (overwintering water was already done, now jointing water, then heading and grain-filling water), and spray for insects and fungus maybe three or four times. If the weather cooperates, I should get around 1000 jin per mu.\n\nAfter we harvest the wheat in early June, there is no time to waste. I will plant summer maize right away, probably without tilling \u2014 just direct seeding into the wheat stubble. Everyone here uses hybrid seed now, one small bag per mu. It grows fast. I will put down compound fertilizer at sowing and maybe side-dress urea later when the rain comes. Two irrigations are usually enough if the summer rain is normal, and I will spray for weeds and corn borers two or three times. I expect about 1100 jin per mu from the maize.\n\nI do not grow cotton or vegetables \u2014 they need too much labor and the market price jumps around. Wheat and maize are safe. The state buys them, and I understand them.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 36,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this land my whole life and trust what works. Wheat was sown last autumn and is now growing through spring; I will manage it with urea topdressing, three irrigations, and pest sprays until the June harvest. Immediately after wheat harvest, I will direct-seed hybrid maize without tillage to save time and labor, using compound fertilizer and two irrigations. This wheat-maize double cropping is the standard rotation in Quzhou, providing stable yields and reliable sales to the grain station. I avoid cotton and vegetables because prices are unpredictable and the labor is too much for a man my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 36,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed this land my whole life and trust what works. Wheat was sown last autumn and is now growing through spring; I will manage it with urea topdressing, three irrigations, and pest sprays until the June harvest. Immediately after wheat harvest, I will direct-seed hybrid maize without tillage to save time and labor, using compound fertilizer and two irrigations. This wheat-maize double cropping is the standard rotation in Quzhou, providing stable yields and reliable sales to the grain station. I avoid cotton and vegetables because prices are unpredictable and the labor is too much for a man my age."
+  },
+  "elapsed_seconds": 135.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_1",
+  "tier": 1,
+  "provider": "kimi"
+}

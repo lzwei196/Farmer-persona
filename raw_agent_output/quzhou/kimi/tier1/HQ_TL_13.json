@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am fifty-nine years old, and I have never been to school. I cannot read or write, but I know this land because my father taught me, and I have farmed these fields for over forty years. I have seven mu of land in Quzhou, and I do what every farmer around here does: wheat in the winter, corn in the summer. That is the only way that makes sense. The wheat went into the ground last October before the frost came. Now it is waking up, so I will topdress it with compound fertilizer\u2014about eighty jin per mu, the kind the shopkeeper says is good for wheat, with plenty of nitrogen and phosphorus. I will water it four times from my well: the green-up water, the jointing water, the heading water, and one more if the weather turns dry. When I see aphids or rust, I spray. I use the rotary tiller before planting, always have.\n\nAfter I cut the wheat in early June, I will plant summer corn the same day or the next. No need to plough\u2014just put the seeds straight into the stubble. I buy hybrid corn seed from the shop, one bag per mu. The corn needs less water, maybe two good irrigations, and I spray twice for bugs. I expect about one thousand jin of wheat per mu, and a bit more for the corn, maybe eleven hundred jin per mu, if the weather cooperates. I do not try new crops or fancy tricks. I follow what works, what my neighbors do, and what I have always done.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat and maize in rotation for decades because it is the proven system in Quzhou County on the North China Plain. Winter wheat is sown in autumn and managed through spring with rotary tillage, compound fertilization, four irrigations from my well, and two pesticide applications. After harvesting wheat in June, I plant hybrid summer maize immediately using no-tillage to save time and preserve soil moisture, with two irrigations and two pesticide sprays. I am conservative and illiterate, so I follow neighbor practices and shopkeeper advice rather than experimenting.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat and maize in rotation for decades because it is the proven system in Quzhou County on the North China Plain. Winter wheat is sown in autumn and managed through spring with rotary tillage, compound fertilization, four irrigations from my well, and two pesticide applications. After harvesting wheat in June, I plant hybrid summer maize immediately using no-tillage to save time and preserve soil moisture, with two irrigations and two pesticide sprays. I am conservative and illiterate, so I follow neighbor practices and shopkeeper advice rather than experimenting."
+  },
+  "elapsed_seconds": 152.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_13",
+  "tier": 1,
+  "provider": "kimi"
+}

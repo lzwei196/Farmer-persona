@@ -1,0 +1,53 @@
+{
+  "raw_response": "My family has farmed this land in Quzhou for three generations. I know what grows here \u2014 the soil, the water table, the seasons. I have no paper learning, but I know this land with my hands.\n\nEvery year is the same for me, and that is not a bad thing. I grow **winter wheat** and then **summer maize** on the same fields. One plot, two crops, one year. That is what my father did. The wheat goes in around Hanlu (\u5bd2\u9732) in October. The corn goes in the day after the wheat is cut in June. No gap, no wasted season. It works.\n\nI rent about 10 mu total. I keep 1 mu near the house for vegetables \u2014 garlic, cabbage, some eggplant \u2014 for the family and sometimes sell a little at the village market.\n\nFor seeds, I buy from the village seed shop in town. For corn, I always buy hybrid \u2014\u90d1\u5355958 or whatever they have that season. The yield is clearly better, everyone switched years ago. For wheat, I buy the improved variety the shopkeeper recommends, the same one I've used the past few years.\n\nFertilizer \u2014 I apply base fertilizer before sowing: one bag of diammonium phosphate and one bag of urea per mu, mixed in. Then I top-dress urea at jointing stage for wheat, and again for corn when it's knee-high. I know some village officials say we use too much, but I have seen what happens when you use too little.\n\nFor water, I pump from my own well. Wheat needs water badly \u2014 I pump at overwintering, green-up, jointing, and heading. Four times. Corn catches the summer rains mostly, I pump once if July is dry.\n\nPesticides \u2014 I spray wheat twice: once for weeds in spring, once for aphids. Corn once, for armyworm if I see it.\n\nTillage \u2014 I use the village tractor service for rotary tillage before wheat. For corn, I just seed directly into the wheat stubble, no tilling needed.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"mixed vegetables\",\n      \"season\": \"spring\",\n      \"area_mu\": 1,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1500\n    }\n  ],\n  \"reasoning_summary\": \"A 50-year-old farmer with no formal education in Quzhou County, Hebei, follows the dominant wheat-maize double-cropping rotation on the North China Plain, planting winter wheat in October after rotary tillage and summer maize directly into wheat stubble after June harvest. He uses improved wheat seed and hybrid maize seed purchased from the local village shop, applies heavy nitrogen and phosphate fertilizer (base plus topdress) based on lifelong experience and neighbour practice, and relies on groundwater well irrigation \u2014 four times for water-demanding wheat, once for rain-supplemented maize. A small vegetable plot near the home provides household food and occasional cash income. Cropping choices are driven by market stability, generational knowledge, and proven local practice rather than formal agronomic guidance.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "mixed vegetables",
+        "season": "spring",
+        "area_mu": 1,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 8,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1500
+      }
+    ],
+    "reasoning_summary": "A 50-year-old farmer with no formal education in Quzhou County, Hebei, follows the dominant wheat-maize double-cropping rotation on the North China Plain, planting winter wheat in October after rotary tillage and summer maize directly into wheat stubble after June harvest. He uses improved wheat seed and hybrid maize seed purchased from the local village shop, applies heavy nitrogen and phosphate fertilizer (base plus topdress) based on lifelong experience and neighbour practice, and relies on groundwater well irrigation \u2014 four times for water-demanding wheat, once for rain-supplemented maize. A small vegetable plot near the home provides household food and occasional cash income. Cropping choices are driven by market stability, generational knowledge, and proven local practice rather than formal agronomic guidance."
+  },
+  "elapsed_seconds": 55.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_1",
+  "tier": 1,
+  "provider": "claude"
+}

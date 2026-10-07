@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 56-year-old farmer in Quzhou County, and I have farmed this land for over three decades. With my university education, I keep up with the extension station recommendations and soil science reports, but I also know what this particular patch of North China Plain soil does year after year. At my age, I do not gamble on unfamiliar cash crops; the wheat\u2013maize double-cropping system is the backbone of my household income and food security. \n\nThis autumn I will plant **winter wheat** across all 10 mu. I use an improved high-yielding variety such as Jimai 22 or Shixin 828, not traditional seed, because the lodging resistance and grain weight are worth the extra cost. I prepare the seedbed with rotary tillage to break up the wheat\u2013maize stubble interface and create a fine tilth for uniform germination. For fertility, I apply a basal compound fertilizer plus a top-dressing at jointing: about 17 kg N, 7 kg P\u2082O\u2085 and 4 kg K\u2082O per mu in total, which is slightly lower than what some neighbors dump but matches the soil-test results I had done last year. Water is precious, so I irrigate four times\u2014overwintering, green-up, jointing and grain filling\u2014using border irrigation from the village well. I also spray four times: a pre-emergence herbicide, a fungicide at flag-leaf stage, and two insecticide applications for aphids and armyworm. I expect roughly 560 kg/mu if the spring frost cooperates.\n\nImmediately after wheat harvest in early June, I will direct-seed **summer maize** on the same 10 mu. Here I switch to no-tillage; there is no time to waste between harvests, and the maize roots exploit the wheat root channels. I plant a hybrid variety such as Nongda 372 for its high density tolerance and fast grain filling. Fertilizer is 15 kg N, 5 kg P\u2082O\u2085 and 3 kg K\u2082O per mu, banded at sowing and side-dressed at the large trumpet stage. Maize needs less irrigation than wheat here; two well-timed irrigations at silking and grain filling are usually enough. I plan three pesticide applications\u2014herbicide at the 3\u20135 leaf stage, plus insecticide and fungicide as needed. A good summer should give me about 620 kg/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 560\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 620\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat\u2013maize double-cropping system on my 10 mu because it is the most reliable and well-understood rotation in Quzhou County. My university background means I follow soil-test recommendations rather than over-applying fertilizer, and I prioritize timing over volume for both irrigation and pesticides. Rotary tillage suits wheat establishment on stubble-heavy fields, while no-tillage saves critical days between wheat harvest and maize sowing. Improved wheat varieties and hybrid maize give me the best return on seed cost, and at 56 years old I prefer steady, evidence-based management to risky experiments with new crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 560
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 620
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat\u2013maize double-cropping system on my 10 mu because it is the most reliable and well-understood rotation in Quzhou County. My university background means I follow soil-test recommendations rather than over-applying fertilizer, and I prioritize timing over volume for both irrigation and pesticides. Rotary tillage suits wheat establishment on stubble-heavy fields, while no-tillage saves critical days between wheat harvest and maize sowing. Improved wheat varieties and hybrid maize give me the best return on seed cost, and at 56 years old I prefer steady, evidence-based management to risky experiments with new crops."
+  },
+  "elapsed_seconds": 103.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_11",
+  "tier": 1,
+  "provider": "kimi"
+}

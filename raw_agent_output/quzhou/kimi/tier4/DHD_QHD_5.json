@@ -1,0 +1,73 @@
+{
+  "raw_response": "I've been working these 4 mu for fifty years, since I was thirteen. Me and my old man, we do it all ourselves. Can't hire help \u2014 no money for that, and anyhow nobody around here works for cheap anymore.\n\nThe wheat goes in early October, same as always, when the ginkgo leaves start falling. I save my own seed, the fat grains from last year, mix a little pink medicine and plant. Before planting, I hire the small tractor to rotary-till the field, and I spread about eighty jin of compound fertilizer per mu \u2014 that's most of a bag. I put it down right before the tractor goes through so it mixes in. Come spring, when the wheat turns green, if it looks yellow I'll topdress with about forty jin of urea. Last year I did that and it was fine, so I'll do the same. Water is expensive \u2014 the pump eats electricity \u2014 but you can't skip it: once after planting so it sprouts, once at jointing when it's growing fast, and once at grain-filling if the sky doesn't give rain. Three times, usually.\n\nMaize is right after wheat harvest in early June. No time to rest \u2014 cut the wheat today, plant corn tomorrow. The window is tight, maybe five days. I buy hybrid seed from Old Zhang's shop in the village, about three or four jin per mu, costs me around forty-five yuan. You can't save maize seed, it doesn't breed true. I put compound fertilizer in the furrow when planting, another eighty jin per mu. At the big trumpet leaf stage, if it's dry I'll throw on twenty jin of urea and water once. Maybe water twice total for maize, that's enough if the summer rains come.\n\nI spray herbicide once for each crop \u2014 that's it. For insects, only if I see them in the field. Can't waste money on what isn't there.\n\nLast year wheat gave about 350 kg per mu. This year I hope for the same, maybe a bit more if the spring rains are good. Maize usually gives around 400 kg per mu. My neighbor down the road, his son bought him some fancy fertilizer and he got 500, but I can't afford that. We spend about two thousand yuan on the whole year \u2014 that's money we scraped together. Can't spend more, but if I spend less, the yield drops and we go hungry.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 4.1,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"local/saved seed\",\n      \"seed_cost_yuan_per_mu\": 10,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15.2,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 40 kg compound fertilizer spread before rotary tillage at planting; topdress: 20 kg urea at green-up/jointing in spring if wheat looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary tillage by hired small tractor before wheat planting\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 4.1,\n      \"planting_date\": \"mid-June, immediately after wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10.6,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"base: 40 kg compound fertilizer in planting furrow at sowing; topdress: 10 kg urea at trumpet leaf stage if rainfall is insufficient\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"minimal tillage, plant directly after wheat harvest due to tight window\",\n      \"labor_family_days\": 10,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 400\n    }\n  ],\n  \"total_input_cost_yuan\": 2091,\n  \"reasoning_summary\": \"Me and my old man work these 4 mu alone with no hired labor. I use saved wheat seed and buy hybrid maize seed. I fertilize based on what I've always done \u2014 about eighty jin of compound per mu for both crops, with urea topdress in spring for wheat and at trumpet leaf for maize. I irrigate three times for wheat and twice for maize because pumping costs money but skipping water costs more in lost yield. I only spray herbicide, no insecticide unless I see bugs. I'm spending around two thousand yuan this year, which is all the cash we can gather. I expect about 350 kg per mu of wheat and 400 kg per mu of maize if the weather is normal.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 4.1,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "local/saved seed",
+        "seed_cost_yuan_per_mu": 10,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15.2,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 40 kg compound fertilizer spread before rotary tillage at planting; topdress: 20 kg urea at green-up/jointing in spring if wheat looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary tillage by hired small tractor before wheat planting",
+        "labor_family_days": 12,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 350,
+        "nitrogen_kg_per_mu": 15.2,
+        "area_mu": 4.1,
+        "expected_yield_kg_per_mu": 350,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 4.1,
+        "planting_date": "mid-June, immediately after wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10.6,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "base: 40 kg compound fertilizer in planting furrow at sowing; topdress: 10 kg urea at trumpet leaf stage if rainfall is insufficient",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "minimal tillage, plant directly after wheat harvest due to tight window",
+        "labor_family_days": 10,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 400,
+        "nitrogen_kg_per_mu": 10.6,
+        "area_mu": 4.1,
+        "expected_yield_kg_per_mu": 400,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      }
+    ],
+    "total_input_cost_yuan": 2091,
+    "reasoning_summary": "Me and my old man work these 4 mu alone with no hired labor. I use saved wheat seed and buy hybrid maize seed. I fertilize based on what I've always done \u2014 about eighty jin of compound per mu for both crops, with urea topdress in spring for wheat and at trumpet leaf for maize. I irrigate three times for wheat and twice for maize because pumping costs money but skipping water costs more in lost yield. I only spray herbicide, no insecticide unless I see bugs. I'm spending around two thousand yuan this year, which is all the cash we can gather. I expect about 350 kg per mu of wheat and 400 kg per mu of maize if the weather is normal."
+  },
+  "elapsed_seconds": 164.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_QHD_5",
+  "tier": 4,
+  "provider": "kimi"
+}

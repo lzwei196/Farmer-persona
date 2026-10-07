@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land 53 years. I do what I did last year, same as my neighbors in the village. My son works in town so I manage most things myself, my wife helps.\n\nMy 20 mu \u2014 I keep 15 mu on wheat-maize like always, and 5 mu on cotton because the price has been alright and I know how to grow it.\n\n**Wheat (15 mu):** After maize comes off in October, I plow once and drill the wheat. Before sowing I spread 2 bags of compound fertilizer (that 15-15-15 one the dealer sells, 50 jin bag) on each mu. That's about 50 jin per mu of compound. Then in spring when wheat turns green, I top-dress 1 bag of urea per mu \u2014 maybe a little more, urea is cheap enough and I don't want thin ears. I water at green-up, at jointing, and at grain-fill \u2014 three times from the well. Last year I got about 450 jin per mu, I think this year same. I spray once for aphids when I see them, maybe twice if bad.\n\n**Maize (15 mu):** Right after wheat harvest in June, no till, just drill the maize into the stubble, this is what everyone does now. I use the improved seed from the dealer, Zhengdan type. At knee-high I top-dress 1.5 bags urea per mu. Water twice if the rain doesn't come. Spray once for borers. I get maybe 550 jin per mu.\n\n**Cotton (5 mu):** I plow the cotton field properly in spring, cotton likes loose soil. I use improved Bt seed \u2014 the worms are less trouble now but still I spray 6-7 times through summer, cotton is the crop that eats pesticide money. Base fertilizer 2 bags compound per mu, then urea 1 bag per mu at flowering. Water 3 times. I get around 220 jin seed cotton per mu if weather holds.\n\nI spend more on fertilizer than I probably need, but a bad year is a disaster and some extra urea is just a few hundred yuan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I have always farmed and the way my neighbors do. Wheat-maize on 15 mu, cotton on 5 mu. I measure fertilizer in bags \u2014 2 bags compound as base, 1 bag urea top-dress, a little extra to be safe because losing yield is worse than wasting some fertilizer. Cotton takes the most pesticide, 6-7 sprays for worms. I irrigate from the well when the crop needs it. My son works off-farm so I keep things simple and do what has worked for 53 years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I farm the way I have always farmed and the way my neighbors do. Wheat-maize on 15 mu, cotton on 5 mu. I measure fertilizer in bags \u2014 2 bags compound as base, 1 bag urea top-dress, a little extra to be safe because losing yield is worse than wasting some fertilizer. Cotton takes the most pesticide, 6-7 sprays for worms. I irrigate from the well when the crop needs it. My son works off-farm so I keep things simple and do what has worked for 53 years."
+  },
+  "elapsed_seconds": 36.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_5",
+  "tier": 3,
+  "provider": "claude"
+}

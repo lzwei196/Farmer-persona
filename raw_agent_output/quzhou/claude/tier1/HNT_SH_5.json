@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has worked this land in Quzhou for three generations. I have about 10 mu. The soil is decent loam \u2014 good for wheat and corn. That is what I grow. That is what everyone around here grows. Wheat goes in the ground in October and I harvest it in June, then I plant corn right after on the same land. Two crops, one year, same plot.\n\nI buy my wheat seed from the village supply cooperative \u2014 they sell Jimai 22, which my neighbor has used for years and gets a reliable yield. For corn I use Xianyu 335, a hybrid. The seed shop pushes it and my cousin used it last year and got a decent harvest. I will use that.\n\nFor fertilizer, I put down a good amount before planting wheat \u2014 diammonium phosphate and urea. I top-dress again at jointing. I am not stingy with nitrogen because one bad year can hurt the whole family. For corn I put down base fertilizer at planting and chase it once during the big growth push. Water is a concern \u2014 the well is getting deeper every year \u2014 but wheat needs to be irrigated or the yield collapses. I irrigate three times for wheat: before winter sets in, at jointing, and at heading. For corn the summer rain usually helps so I only pump twice unless it is a dry year.\n\nI rotary till after the corn harvest to prepare for wheat. For corn I seed directly into the wheat stubble \u2014 saves time and the machine can do it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"A 45-year-old smallholder in Quzhou County with 10 mu follows the standard North China Plain winter wheat\u2013summer maize rotation on the same plot. Improved wheat (Jimai 22) and hybrid maize (Xianyu 335) purchased from the village cooperative reflect the near-universal adoption of commercial varieties in this region. Nitrogen rates are moderately high (18 and 15 kg/mu) consistent with local smallholder practice of erring toward over-application to protect yield. Wheat requires three irrigations to survive the dry Hebei winter and spring; maize relies more on summer rainfall with two supplemental irrigations. Rotary tillage prepares the seedbed after maize harvest; no-till direct seeding into wheat stubble saves labor and time at the start of the maize season. Expected yields of 450 and 540 kg/mu are typical for a competent but non-specialist farmer in this county.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "A 45-year-old smallholder in Quzhou County with 10 mu follows the standard North China Plain winter wheat\u2013summer maize rotation on the same plot. Improved wheat (Jimai 22) and hybrid maize (Xianyu 335) purchased from the village cooperative reflect the near-universal adoption of commercial varieties in this region. Nitrogen rates are moderately high (18 and 15 kg/mu) consistent with local smallholder practice of erring toward over-application to protect yield. Wheat requires three irrigations to survive the dry Hebei winter and spring; maize relies more on summer rainfall with two supplemental irrigations. Rotary tillage prepares the seedbed after maize harvest; no-till direct seeding into wheat stubble saves labor and time at the start of the maize season. Expected yields of 450 and 540 kg/mu are typical for a competent but non-specialist farmer in this county."
+  },
+  "elapsed_seconds": 42.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_5",
+  "tier": 1,
+  "provider": "claude"
+}

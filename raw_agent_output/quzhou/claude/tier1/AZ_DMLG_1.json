@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for over 40 years. I know this soil, I know this weather, and I know what works. My back isn't what it was, my son moved to Shijiazhuang, so I manage about 10 mu on my own now \u2014 sold off the lease on the rest.\n\nThe answer is simple: winter wheat, then summer corn. Same as my father did. Same as my neighbors do. The seed shop in town sells the Jimai series wheat \u2014 I'll use that, it yields well and doesn't lodge too easily. For corn I'll buy hybrid seed, everyone does now, the yield difference is real.\n\nFor wheat, I'll rotary till after the corn harvest, spread base fertilizer into the ground, then sow in mid-October. I water at winter freeze, jointing, heading, and grain fill \u2014 four times. I spray once for weeds in spring and once for aphids before heading. I've been using roughly the same fertilizer amounts for years: heavy on nitrogen, some phosphorus, less potassium. My yield is usually around 450 jin per mu \u2014 call it 450 kg.\n\nFor corn, I drill it straight into the stubble right after wheat harvest in June, no-till to save my knees. Top-dress urea when it reaches knee height. I only irrigate if it looks dry \u2014 usually once. Spray for corn borer once. Yield around 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old smallholder in Quzhou County follows the standard winter wheat \u2013 summer maize double-cropping rotation on 10 mu, the backbone of North China Plain farming for generations. Wheat is sown in October after rotary tillage and base fertilizer incorporation, irrigated at four critical stages, and managed with two pesticide passes. Corn is no-till drilled immediately after the June wheat harvest to save labor and conserve moisture, with a single urea top-dress and one irrigation if rainfall is insufficient. Fertilizer rates reflect long-established local habit \u2014 adequate but not precision-managed \u2014 and seed choices lean on locally trusted improved wheat varieties and commercially dominant hybrid corn, both readily available at the village seed shop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 65-year-old smallholder in Quzhou County follows the standard winter wheat \u2013 summer maize double-cropping rotation on 10 mu, the backbone of North China Plain farming for generations. Wheat is sown in October after rotary tillage and base fertilizer incorporation, irrigated at four critical stages, and managed with two pesticide passes. Corn is no-till drilled immediately after the June wheat harvest to save labor and conserve moisture, with a single urea top-dress and one irrigation if rainfall is insufficient. Fertilizer rates reflect long-established local habit \u2014 adequate but not precision-managed \u2014 and seed choices lean on locally trusted improved wheat varieties and commercially dominant hybrid corn, both readily available at the village seed shop."
+  },
+  "elapsed_seconds": 42.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_1",
+  "tier": 1,
+  "provider": "claude"
+}

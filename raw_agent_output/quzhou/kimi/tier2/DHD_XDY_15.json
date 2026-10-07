@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old and have farmed these lands for 45 years. My 14 mu are all in wheat-maize rotation \u2014 I know every plot by heart. I have a well for irrigation, and my household has three people to help with the busy seasons. I did not go to school for long, but I have learned what works from decades of working this soil.\n\nFor wheat, I will rotary till the fields in October and sow improved wheat seeds \u2014 the reliable varieties I have used for years, about 15 kg per mu. I will put down compound fertilizer as a basal dose and topdress with urea when the wheat turns green in spring. I will irrigate four times from my well: once before winter to protect the seedlings from freezing, once when the wheat revives in March, once at jointing, and once at heading. I will spray herbicide and insecticide four times in total to keep weeds and aphids under control. If the weather treats me fairly, I expect about 500 kg per mu.\n\nFor maize, there is no time to waste after wheat harvest in early June. I will plant hybrid maize seeds directly into the stubble without tillage \u2014 everyone here does it this way now. I will apply compound fertilizer at sowing and topdress with urea at the big trumpet stage. I will irrigate twice: once after sowing if the soil is dry, and again at flowering. I will spray pesticides three times for weeds and corn borers. I expect about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 14 mu in Quzhou County for 45 years using a wheat-maize rotation. For wheat, I use rotary tillage and improved seeds, applying compound fertilizer and urea, irrigating four times from my well, and spraying pesticides four times. For maize, I plant hybrid seeds directly after wheat harvest with no-tillage, apply compound and urea, irrigate twice, and spray three times. These are the practices that have consistently worked on my farm and match what neighboring farmers do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed 14 mu in Quzhou County for 45 years using a wheat-maize rotation. For wheat, I use rotary tillage and improved seeds, applying compound fertilizer and urea, irrigating four times from my well, and spraying pesticides four times. For maize, I plant hybrid seeds directly after wheat harvest with no-tillage, apply compound and urea, irrigate twice, and spray three times. These are the practices that have consistently worked on my farm and match what neighboring farmers do."
+  },
+  "elapsed_seconds": 192.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_15",
+  "tier": 2,
+  "provider": "kimi"
+}

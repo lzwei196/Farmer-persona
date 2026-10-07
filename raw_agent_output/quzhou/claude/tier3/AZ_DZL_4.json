@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land my whole life, since I was a boy helping my father. Let me think through what I'll do this year.\n\nMy 18 mu \u2014 I keep about 4 mu in cotton, the rest (14 mu) I do wheat then maize, same as every year. Cotton is troublesome, lots of spraying, my back hurts, so I don't plant more than that. But cotton price is okay when the bolls are clean, so I keep some.\n\n**Wheat (14 mu, winter):** Last October I put down one bag of compound fertilizer per mu, same as always \u2014 the 15-15-15 kind, 40 kg bags. Then in spring when the wheat turns green I spread half a bag of urea per mu. That's what my neighbor Old Wang does and his wheat looks the same as mine. If I put less, the wheat turns yellow and I get scared. I water three times \u2014 before winter, at returning green, and when the grain is filling. Spray twice for aphids and that yellow rust on the leaves. I buy the improved seed from the village station, not the old kind anymore. Rotary till after maize harvest. Last year I got about 450 kg per mu, I'll plan the same.\n\n**Maize (14 mu, summer):** After wheat harvest in June I just push the seeder through the stubble \u2014 no ploughing, everyone does no-till now, saves money and the machine man charges less. Hybrid seed, the Zhengdan kind, I buy what the dealer suggests, same as the neighbors. Maize eats a lot of fertilizer \u2014 I use one bag compound at seeding and then when the maize is knee-high I broadcast one bag of urea per mu. If I don't, the ears are small. Water two times if the rain is poor. One spray for the borer worm. Usually get around 550 kg per mu.\n\n**Cotton (4 mu, spring):** Cotton needs deep ploughing before sowing, I hire the tractor. Sow in late April when soil is warm. I use the Bt hybrid seed \u2014 the one against bollworm \u2014 everyone switched to it years ago. Cotton needs feeding through the whole season. I put one bag compound as base, then two times I add urea, maybe half a bag each time. Water three times from the well. Spraying is the hard part \u2014 cotton attracts everything: aphids, spider mites, the leaf roller \u2014 I spray maybe ten times through the season, I just watch the leaves and spray when I see trouble. Get about 250 kg seed cotton per mu in a good year.\n\nMoney is tight with 6 mouths, but I won't cut fertilizer. A bad harvest costs more than one extra bag. If something goes wrong I can't feed everyone. I do what I know works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I keep 4 mu in cotton and do wheat-maize double crop on the other 14 mu, same as every year because it works. I follow what my neighbors do and what my 45 years of farming taught me \u2014 one bag of compound fertilizer plus urea topdressing for each crop, measured in bags because that's how I think. I won't cut fertilizer even when money is tight, because a failed harvest is worse than a few extra yuan on fertilizer. Cotton needs the most spraying and work, which is why I only keep a small piece of it. Wheat and maize I manage almost the same way every year \u2014 improved wheat seed, hybrid maize, rotary till after maize and no-till after wheat, irrigate from my well when rain is short.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I keep 4 mu in cotton and do wheat-maize double crop on the other 14 mu, same as every year because it works. I follow what my neighbors do and what my 45 years of farming taught me \u2014 one bag of compound fertilizer plus urea topdressing for each crop, measured in bags because that's how I think. I won't cut fertilizer even when money is tight, because a failed harvest is worse than a few extra yuan on fertilizer. Cotton needs the most spraying and work, which is why I only keep a small piece of it. Wheat and maize I manage almost the same way every year \u2014 improved wheat seed, hybrid maize, rotary till after maize and no-till after wheat, irrigate from my well when rain is short."
+  },
+  "elapsed_seconds": 56.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_4",
+  "tier": 3,
+  "provider": "claude"
+}

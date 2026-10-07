@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been working this land for fifty years. I know Quzhou's soil \u2014 silty loam, decent fertility but needs replenishing every year. My five mu is split between winter wheat and summer maize in rotation, same fields for both. My sons help occasionally but they work in town most of the time, so I keep my management simple enough that I can handle most of it myself or hire a day laborer for planting and harvest.\n\n**Wheat (planted this October, harvested next June):**\nI will use the Jimai or Shimai variety line I have been using the last several years. It performs reliably and I know how it behaves. I will do rotary tillage before seeding \u2014 deep ploughing every year is too hard on my back now and costs more fuel. I will apply compound fertilizer as base before planting, then topdress urea at jointing in March. I irrigate before winter sets in, again at jointing, and at heading \u2014 three times total. Two pesticide passes: one herbicide early on, one fungicide in spring when rust and powdery mildew pressure picks up.\n\n**Maize (planted June after wheat harvest, harvested September):**\nI will use hybrid seed, same as always \u2014 local seed shop sells what the extension station recommends. After combining wheat, I hire the rotary tiller to chop and bury the straw, then plant maize directly. Base fertilizer goes in at planting, topdress nitrogen at the V6 stage. I irrigate twice if summer rain is short \u2014 it usually is in July. One herbicide pass right after emergence, one more spray if I see borer damage.\n\nI do not change much year to year. At seventy, reliable and manageable beats chasing higher yields.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old experienced farmer in Quzhou's wheat-maize rotation system managing 5 mu with well irrigation and limited family labor. Wheat uses proven improved varieties with rotary tillage, moderate fertilizer inputs split between base and topdress, three irrigations at critical stages, and two pesticide passes for weed and disease control, targeting a reliable 450 kg/mu. Summer maize uses hybrid seed planted directly after wheat harvest into rotary-tilled straw, higher nitrogen to match maize's demand, two supplemental irrigations in the typically dry July period, and standard herbicide plus insecticide applications, targeting 550 kg/mu. Both crops follow a conservative, low-labor management style consistent with reduced household labor availability and the farmer's preference for proven, manageable practices over yield-maximizing intensification.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 70-year-old experienced farmer in Quzhou's wheat-maize rotation system managing 5 mu with well irrigation and limited family labor. Wheat uses proven improved varieties with rotary tillage, moderate fertilizer inputs split between base and topdress, three irrigations at critical stages, and two pesticide passes for weed and disease control, targeting a reliable 450 kg/mu. Summer maize uses hybrid seed planted directly after wheat harvest into rotary-tilled straw, higher nitrogen to match maize's demand, two supplemental irrigations in the typically dry July period, and standard herbicide plus insecticide applications, targeting 550 kg/mu. Both crops follow a conservative, low-labor management style consistent with reduced household labor availability and the farmer's preference for proven, manageable practices over yield-maximizing intensification."
+  },
+  "elapsed_seconds": 43.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_2",
+  "tier": 2,
+  "provider": "claude"
+}

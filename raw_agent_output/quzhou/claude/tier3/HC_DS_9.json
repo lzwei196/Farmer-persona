@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll think this through as I stand at the edge of my field.\n\nMy land is 10.1 mu, same ground I've worked for thirty years. Wheat goes in after October, maize goes in after the wheat comes off in June. That's how it's always been here, and my neighbors all do the same.\n\nLast year I got about 500 kg of wheat per mu and close to 550 kg of maize. Not bad, not the best. My cousin Liu across the road got a bit more maize because he put on a little extra urea at the big-trumpet stage. I'll try that this year.\n\nFor seed, I buy from the shop in town \u2014 everyone uses the improved wheat seeds (\u6d4e\u9ea6 or \u826f\u661f, whatever the dealer pushes that year) and hybrid maize (\u90d1\u5355 958 type, the cheap reliable one). I don't mess with the fancy expensive ones. Too risky for the price.\n\nFor fertilizer, I do what works. One bag of compound fertilizer (\u590d\u5408\u80a5, 15-15-15, 50 jin bag \u2014 about 25 kg) as base for each mu of wheat, plus another half-bag. Then when wheat turns green in spring, I spread urea, maybe 25 kg per mu. For maize I put compound fertilizer at sowing, about 40 kg/mu, then urea at the big-trumpet stage, 20 kg/mu. I'd rather put a little extra than watch the leaves turn yellow \u2014 a bad harvest costs me way more than a bag of urea.\n\nWater: I have the well, so I don't worry too much. Wheat needs watering \u2014 winter water, green-up, jointing, filling \u2014 that's 4 times. Maize mostly gets by on summer rain, but I'll water once or twice if July is dry.\n\nPesticide: wheat I spray twice \u2014 once for aphids and the rust in spring, once before harvest. Maize I spray once for the borer. I don't overdo it, the chemicals are expensive.\n\nTillage: I pay the tractor man to rotary-till. Nobody plows deep anymore, too expensive and the time is tight between maize harvest and wheat sowing.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year with small adjustments. One bag of compound fertilizer plus urea topdressing for each crop \u2014 I'd rather spend a little extra on fertilizer than risk a poor harvest, because the loss is much bigger than the cost. I use improved wheat seed and hybrid maize like everyone in the village. My well lets me water the wheat four times, but maize mostly drinks rainwater unless July is dry. I spray pesticide only when I see the problem \u2014 chemicals are expensive. Rotary tillage by the tractor man, same as all my neighbors. My cousin got more maize by adding a bit more urea at the big-trumpet stage, so I'll do that too.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what worked last year with small adjustments. One bag of compound fertilizer plus urea topdressing for each crop \u2014 I'd rather spend a little extra on fertilizer than risk a poor harvest, because the loss is much bigger than the cost. I use improved wheat seed and hybrid maize like everyone in the village. My well lets me water the wheat four times, but maize mostly drinks rainwater unless July is dry. I spray pesticide only when I see the problem \u2014 chemicals are expensive. Rotary tillage by the tractor man, same as all my neighbors. My cousin got more maize by adding a bit more urea at the big-trumpet stage, so I'll do that too."
+  },
+  "elapsed_seconds": 41.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_9",
+  "tier": 3,
+  "provider": "claude"
+}

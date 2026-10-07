@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 64 years old, only finished primary school. I've worked my 10.1 mu in Quzhou for 40 years, same as my father. I don't read books about farming \u2014 I watch what my neighbors do, and I talk to the seed dealer when I buy inputs. I learned that if something worked last year and the year before, I should keep doing it. Changing is dangerous.\n\nMy wheat is already in the ground from last October. I ploughed deep before planting, and I put down base fertilizer \u2014 about 50 kg per mu of compound fertilizer. I planted improved seed, not the old traditional kind. Now in spring, the wheat needs food. I will spread 20 kg of urea per mu for top dressing, and irrigate three times: the green-up water, the jointing water, and the grain-filling water. My well pump can handle all 10 mu. I will spray herbicide once and fungicide once. I want 520 kg per mu from that wheat. Last year I got about 500 kg, and I want to match that or do a little better.\n\nAfter I harvest the wheat in June, I will rotary till the ground quick \u2014 there's no time to plough deep for the summer crop. I will plant hybrid maize seed, about 4 jin per mu. I will put 50 kg of compound fertilizer per mu when I sow, then top dress with 25 kg of urea per mu when the plants are knee-high. That's about 20 kg of nitrogen per mu for the maize. I will irrigate three times in summer, and spray pesticide twice \u2014 once for weeds, once for bugs. I expect 600 kg per mu if the rain cooperates.\n\nI think hard about money. A bag of urea is over 130 yuan now, compound fertilizer is 160 yuan. For both crops I need maybe 35 bags total. That's nearly 5,000 yuan. But I cannot cut back. My neighbor Wang tried to save 200 yuan on fertilizer two years ago and his wheat was so thin he lost half a harvest. A bad harvest is a disaster. Wasting a little fertilizer is just a cost I accept.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on 40 years of experience and what my neighbors do. For wheat, I ploughed before autumn planting and applied compound base fertilizer; now I top dress with urea and irrigate three times with my well. For maize after wheat harvest, I rotary till and plant hybrid seed with compound fertilizer at sowing plus urea top dress, irrigating three times. I keep fertilizer rates steady despite high prices because cutting back risks yield loss, which is worse than wasting some fertilizer. I expect 520 kg/mu for wheat and 600 kg/mu for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I base my decisions on 40 years of experience and what my neighbors do. For wheat, I ploughed before autumn planting and applied compound base fertilizer; now I top dress with urea and irrigate three times with my well. For maize after wheat harvest, I rotary till and plant hybrid seed with compound fertilizer at sowing plus urea top dress, irrigating three times. I keep fertilizer rates steady despite high prices because cutting back risks yield loss, which is worse than wasting some fertilizer. I expect 520 kg/mu for wheat and 600 kg/mu for maize."
+  },
+  "elapsed_seconds": 108.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_1",
+  "tier": 3,
+  "provider": "kimi"
+}

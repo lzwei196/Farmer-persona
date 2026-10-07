@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 68 years old. I never went to school. My father taught me farming, and I have farmed these same fields for 50 years. My plot is only 2 mu, and I live alone, so I do everything myself with no hired help.\n\nI plant wheat in winter and maize in summer. I never change this \u2014 it is what my father did, and what all my neighbors in Quzhou do. Last year my wheat gave me almost 1000 jin per mu, and my maize gave me about 1100 jin per mu. I need to keep that up because 2 mu is all I have.\n\nFor wheat: I sow in mid-October. I buy the same improved wheat seed from the village shop as every year \u2014 about 15 kg for each mu. Before sowing, I plough the field to bury the maize stalks. I spread two 40-kg bags of compound fertilizer on the whole 2 mu \u2014 that is 40 kg per mu. In March when the wheat turns green, I spread one 40-kg bag of urea on the 2 mu \u2014 20 kg per mu. I would rather put a bit too much than too little. A bad harvest means I have no money; wasting some fertilizer is just a cost.\n\nI irrigate wheat three times: once before winter freeze, once when it shoots up in spring, and once when the grain is filling. I cannot skip water \u2014 this land needs it. I spray twice: once for weeds after sowing, and once for bugs when the ears are out.\n\nFor maize: After I cut the wheat in early June, I get a tractor to rotary till \u2014 I am too old to plough twice a year by myself. I sow hybrid maize seed immediately, about 2.5 kg per mu. At sowing, I put one and a half 40-kg bags of compound fertilizer on the 2 mu \u2014 that is 30 kg per mu. When the maize is knee-high, I spread half a 40-kg bag of urea on the 2 mu \u2014 that is 10 kg per mu. Last year this was enough.\n\nI irrigate maize twice: once when it is shooting up, and once when the grain is filling. Summer sometimes rains, but I do not trust the sky. I spray twice, for weeds and for corn borers.\n\nFertilizer is expensive now. Every bag is real money from my pocket. But I watched my neighbor cut back two years ago, and his maize was stunted. I will not make that mistake. I do what I did last year. If it worked, I do it again.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 9,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I am a 68-year-old farmer with no schooling and 50 years of experience farming 2 mu alone in Quzhou County. I grow winter wheat followed by summer maize because that is what my father did and what my neighbors do. I base this year's plan on last year's practice, which gave me nearly 1000 jin of wheat and 1100 jin of maize per mu. For wheat, I plough before sowing in mid-October, use 15 kg per mu of improved seed, apply 40 kg per mu of compound fertilizer as a base and 20 kg per mu of urea at green-up, irrigate three times, and spray twice. For maize, I rotary till after wheat harvest in June, sow 2.5 kg per mu of hybrid seed, apply 30 kg per mu of compound fertilizer at sowing and 10 kg per mu of urea at knee-height, irrigate twice, and spray twice. Fertilizer is costly, but I would rather apply enough than risk a bad harvest, so I copy what worked last year and watch what my neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 9,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I am a 68-year-old farmer with no schooling and 50 years of experience farming 2 mu alone in Quzhou County. I grow winter wheat followed by summer maize because that is what my father did and what my neighbors do. I base this year's plan on last year's practice, which gave me nearly 1000 jin of wheat and 1100 jin of maize per mu. For wheat, I plough before sowing in mid-October, use 15 kg per mu of improved seed, apply 40 kg per mu of compound fertilizer as a base and 20 kg per mu of urea at green-up, irrigate three times, and spray twice. For maize, I rotary till after wheat harvest in June, sow 2.5 kg per mu of hybrid seed, apply 30 kg per mu of compound fertilizer at sowing and 10 kg per mu of urea at knee-height, irrigate twice, and spray twice. Fertilizer is costly, but I would rather apply enough than risk a bad harvest, so I copy what worked last year and watch what my neighbors do."
+  },
+  "elapsed_seconds": 179.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_6",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll think this through as this farmer would, then give the JSON.\n\n**My reasoning:**\n\nI have 3.5 mu. Not big land. Six mouths, but some of my children work outside and send money, so I manage the field mostly by myself with my husband helping when he's home. I do what I always do \u2014 wheat after autumn, maize after wheat. This is how everyone in our village farms. I cannot read, but I know my land. Thirty years I've worked it.\n\nFor the wheat, I plant in October like every year. I buy the same seed the shop sells \u2014 the one my neighbor Liu uses, he got good harvest last year so I trust it. For one mu of wheat I put one bag of \u590d\u5408\u80a5 (compound fertilizer, 50 jin) when I plow, then when the wheat turns green in spring I spread one bag of \u5c3f\u7d20 (urea) on top. That's what my husband's uncle taught us and it works. If I put less, I'm afraid the wheat will be yellow and thin. Better to spend the money than see a bad field \u2014 the neighbors would laugh and we'd eat less.\n\nI water the wheat with the well \u2014 once before winter so it doesn't dry out, once when it greens up, once when it's heading, once when the grain is filling. Four times. The electricity for the pump costs money but without water nothing grows here.\n\nPesticide \u2014 I spray the weed killer once after the wheat comes up, and when I see the \u869c\u866b (aphids) I spray once more. Sometimes twice if they're bad.\n\nFor the maize, after wheat harvest in June I don't plow \u2014 I just push the seed in with the machine through the straw. Everyone does it this way now, saves time and the land is moist. I use the hybrid seed from the \u79cd\u5b50\u7ad9 (seed station) \u2014 the tall ones, Zhengdan or whatever they have. I put compound fertilizer when I plant, then when the maize is waist-high I add urea \u2014 a little more than half a bag per mu. Maize is hungry, it needs fertilizer to fill the cob.\n\nMaize I only water once or twice \u2014 summer has some rain. Pesticide once for the \u7389\u7c73\u879f (corn borer) when I see the holes in the leaves.\n\nI expect wheat maybe 900 jin per mu if heaven gives good weather, maize maybe 1000-1100 jin. Last year was about that.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    }\n  ],\n  \"reasoning_summary\": \"I farm 3.5 mu the way I always have and the way my neighbors do. For wheat I put one bag of compound fertilizer at planting and one bag of urea in spring, water four times from the well, spray for weeds and aphids. For maize I seed straight into the wheat stubble with hybrid seed from the seed station, put compound at planting and urea when it's waist-high, water once or twice, and spray once for corn borer. I would rather spend a bit more on fertilizer than lose the harvest \u2014 money for inputs I can earn back, but a bad field means hungry months and shame in front of the village.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      }
+    ],
+    "reasoning_summary": "I farm 3.5 mu the way I always have and the way my neighbors do. For wheat I put one bag of compound fertilizer at planting and one bag of urea in spring, water four times from the well, spray for weeds and aphids. For maize I seed straight into the wheat stubble with hybrid seed from the seed station, put compound at planting and urea when it's waist-high, water once or twice, and spray once for corn borer. I would rather spend a bit more on fertilizer than lose the harvest \u2014 money for inputs I can earn back, but a bad field means hungry months and shame in front of the village."
+  },
+  "elapsed_seconds": 45.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_14",
+  "tier": 3,
+  "provider": "claude"
+}

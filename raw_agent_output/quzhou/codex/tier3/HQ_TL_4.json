@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will still lean on the wheat-maize rotation for most of my land, because I have 40 mu and only one person in the house, so I cannot put too much land into cotton. Cotton brings cash, but it eats labor and pesticide money, and if I spread myself too thin, I will lose on management. What I do is start from what has worked here: winter wheat on the main land, summer maize right after wheat, and only a small block of cotton on the side. With well irrigation, I do not dare save too much on fertilizer. If I am unsure, I would rather put a little extra nitrogen than watch the crop go yellow. For wheat, I will use improved seed and feed it a bit heavier, because wheat here answers well to water and fertilizer. For summer maize, I will use hybrid seed and keep the stand strong after wheat harvest, usually with less tillage so I can move fast. For cotton, I will keep only 5 mu, use better seed, more potassium than grain crops, and spray more times because insects on cotton are never light. I also watch what the good farmers around me do. Nobody around me with irrigated land and decent yields is farming these crops on empty fertilizer now. I will spend where yield is protected first, then control pesticide and labor tightly so the whole year still balances.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 35.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 35.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    }\n  ],\n  \"reasoning_summary\": \"I will keep most of my 40 mu in the wheat-maize rotation because I farm alone and that system fits local practice, machinery, and well irrigation best, while I will keep only a small 5 mu block of cotton for cash because cotton needs more labor and more spraying. I will use improved or hybrid seed on all three crops, put fertilizer at rates that protect yield rather than gamble on saving a little money, irrigate wheat three times, maize twice, and cotton four times, and follow the usual local pattern of rotary tillage for wheat land, no-tillage for summer maize after wheat, and ploughing for cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 35.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 35.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      }
+    ],
+    "reasoning_summary": "I will keep most of my 40 mu in the wheat-maize rotation because I farm alone and that system fits local practice, machinery, and well irrigation best, while I will keep only a small 5 mu block of cotton for cash because cotton needs more labor and more spraying. I will use improved or hybrid seed on all three crops, put fertilizer at rates that protect yield rather than gamble on saving a little money, irrigate wheat three times, maize twice, and cotton four times, and follow the usual local pattern of rotary tillage for wheat land, no-tillage for summer maize after wheat, and ploughing for cotton."
+  },
+  "elapsed_seconds": 30.7,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_4",
+  "tier": 3,
+  "provider": "codex"
+}

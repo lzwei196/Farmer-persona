@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been farming this land for 26 years. My father farmed it before me. I do not need to think too hard about what to do \u2014 I mostly do what I did last year, and what my neighbor Old Liu does. He has a bigger field than me but our land is the same soil.\n\nMy 7 mu I split like this: 5 mu I do wheat and then maize on the same field, one after another every year. The other 2 mu I keep for cotton. Cotton is more trouble \u2014 more spraying, more watering, more work \u2014 but it brings in cash money. If I lose cotton I lose cash. If I lose wheat, that is very bad, that is food and money both. So I am more careful with wheat.\n\n**Wheat (5 mu, plant October):** I buy the improved seed from the township store, the same kind Old Liu uses. He got a good harvest last year. I put down one bag of compound fertilizer per mu when I plant \u2014 the 15-15-15 kind, 50 kg bag. Then in March or April when the wheat gets to my knee, I spread about 15 kg of urea per mu. That is what everyone around here does. Three times I pull water from the well: once in November before it gets cold, once in April at the jointing time, once in May when the heads are filling out. I spray twice \u2014 once for weeds in winter, once for the white powder on the leaves in spring if I see it.\n\n**Maize (5 mu, plant June right after wheat):** Same day I finish cutting wheat, almost same day I plant maize. No plowing \u2014 I just plant right into the stubble. The dealer knows me, I buy hybrid seeds from him every year, same brand as before. For fertilizer, I put a small amount of compound down at planting, then I top-dress with urea twice \u2014 once when the plant is knee-high, once before it tassels. Maize here does not need as much water if July and August have rain, but I irrigate at least twice to be safe. I spray maybe twice \u2014 once for the corn borer worm, once for weeds early.\n\n**Cotton (2 mu, plant April-May):** I plow this field in spring, turn the soil over properly. Cotton I put compound fertilizer down when I transplant or when seedlings are up. Then I add urea two more times when the bolls are setting \u2014 that is when cotton needs feeding most. Cotton gets aphids, gets bollworm, gets whitefly \u2014 I spray four times through the season, sometimes more if I see trouble. I irrigate five times, especially at flowering and boll-set. Cotton is the most work on my farm.\n\nI do not change much from last year. Prices for urea went up a bit, but I will not cut back on fertilizer for wheat \u2014 I would rather spend more and get a full harvest than save money and lose yield. A bad harvest is a disaster. Wasting some fertilizer is just a cost.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 46-year-old farmer with no schooling and 26 years of experience divides his 7 mu between a 5-mu wheat-maize double-crop rotation and 2 mu of cotton. He copies the fertilizer and seed practices of successful neighbors, applies compound fertilizer at planting plus urea as a top-dress for all three crops, and errs toward higher fertilizer rates for wheat because a failed grain harvest is the worst outcome. Maize is planted directly into wheat stubble without tillage to save time and cost. Cotton receives the most irrigation and pesticide treatments due to pest pressure from aphids, bollworm, and whitefly. His plan changes little from the prior year \u2014 stability and avoiding disaster matter more than optimizing for the best possible outcome.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 46-year-old farmer with no schooling and 26 years of experience divides his 7 mu between a 5-mu wheat-maize double-crop rotation and 2 mu of cotton. He copies the fertilizer and seed practices of successful neighbors, applies compound fertilizer at planting plus urea as a top-dress for all three crops, and errs toward higher fertilizer rates for wheat because a failed grain harvest is the worst outcome. Maize is planted directly into wheat stubble without tillage to save time and cost. Cotton receives the most irrigation and pesticide treatments due to pest pressure from aphids, bollworm, and whitefly. His plan changes little from the prior year \u2014 stability and avoiding disaster matter more than optimizing for the best possible outcome."
+  },
+  "elapsed_seconds": 97.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_6",
+  "tier": 3,
+  "provider": "claude"
+}

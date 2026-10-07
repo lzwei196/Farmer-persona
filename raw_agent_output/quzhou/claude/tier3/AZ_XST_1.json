@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will think this through the way I always do, starting from what I did last year.\n\nMy 8.5 mu \u2014 I split it like before. About 5 mu goes to wheat in winter, then maize after. The other 3.5 mu I keep for cotton, same as always. Cotton brings cash, the grain feeds us and what we don't eat we sell.\n\nFor the wheat, I use the same seed the shop sells, the one everyone around here plants. I put down two bags of compound fertilizer before I plough \u2014 that's about 100 jin per mu \u2014 and then one bag of urea when I water in spring. My neighbor Old Wang puts less but his yield is always a little worse, so I don't cut back. Better to spend a few extra yuan than watch the wheat turn yellow. I water three times \u2014 before winter, at jointing, at filling. If the well is busy I skip one but usually three.\n\nFor the maize after wheat harvest, I plant the hybrid seed from the same shop \u2014 everyone buys that one. I don't plough, just push the seed in with the machine right after wheat. I put urea twice, maybe 40 jin each time at the roots. I water twice if the rain is bad, sometimes just once. Maize doesn't need as much fuss as wheat.\n\nCotton is the hardest. Bugs come every year and if I don't spray they eat the bolls. I spray maybe six times, whenever I see them. I put fertilizer heavier on cotton because the plants are big \u2014 two bags compound at planting, urea when they flower. I plough the cotton land properly, cotton doesn't do well in hard ground.\n\nMoney is tight with just me and my wife, so I count every bag. But I never skimp on fertilizer at planting \u2014 once the crop is short of food you can't fix it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I do what I did last year because it worked. Same seeds from the shop everyone uses, same fertilizer amounts \u2014 two bags compound at planting plus urea later for wheat and cotton, urea twice for maize. I would rather spend a few extra yuan on fertilizer than lose the crop. I watch my neighbors and stay close to what they do. Cotton gets the most sprays because of the bugs, and the most care in ploughing. Wheat gets three waterings, maize two, cotton three. With only my wife and me working 8.5 mu, I keep things simple and steady.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I do what I did last year because it worked. Same seeds from the shop everyone uses, same fertilizer amounts \u2014 two bags compound at planting plus urea later for wheat and cotton, urea twice for maize. I would rather spend a few extra yuan on fertilizer than lose the crop. I watch my neighbors and stay close to what they do. Cotton gets the most sprays because of the bugs, and the most care in ploughing. Wheat gets three waterings, maize two, cotton three. With only my wife and me working 8.5 mu, I keep things simple and steady."
+  },
+  "elapsed_seconds": 33.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_1",
+  "tier": 3,
+  "provider": "claude"
+}

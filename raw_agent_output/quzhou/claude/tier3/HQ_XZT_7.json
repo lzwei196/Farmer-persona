@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm like my mother-in-law taught me. 4.1 mu is not much, so I count every yuan. I do wheat in winter, then maize right after in summer \u2014 same as everyone in our village.\n\nFor wheat planting, I buy one bag of compound fertilizer per mu from the dealer \u2014 the 15-15-15 kind, 40 kg bag. That is my base. Then in spring when wheat stands up, I broadcast half a bag of urea per mu before watering. If the color looks pale I add a little more, but usually that is enough. I buy seed from the same shop as my neighbor Zhang \u2014 she got good wheat last year so I use what she uses, improved seed, not the old kind. I water wheat maybe three times \u2014 once before winter, once at green-up, once when grain is filling. If rain comes I skip one. I spray twice, one for weeds after winter, one for aphids and the rust when I see it on leaves.\n\nFor summer maize I plant right after wheat harvest, no ploughing, just rotary \u2014 my husband rents the machine from the village. I put one bag compound at sowing, then one topdressing of urea, maybe 15 kg per mu when the maize is knee-high. Maize drinks a lot so I water two times if no rain. I spray once for borer. Hybrid seed, the dealer recommends one and everybody buys it.\n\nLast year wheat gave me about 500 jin per mu, maize a bit more. I hope for the same. I would rather put a little extra fertilizer than have a thin crop \u2014 a bad harvest is too painful.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 4.1 mu wheat-maize like my neighbors. For wheat I use one bag of 15-15-15 compound per mu at planting plus half a bag urea at spring green-up, three waterings, two sprays for weeds and aphids. For maize after wheat harvest I rotary and plant hybrid seed, one bag compound at sowing and a urea topdressing when knee-high, two waterings, one spray for borer. I copy what worked for Zhang down the road. I would rather spend a little more on fertilizer than lose the harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 4.1 mu wheat-maize like my neighbors. For wheat I use one bag of 15-15-15 compound per mu at planting plus half a bag urea at spring green-up, three waterings, two sprays for weeds and aphids. For maize after wheat harvest I rotary and plant hybrid seed, one bag compound at sowing and a urea topdressing when knee-high, two waterings, one spray for borer. I copy what worked for Zhang down the road. I would rather spend a little more on fertilizer than lose the harvest."
+  },
+  "elapsed_seconds": 47.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_7",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 8 mu, so I do not spread money around blindly. I start from what has worked for me in recent years around Quzhou. Wheat and maize both need to be steady on fertilizer and water if I want a safe yield. I have well irrigation, so I will lean on that instead of gambling on rain. On wheat, I will use improved seed, put enough base fertilizer down, and give it 3 irrigations if the year is normal: one after sowing if the soil is dry, one at greening or jointing, and one around grain filling. Wheat is where I do not dare to be short on nitrogen, because thin wheat in spring is hard to fix later. On maize after wheat, I will move fast so I do not miss moisture. I will use hybrid seed, keep the stand full, and put a solid amount of nitrogen because summer maize eats fertilizer fast. I would rather spend a bit more on fertilizer than lose ears and grain weight. I will not go too fancy on tillage because I only have 8 mu and labor matters; rotary or direct sowing saves time and diesel. For pesticides, I will do what I usually do: wheat about 2 sprays, maize about 2 sprays, then add one more only if I really see pressure in the field. This way I keep yield stable without pushing costs too hard.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I will follow the wheat-maize way that has worked on farms around me, using enough fertilizer and water to protect yield because my land is only 8 mu and a poor harvest hurts more than spending a bit extra on inputs. I will keep wheat steady with improved seed, rotary tillage, about 18 kg nitrogen per mu, and 3 irrigations, then I will sow hybrid maize quickly after wheat with no-tillage, about 16 kg nitrogen per mu, and 2 irrigations so I do not lose the summer season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I will follow the wheat-maize way that has worked on farms around me, using enough fertilizer and water to protect yield because my land is only 8 mu and a poor harvest hurts more than spending a bit extra on inputs. I will keep wheat steady with improved seed, rotary tillage, about 18 kg nitrogen per mu, and 3 irrigations, then I will sow hybrid maize quickly after wheat with no-tillage, about 16 kg nitrogen per mu, and 2 irrigations so I do not lose the summer season."
+  },
+  "elapsed_seconds": 35.5,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_9",
+  "tier": 3,
+  "provider": "codex"
+}

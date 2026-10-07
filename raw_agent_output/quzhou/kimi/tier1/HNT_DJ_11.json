@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 63 years old, and I have farmed these fields in Quzhou County since I was a young man. I only finished primary school, but I know this land and this climate. On the North China Plain, there is only one sensible way to use my 7 mu of good flat land: the winter wheat\u2013summer maize double crop that every household around here plants. I do not gamble with new crops like stevia or cotton at my age; wheat and maize have steady buyers and the government gives us a grain subsidy.\n\nFor winter wheat, I sow improved varieties such as Jimai 22 in early October, right after the National Day holiday. I rotary till the soil first to break up the stubble. As basal fertilizer I spread about 100 jin of compound fertilizer per mu, and at green-up I topdress with urea. All together that gives the crop roughly 18 kg of nitrogen, 11 kg of phosphorus, and 4 kg of potassium per mu. I irrigate three times: once before winter so the seedlings survive the cold, once at jointing in spring, and once at heading when the ears are filling. I spray herbicide once, insecticide twice for aphids and armyworm, and fungicide once if the weather turns humid. If the year is normal I expect about 500 kg per mu.\n\nAfter harvesting the wheat in early June, I immediately plant hybrid maize\u2014Denghai 605 or something similar from the seed dealer\u2014without tilling, because there is no time to waste in the short summer season. I put down compound fertilizer at sowing, about 80 jin per mu, which gives around 11 kg nitrogen, 3 kg phosphorus, and 3 kg potassium per mu. Maize needs less fertilizer than wheat. I irrigate twice, at the jointing stage and again at grain filling. I spray herbicide once and insecticide twice for corn borer. With decent rain and sun, I expect about 550 kg per mu. Then the straw goes back to the field, and I prepare for wheat again.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou County my whole life. At 63 years old with only primary schooling, I stick to the proven winter wheat\u2013summer maize double-crop rotation on my 7 mu of land because it is the only system that reliably produces two crops per year on the North China Plain. I use improved wheat seed and hybrid maize seed for stable yields, apply compound fertilizer as basal and urea as topdressing, irrigate at the critical growth stages, and spray pesticides when pests or weeds appear. I do not experiment with unfamiliar crops; wheat and maize have guaranteed markets and government subsidies.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou County my whole life. At 63 years old with only primary schooling, I stick to the proven winter wheat\u2013summer maize double-crop rotation on my 7 mu of land because it is the only system that reliably produces two crops per year on the North China Plain. I use improved wheat seed and hybrid maize seed for stable yields, apply compound fertilizer as basal and urea as topdressing, irrigate at the critical growth stages, and spray pesticides when pests or weeds appear. I do not experiment with unfamiliar crops; wheat and maize have guaranteed markets and government subsidies."
+  },
+  "elapsed_seconds": 203.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_11",
+  "tier": 1,
+  "provider": "kimi"
+}

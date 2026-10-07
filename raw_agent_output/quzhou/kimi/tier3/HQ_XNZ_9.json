@@ -1,0 +1,53 @@
+{
+  "raw_response": "I\u2019ve farmed these 16 mu for 40 years, just me and my wife now. The wheat is already in the ground from last October \u2014 I sowed Jinmai 47, about 25 jin per mu. It\u2019s an improved variety, not the fanciest hybrid, but it\u2019s reliable. Last year I got about 480 kg per mu. For fertilizer, the input dealer told me 15 kg nitrogen per mu is enough, but I\u2019ve always done a bit more to be safe. I put half a bag of compound fertilizer down as base at sowing, and now in spring I\u2019ll top-dress with urea \u2014 about 40 jin at green-up and another 20 jin at jointing. That works out to about 18 kg nitrogen per mu total, plus 7 kg phosphorus and 6 kg potassium from the compound. I irrigate three times: green-up water in March, jointing in April, and heading in May. Pumping costs money, but a dry spell at heading will kill your yield. I spray twice for aphids and powdery mildew.\n\nAfter wheat harvest in early June, I plant summer maize on that same 12 mu. I use Zhengdan 958 hybrid seed \u2014 my neighbor Lao Wang switched to it three years ago and his yields went up, so I did too. I buy about 4 jin of seed per mu. Time is tight after wheat harvest, only a few days, so I no-till plant straight into the stubble. Base fertilizer is compound, about 80 jin per mu, then I top-dress urea at big trumpet stage \u2014 about 30 jin. That\u2019s about 17 kg nitrogen, 6 kg phosphorus, 6 kg potassium per mu. Maize needs less water than wheat \u2014 twice is usually enough, at jointing and grain filling. Two sprays for corn borer.\n\nThe other 4.1 mu is cotton. I plant Bt hybrid cotton in late April. Cotton needs more care. Base fertilizer is compound plus some extra potassium sulfate because cotton likes potassium for the bolls. Total nitrogen about 14 kg per mu, phosphorus 5 kg, potassium 8 kg. I irrigate three times and spray five times \u2014 aphids, spider mites, and bollworm even with Bt cotton. I do rotary tillage for cotton since I have time in spring.\n\nEverything costs more this year. Fertilizer prices went up again. But I\u2019m 62, I can\u2019t afford a bad year. I\u2019d rather put down a bit too much than risk losing yield. Last year I spent heavy on inputs and still came out okay. My neighbor uses about the same amounts, and he always does alright. That\u2019s good enough for me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what has worked for me and my neighbors. Wheat gets 18 kg nitrogen per mu with three irrigations because I cannot afford a drought at heading. Maize is planted no-till right after wheat harvest with 17 kg nitrogen and two irrigations \u2014 time is short and I need to get it in fast. Cotton takes more labor and sprays on 4.1 mu, with extra potassium for the bolls. I apply a bit more fertilizer than the dealer recommends because a bad harvest is worse than wasting some urea. I watch costs, but at my age with only two of us working, stability matters more than saving a few yuan on inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I stick with what has worked for me and my neighbors. Wheat gets 18 kg nitrogen per mu with three irrigations because I cannot afford a drought at heading. Maize is planted no-till right after wheat harvest with 17 kg nitrogen and two irrigations \u2014 time is short and I need to get it in fast. Cotton takes more labor and sprays on 4.1 mu, with extra potassium for the bolls. I apply a bit more fertilizer than the dealer recommends because a bad harvest is worse than wasting some urea. I watch costs, but at my age with only two of us working, stability matters more than saving a few yuan on inputs."
+  },
+  "elapsed_seconds": 204.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HQ_XNZ_9",
+  "tier": 3,
+  "provider": "kimi"
+}

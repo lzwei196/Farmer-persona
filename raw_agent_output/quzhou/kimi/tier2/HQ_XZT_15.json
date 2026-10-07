@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming these 5 mu for fifty-five years. I know every piece of this land. My wife and I are the only ones working it now, and at seventy-three, I have to be honest about what my back can handle. Cotton is still my main crop \u2014 it has always brought the best money, and I understand it better than anything \u2014 but I have cut it down to 2 mu because the spraying and picking are too much for two old people to manage on more land. The other 3 mu I keep in wheat and maize, the rotation every household around here follows: wheat in winter, maize in summer. Wheat gives us flour for the year, and maize is easy money with little work.\n\nFor the cotton, I will rotary till in spring and plant improved seed \u2014 I buy from the village store, the same kind I have used for years, about 3 jin per mu. I spread one bag of compound fertilizer as basal dressing. I irrigate twice from the well, and I spray for bollworm and weeds about thirteen times \u2014 cotton cannot be left alone in this county. I expect about 500 jin per mu.\n\nFor wheat, I rotary till after the maize comes off, sow improved seed at 30 jin per mu in October, and put down compound fertilizer as base. At green-up I topdress with some urea. I irrigate three times, including once before winter freeze, and spray two or three times for insects and weeds. I should get around 900 jin per mu.\n\nFor maize, I plant hybrid seed directly into the wheat stubble with no-tillage in June \u2014 why waste fuel tilling when the stubble is already there? One bag of compound fertilizer is enough. I irrigate twice and spray two or three times. I expect about 800 jin per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 13,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 900\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 800\n    }\n  ],\n  \"reasoning_summary\": \"At seventy-three, my wife and I can only manage 2 mu of cotton because of the heavy labor for spraying and hand-picking, but I keep it as my main crop since it pays the best and I have grown it all my life. The remaining 3 mu stay in the wheat-maize rotation that gives us food security and steady income with less work. I use rotary tillage for cotton and wheat, no-tillage for maize, well irrigation for all three, and I keep fertilizer and pesticide use at the levels that have worked for me for decades.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 13,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 900
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 800
+      }
+    ],
+    "reasoning_summary": "At seventy-three, my wife and I can only manage 2 mu of cotton because of the heavy labor for spraying and hand-picking, but I keep it as my main crop since it pays the best and I have grown it all my life. The remaining 3 mu stay in the wheat-maize rotation that gives us food security and steady income with less work. I use rotary tillage for cotton and wheat, no-tillage for maize, well irrigation for all three, and I keep fertilizer and pesticide use at the levels that have worked for me for decades."
+  },
+  "elapsed_seconds": 153.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_15",
+  "tier": 2,
+  "provider": "kimi"
+}

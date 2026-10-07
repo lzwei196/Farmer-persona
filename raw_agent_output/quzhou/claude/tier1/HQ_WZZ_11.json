@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this land all my life, just like my father and his father before him. We are in Quzhou, in the flat plain of Hebei. Everyone here grows wheat and corn \u2014 one after the other, same ground, all year. That is what the land is for. That is what the buyers want. I do not think about growing something different. What would I do with it? Who would buy it?\n\nMy land is about 8 mu. In autumn I put wheat in. After I cut the wheat in June, I plant corn on the same ground. The corn comes out in September. Then wheat again. This is the cycle. I have done it every year.\n\nI plough before the wheat because my father ploughed. It loosens the soil and kills the weeds. For the corn I use the rotary machine \u2014 it is faster, and the ground is still soft from the wheat season.\n\nI buy the wheat seed from the village seed shop, the kind everyone uses. For corn I buy hybrid \u2014 the seeds with the special bags. Everyone switched to hybrid corn years ago because the yield is better. Even I know that.\n\nFor fertilizer, I put down compound fertilizer at planting and then add urea when the plants are growing. I do not measure exactly \u2014 I go by what I used last year and what my neighbor uses. I irrigate the wheat four times: before winter, in spring when it starts growing fast, when it heads, and once more when the grain is filling. Corn I irrigate once unless the summer rains are enough.\n\nI spray for insects twice on the wheat \u2014 once in spring for aphids \u2014 and once on the corn for the borer worm.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu of flat land in Quzhou County, Hebei, using the winter wheat and summer maize double-cropping rotation that every farmer here follows. I plough before wheat planting as my father taught me, and use rotary tillage before corn to save time. I buy improved wheat seed from the local shop and hybrid corn seed because the yield is visibly better. I apply compound fertilizer at planting plus urea as a top-dress, estimating amounts by habit and by watching what neighbors do. Wheat gets four irrigations to carry it through the dry North China spring; corn relies mostly on summer rain with one supplemental irrigation if needed. I spray twice on wheat for aphids and once on corn for borer. I expect around 450 kg per mu for wheat and 550 for corn, which is roughly what I get in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu of flat land in Quzhou County, Hebei, using the winter wheat and summer maize double-cropping rotation that every farmer here follows. I plough before wheat planting as my father taught me, and use rotary tillage before corn to save time. I buy improved wheat seed from the local shop and hybrid corn seed because the yield is visibly better. I apply compound fertilizer at planting plus urea as a top-dress, estimating amounts by habit and by watching what neighbors do. Wheat gets four irrigations to carry it through the dry North China spring; corn relies mostly on summer rain with one supplemental irrigation if needed. I spray twice on wheat for aphids and once on corn for borer. I expect around 450 kg per mu for wheat and 550 for corn, which is roughly what I get in a normal year."
+  },
+  "elapsed_seconds": 53.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_11",
+  "tier": 1,
+  "provider": "claude"
+}

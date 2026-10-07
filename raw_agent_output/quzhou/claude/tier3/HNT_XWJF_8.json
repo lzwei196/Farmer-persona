@@ -1,0 +1,40 @@
+{
+  "raw_response": "My name is not important, but let me think through this year.\n\nI have 50 mu \u2014 that is a big piece of land for our village. With 7 people in the house and some working outside, I mostly manage it myself with my wife, and I hire help at harvest and sowing. The wheat-maize rotation is what everyone does here in Quzhou, and I have done it for 30 years. I won't change the system.\n\n**Winter wheat (50 mu):**\nLast year I got about 500 kg/mu. I plant Jimai 22 \u2014 the seed dealer in town sells it, neighbors use it, yield is stable. I buy improved seed, not saving my own, because the dealer's seed germinates better.\n\nFor fertilizer, I use compound 15-15-15 as base, about 50 kg per mu before sowing. That gives me 7.5 kg each of N, P, K. Then I topdress urea at jointing \u2014 one bag (40 kg) covers about 2.5 mu, so about 16 kg urea per mu = 7.3 kg N. Total N around 15 kg/mu, P around 7.5, K around 7.5. I know some say this is too much P but compound fertilizer is convenient and neighbors do the same.\n\nIrrigation: I water before winter (dong shui), then at jointing and at grain filling. Three times. Well water is available so I don't skip.\n\nPesticide: herbicide in spring once, and one spray against aphids and powdery mildew around heading. Two applications.\n\nTillage: rotary till after maize harvest \u2014 everyone does rotary now, ploughing is too expensive and slow.\n\n**Summer maize (50 mu):**\nAfter wheat I plant Zhengdan 958 or similar \u2014 hybrid seed, I buy fresh every year. Last year maize gave me about 550 kg/mu.\n\nFertilizer: I apply compound 15-15-15 at sowing, 40 kg/mu (6 kg each NPK). Then topdress urea at big trumpet stage, about 20 kg urea/mu = 9 kg N. Total N around 15 kg, P 6, K 6. Maize responds to nitrogen, so I don't skimp.\n\nIrrigation: usually rain covers most of it in Hebei summer, but if dry at tasseling I water once. Plan for 1 time.\n\nPesticide: one spray for corn borer at whorl stage, maybe a second if armyworm shows up. Plan for 2.\n\nTillage: no-tillage direct seeding into wheat stubble \u2014 saves time because the turnaround between wheat harvest and maize sowing is only a few days.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 50.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 50.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 50 mu wheat-maize in Quzhou like my neighbors. For wheat I use Jimai 22 improved seed, 50 kg compound 15-15-15 as base plus urea topdressing at jointing, three irrigations (winter, jointing, grain-fill), rotary tillage, targeting 500 kg/mu. For maize I direct-seed hybrid Zhengdan 958 into wheat stubble, use 40 kg compound at sowing plus urea at big trumpet stage, rely mostly on summer rain with one backup irrigation, spray twice for corn borer, target 550 kg/mu. I apply a little extra fertilizer because losing yield hurts more than wasting some fertilizer money, and I follow what works in our village.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 50.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 50.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 50 mu wheat-maize in Quzhou like my neighbors. For wheat I use Jimai 22 improved seed, 50 kg compound 15-15-15 as base plus urea topdressing at jointing, three irrigations (winter, jointing, grain-fill), rotary tillage, targeting 500 kg/mu. For maize I direct-seed hybrid Zhengdan 958 into wheat stubble, use 40 kg compound at sowing plus urea at big trumpet stage, rely mostly on summer rain with one backup irrigation, spray twice for corn borer, target 550 kg/mu. I apply a little extra fertilizer because losing yield hurts more than wasting some fertilizer money, and I follow what works in our village."
+  },
+  "elapsed_seconds": 36.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_8",
+  "tier": 3,
+  "provider": "claude"
+}

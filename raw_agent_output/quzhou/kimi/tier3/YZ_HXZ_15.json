@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 50 years old this year, farming these 16.9 mu in Quzhou for 15 years. I only finished primary school, then I learned everything by working the land and watching the older farmers around me. My wife and I farm, while my son and daughter-in-law work in Handan city and send some money back. That off-farm money helps, but the farm still has to pay for itself.\n\nLast year my cotton gave me about 500 jin of seed cotton per mu. Not bad, but fertilizer prices went up again at the input shop. I plant cotton on 11.9 mu because that is my main crop \u2014 always has been. I use the Bt cotton seeds that my neighbor Lao Wang uses, the kind with the bug-resistant gene in it. I buy 2 jin of seed per mu. Before planting in late April, I rotary till the ground like I always do. For base fertilizer, I spread one bag of compound fertilizer per mu \u2014 50 jin bags, the 15-15-15 kind from the dealer. That costs me about 130 yuan per bag. Then when the cotton starts flowering in July, I topdress with about 35 jin of urea per mu. I know that is maybe a bit more than some people say I need, but last year I cut back on one plot and the bolls were smaller. I would rather waste some fertilizer than lose yield \u2014 a bad harvest means I lose real money. I irrigate four times from my well: right after planting to help it settle, once at early flowering, once at peak boll-setting in August, and once more in September if the weather stays dry. I spray pesticide four times total \u2014 herbicide once after planting, and insecticide three times when I see aphids or spider mites showing up. Even with Bt cotton, those sucking pests still come. I expect about 550 jin of seed cotton per mu this year if the weather is normal.\n\nOn the other 5 mu I plant summer maize in mid-June. I use hybrid seeds, about 2.5 jin per mu. I put down 40 jin of compound fertilizer per mu at planting \u2014 the dealer sells me a special maize blend, something like 28-6-6. When the maize is knee-high, I spread another 25 jin of urea per mu. I irrigate twice \u2014 once after sowing if it is dry, and once at the big trumpet stage before tasseling. Two pesticide sprays: herbicide right after planting, and one insecticide spray if I see armyworms. I expect around 1000 jin of grain per mu.\n\nI watch my costs carefully. This year I am spending about 240 yuan per mu on fertilizer for the cotton, and about 160 yuan for the maize. I thought about hiring someone to help with topping the cotton, but I will probably do it myself with my wife to save money. If everyone around me is putting down similar amounts, then I do the same. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 11.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what worked last year and what my neighbors do. For cotton, I apply one 50-jin bag of 15-15-15 compound fertilizer per mu as a base and 35 jin of urea at flowering, irrigating four times and spraying four times total, because cutting back on fertilizer in the past cost me yield. For maize, I use 40 jin of compound and 25 jin of urea per mu with two irrigations and two sprays. I use hybrid seeds for both crops, rotary till before cotton, and would rather spend a bit more on inputs than risk a bad harvest, though I watch every yuan because my son's off-farm income is not guaranteed.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 11.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what worked last year and what my neighbors do. For cotton, I apply one 50-jin bag of 15-15-15 compound fertilizer per mu as a base and 35 jin of urea at flowering, irrigating four times and spraying four times total, because cutting back on fertilizer in the past cost me yield. For maize, I use 40 jin of compound and 25 jin of urea per mu with two irrigations and two sprays. I use hybrid seeds for both crops, rotary till before cotton, and would rather spend a bit more on inputs than risk a bad harvest, though I watch every yuan because my son's off-farm income is not guaranteed."
+  },
+  "elapsed_seconds": 260.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "YZ_HXZ_15",
+  "tier": 3,
+  "provider": "kimi"
+}

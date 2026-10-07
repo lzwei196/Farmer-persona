@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming my 220 mu in Quzhou County for five years now. With my education, I follow the county extension office's advice but I also keep a close eye on costs and what has worked on my land. My system is spring soybean, but I grow millet too because it handles dry spells better and the grain price has been stable.\n\nThis season, I will plant **100 mu of millet** and **120.1 mu of spring soybean**. I will buy improved varieties from the county seed station \u2014 they are proven here and cheaper than hybrids. I will use rotary tillage for both crops; it is fast and leaves a fine seedbed that works well with my well-irrigation setup.\n\nFor fertilizer, millet is a heavy feeder so I will give it **10 kg of nitrogen per mu**, plus **5 kg phosphorus** and **4 kg potassium**. Soybean fixes its own nitrogen, so I will only apply **4 kg nitrogen per mu** to get it started, but **5 kg phosphorus and 3 kg potassium** to support root nodulation and pod filling. \n\nPumping water costs electricity, so I will irrigate smartly. Millet will get **three irrigations**: at sowing, at jointing, and at heading. Soybean only needs **two**: at sowing and at flowering. For pesticides, **two sprays** on each crop will be enough to control aphids and any pod borers without wasting money on too many chemicals.\n\nI expect **250 kg per mu from the millet** and **180 kg per mu from the soybean**. These targets match what I have achieved the last couple of years with this level of management.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"millet\",\n      \"season\": \"spring\",\n      \"area_mu\": 100.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"soybean\",\n      \"season\": \"spring\",\n      \"area_mu\": 120.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 180\n    }\n  ],\n  \"reasoning_summary\": \"I split my 220.1 mu into 100 mu of millet and 120.1 mu of spring soybean. With well irrigation available, I chose rotary tillage for both crops and will use improved seed varieties. Millet receives more nitrogen due to its higher demand, while soybean gets less nitrogen because of biological fixation. Irrigation is applied at critical growth stages to save pumping costs, and pesticide use is limited to two applications per crop. Expected yields are 250 kg/mu for millet and 180 kg/mu for soybean, consistent with local performance under good management.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "millet",
+        "season": "spring",
+        "area_mu": 100.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "soybean",
+        "season": "spring",
+        "area_mu": 120.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 180
+      }
+    ],
+    "reasoning_summary": "I split my 220.1 mu into 100 mu of millet and 120.1 mu of spring soybean. With well irrigation available, I chose rotary tillage for both crops and will use improved seed varieties. Millet receives more nitrogen due to its higher demand, while soybean gets less nitrogen because of biological fixation. Irrigation is applied at critical growth stages to save pumping costs, and pesticide use is limited to two applications per crop. Expected yields are 250 kg/mu for millet and 180 kg/mu for soybean, consistent with local performance under good management."
+  },
+  "elapsed_seconds": 89.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "HC_XCM_6",
+  "tier": 2,
+  "provider": "kimi"
+}

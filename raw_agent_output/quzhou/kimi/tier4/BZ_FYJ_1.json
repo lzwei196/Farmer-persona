@@ -1,0 +1,75 @@
+{
+  "raw_response": "I'm 46 years old, been farming this land since I was 20. My old man taught me everything, and over 26 years I've learned what works on my own fields. I only finished primary school, so I don't read those agricultural manuals \u2014 I watch my neighbors, I remember what happened last year, and I use my eyes. My neighbor Wang used a bit less fertilizer on his maize last season and still got a decent harvest, so I've been thinking maybe I don't need to throw on as much as I used to. But I'm careful \u2014 a bad year hurts my family more than a good year helps, so I'd rather waste a little money on extra fertilizer than risk a big yield drop.\n\nI've got 5 mu total. I plant 3 mu of spring maize and 2 mu of kidney beans. The maize is our main crop \u2014 we eat some and sell the rest. The beans mature faster and bring in cash in the summer. My wife and I do most of the farm work, but my son works in a factory in town and only comes back on weekends. My daughter-in-law helps when she can, but we don't have enough hands for everything, so we hire a few days of labor at harvest time \u2014 especially for the beans, which need quick picking.\n\nFor the maize, I'll plant hybrid seed in late April, same as I always do. I hire a machine to rotary-till the field first \u2014 it's 50 yuan per mu but saves us days of backbreaking work. At planting I put down compound fertilizer as base, then when the maize is knee-high around mid-July, I topdress with urea. I'll irrigate twice from the well \u2014 once after planting if the weather stays dry, and once at flowering. Pumping costs money, so I won't water more than that unless there's a drought. I expect about 420 kg per mu if the weather cooperates, about the same as last year.\n\nFor the kidney beans, I saved seed from last year so I don't need to buy any \u2014 that's 2 mu of seed cost saved right there. I plant them in early May, a bit after the maize. They need less fertilizer than maize, just one application of compound fertilizer at planting. But they're more work \u2014 weeding and picking take a lot of labor. I'll water them twice, especially when they're flowering and setting pods. I have to spray for insects because the bean pod borers are terrible around here. I hope to get about 180 kg of dry beans per mu.\n\nI have to watch every yuan. My son sends some money home from his factory job, which helps, but we still need cash in hand for emergencies. I'm budgeting about 2,100 yuan for inputs this year. The hired labor and pumping are the big costs, but I can't do without them. I'd like to buy more fertilizer, but we need to keep some money aside \u2014 you never know when someone gets sick or the pump breaks.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"spring maize\",\n      \"field_area_mu\": 3,\n      \"planting_date\": \"late April\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 15,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 3,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound fertilizer as base at planting, urea topdress at jointing stage in mid-July\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary tillage by hired machine\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"kidney bean\",\n      \"field_area_mu\": 2,\n      \"planting_date\": \"early May\",\n      \"harvest_date\": \"late July to early August\",\n      \"seed_type\": \"local\",\n      \"seed_cost_yuan_per_mu\": 0,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 8,\n      \"phosphorus_total_kg_per_mu\": 3,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"compound fertilizer as base at planting\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"insecticide\", \"herbicide\"],\n      \"tillage_method\": \"plow by hand and hired machine\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 180\n    }\n  ],\n  \"total_input_cost_yuan\": 2100,\n  \"reasoning_summary\": \"I rely on what I've seen work on my own fields and what my neighbors do. With only primary school education, I think in practical terms \u2014 bags of fertilizer, days of labor, yuan in my pocket. I grow maize for food security and beans for summer cash. Some family works off-farm so labor is tight, meaning I hire help at harvest and use machines for tillage. I'm conservative with inputs because losing money hurts more than spending a little extra, but I'm also careful not to spend everything because we need cash reserves for emergencies.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "spring maize",
+        "field_area_mu": 3,
+        "planting_date": "late April",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 15,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 3,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound fertilizer as base at planting, urea topdress at jointing stage in mid-July",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary tillage by hired machine",
+        "labor_family_days": 8,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 15,
+        "area_mu": 3,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3
+      },
+      {
+        "crop": "kidney bean",
+        "field_area_mu": 2,
+        "planting_date": "early May",
+        "harvest_date": "late July to early August",
+        "seed_type": "local",
+        "seed_cost_yuan_per_mu": 0,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 8,
+        "phosphorus_total_kg_per_mu": 3,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "compound fertilizer as base at planting",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "insecticide",
+          "herbicide"
+        ],
+        "tillage_method": "plow by hand and hired machine",
+        "labor_family_days": 12,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 180,
+        "nitrogen_kg_per_mu": 8,
+        "area_mu": 2,
+        "expected_yield_kg_per_mu": 180,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2
+      }
+    ],
+    "total_input_cost_yuan": 2100,
+    "reasoning_summary": "I rely on what I've seen work on my own fields and what my neighbors do. With only primary school education, I think in practical terms \u2014 bags of fertilizer, days of labor, yuan in my pocket. I grow maize for food security and beans for summer cash. Some family works off-farm so labor is tight, meaning I hire help at harvest and use machines for tillage. I'm conservative with inputs because losing money hurts more than spending a little extra, but I'm also careful not to spend everything because we need cash reserves for emergencies."
+  },
+  "elapsed_seconds": 172.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_FYJ_1",
+  "tier": 4,
+  "provider": "kimi"
+}

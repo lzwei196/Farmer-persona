@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 10.1 mu with only two people in the household, and some labor is tied up off-farm, so I will keep the plan simple, familiar, and not too labor-heavy. Since I have 40 years of experience and well irrigation, I will stay with the wheat-maize system on most of the land because it is the steadiest way for me to secure grain output and spread risk across the year. I will put 8.0 mu into winter wheat followed by summer maize on the same 8.0 mu, and I will keep 2.1 mu in cotton for cash income. I do not want to gamble on low-input traditional seed, so I will use improved wheat seed and hybrid maize and cotton seed. I will fertilize wheat more heavily because it responds well on my irrigated land and sets up the rotation well; maize will get strong nitrogen too but a bit less phosphorus than wheat; cotton will get balanced fertilizer but not as much water as the grain crops. Because I have well irrigation, I will plan around a few timely irrigations instead of many, since water and labor both cost money. I will use rotary tillage because it is quicker and fits my scale better than deep ploughing, and it is easier for me to manage across all plots. I will spray only as much as needed to keep weeds, insects, and common diseases under control, aiming for stable yield rather than chasing the absolute maximum.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I will keep 8.0 mu in the wheat-maize rotation because it is the most reliable system on my irrigated land, and I will keep 2.1 mu in cotton for cash income. With limited household labor and long farming experience, I will choose a straightforward plan using improved or hybrid seed, moderate-to-strong fertilizer, a few timely irrigations from my well, rotary tillage for efficiency, and a controlled number of pesticide sprays to protect yield without making management too complicated.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 2.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I will keep 8.0 mu in the wheat-maize rotation because it is the most reliable system on my irrigated land, and I will keep 2.1 mu in cotton for cash income. With limited household labor and long farming experience, I will choose a straightforward plan using improved or hybrid seed, moderate-to-strong fertilizer, a few timely irrigations from my well, rotary tillage for efficiency, and a controlled number of pesticide sprays to protect yield without making management too complicated."
+  },
+  "elapsed_seconds": 25.2,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_11",
+  "tier": 2,
+  "provider": "codex"
+}

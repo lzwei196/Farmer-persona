@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 now. I went to primary school only, so I read a little but not much. I farm 24 mu \u2014 that is a lot for just me and my wife. My son works in the city. I hire a little help at harvest and for spraying.\n\nI do wheat and maize like everyone in Quzhou. Wheat goes in October, maize in June right after wheat. This rotation I have done for 40 years. The county agriculture station sometimes comes, and the fertilizer seller in town tells me what is new, but I mostly do what worked last year.\n\nLast year wheat gave me about 500 kg per mu, maize about 600 kg per mu. Not bad. I do not want less this year.\n\nFor wheat: I buy compound fertilizer 15-15-15, two bags per mu as base before planting. That is 100 jin, so 50 kg \u2014 gives me about 7.5 kg N, 7.5 P, 7.5 K each mu. Then in spring at jointing I topdress urea, one bag (50 jin, 25 kg) per 2 mu \u2014 so about 12 kg urea per mu, that is 5-6 kg N more. Total N around 13-14 kg per mu. I use improved wheat seed from the station, Jimai type, everyone around here uses it. I water the wheat \u2014 winter water before freeze, then jointing water, then grain-filling water. Three times with my well. I spray herbicide once in spring for weeds, and one time against aphids and rust in April. Two sprays. Plough after maize harvest because wheat needs loose soil.\n\nFor maize: I plant right after wheat harvest, no-till with the seeder, that saves time and diesel. Hybrid maize seed \u2014 Zhengdan or Xianyu type, whatever the dealer has good price. I put one bag compound 15-15-15 at sowing, 50 jin per mu, then topdress urea at big trumpet stage, about 20 kg urea per mu (roughly 9 kg N). So maize gets maybe 15 kg N per mu total. Maize needs water in July if no rain \u2014 usually one or two irrigations from the well. Spray once for corn borer, maybe twice if worms are bad.\n\nI do not want to change too much. Fertilizer price went up, but skipping costs more in yield. I would rather use a little extra than short the crop.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 24.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 24.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm wheat-maize rotation on 24 mu like my neighbors in Quzhou. I follow what worked last year \u2014 two bags of 15-15-15 compound as base for each crop, then urea topdressing at jointing for wheat and big trumpet stage for maize. I plough for wheat because it needs loose soil, no-till for maize to save time after wheat harvest. Three irrigations for wheat using my well, one or two for maize depending on summer rain. I spray twice per crop for weeds and pests. I do not want to cut fertilizer \u2014 losing yield costs more than a little extra urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 24.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 24.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm wheat-maize rotation on 24 mu like my neighbors in Quzhou. I follow what worked last year \u2014 two bags of 15-15-15 compound as base for each crop, then urea topdressing at jointing for wheat and big trumpet stage for maize. I plough for wheat because it needs loose soil, no-till for maize to save time after wheat harvest. Three irrigations for wheat using my well, one or two for maize depending on summer rain. I spray twice per crop for weeds and pests. I do not want to cut fertilizer \u2014 losing yield costs more than a little extra urea."
+  },
+  "elapsed_seconds": 35.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_7",
+  "tier": 3,
+  "provider": "claude"
+}

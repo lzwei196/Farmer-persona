@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 12 mu here in Quzhou for fifty years now. My wife and me, our son helps when he come back from town. Every year we do same thing \u2014 wheat in winter, maize after wheat come off. That is how everyone do it here.\n\nI cannot read, so I learn from my father and from watching my neighbors. What Old Wang next door do, I mostly do same. If his wheat stand tall and green, I ask him how much bag of fertilizer he put. If it work for him on same soil, it work for me.\n\nFor my wheat, I plant in October after maize come off. I use the seed from the shop in town \u2014 the dealer he tell me which one everyone buying this year. I don't know the name but it is the new kind, not my grandfather's seed. I buy about 15 kg seed for each mu because I broadcast by hand and some don't come up.\n\nBefore planting wheat, I plow the land with the tractor man \u2014 he come with his machine, I pay him by the mu. Rotary, turn the soil good. Then I put down the base fertilizer. I use two bag of compound fertilizer for each mu \u2014 that is 100 jin, maybe 50 kg. The compound one has all three things in it, the dealer tell me. Then in spring when wheat waking up, I put one more bag of urea, maybe 20 kg each mu. If the wheat look yellow I put a little more. Better put too much than too little \u2014 if harvest bad, my family eat what? Fertilizer money is lost but a bad harvest is real suffering.\n\nWater \u2014 I have well, so I water wheat maybe 3 time. Once before winter so roots no freeze dry, once in spring when it start growing, once when grain filling. Maize I water 1 or 2 time if rain no come. Summer rain usually enough but last year was dry so I watered twice.\n\nFor maize, I plant right after wheat harvest in June. Hybrid seed, everyone use hybrid now. I put one bag compound fertilizer when planting and one bag urea when maize is knee-high. Maize is strong, don't need so much work as wheat.\n\nPesticide \u2014 I spray wheat 2 time for the bug and the rust. Maize I spray 1 time for the borer, sometimes 2 if I see many worm. I buy what the shop tell me, mix like on the bottle.\n\nMy yield \u2014 good year wheat give me 400 kg each mu, maize give me 500 kg. Bad year less. I hope for good year this time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm like my father teach me and like my neighbors do. Two bag compound fertilizer at planting for wheat, one bag urea in spring \u2014 that work for me many years. Rotary plow before wheat, no plow before maize because no time between harvest and planting. Water the wheat 3 time from my well, maize 1 or 2 time if rain short. I would rather put a little extra fertilizer than lose the harvest \u2014 bad harvest mean my family no eat, wasted fertilizer is just some yuan. Yield I hope 400 kg wheat, 500 kg maize like good years before.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm like my father teach me and like my neighbors do. Two bag compound fertilizer at planting for wheat, one bag urea in spring \u2014 that work for me many years. Rotary plow before wheat, no plow before maize because no time between harvest and planting. Water the wheat 3 time from my well, maize 1 or 2 time if rain short. I would rather put a little extra fertilizer than lose the harvest \u2014 bad harvest mean my family no eat, wasted fertilizer is just some yuan. Yield I hope 400 kg wheat, 500 kg maize like good years before."
+  },
+  "elapsed_seconds": 33.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_4",
+  "tier": 3,
+  "provider": "claude"
+}

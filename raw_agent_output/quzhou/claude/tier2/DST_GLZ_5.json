@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land since I was a boy. Sixty-three years old, fifty-three years behind a plow \u2014 I know what this ground wants before it tells me.\n\nMy 20 mu runs the wheat-maize rotation on 14 mu, same as my father did. The other 6 mu is cotton \u2014 always has been. Some of my children go to the city to work, so I can't count on as many hands as before. That shapes what I do.\n\n**Wheat (this coming October on the 14 mu):** I'll buy improved seed from the county co-op \u2014 not the old local variety, those newer ones yield better and I've seen it myself for the last decade. I'll plough and rotary till after the maize comes off in September. I water three times \u2014 before sowing, at jointing, and at heading \u2014 that's what my father did and it's right. I put down urea and diammonium phosphate at sowing, top-dress at jointing. I'll spray twice, once for rust, once for aphids. I expect 450 jin per mu \u2014 a normal year gives me that.\n\n**Maize (June, same 14 mu after wheat harvest):** I direct-seed hybrid seed \u2014 Zhengdan 958 or whatever the local shop has that year, they're all about the same to me. No ploughing \u2014 wheat stubble stays, I just run the seeder through. I irrigate twice, once at tasseling if it's dry, once at grain fill. Maize doesn't need as much fuss. One pesticide pass for corn borer. Figure 550 jin per mu.\n\n**Cotton (6 mu, spring planting):** This crop takes the most work and my children aren't here to help much. But I know cotton. I'll plough and prepare the bed in March. Plant improved cotton seed in April. Cotton needs water \u2014 I'll irrigate four times through the season. Pest pressure is heavy, I spray five times minimum \u2014 bollworm, aphids, spider mites come every year. I've been doing this fifty years, I know when to look. I expect 85 jin of lint per mu. The price is okay this year, I heard at the market.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 85\n    }\n  ],\n  \"reasoning_summary\": \"I run 14 mu in the standard wheat-maize double-crop rotation that suits Quzhou's climate and my well irrigation, and keep 6 mu in cotton as I always have. I choose improved wheat seed and hybrid maize from the local co-op because I have seen the yield difference myself over many years, not because anyone told me to. Fertilizer rates are what I have settled on after decades \u2014 heavy enough to get a good crop, applied at sowing and topdressing. Irrigation follows the crop calendar I learned from my father and refined myself: three waterings for wheat, two for maize, four for cotton. Cotton gets five pesticide passes because I have lost crops to bollworm before and I will not lose them again. My two children working off-farm means I must manage everything myself or with my wife, so I keep cotton at 6 mu \u2014 enough to be worth it, not so much that I cannot manage the picking season alone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 85
+      }
+    ],
+    "reasoning_summary": "I run 14 mu in the standard wheat-maize double-crop rotation that suits Quzhou's climate and my well irrigation, and keep 6 mu in cotton as I always have. I choose improved wheat seed and hybrid maize from the local co-op because I have seen the yield difference myself over many years, not because anyone told me to. Fertilizer rates are what I have settled on after decades \u2014 heavy enough to get a good crop, applied at sowing and topdressing. Irrigation follows the crop calendar I learned from my father and refined myself: three waterings for wheat, two for maize, four for cotton. Cotton gets five pesticide passes because I have lost crops to bollworm before and I will not lose them again. My two children working off-farm means I must manage everything myself or with my wife, so I keep cotton at 6 mu \u2014 enough to be worth it, not so much that I cannot manage the picking season alone."
+  },
+  "elapsed_seconds": 58.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_5",
+  "tier": 2,
+  "provider": "claude"
+}

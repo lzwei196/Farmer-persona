@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this 2 mu for 40 years now, so I know what works on this land. Let me think through this year.\n\nFor wheat, I'll plant in early October like always. I use Jimai or Shiluan improved seed \u2014 the seed dealer in town sells what the neighbors buy, and last year's variety gave me about 450 kg per mu so I'll stick with it. Two mu is small, so I can't afford a bad harvest. I'd rather buy a bit more fertilizer than come up short.\n\nBefore planting I'll spread about 40 kg of diammonium phosphate (DAP) and 15 kg of urea as base fertilizer per mu, then topdress with another 15 kg urea at jointing in spring. That gives me around 18 kg N and 8 kg P per mu. I add about 10 kg of potash too \u2014 the soil here has been farmed hard for decades, so I don't skip potassium like I used to. Wheat needs water: I'll irrigate at planting (mengshui), then again at jointing, booting, and grain filling \u2014 four times from the well. Pesticide maybe twice, once for aphids and once for the mixed disease spray at heading.\n\nFor summer maize right after wheat harvest in June, I use Zhengdan 958 or similar hybrid \u2014 everyone around here plants hybrid, no question. I plant directly into the wheat stubble, no-till, that saves me plowing money. Base fertilizer compound 15-15-15 about 40 kg, then topdress 20 kg urea at big trumpet stage. So roughly 15 kg N, 6 kg P, 6 kg K. Maize gets summer rain so I only irrigate once or twice if July is dry. One spray for corn borer.\n\nExpected yields: wheat 450 kg/mu, maize 550 kg/mu. That's what I got last year and the year before.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"My 2 mu is small so I cannot afford a bad harvest \u2014 I keep doing what worked last year. Wheat gets heavier fertilizer and four irrigations from my well because winter-spring is dry here in Quzhou; maize goes in no-till right after wheat to save plowing cost and uses summer rain so I only irrigate once or twice. I buy improved wheat seed and hybrid maize seed like all my neighbors, and I spend a bit more on fertilizer than maybe I need to because wasting some fertilizer is just money, but a short harvest means the whole year is ruined.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "My 2 mu is small so I cannot afford a bad harvest \u2014 I keep doing what worked last year. Wheat gets heavier fertilizer and four irrigations from my well because winter-spring is dry here in Quzhou; maize goes in no-till right after wheat to save plowing cost and uses summer rain so I only irrigate once or twice. I buy improved wheat seed and hybrid maize seed like all my neighbors, and I spend a bit more on fertilizer than maybe I need to because wasting some fertilizer is just money, but a short harvest means the whole year is ruined."
+  },
+  "elapsed_seconds": 28.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_7",
+  "tier": 3,
+  "provider": "claude"
+}

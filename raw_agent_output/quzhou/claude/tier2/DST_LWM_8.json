@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for over fifty years. My father farmed it before me. I know the soils here in Quzhou \u2014 mostly alluvial loam, decent water-holding but needs replenishing every year. The wheat-maize rotation is the backbone of what I do, as it has been for decades. Millet I keep on the side plots \u2014 the soil there is lighter, and millet suits it. My boys work in the city so I cannot rely on heavy manual labor at peak times. I have to be efficient.\n\n**Wheat:** I plant every October on about 20 mu. I have used the improved semi-dwarf varieties for years \u2014 better lodging resistance, higher yield. I will apply base fertilizer at plowing, then a topdress at jointing. Three irrigations: the winter water before freeze, jointing, and heading. That is my standard. Powdery mildew and stripe rust are the risks here \u2014 two fungicide passes, one herbicide early. I plough deep in autumn to break the hardpan.\n\n**Maize:** After wheat harvest in June, I seed directly into the stubble on the same 20 mu. Hybrid seed \u2014\u90d1\u5355958 or similar. No-till this year to save labor and keep moisture. Two irrigations unless summer rains are good, but I do not count on them being enough. Topdress nitrogen at V6. One herbicide, one pass for corn borer if needed.\n\n**Millet:** The other 10.4 mu. Spring planting, rotary tillage. I use a locally adapted improved variety \u2014 better yield than the old landrace but still suits the lighter soil. Millet does not need much water or nitrogen, which is why I keep it. Two irrigations. One herbicide pass. Minimal pesticide otherwise.\n\nWith family off-farm, I watch input costs carefully. I do not overapply \u2014 I have seen neighbors burn their fields with excess urea. My yields are steady and that is what matters at my age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I run a wheat-maize double-crop rotation on 20 mu of my better alluvial land, using improved wheat varieties with deep autumn ploughing and three well irrigations to manage the dry North China Plain winters, followed by no-till direct-seeded hybrid maize after June harvest to conserve soil moisture and reduce labor given that younger family members work off-farm. My remaining 10.4 mu of lighter soil is planted to an improved millet variety in summer, which suits that ground and requires fewer inputs \u2014 two irrigations and minimal pesticide \u2014 keeping costs low. Across all crops I apply fertilizer at rates refined over decades to avoid waste while sustaining consistent yields, and I schedule pesticide applications based on local disease pressure rather than calendar spraying.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 10.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I run a wheat-maize double-crop rotation on 20 mu of my better alluvial land, using improved wheat varieties with deep autumn ploughing and three well irrigations to manage the dry North China Plain winters, followed by no-till direct-seeded hybrid maize after June harvest to conserve soil moisture and reduce labor given that younger family members work off-farm. My remaining 10.4 mu of lighter soil is planted to an improved millet variety in summer, which suits that ground and requires fewer inputs \u2014 two irrigations and minimal pesticide \u2014 keeping costs low. Across all crops I apply fertilizer at rates refined over decades to avoid waste while sustaining consistent yields, and I schedule pesticide applications based on local disease pressure rather than calendar spraying."
+  },
+  "elapsed_seconds": 51.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_8",
+  "tier": 2,
+  "provider": "claude"
+}

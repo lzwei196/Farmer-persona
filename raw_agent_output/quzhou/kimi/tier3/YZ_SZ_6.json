@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 76 years old. I've farmed this land for 50 years. I only finished primary school, so I don't know much from books, but I know my fields better than any expert. My husband passed away years ago, and now it's mostly just me. My daughter-in-law works at a factory in town, so I handle the land alone most days. I have 6.5 mu. Five mu I keep in the wheat-maize rotation \u2014 that's what everyone in Quzhou does, you can't let good land sit empty. The other 1.5 mu I plant cotton, because cotton gives me cash money. I need that cash to buy fertilizer, pay for the diesel pump, and hire the machine.\n\nFor the wheat, I planted it last October. I used the same improved variety Old Wang from the east end of the village used \u2014 he got nearly 500 jin per mu last year, so I copied him. For the base fertilizer, I put down one big bag of compound fertilizer per mu, about 50 jin, and now that it's spring and the wheat is turning green, I top-dress with 30 jin of urea per mu. The dealer at the supply shop told me urea has the most nitrogen, and I've seen with my own eyes that wheat needs it to make big full heads. Counting the base fertilizer and the top-dress, that comes to about 14 kg of nitrogen per mu. The phosphorus and potassium went down in the fall with the compound fertilizer, about 6 kg and 5 kg per mu. I won't add more in spring. I'll irrigate three times from my well: the green-up water, the jointing water, and the grain-filling water. Pumping costs electricity, but without water the yield is nothing. I spray pesticide twice \u2014 once for aphids when it warms up, and once later if I see rust or powdery mildew on the leaves. I won't till the wheat land in spring; the autumn rotary tillage was enough.\n\nFor the summer maize, as soon as the wheat comes off the field in June, I plant the maize the same day or the next. I never let the land rest. I use hybrid seed \u2014 I buy it from the agricultural supply store. Last year I planted Zhengdan 958, and I'll buy that same bag again this year if they have it. It costs more than keeping your own seed, but the yield is much better. At planting I put 40 jin of compound fertilizer per mu in the row. Then when the plants reach the big trumpet stage and the tassel is forming, I top-dress with 35 jin of urea per mu. All together that's about 15 kg of nitrogen per mu. Phosphorus and potassium come from the compound fertilizer, about 6 kg each per mu. After wheat harvest I hire the rotary tiller to come turn the stubble under \u2014 it costs 40 yuan per mu, but it's fast. Maize needs less water than wheat, so I irrigate twice: once at jointing, once at grain filling. I spray twice for pests, mainly for corn borer. Those worms can hollow out the cob if you don't watch them.\n\nFor cotton on the 1.5 mu, I plough deep in spring with the tractor \u2014 cotton likes loose soil. I use an improved cotton seed, not the old traditional kind my mother used, but not the most expensive new hybrid either. Cotton needs a lot of care. I put down compound fertilizer at planting and add some urea, altogether about 12 kg of nitrogen per mu. Phosphorus about 5 kg, potassium about 5 kg. Cotton drinks a lot of water, so I'll irrigate three times through the summer. The worst part is the bugs \u2014 I have to spray four times, sometimes five, for red spider mites and cotton bollworm. If you miss one spray, the whole crop can be ruined. I expect about 230 kg of seed cotton per mu if the weather is kind.\n\nUrea and compound fertilizer went up in price again this year. I thought about cutting back to save money, but I don't dare. Two years ago Liu from the front village tried to save 20 yuan per mu on fertilizer. His wheat turned yellow and thin like dog's fur, and he got less than 300 jin per mu. I told myself: wasting some fertilizer is just spending a bit more money. Losing yield is a disaster \u2014 that's your food, your cash, your dignity for the whole year. I'd rather put a bit too much and sleep easy. I watch what my neighbors do. Old Wang, Old Zhang, we all use about the same amounts. If everyone around me applies 30 jin of urea to wheat, I apply 30 jin. I'm too old to try something new and fail. I have my well, so at least the water is in my hands. That's my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I manage 5 mu in wheat-maize rotation and 1.5 mu in cotton. For wheat, I apply 14 kg N, 6 kg P, and 5 kg K per mu, irrigate three times, and spray twice, using an improved variety and no spring tillage. For maize, I use hybrid seed, rotary tillage after wheat harvest, 15 kg N, 6 kg P, 6 kg K, two irrigations, and two pesticide sprays. For cotton, I deep plough in spring, use improved seed, apply 12 kg N, 5 kg P, 5 kg K, irrigate three times, and spray four times for bollworm and mites. I base all rates on what worked last year and what my neighbors use, because cutting fertilizer to save money risks total crop failure, which is far worse than wasting some input cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I manage 5 mu in wheat-maize rotation and 1.5 mu in cotton. For wheat, I apply 14 kg N, 6 kg P, and 5 kg K per mu, irrigate three times, and spray twice, using an improved variety and no spring tillage. For maize, I use hybrid seed, rotary tillage after wheat harvest, 15 kg N, 6 kg P, 6 kg K, two irrigations, and two pesticide sprays. For cotton, I deep plough in spring, use improved seed, apply 12 kg N, 5 kg P, 5 kg K, irrigate three times, and spray four times for bollworm and mites. I base all rates on what worked last year and what my neighbors use, because cutting fertilizer to save money risks total crop failure, which is far worse than wasting some input cost."
+  },
+  "elapsed_seconds": 288.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "YZ_SZ_6",
+  "tier": 3,
+  "provider": "kimi"
+}

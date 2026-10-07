@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 45 years. I know what this soil wants, I know the rains, and I know what prices look like at the market in autumn. Let me think through what I'll do this year.\n\n**Wheat and Maize**\n\nThe wheat-maize rotation is the backbone of my household income. I'll put 5 mu into this system. Come October, I'll plant wheat \u2014 I switched to improved varieties years ago, everyone here uses them now, the yield difference is too big to ignore. I'll plough after the maize harvest to break up the compaction, then rotary till before seeding. I do three irrigations: the winter watering before freeze, the jointing water in spring, and one more at grain fill. Fertilizer \u2014 I spread urea and compound fertilizer the way my neighbors do, about 18 kg of nitrogen equivalent per mu, some phosphorus and potassium at planting. After wheat harvest in June I'll plant maize directly into the stubble, no deep ploughing. Hybrid seed, same as last year. Two or three watering depending on whether it rains. Maize I don't spray much \u2014 maybe once or twice if there's pest pressure.\n\n**Cotton**\n\nI've grown cotton my whole life. I'll keep 2.7 mu of it. It's hard work now at my age, but I know it well and the price was acceptable last year. I'll spring-plough it deep, plant hybrid Bt cotton in late April. Cotton needs more water and more fertilizer than people think \u2014 especially potassium, I've learned that over the years. I'll irrigate 4 times through the season, spray 4-5 times for pests and disease, though the Bt variety handles bollworm mostly on its own now.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 13,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 5 mu to the winter wheat\u2013summer maize double-crop rotation that anchors my income, relying on improved wheat seed and hybrid maize as I have for the past decade, with three irrigations for wheat and two for maize drawing from my well. The remaining 2.7 mu stays in cotton, a crop I have grown my whole life; I use hybrid Bt cotton to keep bollworm pressure manageable, apply potassium-heavy fertilizer as cotton demands, and irrigate four times through the long growing season. At 65 with a four-person household to support, I keep the same system as last year \u2014 I do not experiment when I am this close to retirement age and the margins are already thin.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 13,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate 5 mu to the winter wheat\u2013summer maize double-crop rotation that anchors my income, relying on improved wheat seed and hybrid maize as I have for the past decade, with three irrigations for wheat and two for maize drawing from my well. The remaining 2.7 mu stays in cotton, a crop I have grown my whole life; I use hybrid Bt cotton to keep bollworm pressure manageable, apply potassium-heavy fertilizer as cotton demands, and irrigate four times through the long growing season. At 65 with a four-person household to support, I keep the same system as last year \u2014 I do not experiment when I am this close to retirement age and the margins are already thin."
+  },
+  "elapsed_seconds": 45.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_1",
+  "tier": 2,
+  "provider": "claude"
+}

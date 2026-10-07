@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 50 years old, and I have farmed this 3 mu in Quzhou for 30 years. My wife and I do everything ourselves. I finished middle school, so I can read the fertilizer bags and talk to the dealer, but mostly I do what has worked before.\n\nLast year I planted wheat on all 3 mu in October, then maize right after the June harvest. That is what everyone around me does, and this year I will do the same. I cannot afford to try something new and have it fail.\n\nFor wheat, I buy improved seed \u2014 Shimai 22 or something like it \u2014 about 30 jin per mu. That is 90 jin total, costing around 150 yuan. Before sowing, I hire the rotary tiller for one pass, which is 50 yuan per mu. Then I spread 100 jin per mu of compound fertilizer, the kind that says 18-22-5 on the bag. That costs about 130 yuan per mu. The dealer told me this mix is good for wheat, and my neighbor across the road uses the same. In March, when the wheat turns green, I topdress with 100 jin per mu of ammonium bicarbonate. Some people say urea is better now, but I have used ammonium bicarbonate for 20 years and it works fine. Why change something that works? I irrigate 3 times: once before the winter freeze, once at jointing, and once when the grain is filling. My well has plenty of water. For chemicals, I spray 3 times total \u2014 herbicide once after sowing, and insecticide twice later in the season. I expect about 950 jin per mu of wheat.\n\nFor maize, I plant directly after wheat harvest without tilling again. There is no time, and everyone here plants no-tillage after wheat. I use hybrid seed, Denghai 605 or something similar, about 1.2 small bags per mu. That is about 180 yuan for the 3 mu. At planting, I put down 100 jin per mu of compound fertilizer, the 28-6-6 type. That is about 140 yuan per mu. I also spread 50 jin per mu of urea when the plants are knee-high, because maize needs a lot of nitrogen at that stage. The urea is about 50 yuan per mu. I irrigate twice: right after sowing, and once at the big trumpet stage. For pests, I spray 3 times total \u2014 once for weeds, twice for insects. I expect about 1000 jin per mu of maize.\n\nWith only 3 mu, every yuan matters. But two years ago, my cousin tried to save money by cutting back fertilizer. He lost almost 200 jin per mu on his wheat. That was a terrible loss. I would rather spend a bit more on fertilizer and make sure I get my yield. A bad harvest means we have less to eat and less to sell. Wasting some fertilizer is just a cost.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1000\n    }\n  ],\n  \"reasoning_summary\": \"I manage 3 mu of wheat-maize rotation with my wife, doing all labor ourselves. For wheat, I use improved seed with rotary tillage, 100 jin per mu of 18-22-5 compound fertilizer at sowing, and 100 jin per mu of ammonium bicarbonate topdressing in spring. I irrigate 3 times and spray 3 times. For maize, I plant no-tillage immediately after wheat harvest using hybrid seed, 100 jin per mu of 28-6-6 compound at sowing, and 50 jin per mu of urea at the knee-high stage. I irrigate twice and spray 3 times. I would rather spend more on fertilizer than risk yield loss, because with only 3 mu a bad harvest is a disaster.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1000
+      }
+    ],
+    "reasoning_summary": "I manage 3 mu of wheat-maize rotation with my wife, doing all labor ourselves. For wheat, I use improved seed with rotary tillage, 100 jin per mu of 18-22-5 compound fertilizer at sowing, and 100 jin per mu of ammonium bicarbonate topdressing in spring. I irrigate 3 times and spray 3 times. For maize, I plant no-tillage immediately after wheat harvest using hybrid seed, 100 jin per mu of 28-6-6 compound at sowing, and 50 jin per mu of urea at the knee-high stage. I irrigate twice and spray 3 times. I would rather spend more on fertilizer than risk yield loss, because with only 3 mu a bad harvest is a disaster."
+  },
+  "elapsed_seconds": 176.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_4",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 59, never went to school, learned everything from my father and from watching others. I have farmed these 18 mu in Quzhou for 45 years. I do what worked last year, and I watch my neighbors. Change is risky \u2014 a bad harvest means my family goes hungry, but wasting a bit of fertilizer is just money lost. With 18 mu I am bigger than some, so I can buy inputs in bulk and absorb some risk, but every yuan still hurts.\n\nFor my 13 mu of wheat: I sowed after National Day last autumn with an improved variety, same as Old Wang next door. Now it is in the ground. I put one full bag of compound fertilizer per mu at sowing \u2014 that is 50 kg of the 15-15-15 kind. Come March, when the wheat turns green, I will spread half a bag of urea per mu, 25 kg. That is about 19 kg of nitrogen per mu in total. The compound fertilizer gives me 7.5 kg phosphorus and 7.5 kg potassium per mu. I will irrigate three times: once before the New Year to keep the seedlings from freezing, once at jointing in March, and once when the ears come out in April. I spray twice: herbicide right after sowing, and once in spring for aphids. I rotary till before I sow. If the weather holds, I expect 550 kg per mu.\n\nFor the 13 mu of summer maize after wheat harvest: I plant hybrid seed, the kind everyone buys from the seed shop. I do not waste time tilling \u2014 I use the no-tillage machine right behind the combine. Same fertilizer as wheat: one bag of compound fertilizer per mu at seeding, and half a bag of urea at the big trumpet stage. That gives about 19 kg nitrogen, 7.5 kg phosphorus, 7.5 kg potassium per mu. I irrigate three times: after seeding if it does not rain, at jointing, and at tasseling. Pesticide twice: herbicide at seeding, and once for corn borer. I expect 650 kg per mu.\n\nFor my 5 mu of cotton: I plough deep in April because cotton likes loose soil. I plant improved cotton seed. I use one bag of compound fertilizer per mu, plus I add extra potassium fertilizer because cotton needs it \u2014 about 10 kg potassium per mu total. With a bit of urea at flowering, that is about 15 kg nitrogen and 7.5 kg phosphorus per mu. I irrigate three times and spray pesticide five times \u2014 bollworm is a devil on cotton and you cannot skip a spray. I expect 350 kg of seed cotton per mu.\n\nFertilizer prices went up again, but I would rather put on a little too much than lose yield. My son works in the factory and sends money home, but the farm must pay for itself. I copy what Old Wang does, and he copies me. That is how we have always done it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    }\n  ],\n  \"reasoning_summary\": \"I farm 18 mu in Quzhou with no schooling, so I trust what my father taught me and what my neighbors do. Last year worked, so this year I do the same: 13 mu of wheat with one bag of compound fertilizer and half a bag of urea per mu, irrigating three times; then 13 mu of no-tillage hybrid maize with the same fertilizer; and 5 mu of deep-ploughed cotton with extra potassium and five pesticide sprays. I spend what I must, because a bad harvest is worse than wasted fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      }
+    ],
+    "reasoning_summary": "I farm 18 mu in Quzhou with no schooling, so I trust what my father taught me and what my neighbors do. Last year worked, so this year I do the same: 13 mu of wheat with one bag of compound fertilizer and half a bag of urea per mu, irrigating three times; then 13 mu of no-tillage hybrid maize with the same fertilizer; and 5 mu of deep-ploughed cotton with extra potassium and five pesticide sprays. I spend what I must, because a bad harvest is worse than wasted fertilizer."
+  },
+  "elapsed_seconds": 205.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_4",
+  "tier": 3,
+  "provider": "kimi"
+}

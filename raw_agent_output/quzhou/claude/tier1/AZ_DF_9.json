@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land has been growing wheat and corn for as long as I can remember. My father grew wheat and corn. I grow wheat and corn. That's what this land is good for, and that's what the village buys and sells. I have about 8 mu total \u2014 the same fields I've worked for over 40 years.\n\nWinter wheat goes in every October and comes off in June. Then I turn around and put corn in on the same fields. I do this every year. I don't need to think about it.\n\nFor wheat, I'll put down base fertilizer when I till \u2014 compound fertilizer plus some urea. Then top-dress in spring when the plants start to grow again. I flood irrigate four times: once before winter sets in to protect the roots, again in March when it greens up, at jointing, and at heading. I spray twice \u2014 once for weeds early on, once for disease and aphids near heading. I use the same wheat variety the seed shop in town sells, the one most people in the village buy. I get around 400 jin per mu most years, sometimes more.\n\nFor corn, right after I cut the wheat, I plant corn directly \u2014 no time to waste. I use hybrid seed, the kind that comes in the small bags with the company name. I apply fertilizer at planting and top-dress when the corn is knee-high. I only irrigate if there's no rain by the time it tassels. Corn mostly gets the summer rains. Harvest in September.\n\nI'm 65 and my back isn't what it was. My son sends money from the city. I'll manage these 8 mu myself, same as every year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"summer corn\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old farmer with no formal education in Quzhou County, Hebei follows the standard winter wheat\u2013summer corn double-cropping rotation that dominates the North China Plain, planting all 8 mu to wheat in October and rotating to hybrid corn on the same plots immediately after the June wheat harvest. Fertilizer rates reflect the common local practice of experienced but unadvised farmers, who tend toward heavier applications based on the belief that more input means more yield. Wheat receives four flood irrigations from groundwater wells \u2014 essential in this semi-arid region \u2014 while corn relies mainly on summer monsoon rains with two supplemental irrigations. Tillage is rotary before wheat planting for seedbed preparation; corn is direct-seeded into wheat stubble with no-tillage to save time and labor. Pesticide use is moderate and calendar-based rather than scouting-based. Expected yields reflect typical smallholder outcomes in this county under these management practices.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "summer corn",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "A 65-year-old farmer with no formal education in Quzhou County, Hebei follows the standard winter wheat\u2013summer corn double-cropping rotation that dominates the North China Plain, planting all 8 mu to wheat in October and rotating to hybrid corn on the same plots immediately after the June wheat harvest. Fertilizer rates reflect the common local practice of experienced but unadvised farmers, who tend toward heavier applications based on the belief that more input means more yield. Wheat receives four flood irrigations from groundwater wells \u2014 essential in this semi-arid region \u2014 while corn relies mainly on summer monsoon rains with two supplemental irrigations. Tillage is rotary before wheat planting for seedbed preparation; corn is direct-seeded into wheat stubble with no-tillage to save time and labor. Pesticide use is moderate and calendar-based rather than scouting-based. Expected yields reflect typical smallholder outcomes in this county under these management practices."
+  },
+  "elapsed_seconds": 51.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_9",
+  "tier": 1,
+  "provider": "claude"
+}

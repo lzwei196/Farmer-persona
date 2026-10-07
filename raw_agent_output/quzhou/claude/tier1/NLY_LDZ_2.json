@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land in Quzhou for generations. My father grew wheat and corn, his father grew wheat and corn, and that's what I'll grow too. I know these crops. I know when the ground feels right to plant, when the leaves look wrong, when the water is low. I don't read the extension pamphlets but I talk to my neighbors at the village store and I watch what works.\n\nIn Quzhou we always do winter wheat first, then summer corn on the same land. That's just how it's done here. The wheat goes in around the Cold Dew festival, comes out in June, then I turn around and put corn in right away before the summer rains get going.\n\nI have about 8 mu of fields. I'll plant all of it in wheat this winter, then all of it in corn after the wheat comes off.\n\nFor seeds, I buy whatever the village seed shop has. They sell hybrid corn \u2014 everyone does it now, been that way for years \u2014 so I'll get that. For wheat I usually keep some from last year's grain or buy the local improved variety, whatever my neighbor Zhang uses.\n\nFertilizer, I put down a good amount. My father always said more is better. I'll put the fertilizer in before planting and again when it's growing. I've seen plots that didn't get enough and the plants look thin and pale. I don't want that.\n\nIrrigation: our county depends on groundwater. For wheat I'll water it in before winter, again in spring when it joints, and once more when it heads. Corn I water less \u2014 the summer rains usually help \u2014 but if it gets dry in August I'll run the pump.\n\nI spray for weeds after planting and again if I see bugs or blight. Two or three times for wheat, once or twice for corn.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As an uneducated farmer in Quzhou County on the North China Plain, I follow the standard winter wheat\u2013summer maize double-cropping rotation that my family and neighbors have practiced for generations. I plant wheat after the Cold Dew festival in October using an improved locally available variety, then immediately follow with hybrid maize after the wheat harvest in June to capture summer rainfall. Fertilizer is applied generously in line with local habit \u2014 nitrogen especially, split between base and topdress applications. Wheat receives three groundwater irrigations (pre-winter, jointing, heading) while maize relies more on summer rain with supplemental irrigation if August turns dry. Tillage is plough-based for wheat to prepare the seedbed, then rotary for maize to allow quick replanting after harvest. Pesticide applications target weeds at emergence and any visible disease or insect pressure. Expected yields reflect average performance for a smallholder following traditional practices without soil testing or precision inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As an uneducated farmer in Quzhou County on the North China Plain, I follow the standard winter wheat\u2013summer maize double-cropping rotation that my family and neighbors have practiced for generations. I plant wheat after the Cold Dew festival in October using an improved locally available variety, then immediately follow with hybrid maize after the wheat harvest in June to capture summer rainfall. Fertilizer is applied generously in line with local habit \u2014 nitrogen especially, split between base and topdress applications. Wheat receives three groundwater irrigations (pre-winter, jointing, heading) while maize relies more on summer rain with supplemental irrigation if August turns dry. Tillage is plough-based for wheat to prepare the seedbed, then rotary for maize to allow quick replanting after harvest. Pesticide applications target weeds at emergence and any visible disease or insect pressure. Expected yields reflect average performance for a smallholder following traditional practices without soil testing or precision inputs."
+  },
+  "elapsed_seconds": 43.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_2",
+  "tier": 1,
+  "provider": "claude"
+}

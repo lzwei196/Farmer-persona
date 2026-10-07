@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 8 mu here in Quzhou, same as I always do \u2014 wheat in winter, maize after. My man and I have done this thirty years. Two of our children work in town so it is mostly me and him in the field. My neighbors all plant the same way so I just follow what works on our road.\n\nFor wheat, I plant after the maize comes off in October. I buy the good seed from the dealer in town \u2014 the one my neighbor Wang's wife uses, she had a good crop last year. I put down 2 bags of compound fertilizer per mu when I sow \u2014 that is one hundred jin. In spring when the wheat greens up and starts to joint, I put one bag of urea per mu on top, maybe a little more because I do not want the wheat to look yellow. My husband will not hear of a thin crop. I water three times from the well \u2014 once after planting if dry, once at jointing with the urea, once when the grain is filling. I spray twice, once for aphids and once for the red disease on the heads. I plough after maize to turn in the stalks.\n\nFor maize, I plant right after wheat harvest in June, no time to plough, I just drill into the stubble. I use hybrid seed, same kind as last year, it gave me good ears. I put one and a half bags of compound at sowing and then one bag of urea when the maize is knee-high. I water once or twice if the rain does not come. I spray once for the borer worm and once for weeds. Last year I got about 1100 jin of maize per mu and 900 jin of wheat, so I expect the same.\n\nI do not skip fertilizer to save money \u2014 a poor harvest costs more than the extra bag. That is what my mother-in-law taught me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what I always do and what my neighbors do \u2014 wheat then maize, same as every year on our 8 mu. I use 2 bags of compound fertilizer per mu at sowing for wheat and 1 bag of urea in spring; for maize a bag and a half of compound and a bag of urea when it is knee-high. I would rather buy one extra bag than see a thin crop, because a bad harvest hurts much more than a little wasted fertilizer. I water from the well when the rain does not come, spray for aphids and borer worms, and plough before wheat but drill maize straight into the stubble to save time after harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what I always do and what my neighbors do \u2014 wheat then maize, same as every year on our 8 mu. I use 2 bags of compound fertilizer per mu at sowing for wheat and 1 bag of urea in spring; for maize a bag and a half of compound and a bag of urea when it is knee-high. I would rather buy one extra bag than see a thin crop, because a bad harvest hurts much more than a little wasted fertilizer. I water from the well when the rain does not come, spray for aphids and borer worms, and plough before wheat but drill maize straight into the stubble to save time after harvest."
+  },
+  "elapsed_seconds": 43.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_13",
+  "tier": 3,
+  "provider": "claude"
+}

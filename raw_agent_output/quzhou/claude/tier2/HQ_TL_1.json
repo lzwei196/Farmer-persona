@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 40 years. I know what works here in Quzhou. The soil is good but dry without irrigation, so my well is everything.\n\nMy 30 mu: I run wheat and maize on 22 mu as a rotation \u2014 same fields, wheat in winter, maize in summer. I keep 8 mu for stevia separately. My son pushed me to grow stevia a few years back when the price was high and buyers come to the village now. I keep it.\n\n**Wheat:** I plant in October after deep ploughing. I use the improved variety from the seed station \u2014 yields better than the old seed I saved. I put base fertilizer down at planting, then top-dress urea at jointing. I irrigate at sowing, jointing, heading, and once more if grain fill looks dry \u2014 usually 3 to 4 times. Two pesticide sprays: one for aphids, one fungicide around heading.\n\n**Maize:** Right after wheat harvest in June. I use hybrid seed \u2014 everyone around here does now, the yield difference is real. Rotary till after wheat straw, then plant. Fertilize at planting and side-dress at big bell stage. Two or three irrigations: at silking, grain fill, and one more if August is hot. One or two pesticide passes for corn borer mostly.\n\n**Stevia:** It stays in the same 8 mu. I prepare with rotary tillage in spring. It needs more water than grain \u2014 I irrigate 5 or 6 times through the growing season. I harvest leaves twice, dry them, and sell to the buyer who comes to town. It earns more per mu than wheat or maize.\n\nWith some family off-farm, I manage the heavy work with hired help at planting and harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 22,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 22,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 570\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I farm 30 mu in Quzhou with 40 years of experience, running a wheat-maize double-crop rotation on 22 mu and keeping 8 mu in stevia as a cash crop. For wheat I deep plough in autumn, use improved variety seed from the seed station, apply split nitrogen (base plus jointing top-dress), irrigate 3 times, and spray twice for aphids and disease. For summer maize I rotary till the wheat stubble, plant hybrid seed, side-dress urea at bell stage, irrigate 3 times through silking and grain fill, and control corn borer. Stevia on the remaining 8 mu gets rotary tillage in spring, heavier potassium to support leaf sugar content, 5 irrigations through the season, and 2 pesticide applications; I harvest leaves twice and sell to the local buyer. With some household members working off-farm, I hire labor at peak times for planting and harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 22,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 22,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 570
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I farm 30 mu in Quzhou with 40 years of experience, running a wheat-maize double-crop rotation on 22 mu and keeping 8 mu in stevia as a cash crop. For wheat I deep plough in autumn, use improved variety seed from the seed station, apply split nitrogen (base plus jointing top-dress), irrigate 3 times, and spray twice for aphids and disease. For summer maize I rotary till the wheat stubble, plant hybrid seed, side-dress urea at bell stage, irrigate 3 times through silking and grain fill, and control corn borer. Stevia on the remaining 8 mu gets rotary tillage in spring, heavier potassium to support leaf sugar content, 5 irrigations through the season, and 2 pesticide applications; I harvest leaves twice and sell to the local buyer. With some household members working off-farm, I hire labor at peak times for planting and harvest."
+  },
+  "elapsed_seconds": 44.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_1",
+  "tier": 2,
+  "provider": "claude"
+}

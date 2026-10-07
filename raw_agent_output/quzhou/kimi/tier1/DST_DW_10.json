@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 66 years old, and I've been farming these fields in Quzhou County for over 40 years. My son works in Shijiazhuang now, so it's mostly me and my wife handling the land. We have about 6 mu, and I don't see any reason to change what has worked.\n\nThis year, like most years, I'll plant winter wheat on all 6 mu in mid-October, right after the maize comes off. Everyone around here does wheat-maize double cropping \u2014 it's what the land and the calendar allow. I thought about cotton once, but at my age, bending down to pick cotton for months is too hard on my back. Wheat and maize are easier because the machines do the harvesting.\n\nFor the wheat, I'll use an improved variety, probably Jimai 22 or something similar from the seed shop. The extension agent says 15 kg of nitrogen per mu is enough, but I usually put down about 16 kg to be safe. I learned the hard way that cutting back on fertilizer costs you more than it saves. I'll spread compound fertilizer before rotary tilling, then topdress with urea at jointing in spring. I irrigate three times: once before winter if it's dry, again at jointing, and once more at grain filling. Water costs money, but without it the yield drops fast.\n\nFor the summer maize next June, I'll plant hybrid seed right after the wheat harvest. These days we mostly do no-tillage for maize because there's barely a week between wheat harvest and maize planting \u2014 no time to plow. I apply about 15 kg of nitrogen per mu, and I irrigate twice if the summer rains are poor.\n\nI spray herbicide once for each crop, and usually one or two insecticide applications depending on what bugs show up. I don't take chances with weeds \u2014 one spraying costs less than losing yield. I'm not trying to set records. I want steady yields: around 450 kg per mu for wheat and 500 kg per mu for maize. That gives us enough grain to sell and enough cash for my grandson's school fees.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"At 66, I stick with the wheat-maize double cropping system on my 6 mu because it is reliable and mechanized. I use improved wheat seed and hybrid maize seed, apply moderate fertilizer with a slight safety margin, irrigate when necessary, and keep pest management conservative but consistent. I avoid cotton due to the heavy labor requirements at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "At 66, I stick with the wheat-maize double cropping system on my 6 mu because it is reliable and mechanized. I use improved wheat seed and hybrid maize seed, apply moderate fertilizer with a slight safety margin, irrigate when necessary, and keep pest management conservative but consistent. I avoid cotton due to the heavy labor requirements at my age."
+  },
+  "elapsed_seconds": 113.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_DW_10",
+  "tier": 1,
+  "provider": "kimi"
+}

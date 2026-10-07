@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will think this through like I do every year.\n\nMy 5 mu is not much, but it feeds part of our family of 7 and brings some cash. Two of my children work in the city, so I mostly farm with my wife. At 53, I still have strength, but I do not want to waste money on things that do not pay back.\n\n**Winter wheat** \u2014 I plant it in October after the maize comes off. I use improved seed from the dealer in town, the kind most people around here plant \u2014 \"Jimai\" something, I forget the number but the dealer knows. Last year it gave me about 450 kg per mu, which is normal for our village. I do not try anything strange. What my neighbors plant, I plant.\n\nFor fertilizer, I put down 2 bags of compound fertilizer (15-15-15, 40 kg bags) as base when I plow \u2014 that is 80 kg per mu. Then in spring when the wheat turns green, I topdress with half a bag of urea, maybe 25 kg per mu. My father taught me: wheat eats nitrogen in spring. If I am short one year the yield drops, and losing 50 kg of wheat costs more than the extra urea. So I would rather add a little more.\n\nWater \u2014 I irrigate 4 times: before winter to keep roots warm, green-up in spring, jointing, and grain filling. We have the well, so water is not the main cost, just the electricity.\n\nSpray \u2014 once for weeds in spring, once for aphids and scab around flowering. Two sprays is enough most years.\n\nI use rotary tillage. Everyone uses the rotary machine now, we hire it for about 40 yuan per mu.\n\n**Summer maize** \u2014 After wheat harvest in June, I direct-seed maize right into the stubble, no plowing. I use hybrid seed, Zhengdan or Xianyu type \u2014 nobody plants the old varieties anymore, they yield half as much.\n\nBase fertilizer: 1.5 bags of compound (60 kg per mu) at seeding. Then when maize is knee-high, I side-dress urea, about 30 kg per mu. Maize eats more nitrogen than wheat, and in a wet year it grows tall and needs it.\n\nIrrigation: maybe 2 times if the rain is short. July-August usually has rain, so sometimes I only water once.\n\nSpray: once for armyworm and corn borer. Sometimes twice if the bugs are bad.\n\nYield target about 550 kg per mu \u2014 that is what I got last two years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 5 mu in wheat-maize rotation like everyone in our village. I follow what worked last year and what my neighbors do. For wheat I use 2 bags of compound fertilizer as base plus half a bag of urea topdressing, irrigate 4 times from the well, and spray twice. For maize I direct-seed hybrid into wheat stubble, put 1.5 bags compound at seeding plus a bag of urea side-dressed, and water once or twice depending on rain. I would rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest hurts much more than a few extra yuan on urea. I use improved wheat seed and hybrid maize seed because the old types yield too little. My costs are tight with 7 people in the household, so I do not spend on anything I have not seen work in our village.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 5 mu in wheat-maize rotation like everyone in our village. I follow what worked last year and what my neighbors do. For wheat I use 2 bags of compound fertilizer as base plus half a bag of urea topdressing, irrigate 4 times from the well, and spray twice. For maize I direct-seed hybrid into wheat stubble, put 1.5 bags compound at seeding plus a bag of urea side-dressed, and water once or twice depending on rain. I would rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest hurts much more than a few extra yuan on urea. I use improved wheat seed and hybrid maize seed because the old types yield too little. My costs are tight with 7 people in the household, so I do not spend on anything I have not seen work in our village."
+  },
+  "elapsed_seconds": 40.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_10",
+  "tier": 3,
+  "provider": "claude"
+}

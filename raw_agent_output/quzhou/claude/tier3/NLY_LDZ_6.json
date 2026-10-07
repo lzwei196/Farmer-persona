@@ -1,0 +1,40 @@
+{
+  "raw_response": "My name is not important \u2014 I am just a woman trying to feed my family from 12 mu. Five years ago my husband started working in the city so I took over the fields. I watch what the older women in our village do, and I talk to the fertilizer shop owner when I buy my supplies.\n\nLast year my wheat gave me about 450 kg per mu and my maize about 550 kg per mu. I want to do a little better this year but not take big risks. My two youngest are still in school, so every yuan matters.\n\n**For wheat (winter, October to June):**\nI will plant improved seed \u2014 the one called Jimai that my neighbor Old Wang grows. He gets good yield on the same kind of soil. I cannot afford to try something strange.\n\nBefore planting I spread compound fertilizer 15-15-15, about 3 bags per mu (that is 50 kg each bag, so 150 kg total base). Then in spring when the wheat turns green, I top-dress with urea, maybe 15 kg per mu. The shop man tells me urea is about 46% nitrogen, so that adds another 7 kg of nitrogen. In total per mu I get roughly 22-23 kg nitrogen, 7-8 kg phosphorus, 7-8 kg potassium.\n\nI irrigate 3 times \u2014 once before winter (dong shui), once when it turns green in spring, and once when the grain is filling. The well water costs electricity but without water the wheat will not fill. I spray pesticide twice \u2014 once for aphids, once mixed with herbicide.\n\nI plough before planting wheat because the maize stalks need to be turned under.\n\n**For maize (summer, June after wheat harvest):**\nI plant Zhengdan or a similar hybrid \u2014 everyone around here uses hybrid seed for maize, traditional seed nobody even sells anymore. After wheat I do not plough, I use rotary tillage \u2014 it is faster and the machinery service charges less. No-tillage I do not trust yet, my neighbor tried and the seedlings came up thin.\n\nFor maize I put 2 bags of compound fertilizer per mu at planting, then 20 kg urea when it is knee-high. That gives me about 25 kg nitrogen, 5 kg phosphorus, 5 kg potassium per mu. Maize eats a lot of nitrogen \u2014 better too much than too little.\n\nSummer rains usually come, so I only irrigate once, around tasseling if the rain fails. Pesticide twice \u2014 for corn borer and for armyworm which was bad two years ago.\n\nExpected yield: wheat 475 kg/mu, maize 575 kg/mu \u2014 a small step up from last year if the weather is kind.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 475\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 575\n    }\n  ],\n  \"reasoning_summary\": \"I farm 12 mu alone while my husband works in the city, so I follow what my successful neighbors do and adjust only a little from last year. For wheat I use improved Jimai seed, apply 3 bags of 15-15-15 compound before planting plus 15 kg urea as spring topdressing, and irrigate 3 times because the winter and filling waters cannot be skipped. For maize I use hybrid seed, 2 bags of compound plus 20 kg urea at knee-high, rotary till after wheat to save cost, and rely on summer rain so only one backup irrigation. I spray pesticide twice on each crop for the pests we always see here. My yield target is a small improvement over last year \u2014 475 kg/mu wheat and 575 kg/mu maize \u2014 nothing risky, because a bad harvest would hurt my family more than wasting a little fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 475
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 575
+      }
+    ],
+    "reasoning_summary": "I farm 12 mu alone while my husband works in the city, so I follow what my successful neighbors do and adjust only a little from last year. For wheat I use improved Jimai seed, apply 3 bags of 15-15-15 compound before planting plus 15 kg urea as spring topdressing, and irrigate 3 times because the winter and filling waters cannot be skipped. For maize I use hybrid seed, 2 bags of compound plus 20 kg urea at knee-high, rotary till after wheat to save cost, and rely on summer rain so only one backup irrigation. I spray pesticide twice on each crop for the pests we always see here. My yield target is a small improvement over last year \u2014 475 kg/mu wheat and 575 kg/mu maize \u2014 nothing risky, because a bad harvest would hurt my family more than wasting a little fertilizer."
+  },
+  "elapsed_seconds": 35.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_6",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 34.5 mu, that is a lot of land for two people. My son comes back to help at busy times but mostly it is me. I will do what I did last year because last year was not bad.\n\nI split my land like this. About 20 mu I do wheat then maize on the same ground, like always \u2014 the ground does not rest. The other 14.5 mu I keep for cotton because the price has been alright and I have grown cotton on that piece for many years, that soil suits it.\n\nFor the wheat I sow in October after the maize comes off. I buy the seed from the dealer in town, the same kind my neighbor Old Wang uses, he gets good heads. Before sowing I spread 1 bag of compound fertilizer per mu, that is 50 jin \u2014 no wait, 1 bag is 50 kg, so about 40 kg per mu I put down, maybe a bit more on the thin spots. Then in spring when the wheat turns green I scatter urea, half a bag per mu, 25 kg or so. I water the wheat 3 times \u2014 once before winter so it does not freeze dry, once at greening, once when the head is filling. I spray 2 times, once for weeds in spring, once when I see aphids on the leaves. I run the small tractor with the rotary to work the ground before sowing. Usually I get about 900 jin per mu, that is 450 kg.\n\nSummer maize I drill straight after wheat harvest, no plowing, just the seeder behind the tractor. I put compound fertilizer with the seed, 1 bag per mu again. When the maize is waist-high I side-dress urea, half a bag. I water maybe twice if the rain is poor, once if rain comes. Spray once for the borer when I see the holes. Yield about 1100 jin, 550 kg.\n\nCotton is more work. The ground gets plowed proper in spring. I put 1 and a half bags of compound per mu before sowing, and topdress urea twice \u2014 at squaring and at blooming, half a bag each time. Cotton drinks a lot, I water 3 times from the well. Bollworm and aphids come every year so I spray 5 times, sometimes 6 if they are bad. Seed cotton I get about 500 jin per mu, 250 kg.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I did last year because it worked. 20 mu goes to wheat then maize on the same ground, 14.5 mu to cotton on the piece that always grew cotton. I measure fertilizer in bags \u2014 one bag of compound per mu at sowing, then half a bag of urea to topdress, more for cotton because cotton is hungry and thirsty. I water wheat and cotton 3 times from my well, maize 2 times if the rain is short. I spray only when I see the pests. My yields are about what my neighbors get \u2014 900 jin of wheat, 1100 jin of maize, 500 jin of seed cotton per mu. I do not want to change much, changing is how you lose money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 14.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm the way I did last year because it worked. 20 mu goes to wheat then maize on the same ground, 14.5 mu to cotton on the piece that always grew cotton. I measure fertilizer in bags \u2014 one bag of compound per mu at sowing, then half a bag of urea to topdress, more for cotton because cotton is hungry and thirsty. I water wheat and cotton 3 times from my well, maize 2 times if the rain is short. I spray only when I see the pests. My yields are about what my neighbors get \u2014 900 jin of wheat, 1100 jin of maize, 500 jin of seed cotton per mu. I do not want to change much, changing is how you lose money."
+  },
+  "elapsed_seconds": 43.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_7",
+  "tier": 3,
+  "provider": "claude"
+}

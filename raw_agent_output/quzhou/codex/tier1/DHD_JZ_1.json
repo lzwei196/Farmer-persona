@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will assume I am managing about 20 mu of land. I will keep most of my land in the usual Quzhou pattern of winter wheat followed by summer maize, because that is the system I know best, the machinery and field work are straightforward for me, and the yield is steady in the North China Plain. I will not put everything into wheat-maize, though. Water is always tight here, especially for wheat, so I will leave a smaller part for spring peanut. That gives me some cash income, spreads risk, and uses less irrigation than putting all the land into the full wheat-maize rotation.\n\nFor management, I will keep inputs moderate instead of pushing for the highest possible yield. On wheat, I will use an improved variety, do rotary tillage, put most fertilizer in at sowing with a smaller topdressing later, and irrigate mainly at the key stages instead of watering too many times. After wheat harvest, I will direct-seed summer maize on the same land with no-tillage to save time and moisture. On peanut, I will keep fertilizer balanced, avoid too much nitrogen, and watch weeds, leaf disease, and underground pests. My aim is stable output, controlled cost, and lower water pressure rather than chasing the absolute top yield.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"spring peanut\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 350\n    }\n  ],\n  \"reasoning_summary\": \"I will mainly grow winter wheat followed by summer maize because that is the most familiar and dependable system for me in Quzhou County, and I will keep a smaller area in spring peanut to reduce water pressure and diversify my income. I will use moderate fertilizer, limited but timely irrigation, simple tillage, and routine pest control because I care more about stable yield, manageable cost, and lower risk than maximum output.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 16,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 16,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "spring peanut",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 350
+      }
+    ],
+    "reasoning_summary": "I will mainly grow winter wheat followed by summer maize because that is the most familiar and dependable system for me in Quzhou County, and I will keep a smaller area in spring peanut to reduce water pressure and diversify my income. I will use moderate fertilizer, limited but timely irrigation, simple tillage, and routine pest control because I care more about stable yield, manageable cost, and lower risk than maximum output."
+  },
+  "elapsed_seconds": 36.8,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_1",
+  "tier": 1,
+  "provider": "codex"
+}

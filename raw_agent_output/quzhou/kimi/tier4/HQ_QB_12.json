@@ -1,0 +1,73 @@
+{
+  "raw_response": "I'm a 42-year-old woman, farming this 2.6 mu for 20 years since I married into this village. My husband does construction work in Shijiazhuang and my boy is in middle school, so mostly it's me and my mother-in-law managing the land. We live off my husband's wages plus whatever the land gives us, so every yuan I spend on inputs is a yuan I don't have for his school fees.\n\nThe extension agent said wheat needs 15 kg nitrogen per mu, but last year I applied 12 kg and got about 380 kg per mu, which was enough for our own flour plus a little to sell. Fertilizer prices went up again this spring, so I'll stick with 12 kg N for wheat \u2014 compound fertilizer as base at planting, then I'll topdress with urea at jointing if the wheat looks yellow. For the summer maize, I'll put down 10 kg N all at planting and that's it. I can't afford more.\n\nFor seed, I'll buy the common improved wheat variety, about 12 kg per mu. For maize I have to buy hybrid seed \u2014 you can't save it \u2014 about 2 kg per mu. Irrigation costs 25 yuan each time from the well cooperative. I'll water wheat twice: once at green-up if spring is dry, and once at heading. For maize, I'll irrigate once at the jointing stage and hope the summer rains do the rest. We usually get some rain in July and August.\n\nI hire Old Wang's small tractor to plow after maize harvest and harrow before wheat planting \u2014 80 yuan, can't do it by hand anymore. My mother-in-law helps with planting and weeding. My husband tries to come back for harvest. I need to keep total costs around 1,200 yuan or we'll feel it when the school asks for money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 2.6,\n      \"planting_date\": \"October 10-15\",\n      \"harvest_date\": \"June 5-10\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Compound fertilizer and DAP as base before planting, urea topdress at jointing if wheat looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"Plow after maize harvest, harrow before wheat planting, hire small tractor\",\n      \"labor_family_days\": 7,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 380\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 2.6,\n      \"planting_date\": \"June 12-15\",\n      \"harvest_date\": \"September 25-30\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 10,\n      \"phosphorus_total_kg_per_mu\": 3,\n      \"potassium_total_kg_per_mu\": 2,\n      \"fertilizer_applications\": 1,\n      \"fertilizer_timing\": \"Compound fertilizer all at planting, no topdress unless summer rains fail completely\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"Minimal tillage, plant directly after wheat harvest, window is very tight\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 370\n    }\n  ],\n  \"total_input_cost_yuan\": 1180,\n  \"reasoning_summary\": \"With only 2.6 mu and my husband working off-farm, I have to balance farm spending against school fees and household costs. I stick close to last year's fertilizer rates because they worked fine \u2014 the extension recommendation of 15 kg N is too expensive for my budget. I irrigate wheat twice because it's worth it, but maize only gets one irrigation since summer rain usually helps. I hire a tractor for plowing and a little help at harvest, but most work is me and my mother-in-law.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 2.6,
+        "planting_date": "October 10-15",
+        "harvest_date": "June 5-10",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Compound fertilizer and DAP as base before planting, urea topdress at jointing if wheat looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "Plow after maize harvest, harrow before wheat planting, hire small tractor",
+        "labor_family_days": 7,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 380,
+        "nitrogen_kg_per_mu": 12,
+        "area_mu": 2.6,
+        "expected_yield_kg_per_mu": 380,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 2
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 2.6,
+        "planting_date": "June 12-15",
+        "harvest_date": "September 25-30",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 10,
+        "phosphorus_total_kg_per_mu": 3,
+        "potassium_total_kg_per_mu": 2,
+        "fertilizer_applications": 1,
+        "fertilizer_timing": "Compound fertilizer all at planting, no topdress unless summer rains fail completely",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "Minimal tillage, plant directly after wheat harvest, window is very tight",
+        "labor_family_days": 6,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 370,
+        "nitrogen_kg_per_mu": 10,
+        "area_mu": 2.6,
+        "expected_yield_kg_per_mu": 370,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2
+      }
+    ],
+    "total_input_cost_yuan": 1180,
+    "reasoning_summary": "With only 2.6 mu and my husband working off-farm, I have to balance farm spending against school fees and household costs. I stick close to last year's fertilizer rates because they worked fine \u2014 the extension recommendation of 15 kg N is too expensive for my budget. I irrigate wheat twice because it's worth it, but maize only gets one irrigation since summer rain usually helps. I hire a tractor for plowing and a little help at harvest, but most work is me and my mother-in-law."
+  },
+  "elapsed_seconds": 109.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_12",
+  "tier": 4,
+  "provider": "kimi"
+}

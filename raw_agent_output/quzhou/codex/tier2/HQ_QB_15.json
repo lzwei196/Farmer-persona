@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 9.5 mu, and at my age and with only two people in the household, I will keep the plan simple, familiar, and manageable. I have 30 years of experience, some family labor is away from home, and I have well irrigation, so I will rely on crops I know and a workload I can finish without stretching the household too hard. I will keep cotton as my main crop because that matches my usual system and gives me a cash crop, but I will still keep some wheat and maize for income stability and to spread risk across the year. I will put 5 mu into cotton, and I will use the other 4.5 mu in a wheat-maize rotation, so that same 4.5 mu grows wheat first and then maize after wheat harvest.\n\nFor seed, I will not stay with old traditional seed. I will use improved or hybrid seed where it matters because my land is limited and I need stable output per mu. For cotton, I will use improved seed and manage fertilizer moderately, because too much nitrogen pushes vegetative growth and can make cotton harder to control. For wheat and maize, I will use hybrid seed and give them enough nitrogen to support grain yield, while keeping phosphorus and potassium at practical levels. Since I have well irrigation, I will irrigate wheat more than the other crops because wheat in Hebei depends heavily on timely water, especially at key stages. Maize will need fewer irrigations, and cotton will get moderate irrigation because I do not want excessive lush growth. I will use rotary tillage because it is easier for me to manage on a small farm and fits the labor I have. I will also keep pesticide use moderate: enough to protect yield, but not excessive, because every spray costs money and labor.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I will keep cotton as my main crop on 5 mu because it matches my usual system and gives me cash income, and I will use the remaining 4.5 mu for a wheat-maize rotation to spread risk and use the land through the year. I will choose improved or hybrid seed for better stability on a small farm, use moderate fertilizer rather than pushing inputs too hard, irrigate wheat the most because it depends more on timely water in my area, and keep tillage and pesticide use simple enough for my household labor to manage.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I will keep cotton as my main crop on 5 mu because it matches my usual system and gives me cash income, and I will use the remaining 4.5 mu for a wheat-maize rotation to spread risk and use the land through the year. I will choose improved or hybrid seed for better stability on a small farm, use moderate fertilizer rather than pushing inputs too hard, irrigate wheat the most because it depends more on timely water in my area, and keep tillage and pesticide use simple enough for my household labor to manage."
+  },
+  "elapsed_seconds": 27.4,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_15",
+  "tier": 2,
+  "provider": "codex"
+}

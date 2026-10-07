@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 64 years old. I finished primary school and have farmed 7 mu in Quzhou County for 45 years. It is just me and my wife working the land. We have a well, so when the crops need water I pump it up myself.\n\nI split my 7 mu into two pieces. I put 4 mu into cotton because cotton is cash money. The other 3 mu I sow with winter wheat, and the day after I harvest that wheat in June I plant maize on the same 3 mu. I have done it this way for more than 20 years. I know these fields like the back of my hand.\n\nFor cotton: In late April I rotary till the 4 mu. I buy hybrid cotton seed, 3 jin per mu. I put one full bag of compound fertilizer on each mu as base \u2014 that is 50 kg per mu. The bag says it has nitrogen, phosphorus, and potassium. At flowering time I top-dress with half a bag of urea per mu, and I do this again at boll stage. So I use 50 kg of urea per mu total. I irrigate 3 times from my well: right after planting, at flowering, and when the bolls are swelling. I spray pesticide 10 times. I have to. The bollworm and the aphids never rest. Last year I got 240 kg of seed cotton per mu. This year I expect 250 kg per mu if the weather does not turn bad.\n\nFor wheat: I sow it in October on 3 mu. I use an improved short-stalk variety, 30 jin of seed per mu. Last autumn I rotary tilled before sowing and put down 40 kg of compound fertilizer per mu. When the wheat turns green in March I spread 25 kg of urea per mu. I irrigate 3 times: once before winter freeze, once at jointing, and once at grain filling. I spray pesticide 3 times \u2014 twice for bugs, once for the rust that came two years ago. I expect 450 kg per mu. My wheat has given me 440 to 460 kg per mu for five years now.\n\nFor maize: The day after wheat harvest I no-till plant hybrid maize on those same 3 mu. I use 1.5 packages of seed per mu. At planting I put 40 kg of compound fertilizer per mu. When the plants are knee-high I top-dress with 20 kg of urea per mu. I irrigate twice if the summer rain is not enough. I spray 3 times: herbicide once, insecticide twice. I expect 500 kg per mu. Last year I got 480, but the year before I got 520.\n\nI think about costs every morning. A bag of compound fertilizer is 160 yuan now. Urea is 100 yuan. For the whole farm I will spend more than 2,000 yuan just on fertilizer. But I will not cut back. My neighbor tried to save 300 yuan on fertilizer last year and his cotton yield dropped by 80 kg per mu. He lost over 1,000 yuan. I would rather waste a little fertilizer than lose yield. A bad harvest is a disaster. Wasting fertilizer is just a cost. I watch Old Wang across the road. He uses the same amounts as me. If he changes something and it works, I will think about it. This year I will do what I did last year. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I manage 7 mu with 4 mu in cotton and 3 mu in a wheat-maize rotation. For cotton I apply 50 kg compound fertilizer and 50 kg urea per mu, irrigate 3 times, and spray 10 times for pests. For wheat I use 40 kg compound and 25 kg urea per mu with 3 irrigations. For maize I no-till plant after wheat with 40 kg compound and 20 kg urea per mu. I learned from 45 years of experience and from watching my neighbor Old Wang. Fertilizer is expensive but I will not cut back because losing yield is worse than wasting some input.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I manage 7 mu with 4 mu in cotton and 3 mu in a wheat-maize rotation. For cotton I apply 50 kg compound fertilizer and 50 kg urea per mu, irrigate 3 times, and spray 10 times for pests. For wheat I use 40 kg compound and 25 kg urea per mu with 3 irrigations. For maize I no-till plant after wheat with 40 kg compound and 20 kg urea per mu. I learned from 45 years of experience and from watching my neighbor Old Wang. Fertilizer is expensive but I will not cut back because losing yield is worse than wasting some input."
+  },
+  "elapsed_seconds": 204.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_XST_8",
+  "tier": 3,
+  "provider": "kimi"
+}

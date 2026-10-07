@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed this land in Quzhou my whole life. My contracted land is about 8 mu. My son works in Shijiazhuang so it's mostly me now, with him coming back for wheat harvest. I don't know about new techniques \u2014 I grow what my neighbors grow, what my mother grew: winter wheat and summer corn. That rotation is safe. I know it.\n\nFor wheat, I'll sow in early October like always. I'll buy seeds from the village agricultural supply shop \u2014 they sell the improved variety most people here use, Jimai 22 or similar. I apply the compound fertilizer at planting, then add urea in spring when the wheat starts jointing. I irrigate at sowing, before winter sets in, and again at heading. I spray herbicide in spring and one more time if I see disease or insects.\n\nRight after wheat harvest in June, I'll plant corn on the same land. No ploughing \u2014 just rotary till the stubble and plant directly. The seed shop only sells hybrid corn now, so that's what I use. I top-dress with urea after the corn is knee-high and again when it tassels. I water if rain is short.\n\nI'll keep half a mu near the house for garlic, cabbage, and beans \u2014 for eating, not selling.\n\nI won't try anything new. At my age, a bad harvest is worse than a modest one.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"mixed vegetables\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"A 63-year-old farmer in Quzhou County, Hebei, with no formal education follows the dominant local double-cropping system of winter wheat and summer maize on 7.5 mu of contracted land, a rotation she has practiced her entire life. Seed choices, fertilizer rates, and irrigation timing are based on village norms and local supply shop recommendations rather than agronomic guidance, resulting in moderately high nitrogen applications typical of the region. A small vegetable plot near the house supplies household food. No crop diversification or new techniques are adopted; risk avoidance and social conformity guide all decisions.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "mixed vegetables",
+        "season": "spring",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 6,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "A 63-year-old farmer in Quzhou County, Hebei, with no formal education follows the dominant local double-cropping system of winter wheat and summer maize on 7.5 mu of contracted land, a rotation she has practiced her entire life. Seed choices, fertilizer rates, and irrigation timing are based on village norms and local supply shop recommendations rather than agronomic guidance, resulting in moderately high nitrogen applications typical of the region. A small vegetable plot near the house supplies household food. No crop diversification or new techniques are adopted; risk avoidance and social conformity guide all decisions."
+  },
+  "elapsed_seconds": 42.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_5",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll reason as this farmer, then give the JSON.\n\n---\n\nMy thinking:\n\nI have 10.1 mu here in Quzhou. Same wheat-maize rotation I've been doing for 40 years. Two people in the house, so labor is tight \u2014 mostly just me and my wife. We have a well, that's good, water is not my biggest worry.\n\nLast year wheat gave me about 480 kg per mu, maize about 580 kg per mu. Not bad. I'll mostly do the same this year, maybe small adjustments.\n\n**Wheat (winter, about 10 mu):**\nI'll plant the improved variety, \u6d4e\u9ea6 type \u2014 the seed dealer in town sold it last year and my neighbor \u8001\u738b got good grain from it. I buy about 15 kg seed per mu.\n\nBase fertilizer before planting: I use one bag of \u590d\u5408\u80a5 15-15-15, that's 50 kg per mu. Then in spring at \u8fd4\u9752-\u62d4\u8282 (green-up to jointing), I top-dress with urea, about 20 kg per mu. So total N comes to maybe 16-17 kg from that, but I also count what's in the compound \u2014 roughly 25 kg N per mu total. P about 8 kg, K about 8 kg per mu. That's what people around me use. Spend less and the wheat looks yellow in March \u2014 I've seen it.\n\nIrrigation: I water before winter (\u51bb\u6c34), then \u6625\u704c green-up, and one at jointing-booting, and one at filling if it's dry May. Four times usually. Well water is cheap enough, the pump is mine.\n\nSpray: herbicide once in spring for \u91ce\u9ea6 and broadleaf weeds. Then one for \u869c\u866b and \u8d64\u9709\u75c5 around flowering. Sometimes a third if \u9508\u75c5 shows. Call it 2-3 times, I'll say 3.\n\nTillage: after maize I rotary-till the straw in, then plant. Rotary.\n\n**Maize (summer, same 10 mu after wheat):**\nDirect seed after wheat combine \u2014 no-till, \u8d34\u832c\u64ad\u79cd. Everyone does it this way now, saves time before the rains. Seed the \u90d1\u5355 or \u5148\u7389 hybrid, about 3-4 kg per mu.\n\nFertilizer: one bag \u590d\u5408\u80a5 at planting (50 kg/mu 15-15-15), then urea top-dress at \u5927\u5587\u53ed\u53e3 stage, about 20 kg per mu. Total N about 24-25 kg/mu, P 8 kg, K 8 kg. Maize eats a lot of N.\n\nIrrigation: summer has rain, but if July-August is dry I water once at tasseling. Usually 1-2 times. I'll plan 2.\n\nSpray: herbicide after seeding, then one spray for \u7389\u7c73\u879f and \u8349\u5730\u8d2a\u591c\u86fe \u2014 that new pest has been around. 2 times.\n\nTillage: no-till straight into wheat stubble.\n\nYields: aim for 500 kg wheat, 600 kg maize per mu. That's realistic for my land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize rotation I've done for 40 years on my 10.1 mu. For wheat I use improved seed, one bag of 15-15-15 compound at planting plus urea at green-up \u2014 about 25 kg N, 8 kg P, 8 kg K per mu \u2014 four irrigations from the well, and 2-3 sprays for aphids and scab. Maize goes in no-till right after wheat harvest with hybrid seed, same fertilizer pattern, one or two irrigations if July is dry, and sprays for borer and the new fall armyworm. My neighbors do similar amounts; cutting fertilizer to save a few hundred yuan is not worth a yellow crop. I aim for 500 kg wheat and 600 kg maize per mu, close to last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize rotation I've done for 40 years on my 10.1 mu. For wheat I use improved seed, one bag of 15-15-15 compound at planting plus urea at green-up \u2014 about 25 kg N, 8 kg P, 8 kg K per mu \u2014 four irrigations from the well, and 2-3 sprays for aphids and scab. Maize goes in no-till right after wheat harvest with hybrid seed, same fertilizer pattern, one or two irrigations if July is dry, and sprays for borer and the new fall armyworm. My neighbors do similar amounts; cutting fertilizer to save a few hundred yuan is not worth a yellow crop. I aim for 500 kg wheat and 600 kg maize per mu, close to last year."
+  },
+  "elapsed_seconds": 36.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_15",
+  "tier": 3,
+  "provider": "claude"
+}

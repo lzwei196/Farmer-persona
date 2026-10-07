@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been farming this 15 mu for 40 years. My boy moved to the city, so it's just me and the wife working the land. I do wheat and maize on the same ground \u2014 that's 10 mu in the rotation. The other 5 mu I keep in cotton because the dealer in town still buys it and the soil there is a bit lighter, not so good for grain.\n\nLet me think through each one.\n\n**Wheat (10 mu, winter).** I plant after I take the maize off in October. I use improved seed from the agri-supply shop \u2014 the same kind my neighbor Old Wang uses, he gets good crop every year. I spread compound fertilizer before sowing, about 2 bags per mu (that's 50 kg bags, 15-15-15, so roughly 7-8 kg of each N, P, K). Then in spring when it starts jointing I top-dress urea, about 20 kg per mu \u2014 that gives me the nitrogen it needs. So total N comes out about 22 kg, P about 8 kg, K about 7 kg per mu. I water 4 times \u2014 before winter, at jointing, at heading, and grain filling. Well water is fine, I have the pump. I spray 2 times for aphids and rust. Rotary after maize, no deep plough \u2014 saves time and diesel. I expect about 480 kg per mu, that's what I usually get.\n\n**Maize (10 mu, summer).** Straight after wheat harvest in June. No-till, I just drill the seed right in the wheat stubble \u2014 everyone does it now, saves a round of tractor work. Hybrid seed, I won't risk open-pollinated, yield is too much lower. I put compound fertilizer with the seed drill, about 1.5 bags per mu, then top-dress urea at the big-trumpet stage, 15 kg. Total N maybe 22 kg, P 7, K 6. I irrigate once if July is dry, maybe twice if no rain. Spray once for corn borer, sometimes twice. I get around 550 kg per mu when the weather is right.\n\n**Cotton (5 mu, spring).** I plough this ground in March \u2014 cotton wants loose soil. Use hybrid seed, Bt kind so the bollworm don't eat me alive. Put base fertilizer 2 bags compound per mu, then side-dress urea twice, 10 kg each time. Total N about 20 kg, P 8, K 8 \u2014 cotton likes potash, I don't skimp there. Irrigate 3 times. Cotton needs many sprays, I do 6 times through the season for aphids, spider mite, and bollworm even with Bt. I get maybe 240 kg seed cotton per mu. Not a lot of money in it anymore but the ground is set up for it and I'm too old to change everything.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I keep 10 mu in wheat-maize rotation and 5 mu in cotton, same as always. I use improved wheat seed and hybrid maize and cotton seed because my neighbors get better crops that way. Fertilizer rates I keep a bit on the generous side \u2014 compound at sowing plus urea top-dress \u2014 because losing yield hurts more than spending an extra bag. Wheat gets 4 waterings from the well, maize 1-2 depending on rain, cotton 3. Cotton needs many sprays for bollworm and mites. I use rotary tillage for wheat, no-till for maize after wheat, and plough for cotton. Yields I expect are what this ground gives me in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I keep 10 mu in wheat-maize rotation and 5 mu in cotton, same as always. I use improved wheat seed and hybrid maize and cotton seed because my neighbors get better crops that way. Fertilizer rates I keep a bit on the generous side \u2014 compound at sowing plus urea top-dress \u2014 because losing yield hurts more than spending an extra bag. Wheat gets 4 waterings from the well, maize 1-2 depending on rain, cotton 3. Cotton needs many sprays for bollworm and mites. I use rotary tillage for wheat, no-till for maize after wheat, and plough for cotton. Yields I expect are what this ground gives me in a normal year."
+  },
+  "elapsed_seconds": 40.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_6",
+  "tier": 3,
+  "provider": "claude"
+}

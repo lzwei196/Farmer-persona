@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the usual winter wheat and summer maize rotation. In Quzhou, this is the crop pattern I know best, it fits our climate, and it is easier for me to manage at my age than labor-heavy vegetables or risky cash crops. I want steady grain, familiar field work, and a plan that does not depend on complicated marketing. I will use improved seed instead of saving seed because I care more about stable emergence and yield than trying to cut that cost. I will plough before wheat so the soil is loose and the straw can be mixed in well, then I will use rotary tillage before summer maize because the turnaround after wheat harvest is short and I need to plant fast. I will put more fertilizer and more irrigation into wheat because our winters and springs are drier, while summer maize can use the rainy season. I will spray only when needed, but I still assume a few pesticide applications for weeds, aphids, armyworm, and common diseases because I do not want to lose yield after doing all the other work.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will plant the same 8 mu in a winter wheat and summer maize rotation because this is the most reliable system for my county, matches the local weather, and is the easiest for me to manage with the skills and labor I have. I will use improved or hybrid seed for dependable emergence and stable yield, fertilize wheat a little more heavily and irrigate it more often because the wheat season is dry, and rely more on summer rainfall for maize. I will use plough tillage before wheat and rotary tillage before maize so I can turn the land around quickly after wheat harvest. My goal this year is not to chase the highest-risk profit, but to secure steady grain production with manageable labor and reasonable input use.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will plant the same 8 mu in a winter wheat and summer maize rotation because this is the most reliable system for my county, matches the local weather, and is the easiest for me to manage with the skills and labor I have. I will use improved or hybrid seed for dependable emergence and stable yield, fertilize wheat a little more heavily and irrigate it more often because the wheat season is dry, and rely more on summer rainfall for maize. I will use plough tillage before wheat and rotary tillage before maize so I can turn the land around quickly after wheat harvest. My goal this year is not to chase the highest-risk profit, but to secure steady grain production with manageable labor and reasonable input use."
+  },
+  "elapsed_seconds": 29.0,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HC_DS_4",
+  "tier": 1,
+  "provider": "codex"
+}

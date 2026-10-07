@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 38 years old, and I have been farming here in Quzhou since I was young. I finished middle school, so I can read labels and follow extension advice, but I am not one for risky experiments. I have about 10 mu of land \u2014 that is typical for someone my age who has taken over the family plots but has not yet rented much more. \n\nThis year, I will put 8 mu into the wheat-maize rotation because that is what the land and the climate are built for on the North China Plain. The winter wheat is already in the ground from last October; I sowed Luyuan 502, an improved variety that my neighbors have had good luck with. I will give it a rotary tillage before sowing each year, four irrigations (including the winter irrigation that protects the seedlings from cold damage), and about 12 kg of nitrogen per mu along with some compound fertilizer for phosphorus and potassium. I spray twice for insects, once for weeds, and once for fungus \u2014 wheat diseases can spread fast if you are lazy. I expect around 1,000 jin per mu, maybe a bit more if the spring rain cooperates.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize. Everyone here uses Denghai 605 hybrid seed; it is hardy and yields well. I do not till for maize \u2014 I seed directly into the wheat stubble. That saves fuel, keeps moisture in the ground, and the stubble helps the maize seedlings. Maize needs less fertilizer than wheat because the soil is still warm and active; I top-dress with urea and give it two irrigations, usually around jointing and filling. Two insecticide sprays and one herbicide pass are enough. If the weather is normal, I should get about 1,100 jin per mu.\n\nThe other 2 mu I will plant with cotton \u2014 Guoxinmian. Cotton prices have been decent, and my wife can help with the picking in autumn. Cotton needs rotary tillage in spring, more pesticide sprays because bollworms are a constant headache, and a couple of irrigations during flowering. I expect about 500 jin of seed cotton per mu. It is more work than maize, but the cash income helps with the children's school fees.\n\nI do not bother with fancy new crops like stevia or greenhouse vegetables. I have seen too many neighbors lose money when prices crash. Wheat-maize is boring, but it feeds my family and the state grain station buys it at a stable price. That is how I sleep soundly at night.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 1.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 5,\n      \"phosphorus_kg_per_mu\": 1.5,\n      \"potassium_kg_per_mu\": 1.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have 10 mu of land and stick to what works: 8 mu of wheat-maize rotation for stable grain income and food security, plus 2 mu of cotton for extra cash. Wheat gets rotary tillage, four irrigations, moderate fertilizer, and four pesticide applications. Maize is no-till planted right after wheat harvest with lighter fertilizer and three pesticide passes. Cotton is more labor-intensive but profitable, so I keep a small plot with rotary tillage and five pesticide sprays. I use proven improved and hybrid varieties that my neighbors trust, and I avoid risky specialty crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 1.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 5,
+        "phosphorus_kg_per_mu": 1.5,
+        "potassium_kg_per_mu": 1.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have 10 mu of land and stick to what works: 8 mu of wheat-maize rotation for stable grain income and food security, plus 2 mu of cotton for extra cash. Wheat gets rotary tillage, four irrigations, moderate fertilizer, and four pesticide applications. Maize is no-till planted right after wheat harvest with lighter fertilizer and three pesticide passes. Cotton is more labor-intensive but profitable, so I keep a small plot with rotary tillage and five pesticide sprays. I use proven improved and hybrid varieties that my neighbors trust, and I avoid risky specialty crops."
+  },
+  "elapsed_seconds": 151.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_4",
+  "tier": 1,
+  "provider": "kimi"
+}

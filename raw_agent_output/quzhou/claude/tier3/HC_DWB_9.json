@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land for 40 years, so I know what works here in Quzhou. My 9 mu is not big, but with just two of us in the household, I manage it myself with some hired help at wheat harvest and cotton picking.\n\nI divide my land this way: 6 mu in the wheat-maize rotation, and 3 mu in cotton. The wheat-maize double crop is my main income \u2014 the ground stays busy all year. Cotton I keep because the price has been decent and my wife handles the picking.\n\n**Winter wheat (6 mu):** I will plant Jimai 22, an improved variety \u2014 my neighbors got 500 kg last year with it. I sow around October 8, base fertilizer is diammonium phosphate 25 kg plus urea 10 kg per mu before ploughing. Topdress 15 kg urea per mu at jointing stage in March. That gives me about 20 kg N, 11 kg P\u2082O\u2085, and 6 kg K\u2082O per mu (I add a bit of compound fertilizer). I irrigate 3 times \u2014 before winter, jointing, and grain filling. Two pesticide sprays: one for aphids/powdery mildew at booting, one for wheat midge if I see them. Plough before sowing to break up the maize stubble. I expect 500 kg/mu.\n\n**Summer maize (6 mu):** Right after wheat harvest in June, I plant Zhengdan 958, a hybrid \u2014 reliable here. No-tillage direct seeding into wheat stubble saves time and moisture. Base fertilizer 40 kg compound (15-15-15) per mu at sowing, then topdress 20 kg urea at big trumpet stage. That works out to 24 kg N, 6 kg P, 6 kg K per mu. I irrigate twice if the rain is poor \u2014 at seedling and tasseling. One pesticide spray for corn borer. Expect 550 kg/mu.\n\n**Cotton (3 mu):** Bt cotton hybrid seed, I buy from the same dealer every year. I plough deep in March, apply 30 kg compound fertilizer and 15 kg urea as base, then topdress 15 kg urea at flowering and 10 kg at boll-setting. Total about 22 kg N, 7 kg P, 10 kg K per mu \u2014 cotton likes potassium. Irrigate 3 times from well. Pesticide 4 times \u2014 aphids early, then bollworm watching even with Bt, plus mite control in summer. Expect 280 kg/mu seed cotton.\n\nI keep fertilizer rates slightly above what the extension station suggests. A bad harvest takes years to recover from; a bag of extra urea is 130 yuan I can afford.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split 9 mu into 6 mu wheat-maize rotation and 3 mu cotton, the same layout I have used for years in Quzhou. I pick improved wheat (Jimai 22) and hybrid maize (Zhengdan 958) because neighbors get reliable yields from them, and Bt cotton for the pest protection. Fertilizer rates are slightly above the extension recommendation \u2014 about 20 kg N on wheat, 24 kg on maize, 22 kg on cotton \u2014 because losing yield hurts more than a bag of extra urea. I irrigate from my well 3 times on wheat, 2 on maize, 3 on cotton, and plough for wheat and cotton but use no-till for summer maize into wheat stubble to save moisture and time. Pesticide is minimal on the grains but heavier on cotton where bollworm and aphids still need watching.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split 9 mu into 6 mu wheat-maize rotation and 3 mu cotton, the same layout I have used for years in Quzhou. I pick improved wheat (Jimai 22) and hybrid maize (Zhengdan 958) because neighbors get reliable yields from them, and Bt cotton for the pest protection. Fertilizer rates are slightly above the extension recommendation \u2014 about 20 kg N on wheat, 24 kg on maize, 22 kg on cotton \u2014 because losing yield hurts more than a bag of extra urea. I irrigate from my well 3 times on wheat, 2 on maize, 3 on cotton, and plough for wheat and cotton but use no-till for summer maize into wheat stubble to save moisture and time. Pesticide is minimal on the grains but heavier on cotton where bollworm and aphids still need watching."
+  },
+  "elapsed_seconds": 37.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_9",
+  "tier": 3,
+  "provider": "claude"
+}

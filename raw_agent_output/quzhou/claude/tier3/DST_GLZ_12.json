@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working this land for 55 years. My wife and I only have 5 mu left \u2014 the children went to the city long ago. I do what I know works. Last year's harvest was fair, so I will do about the same this year.\n\nMy main land is wheat-maize \u2014 I plant wheat in October and then maize right after the wheat comes off in June. Four mu I keep for this rotation. The other one mu near the road I still plant cotton like I always did, even though cotton is a lot of work for us old people \u2014 but I know how to grow it.\n\nFor wheat, I buy two bags of compound fertilizer (the 15-15-15 kind, 50 jin each bag) per mu before plowing \u2014 that is what the shop sells and what everyone in the village uses. Then in spring when the wheat turns green, I broadcast one bag of urea per mu with the irrigation water. I water three times: once before winter, once at green-up, and once when the grain is filling. I spray twice \u2014 once for aphids, once for rust if I see yellow spots. I use rotary tillage because the hire-man with the machine does it cheap, 40 yuan per mu.\n\nFor maize, I do not plow \u2014 I just drill the seed right into the wheat stubble, saves work and time. I buy hybrid seed from the same dealer every year, the \"Zhengdan\" kind my neighbor also plants. I put one bag of compound fertilizer per mu at sowing, then side-dress urea when the maize is knee-high. I water once or twice if the rain does not come. I spray for borer and armyworm.\n\nFor cotton, I plough deep in spring because cotton needs loose soil. I use improved seed. Cotton eats a lot of spray \u2014 bollworm, aphid, mite \u2014 I spray maybe seven or eight times through the summer. That is the cost of cotton. Yield is not what it was twenty years ago but the price is okay.\n\nI would rather put a little extra fertilizer than lose yield. A bag costs 120 yuan, but losing 100 jin of grain costs more.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I am an old farmer with 5 mu and only my wife to help. I put 4 mu into wheat-maize like the village does and keep 1 mu of cotton because I know how. I buy two bags of compound fertilizer per mu for wheat and one bag for maize at sowing, then top-dress urea with irrigation water \u2014 same as last year, same as the neighbors. I would rather spend a bit more on fertilizer than risk a thin harvest. Cotton I spray many times because bollworm will eat everything if I do not. I use rotary tillage for wheat, no-till drill for maize to save time, and deep plough only for the cotton ground.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I am an old farmer with 5 mu and only my wife to help. I put 4 mu into wheat-maize like the village does and keep 1 mu of cotton because I know how. I buy two bags of compound fertilizer per mu for wheat and one bag for maize at sowing, then top-dress urea with irrigation water \u2014 same as last year, same as the neighbors. I would rather spend a bit more on fertilizer than risk a thin harvest. Cotton I spray many times because bollworm will eat everything if I do not. I use rotary tillage for wheat, no-till drill for maize to save time, and deep plough only for the cotton ground."
+  },
+  "elapsed_seconds": 49.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_12",
+  "tier": 3,
+  "provider": "claude"
+}

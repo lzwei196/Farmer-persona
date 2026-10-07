@@ -1,0 +1,66 @@
+{
+  "raw_response": "I have been farming this land for 35 years. I know this soil. I know this weather. My husband's brother works in the city now, so it is mostly me managing the fields with my son some weekends. I have to be practical about labor.\n\nMy 14 mu breaks like this in my head: 9 mu stays in the wheat-maize rotation like always. That is my backbone \u2014 wheat feeds us through winter, maize brings cash in autumn. The other 5 mu I split between chili and cotton. I keep a little cotton because I know how to grow it, but I am not expanding it. Picking cotton alone is hard on my back and the price has been uncertain. Chili I trust more \u2014 there is always a buyer at the local market and I know the variety I save seeds from every year.\n\nFor wheat, I buy improved seed from the village supply store like I have for the past ten years. I put down compound fertilizer when I sow, then top-dress urea at jointing. I irrigate three times: once before winter freeze, once at jointing, once at heading. That is what keeps my yield steady. I use rotary tillage after maize harvest to break up the stubble.\n\nFor maize I drill it straight into the wheat stubble \u2014 no plowing needed, saves time and diesel. Hybrid seed, always. The summer rains usually help so I only pump from the well twice unless it is a dry year.\n\nFor chili I use my own saved seed from the best plants last autumn. More water, more fertilizer. Disease can come fast so I spray four times through the season.\n\nFor cotton I stick with the hybrid Bt seed from the shop \u2014 fewer bollworm sprays needed, which matters when I am working alone.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 56-year-old experienced farmer in Quzhou County allocates 9 mu to the dominant wheat-maize double-cropping rotation using improved and hybrid seed respectively, relying on well irrigation and standard nitrogen-heavy fertilization consistent with North China Plain norms; 3 mu go to chili using saved traditional seed with intensive water and pest management for the local market; and 2 mu remain in Bt hybrid cotton, kept small due to household labor constraints from off-farm employment, with reduced pesticide burden from the Bt trait. All decisions reflect 35 years of accumulated local practice rather than external advice.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 350
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 56-year-old experienced farmer in Quzhou County allocates 9 mu to the dominant wheat-maize double-cropping rotation using improved and hybrid seed respectively, relying on well irrigation and standard nitrogen-heavy fertilization consistent with North China Plain norms; 3 mu go to chili using saved traditional seed with intensive water and pest management for the local market; and 2 mu remain in Bt hybrid cotton, kept small due to household labor constraints from off-farm employment, with reduced pesticide burden from the Bt trait. All decisions reflect 35 years of accumulated local practice rather than external advice."
+  },
+  "elapsed_seconds": 57.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_11",
+  "tier": 2,
+  "provider": "claude"
+}

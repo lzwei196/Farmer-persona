@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 36 years. I know what my fields want. Let me tell you how I'll do it this year, same as most years.\n\nI have 15 mu. I split it like this: 10 mu goes wheat then maize, one after the other. The other 5 mu is cotton. Cotton takes the whole summer so I can't double-crop it. This is what I've always done, what my neighbors do.\n\nFor my wheat \u2014 I plant in October after the maize comes off. I use the improved seed from the dealer in town. Everyone buys from him. I don't know the name but it gives good heads. I spread about 4 bags of compound fertilizer before plowing \u2014 that's maybe 200 jin per mu. Then I top-dress with urea when it greens up in spring, about half a bag per mu. If I put too little, the wheat turns yellow and the neighbors will see. Better to use a little extra. I water 3 times from the well \u2014 after planting, at jointing, and at heading. I spray for aphids once or twice, and once for the disease that makes heads white.\n\nFor maize after wheat \u2014 I plant right after wheat harvest in June, no time to plow, just push seed in with the machine. Hybrid seed, the dealer gives me the same kind as last year since it did fine. I put compound fertilizer in the row when I plant, then urea at knee-high. I water once or twice if no rain. Spray once for borer worms.\n\nFor cotton \u2014 this is harder. Cotton eats more fertilizer and needs many sprays for the bollworm and aphid. I plow in spring, put manure if I have it, plus compound fertilizer. I irrigate 3-4 times. I spray 6-7 times through summer, that's just how cotton is. Without spraying you get nothing. Yields are less than they used to be, price is not good, but I keep some because I know how to grow it.\n\nI am 60, it's just me and one other at home. I do what works. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"mazie\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I farm 15 mu \u2014 10 mu goes wheat then maize like everyone in the village, 5 mu stays in cotton because cotton takes all summer. I buy seed and fertilizer from the same dealer in town, same as last year because it worked. I put a little extra fertilizer rather than too little \u2014 a bad harvest would ruin me, wasting a bag of urea is just money. I water from my well 3 times for wheat, less for maize if rain comes. Cotton needs many sprays for bollworm, no way around it. I am 60 and it's just two of us at home, so I do what I know works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "mazie",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I farm 15 mu \u2014 10 mu goes wheat then maize like everyone in the village, 5 mu stays in cotton because cotton takes all summer. I buy seed and fertilizer from the same dealer in town, same as last year because it worked. I put a little extra fertilizer rather than too little \u2014 a bad harvest would ruin me, wasting a bag of urea is just money. I water from my well 3 times for wheat, less for maize if rain comes. Cotton needs many sprays for bollworm, no way around it. I am 60 and it's just two of us at home, so I do what I know works."
+  },
+  "elapsed_seconds": 36.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_12",
+  "tier": 3,
+  "provider": "claude"
+}

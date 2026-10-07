@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 67 years old and I have been farming these fields in Quzhou for more than 50 years. My family has about 9 mu of land, and I know every inch of it. At my age, I do not have the strength to chase after newfangled crops or take big risks, so I stick to what has always put food on the table and money in my pocket.\n\nThis year, just like last year, I will plant winter wheat on 7 mu of my best land. I will sow *Jimai 22* \u2014 it is an improved variety that my neighbors and I have used for years, and it gives me a steady yield of about 1,000 jin per mu. Before sowing in October, I do rotary tillage to break up the soil and bury the maize stubble properly. I put down compound fertilizer as basal dressing \u2014 about 100 jin per mu \u2014 and top-dress with urea in the spring when the wheat turns green. All together that comes to about 20 jin of nitrogen per mu, plus 11 jin of phosphate and 5 jin of potash. Wheat is thirsty, so I irrigate four times: before winter, at green-up, at jointing, and at grain filling. I spray three or four times for aphids and weeds.\n\nAfter I cut the wheat in early June, I will plant *Denghai 605* hybrid maize on those same 7 mu. I use no-tillage \u2014 I just drill the seed straight into the wheat stubble. It saves diesel, saves my back, and the yield is good, about 1,150 jin per mu. Maize does not need as much nitrogen as wheat \u2014 about 12 jin per mu from compound fertilizer is enough, plus 3 jin of phosphate and 3 jin of potash. I irrigate twice in the summer if the rains are short, and spray two or three times for corn borers and weeds.\n\nI have also kept 2 mu for cotton. I know it is hard work with all the spraying, but the cotton price has been steady and my neighbor helps me pick it at harvest. I grow a hybrid cotton variety, rotary till the plot in spring, and apply compound fertilizer with a bit more phosphorus and potassium \u2014 about 9 jin of nitrogen, 8 jin of phosphate, and 7.5 jin of potash per mu. I irrigate twice and spray about 15 times through the season to keep the bollworms away. I expect about 500 jin of seed cotton per mu.\n\nThat is my plan: wheat-maize double cropping on 7 mu, cotton on 2 mu. It is what I know, and at my age, that is the safest bet.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 9,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I am a 67-year-old farmer with primary schooling and decades of experience on the North China Plain. I manage about 9 mu of land and rely on the tried-and-true wheat-maize double-cropping system on 7 mu, using rotary tillage for wheat and no-tillage for summer maize to save labor and fuel. I apply compound fertilizer and urea at rates my neighbors and I have refined over the years, irrigate wheat four times and maize twice, and control pests with a few well-timed sprays. I keep 2 mu of cotton for extra cash income, even though it requires more labor and many pesticide applications, because I have grown it for years and know how to manage it.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 9,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I am a 67-year-old farmer with primary schooling and decades of experience on the North China Plain. I manage about 9 mu of land and rely on the tried-and-true wheat-maize double-cropping system on 7 mu, using rotary tillage for wheat and no-tillage for summer maize to save labor and fuel. I apply compound fertilizer and urea at rates my neighbors and I have refined over the years, irrigate wheat four times and maize twice, and control pests with a few well-timed sprays. I keep 2 mu of cotton for extra cash income, even though it requires more labor and many pesticide applications, because I have grown it for years and know how to manage it."
+  },
+  "elapsed_seconds": 147.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_12",
+  "tier": 1,
+  "provider": "kimi"
+}

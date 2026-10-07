@@ -1,0 +1,74 @@
+{
+  "raw_response": "Aiyo, my fields. Same six mu my father left me, I've worked them twenty-five years. Don't need no book to tell me how. Wheat in winter, maize in summer \u2014 that's the way, that's how everyone around here does it.\n\nThe wheat is in the ground already, planted last October. Soon as it warms up proper, I spread urea \u2014 about half a bag per mu, that's twenty kilos. If the color looks off, maybe a bit more. Neighbor Zhang, he always puts more than me, his yield's a little higher but he spends more too. I stick with what I know. I don't waste.\n\nIrrigate the wheat twice usually \u2014 once late winter if dry, once at jointing when the stalk comes up. If the spring rain comes good, maybe skip one. The well's got a meter now, costs forty yuan a mu each time. Adds up quick on six mu. Before harvest I walk and look for aphids \u2014 if I see yellow bugs on the heads I spray, just a bit of stuff, fifteen twenty yuan worth. Then the hired combine comes, sixty a mu, done in a few hours. Expect four hundred, maybe four-twenty kilos a mu \u2014 that's what I got last year, year before about the same.\n\nThen quick, right after wheat comes off in June \u2014 no time to rest. Three, four days later the seeder man comes. Fifty yuan a mu, he drills in the maize seed with the fertilizer, one bag of compound per mu. Hybrid seed, costs thirty a mu, one little sack covers my field. Middle of summer when the maize is waist-high, I side-dress urea, about twenty-five kilos a mu. That's the one that matters \u2014 maize is hungry. Irrigate once after planting if dry, maybe again at tasseling. Spray once for the corn borer \u2014 saw bad damage three years back on Old Liu's field, scared me enough I never skip.\n\nHarvest the maize by hand \u2014 me, my wife, my son if he comes back from the city. Takes about a week. Expect four-fifty, five hundred kilos if the rain comes right.\n\nNot much changes year to year. No reason to change what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"early-mid October 2026 (next wheat); current crop planted October 2025\",\n      \"harvest_date\": \"early-mid June 2026\",\n      \"seed_type\": \"local, partly saved from last year's harvest plus some bought fresh\",\n      \"seed_cost_yuan_per_mu\": 70,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 16,\n      \"phosphorus_total_kg_per_mu\": 7,\n      \"potassium_total_kg_per_mu\": 7,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag of 15-15-15 compound per mu at planting in October; half a bag of urea (~20 kg) topdressed at spring greenup; maybe a little more at jointing if the crop looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"hired rotovator with tractor before planting, about 60 yuan per mu\",\n      \"labor_family_days\": 14,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 6.0,\n      \"planting_date\": \"mid-June 2026, right after wheat harvest\",\n      \"harvest_date\": \"late September to early October 2026\",\n      \"seed_type\": \"hybrid, bought fresh each year from the village shop\",\n      \"seed_cost_yuan_per_mu\": 30,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 18,\n      \"phosphorus_total_kg_per_mu\": 7,\n      \"potassium_total_kg_per_mu\": 7,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"one bag of compound fertilizer per mu drilled in at planting; side-dress urea about 25 kg per mu when the stalk is waist-high\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"insecticide\"],\n      \"tillage_method\": \"no-till, hired seeder-planter drills into wheat stubble, about 50 yuan per mu\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 470\n    }\n  ],\n  \"total_input_cost_yuan\": 5600,\n  \"reasoning_summary\": \"Six mu, same wheat-maize rotation twenty-five years. Family does the work, I hire the combine and the seeder when I must. I don't push the fertilizer \u2014 enough to get a decent crop, not so much I waste money my family needs for other things. Irrigation costs real money with the meter, so I watch the sky first. Yields like last year are fine with me \u2014 I'd rather a steady 420 on wheat and 470 on maize than gamble for more.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 6.0,
+        "planting_date": "early-mid October 2026 (next wheat); current crop planted October 2025",
+        "harvest_date": "early-mid June 2026",
+        "seed_type": "local, partly saved from last year's harvest plus some bought fresh",
+        "seed_cost_yuan_per_mu": 70,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 16,
+        "phosphorus_total_kg_per_mu": 7,
+        "potassium_total_kg_per_mu": 7,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag of 15-15-15 compound per mu at planting in October; half a bag of urea (~20 kg) topdressed at spring greenup; maybe a little more at jointing if the crop looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "hired rotovator with tractor before planting, about 60 yuan per mu",
+        "labor_family_days": 14,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 16,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 6.0,
+        "planting_date": "mid-June 2026, right after wheat harvest",
+        "harvest_date": "late September to early October 2026",
+        "seed_type": "hybrid, bought fresh each year from the village shop",
+        "seed_cost_yuan_per_mu": 30,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 18,
+        "phosphorus_total_kg_per_mu": 7,
+        "potassium_total_kg_per_mu": 7,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "one bag of compound fertilizer per mu drilled in at planting; side-dress urea about 25 kg per mu when the stalk is waist-high",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "insecticide"
+        ],
+        "tillage_method": "no-till, hired seeder-planter drills into wheat stubble, about 50 yuan per mu",
+        "labor_family_days": 18,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 470,
+        "nitrogen_kg_per_mu": 18,
+        "area_mu": 6.0,
+        "expected_yield_kg_per_mu": 470,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7
+      }
+    ],
+    "total_input_cost_yuan": 5600,
+    "reasoning_summary": "Six mu, same wheat-maize rotation twenty-five years. Family does the work, I hire the combine and the seeder when I must. I don't push the fertilizer \u2014 enough to get a decent crop, not so much I waste money my family needs for other things. Irrigation costs real money with the meter, so I watch the sky first. Yields like last year are fine with me \u2014 I'd rather a steady 420 on wheat and 470 on maize than gamble for more."
+  },
+  "elapsed_seconds": 104.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_10",
+  "tier": 4,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is about 5 mu. I've farmed this same plot since I was a young woman. My mother farmed it before me. Everyone in our village grows winter wheat and summer corn \u2014 that's what this land is for, that's what the soil knows, and that's what the grain buyers come to collect. I wouldn't grow cotton or vegetables. I don't know how to sell them, and I can't afford a bad year.\n\nFor the wheat, I plant in October after the corn is off. I buy the seed from the village shop \u2014 the same improved variety I've used for several years. It does well. I put down the compound fertilizer at sowing, then spread urea in the spring when the wheat starts to green up. I irrigate before sowing if the soil is dry, again before winter sets in, and once more at jointing. Three times is usually enough. I spray for weeds in early spring and once more if aphids get bad before harvest.\n\nFor the corn, I seed it right after wheat harvest in June \u2014 no time to waste. I don't turn the soil; I just open a furrow and drop the seed in. The summer rains help a lot, so I only need to water once or twice if it's a dry year. I put urea down when the corn is knee-high. I spray herbicide early and watch for corn borer.\n\nI don't experiment. I do what works. My expected yields are modest but reliable.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 530\n    }\n  ],\n  \"reasoning_summary\": \"A 50-year-old woman with no formal schooling in Quzhou County, Hebei, defaults to the winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. She farms 5 mu using improved wheat seed and hybrid maize seed purchased from the village shop, applies compound fertilizer at sowing plus urea top-dressing at key growth stages, irrigates wheat three times and maize twice drawing on groundwater, uses no-till direct seeding for summer maize to save time and fuel after the wheat harvest, and applies pesticides twice per crop for weeds and insects. She follows the same practices as her neighbors and her mother before her, prioritizing reliability over optimization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 530
+      }
+    ],
+    "reasoning_summary": "A 50-year-old woman with no formal schooling in Quzhou County, Hebei, defaults to the winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. She farms 5 mu using improved wheat seed and hybrid maize seed purchased from the village shop, applies compound fertilizer at sowing plus urea top-dressing at key growth stages, irrigates wheat three times and maize twice drawing on groundwater, uses no-till direct seeding for summer maize to save time and fuel after the wheat harvest, and applies pesticides twice per crop for weeds and insects. She follows the same practices as her neighbors and her mother before her, prioritizing reliability over optimization."
+  },
+  "elapsed_seconds": 48.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_13",
+  "tier": 1,
+  "provider": "claude"
+}

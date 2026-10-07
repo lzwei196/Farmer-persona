@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 44 years old and I have been farming our 8 mu in Quzhou County since I married my husband over twenty years ago. I only finished primary school, but I know this land well. My husband now does construction work in Handan when he can find it, so I am the one making the day-to-day decisions about what to plant and how much to spend on inputs. We are not rich, so I cannot afford to waste money on things that might not work. I watch what my neighbors do, especially Auntie Wang and old Brother Liu down the road, because they have been farming here longer than me and they usually know what is safe.\n\nThis year I will keep my main fields in the wheat-maize double crop and keep a small piece in cotton. I have 8 mu in total. I will put 6 mu into winter wheat followed by summer maize, and 2 mu into cotton. I thought about planting more cotton because the price was okay last year, but Auntie Wang planted 4 mu of cotton and told me the spraying costs almost ate up her profits. Wheat and maize are safer\u2014we eat the flour, the maize sells steadily to the pig buyers, and even if prices dip we will not go hungry.\n\nFor the 6 mu of winter wheat, I will plant the improved seed Jimai 22, which is what everyone in our village uses now. I will rotary till the soil before planting. I will put down about 16 kg of nitrogen per mu, plus some compound fertilizer that gives roughly 6 kg of phosphorus and 4 kg of potassium. I will irrigate three times\u2014once at jointing, once at heading, and once at grain filling. The tube-well water is not cheap anymore, but three times is what this land needs. I will spray pesticide three times: herbicide once and insecticide twice. If the weather is normal I expect about 500 kg per mu.\n\nRight after we harvest the wheat in early June, I will plant hybrid maize, Denghai 605, the same seed my cousin uses. The window between wheat harvest and maize planting is only a few days, so there is no time to till. I will do no-tillage planting. I will apply about 10 kg of nitrogen per mu, plus a little starter fertilizer for phosphorus and potassium. Maize needs two irrigations, and I will spray three times for weeds and bugs. I expect about 550 kg per mu if the summer rains do not fail.\n\nFor the 2 mu of cotton, I will rotary till and plant the improved GK variety. Cotton needs more pest control than grain, so I will spray about five times in total. I will irrigate twice and use about 10 kg of nitrogen per mu, plus some compound fertilizer for phosphorus and potassium. I hope for around 300 kg per mu of seed cotton.\n\nI am keeping things mostly the same as last year. Change is risky, and with my husband\u2019s wages uncertain, I need to make sure we have enough wheat to eat and enough cash from the maize and cotton to cover our expenses.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou County and rely on experience and what my neighbors do. I put 6 mu into wheat-maize double cropping for food security and stable income, and 2 mu into cotton for cash, but not more because cotton spraying costs are high. I use improved wheat seed and hybrid maize, rotary till for wheat and cotton, and no-tillage for maize due to the tight turnaround. I apply moderate fertilizer and irrigation, preferring to stay close to what worked last year rather than take risks.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou County and rely on experience and what my neighbors do. I put 6 mu into wheat-maize double cropping for food security and stable income, and 2 mu into cotton for cash, but not more because cotton spraying costs are high. I use improved wheat seed and hybrid maize, rotary till for wheat and cotton, and no-tillage for maize due to the tight turnaround. I apply moderate fertilizer and irrigation, preferring to stay close to what worked last year rather than take risks."
+  },
+  "elapsed_seconds": 241.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_14",
+  "tier": 1,
+  "provider": "kimi"
+}

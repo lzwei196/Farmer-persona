@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 51 years old and have farmed these 5 mu in Quzhou for 30 years. My household is just me and my wife, and we both pick up off-farm work when we can, so I have to be careful with labor. I have a well, which means I can pump water when the crops need it, but I do not waste electricity on unnecessary irrigation.\n\nMy cropping system is cotton, but with only two of us to do the work, I keep cotton to 1 mu. It is labor-intensive \u2014 planting with plastic film, spraying, and especially picking all take hands. I will rotary till that plot and sow my kangchongmian (Bt cotton) around early April. I will put down 80 jin of 15-15-15 compound fertilizer as basal dressing. Cotton does not need much water, so I will irrigate only once during the season, but I will watch the weather. Even with Bt cotton, aphids and mites come, so I will spray insecticide about nine times and herbicide once \u2014 roughly ten applications in total. I also apply growth regulators to keep the plants from getting too tall. I expect about 550 jin of seed cotton per mu, which gives me steady cash.\n\nOn the other 4 mu, I have winter wheat already in the ground from last autumn. I sowed improved variety seeds at 30 jin per mu after rotary tilling. Now, at the start of the growing season, I will topdress with urea when the wheat greens up. The wheat gets three irrigations \u2014 winter water, jointing stage, and grain filling \u2014 all from the well. I spray once for insects and once for weeds. I expect about 1100 jin per mu at harvest in early June. I keep most of it for our own flour.\n\nImmediately after the wheat comes off, I plant summer maize on the same 4 mu. I use Weike 118 hybrid seed. I do not till \u2014 I plant directly into the stubble to save time and labor before the summer rains arrive. I apply compound fertilizer at sowing. I irrigate three times if the weather is dry, and I spray three times for insects plus once for weeds. I expect about 1250 jin per mu by September. This rotation has never failed me.\n\nI stick to this plan because it balances cash and grain with the labor I have. Cotton pays well but takes time; wheat and maize feed us and bring in extra income without needing me in the field every single day.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12.0,\n      \"phosphorus_kg_per_mu\": 12.0,\n      \"potassium_kg_per_mu\": 12.0,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 7.2,\n      \"phosphorus_kg_per_mu\": 5.5,\n      \"potassium_kg_per_mu\": 1.3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 7.0,\n      \"phosphorus_kg_per_mu\": 1.5,\n      \"potassium_kg_per_mu\": 1.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 625\n    }\n  ],\n  \"reasoning_summary\": \"With only two people in my household and off-farm work taking some of our time, I keep cotton to 1 mu because it is labor-intensive, while I rotate wheat and maize on the other 4 mu for grain and feed. I rely on my well for irrigation but only water when crops truly need it. I use improved seeds for cotton and wheat, and hybrid seed for maize. I rotary till before cotton and wheat, but plant maize without tillage after wheat harvest to save labor and catch the summer rains. This balance of cash crops and grain has worked for me for many years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12.0,
+        "phosphorus_kg_per_mu": 12.0,
+        "potassium_kg_per_mu": 12.0,
+        "irrigation_times": 1,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 7.2,
+        "phosphorus_kg_per_mu": 5.5,
+        "potassium_kg_per_mu": 1.3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 7.0,
+        "phosphorus_kg_per_mu": 1.5,
+        "potassium_kg_per_mu": 1.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 625
+      }
+    ],
+    "reasoning_summary": "With only two people in my household and off-farm work taking some of our time, I keep cotton to 1 mu because it is labor-intensive, while I rotate wheat and maize on the other 4 mu for grain and feed. I rely on my well for irrigation but only water when crops truly need it. I use improved seeds for cotton and wheat, and hybrid seed for maize. I rotary till before cotton and wheat, but plant maize without tillage after wheat harvest to save labor and catch the summer rains. This balance of cash crops and grain has worked for me for many years."
+  },
+  "elapsed_seconds": 246.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_14",
+  "tier": 2,
+  "provider": "kimi"
+}

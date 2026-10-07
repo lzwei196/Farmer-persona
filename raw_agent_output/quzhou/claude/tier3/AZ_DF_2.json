@@ -1,0 +1,53 @@
+{
+  "raw_response": "Fifty years I been working this same ground. My father farmed here, I farmed here, and I do what I always do. I don't change much. Changing is risky\u2014you never know if the new thing works, but you know if the old thing fails.\n\nMy 12 mu I split like this: 7 mu is my wheat-maize ground. Winter I plant wheat, summer after I cut it I put maize on the same soil. Then I got 5 mu separate for cotton. That cotton ground has been cotton ground for thirty years. Cotton is hard work, but the money is okay.\n\nFor the **wheat**, I go to the village supply shop in October before planting. I buy 7 bags of compound fertilizer\u2014the 100-jin bags, that 15-15-15 kind\u2014one bag per mu. I spread it all before I seed. Then in March when the wheat is growing tall and hungry, I throw about 15 jin of urea per mu on top. That is what my neighbor Old Zhang does, and his wheat is as good as mine. I water 3 times: before the ground freezes, in spring when it is shooting up, and when the grain is filling out. I spray twice for aphids and rust. After the maize in autumn, I run the rotary tiller to break up the stalks and loosen the soil before I seed wheat.\n\nFor **maize**, right after wheat harvest in June, I go straight into the ground\u2014no tilling, just seed into the stubble. Everyone here does this now. Hybrid seed from the village shop. I put down some compound when I seed, then around when the stalks reach my shoulder, I come back with 20 jin of urea per mu. I water once or twice depending on how the rain comes. Maize doesn't need as much work. Two sprays for the stem borer.\n\n**Cotton** is the hardest and the most worrying. In spring I plow the cotton ground deep\u2014proper plow, not just rotary. I plant improved seed, the kind the town shop sells. I fertilize several times through the season. I worry most about bollworm. If I skip a spray or spray late, the worm gets into the bolls and half the harvest is gone. I saw this happen to my cousin two years back. He lost almost everything. So I spray 5 times on the cotton, sometimes more if I see the moths coming. I water 4 times with the pump.\n\nI don't change my quantities much year to year. A little extra fertilizer means I don't lose sleep about yield. A bad harvest is a real disaster. Wasting some fertilizer is just money\u2014bad, but survivable.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer in Quzhou County with no formal education allocates his 12 mu as 7 mu wheat-maize rotation and 5 mu cotton, following fifty years of unchanged practice and copying trusted neighbors. Fertilizer decisions are anchored to bags purchased at the village shop\u2014one bag of compound per mu for wheat at planting plus urea in spring, compound plus urea topdress for maize at jointing, and multiple applications across the cotton season. He errs toward slightly heavier inputs rather than risk yield loss, since a failed harvest is a household disaster while excess fertilizer is merely a cost. Cotton receives the most pesticide attention due to a vivid memory of a neighbor's catastrophic bollworm loss. Irrigation relies on the household well pump, applied at standard growth-stage timings he learned by watching others.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer in Quzhou County with no formal education allocates his 12 mu as 7 mu wheat-maize rotation and 5 mu cotton, following fifty years of unchanged practice and copying trusted neighbors. Fertilizer decisions are anchored to bags purchased at the village shop\u2014one bag of compound per mu for wheat at planting plus urea in spring, compound plus urea topdress for maize at jointing, and multiple applications across the cotton season. He errs toward slightly heavier inputs rather than risk yield loss, since a failed harvest is a household disaster while excess fertilizer is merely a cost. Cotton receives the most pesticide attention due to a vivid memory of a neighbor's catastrophic bollworm loss. Irrigation relies on the household well pump, applied at standard growth-stage timings he learned by watching others."
+  },
+  "elapsed_seconds": 113.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_2",
+  "tier": 3,
+  "provider": "claude"
+}

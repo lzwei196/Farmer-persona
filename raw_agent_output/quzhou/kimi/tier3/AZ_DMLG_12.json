@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 40 mu in Quzhou for 6 years now. I never went to school, so everything I know I learned by doing it myself and watching Old Wang and the others around me. Last year my wheat made about 500-some jin per mu and my maize made over 600 jin. This year I will do about the same \u2014 maybe a little more fertilizer \u2014 because cutting back is too risky. On 40 mu I can handle wasting some fertilizer, but a bad harvest means real trouble.\n\nFor wheat, I plant in October. After the maize comes out, I hire the rotary tiller to go over the field. I buy the improved wheat seed from the same dealer as my neighbors \u2014 I do not know the exact name, but it is the same kind everyone here plants. For base fertilizer, I spread one big bag of compound fertilizer per mu, that is 100 jin. Then in spring when the wheat turns green, I topdress with half a bag of urea per mu, and at heading I put another 20 jin of urea. That is about 40 jin of urea total per mu. I irrigate four times from the well: winter water, green-up water, jointing water, and one more when the grain is filling. I spray pesticide three times, mainly for aphids and rust. I expect around 550 kg per mu if the weather is decent.\n\nFor maize, after we cut the wheat in early June there is no time to plough. I plant hybrid maize seed directly into the wheat stubble \u2014 no-tillage. I use Zhengdan 958 or whatever hybrid the dealer recommends, the same one my neighbors plant. At planting I put one bag of compound fertilizer per mu in the row. When the maize gets to big trumpet stage, I spread half a bag of urea per mu. I irrigate three times \u2014 seedling stage, big trumpet, and filling stage. The well never runs dry, so water is not a problem. I spray pesticide three times for corn borer and armyworm. I expect about 650 kg per mu.\n\nWith 40 mu, I have to buy a lot of bags at once. It costs me thousands of yuan, but I can manage it. I always tell myself: better a bit too much fertilizer than too little. I watch what my neighbors do, and if they all do about the same, then I do it too. Changing what worked last year is dangerous.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 40,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 40,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I have 40 mu and 6 years of experience, and I learned everything by watching my neighbors. I would rather apply a bit too much fertilizer than risk losing yield, because on a large farm a bad harvest is a disaster but extra fertilizer is just a cost. For wheat I rotary till, use improved seed, put one bag of compound fertilizer per mu as base plus about 40 jin of urea as topdressing, irrigate four times from the well, and spray three times. For maize I plant hybrid seed directly into wheat stubble with no-tillage, use one bag of compound fertilizer per mu at planting plus half a bag of urea at big trumpet stage, irrigate three times, and spray three times. I copy what successful neighbors do and rarely change from year to year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 40,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 40,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I have 40 mu and 6 years of experience, and I learned everything by watching my neighbors. I would rather apply a bit too much fertilizer than risk losing yield, because on a large farm a bad harvest is a disaster but extra fertilizer is just a cost. For wheat I rotary till, use improved seed, put one bag of compound fertilizer per mu as base plus about 40 jin of urea as topdressing, irrigate four times from the well, and spray three times. For maize I plant hybrid seed directly into wheat stubble with no-tillage, use one bag of compound fertilizer per mu at planting plus half a bag of urea at big trumpet stage, irrigate three times, and spray three times. I copy what successful neighbors do and rarely change from year to year."
+  },
+  "elapsed_seconds": 191.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "AZ_DMLG_12",
+  "tier": 3,
+  "provider": "kimi"
+}

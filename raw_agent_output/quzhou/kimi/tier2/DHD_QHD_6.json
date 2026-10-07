@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 60 years old and have farmed this 2 mu in Quzhou for 40 years. I never went to school, but I know this land with my hands and my eyes. My household has 7 people, and some of my children work in the city and send a little money home, so I have some cash for inputs but not much extra labor. We have a well for irrigation, which is our lifeline because rain alone is never enough on the North China Plain.\n\nI grow wheat in winter and maize in summer. That is what everyone in my village does, and it keeps us fed. In early October, I will sow my full 2 mu with improved wheat seed \u2014 about 30 jin per mu \u2014 that I buy from the village supply shop. The new varieties yield better than the old seeds my mother used. Before planting, I spread one 100-jin bag of compound fertilizer per mu and till with the rotary machine my nephew brings over. I irrigate three times: once before winter so the wheat survives the cold, once in spring when it turns green and starts growing fast, and once when the grain is filling. In spring I also topdress with about half a bag of urea per mu when the wheat is jointing. If the wheat looks yellow I might add a bit more, but urea is expensive so I do not go overboard. I spray for weeds once and for insects once or twice if I see aphids. I expect about 900 jin per mu this year if the weather is normal.\n\nRight after I harvest the wheat in early June, I plant maize on the same 2 mu. The window is only a few days and the soil is already prepared, so I do not till \u2014 I just sow directly to save time and moisture. I buy hybrid maize seed, Denghai or Nongda, about 2 jin per mu. I put compound fertilizer in the rows at planting and then topdress with urea when the plants are knee-high. I irrigate twice: once after sowing to help the seeds sprout, and once when the tassels come out if the rain does not come. I spray herbicide once and insecticide once or twice. I expect about 1,000 jin per mu. This is what I have always done and what my neighbors do. On a small plot like mine, I cannot afford to take risks with new methods.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed this 2 mu in Quzhou for 40 years using the wheat-maize double cropping system that everyone in my village follows. For wheat, I sow improved seed in early October, spread one bag of compound fertilizer per mu and till with a rotary machine, then irrigate three times and topdress with urea in spring. For maize, I plant hybrid seed immediately after wheat harvest in early June with no tillage to save time and moisture, fertilize at planting and again at knee-height, and irrigate twice. I keep my input costs moderate because my family is large, labor is limited, and on a small plot I cannot afford to waste money or take risks.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I have farmed this 2 mu in Quzhou for 40 years using the wheat-maize double cropping system that everyone in my village follows. For wheat, I sow improved seed in early October, spread one bag of compound fertilizer per mu and till with a rotary machine, then irrigate three times and topdress with urea in spring. For maize, I plant hybrid seed immediately after wheat harvest in early June with no tillage to save time and moisture, fertilize at planting and again at knee-height, and irrigate twice. I keep my input costs moderate because my family is large, labor is limited, and on a small plot I cannot afford to waste money or take risks."
+  },
+  "elapsed_seconds": 242.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_6",
+  "tier": 2,
+  "provider": "kimi"
+}

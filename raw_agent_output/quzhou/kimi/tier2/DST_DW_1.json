@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 64 years old and I've been farming this land in Quzhou for 40 years. I know every corner of my 10.1 mu. My father farmed before me, and I've learned what works here on the North China Plain. I don't have much schooling, but I have experience \u2014 and that's what counts.\n\nThis year, like every year, I'll split my land between winter wheat and summer maize. The wheat-maize rotation is the only sensible system here. I'll plant about 5.1 mu with wheat in the autumn and 5.0 mu with maize in the summer, right after the wheat comes off. I have a well, so when the rains don't come, I can irrigate \u2014 and on this plain, you often need to.\n\nFor the wheat, I'll use an improved variety. The hybrid seeds cost too much and I've had good results with the improved seeds from the local supply shop. I'll plough the land before sowing \u2014 I've always done it this way, and it prepares a good seedbed. I'll put down about 18 kg of nitrogen per mu, 6 kg of phosphorus, and 5 kg of potassium. I'll irrigate three times: once after sowing to help germination, once at jointing in spring, and once at grain filling. Too much water and you waste money and risk disease. I'll spray pesticides twice if the aphids or rust show up, which they usually do. I expect about 550 kg per mu from the wheat if the weather cooperates.\n\nFor the maize, I'll sow hybrid seeds right after wheat harvest in June \u2014 there's no time to waste with only 5.0 mu, and hybrid maize gives the best yield in our short summer. I'll do light rotary tillage or no-tillage to save time and keep moisture. Maize needs nitrogen \u2014 about 16 kg per mu \u2014 and I'll add 5 kg each of phosphorus and potassium. I'll irrigate twice: at the V6 stage and at tasseling/silking. That's enough if the summer rains are normal. One pesticide application should handle the corn borer. I expect around 600 kg per mu from the maize.\n\nI've farmed long enough to know not to chase every new technique. I stick with what works, what my well can support, and what my family can manage on 10 mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 10.1 mu in Quzhou County for 40 years using a wheat-maize double-cropping system. With well irrigation and household labor for 4 people, I split the land into 5.1 mu winter wheat and 5.0 mu summer maize. I rely on improved wheat seed and hybrid maize seed from local suppliers, apply standard N-P-K fertilizer rates based on decades of local practice, irrigate at critical growth stages, and use minimal pesticide applications. Tillage is traditional ploughing for wheat and no-tillage for maize to save time after wheat harvest. Expected yields are conservative estimates based on typical North China Plain conditions.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed 10.1 mu in Quzhou County for 40 years using a wheat-maize double-cropping system. With well irrigation and household labor for 4 people, I split the land into 5.1 mu winter wheat and 5.0 mu summer maize. I rely on improved wheat seed and hybrid maize seed from local suppliers, apply standard N-P-K fertilizer rates based on decades of local practice, irrigate at critical growth stages, and use minimal pesticide applications. Tillage is traditional ploughing for wheat and no-tillage for maize to save time after wheat harvest. Expected yields are conservative estimates based on typical North China Plain conditions."
+  },
+  "elapsed_seconds": 25.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "DST_DW_1",
+  "tier": 2,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this land in Quzhou for 45 years. I am 59 now, and I know every mu of my 10.7 mu plot. My household has four people, but some of the younger ones work off-farm in the city, so I must manage the labor carefully. We have a well for irrigation, but water is precious and pumping costs money, so I do not waste it.\n\nFor wheat, I will plant the full 10.7 mu after the maize harvest in October. I will use rotary tillage to prepare the seedbed, then sow an improved variety like the ones I buy from the supply shop. I apply compound fertilizer at sowing and topdress with urea at the jointing stage in spring. I irrigate three times: once before winter to help the crop survive the cold, once at jointing, and once at heading. I spray pesticides three times\u2014herbicide early, then insecticide and fungicide when I see problems. A good wheat crop should give me around 500 kg per mu.\n\nFor maize, I plant the same 10.7 mu right after harvesting the wheat in early June. Time is short, so I do not till the soil; I seed directly into the wheat stubble using no-tillage. I plant hybrid seed because it grows fast and strong. I apply fertilizer at sowing and again at the big trumpet stage. I irrigate twice, usually at jointing and filling, because summer rain sometimes helps. I spray twice for weeds and insects. With good weather, I expect about 600 kg per mu from the maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I manage my 10.7 mu wheat-maize rotation based on 45 years of experience and the labor limits of my household, where some family members work off-farm. For winter wheat, I use rotary tillage, an improved seed variety, three irrigations from my well, and three pesticide applications to protect the crop through the cold months and spring growth stages. For summer maize, I switch to no-tillage to save time between the wheat harvest and maize sowing, plant hybrid seed for higher yield, and apply two irrigations and two pesticide sprays since the summer growing season is shorter and rain can help. My fertilizer rates are what I have found work best on this soil after decades of trial and observation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I manage my 10.7 mu wheat-maize rotation based on 45 years of experience and the labor limits of my household, where some family members work off-farm. For winter wheat, I use rotary tillage, an improved seed variety, three irrigations from my well, and three pesticide applications to protect the crop through the cold months and spring growth stages. For summer maize, I switch to no-tillage to save time between the wheat harvest and maize sowing, plant hybrid seed for higher yield, and apply two irrigations and two pesticide sprays since the summer growing season is shorter and rain can help. My fertilizer rates are what I have found work best on this soil after decades of trial and observation."
+  },
+  "elapsed_seconds": 154.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_14",
+  "tier": 2,
+  "provider": "kimi"
+}

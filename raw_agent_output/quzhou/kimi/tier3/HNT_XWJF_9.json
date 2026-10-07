@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 76 years old and have farmed this land for 50 years. I only went to primary school, but I know farming from doing it every day and watching my father and neighbors. My farm is 16.1 mu, which is a good-sized piece of land in our village. I grow winter wheat and summer maize, rotating them every year.\n\nRight now it is late April, and my wheat is growing well. I planted it last October using improved seed \u2014 not the old traditional kind, but the kind the seed dealer said was good and that my neighbor Wang used with success. Last autumn I ploughed the field deep and put down base fertilizer before planting: about 50 kg of compound fertilizer per mu. In March I topdressed with urea, and I just finished the jointing irrigation. In total I use about 20 kg of nitrogen per mu for wheat. I figure this from the bags: one 50-kg bag of compound fertilizer and almost one bag of urea per mu. I also get about 9 kg phosphorus and 5 kg potassium from the compound fertilizer. I will irrigate four times in total \u2014 the winter irrigation, the green-up irrigation, the jointing irrigation I just did, and one more at heading in May. I spray pesticide three times: herbicide in early spring, fungicide for rust, and insecticide for aphids. Last year I got 550 kg per mu, and I expect the same this year if no disaster comes.\n\nAfter wheat harvest in early June, I will plant summer maize immediately. There is no time to waste. I use hybrid seed \u2014 everyone does now. I rotary till the stubble quickly because we must plant within a few days. For maize I use about 22 kg nitrogen per mu, 7 kg phosphorus, and 5 kg potassium. I put base fertilizer when planting and topdress at the big ear stage. Maize needs more nitrogen than wheat because summer growth is fast. I irrigate three times: after planting, at big ear stage in July, and at grain filling in August. I spray pesticide three times. I expect 650 kg per mu.\n\nMy son works in the city and sends money home, but the farm still needs to produce. Fertilizer costs more now \u2014 urea is over 100 yuan per bag \u2014 but I never cut back. Last year my neighbor Chen tried to save 50 yuan per mu on fertilizer and his wheat turned yellow. He lost over 100 kg per mu. That taught me: better to waste a little fertilizer than lose yield. With 16 mu, if I lose 50 kg per mu, that is 800 kg total \u2014 a big loss. So I apply enough and sleep well. I watch my neighbors. If they apply more, I think about applying more too. Change is risky, so I mostly do what I did last year, adjusting only a little based on what I see in the fields.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on 50 years of experience and what worked last year. With 16.1 mu, I invest in enough fertilizer to protect yield rather than risk loss. I use improved wheat and hybrid maize, apply nitrogen generously, irrigate regularly, and follow what successful neighbors do. Fertilizer costs matter, but a bad harvest is worse.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I base my decisions on 50 years of experience and what worked last year. With 16.1 mu, I invest in enough fertilizer to protect yield rather than risk loss. I use improved wheat and hybrid maize, apply nitrogen generously, irrigate regularly, and follow what successful neighbors do. Fertilizer costs matter, but a bad harvest is worse."
+  },
+  "elapsed_seconds": 80.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_9",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "Alright, let me think this through. I've been doing this 30 years, so I know my land.\n\nI have 12 mu. My main system is wheat-maize double crop \u2014 that's what most of us around here do. I'll put 9 mu in the wheat-maize rotation, same fields back to back. The other 3 mu I'll put in cotton \u2014 prices have been okay and I have that sandier plot that does better with cotton than grain.\n\n**Wheat (9 mu, winter):** I plant in early October after the maize comes off. I use improved varieties like Jimai or Shinong \u2014 the seed dealer in town stocks them and my neighbor Old Wang got 500+ kg last year using these. Base fertilizer I put down compound fertilizer (15-15-15) at about 50 kg per mu before planting \u2014 that gives me roughly 7.5 kg N, 7.5 P, 7.5 K. Then topdress urea at jointing, about 20 kg urea per mu (~9 kg N). Total N around 16-17 kg/mu. I irrigate 3 times \u2014 before winter, at jointing, and at grain filling. Spray 2 times for aphids and powdery mildew. Rotary tillage, that's what I have the machine service for. I aim for 480 kg/mu, hoping for 500.\n\n**Maize (9 mu, summer):** After wheat harvest in June, straight into maize \u2014 no-till planting to save time, the summer is short. Hybrid seed, Zhengdan 958 or similar \u2014 everyone plants these. Compound fertilizer 40 kg as base (~6 kg N, 6 P, 6 K), then urea topdress at big flare stage about 25 kg/mu (~11-12 kg N). Total N 17-18. Irrigate twice \u2014 after planting if no rain, and at tasseling. Spray once or twice for borer and armyworm. Target 550 kg/mu.\n\n**Cotton (3 mu, spring):** Plant in late April. I use improved Bt cotton seed \u2014 saves a lot on bollworm spray. Base fertilizer heavier, compound 40 kg plus some urea, total N about 15 kg/mu, P 8, K 10 \u2014 cotton needs potassium. Plough this field, need deeper work for cotton. Irrigate 3 times from well. Still need to spray 5-6 times \u2014 aphids, mites, late-season bollworm. Target 280 kg/mu seed cotton.\n\nI don't want to skimp on fertilizer \u2014 a bad harvest costs more than the extra bag of urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15.0,\n      \"phosphorus_kg_per_mu\": 8.0,\n      \"potassium_kg_per_mu\": 10.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I follow what works here in Quzhou \u2014 wheat-maize double crop on 9 mu and cotton on my sandier 3 mu plot. I use improved wheat and Bt cotton seed, hybrid maize like my neighbors do. Fertilizer rates are a bit on the high side of normal because losing yield costs more than an extra bag of urea. I irrigate from my well as the crop needs it, not on a fixed schedule. Cotton takes the most spraying since pests are bad even with Bt seed. My yield targets are what I got the last two years, no big changes since the weather was normal.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15.0,
+        "phosphorus_kg_per_mu": 8.0,
+        "potassium_kg_per_mu": 10.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I follow what works here in Quzhou \u2014 wheat-maize double crop on 9 mu and cotton on my sandier 3 mu plot. I use improved wheat and Bt cotton seed, hybrid maize like my neighbors do. Fertilizer rates are a bit on the high side of normal because losing yield costs more than an extra bag of urea. I irrigate from my well as the crop needs it, not on a fixed schedule. Cotton takes the most spraying since pests are bad even with Bt seed. My yield targets are what I got the last two years, no big changes since the weather was normal."
+  },
+  "elapsed_seconds": 34.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_11",
+  "tier": 3,
+  "provider": "claude"
+}

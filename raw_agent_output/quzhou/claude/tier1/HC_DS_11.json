@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 66 years old. My back isn't what it was, but this land is all I have. My father grew wheat and corn on this ground, and his father before him. Quzhou soil is good flat land \u2014 North China Plain. I know what this land wants.\n\nI have about 5 mu I can still manage myself, though my son helps during harvest. I won't try anything new \u2014 new seeds from strangers fail, and I cannot afford a bad year. The extension station pushed cotton on us twenty years ago and half the village lost money. I grow what I know.\n\n**Winter wheat** goes in October when the soil cools, same as always. I buy the improved wheat seed from the township supply co-op \u2014 not the fancy hybrid stuff, but the improved variety the neighbors use, \"Shi 4185\" or whatever they're selling this year. I fertilize before sowing with a bag of compound fertilizer, then top-dress urea at jointing. I irrigate four times: when I sow, before winter freeze, at jointing, and at grain filling. In Quzhou the ground water is still reachable. Spray once for aphids, once for rust if I see it.\n\n**Summer maize** goes in right after wheat harvest in June \u2014 no time to waste. I use the Zhengdan 958 hybrid kernel because that's what the village seed shop has and everyone around me uses it. I scatter urea twice \u2014 once after emergence, once at tasseling. Summer rains help but I'll pump once if July is dry. Spray for corn borer once.\n\nI won't change what works. I'm too old to experiment and too poor to fail.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 66-year-old farmer in Quzhou County with no formal education, I follow the wheat-maize double-cropping rotation that has defined this region for generations. I plant 5 mu of winter wheat in October using improved (not hybrid) seed from the township co-op, applying compound basal fertilizer and urea top-dressing at jointing, irrigating four times across the season, and spraying twice for common pests and disease. After wheat harvest in June I sow summer maize using Zhengdan 958 hybrid seed directly into the stubble without tillage, relying largely on summer rainfall with one supplemental pump irrigation and one pesticide pass for corn borer. My input levels follow local village norms learned from neighbors rather than extension guidance. I prioritize predictability and familiarity over optimization \u2014 at my age and income level, a failed experiment is not recoverable.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 66-year-old farmer in Quzhou County with no formal education, I follow the wheat-maize double-cropping rotation that has defined this region for generations. I plant 5 mu of winter wheat in October using improved (not hybrid) seed from the township co-op, applying compound basal fertilizer and urea top-dressing at jointing, irrigating four times across the season, and spraying twice for common pests and disease. After wheat harvest in June I sow summer maize using Zhengdan 958 hybrid seed directly into the stubble without tillage, relying largely on summer rainfall with one supplemental pump irrigation and one pesticide pass for corn borer. My input levels follow local village norms learned from neighbors rather than extension guidance. I prioritize predictability and familiarity over optimization \u2014 at my age and income level, a failed experiment is not recoverable."
+  },
+  "elapsed_seconds": 39.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_11",
+  "tier": 1,
+  "provider": "claude"
+}

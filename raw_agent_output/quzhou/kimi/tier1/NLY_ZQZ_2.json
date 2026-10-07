@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 47 years old, and I've been farming my 8 mu of land here in Quzhou County since I was young. I finished middle school \u2014 enough to read the numbers on fertilizer bags and understand what the extension worker tells me, but honestly I trust what my father taught me and what I see my neighbors doing more than anything on paper. It's March now, and the winter wheat I sowed last October is just starting to green up after the cold months.\n\nI always do wheat-maize double cropping. Everyone in my village does. With only 8 mu, I can't let the land sit idle for half the year \u2014 I need two crops to feed my family and have some grain to sell. The wheat variety I've been using is an improved one I get from the supply shop in town. It's not the newest thing, but it's reliable and the seed price is reasonable. Last autumn, after the maize came out, I ploughed the field deep and sowed the wheat. \n\nNow I'm thinking about managing it through to harvest. The extension guy told me 15 kg of nitrogen per mu is the scientific amount for wheat, but I always do a bit more \u2014 about 20 kg per mu. I learned my lesson two years ago when I tried to save money by cutting back: the wheat turned yellow at jointing, the heads were small, and my yield dropped by nearly 100 jin per mu. I apply compound fertilizer as a base, then topdress urea twice \u2014 once now at green-up, and again at jointing. I put about 8 kg each of phosphorus and potassium per mu with the base dressing. I don't do soil tests; after 25 years on this same plot, I know my land by the color of the soil and how the wheat looks.\n\nWater is expensive now with the metered tube wells, but wheat can't go thirsty. I'll irrigate three times: now at green-up, again at jointing in April, and once more at grain filling in May if the rain doesn't come. For pesticides, I'll spray herbicide in early spring to control the weeds, and fungicide at heading if the weather stays damp \u2014 that's two applications.\n\nFor the summer maize, I'll plant right after wheat harvest in early June. There's no time to plough \u2014 sometimes you only have five or six days between harvesting wheat and needing the maize in the ground. I'll plant no-till straight into the wheat stubble. I buy hybrid maize seed from the shop; it costs more than saving my own seed, but the yield difference is huge. I use less fertilizer on maize than wheat \u2014 about 18 kg nitrogen, 6 kg phosphorus, and 6 kg potassium per mu. One compound fertilizer application at planting, then urea at the big trumpet stage. I'll irrigate the maize twice, and spray herbicide once at planting plus insecticide later if the corn borers or armyworms show up.\n\nMy neighbor with the same size plot got about 450 kg per mu of wheat and 500 kg per mu of maize last year. I expect about the same if the weather holds. I don't grow cotton \u2014 my family needs the grain, and cotton takes too much labor and the prices jump around too much.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu in Quzhou County using the standard wheat-maize double cropping system because it provides two harvests per year and ensures family food security. I apply slightly more nitrogen than extension recommendations due to loss aversion from a previous bad experience when cutting back caused a yield drop, and I manage irrigation carefully despite pumping costs because wheat is sensitive to water stress. For summer maize, I plant hybrid seed no-till immediately after wheat harvest due to the extremely tight turnaround window of less than one week. My decisions are based on personal experience, neighbor practices, and some extension advice, with a conservative approach that prioritizes yield stability over minimizing input costs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu in Quzhou County using the standard wheat-maize double cropping system because it provides two harvests per year and ensures family food security. I apply slightly more nitrogen than extension recommendations due to loss aversion from a previous bad experience when cutting back caused a yield drop, and I manage irrigation carefully despite pumping costs because wheat is sensitive to water stress. For summer maize, I plant hybrid seed no-till immediately after wheat harvest due to the extremely tight turnaround window of less than one week. My decisions are based on personal experience, neighbor practices, and some extension advice, with a conservative approach that prioritizes yield stability over minimizing input costs."
+  },
+  "elapsed_seconds": 121.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_2",
+  "tier": 1,
+  "provider": "kimi"
+}

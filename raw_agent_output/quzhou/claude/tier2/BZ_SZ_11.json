@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old and I have only been doing this for one year. I have no schooling. What I know, I learned from watching my neighbors and asking the man at the supply shop in town.\n\nMy land is 5.5 mu. I grow wheat and maize on the same 3 mu, one after the other \u2014 wheat in the cold months, maize in the summer. The other 2.5 mu I put in cotton. That is what the people around me do, so I do the same.\n\nFor the **wheat**, I will plant in October after I turn the soil with the rotary machine \u2014 I hire someone with a small machine to do it, I cannot do it myself. I will buy the improved variety from the supply shop, whatever the man there recommends. I will water it three times: once before winter sets in, once when it starts growing again in spring, and once when the heads are filling. I put down fertilizer at planting and again in spring. I use what my neighbor told me \u2014 about a bag of urea and some compound fertilizer per mu.\n\nFor the **maize**, right after I harvest the wheat in June I will plant directly into the stubble \u2014 my neighbor said I don't need to plow again. I will use the hybrid seeds in the small yellow packet, that is what everyone uses. I water twice if the rain is not enough. I spray once for the corn borer and once for weeds.\n\nFor the **cotton**, this is the hardest work and I am old. I will plant in late April on the other field. Cotton needs many sprayings \u2014 last year I was told to spray five or six times for bugs. I will do the same this year. I water four times and use fertilizer several times through the season. My hands are not fast but I will manage with my household member helping.\n\nI do not try anything new. I do what worked last year and what my neighbors do. I just want a steady harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer with one year of experience and no formal education in Quzhou County follows the dominant local wheat-maize double-cropping rotation on 3 mu and grows cotton on the remaining 2.5 mu, allocating inputs based on neighbor advice and supply-shop recommendations rather than agronomic optimization. Wheat receives rotary tillage and three well irrigations; maize is direct-seeded into wheat stubble with minimal tillage; cotton, the most labor-demanding crop, receives five pesticide applications to manage aphids and bollworm pressure typical of the Hebei cotton belt. Fertilizer rates and yield expectations are set conservatively below county averages, reflecting limited experience and risk aversion.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer with one year of experience and no formal education in Quzhou County follows the dominant local wheat-maize double-cropping rotation on 3 mu and grows cotton on the remaining 2.5 mu, allocating inputs based on neighbor advice and supply-shop recommendations rather than agronomic optimization. Wheat receives rotary tillage and three well irrigations; maize is direct-seeded into wheat stubble with minimal tillage; cotton, the most labor-demanding crop, receives five pesticide applications to manage aphids and bollworm pressure typical of the Hebei cotton belt. Fertilizer rates and yield expectations are set conservatively below county averages, reflecting limited experience and risk aversion."
+  },
+  "elapsed_seconds": 52.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_11",
+  "tier": 2,
+  "provider": "claude"
+}

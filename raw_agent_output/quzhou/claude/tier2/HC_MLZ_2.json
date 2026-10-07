@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land since I was twenty. My father farmed here before me. I know Quzhou soil \u2014 it's heavy loam, decent enough if you water it right and don't skimp on fertilizer.\n\nSeven mu is small. My son works in Baoding now, so during busy seasons it's mostly me and my wife. I can't afford experiments. I do what works.\n\n**Wheat (October planting):** I'll use Jimai seed \u2014 everyone in the village uses it, yields are reliable. I rotary till after the maize harvest, work in compound fertilizer before seeding. Then I come back with urea at jointing. Three irrigations: one before winter sets in, one at jointing, one at heading. In spring I spray herbicide when the weeds come up, then fungicide before heading because powdery mildew is bad some years here. I expect around 450 jin per mu if the spring isn't too dry.\n\n**Maize (June planting):** Right after wheat harvest I plant hybrid seed \u2014 Zhengdan or Xianyu, whatever the seed shop has. No deep tillage, just direct seeding, saves time and my back. I put compound fertilizer in at planting, then chase it with urea at big bell stage when the plant needs it most. One irrigation at tasseling if the summer is dry like last year. Herbicide right after emergence. I should get 550 jin per mu or more \u2014 maize is easier than wheat.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I run a standard wheat-maize rotation on all 7 mu. For wheat I rotary till in autumn, apply compound fertilizer at seeding and urea at jointing, irrigate three times across the season, and spray herbicide plus fungicide. For summer maize I direct-seed hybrid varieties right after wheat harvest to save labor \u2014 my son works off-farm so timing matters \u2014 apply fertilizer at planting and topdress at big bell stage, irrigate once at tasseling, and spray herbicide at emergence. These are the practices I have refined over 35 years in Quzhou; I follow what my neighbors and my own experience tell me works reliably on this soil.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I run a standard wheat-maize rotation on all 7 mu. For wheat I rotary till in autumn, apply compound fertilizer at seeding and urea at jointing, irrigate three times across the season, and spray herbicide plus fungicide. For summer maize I direct-seed hybrid varieties right after wheat harvest to save labor \u2014 my son works off-farm so timing matters \u2014 apply fertilizer at planting and topdress at big bell stage, irrigate once at tasseling, and spray herbicide at emergence. These are the practices I have refined over 35 years in Quzhou; I follow what my neighbors and my own experience tell me works reliably on this soil."
+  },
+  "elapsed_seconds": 43.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_2",
+  "tier": 2,
+  "provider": "claude"
+}

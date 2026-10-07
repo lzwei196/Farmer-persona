@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 45-year-old woman who has farmed these 10 mu in Quzhou for 20 years. I never went to school, but I have watched the seasons turn and learned from my neighbors and from my own mistakes. My household has seven people, and some of my family work off-farm, which brings in cash but means I cannot afford to waste labor. I have a well, so when the crops need water, I can irrigate.\n\nFor my winter wheat, I always plant the full 10.1 mu because it is our staple crop and the land would sit empty otherwise. I till the soil with a rotary tiller before sowing in October, and I use an improved variety like the ones my neighbors use\u2014Luyuan 502 or Jimai 22. I sow about 30 jin of seed per mu. For fertilizer, I put down compound fertilizer as a base and then topdress with nitrogen in the spring. After all these years, I know that about 18 kg of nitrogen, 11 kg of phosphorus, and 4 kg of potassium per mu gives a good crop without throwing money away. Because I have the well, I irrigate four times: once to help the wheat overwinter, once when it greens up, once at jointing, and once during grain filling. I also spray four times for weeds, insects, and disease\u2014if I skip it, the bugs will eat everything. I expect about 500 kg per mu from the wheat if the weather is fair.\n\nAfter I harvest the wheat in early June, I immediately plant summer maize. Everyone here uses hybrid maize now\u2014Denghai 605 or something like it\u2014because the hybrids yield much more than the old kinds. I plant about one package of seed per mu. Time is short between wheat harvest and maize sowing, and with some of my family away working, I use no-tillage direct seeding. I put down compound fertilizer at sowing, about 11 kg of nitrogen, 3 kg of phosphorus, and 3 kg of potassium per mu. Maize in summer usually gets some rain, but I irrigate twice\u2014at jointing and at filling\u2014to make sure the ears fill out properly. I spray three times for pests and weeds. If things go normally, I should get about 550 kg per mu from the maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat and maize on the North China Plain for 20 years, so I follow the double-cropping rotation that everyone in Quzhou County uses: winter wheat on all 10.1 mu from October to June, then summer maize from June to October. With no formal education I rely on experience and what my neighbors do\u2014rotary tillage for wheat, no-tillage direct seeding for maize to save labor since some family members work off-farm. I use improved wheat seed and hybrid maize seed because that is what the dealers sell and what works. My well gives me reliable water, so I irrigate wheat four times and maize twice, and I spray regularly for pests because skipping it costs more than the medicine. My fertilizer rates are the amounts I have learned give a full crop without wasting money: more N for wheat, less for maize, with P and K from compound fertilizer. I expect around 500 kg/mu of wheat and 550 kg/mu of maize in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat and maize on the North China Plain for 20 years, so I follow the double-cropping rotation that everyone in Quzhou County uses: winter wheat on all 10.1 mu from October to June, then summer maize from June to October. With no formal education I rely on experience and what my neighbors do\u2014rotary tillage for wheat, no-tillage direct seeding for maize to save labor since some family members work off-farm. I use improved wheat seed and hybrid maize seed because that is what the dealers sell and what works. My well gives me reliable water, so I irrigate wheat four times and maize twice, and I spray regularly for pests because skipping it costs more than the medicine. My fertilizer rates are the amounts I have learned give a full crop without wasting money: more N for wheat, less for maize, with P and K from compound fertilizer. I expect around 500 kg/mu of wheat and 550 kg/mu of maize in a normal year."
+  },
+  "elapsed_seconds": 234.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DS_5",
+  "tier": 2,
+  "provider": "kimi"
+}

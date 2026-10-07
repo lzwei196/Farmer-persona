@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know what it needs. My back isn't what it was, and two of my grandchildren are in the city now, so I hire machine services for the heavy work. But I still manage everything myself.\n\nThis land does wheat in winter, maize in summer \u2014 all 5 mu, same fields, same rotation I've done my whole life. That doesn't change.\n\n**Wheat:** I'll buy the improved variety the seed shop in town carries \u2014 probably Jimai 22 or whatever the county station has been pushing. Not the expensive hybrid stuff, just the reliable improved seed. I'll put down compound fertilizer at sowing and topdress with urea when the wheat is jointing. I've always used roughly one bag of compound and half a bag of urea \u2014 that's about 15 kg nitrogen per mu total. I'll irrigate three times: once before winter sets in, once at jointing, once at heading. Two pesticide sprays \u2014 one herbicide early, one for rust and aphids in spring. I'll hire the rotary tiller.\n\n**Maize:** Right after wheat harvest in June, I plant maize. I use hybrid seed \u2014 Zhengdan 958 has been good to me for years, I'm not switching. I apply fertilizer in two shots: compound at planting, urea at the big bell stage. Maize in summer usually gets rain, but I'll irrigate once or twice if it turns dry. I'll spray once for pests \u2014 corn borer mostly. No-till, straight into the wheat stubble with the seeder service.\n\nMy yields aren't the county record but they're steady. That's what matters at my age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 78-year-old smallholder in Quzhou with 40 years of experience on 5 mu follows the standard winter wheat\u2013summer maize double-cropping rotation on all fields. He uses improved wheat varieties and proven hybrid maize seed (Zhengdan 958) rather than chasing novelty. Fertilizer rates are conventional for the North China Plain \u2014 moderately high nitrogen to ensure stable yields, with phosphorus and limited potassium applied at sowing. Wheat receives three well irrigations (pre-winter, jointing, heading) using the household well; maize relies partly on summer rains with up to two supplemental irrigations. Mechanized services are hired for tillage and seeding due to his age and reduced household labor. Pesticide use is minimal but applied at key risk points. The plan prioritizes reliability and continuity over optimization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 78-year-old smallholder in Quzhou with 40 years of experience on 5 mu follows the standard winter wheat\u2013summer maize double-cropping rotation on all fields. He uses improved wheat varieties and proven hybrid maize seed (Zhengdan 958) rather than chasing novelty. Fertilizer rates are conventional for the North China Plain \u2014 moderately high nitrogen to ensure stable yields, with phosphorus and limited potassium applied at sowing. Wheat receives three well irrigations (pre-winter, jointing, heading) using the household well; maize relies partly on summer rains with up to two supplemental irrigations. Mechanized services are hired for tillage and seeding due to his age and reduced household labor. Pesticide use is minimal but applied at key risk points. The plan prioritizes reliability and continuity over optimization."
+  },
+  "elapsed_seconds": 42.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_10",
+  "tier": 2,
+  "provider": "claude"
+}

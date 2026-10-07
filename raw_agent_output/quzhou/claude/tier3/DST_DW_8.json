@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63, been working this land for 40 years. My man and me, just two of us now. 16.1 mu is a lot for two old people but we manage. The wheat-maize rotation is what everyone does here in Quzhou, and I grow some cotton too on a piece of land.\n\nLet me think about this year. Last year wheat did alright, maize too. Cotton price is not so good but I keep growing a little because I know how.\n\nFor wheat \u2014 I plant about 10 mu. I use the seed my neighbor Old Wang uses, he gets good harvest. I put 2 bags of compound fertilizer before ploughing, that's about 50 kg per mu, and then one bag of urea when wheat turns green in spring, that's maybe 15 kg urea per mu. The well water, I run it maybe 3 times \u2014 before winter, when it greens up, and when the grain is filling. I spray for bugs and that yellow disease on leaves, 2 times usually.\n\nFor maize \u2014 after wheat comes maize, same 10 mu. I don't plough, just plant right after wheat harvest, no time to waste. I put compound fertilizer at planting, one bag, maybe 25 kg per mu, then urea when it's knee-high, that's the most important time, 20 kg per mu. Water 2 times if the rain is short. Spray once for the borer worm.\n\nFor cotton \u2014 I keep about 6 mu of cotton. Cotton needs more care, I pick all by hand. Plough the land, put compound fertilizer 40 kg per mu before planting, then urea 15 kg per mu when flowers come. Water 3 times. Cotton has many pests, I spray 5-6 times, can't avoid it.\n\nI don't want to change much. What worked before will work again. Fertilizer is expensive now but if I put less I lose the harvest \u2014 that's worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am 63, no school, been farming 40 years. I do what my neighbors do and what worked before. Wheat 10 mu, plough and fertilize like always \u2014 2 bags compound before planting, urea in spring, water 3 times. Maize after wheat on same land, no ploughing, just plant quick, put urea when knee-high. Cotton 6 mu, it needs more spraying for bugs, 5-6 times. Fertilizer costs a lot now but I won't cut it, losing harvest is worse than wasting some fertilizer. Two old people working this land, we keep it simple.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am 63, no school, been farming 40 years. I do what my neighbors do and what worked before. Wheat 10 mu, plough and fertilize like always \u2014 2 bags compound before planting, urea in spring, water 3 times. Maize after wheat on same land, no ploughing, just plant quick, put urea when knee-high. Cotton 6 mu, it needs more spraying for bugs, 5-6 times. Fertilizer costs a lot now but I won't cut it, losing harvest is worse than wasting some fertilizer. Two old people working this land, we keep it simple."
+  },
+  "elapsed_seconds": 23.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_8",
+  "tier": 3,
+  "provider": "claude"
+}

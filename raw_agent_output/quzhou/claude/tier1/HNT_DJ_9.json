@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for over fifty years. My family depends on what I grow, and at my age, I can't take big risks or try things I don't know. My back isn't what it was \u2014 I still do most of the work myself but my son helps during harvest.\n\nHere in Quzhou, we all grow wheat in the winter and corn in the summer. That's what the land here is suited for, that's what the market buys, and that's what I know how to grow. I have about 8 mu of cropland. I'll plant all of it in this rotation \u2014 nothing fancy.\n\nFor wheat, I'll use the improved variety the seed shop in town has been selling \u2014 it's what my neighbors use and the yields are decent. Same for corn, I'll get a hybrid from the township supply co-op. I've started using hybrid corn the last several years because the ears are bigger.\n\nWater is always the worry. The well here is getting deeper every year. I'll water the wheat three times \u2014 once when I sow it, once at jointing, once when the grain is filling. For corn, rain usually helps in summer, but I'll water twice to be safe.\n\nI'll put fertilizer down by hand the way I always have \u2014 base fertilizer before planting, then a top dressing. I don't do soil tests. I go by what my father taught me and what has worked.\n\nFor tillage, I rent a rotary tiller for wheat. For corn, I sow directly into the wheat stubble now \u2014 saves diesel and the soil holds moisture better.\n\nI'll spray herbicide once on the wheat in winter, and once for insects before heading. For corn, one spray should be enough.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"A 73-year-old farmer in Quzhou County with decades of experience defaults to the standard winter wheat\u2013summer maize double-cropping rotation on 8 mu of family land. Seed choices lean on locally trusted improved wheat varieties and hybrid maize from the township co-op. Input rates follow handed-down practice rather than soil testing. Irrigation is conservative given declining groundwater. Wheat receives rotary tillage; maize is no-tilled into stubble to save cost and moisture. Pesticide use is minimal \u2014 herbicide and one protective spray for wheat, one spray for maize. The plan prioritizes stability, low physical exertion, and familiarity over yield maximization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "A 73-year-old farmer in Quzhou County with decades of experience defaults to the standard winter wheat\u2013summer maize double-cropping rotation on 8 mu of family land. Seed choices lean on locally trusted improved wheat varieties and hybrid maize from the township co-op. Input rates follow handed-down practice rather than soil testing. Irrigation is conservative given declining groundwater. Wheat receives rotary tillage; maize is no-tilled into stubble to save cost and moisture. Pesticide use is minimal \u2014 herbicide and one protective spray for wheat, one spray for maize. The plan prioritizes stability, low physical exertion, and familiarity over yield maximization."
+  },
+  "elapsed_seconds": 39.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_9",
+  "tier": 1,
+  "provider": "claude"
+}

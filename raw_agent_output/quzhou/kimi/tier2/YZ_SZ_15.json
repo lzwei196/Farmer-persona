@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am a 48-year-old farmer in Quzhou County with only primary school education, but I have forty years of experience on this land. My family has four people, and some of them work off-farm, so I need to manage my 60 mu without too much hired labor. I have well irrigation, which is good, but pumping costs money, so I count every drop.\n\nMy wheat is already in the ground on 30 mu \u2014 I planted it last October with improved seed, same as my neighbor Old Wang. The wheat looks decent so far. I will irrigate three times: once when it greens up, once at jointing, and once at grain filling. For fertilizer, I will put down about 100 jin of compound per mu at the base, and topdress with urea when the wheat starts growing fast. That works out to roughly 25 kg of nitrogen per mu total. I will spray pesticide about four times \u2014 herbicide early, then fungicide and insecticide if I see problems. I expect around 1000 kg per mu if the weather does not turn bad.\n\nAfter wheat harvest in early June, I will plant summer maize on those same 30 mu. There is no time to till \u2014 everyone here does no-till maize after wheat. I will buy hybrid seed, Denghai 605, because hybrid maize must have new seed every year. I will apply about 80 jin of compound per mu, which gives around 15 kg nitrogen per mu. Two irrigations should be enough for summer maize \u2014 one at the big flare stage, and one at filling. Maybe three sprays for pests and weeds. I expect about 1100 kg per mu.\n\nFor peanut, I have 20 mu. It is spring peanut, so I rotary till in April and plant improved seed. Peanut does not need much nitrogen because it fixes its own, so I will use less nitrogen, maybe 10 kg per mu, but I give it some phosphorus to help the roots. Two irrigations, and about three pesticide sprays should do it. I hope for 500 kg per mu.\n\nCotton takes 10 mu. I have grown cotton for many years. It needs a lot of pesticide \u2014 maybe 12 sprays \u2014 for bollworm and aphids. I rotary till in April and plant improved varieties. I will apply about 15 kg nitrogen per mu and irrigate twice. I expect about 550 kg per mu of seed cotton.\n\nI watch costs closely because my family has off-farm workers and we need cash for daily life. I do what the neighbors do, and this year looks normal, so I will stick with what I know. If the wheat looks yellow, I might add a bit more urea, but I will not take big risks.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 30,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 30,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"peanut\",\n      \"season\": \"spring\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have been farming for forty years and I stick with what works. I grow wheat and maize on 30 mu as my stable double-crop system, peanut on 20 mu as my main cash crop, and cotton on 10 mu for extra income. I use improved seed for wheat, peanut, and cotton, and hybrid seed for maize. I irrigate based on what my neighbors do and what I can afford to pump from my well. Pesticide use is heaviest on cotton because bollworm always comes. I keep fertilizer rates at the level that has given me decent yields in the past without spending too much cash, since some family members work off-farm and we need money for household expenses.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 30,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 30,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "peanut",
+        "season": "spring",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have been farming for forty years and I stick with what works. I grow wheat and maize on 30 mu as my stable double-crop system, peanut on 20 mu as my main cash crop, and cotton on 10 mu for extra income. I use improved seed for wheat, peanut, and cotton, and hybrid seed for maize. I irrigate based on what my neighbors do and what I can afford to pump from my well. Pesticide use is heaviest on cotton because bollworm always comes. I keep fertilizer rates at the level that has given me decent yields in the past without spending too much cash, since some family members work off-farm and we need money for household expenses."
+  },
+  "elapsed_seconds": 179.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "YZ_SZ_15",
+  "tier": 2,
+  "provider": "kimi"
+}

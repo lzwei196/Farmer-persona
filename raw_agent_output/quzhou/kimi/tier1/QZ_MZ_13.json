@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am fifty-nine this year, and I have farmed these fields in Quzhou for over three decades. Having gone to university back when few village boys did, I learned to read the soil and the markets with more patience than most of my neighbors. My body is not what it was, so I plan my labor carefully and rely on good seed and sound management rather than brute work.\n\nIt is early spring now. My winter wheat, sown last October, is greening up on ten mu. I chose **Luyuan 502** \u2014 an improved variety with good resistance and stable yield \u2014 and I will manage it carefully: a rotary tillage before sowing gave me a fine seedbed, and now I will top-dress with nitrogen and irrigate three more times before June harvest. I expect about 1,050 jin per mu. Wheat is my foundation; it feeds my family and the market price is reliable.\n\nAfter the wheat comes off in early June, I will immediately plant **Denghai 605** hybrid maize on the same ten mu. I use no-tillage for maize \u2014 I have done this for years. The soil structure stays intact, I save fuel and labor, and with the wheat stubble returned to the field, the moisture holds better. Two irrigations and two pesticide sprays are enough for a good summer maize crop; I expect around 1,150 jin per mu.\n\nOn the remaining two mu, I am planting **Guoxinmian** cotton in April. Cotton is labor-intensive \u2014 it needs about ten pesticide applications and careful watering \u2014 but the income per mu is higher than grain, and two mu is a size I can manage without hiring too much help. I rotary-till the cotton plot and apply a balanced fertilizer with more phosphorus and potassium to support boll development. I expect roughly 550 jin of seed cotton per mu.\n\nMy university education taught me one thing above all: do not waste inputs. I apply fertilizer by growth stage, I water when the crop needs it rather than by habit, and I rotate my chemicals to avoid resistance. At my age, I have seen good years and bad, but this steady plan \u2014 wheat for security, maize for volume, cotton for cash \u2014 is what I trust.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 50,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1150\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 16,\n      \"potassium_kg_per_mu\": 14,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a fifty-nine-year-old university-educated farmer in Quzhou County with about twelve mu of land. My annual plan centers on the wheat-maize double-cropping rotation that dominates the North China Plain: ten mu of improved winter wheat managed with rotary tillage, four irrigations, and two pesticide applications, followed by ten mu of no-till hybrid summer maize to save labor and preserve soil moisture. I also plant two mu of improved cotton as a cash crop, accepting its higher labor and pesticide demands for the better return per mu. My education leads me to apply inputs by growth stage rather than by habit, using balanced fertilization and timely irrigation to maximize efficiency on a modest farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 50,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1150
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 16,
+        "potassium_kg_per_mu": 14,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a fifty-nine-year-old university-educated farmer in Quzhou County with about twelve mu of land. My annual plan centers on the wheat-maize double-cropping rotation that dominates the North China Plain: ten mu of improved winter wheat managed with rotary tillage, four irrigations, and two pesticide applications, followed by ten mu of no-till hybrid summer maize to save labor and preserve soil moisture. I also plant two mu of improved cotton as a cash crop, accepting its higher labor and pesticide demands for the better return per mu. My education leads me to apply inputs by growth stage rather than by habit, using balanced fertilization and timely irrigation to maximize efficiency on a modest farm."
+  },
+  "elapsed_seconds": 240.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_13",
+  "tier": 1,
+  "provider": "kimi"
+}

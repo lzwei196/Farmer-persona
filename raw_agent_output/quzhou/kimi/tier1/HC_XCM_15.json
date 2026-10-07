@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 67 years old, never went to school, and have farmed these same fields in Quzhou for over 50 years. My wife and I manage about 8 mu of land \u2014 my children work in the city, so it is just us two now. I do not read or write, but I know my land and I watch what my neighbors do. Every year I grow winter wheat and then summer maize on the same fields. That is what everyone in my village has always done, and the grain buyers come reliably. I am too old to gamble on new crops; if I fail, I have no salary to fall back on.\n\nFor the wheat, I will rotary till the soil before planting in early October. I will buy the improved wheat variety from the village shop \u2014 the same kind my neighbor across the road plants, the one in the red bag. I cannot tell you exactly how many kilograms, but I put down about two bags of compound fertilizer per mu before sowing, and another half-bag of ammonium bicarbonate if I have the cash. I will irrigate four times: after sowing, at green-up, at jointing, and when the grain is filling. Water from the well costs money, but I have seen what happens when you skip irrigation \u2014 the yield drops by half. I will spray pesticides three times when I see aphids or weeds.\n\nFor the maize, I plant immediately after the wheat harvest in mid-June. There is no time to till the soil \u2014 barely one week between harvest and planting \u2014 so I sow directly into the wheat stubble. I use a hybrid maize seed; it grows fast and strong. I spread one bag of high-nitrogen compound fertilizer per mu. The maize needs less water than wheat, so I irrigate twice, three times only if the summer is very dry. Two pesticide sprays are enough \u2014 one for weeds and one for the corn borers that come in August.\n\nI expect about 500 kg per mu of wheat and about 550 kg per mu of maize. Last year I got roughly that much. I do not want to risk changing anything.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 67-year-old illiterate farmer with 8 mu of land and only my wife to help. I stick to the wheat-maize double cropping system that every household in my village uses because it is reliable and I know how to manage it. I rotary till before wheat planting and use no-tillage for maize due to the tight turnaround after wheat harvest. My fertilizer decisions are based on what I have done for years \u2014 about two bags of compound per mu for wheat and one bag for maize \u2014 and I irrigate whenever the crops look thirsty because I cannot afford a bad year. I use improved wheat seed and hybrid maize seed that I buy from the village shop, and I spray pesticides when I see pests, not on a fixed schedule.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 67-year-old illiterate farmer with 8 mu of land and only my wife to help. I stick to the wheat-maize double cropping system that every household in my village uses because it is reliable and I know how to manage it. I rotary till before wheat planting and use no-tillage for maize due to the tight turnaround after wheat harvest. My fertilizer decisions are based on what I have done for years \u2014 about two bags of compound per mu for wheat and one bag for maize \u2014 and I irrigate whenever the crops look thirsty because I cannot afford a bad year. I use improved wheat seed and hybrid maize seed that I buy from the village shop, and I spray pesticides when I see pests, not on a fixed schedule."
+  },
+  "elapsed_seconds": 138.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_15",
+  "tier": 1,
+  "provider": "kimi"
+}

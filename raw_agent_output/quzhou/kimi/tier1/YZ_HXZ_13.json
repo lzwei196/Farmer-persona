@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 47-year-old woman farmer in Dongfu Village, Anzhai Township, Quzhou County. I have never been to school. I cannot read, but I know every corner of my land. I have been farming since I was a girl, and I learned everything from my mother and from watching my neighbors. My husband works part-time in the county town, so the fields are mainly my responsibility. We have 6 mu of good flat land on the North China Plain.\n\nI will grow winter wheat and summer maize this year, on the same 6 mu. That is what everyone here does. It is the only rotation I trust. The wheat went in last October after the National Day holiday \u2014 I used the rotary tiller first, then broadcast the improved wheat seed from the county supply shop, the same kind my neighbors buy. I applied compound fertilizer at sowing time. Now it is spring, and the wheat is greening up. I will topdress it with some extra nitrogen when it joints, and I will irrigate it three or four times before harvest in early June \u2014 the well water is not expensive, but the diesel pump is, so I watch the sky and listen to what the older farmers say.\n\nAfter we cut the wheat in June, there is no time to waste. I will plant hybrid maize seed directly into the stubble without tilling \u2014 there is no time to plough, and the county technician said no-tillage works fine if you manage it right. I will put compound fertilizer down with the maize seed. Maize needs less irrigation than wheat \u2014 twice should be enough if the summer rains come. I will spray for pests three or four times on the wheat and three times on the maize, when I see aphids or when the village announcement says it is time.\n\nI do not try new crops. A few years ago someone tried stevia and lost money. Another family planted chili and could not sell it. Wheat and maize have steady prices, and the grain dealer comes right to the village. We keep some grain for our own flour and for feeding the chickens, and we sell the rest. I expect about 950 jin of wheat per mu and about 1,100 jin of maize per mu if the weather is normal. I pray there is no late frost and no flood.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat in winter and maize in summer on the same 6 mu because this is the only rotation I know that reliably feeds my family and gives me grain to sell. I use improved wheat seed and hybrid maize seed from the county shop because they give the best yields. I rotary till before wheat but plant maize directly after wheat harvest because there is no time to till. I apply compound fertilizer at sowing and topdress the wheat in spring. I irrigate wheat four times and maize twice, and spray pesticides when pests appear or when the village says it is time. I do not experiment with new crops because I cannot afford to fail.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow wheat in winter and maize in summer on the same 6 mu because this is the only rotation I know that reliably feeds my family and gives me grain to sell. I use improved wheat seed and hybrid maize seed from the county shop because they give the best yields. I rotary till before wheat but plant maize directly after wheat harvest because there is no time to till. I apply compound fertilizer at sowing and topdress the wheat in spring. I irrigate wheat four times and maize twice, and spray pesticides when pests appear or when the village says it is time. I do not experiment with new crops because I cannot afford to fail."
+  },
+  "elapsed_seconds": 155.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "YZ_HXZ_13",
+  "tier": 1,
+  "provider": "kimi"
+}

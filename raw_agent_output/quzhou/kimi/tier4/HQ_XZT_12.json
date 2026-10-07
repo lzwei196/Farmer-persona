@@ -1,0 +1,75 @@
+{
+  "raw_response": "I'm 46, been farming this 3.5 mu in Quzhou for 20 years since I married into the village. My husband and eldest son do construction work in Shijiazhuang \u2014 they send back some money when there's work, but it's not steady. With seven people in the house including my daughter-in-law and two grandchildren, I can't afford to take big risks on the farm. Every yuan counts, and I'd rather waste a little fertilizer than lose yield and have to buy grain later.\n\nFor wheat, I plant around October 10th, same as my neighbors. I buy the improved Jinmai variety, about 12 kg per mu. It costs more than saving my own seed but the yield is better and I'm scared of disease if I reuse. For fertilizer, the extension technician said 15 kg of nitrogen per mu is enough, but I usually do a bit more \u2014 I put down 50 kg of compound fertilizer at planting, that's about 7.5 kg of nitrogen, and then at jointing in March I topdress with another 15 kg of urea, which is another 7 kg of nitrogen. Total around 14\u201315 kg N per mu. I know it's a bit much but I can't risk a bad year \u2014 my grandson starts school soon and I need the income. I irrigate three times: once at overwintering if it's dry, once at jointing, and once at flowering. Pumping water costs about 30\u201340 yuan each time for my whole plot, but wheat needs it.\n\nFor maize, the window is very tight \u2014 we harvest wheat around June 8th and I need the maize in the ground by June 15th at the latest. I hire a small tractor to do quick rotary tillage right after wheat harvest; we don't have time to do it by hand. I plant hybrid seed, Jin Dan 58, about 2.5 kg per mu. I put down 40 kg of compound fertilizer at planting and topdress with urea at the big trumpet stage if the crop looks good and I have cash left. Maize is hardier \u2014 I only irrigate twice, usually at jointing and filling if it's dry.\n\nFor labor, my daughter-in-law and I do most of the work. My husband comes back for wheat harvest and planting. We hire one person for wheat harvest because it has to be done fast before rain, but for maize we usually manage ourselves. Hired labor is 130 yuan per day now, which hurts. I spray herbicide on both crops, and if I see aphids on wheat or corn borer on maize, I treat it. I don't do preventive spraying for everything \u2014 too expensive.\n\nMy total cash for farm inputs this year is about 2,600 yuan. I could spend more but I need to keep some reserve for my grandson's school fees and in case someone gets sick. That's just how it is.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 3.5,\n      \"planting_date\": \"early October\",\n      \"harvest_date\": \"early June\",\n      \"seed_type\": \"improved\",\n      \"seed_cost_yuan_per_mu\": 72,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14.4,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"50 kg compound fertilizer as base before planting; 15 kg urea topdress at jointing in March\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"plow and harrow before planting, rotary tillage\",\n      \"labor_family_days\": 8,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 3.5,\n      \"planting_date\": \"mid June, within one week after wheat harvest\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 50,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 12.9,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"40 kg compound fertilizer at planting; 15 kg urea topdress at big trumpet stage if affordable\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"quick rotary tillage by hired tractor immediately after wheat harvest\",\n      \"labor_family_days\": 6,\n      \"labor_hired_days\": 0,\n      \"yield_expectation_kg_per_mu\": 480\n    }\n  ],\n  \"total_input_cost_yuan\": 2643,\n  \"reasoning_summary\": \"I'm a cash-constrained smallholder with 3.5 mu and a large household, so I stick to what has worked and avoid risks. I apply slightly more fertilizer than the extension recommendation because I can't afford a yield shortfall, and I hire labor only for wheat harvest when timing is critical. My husband's off-farm income helps but is unreliable, so I keep a cash reserve instead of maximizing input spending.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 3.5,
+        "planting_date": "early October",
+        "harvest_date": "early June",
+        "seed_type": "improved",
+        "seed_cost_yuan_per_mu": 72,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14.4,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "50 kg compound fertilizer as base before planting; 15 kg urea topdress at jointing in March",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "plow and harrow before planting, rotary tillage",
+        "labor_family_days": 8,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 430,
+        "nitrogen_kg_per_mu": 14.4,
+        "area_mu": 3.5,
+        "expected_yield_kg_per_mu": 430,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 3.5,
+        "planting_date": "mid June, within one week after wheat harvest",
+        "harvest_date": "late September",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 50,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 12.9,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "40 kg compound fertilizer at planting; 15 kg urea topdress at big trumpet stage if affordable",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "quick rotary tillage by hired tractor immediately after wheat harvest",
+        "labor_family_days": 6,
+        "labor_hired_days": 0,
+        "yield_expectation_kg_per_mu": 480,
+        "nitrogen_kg_per_mu": 12.9,
+        "area_mu": 3.5,
+        "expected_yield_kg_per_mu": 480,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      }
+    ],
+    "total_input_cost_yuan": 2643,
+    "reasoning_summary": "I'm a cash-constrained smallholder with 3.5 mu and a large household, so I stick to what has worked and avoid risks. I apply slightly more fertilizer than the extension recommendation because I can't afford a yield shortfall, and I hire labor only for wheat harvest when timing is critical. My husband's off-farm income helps but is unreliable, so I keep a cash reserve instead of maximizing input spending."
+  },
+  "elapsed_seconds": 72.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_12",
+  "tier": 4,
+  "provider": "kimi"
+}

@@ -1,0 +1,75 @@
+{
+  "raw_response": "I'm 70 this year, been farming these 30 mu for 55 years. My two sons work at a factory in the county town, so they're only home for planting and harvest. My wife and I do the daily work, and my daughter-in-law helps when the grandchildren are in school.\n\nWe grow wheat and corn, same as everyone in our village. It's October now, time to plant the winter wheat.\n\n**Wheat:** I watch my neighbor Lao Zhang \u2014 when he starts plowing, I start. I run the rotary tiller after the corn stalks are chopped and spread. For seed, I bought good improved seed three years ago and I've been saving it since. I'll plant about 12 kg per mu \u2014 no need to waste money buying new seed every year. Before planting I spread one bag of compound fertilizer per mu, that's 50 kg. Last spring the wheat looked a bit yellow at green-up, so I topdressed about 20 kg of urea per mu and it turned nice and green. This year I'll do the same \u2014 maybe a touch more, because Lao Li down the road always says better a little too much than too little. If the yield drops because of too little fertilizer, you lose more than the cost of the bag. I irrigate three times: once before winter so the seedlings don't freeze, once at jointing when the stems start growing, and once when the grain is filling. The electric pump costs about 15-20 yuan each time per mu, but dry wheat is no good. I spray herbicide once after planting, and if I see aphids in spring I'll spray insecticide. I expect about 500 kg per mu if the weather holds \u2014 that's what I usually get.\n\n**Corn:** The corn goes in right after wheat harvest in early June. There's no time to plow \u2014 maybe one light pass with the rotary tiller if I'm lucky, but usually we plant directly into the wheat stubble. I buy hybrid corn seed every year from the seed shop, Denghai or something like that, costs about 55 yuan per mu. You can't save hybrid seed, it doesn't work. I put about 40 kg of compound fertilizer in the furrow at planting. Then when the corn is knee-high, around big trumpet stage, I side-dress about 25 kg of urea per mu. Two irrigations for corn if the rain doesn't come \u2014 one at jointing and one at flowering. Weeds grow fast in summer, so I spray herbicide twice. If corn borer shows up, I'll spray insecticide. I expect about 500 kg per mu, same as last year.\n\nMy back isn't what it used to be, so I hire three or four people during harvest and the busy planting days \u2014 150 yuan per day per person. The family does the rest: fertilizing, irrigating, spraying. All together, seed, fertilizer, pesticide, water, and hired help will cost me close to 20,000 yuan this year. That's a lot of money, but what can you do? I keep some cash aside for my wife's medicine and emergencies \u2014 can't put every yuan into the field.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"field_area_mu\": 30,\n      \"planting_date\": \"early October, around October 5th\",\n      \"harvest_date\": \"early June, around June 6th\",\n      \"seed_type\": \"local improved\",\n      \"seed_cost_yuan_per_mu\": 25,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 16.7,\n      \"phosphorus_total_kg_per_mu\": 7.5,\n      \"potassium_total_kg_per_mu\": 7.5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Spread 50 kg compound fertilizer per mu before rotary tilling and planting; broadcast 20 kg urea per mu at green-up in spring when wheat turns yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"rotary tillage after maize harvest to prepare seedbed\",\n      \"labor_family_days\": 30,\n      \"labor_hired_days\": 5,\n      \"yield_expectation_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"field_area_mu\": 30,\n      \"planting_date\": \"mid June, right after wheat harvest around June 8th\",\n      \"harvest_date\": \"early October, around October 3rd\",\n      \"seed_type\": \"hybrid\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 17.5,\n      \"phosphorus_total_kg_per_mu\": 6.0,\n      \"potassium_total_kg_per_mu\": 6.0,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"Put 40 kg compound fertilizer per mu in the planting furrow at sowing; side-dress 25 kg urea per mu at the big trumpet stage when corn is knee-high\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 2,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-tillage or minimal tillage, direct planting into wheat stubble \u2014 window between wheat harvest and maize planting is too tight\",\n      \"labor_family_days\": 25,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 20000,\n  \"reasoning_summary\": \"I stick to what has worked for 55 years. Wheat gets two fertilizer applications and three irrigations, corn gets two and two. I save my own wheat seed but buy hybrid corn seed every year. I apply a bit more nitrogen than maybe necessary because a bad year hurts more than wasting a little fertilizer. My sons help during peak times but work off-farm, so my wife and I handle the daily work and hire a few people for harvest. I keep some cash in reserve rather than maximizing every input.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "field_area_mu": 30,
+        "planting_date": "early October, around October 5th",
+        "harvest_date": "early June, around June 6th",
+        "seed_type": "local improved",
+        "seed_cost_yuan_per_mu": 25,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 16.7,
+        "phosphorus_total_kg_per_mu": 7.5,
+        "potassium_total_kg_per_mu": 7.5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Spread 50 kg compound fertilizer per mu before rotary tilling and planting; broadcast 20 kg urea per mu at green-up in spring when wheat turns yellow",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "rotary tillage after maize harvest to prepare seedbed",
+        "labor_family_days": 30,
+        "labor_hired_days": 5,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 16.7,
+        "area_mu": 30,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5
+      },
+      {
+        "crop": "maize",
+        "field_area_mu": 30,
+        "planting_date": "mid June, right after wheat harvest around June 8th",
+        "harvest_date": "early October, around October 3rd",
+        "seed_type": "hybrid",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 17.5,
+        "phosphorus_total_kg_per_mu": 6.0,
+        "potassium_total_kg_per_mu": 6.0,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "Put 40 kg compound fertilizer per mu in the planting furrow at sowing; side-dress 25 kg urea per mu at the big trumpet stage when corn is knee-high",
+        "irrigation_use": true,
+        "irrigation_times": 2,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-tillage or minimal tillage, direct planting into wheat stubble \u2014 window between wheat harvest and maize planting is too tight",
+        "labor_family_days": 25,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 17.5,
+        "area_mu": 30,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0
+      }
+    ],
+    "total_input_cost_yuan": 20000,
+    "reasoning_summary": "I stick to what has worked for 55 years. Wheat gets two fertilizer applications and three irrigations, corn gets two and two. I save my own wheat seed but buy hybrid corn seed every year. I apply a bit more nitrogen than maybe necessary because a bad year hurts more than wasting a little fertilizer. My sons help during peak times but work off-farm, so my wife and I handle the daily work and hire a few people for harvest. I keep some cash in reserve rather than maximizing every input."
+  },
+  "elapsed_seconds": 229.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_12",
+  "tier": 4,
+  "provider": "kimi"
+}

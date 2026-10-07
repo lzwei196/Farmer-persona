@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy years old. I have farmed these fields in Quzhou since I was a young man, and my father taught me before that. I have only primary schooling, but I know this land and the weather here better than any book.\n\nI have about eight mu of good flat land, the same plot my family has worked for generations. Here on the North China Plain, the only sensible thing is the wheat-maize rotation. I will sow winter wheat in early October after turning the soil with the rotary tiller. I save my own wheat seed every year \u2014 it is the improved kind, Luyuan 502, same as my neighbors use. For fertilizer, I spread about 100 jin of compound fertilizer as basal dressing, then top-dress with urea in spring when the wheat greens up. In total that works out to roughly 50 jin of nitrogen, 20 jin of phosphorus, and 7 jin of potassium per mu. I irrigate four times from my well \u2014 the young wheat needs it, and spring droughts are common here. I spray three times: herbicide once, and insecticide twice. I expect about 1,000 jin per mu if the weather cooperates. I harvest in early June.\n\nAs soon as the wheat comes off, I plant summer maize the same month without extra tillage \u2014 there is no time to waste in the double-cropping system. For maize I buy hybrid seed from the shop, Denghai 605, because the yield is reliable and everyone says it is good. I put down less fertilizer than for wheat, around 25 jin nitrogen, 10 jin phosphorus, and 5 jin potassium per mu, mostly compound plus one top-dressing of urea at the jointing stage. Maize does not need as much water as wheat, so I irrigate twice \u2014 once if it is dry at sowing, and once at the big trumpet stage. I spray three times to control worms and weeds. I expect around 1,100 jin per mu, and harvest in early October before the cold sets in.\n\nThat is my plan. I do not grow cotton or vegetables on a large scale anymore \u2014 at my age, two reliable crops are enough, and the wheat-maize rotation feeds my family and leaves some grain to sell.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 50,\n      \"phosphorus_kg_per_mu\": 20,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed eight mu in Quzhou County for over fifty years and rely on the traditional wheat-maize double-cropping rotation that suits the North China Plain climate. I grow improved wheat using saved seed and rotary tillage, applying compound fertilizer plus urea topdressing, irrigating four times, and spraying three times. I follow with hybrid maize sown immediately after wheat harvest using no-tillage to save time, with lighter fertilizer and two irrigations. At seventy years old with only primary schooling, I stick to this reliable system because it feeds my household, minimizes risk, and matches what my neighbors and I have always done.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 50,
+        "phosphorus_kg_per_mu": 20,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I have farmed eight mu in Quzhou County for over fifty years and rely on the traditional wheat-maize double-cropping rotation that suits the North China Plain climate. I grow improved wheat using saved seed and rotary tillage, applying compound fertilizer plus urea topdressing, irrigating four times, and spraying three times. I follow with hybrid maize sown immediately after wheat harvest using no-tillage to save time, with lighter fertilizer and two irrigations. At seventy years old with only primary schooling, I stick to this reliable system because it feeds my household, minimizes risk, and matches what my neighbors and I have always done."
+  },
+  "elapsed_seconds": 91.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_3",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 50 years old and I have farmed these same 6 mu in Quzhou County for 30 years. I only finished primary school, but I know this land better than any book. My son works in a factory in the city, so it is just me and my wife managing the field. We have a well for irrigation, but pumping costs electricity, so every time I turn on the pump I feel the money leaving my pocket.\n\nLast year my wheat got about 480 kg per mu and my maize got about 530 kg per mu. This year I will start from what I did last year and make small adjustments. I watch my neighbor Old Wang. He has 8 mu and always gets good wheat. He buys improved wheat seed from the township seed station and hybrid maize seed. I will buy the same kinds. The input dealer told me fertilizer prices did not go up much, so I will not cut back. I would rather spend a bit more on fertilizer than risk a bad harvest \u2014 a bad harvest is a disaster, but wasting some fertilizer is just a cost.\n\nFor my 6 mu of winter wheat: I will rotary till the field before sowing in October. For base fertilizer I put down about 50 jin of compound fertilizer per mu. Then I top-dress with urea twice \u2014 once at green-up and once at jointing. That comes to about 18 kg of nitrogen, 6 kg of phosphorus, and 4 kg of potassium per mu. I will irrigate three times: wintering water, jointing water, and grain-filling water. I spray pesticide twice, once when the aphids show up and once if I see rust. If the weather is normal I expect about 500 kg per mu.\n\nFor my 6 mu of summer maize: Right after we harvest wheat in early June, I direct-seed the maize into the wheat stubble without ploughing. No-tillage saves me the machine fee and three days of labor, which matters because I need to get the maize in fast before the rains stop. I put about 40 jin of compound fertilizer in the furrow at planting, then top-dress urea at the big trumpet stage. That is about 16 kg nitrogen, 5 kg phosphorus, and 3 kg potassium per mu. Summer usually brings some rain, so I only irrigate once, at flowering if it turns dry. I spray twice for corn borer and armyworm. I expect about 520 kg per mu.\n\nMy budget is tight because we only have two people and my son's factory wage is not big. But I know that if I cheap out on fertilizer now, I will regret it at harvest time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 6 mu for 30 years and I copy what works. I use improved wheat seed and hybrid maize seed like my successful neighbors. I apply 18 kg nitrogen, 6 kg phosphorus, and 4 kg potassium per mu for wheat with three irrigations and two pesticide sprays, expecting 500 kg per mu. For maize I no-till after wheat harvest, applying 16 kg nitrogen, 5 kg phosphorus, and 3 kg potassium per mu with one irrigation and two pesticide sprays, expecting 520 kg per mu. I would rather spend a bit too much on fertilizer than risk losing yield, because a bad harvest is a disaster while extra fertilizer is just a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I have farmed these 6 mu for 30 years and I copy what works. I use improved wheat seed and hybrid maize seed like my successful neighbors. I apply 18 kg nitrogen, 6 kg phosphorus, and 4 kg potassium per mu for wheat with three irrigations and two pesticide sprays, expecting 500 kg per mu. For maize I no-till after wheat harvest, applying 16 kg nitrogen, 5 kg phosphorus, and 3 kg potassium per mu with one irrigation and two pesticide sprays, expecting 520 kg per mu. I would rather spend a bit too much on fertilizer than risk losing yield, because a bad harvest is a disaster while extra fertilizer is just a cost."
+  },
+  "elapsed_seconds": 94.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_14",
+  "tier": 3,
+  "provider": "kimi"
+}

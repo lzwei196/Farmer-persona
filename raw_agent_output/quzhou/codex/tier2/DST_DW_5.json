@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm wheat and maize on the same 12 mu in rotation, so I will use the full 12 mu for winter wheat first and then the same 12 mu for summer maize after wheat harvest. I have 40 years of experience, good education, and well irrigation, so I will run a fairly intensive but controlled system. I do not need to be conservative with seed choice, so I will use improved wheat seed and hybrid maize seed to keep yield stable. Because my land is not large, I can manage timing carefully and keep inputs precise instead of spreading risk across many fields.\n\nFor winter wheat, I will keep fertilizer at a medium-high level because irrigated wheat in southern Hebei responds well when nutrition is not limiting. I will irrigate three times if water conditions stay normal: once for overwintering or before freeze if needed, once at jointing, and once around grain filling. I will use rotary tillage after maize residue management because it is efficient on my scale and fits the wheat-maize system. I will plan a few pesticide applications, mainly because I do not want weeds, aphids, or disease pressure to cut yield on a small farm where every mu matters.\n\nFor summer maize, I will plant quickly after wheat harvest to protect the growing period. I will use hybrid seed because that is the most practical choice for yield and stand uniformity. I will apply more nitrogen to maize than to wheat, keep phosphorus moderate, and add potassium to support stalk strength and grain filling. With well irrigation, I will plan two irrigations, mainly around the big water demand stages if rainfall is not enough. I will keep pesticide use moderate and rely on timely field management more than excessive spraying. My goal is steady production, not gambling on either very low-input or overly aggressive input use.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will use the full 12 mu in a wheat-maize rotation, planting winter wheat and then summer maize on the same land. Because I have long farming experience, strong education, a small manageable farm, and access to well irrigation, I will choose improved wheat seed and hybrid maize seed and use moderate-to-high fertilizer rates to protect yield stability. I will irrigate wheat three times and maize two times under normal rainfall conditions, use rotary tillage for efficiency in this double-cropping system, and keep pesticide use at a controlled level to prevent avoidable losses from weeds, insects, and disease.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will use the full 12 mu in a wheat-maize rotation, planting winter wheat and then summer maize on the same land. Because I have long farming experience, strong education, a small manageable farm, and access to well irrigation, I will choose improved wheat seed and hybrid maize seed and use moderate-to-high fertilizer rates to protect yield stability. I will irrigate wheat three times and maize two times under normal rainfall conditions, use rotary tillage for efficiency in this double-cropping system, and keep pesticide use at a controlled level to prevent avoidable losses from weeds, insects, and disease."
+  },
+  "elapsed_seconds": 21.0,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DST_DW_5",
+  "tier": 2,
+  "provider": "codex"
+}

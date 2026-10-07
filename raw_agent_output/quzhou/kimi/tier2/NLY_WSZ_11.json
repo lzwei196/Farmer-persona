@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 64 years old and have farmed this land in Quzhou for 45 years. I never went to school, but I know every inch of my 8.5 mu. My household has seven mouths, and some of the younger ones work off-farm in the city, so I cannot take on too much labor-heavy cotton by myself \u2014 cotton needs spraying almost every week when the bollworm comes. I will keep 5.5 mu in my reliable wheat-maize rotation, which feeds the family and brings steady grain income, and I will plant 3 mu of cotton for cash. \n\nFor wheat, I trust improved *lumai* seed \u2014 it has never let me down. In autumn I rotary-till before sowing, put down compound fertilizer as a basal dose, and topdress with urea at green-up and jointing. With my well I can water four times: the overwintering irrigation, the jointing water, the heading water, and one more at grain-filling if the sky stays dry. I expect about 500 kg per mu. \n\nFor maize, as soon as the wheat is harvested in June I will sow hybrid *denghai* seed directly into the stubble without ploughing \u2014 this saves time, keeps moisture, and the wheat straw mulch helps the roots. I give it compound fertilizer at sowing and irrigate twice, at the jointing stage and when the tassels emerge. If the summer rains are normal, two waterings are enough. I look for around 550 kg per mu.\n\nFor cotton, I rotary-till in spring and plant improved *guoxin* or *shumian* variety. Cotton needs more fertilizer than grain, especially potash for the bolls, and I must spray for bollworm, aphids, and red spider mite many times through the season \u2014 I count on about 16 rounds. I will irrigate twice, at flowering and at peak boll stage. A good year should give me 275 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed for 45 years and know what my 8.5 mu can bear. With some family working off-farm, labor is tight, so I keep 5.5 mu in the mechanized wheat-maize double crop that feeds us and only 3 mu in labor-intensive cotton for cash. Wheat gets improved seed, rotary tillage, four irrigations from my well, and urea topdressings \u2014 I expect 500 kg/mu. Maize is sown no-till right after wheat harvest with hybrid seed, two irrigations, and compound fertilizer \u2014 I expect 550 kg/mu. Cotton needs rotary tillage, balanced N-P-K fertilizer with extra potash, and about 16 pesticide sprays for bollworm and mites, with two irrigations at flowering and boll stage \u2014 I expect 275 kg/mu of seed cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I have farmed for 45 years and know what my 8.5 mu can bear. With some family working off-farm, labor is tight, so I keep 5.5 mu in the mechanized wheat-maize double crop that feeds us and only 3 mu in labor-intensive cotton for cash. Wheat gets improved seed, rotary tillage, four irrigations from my well, and urea topdressings \u2014 I expect 500 kg/mu. Maize is sown no-till right after wheat harvest with hybrid seed, two irrigations, and compound fertilizer \u2014 I expect 550 kg/mu. Cotton needs rotary tillage, balanced N-P-K fertilizer with extra potash, and about 16 pesticide sprays for bollworm and mites, with two irrigations at flowering and boll stage \u2014 I expect 275 kg/mu of seed cotton."
+  },
+  "elapsed_seconds": 205.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

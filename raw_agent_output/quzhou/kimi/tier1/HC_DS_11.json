@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 66 years old and have never been to school, but I have farmed this land in Quzhou for over forty years. My family has 10 mu of land, and it is just my wife and me working it now \u2014 our son works in a factory in Handan and only comes back to help at harvest.\n\nThe wheat is already in the ground. I sowed it last October 1st, right after National Day, like I always do. I plant improved wheat seed, about 30 jin per mu. I will rotary-till the cotton land soon, but for the wheat I already did that last autumn. The wheat needs three irrigations: the winter irrigation to keep it from freezing, one at green-up when the weather warms, and one when the grain is filling. I top-dress with urea twice. I spray three times for weeds and rust. I know this wheat well \u2014 if the weather treats us fairly, I should get about 950 jin per mu, and I will harvest it in early June.\n\nAs soon as the wheat comes off, I plant summer maize on that same 8 mu. I use hybrid seed, usually Nongda or something the seed dealer recommends. I do not till much for the maize \u2014 I plant straight into the wheat stubble to save time and diesel. Maize does not need as much water as wheat; I irrigate twice, at the big trumpet stage and when the grain is filling. I spray three times for borers and weeds. I expect about 1,050 jin per mu, and I aim to harvest before the October holiday.\n\nI keep 2 mu for cotton. Cotton is hard work \u2014 my back is not what it used to be, and the bollworm sprays are endless \u2014 but it brings cash money that wheat and maize cannot match. I plant improved Guoxinmian seed in late April, rotary-till before sowing, irrigate twice, and spray 12 times through the season. I expect about 500 jin of seed cotton per mu. We pick it by hand, mostly ourselves, selling it to the dealer who drives into the village.\n\nI do not try new crops at my age. I stick to what this soil knows and what my body can still manage.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 950\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 10 mu for over forty years and stick to the wheat-maize rotation on 8 mu because it is reliable and the grain station buys it. I keep 2 mu of cotton despite the heavy labor because it pays cash that supports my wife and me, since our son works away. I use improved wheat seed, hybrid maize seed, and improved cotton seed. I manage water carefully \u2014 three irrigations for wheat, two for maize and cotton \u2014 and spray as needed to control pests. At 66, I do not experiment; I do what this land and my experience have proven works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 950
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed these 10 mu for over forty years and stick to the wheat-maize rotation on 8 mu because it is reliable and the grain station buys it. I keep 2 mu of cotton despite the heavy labor because it pays cash that supports my wife and me, since our son works away. I use improved wheat seed, hybrid maize seed, and improved cotton seed. I manage water carefully \u2014 three irrigations for wheat, two for maize and cotton \u2014 and spray as needed to control pests. At 66, I do not experiment; I do what this land and my experience have proven works."
+  },
+  "elapsed_seconds": 164.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DS_11",
+  "tier": 1,
+  "provider": "kimi"
+}

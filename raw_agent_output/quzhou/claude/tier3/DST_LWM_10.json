@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old. I went to primary school only, but I have been in the field for 60 years. My hands know this land better than any book. I have 16.9 mu, all wheat and maize, one after the other like everyone else in our village.\n\nLet me think about this year the way I always do \u2014 look at what I did last year, look at what my neighbors are doing, and decide.\n\n**My wheat (winter wheat):**\nI already planted it last autumn, around early October. I used the improved variety the dealer sells \u2014 Jimai type, same seed my neighbor Old Wang uses. He gets good harvest every year, so I trust it. I sowed about 15 kg per mu, a bit heavy because my land is not the best and some seeds don't come up.\n\nFor fertilizer at sowing, I put down compound fertilizer, 50 kg per mu \u2014 this is the 15-15-15 bag. That gives me about 7.5 kg each of N, P, K per mu at base. Then at spring green-up, around March, I top-dress with urea, one bag (about 25 kg) for every 2 mu \u2014 so about 12-13 kg urea per mu. Urea is 46% nitrogen, so that adds about 6 kg N per mu. Total N around 13-14 kg per mu. My neighbors do similar.\n\nIrrigation: I have well water. Wheat needs water at green-up (spring), at jointing, and at grain filling. So 3 times. If spring is dry I may add one more. Let me plan 3.\n\nPesticide: I spray once for aphids in spring, once for weeds earlier. Maybe 2 times total. If rust shows up I add one more, but usually 2 is enough.\n\nTillage: after maize harvest I use rotary tiller \u2014 the machine guy comes to the village. Everyone does rotary now, nobody ploughs deep anymore.\n\nYield: last year I got about 450 kg per mu. I hope for 480 this year if weather is good.\n\n**My maize (summer maize):**\nAfter wheat harvest in June, I plant maize right away \u2014 no-till, I just drill the seed into the wheat stubble. This is what everyone does now. Saves time, saves money on tillage.\n\nSeed: hybrid maize, Zhengdan or Xianyu type. About 2 kg per mu, around 4500 plants per mu.\n\nFertilizer: I use compound fertilizer at sowing, 40 kg per mu of 15-15-15, and then urea top-dress at big trumpet stage, about 20 kg urea per mu. So N total around 6 + 9 = 15 kg. P and K about 6 kg each.\n\nWait \u2014 for maize I think I use a bit more nitrogen than wheat because maize grows fast in summer and needs it. Let me say 18 kg N per mu total. My son-in-law told me maize likes nitrogen.\n\nIrrigation: summer has some rain, but last few years been dry. I water 2 times usually \u2014 once after sowing if dry, once at tasseling. Sometimes 3 if no rain.\n\nPesticide: once for corn borer, maybe once for armyworm if I see them. 2 times.\n\nTillage: no-till direct seeding after wheat. That is the common way now.\n\nYield: maize usually gives me 550-600 kg per mu. I'll say 580.\n\nNow let me write the JSON.\n</br>\n\nI am a careful old man. I don't like to waste money but I also don't want my harvest to fail. So I fertilize a bit on the generous side \u2014 better spend 20 yuan extra than lose 100 yuan of grain. My 3-person household depends on this land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I farm 16.9 mu of wheat-maize rotation like everyone in our village. For wheat I use improved Jimai seed, put 50 kg of 15-15-15 compound at sowing, then top-dress with about 12-13 kg urea per mu at spring green-up. I irrigate 3 times from my well \u2014 green-up, jointing, grain filling \u2014 and spray 2 times for weeds and aphids. For summer maize after wheat, I direct-seed hybrid into the stubble, no-till, use 40 kg compound plus 20 kg urea top-dress since maize eats more nitrogen. I water 2 times and spray 2 times for borer. I copy what my neighbors do because they get good harvest. I fertilize a little generous \u2014 wasting a bit of fertilizer is only cost, but a thin harvest feeds nobody.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I farm 16.9 mu of wheat-maize rotation like everyone in our village. For wheat I use improved Jimai seed, put 50 kg of 15-15-15 compound at sowing, then top-dress with about 12-13 kg urea per mu at spring green-up. I irrigate 3 times from my well \u2014 green-up, jointing, grain filling \u2014 and spray 2 times for weeds and aphids. For summer maize after wheat, I direct-seed hybrid into the stubble, no-till, use 40 kg compound plus 20 kg urea top-dress since maize eats more nitrogen. I water 2 times and spray 2 times for borer. I copy what my neighbors do because they get good harvest. I fertilize a little generous \u2014 wasting a bit of fertilizer is only cost, but a thin harvest feeds nobody."
+  },
+  "elapsed_seconds": 34.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_10",
+  "tier": 3,
+  "provider": "claude"
+}

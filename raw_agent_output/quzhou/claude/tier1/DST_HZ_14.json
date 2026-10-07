@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for over fifty years. My sons went to work in the city years ago, so now it's mostly me, sometimes with my wife helping with lighter work. I can't manage as much land as I used to \u2014 my back gives me trouble \u2014 so I keep it to 8 mu. I hire machines for the heavy jobs: plowing, planting, harvesting. I pay for that out of what I sell.\n\nIn Quzhou, everybody grows wheat in the winter and corn in the summer on the same fields. That's just how it is here. The soil knows these crops. The water table is reachable by the village tube wells. The grain station buys whatever I grow. I'm not going to try vegetables or cotton or anything unfamiliar at my age. Too much risk, too much extra work I can't do.\n\nFor wheat, I'll use the improved variety seeds \u2014 the county agricultural office distributed them again this year and they yielded well last season. I'll put down compound fertilizer before planting and spread urea when the wheat greens up in spring. I irrigate four times: once before winter sets in, once in early spring, once at jointing, once at heading. I spray for aphids and rust in spring \u2014 two passes is usually enough.\n\nAfter wheat harvest in June, I plant hybrid corn immediately on the same fields \u2014 no-till, straight into the stubble. The machine does it fast. Corn gets more nitrogen than wheat, split \u2014 some at planting, more when it's knee-high. Rain is usually enough for corn here in summer, but I'll irrigate once if July is dry like last year.\n\nI keep records in my head the same way my father did. I don't change much year to year because what works, works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    }\n  ],\n  \"reasoning_summary\": \"A 73-year-old farmer in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation that has dominated the North China Plain for generations. Farming 8 mu with hired mechanization for tillage, planting, and harvest, he uses improved wheat varieties and hybrid maize seed \u2014 both now standard and subsidy-supported \u2014 with conventional nitrogen-heavy fertilizer regimes applied from decades of habit. Wheat receives four irrigations from village tube wells across its long growing season; maize relies mainly on summer rainfall with one supplemental irrigation if needed. Pesticide use is light and reactive. No crop diversification is attempted: the rotation is familiar, the grain market is predictable, and physical capacity at his age constrains any experimentation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      }
+    ],
+    "reasoning_summary": "A 73-year-old farmer in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation that has dominated the North China Plain for generations. Farming 8 mu with hired mechanization for tillage, planting, and harvest, he uses improved wheat varieties and hybrid maize seed \u2014 both now standard and subsidy-supported \u2014 with conventional nitrogen-heavy fertilizer regimes applied from decades of habit. Wheat receives four irrigations from village tube wells across its long growing season; maize relies mainly on summer rainfall with one supplemental irrigation if needed. Pesticide use is light and reactive. No crop diversification is attempted: the rotation is familiar, the grain market is predictable, and physical capacity at his age constrains any experimentation."
+  },
+  "elapsed_seconds": 45.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_14",
+  "tier": 1,
+  "provider": "claude"
+}

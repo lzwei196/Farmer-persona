@@ -1,0 +1,40 @@
+{
+  "raw_response": "I\u2019ve farmed these same plots in Quzhou for 50 years, so I know what works and what doesn\u2019t. My wife and I are both getting on in years \u2014 just the two of us in the house now \u2014 so I can\u2019t take big risks or wear myself out with heavy labor. I\u2019ll plant all 10.1 mu to winter wheat in October, like I always do. I buy improved wheat seed from the shop in town because that\u2019s what my neighbors grow and it\u2019s reliable. For fertilizer, I put down about 16 kg of nitrogen per mu \u2014 I\u2019ve learned that if I cut back too much the yield drops badly, but we also can\u2019t afford to throw money away. I\u2019ll irrigate three times: once before winter to help it settle, once at jointing when the wheat starts shooting up, and once at grain filling. The well water costs electricity, but without those irrigations the spring drought would ruin us. \n\nCome June, right after I harvest the wheat, the window to plant summer maize is only about a week, so I do no-tillage planting like everyone else in the village \u2014 there\u2019s no time to plough. I always buy hybrid maize seed; the yield is so much better than saving your own. Maize needs a bit less fertilizer than wheat, maybe 14 kg nitrogen per mu, and I irrigate twice if the rains don\u2019t come. I spray pesticide twice for each crop \u2014 herbicide once and insecticide once \u2014 that\u2019s usually enough to keep the weeds and bugs under control. If the weather is normal, I expect about 430 kg per mu from the wheat and 510 kg per mu from the maize.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 510\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double cropping system I know well, using improved wheat seed and hybrid maize seed like my neighbors. With only my wife and me working, I keep labor manageable by using rotary tillage for wheat and no-tillage for maize. I apply moderate fertilizer and irrigate the standard number of times because cutting inputs risks big yield losses, but overspending strains our household budget.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 510
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double cropping system I know well, using improved wheat seed and hybrid maize seed like my neighbors. With only my wife and me working, I keep labor manageable by using rotary tillage for wheat and no-tillage for maize. I apply moderate fertilizer and irrigate the standard number of times because cutting inputs risks big yield losses, but overspending strains our household budget."
+  },
+  "elapsed_seconds": 222.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "DHD_HLY_3",
+  "tier": 2,
+  "provider": "kimi"
+}

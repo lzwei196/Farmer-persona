@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for more than 30 years, and I know what works here. My family has about 8 mu total. I will plant 5 mu with winter wheat and follow it immediately with summer maize on the same plots \u2014 that's our double-crop rotation, and it gives us both grain to eat and some to sell. The other 3 mu I will put in cotton because the price has been steady and my neighbor Lao Wang's cotton did well last year. \n\nFor the wheat, I will rotary till the soil before sowing in early October, use an improved seed variety I've bought from the village supply shop, put down about 15 kg of nitrogen per mu along with some compound fertilizer for phosphorus and potassium, irrigate three times, and spray four times for weeds and bugs. I expect around 450 kg per mu if the spring rain comes. For the summer maize, there is no time to plough after wheat harvest \u2014 everyone here plants no-till into the wheat stubble in mid-June. I will use hybrid seed, about 13 kg nitrogen per mu, irrigate twice, spray three times, and hope for 500 kg per mu. For cotton, I will rotary till in April, plant improved seed, use about 10 kg nitrogen per mu, irrigate twice, and spray fourteen times because cotton bollworm is terrible if you skip even one spray. I keep my fertilizer a bit lower than some neighbors because my husband is working less now and we must watch every yuan, but I won't cut too much \u2014 a bad harvest hurts more than saving a few kilograms of urea.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double crop on 5 mu because it feeds my family and I know the timing by heart. The remaining 3 mu goes to cotton for cash income, following what successful neighbors have done. I use rotary tillage for wheat and cotton but no-till for maize because the window between wheat harvest and maize planting is only a few days. My fertilizer rates are slightly conservative because I am cash-constrained, but not so low that I risk a big yield loss. Cotton gets many pesticide sprays because skipping them means losing the whole crop to bollworm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double crop on 5 mu because it feeds my family and I know the timing by heart. The remaining 3 mu goes to cotton for cash income, following what successful neighbors have done. I use rotary tillage for wheat and cotton but no-till for maize because the window between wheat harvest and maize planting is only a few days. My fertilizer rates are slightly conservative because I am cash-constrained, but not so low that I risk a big yield loss. Cotton gets many pesticide sprays because skipping them means losing the whole crop to bollworm."
+  },
+  "elapsed_seconds": 197.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_10",
+  "tier": 1,
+  "provider": "kimi"
+}

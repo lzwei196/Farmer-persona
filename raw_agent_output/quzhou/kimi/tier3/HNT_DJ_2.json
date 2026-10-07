@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am a 50-year-old man and I have farmed 8.5 mu in Quzhou County for 30 years. I only finished primary school, but I know this soil and I watch what my neighbors do. My family has 7 people and some work outside, so I cannot afford a bad year.\n\nMy main 5.5 mu is for wheat and maize, the same rotation I have done for years. The wheat went in last October with improved seed, 15 kg per mu. Last autumn I rotary-tilled and put down 50 kg of compound fertilizer per mu as base. Now that it is turning green, I will topdress with 30 kg of urea per mu and irrigate three times from my well \u2014 at green-up, jointing, and grain-filling. I spray insecticide twice, herbicide once, and fungicide once if the weather looks damp. I expect about 500 kg per mu. I would rather spend a bit more on fertilizer than lose yield, because a bad harvest means my family loses money.\n\nAfter we cut the wheat in early June, I will plant hybrid maize on the same 5.5 mu without tilling again. No-tillage saves diesel and hired labor, and Lao Wang next door does the same. I put 40 kg of compound fertilizer and 20 kg of urea per mu at planting, then irrigate twice and spray pesticide three times. I hope for 550 kg per mu.\n\nI keep 2 mu for cotton. I rotary-till in April and plant improved cotton seed, about 2 kg per mu. I apply 50 kg of compound fertilizer and 25 kg of urea per mu, irrigate twice, and spray pesticide 14 times through the season because the bollworms never give up. Cotton is a lot of work but the price is okay. I expect about 275 kg of seed cotton per mu.\n\nThe remaining 1 mu I plant mungbean in summer. I till it with the rotary tiller, sow about 2 kg of seed per mu, and put down 25 kg of compound fertilizer. I irrigate twice and spray pesticide three times. Mungbean does not need much nitrogen because it fixes its own, so I skip urea and save that money for the cotton sprays. I expect about 50 kg per mu.\n\nI do what I did last year and copy the neighbors who harvest well. Fertilizer and pesticide prices keep rising, so I calculate every yuan, but cutting inputs is too risky on a farm this size.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 50\n    }\n  ],\n  \"reasoning_summary\": \"I manage 5.5 mu of wheat-maize double cropping, 2 mu of cotton, and 1 mu of mungbean on my 8.5 mu farm. For wheat I rotary-till and apply compound fertilizer plus urea topdressing with three irrigations and four pesticide sprays, then plant hybrid maize directly after harvest with no-tillage to save costs. Cotton needs heavy pesticide use and balanced fertilizer, while mungbean gets less input and no urea since it fixes nitrogen. I copy what my successful neighbors do, avoid risky changes, and would rather spend a bit more on inputs than lose yield, though I watch every yuan because my household has seven people.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 50
+      }
+    ],
+    "reasoning_summary": "I manage 5.5 mu of wheat-maize double cropping, 2 mu of cotton, and 1 mu of mungbean on my 8.5 mu farm. For wheat I rotary-till and apply compound fertilizer plus urea topdressing with three irrigations and four pesticide sprays, then plant hybrid maize directly after harvest with no-tillage to save costs. Cotton needs heavy pesticide use and balanced fertilizer, while mungbean gets less input and no urea since it fixes nitrogen. I copy what my successful neighbors do, avoid risky changes, and would rather spend a bit more on inputs than lose yield, though I watch every yuan because my household has seven people."
+  },
+  "elapsed_seconds": 206.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_2",
+  "tier": 3,
+  "provider": "kimi"
+}

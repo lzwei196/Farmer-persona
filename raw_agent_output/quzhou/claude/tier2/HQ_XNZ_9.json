@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 40 years. I know Quzhou's soil \u2014 heavy clay loam, decent fertility but needs good management. We've had less rain lately, good thing I have the well. My wife and I work this farm ourselves, so I keep things practical. No fancy experiments at my age.\n\nMy 16.1 mu breaks down the way it always has: about 9 mu on the wheat-maize rotation and 7.1 mu of cotton. Cotton prices have been decent and I know how to grow it here. The wheat-maize land doubles up \u2014 wheat goes in October, maize follows right after the wheat harvest in June with no-till to save time and moisture.\n\nFor wheat, I'll plough deep before sowing \u2014 I've always done this and my yields hold up. I use the improved variety from the county seed station, not the old local stuff. Three irrigations: before freeze, jointing, heading. Two rounds of pesticide \u2014 herbicide early, then something for rust if it shows up. Fertilizer at rates I've settled on over the years.\n\nFor maize, I drill straight into the wheat stubble. Hybrid seed, everyone here uses it now. Two irrigations if summer rains are short. Lighter on pesticide than the cotton.\n\nCotton is the labor-heavy one. Bt hybrid cuts bollworm pressure but I still spray six times \u2014 aphids and spider mites come every year no matter what. Three irrigations timed to boll development. I top-dress nitrogen twice through the season.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 9 mu to a wheat-maize double-crop rotation and 7.1 mu to cotton, matching the land I have and the two of us who work it. Wheat gets deep ploughing, improved variety seed, three well irrigations, and modest fertilizer at rates I have refined over decades. Maize follows the wheat with no-till direct seeding to save soil moisture and labor, using hybrid seed and only two irrigations since summer rains usually help. Cotton gets the most inputs: a Bt hybrid to reduce bollworm, six pesticide passes for aphids and mites that come every year regardless, three timed irrigations, and heavier potassium to support boll development. My expected yields \u2014 450 kg/mu wheat, 540 kg/mu maize, 250 kg/mu seed cotton \u2014 reflect what I consistently achieve on this land with well water available.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 7.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate 9 mu to a wheat-maize double-crop rotation and 7.1 mu to cotton, matching the land I have and the two of us who work it. Wheat gets deep ploughing, improved variety seed, three well irrigations, and modest fertilizer at rates I have refined over decades. Maize follows the wheat with no-till direct seeding to save soil moisture and labor, using hybrid seed and only two irrigations since summer rains usually help. Cotton gets the most inputs: a Bt hybrid to reduce bollworm, six pesticide passes for aphids and mites that come every year regardless, three timed irrigations, and heavier potassium to support boll development. My expected yields \u2014 450 kg/mu wheat, 540 kg/mu maize, 250 kg/mu seed cotton \u2014 reflect what I consistently achieve on this land with well water available."
+  },
+  "elapsed_seconds": 46.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_9",
+  "tier": 2,
+  "provider": "claude"
+}

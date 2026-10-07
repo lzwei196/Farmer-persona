@@ -1,0 +1,74 @@
+{
+  "raw_response": "Alright, let me think through this year's plan. I'll reason as this farmer, then give you the structured plan.\n\n---\n\n**My thinking this season**\n\nI got 8 mu, that's all. With 7 mouths at home and only some of us working outside, I can't afford a bad year. My oldest boy sends money from the city sometimes, but I don't count on it. I do wheat then maize same as always, same as everyone on our side of the village. My father did it, I do it.\n\nFor wheat \u2014 I'll plant in early October when the soil moisture is right, same as every year. I save some seed from last harvest but I also buy a bit of new seed from the agro shop, the clerk said it's good for our area. Before plowing I put down compound fertilizer, about 2 bags for the whole 8 mu \u2014 that's the 15-15-15 kind, maybe 40 kg per mu. Then at jointing when the wheat is coming up green in spring, I topdress urea, about half a bag per mu. My neighbor Old Wang uses more but he has a better well. I water three times usually \u2014 once before winter so the roots settle, once at jointing, once when the grain is filling. If spring rain comes I skip one, saves on the electric bill for the pump. Last year I got maybe 420 kg per mu, year before was 450, I hope for 420 again.\n\nFor maize \u2014 soon as wheat is off in June, I got no time. I hire the neighbor with the no-till planter, he charges 25 yuan per mu and drops the seed right into the wheat stubble. Same day or next day. I use a hybrid seed, everyone does now, the old varieties don't yield. Base fertilizer goes down with the seed, then I topdress urea when it's knee-high. Maize needs less water than wheat usually, the summer rain helps. Maybe one or two waterings if July is dry. Last year I got around 450 kg per mu.\n\nPesticide \u2014 I spray herbicide after planting both crops, otherwise weeds take over. For bugs I only spray if I see them. Can't afford to spray for nothing.\n\nMoney-wise, I figure I'll spend about 4,500-5,000 yuan total on both crops for the whole 8 mu. That's tight but it's what I have. If wheat prices are good at harvest I might buy a bit more topdress for maize, otherwise I stretch.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 8.0,\n      \"planting_date\": \"early-mid October\",\n      \"harvest_date\": \"early-mid June\",\n      \"seed_type\": \"mix of saved seed and locally purchased improved variety\",\n      \"seed_cost_yuan_per_mu\": 35,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 16,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound 15-15-15 as base before plowing (~40 kg/mu), urea topdress at jointing in spring (~25 kg/mu)\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"plow and harrow before planting with hired small tractor\",\n      \"labor_family_days\": 18,\n      \"labor_hired_days\": 2,\n      \"yield_expectation_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 8.0,\n      \"planting_date\": \"mid June, right after wheat harvest\",\n      \"harvest_date\": \"late September to early October\",\n      \"seed_type\": \"hybrid, purchased from local agro shop\",\n      \"seed_cost_yuan_per_mu\": 45,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 14,\n      \"phosphorus_total_kg_per_mu\": 4,\n      \"potassium_total_kg_per_mu\": 4,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"compound fertilizer at planting with seed (~30 kg/mu), urea topdress at knee-high stage (~20 kg/mu)\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"no-till, hired neighbor's seed drill to plant directly into wheat stubble\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 1,\n      \"yield_expectation_kg_per_mu\": 440\n    }\n  ],\n  \"total_input_cost_yuan\": 4800,\n  \"reasoning_summary\": \"I'm a small farmer with only 8 mu, so I keep things simple and do what works. Wheat-maize, same as my father, same as my neighbors. I put down a bag of compound before wheat and topdress urea in spring, three waterings if the rain doesn't come. For maize I hire Old Liu's no-till planter right after wheat harvest because the turnaround is too tight otherwise. I save where I can \u2014 spray bugs only when I see them, skip an irrigation if it rains. With 7 at home I can't risk a bad harvest, so I don't change what I do unless something forces me to.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 8.0,
+        "planting_date": "early-mid October",
+        "harvest_date": "early-mid June",
+        "seed_type": "mix of saved seed and locally purchased improved variety",
+        "seed_cost_yuan_per_mu": 35,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 16,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound 15-15-15 as base before plowing (~40 kg/mu), urea topdress at jointing in spring (~25 kg/mu)",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "plow and harrow before planting with hired small tractor",
+        "labor_family_days": 18,
+        "labor_hired_days": 2,
+        "yield_expectation_kg_per_mu": 420,
+        "nitrogen_kg_per_mu": 16,
+        "area_mu": 8.0,
+        "expected_yield_kg_per_mu": 420,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 8.0,
+        "planting_date": "mid June, right after wheat harvest",
+        "harvest_date": "late September to early October",
+        "seed_type": "hybrid, purchased from local agro shop",
+        "seed_cost_yuan_per_mu": 45,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 14,
+        "phosphorus_total_kg_per_mu": 4,
+        "potassium_total_kg_per_mu": 4,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "compound fertilizer at planting with seed (~30 kg/mu), urea topdress at knee-high stage (~20 kg/mu)",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "no-till, hired neighbor's seed drill to plant directly into wheat stubble",
+        "labor_family_days": 12,
+        "labor_hired_days": 1,
+        "yield_expectation_kg_per_mu": 440,
+        "nitrogen_kg_per_mu": 14,
+        "area_mu": 8.0,
+        "expected_yield_kg_per_mu": 440,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4
+      }
+    ],
+    "total_input_cost_yuan": 4800,
+    "reasoning_summary": "I'm a small farmer with only 8 mu, so I keep things simple and do what works. Wheat-maize, same as my father, same as my neighbors. I put down a bag of compound before wheat and topdress urea in spring, three waterings if the rain doesn't come. For maize I hire Old Liu's no-till planter right after wheat harvest because the turnaround is too tight otherwise. I save where I can \u2014 spray bugs only when I see them, skip an irrigation if it rains. With 7 at home I can't risk a bad harvest, so I don't change what I do unless something forces me to."
+  },
+  "elapsed_seconds": 46.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 4,
+  "provider": "claude"
+}

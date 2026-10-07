@@ -1,0 +1,53 @@
+{
+  "raw_response": "My land is small \u2014 only 1.8 mu \u2014 but I have five mouths to feed and I've worked this ground for 20 years. I know what it needs.\n\nI split my field the way I always do. I put about 1 mu into wheat and maize rotation \u2014 wheat in autumn, maize after the wheat comes off in June. The other 0.8 mu I keep in cotton. Cotton prices have been unsteady lately but I know how to grow it, and it gives me cash when maize doesn't.\n\nFor wheat, I'll rotary till after this year's maize harvest in October, then plant an improved variety \u2014 the seed station in the county sells the same ones my neighbors use, and they perform reliably. I'll apply compound fertilizer at planting and come back with urea at jointing. I irrigate three times: once before winter sets in, once at jointing, once at heading. Two rounds of pesticide \u2014 one for aphids in spring, one more if I see disease. I expect about 400 jin per mu.\n\nFor maize, I go straight into the stubble with no-till after wheat harvest \u2014 saves time and I need to get the seed in fast before the heat peaks. I use hybrid seed, always have for the past decade. I topdress nitrogen when the plants are knee-high. Two irrigations if rain is short. I expect around 550 jin per mu.\n\nFor cotton, I prepare the seedbed in April with rotary tillage, then transplant seedlings in May. I use hybrid Bt cotton \u2014 it cuts down on bollworm spraying though I still spray six times through the season for aphids and mites. Cotton drinks water, so I irrigate four times. I put on more potassium than the other crops because I've learned it makes the bolls set better. I expect about 240 jin of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"On 1.8 mu in Quzhou County with well irrigation, I run a wheat-maize double crop on 1.0 mu and keep 0.8 mu in cotton for cash income. Wheat is planted in October after rotary tillage using an improved variety, irrigated three times across the season, and harvested in June. Maize follows immediately with no-till direct seeding using hybrid seed, topdressed with nitrogen at the vegetative stage, and harvested in September. Cotton is established from transplanted seedlings in May using hybrid Bt varieties, which reduce but do not eliminate pesticide needs; it receives the most irrigation and potassium because I have learned these drive boll development. All practices are based on what I have done reliably for 20 years on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 0.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "On 1.8 mu in Quzhou County with well irrigation, I run a wheat-maize double crop on 1.0 mu and keep 0.8 mu in cotton for cash income. Wheat is planted in October after rotary tillage using an improved variety, irrigated three times across the season, and harvested in June. Maize follows immediately with no-till direct seeding using hybrid seed, topdressed with nitrogen at the vegetative stage, and harvested in September. Cotton is established from transplanted seedlings in May using hybrid Bt varieties, which reduce but do not eliminate pesticide needs; it receives the most irrigation and potassium because I have learned these drive boll development. All practices are based on what I have done reliably for 20 years on this land."
+  },
+  "elapsed_seconds": 60.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_11",
+  "tier": 2,
+  "provider": "claude"
+}

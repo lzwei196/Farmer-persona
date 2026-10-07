@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm 61 years old, and I've been farming these flat fields in Quzhou since I was a boy. I only finished primary school, but I know this land and this climate better than any book. Around here, the only sensible thing is to grow winter wheat followed by summer maize on the same plot \u2014 my father did it, my neighbors do it, and the grain buyers in town expect it. I have about 8 mu of good irrigated land, and I won't gamble on anything fancy at my age.\n\nFor the wheat I sowed last October, I use the improved variety from the county seed station \u2014 it's reliable and resists the rust we sometimes get. After the maize harvest in autumn, I always run the rotary tiller to break up the stalks before sowing wheat. For fertilizer, I put down compound fertilizer at planting, then topdress with urea when the wheat greens up and at jointing. I'd rather be safe than sorry when my family depends on the harvest. The wheat needs three good irrigations: before winter sets in, at jointing in spring, and at heading. I spray for weeds once after sowing and for insects twice in spring if I see aphids.\n\nRight after cutting the wheat in early June, I plant summer maize straight into the stubble without tilling \u2014 there's no time to waste, and the summer season is short. I always buy hybrid seed from the shop; the hybrids yield much better than anything else. I apply compound fertilizer at sowing, and if the plants look yellow, a little extra urea. Summer maize usually only needs two irrigations because the rains come, but I watch the sky. I spray once for weeds and once for corn borer.\n\nI expect around 500 kg per mu for the wheat and about 550 kg per mu for the maize if the weather is normal. That's been my average most years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I'm 61 years old and have farmed in Quzhou my whole life on about 8 mu of flat land. I only went to primary school, but I know the local double-cropping system: winter wheat followed by summer maize. This is what my father did, what my neighbors do, and what the grain station buys. I use improved wheat seed and hybrid maize seed from the county co-op. I till with the rotary tiller before wheat, but plant maize directly into the stubble to save time. I apply compound fertilizer as a base and urea as topdressing \u2014 maybe a bit more than needed, but I can't afford a bad year. Wheat gets three irrigations and about three pesticide sprays, while maize gets two irrigations and two sprays. I expect roughly 500 kg/mu of wheat and 550 kg/mu of maize under normal weather.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I'm 61 years old and have farmed in Quzhou my whole life on about 8 mu of flat land. I only went to primary school, but I know the local double-cropping system: winter wheat followed by summer maize. This is what my father did, what my neighbors do, and what the grain station buys. I use improved wheat seed and hybrid maize seed from the county co-op. I till with the rotary tiller before wheat, but plant maize directly into the stubble to save time. I apply compound fertilizer as a base and urea as topdressing \u2014 maybe a bit more than needed, but I can't afford a bad year. Wheat gets three irrigations and about three pesticide sprays, while maize gets two irrigations and two sprays. I expect roughly 500 kg/mu of wheat and 550 kg/mu of maize under normal weather."
+  },
+  "elapsed_seconds": 238.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_14",
+  "tier": 1,
+  "provider": "kimi"
+}

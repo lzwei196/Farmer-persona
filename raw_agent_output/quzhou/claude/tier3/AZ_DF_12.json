@@ -1,0 +1,53 @@
+{
+  "raw_response": "Thirty years I have been working this land in Quzhou. I know what this soil likes and what it does not. My husband helps when he can, but he works off-farm most of the year now, so the children too. It is mainly me managing the fields, with hired help at harvest. Seven mu sounds small, but every input I buy comes from real money. I do not waste.\n\nI split my land like this: 5 mu for the wheat-maize rotation, and 2 mu I keep for cotton. Cotton is more work \u2014 so much picking \u2014 but the price has been okay these past years and I know how to grow it. My neighbors who dropped cotton all regret it a little.\n\n**Wheat (5 mu, planted October):** I use the improved variety \u2014 the dealer in town sells Jimai 22 or similar, many around here grow it and get good grain weight. I apply compound fertilizer as base before plowing \u2014 about 50 kg of the 15-15-15 compound per mu. Then in spring at jointing I top-dress with urea, about 15 kg per mu. That is my habit. I irrigate three times: before winter, at jointing, and at heading. I cannot skip the heading water \u2014 the grain fills badly without it. I spray twice, once for powdery mildew in spring, once for aphids closer to harvest.\n\n**Maize (5 mu, planted June after wheat):** I direct-seed with a small planter \u2014 no-tillage right into the wheat stubble. Everyone around me does this now, saves time and diesel. I use Zhengdan 958 most years \u2014 familiar seed, reliable yield. I fertilize twice: some compound at sowing and then urea at the big bell stage \u2014 that topdressing is the one I never skip. I irrigate twice: once at jointing if it is dry, once when grain is filling. Two pesticide sprays, mainly for corn borer.\n\n**Cotton (2 mu, transplanted late April):** I grow Bt hybrid cotton \u2014 bought from the county seed station. Bollworm is no longer the headache it was. My main trouble now is spider mites in July and aphids in May. I plough this plot deep in autumn. Cotton takes more fertilizer than wheat, especially potassium \u2014 my dealer told me once that cotton starves for potassium at boll stage and I believe it, I saw the difference. I irrigate more here, four or five times through the summer. Picking is hard work \u2014 I hire two day laborers for three days at peak picking.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat and maize in rotation on 5 mu and keep 2 mu for cotton. My wheat and maize practices follow what I have done for years and what my neighbors do \u2014 improved wheat variety with base compound fertilizer plus spring urea topdressing, and hybrid maize direct-seeded no-till after wheat harvest. I do not change much unless I see a clear reason. Cotton gets the most care and the most potassium because I learned the hard way that cutting corners on boll-stage nutrition costs more than the fertilizer saves. I irrigate from the well and hire day labor only at cotton picking. My main worry each year is input costs \u2014 fertilizer and diesel \u2014 so I keep my rates close to what worked before rather than chasing higher applications I am not sure I need.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I grow wheat and maize in rotation on 5 mu and keep 2 mu for cotton. My wheat and maize practices follow what I have done for years and what my neighbors do \u2014 improved wheat variety with base compound fertilizer plus spring urea topdressing, and hybrid maize direct-seeded no-till after wheat harvest. I do not change much unless I see a clear reason. Cotton gets the most care and the most potassium because I learned the hard way that cutting corners on boll-stage nutrition costs more than the fertilizer saves. I irrigate from the well and hire day labor only at cotton picking. My main worry each year is input costs \u2014 fertilizer and diesel \u2014 so I keep my rates close to what worked before rather than chasing higher applications I am not sure I need."
+  },
+  "elapsed_seconds": 55.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_12",
+  "tier": 3,
+  "provider": "claude"
+}

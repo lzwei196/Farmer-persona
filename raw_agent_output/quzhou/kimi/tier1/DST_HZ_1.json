@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 60-year-old man who has farmed these flat lands of Quzhou County since I was a teenager. My father taught me, and I have seen what works and what does not. I have eight *mu* of good irrigated land, and I will stick to the wheat\u2013maize rotation that has fed my family for decades. I do not take risks with new crops at my age; the grain buyers come to the village every year, and I know the prices.\n\nThe winter wheat is already in the ground\u2014I sowed it last October. Now it is early spring, so I will give it the first irrigation as soon as the green-up starts, then water again at jointing and heading. Four irrigations in total, including the winter watering if the soil was dry. I till with the rotary tiller before sowing wheat to break up the stubble and level the seed-bed. For fertilizer, I spread compound fertilizer as a basal dose and top-dress with urea and ammonium bicarbonate in spring. I spray herbicide once, insecticide once or twice, and fungicide once to keep the rust and powdery mildew away. I expect about 1,000 *jin* per *mu* if the weather holds.\n\nAfter harvesting the wheat around early June, I have only about ten days before the maize must go in, so I sow the maize directly into the wheat stubble without tilling. Time is too short to plough. I use a hybrid maize seed\u2014these seeds give much better ears than the old open-pollinated types. Maize needs less irrigation than wheat; two good waterings, one at the seedling stage and one at the big-ear stage, are enough. I fertilize with compound at sowing and top-dress with urea at the jointing stage. Three rounds of pesticides\u2014herbicide, insecticide, and one fungicide spray\u2014keep the pests down. I usually get about 1,100 *jin* per *mu* of maize.\n\nI will not grow cotton or those new medicinal plants some young people talk about. The grain rotation is steady, the inputs are predictable, and at my age I want a crop I can sell at the village gate without worry.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 8 mu in Quzhou County for over 40 years and rely on the traditional winter wheat\u2013summer maize double-cropping system. Wheat is rotary-tilled and irrigated four times with basal compound fertilizer and spring urea top-dressing, while maize is sown immediately after wheat harvest using no-tillage and hybrid seed, with two irrigations and lighter fertilizer rates. I stick to grain because the market is reliable and the practices are proven.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed 8 mu in Quzhou County for over 40 years and rely on the traditional winter wheat\u2013summer maize double-cropping system. Wheat is rotary-tilled and irrigated four times with basal compound fertilizer and spring urea top-dressing, while maize is sown immediately after wheat harvest using no-tillage and hybrid seed, with two irrigations and lighter fertilizer rates. I stick to grain because the market is reliable and the practices are proven."
+  },
+  "elapsed_seconds": 151.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_1",
+  "tier": 1,
+  "provider": "kimi"
+}

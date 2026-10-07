@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this same land in Quzhou my whole adult life. Thirty years teaches you what works here. My 3 mu splits naturally: 2 mu for the wheat-maize rotation \u2014 wheat in winter, maize on the same ground right after harvest in summer \u2014 and 1 mu for cotton. Cotton earns more cash per mu, but it demands more work and more spraying, so I don't expand it. With some of my family earning wages in town, I need the cotton income to balance the household.\n\nFor wheat, I plant in early October like everyone around here. I buy improved Jimai seed from the village supply shop \u2014 reliable, and I know what to expect. I till with the rotary machine before sowing. I apply compound fertilizer as base and urea when the plants are jointing in spring. I irrigate three times: once before sowing to settle the seedbed, once at jointing, once at heading. I spray twice \u2014 once for aphids in spring, once for powdery mildew if it comes.\n\nFor maize, I plant within a day or two of the wheat harvest in June so I don't waste the season. Hybrid seed, everybody uses hybrid now. I apply base fertilizer at planting and top-dress urea when the plants reach knee height. If July is dry, I pump from the well twice; if rain is decent, once is enough. Usually one pesticide spray for corn borer.\n\nFor cotton, I deep plough in March to loosen the soil \u2014 cotton roots go deep. I transplant seedlings in late April. Cotton needs the most attention: more fertilizer spread across the season, more pesticide for bollworm and aphids. I irrigate four times from May through August. This is the hardest crop but it earns cash we need.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 49-year-old experienced smallholder in Quzhou County allocates 2 mu to a winter wheat\u2013summer maize double-cropping rotation, maximizing land use across two seasons on the same ground, and reserves 1 mu for cotton as a cash crop. Wheat uses locally familiar improved varieties with three well irrigations and rotary tillage; maize uses hybrid seed planted immediately after wheat harvest with minimal tillage and two irrigations; cotton receives deep plough tillage, multiple fertilizer applications split across the growing season, four irrigations, and five pesticide treatments to manage bollworm and aphid pressure \u2014 reflecting three decades of locally adapted practice with no formal agronomic training.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 49-year-old experienced smallholder in Quzhou County allocates 2 mu to a winter wheat\u2013summer maize double-cropping rotation, maximizing land use across two seasons on the same ground, and reserves 1 mu for cotton as a cash crop. Wheat uses locally familiar improved varieties with three well irrigations and rotary tillage; maize uses hybrid seed planted immediately after wheat harvest with minimal tillage and two irrigations; cotton receives deep plough tillage, multiple fertilizer applications split across the growing season, four irrigations, and five pesticide treatments to manage bollworm and aphid pressure \u2014 reflecting three decades of locally adapted practice with no formal agronomic training."
+  },
+  "elapsed_seconds": 50.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_12",
+  "tier": 2,
+  "provider": "claude"
+}

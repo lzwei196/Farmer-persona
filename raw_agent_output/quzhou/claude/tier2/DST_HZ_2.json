@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land for most of my life. Three mu isn't much, but it's mine and I know every corner of it. With just two of us at home now, I don't need to push for maximum yield \u2014 I need steady, reliable output with manageable labor. I'm 60, my back isn't what it was.\n\nMy land does wheat in winter and maize in summer, same rotation I've done for thirty years. The whole 3 mu goes to wheat after October, then straight into maize after the June harvest. I don't split the field \u2014 too complicated for 3 mu.\n\nFor **wheat**, I'll use an improved variety \u2014 something like Jimai 22 or whatever the seed shop in town is stocking from the provincial recommendation list this year. I trust those. I'll do rotary tillage before sowing \u2014 deep plowing is too much work and I sold the ox decades ago. I'll apply base fertilizer at sowing: compound fertilizer plus some urea. Then top-dress at jointing. I always irrigate three times \u2014 winter water to help the roots establish, jointing water, and heading water. Can't skip those with our dry springs here in Hebei. Two pesticide passes: one herbicide early on, one fungicide-insecticide combined around heading when powdery mildew and aphids come.\n\nFor **maize**, I buy hybrid seed every year \u2014 I stopped saving seed long ago, hybrids just yield better. I broadcast fertilizer at planting then top-dress at the big bell stage. Maize here doesn't need as much irrigation \u2014 usually one at tasseling if it's dry. One pesticide application for corn borer, sometimes two if it's a bad year.\n\nI'm not chasing record yields. I want 450 on wheat and 550 on maize. That feeds us and leaves some to sell.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 60-year-old experienced farmer with 3 mu under wheat-maize rotation in Quzhou, Hebei prioritizes reliable, low-labor practices over maximum yield. Wheat gets improved varieties, rotary tillage, standard N-P-K split between base and top-dress applications, three irrigations matching the critical growth stages in this semi-arid region, and two pesticide passes targeting common local pressures. Maize shifts to no-tillage directly into wheat stubble to save time and moisture, uses hybrid seed as has been standard practice for decades, receives heavier nitrogen given maize's higher demand, needs only one irrigation given summer rainfall, and gets one pesticide application for corn borer. Both crops are managed conservatively to keep input costs and physical labor within what a two-person aging household can manage.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 60-year-old experienced farmer with 3 mu under wheat-maize rotation in Quzhou, Hebei prioritizes reliable, low-labor practices over maximum yield. Wheat gets improved varieties, rotary tillage, standard N-P-K split between base and top-dress applications, three irrigations matching the critical growth stages in this semi-arid region, and two pesticide passes targeting common local pressures. Maize shifts to no-tillage directly into wheat stubble to save time and moisture, uses hybrid seed as has been standard practice for decades, receives heavier nitrogen given maize's higher demand, needs only one irrigation given summer rainfall, and gets one pesticide application for corn borer. Both crops are managed conservatively to keep input costs and physical labor within what a two-person aging household can manage."
+  },
+  "elapsed_seconds": 40.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_2",
+  "tier": 2,
+  "provider": "claude"
+}

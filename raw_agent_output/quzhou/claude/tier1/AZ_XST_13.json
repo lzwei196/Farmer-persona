@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this land since I was young. My husband passed years ago, and my son went to work in Shijiazhuang. I manage about 4 mu myself, sometimes my neighbor's son helps with the heavier work.\n\nHere in Quzhou, everyone grows wheat and corn. I grow wheat and corn. My mother grew wheat and corn. The land here is flat, the water is underground, and the markets in the county town buy both. I would not know how to grow something else, and I would not trust myself to learn at my age.\n\nFor the wheat, I will plant in October after I prepare the ground with the rotary machine \u2014 my nephew borrows a tractor for me. I will buy seed from the village supply station, the kind they always sell there, the improved kind that does well here. I will put down fertilizer at planting and again in spring. I always water before winter sets in, then again when the stalks are growing tall, then once more near heading. I spray for weeds early on and check for rust later.\n\nAfter wheat harvest in June I will plant corn right away \u2014 no time to waste, no need to plow again. Corn seed I always buy hybrid, everyone does now. I will fertilize twice. I water if it does not rain enough in July or August. Corn does not need much from me. I harvest in September and sell most of it.\n\nI do not experiment. At my age, a bad harvest means real trouble.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I am a 69-year-old widow farming 4 mu in Quzhou County, Hebei, with no formal schooling. I follow the winter wheat and summer maize double-cropping rotation that has been standard in this area my whole life. I use improved wheat seed from the village supply station and hybrid maize seed because that is what is available and reliable locally. I apply fertilizer at conventional local rates \u2014 I do not measure precisely but follow what my neighbors do and what I learned over decades. I irrigate wheat three times (pre-winter, jointing, heading) and maize twice if summer rain is short. I use rotary tillage before wheat and direct seeding into wheat stubble for maize to save time and because I cannot manage heavy tillage alone. I spray herbicide on wheat and check for disease. I grow nothing else because I know these two crops, the land is suited for them, and at my age I cannot afford a failed experiment.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I am a 69-year-old widow farming 4 mu in Quzhou County, Hebei, with no formal schooling. I follow the winter wheat and summer maize double-cropping rotation that has been standard in this area my whole life. I use improved wheat seed from the village supply station and hybrid maize seed because that is what is available and reliable locally. I apply fertilizer at conventional local rates \u2014 I do not measure precisely but follow what my neighbors do and what I learned over decades. I irrigate wheat three times (pre-winter, jointing, heading) and maize twice if summer rain is short. I use rotary tillage before wheat and direct seeding into wheat stubble for maize to save time and because I cannot manage heavy tillage alone. I spray herbicide on wheat and check for disease. I grow nothing else because I know these two crops, the land is suited for them, and at my age I cannot afford a failed experiment."
+  },
+  "elapsed_seconds": 42.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_13",
+  "tier": 1,
+  "provider": "claude"
+}

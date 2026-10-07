@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think this through as the farmer and then give my plan.\n\nMy 15 mu sits on the North China Plain \u2014 good flat ground, well water is reliable but the groundwater table keeps dropping, so I cannot waste water like 20 years ago. With only two of us at home and some off-farm work, I need a plan that doesn't eat all my labor at once.\n\nHere is how I split the land this year:\n- 10 mu on wheat-maize double crop (my main rotation)\n- 5 mu on cotton \u2014 cotton price has been so-so, but it spreads my risk and the land I put cotton on is sandier, not the best for wheat\n\n**Winter wheat (10 mu)** \u2014 I already planted last October. Variety Jimai 22, improved. Base fertilizer I applied 40 kg diammonium phosphate + 15 kg urea + 10 kg potassium sulfate per mu before sowing. Top-dressing at green-up/jointing I'll put another 15 kg urea. Total about 16 kg N, 7 kg P, 5 kg K per mu. Irrigate 3 times \u2014 over-winter water already done, then jointing, then grain-filling. Spray twice: one for aphids and powdery mildew at booting, one \"yi pen san fang\" at flowering for scab, aphids, and mites together. I expect 520 kg/mu \u2014 last two years I hit 500-540.\n\n**Summer maize (10 mu)** \u2014 after wheat harvest in mid-June, I direct-seed Zhengdan 958 or similar hybrid, no-till, with the seeder right behind the combine. Base 30 kg compound (15-15-15) per mu at sowing, then 20 kg urea side-dressed at big-trumpet stage. Total N ~15 kg, P 4.5 kg, K 4.5 kg per mu. Irrigate twice if rain is short \u2014 usually jointing and tasseling. One pesticide spray for corn borer and armyworm at whorl stage, sometimes a second if fall armyworm shows up. Expect 600 kg/mu.\n\n**Cotton (5 mu)** \u2014 ploughed in spring, I'll transplant Bt hybrid seedlings in late April. Base 25 kg compound + 10 kg urea per mu, then top-dress 15 kg urea at flowering-boll stage. About 14 kg N, 5 kg P, 8 kg K per mu \u2014 cotton wants more potassium for boll quality. Irrigate 3 times. Pesticide 4 times \u2014 even with Bt, I still get aphids, spider mites, and late-season bollworm pressure. Expect 260 kg seed cotton/mu.\n\nI keep fertilizer a little on the generous side \u2014 losing 50 kg of wheat costs me more than an extra bag of urea. But I've cut back from what I used 10 years ago because I've seen that piling on nitrogen past a point just makes the wheat fall over.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I split 15 mu into 10 mu wheat-maize double crop on my better ground and 5 mu cotton on the sandier plot to spread price risk. Wheat and maize get balanced NPK with nitrogen split between base and topdressing \u2014 I push yield hard because grain prices are modest and I need volume. Cotton gets extra potassium for boll quality and more pesticide rounds since even Bt cultivars don't stop aphids and mites. With only two of us at home, no-till maize after the combine saves me a turnaround, and I stick with three wheat irrigations to match our falling water table rather than the four I used to do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I split 15 mu into 10 mu wheat-maize double crop on my better ground and 5 mu cotton on the sandier plot to spread price risk. Wheat and maize get balanced NPK with nitrogen split between base and topdressing \u2014 I push yield hard because grain prices are modest and I need volume. Cotton gets extra potassium for boll quality and more pesticide rounds since even Bt cultivars don't stop aphids and mites. With only two of us at home, no-till maize after the combine saves me a turnaround, and I stick with three wheat irrigations to match our falling water table rather than the four I used to do."
+  },
+  "elapsed_seconds": 41.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_11",
+  "tier": 3,
+  "provider": "claude"
+}

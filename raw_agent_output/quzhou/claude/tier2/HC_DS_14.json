@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this same land for thirty years and my mother farmed it before me. I know this soil. My 3.5 mu runs wheat in winter and maize in summer \u2014 same rotation I've always done, same as my neighbors. My son and daughter-in-law bring in cash from the city, so the farm doesn't have to do everything, but I still need a good harvest to cover household food and inputs.\n\nFor **wheat**, I'll plant in early October after the maize comes off. I'll hire the rotary tiller to turn the stalks in. I use the improved variety seed from the township supply station \u2014 not the old seed I saved myself, those yields dropped off years ago. I put down compound fertilizer when I plant, then urea at jointing stage. I'll irrigate before the ground freezes, once in spring when it greens up, and once at heading. That's three times total. I'll spray herbicide in spring and fungicide once if I see rust on the leaves \u2014 two applications. Harvest in mid-June.\n\nFor **maize**, I plant right after wheat harvest, usually late June. Hybrid seed \u2014 everyone uses it now, the yields are worth the cost. I do rotary tillage again to work in the wheat stubble. I split fertilizer: compound fertilizer at planting, urea at big bell stage. Summer gets some rain so I only irrigate twice if it's a normal year. I spray herbicide at emergence and watch for corn borer \u2014 one more spray if I need it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 3.5 mu in a wheat-maize rotation on the same land, the way I have for thirty years in Quzhou. For wheat I use improved township-supplied seed, apply compound fertilizer at planting and urea at jointing, irrigate three times from the well, and spray twice for weeds and disease. For summer maize I use hybrid seed for the higher yields, apply fertilizer in two splits, rely partly on summer rain so I only irrigate twice, and spray twice for weeds and pests. My children's off-farm income covers the household, so I farm steadily the way I know, keeping costs predictable and yields reliable.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 3.5 mu in a wheat-maize rotation on the same land, the way I have for thirty years in Quzhou. For wheat I use improved township-supplied seed, apply compound fertilizer at planting and urea at jointing, irrigate three times from the well, and spray twice for weeds and disease. For summer maize I use hybrid seed for the higher yields, apply fertilizer in two splits, rely partly on summer rain so I only irrigate twice, and spray twice for weeds and pests. My children's off-farm income covers the household, so I farm steadily the way I know, keeping costs predictable and yields reliable."
+  },
+  "elapsed_seconds": 44.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_14",
+  "tier": 2,
+  "provider": "claude"
+}

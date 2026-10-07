@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will think this through the way I always do \u2014 what did I do last year, what do the neighbors do, and what did I harvest.\n\nLast year the wheat came out good, about 1000 jin (500 kg) per mu, and the maize about the same. Cotton was okay, not great, but the price was decent so I keep growing it. I do not change much because changing is how you lose money.\n\nMy 15 mu \u2014 I split it like I always do. I keep 10 mu for the wheat-maize rotation, that is the main food and the main income. The other 5 mu I keep for cotton because cotton brings cash and I know how to grow it for 40 years now.\n\nFor wheat, I do like old Li next door. Before planting, I put 2 bags of compound fertilizer (that 15-15-15 kind) per mu, that is about 50 kg. Then when the wheat turns green in spring, I put 1 bag of urea per mu, about 40 jin (20 kg). Better to put a little extra than have yellow wheat \u2014 yellow wheat means no grain, and no grain means no money. I use the good seed the dealer sells, the one the neighbors use. I water 4 times \u2014 before winter, green-up, jointing, and when grain is filling. The well is there, water is cheap enough. I spray 2 times \u2014 once for aphids, once for the disease on the head.\n\nFor summer maize after wheat, I plant right away, no ploughing, just put the seed in with the machine. I put 1 bag compound at planting, then about 30 jin urea when the maize is waist-high. Maize does not need so much water here, 1 time is usually enough, sometimes 2 if the rain is bad. Spray once for the borer.\n\nFor cotton on the 5 mu, cotton needs more care. I plough that land, put manure if I have it plus 2 bags compound per mu before planting. I use the Bt cotton seed, everyone uses it now, the bollworm does not bother it so much. Still I spray 5-6 times for the other bugs and the leaf trouble. Water 3 times. Cotton is tiring but I know it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way I have for 40 years \u2014 I follow what my neighbors do and stick with what worked last year. I keep 10 mu for wheat-maize because that is my main food and income, and 5 mu for cotton for cash. On wheat I put 2 bags of compound before planting and 1 bag of urea in spring, because yellow wheat means no harvest and losing grain hurts more than spending a little extra on fertilizer. For maize I plant straight into the wheat stubble with the machine, put one bag of compound and some urea later. Cotton I plough the land and feed it well because cotton is hungry, and I spray many times because bugs will eat everything if I do not. I water from my well when the crops need it, and I buy the seed the dealer shows everyone is using.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I farm the way I have for 40 years \u2014 I follow what my neighbors do and stick with what worked last year. I keep 10 mu for wheat-maize because that is my main food and income, and 5 mu for cotton for cash. On wheat I put 2 bags of compound before planting and 1 bag of urea in spring, because yellow wheat means no harvest and losing grain hurts more than spending a little extra on fertilizer. For maize I plant straight into the wheat stubble with the machine, put one bag of compound and some urea later. Cotton I plough the land and feed it well because cotton is hungry, and I spray many times because bugs will eat everything if I do not. I water from my well when the crops need it, and I buy the seed the dealer shows everyone is using."
+  },
+  "elapsed_seconds": 46.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_2",
+  "tier": 3,
+  "provider": "claude"
+}

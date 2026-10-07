@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 70 years old, I went to primary school, and I have farmed for 50 years. My family has 24 mu of good flat land in Quzhou County. It is just me and my wife now, so we hire machines for everything \u2014 tilling, planting, spraying, harvesting. I cannot do heavy labor anymore, but I know every piece of this land.\n\nFor wheat, I plant all 24 mu in October. I use the rotary tiller first \u2014 I hire the tractor from the village, 50 yuan per mu. I buy improved wheat seed from the dealer, 30 jin per mu. That is about one big bag for every two mu. Before sowing, I spread one bag of compound fertilizer per mu \u2014 that is 100 jin per mu. The dealer says it has nitrogen and phosphate in it. Then at jointing time in March, I spread another 50 jin of urea per mu. I know that is a lot, but last year my neighbor Liu cut back on fertilizer and his wheat turned yellow and thin. I would rather waste some fertilizer than risk a bad harvest. Every yuan of fertilizer is real money, but losing half a harvest is a disaster. I irrigate three times: once in late November before the freeze, once in March at jointing, and once in April when the heads are filling. I have a well, so I use border irrigation. For chemicals, I spray herbicide once right after sowing, and I spray insecticide twice in spring for aphids. That is three trips total. If the weather is normal, I expect about 1050 jin per mu \u2014 that is 525 kg per mu.\n\nFor maize, after we harvest the wheat in early June, there is no time to plow. The weather is hot and the window is narrow. I hire the no-till seeder to plant directly into the wheat stubble. I use hybrid seed, one package per mu \u2014 that is about 2 kg per mu. When planting, I put down 80 jin per mu of compound fertilizer through the machine. In July, when the maize reaches big trumpet stage, if the leaves look light green, I spread another 40 jin per mu of urea. I irrigate twice: once in June if the seedlings are dry, and once in late July at tasseling. That second watering is the most important one \u2014 if you miss it, the ears will be empty. I spray herbicide once and insecticide twice for corn borer. Three times total. Maize usually gives me more than wheat. I expect about 1200 jin per mu \u2014 600 kg per mu.\n\nI watch what my neighbors do. Around here, most people apply about the same amounts. If everyone is putting one bag of compound per mu for wheat, I do the same. I have tried changing before, and it did not work out. At my age, I stick with what I know. Spending more on fertilizer means less money for hired labor, but I have to balance it. With 24 mu, I can absorb some risk, but I still calculate every bag.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 24.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 525\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 24.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I manage 24 mu of wheat-maize rotation with hired machinery because my wife and I are too old for heavy labor. For wheat, I rotary till in October, apply 50 kg of compound fertilizer and 15 kg of improved seed per mu as a base, then topdress with 25 kg of urea per mu at jointing in March. I irrigate three times and spray three times. For maize, I use no-till planting directly after wheat harvest in June, putting down 40 kg of compound fertilizer and 2 kg of hybrid seed per mu, with an additional 20 kg of urea per mu at the big trumpet stage in July if needed. I irrigate twice and spray three times. I set these rates based on what worked last year and what my neighbors do, and I would rather apply slightly too much fertilizer than risk yield loss.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 24.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 525
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 24.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I manage 24 mu of wheat-maize rotation with hired machinery because my wife and I are too old for heavy labor. For wheat, I rotary till in October, apply 50 kg of compound fertilizer and 15 kg of improved seed per mu as a base, then topdress with 25 kg of urea per mu at jointing in March. I irrigate three times and spray three times. For maize, I use no-till planting directly after wheat harvest in June, putting down 40 kg of compound fertilizer and 2 kg of hybrid seed per mu, with an additional 20 kg of urea per mu at the big trumpet stage in July if needed. I irrigate twice and spray three times. I set these rates based on what worked last year and what my neighbors do, and I would rather apply slightly too much fertilizer than risk yield loss."
+  },
+  "elapsed_seconds": 197.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DS_7",
+  "tier": 3,
+  "provider": "kimi"
+}

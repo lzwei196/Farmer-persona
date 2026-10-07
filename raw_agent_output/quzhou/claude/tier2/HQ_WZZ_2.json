@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 40 years. My father taught me, and his father taught him. I know this soil. I know when to plant and when to water. I don't need papers from a school to tell me what to do with my own land.\n\nMy 12 mu breaks down like this: I keep 8 mu for the wheat-maize rotation \u2014 that's my main food crop income. The other 4 mu I put in cotton, same as always. Cotton is hard work but the cash is good if the weather holds.\n\nFor wheat this winter, I'll plough deep like always before planting. I'll use the improved seed from the county station \u2014 my neighbor used it last year and got a good yield. I'll put down base fertilizer at planting, then top-dress at jointing. I irrigate four times: once at sowing to get germination, once before winter sets in, once at jointing, once at heading. Two rounds of pesticide \u2014 one for rust, one for aphids. I expect around 450 jin per mu if heaven is kind.\n\nFor summer maize, I don't replough \u2014 just rotary till after wheat harvest, it's faster and the season is tight. Hybrid seed, everyone uses it now. Same fertilizer habit as wheat more or less. Three irrigations. Yield should be around 550 jin.\n\nFor cotton, I plough in spring. I'll use improved Bt seed to cut down on bollworm spray, but I still spray 6 times \u2014 aphids, spider mites, other pests. Cotton drinks a lot of water, I irrigate 5 times from my well. Cotton is the crop that gives me cash money before the year-end.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 67-year-old farmer in Quzhou County with 40 years of experience and no formal education allocates 8 mu to the traditional winter wheat\u2013summer maize double-crop rotation and 4 mu to cotton as the main cash crop. Wheat is ploughed and planted with locally improved seed in autumn, receiving four irrigations and two pesticide treatments following decades of established practice. Maize follows immediately after wheat harvest using rotary tillage for speed, with hybrid seed and three irrigations. Cotton occupies a separate 4-mu plot, ploughed in spring, planted with improved Bt seed to reduce bollworm pressure, but still receiving six pesticide applications for the full complex of pests typical in Hebei. Fertilizer rates reflect conventional farmer practice in the North China Plain \u2014 moderately high nitrogen, with phosphorus and potassium applied mostly as basal dressing. Yield expectations are based on long personal experience with local soil and weather conditions.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 67-year-old farmer in Quzhou County with 40 years of experience and no formal education allocates 8 mu to the traditional winter wheat\u2013summer maize double-crop rotation and 4 mu to cotton as the main cash crop. Wheat is ploughed and planted with locally improved seed in autumn, receiving four irrigations and two pesticide treatments following decades of established practice. Maize follows immediately after wheat harvest using rotary tillage for speed, with hybrid seed and three irrigations. Cotton occupies a separate 4-mu plot, ploughed in spring, planted with improved Bt seed to reduce bollworm pressure, but still receiving six pesticide applications for the full complex of pests typical in Hebei. Fertilizer rates reflect conventional farmer practice in the North China Plain \u2014 moderately high nitrogen, with phosphorus and potassium applied mostly as basal dressing. Yield expectations are based on long personal experience with local soil and weather conditions."
+  },
+  "elapsed_seconds": 41.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_2",
+  "tier": 2,
+  "provider": "claude"
+}

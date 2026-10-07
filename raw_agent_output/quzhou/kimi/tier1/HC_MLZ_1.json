@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 49-year-old woman from Quzhou County. I have farmed this land since I was young, just like my mother and grandmother before me. I never went to school, but I know this soil and this climate with my own two hands.\n\nThis year, I will plant **winter wheat** on about 4 mu of my land, and after we harvest it in early June, I will sow **summer maize** on the same 4 mu. That is the rotation everyone here follows \u2014 it is the only way to get two crops from one piece of land in a single year. I do not grow cotton anymore because the labor is too heavy for me now, and the wheat-maize rotation gives steadier income.\n\nFor the wheat, I will use the improved seeds from the government supply store. They yield better than the old varieties. I will rotary-till the field before sowing in October, put down about 100 jin of compound fertilizer as basal, and then top-dress with urea or ammonium bicarbonate when the wheat greens up in spring. I will irrigate three times \u2014 once at sowing, once at green-up, and once at grain-filling \u2014 because the rain here is never enough. I will also spray pesticides four or five times when I see insects or when the neighbors start spraying, and I apply herbicide once to control weeds.\n\nFor the maize, I will buy hybrid seed, usually Denghai or Nongda brands, because everyone says they are high-yielding. After the wheat comes out in June, I will sow the maize directly without extra tillage \u2014 no-tillage saves time and diesel. I will put down compound fertilizer at sowing and irrigate twice during the summer if it gets dry. I spray insecticide and herbicide a few times, but maize is hardier than wheat so I do not fuss over it as much.\n\nI expect my wheat to yield around 580 kg per mu and the maize around 525 kg per mu, which is about what I usually get in a normal year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 525\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat in winter and maize in summer on 4 mu each because the double-crop rotation is what every household in Quzhou County does. I use improved wheat seed and hybrid maize seed because they give higher yields than traditional varieties. I apply compound fertilizer as basal and top-dress wheat with nitrogen in spring. I irrigate wheat three times and maize twice, and I spray pesticides when I see pests or when neighbors spray. I rotary-till before wheat sowing but use no-tillage for maize to save labor and fuel after the wheat harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 525
+      }
+    ],
+    "reasoning_summary": "I grow wheat in winter and maize in summer on 4 mu each because the double-crop rotation is what every household in Quzhou County does. I use improved wheat seed and hybrid maize seed because they give higher yields than traditional varieties. I apply compound fertilizer as basal and top-dress wheat with nitrogen in spring. I irrigate wheat three times and maize twice, and I spray pesticides when I see pests or when neighbors spray. I rotary-till before wheat sowing but use no-tillage for maize to save labor and fuel after the wheat harvest."
+  },
+  "elapsed_seconds": 290.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_1",
+  "tier": 1,
+  "provider": "kimi"
+}

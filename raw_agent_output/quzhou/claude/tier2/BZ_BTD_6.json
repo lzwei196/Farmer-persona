@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for fifty years. My body isn't what it was \u2014 at 76, my knees ache and I can't do the heavy work like I used to. My wife and I manage together, but we're only two people on 4.1 mu. My children went to the city years ago.\n\n**Wheat (winter):** The wheat goes in as it always does, after the maize comes off. I'll use the improved variety the seed station has been selling \u2014 better yield than the old seeds I used to save. I put down rotary tillage after maize harvest to break up the stubble. Three irrigations: at jointing, heading, and grain fill. Well water costs money and time to pump, so I don't overdo it. Two pesticide passes \u2014 one herbicide early, one for aphids or rust if I see it. Fifteen kilograms of nitrogen per mu is enough; I learned the hard way that more just lodges the stems.\n\n**Maize (summer):** After wheat harvest I go straight in with hybrid maize seeds, no-till. At my age I'm not ploughing twice in a year if I don't have to. Summer rains help, so I only irrigate twice unless it's a dry July. Maize doesn't need as much attention as cotton \u2014 two pesticide applications keeps the corn borer manageable.\n\n**Cotton (1.6 mu):** Cotton is hard work \u2014 topping, picking by hand, bollworm pressure. But I know cotton, and it fetches decent money. I'll plough in spring before transplanting. Four irrigations, five pesticide applications \u2014 you can't slack on cotton pests or you lose the whole thing. My hands know this work even if they're slower now.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 540\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I run a wheat-maize double-crop rotation on 2.5 mu and keep 1.6 mu in cotton, totaling my 4.1 mu. At 76 with only my wife for labor, I choose no-tillage for summer maize to save my back, rotary tillage for wheat where the stubble needs turning, and a spring plough for cotton ground. I use improved wheat and hybrid maize and cotton seed because the yields justify the cost on a small farm. Irrigation is managed conservatively \u2014 three times for wheat, twice for maize, four times for cotton \u2014 since pumping from the well takes effort and money. Cotton gets five pesticide passes because bollworm and aphids can wipe out the income from that plot entirely. Fertilizer rates are moderate; fifty years of watching this soil tells me pushing nitrogen too hard causes more problems than it solves.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 540
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I run a wheat-maize double-crop rotation on 2.5 mu and keep 1.6 mu in cotton, totaling my 4.1 mu. At 76 with only my wife for labor, I choose no-tillage for summer maize to save my back, rotary tillage for wheat where the stubble needs turning, and a spring plough for cotton ground. I use improved wheat and hybrid maize and cotton seed because the yields justify the cost on a small farm. Irrigation is managed conservatively \u2014 three times for wheat, twice for maize, four times for cotton \u2014 since pumping from the well takes effort and money. Cotton gets five pesticide passes because bollworm and aphids can wipe out the income from that plot entirely. Fertilizer rates are moderate; fifty years of watching this soil tells me pushing nitrogen too hard causes more problems than it solves."
+  },
+  "elapsed_seconds": 55.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_6",
+  "tier": 2,
+  "provider": "claude"
+}

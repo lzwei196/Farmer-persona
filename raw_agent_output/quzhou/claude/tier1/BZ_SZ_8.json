@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has worked this land for three generations. In Quzhou, everyone grows wheat and corn \u2014 that's just what we do here. The soil is good flat plain land, and we have the well for irrigation. I have about 10 mu total.\n\nThe plan is simple: wheat goes in the ground in October after the rains, corn goes in right after wheat harvest in June. Same fields, same rotation my father did. I don't have money or knowledge to try anything fancy, and my neighbors who switched to other things haven't done better.\n\nFor wheat seed, I'll buy the improved variety from the seed shop in town \u2014 same one I used the past two years, \u6d4e\u9ea622 or whatever they have that's similar. Everyone's buying it, so it must be fine. For corn I always buy hybrid seed \u2014\u90d1\u5355958 or whatever the shop recommends. The hybrids really do yield more than the old seeds, even I can see that.\n\nFertilizer: I apply compound fertilizer as base before planting, then urea when the wheat joints and before corn tassels. I put on a good amount \u2014 I'd rather spend a bit more on fertilizer than lose yield. My wife says I put on too much but I'm not risking it.\n\nIrrigation: I pump from the groundwater well. Wheat needs water in winter, at jointing, and when the grain is filling \u2014 three times. Corn I usually only water once if there's a dry spell in August.\n\nFor corn I just seed directly into the stubble with the machine \u2014 no need to plough again. For wheat I use the rotary tiller to turn over the corn stalks first.\n\nPesticides: I spray herbicide on wheat in winter, then once more for aphids in May. For corn, just one spray if I see pests.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize in rotation on 10 mu of flat irrigated land in Quzhou, as my father and neighbors have always done. I use improved wheat varieties and hybrid maize seed from the local shop, apply relatively heavy compound fertilizer and urea topdressing to protect yields, irrigate wheat three times from the groundwater well and maize once, and do rotary tillage before wheat but direct seed maize into stubble. This is the safe, familiar system I know and trust.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize in rotation on 10 mu of flat irrigated land in Quzhou, as my father and neighbors have always done. I use improved wheat varieties and hybrid maize seed from the local shop, apply relatively heavy compound fertilizer and urea topdressing to protect yields, irrigate wheat three times from the groundwater well and maize once, and do rotary tillage before wheat but direct seed maize into stubble. This is the safe, familiar system I know and trust."
+  },
+  "elapsed_seconds": 47.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_8",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm about 20 mu of flat alluvial ground here in Quzhou. My family has worked this land for generations, and I went through agricultural college, so I understand what I'm doing and why. The soil here is decent loam \u2014 good for grain \u2014 and the water table has been dropping every year, which I think about seriously.\n\nI'm not going to experiment this year. The winter wheat\u2013summer maize double-crop rotation is what this land does best, what the markets expect, and what I know how to execute well. Cotton income has collapsed and vegetables need more labor than I have. Two cash grain crops on the same 20 mu is the right call.\n\n**For winter wheat**, I'll plant a local improved variety \u2014 something from the Hebei Academy of Agricultural Sciences, probably Shimai 22 or similar. It's not a hybrid but it's adapted to this soil and disease pressure. I'll do rotary tillage after the maize harvest to break up compaction and work in crop residue. I'll split my nitrogen \u2014 heavier base dressing at planting, lighter top-dress at jointing \u2014 because I've seen too many neighbors dump it all at once and watch it leach. Three irrigations: pre-sowing, overwintering, and grain-filling. I used to do four but I'm cutting one to protect the aquifer and frankly the yield penalty is small. Two pesticide passes: herbicide early and a fungicide/aphicide pass at heading.\n\n**For summer maize**, I'll direct-seed a\u90d1\u5355958-type hybrid into the wheat stubble with no-till. The summer rains usually cover most of what the crop needs \u2014 I'll irrigate once if we hit a dry stretch in silking. Maize doesn't need much phosphorus and potassium from me at this point given the residual from wheat applications. One pesticide application targeting fall armyworm and corn borer if scouting shows it's warranted.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I am continuing the winter wheat\u2013summer maize double-crop rotation on all 20 mu, which is optimal for Quzhou's flat alluvial soils, market infrastructure, and my mechanization setup. I chose an improved (non-hybrid) wheat variety adapted to local disease pressure and split nitrogen applications to improve use efficiency and reduce leaching. Irrigation is reduced to three passes for wheat \u2014 dropping the traditional fourth \u2014 to slow aquifer depletion without meaningful yield loss, based on years of observation. Summer maize follows with no-till direct seeding into wheat stubble using a proven hybrid, relying on monsoon rainfall supplemented by one contingency irrigation. Input rates reflect yield-optimized but not excessive applications, consistent with my agricultural training and awareness of both profitability and resource constraints in this region.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I am continuing the winter wheat\u2013summer maize double-crop rotation on all 20 mu, which is optimal for Quzhou's flat alluvial soils, market infrastructure, and my mechanization setup. I chose an improved (non-hybrid) wheat variety adapted to local disease pressure and split nitrogen applications to improve use efficiency and reduce leaching. Irrigation is reduced to three passes for wheat \u2014 dropping the traditional fourth \u2014 to slow aquifer depletion without meaningful yield loss, based on years of observation. Summer maize follows with no-till direct seeding into wheat stubble using a proven hybrid, relying on monsoon rainfall supplemented by one contingency irrigation. Input rates reflect yield-optimized but not excessive applications, consistent with my agricultural training and awareness of both profitability and resource constraints in this region."
+  },
+  "elapsed_seconds": 50.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_7",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 73 years old this year, and I have been farming these fields in Quzhou since I was a young man. My family has 5 mu of land \u2014 not much, but it is what we have. I only went to primary school, so I do not read those extension pamphlets. I watch what my neighbors do, especially Old Wang down the road, who has good wheat every year. \n\nThis year, I will stick with what I know: wheat and maize double-cropping on all 5 mu. I thought about cotton, but I am too old for all that spraying and hand-picking. My back cannot take it anymore. Wheat and maize can be harvested by machine, and my nephew helps me find a combine when the time comes.\n\nFor the winter wheat, I will rotary-till the land in early October, just like always. I will sow about 30 jin of improved wheat seed per mu \u2014 I save some seed from last year and buy a little to top up. For fertilizer, I will put down one bag of compound fertilizer per mu at planting, and then topdress with urea in the spring when the wheat starts jointing. I figure that is about 10 kg of nitrogen per mu total. I always worry about not having enough fertilizer, because a yellow wheat field means less food for my family. I will irrigate four times: once at planting, once before winter, once at green-up, and once at heading. The water costs money, but without it the wheat dries up. I will spray for weeds and bugs three or four times \u2014 the aphids come every year.\n\nAfter harvesting the wheat in early June, there is no time to waste. I will plant summer maize right away, no-tillage, using hybrid seed I buy from the shop \u2014 one package per mu. The hybrid seed is more expensive, but it grows fast and strong. I will give the maize about 8 kg of nitrogen per mu, mostly as a base dressing, and some compound fertilizer. I will irrigate twice if the rain does not come, and spray for insects and weeds four or five times. The corn borers are bad some years.\n\nI expect about 1,100 jin of wheat per mu and about 950 jin of maize per mu if the weather holds. Last year was decent, so I hope this year is the same. I do not have much cash, but I will borrow a little from my son in the city if I have to. Better to spend now than go hungry later.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 950\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 5 mu in Quzhou for over 50 years and I trust what I know. Wheat-maize double cropping feeds my family and the machines do the heavy work, which matters at my age. I rotary-till for wheat and plant improved seed because that is what my neighbors do and it works. I keep fertilizer moderate but not too low because I cannot afford a bad year. For maize I use hybrid seed and no-tillage to save time between crops. I skip cotton because my back cannot handle the labor anymore.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 950
+      }
+    ],
+    "reasoning_summary": "I have farmed these 5 mu in Quzhou for over 50 years and I trust what I know. Wheat-maize double cropping feeds my family and the machines do the heavy work, which matters at my age. I rotary-till for wheat and plant improved seed because that is what my neighbors do and it works. I keep fertilizer moderate but not too low because I cannot afford a bad year. For maize I use hybrid seed and no-tillage to save time between crops. I skip cotton because my back cannot handle the labor anymore."
+  },
+  "elapsed_seconds": 223.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_3",
+  "tier": 1,
+  "provider": "kimi"
+}

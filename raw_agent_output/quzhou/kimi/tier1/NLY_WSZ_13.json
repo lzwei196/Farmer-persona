@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am fifty-seven years old. I have never been to school, but I have farmed this land in Quzhou since I was a young girl. My parents taught me, and now my bones know the seasons better than any book. I have three mu of flat, good land, and I do what every family around here does: wheat in autumn, maize in summer. That is the only way that makes sense on the North China Plain.\n\nMy wheat is already in the ground. I sowed it last October after the National Day holiday, using an improved variety I bought from the seed cooperative in town. Now it is April, and the wheat is greening up after the winter sleep. I will irrigate it four times before harvest: once now for the green-up, once at jointing when the stems shoot up, once at heading when the ears come out, and once more when the grain is filling. I already put down compound fertilizer and some manure at sowing, but I will topdress with urea when I irrigate at jointing. I spray four times total \u2014 herbicide once to keep the weeds down, insecticide twice for the aphids and armyworms, and fungicide once if the weather turns damp. I plowed the land with a rotary tiller before sowing the wheat. I expect about 1,000 jin of wheat per mu, which is what I usually get if the spring rains do not fail.\n\nIn early June, when the wheat turns golden, I will hire the combine harvester. The very same day or the next, I plant summer maize. There is no time to rest \u2014 the season is tight. I buy hybrid maize seeds, usually Nongda or Denghai brands, one small packet per mu. I do not till the land for maize; I sow directly into the wheat stubble so the soil does not dry out. I put down compound fertilizer at planting. I irrigate twice: once when the seedlings are small if June is dry, and once at the big trumpet stage when the tassels come out. I spray four times for maize too \u2014 herbicide, insecticide, and sometimes fungicide. I expect about 1,200 jin of maize per mu. The maize will be ready by late September or early October, and then the cycle starts again.\n\nI use plenty of fertilizer because the land has been farmed for generations and needs feeding. For wheat, I use compound fertilizer and top up with urea. For maize, compound fertilizer is enough. My husband and I do most of the work by hand or with our small tractor, but we hire machines for the heavy jobs. I grow wheat and maize because they are safe \u2014 we can eat them, feed them to our animals, and sell what is left. Cotton is too much labor for these hands now, and vegetables are risky. This is how I have always done it, and this is how I will do it this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 40,\n      \"phosphorus_kg_per_mu\": 25,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 32,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1200\n    }\n  ],\n  \"reasoning_summary\": \"I am a 57-year-old woman with no formal schooling who has farmed in Quzhou County my entire life. I manage 3 mu of flat land using the traditional winter wheat\u2013summer maize double-cropping rotation that all my neighbors follow. My wheat was sown last October with an improved variety, and this spring I will irrigate four times, apply compound fertilizer plus urea topdressing, and spray pesticides four times before harvesting in early June. Immediately after the wheat harvest I will plant hybrid maize using no-tillage directly into the stubble, apply compound fertilizer, irrigate twice, and spray four times for weeds and insects. I use these input levels because this is what my family has always done and what gives me reliable yields to feed my household and sell the surplus.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 40,
+        "phosphorus_kg_per_mu": 25,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 32,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1200
+      }
+    ],
+    "reasoning_summary": "I am a 57-year-old woman with no formal schooling who has farmed in Quzhou County my entire life. I manage 3 mu of flat land using the traditional winter wheat\u2013summer maize double-cropping rotation that all my neighbors follow. My wheat was sown last October with an improved variety, and this spring I will irrigate four times, apply compound fertilizer plus urea topdressing, and spray pesticides four times before harvesting in early June. Immediately after the wheat harvest I will plant hybrid maize using no-tillage directly into the stubble, apply compound fertilizer, irrigate twice, and spray four times for weeds and insects. I use these input levels because this is what my family has always done and what gives me reliable yields to feed my household and sell the surplus."
+  },
+  "elapsed_seconds": 141.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "NLY_WSZ_13",
+  "tier": 1,
+  "provider": "kimi"
+}

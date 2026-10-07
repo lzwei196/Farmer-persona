@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been farming this land 50 years now. My boy works in the city, sends money sometimes, but the field is still mine to manage. 9 mu \u2014 small piece, but it feed the family and we sell some too.\n\nWheat-maize is what we always do here in Quzhou. Two crops a year on the same land. Cotton I plant separate, on about 2 mu where the soil is lighter. Wheat and maize together about 7 mu \u2014 wheat winter, maize summer, same ground.\n\nFor wheat I use the improved seed, Jimai variety, what the dealer sells. Last year neighbor Old Wang got good harvest with it. I plant after maize harvest in October. Fertilizer \u2014 I buy the compound fertilizer, one bag 50 kg cover almost 1 mu. I put about 50 kg compound (that's 15-15-15) before planting, then top dress urea maybe 20 kg per mu in spring when wheat green up. So nitrogen about 17 kg per mu total, phosphorus 7-8 kg, potassium same. Water from the well \u2014 I irrigate 3 times: before winter, jointing time, and grain filling. Spray pesticide 2 times, for aphid and rust. Wheat give me about 450 kg per mu, sometimes 500 if weather good.\n\nMaize after wheat in June. Hybrid seed, Zhengdan or Xianyu. Same compound fertilizer 40 kg before planting, then urea 25 kg when knee-high. Maize need more nitrogen, grow fast. Irrigate 2 times if rain not enough. Spray once for borer. Maize give 550 kg per mu usually.\n\nCotton \u2014 I plant less now, only 2 mu. Cotton price not so good these years but I keep some habit. Improved seed. Fertilizer maybe 30 kg compound and 15 kg urea. Irrigate 3 times. Cotton need many spray, 5 times for bollworm and aphid. Tillage I plough for cotton, rotary for wheat-maize. Cotton give 250 kg per mu seed cotton.\n\nI don't waste money but I don't skimp on fertilizer either. Bad harvest is real loss. Better put extra bag than lose 100 kg yield.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 9 mu in Quzhou like always \u2014 wheat and maize rotation on 7 mu, cotton on 2 mu where soil is lighter. I use improved wheat seed and hybrid maize seed because neighbors get good results. I buy compound fertilizer (15-15-15) one bag per mu and add urea for top dressing \u2014 same as last year, no reason to change what works. I would rather spend extra on a bag of fertilizer than lose yield, a bad harvest hurts much more than fertilizer cost. Cotton needs more spraying for bollworm so I budget 5 sprays. I irrigate from my well when rain is short. My family helps at busy times so I don't hire much labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 9 mu in Quzhou like always \u2014 wheat and maize rotation on 7 mu, cotton on 2 mu where soil is lighter. I use improved wheat seed and hybrid maize seed because neighbors get good results. I buy compound fertilizer (15-15-15) one bag per mu and add urea for top dressing \u2014 same as last year, no reason to change what works. I would rather spend extra on a bag of fertilizer than lose yield, a bad harvest hurts much more than fertilizer cost. Cotton needs more spraying for bollworm so I budget 5 sprays. I irrigate from my well when rain is short. My family helps at busy times so I don't hire much labor."
+  },
+  "elapsed_seconds": 32.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

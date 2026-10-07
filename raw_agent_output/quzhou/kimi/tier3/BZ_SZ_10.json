@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 5 mu of wheat-maize here in Quzhou. I finished middle school and I've been doing this for 15 years, so I know what works on my land. I don't have big machines \u2014 I hire the rotary tiller for wheat and the no-tillage seeder for maize. My son works in a factory in Shijiazhuang and sends home about 2,000 yuan a month, which helps buy inputs, but I still count every yuan because my daughter is in high school and the fees are real money.\n\nFor winter wheat, I plant in mid-October. I buy improved seed \u2014 about 15 kg per mu \u2014 and before sowing I spread one 50 kg bag of 16-16-8 compound fertilizer per mu. That's my base. The extension agent says 15 kg nitrogen per mu is enough, but my neighbor Lao Zhang uses one bag of compound plus 30 kg urea at green-up, and his wheat always looks greener than mine. Last year I did the same and got about 480 kg per mu, so this year I will do exactly that: 30 kg urea per mu when the wheat turns green in March. I irrigate three times \u2014 green-up, jointing, and grain filling \u2014 because well water isn't free but a dry spell will kill your yield. I spray herbicide once in spring, and I keep an eye out for aphids; if they show up, I spray insecticide. If the weather turns humid and I see rust, I add fungicide, but usually three sprays total is enough.\n\nFor summer maize, there's no time to plough after wheat harvest in early June. I plant hybrid seed right into the stubble with the no-tillage machine \u2014 1.5 kg per mu. I put down 40 kg of the same 16-16-8 compound per mu at planting, and when the maize is knee-high in mid-July, I side-dress 25 kg urea per mu. I irrigate twice: once after planting if it doesn't rain, and once at tasseling. Two sprays \u2014 herbicide and insecticide for corn borer \u2014 that's all I can afford. I expect 550 kg per mu, same as last year if the weather holds.\n\nI know I could probably use less fertilizer and still get a decent crop, but on 5 mu, one bad year means I lose money I don't have. I'd rather spend an extra 100 yuan on fertilizer than risk losing 500 kg of grain.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage 5 mu of wheat-maize double cropping on a tight budget. For wheat, I use one 50 kg bag of 16-16-8 compound per mu as a base and topdress with 30 kg urea at green-up, irrigating three times and spraying three times. For maize, I no-till plant hybrid seed immediately after wheat harvest, apply 40 kg of the same compound per mu at planting, and side-dress 25 kg urea at the knee-high stage, with two irrigations and two sprays. I follow what worked last year and what my neighbors do, spending carefully because my family relies on both farm income and my son's off-farm wages.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage 5 mu of wheat-maize double cropping on a tight budget. For wheat, I use one 50 kg bag of 16-16-8 compound per mu as a base and topdress with 30 kg urea at green-up, irrigating three times and spraying three times. For maize, I no-till plant hybrid seed immediately after wheat harvest, apply 40 kg of the same compound per mu at planting, and side-dress 25 kg urea at the knee-high stage, with two irrigations and two sprays. I follow what worked last year and what my neighbors do, spending carefully because my family relies on both farm income and my son's off-farm wages."
+  },
+  "elapsed_seconds": 285.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_10",
+  "tier": 3,
+  "provider": "kimi"
+}

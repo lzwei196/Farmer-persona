@@ -1,0 +1,40 @@
+{
+  "raw_response": "Alright, let me think about this year the way I always do.\n\nI been farming these 6 mu for thirty years. Same as my father did. Wheat in winter, maize in summer \u2014 that's how it goes here in Quzhou. I don't know all them fancy words the dealer uses, but I know what my land eats.\n\n**Wheat first.** I plant the improved seed \u2014 everyone in the village uses the one from the shop now, the old seed don't yield enough. For 6 mu I buy maybe 4 bags of compound fertilizer (the 18-18-18 type, that's what the shop sells most) before plowing. That's about 2 bags per mu for the base. Then when the wheat wakes up in spring, I spread urea \u2014 one bag for about 2 mu, so 3 bags total. Better too much than too little. If the wheat turns yellow I'll be eating air next summer. I water three times with my well \u2014 once before winter so the roots don't freeze, once when it stands up in spring, and once when the grain is filling. Spray for aphids and the rust \u2014 usually twice, maybe three times if the bugs come bad. I rotary till, my neighbor has the machine and charges fair.\n\n**Then maize after the wheat comes off in June.** No time to plow proper, so I just drill it in \u2014 no-till like everyone does now. The seed is hybrid, that's all they sell. I put DAP in the row at planting, maybe 15 kg per mu, and then when the maize is knee-high I side-dress urea heavy \u2014 20 kg per mu or so. Maize is hungry, it eats more than wheat. Water once or twice if the summer rain don't come. Spray once for the borer worm.\n\nLast year wheat gave me about 450 kg per mu, maize maybe 550. Same story this year I hope.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what I done for thirty years and what my neighbors do. Wheat gets compound fertilizer at plowing then urea in spring, three waterings from the well, spray for aphids and rust. Maize goes in right after wheat with no plowing, DAP at seeding and urea side-dress when it's knee-high because maize eats heavy. I'd rather buy an extra bag of urea than watch the crop turn yellow \u2014 fertilizer money is nothing compared to a bad harvest feeding four people.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what I done for thirty years and what my neighbors do. Wheat gets compound fertilizer at plowing then urea in spring, three waterings from the well, spray for aphids and rust. Maize goes in right after wheat with no plowing, DAP at seeding and urea side-dress when it's knee-high because maize eats heavy. I'd rather buy an extra bag of urea than watch the crop turn yellow \u2014 fertilizer money is nothing compared to a bad harvest feeding four people."
+  },
+  "elapsed_seconds": 30.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_15",
+  "tier": 3,
+  "provider": "claude"
+}

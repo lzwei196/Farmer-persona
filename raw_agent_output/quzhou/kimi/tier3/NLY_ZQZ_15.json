@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed my 10.1 mu here in Quzhou for 20 years. I split the land into two parts: 7 mu for wheat-maize every year, and 3.1 mu for cotton to get cash. My husband and son work off-farm in the city, so I do most of the field work myself, but I hire labor for the wheat harvest and for cotton picking because those jobs are too much for one person.\n\nFor wheat on the 7 mu, I sow in October. I use improved seed at 12.5 kg per mu. For fertilizer, I spread one 50 kg bag of compound fertilizer on each mu as base fertilizer before sowing, and at green-up time in March I top-dress with 25 kg of urea per mu. Some people at the supply shop say that is a lot of nitrogen, but two years ago I cut back to 15 kg of urea to save money, and my wheat turned yellow and thin and only gave me 420 kg per mu. Never again. I would rather waste a little fertilizer than lose half my yield. I irrigate three times: once before winter if the soil is dry, once at jointing, and once when the grain is filling. I rotary till before sowing. For pesticides, I spray herbicide once after sowing, and I spray fungicide once when the wheat is heading because rust came through the village last spring and I am not taking chances. I expect 500 kg per mu this year if a late frost does not hit the flowers.\n\nFor summer maize on the same 7 mu, I hire the no-till seeder right after wheat harvest in June. There is no time to plough, and the machine sows straight into the wheat stubble. I use hybrid seed at 2.5 kg per mu. I put 40 kg of compound fertilizer per mu in the row at sowing, and when the maize is knee-high I spread 20 kg of urea per mu as top dressing. I water twice: once when it is shooting up, and once during grain filling. Summer rains help, but last August was dry and I lost yield, so I will water twice for sure. I spray herbicide once, and if I see armyworms I spray insecticide once. I expect 600 kg per mu.\n\nFor cotton on the 3.1 mu, I plant in late April. I use hybrid Bt cotton seed at 1.5 kg per mu. Cotton roots go deep, so I plough that field in spring instead of just rotary tilling. I put 45 kg of compound fertilizer per mu as base fertilizer. At flowering I add 15 kg urea per mu, and when the bolls are forming I spread 15 kg of potassium sulfate per mu because the input dealer told me three years ago that extra potassium stops the bolls from dropping, and I tried it and my cotton did better than the year before, so now I do it every year. I irrigate three times: at seedling, flowering, and boll stage. Cotton needs more medicine than grain. I spray four times: herbicide once, then for aphids, then for bollworm even though it is Bt cotton\u2014I do not fully trust it\u2014and once for whitefly before harvest. I expect 260 kg of seed cotton per mu.\n\nI think about money every day. A bag of urea is over 100 yuan now, and electricity for the well is not cheap either. But a bad harvest means disaster for my family; we need the grain to eat and the cotton to pay for school and inputs. Wasting one bag of fertilizer is nothing compared to losing a whole crop. I watch my neighbors closely. If Lao Wang and the others are adding more potash to cotton this year, I do the same. I only change what I did last year if I saw it work on their fields first. Last year I spent too much on extra cotton pesticide, so this year I am holding to four sprays unless the insects get really bad. My budget is tight, but the wheat and maize feed us and the cotton pays for the inputs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I split my 10.1 mu into 7 mu of wheat-maize double cropping and 3.1 mu of cotton, adjusting last year's practices based on what worked and what I saw my neighbors do. I favor slightly higher fertilizer rates to avoid yield loss because a bad harvest is far worse than wasting a bag of urea, and I manage costs by limiting sprays to what I know is necessary while keeping irrigation focused on the critical growth stages.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I split my 10.1 mu into 7 mu of wheat-maize double cropping and 3.1 mu of cotton, adjusting last year's practices based on what worked and what I saw my neighbors do. I favor slightly higher fertilizer rates to avoid yield loss because a bad harvest is far worse than wasting a bag of urea, and I manage costs by limiting sprays to what I know is necessary while keeping irrigation focused on the critical growth stages."
+  },
+  "elapsed_seconds": 253.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_15",
+  "tier": 3,
+  "provider": "kimi"
+}

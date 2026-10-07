@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know every corner of my fields. My 12 mu grows wheat in winter and maize in summer \u2014 same land, both seasons. That's how we do it here in Quzhou. My sons help when they're home from their town jobs, but mostly it's me and my wife.\n\n**Wheat (October planting):**\nI'll plough before planting, like I always do \u2014 turns in the maize stubble, gives the roots room. I use improved seed from the county seed station, the same variety I've had good luck with the past few years. I'll put down base fertilizer before planting \u2014 compound fertilizer with phosphorus and potassium \u2014 then top-dress nitrogen at jointing in spring. I'll irrigate three times: once before winter sets in to help the seedlings, once at jointing, and once when the grain is filling. For pests, I spray herbicide in autumn and then once in late spring for aphids and powdery mildew. Wheat on all 12 mu.\n\n**Maize (June planting, right after wheat harvest):**\nNo time to waste between harvest and planting \u2014 I'll use rotary tillage, quick pass, get the hybrid seed in the ground. Hybrid seed gives me better yield, everyone around here uses it. I'll fertilize heavily at planting with compound fertilizer, then top-dress urea when the plant is knee-high and again at tasseling. Summer has rain but sometimes it's dry at critical times \u2014 I'll irrigate twice if I need to, once for establishment and once at tasseling. Two pesticide sprays: herbicide early and then for corn borer or fall armyworm if I see signs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 59-year-old farmer with 40 years of experience in Quzhou County follows the standard wheat-maize rotation on all 12 mu, applying practices refined over decades: deep ploughing before winter wheat for good root development with improved local varieties, split nitrogen applications timed to jointing, and three irrigations timed to critical growth stages; then a fast rotary-till turnaround for summer hybrid maize, heavy compound fertilizer at planting with urea topdressings at knee-height and tasseling, two irrigations contingent on summer rainfall, and two pesticide passes targeting common local threats. Input rates and yield expectations reflect experienced-farmer practice on the North China Plain, not textbook maximums.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 59-year-old farmer with 40 years of experience in Quzhou County follows the standard wheat-maize rotation on all 12 mu, applying practices refined over decades: deep ploughing before winter wheat for good root development with improved local varieties, split nitrogen applications timed to jointing, and three irrigations timed to critical growth stages; then a fast rotary-till turnaround for summer hybrid maize, heavy compound fertilizer at planting with urea topdressings at knee-height and tasseling, two irrigations contingent on summer rainfall, and two pesticide passes targeting common local threats. Input rates and yield expectations reflect experienced-farmer practice on the North China Plain, not textbook maximums."
+  },
+  "elapsed_seconds": 38.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_13",
+  "tier": 2,
+  "provider": "claude"
+}

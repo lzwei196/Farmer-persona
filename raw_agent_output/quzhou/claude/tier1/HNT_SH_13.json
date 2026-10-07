@@ -1,0 +1,53 @@
+{
+  "raw_response": "My family has farmed this land in Quzhou for generations. I know this soil and this climate \u2014 cold dry winters, hot wet summers, the North China Plain rhythm. At my age, I can't do as much heavy work as before, my son is in Shijiazhuang working, so I rely on the machinery contractor (\u519c\u673a\u624b) for sowing and harvest. I manage my 7 mu the same way I have for 30 years.\n\nI will plant winter wheat on all 7 mu in October, same as always. That's the money crop. I'll buy improved seed from the township supply co-op \u2014 I stopped saving my own seed years ago, the co-op seed yields better. For fertilizer, I'll put down compound fertilizer (\u590d\u5408\u80a5) as base dressing and then urea at jointing. I water three times: the winter moisture irrigation (\u8d8a\u51ac\u6c34), the jointing water (\u62d4\u8282\u6c34), and the grain-filling water (\u704c\u6d46\u6c34). I spray herbicide in November and fungicide before heading. I've been doing this exactly this way for decades. My yield is around 450 jin per mu most years \u2014 that's 450 kg, which is decent.\n\nAfter wheat harvest in June, I immediately plant summer maize on the same 7 mu. The machinery plows and sows in one pass. Maize is easier \u2014 the summer rains help, I only irrigate once if July is dry. I apply urea twice, once at emergence and once at tasseling. One herbicide spray early, maybe one insecticide if the corn borer (\u7389\u7c73\u879f) is bad that year. Hybrid seed,\u90d1\u5355958 or whatever the seed shop has. Yield around 550 kg per mu.\n\nI also keep a small vegetable plot of half a mu near the house \u2014 garlic, Chinese cabbage, beans \u2014 but that's just for eating, I don't count it as a cash crop.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"mixed vegetables (garlic, cabbage, beans)\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.5,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"A 68-year-old smallholder in Quzhou County, Hebei follows the dominant winter wheat\u2013summer maize double-cropping rotation on 7 mu of North China Plain farmland, relying on contracted machinery for sowing and harvest due to limited physical capacity. Improved wheat seed and hybrid maize seed are purchased from the township co-op rather than saved, reflecting a shift that occurred decades ago. Input levels (nitrogen ~16\u201318 kg/mu, three irrigations for wheat, one for maize) reflect locally conventional practice built up over a lifetime of experience rather than precision agronomic guidance. A half-mu household vegetable plot supplies domestic consumption with minimal external inputs.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "mixed vegetables (garlic, cabbage, beans)",
+        "season": "spring",
+        "area_mu": 0.5,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 5,
+        "pesticide_applications": 1,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "A 68-year-old smallholder in Quzhou County, Hebei follows the dominant winter wheat\u2013summer maize double-cropping rotation on 7 mu of North China Plain farmland, relying on contracted machinery for sowing and harvest due to limited physical capacity. Improved wheat seed and hybrid maize seed are purchased from the township co-op rather than saved, reflecting a shift that occurred decades ago. Input levels (nitrogen ~16\u201318 kg/mu, three irrigations for wheat, one for maize) reflect locally conventional practice built up over a lifetime of experience rather than precision agronomic guidance. A half-mu household vegetable plot supplies domestic consumption with minimal external inputs."
+  },
+  "elapsed_seconds": 43.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_13",
+  "tier": 1,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I look at my 10.1 mu of land and think about what I did last year. Last year the wheat did okay \u2014 not great, not bad. The maize was decent. My neighbor Lao Zhang, he used a bit more fertilizer on his wheat and his yield was better than mine, so I think I should do that this year too. \n\nFor the wheat, I plant Zhengmai 7698, it's an improved variety. I buy my fertilizer from the dealer in town \u2014 he told me the compound fertilizer is good. Last year I put about 12 kg of nitrogen per mu, but Lao Zhang put 15 kg and his wheat looked stronger. So this year I will put 15 kg nitrogen per mu. For phosphorus I use about 6 kg per mu, that's one bag spread across the whole field. Potassium I put 4 kg per mu, I don't think I need more than that. I irrigate three times \u2014 once after green-up, once at jointing, and once at filling. That's what I've always done and it works. I spray pesticide twice, once for aphids and once for rust. I till with the rotary tiller before planting. I expect around 550 kg per mu for wheat if the weather holds.\n\nFor the maize, I plant after the wheat comes out in early June. I use a hybrid seed, Zhengdan 958 \u2014 everyone around here plants that, the seed dealer always has it. I put less nitrogen on maize than wheat, about 14 kg per mu. Phosphorus around 5 kg per mu, potassium around 4 kg per mu. I only irrigate twice for maize, once at the big trumpet stage and once when the tassels are out, because maize doesn't like too much water and my well costs electricity. Two pesticide sprays \u2014 one for corn borer and one if the aphids come back. I also rotary till before planting maize. If the summer rains are good I can get 600 kg per mu, maybe 650 if I'm lucky.\n\nMy daughter works in Shijiazhuang and sends money home, so I can afford the fertilizer, but I still watch every yuan. Fertilizer is expensive now, 150 yuan a bag, but if I cut back I might lose 100 kg per mu, and that's worse than wasting a few yuan on extra fertilizer. I do what Lao Zhang does, he has good eyes for farming.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I based my plan on last year's practice with small adjustments after watching my neighbor Lao Zhang get better wheat yields with slightly more nitrogen. My 10.1 mu farm is medium-sized so I balance input costs carefully, but I'd rather spend a bit more on fertilizer than risk losing yield. I use improved wheat seed and hybrid maize seed that the local dealer sells and most neighbors plant. I irrigate wheat three times and maize twice, spray twice per crop, and rotary till before each crop. My expected yields are 550 kg/mu for wheat and 600 kg/mu for maize, which is what I usually get in a normal year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I based my plan on last year's practice with small adjustments after watching my neighbor Lao Zhang get better wheat yields with slightly more nitrogen. My 10.1 mu farm is medium-sized so I balance input costs carefully, but I'd rather spend a bit more on fertilizer than risk losing yield. I use improved wheat seed and hybrid maize seed that the local dealer sells and most neighbors plant. I irrigate wheat three times and maize twice, spray twice per crop, and rotary till before each crop. My expected yields are 550 kg/mu for wheat and 600 kg/mu for maize, which is what I usually get in a normal year."
+  },
+  "elapsed_seconds": 39.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_MZ_5",
+  "tier": 3,
+  "provider": "kimi"
+}

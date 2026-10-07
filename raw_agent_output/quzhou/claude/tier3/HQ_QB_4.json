@@ -1,0 +1,53 @@
+{
+  "raw_response": "This year I'll plant like I always do \u2014 wheat in winter, maize after the wheat comes off, and I keep a small piece for cotton because the price has been alright and I know that plot. Out of my 13.1 mu, I'll put 10 mu on the wheat-maize rotation and the other 3.1 mu on cotton. My land sits near the well so water isn't my biggest worry, fertilizer cost is.\n\nFor wheat, last year I used about two bags of compound fertilizer (45% NPK) as base and one bag of urea topdress at jointing. That works out to roughly 16 kg nitrogen, 8 kg phosphorus, 6 kg potassium per mu. I got around 500 kg/mu, which is normal for our village. I'll do the same \u2014 the neighbor who cut back last year lost some yield and I won't take that chance. Irrigation three times: before winter, at jointing, and at grain filling. I spray once for aphids and once for rust, so two sprays. I plough before sowing because the stubble needs turning in.\n\nFor summer maize after wheat, I use Zhengdan 958 or a similar hybrid \u2014 everyone around here does. I'll no-till drill right into the wheat stubble, save time and diesel. About 18 kg N, 5 kg P, 5 kg K per mu, mostly urea sidedressed at the big trumpet stage. One irrigation usually, maybe two if July is dry. Two pesticide sprays \u2014 one for armyworm, one for corn borer. Target 580 kg/mu.\n\nCotton is more work. I use an improved Bt variety so the bollworm pressure is lower, but I still spray maybe 6-7 times for aphids, mites, and late bollworm. I rotary till, put 13 kg N, 7 kg P, 9 kg K per mu, and irrigate 4 times. I expect 270 kg/mu seed cotton \u2014 that's what I got last two years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I stick close to what worked for me and my neighbors last year \u2014 wheat-maize on 10 mu with standard fertilizer rates I've used for years, and 3.1 mu of cotton on the plot I know well. I use improved wheat seed, hybrid maize (Zhengdan type), and Bt cotton because everyone around me does and the yields are steady. I'd rather spend a bit more on fertilizer than risk a bad harvest \u2014 that's real money lost. Well irrigation lets me water wheat three times and cotton four times without worry. I no-till the maize to save diesel and time after wheat harvest, plough before wheat, and rotary till the cotton ground.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 4,
+        "pesticide_applications": 7,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I stick close to what worked for me and my neighbors last year \u2014 wheat-maize on 10 mu with standard fertilizer rates I've used for years, and 3.1 mu of cotton on the plot I know well. I use improved wheat seed, hybrid maize (Zhengdan type), and Bt cotton because everyone around me does and the yields are steady. I'd rather spend a bit more on fertilizer than risk a bad harvest \u2014 that's real money lost. Well irrigation lets me water wheat three times and cotton four times without worry. I no-till the maize to save diesel and time after wheat harvest, plough before wheat, and rotary till the cotton ground."
+  },
+  "elapsed_seconds": 37.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_4",
+  "tier": 3,
+  "provider": "claude"
+}

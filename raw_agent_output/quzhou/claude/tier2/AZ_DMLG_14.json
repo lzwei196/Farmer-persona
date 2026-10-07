@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land in Quzhou for over half a century. I know what this soil does, what the weather brings, and what my body can handle at 73. My wife and I can't put in the hours we used to, so I think carefully about where to spend my labor.\n\nMy 12 mu divides naturally: I'll keep 8 mu in the wheat-maize rotation \u2014 that's my backbone, mechanizable, predictable \u2014 and the remaining 4 mu goes to cotton. Cotton is getting harder. It demands hand labor at topping and picking, but the price is still worth it and I know the crop intimately. I won't give it up yet.\n\nFor **wheat**, I'll use an improved certified variety from the county seed station \u2014 I stopped saving my own seed fifteen years ago when yields climbed after switching. I'll rotary till after maize harvest in October, apply base fertilizer, then split the nitrogen: base plus topdressing at jointing. Four irrigations: pre-winter, turning green, jointing, and heading. Herbicide once, fungicide once for powdery mildew. Straightforward.\n\nFor **maize**, I go straight in after wheat harvest with no-tillage and a hybrid seed \u2014\u90d1\u5355958 or similar. Summer heat does the work. Three irrigations, two pesticide passes. Nitrogen goes in at planting and again at big bell stage.\n\nFor **cotton**, I plough in spring, plant hybrid seed with plastic mulch. Cotton needs more water and far more pesticide attention \u2014 bollworm, aphids, spider mites. Five irrigations spread through the season, seven pesticide applications. I top it myself in July. It's the hardest work on my calendar but I've done it so many times my hands know what to do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I allocate my 12 mu as 8 mu in wheat-maize rotation and 4 mu in cotton, prioritizing the mechanizable rotation as the core income source while keeping cotton because I know it well and the price justifies the labor despite my age. Wheat gets rotary tillage, four irrigations, and split nitrogen to protect yield through dry Hebei springs. Maize follows wheat with no-tillage and a high-yielding hybrid, requiring minimal intervention through the wet summer months. Cotton receives the most intensive management \u2014 plough tillage, plastic mulch, seven pesticide applications for insect pressure, and five irrigations \u2014 because it is the highest-value crop but also the most demanding, and my 55 years of experience with it makes that intensity manageable for a two-person household.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I allocate my 12 mu as 8 mu in wheat-maize rotation and 4 mu in cotton, prioritizing the mechanizable rotation as the core income source while keeping cotton because I know it well and the price justifies the labor despite my age. Wheat gets rotary tillage, four irrigations, and split nitrogen to protect yield through dry Hebei springs. Maize follows wheat with no-tillage and a high-yielding hybrid, requiring minimal intervention through the wet summer months. Cotton receives the most intensive management \u2014 plough tillage, plastic mulch, seven pesticide applications for insect pressure, and five irrigations \u2014 because it is the highest-value crop but also the most demanding, and my 55 years of experience with it makes that intensity manageable for a two-person household."
+  },
+  "elapsed_seconds": 39.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_14",
+  "tier": 2,
+  "provider": "claude"
+}

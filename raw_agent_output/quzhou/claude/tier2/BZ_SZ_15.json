@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for thirty years. My father farmed before me. I don't read books about farming \u2014 I watch the crops, I watch the sky, I talk to the neighbors. Six mu is enough to feed my family and sell a little extra at market. I'll do what I always do, what works here in Quzhou.\n\n**Wheat comes first.** I'll put all 6 mu into wheat after the autumn maize harvest, around late October. I'll plough with the rotary machine \u2014 I rent it from the village \u2014 to turn under the maize stalks. I use a good variety, the one the seed shop in town has been selling for years, the improved kind most people around here plant. For fertilizer, I'll put down compound fertilizer as base before seeding, then top-dress with urea when the wheat starts jointing in spring. I irrigate four times: before sowing, once in winter to protect the roots from cold, once at jointing, and once when the grain is filling. I spray twice \u2014 once for aphids in spring, once for rust if I see it coming.\n\n**Maize follows.** Right after I harvest the wheat in June, I seed the maize directly without ploughing \u2014 no time, the summer is short. I use hybrid seed, everyone does now, the yields are better. I apply fertilizer twice: some at planting, more when the stalks are knee-high. I irrigate when the soil looks dry or if rain doesn't come \u2014 maybe two or three times. One spray for corn borer if I see the leaves getting eaten.\n\nThis is the same as last year. Same as the year before. It feeds us.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I follow the standard wheat-maize rotation on all 6 mu, the same system my neighbors and I have used for decades in Quzhou. Wheat is planted in late October after rotary tillage to bury maize residue, using improved locally-available varieties with base compound fertilizer and a urea top-dress at jointing. I irrigate four times across the wheat season because winter and spring droughts are common here and my well gives me that option. After wheat harvest in June I go straight to no-till maize seeding to save time \u2014 the summer season is short. Hybrid maize seed is standard now. Fertilizer and water are applied by feel and habit built over 30 years. One pesticide spray for corn borer if I see damage. I expect around 450 kg/mu of wheat and 550 kg/mu of maize, which is normal for this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I follow the standard wheat-maize rotation on all 6 mu, the same system my neighbors and I have used for decades in Quzhou. Wheat is planted in late October after rotary tillage to bury maize residue, using improved locally-available varieties with base compound fertilizer and a urea top-dress at jointing. I irrigate four times across the wheat season because winter and spring droughts are common here and my well gives me that option. After wheat harvest in June I go straight to no-till maize seeding to save time \u2014 the summer season is short. Hybrid maize seed is standard now. Fertilizer and water are applied by feel and habit built over 30 years. One pesticide spray for corn borer if I see damage. I expect around 450 kg/mu of wheat and 550 kg/mu of maize, which is normal for this land."
+  },
+  "elapsed_seconds": 36.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_15",
+  "tier": 2,
+  "provider": "claude"
+}

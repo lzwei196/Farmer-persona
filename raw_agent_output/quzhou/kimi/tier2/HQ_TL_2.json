@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and have farmed these lands in Quzhou for 45 years. With high school education, I read the county extension bulletins, but I trust my eyes more. My wife and I are only two people, so I rely on machinery and efficient practices. My 35 mu are divided into 28 mu of wheat\u2013maize double cropping and 7 mu of cotton. The wheat went in last October with my own saved seed of an improved variety at 40 jin per mu. Now it is greening up, and I will broadcast 60 jin per mu of ammonium chloride as topdressing on top of the 150 jin per mu of 15-15-15 compound I applied as basal. I will irrigate four times from the well\u2014green-up, jointing, heading, and grain-filling\u2014and spray twice for insects, once for weeds, and twice for fungi. After wheat harvest on June 6, I immediately sow summer maize using no-tillage to save the critical ten-day window. I buy Longyu 662 hybrid seed and apply 100 jin per mu of 28-6-6 compound by machine, irrigating twice and spraying twice for insects and once for weeds. For cotton, I plant 7 mu around April 9 with bought improved seed, using rotary tillage and plastic mulch. I broadcast 100 jin per mu of 18-10-20 compound, irrigate twice, and spray heavily\u2014twelve times for insects, twice for weeds, and twice with growth regulator\u2014because bollworm never gives up. My well gives reliable water, but pumping costs electricity, so I do not waste it. After 45 years, I know my land.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 28,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18.8,\n      \"phosphorus_kg_per_mu\": 11.3,\n      \"potassium_kg_per_mu\": 11.3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 28,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14.0,\n      \"phosphorus_kg_per_mu\": 3.0,\n      \"potassium_kg_per_mu\": 3.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 685\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 9.0,\n      \"phosphorus_kg_per_mu\": 5.0,\n      \"potassium_kg_per_mu\": 10.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I have 35 mu total: 28 mu under wheat\u2013maize double cropping and 7 mu in cotton. With only my wife and me at home, I rely on machinery and time-saving practices like no-tillage for maize after wheat harvest. My well irrigation lets me manage water precisely, but I watch pumping costs. Wheat gets the most fertilizer because it feeds two crops off the same land each year, and cotton demands many sprays against bollworm. I save my own wheat seed but buy hybrid maize and improved cotton seed to maintain yield and quality.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 28,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18.8,
+        "phosphorus_kg_per_mu": 11.3,
+        "potassium_kg_per_mu": 11.3,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 28,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14.0,
+        "phosphorus_kg_per_mu": 3.0,
+        "potassium_kg_per_mu": 3.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 685
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 9.0,
+        "phosphorus_kg_per_mu": 5.0,
+        "potassium_kg_per_mu": 10.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I have 35 mu total: 28 mu under wheat\u2013maize double cropping and 7 mu in cotton. With only my wife and me at home, I rely on machinery and time-saving practices like no-tillage for maize after wheat harvest. My well irrigation lets me manage water precisely, but I watch pumping costs. Wheat gets the most fertilizer because it feeds two crops off the same land each year, and cotton demands many sprays against bollworm. I save my own wheat seed but buy hybrid maize and improved cotton seed to maintain yield and quality."
+  },
+  "elapsed_seconds": 265.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_2",
+  "tier": 2,
+  "provider": "kimi"
+}

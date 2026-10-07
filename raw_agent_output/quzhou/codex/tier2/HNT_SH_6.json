@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will keep most of my land in the wheat-maize rotation and only a smaller share in cotton. I am 65, I have farmed for 40 years, some family labor is off-farm, and I have only 8 mu, so I will put stability first. In Quzhou County, the wheat-maize system matches the local climate and water pattern well: winter wheat needs more irrigation, while summer maize uses the summer rain better. Because I have well irrigation, I will protect wheat first, then hold maize steady, and keep cotton on a smaller area for cash income without letting it take too much labor. For inputs, I will stay near current official nutrient ranges for south Hebei and the Huang-Huai-Hai region, then make my own conservative choices inside those ranges rather than pushing for the highest input level. My area split is my own decision; the nutrient ranges and local cropping context are based on official and research sources for Quzhou / Hebei wheat-maize and Huang-Huai-Hai cotton: [Quzhou wheat-maize context](https://www.nature.com/articles/srep41587), [Hebei winter wheat irrigation note, 2026-03-09](https://www.agri.cn/zx/xxlb/hb/202603/t20260309_8817365.htm), [winter wheat fertilization guidance](https://www.agri.cn/sc/nszd/202309/t20230928_8125583.htm), [summer maize fertilization guidance](https://www.moa.gov.cn/govpublic/ZZYGLS/201006/t20100606_1534673.htm), [cotton fertilization guidance](https://www.moa.gov.cn/govpublic/ZZYGLS/202303/t20230314_6423045.htm). The pesticide counts, tillage choices, expected yields, and land allocation are my own inferences from those conditions.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 4.5,\n      \"potassium_kg_per_mu\": 4.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 95\n    }\n  ],\n  \"reasoning_summary\": \"I will put 6 mu into my usual wheat-maize rotation and 2 mu into cotton. I will do that because at my age, with some family labor away from home, I want most of my land in the most familiar and stable system for Quzhou, and I have well irrigation to hold wheat safely. I will not expand cotton because it takes more management and picking attention, but I will keep a small area for cash income. I will use improved wheat seed, hybrid maize, and hybrid cotton, keep fertilizer around local official ranges instead of chasing very high inputs, irrigate wheat more than maize because that is where my water matters most, and use simpler tillage for the grain rotation to save labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 4.5,
+        "potassium_kg_per_mu": 4.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 95
+      }
+    ],
+    "reasoning_summary": "I will put 6 mu into my usual wheat-maize rotation and 2 mu into cotton. I will do that because at my age, with some family labor away from home, I want most of my land in the most familiar and stable system for Quzhou, and I have well irrigation to hold wheat safely. I will not expand cotton because it takes more management and picking attention, but I will keep a small area for cash income. I will use improved wheat seed, hybrid maize, and hybrid cotton, keep fertilizer around local official ranges instead of chasing very high inputs, irrigate wheat more than maize because that is where my water matters most, and use simpler tillage for the grain rotation to save labor."
+  },
+  "elapsed_seconds": 79.7,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_6",
+  "tier": 2,
+  "provider": "codex"
+}

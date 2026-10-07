@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land since I was twenty years old. My mother farmed before me, and her mother before her. I do not need anyone to tell me what to do \u2014 I have seen forty-eight harvests on this soil. I know when to water by how the leaves curl. I know when the bollworm is coming before the extension workers do.\n\nMy land is 10.1 mu. Seven of those mu I rotate between winter wheat and summer maize \u2014 that is how we have always done it here in Quzhou. The remaining three mu I plant cotton. Cotton is hard work and my back is not what it was, but it brings cash, and I need cash more than grain. Some of my children have gone to work in the city. The ones who stay help during the busy weeks.\n\nFor wheat, I will plough in October, spread the base fertilizer, and sow. I will water before the ground freezes, water again at jointing, and again when the heads come out. I buy the improved seed from the village store \u2014 the hybrid corn too. I have used these for years. For the maize, I go in right after the wheat harvest in June. There is no time to waste. I use the rotary machine to turn the stubble and plant within a week. Maize only needs me to water if the July rains fail, which they sometimes do.\n\nCotton worries me most. Bollworm has been bad the last few years. I will spray more times than I want to \u2014 five applications at least, maybe six if I see them early. I use what the shop sells. I have no choice.\n\nI do not test my soil. I apply fertilizer by the bag, roughly what I have always applied. More than the government says, probably, but I cannot afford a bad harvest.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I plant 7.1 mu in the wheat-maize rotation that has sustained my family for generations \u2014 winter wheat sown in October after deep ploughing, then summer maize sown immediately after the June harvest using rotary tillage to save time, with well irrigation used at critical stages and fertilizer applied by experience rather than soil test. The remaining 3 mu go to cotton for cash income; bollworm pressure has been heavy recently so I plan five pesticide applications and will add a sixth if I spot infestation early. With some family members working off-farm, I rely on hired machinery for ploughing and harvest, keeping my own labor for scouting, watering, and the intensive hand-work cotton demands.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I plant 7.1 mu in the wheat-maize rotation that has sustained my family for generations \u2014 winter wheat sown in October after deep ploughing, then summer maize sown immediately after the June harvest using rotary tillage to save time, with well irrigation used at critical stages and fertilizer applied by experience rather than soil test. The remaining 3 mu go to cotton for cash income; bollworm pressure has been heavy recently so I plan five pesticide applications and will add a sixth if I spot infestation early. With some family members working off-farm, I rely on hired machinery for ploughing and harvest, keeping my own labor for scouting, watering, and the intensive hand-work cotton demands."
+  },
+  "elapsed_seconds": 54.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_12",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am thinking about this year same as last year. Change too much, you lose money. I do what works.\n\nI have 9 mu. Five mu I keep in cotton \u2014 my family always grew cotton, and I know it. The other 4 mu I do wheat in winter, then maize after the wheat comes off in summer. That way the land is never empty and I get two harvests from the same ground.\n\nFor cotton, the dealer sells me Bt seed \u2014 the one that the bollworm does not eat so bad. My neighbor Old Wang, he grew this one, got good bolls, so I use the same. Before planting I spread 2 bags of compound fertilizer per mu (the 15-15-15 kind, 50 jin each bag, so about 50 kg), and when the cotton is flowering I top with 1 bag of urea, maybe 20 kg. Cotton eats a lot, if I give too little the bolls stay small. Better give a little extra than watch the bolls drop. Pesticide \u2014 cotton needs spraying many times, aphid, red spider, bollworm even with Bt. I spray maybe 7 or 8 times, whenever I see bugs. Water from the well 3 times \u2014 after planting, at flower, and when bolls are filling.\n\nFor wheat, I plant the improved seed from the town cooperative, same one everyone around here uses. Before sowing I plow with the rotary machine (I pay the tractor man 40 yuan per mu) and spread 1.5 bags compound fertilizer. In spring when the wheat turns green I top with 1 bag urea. I water 3 times \u2014 spring green, jointing, and when the grain is filling. Only spray once or twice for aphid if I see them bad.\n\nFor maize after wheat, hybrid seed \u2014 the short-season one so it ripens before cold. I put a little compound fertilizer in the hole at planting, then top with urea when it is knee-high. Maize grows fast, no time for mistakes. Water 2 times if rain is short. Spray once for the borer.\n\nMy family has 6 people, some go work in the factory, so I do most of the field work myself with my wife. I hire help only for cotton picking. Every yuan on fertilizer counts, but I have seen what happens when you save too much \u2014 the harvest is small and then you save nothing.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I keep 5 mu in cotton because I have grown it 30 years and know it, and I double-crop wheat then maize on the other 4 mu so the land is never empty. I follow what Old Wang and the neighbors do \u2014 Bt cotton seed, improved wheat from the cooperative, short-season hybrid maize after wheat. I buy compound fertilizer in bags and top with urea, giving cotton the most because it eats the heaviest and the bolls drop if you are stingy. I would rather spend a little extra on fertilizer than watch a small harvest. Cotton needs many sprays for bugs, wheat and maize only a few. Well water 3 times for cotton and wheat, 2 for maize if the rain is short. I pay the tractor man to rotary the wheat and cotton ground; maize I plant straight into the wheat stubble to save time and money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I keep 5 mu in cotton because I have grown it 30 years and know it, and I double-crop wheat then maize on the other 4 mu so the land is never empty. I follow what Old Wang and the neighbors do \u2014 Bt cotton seed, improved wheat from the cooperative, short-season hybrid maize after wheat. I buy compound fertilizer in bags and top with urea, giving cotton the most because it eats the heaviest and the bolls drop if you are stingy. I would rather spend a little extra on fertilizer than watch a small harvest. Cotton needs many sprays for bugs, wheat and maize only a few. Well water 3 times for cotton and wheat, 2 for maize if the rain is short. I pay the tractor man to rotary the wheat and cotton ground; maize I plant straight into the wheat stubble to save time and money."
+  },
+  "elapsed_seconds": 46.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_HZ_3",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 57-year-old farmer in Quzhou County with 20 years of experience. My family has 8 people, and some of my children work in factories in the city, so I do not have as much labor at home as I used to. My farm is 14 mu with well irrigation, which means I can water when I need to, but I must pay for the electricity. I grow cotton, wheat, and maize. The wheat and maize are on rotation \u2014 wheat in winter, maize in summer on the same 8 mu. I keep 6 mu for cotton because cotton prices have been acceptable and I know how to grow it, but it needs many pesticide sprays and my back is not what it used to be, so I do not want more.\n\nFor **wheat**, I will sow improved seed in early October after rotary tillage. I apply compound fertilizer as basal and urea at green-up. I irrigate four times \u2014 including the winter irrigation, which is important for the crop to survive the cold and establish strong roots. I spray pesticides four times for aphids and diseases. I expect about 1000 kg per mu.\n\nFor **maize**, I plant hybrid seed directly into the wheat stubble right after harvest in early June \u2014 no tillage, just like my neighbors do. It saves time and fuel. I apply compound fertilizer at sowing and irrigate three times during the summer when it gets hot and dry. I spray three times for borers and weeds. I expect about 1100 kg per mu.\n\nFor **cotton**, I rotary till in April and plant improved seed. I apply compound fertilizer as basal and topdress once more during flowering. Cotton is the most troublesome \u2014 bollworms, aphids, and mites never stop, so I spray 16 times through the season. I irrigate three times. I expect about 550 kg per mu. I keep the cotton area at 6 mu because more would be too much work for me and my wife now that our children are away.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 1,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 1.5,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 14 mu for 20 years and know what my land can handle. I keep 8 mu in wheat-maize rotation because it provides reliable food and income with less labor, and 6 mu in cotton because it pays well but requires many pesticide sprays that my aging body and reduced household labor cannot manage beyond that. I use improved wheat seed, hybrid maize seed for better yield, and improved cotton seed. I rely on well irrigation for all crops. Wheat gets rotary tillage and four irrigations; maize is no-till after wheat harvest with three irrigations; cotton gets rotary tillage and three irrigations but needs 16 pesticide applications to control bollworms and aphids. My expected yields are based on what I have achieved in recent years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 1,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 1.5,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 3,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed these 14 mu for 20 years and know what my land can handle. I keep 8 mu in wheat-maize rotation because it provides reliable food and income with less labor, and 6 mu in cotton because it pays well but requires many pesticide sprays that my aging body and reduced household labor cannot manage beyond that. I use improved wheat seed, hybrid maize seed for better yield, and improved cotton seed. I rely on well irrigation for all crops. Wheat gets rotary tillage and four irrigations; maize is no-till after wheat harvest with three irrigations; cotton gets rotary tillage and three irrigations but needs 16 pesticide applications to control bollworms and aphids. My expected yields are based on what I have achieved in recent years."
+  },
+  "elapsed_seconds": 143.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "HNT_XWJF_10",
+  "tier": 2,
+  "provider": "kimi"
+}

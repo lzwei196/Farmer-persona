@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'll think this through like I do every year before planting.\n\nMy land is 232.9 mu \u2014 that's a big area for our village. Most of it goes into my wheat-maize rotation, the way my father did it. I keep about 33 mu for cauliflower because the vegetable buyers from Shijiazhuang pay cash, and that money helps me cover the fertilizer bills for the grain crops. So 200 mu in wheat-maize rotation, 32.9 mu in cauliflower.\n\nLast year the wheat gave me around 470 kg per mu, maize about 560 kg per mu. I'll aim similar. The ground here is fine loam, not bad, but after 25 years I know it needs feeding every year.\n\nFor wheat: I'll plant Jimai improved variety, same as last year \u2014 my neighbor Old Wang got 500 kg with it. I use about 50 jin of diammonium phosphate at sowing (that's roughly 18 kg N, 10 kg P per mu if you count the urea topdressing at jointing). I add 8 kg potash because the extension man at the agri-store said our soil is getting low on K. Three irrigations from my well \u2014 once before winter, once at jointing, once at grain-filling. Two sprays: one for aphids, one for powdery mildew if it shows. Rotary till after maize harvest, no time to plough deep.\n\nFor maize: I plant Zhengdan 958 hybrid right after wheat \u2014 no-till with the seed drill saves me a week. About 17 kg N, 6 kg P, 6 kg K per mu. One irrigation at tasseling if rain is short, sometimes two. One spray for corn borer.\n\nFor cauliflower: this is the money crop, I don't save on it. Good hybrid seed. About 22 kg N, 12 kg P, 18 kg K per mu \u2014 cauliflower eats a lot of potash or the heads won't be tight. Irrigate 5 times, spray 4 times for worms and black rot. Plough deep before transplanting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 200,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 200,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 570\n    },\n    {\n      \"crop\": \"cauliflower\",\n      \"season\": \"autumn\",\n      \"area_mu\": 32.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 2800\n    }\n  ],\n  \"reasoning_summary\": \"I farm 232.9 mu, mostly wheat-maize rotation like my neighbors, with 32.9 mu of cauliflower as my cash crop to bring in ready money for fertilizer and hired help. I stick close to what worked last year \u2014 Jimai wheat and Zhengdan 958 maize, both reliable. I feed wheat and maize enough to hit 480 and 570 kg per mu, a little more N than strictly needed because losing yield hurts more than wasting 20 yuan of urea. Cauliflower gets the heaviest feeding and most sprays because one bad batch of loose heads and the buyers walk away. Well irrigation lets me water when I need to, so I don't gamble on rain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 200,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 200,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 570
+      },
+      {
+        "crop": "cauliflower",
+        "season": "autumn",
+        "area_mu": 32.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 2800
+      }
+    ],
+    "reasoning_summary": "I farm 232.9 mu, mostly wheat-maize rotation like my neighbors, with 32.9 mu of cauliflower as my cash crop to bring in ready money for fertilizer and hired help. I stick close to what worked last year \u2014 Jimai wheat and Zhengdan 958 maize, both reliable. I feed wheat and maize enough to hit 480 and 570 kg per mu, a little more N than strictly needed because losing yield hurts more than wasting 20 yuan of urea. Cauliflower gets the heaviest feeding and most sprays because one bad batch of loose heads and the buyers walk away. Well irrigation lets me water when I need to, so I don't gamble on rain."
+  },
+  "elapsed_seconds": 44.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_1",
+  "tier": 3,
+  "provider": "claude"
+}

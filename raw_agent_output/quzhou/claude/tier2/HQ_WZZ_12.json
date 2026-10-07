@@ -1,0 +1,66 @@
+{
+  "raw_response": "**My thinking as this farmer:**\n\nI've been working this land for 35 years. I know Quzhou's soil \u2014 it's alkaline, sandy in places, and the summers get dry fast if you're not watching the well. My main income comes from cotton. That's always been the center of my system. Wheat and maize feed the family and whatever's left over sells at the township market. The stevia is a small patch I keep because the purchase station buys it and it brings in extra cash without much extra work.\n\nMy land is 22.1 mu. I'll put 10 mu in cotton \u2014 that's my main crop, always has been. The other 12 mu I double-crop: winter wheat planted in October, then summer maize straight after the wheat harvest in June. No need to till between them, I just direct-seed the maize. That saves me time and my sons aren't always home to help. A small strip \u2014 about 0.1 mu near the house \u2014 I keep for stevia.\n\nFor cotton, I use the improved varieties from the seed station. Hybrids cost too much and I don't always trust the yield claims. Six pesticide rounds are normal for cotton here \u2014 bollworm and aphid pressure is real every year. I irrigate four times from the well: before planting, at bud stage, flowering, and boll expansion. For wheat, I plough in October before sowing \u2014 maize stubble needs to go under properly. Three irrigations: one in winter to protect against freeze damage, one at jointing, one at heading. For maize, I skip tilling entirely and sow directly. Two irrigations are usually enough since we get summer rain, but I'm ready for a third if July is dry.\n\nThe stevia plot I hand-tend myself. It needs more water per mu than anything else but it's a tiny area so it's fine.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 120\n    }\n  ],\n  \"reasoning_summary\": \"A 52-year-old farmer in Quzhou County with 35 years of experience allocates her 22.1 mu across a cotton-centered system (10 mu) and a wheat-maize double-crop rotation on the remaining 12 mu, with a small 0.1 mu stevia cash plot near the house. Cotton is managed with improved varieties, heavy pesticide attention (6 rounds against bollworm and aphid), and four well irrigations at key growth stages. Wheat is ploughed in after the maize harvest, irrigated three times to handle the dry North China winters and springs, and harvested in June. Maize is direct-seeded without tillage after wheat harvest to save scarce family labor, relying mainly on summer rainfall with two backup well irrigations. Stevia receives intensive irrigation but minimal labor due to its tiny footprint, providing supplementary cash income. Input levels across all crops reflect locally established practice rather than experimental approaches, prioritizing reliability over optimization.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 0.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 5,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 120
+      }
+    ],
+    "reasoning_summary": "A 52-year-old farmer in Quzhou County with 35 years of experience allocates her 22.1 mu across a cotton-centered system (10 mu) and a wheat-maize double-crop rotation on the remaining 12 mu, with a small 0.1 mu stevia cash plot near the house. Cotton is managed with improved varieties, heavy pesticide attention (6 rounds against bollworm and aphid), and four well irrigations at key growth stages. Wheat is ploughed in after the maize harvest, irrigated three times to handle the dry North China winters and springs, and harvested in June. Maize is direct-seeded without tillage after wheat harvest to save scarce family labor, relying mainly on summer rainfall with two backup well irrigations. Stevia receives intensive irrigation but minimal labor due to its tiny footprint, providing supplementary cash income. Input levels across all crops reflect locally established practice rather than experimental approaches, prioritizing reliability over optimization."
+  },
+  "elapsed_seconds": 77.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_12",
+  "tier": 2,
+  "provider": "claude"
+}

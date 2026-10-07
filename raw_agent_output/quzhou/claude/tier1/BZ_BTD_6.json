@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land in Quzhou my whole life. At 76, my knees give me trouble, my son works in Shijiazhuang and only comes back for harvest. I'm not going to try anything new or risky. I grow what I know and what the land here is good for: winter wheat, then summer maize on the same fields. That rotation is what everyone in this county does, what my father did. The ground is flat, the well is there, the seed station in town sells what I need.\n\nI have about 5 mu. I'll plant all of it to wheat this winter, then follow with maize after June harvest \u2014 same fields, same rotation as always.\n\nFor wheat, I'll buy the improved jimai seed from the village supply station \u2014 I've used it three years running, it doesn't lodge and the yield is decent. I'll do a rotary tillage pass before planting since the soil gets compacted after maize. I'll apply compound fertilizer as base and urea in spring when the plants are jointing. Three irrigations: before winter freeze, jointing, and heading. Two pesticide sprays \u2014 one for aphids in spring, one for rust if it shows up.\n\nFor maize, I direct-seed into the stubble right after wheat harvest \u2014 saves me the tillage work at my age. Hybrid seed, I've used Xianyu 335 type before. One irrigation if July is dry. One pesticide pass for corn borer. I'll pull some potassium this time \u2014 the soil is getting tired.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 76-year-old farmer in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation on 5 mu of flat irrigated land. He selects an improved wheat variety and hybrid maize seed from the local supply station \u2014 familiar, reliable choices he has used for years. Fertilizer rates reflect conventional North China Plain practice with a modest potassium addition to address soil fatigue. Irrigation is applied at critical stages for wheat (pre-winter, jointing, heading) and once for maize if rainfall is insufficient. No-tillage on maize saves labor given reduced physical capacity and no full-time farm help. Two pesticide applications on wheat target spring aphids and rust; one on maize targets corn borer. The plan prioritizes stability, labor minimization, and known inputs over experimentation or intensification.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 76-year-old farmer in Quzhou County, Hebei follows the standard winter wheat\u2013summer maize double-cropping rotation on 5 mu of flat irrigated land. He selects an improved wheat variety and hybrid maize seed from the local supply station \u2014 familiar, reliable choices he has used for years. Fertilizer rates reflect conventional North China Plain practice with a modest potassium addition to address soil fatigue. Irrigation is applied at critical stages for wheat (pre-winter, jointing, heading) and once for maize if rainfall is insufficient. No-tillage on maize saves labor given reduced physical capacity and no full-time farm help. Two pesticide applications on wheat target spring aphids and rust; one on maize targets corn borer. The plan prioritizes stability, labor minimization, and known inputs over experimentation or intensification."
+  },
+  "elapsed_seconds": 42.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_6",
+  "tier": 1,
+  "provider": "claude"
+}

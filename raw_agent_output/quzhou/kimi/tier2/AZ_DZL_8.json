@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72 years old and have been working this land in Quzhou County for half a century. I never went to school, but I know every inch of my 20 mu farm and what the soil here needs. My wife and I are the only two in our household now, so we must manage our labor carefully. We have a reliable well for irrigation, which is our lifeline.\n\nThis year, I will keep doing what has worked for us: **10 mu in the wheat-maize rotation and 10 mu in cotton**. \n\nFor **wheat**, I sow in late October after rotary tillage. I use my own saved seed\u2014about 35 jin per mu\u2014because it has done well here for years and costs nothing. Before sowing, I spread 100 jin of compound fertilizer per mu. Wheat needs water, so I will irrigate five times, including the winter irrigation and the spring green-up irrigations. I will spray four times total for weeds, insects, and the rust that sometimes comes. I expect around 1,100 jin per mu if the weather holds.\n\nFor **maize**, after we harvest the wheat in early June, I plant directly without tilling again. No-tillage saves us time and fuel, and the maize does fine. I buy hybrid seed in packages\u2014one package per mu\u2014because hybrid maize yields much better than keeping our own seed. I put down about 80 jin of compound fertilizer at sowing. Maize only needs one good irrigation here during the summer, and I spray seven times to control insects and weeds. I expect about 935 jin per mu.\n\nFor **cotton**, I rotary till in spring and sow in late April. I buy improved cotton seed from the shop. I use 100 jin of compound fertilizer per mu. Cotton is the most work because of the bollworms\u2014I spray many times, about 23 applications in total for insects, weeds, and growth regulators. I irrigate once during the summer drought. It is hard work with all the transplanting, topping, pruning, and hand-picking, but cotton sells for 3 yuan per jin, which is much better than grain. I expect 500 jin of seed cotton per mu.\n\nThis is the same plan I have followed for years because it feeds us and brings in cash without taking risks at my age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 935\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 23,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 20 mu for 50 years and know what works in Quzhou County. With just my wife and me, I split the land evenly: 10 mu for wheat-maize rotation and 10 mu for cotton. Wheat gets my own saved seed, rotary tillage, heavy compound fertilization, and five well irrigations. Maize is direct-seeded without tillage after wheat harvest using bought hybrid seed, one irrigation, and regular spraying. Cotton requires the most labor and pesticides but pays the best price per jin, so I dedicate half my land to it with rotary tillage, improved seed, compound fertilizer, and careful pest management.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 5,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 1,
+        "pesticide_applications": 7,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 935
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 1,
+        "pesticide_applications": 23,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed these 20 mu for 50 years and know what works in Quzhou County. With just my wife and me, I split the land evenly: 10 mu for wheat-maize rotation and 10 mu for cotton. Wheat gets my own saved seed, rotary tillage, heavy compound fertilization, and five well irrigations. Maize is direct-seeded without tillage after wheat harvest using bought hybrid seed, one irrigation, and regular spraying. Cotton requires the most labor and pesticides but pays the best price per jin, so I dedicate half my land to it with rotary tillage, improved seed, compound fertilizer, and careful pest management."
+  },
+  "elapsed_seconds": 208.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_8",
+  "tier": 2,
+  "provider": "kimi"
+}

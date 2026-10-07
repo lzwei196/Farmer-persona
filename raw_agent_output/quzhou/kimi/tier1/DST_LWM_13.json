@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy-eight years old, a woman who has never been to school, and I have worked the land in Quzhou since I was a young bride. My husband passed on more than ten years ago, and now I farm about five mu with help from my nephew during the busy weeks. I cannot read or write, but I know my two fields better than anyone. Every year I grow winter wheat and summer corn on the same land. That is what my mother did, that is what my neighbors do, and at my age I will not gamble with strange crops.\n\nThe wheat went into the ground last October, same as always. I bought improved seeds from Old Wang's agricultural shop in the village \u2014 I do not keep wheat seed from year to year because it gets sick. Before planting, I spread about one bag of compound fertilizer per mu. Now that spring is here, I will topdress with half a bag of urea per mu when the wheat turns green, and I will irrigate three times: once at green-up, once when the stems start growing fast, and once when the grain is filling. My neighbor down the road pumps water four times, but three has always been enough for my land, and every hour of electricity for the well costs money I do not have.\n\nWhen we harvest the wheat in early June, I will plant hybrid corn seed in the same field within a few days. There is no time to plough \u2014 the season is too short, so we sow straight into the wheat stubble. I put down fertilizer at planting, and if the summer rains are poor I will irrigate once or twice for the corn. I spray for weeds and bugs two or three times on the wheat and twice on the corn. I stopped growing cotton years ago because my back cannot take the bending for picking, and my children are working in the city and cannot come home to help. Last year my wheat gave me about 400 jin per mu and the corn nearly 500 jin per mu. I expect the same this year. I am too old to change what works.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 480\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double cropping system on my five mu because it is what I have done for decades and it provides both food and cash income. I use improved wheat seed and hybrid maize seed from the village shop, apply moderate fertilizer based on what I can afford and what has worked before, irrigate wheat three times and maize twice to save on pumping costs, and avoid cotton because I am too old for the labor-intensive picking. I do not plough for maize because the window between wheat harvest and maize planting is too short.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 480
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double cropping system on my five mu because it is what I have done for decades and it provides both food and cash income. I use improved wheat seed and hybrid maize seed from the village shop, apply moderate fertilizer based on what I can afford and what has worked before, irrigate wheat three times and maize twice to save on pumping costs, and avoid cotton because I am too old for the labor-intensive picking. I do not plough for maize because the window between wheat harvest and maize planting is too short."
+  },
+  "elapsed_seconds": 91.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_13",
+  "tier": 1,
+  "provider": "kimi"
+}

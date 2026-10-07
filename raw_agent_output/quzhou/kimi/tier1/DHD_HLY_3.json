@@ -1,0 +1,53 @@
+{
+  "raw_response": "I'm 65 years old and I've been working this land in Quzhou since I was a teenager. My family has about 11 mu. I didn't study much \u2014 just finished primary school \u2014 but I know my fields. I watch what my neighbors do, especially Old Li down the road who has good luck with wheat, and I mostly stick to what has fed my family for decades.\n\nThis year I'll keep my 8 mu in the wheat-maize rotation. That's my main food and income. I thought about dropping the cotton, but my wife and I can manage 3 mu of cotton between us, and the cotton price last year wasn't bad. Better to have two crops than put all my eggs in one basket. If the maize price falls, at least I have cotton.\n\nFor the winter wheat, I'll rotary till the 8 mu in early October like always. I'll buy improved wheat seed from the village store \u2014 about 30 jin per mu. Before sowing I'll spread four bags of compound fertilizer per mu, and at jointing time I'll topdress with about half a bag of urea if the wheat looks a bit yellow. Water is expensive now, but dry wheat is no wheat, so I'll irrigate four times: once before winter, once at green-up, once at jointing, and once at grain filling. I also spray three times for weeds and insects \u2014 herbicide once and insecticide twice.\n\nFor summer maize, there's no time to till after wheat harvest \u2014 maybe six or seven days at most. I'll plant hybrid maize seed directly into the wheat stubble. I'll put down about three bags of compound fertilizer per mu at planting, then irrigate twice if the rains don't come. Three sprays should be enough \u2014 insects always show up in August.\n\nFor the 3 mu of cotton, I'll rotary till in mid-April and plant improved cotton seed. Cotton is greedy for fertilizer and water, so I'll use a bit more compound fertilizer per mu and irrigate twice. The bollworms are the real problem \u2014 I'll need to spray about 14 times through the season. It's a lot of work, but the returns are steady.\n\nI'm expecting about 480 kg per mu of wheat, 520 kg per mu of maize, and around 280 kg per mu of cotton. Last year was decent, so I'll do more or less the same. Why change what works?\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I stuck with the wheat-maize double crop on 8 mu because that's what I've done for decades and it gives us both food and cash. I kept 3 mu of cotton as insurance against bad maize prices, and because my wife and I can still handle the hand-picking. I used slightly generous fertilizer and irrigation rates because I'd rather waste a little money than risk a bad harvest, and I followed what my neighbors do. For maize I used no-tillage because there's no time to plow between wheat harvest and maize planting.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I stuck with the wheat-maize double crop on 8 mu because that's what I've done for decades and it gives us both food and cash. I kept 3 mu of cotton as insurance against bad maize prices, and because my wife and I can still handle the hand-picking. I used slightly generous fertilizer and irrigation rates because I'd rather waste a little money than risk a bad harvest, and I followed what my neighbors do. For maize I used no-tillage because there's no time to plow between wheat harvest and maize planting."
+  },
+  "elapsed_seconds": 136.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_3",
+  "tier": 1,
+  "provider": "kimi"
+}

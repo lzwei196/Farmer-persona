@@ -1,0 +1,40 @@
+{
+  "raw_response": "I never went to school. I learned everything by doing it myself and watching my father and the neighbors. My farm is 10.1 mu of flat, good land here in Quzhou. I grow winter wheat and then summer maize on the same ground, same as I have done for 30 years. Last year my wheat was about 500 kilograms per mu and maize was about 600 kilograms per mu. This year I will keep doing what I did last year because I know it works and changing things is risky.\n\nFor wheat, I buy the improved seed that the dealer sells \u2014 the kind that most people around here plant. After the rotary tiller goes through, I put one 50-kilogram bag of compound fertilizer on every mu. Then in spring, when the wheat starts growing fast, I spread one whole 40-kilogram bag of urea on each mu. Two years ago I tried using only half a bag of urea to save money, and the wheat turned yellow and the grains were small. Never again. I irrigate three times from my well: once before winter if it is dry, once when the wheat is shooting up, and once when the grain is filling. My well water is good. I spray twice \u2014 once after planting for the weeds, and once in spring for the bugs. I expect around 520 kilograms per mu if the rain cooperates.\n\nFor maize, I plant hybrid seed right after I cut the wheat in June. I put 40 kilograms of compound fertilizer per mu at planting time, and then when the plants are up to my knee I add 30 kilograms of urea per mu. I irrigate three times if July is hot and dry, otherwise two times, but I plan for three to be safe. I spray twice for weeds and the worm that bores into the stem. I expect about 620 kilograms per mu.\n\nMy wife and I do almost all the work. We only hire people at harvest if we are afraid the rain will come. Fertilizer is expensive \u2014 a bag of urea is over 100 yuan now \u2014 but I would rather put too much than too little. A bad harvest means I cannot buy medicine or fix the house. Wasting a little fertilizer is just losing some cash. I always look at what my neighbors are doing. If Old Zhang puts one bag per mu, I put one bag per mu. That is my rule.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 620\n    }\n  ],\n  \"reasoning_summary\": \"I have been farming 10.1 mu in Quzhou for 30 years with no schooling, so I trust what I have done before and what my neighbors do. I plant improved wheat in winter and hybrid maize in summer, using one bag of compound fertilizer and one bag of urea per mu for wheat and slightly less for maize, irrigating three times each from my well, and spraying twice per crop. I would rather spend the money on inputs than risk a bad harvest, because a failed crop is a disaster while extra fertilizer is just a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 620
+      }
+    ],
+    "reasoning_summary": "I have been farming 10.1 mu in Quzhou for 30 years with no schooling, so I trust what I have done before and what my neighbors do. I plant improved wheat in winter and hybrid maize in summer, using one bag of compound fertilizer and one bag of urea per mu for wheat and slightly less for maize, irrigating three times each from my well, and spraying twice per crop. I would rather spend the money on inputs than risk a bad harvest, because a failed crop is a disaster while extra fertilizer is just a cost."
+  },
+  "elapsed_seconds": 137.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_8",
+  "tier": 3,
+  "provider": "kimi"
+}

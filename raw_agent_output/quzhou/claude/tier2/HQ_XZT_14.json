@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 30 years in Quzhou. I know what the soil wants and what the market looks like from experience. Let me think through this.\n\nMy 5 mu breaks down the way it always has \u2014 3 mu in cotton, which is my main cash crop and what this county does best. The other 2 mu I run in the wheat-maize rotation: winter wheat goes in after October, maize follows right after the wheat harvest in June. Same 2 mu, different seasons. That rotation keeps my household fed and gives me a bit of extra grain to sell.\n\nCotton is labor-heavy, especially at picking time. With just two of us at home now and one working some off-farm jobs, I can't push more than 3 mu of cotton or I'll be overwhelmed come September. Bt hybrid seed costs more but cuts down my pesticide runs \u2014 worth it. I'll plough deep before planting cotton, like I always do, gets the roots down. For wheat I'll use rotary tillage, and I'll go no-till on the maize right into the wheat stubble. Saves me time and diesel.\n\nMy well is reliable, so irrigation isn't a worry. I'll do 5 waterings on the cotton \u2014 pre-plant, bud stage, flowering, boll-setting, and one late one if it's dry. Wheat gets 3: base, jointing, heading. Maize gets 3: emergence, tasseling, grain fill.\n\nI'll apply fertilizer the same way I have for years. Maybe slightly more nitrogen on cotton this year since I heard soil tests in the area show depletion. I won't overdo it \u2014 waste of money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 3 mu to cotton as my primary cash crop, which fits what my household can harvest without outside labor, and use Bt hybrid seed to reduce pesticide burden; the remaining 2 mu runs a winter wheat to summer maize double-crop rotation on the same land, giving me grain for household consumption and some income, with no-tillage on the maize to save time after the wheat harvest \u2014 inputs follow 30 years of experience on this soil, with reliable well irrigation covering all three crops through their critical stages.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 5,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I allocate 3 mu to cotton as my primary cash crop, which fits what my household can harvest without outside labor, and use Bt hybrid seed to reduce pesticide burden; the remaining 2 mu runs a winter wheat to summer maize double-crop rotation on the same land, giving me grain for household consumption and some income, with no-tillage on the maize to save time after the wheat harvest \u2014 inputs follow 30 years of experience on this soil, with reliable well irrigation covering all three crops through their critical stages."
+  },
+  "elapsed_seconds": 49.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XZT_14",
+  "tier": 2,
+  "provider": "claude"
+}

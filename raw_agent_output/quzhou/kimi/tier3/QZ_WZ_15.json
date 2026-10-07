@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 74 years old. I never went to school, not even one day. I have been farming this land in Quzhou for 35 years. My farm is 5 mu. I plant 3 mu of spring corn and 2 mu of cotton. There are only two people in my house. My son works in a factory in the city, so I do most of the field work myself. I am old now, but I still know my land well.\n\nI always start from what I did last year. Last year, I put one bag of compound fertilizer on each mu for both crops. For the corn, I added another full bag of urea when the corn was knee-high. For the cotton, I added half a bag of urea when the flowers came out. The harvest was okay \u2014 I got about 1,100 jin of corn per mu and about 550 jin of cotton per mu. This year I will do the same thing. Fertilizer costs money, but losing yield is much worse. I would rather put a little too much than too little. A bad harvest is a disaster. Wasting some fertilizer is just money spent.\n\nFor seeds, I buy hybrid corn seeds from the dealer in town. Everyone around here plants hybrid corn \u2014 the old seeds do not grow well anymore. For cotton, I buy the improved seeds that my neighbor Old Wang used last year. His cotton did very well, so I will copy him.\n\nI have a well, so I can irrigate. Last year I irrigated the corn three times: once right after planting, once when it was growing tall, and once when the ears were filling. For cotton, I also irrigated three times. I will do the same this year. The well water costs diesel, but without water the crops will die in the dry spells.\n\nFor pests, the corn does not need much spraying. I spray herbicide once after planting to kill the weeds, and I spray insecticide twice if I see worms in the leaves. Cotton is different. The bollworm is terrible here. Last year I sprayed about eight times during the summer, mixing two medicines in the tank each time. I will do the same this year. If I stop spraying, the worms will eat everything in one week.\n\nBefore planting, I hire the tractor man to come rotary-till the fields. It costs about 50 yuan per mu, but the soil needs turning. I cannot do it by hand anymore.\n\nEverything costs money \u2014 fertilizer, seeds, diesel for the pump, medicine, machine hire. I have to think about my whole budget. But I know from experience that if I try to save too much on inputs, I will regret it at harvest time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"maize\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 31,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I split my 5 mu into 3 mu of spring corn and 2 mu of cotton because cotton needs too much hand work and spraying for an old woman to manage alone. I use one 50kg bag of 15-15-15 compound fertilizer per mu for both crops, plus a full 50kg bag of urea on the corn and half a bag on the cotton. I would rather spend the money than risk a bad harvest. I irrigate three times for each crop from my well. Corn gets three pesticide sprays and cotton gets eight because the bollworm never stops. I hire a machine for rotary tillage. I copy what worked last year and what my neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "maize",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 31,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I split my 5 mu into 3 mu of spring corn and 2 mu of cotton because cotton needs too much hand work and spraying for an old woman to manage alone. I use one 50kg bag of 15-15-15 compound fertilizer per mu for both crops, plus a full 50kg bag of urea on the corn and half a bag on the cotton. I would rather spend the money than risk a bad harvest. I irrigate three times for each crop from my well. Corn gets three pesticide sprays and cotton gets eight because the bollworm never stops. I hire a machine for rotary tillage. I copy what worked last year and what my neighbors do."
+  },
+  "elapsed_seconds": 229.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_15",
+  "tier": 3,
+  "provider": "kimi"
+}

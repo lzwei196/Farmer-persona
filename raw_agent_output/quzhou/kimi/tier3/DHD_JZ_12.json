@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 57 years old. I finished middle school, so I can read the numbers on the fertilizer bags and do my own calculations. I have farmed this same land for 35 years \u2014 wheat in winter, corn in summer, 5.5 mu total. Four people in my house: my husband, my son, and my daughter-in-law. My son works in a factory in the city and sends money home, which helps, but I still count every yuan. I do not hire labor if I can avoid it; my husband and I do the work, and my daughter-in-law helps at harvest if she can get time off from her job at the garment shop.\n\nFor wheat this year, I will plant 5.5 mu with improved seed. Last year I used Luyuan 502, got about 1000 jin per mu. This year I will stick with the same \u2014 the seed dealer has it, and my neighbor Lao Zhang had good luck with it too. I will rotary till the field before planting in October. For fertilizer, I put down 50 jin of compound fertilizer per mu at planting \u2014 that is one bag per mu. Then at green-up in March, I top-dress with 30 jin of urea per mu, and another 20 jin at jointing. All together that is about 18 kg of nitrogen per mu. The compound fertilizer also gives me about 6 kg of phosphorus and 4 kg of potassium per mu. I know fertilizer is expensive this year, but I would rather use a little more than risk thin wheat. A bad wheat harvest is a disaster I cannot afford.\n\nI irrigate four times: once after planting if the soil is dry, once at green-up in March, once at jointing, and once at grain filling. I have a well, so water is not my biggest worry, but the electricity for the pump costs money. For pesticides, I spray herbicide once after planting, insecticide once in spring for aphids, and fungicide once if the weather stays wet \u2014 three times total. I expect about 1000 kg per mu if the weather is normal.\n\nFor summer corn, I plant Denghai 605. Everyone around here uses it \u2014 it is a hybrid seed, costs more than old varieties, but yields better and the grain dealer likes it. I plant right after wheat harvest in June. I do not plow for corn \u2014 I sow directly into the wheat stubble, no-tillage. Saves me diesel and time, and everyone does it this way now. For fertilizer, I put compound fertilizer at planting, about 40 jin per mu, and then top-dress with urea at the big trumpet stage, about 25 jin per mu. That is about 16 kg of nitrogen per mu, plus 5 kg phosphorus and 3 kg potassium. I irrigate twice \u2014 once at big trumpet and once at filling. Two pesticide sprays: one for weeds at planting, one for corn borer in summer. I expect about 1100 kg per mu.\n\nMy son sends home about 2,000 yuan a month, so I can afford the inputs. But I still calculate carefully \u2014 5.5 mu is not big, and every mu has to pay its way. If the fertilizer price goes up again, I might cut back a little on the corn top-dressing, but I will not cut the wheat. Wheat is my main crop, and I need to make sure it is good.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what I did last year and what my neighbors do. For wheat, I use improved seed, rotary tillage, 18 kg nitrogen per mu from compound fertilizer and urea, 4 irrigations, and 3 pesticide applications. For maize, I use Denghai 605 hybrid seed, no-tillage planting, 16 kg nitrogen per mu, 2 irrigations, and 2 pesticide sprays. I would rather apply slightly more fertilizer than risk losing yield, because a bad harvest is a disaster while wasted fertilizer is just a cost. My son's off-farm income gives me some room to invest, but I still watch every yuan on my 5.5 mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what I did last year and what my neighbors do. For wheat, I use improved seed, rotary tillage, 18 kg nitrogen per mu from compound fertilizer and urea, 4 irrigations, and 3 pesticide applications. For maize, I use Denghai 605 hybrid seed, no-tillage planting, 16 kg nitrogen per mu, 2 irrigations, and 2 pesticide sprays. I would rather apply slightly more fertilizer than risk losing yield, because a bad harvest is a disaster while wasted fertilizer is just a cost. My son's off-farm income gives me some room to invest, but I still watch every yuan on my 5.5 mu."
+  },
+  "elapsed_seconds": 260.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_JZ_12",
+  "tier": 3,
+  "provider": "kimi"
+}

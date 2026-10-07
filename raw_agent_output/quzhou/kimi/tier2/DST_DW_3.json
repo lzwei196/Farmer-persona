@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 45 years old and have been farming this land in Quzhou for 20 years. My family has seven mouths to feed, so I need to make sure we have enough grain first, and then some cash income. I have 10.1 mu total. I will put 8 mu into wheat-maize double cropping, just like my neighbors do, and keep 2.1 mu for cotton. The cotton gives us cash for school fees and medicine, but wheat and maize keep us from going hungry.\n\nFor the wheat this winter, I will use improved seed, about 30 jin per mu. I will rotary till the field before sowing in early October. For fertilizer, I will put down around 100 jin of compound fertilizer per mu as a base, and then topdress with urea at jointing. Last year I got about 1000 jin per mu, so if I do the same this year I should get about the same. I have well water, so I will irrigate three times: once after sowing to help it settle, once in spring at jointing, and once at grain filling. I will spray pesticide three times \u2014 herbicide once after sowing, and insecticide twice when I see aphids.\n\nFor summer maize, I plant right after wheat harvest in mid-June. There is almost no time, so I do no-tillage and sow directly. I use hybrid seed, Nongda 372 or something similar from the shop. I put about 80 jin of compound fertilizer at sowing, and that is usually enough because the wheat field already has some nutrients left. I irrigate twice \u2014 once if it is dry at sowing, and once at silking. Three pesticide sprays should be enough.\n\nFor cotton on my 2.1 mu, I rotary till in April and plant improved cotton seed. Cotton needs more fertilizer and a lot more pesticide than grain crops. I will apply compound fertilizer as base and topdress once. I irrigate twice, but the bigger worry is insects \u2014 I will need to spray about 13 times for bollworm and other pests. It is a lot of work, but cotton prices have been decent, so it is worth it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 34,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 13,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I keep most of my land in wheat-maize rotation because with seven people in the house, grain security comes first. The 8 mu of wheat-maize is what my neighbors do and what I have done for years. I use improved wheat seed and hybrid maize seed because they give better yields than traditional seed, and I can buy them at the shop in town. I do rotary tillage for wheat and cotton, but no-tillage for summer maize because there is only about one week between wheat harvest and maize sowing. I irrigate from my well because water is the most important thing on the North China Plain, especially at jointing for wheat and silking for maize. Cotton needs a lot of pesticide sprays, which is expensive and tiring, but the cash income helps pay for my children's schooling and other family needs. I apply fertilizer based on what I have done before and what I see my neighbors doing \u2014 I know the soil is not very rich, so cutting back too much would risk a bad harvest, and with seven people to feed, I cannot afford that risk.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 34,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 13,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I keep most of my land in wheat-maize rotation because with seven people in the house, grain security comes first. The 8 mu of wheat-maize is what my neighbors do and what I have done for years. I use improved wheat seed and hybrid maize seed because they give better yields than traditional seed, and I can buy them at the shop in town. I do rotary tillage for wheat and cotton, but no-tillage for summer maize because there is only about one week between wheat harvest and maize sowing. I irrigate from my well because water is the most important thing on the North China Plain, especially at jointing for wheat and silking for maize. Cotton needs a lot of pesticide sprays, which is expensive and tiring, but the cash income helps pay for my children's schooling and other family needs. I apply fertilizer based on what I have done before and what I see my neighbors doing \u2014 I know the soil is not very rich, so cutting back too much would risk a bad harvest, and with seven people to feed, I cannot afford that risk."
+  },
+  "elapsed_seconds": 285.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "DST_DW_3",
+  "tier": 2,
+  "provider": "kimi"
+}

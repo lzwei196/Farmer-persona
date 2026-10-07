@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land in Quzhou for 53 years. I am 63 now, and I know every plot. My family has six people, but some of the younger ones work in the county town, so I cannot take on too much labor myself. I have 20 mu and a well for irrigation, which means I can water when I need to, but I must be careful with electricity costs.\n\nThis is how I will manage my crops this year.\n\n**Wheat:** I plant 7 mu of winter wheat. It is already in the ground from last autumn. I always use improved seed \u2014 I buy it from the supply shop because it gives me stable yields. I will rotary till before planting, as I always do. For fertilizer, I will put down about 28 kg of nitrogen per mu. I do not bother much with phosphorus or potash; the soil here has enough, and compound fertilizer gives a little anyway. I will irrigate four times: the green-up water in spring, then at jointing, heading, and grain-filling. That is what my father taught me, and it still works. I spray pesticides four times when I see aphids or rust. I expect about 500 kg per mu if the weather is normal.\n\n**Maize:** After I harvest the wheat in early June, I will plant 7 mu of maize immediately on the same land. I use hybrid seed for maize \u2014 it costs more, but the yield is much better. I do not till for maize; I plant no-tillage directly into the wheat stubble with the machine. Time is short between wheat harvest and maize planting, and I am not as young as I used to be. I only add a little nitrogen, about 2 kg per mu, because the wheat field already has fertility left. I irrigate twice \u2014 once after planting if it is dry, and once at the big flare stage. Three pesticide sprays are enough for maize. I expect around 530 kg per mu.\n\n**Cotton:** I keep 6 mu for cotton. Cotton is my main cash crop, but it takes a lot of work. I use improved cotton seed. I rotary till the cotton field in spring to warm the soil. I apply about 4 kg of nitrogen per mu and a little phosphorus, about 1 kg per mu. I irrigate twice \u2014 once after sowing to help emergence, and once during flowering. The biggest problem with cotton is insects. I will spray pesticide 16 times through the season. I know it is a lot, but if I skip even one spray, the bollworms will destroy everything. I expect about 275 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 2,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 530\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 1,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I split my 20 mu into 7 mu wheat, 7 mu maize on the same double-cropped land, and 6 mu cotton because this balances stable grain production with cash income while keeping labor manageable for my age and household. I use improved seed for wheat and cotton and hybrid seed for maize, which is what most farmers around here do. I irrigate wheat four times because it is the dry season and the crop needs water at green-up, jointing, heading, and grain-filling. Maize gets two irrigations and no-tillage planting to save time after wheat harvest. Cotton needs two irrigations but many pesticide sprays to control bollworms. I apply nitrogen mainly to wheat with a little to cotton, and almost none to maize because the wheat residue provides enough. I do not apply potash because it is expensive and our soil does not show deficiency.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 2,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 530
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 1,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I split my 20 mu into 7 mu wheat, 7 mu maize on the same double-cropped land, and 6 mu cotton because this balances stable grain production with cash income while keeping labor manageable for my age and household. I use improved seed for wheat and cotton and hybrid seed for maize, which is what most farmers around here do. I irrigate wheat four times because it is the dry season and the crop needs water at green-up, jointing, heading, and grain-filling. Maize gets two irrigations and no-tillage planting to save time after wheat harvest. Cotton needs two irrigations but many pesticide sprays to control bollworms. I apply nitrogen mainly to wheat with a little to cotton, and almost none to maize because the wheat residue provides enough. I do not apply potash because it is expensive and our soil does not show deficiency."
+  },
+  "elapsed_seconds": 103.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_6",
+  "tier": 2,
+  "provider": "kimi"
+}

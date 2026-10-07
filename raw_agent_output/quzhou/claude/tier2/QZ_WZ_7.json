@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is 2 mu, same as it's always been. My father farmed it, I've farmed it for 40 years. The wheat-maize rotation is what I know. I plant wheat in October after the summer maize comes off, harvest it in early June, then immediately sow maize on the same ground. Both crops use all 2 mu \u2014 same field, different seasons.\n\nI don't chase new things much. I know what works here in Quzhou. The well is reliable, soil is decent loam. My three-person household needs grain and some cash from selling surplus.\n\n**Wheat:** I'll use the improved variety I've been buying from the county seed station \u2014 reliable germination, decent yield, I know how it behaves in my field. I'll plough and rotary till after the maize harvest to bury the stubble. I'll apply compound fertilizer at seeding, then urea top-dressing in spring at jointing. Four irrigations \u2014 pre-sowing to get good establishment, winter irrigation to protect roots from freezing, jointing, and one at grain filling if it's dry. I'll spray herbicide in early spring, fungicide for rust and powdery mildew, and an insecticide pass around heading. Should get around 450 kg per mu.\n\n**Maize:** Right after wheat harvest I go straight to no-till direct seeding \u2014 no time to plough, and the soil moisture needs to be kept. I always use Zhengdan 958 or a similar hybrid from the market, whatever the seed shop has that's proven. I apply more nitrogen on maize than wheat \u2014 I learned early that maize is hungry. Two or three irrigations depending on how the summer rains come. Spray herbicide right after emergence, then watch for corn borer and spray if I see damage. Harvest end of September. Expecting around 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same 2 mu in a continuous wheat-maize rotation, as I have for 40 years in Quzhou County. For winter wheat I do rotary tillage after maize harvest, apply compound base fertilizer plus a spring urea top-dressing, irrigate four times including a critical winter irrigation, and spray herbicide, fungicide, and insecticide across three passes. For summer maize I no-till direct-seed immediately after wheat harvest to preserve soil moisture, use a proven hybrid like Zhengdan 958, apply higher nitrogen given maize demand, rely on two irrigations supplemented by summer rainfall, and spray herbicide plus one insecticide pass for corn borer. My input levels reflect 40 years of local practice: relatively high nitrogen, well-timed irrigation from my well, and chemical pest control at key growth stages. I expect about 450 kg/mu wheat and 550 kg/mu maize, which is typical for my field and enough for household grain needs with some surplus to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the same 2 mu in a continuous wheat-maize rotation, as I have for 40 years in Quzhou County. For winter wheat I do rotary tillage after maize harvest, apply compound base fertilizer plus a spring urea top-dressing, irrigate four times including a critical winter irrigation, and spray herbicide, fungicide, and insecticide across three passes. For summer maize I no-till direct-seed immediately after wheat harvest to preserve soil moisture, use a proven hybrid like Zhengdan 958, apply higher nitrogen given maize demand, rely on two irrigations supplemented by summer rainfall, and spray herbicide plus one insecticide pass for corn borer. My input levels reflect 40 years of local practice: relatively high nitrogen, well-timed irrigation from my well, and chemical pest control at key growth stages. I expect about 450 kg/mu wheat and 550 kg/mu maize, which is typical for my field and enough for household grain needs with some surplus to sell."
+  },
+  "elapsed_seconds": 41.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_7",
+  "tier": 2,
+  "provider": "claude"
+}

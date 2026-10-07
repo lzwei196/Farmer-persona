@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 54 years old. I only finished primary school. I have farmed my land in Quzhou County for 30 years, and everything I know I learned from my father and from watching what works in the fields around me. My family has five people. My son and daughter-in-law work in a factory in town, so mostly it is me and my wife doing the farm work. We hire a tractor at ploughing and harvest time when we need it.\n\nI have 10.1 mu total. I plant 8 mu with winter wheat in the fall, and then right after the wheat comes off in June I plant maize on that same land. The other 2.1 mu I grow cotton. I keep some cotton because the price was okay last year and my wife can help pick it.\n\nFor the winter wheat, it is already in the ground now. Last year I put one 50-jin bag of compound fertilizer on each mu at planting time, and then when the wheat turned green in spring I spread half a bag of urea on top. That gave me about 450 jin per mu. This year I will do the same thing, maybe a touch more urea because my neighbor Lao Wang put on a bit extra last year and his wheat looked greener at heading. I figure that works out to about 18 jin of nitrogen per mu, though I do not count it like that \u2014 I count it in bags. The compound fertilizer has the phosphate and potash in it already. I will irrigate three times from the well: once when the wheat greens up, once when it is jointing, and once when the grain is filling. I always spray herbicide once in early spring, and if I see aphids or the leaves start getting white powder I spray again. I rotary tilled the ground last fall before planting. If the weather is normal I expect about 480 kilograms per mu.\n\nFor the summer maize, I plant hybrid seed from the dealer \u2014 last year I used Zhengdan 958 and it did fine, so I will probably buy the same this year. I plant it right into the wheat stubble with the no-till machine because there is no time to plough between wheat harvest and maize planting. I put down about one bag of compound fertilizer and half a bag of urea per mu, nearly the same as wheat. I will irrigate once or twice, usually once when the tassels come out if it has not rained. I spray herbicide after planting, and once for corn borers if I see them. I expect about 550 kilograms per mu.\n\nFor cotton on the 2.1 mu, I plough that field deep in spring because cotton roots need loose soil. I plant hybrid Bt cotton seeds. Cotton uses more fertilizer than grain, especially potassium \u2014 the bolls need it or they do not open right. I put one bag of compound fertilizer, half a bag of urea, and some extra potassium fertilizer on each mu. I irrigate two times, at flowering and when the bolls are growing. I spray four times because even with Bt cotton you still get aphids and red spider mites. Last year that field gave me about 520 jin of seed cotton per mu, so I expect about 260 kilograms per mu this year.\n\nI watch my neighbors closely. If everyone around me is putting on a certain amount, I do about the same. Fertilizer costs real money and I think about my whole budget, but a bad harvest is a disaster. I would rather waste some fertilizer than lose yield. If I am unsure, I do what I did before. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I manage 8 mu of winter wheat with one bag of compound fertilizer and half a bag of urea per mu, three irrigations, and two pesticide sprays, expecting 480 kg/mu. After the wheat harvest I plant hybrid maize on the same 8 mu using no-tillage, similar fertilizer rates, two irrigations, and two sprays, expecting 550 kg/mu. My remaining 2.1 mu is ploughed and planted with hybrid cotton using extra potassium, two irrigations, four pesticide applications, and expecting 260 kg/mu of seed cotton. I learned everything from doing it and watching neighbors, I worry about costs but would rather over-apply than risk losing yield, and when unsure I repeat what worked last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I manage 8 mu of winter wheat with one bag of compound fertilizer and half a bag of urea per mu, three irrigations, and two pesticide sprays, expecting 480 kg/mu. After the wheat harvest I plant hybrid maize on the same 8 mu using no-tillage, similar fertilizer rates, two irrigations, and two sprays, expecting 550 kg/mu. My remaining 2.1 mu is ploughed and planted with hybrid cotton using extra potassium, two irrigations, four pesticide applications, and expecting 260 kg/mu of seed cotton. I learned everything from doing it and watching neighbors, I worry about costs but would rather over-apply than risk losing yield, and when unsure I repeat what worked last year."
+  },
+  "elapsed_seconds": 291.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_5",
+  "tier": 3,
+  "provider": "kimi"
+}

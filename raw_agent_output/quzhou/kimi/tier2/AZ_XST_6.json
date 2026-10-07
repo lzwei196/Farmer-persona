@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am an old farmer who has worked this land for forty years. I have seen good years and bad years, and I know what works in Quzhou. My family has three people, and my children work off-farm, so I mostly manage the fields myself with some hired help during busy seasons. I have well irrigation, which is my lifeline.\n\nThis year, I will divide my 15 mu sensibly. I will put **10 mu into the wheat-maize double-cropping system** because it is reliable and the grain merchants always come to the village to buy. The remaining **5 mu I will plant with cotton** because cotton prices have been a bit better lately, and I still have the experience to manage it, though it is more labor.\n\nFor the **winter wheat** on 10 mu, I will sow an improved variety like Jimai 22 in early October. I trust this seed\u2014it has good resistance and yields steadily. I will do rotary tillage before sowing to break up the stubble and prepare a fine seedbed. I will apply about 18 kg of nitrogen per mu, 6 kg of phosphorus, and 4 kg of potassium, split between basal and topdressing. Wheat needs water at critical times, so I will irrigate four times: the overwintering water, the reviving water in spring, once at jointing, and once at the grain-filling stage. I expect about 550 kg per mu if the weather cooperates. I will spray pesticides about four times total\u2014once for weeds and two or three times for aphids and diseases.\n\nFor **summer maize** on the same 10 mu, I will plant a hybrid like Denghai 605 immediately after the wheat harvest in mid-June. I have learned that no-tillage sowing works well here; it saves time, keeps moisture, and the maize sprouts quickly in the warm soil. I will apply around 16 kg nitrogen per mu, 5 kg phosphorus, and 4 kg potassium. Maize needs less irrigation than wheat in our summer rains, but I will water twice if the drought hits\u2014especially at silking and grain filling. I spray about three times: herbicide once, and insecticide for armyworm and corn borer. With good management, I expect 650 kg per mu.\n\nFor **cotton** on 5 mu, I will plough the field in spring to loosen the soil and warm it up, then plant an improved cotton variety in April. Cotton is hungry for potassium, so I will give it 14 kg nitrogen, 5 kg phosphorus, and 8 kg potassium per mu. I will irrigate three times during the growing season, especially at flowering and boll-setting. Cotton bollworm is always a threat here, so I must stay vigilant\u2014I will spray pesticides about seven times across the season, including herbicide, insecticide, and a bit of fungicide. I expect around 250 kg of seed cotton per mu.\n\nThis is my plan. I know these fields like the back of my hand.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I have allocated 10 mu to the wheat-maize double-cropping system because it provides stable food and income with manageable labor, and 5 mu to cotton for diversification. For wheat, I use rotary tillage, an improved variety, four irrigations, and moderate fertilizer because that is the proven practice in Quzhou. For maize, I plant a hybrid immediately after wheat harvest with no-tillage to save time and moisture. Cotton requires more potassium and more pest control, so I plough in spring and plan more pesticide applications. These decisions reflect what I have learned over forty years farming this land with well irrigation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I have allocated 10 mu to the wheat-maize double-cropping system because it provides stable food and income with manageable labor, and 5 mu to cotton for diversification. For wheat, I use rotary tillage, an improved variety, four irrigations, and moderate fertilizer because that is the proven practice in Quzhou. For maize, I plant a hybrid immediately after wheat harvest with no-tillage to save time and moisture. Cotton requires more potassium and more pest control, so I plough in spring and plan more pesticide applications. These decisions reflect what I have learned over forty years farming this land with well irrigation."
+  },
+  "elapsed_seconds": 112.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_6",
+  "tier": 2,
+  "provider": "kimi"
+}

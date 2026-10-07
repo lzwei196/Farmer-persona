@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep to the crop pattern I know best in Quzhou: winter wheat followed by summer maize on the same land. In Quzhou County, wheat and maize are the dominant grain crops, the area has about 500 to 550 mm annual rainfall, and most rain comes in July and August, so this rotation fits both the land and the weather well ([MDPI](https://www.mdpi.com/2073-4395/13/9/2362), [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7988609/), [PMC dataset](https://pmc.ncbi.nlm.nih.gov/articles/PMC10964062/)). I am 70, so I will not chase labor-heavy crops like cotton or scattered vegetables. I will plant steady grain, keep the work simple, use improved wheat seed and hybrid maize seed, irrigate wheat a few times because spring is dry, rely more on summer rain for maize, and keep fertilizer moderate instead of applying too much. That is the safest way for me to get a stable harvest and manageable work.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I will grow winter wheat and summer maize in rotation on all 10 mu because this is the normal and reliable pattern in Quzhou County, it matches the local rainfall and temperature, and it is easier for me to manage at my age than cotton or vegetables. I will use improved wheat seed and hybrid maize seed, keep fertilizer at moderate levels, irrigate wheat more than maize because wheat season is drier, and keep field work simple with rotary tillage for wheat and no-tillage seeding for maize after wheat harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I will grow winter wheat and summer maize in rotation on all 10 mu because this is the normal and reliable pattern in Quzhou County, it matches the local rainfall and temperature, and it is easier for me to manage at my age than cotton or vegetables. I will use improved wheat seed and hybrid maize seed, keep fertilizer at moderate levels, irrigate wheat more than maize because wheat season is drier, and keep field work simple with rotary tillage for wheat and no-tillage seeding for maize after wheat harvest."
+  },
+  "elapsed_seconds": 45.3,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "HC_DS_7",
+  "tier": 1,
+  "provider": "codex"
+}

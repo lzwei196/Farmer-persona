@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'm fifty this year, never spent a day in school. I can't read the labels on the fertilizer bags, but I know them by the colors and by what the dealer tells me. I have eight mu of land in Quzhou, the same plot my father farmed. I don't fool around with new crops \u2014 wheat and corn, wheat and corn, that's what this land was made for and that's what I know.\n\nMy wheat went in the ground last October after the holiday, same as every year. I rotary-tilled the field and sowed about thirty jin of seed per mu \u2014 improved seed, not the old stuff, but not those fancy hybrids either. Right now it's spring and the wheat is greening up. I'll put down one bag of compound fertilizer per mu as a topdress, and about one bag of ammonium bicarbonate too. That's what Old Wang does, and his wheat always looks better than mine when I try to save money. I can't afford a thin crop \u2014 my wife and I need the grain, and my son in the city only sends so much. I'll irrigate three times: once now when it greens up, once when the stems start jointing, and once when the grain fills. Water from the well costs me, but three times is the rule. I'll spray for weeds and bugs three times total \u2014 there's always aphids and some kind of rust. I expect about 450 kg per mu if the weather doesn't turn bad, about the same as last year.\n\nAfter we harvest the wheat in early June, the window is tight \u2014 maybe five or six days before I have to get the corn in or the season is lost. No time to till. I'll plant hybrid corn seed straight into the stubble, the kind that comes in packages. Everyone uses hybrid corn now; the old seed just doesn't yield anymore. I'll put one bag of compound in at planting, and when the corn is knee-high I'll spread half a bag of urea on top. Two irrigations should do \u2014 one after planting if June is dry, and one when the tassels come out. I'll spray three times for weeds and stem borers. If things go right, I'll get about 500 kg per mu.\n\nI thought about cotton, but that's too much fussing and the price jumps around. Wheat and corn I understand. The dealer buys them, the mill takes them, I get my cash. I don't take risks. I do what my neighbors do, what my father did, and what has always put food on the table.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I stick to the wheat-maize double crop on my eight mu because it is what I know and what the local market accepts. With no schooling, I rely entirely on memory and watching my neighbors \u2014 I apply roughly two bags of fertilizer per mu for wheat and one and a half for corn, irrigate when the crop tells me it is thirsty, and use hybrid corn seed because everyone else does. I avoid cotton and other crops because change is risky and I cannot afford a failed season.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I stick to the wheat-maize double crop on my eight mu because it is what I know and what the local market accepts. With no schooling, I rely entirely on memory and watching my neighbors \u2014 I apply roughly two bags of fertilizer per mu for wheat and one and a half for corn, irrigate when the crop tells me it is thirsty, and use hybrid corn seed because everyone else does. I avoid cotton and other crops because change is risky and I cannot afford a failed season."
+  },
+  "elapsed_seconds": 146.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "NLY_ZQZ_1",
+  "tier": 1,
+  "provider": "kimi"
+}

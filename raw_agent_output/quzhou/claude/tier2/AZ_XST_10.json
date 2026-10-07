@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 45 years and I know Quzhou's soil and climate well. My 12 mu breaks down as 8 mu in wheat-maize rotation and 4 mu dedicated to cotton \u2014 cotton needs the full growing season from April to October, so it can't share ground with the wheat-maize cycle.\n\n**Wheat (8 mu, October through June):** I'll use an improved variety \u2014 probably Kenong 199, which performs reliably in Quzhou's conditions. With my education I've tracked yield trials and this variety holds up well against late-season heat. Base fertilizer goes in at planting, urea top-dress at jointing. I'll irrigate three times: the winter water to protect roots during dormancy, jointing stage, and grain fill. Two pesticide passes \u2014 a herbicide in early tillering and an aphid/fungicide spray near heading. I'll rotary till after maize harvest in September.\n\n**Maize (8 mu, June through September, same plots):** After wheat harvest I go straight in with no-till seeding \u2014 saves time and moisture, and at my age I'm not ploughing twice a year when I don't need to. Hybrid seed, Zhengdan 958 or whatever the seed station has that season. Fertilize at planting and a top-dress at V6. Two irrigations, one at silking. Two pesticide passes for borer and armyworm.\n\n**Cotton (4 mu, April through October):** Deep plough in early spring to break the pan layer \u2014 cotton roots need depth. Hybrid Bt cotton reduces bollworm pressure substantially, so I can cut pesticide passes to three rather than the old five or six. I split nitrogen across three applications: base, boll set, and late boll opening. Four irrigations spaced through the season. Cotton is my main cash crop; the wheat-maize feeds the household and covers inputs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I split my 12 mu between 8 mu in a winter wheat\u2013summer maize double-crop rotation and 4 mu in cotton, which requires the full frost-free season and cannot share ground with the rotation. For wheat I use an improved high-yield variety suited to Quzhou, apply fertilizer in two splits, and irrigate three times at the critical winter, jointing, and grain-fill stages. Maize follows wheat with no-till direct seeding to save moisture and labor, hybrid seed, and two irrigations. Cotton receives deep ploughing in spring to encourage rooting, hybrid Bt seed to reduce insecticide load, split nitrogen applications across three timings, and four irrigations through the long growing season; as my main cash crop it gets the most intensive management, but 45 years of experience means I know where I can cut inputs without losing yield.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I split my 12 mu between 8 mu in a winter wheat\u2013summer maize double-crop rotation and 4 mu in cotton, which requires the full frost-free season and cannot share ground with the rotation. For wheat I use an improved high-yield variety suited to Quzhou, apply fertilizer in two splits, and irrigate three times at the critical winter, jointing, and grain-fill stages. Maize follows wheat with no-till direct seeding to save moisture and labor, hybrid seed, and two irrigations. Cotton receives deep ploughing in spring to encourage rooting, hybrid Bt seed to reduce insecticide load, split nitrogen applications across three timings, and four irrigations through the long growing season; as my main cash crop it gets the most intensive management, but 45 years of experience means I know where I can cut inputs without losing yield."
+  },
+  "elapsed_seconds": 54.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_10",
+  "tier": 2,
+  "provider": "claude"
+}

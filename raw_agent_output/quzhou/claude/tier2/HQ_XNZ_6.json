@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land for 55 years. I know this soil, I know this weather, and I know what my body can still handle at 78. My wife and I are the only two workers on this farm. I cannot afford to make mistakes \u2014 we depend on what comes out of this ground.\n\nMy 4.1 mu is split the way it has always been: about 2.5 mu on the wheat-maize rotation, and the remaining 1.6 mu in cotton. I thought about cutting the cotton this year because picking is hard on my back and cotton needs a lot of hands at harvest. But cotton is cash. Wheat and maize feed us and feed the animals; cotton pays the bills. I will keep the cotton but I will not expand it.\n\n**Wheat (winter):** I sow in October after the soil is prepared. I use improved seed \u2014 the Jimai varieties work well here, the extension station has been pushing them for years and my neighbors get good results. I apply compound fertilizer as base and come back with urea at jointing. Three irrigations: one before winter sets in, one at jointing, one at grain filling. Two pesticide passes \u2014 herbicide in early winter, then something for rust and aphids near heading. I use rotary tillage; deep ploughing is too tiring at my age and the rotary gets the job done fine.\n\n**Maize (summer):** Right after I harvest wheat in June, I seed maize directly into the stubble. No tillage \u2014 I have done this for years now and yields are the same, and it saves me a full day of work. Hybrid seed, Zhengdan 958 or whatever the seed shop recommends this season. Two irrigations \u2014 one to get it established, one at silking if rain does not come. Two pesticide applications: herbicide early, then something for corn borer. I apply fertilizer mostly as topdress at the big-bell stage.\n\n**Cotton:** I transplant seedlings in late April or early May. I use Bt hybrid cotton \u2014 the insect pressure is lower than it used to be with the old varieties and I do not have to spray as many times. Four irrigations across the season. Four pesticide applications \u2014 I still watch carefully for aphids and bollworms even with Bt. I plough this plot properly before transplanting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"A 78-year-old two-person household on 4.1 mu in Quzhou, Hebei maintains the proven wheat-maize double-crop rotation on 2.5 mu and keeps 1.6 mu of hybrid Bt cotton as the primary cash crop. Wheat uses improved seed with three irrigations and rotary tillage to spare labor; summer maize follows with no-tillage direct seeding after wheat harvest, using a popular hybrid and two irrigations, reducing physical workload while sustaining yields. Cotton uses Bt hybrid seed to reduce pesticide burden, with four irrigations and four spray passes. Fertilizer rates reflect 55 years of accumulated local experience at standard Hebei intensities. No area expansion is planned given severe household labor constraints at the farmer's age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "A 78-year-old two-person household on 4.1 mu in Quzhou, Hebei maintains the proven wheat-maize double-crop rotation on 2.5 mu and keeps 1.6 mu of hybrid Bt cotton as the primary cash crop. Wheat uses improved seed with three irrigations and rotary tillage to spare labor; summer maize follows with no-tillage direct seeding after wheat harvest, using a popular hybrid and two irrigations, reducing physical workload while sustaining yields. Cotton uses Bt hybrid seed to reduce pesticide burden, with four irrigations and four spray passes. Fertilizer rates reflect 55 years of accumulated local experience at standard Hebei intensities. No area expansion is planned given severe household labor constraints at the farmer's age."
+  },
+  "elapsed_seconds": 47.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_6",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,66 @@
+{
+  "raw_response": "## My thinking\n\nI've been farming three years now, so I mostly follow what the experienced farmers around me do in Quzhou. My land is 340.1 mu and my main system is the winter wheat\u2013summer maize rotation \u2014 that's what makes sense here on the North China Plain. I'll put 220 mu into that rotation because it gives me two harvests on the same ground every year. The other 120 mu I'll split evenly: 60 mu for oilseed (peanut, which does well here) and 60 mu for soybean.\n\nFor wheat I use improved varieties \u2014 the local seed station recommends them and they're what everyone uses. For maize I go hybrid, no question, the yield difference is obvious. For peanut and soybean I use improved, nothing fancy.\n\nI have well irrigation, which is the only reason I can grow reliably in this dry climate. Wheat needs at least three waterings \u2014 before sowing, at jointing, and at heading. Maize I direct-seed right after wheat harvest, no-till, so I save time. It needs two irrigations around tasseling and grain fill.\n\nFertilizer: I follow what the neighbors do, maybe slightly on the higher end for wheat since that's my main cash crop. Peanut and soybean fix nitrogen themselves so I barely apply N there, mainly phosphorus and potassium.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 220,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 220,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"oilseed\",\n      \"season\": \"spring\",\n      \"area_mu\": 60,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 4,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"soybean\",\n      \"season\": \"summer\",\n      \"area_mu\": 60,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 180\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 220 mu to the wheat-maize double-cropping rotation that dominates this area of Hebei, using improved wheat varieties and hybrid maize seed for reliable yield. The remaining 120 mu is split between oilseed (peanut) and soybean as spring and summer crops respectively. With well irrigation I can water wheat three times and maize twice, which is necessary in this semi-arid climate. I apply higher nitrogen to wheat and maize as the main grain crops, while keeping nitrogen low for the legumes since they fix their own. Maize is direct-seeded no-till right after wheat harvest to save labor and protect soil moisture. Fertilizer and pesticide rates follow conventional local practice, which is what I know best after three years of farming.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 220,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 220,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "oilseed",
+        "season": "spring",
+        "area_mu": 60,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 4,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      },
+      {
+        "crop": "soybean",
+        "season": "summer",
+        "area_mu": 60,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 180
+      }
+    ],
+    "reasoning_summary": "I allocate 220 mu to the wheat-maize double-cropping rotation that dominates this area of Hebei, using improved wheat varieties and hybrid maize seed for reliable yield. The remaining 120 mu is split between oilseed (peanut) and soybean as spring and summer crops respectively. With well irrigation I can water wheat three times and maize twice, which is necessary in this semi-arid climate. I apply higher nitrogen to wheat and maize as the main grain crops, while keeping nitrogen low for the legumes since they fix their own. Maize is direct-seeded no-till right after wheat harvest to save labor and protect soil moisture. Fertilizer and pesticide rates follow conventional local practice, which is what I know best after three years of farming."
+  },
+  "elapsed_seconds": 58.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_1",
+  "tier": 2,
+  "provider": "claude"
+}

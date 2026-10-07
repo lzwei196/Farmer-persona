@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 40 years. Quzhou soil I know well \u2014 heavy loam, needs good base fertilizer. My son works in the city so it's mostly me managing things, sometimes hiring day labor for harvest. I have the well, so water is not my worry the way it is for some neighbors, but the electricity costs add up.\n\nFor wheat, I plant around 18 mu every October after maize comes off. I'll use the same improved variety I've been buying from the county seed station \u2014 it's reliable for this area, decent resistance to rust. I put down base fertilizer before rotary tillage, then top-dress at jointing. Four irrigations: the winter water before freeze, green-up in March, jointing in April, and grain-filling. I do herbicide in autumn and one fungicide pass in spring. That's how I've always done it and I get around 450 jin per mu most years.\n\nFor maize, I go straight into no-tillage after wheat harvest in June. Hybrid seed, the one from the supply cooperative. Summer has some rain so I only irrigate twice \u2014 once at establishment if it's dry, once at tasseling. I apply fertilizer at planting and top-dress at jointing. One herbicide, one pesticide spray for corn borer. Maize usually gives me 550 jin or better.\n\nI split the 18 mu evenly between the two because that's the rotation \u2014 same fields, different seasons.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 18,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 18,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 55-year-old experienced farmer in Quzhou County, Hebei follows the standard wheat-maize double-cropping rotation on all 18 mu. Wheat is planted in October with rotary tillage, using locally-adapted improved varieties, heavy base fertilization, and four well irrigations across the winter-spring growing period. Summer maize follows immediately after wheat harvest via no-tillage direct seeding using hybrid seed, relying partly on seasonal rainfall with two supplemental irrigations. Input levels reflect 40 years of local practice \u2014 moderately intensive fertilization and standard pest management \u2014 calibrated to the household's labor constraints given off-farm employment of one family member.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 18,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 18,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 55-year-old experienced farmer in Quzhou County, Hebei follows the standard wheat-maize double-cropping rotation on all 18 mu. Wheat is planted in October with rotary tillage, using locally-adapted improved varieties, heavy base fertilization, and four well irrigations across the winter-spring growing period. Summer maize follows immediately after wheat harvest via no-tillage direct seeding using hybrid seed, relying partly on seasonal rainfall with two supplemental irrigations. Input levels reflect 40 years of local practice \u2014 moderately intensive fertilization and standard pest management \u2014 calibrated to the household's labor constraints given off-farm employment of one family member."
+  },
+  "elapsed_seconds": 42.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_10",
+  "tier": 2,
+  "provider": "claude"
+}

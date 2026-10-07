@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 50-year-old farmer in Quzhou County with no schooling. I have farmed my whole life, and I know my land. I have about 10 mu of fields. My wheat is already in the ground \u2014 I sowed it last October after the holiday, and now in April it is growing green and strong. I will harvest it in early June, and then right away I will plant maize on that same land. This wheat-maize rotation is what my father did, and it is what everyone in my village does. It is safe and we know it well. I buy improved wheat seeds and hybrid maize seeds from the county shop. For wheat, I till the soil with the rotary machine before sowing. For maize, I do not till \u2014 I plant the seeds directly into the wheat stubble after harvest, which saves time and fuel.\n\nThis year I will also plant about 2 mu of cotton in April. The cotton price was okay last year, and my wife and I can pick it together in autumn. We need this cash for family expenses. The cotton needs more work \u2014 many sprays for insects \u2014 but 2 mu is not too much for us to manage. I will till the cotton field with the rotary machine.\n\nFor the wheat, I will irrigate four times and spray pesticides four times. For the maize, I will irrigate three times and spray three times. The cotton will need about three irrigations and many pesticide sprays to keep the bollworms away. I use the fertilizers the same way I have always done \u2014 not too much, just enough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 3.6,\n      \"phosphorus_kg_per_mu\": 2.5,\n      \"potassium_kg_per_mu\": 0.8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 2.7,\n      \"phosphorus_kg_per_mu\": 0.7,\n      \"potassium_kg_per_mu\": 0.7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1040\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 2.9,\n      \"phosphorus_kg_per_mu\": 2.8,\n      \"potassium_kg_per_mu\": 2.6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I grow wheat in winter and maize in summer on 8 mu of land using the double-cropping system my family has always followed, because it is reliable and provides both food and income. I also plant 2 mu of cotton in spring for extra cash, which my wife and I can pick in autumn. I use improved wheat seeds, hybrid maize seeds, and rotary tillage for wheat and cotton, but no-tillage for maize to save time after the wheat harvest. My input levels are based on what has worked for me over the years \u2014 moderate fertilizer, regular irrigation, and more pesticide sprays for cotton due to insect pressure.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 3.6,
+        "phosphorus_kg_per_mu": 2.5,
+        "potassium_kg_per_mu": 0.8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 2.7,
+        "phosphorus_kg_per_mu": 0.7,
+        "potassium_kg_per_mu": 0.7,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1040
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 2.9,
+        "phosphorus_kg_per_mu": 2.8,
+        "potassium_kg_per_mu": 2.6,
+        "irrigation_times": 3,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I grow wheat in winter and maize in summer on 8 mu of land using the double-cropping system my family has always followed, because it is reliable and provides both food and income. I also plant 2 mu of cotton in spring for extra cash, which my wife and I can pick in autumn. I use improved wheat seeds, hybrid maize seeds, and rotary tillage for wheat and cotton, but no-tillage for maize to save time after the wheat harvest. My input levels are based on what has worked for me over the years \u2014 moderate fertilizer, regular irrigation, and more pesticide sprays for cotton due to insect pressure."
+  },
+  "elapsed_seconds": 290.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_6",
+  "tier": 1,
+  "provider": "kimi"
+}

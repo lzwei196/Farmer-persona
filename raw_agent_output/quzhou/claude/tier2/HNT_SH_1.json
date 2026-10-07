@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming in Quzhou since I was a boy. My father taught me, and his father before him. I know this land \u2014 the soil, the wells, the seasons. With 3.5 mu I cannot afford mistakes. Let me think through what I will do.\n\n**Wheat and maize** go on 2.5 mu together in rotation \u2014 wheat in October after the maize harvest, maize in June right after wheat. This is what everyone here does. It fills the calendar and uses the land twice a year. I will use the improved Jimai wheat variety the township seed station sells \u2014 it does well here and I know it. For maize I will buy hybrid seed, Zhengdan 958 or whatever the store has that's reputable. I apply urea and compound fertilizer at the rates I have learned over the years. Wheat needs three irrigations \u2014 at sowing if the soil is dry, at jointing, and at heading. Maize is summer and the rains help, so two irrigations is usually enough. I spray herbicide once for wheat and watch for aphids in May. For maize I do one round for pests.\n\n**Cotton** gets the remaining 1 mu. Cotton earns more per mu than grain, and I know how to grow it, but it is hard work and the pesticides cost money. I plough that plot in spring, plant hybrid cotton in late April. Cotton needs more spraying \u2014 bollworm, aphids, spider mites \u2014 I plan for five rounds of pesticide. I irrigate four times through the dry summer months. I apply more potassium with cotton than with grain because the soil here is potassium-hungry and cotton responds well to it.\n\nI do not change what works. I have four people to feed and inputs to pay for. I manage the water carefully \u2014 the well is mine but electricity costs are real and I have heard the water level is lower every year.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I split my 3.5 mu between a 2.5 mu wheat-maize double-crop rotation and 1 mu of cotton. The rotation is the backbone of farming here in Quzhou \u2014 wheat planted in October and harvested in June, maize immediately following and harvested in September \u2014 and I have done it this way for decades. I use improved wheat and hybrid maize seed from the township station because they yield reliably on my soil. Cotton occupies the remaining plot because it commands a higher price per mu, though it demands five rounds of pesticide and careful irrigation management. Fertilizer rates reflect what I have learned produces good yields without waste: wheat and maize take moderate nitrogen, while cotton gets extra potassium given the local soil. I rely on my well for irrigation but keep the number of waterings controlled \u2014 electricity is not free and the water table has been dropping, which I have noticed over the years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I split my 3.5 mu between a 2.5 mu wheat-maize double-crop rotation and 1 mu of cotton. The rotation is the backbone of farming here in Quzhou \u2014 wheat planted in October and harvested in June, maize immediately following and harvested in September \u2014 and I have done it this way for decades. I use improved wheat and hybrid maize seed from the township station because they yield reliably on my soil. Cotton occupies the remaining plot because it commands a higher price per mu, though it demands five rounds of pesticide and careful irrigation management. Fertilizer rates reflect what I have learned produces good yields without waste: wheat and maize take moderate nitrogen, while cotton gets extra potassium given the local soil. I rely on my well for irrigation but keep the number of waterings controlled \u2014 electricity is not free and the water table has been dropping, which I have noticed over the years."
+  },
+  "elapsed_seconds": 56.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_1",
+  "tier": 2,
+  "provider": "claude"
+}

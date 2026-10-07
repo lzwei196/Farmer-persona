@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming these 10.1 mu for forty years now, so I mostly know what to do. I went to middle school, so I can read the bag on the fertilizer and I talk with the input dealer in town. But mostly I do what worked last year, with small changes.\n\nThis year I keep the same setup. Cotton takes a lot of labor and the price is not so good anymore, so I only keep 2 mu of cotton on the sandy strip by the road. The other 8.1 mu I do wheat in winter and maize in summer, same rotation I always do.\n\n**Wheat (8.1 mu, winter):**\nI buy improved variety seed from the county agricultural store, same one my neighbor Old Wang used and got good yield. I broadcast about 50 kg of compound fertilizer (15-15-15) per mu as base before plowing \u2014 that gives me about 7-8 kg N, 7-8 kg P, 7-8 kg K. Then before winter irrigation and again at jointing in spring, I topdress urea, maybe 25 kg total per mu, which is about 11-12 kg more N. So around 18-20 kg N per mu in total. I know some people say less is enough but I would rather put a little more \u2014 if wheat is short of fertilizer I cannot fix it later. I irrigate 4 times: before sowing, winter water, jointing, and grain filling. Spray pesticide twice \u2014 once for aphids, once mixed with herbicide. I plow with the tractor before sowing, not rotary only, because the ground gets hard. I expect around 480 kg per mu, like last year.\n\n**Maize (8.1 mu, summer):**\nI use hybrid seed, Zhengdan or whatever the dealer recommends that year. No tillage \u2014 I just plant into the wheat stubble with the seeder, everyone does this now, saves time and diesel. Base fertilizer 40 kg compound per mu at sowing, then topdress 30 kg urea at big trumpet stage \u2014 total around 20 kg N per mu. Irrigate 2 times if rain is normal, 3 if dry. Spray once for borer. Yield around 550 kg per mu.\n\n**Cotton (2 mu, spring):**\nI plant improved Bt cotton seed, rotary till the ground first. Cotton does not need so much nitrogen but needs potassium for the bolls. Maybe 12 kg N, 6 kg P, 10 kg K per mu. Irrigate 3 times. Spray 5 times \u2014 cotton always needs more spraying even with Bt, for aphids and mirid bugs. Expected yield 250 kg seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I keep the same wheat-maize rotation on 8.1 mu and 2 mu of cotton on the sandy strip, same as last year since it worked. For wheat I use compound base fertilizer plus urea topdressing twice, total about 19 kg N per mu \u2014 a bit extra is cheap insurance against a short crop. Maize I plant no-till into wheat stubble like everyone does now. Cotton gets less nitrogen but more potassium and more spraying because bollworm and aphids always come. I buy improved or hybrid seed from the county store based on what my neighbors had good results with, and I rely on well irrigation 2-4 times depending on the crop and rain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I keep the same wheat-maize rotation on 8.1 mu and 2 mu of cotton on the sandy strip, same as last year since it worked. For wheat I use compound base fertilizer plus urea topdressing twice, total about 19 kg N per mu \u2014 a bit extra is cheap insurance against a short crop. Maize I plant no-till into wheat stubble like everyone does now. Cotton gets less nitrogen but more potassium and more spraying because bollworm and aphids always come. I buy improved or hybrid seed from the county store based on what my neighbors had good results with, and I rely on well irrigation 2-4 times depending on the crop and rain."
+  },
+  "elapsed_seconds": 38.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_10",
+  "tier": 3,
+  "provider": "claude"
+}

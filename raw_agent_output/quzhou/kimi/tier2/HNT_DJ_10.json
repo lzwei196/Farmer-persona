@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 50-year-old farmer in Quzhou County. I have farmed my 6 mu for 25 years. I never went to school, but I know my land and I watch what my neighbors do. My household has five people, and some of my family work off-farm in town, so I cannot waste labor. I have a well, so I can irrigate when I need to.\n\nMy 6 mu is all wheat-maize rotation \u2014 the same land grows wheat after maize and maize after wheat, year after year. I do not have time or reason to change this. It is what everyone around me does, and it feeds my family.\n\nFor wheat this winter, I will rotary till the field before sowing in October. I will buy improved wheat seeds from the dealer in town \u2014 I have used saved seeds before, but the bought seeds give better yield and my neighbors all buy them now. I will spread about 100 jin of compound fertilizer per mu as basal, and then topdress with about 50 jin of urea per mu in spring when the wheat turns green. I will irrigate three times: once before winter, once at jointing, and once when the grain is filling. I will spray pesticides four times \u2014 mainly for weeds and aphids. I expect about 1,050 jin per mu, which is around 525 kg.\n\nFor maize next summer, right after I harvest the wheat in June, I will plant hybrid maize seeds without tilling. Everyone uses no-tillage for maize now \u2014 it saves time and keeps moisture. I will put down about 80 jin of compound fertilizer per mu at sowing. I will irrigate twice if the weather is dry, and spray pesticides four times for armyworms and weeds. I expect about 1,200 jin per mu, around 600 kg.\n\nI do not calculate nitrogen or phosphorus numbers \u2014 I buy bags of compound and urea from the shop, and I know how many jin to spread because I have done it for 25 years. My well gives me water when rain is short. With some of my family working off-farm, I keep my farm simple: wheat in winter, maize in summer, standard fertilizers, and sprays when I see pests.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 525\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 1,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed wheat-maize on 6 mu for 25 years and follow what my neighbors do. I use rotary tillage and improved seeds for wheat, and no-tillage hybrid maize after wheat harvest. I apply compound fertilizer basal plus urea topdressing to wheat, and compound fertilizer to maize at sowing. I irrigate from my well when crops need water and spray pesticides when I see weeds or insects. With family members working off-farm, I keep my practices simple and reliable.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 525
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 1,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed wheat-maize on 6 mu for 25 years and follow what my neighbors do. I use rotary tillage and improved seeds for wheat, and no-tillage hybrid maize after wheat harvest. I apply compound fertilizer basal plus urea topdressing to wheat, and compound fertilizer to maize at sowing. I irrigate from my well when crops need water and spray pesticides when I see weeds or insects. With family members working off-farm, I keep my practices simple and reliable."
+  },
+  "elapsed_seconds": 186.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_10",
+  "tier": 2,
+  "provider": "kimi"
+}

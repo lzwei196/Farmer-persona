@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 15 mu in Quzhou for forty years, and I know every corner of them. My wife and I are the only ones left at home now, so labor is tight and I cannot afford to take risks on crops that need too much hand work. That is why I keep twelve mu in the wheat-maize rotation and only three mu in cotton. The wheat-maize double crop is my insurance policy: even if one crop has a bad year, the other usually carries us through, and we can sell the wheat and feed the maize to our few animals or sell it to the local trader. Cotton prices were acceptable last autumn, but it is back-breaking work at my age\u2014picking, pruning, spraying\u2014so three mu is enough.\n\nFor the winter wheat on those twelve mu, I will sow an improved variety, Jimai 22, in mid-October. I know this seed well; it gives me stable yields around 500 kg per mu if I do not cut corners on water. I will rotary-till before sowing, put down a base dressing of compound fertilizer, and then topdress nitrogen at jointing. I target about 18 kg of nitrogen per mu in total, with roughly 6 kg phosphorus and 4 kg potassium, because forty years of double-cropping has drawn down the soil and I can see the difference when I skip the potash. Water is from our tube well, and I will irrigate four times: once after sowing, once in winter if the snow is thin, once at jointing, and once at grain filling. Three pesticide sprays should suffice\u2014herbicide early, then fungicide and insecticide if the weather turns humid.\n\nAs soon as the wheat comes off in early June, the clock starts ticking. I have maybe five to seven days to get the maize in before the season slips away. I will plant a hybrid, probably Denghai 605, using no-tillage to save time and fuel. No-tillage works fine here if the stubble is managed; I have done it for years. The maize needs about 16 kg nitrogen per mu, 5 kg phosphorus, and 4 kg potassium, all worked in at sowing or side-dressed when the plants are knee-high. I will irrigate twice\u2014once at sowing if the soil is dry, and once at the big flare stage\u2014because summer rains in Quzhou are unreliable and I would rather pay for the pump than lose ears to drought. Two sprays: herbicide at emergence and insecticide if the borers show up.\n\nThe three mu of cotton I will plant in late April with a hybrid Bt cotton seed. I need to rotary-till deep for cotton because it hates compaction. I give it about 15 kg nitrogen, 5 kg phosphorus, and 6 kg potassium per mu\u2014cotton is hungry for potash when the bolls are setting. I will irrigate three times, at budding, flowering, and boll stage, and spray five times total: herbicide once, insecticide three times even with Bt cotton because the second-generation bollworm still breaks through some years, and fungicide once. If the weather cooperates I expect about 250 kg of seed cotton per mu. Any less and it is not worth the effort; any more and I thank the heavens.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"With only my wife and me working, I keep most of our 15 mu in the reliable wheat-maize double crop and limit cotton to three mu because of the heavy labor. I stick to improved wheat and hybrid maize and cotton varieties that I know from experience, apply enough NPK to maintain yields on our tired soils, and irrigate whenever rainfall falls short because the cost of pumping is less than the cost of losing a crop at sixty years old.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "With only my wife and me working, I keep most of our 15 mu in the reliable wheat-maize double crop and limit cotton to three mu because of the heavy labor. I stick to improved wheat and hybrid maize and cotton varieties that I know from experience, apply enough NPK to maintain yields on our tired soils, and irrigate whenever rainfall falls short because the cost of pumping is less than the cost of losing a crop at sixty years old."
+  },
+  "elapsed_seconds": 237.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "YZ_SZ_9",
+  "tier": 2,
+  "provider": "kimi"
+}

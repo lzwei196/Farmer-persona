@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am fifty-six years old, and I have worked this land in Quzhou County since I was a young girl. I never went to school, but I know the seasons, the soil, and what my neighbors are doing. My family has about ten mu of land. The winter wheat went into the ground last October after we rotary-tilled the soil and spread basal fertilizer. Now that spring has arrived, the wheat is greening up, and I need to topdress it with urea and irrigate it three or four times before the June harvest. I always use the improved wheat varieties that everyone around here plants\u2014something like Luyuan 502 or Jimai 22\u2014because they give steady yields around one thousand jin per mu if the weather cooperates.\n\nAfter we cut the wheat in early June, I will plant summer maize right away without ploughing again. Everyone here uses Denghai 605 or Denghai 662, which are hybrid seeds from the agro-store. They cost more than traditional seed, but the yield is much better\u2014around eleven hundred jin per mu. For the maize, I put down compound fertilizer at planting and maybe topdress once more. It only needs watering twice if the summer rains are normal.\n\nI also keep three mu for cotton. Cotton brings in cash, and I have grown it for many years. I know it means a lot of work\u2014spraying for insects more than ten times over the season\u2014but the money helps with household expenses. I till that plot with the rotary tiller in spring, plant the improved cotton seed in April, and harvest in October.\n\nI buy my fertilizers from the village store: usually compound fertilizer (around 18-22-5 or similar blends) for basal application, and urea for topdressing the wheat. I do not measure everything exactly like the technicians do, but over the years I know roughly how many bags to spread per mu. If I see aphids or mold on the wheat, I spray. If the soil looks dry, I turn on the pump and flood the borders. That is how my parents did it, that is how my neighbors do it, and that is how I do it.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 60,\n      \"phosphorus_kg_per_mu\": 22,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou County all my life and follow the practices my family and neighbors have always used. I plant winter wheat on seven mu every October, manage it through spring with irrigation, urea topdressing, and a few pesticide sprays, then harvest in June. Immediately after wheat harvest, I sow hybrid summer maize on the same seven mu without ploughing again, because the hybrids yield well and save labor. On the remaining three mu, I grow cotton for cash income, which requires frequent insecticide spraying but pays for household needs. I buy improved seeds and compound fertilizer from the local agro-store, irrigate when the soil is dry, and spray when I see pests, relying on experience rather than books.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 60,
+        "phosphorus_kg_per_mu": 22,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou County all my life and follow the practices my family and neighbors have always used. I plant winter wheat on seven mu every October, manage it through spring with irrigation, urea topdressing, and a few pesticide sprays, then harvest in June. Immediately after wheat harvest, I sow hybrid summer maize on the same seven mu without ploughing again, because the hybrids yield well and save labor. On the remaining three mu, I grow cotton for cash income, which requires frequent insecticide spraying but pays for household needs. I buy improved seeds and compound fertilizer from the local agro-store, irrigate when the soil is dry, and spray when I see pests, relying on experience rather than books."
+  },
+  "elapsed_seconds": 241.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_11",
+  "tier": 1,
+  "provider": "kimi"
+}

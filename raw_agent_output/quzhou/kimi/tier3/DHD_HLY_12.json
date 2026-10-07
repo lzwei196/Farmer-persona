@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 69, I never went to school, not even one day. I learned everything from my mother-in-law and from watching the neighbors. I have farmed these 7 mu for 47 years. It is just me and my old man now, two mouths to eat from this land.\n\nFor wheat, I do what I did last year. I rotary till the ground before sowing in October. I buy improved wheat seed from the dealer \u2014 the same kind my neighbor Lao Zhang used last year because his crop looked good. I sow 30 jin per mu, which is about 15 kg. Before sowing I spread one bag of compound fertilizer per mu, 50 kg. Then at green-up time in March I spread another 50 kg bag of compound, and at jointing I add half a bag of urea, 25 kg. I would rather put a little too much than too little \u2014 if the wheat goes yellow, I lose everything. I irrigate three times: winter water before the freeze, jointing water, and filling water when the grain is swelling. That well water is my life. I spray three times: herbicide once in early spring, insecticide once when the aphids come, and fungicide once because two years ago my neighbor got rust and I do not want that. I expect 900 jin per mu, about 450 kg.\n\nFor maize, I plant right after cutting wheat in June \u2014 no time to plow, I plant no-tillage. I use hybrid seed, bought from the dealer in packages, about 1 package per mu. At planting I put down one and a half bags of compound fertilizer, about 75 kg per mu. I do not usually topdress maize because by August I am tired and the corn is already tall, but I water it twice if the rain does not come \u2014 once when it is knee-high and once when the ears are filling. I spray three times: herbicide once right after planting, and insecticide twice because those armyworms always show up in July. If Lao Zhang sprays three times, I spray three times. I expect 1000 jin per mu, about 500 kg.\n\nMoney is tight. Compound fertilizer is 130 yuan a bag and urea is 90 yuan. But I have seen what happens when you skimp \u2014 the yield drops and then you cry. So I buy what I bought last year, and I watch my neighbors.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what I did last year and what my neighbors do. For wheat on 7 mu, I rotary till and apply 100 kg of compound fertilizer plus 25 kg of urea per mu, irrigate three times, and spray three times. For maize on the same 7 mu, I plant no-tillage with hybrid seed, apply 75 kg of compound fertilizer per mu, irrigate twice, and spray three times. I spend the money on inputs because a bad harvest is worse than wasting some fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what I did last year and what my neighbors do. For wheat on 7 mu, I rotary till and apply 100 kg of compound fertilizer plus 25 kg of urea per mu, irrigate three times, and spray three times. For maize on the same 7 mu, I plant no-tillage with hybrid seed, apply 75 kg of compound fertilizer per mu, irrigate twice, and spray three times. I spend the money on inputs because a bad harvest is worse than wasting some fertilizer."
+  },
+  "elapsed_seconds": 129.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_12",
+  "tier": 3,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this land for thirty years. My father farmed it before me. My son works in the city now, so at home it is mostly just me and my wife. I cannot do too much heavy work alone, so I think about what is practical.\n\nMy 6 mu rotates wheat and maize on the same land every year \u2014 wheat in winter, maize in summer. This is what everyone here does. It suits our soil and our market.\n\n**Wheat (October to June):** I will use Kenong 199 \u2014 it is reliable in Quzhou, resistant to lodging, and I know how it behaves on my field. I will rotary-till after maize harvest, spread compound fertilizer as base, then topdress urea around jointing. Three irrigations: one at sowing to ensure germination, one at the winter solstice to protect roots, one at heading. I will spray herbicide early on, and one fungicide pass for powdery mildew near jointing \u2014 that disease cost me yield a few years back so I do not skip it now. I expect around 450 kg per mu if the weather is decent.\n\n**Maize (June to October):** After wheat harvest I will direct-seed hybrid maize \u2014 Zhengdan 958 or whatever the seed station has good stock of this year. No-tillage saves me time and my back. I put down compound fertilizer at planting and topdress urea at the big-bell stage. Two irrigations unless it rains well \u2014 one at emergence if the soil is dry, one at tasseling. Herbicide after emergence, and one spray for corn borer which always comes around here. I expect around 550 kg per mu.\n\nI do not over-fertilize. My soil is decent and I have done this long enough to know that chasing higher yield by adding more fertilizer usually just wastes money without much return on small land like mine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 50-year-old smallholder in Quzhou County managing 6 mu under a winter wheat\u2013summer maize rotation with well irrigation and reduced household labor due to off-farm work. Wheat is planted with a locally proven improved variety using rotary tillage, three irrigations, and two pesticide passes targeting weeds and powdery mildew. Maize follows with a hybrid variety under no-tillage to save labor, two irrigations, herbicide and corn-borer control, and topdress urea at the bell stage. Fertilizer rates are moderate and experience-calibrated rather than input-maximizing, reflecting 30 years of practical knowledge on local soil conditions and the cost-return constraints of small-scale farming.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 50-year-old smallholder in Quzhou County managing 6 mu under a winter wheat\u2013summer maize rotation with well irrigation and reduced household labor due to off-farm work. Wheat is planted with a locally proven improved variety using rotary tillage, three irrigations, and two pesticide passes targeting weeds and powdery mildew. Maize follows with a hybrid variety under no-tillage to save labor, two irrigations, herbicide and corn-borer control, and topdress urea at the bell stage. Fertilizer rates are moderate and experience-calibrated rather than input-maximizing, reflecting 30 years of practical knowledge on local soil conditions and the cost-return constraints of small-scale farming."
+  },
+  "elapsed_seconds": 43.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_XCM_14",
+  "tier": 2,
+  "provider": "claude"
+}

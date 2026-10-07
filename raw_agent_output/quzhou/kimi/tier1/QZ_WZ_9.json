@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 51 years old, and I have been farming my whole life in Quzhou County on the North China Plain. My family has 6 mu of flat, irrigated land. I did not go far in school, but I know my fields well\u2014what works and what does not.\n\nEvery year, I grow winter wheat and summer corn in rotation. That is what our village has always done, and the grain buyers come right to the edge of the village to collect both crops, so I never worry about selling. I do not try strange new crops at my age; I stick to what feeds my family and gives me cash income.\n\nRight now, my winter wheat is already in the ground\u2014it was sown last October. At this time of year, I need to top-dress it with urea and irrigate. I will irrigate it two more times before harvest in early June, and I will spray pesticides two or three times if aphids or powdery mildew appear. I always use improved wheat seed varieties from the county supply shop; they are reliable.\n\nAfter the wheat comes off in early June, I will immediately rotary-till the stubble and plant summer corn. Corn must be hybrid seed\u2014that is the only way to get good yield. I will apply fertilizer at planting and again at the jointing stage, irrigate three times during the summer, and spray twice for corn borer. By late September or early October, the corn will be mature, and then I will plow and plant wheat again.\n\nI do not use much potassium or phosphorus compared to nitrogen; our soil responds most to urea. Rotary tillage is what the village machinery does, and it is fast between the wheat and corn turnaround.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer corn\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 6 mu in Quzhou County my entire life, and the wheat-corn double-cropping rotation is the only system I trust. At 51 years old with only primary schooling, I do not experiment with unfamiliar crops or methods. I rely on improved wheat seed and hybrid corn seed from the county supply store, apply nitrogen-heavy fertilizer with modest phosphorus and potassium, irrigate according to the dry North China Plain climate, and use rotary tillage because it is fast and practical during the tight June turnaround between wheat harvest and corn planting.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer corn",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      }
+    ],
+    "reasoning_summary": "I have farmed 6 mu in Quzhou County my entire life, and the wheat-corn double-cropping rotation is the only system I trust. At 51 years old with only primary schooling, I do not experiment with unfamiliar crops or methods. I rely on improved wheat seed and hybrid corn seed from the county supply store, apply nitrogen-heavy fertilizer with modest phosphorus and potassium, irrigate according to the dry North China Plain climate, and use rotary tillage because it is fast and practical during the tight June turnaround between wheat harvest and corn planting."
+  },
+  "elapsed_seconds": 99.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_9",
+  "tier": 1,
+  "provider": "kimi"
+}

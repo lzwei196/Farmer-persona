@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am a 44-year-old woman farmer in Quzhou County, and my family has about 10 mu of good flat land. I went to middle school, and I have been making the farming decisions for our household for over 20 years. In our village, the land is irrigated from wells, and the standard practice is double-cropping \u2014 wheat followed by maize \u2014 because we have to make full use of the growing season.\n\nMy wheat is already in the ground; we sowed it last October after rotary-tilling the fields. Right now, at the start of spring, I am focused on managing that wheat \u2014 it needs one more irrigation and a urea topdressing before it heads in May. I will harvest it in early June, and immediately after cutting it, I will plant summer maize using no-tillage direct seeding. That saves me time and diesel, and the hybrid maize varieties like Denghai or Zhongke give much better yields.\n\nI also keep 2 mu for cotton. I am planting it now in late March and early April. Cotton is labor-intensive \u2014 I have to spray pesticides more than ten times for bollworm and aphids \u2014 but it brings in cash, which we need for daily expenses. I do not plant more than 2 mu because our family labor is limited; my husband and I handle most of the work, and the wheat-maize system is our food security base.\n\nFor fertilizer, I rely mainly on compound fertilizer as a basal dressing for all three crops, and I topdress the wheat with urea in spring. We irrigate from the village well: the wheat gets winter irrigation plus three more times in spring; the maize gets two or three times in summer; and the cotton gets two or three times depending on the rainfall.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 510\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 9,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 14,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 8 mu to the wheat-maize double-cropping system that every household in Quzhou relies on for food and income, and reserve 2 mu for cotton because it earns cash but demands heavy labor for pest control. My wheat is already sown, so I am managing its spring irrigation and topdressing now, while planting cotton in April and preparing to no-till plant hybrid maize immediately after the June wheat harvest. I use improved wheat seed and hybrid maize seed for higher yields, rotary tillage for wheat and cotton, and no-tillage for maize to save time and costs between crops.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 510
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 9,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 14,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I allocate 8 mu to the wheat-maize double-cropping system that every household in Quzhou relies on for food and income, and reserve 2 mu for cotton because it earns cash but demands heavy labor for pest control. My wheat is already sown, so I am managing its spring irrigation and topdressing now, while planting cotton in April and preparing to no-till plant hybrid maize immediately after the June wheat harvest. I use improved wheat seed and hybrid maize seed for higher yields, rotary tillage for wheat and cotton, and no-tillage for maize to save time and costs between crops."
+  },
+  "elapsed_seconds": 172.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_14",
+  "tier": 1,
+  "provider": "kimi"
+}

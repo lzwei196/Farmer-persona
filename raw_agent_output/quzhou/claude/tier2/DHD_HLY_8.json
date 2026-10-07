@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 50 years. I know this soil. I know what works. My father farmed before me, and I've watched the seasons long enough that I don't need anyone to tell me what to do.\n\nMy 14.5 mu grows wheat in the winter and maize in the summer \u2014 same land, both seasons, the way it's always been done here in Quzhou. My wife and I manage it ourselves. We don't need hired hands for a farm this size.\n\nFor the **wheat**, I'll plant in October like every year. I buy my seeds from the county seed shop \u2014 the same improved variety I've used the past several years, Jimai 22 or whatever the shop has that's similar. It yields well and I know how it behaves. I'll do rotary tillage before planting \u2014 it's easier on my back than deep ploughing and the soil here doesn't need turning over every year. I'll put down base fertilizer before sowing \u2014 diammonium phosphate for phosphorus and potassium, urea for nitrogen \u2014 then topdress nitrogen again at jointing. I'll irrigate four times: once before winter sets in, once at jointing, once at heading, and once during grain filling. I'll spray herbicide in late autumn and fungicide once or twice in spring for rust and powdery mildew. I expect about 450 jin per mu \u2014 maybe more if the rains cooperate.\n\nFor the **maize**, after wheat harvest in June, I'll plant right away. I've used Zhengdan 958 for years. It's reliable. I won't plough \u2014 just rotary till the stubble and plant. Same fertilizer approach: base application plus topdress at big bell stage. Maize here doesn't need as much water as wheat, but I'll irrigate three times \u2014 at seedling if it's dry, at big bell, and at silking. I'll spray once for corn borer and check for fall armyworm since it's been showing up more lately. I expect around 550 jin per mu.\n\nTwo people, 14.5 mu, two crops \u2014 this is what I know how to do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm a wheat-maize rotation on all 14.5 mu, the same system I have used my whole life in Quzhou County. For wheat I use an improved variety from the county seed shop, apply fertilizer in two splits, irrigate four times to carry the crop through the dry Hebei winter and spring, and spray for weeds and fungal disease. For maize I use a proven hybrid, rotary till the wheat stubble, apply base and topdress nitrogen, irrigate three times at the critical growth stages, and spray once for insects. My fertilizer rates and irrigation timing are based on what I have learned over 50 years on this same soil, and my expected yields reflect what I have consistently achieved in recent seasons.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm a wheat-maize rotation on all 14.5 mu, the same system I have used my whole life in Quzhou County. For wheat I use an improved variety from the county seed shop, apply fertilizer in two splits, irrigate four times to carry the crop through the dry Hebei winter and spring, and spray for weeds and fungal disease. For maize I use a proven hybrid, rotary till the wheat stubble, apply base and topdress nitrogen, irrigate three times at the critical growth stages, and spray once for insects. My fertilizer rates and irrigation timing are based on what I have learned over 50 years on this same soil, and my expected yields reflect what I have consistently achieved in recent seasons."
+  },
+  "elapsed_seconds": 44.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_8",
+  "tier": 2,
+  "provider": "claude"
+}

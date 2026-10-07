@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming these 10.1 mu in Quzhou for 35 years. I'm 58 now, and my body doesn't handle the heavy labor like it used to. My son works off-farm at a factory in town, so it's mostly me and my wife managing the fields day-to-day. With only two of us, I have to be smart about labor. That's why I'll keep 7.5 mu in my wheat-maize rotation\u2014that's our food security, and the harvest is mechanized. The remaining 2.6 mu I'll plant cotton for cash income, but I won't expand it because cotton picking in autumn still falls on us, and 2.6 mu is already plenty for our hands.\n\nFor wheat, I know this land well. I'll rotary till after the maize comes off and sow my usual improved winter wheat variety in October. I've learned over the years that throwing more nitrogen doesn't help\u2014it just makes the wheat lodge when the spring winds come. So I'll apply about 16 kg of nitrogen per mu, along with phosphate and some potash. From my well I'll irrigate three times: once before winter to protect the seedlings, once at jointing in spring, and once at heading. Two pesticide sprays will keep the aphids and diseases in check. If the weather treats us fair, I should get around 500 kg per mu.\n\nFor summer maize, timing is everything. The season is short after wheat harvest in June, so I'll sow hybrid seed right away using the no-tillage seeder\u2014no time to plough. Maize is a bit less demanding than wheat on fertilizer; I'll put down about 15 kg nitrogen per mu. I'll irrigate twice, at jointing and when it tassels, because summer rain can be unpredictable. Two sprays for armyworm and leaf diseases. I expect about 550 kg per mu.\n\nFor cotton, I'll deep plough that 2.6 mu plot in early spring\u2014cotton likes a loose, deep seedbed. I'll plant an improved variety. Cotton needs more potassium for the bolls, so I'll apply a bit more potash than on the grains. I'll irrigate twice, at flowering and during boll filling. Three pesticide applications for bollworm\u2014can't skip those. I'm hoping for 280 kg of seed cotton per mu, which should give us decent cash after costs.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I keep 7.5 mu in wheat-maize double cropping because it provides grain security and can be managed with less labor thanks to mechanized harvest, while 2.6 mu of cotton gives cash income without overwhelming my wife and me during picking season. I use moderate fertilizer rates based on decades of experience\u2014too much nitrogen lodges wheat and wastes money. I rely on my well for three wheat irrigations and two each for maize and cotton, which is enough if timed to the critical growth stages. No-tillage maize saves time after wheat harvest in the short summer season, while deep ploughing benefits cotton. I choose improved wheat and cotton varieties and hybrid maize because they are proven reliable on my farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I keep 7.5 mu in wheat-maize double cropping because it provides grain security and can be managed with less labor thanks to mechanized harvest, while 2.6 mu of cotton gives cash income without overwhelming my wife and me during picking season. I use moderate fertilizer rates based on decades of experience\u2014too much nitrogen lodges wheat and wastes money. I rely on my well for three wheat irrigations and two each for maize and cotton, which is enough if timed to the critical growth stages. No-tillage maize saves time after wheat harvest in the short summer season, while deep ploughing benefits cotton. I choose improved wheat and cotton varieties and hybrid maize because they are proven reliable on my farm."
+  },
+  "elapsed_seconds": 137.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_8",
+  "tier": 2,
+  "provider": "kimi"
+}

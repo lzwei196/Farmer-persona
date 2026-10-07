@@ -1,0 +1,53 @@
+{
+  "raw_response": "I farm 30 mu in Quzhou. Same land every year \u2014 wheat in winter, then maize after the wheat comes off in June. I also keep about 5 mu for stevia because the buyer pays good money if the leaves come out clean. So 25 mu goes to wheat-maize rotation, 5 mu to stevia.\n\nFor wheat, I plant Jimai variety like most people in my village \u2014 the seed dealer brings it every autumn and my neighbor Old Wang gets 520-550 kg/mu with it, so I stick with what works. I plough the land deep after the maize stalks come off, then put down two bags of compound fertilizer (15-15-15, about 50 kg per mu) before sowing. When spring comes and the wheat stands up at jointing, I top-dress with one bag of urea per mu, about 20 kg. That gives around 30 kg nitrogen total. I water the winter water before freezing, then jointing water, heading water, and grain-filling water \u2014 four times from my well. I spray twice, once for aphids and once against wheat scab if the weather turns wet at flowering. Last year I got 500 kg/mu, this year I aim for the same.\n\nFor maize after wheat, I use hybrid Zhengdan or Xianyu \u2014 everyone plants hybrid now, no one uses old seed anymore. No ploughing, just rotary till through the wheat stubble and seed with the planter. I side-dress about 40 kg of compound fertilizer at sowing, then 15 kg urea when the maize is knee-high. Maize is thirsty but the rainy season helps \u2014 I only irrigate once or twice if July is dry. One spray for corn borer. I expect 550-600 kg/mu.\n\nStevia is different \u2014 it needs richer ground and more care. I transplant seedlings in April, water more often (6 times through summer because we harvest the leaves 2-3 times), and put more compound fertilizer plus extra potash because the buyer wants good leaf quality. I spray 3 times to keep leaves clean. Yield is lower in kg but the price is much better.\n\nI would rather spend a bit more on fertilizer than lose yield \u2014 a bad harvest ruins the year, some extra urea is just money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 25.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 25.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I keep doing what worked last year. 25 mu wheat-maize rotation like everyone in the village, 5 mu stevia for cash because the buyer pays well. Wheat gets two bags of compound fertilizer at ploughing plus one bag of urea at jointing, four irrigations from my well, Jimai seed like my neighbor uses. Maize gets hybrid seed, rotary till through the stubble, compound fertilizer at sowing plus urea side-dress. Stevia needs more water and more spraying to keep the leaves clean for the buyer. I would rather spend a bit more on fertilizer than risk a bad harvest \u2014 losing yield hurts more than the cost of one extra bag of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 25.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 25.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 6,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I keep doing what worked last year. 25 mu wheat-maize rotation like everyone in the village, 5 mu stevia for cash because the buyer pays well. Wheat gets two bags of compound fertilizer at ploughing plus one bag of urea at jointing, four irrigations from my well, Jimai seed like my neighbor uses. Maize gets hybrid seed, rotary till through the stubble, compound fertilizer at sowing plus urea side-dress. Stevia needs more water and more spraying to keep the leaves clean for the buyer. I would rather spend a bit more on fertilizer than risk a bad harvest \u2014 losing yield hurts more than the cost of one extra bag of urea."
+  },
+  "elapsed_seconds": 48.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_1",
+  "tier": 3,
+  "provider": "claude"
+}

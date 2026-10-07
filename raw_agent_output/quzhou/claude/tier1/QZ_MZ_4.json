@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning:**\n\nMy family has farmed this land in Quzhou for generations. The North China Plain is wheat and maize country \u2014 that's what the soil knows, that's what the buyers want, and that's what I know how to grow. I have about 8 mu of flat, irrigated cropland. I will do what my father did and what my neighbors do: plant winter wheat in October after the summer harvest, then follow it with summer maize. Same fields, same rotation, same rhythm.\n\nI know the well is running lower every year, but I still irrigate three times for wheat \u2014 you skip the jointing water and you lose the grain. For maize I can usually get by with less if the rains come in July. I buy hybrid maize seed from the village cooperative because the yields are noticeably better than saving my own. For wheat I use the improved variety the township promoted a few years ago \u2014 it has decent resistance to rust.\n\nFor fertilizer I spread compound fertilizer as a base before planting and top-dress with urea at the right growth stage. I go by feel and by what the other men around me do \u2014 I don't have a soil test. I probably put on a bit more nitrogen than needed but I'd rather not risk a thin crop. Two pesticide passes on each crop \u2014 one early for insects, one around heading/tasseling for disease.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu of irrigated flatland in Quzhou under the standard winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. I use an improved wheat variety for its rust tolerance and hybrid maize seed for higher yields, both sourced from the village cooperative. Fertilizer rates are set by habit and local norms rather than soil testing, running slightly on the heavy side for nitrogen to avoid the risk of a short crop. Wheat gets three irrigations at overwintering, jointing, and heading; maize typically needs only one supplemental watering given summer rainfall. Both crops receive two pesticide applications. Maize is direct-seeded into wheat stubble with no tillage to save time and diesel. I expect around 450 kg/mu for wheat and 550 kg/mu for maize based on recent years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu of irrigated flatland in Quzhou under the standard winter wheat\u2013summer maize double-cropping rotation that dominates the North China Plain. I use an improved wheat variety for its rust tolerance and hybrid maize seed for higher yields, both sourced from the village cooperative. Fertilizer rates are set by habit and local norms rather than soil testing, running slightly on the heavy side for nitrogen to avoid the risk of a short crop. Wheat gets three irrigations at overwintering, jointing, and heading; maize typically needs only one supplemental watering given summer rainfall. Both crops receive two pesticide applications. Maize is direct-seeded into wheat stubble with no tillage to save time and diesel. I expect around 450 kg/mu for wheat and 550 kg/mu for maize based on recent years."
+  },
+  "elapsed_seconds": 36.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_4",
+  "tier": 1,
+  "provider": "claude"
+}

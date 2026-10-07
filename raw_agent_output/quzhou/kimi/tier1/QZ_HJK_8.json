@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 32 years old and I only finished primary school, so I don't read many books about farming. But I have been helping my family in the fields since I was a child, and now I manage our land while my husband works in a factory in the city. We have about 8 mu of good flat land in Quzhou, and I always grow winter wheat and summer maize on all of it. This is what everyone in our village does, the grain station buys wheat at a guaranteed price, and I know how to manage these crops with my own hands. \n\nFor wheat, I will buy improved seeds from the township store \u2014 last year I used Jimai and it yielded well, so I will do the same. I use the rotary tiller before sowing in October. I put down compound fertilizer as basal and topdress with urea in spring when the wheat turns green. I irrigate three times: once before winter, once at jointing, and once at grain filling. I also spray pesticides about four times to control aphids and weeds. After harvesting wheat in early June, I immediately plant maize. I use Denghai hybrid seeds because they grow fast and yield high. For maize, I don't till much \u2014 I drill the seeds directly into the wheat stubble to save time and diesel. I apply some compound fertilizer at planting and urea at the big trumpet stage, and irrigate twice because summer rains usually help. I spray pesticides about four times for maize borers and weeds. I don't grow cotton anymore because it needs too many sprays and my back hurts from picking it. I keep some grain for our own flour and cornmeal, and sell the rest to traders who come to the village.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 55,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 2,\n      \"potassium_kg_per_mu\": 1,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I grow winter wheat and summer maize on all 8 mu of my land because this double-cropping system is what every household in Quzhou does and I know it well. Wheat has a government purchase guarantee, and improved wheat seeds plus Denghai hybrid maize give reliable yields. I rotary till before wheat sowing, apply compound fertilizer as basal and urea as topdressing, irrigate three times, and spray pesticides four times. For maize, I use no-tillage direct seeding into wheat stubble to save labor and fuel, apply compound and urea, irrigate twice relying on summer rainfall, and spray four times. I avoid cotton because it is too labor-intensive for me to manage alone while my husband works off-farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 55,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 2,
+        "potassium_kg_per_mu": 1,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I grow winter wheat and summer maize on all 8 mu of my land because this double-cropping system is what every household in Quzhou does and I know it well. Wheat has a government purchase guarantee, and improved wheat seeds plus Denghai hybrid maize give reliable yields. I rotary till before wheat sowing, apply compound fertilizer as basal and urea as topdressing, irrigate three times, and spray pesticides four times. For maize, I use no-tillage direct seeding into wheat stubble to save labor and fuel, apply compound and urea, irrigate twice relying on summer rainfall, and spray four times. I avoid cotton because it is too labor-intensive for me to manage alone while my husband works off-farm."
+  },
+  "elapsed_seconds": 298.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "QZ_HJK_8",
+  "tier": 1,
+  "provider": "kimi"
+}

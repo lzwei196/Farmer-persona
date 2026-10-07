@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming these three mu in Quzhou for 55 years now, and at 78 I don't see any reason to change what's worked. My wife and I manage the land ourselves \u2014 no hired labor \u2014 so we stick to the wheat-maize double cropping that everyone in our village does. It's reliable, and even if one crop has a bad year, the other usually carries us through. \n\nFor the winter wheat, I'll plant the full three mu in mid-October with an improved variety, same as last year. I'll do rotary tillage after the maize comes off to prepare the seedbed. For fertilizer, the extension agent says 15 kg of nitrogen per mu, but I've found 16 kg is safer \u2014 I use compound fertilizer as a base and topdress with urea at green-up. I'll add about 5 kg of phosphorus and 3 kg of potassium too. I'll irrigate three times: once after planting if the soil is dry, once at jointing, and once at grain filling. The well water isn't free, but skimping on water is a false economy. I expect about 450 kg per mu if the spring doesn't turn too dry. For pests and weeds, I'll spray twice \u2014 herbicide once and maybe an insecticide if the aphids show up.\n\nFor the summer maize, I'll plant hybrid seed right after wheat harvest in mid-June. There's barely a week between harvest and planting, so I'll use no-tillage planting \u2014 that's what everyone does here, and at my age I can't afford to lose time digging. I'll put down 18 kg of nitrogen, 4 kg of phosphorus, and 3 kg of potassium. Maize needs a good push at the big flare stage, so I'll topdress urea then. I'll irrigate twice: once after planting if needed, and once at tasseling. Two pesticide applications should do it \u2014 one for weeds and one for insects. If the weather is normal, I expect around 500 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"At 78, I stick to what I know. Wheat-maize double cropping on my three mu has fed my household for decades. I use improved wheat seed and hybrid maize seed, apply slightly more nitrogen than the extension recommendation to guard against a bad year, irrigate wheat three times and maize twice, and keep pesticide use modest at two sprays per crop. I till before wheat planting but use no-tillage for maize because the window after wheat harvest is too tight. My yields reflect long-term averages on this soil.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "At 78, I stick to what I know. Wheat-maize double cropping on my three mu has fed my household for decades. I use improved wheat seed and hybrid maize seed, apply slightly more nitrogen than the extension recommendation to guard against a bad year, irrigate wheat three times and maize twice, and keep pesticide use modest at two sprays per crop. I till before wheat planting but use no-tillage for maize because the window after wheat harvest is too tight. My yields reflect long-term averages on this soil."
+  },
+  "elapsed_seconds": 73.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_7",
+  "tier": 2,
+  "provider": "kimi"
+}

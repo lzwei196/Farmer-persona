@@ -1,0 +1,53 @@
+{
+  "raw_response": "My land is 9 mu total. Cotton is my main crop \u2014 I grow it every year on most of my land because that is what works here in Quzhou. I will put 6 mu to cotton, 2 mu to maize, and 1 mu to mungbean for the family and some to sell.\n\nFor cotton, I buy hybrid Bt seed from the dealer in town \u2014 everyone around me uses it because the bollworm problem is too bad without it. I apply about 2 bags of compound fertilizer (15-15-15) per mu before planting, that is 50 kg, then top-dress with urea about 15 kg when the bolls start forming. My neighbor Old Wang always does similar and gets good cotton. Cotton needs water \u2014 I irrigate from the well 4 times: after planting, budding, flowering, boll-opening. Pests are the worst part \u2014 I spray maybe 6 times for aphids, mites, bollworm. Last year I got around 260 jin of seed cotton per mu, I hope for the same or a little more.\n\nFor maize, I use hybrid seed (Zhengdan or similar, whatever the shop recommends). I put one bag of compound fertilizer plus urea topdress at big-trumpet stage. Two irrigations usually. Maize is easier than cotton, less spraying. I expect 500 kg per mu, that is normal here.\n\nMungbean I plant on 1 mu, mostly for home eating and selling a little. It does not need much fertilizer \u2014 the plant fixes its own nitrogen, my father always said. A little compound at planting is enough. One irrigation if the rain is short. Expect maybe 120 kg per mu.\n\nTillage \u2014 I rent the rotary tiller from the village machine group, everyone does this now, plowing deep is too much work for 9 mu.\n\nMoney is tight with 4 people and only some off-farm income. I cannot afford to be fancy, but I also cannot risk a bad harvest. So I do what worked last year and what my neighbors do.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 260\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"mungbean\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 3,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 120\n    }\n  ],\n  \"reasoning_summary\": \"I farm 9 mu with cotton as my main crop like most people in Quzhou. I put 6 mu to cotton using Bt hybrid seed because bollworm is too bad otherwise, and I follow what my neighbor Old Wang does \u2014 about 2 bags of compound 15-15-15 at planting plus urea topdress, 4 well irrigations, and 6 sprays for aphids and bollworm. I expect around 260 jin of seed cotton per mu, same as last year. Maize 2 mu and mungbean 1 mu are for rotation and family eating, with less fertilizer and spray. Money is tight with 4 people to feed, so I stick with what worked before \u2014 a bad harvest hurts more than spending a bit extra on fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 260
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "mungbean",
+        "season": "summer",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 3,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 120
+      }
+    ],
+    "reasoning_summary": "I farm 9 mu with cotton as my main crop like most people in Quzhou. I put 6 mu to cotton using Bt hybrid seed because bollworm is too bad otherwise, and I follow what my neighbor Old Wang does \u2014 about 2 bags of compound 15-15-15 at planting plus urea topdress, 4 well irrigations, and 6 sprays for aphids and bollworm. I expect around 260 jin of seed cotton per mu, same as last year. Maize 2 mu and mungbean 1 mu are for rotation and family eating, with less fertilizer and spray. Money is tight with 4 people to feed, so I stick with what worked before \u2014 a bad harvest hurts more than spending a bit extra on fertilizer."
+  },
+  "elapsed_seconds": 30.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_14",
+  "tier": 3,
+  "provider": "claude"
+}

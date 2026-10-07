@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 45 and I have farmed these 4.1 mu in Quzhou for 25 years. I never went to school, so I learned everything from my father and from watching the neighbors whose fields always look good. My family has four mouths, but my son works in the city, so in the fields it is mostly me and my wife. I have a well, but pumping water costs electricity, so I count every yuan and I do what I did last year \u2014 change is risky.\n\nLast year I put 2 mu in cotton and the other 2.1 mu in wheat then maize, and it was decent, so I will do the same this year. For wheat, I buy improved seed from the dealer in town, the same kind my neighbor Wang plants. I spread about one bag of urea per mu over the season and half a bag of compound fertilizer at planting time. I till with the rotary tiller before sowing. I irrigate three times: once before winter, once at jointing, and once when the grain is filling. I spray herbicide once and insecticide once or twice. For the summer maize, I plant hybrid seed right after cutting the wheat \u2014 I put compound fertilizer in the holes and top-dress with urea later. I do not till for maize because there is no time between wheat harvest and maize planting, and the neighbors plant no-tillage too. I irrigate twice if the rain is not enough, and I spray for weeds once and insects once. Cotton is my main crop and it eats the most money. I plant improved guoxinmian seed. I give it more fertilizer than the others \u2014 about one and a quarter bags of urea per mu and half a bag of compound fertilizer. I till with the rotary tiller before planting cotton. I irrigate twice, maybe three times if August is dry, but I watch the electricity bill. The worst is the insects; I have to spray every week or two in summer, maybe 10 times total, or the bollworms will destroy everything. I expect my wheat to make about 1000 jin per mu, the maize about 1000 jin, and the cotton about 450 jin. I would rather spend a bit too much on fertilizer than risk losing yield, because a bad harvest is a disaster for my family.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 230\n    }\n  ],\n  \"reasoning_summary\": \"I keep the same layout as last year: 2 mu of cotton and 2.1 mu of wheat followed by maize. I copy my neighbors because they have good harvests. I buy improved wheat seed, hybrid maize, and improved cotton seed. I apply one bag of urea per mu to wheat, a bit more to cotton, and less to maize, plus half a bag of compound fertilizer where I can afford it. I irrigate wheat three times, maize twice, and cotton twice or three times depending on the rain. Cotton needs many insecticide sprays, about 10, while the grain crops only need a few. I till wheat and cotton with the rotary tiller but plant maize no-tillage right after wheat harvest. I expect about 1000 jin per mu from wheat, 1000 jin from maize, and 450 jin from cotton. I do not cut fertilizer too close because a failed crop is worse than wasting a few kilograms.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 230
+      }
+    ],
+    "reasoning_summary": "I keep the same layout as last year: 2 mu of cotton and 2.1 mu of wheat followed by maize. I copy my neighbors because they have good harvests. I buy improved wheat seed, hybrid maize, and improved cotton seed. I apply one bag of urea per mu to wheat, a bit more to cotton, and less to maize, plus half a bag of compound fertilizer where I can afford it. I irrigate wheat three times, maize twice, and cotton twice or three times depending on the rain. Cotton needs many insecticide sprays, about 10, while the grain crops only need a few. I till wheat and cotton with the rotary tiller but plant maize no-tillage right after wheat harvest. I expect about 1000 jin per mu from wheat, 1000 jin from maize, and 450 jin from cotton. I do not cut fertilizer too close because a failed crop is worse than wasting a few kilograms."
+  },
+  "elapsed_seconds": 182.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 3,
+  "farmer_id": "HQ_XNZ_2",
+  "tier": 3,
+  "provider": "kimi"
+}

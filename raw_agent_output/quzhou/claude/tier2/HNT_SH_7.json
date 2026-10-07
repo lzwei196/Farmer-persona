@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land for 15 years and I know the rhythm of Quzhou well. My 1.5 mu runs the standard winter wheat into summer maize rotation \u2014 the whole plot goes to wheat in winter, then immediately flips to maize after harvest. With some family off-farm, I don't need to maximize every jin, but I'm not going to leave yield on the table either. I have well irrigation, which is my main edge over dryland farmers here, especially for wheat in the dry spring.\n\n**For wheat:** I'll plant Kenong 199 \u2014 it's proven here, good resistance to stripe rust and powdery mildew, stable yield. I'll do rotary tillage after maize harvest to work in the stover. Base fertilizer goes in at planting: full phosphorus and potassium, plus a third of nitrogen. I'll topdress the rest of the nitrogen at jointing. Irrigation: pre-winter to ensure good tillering, then jointing, then heading \u2014 three times is usually enough with winter rain. I'll spray herbicide early spring for broadleaf weeds and do a fungicide + insecticide pass at heading for aphids and rust. Aiming for 450 kg/mu.\n\n**For maize:** Right after wheat harvest in June, I direct-seed Xianyu 335 \u2014 no-till to save time and keep moisture. I'll apply compound fertilizer at sowing, then chase with urea at the V6-V8 stage. Summer rains usually do the heavy lifting but I'll irrigate once if August is dry. One post-emergence herbicide pass and one insecticide for corn borer. Targeting 600 kg/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I run the full 1.5 mu as a wheat-maize rotation. For wheat I use an improved disease-resistant local variety (Kenong 199), apply fertilizer in split doses, and irrigate three times at the critical pre-winter, jointing, and heading stages \u2014 this is where well irrigation pays off most in Quzhou's dry spring. For maize I switch to a high-yield hybrid (Xianyu 335) and direct-seed into wheat stubble without tillage to save labor and moisture, relying mainly on summer rainfall with one supplemental irrigation if needed. Pesticide use is targeted and minimal \u2014 herbicides and disease or pest control only at key windows. With off-farm income stabilizing household finances, I can afford quality inputs without over-applying, keeping costs reasonable on a 1.5-mu plot.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 1.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I run the full 1.5 mu as a wheat-maize rotation. For wheat I use an improved disease-resistant local variety (Kenong 199), apply fertilizer in split doses, and irrigate three times at the critical pre-winter, jointing, and heading stages \u2014 this is where well irrigation pays off most in Quzhou's dry spring. For maize I switch to a high-yield hybrid (Xianyu 335) and direct-seed into wheat stubble without tillage to save labor and moisture, relying mainly on summer rainfall with one supplemental irrigation if needed. Pesticide use is targeted and minimal \u2014 herbicides and disease or pest control only at key windows. With off-farm income stabilizing household finances, I can afford quality inputs without over-applying, keeping costs reasonable on a 1.5-mu plot."
+  },
+  "elapsed_seconds": 51.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_7",
+  "tier": 2,
+  "provider": "claude"
+}

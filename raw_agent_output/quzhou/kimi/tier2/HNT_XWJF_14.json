@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 65 years old and have farmed this land in Quzhou for 40 years. I know every plot. My family has seven mouths to feed, and some of my children work off-farm, so I cannot waste labor on crops that are not reliable. With 20.4 mu and a well for irrigation, I will stick to what works.\n\n**Wheat-maize rotation on 16 mu:** This is my bread and butter. In early October I will rotary-till the 16 mu and sow improved wheat\u2014about 30 jin per mu. I will put down compound fertilizer as a basal dose and topdress with urea at green-up and jointing. Over the season that comes to about 25 kg of nitrogen, 10 kg of phosphorus, and 4 kg of potassium per mu. Because I have the well, I will irrigate four times: winter irrigation to protect against the cold, then at jointing, heading, and grain filling. I will spray four times total\u2014herbicide once and insecticide/fungicide as needed. I expect around 1,000 kg per mu if the weather holds.\n\nAfter wheat harvest in early June, there is no time to waste. I will no-till plant hybrid maize the same week\u2014Denghai or Nongda, about one package per mu. Maize needs less phosphorus and potassium than wheat but still wants nitrogen, so I will apply compound at sowing and side-dress urea at the big-flare stage. That gives roughly 18 kg nitrogen, 5 kg phosphorus, and 3 kg potassium per mu. I will irrigate twice, at tasseling and grain filling, and spray four times for weeds, borers, and any leaf blight that appears. I have gotten 1,100 kg per mu from this plot before and expect about the same.\n\n**Millet on 4.4 mu:** The remaining 4.4 mu I will plant to improved millet in late spring. Millet does not need as much water or fertilizer, and my family likes millet porridge. I will rotary-till once and sow about 1 jin per mu. I will spread a modest amount of compound fertilizer at sowing\u2014about 6 kg nitrogen, 3 kg phosphorus, and 2 kg potassium per mu\u2014and irrigate once, maybe twice if the summer turns dry. Two pesticide sprays will be enough. I expect about 350 kg per mu from this patch, some for home and some to sell at the village market.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 16,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 16,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    },\n    {\n      \"crop\": \"millet\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 6,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 2,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 350\n    }\n  ],\n  \"reasoning_summary\": \"I put 16 mu into the wheat-maize rotation because it is reliable, well understood, and suited to my well irrigation. Wheat gets rotary tillage, four irrigations, and four pesticide sprays; maize follows immediately with no-tillage to save time, two irrigations, and four sprays. The remaining 4.4 mu goes to millet, which needs less water and labor and provides food for my household of seven. Input levels reflect what I have learned from 40 years of farming in Quzhou: enough fertilizer to maintain yields but not so much that I waste money, and irrigation timed to the critical growth stages.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 16,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 16,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      },
+      {
+        "crop": "millet",
+        "season": "summer",
+        "area_mu": 4.4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 6,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 2,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 350
+      }
+    ],
+    "reasoning_summary": "I put 16 mu into the wheat-maize rotation because it is reliable, well understood, and suited to my well irrigation. Wheat gets rotary tillage, four irrigations, and four pesticide sprays; maize follows immediately with no-tillage to save time, two irrigations, and four sprays. The remaining 4.4 mu goes to millet, which needs less water and labor and provides food for my household of seven. Input levels reflect what I have learned from 40 years of farming in Quzhou: enough fertilizer to maintain yields but not so much that I waste money, and irrigation timed to the critical growth stages."
+  },
+  "elapsed_seconds": 293.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_14",
+  "tier": 2,
+  "provider": "kimi"
+}

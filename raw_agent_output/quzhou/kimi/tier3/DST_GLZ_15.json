@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 72 years old. I never went to school, not one day. My father taught me farming, and I have done it for 55 years. I have 15 mu of land in Quzhou County. Twelve mu I plant wheat in October and maize in June after the wheat is cut. Three mu I plant cotton in spring. I have six people in my house. My son works in a factory in Handan and sends some money home, but the farm must pay for itself. My wife and I do the work. We hire no one.\n\nFor the wheat, I buy Jimai 22 from the seed dealer. It is an improved variety. I have used it for many years. Old Wang across the road uses it and gets good yield, so I copy him. I plough the land before sowing. For fertilizer, I put one bag of compound fertilizer per mu as base \u2014 the 15-15-15 kind, 50 kg a bag. That is 7.5 kg of nitrogen, 7.5 kg of phosphate, and 7.5 kg of potash in each bag. Then at jointing time in March or April, I spread one bag of urea per mu. The urea is 46 percent nitrogen, so one 50 kg bag is about 23 kg of nitrogen. In total I put about 30 kg of nitrogen, 8 kg of phosphate, and 8 kg of potash per mu. I irrigate four times: once after sowing if the soil is dry, once in winter to protect the crop from cold, once at jointing, and once when the grain is filling. I spray pesticide twice \u2014 once for aphids and once if I see yellow rust on the leaves. I expect to get about 500 kg per mu if the weather is normal.\n\nFor the maize, after I cut the wheat in early June, I plant the maize right away. I buy hybrid seeds from the dealer \u2014 the same yellow bag everyone buys. You cannot save maize seeds, everyone knows that. The plants will not grow right. I do not till the land. I plant into the wheat stubble. That is what everyone does now. It saves time and diesel. I put half a bag of compound fertilizer per mu when I plant, then at the big trumpet stage I put one bag of urea per mu. That is about 22 kg of nitrogen, 6 kg of phosphate, and 5 kg of potash per mu. I irrigate three times: after sowing, at big trumpet, and when the grain is filling. I spray pesticide two times for the corn borers. If they are bad I spray a third time. I expect about 600 kg per mu.\n\nFor the cotton, I plant 3 mu. I use my own saved seeds. I have been saving them for many years. They are not fancy but they work. I plough the land in spring. I put half a bag of compound fertilizer per mu as base, and about 20 kg of urea per mu when the flowers come out. That is about 15 kg of nitrogen, 5 kg of phosphate, and 5 kg of potash per mu. Cotton needs more spraying than grain \u2014 I spray four times for bollworms and aphids. The bollworms are bad some years. I irrigate three times. I expect about 280 kg of seed cotton per mu.\n\nFertilizer is expensive now. Last year urea went up by 20 yuan a bag. But I would rather put a little too much than risk losing yield. A bad harvest is a disaster for my family. Wasting some fertilizer is just money down the drain. I watch what Old Wang and the others do. If they put more this year, I will put more too. When I am unsure, I do what I did last year. Change is risky.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I am a 72-year-old farmer with no formal schooling and 55 years of experience. I manage 15 mu in Quzhou County: 12 mu under wheat-maize double cropping and 3 mu in cotton. I learned everything from my father and from watching neighbors like Old Wang. I think in bags and practical units. For wheat I plough and apply one 50 kg bag of 15-15-15 compound fertilizer and one 50 kg bag of urea per mu. For maize I use no-till planting with half a bag of compound and one bag of urea per mu. For cotton I use saved seeds, half a bag of compound, and about 20 kg of urea per mu. I irrigate wheat four times, maize three times, and cotton three times. I would rather over-apply fertilizer than risk yield loss, because a bad harvest is a disaster while wasted fertilizer is just a cost. I make small adjustments from last year rather than big changes, and I copy what successful neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I am a 72-year-old farmer with no formal schooling and 55 years of experience. I manage 15 mu in Quzhou County: 12 mu under wheat-maize double cropping and 3 mu in cotton. I learned everything from my father and from watching neighbors like Old Wang. I think in bags and practical units. For wheat I plough and apply one 50 kg bag of 15-15-15 compound fertilizer and one 50 kg bag of urea per mu. For maize I use no-till planting with half a bag of compound and one bag of urea per mu. For cotton I use saved seeds, half a bag of compound, and about 20 kg of urea per mu. I irrigate wheat four times, maize three times, and cotton three times. I would rather over-apply fertilizer than risk yield loss, because a bad harvest is a disaster while wasted fertilizer is just a cost. I make small adjustments from last year rather than big changes, and I copy what successful neighbors do."
+  },
+  "elapsed_seconds": 250.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_15",
+  "tier": 3,
+  "provider": "kimi"
+}

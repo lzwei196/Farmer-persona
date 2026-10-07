@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 40 years. I know every corner of Quzhou \u2014 the soils, how the groundwater has been dropping year after year, and what the markets have been doing. At 70, I'm not chasing experiments. I manage what I know.\n\n**My thinking:**\n\nMy 7.7 mu is split between the wheat-maize double-crop rotation on 5 mu, and 2.7 mu of cotton on a separate plot. The wheat and maize occupy the same ground \u2014 wheat goes in October, comes out in June, maize goes straight back in.\n\n**Wheat (5 mu, winter):** I'll use an improved variety, something like Jimai or Kenong \u2014 proven in this county. I don't overwater. The water table under Quzhou has been falling my whole farming life. I irrigate at sowing, again at jointing, and once more at heading if the spring is dry. Three times total. I apply nitrogen in two splits \u2014 base dose at sowing, then topdress at jointing. I spray twice: once at the seedling stage for disease protection, once around heading for aphids and rust. Rotary tillage after maize harvest in autumn to turn in the stubble.\n\n**Maize (5 mu, summer):** I plant hybrid seed \u2014 I've used Zhengdan 958 and Xianyu 335 over the years, I'll stick with something similar. I direct seed into the wheat stubble without tilling. Nitrogen goes in at two points: some at planting, the rest when the plant is knee-high. Two irrigations unless it rains well \u2014 summer usually brings some moisture. Two pesticide passes: one early for stem borer, one later if needed.\n\n**Cotton (2.7 mu, spring-autumn):** Cotton still pays better per mu than grain if I manage it properly. I use a Bt hybrid \u2014 cuts down pest pressure considerably compared to what we dealt with 20 years ago. I plough this plot in spring before planting. Cotton is thirsty and needs more care \u2014 four irrigations through the season, five pesticide applications (aphids, spider mites, bollworm still show up even with Bt). I put more potassium here because cotton strips it from the soil.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I run a wheat-maize double-crop rotation on 5 mu and keep 2.7 mu in cotton. Wheat gets three irrigations using the well \u2014 sowing, jointing, heading \u2014 because I have watched the water table drop across four decades and I will not waste it. I use improved wheat varieties that the county extension has proven reliable, hybrid maize for the yield advantage, and a Bt cotton hybrid to reduce pest pressure. Maize goes in with no-tillage directly after wheat harvest to save time and moisture. Cotton gets ploughed in spring and receives more potassium and more irrigation than the grain crops because it demands it. My nitrogen rates are moderate \u2014 I have seen neighbors burn money on excess fertilizer with no yield gain. This plan is designed for stable, predictable output across the whole farm, not maximum yield on any single crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I run a wheat-maize double-crop rotation on 5 mu and keep 2.7 mu in cotton. Wheat gets three irrigations using the well \u2014 sowing, jointing, heading \u2014 because I have watched the water table drop across four decades and I will not waste it. I use improved wheat varieties that the county extension has proven reliable, hybrid maize for the yield advantage, and a Bt cotton hybrid to reduce pest pressure. Maize goes in with no-tillage directly after wheat harvest to save time and moisture. Cotton gets ploughed in spring and receives more potassium and more irrigation than the grain crops because it demands it. My nitrogen rates are moderate \u2014 I have seen neighbors burn money on excess fertilizer with no yield gain. This plan is designed for stable, predictable output across the whole farm, not maximum yield on any single crop."
+  },
+  "elapsed_seconds": 58.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_5",
+  "tier": 2,
+  "provider": "claude"
+}

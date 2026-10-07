@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 25 years. I know Quzhou's soil and weather well. My 10.1 mu all goes into the wheat-maize rotation \u2014 wheat planted in October after maize harvest, maize seeded in June after wheat harvest. That's what my father did, what my neighbors do, and it's worked for me.\n\nWith 7 mouths to feed and some family off working in the city, I need the grain income to stay stable. I can't afford a bad season. So I don't take risks with seed \u2014 I buy improved wheat varieties from the township supply station, something like Kenong 199 that handles our winters well. For maize I always go hybrid \u2014 Zhengdan 958 or whatever the station recommends this year. Hybrid gives me the yield.\n\nFor fertilizer, I apply urea and compound fertilizer. I put down more nitrogen than some people say is needed, but I've seen lean harvests when I cut back, and I don't want to gamble. For wheat I split the nitrogen \u2014 base application at planting, then topdress at jointing. For maize I do base plus one topdress at big bell stage.\n\nIrrigation is my advantage here. Well water means I control timing. Wheat gets water at sowing, then in winter if it's dry, then at jointing and heading \u2014 that's three or four times. Summer maize mostly catches the rain but I'll pump once or twice if July is dry.\n\nI do rotary tillage before wheat seeding every year to incorporate the maize stubble. For maize I just direct seed into the wheat field after harvest \u2014 no time to plow properly in June.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm all 10.1 mu under a wheat-maize double-cropping rotation, the standard system in Quzhou County. I choose improved wheat varieties and hybrid maize seed because yield stability matters most with 7 household members depending partly on farm income. I apply nitrogen at rates slightly above extension recommendations because experience shows cutting back risks yield loss in dry or cold years, and I can afford the fertilizer cost more than a shortfall. Well irrigation gives me an edge \u2014 wheat gets four irrigations timed to critical growth stages, while summer maize relies mainly on monsoon rainfall with two supplemental pumping sessions if needed. Rotary tillage before wheat incorporates maize stubble; maize is direct-seeded into wheat stubble to save time in the tight June window. Pesticide applications cover herbicide and one fungicide or insecticide treatment per crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm all 10.1 mu under a wheat-maize double-cropping rotation, the standard system in Quzhou County. I choose improved wheat varieties and hybrid maize seed because yield stability matters most with 7 household members depending partly on farm income. I apply nitrogen at rates slightly above extension recommendations because experience shows cutting back risks yield loss in dry or cold years, and I can afford the fertilizer cost more than a shortfall. Well irrigation gives me an edge \u2014 wheat gets four irrigations timed to critical growth stages, while summer maize relies mainly on monsoon rainfall with two supplemental pumping sessions if needed. Rotary tillage before wheat incorporates maize stubble; maize is direct-seeded into wheat stubble to save time in the tight June window. Pesticide applications cover herbicide and one fungicide or insecticide treatment per crop."
+  },
+  "elapsed_seconds": 43.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_DW_13",
+  "tier": 2,
+  "provider": "claude"
+}

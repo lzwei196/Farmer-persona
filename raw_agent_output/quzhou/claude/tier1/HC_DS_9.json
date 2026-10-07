@@ -1,0 +1,40 @@
+{
+  "raw_response": "My father grew wheat and maize on this land. His father did too. The soil here on the Hebei Plain is good for it, and the buyers come reliably. I have 10 mu. I know what works.\n\n**My thinking:**\n\nFor winter, I plant wheat \u2014 all 10 mu. That's what we do here. Planting starts in October after I plough with the hired tractor. I'll buy improved seed from the township seed shop, whatever the shop owner says is selling well this year \u2014 probably a Jimai or Zhengmai variety. For fertilizer, I put down compound fertilizer at sowing, then I top-dress with urea before jointing in spring. I try to put down enough \u2014 losing yield hurts more than spending a little extra on fertilizer. I water four times: before winter sets in, after green-up, at jointing, and at grain filling. I've lost a crop to aphids before, so I spray twice minimum.\n\nCome June after harvest, I plant maize immediately on the same 10 mu. No time to waste \u2014 the season is short. I use hybrid seed, Zhengdan 958 or similar, everyone around here uses it. I do rotary tillage before planting. Maize doesn't need as much water if summer rains come, but I irrigate once at establishment and again if August is dry. I spray herbicide right after planting and check for corn borer in July.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am a 47-year-old farmer in Quzhou County with 10 mu of land on the North China Plain. I grow winter wheat followed by summer maize every year \u2014 this rotation is what my family has always done and what all my neighbors do. The land is suited for it and the market is reliable. I use improved wheat seed and hybrid maize seed purchased from the local township shop, apply compound fertilizer at sowing and top-dress with urea, irrigate wheat four times across the season and maize twice, and spray pesticides twice per crop to control weeds and insects. I plough before wheat planting in autumn and use rotary tillage before maize to save time after the June harvest. I apply fertilizer generously because I cannot afford a poor harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am a 47-year-old farmer in Quzhou County with 10 mu of land on the North China Plain. I grow winter wheat followed by summer maize every year \u2014 this rotation is what my family has always done and what all my neighbors do. The land is suited for it and the market is reliable. I use improved wheat seed and hybrid maize seed purchased from the local township shop, apply compound fertilizer at sowing and top-dress with urea, irrigate wheat four times across the season and maize twice, and spray pesticides twice per crop to control weeds and insects. I plough before wheat planting in autumn and use rotary tillage before maize to save time after the June harvest. I apply fertilizer generously because I cannot afford a poor harvest."
+  },
+  "elapsed_seconds": 47.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DS_9",
+  "tier": 1,
+  "provider": "claude"
+}

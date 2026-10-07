@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land for generations. I know Quzhou well \u2014 the soil here is good loam, the North China Plain. My father grew wheat and corn, I grow wheat and corn, and that is what the land is good for. My wife and I manage about 8 mu together, though at my age I hire the village machinery cooperative to do the heavy work \u2014 planting and harvesting. My knees cannot take it anymore.\n\nFor winter wheat, I plant in October after the autumn rains soften the ground. I buy improved seeds from the township supply station \u2014 the \u77ee\u629758 variety has been reliable for me. I apply compound fertilizer as a base before planting and add urea at jointing time. I water four times: once before planting to moisten the bed, once in winter before the ground freezes, once at jointing, and once when the grain is filling. I spray twice \u2014 once for weeds after emergence, once for powdery mildew and aphids in spring. The cooperative does rotary tillage after the maize harvest so the soil is loose for wheat.\n\nFor summer maize, I plant immediately after wheat harvest in June \u2014 there is no time to waste. Hybrid seeds are the only sensible choice; everyone uses them now and the yield is much better. Summer rain usually does the work, but I water once if August is dry. I spray herbicide right after planting before the seedlings emerge. No-tillage \u2014 the wheat roots hold the soil and the machine can seed directly into the stubble.\n\nI do not experiment with new crops. Cotton prices are unpredictable and I do not know how to manage it at my age. Vegetables need too much daily labor. Wheat and maize feed my family and give me enough to sell at market.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 70-year-old smallholder in Quzhou County follows the dominant wheat-maize double-cropping rotation on 8 mu of inherited farmland, relying on decades of local experience rather than agronomic advice. Improved wheat seed (\u77ee\u629758) and hybrid maize seed are chosen because they are what the township supply station sells and neighbors use successfully. Fertilizer rates are moderate-to-high, reflecting the tendency of older farmers in the North China Plain to apply more than extension recommendations to reduce yield risk. Four irrigations for wheat are standard given the region's precipitation deficit; maize relies mainly on summer monsoon rainfall with one backup irrigation. Machinery services from the village cooperative substitute for the physical labor the farmer can no longer perform himself. The crop mix is entirely traditional \u2014 no diversification into vegetables or cash crops \u2014 because familiarity and low management complexity matter most at this stage of life.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 70-year-old smallholder in Quzhou County follows the dominant wheat-maize double-cropping rotation on 8 mu of inherited farmland, relying on decades of local experience rather than agronomic advice. Improved wheat seed (\u77ee\u629758) and hybrid maize seed are chosen because they are what the township supply station sells and neighbors use successfully. Fertilizer rates are moderate-to-high, reflecting the tendency of older farmers in the North China Plain to apply more than extension recommendations to reduce yield risk. Four irrigations for wheat are standard given the region's precipitation deficit; maize relies mainly on summer monsoon rainfall with one backup irrigation. Machinery services from the village cooperative substitute for the physical labor the farmer can no longer perform himself. The crop mix is entirely traditional \u2014 no diversification into vegetables or cash crops \u2014 because familiarity and low management complexity matter most at this stage of life."
+  },
+  "elapsed_seconds": 44.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_12",
+  "tier": 1,
+  "provider": "claude"
+}

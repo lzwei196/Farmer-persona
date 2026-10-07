@@ -1,0 +1,40 @@
+{
+  "raw_response": "Let me think about this like a farmer with some schooling but mostly 25 years of hands-on experience.\n\nMy thinking:\n\nI have 20 mu. That's not small, not huge \u2014 bigger than most in the village. My husband helps when he's not working in town, and I hire one or two people at wheat cutting and maize planting time. So I think carefully about money but I don't skip things that matter for yield.\n\nEvery year I do the same rotation: winter wheat, then summer maize. That's what everyone in Quzhou does. I know this pattern. My land is flat, I have a well, the water is fine.\n\nFor **wheat**, I sow around October 8-10. I use improved seed \u2014 I buy Jimai 22 or whatever the seed shop says is selling well this year. My neighbors use it, the yield is good. Before sowing I plough the field once \u2014 I pay the tractor man about 50 yuan per mu to plough because after maize harvest the stubble is too much for rotary alone. At sowing I put down two bags of compound fertilizer per mu \u2014 that's 100 jin, which is 50 kg, the 15-15-15 kind. Then at green-up in March I top-dress with urea, one bag (50 jin, 25 kg) per mu, and I water at the same time. I water maybe 3 times: once before winter (dong shui), once at green-up with the urea, once at grain-filling if it's dry. Spray for weeds once in spring, and once or twice for aphids and rust \u2014 2 sprays usually, 3 if the aphids are bad. Last year I got about 450 kg per mu. I expect similar.\n\nFor **maize**, right after wheat is cut in June, I plant Zhengdan 958 or Xianyu 335, hybrid seed. No time to plough \u2014 I just rotary till or use no-till planter through the straw. At sowing I put one and a half bags of compound fertilizer per mu (about 35 kg, 15-15-15), and at the big bell stage (before tasseling) I side-dress with urea, about 30 kg per mu. Water once after sowing if no rain, once at tasseling. Spray once for armyworm when they're small, once for corn borer. Last year maize was about 550 kg per mu.\n\nI don't want to spend more than I did last year. Fertilizer prices are what they are. I put a little extra on because if I go low and it rains too much, I lose money \u2014 better waste a bag than lose 50 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what worked last year. Wheat gets two bags of 15-15-15 compound at sowing and one bag of urea at green-up; maize gets one and a half bags of compound at sowing and urea at big bell. I plough for wheat because the maize straw is too much, and rotary for maize because there's no time after wheat cutting. I water from my well three times for wheat and twice for maize. I'd rather spend a little extra on fertilizer than lose yield \u2014 a bad harvest hurts much more than one wasted bag. My neighbors in Quzhou do roughly the same and we all expect around 450 kg wheat and 550 kg maize per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what worked last year. Wheat gets two bags of 15-15-15 compound at sowing and one bag of urea at green-up; maize gets one and a half bags of compound at sowing and urea at big bell. I plough for wheat because the maize straw is too much, and rotary for maize because there's no time after wheat cutting. I water from my well three times for wheat and twice for maize. I'd rather spend a little extra on fertilizer than lose yield \u2014 a bad harvest hurts much more than one wasted bag. My neighbors in Quzhou do roughly the same and we all expect around 450 kg wheat and 550 kg maize per mu."
+  },
+  "elapsed_seconds": 37.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_LDZ_8",
+  "tier": 3,
+  "provider": "claude"
+}

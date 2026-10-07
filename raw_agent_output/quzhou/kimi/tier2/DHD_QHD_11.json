@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 9 mu for 45 years, and at 63 I know every inch of this soil. With only my husband and me working, I must be honest about what two aging bodies can handle. That is why I keep 8 mu in the wheat-maize rotation that has fed us reliably for decades, and only 1 mu in cotton. I have not given up cotton entirely\u2014the price is still attractive when the bolls open\u2014but bending to pick more than 1 mu would break my back, and hiring labor at my age makes no economic sense.\n\nI sow improved wheat seed in early October, after rotary tillage to break up the stubble from the previous summer maize. I apply base fertilizer precisely: compound fertilizer spread before sowing, then urea topdressed at the jointing stage. My well gives me water, so I irrigate four times\u2014over-winter, jointing, heading, and grain filling\u2014because water is the cheapest yield insurance we have. I spray three times: herbicide early, then insecticide and fungicide only when I see damage. My schooling taught me to read the labels and not waste chemicals.\n\nFor summer maize, timing is everything. After we harvest wheat in early June, I have only a few days to get the maize in the ground before the soil dries. I use hybrid seed and no-tillage direct seeding\u2014no plowing, just plant straight into the wheat stubble. This saves fuel, time, and captures the summer rains. Three irrigations and three careful pesticide applications are enough if I watch the fields.\n\nMy 1 mu of cotton is planted in mid-April after rotary tillage. I use an improved variety and give it extra potassium because cotton strips potash from the soil during flowering. It needs more sprays than grain crops\u2014about ten applications\u2014to keep bollworm and aphids under control. I tend this plot myself, walking it every few days, because cotton rewards attention but punishes neglect.\n\nI do not chase the highest possible yields anymore. I chase stability: enough grain to sell and enough cotton to supplement our pension, without taking risks that could leave us hungry.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 10,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"At 63 with only two household members, I prioritize the reliable wheat-maize rotation on 8 mu because it suits mechanization and our limited labor, while keeping only 1 mu of cotton to avoid the backbreaking hand-picking. My 45 years of experience and schooling guide precise fertilizer use, well irrigation timed to critical crop growth stages, and no-tillage maize planting to capture the narrow sowing window after wheat harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 10,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "At 63 with only two household members, I prioritize the reliable wheat-maize rotation on 8 mu because it suits mechanization and our limited labor, while keeping only 1 mu of cotton to avoid the backbreaking hand-picking. My 45 years of experience and schooling guide precise fertilizer use, well irrigation timed to critical crop growth stages, and no-tillage maize planting to capture the narrow sowing window after wheat harvest."
+  },
+  "elapsed_seconds": 220.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_11",
+  "tier": 2,
+  "provider": "kimi"
+}

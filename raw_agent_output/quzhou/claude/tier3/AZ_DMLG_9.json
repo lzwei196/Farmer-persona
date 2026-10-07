@@ -1,0 +1,40 @@
+{
+  "raw_response": "I'll think this through as the farmer would, then give the JSON.\n\n---\n\nI farm 6 mu here in Quzhou. Wheat-maize, same as everyone around me. My boys work in town so it's mostly me and the old woman, and I hire a combine at harvest.\n\n**For the wheat** (I plant around early October after the maize comes off):\n\nI buy improved seed from the dealer at the market \u2014 the kind most neighbors use, about 15 kg per mu so the stand is thick. Old seed from my own bin doesn't give good ears anymore.\n\nFor fertilizer, I do like I've done for years. Two bags of compound (the 15-15-15 kind, 50 kg each) per mu as base before ploughing \u2014 that's 100 kg. Then when the wheat greens up in spring after the cold, I spread about half a bag of urea per mu, maybe 25 kg. If it looks yellow I add a bit more at jointing. I'd rather put a little extra than see the wheat go thin \u2014 one bad harvest costs more than a bag of fertilizer.\n\nWater: I irrigate before winter (dong shui), then again when it greens up, at jointing, and once at grain filling. Four waterings. The well is there, I use it.\n\nSpray: once for weeds after green-up, once for aphids and powdery mildew around heading. Two sprays.\n\nTillage: I rotary till after the maize stalks are chopped. That's what the machine man does.\n\nI expect about 450 kg per mu if the spring isn't too dry. Last year I got close to 480.\n\n**For the maize** (I plant right after wheat harvest in June):\n\nHybrid seed \u2014 Zhengdan or whatever the dealer has that the neighbors planted well. About 2 kg per mu, direct seed with no tilling, straight into the wheat stubble. Everybody does it that way now, saves time before the rains.\n\nFertilizer: one and a half bags of compound (about 75 kg) at sowing with the seeder, then one bag of urea (50 kg) as topdressing at the big-trumpet stage when the plants are waist high. That's around 23 kg N total per mu.\n\nWater: if the summer rain comes I only irrigate once or twice. I'll plan two waterings \u2014 one after sowing if it's dry, one at tasseling.\n\nSpray: once for armyworm/borer, once for weeds early on. Two sprays.\n\nNo tillage \u2014 just direct seed into stubble. That's how it's done here.\n\nI should get 550 kg per mu. Good years I've hit 600.\n\nTotal: my fertilizer bill will run about 1,800-2,000 yuan for the year across both crops. Seed maybe 400 yuan. I keep it tight.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 26,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 23,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do what has worked for me and my neighbors for many years. Winter wheat gets two bags of 15-15-15 compound as base and half a bag of urea in spring \u2014 I'd rather put a little extra than lose yield. Four irrigations from the well, two sprays, rotary till after maize straw is chopped, improved seed from the dealer. For summer maize I direct-seed hybrid into the wheat stubble with no tilling like everyone here does, one and a half bags of compound at sowing and a bag of urea at the big-trumpet stage, two waterings if rain is short, two sprays. On 6 mu I plan around 450 kg/mu wheat and 550 kg/mu maize, keeping my input spending tight because my sons' off-farm wages help but the farm still has to pay its own way.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 26,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 23,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do what has worked for me and my neighbors for many years. Winter wheat gets two bags of 15-15-15 compound as base and half a bag of urea in spring \u2014 I'd rather put a little extra than lose yield. Four irrigations from the well, two sprays, rotary till after maize straw is chopped, improved seed from the dealer. For summer maize I direct-seed hybrid into the wheat stubble with no tilling like everyone here does, one and a half bags of compound at sowing and a bag of urea at the big-trumpet stage, two waterings if rain is short, two sprays. On 6 mu I plan around 450 kg/mu wheat and 550 kg/mu maize, keeping my input spending tight because my sons' off-farm wages help but the farm still has to pay its own way."
+  },
+  "elapsed_seconds": 45.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DMLG_9",
+  "tier": 3,
+  "provider": "claude"
+}

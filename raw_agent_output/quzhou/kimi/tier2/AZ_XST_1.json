@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 64 years old and have worked this land in Quzhou County for 40 years. I never went to school, but I know this soil and this climate with my own two hands. My farm is 8.5 mu, and there are only two of us in the household now \u2014 my wife and me. Our main cropping system is wheat-maize, same as every family around here. That rotation is reliable; the grain station buys both crops, and I know exactly when to sow and harvest without reading any book.\n\nI also keep a cotton plot \u2014 about 2 mu. Cotton brings decent money when the price is right, and I have grown it for many years. But at my age, with only the two of us, I cannot manage too much cotton. It needs many sprays and must be picked by hand. So I keep 2 mu of cotton and put the remaining 6.5 mu into the wheat-maize rotation.\n\nIt is now spring, and my winter wheat is already in the ground from last October. I will top-dress it with urea at green-up and again at jointing. I will pump water from my well four times \u2014 the overwintering irrigation, green-up, jointing, and heading. I will spray twice for aphids and yellow rust. After wheat harvest in June, I will plant summer maize directly into the stubble without tilling \u2014 there is no time to waste in the summer heat, and the soil is still soft. I will use hybrid seed, apply fertilizer at planting and side-dress at the big-bell stage, and irrigate twice if the summer rain is not enough. For cotton, I will rotary-till the 2 mu plot in April, sow the improved guoxinmian seed I know, apply compound fertilizer and urea, irrigate three times through the season, and spray for pests about eight times. I will pick the cotton by hand in autumn.\n\nI do not experiment with new crops or fancy methods. I follow what my father taught me, what my neighbors do, and what this land has always given me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old Quzhou County farmer with no formal education and a two-person household manages 8.5 mu by relying on the familiar wheat-maize double-cropping rotation for 6.5 mu and maintaining 2 mu of cotton for cash income. Wheat receives rotary tillage, four well irrigations, and two pesticide sprays, while maize is direct-seeded no-till after wheat harvest with two supplemental irrigations. Cotton is kept to a manageable area due to labor constraints, receiving rotary tillage, three irrigations, and eight pesticide applications. Input levels and varieties reflect decades of local experience and risk aversion rather than formal recommendations.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 6.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 6.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      }
+    ],
+    "reasoning_summary": "A 64-year-old Quzhou County farmer with no formal education and a two-person household manages 8.5 mu by relying on the familiar wheat-maize double-cropping rotation for 6.5 mu and maintaining 2 mu of cotton for cash income. Wheat receives rotary tillage, four well irrigations, and two pesticide sprays, while maize is direct-seeded no-till after wheat harvest with two supplemental irrigations. Cotton is kept to a manageable area due to labor constraints, receiving rotary tillage, three irrigations, and eight pesticide applications. Input levels and varieties reflect decades of local experience and risk aversion rather than formal recommendations."
+  },
+  "elapsed_seconds": 147.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_1",
+  "tier": 2,
+  "provider": "kimi"
+}

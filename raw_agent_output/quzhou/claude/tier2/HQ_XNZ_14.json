@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land around Quzhou my whole life. Forty-five years. I know what the soil wants and what it will give back. My back isn't what it was, and two of my sons work in the city now, so I can't be as labor-heavy as I used to be. That shapes what I do.\n\nMy 18 mu splits naturally in my head. Cotton is our main cash crop \u2014 that's the system here. I keep 8 mu in cotton. The other 10 mu I do wheat in winter, then turn it straight to maize after June harvest. That rotation works. It always has.\n\n**Cotton (8 mu):** I've used Bt cotton for years. It saves me spraying against bollworm \u2014 that alone is worth it at my age. I still spray for aphids and spider mites though, can't avoid that. Cotton drinks a lot of fertilizer, especially potassium, and it needs water at budding and boll-setting stages. I'll irrigate 4 times from my well. I plough deep before transplanting \u2014 cotton roots go down far.\n\n**Wheat (10 mu):** I plant in mid-October. I use an improved variety the seed shop here sells \u2014 not traditional seed anymore, yields are better. I always do the winter water right after sowing, then water again at jointing and heading stage, maybe one more at grain fill if it's dry. Four waterings. I'll plough and prep the bed properly.\n\n**Maize (10 mu, same land as wheat):** Right after wheat comes off in June, I get the maize seed in fast. I use hybrid \u2014 everyone around here does, the yield difference is obvious. June-July usually gets some rain so I might only need to irrigate twice. I don't plow again \u2014 just rotary till to save time and get the seed in quick.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 275\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 540\n    }\n  ],\n  \"reasoning_summary\": \"I farm 18 mu in Quzhou the way I've always done it: 8 mu of Bt cotton as the main cash crop from spring through autumn, and 10 mu in a winter wheat to summer maize rotation. Cotton gets the most inputs \u2014 deep ploughing, heavy potassium, and 4 irrigations from the well \u2014 but the Bt variety cuts down my bollworm spraying. I still spray 6 times total for aphids and mites. Wheat goes in mid-October with 4 irrigations timed to winter establishment, jointing, heading, and grain fill. After wheat harvest in June I get maize in fast with a rotary pass to save time \u2014 hybrid seed, 2 irrigations if summer rain is short, minimal spraying. With some family now working off-farm, I keep things manageable rather than pushing for maximum output I can't handle alone.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 275
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 540
+      }
+    ],
+    "reasoning_summary": "I farm 18 mu in Quzhou the way I've always done it: 8 mu of Bt cotton as the main cash crop from spring through autumn, and 10 mu in a winter wheat to summer maize rotation. Cotton gets the most inputs \u2014 deep ploughing, heavy potassium, and 4 irrigations from the well \u2014 but the Bt variety cuts down my bollworm spraying. I still spray 6 times total for aphids and mites. Wheat goes in mid-October with 4 irrigations timed to winter establishment, jointing, heading, and grain fill. After wheat harvest in June I get maize in fast with a rotary pass to save time \u2014 hybrid seed, 2 irrigations if summer rain is short, minimal spraying. With some family now working off-farm, I keep things manageable rather than pushing for maximum output I can't handle alone."
+  },
+  "elapsed_seconds": 55.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_14",
+  "tier": 2,
+  "provider": "claude"
+}

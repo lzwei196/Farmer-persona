@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this 50-mu plot for five years now, all in cabbage. My family depends on this income \u2014 four mouths to feed, and school fees coming up. I know what works here in Quzhou. The soil is decent, my well gives reliable water, and I've learned from neighbors and from my own mistakes.\n\nI run three cabbage cycles a year on the same land. Spring is my most stable crop. Summer is hard \u2014 heat and pests hit heavy \u2014 but I can't leave the land idle, prices are decent if I hit the market window right. Autumn is my best season, the heads come out heavy and the price holds.\n\nI use hybrid seeds because the yields justify the cost. I've tried traditional varieties and the size difference is obvious. I apply fertilizer in two or three splits \u2014 base dressing before planting, then topdress at heading. I keep irrigation consistent; cabbage suffers fast if it dries out, especially at heading.\n\nSummer I spray more \u2014 aphids and Plutella are brutal in the heat. Spring and autumn are more manageable. I do rotary tillage between cycles to break up compaction and incorporate residue.\n\nMy 50 mu runs the same three cycles, so each crop gets the full plot.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"Cabbage\",\n      \"season\": \"spring\",\n      \"area_mu\": 50,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 11,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 4000\n    },\n    {\n      \"crop\": \"Cabbage\",\n      \"season\": \"summer\",\n      \"area_mu\": 50,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 3200\n    },\n    {\n      \"crop\": \"Cabbage\",\n      \"season\": \"autumn\",\n      \"area_mu\": 50,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 4500\n    }\n  ],\n  \"reasoning_summary\": \"I run three consecutive cabbage cycles on all 50 mu, rotating through spring, summer, and autumn harvests. Spring and autumn are my reliable seasons with strong yields and manageable pest pressure, so I use slightly higher fertility inputs to push head size. Summer is my hardest cycle \u2014 heat stress and pest load are heavy, especially aphids and diamondback moth, so I increase irrigation frequency to 8 times and pesticide applications to 6, while accepting a lower yield of around 3200 kg/mu. I use hybrid seeds across all three seasons because the yield premium over traditional varieties easily covers the seed cost. Rotary tillage between each cycle keeps the soil loose and incorporates residue, which is important given how intensively this land is used. Well irrigation gives me control, so I water according to crop stage rather than rainfall. Fertilizer is applied in splits \u2014 base dressing at planting and topdress at the early heading stage \u2014 which is how I've found the best conversion without burning roots.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "Cabbage",
+        "season": "spring",
+        "area_mu": 50,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 11,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 4000
+      },
+      {
+        "crop": "Cabbage",
+        "season": "summer",
+        "area_mu": 50,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 8,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 3200
+      },
+      {
+        "crop": "Cabbage",
+        "season": "autumn",
+        "area_mu": 50,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 5,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 4500
+      }
+    ],
+    "reasoning_summary": "I run three consecutive cabbage cycles on all 50 mu, rotating through spring, summer, and autumn harvests. Spring and autumn are my reliable seasons with strong yields and manageable pest pressure, so I use slightly higher fertility inputs to push head size. Summer is my hardest cycle \u2014 heat stress and pest load are heavy, especially aphids and diamondback moth, so I increase irrigation frequency to 8 times and pesticide applications to 6, while accepting a lower yield of around 3200 kg/mu. I use hybrid seeds across all three seasons because the yield premium over traditional varieties easily covers the seed cost. Rotary tillage between each cycle keeps the soil loose and incorporates residue, which is important given how intensively this land is used. Well irrigation gives me control, so I water according to crop stage rather than rainfall. Fertilizer is applied in splits \u2014 base dressing at planting and topdress at the early heading stage \u2014 which is how I've found the best conversion without burning roots."
+  },
+  "elapsed_seconds": 40.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_1",
+  "tier": 2,
+  "provider": "claude"
+}

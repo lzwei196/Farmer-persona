@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 62 years old. I have farmed this land for 40 years, and I never went to school. Everything I know, I learned from doing it and from watching the old farmers around me. My farm is 10 mu and one fen. There are only two of us living at home now \u2014 my nephew works in Handan and sends a little money back, but the land is still what feeds us. I have a well, so I can water when the sky does not give rain.\n\nI never plan from nothing. I start from last year. Last year my wheat made about 500 kilos per mu, and my summer maize made about 550 kilos per mu. I did not lose money. So this year I will do almost the same, because change is dangerous and a bad harvest is a disaster.\n\nFor the winter wheat, I sow after National Day. I buy the improved seed, the kind in the red-and-white bag that my neighbor Lao Zhang uses. I sow about 15 jin per mu. Before sowing, I run the rotary tiller to break up the ground. I spread one bag of compound fertilizer per mu into the soil \u2014 the kind that comes in the big 50kg bags from the dealer. When the wheat turns green in March, I topdress half a bag of urea per mu on top of the field. I water four times from the well: once before the freeze comes so the wheat can survive winter, once when it wakes up in spring, once when it shoots up tall, and once when the grain is filling. I spray three times \u2014 once for weeds right after planting, and twice more when the bugs and the rust show up in spring. I would rather pay for one extra spray than watch the crop die.\n\nFor the summer maize, I plant right after the wheat is cut in June. I use hybrid seed, about 3 jin per mu. There is no time to plow \u2014 if I wait, I might miss the rain. So I plant no-till straight into the wheat stubble. At planting, I put one bag of compound fertilizer per mu down the furrow. When the plants are knee-high, I chase them with half a bag of urea. I irrigate twice from the well if the summer rains do not come, and I spray twice for weeds and corn borers. If the bugs look bad, I might spray a third time, but usually twice is enough.\n\nFertilizer is dear \u2014 one bag of compound is over 150 yuan now, and urea keeps going up too. Every bag is real money. But I would rather put down one extra bag than risk losing yield. A bad harvest means we go hungry; wasting some fertilizer just means less money in my pocket. I watch what my neighbors do. If Lao Zhang buys a new seed and his field looks good, I might try it on half a mu next year. But this year, I am sticking with what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 62-year-old farmer with no schooling, I rely entirely on what I have done before and what my neighbors do. Last year my wheat yielded 500 kg per mu and my maize yielded 550 kg per mu, so I am repeating those practices. For wheat, I use improved seed, rotary tillage, one 50 kg bag of compound fertilizer and half a bag of urea per mu, four irrigations from my well, and three pesticide sprays. For maize, I use hybrid seed, no-tillage planting into wheat stubble, one bag of compound fertilizer and half a bag of urea per mu, two irrigations, and two sprays. With only two people at home and some off-farm income, I balance costs carefully, but I still prefer to apply slightly more fertilizer rather than risk yield loss.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 62-year-old farmer with no schooling, I rely entirely on what I have done before and what my neighbors do. Last year my wheat yielded 500 kg per mu and my maize yielded 550 kg per mu, so I am repeating those practices. For wheat, I use improved seed, rotary tillage, one 50 kg bag of compound fertilizer and half a bag of urea per mu, four irrigations from my well, and three pesticide sprays. For maize, I use hybrid seed, no-tillage planting into wheat stubble, one bag of compound fertilizer and half a bag of urea per mu, two irrigations, and two sprays. With only two people at home and some off-farm income, I balance costs carefully, but I still prefer to apply slightly more fertilizer rather than risk yield loss."
+  },
+  "elapsed_seconds": 235.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_9",
+  "tier": 3,
+  "provider": "kimi"
+}

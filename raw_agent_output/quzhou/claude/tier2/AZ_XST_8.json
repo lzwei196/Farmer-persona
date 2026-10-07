@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for 45 years. I know what Quzhou's soil and weather demand. My well gives me water when the rains don't cooperate, and that's kept me steady. Two of us in the house now \u2014 I can't take on more than I can manage with my own hands and maybe some hired help at cotton harvest.\n\n**Cotton (my main crop \u2014 4 mu):** Cotton is what I've built my income on. I'll put 4 mu into it, same as last few years. I'll plough deep in April before transplanting \u2014 I've always done it that way, the roots need room. I'll use the improved seed from the county extension station, not the new hybrid varieties \u2014 too expensive and I'm not sure they suit my fields. Cotton in this heat needs water at five key stages: before planting, seedling time, budding, flowering/bolling, and once more as bolls set. Bollworm and aphids are always a problem here so I'll spray seven times through the season. I expect around 280 jin per mu of seed cotton if the weather holds.\n\n**Wheat (3 mu, winter):** After I pull the maize in September, I'll rotary-till those 3 mu and sow wheat in October. I split my urea \u2014 some at sowing, the rest at jointing. I irrigate four times: a good soaking before sowing, once before it goes dormant, again at jointing, and once at heading. Two pesticide passes keep the rust and aphids off. I've gotten 450 jin per mu consistently on these fields.\n\n**Maize (3 mu, summer):** Right after wheat harvest in June, I seed maize directly into the stubble \u2014 no tillage, saves time and the soil stays moist. I use hybrid seed, everyone does now and the yield difference is real. Three irrigations \u2014 at planting, jointing, and silking. Two pesticide sprays. I expect 550 jin per mu.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old farmer with 45 years experience in Quzhou, Hebei allocates 4 mu to cotton as the primary cash crop using improved (non-hybrid) seed with deep plough tillage, intensive irrigation (5 times) and high pesticide frequency (7 applications) to manage bollworm pressure common in the region. The remaining 3 mu follow a winter wheat\u2013summer maize rotation: wheat is sown in October after rotary tillage with split nitrogen application and 4 irrigations; maize is direct-seeded into wheat stubble in June using hybrid seed with 3 irrigations and minimal pesticide. Input levels and yield expectations reflect experienced, conservative management suited to a 2-person household operating 7 mu with well irrigation.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 5,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 64-year-old farmer with 45 years experience in Quzhou, Hebei allocates 4 mu to cotton as the primary cash crop using improved (non-hybrid) seed with deep plough tillage, intensive irrigation (5 times) and high pesticide frequency (7 applications) to manage bollworm pressure common in the region. The remaining 3 mu follow a winter wheat\u2013summer maize rotation: wheat is sown in October after rotary tillage with split nitrogen application and 4 irrigations; maize is direct-seeded into wheat stubble in June using hybrid seed with 3 irrigations and minimal pesticide. Input levels and yield expectations reflect experienced, conservative management suited to a 2-person household operating 7 mu with well irrigation."
+  },
+  "elapsed_seconds": 56.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_8",
+  "tier": 2,
+  "provider": "claude"
+}

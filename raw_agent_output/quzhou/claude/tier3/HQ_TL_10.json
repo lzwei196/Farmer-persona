@@ -1,0 +1,53 @@
+{
+  "raw_response": "I will think through this the way I do every spring, sitting at the table with my wife going over what we did last year.\n\nMy land is 90 mu, that is big for around here. Most of it I do wheat-maize like everyone in Quzhou does \u2014 plant wheat in October, cut it in June, then maize right after until October. I do this on about 75 mu. The other 15 mu I put in stevia because the buying company comes to the village and the price is better than grain, though it takes more work. My wife and my mother help with the stevia picking. The children work outside, so I cannot plant stevia on all the land \u2014 too much hand work.\n\nFor wheat, last year I used a compound fertilizer 15-15-15, about 50 kg per mu before sowing, then topdressed urea maybe 20 kg per mu at jointing. That worked okay, I got around 500 kg per mu. This year wheat price is not so good but I will not reduce fertilizer much \u2014 losing yield is worse than saving a few yuan. I irrigate 3 times: before winter, at jointing, at grain filling. The well water is fine, electricity for the pump is the main cost.\n\nFor maize, I plant Zhengdan or whatever improved seed the dealer recommends, about 4-5 kg per mu seed. After wheat I rotary till and plant directly. Base fertilizer compound 40 kg per mu, then topdress urea at big trumpet stage maybe 25 kg. Maize needs less water than wheat, one or two irrigations if rain is short. Spray for borers and armyworm maybe 2 times.\n\nStevia I transplant seedlings in April, it needs weeding and careful fertilizing or the leaves get bitter. I use less nitrogen than grain, more phosphorus and potassium to make the leaves sweet. Cut 2-3 times in summer.\n\nI do not plough every year, rotary tillage is enough and cheaper. Plough maybe every 3-4 years.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 75.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 75.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I farm 90 mu, mostly wheat-maize rotation like my neighbors in Quzhou, with 15 mu of stevia because the company buys it at a good price and my wife can help pick. I keep fertilizer close to what worked last year \u2014 losing yield scares me more than spending some extra yuan on urea. Wheat gets compound fertilizer at sowing plus urea topdressing, three irrigations from the well. Maize follows with no-till direct planting and heavier nitrogen since it grows fast in summer heat. Stevia I treat differently \u2014 less nitrogen so the leaves stay sweet, more potassium, and I plough that field because the roots go deeper. I do not take big risks on 90 mu, I just do what I know works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 75.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 75.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I farm 90 mu, mostly wheat-maize rotation like my neighbors in Quzhou, with 15 mu of stevia because the company buys it at a good price and my wife can help pick. I keep fertilizer close to what worked last year \u2014 losing yield scares me more than spending some extra yuan on urea. Wheat gets compound fertilizer at sowing plus urea topdressing, three irrigations from the well. Maize follows with no-till direct planting and heavier nitrogen since it grows fast in summer heat. Stevia I treat differently \u2014 less nitrogen so the leaves stay sweet, more potassium, and I plough that field because the roots go deeper. I do not take big risks on 90 mu, I just do what I know works."
+  },
+  "elapsed_seconds": 39.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_10",
+  "tier": 3,
+  "provider": "claude"
+}

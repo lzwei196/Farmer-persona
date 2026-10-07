@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for four decades. I know Quzhou's sandy loam soils, I know the dry springs and hot summers, and I know what my neighbors are doing. My wife and I can't handle heavy labor anymore, so I plan carefully to avoid overextending ourselves.\n\n**Land allocation:** My 9 mu splits naturally. Six mu goes into the wheat-maize rotation \u2014 that's my bread and butter, steady income, and I can mechanize most of it. The remaining 3 mu stays in cotton. Cotton is harder work but the price is still better per mu if the season cooperates, and I've grown it long enough to manage it efficiently.\n\n**Wheat (winter, 6 mu):** I'll use an improved variety \u2014 Ji Mai 22 has done well for me. I apply a split nitrogen strategy: base fertilizer at sowing, top-dress at jointing. Four irrigations: sowing water, winter freeze water, jointing, and heading. I spray twice \u2014 once for aphids around jointing and once for rust near grain fill. Rotary tillage after maize harvest in October. I expect around 450 kg/mu.\n\n**Maize (summer, 6 mu):** Directly after wheat harvest in June, I drill hybrid seed (Zhengdan 958 or similar) into the stubble \u2014 no-tillage saves time and moisture. One topdress of nitrogen at the big bell stage. Two irrigations if July is dry. One pesticide pass for corn borer if needed. I expect 550 kg/mu.\n\n**Cotton (spring/summer, 3 mu):** I plant Bt hybrid cotton in late April after a rotary pass. Cotton needs more potassium than people think \u2014 I've learned this the hard way. Four irrigations spaced through boll development. Four pesticide applications: two for aphids and mites early, two later for bollworm and spider mites. Expected 300 kg seed cotton per mu is realistic for me.\n\nI'm not chasing maximum yields at 66. I'm chasing reliable, manageable yields that don't wear me out.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 6 mu to winter wheat followed by summer maize in rotation and keep 3 mu under spring-planted cotton. Wheat gets a split nitrogen application, four irrigations covering key growth stages, and two pesticide passes targeting aphids and rust. Maize is direct-drilled into wheat stubble with no-tillage to save labor and moisture, receiving one topdress and two irrigations. Cotton, planted after spring rotary tillage, gets higher potassium to support boll development, four irrigations timed to boll set, and four pesticide applications to manage the heavier pest pressure. At 66 with two workers and well irrigation available, I prioritize mechanization-friendly practices and reliable rather than maximum yields.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I allocate 6 mu to winter wheat followed by summer maize in rotation and keep 3 mu under spring-planted cotton. Wheat gets a split nitrogen application, four irrigations covering key growth stages, and two pesticide passes targeting aphids and rust. Maize is direct-drilled into wheat stubble with no-tillage to save labor and moisture, receiving one topdress and two irrigations. Cotton, planted after spring rotary tillage, gets higher potassium to support boll development, four irrigations timed to boll set, and four pesticide applications to manage the heavier pest pressure. At 66 with two workers and well irrigation available, I prioritize mechanization-friendly practices and reliable rather than maximum yields."
+  },
+  "elapsed_seconds": 52.0,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_9",
+  "tier": 2,
+  "provider": "claude"
+}

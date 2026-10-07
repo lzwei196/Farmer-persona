@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this 10.1 mu in Quzhou for 30 years, since I was 17. With 8 people in my household and some family members working off-farm in the factories, I need to grow enough grain to feed my family and still have surplus to sell. My well gives me reliable water, which is my biggest advantage on the North China Plain.\n\nFor winter wheat, I will plant the full 10.1 mu in October. I always buy improved wheat seeds from the county supply store \u2014 they are not expensive and they germinate well. I will do rotary tillage first to break up the soil after the maize stubble. For fertilizer, I will apply about 22 kg of nitrogen per mu in total, split between basal dressing and top-dressing at the jointing stage in spring. I will also put down about 6 kg of phosphorus and 5 kg of potassium per mu as basal fertilizer. I will irrigate three times: once before winter to protect the seedlings, once at jointing when the wheat starts growing fast, and once during grain filling. I will spray pesticide twice \u2014 once with herbicide early on, and once later if I see aphids or rust. I expect around 500 kg per mu if the weather is normal.\n\nFor summer maize, I will plant hybrid seeds immediately after wheat harvest in early June. The growing season is short, so I will not waste time with deep ploughing \u2014 I will use no-tillage planting directly into the wheat stubble to catch the season. I will apply about 20 kg of nitrogen per mu, and about 5 kg of phosphorus and 4 kg of potassium per mu. I will irrigate twice if the summer is dry, especially during tasseling and grain filling. I will spray pesticide twice for weeds and corn borers. If the weather cooperates, I should get about 550 kg per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have 10.1 mu under wheat-maize rotation in Quzhou, and with 30 years of experience I know my well-irrigated land can produce reliably if I do not cut corners on the basics. For wheat I use improved seeds with rotary tillage, moderate nitrogen split between basal and jointing top-dressing, three irrigations at critical stages, and two pesticide sprays. For the short summer maize season I plant hybrid seeds immediately after wheat harvest using no-tillage to save time, with slightly lower fertilizer rates, two irrigations during dry spells, and two pesticide applications for weeds and borers. This schedule fits my household labor and keeps both crops on track.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have 10.1 mu under wheat-maize rotation in Quzhou, and with 30 years of experience I know my well-irrigated land can produce reliably if I do not cut corners on the basics. For wheat I use improved seeds with rotary tillage, moderate nitrogen split between basal and jointing top-dressing, three irrigations at critical stages, and two pesticide sprays. For the short summer maize season I plant hybrid seeds immediately after wheat harvest using no-tillage to save time, with slightly lower fertilizer rates, two irrigations during dry spells, and two pesticide applications for weeds and borers. This schedule fits my household labor and keeps both crops on track."
+  },
+  "elapsed_seconds": 190.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DS_9",
+  "tier": 2,
+  "provider": "kimi"
+}

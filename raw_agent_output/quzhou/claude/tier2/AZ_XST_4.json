@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land for 40 years. I know my fields. I don't need a book to tell me what to do \u2014 I know what the soil looks like when it's thirsty, I know when the aphids will come, I know what my wheat looks like when it needs pushing.\n\nMy 20 mu breaks down like this: 15 mu goes into my wheat-maize rotation \u2014 same land, winter wheat then summer maize. The other 5 mu I plant cotton. Cotton is hard work but it earns cash. With just two of us at home now, I have to be careful how much labor I take on. Cotton picking will be rough on my back, but I've done it before.\n\n**Wheat (15 mu, October\u2013June):** I'll plough deep like I always do before planting \u2014 turns in the stubble and loosens things up. I'll use the improved variety I've been buying from the township supply station for years. I know how it behaves. I'll put down base fertilizer at sowing \u2014 diammonium phosphate and some urea \u2014 then top-dress with urea at jointing. Four irrigations: pre-sowing soaking, winter water before freeze, jointing, and heading. I spray twice \u2014 once for weeds early, once for aphids near heading. Should get around 450 jin per mu.\n\n**Maize (15 mu, June\u2013September):** Goes in the day after I finish wheat harvest, or as close as I can manage. I buy hybrid seed every year \u2014 I don't save maize seed. I'll do a quick rotary pass to break up the wheat stubble, then plant. Heavy urea at jointing stage. Three irrigations unless the rains cooperate. Spray once for corn borer, once for anything else that shows up. Should get around 550 jin.\n\n**Cotton (5 mu, April\u2013October):** I'll plough this plot in early spring. I plant mid-April. Cotton is the most demanding \u2014 six pesticide sprays minimum across the season, bollworm doesn't forgive laziness. Four irrigations at bud, flowering, boll-set, and late season. The potassium matters with cotton, I know that from experience \u2014 I put more of it here. With just two of us picking, 5 mu is already a full load.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"A 65-year-old farmer with 40 years of experience and no formal education in Quzhou County, Hebei allocates 15 mu to a winter wheat\u2013summer maize rotation and 5 mu to spring cotton, matching typical North China Plain practice. Wheat is plough-tilled with improved varieties, heavy base and topdress nitrogen, and four irrigations covering key growth stages; maize follows immediately after wheat harvest using hybrid seed, rotary tillage, and peak nitrogen at jointing; cotton receives the highest pesticide intensity (six sprays targeting bollworm and other pests) and elevated potassium, with deep ploughing in spring. All decisions draw on decades of local experience rather than formal agronomic guidance, with input rates reflecting common smallholder practice in this region \u2014 slightly heavy on nitrogen, reliant on well irrigation, and conservative on variety switching.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "A 65-year-old farmer with 40 years of experience and no formal education in Quzhou County, Hebei allocates 15 mu to a winter wheat\u2013summer maize rotation and 5 mu to spring cotton, matching typical North China Plain practice. Wheat is plough-tilled with improved varieties, heavy base and topdress nitrogen, and four irrigations covering key growth stages; maize follows immediately after wheat harvest using hybrid seed, rotary tillage, and peak nitrogen at jointing; cotton receives the highest pesticide intensity (six sprays targeting bollworm and other pests) and elevated potassium, with deep ploughing in spring. All decisions draw on decades of local experience rather than formal agronomic guidance, with input rates reflecting common smallholder practice in this region \u2014 slightly heavy on nitrogen, reliant on well irrigation, and conservative on variety switching."
+  },
+  "elapsed_seconds": 57.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_4",
+  "tier": 2,
+  "provider": "claude"
+}

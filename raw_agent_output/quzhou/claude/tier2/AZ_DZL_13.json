@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been doing this rotation for three years now, mostly learning from what my neighbors do and from the agricultural extension station pamphlets. My plot is 5 mu total \u2014 when wheat comes out in June, I put maize straight in, then wheat again in October. That's how everyone around here does it.\n\nFor **wheat**, I'll plow and rotary-till before sowing in October. I'll use the improved variety seed I bought from the village supply co-op \u2014 it's what most people use here and I know it works. I put down a good base fertilizer before sowing, then top-dress at jointing. I irrigate before winter sets in, again at jointing, and once more at heading \u2014 three times total. My wife handles one or two pesticide sprays for aphids and rust. I expect around 450 jin per mu, which is normal for here.\n\nFor **maize**, I go in right after wheat harvest with no tillage \u2014 no time and less work, and the soil is still loose enough. Hybrid seed is the only real option; everyone uses it and yields are much better than old varieties. Maize needs more water in the heat so I'll irrigate twice \u2014 once around tasseling and once at grain fill if it's dry. I use a bit more nitrogen on maize because it eats a lot. Two pesticide passes for corn borer and leaf disease. I should get around 550 jin per mu.\n\nSome of the family is working in the city so I'm managing most of this myself. I keep things straightforward \u2014 I can't afford mistakes and I don't want to try anything too new yet.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"As a 39-year-old farmer with 3 years of experience and primary education in Quzhou County, I follow the standard wheat-maize double-cropping rotation used by most local farmers. For wheat I use rotary tillage and an improved local variety with three irrigations timed to critical growth stages; for summer maize I direct-seed hybrid seed immediately after wheat harvest with no tillage to save time and labor, applying slightly higher nitrogen to match maize's heavier demand. Inputs and practices are conventional and conservative, based on neighbor practice and co-op recommendations, aiming for stable yields without risky experimentation while keeping labor manageable given that some household members work off-farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "As a 39-year-old farmer with 3 years of experience and primary education in Quzhou County, I follow the standard wheat-maize double-cropping rotation used by most local farmers. For wheat I use rotary tillage and an improved local variety with three irrigations timed to critical growth stages; for summer maize I direct-seed hybrid seed immediately after wheat harvest with no tillage to save time and labor, applying slightly higher nitrogen to match maize's heavier demand. Inputs and practices are conventional and conservative, based on neighbor practice and co-op recommendations, aiming for stable yields without risky experimentation while keeping labor manageable given that some household members work off-farm."
+  },
+  "elapsed_seconds": 44.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_13",
+  "tier": 2,
+  "provider": "claude"
+}

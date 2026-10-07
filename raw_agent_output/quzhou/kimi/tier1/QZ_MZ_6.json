@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 63 years old and have been farming these fields in Quzhou for over forty years. My family has about 7 mu of good flat land on the North China Plain. Every year, I follow the same rotation that my neighbors and I have always used: winter wheat followed by summer maize. I don't take risks with new crops like vegetables or cotton at my age \u2014 the wheat and maize double-cropping system gives me stable yields and I know there are buyers for both.\n\nThe wheat is already in the ground \u2014 I sowed it last October. Now it is April and the wheat is greening up after winter dormancy. I will topdress it with urea (about 55 kg of nitrogen per mu) and irrigate it three times before harvest in early June. I don't bother buying phosphate or potash fertilizers \u2014 they cost too much and my wheat has always grown fine without them. I use an improved wheat variety like Jimai 22 because the seed shop in town sells it and it gives reliable yields around 1000 kg per mu. For tillage, I already rotary-tilled before sowing the wheat last autumn.\n\nAfter I harvest the wheat in June, I will immediately sow summer maize, likely Denghai 605 hybrid seed. I won't till the soil \u2014 I will plant directly into the wheat stubble to save time, diesel, and my own labor. The leftover nitrogen from the wheat fertilization is enough for the maize, so I won't apply more fertilizer to the maize crop. I will irrigate the maize twice and spray pesticides three times to control insects and weeds. By October, I expect about 1050 kg per mu of maize.\n\nThis rotation is what I know, what my body can still manage, and what keeps food on the table.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 55,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 0,\n      \"phosphorus_kg_per_mu\": 0,\n      \"potassium_kg_per_mu\": 0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1050\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed in Quzhou County for over forty years and rely on the stable wheat-maize double-cropping system that all my neighbors use. At 63 years old with only primary schooling, I do not experiment with unfamiliar cash crops. I grow winter wheat using an improved variety with rotary tillage, about 55 kg nitrogen per mu, three irrigations, and four pesticide applications, expecting around 1000 kg per mu. After harvesting wheat in June, I plant summer maize using hybrid seed with no-tillage, no additional fertilizer, two irrigations, and three pesticide applications, expecting about 1050 kg per mu. This is the proven, low-risk system I trust to feed my family.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 55,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 0,
+        "phosphorus_kg_per_mu": 0,
+        "potassium_kg_per_mu": 0,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1050
+      }
+    ],
+    "reasoning_summary": "I have farmed in Quzhou County for over forty years and rely on the stable wheat-maize double-cropping system that all my neighbors use. At 63 years old with only primary schooling, I do not experiment with unfamiliar cash crops. I grow winter wheat using an improved variety with rotary tillage, about 55 kg nitrogen per mu, three irrigations, and four pesticide applications, expecting around 1000 kg per mu. After harvesting wheat in June, I plant summer maize using hybrid seed with no-tillage, no additional fertilizer, two irrigations, and three pesticide applications, expecting about 1050 kg per mu. This is the proven, low-risk system I trust to feed my family."
+  },
+  "elapsed_seconds": 81.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_6",
+  "tier": 1,
+  "provider": "kimi"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this same land for 20 years. My 2.6 mu feeds my wheat in winter and maize in summer \u2014 the same plot, rotated. Some of my family earns money in town now, so I manage most of this myself. I know my fields. My well is reliable. I don't gamble.\n\n**Wheat:** I'll sow in mid-October after maize is off the field. I've been using an improved variety for years \u2014 consistent germination, good resistance to the cold snaps we get here. I'll do rotary tillage to work in the maize stubble. Three irrigations: before winter sets in, at jointing, and at heading. I've learned not to skimp on the winter water \u2014 it matters more than people say. I'll split my nitrogen between base application and a topdressing at jointing. Two rounds of pesticide \u2014 one for powdery mildew in spring, one for aphids before harvest.\n\n**Maize:** Right after I sell the wheat in June, I plant. No-tillage \u2014 I can't afford to lose days, and my soil doesn't need it mid-season. Hybrid seed, same one the seed shop in town recommends and that my neighbors have been using. Three irrigations: when seedlings are young, at tasseling, and during grain fill. I'll do a heavy nitrogen top-dress at the big bell stage. The yield difference is real when you do that right.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same 2.6 mu in a wheat-maize rotation as I have for 20 years in Quzhou County. For winter wheat I use an improved variety with rotary tillage to incorporate maize residue, three irrigations timed at pre-winter, jointing, and heading, and split nitrogen to balance establishment and grain fill. For summer maize I shift to no-tillage to save time since family labor is limited with members working off-farm, use a reliable hybrid, apply heavy nitrogen at the big bell stage, and irrigate at seedling, tasseling, and grain-fill stages. Both plans rely on my well for reliable water and follow the practices I know work on my specific land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the same 2.6 mu in a wheat-maize rotation as I have for 20 years in Quzhou County. For winter wheat I use an improved variety with rotary tillage to incorporate maize residue, three irrigations timed at pre-winter, jointing, and heading, and split nitrogen to balance establishment and grain fill. For summer maize I shift to no-tillage to save time since family labor is limited with members working off-farm, use a reliable hybrid, apply heavy nitrogen at the big bell stage, and irrigate at seedling, tasseling, and grain-fill stages. Both plans rely on my well for reliable water and follow the practices I know work on my specific land."
+  },
+  "elapsed_seconds": 39.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_12",
+  "tier": 2,
+  "provider": "claude"
+}

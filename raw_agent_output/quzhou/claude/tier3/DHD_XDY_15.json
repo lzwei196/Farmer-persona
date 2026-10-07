@@ -1,0 +1,40 @@
+{
+  "raw_response": "I been farming this land 45 years. My knees not so good now but the work still get done. 14 mu is not small, not big. Me and my old man, my son help sometime when he back from town. Three of us eat from this land.\n\nLet me think about this year. Last year wheat gave me about 480 jin... no wait, I mean 480 kg per mu I think. Maize was better, maybe 550 kg. Good enough. I do same as last year mostly. Why change when it works?\n\nFor wheat, I sow in October like always. I buy the improved seed from the dealer in town \u2014 \u6d4e\u9ea6 variety, same as my neighbors use. Traditional seed nobody plant anymore, yield too low. I put two bags of compound fertilizer before plowing \u2014 that one bag is 50 kg, 15-15-15 kind. Then when wheat come up in spring I topdress urea, maybe one bag for the whole field, spread by hand. My son help carry.\n\nIrrigation \u2014 I water before sowing (that one we call \u8499\u5934\u6c34), then in spring when it jointing, then one more before it fill the grain. Well water from the village pump, pay by the hour. Three times usually, sometime four if no rain.\n\nSpray \u2014 I spray for the aphid and for the weed, two times usually. The dealer tell me what to buy, I just follow.\n\nFor maize after wheat \u2014 I no-till, just plant right into the wheat stubble. Everyone do this now. Hybrid seed, \u90d1\u5355 958 or whatever the dealer have this year. I put fertilizer at planting and topdress once when it knee-high. Summer got rain so maybe only water one time if dry. Spray once for the borer.\n\nI always use little bit extra fertilizer. My old man say if you save on fertilizer you lose the harvest, and bad harvest mean no food money all year. Little extra urea cost maybe 50 yuan, but lose 100 jin grain cost much more. Better safe.\n\nPlowing \u2014 wheat I plow proper before sowing. Maize I no plow, save money and time.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I do same as last year because it worked. Wheat I plow and use improved seed, two bag compound fertilizer before sowing and one bag urea in spring, water three times from well. Maize I plant right into wheat stubble no plowing, hybrid seed from dealer, fertilizer at planting and topdress once, only water if dry because summer rain. I spray what the dealer tell me. I put little extra fertilizer to be safe \u2014 wasting some is just money, but bad harvest is disaster for three people eating.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I do same as last year because it worked. Wheat I plow and use improved seed, two bag compound fertilizer before sowing and one bag urea in spring, water three times from well. Maize I plant right into wheat stubble no plowing, hybrid seed from dealer, fertilizer at planting and topdress once, only water if dry because summer rain. I spray what the dealer tell me. I put little extra fertilizer to be safe \u2014 wasting some is just money, but bad harvest is disaster for three people eating."
+  },
+  "elapsed_seconds": 31.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_15",
+  "tier": 3,
+  "provider": "claude"
+}

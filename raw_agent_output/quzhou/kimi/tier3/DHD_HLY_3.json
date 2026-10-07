@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 65 this year, started farming when I was 15, only got a few years of primary school. My farm is 10.1 mu in Quzhou County, just me and my wife. We have a well that pumps good water. We grow wheat in winter and maize in summer, same as everyone here.\n\nFor winter wheat, I plant in early October. I use improved seed, the kind the dealer sells\u2014Jimai or something like that\u2014about 30 jin per mu. For base fertilizer I put down one full 50 kg bag of 15-15-15 compound fertilizer per mu, so that is 7.5 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium right there. When the wheat turns green in March, I spread half a bag of urea per mu, about 25 kg, which gives another 11.5 kg nitrogen. I know fertilizer got more expensive this year, but I do not dare cut back. A bad harvest means disaster; wasting some fertilizer is just money down the drain. I water wheat three times: before winter freeze, at jointing, and when the grain is filling. I spray twice\u2014once for weeds in spring, once for insects or disease if they show up. Before planting wheat I plough deep to bury the maize stalks.\n\nAfter harvest in June, I plant hybrid maize right away. I use about 3 kg of hybrid seed per mu. I put 40 kg of compound fertilizer per mu in the row at planting, which is 6 kg each of N, P, and K. At big trumpet stage I side-dress 20 kg of urea per mu, about 9 kg more nitrogen. Maize gets two irrigations: one if sowing is dry, and one at silking. Two sprays\u2014herbicide first, then insecticide if the worms come. After wheat harvest I only have a few days, so I rotary till fast and get the seed in the ground. During harvest and planting I hire two people for 3-4 days, 150 yuan a day plus lunch.\n\nI watch what my neighbors do. Old Wang and Li use about the same fertilizer. If everyone puts a bag and a half, I put a bag and a half. I learned this from my father and from watching others. That is my plan for this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15.2,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what worked last year and what neighbors do, adjusting only for input prices. I apply a full 50 kg bag of compound fertilizer per mu to wheat and 40 kg per mu to maize, topping both with urea, because I fear yield loss far more than wasting fertilizer. I irrigate wheat three times and maize twice, spray twice per crop, plough before wheat to bury stalks, and rotary-till before maize to save time after harvest.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15.2,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what worked last year and what neighbors do, adjusting only for input prices. I apply a full 50 kg bag of compound fertilizer per mu to wheat and 40 kg per mu to maize, topping both with urea, because I fear yield loss far more than wasting fertilizer. I irrigate wheat three times and maize twice, spray twice per crop, plough before wheat to bury stalks, and rotary-till before maize to save time after harvest."
+  },
+  "elapsed_seconds": 127.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_3",
+  "tier": 3,
+  "provider": "kimi"
+}

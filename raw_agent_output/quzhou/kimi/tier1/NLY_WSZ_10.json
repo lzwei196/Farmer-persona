@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 53 years old and have farmed these fields in Quzhou since I was a young man. My family has ten mu of good flat land, and I know every corner of it. This year, like most years, I will grow winter wheat and summer maize. The wheat is already in the ground\u2014I sowed it last October after rotary tilling the soil. I use an improved wheat variety because the seeds from the county supply store grow strong and resist lodging. For the maize that follows the wheat harvest in June, I will buy hybrid seed. I do not till before planting the maize; there is no time after the wheat comes off, and everyone around here knows no-tillage works fine if you clear the straw properly. \n\nFor the wheat, I will put down about 50 kilograms of compound fertilizer per mu as a basal dressing\u2014something like 19-22-7\u2014and then topdress with another 25 kilograms of compound and about 20 kilograms of urea at the green-up and jointing stages. That gives the wheat enough strength. The maize only gets one basal dressing of about 45 kilograms of compound fertilizer per mu, usually a high-nitrogen blend like 28-6-6, because by then I am busy and the maize grows fast. I will irrigate the wheat four times\u2014green-up, jointing, heading, and grain filling\u2014and the maize twice, at seedling and big-trumpet stages, using water from our well. For pests, I spray herbicide once on each crop, insecticide twice, and I add one fungicide spray on the wheat when the weather turns humid. I expect the wheat to give me about 500 kilograms per mu and the maize about 550 kilograms per mu, which is enough to feed my family and sell the surplus.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 23.5,\n      \"phosphorus_kg_per_mu\": 16.5,\n      \"potassium_kg_per_mu\": 5.3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12.6,\n      \"phosphorus_kg_per_mu\": 2.7,\n      \"potassium_kg_per_mu\": 2.7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed ten mu in Quzhou County all my life, and the wheat-maize double-cropping rotation is what I know and trust. I use improved wheat seed and hybrid maize seed from the local supply store, rotary till before wheat, and plant maize with no-tillage right after the wheat harvest to save time. My fertilizer choices follow what my neighbors and I have always done: compound fertilizer for basal dressing and urea topdressing on wheat, and a single high-nitrogen compound application on maize. I irrigate wheat four times and maize twice, and I spray pesticides when I see weeds or insects, plus a fungicide on wheat because the summer humidity brings disease. These practices reliably give me about 500 kg of wheat and 550 kg of maize per mu, which feeds my household and leaves grain to sell.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 23.5,
+        "phosphorus_kg_per_mu": 16.5,
+        "potassium_kg_per_mu": 5.3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12.6,
+        "phosphorus_kg_per_mu": 2.7,
+        "potassium_kg_per_mu": 2.7,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed ten mu in Quzhou County all my life, and the wheat-maize double-cropping rotation is what I know and trust. I use improved wheat seed and hybrid maize seed from the local supply store, rotary till before wheat, and plant maize with no-tillage right after the wheat harvest to save time. My fertilizer choices follow what my neighbors and I have always done: compound fertilizer for basal dressing and urea topdressing on wheat, and a single high-nitrogen compound application on maize. I irrigate wheat four times and maize twice, and I spray pesticides when I see weeds or insects, plus a fungicide on wheat because the summer humidity brings disease. These practices reliably give me about 500 kg of wheat and 550 kg of maize per mu, which feeds my household and leaves grain to sell."
+  },
+  "elapsed_seconds": 176.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_10",
+  "tier": 1,
+  "provider": "kimi"
+}

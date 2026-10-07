@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming this land in Quzhou for over fifty years. My father grew wheat and maize on this same ground, and I do the same. I know nothing else, and at my age I am not going to learn something new. My two sons help me during the busy periods \u2014 planting and harvest \u2014 but the decisions are mine.\n\nI have about 5 mu of land I still work myself. The rest I have let my eldest son manage. 5 mu is enough for an old man.\n\nIn autumn I plant winter wheat. I always do. We need the wheat flour at home, and I sell what is left over. I will buy the improved seed from the village supply station \u2014 the government recommends it and the village head says it yields better. I do not know the variety name exactly but I will ask at the station.\n\nFor fertilizer, I put down base fertilizer before sowing \u2014 phosphorus and potassium mixed with some nitrogen \u2014 then I top-dress urea at jointing. I probably use more fertilizer than the technicians say I should, but in my experience the soil here is hungry and I do not want to lose the harvest. I irrigate three times: at sowing if it is dry, at jointing, and at heading. Water is getting harder to pump \u2014 the well is deeper every year \u2014 but wheat needs water.\n\nAfter wheat harvest in June I plant maize directly into the stubble. No ploughing \u2014 I hire the machine to direct seed. Maize is easier. Hybrid seed, one or two irrigations if there is no rain, one fertilizer application. By October it is done.\n\nThat is my year. Always has been.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 72-year-old farmer in Quzhou County follows the entrenched winter wheat\u2013summer maize double-cropping rotation on 5 mu of self-managed land, relying on fifty years of personal experience and family tradition rather than extension advice. Improved wheat seed and hybrid maize seed are sourced from the village station as a matter of habit and government availability. Fertilizer rates are above extension recommendations \u2014 reflecting an older farmer's risk-averse tendency to over-apply rather than risk yield loss. Three irrigations for wheat (sowing, jointing, heading) and two for maize reflect conventional local practice despite declining groundwater. No-tillage direct seeding of maize into wheat stubble is adopted for labor savings, not conservation reasons. Pesticide use is modest and largely reactive.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 72-year-old farmer in Quzhou County follows the entrenched winter wheat\u2013summer maize double-cropping rotation on 5 mu of self-managed land, relying on fifty years of personal experience and family tradition rather than extension advice. Improved wheat seed and hybrid maize seed are sourced from the village station as a matter of habit and government availability. Fertilizer rates are above extension recommendations \u2014 reflecting an older farmer's risk-averse tendency to over-apply rather than risk yield loss. Three irrigations for wheat (sowing, jointing, heading) and two for maize reflect conventional local practice despite declining groundwater. No-tillage direct seeding of maize into wheat stubble is adopted for labor savings, not conservation reasons. Pesticide use is modest and largely reactive."
+  },
+  "elapsed_seconds": 44.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_7",
+  "tier": 1,
+  "provider": "claude"
+}

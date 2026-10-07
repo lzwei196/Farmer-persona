@@ -1,0 +1,66 @@
+{
+  "raw_response": "I am 69 years old and have been farming these 18 mu in Quzhou for 15 years. My household has five people, but my son and daughter-in-law work in the city factory, so it is mainly my wife and me handling the day-to-day fieldwork, with my grandson helping during school breaks. Given my age and limited labor at home, I rely on the wheat-maize double-cropping system for the bulk of my land because it is highly mechanized and gives me stable grain income plus government subsidies. I will plant 12 mu with an improved winter wheat variety in October, irrigating it three times\u2014overwintering, jointing, and grain filling\u2014and applying moderate fertilizer. Right after wheat harvest in early June, I will sow hybrid summer maize using no-tillage to save time and labor, irrigating it twice during the summer. For cash income, I keep 3 mu of cotton and 3 mu of chili. Cotton prices have been decent, and the hybrid Bt cotton I use cuts down on bollworm spraying, though it still needs careful management and deep ploughing. Chili is very profitable but labor-intensive for picking, so 3 mu is all my wife and I can manage; it needs more frequent watering and heavy potassium for the fruit. I have a well, but groundwater is not infinite, so I watch my irrigation costs closely and follow the county extension recommendations on fertilizer rates.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 2000\n    }\n  ],\n  \"reasoning_summary\": \"I am 69 years old with limited full-time labor at home, so I allocate 12 mu to the mechanized wheat-maize double-cropping system for stable, subsidized grain income, while keeping 3 mu each of cotton and chili for cash earnings that my wife and I can manage. I use no-tillage for summer maize to save time and labor between harvests, apply moderate fertilizer following county guidance, and manage irrigation carefully since well water has a cost. Wheat gets three irrigations, maize two, cotton three, and chili five due to their differing water needs, with chili receiving extra potassium for fruit quality.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 5,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 2000
+      }
+    ],
+    "reasoning_summary": "I am 69 years old with limited full-time labor at home, so I allocate 12 mu to the mechanized wheat-maize double-cropping system for stable, subsidized grain income, while keeping 3 mu each of cotton and chili for cash earnings that my wife and I can manage. I use no-tillage for summer maize to save time and labor between harvests, apply moderate fertilizer following county guidance, and manage irrigation carefully since well water has a cost. Wheat gets three irrigations, maize two, cotton three, and chili five due to their differing water needs, with chili receiving extra potassium for fruit quality."
+  },
+  "elapsed_seconds": 96.3,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_XST_15",
+  "tier": 2,
+  "provider": "kimi"
+}

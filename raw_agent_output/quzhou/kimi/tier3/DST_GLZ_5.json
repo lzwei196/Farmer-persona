@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 63 years old and I have worked this land since I was ten. My father taught me everything \u2014 how to read the soil, when to plant, how much fertilizer to put down. I never went to school, not even one day, but I know my 20 mu in Quzhou County better than any book. Six people live in my house, but my son and daughter work in the city, so it is mostly me and my wife in the fields. I hire extra hands when I need them.\n\nI divide my land into two parts. Fourteen mu I plant with winter wheat and then summer maize. Six mu I plant with cotton. Right now it is early spring, and my winter wheat is already in the ground. Last October I ploughed deep with the tractor, planted improved wheat seed, and put down one 50-kilogram bag of compound fertilizer on every mu. Now the wheat is turning green, and I need to top-dress. Last year I spread 20 jin of urea per mu at green-up and got about 500 kilograms of grain per mu. My neighbor Old Wang put 30 jin per mu and got nearly 600 kilograms. This year I will spread 25 jin of urea per mu \u2014 that is about half a small bag. If the wheat looks yellow at heading, I will throw another 10 jin on top. Counting what I put down last fall, that is about 18 kilograms of nitrogen per mu, plus 7 kilograms of phosphorus and 6 kilograms of potassium. I will irrigate three times: at green-up, at jointing, and at grain-filling. Two sprays \u2014 one for weeds and one for aphids. Urea costs over 100 yuan per bag now, so every bag is real money, but I would rather spend too much than too little. A bad harvest is a disaster; wasting some fertilizer is just a cost.\n\nAfter I cut the wheat in early June, I plant summer maize on those same 14 mu. I buy hybrid seed from the dealer \u2014 everyone uses hybrid now, you cannot get good yield without it. I do not deep-plough for maize; I use the no-till seeder or just rotary-till to save diesel and time, because the wheat stubble is still there. I put 50 jin of compound fertilizer in the furrow at planting, and when the maize is knee-high I top-dress with 20 jin of urea per mu. That comes to about 16 kilograms of nitrogen, 5 kilograms of phosphorus, and 5 kilograms of potassium per mu. Two irrigations: one when it tassels and one when the grain fills. Two sprays for weeds and armyworm. I expect about 620 kilograms per mu.\n\nMy other 6 mu I plant cotton. Cotton is more work but the price was decent last year. I plough those 6 mu in April because cotton likes loose soil. I plant improved seed, the kind with big bolls. I put 50 jin of compound fertilizer and 15 jin of urea per mu. My cousin grows cotton too, and he told me cotton needs more potassium or the bolls do not open white, so I add extra potash. That is about 14 kilograms of nitrogen, 6 kilograms of phosphorus, and 8 kilograms of potassium per mu. Three irrigations: at flowering, at boll-setting, and at boll-opening. Five sprays for bollworm \u2014 you cannot skip even one spray or the worms will eat the whole crop. I expect about 300 kilograms of seed cotton per mu.\n\nI watch what my neighbors do. If Old Wang and the others around me are putting 25 jin of urea on their wheat, I do the same. Change is risky. I start from what I did last year and adjust a little bit only if I saw it work on someone else's field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 620\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 300\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed my 20 mu in Quzhou County for 53 years without formal schooling, learning from my father and watching my neighbors. I plant 14 mu with winter wheat followed by summer maize, and 6 mu with cotton, adjusting last year's practices only when I see them work on someone else's field. I would rather spend extra on fertilizer than risk losing yield, since a bad harvest is far worse than wasting some inputs. I use improved wheat seed with spring urea top-dressing and three irrigations, hybrid maize with no-till planting and two irrigations, and improved cotton with extra potassium and five pesticide sprays for bollworm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 620
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 300
+      }
+    ],
+    "reasoning_summary": "I have farmed my 20 mu in Quzhou County for 53 years without formal schooling, learning from my father and watching my neighbors. I plant 14 mu with winter wheat followed by summer maize, and 6 mu with cotton, adjusting last year's practices only when I see them work on someone else's field. I would rather spend extra on fertilizer than risk losing yield, since a bad harvest is far worse than wasting some inputs. I use improved wheat seed with spring urea top-dressing and three irrigations, hybrid maize with no-till planting and two irrigations, and improved cotton with extra potassium and five pesticide sprays for bollworm."
+  },
+  "elapsed_seconds": 94.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_5",
+  "tier": 3,
+  "provider": "kimi"
+}

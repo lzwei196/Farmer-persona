@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these lands in Quzhou for over 30 years. My family has about 10 mu of good flat land, and I know every piece of it. I went to middle school \u2014 enough to read seed labels and follow the agricultural station's guidance, but I don't fuss with too many new ideas. I stick with what works.\n\nThe wheat went into the ground last October, same as every year. I used an improved variety \u2014 something like the ones from the seed station, reliable for this area. I rotary-tilled before sowing and put down compound fertilizer as basal. Right now it's April, the wheat is coming back green strong. I will top-dress with urea at jointing, irrigate four times total (returning green, jointing, heading, and grain filling), and spray about four times for weeds, aphids, and rust. I expect around 1,050 jin per mu \u2014 not the highest, but steady.\n\nAfter I harvest the wheat in early June, I will immediately plant summer maize. No time to plough \u2014 I will no-till drill the hybrid maize seed straight into the wheat stubble. That saves time and keeps moisture. I'll apply compound fertilizer at sowing and side-dress urea when the maize is knee-high. I'll irrigate three times and spray three times \u2014 mainly herbicide and corn borer control. I target about 1,100 jin per mu for the maize.\n\nI don't grow cotton anymore. It pays okay some years, but the labor is too much for me now \u2014 too many pesticide sprays, and my back isn't what it was. The wheat-maize double crop is simpler, the machinery is easy to hire, and I can sell both to the same buyers. My son works in Handan city, so I manage most of this myself with some hired labor at harvest. This is the system I trust.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1050\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1100\n    }\n  ],\n  \"reasoning_summary\": \"I am a 50-year-old middle-school-educated farmer in Quzhou County with about 10 mu of land. I follow the dominant local wheat-maize double-cropping system because it is proven, mechanized, and less labor-intensive than cotton. My winter wheat is already in the field and I will manage it with rotary tillage, four irrigations, and four pesticide applications. After June harvest, I will no-till plant hybrid maize to save time and moisture, with three irrigations and three pesticide applications. I avoid cotton due to its heavy labor and pesticide demands.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1050
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1100
+      }
+    ],
+    "reasoning_summary": "I am a 50-year-old middle-school-educated farmer in Quzhou County with about 10 mu of land. I follow the dominant local wheat-maize double-cropping system because it is proven, mechanized, and less labor-intensive than cotton. My winter wheat is already in the field and I will manage it with rotary tillage, four irrigations, and four pesticide applications. After June harvest, I will no-till plant hybrid maize to save time and moisture, with three irrigations and three pesticide applications. I avoid cotton due to its heavy labor and pesticide demands."
+  },
+  "elapsed_seconds": 264.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_4",
+  "tier": 1,
+  "provider": "kimi"
+}

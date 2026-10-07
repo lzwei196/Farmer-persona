@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 49 years old and have farmed these 7.8 mu in Quzhou for 30 years. I finished middle school. My family has six people, and my son and daughter-in-law work in a factory in Handan city, so they send money home. That helps me buy seed and fertilizer, but I still watch every yuan because fertilizer prices went up again this year.\n\nI put 6 mu into wheat-maize because that is the safe rotation everyone here does. The other 1.8 mu I plant cotton because last year Lao Zhang from the east side of the village got a good price for his cotton, and I want to keep some cotton in my mix.\n\nFor wheat, I sow in October with improved seed, 13 kg per mu. I buy it from the dealer in town. Last year I used 12 kg per mu and the stand was a bit thin, so this year I add 1 kg more. For fertilizer, I put one 50-kg bag of compound fertilizer per mu as base. Then at green-up I spread 20 kg urea per mu, and at jointing another 10 kg urea. That gives me about 17 kg nitrogen, 7 kg phosphorus, and 5 kg potassium per mu. I irrigate three times: before winter, at jointing, and at grain filling. I spray pesticide twice. I use rotary tillage before sowing. Last year I got 480 kg per mu; this year I expect 500 kg per mu if the weather holds.\n\nFor maize, after we cut wheat in June, I hire a machine to drill hybrid seed directly into the stubble, 2.5 kg per mu. No plowing \u2014 saves 80 yuan per mu and we are racing the clock before the summer rains end. I put 40 kg compound fertilizer per mu at sowing, and if the leaves look light green at the big trumpet stage, I add 15 kg urea. That is about 15 kg nitrogen, 5 kg phosphorus, and 4 kg potassium per mu. I irrigate twice, once at jointing and once at filling if it does not rain. I spray pesticide twice. I expect 580 kg per mu.\n\nFor cotton, I plow the 1.8 mu in April because cotton likes loose soil. I use a hybrid seed, 1 kg per mu. Cotton needs more potassium, so I put one bag of compound fertilizer plus extra potassium fertilizer per mu as base. I topdress twice with urea during flowering. Total is about 16 kg nitrogen, 6 kg phosphorus, and 8 kg potassium per mu. Cotton drinks more water at flowering and boll stage, so I irrigate four times. I spray pesticide five times because bollworm always comes. I expect 280 kg seed cotton per mu.\n\nI would rather spend more on fertilizer than risk yield. A bad harvest means no money for my grandson's school fees. Wasting some fertilizer is just a cost I accept. I watch what my neighbors do, and everyone around me uses about the same amounts. Change is risky, so I stick close to what I did last year, with small adjustments. My son's off-farm income gives me some room to invest, but I still balance the whole budget carefully.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I managed my 6 mu of wheat-maize and 1.8 mu of cotton by copying what worked last year and watching my neighbors, because changing too much is risky. I put about 17 kg nitrogen on wheat, 15 kg on maize, and 16 kg on cotton per mu, plus phosphorus and potassium, since I would rather waste some fertilizer than lose yield and face a disaster. I irrigated wheat three times, maize twice, and cotton four times, and sprayed pesticides five times on cotton because bollworm is always trouble. I used rotary tillage for wheat, no-tillage for maize to save time and money after harvest, and plough for cotton in spring, expecting 500 kg wheat, 580 kg maize, and 280 kg seed cotton per mu.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I managed my 6 mu of wheat-maize and 1.8 mu of cotton by copying what worked last year and watching my neighbors, because changing too much is risky. I put about 17 kg nitrogen on wheat, 15 kg on maize, and 16 kg on cotton per mu, plus phosphorus and potassium, since I would rather waste some fertilizer than lose yield and face a disaster. I irrigated wheat three times, maize twice, and cotton four times, and sprayed pesticides five times on cotton because bollworm is always trouble. I used rotary tillage for wheat, no-tillage for maize to save time and money after harvest, and plough for cotton in spring, expecting 500 kg wheat, 580 kg maize, and 280 kg seed cotton per mu."
+  },
+  "elapsed_seconds": 173.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_3",
+  "tier": 3,
+  "provider": "kimi"
+}

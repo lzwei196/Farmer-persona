@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for 45 years. I know the soil here \u2014 medium-textured, underlain by the aquifer we tap for irrigation. My wheat-maize rotation runs on 20 mu, and I keep 15 mu under cotton as a cash crop. With just my wife and me at home now, labor is a real constraint, especially come cotton-picking time.\n\nFor **wheat**, I'll use an improved semi-dwarf variety suited to the local disease pressure. I'll apply a full basal dressing before sowing and topdress at jointing. Three irrigations: one before sowing to charge the soil, one at jointing, one at grain fill. I've learned not to overwater \u2014 the aquifer level has dropped noticeably over the decades and pumping costs are real.\n\nFor **summer maize**, I direct-seed no-till right behind the combine. Hybrid seed, heavy nitrogen split between base and side-dress at V6. Two irrigations usually suffice with summer rainfall \u2014 maybe a third if August goes dry.\n\nFor **cotton**, I'll use a Bt hybrid \u2014 it's cut my pesticide runs significantly since the 1990s. Cotton demands more of me: more irrigations, topping, defoliation before harvest. At 63 I feel that labor cost in my back. I'll push some of the topping and defoliation to hire a day laborer if needed.\n\nI'm not experimenting this year. I'll run the system I know.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 15,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I run 20 mu under a winter wheat\u2013summer maize double-crop rotation and keep 15 mu in cotton as my primary cash crop. Wheat gets rotary-tilled seedbed preparation, an improved local variety, and three well irrigations timed to pre-sow, jointing, and grain fill, with modest nitrogen split across basal and topdressing. Summer maize follows wheat no-till to preserve moisture and save labor; I rely on a high-yielding hybrid and two irrigations supplemented by summer rain. Cotton is planted on separate land in spring using a Bt hybrid that keeps bollworm pressure manageable; it needs four irrigations and four pesticide passes, and its higher potassium demand reflects the boll-load I expect. With only two people in the household and my age, I am not making any changes to the system this year \u2014 I am running the inputs and timing I have refined over decades on this specific soil.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 15,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I run 20 mu under a winter wheat\u2013summer maize double-crop rotation and keep 15 mu in cotton as my primary cash crop. Wheat gets rotary-tilled seedbed preparation, an improved local variety, and three well irrigations timed to pre-sow, jointing, and grain fill, with modest nitrogen split across basal and topdressing. Summer maize follows wheat no-till to preserve moisture and save labor; I rely on a high-yielding hybrid and two irrigations supplemented by summer rain. Cotton is planted on separate land in spring using a Bt hybrid that keeps bollworm pressure manageable; it needs four irrigations and four pesticide passes, and its higher potassium demand reflects the boll-load I expect. With only two people in the household and my age, I am not making any changes to the system this year \u2014 I am running the inputs and timing I have refined over decades on this specific soil."
+  },
+  "elapsed_seconds": 41.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_TL_2",
+  "tier": 2,
+  "provider": "claude"
+}

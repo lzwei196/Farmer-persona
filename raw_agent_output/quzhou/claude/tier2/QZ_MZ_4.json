@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 35 years. I know this soil, I know Quzhou's weather, and I know what works. My 9 mu runs the same rotation every year \u2014 wheat goes in after National Day in October, I harvest it in June, then maize goes straight in and I pull that by late September. Same ground, two crops, one year. My wife and I can manage it ourselves.\n\nFor wheat, I don't mess around with unfamiliar seeds. I'll use the improved variety the village seed shop carries \u2014 not the most expensive, but I've used it before and it yields reliably. I put down compound fertilizer at planting as base, then spread urea at jointing. Three irrigations: the winter water before freeze, jointing, and heading. Two pesticide passes \u2014 one herbicide early on, one fungicide spray around heading when powdery mildew shows up. I do rotary tillage after I harvest the maize stubble to work it in.\n\nFor maize, I buy hybrid seed \u2014 everyone here does now, the yield difference is too big to ignore. I plant it right after wheat harvest in June, no time to waste. I put base fertilizer down at planting and topdress at tasseling. Summer rains help but I pump from the well at least twice \u2014 once around big bell stage, once if August turns dry. Two pesticide applications, one for fall armyworm if it shows up, one general spray.\n\nI don't experiment much. At my age, with just two of us, I need predictable crops, not surprises.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 55-year-old farmer with 35 years of experience on 9 mu in Quzhou, Hebei, running the standard wheat-maize double-cropping rotation on the same land. Wheat uses an improved variety with moderate fertilizer split between basal and topdressing at jointing, three well irrigations at critical stages, and two pesticide passes for weeds and powdery mildew, with rotary tillage of maize residue before planting. Maize uses hybrid seed planted immediately after wheat harvest, fertilized at planting and tasseling, supplementally irrigated twice from the well during dry periods, with two pesticide applications targeting fall armyworm and general pests. Decisions reflect conservative, experience-based practices aimed at reliable yields rather than maximum input or experimental techniques, suited to a two-person household managing the farm themselves.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 55-year-old farmer with 35 years of experience on 9 mu in Quzhou, Hebei, running the standard wheat-maize double-cropping rotation on the same land. Wheat uses an improved variety with moderate fertilizer split between basal and topdressing at jointing, three well irrigations at critical stages, and two pesticide passes for weeds and powdery mildew, with rotary tillage of maize residue before planting. Maize uses hybrid seed planted immediately after wheat harvest, fertilized at planting and tasseling, supplementally irrigated twice from the well during dry periods, with two pesticide applications targeting fall armyworm and general pests. Decisions reflect conservative, experience-based practices aimed at reliable yields rather than maximum input or experimental techniques, suited to a two-person household managing the farm themselves."
+  },
+  "elapsed_seconds": 37.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "QZ_MZ_4",
+  "tier": 2,
+  "provider": "claude"
+}

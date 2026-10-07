@@ -1,0 +1,40 @@
+{
+  "raw_response": "I never went to school, but I've been farming these fields for 20 years and I know what works. My farm is almost 380 mu \u2014 way too much for four people to handle alone \u2014 so I hire workers for picking cotton, spraying, and running the irrigation. I have my own well, but pumping water costs diesel, so I don't irrigate more than I have to. Last year I planted about 300 mu of cotton and the rest in spring maize, and it paid off, so I'm doing the same this year. I don't trust new ideas unless my cousin or the big farmer down the road tries them first and shows me the results. Cotton is my main crop \u2014 it's what brings in the money.\n\nFor cotton, I sow in mid-April with variety 802, same seed my neighbor uses. His cotton always grows strong. I rotary till the land first \u2014 cotton needs a soft bed. At planting I put down about one bag of compound fertilizer per mu, roughly 30 kg, and when the plants start flowering I broadcast another topdressing of urea. I irrigate twice from my well, once at flowering and once when the bolls are filling. Pumping is expensive but if it doesn't rain the yield drops hard. I spray about 15 times total for insects and weeds \u2014 bollworm is my worst enemy. I hire a crop-dusting plane for the big fields and workers with backpack sprayers for the edges. I expect around 550 kg per mu, same as last year.\n\nFor maize, I plant hybrid Denghai 605 in early May. Half the village uses that seed and nobody complains. I rotary till that land too since it's spring maize \u2014 I have time, unlike summer maize after wheat where you have to rush. I apply compound fertilizer at planting and topdress with urea when the plants are knee-high. Two irrigations should do it, and I spray about four times total for insects and weeds. Maize is easier than cotton. If the weather holds, I should get about 1400 kg per mu.\n\nI don't try to save money on fertilizer or water if it means risking the crop. A bad year hurts more than a good year helps, and I have workers to pay.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 300,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 15,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"spring\",\n      \"area_mu\": 79.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1400\n    }\n  ],\n  \"reasoning_summary\": \"I farm almost 380 mu with my family of four, so I hire workers for labor-heavy tasks like cotton picking and spraying. I split the land into about 300 mu of cotton and 80 mu of spring maize, same as last year, because this split has worked for me and my neighbors. I rely on experience and what I see other farmers doing \u2014 I use improved cotton variety 802 and hybrid maize Denghai 605, rotary till both crops, apply compound fertilizer at planting and urea topdressing later, and irrigate twice from my well. I spray cotton heavily for bollworm and weeds, and maize lightly. I don't take risks on inputs because losing a crop would mean I can't pay my hired labor.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 300,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 15,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "spring",
+        "area_mu": 79.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1400
+      }
+    ],
+    "reasoning_summary": "I farm almost 380 mu with my family of four, so I hire workers for labor-heavy tasks like cotton picking and spraying. I split the land into about 300 mu of cotton and 80 mu of spring maize, same as last year, because this split has worked for me and my neighbors. I rely on experience and what I see other farmers doing \u2014 I use improved cotton variety 802 and hybrid maize Denghai 605, rotary till both crops, apply compound fertilizer at planting and urea topdressing later, and irrigate twice from my well. I spray cotton heavily for bollworm and weeds, and maize lightly. I don't take risks on inputs because losing a crop would mean I can't pay my hired labor."
+  },
+  "elapsed_seconds": 195.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

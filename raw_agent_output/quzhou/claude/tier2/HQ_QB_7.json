@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land in Quzhou for half a century. I know its rhythms \u2014 the dry springs, the summer rains that come but aren't enough, the sandy loam that drains fast and needs feeding. At my age, my son helps when he's back from the city, but mostly I manage the 8 mu myself. I keep it simple: 5 mu in the wheat-maize rotation I've always done, and 3 mu of cotton for cash income.\n\n**Wheat:** I'll plant the usual 5 mu this October with the Jimai 22 variety \u2014 I switched to it ten years ago and the yield has been steady. I'll rotary-till after maize harvest, apply base fertilizer, then top-dress at jointing. Three irrigations: the winter water in December to protect roots, the jointing water in April, and a heading water in May if it's dry, which it usually is. Two pesticide applications \u2014 one for powdery mildew, one for aphids near heading.\n\n**Maize:** Same 5 mu right after wheat harvest in June. I no-till and direct-seed hybrid Zhengdan 958 \u2014 saves my back and holds soil moisture. One base application, one topdress at the big flare stage. Two irrigations: one at establishment if it doesn't rain, one at silking. It almost always rains enough in July and August, but I've been burned before. Two pesticide sprays \u2014 mainly for corn borer.\n\n**Cotton:** The 3 mu on the south end of my plot. I've grown Bt hybrid cotton for years, so I can cut way back on insecticide. Still need 4 irrigations \u2014 cotton is thirsty. I plough this field every year to turn in the old stalks. Four pesticide applications still, mostly for spider mites and aphid pressure in dry years.\n\nI won't experiment with anything new this year. At 76, with only two of us at home and the labor costs what they are, I optimize for reliability, not maximum yield.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 560\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I run a standard wheat-maize double-crop rotation on 5 mu and dedicate the remaining 3 mu to cotton as a cash crop. With 50 years of experience in Quzhou's semi-arid conditions and well irrigation available, I use improved wheat and hybrid maize and cotton varieties for reliable yields without excessive risk. Fertilizer rates reflect local soil conditions and typical response curves I have observed over decades. Irrigation scheduling follows the critical growth stages for each crop \u2014 winter water and jointing water for wheat, silking water for maize, and four irrigations spread across the long cotton season. Tillage is rotary for wheat fields to conserve time and moisture, no-till for maize to ease labor after the rushed wheat harvest, and ploughed for cotton to manage residue. With limited household labor and family members working off-farm, I prioritize a manageable, proven system over higher-input strategies that could strain my capacity.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 560
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I run a standard wheat-maize double-crop rotation on 5 mu and dedicate the remaining 3 mu to cotton as a cash crop. With 50 years of experience in Quzhou's semi-arid conditions and well irrigation available, I use improved wheat and hybrid maize and cotton varieties for reliable yields without excessive risk. Fertilizer rates reflect local soil conditions and typical response curves I have observed over decades. Irrigation scheduling follows the critical growth stages for each crop \u2014 winter water and jointing water for wheat, silking water for maize, and four irrigations spread across the long cotton season. Tillage is rotary for wheat fields to conserve time and moisture, no-till for maize to ease labor after the rushed wheat harvest, and ploughed for cotton to manage residue. With limited household labor and family members working off-farm, I prioritize a manageable, proven system over higher-input strategies that could strain my capacity."
+  },
+  "elapsed_seconds": 53.5,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_7",
+  "tier": 2,
+  "provider": "claude"
+}

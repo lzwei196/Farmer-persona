@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 12 mu in Quzhou \u2014 our soil is decent loam but getting a bit tired after so many years of double cropping. I read the county extension pamphlets and talk to the input dealer in town, so I try to balance NPK rather than just dumping urea like some neighbors do. Last year my wheat gave me about 500 kg/mu and maize about 600 kg/mu, so I will keep roughly the same plan but trim nitrogen slightly \u2014 urea went up again this spring and I can see no yield gain from pushing past 22-23 kg N on wheat.\n\nFor winter wheat, I will sow improved semi-dwarf varieties like Jimai 22 in early October, about 15 kg seed per mu. I will put down a compound fertilizer (15-15-15) as base at two bags per mu, then topdress urea at jointing. Total N around 22 kg/mu, P2O5 about 9 kg, K2O about 7. I irrigate four times \u2014 before winter, jointing, heading, grain filling \u2014 since well water is available but electricity costs something. Pesticide: one herbicide in spring, one for aphids/powdery mildew, sometimes a third at heading for fusarium if it rains.\n\nFor summer maize, I direct-seed a hybrid like Zhengdan 958 or Denghai right after wheat harvest, no-till to save time and moisture. N around 20 kg/mu split between seeding and big-trumpet stage, lighter P and K since wheat residue returns some. Summer rains usually cover water needs \u2014 one irrigation if July is dry. Two pesticide rounds: corn borer and armyworm.\n\nTillage: I plough before wheat every 2-3 years to break compaction, otherwise rotary. No-till for maize into wheat stubble.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I stick close to last year's wheat-maize rotation since it gave me 500 and 600 kg/mu. Urea prices are up, so I trim N slightly on wheat to 22 kg/mu with balanced 15-15-15 base plus jointing topdress, four irrigations from my well. Maize goes no-till into wheat stubble with hybrid seed, 20 kg N split-applied, relying on summer rain with one backup irrigation. Pesticide held to three rounds on wheat, two on maize \u2014 only what I actually see pressure for. Plough before wheat this year because the field felt compacted last autumn.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I stick close to last year's wheat-maize rotation since it gave me 500 and 600 kg/mu. Urea prices are up, so I trim N slightly on wheat to 22 kg/mu with balanced 15-15-15 base plus jointing topdress, four irrigations from my well. Maize goes no-till into wheat stubble with hybrid seed, 20 kg N split-applied, relying on summer rain with one backup irrigation. Pesticide held to three rounds on wheat, two on maize \u2014 only what I actually see pressure for. Plough before wheat this year because the field felt compacted last autumn."
+  },
+  "elapsed_seconds": 33.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_XST_10",
+  "tier": 3,
+  "provider": "claude"
+}

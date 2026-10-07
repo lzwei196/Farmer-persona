@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been working this land for 55 years. I know Quzhou's soil, I know the seasons here, and I know what this wheat-maize rotation needs. My farm is small \u2014 3 mu \u2014 and there are only two of us in the household now. I have to be careful about labor because I can't do as much heavy work as I used to. I hire machinery for plowing and harvesting these days. That's just the reality at my age.\n\n**Wheat (winter crop, planted October, harvested June):**\nThe whole 3 mu goes to wheat over winter. I use the improved variety the local seed station sells \u2014 I've used it for years and it performs reliably here. I apply a full base fertilizer at planting: urea and phosphate mixed in. I split my nitrogen \u2014 put most down as base, then topdress at the jointing stage. This area is dry, so I irrigate at sowing if soil is too dry, then at tillering, jointing, and heading \u2014 four times usually. I'll do two pesticide passes: one herbicide in winter when weeds come up, one fungicide spray in spring when powdery mildew risk gets high. For tillage I use rotary before planting, hired machine comes and does it.\n\n**Maize (summer crop, planted June, harvested October):**\nRight after wheat harvest, I turn the field around fast and plant hybrid maize seed \u2014 the same hybrid I've been buying from the county seed company for years. The season is short so I use rotary tillage or sometimes no-tillage to get seed in the ground quickly. Maize gets heavy nitrogen \u2014 I base-apply some with phosphorus, then topdress at the 6-8 leaf stage which is the critical time. Summer rains help but I still irrigate 3 times: at planting if dry, at tasseling, and at grain fill. Two pesticide applications \u2014 one for stem borer, one combined herbicide early on.\n\nI'm not changing anything dramatic this year. At my age, stability matters more than experimenting.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I manage the same 3 mu in a wheat-maize double crop rotation, which is what everyone in Quzhou does. For wheat I rely on an improved variety, apply nitrogen in split doses at base and jointing, irrigate four times across the long winter season, and control weeds and powdery mildew with two pesticide passes. For maize I use hybrid seed, topdress nitrogen heavily at the 6-8 leaf stage when the crop demands it most, irrigate three times through summer, and manage stem borer and weeds with two applications. I hire machinery for all tillage and harvest because at 78 I cannot manage that work myself. I keep the same practices I know work on this soil rather than risk a bad harvest trying something new.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I manage the same 3 mu in a wheat-maize double crop rotation, which is what everyone in Quzhou does. For wheat I rely on an improved variety, apply nitrogen in split doses at base and jointing, irrigate four times across the long winter season, and control weeds and powdery mildew with two pesticide passes. For maize I use hybrid seed, topdress nitrogen heavily at the 6-8 leaf stage when the crop demands it most, irrigate three times through summer, and manage stem borer and weeds with two applications. I hire machinery for all tillage and harvest because at 78 I cannot manage that work myself. I keep the same practices I know work on this soil rather than risk a bad harvest trying something new."
+  },
+  "elapsed_seconds": 46.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_7",
+  "tier": 2,
+  "provider": "claude"
+}

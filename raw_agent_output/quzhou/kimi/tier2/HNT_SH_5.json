@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am a 45-year-old farmer in Quzhou County. I have farmed this land for 30 years, and my 3.5 mu is all I have. My household has six people, and some of my family work off-farm, so our income does not depend entirely on these few mu. That means I will farm carefully\u2014I will not cut corners on inputs, but I will not waste money chasing unrealistic yields either. I know this soil, I know the weather patterns on the North China Plain, and I have well water when I need it.\n\nMy wheat went into the ground last October, as it always does. I sowed an improved local variety\u2014something with decent resistance and stable yield, not the most expensive hybrid seed, but better than traditional landrace seed. Now it is early spring, and the wheat is waking up. I will topdress urea at green-up to boost tillering. I will irrigate three times this spring: once at green-up after fertilizing, once at jointing, and once at heading. Three times is enough. I will spray twice: once with herbicide to control weeds, and once with fungicide or insecticide if I see disease or aphids. I expect around 450 kg per mu from the wheat if the weather cooperates. That is a solid, realistic yield for this area.\n\nAfter wheat harvest in early June, there is no time to waste. I will hire a machine for rotary tillage immediately and plant hybrid maize seed the same day or the next. Summer maize has a short growing season here, so every day matters. I will apply compound fertilizer at sowing, then topdress nitrogen at the big trumpet stage when the plants need it most. For maize, I will irrigate twice\u2014once if the soil is dry at sowing, and once at flowering if the summer rains are insufficient. I will spray twice: herbicide after sowing, and insecticide for corn borer control if I see damage. Hybrid maize on this land should give me about 550 kg per mu.\n\nI till with rotary tillage because it is fast, affordable with hired machinery, and works well for double-cropping where timing is tight. With some family away working, I cannot afford to manage more complicated tillage systems by myself.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"With only 3.5 mu and partial off-farm household income, I prioritize reliable, labor-efficient practices over maximum yield chasing. I use improved wheat and hybrid maize seeds, apply moderate fertilizer rates, irrigate when critical growth stages need it, and rely on rotary tillage to meet the tight scheduling demands of the wheat-maize double-cropping system on the North China Plain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "With only 3.5 mu and partial off-farm household income, I prioritize reliable, labor-efficient practices over maximum yield chasing. I use improved wheat and hybrid maize seeds, apply moderate fertilizer rates, irrigate when critical growth stages need it, and rely on rotary tillage to meet the tight scheduling demands of the wheat-maize double-cropping system on the North China Plain."
+  },
+  "elapsed_seconds": 35.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_5",
+  "tier": 2,
+  "provider": "kimi"
+}

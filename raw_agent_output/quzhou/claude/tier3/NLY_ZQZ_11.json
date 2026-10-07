@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am thinking about my land this year. I have 7 mu, and I always plant wheat in winter and maize in summer. That is what we do here in Quzhou. My father did it, my neighbors do it, I do it.\n\nLast year wheat gave me about 450 kg per mu, maize about 550 kg per mu. Not bad. I will do mostly the same this year because changing too much is dangerous. Six mouths to feed.\n\nFor wheat: I buy the improved seed from the dealer in town \u2014 everyone around me uses it now, the old seed gives less. I put two bags of compound fertilizer (NPK) before planting, that is about 50 kg per mu, plus I top-dress with urea in spring when the wheat wakes up, maybe 15 kg per mu of urea. So nitrogen comes to around 18-20 kg per mu total. Phosphorus maybe 8 kg, potassium 6 kg \u2014 the compound fertilizer has all three. I irrigate from my well \u2014 winter water once before freeze, then spring water at jointing, and once more at grain filling. Three times. Pesticide twice \u2014 once for aphids, once for the rust if I see it. I plough the field after maize harvest, that is how we do it.\n\nFor maize: I plant hybrid seed, no question, everyone does. After wheat harvest I do no-tillage planting \u2014 saves time because I need to get the maize in fast. Fertilizer \u2014 I put compound at planting and urea at big trumpet stage. Nitrogen around 22 kg per mu, maize eats a lot of nitrogen. Phosphorus 6 kg, potassium 5 kg. Irrigate twice from the well if the rain is not enough. Pesticide once or twice for the borer.\n\nI would rather put a little extra fertilizer than lose yield. Fertilizer costs money but a bad harvest is worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm 7 mu wheat-maize rotation like my neighbors in Quzhou. I stick close to what worked last year \u2014 improved wheat seed, hybrid maize seed, compound fertilizer at planting plus urea top-dress. I put a bit extra nitrogen because losing yield hurts more than spending on fertilizer. Three irrigations for wheat from my well, two for maize if rain is short. Plough after maize, no-tillage for maize planting to save time. Expecting 450 kg wheat and 550 kg maize per mu, same as last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm 7 mu wheat-maize rotation like my neighbors in Quzhou. I stick close to what worked last year \u2014 improved wheat seed, hybrid maize seed, compound fertilizer at planting plus urea top-dress. I put a bit extra nitrogen because losing yield hurts more than spending on fertilizer. Three irrigations for wheat from my well, two for maize if rain is short. Plough after maize, no-tillage for maize planting to save time. Expecting 450 kg wheat and 550 kg maize per mu, same as last year."
+  },
+  "elapsed_seconds": 20.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_ZQZ_11",
+  "tier": 3,
+  "provider": "claude"
+}

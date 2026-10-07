@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is 2.6 mu, just a small piece. Me and my wife are old now, only two of us at home. But I have been doing wheat and maize for 40 years, I know this land.\n\nI will do the same as last year. Why change? What works, works. My neighbors all do about the same.\n\n**For wheat (winter):**\nI sow in early October after maize comes off. I buy the improved seed from the dealer in town \u2014 about 15 jin per mu, I sow a bit thick because at my age I worry some seeds don't come up. \n\nBefore sowing I put down compound fertilizer, the 15-15-15 kind, two bags for my 2.6 mu \u2014 that is 100 jin, so about 40 jin per mu. Then in spring when the wheat is greening up, I put urea, one bag (100 jin) across all my land with the first spring water. That way the wheat grows strong and the ear is full. If I put too little, the ear is small, then no grain \u2014 that is a real loss. Fertilizer costs money but losing the harvest is worse.\n\nWater: I pump from the well. Once before winter (dong shui), once at jointing with the urea, once at heading. Three times is enough if the rain comes. If dry, four times.\n\nSpray: once for aphids and yellow rust around April, maybe twice if the bugs are bad. I mix herbicide with it when I can.\n\nPlough: I hire the tractor man, he does rotary tilling. Cheaper than deep plough and fast.\n\nI hope for 1000 jin per mu \u2014 that is 500 kg. Some years better, some worse.\n\n**For maize (summer):**\nRight after wheat harvest in June I sow hybrid maize \u2014 Zhengdan or Xianyu type, whatever the dealer has that my neighbor planted well. No-till, just drill it in the wheat stubble, saves time and the old body.\n\nBase fertilizer with sowing: compound 15-15-15, about 50 jin per mu. Then at big trumpet stage (around July), I side-dress urea, 30 jin per mu. Maize is a hungry crop, eats more than wheat.\n\nIrrigation: summer has rain usually. One watering at sowing to get it up, maybe one at tasseling if dry. Two times.\n\nSpray once for corn borer, sometimes twice.\n\nI expect 1200 jin per mu \u2014 around 600 kg. Maize yields more than wheat here.\n\nLet me figure the nutrients:\n- Wheat: compound 40 jin/mu (6 jin N, 6 P, 6 K) + urea ~38 jin/mu \u00d7 46% N \u2248 17.5 jin N. Total N \u2248 23.5 jin = ~12 kg N/mu. Hmm, let me recount \u2014 one bag urea (100 jin = 50 kg) across 2.6 mu = ~19 kg urea/mu \u00d7 0.46 = 8.7 kg N. Plus compound 40 jin/mu = 20 kg \u00d7 0.15 = 3 kg N. Total ~12 kg N/mu. That seems low. Most folks here push more. Let me say I use one and a half bags urea \u2014 that is more honest. 75 kg urea / 2.6 mu = ~29 kg urea/mu \u00d7 0.46 = 13 kg N, plus 3 kg from compound = 16 kg N/mu.\n- Actually farmers here often apply 25-30 kg N/mu total on wheat. Let me be realistic \u2014 I'd rather have extra.\n\nFor maize: 50 jin compound/mu = 25 kg \u00d7 0.15 = 3.75 kg N; plus 30 jin urea/mu = 15 kg \u00d7 0.46 = 6.9 kg N. Total ~11 kg N/mu. Again low. Real farmers push 20+ kg N/mu on maize. Let me bump urea side-dress to 50 jin/mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I am 70 and my land is only 2.6 mu, so I do what I always do \u2014 same as last year, same as my neighbors. I use compound 15-15-15 as base for both crops and urea as topdressing, a bit more on maize because it grows big and eats more. I would rather spend a little extra on fertilizer than see a thin ear at harvest \u2014 a lost harvest cannot be recovered, wasted fertilizer is only money. I use improved wheat seed from the dealer and hybrid maize, whatever variety did well for my neighbor last year. For wheat I water three times from the well; for maize usually summer rain is enough, I only water one or two times. I spray for aphids and corn borer when I see them. I hire the tractor for rotary tilling before wheat, and no-till the maize right into the wheat stubble to save my old back and some money.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I am 70 and my land is only 2.6 mu, so I do what I always do \u2014 same as last year, same as my neighbors. I use compound 15-15-15 as base for both crops and urea as topdressing, a bit more on maize because it grows big and eats more. I would rather spend a little extra on fertilizer than see a thin ear at harvest \u2014 a lost harvest cannot be recovered, wasted fertilizer is only money. I use improved wheat seed from the dealer and hybrid maize, whatever variety did well for my neighbor last year. For wheat I water three times from the well; for maize usually summer rain is enough, I only water one or two times. I spray for aphids and corn borer when I see them. I hire the tractor for rotary tilling before wheat, and no-till the maize right into the wheat stubble to save my old back and some money."
+  },
+  "elapsed_seconds": 45.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_8",
+  "tier": 3,
+  "provider": "claude"
+}

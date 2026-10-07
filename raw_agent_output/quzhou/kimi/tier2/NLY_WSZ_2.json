@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 7.5 mu in Quzhou County for 30 years, and I know every inch of this land. With only my wife and me in the household, labor is my biggest constraint. Cotton can fetch a good price, but it is backbreaking work\u2014endless spraying and hand-picking\u2014so I limit it to 2.5 mu, which is all we can manage. The remaining 5 mu stays in my wheat-maize rotation. That is my safest bet: it is reliable, the combine and no-till seeder handle most of the heavy work, and I have my own well so I am not at the mercy of the weather.\n\nRight now it is early spring. My winter wheat went into the ground last October and is greening up. I will topdress it with urea when it revives, then irrigate three times from the well\u2014at green-up, at jointing, and once at grain filling. I always do rotary tillage before wheat sowing. For pests, I spray twice for insects, once for weeds, and once for fungus; that usually keeps the field clean. I sow improved varieties like Jimai or Luyuan, and if the season is kind I expect about 500 kg per mu.\n\nFor cotton, I will sow in late April after rotary tillage. I use hybrid seed because it gives bigger bolls and better resistance. Cotton needs plenty of fertilizer, especially phosphorus and potassium, so I lay down compound fertilizer before sowing and topdress later. I irrigate twice during the hot months using the well. The real headache is insects\u2014bollworm, aphids, and mites\u2014so I spray whenever I see damage, easily a dozen times or more, and I use regulators to keep the plants from getting too tall. I hope for 275 kg per mu of seed cotton.\n\nAfter I cut the wheat in early June, there is no time to waste. I sow summer maize directly into the wheat stubble with no tillage\u2014I have a no-till seeder and the soil moisture is too precious to disturb. I use Denghai 605 hybrid seed, which is tried and true around here. Maize needs less fertilizer than wheat: some compound at sowing and urea at jointing. I irrigate twice, at tasseling and grain filling, and spray twice for insects and once for weeds. That should give me about 550 kg per mu.\n\nThis plan is not fancy, but it has put food on my table for three decades.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 11,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 9,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 16,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"With only two people in my household, I limit labor-intensive cotton to 2.5 mu and keep 5 mu in the mechanized wheat-maize rotation. My well lets me irrigate when needed. I manage wheat with rotary tillage, three irrigations, and four pesticide applications; follow it immediately with no-till hybrid maize; and tend my spring cotton with heavy pest management and two irrigations. These practices are grounded in 30 years of experience on this land.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 11,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 9,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 16,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "With only two people in my household, I limit labor-intensive cotton to 2.5 mu and keep 5 mu in the mechanized wheat-maize rotation. My well lets me irrigate when needed. I manage wheat with rotary tillage, three irrigations, and four pesticide applications; follow it immediately with no-till hybrid maize; and tend my spring cotton with heavy pest management and two irrigations. These practices are grounded in 30 years of experience on this land."
+  },
+  "elapsed_seconds": 190.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_2",
+  "tier": 2,
+  "provider": "kimi"
+}

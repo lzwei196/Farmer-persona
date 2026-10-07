@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 71 years old. My bones ache in the morning, but I still get up before dawn. I have been farming this land for 55 years \u2014 longer than most people in the village have been alive. I only went to primary school, so I don't read books about farming. I watch my fields, I talk to my neighbors, and I do what has worked before. Last year the wheat did about 900 jin per mu, the maize about the same, and the cotton gave me 500 jin per mu on the two mu I planted it. That was enough for me and my wife to get by. We are only two people now, and our children work in the city. I cannot afford to gamble with new methods.\n\nI have 5 mu. Three mu I do wheat-maize double cropping \u2014 that is my backbone. Two mu I plant cotton for cash. I have a small rotary tiller, and there is a tube well nearby for irrigation.\n\nFor the **winter wheat** on 3 mu: I will rotary till the land in early October, just like every year. I buy improved wheat seed from the supply shop in town \u2014 I don't save my own seed anymore because the yield drops. Before sowing, I spread about 100 jin of compound fertilizer per mu, the 15-15-15 kind. I also put down about 40 jin per mu of urea as a base. That has always been enough. I irrigate four times: at sowing, at wintering, at jointing, and once more when the grain is filling. I spray twice for insects, twice for weeds, and if the spring is damp and I see rust, I spray fungicide once more. I expect about 900 jin per mu this year if the weather holds \u2014 around 450 kg.\n\nFor **summer maize** on the same 3 mu: As soon as the wheat is cut in early June, I plant the maize. I use Denghai 605 hybrid seed \u2014 it costs a bit more but the neighbors all say it grows fast and strong. There is no time to till between wheat and maize; I plant directly into the stubble, no-tillage. I put about 80 jin per mu of compound fertilizer at planting, the special maize kind that is higher in nitrogen. I irrigate twice: once when the tassels come out and once when the grain is filling. The summer rains usually help. I spray twice for insects and twice for weeds. I expect about 900 jin per mu, around 450 kg.\n\nFor **cotton** on 2 mu: I rotary till in late April and plant improved cotton seed. Cotton needs a lot of spraying for bollworms \u2014 I spray about 18 times from June to August, almost every week when the worms are bad. I also spray herbicide once. I put about 100 jin per mu of 15-15-15 compound fertilizer before planting. I irrigate twice, at flowering and when the bolls are forming. I expect about 500 jin per mu, around 250 kg of seed cotton.\n\nI thought about putting more fertilizer on the wheat, but fertilizer is expensive and I am old. I would rather apply a safe amount that I know works than risk running out of money for medicine or food. My neighbor down the road, who is also old and has primary schooling, does almost exactly this, and his fields look fine. That is good enough for me.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 18,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 5 mu for 55 years and I stick with what I know. Three mu goes to wheat-maize double cropping because it feeds us and brings steady income, and two mu to cotton for extra cash. I am 71 with only my wife to help, so I cannot take risks or work extra land. I use improved wheat seed, hybrid maize seed, and improved cotton seed. I rotary till wheat and cotton, but maize is no-tillage because the window between wheat harvest and maize planting is too tight. I apply compound fertilizer and some urea for wheat, compound for maize and cotton. I irrigate wheat four times, maize twice, and cotton twice from the tube well. Cotton needs many insecticide sprays for bollworms, about 18 times, while wheat and maize need fewer. My yields are based on what I got last year and what my neighbors get: about 450 kg per mu for wheat and maize, and 250 kg per mu for seed cotton. I keep things conservative because at my age, a bad year would hurt too much.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 4,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 18,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I have farmed these 5 mu for 55 years and I stick with what I know. Three mu goes to wheat-maize double cropping because it feeds us and brings steady income, and two mu to cotton for extra cash. I am 71 with only my wife to help, so I cannot take risks or work extra land. I use improved wheat seed, hybrid maize seed, and improved cotton seed. I rotary till wheat and cotton, but maize is no-tillage because the window between wheat harvest and maize planting is too tight. I apply compound fertilizer and some urea for wheat, compound for maize and cotton. I irrigate wheat four times, maize twice, and cotton twice from the tube well. Cotton needs many insecticide sprays for bollworms, about 18 times, while wheat and maize need fewer. My yields are based on what I got last year and what my neighbors get: about 450 kg per mu for wheat and maize, and 250 kg per mu for seed cotton. I keep things conservative because at my age, a bad year would hurt too much."
+  },
+  "elapsed_seconds": 215.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_12",
+  "tier": 2,
+  "provider": "kimi"
+}

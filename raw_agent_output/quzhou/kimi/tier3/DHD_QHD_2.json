@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 3 mu for 18 years, since I was 22. I know every corner of this land. My family has four people \u2014 my husband and my son both work in Handan city, so I am the one doing most of the farm work. That is why I keep things simple and practical. I split my 3 mu into two parts: 2 mu for wheat-maize rotation, and 1 mu for cotton. That is what I have always done, and it works.\n\nFor the wheat on 2 mu: last year I got about 460 jin per mu. This year I will plant the same improved seed I bought from the supply shop \u2014 I just ask for the white bag my neighbor used. I put 80 jin of compound fertilizer per mu as base, then top dress with 30 jin of urea split twice. I irrigate three times: at green-up, jointing, and flowering. Two sprays: herbicide in spring, and one fungicide if the weather turns wet. I use rotary tillage before planting in October.\n\nFor the summer maize on the same 2 mu: I plant hybrid maize seed right after wheat harvest, around June 10th. I do not till much \u2014 just plant directly into the wheat stubble to save time and labor. Base fertilizer is 60 jin of compound fertilizer per mu, then 20 jin of urea at the trumpet stage. I irrigate twice \u2014 once when it is very dry in July, and once at filling stage. Two pesticide sprays: one for weeds, one for insects if I see them.\n\nFor cotton on 1 mu: I plough deeply in April because cotton roots need loose soil. I use an improved cotton seed. Base fertilizer is 80 jin compound fertilizer per mu, then I side-dress urea twice, about 30 jin total. Cotton needs more medicine \u2014 I spray four times for bollworm and aphids. I irrigate three times: at budding, flowering, and when the bolls open.\n\nI watch my costs carefully. With only 3 mu, every bag of fertilizer matters. But I learned long ago that starving the crops is false economy. Last year I spent about 180 yuan per mu on fertilizer for wheat and got a decent harvest. If I cut back too much and lose yield, that is a disaster. I follow what my neighbors do \u2014 they all apply about the same amounts, and nobody is trying anything strange. Change is risky when your land is this small.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 270\n    }\n  ],\n  \"reasoning_summary\": \"I split my 3 mu into 2 mu for wheat-maize rotation and 1 mu for cotton, same as always. For wheat I use improved seed with rotary tillage, 80 jin compound fertilizer base plus 30 jin urea top-dressed twice, three irrigations, and two sprays. For maize I plant hybrid seed directly into wheat stubble with minimal tillage, 60 jin compound base plus 20 jin urea at trumpet stage, two irrigations and two sprays. Cotton gets deep ploughing, improved seed, 80 jin compound base plus 30 jin urea, three irrigations, and four pesticide sprays for bollworm. I follow my neighbors' rates because with only 3 mu and most labor on me alone, I cannot afford to experiment or risk yield loss from under-fertilizing.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 270
+      }
+    ],
+    "reasoning_summary": "I split my 3 mu into 2 mu for wheat-maize rotation and 1 mu for cotton, same as always. For wheat I use improved seed with rotary tillage, 80 jin compound fertilizer base plus 30 jin urea top-dressed twice, three irrigations, and two sprays. For maize I plant hybrid seed directly into wheat stubble with minimal tillage, 60 jin compound base plus 20 jin urea at trumpet stage, two irrigations and two sprays. Cotton gets deep ploughing, improved seed, 80 jin compound base plus 30 jin urea, three irrigations, and four pesticide sprays for bollworm. I follow my neighbors' rates because with only 3 mu and most labor on me alone, I cannot afford to experiment or risk yield loss from under-fertilizing."
+  },
+  "elapsed_seconds": 44.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_2",
+  "tier": 3,
+  "provider": "kimi"
+}

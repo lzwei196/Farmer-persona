@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed this land for 60 years. I never went to school, but I know every ridge in these fields. My father showed me how to hold the plough, and I learned the rest by watching what works and copying the men in the village who always have a full barn.\n\nI have 10.2 mu. I plant wheat on 9.5 mu in the autumn, and after we cut the wheat in June, I put maize on that same 9.5 mu. The other 0.7 mu near the well I keep for stevia. My wife and I are the only ones in the house now, so when the wheat must come off and the corn must go in during the same hot week, I hire two young men from the village for three days. If you miss that window, the corn will not ripen before frost.\n\nFor the wheat, I plough the field deep after the maize stalks are cleared. I buy the improved wheat seed from the shop in town \u2014 the same kind Old Zhang uses, the one in the red bag. Before sowing, I spread one bag of compound fertilizer on each mu; those are 50-jin bags, the ones with three numbers on the front. In the spring, when the wheat starts to turn green, I topdress with 40 jin of urea on each mu. Fertilizer is dear \u2014 a bag of compound is 160 yuan and urea is 120 yuan now \u2014 but I would rather spend the money than see the wheat go yellow. A bad harvest means buying grain to eat, and that is a disaster; wasting a handful of fertilizer is just a cost. I water three times with the well pump: once before winter so the cold does not kill it, once when the stems shoot up, and once when the grain is filling in the heads. I spray pesticide twice \u2014 once when the aphids come, and once for that white dust on the leaves. If the wind and rain treat us fair, I expect 550 jin of wheat per mu.\n\nFor the summer maize, I plant hybrid seed right after the wheat harvest. Everyone buys hybrid now because the old seed does not grow the same anymore. There is no time to plough, so I plant directly into the wheat stubble. I put one bag of compound fertilizer in the row at planting for each mu, and when the corn is knee-high I spread 50 jin of urea per mu. I irrigate twice: once right after planting if the soil is dry, and once when the tassels are coming out. I spray twice for worms. Last year I got 600 jin per mu, and the year before I got 700, so I think 650 jin is a safe number to count on.\n\nThe stevia is on 0.7 mu. I rotary-till that small patch myself with the hand tractor. I plant cuttings I saved from last year \u2014 they are the traditional kind, not those new fancy ones the dealer tries to push. I put one full bag of compound fertilizer on that whole patch, and later I add half a bag of urea. I water it four times through the hot months with the well pump. I spray three times when I see bugs chewing the leaves. I hope for 250 jin of dried leaves. It is a cash crop, so I spend a bit more care on it.\n\nI watch what my neighbors do. If Old Zhang puts on 50 jin of urea, I put on 50 jin too. When I am unsure, I do what I did the year before. Change is risky, and at 72 years old I cannot afford to gamble with the land that feeds us.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 0.7,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I base my decisions on what I did last year and what my neighbors do, because change is risky and I cannot afford a failed crop. I plant improved wheat in winter and hybrid maize in summer on 9.5 mu, using one bag of compound fertilizer per mu at planting and generous urea topdressing later, with three irrigations for wheat and two for maize, because losing yield is worse than wasting some fertilizer. I keep 0.7 mu of stevia near the well, giving it heavy fertilizer and four irrigations since it brings cash. I hire labor for harvest and planting when time is tight, but I do most work myself.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 0.7,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I base my decisions on what I did last year and what my neighbors do, because change is risky and I cannot afford a failed crop. I plant improved wheat in winter and hybrid maize in summer on 9.5 mu, using one bag of compound fertilizer per mu at planting and generous urea topdressing later, with three irrigations for wheat and two for maize, because losing yield is worse than wasting some fertilizer. I keep 0.7 mu of stevia near the well, giving it heavy fertilizer and four irrigations since it brings cash. I hire labor for harvest and planting when time is tight, but I do most work myself."
+  },
+  "elapsed_seconds": 277.1,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DF_7",
+  "tier": 3,
+  "provider": "kimi"
+}

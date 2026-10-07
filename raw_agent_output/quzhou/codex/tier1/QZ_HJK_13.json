@@ -1,0 +1,40 @@
+{
+  "raw_response": "I will keep my land in the local winter wheat and summer maize rotation. In Quzhou, this is still the steadiest grain pattern, the summer rain matches maize well, and winter wheat can still make good use of irrigation and fertilizer. I would not switch into cotton or vegetables this year because I am 58, I want a simpler system with lower labor pressure, and I would rather chase stable grain yield than take on more market and management risk. I will run one 10 mu block through the full year: winter wheat first, then summer maize on the same land after harvest. For wheat, I will use an improved variety, put more water into the dry season, and keep fertilizer moderate instead of pushing too hard. For maize, I will use a hybrid, rely mainly on summer rainfall, and keep one irrigation in reserve. I will also keep pesticide use controlled and practical, and I will use rotary tillage for wheat and no-tillage for maize so I can turn the field around fast after the wheat harvest. This matches what has worked locally in Quzhou, where wheat-maize rotation dominates and recent county demonstration fields showed strong yields with about 14 kg N per mu on wheat and about 13.8 kg N per mu on maize, with fewer irrigations than the older high-input pattern.\n\nSources: [Ministry of Agriculture report on Quzhou grain area](https://www.moa.gov.cn/xw/qg/202107/t20210720_6372348.htm), [China Agricultural University Quzhou Station 2024 demo results](https://qzsyz.cau.edu.cn/art/2024/10/8/art_46317_1039835.html), [Quzhou winter wheat-summer maize system background](https://pmc.ncbi.nlm.nih.gov/articles/PMC5290742/)\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5.5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 680\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 13.8,\n      \"phosphorus_kg_per_mu\": 3.5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 760\n    }\n  ],\n  \"reasoning_summary\": \"I will stay with the standard Quzhou winter wheat-summer maize rotation on the same 10 mu because it fits local weather, water use, machinery, and my own labor capacity better than shifting into more management-heavy crops. I want steady grain income and lower risk, so I will use improved wheat and hybrid maize seed, keep nitrogen moderate and balanced with phosphorus and potassium, irrigate wheat more than maize because winter is dry and summer is rainy, limit pesticide sprays to practical field needs, and use rotary tillage before wheat plus no-tillage after wheat for fast maize planting. My expected yields are solid but not extreme, aiming for a reliable year rather than the highest-input approach.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5.5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 680
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 13.8,
+        "phosphorus_kg_per_mu": 3.5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 760
+      }
+    ],
+    "reasoning_summary": "I will stay with the standard Quzhou winter wheat-summer maize rotation on the same 10 mu because it fits local weather, water use, machinery, and my own labor capacity better than shifting into more management-heavy crops. I want steady grain income and lower risk, so I will use improved wheat and hybrid maize seed, keep nitrogen moderate and balanced with phosphorus and potassium, irrigate wheat more than maize because winter is dry and summer is rainy, limit pesticide sprays to practical field needs, and use rotary tillage before wheat plus no-tillage after wheat for fast maize planting. My expected yields are solid but not extreme, aiming for a reliable year rather than the highest-input approach."
+  },
+  "elapsed_seconds": 60.2,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "QZ_HJK_13",
+  "tier": 1,
+  "provider": "codex"
+}

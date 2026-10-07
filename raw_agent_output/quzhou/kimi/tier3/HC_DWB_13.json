@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 66 years old, been farming these 15 mu in Quzhou since I was 21. Never spent a day in school. Everything I know I learned from my father and from watching the neighbors. Me and my old woman, just two mouths now. We keep 10 mu in wheat and corn, swapping every season, and 5 mu in cotton. That's the way it's been for years.\n\nThe wheat went in last October. Now it's March and the wheat is waking up. I pull my cart to the field and spread half a bag of urea on every mu \u2014 that's 25 kg of white granules. Last fall I already spread one full bag of compound fertilizer per mu when I sowed. So the wheat gets fed well. I water four times for sure: green-up, jointing, heading, and grain-filling. The pump costs diesel money, but dry wheat is thin wheat. I spray twice \u2014 once when the aphids show up, once before heading for rust. Everyone uses the same improved seed, the short kind that don't fall over. If the weather holds, I get about 550 kg per mu.\n\nSoon as the wheat comes off in June, I hire the rotary tiller from the village \u2014 30 yuan per mu \u2014 and tear the stubble under that same afternoon. Then plant hybrid corn. The dealer brings the seed in bright bags, and I buy what Lao Wang buys. I put 40 kg of compound fertilizer per mu in the rows at planting \u2014 that's most of a bag \u2014 then topdress 20 kg urea when the corn reaches my knee. Water twice: after planting and when the tassels silk, unless heaven sends rain. Two sprays. I expect 650 kg per mu.\n\nFor cotton, I plough the 5 mu deep in late April. Cotton is hungry for potash. I spread one full bag of compound fertilizer per mu, plus I sprinkle extra potassium chloride, about 10 kg per mu. Urea goes down twice \u2014 at planting and at first flower \u2014 totaling about 18 kg nitrogen per mu. Water three times heavy: planting, flowering, and boll-setting. Three sprays for aphids and worms. I plant improved cotton seed, the kind with some bug-killer bred in. Hope to pick 350 kg of seed cotton per mu.\n\nI count every yuan. Fertilizer is expensive this year. But I would rather put down an extra half bag than risk a thin harvest. A bad year means borrowing money. I do what I did last year, and I do what the neighbors do. If everyone around me waters four times, I water four times. Change is for young people who can afford to lose.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 350\n    }\n  ],\n  \"reasoning_summary\": \"I stick to last year's practices on my 15 mu farm: 10 mu for wheat-maize rotation and 5 mu for cotton. I feed the crops generously with compound fertilizer and urea, water at the critical growth stages, and spray when bugs or disease show up. I use improved wheat seed, hybrid corn, and improved cotton. I watch my neighbors and avoid changes because a failed crop is worse than wasting a little fertilizer. Every decision is weighed against cost, but yield comes first.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 350
+      }
+    ],
+    "reasoning_summary": "I stick to last year's practices on my 15 mu farm: 10 mu for wheat-maize rotation and 5 mu for cotton. I feed the crops generously with compound fertilizer and urea, water at the critical growth stages, and spray when bugs or disease show up. I use improved wheat seed, hybrid corn, and improved cotton. I watch my neighbors and avoid changes because a failed crop is worse than wasting a little fertilizer. Every decision is weighed against cost, but yield comes first."
+  },
+  "elapsed_seconds": 120.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_13",
+  "tier": 3,
+  "provider": "kimi"
+}

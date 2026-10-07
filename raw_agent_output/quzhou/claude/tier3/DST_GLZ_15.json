@@ -1,0 +1,53 @@
+{
+  "raw_response": "I been working this land since before most my neighbors was born. My sons go to town for work now, so it is mostly me and the old woman. The big boy helps when he can. I have 15 mu, but I do not plant cotton on all of it no more \u2014 cotton takes too much picking and my back is not what it was. So I keep about 3 mu for cotton on the sandy patch near the road where wheat does not do so well anyway. The other 12 mu I do wheat then maize, same as always, same as everybody here.\n\nFor the wheat I plant in October after the maize comes off. I use the seed the dealer sells \u2014 Jimai something, I forget the number, but my neighbor Lao Wang had a good crop with it last year so I buy the same. Before planting I spread one bag of diammonium per mu, that is 50 jin, no wait, 100 jin, one big bag. Then after the spring green-up I give it one bag of urea per mu when I flood-irrigate. I water four times \u2014 once before winter so it does not freeze dry, once in spring, once when the stalks stand up, once when the grain is filling. I spray two times, once for the weeds and once when the little green bugs come. I run the rotary tiller after maize, cannot plough deep no more, the small tractor does not pull it.\n\nFor the maize I plant right into the wheat stubble in June, do not till, just poke it in with the seeder. Neighbors all do this now. I buy Zhengdan or whatever the dealer pushes. I put half a bag compound fertilizer per mu when I plant and one bag urea per mu when it is knee-high. Water two, three times depending on the rain. Spray once for the borer.\n\nCotton is more trouble. I plant in late April. Cotton eats a lot, so I give it more \u2014 one and a half bag diammonium per mu before planting, then urea twice during the season, maybe 60 jin total. Must spray many times, five or six, the bollworm comes every year. Water three, four times from the well.\n\nI do not change much year to year. When I change something and it goes bad, that is a whole year gone. Better to do what worked.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 12.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 220\n    }\n  ],\n  \"reasoning_summary\": \"I keep 12 mu on wheat-maize like always and 3 mu cotton on the sandy patch since picking is hard at my age. I use one bag diammonium and one bag urea per mu on wheat and maize, a bit more on cotton because cotton eats more. I buy whatever seed my neighbor had good luck with. I water from the well \u2014 four times for wheat, three for maize, four for cotton. I spray only when I see the bug or the weed, not on a schedule. A bad harvest ruins the whole year, so I do not cut fertilizer to save money; better to waste a little than lose the crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 12.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 12.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 6,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 220
+      }
+    ],
+    "reasoning_summary": "I keep 12 mu on wheat-maize like always and 3 mu cotton on the sandy patch since picking is hard at my age. I use one bag diammonium and one bag urea per mu on wheat and maize, a bit more on cotton because cotton eats more. I buy whatever seed my neighbor had good luck with. I water from the well \u2014 four times for wheat, three for maize, four for cotton. I spray only when I see the bug or the weed, not on a schedule. A bad harvest ruins the whole year, so I do not cut fertilizer to save money; better to waste a little than lose the crop."
+  },
+  "elapsed_seconds": 52.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DST_GLZ_15",
+  "tier": 3,
+  "provider": "claude"
+}

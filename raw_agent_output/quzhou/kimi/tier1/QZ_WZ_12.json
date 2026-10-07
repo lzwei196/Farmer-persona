@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am seventy-one years old, and I have worked this land in Quzhou since I was a boy. I never went to school, so I cannot read the characters on the fertilizer bags, but I know the soil here by touch and smell, and I know what the weather has been doing. I have four mu of irrigated land that my family has farmed for generations. At my age, I do not have the strength or the eyesight for cotton anymore\u2014cotton needs too much bending and hand-picking, and my back hurts after an hour in the field. I also do not want to take risks with vegetables I have never grown; the dealers at the market can cheat an old man who cannot read the scale.\n\nSo I will do what I have always done: the wheat-and-maize rotation that every household around here follows. My winter wheat went into the ground last October after the autumn rain. It is already there, sleeping under the soil. Now that spring is starting, I will give it its winter irrigation to protect it from the dry cold, and then two more irrigations when it starts jointing and filling. I save my own wheat seeds from year to year\u2014they are good seeds that have adapted to this field\u2014and I sow about thirty jin per mu. For fertilizer, I put down compound fertilizer when I till the land with the rotary tiller, and then I topdress with urea in the spring when the wheat starts to grow fast. I will spray for insects twice, and once each for weeds and the rust that comes when it gets damp. I expect to get about 480 jin of wheat per mu, maybe a little less if the spring is dry, but the government station buys wheat at a fair price, so I am not worried.\n\nAs soon as the wheat comes off in early June, I will plant summer maize on the same land without ploughing again\u2014there is no time to waste, and the leftover stubble keeps some moisture. I buy hybrid maize seeds from the village dealer; Nongda seeds have done well for me before. Maize needs less fuss than wheat: two good irrigations during the tasseling and grain-filling stages, and I spray two or three times for the borers and once for weeds. I expect around 580 jin per mu from the maize. Between the wheat and the maize, and keeping some grain for my own flour and chicken feed, I will have enough to live on and a little cash left for my medicine.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 580\n    }\n  ],\n  \"reasoning_summary\": \"I am a 71-year-old illiterate farmer with four mu of land in Quzhou County. I stick to the traditional winter wheat\u2013summer maize rotation because it is reliable, mechanized, and the government guarantees wheat purchases. Wheat is already in the ground, so my spring work is irrigating, topdressing urea, and spraying for pests and diseases; I save my own improved wheat seeds and rotary-till before sowing. After the June wheat harvest, I immediately no-till plant hybrid maize to save time and moisture, irrigate twice, and spray for borers and weeds. I avoid cotton and vegetables because they require more labor and risk than I can manage at my age.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 580
+      }
+    ],
+    "reasoning_summary": "I am a 71-year-old illiterate farmer with four mu of land in Quzhou County. I stick to the traditional winter wheat\u2013summer maize rotation because it is reliable, mechanized, and the government guarantees wheat purchases. Wheat is already in the ground, so my spring work is irrigating, topdressing urea, and spraying for pests and diseases; I save my own improved wheat seeds and rotary-till before sowing. After the June wheat harvest, I immediately no-till plant hybrid maize to save time and moisture, irrigate twice, and spray for borers and weeds. I avoid cotton and vegetables because they require more labor and risk than I can manage at my age."
+  },
+  "elapsed_seconds": 267.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "QZ_WZ_12",
+  "tier": 1,
+  "provider": "kimi"
+}

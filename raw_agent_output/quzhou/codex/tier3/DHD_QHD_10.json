@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed this wheat-maize land for many years, so I will start from what has worked and only adjust a little. I have 18 mu, and only 2 people at home, with some off-farm work, so I do not want a plan that needs too much hand labor. I will keep the full 18 mu in the wheat-maize rotation. For wheat, I will use an improved variety, not old saved seed, because the stand is more even and the yield is steadier with irrigation. I will keep fertilizer on the safe side, because losing yield hurts more than spending a bit more on fertilizer. Wheat needs a little more feeding in my place, especially nitrogen, and I will still give phosphorus under the base fertilizer because our land responds to it. Potassium I will not push too high, but I will not skip it either. Wheat will get about 3 irrigations in a normal year: one after sowing if moisture is short, one at jointing, and one at grain filling if needed. For maize, I will use hybrid seed. Around here, if the wheat comes off on time and the summer rain is decent, maize can still yield well, but I will not cut fertilizer too much. I will use no-tillage or very light direct seeding after wheat to save labor and grab time, then rely on 2 irrigations if rainfall is not enough. On pesticide, I will not spray blindly, but I will plan for 2 times on each crop, because weeds and insects can take yield fast if I wait too long.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 18.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 18.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will keep the full 18 mu in wheat-maize rotation because that is what fits my land, labor, and irrigation. I will use improved wheat seed and hybrid maize seed, keep fertilizer a little on the safe side to protect yield, and not cut phosphorus and potassium completely just to save money. With well irrigation, I will plan 3 waterings for wheat and 2 for maize in a normal year. Since my household labor is limited, I will use rotary tillage for wheat and no-tillage for maize after wheat harvest to save time and labor while keeping the crop on schedule.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 18.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 18.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will keep the full 18 mu in wheat-maize rotation because that is what fits my land, labor, and irrigation. I will use improved wheat seed and hybrid maize seed, keep fertilizer a little on the safe side to protect yield, and not cut phosphorus and potassium completely just to save money. With well irrigation, I will plan 3 waterings for wheat and 2 for maize in a normal year. Since my household labor is limited, I will use rotary tillage for wheat and no-tillage for maize after wheat harvest to save time and labor while keeping the crop on schedule."
+  },
+  "elapsed_seconds": 28.1,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_10",
+  "tier": 3,
+  "provider": "codex"
+}

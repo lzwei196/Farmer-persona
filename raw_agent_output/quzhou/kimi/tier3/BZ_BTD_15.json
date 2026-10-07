@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 62 years old. I never went to school, not even one day. But I have farmed these 12 mu in Quzhou for 40 years, since I was a young bride. My old man and I are the only two left at home now. We cannot do all the heavy work alone, so when harvest comes we hire two young men from the village to help us.\n\nI split my land into two parts. Eight mu I do wheat then maize, that is the rotation my mother-in-law taught me and everyone here does it. The other four mu I plant cotton because the cotton price was decent last year and we need the cash for medicine and electricity.\n\nFor the wheat on those eight mu, I do exactly what I did last year because it worked. After the maize comes off, I deep plow. Then I spread one full bag of compound fertilizer per mu \u2014 the dealer\u2019s bag is 40 kilos. In the spring when the wheat turns green, I topdress with half a bag of urea per mu, that is 20 kilos. I irrigate three times: once before winter so the wheat does not freeze, once when the stems start shooting up, and once when the grain is filling. I spray twice: once with herbicide right after sowing, and once for bugs when the weather warms. I use the same improved wheat seed as last year. Last year I got about 450 kilos per mu and that is enough for me.\n\nRight after wheat harvest in early June, I rotary till fast and plant maize. For maize I put down one bag of compound fertilizer per mu at sowing, and when the plants are knee-high I add a bit more than half a bag of urea per mu, about 25 kilos. I irrigate twice: once right after sowing if the ground is dry, and once when the leaves are big and the tassels come out. I spray twice for weeds and corn borers. I will use hybrid maize seed this year because my neighbor Lao Zhang planted it last year and his yield was over 600 kilos per mu. Two years ago I tried to save money by using less fertilizer and my maize yield dropped to under 500 kilos. This year I am going back to the full amount. I expect 550 kilos per mu.\n\nThe four mu of cotton I plow in spring and put one bag of compound fertilizer per mu. When the yellow flowers come I topdress with half a bag of urea per mu, 20 kilos. Cotton needs water when it flowers and when the bolls grow, so I irrigate three times. But the bollworms are terrible every year, so I spray four times. If you skip even one spray they eat the whole crop. I use the same improved cotton seed as last year. I hope for 250 kilos of seed cotton per mu.\n\nEverything costs more now. A bag of compound fertilizer is over 120 yuan, urea is up too. But I learned my lesson last year: saving on fertilizer loses money in the end. I would rather waste a little fertilizer than lose the harvest. We are old, we do not need much food, but we cannot afford a bad year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15.2,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17.5,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15.2,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I split my 12 mu into 8 mu for wheat-maize rotation and 4 mu for cotton. For wheat I deep plow and apply one 40kg bag of compound fertilizer plus 20kg of urea per mu, irrigating three times and spraying twice with the same improved seed as last year. For maize I rotary till after wheat harvest, apply one bag of compound fertilizer plus 25kg of urea per mu, irrigate twice, spray twice, and use hybrid seed because my neighbor Lao Zhang had a big yield with it. For cotton I plow in spring, apply one bag of compound fertilizer plus 20kg of urea per mu, irrigate three times, and spray four times for bollworms. Last year I cut back on fertilizer to save money and lost yield, so this year I am applying full amounts even though prices are high, because a bad harvest is worse than wasting some fertilizer.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15.2,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17.5,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15.2,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I split my 12 mu into 8 mu for wheat-maize rotation and 4 mu for cotton. For wheat I deep plow and apply one 40kg bag of compound fertilizer plus 20kg of urea per mu, irrigating three times and spraying twice with the same improved seed as last year. For maize I rotary till after wheat harvest, apply one bag of compound fertilizer plus 25kg of urea per mu, irrigate twice, spray twice, and use hybrid seed because my neighbor Lao Zhang had a big yield with it. For cotton I plow in spring, apply one bag of compound fertilizer plus 20kg of urea per mu, irrigate three times, and spray four times for bollworms. Last year I cut back on fertilizer to save money and lost yield, so this year I am applying full amounts even though prices are high, because a bad harvest is worse than wasting some fertilizer."
+  },
+  "elapsed_seconds": 275.2,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_BTD_15",
+  "tier": 3,
+  "provider": "kimi"
+}

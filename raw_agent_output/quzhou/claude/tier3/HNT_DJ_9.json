@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 73, been farming this land 50 years. My son works in town now, just me and my wife at home. 4.1 mu is not much but it feeds us and we sell some.\n\nI do wheat-maize like everyone here in Quzhou. Everyone does it this way, so I do too. Last year wheat gave me about 450 kg per mu, maize maybe 550 kg. Not bad, not great.\n\nFor wheat I plant in October. I use the improved seed from the agro-shop in town \u2014 the dealer sells what works here, my neighbor Old Wang used the same and got good wheat. I buy two bags of compound fertilizer (the 15-15-15 kind) per mu before planting, that is 50 kg, plus one bag of urea for topdressing in spring when the wheat gets green again, about 20 kg. My wife helps spread it. I plough before wheat because the ground gets hard. I water maybe 3 times \u2014 before winter, at jointing, and at filling. Well water is there but the electricity costs money so I don't waste it.\n\nFor maize I plant right after wheat harvest in June, no tillage, just drill into the stubble. Saves time and diesel. I use hybrid seed, the Zhengdan kind my neighbors plant. Maize eats more fertilizer than wheat \u2014 I put one bag compound at planting (25 kg) and then two times urea topdressing, maybe 30 kg total. Maize wants water at tasseling, so I irrigate 2 times if no rain, sometimes only once if summer rain comes.\n\nPesticide \u2014 wheat gets aphids in spring, I spray once. Sometimes powdery mildew, spray again, so 2 times. Maize I spray once for borer, maybe twice if bugs are bad.\n\nI don't want to cut fertilizer. If I save 50 yuan on fertilizer and lose 100 kg of grain, that is stupid. Better to put enough.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 3.75,\n      \"potassium_kg_per_mu\": 3.75,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way my neighbors farm and the way I have done for many years. Wheat in winter, maize in summer, this is what works in Quzhou. I plough for wheat because the soil needs it, but for maize I drill straight into the wheat stubble to save time and diesel. I buy compound fertilizer 15-15-15 and urea from the town dealer \u2014 two bags compound plus one urea for wheat, one bag compound plus two urea for maize. I would rather spend a bit extra on fertilizer than lose grain at harvest. I water from the well 3 times for wheat and 2 times for maize if rain is short. I spray for aphids and powdery mildew on wheat, and for borer on maize. I expect about 450 kg wheat and 550 kg maize per mu, same as most years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 3.75,
+        "potassium_kg_per_mu": 3.75,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the way my neighbors farm and the way I have done for many years. Wheat in winter, maize in summer, this is what works in Quzhou. I plough for wheat because the soil needs it, but for maize I drill straight into the wheat stubble to save time and diesel. I buy compound fertilizer 15-15-15 and urea from the town dealer \u2014 two bags compound plus one urea for wheat, one bag compound plus two urea for maize. I would rather spend a bit extra on fertilizer than lose grain at harvest. I water from the well 3 times for wheat and 2 times for maize if rain is short. I spray for aphids and powdery mildew on wheat, and for borer on maize. I expect about 450 kg wheat and 550 kg maize per mu, same as most years."
+  },
+  "elapsed_seconds": 27.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_9",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,66 @@
+{
+  "raw_response": "I've been farming this land for 20 years. I know Quzhou's soil \u2014 sandy loam, not too deep, and the wells have been dropping a bit each year, so I can't waste water. My wife and two kids help during busy season, but labor is tight. Here's how I'm thinking through this year.\n\n**Wheat and Maize (same 20 mu, double cropped):** I always do wheat-maize rotation on my best flat parcels. Winter wheat goes in October, I harvest it in June, then immediately plant summer maize on the same ground. This land works hardest. For wheat I use the improved Jimai series \u2014 everyone around here uses it, proven yield. Maize I use hybrid seed,\u90d1\u5355958 type. I'll rotary till before wheat, then no-till into wheat stubble for maize to save time and moisture.\n\n**Cotton (10 mu):** Cotton is hard work but the price has been decent. I plant Bt cotton \u2014 cuts down on pesticide costs compared to what my father used to spray. I'll deep plough this plot in early spring before planting. Cotton needs the most pesticide attention even with Bt varieties, especially for aphids and bollworm later in season.\n\n**Stevia (28.1 mu):** This is my main cash crop now. I have a procurement contract with a processing company. Stevia takes up my largest area. I'll plant seedlings in late April after last frost, then harvest leaves two or three times through the season before frost hits again in October. Rotary till before transplanting. Steady irrigation is critical \u2014 stevia doesn't like drought stress between harvests.\n\nFor irrigation, I'm careful. The well costs electricity money and groundwater is everyone's concern here. I irrigate strategically at critical growth stages, not on a fixed schedule.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 575\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 280\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 28.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I allocate my 58.1 mu across four crops using a wheat-maize double-crop rotation on 20 mu of my best flat land, cotton on 10 mu with deep ploughing for root development, and stevia on my largest block of 28.1 mu as my primary contract cash crop. Wheat and maize share the same ground across winter and summer seasons to maximize land use. I choose improved and hybrid seed varieties for all crops to ensure reliable yields without excessive input costs. Fertilizer rates follow local extension guidance adjusted by my own experience with this soil \u2014 nitrogen is moderate to avoid excessive vegetative growth, especially in stevia which I harvest for leaf biomass. I keep irrigation conservative given rising well costs and falling water tables, focusing water at critical growth stages. Cotton receives the most pesticide attention due to insect pressure even with improved Bt varieties, while stevia and maize require far less. I use no-till for summer maize to save time and soil moisture after the quick wheat harvest turnaround, plough for cotton to prepare deep beds, and rotary till for wheat and stevia establishment.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 575
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 280
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 28.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I allocate my 58.1 mu across four crops using a wheat-maize double-crop rotation on 20 mu of my best flat land, cotton on 10 mu with deep ploughing for root development, and stevia on my largest block of 28.1 mu as my primary contract cash crop. Wheat and maize share the same ground across winter and summer seasons to maximize land use. I choose improved and hybrid seed varieties for all crops to ensure reliable yields without excessive input costs. Fertilizer rates follow local extension guidance adjusted by my own experience with this soil \u2014 nitrogen is moderate to avoid excessive vegetative growth, especially in stevia which I harvest for leaf biomass. I keep irrigation conservative given rising well costs and falling water tables, focusing water at critical growth stages. Cotton receives the most pesticide attention due to insect pressure even with improved Bt varieties, while stevia and maize require far less. I use no-till for summer maize to save time and soil moisture after the quick wheat harvest turnaround, plough for cotton to prepare deep beds, and rotary till for wheat and stevia establishment."
+  },
+  "elapsed_seconds": 62.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HQ_XNZ_7",
+  "tier": 2,
+  "provider": "claude"
+}

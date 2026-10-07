@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have farmed these 5 mu in Quzhou for 33 years, and I know what works on this land. My household has seven people, and with some of them working off-farm, I need to be careful with labor \u2014 I cannot do everything by hand, and I must time things right. I have a well, so water is not my biggest worry, but electricity for the pump costs money, so I do not waste irrigation.\n\nFor wheat, I always rotary till before sowing in October. I buy improved wheat seeds from the county supply shop \u2014 varieties like Jimai 22 that my neighbors grow too, because they are reliable. I spread compound fertilizer as base dressing before sowing, and at the jointing stage I topdress with urea. I irrigate three times: once to ensure good emergence, once at jointing, and once at grain filling. I spray herbicide early, and I spray for insects and disease twice more before harvest. If the weather is normal, I should get about 500 kg per mu.\n\nFor maize, the season is short after wheat harvest in June. I plant hybrid seeds directly into the wheat stubble without tillage \u2014 there is no time to plow, and anyway the soil is fine like this. I apply fertilizer at sowing and topdress with urea at the big trumpet stage. I irrigate twice: once if it is dry right after sowing, and once during flowering or grain filling. I spray herbicide once and insecticide once for corn borer. I expect about 550 kg per mu in a normal year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 11,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these 5 mu in Quzhou for 33 years. With seven people in my household and some working off-farm, I manage labor carefully and rely on my well for irrigation. For wheat, I rotary till in autumn, use improved seeds, apply compound fertilizer as base and urea at jointing, irrigate three times, and spray pesticides three times. For maize, I plant hybrid seeds immediately after wheat harvest without tillage, apply fertilizer and topdress urea, irrigate twice, and spray twice. I expect about 500 kg/mu of wheat and 550 kg/mu of maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 11,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I have farmed these 5 mu in Quzhou for 33 years. With seven people in my household and some working off-farm, I manage labor carefully and rely on my well for irrigation. For wheat, I rotary till in autumn, use improved seeds, apply compound fertilizer as base and urea at jointing, irrigate three times, and spray pesticides three times. For maize, I plant hybrid seeds immediately after wheat harvest without tillage, apply fertilizer and topdress urea, irrigate twice, and spray twice. I expect about 500 kg/mu of wheat and 550 kg/mu of maize."
+  },
+  "elapsed_seconds": 162.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_10",
+  "tier": 2,
+  "provider": "kimi"
+}

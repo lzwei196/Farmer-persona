@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 76 years old. I never went to school, I cannot read. Last year was my first year farming this land myself. Before that I worked outside in construction for 50 years. My son is in Shijiazhuang, so I came back to the village. I have 5.5 mu. I plant 4 mu with wheat and then maize, like everyone here. The other 1.5 mu I plant cotton. My wife helps me but we are both old and slow.\n\nI do not know much about farming, so I do exactly what my neighbor Lao Zhang does. He is 65 and has farmed his whole life. Last year I copied him and I did not starve, so this year I will do the same.\n\nFor wheat: After the maize comes off in autumn, I hire the rotary tiller. I sow improved wheat seed, 30 jin per mu. For fertilizer I put down one full bag of compound fertilizer per mu as base \u2014 that is 50 kg per mu. In March when the wheat turns green I spread another 30 jin of urea per mu. I know fertilizer costs a lot, but Lao Zhang says using too little is dangerous. I would rather waste some fertilizer than lose yield. A bad harvest is a disaster. I irrigate three times from my well: once before winter, once when the stems grow fast, and once when the grain is filling. I spray medicine three times. Last year I got 800 jin per mu. I hope for 800 jin again this year.\n\nFor maize: After wheat harvest in early June there is no time to plough. I hire the machine to plant hybrid seed directly with no-tillage. One package per mu. I put compound fertilizer in the planting holes, about 40 jin per mu. When the maize is knee-high I topdress with urea, about 25 jin per mu. I irrigate two times in summer. I spray three times for bugs and weeds. Last year I got 1000 jin per mu. I expect 1000 jin this year.\n\nFor cotton: Cotton is hard work but the price was good last year. In April I plough the 1.5 mu deep. I sow improved cotton seed, 3 jin per mu. I put down one bag of compound fertilizer per mu and some extra potassium fertilizer. My cousin told me cotton needs more potassium. I water two times. Cotton has many bugs \u2014 bollworms, aphids. I will spray six times. Last year I picked 400 jin of seed cotton per mu. I hope for the same.\n\nI do everything based on what I saw last year and what Lao Zhang does. I do not trust new varieties or new methods. I am 76. Change is too risky. Every jin of fertilizer costs real money, but losing the crop costs more. I watch my neighbors. If they buy more fertilizer this year, I will find the money to buy more too.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 200\n    }\n  ],\n  \"reasoning_summary\": \"I am a 76-year-old farmer with no schooling and only one year of experience, so I copy my neighbor Lao Zhang exactly. I would rather spend too much on fertilizer than risk a bad harvest. On my 4 mu of wheat-maize rotation, I use rotary tillage for wheat and no-tillage for maize, with hybrid maize seed and improved wheat seed. On my 1.5 mu of cotton, I plough in spring and apply extra potassium because my cousin says cotton needs it. I irrigate from my well and spray for pests as much as my old body and budget allow. I do not try new things \u2014 I do what worked last year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 1.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 2,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 200
+      }
+    ],
+    "reasoning_summary": "I am a 76-year-old farmer with no schooling and only one year of experience, so I copy my neighbor Lao Zhang exactly. I would rather spend too much on fertilizer than risk a bad harvest. On my 4 mu of wheat-maize rotation, I use rotary tillage for wheat and no-tillage for maize, with hybrid maize seed and improved wheat seed. On my 1.5 mu of cotton, I plough in spring and apply extra potassium because my cousin says cotton needs it. I irrigate from my well and spray for pests as much as my old body and budget allow. I do not try new things \u2014 I do what worked last year."
+  },
+  "elapsed_seconds": 222.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "BZ_SZ_11",
+  "tier": 3,
+  "provider": "kimi"
+}

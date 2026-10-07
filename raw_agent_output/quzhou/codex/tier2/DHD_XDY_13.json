@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm a small but fully managed 20 mu wheat-maize rotation, and with 45 years of experience I do not need to spread risk across many crops. I will keep the full 20 mu in winter wheat followed by summer maize, because that fits my land, irrigation access, and labor situation best. Since my household is small and some labor is off-farm, I will keep the system simple, mechanizable, and stable rather than trying anything labor-intensive. For wheat, I will use improved seed, moderate-to-high fertilizer, several irrigations from the well, and a conventional rotary tillage pass because I want reliable establishment and steady grain filling. For summer maize, I will use hybrid seed for stronger yield potential, somewhat higher nitrogen, fewer irrigations than wheat, and reduced field operations after wheat harvest so I can turn the crop around quickly. I will keep pesticide use to a practical level, enough to protect yield but not excessive. My target is dependable output per mu, not chasing extreme yield with extreme input.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I will keep my full 20 mu in the usual winter wheat-summer maize rotation because it matches my long experience, my well irrigation, and my limited household labor. I will manage wheat with improved seed, steady fertilizer, and three irrigations to secure establishment, jointing, and grain filling. I will follow with hybrid summer maize, using quick no-tillage planting after wheat harvest to save time and labor, with strong nitrogen support and two irrigations. I will keep pesticide use practical and moderate on both crops so I protect yield without making the system too costly or complicated.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I will keep my full 20 mu in the usual winter wheat-summer maize rotation because it matches my long experience, my well irrigation, and my limited household labor. I will manage wheat with improved seed, steady fertilizer, and three irrigations to secure establishment, jointing, and grain filling. I will follow with hybrid summer maize, using quick no-tillage planting after wheat harvest to save time and labor, with strong nitrogen support and two irrigations. I will keep pesticide use practical and moderate on both crops so I protect yield without making the system too costly or complicated."
+  },
+  "elapsed_seconds": 17.0,
+  "model": "codex-cli/gpt-5.4",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_13",
+  "tier": 2,
+  "provider": "codex"
+}

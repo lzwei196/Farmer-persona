@@ -1,0 +1,40 @@
+{
+  "raw_response": "My land is about 8 mu, all flat. My father grew wheat and corn here, I grow wheat and corn here, my son will probably grow wheat and corn here. That's just how it is in Quzhou. The rotation is fixed in my head: winter wheat goes in around October, I harvest it in June, then I turn around and plant summer corn on the same ground, harvest that in September or October. Two crops a year, same fields, every year.\n\nFor wheat seed, I'll go to the village supply co-op and buy Jimai 22 or whatever improved variety they have this year \u2014 not the old stuff my grandfather saved, those yields are too low. For corn, I'll buy hybrid seed. Zhengdan 958 or similar, whatever the shop recommends. Hybrid corn just outyields the old varieties too much to ignore.\n\nFertilizer: I apply compound fertilizer as base when I plant, then top-dress with urea at jointing for wheat, and at the big bell stage for corn. I know some people are cutting back on fertilizer but I'd rather not risk the yield \u2014 I need to sell enough to cover costs and have something left.\n\nWater worries me every year. The water table keeps dropping and the electricity for pumping costs more than it used to. For wheat I'll irrigate three times \u2014 at sowing, jointing, and heading. For corn, twice should do unless it gets very dry.\n\nPesticide: two sprays for wheat (herbicide in spring, fungicide if there's rust), two for corn (herbicide early, something for borer if I see it).\n\nAfter corn harvest I'll do rotary tillage to prep for wheat. After wheat harvest I'll go straight to no-till corn seeding \u2014 saves time and I need to get the corn in fast.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 56-year-old smallholder in Quzhou follows the entrenched winter wheat\u2013summer maize double-cropping rotation on 8 mu of flat North China Plain land. Improved wheat seed and hybrid maize seed are purchased from the village supply co-op to maximize yield over saved seed. Fertilizer rates reflect local conventional practice \u2014 compound base plus urea topdress \u2014 without reduction, as income security outweighs input-saving. Irrigation is constrained by rising pumping costs and a falling water table, so wheat gets three targeted waterings and maize gets two. Two pesticide applications per crop cover the main threats (weeds, rust, and corn borer). Rotary tillage precedes wheat planting; no-till direct seeding follows wheat harvest to speed turnover and protect soil moisture for the corn crop.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 56-year-old smallholder in Quzhou follows the entrenched winter wheat\u2013summer maize double-cropping rotation on 8 mu of flat North China Plain land. Improved wheat seed and hybrid maize seed are purchased from the village supply co-op to maximize yield over saved seed. Fertilizer rates reflect local conventional practice \u2014 compound base plus urea topdress \u2014 without reduction, as income security outweighs input-saving. Irrigation is constrained by rising pumping costs and a falling water table, so wheat gets three targeted waterings and maize gets two. Two pesticide applications per crop cover the main threats (weeds, rust, and corn borer). Rotary tillage precedes wheat planting; no-till direct seeding follows wheat harvest to speed turnover and protect soil moisture for the corn crop."
+  },
+  "elapsed_seconds": 48.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_6",
+  "tier": 1,
+  "provider": "claude"
+}

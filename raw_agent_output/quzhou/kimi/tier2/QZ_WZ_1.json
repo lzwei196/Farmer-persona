@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 7.5 mu in Quzhou for 40 years. I never went to school, cannot read the words on the fertilizer bags, but I know every corner of my land. My wife and I are the only ones at home \u2014 our children work in Handan and send a little money, but I do not ask them for farm money. This is my responsibility.\n\nI keep 4 mu on the south side for cotton. That is my main crop, what I know best. I buy improved cotton seed from the county store every year \u2014 about 2.5 jin per mu. Before planting in late April, I run the rotary tiller and spread compound fertilizer, about one big bag for every two mu. Cotton needs a lot of spraying. I spray for bollworm about twelve times through the summer, and once for weeds. If you skip even one spray and the worms come, the bolls drop and you lose everything. I irrigate three times from the well \u2014 at flowering, at boll-setting, and once more in August if the weather turns dry. Pumping costs electricity, but cotton pays better than grain when the price is right, so I do not skip water.\n\nThe other 3.5 mu I do wheat and corn, one after the other. I plant winter wheat in mid-October, right after the corn comes off. I use the same improved wheat seed I have been buying for years. I put compound fertilizer down before planting, about one bag per two mu, and then in March when the wheat turns green, if it looks yellow I topdress with half a bag of urea per mu. I irrigate wheat three times because it is our safety crop \u2014 even if cotton fails, we have grain. I spray herbicide once in early spring. Corn goes in right after wheat harvest in mid-June. The window is so tight, sometimes only two days, so I use hybrid seed and put all the fertilizer in the furrow at planting. No time for topdressing. I do a quick no-till planting if the ground is soft, or one pass with the rotary tiller if the stubble is thick. I irrigate corn twice if the summer is dry, but usually the rains help. One spray for weeds and one for insects is enough.\n\nI do not hire labor. It costs at least 150 yuan a day now, and with just my wife and me we manage. Old Wang down the road has a rotary tiller, and we trade favors. At 60, I do not try new things anymore. Change is just risk. I expect about 900 jin per mu of cotton seed, 800 jin per mu of wheat, and 900 jin per mu of corn if the weather holds. Last year was decent. I hope this year is the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 10,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 13,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 400\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 4,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 450\n    }\n  ],\n  \"reasoning_summary\": \"I farm 7.5 mu with my wife alone, so I split the land into 4 mu of cotton \u2014 my main crop and what I know best \u2014 and 3.5 mu of wheat followed by corn. Cotton needs the most care: thirteen pesticide sprays, three irrigations, and rotary tillage before planting in spring. Wheat gets three irrigations and two fertilizer applications because it is our safety crop. Corn has a tight window after wheat harvest, so I plant hybrid seed with no-tillage, all fertilizer at once, and irrigate twice. I never went to school, so I think in bags per mu and follow what has worked for forty years. I do not hire labor and I avoid anything new \u2014 at my age, stability matters more than trying to optimize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 10,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 13,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 400
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 4,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 450
+      }
+    ],
+    "reasoning_summary": "I farm 7.5 mu with my wife alone, so I split the land into 4 mu of cotton \u2014 my main crop and what I know best \u2014 and 3.5 mu of wheat followed by corn. Cotton needs the most care: thirteen pesticide sprays, three irrigations, and rotary tillage before planting in spring. Wheat gets three irrigations and two fertilizer applications because it is our safety crop. Corn has a tight window after wheat harvest, so I plant hybrid seed with no-tillage, all fertilizer at once, and irrigate twice. I never went to school, so I think in bags per mu and follow what has worked for forty years. I do not hire labor and I avoid anything new \u2014 at my age, stability matters more than trying to optimize."
+  },
+  "elapsed_seconds": 191.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "QZ_WZ_1",
+  "tier": 2,
+  "provider": "kimi"
+}

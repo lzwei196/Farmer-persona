@@ -1,0 +1,40 @@
+{
+  "raw_response": "I have been farming these 20.8 mu for 30 years. I never went to school, cannot read the fertilizer bags well, but I know this land with my hands and my eyes. My husband and my child work in the factory in town, so most days it is just me on the field, though I hire workers when we plant and harvest because 20 mu is too much for one woman to manage alone.\n\nFor the winter wheat, I buy the improved seeds from the dealer in town \u2014 the same kind my neighbor Li planted last year and his wheat was heavy and full. In October, before planting, I hire the rotary tiller machine to work the whole field. It costs about 50 yuan per mu, but with 20 mu I cannot do it by hand and the machine finishes in one day. I put one bag of compound fertilizer in the soil for every mu, that is 40 kg. Then when the wheat turns green in March, I spread 15 kg of urea per mu. At jointing time, I put another 10 kg of urea per mu. I know that is a lot of fertilizer, but three years ago I tried to save 100 yuan on fertilizer and lost more than 200 jin per mu. Never again. I would rather waste a little fertilizer than risk going hungry. I irrigate three times: once before winter if the soil is dry, once at jointing when the wheat is growing fast, and once when the grain is filling. Two pesticide sprays \u2014 one for weeds right after planting, and one for insects in the spring. Last year I got about 500 kg per mu, and I expect the same this year if the weather is fair.\n\nFor the summer maize, right after we cut the wheat in early June, I plant hybrid maize seeds. Everyone around here uses hybrid now, you would be a fool to use the old kind. When planting, I put compound fertilizer in the holes, about 30 kg per mu. Then when the maize is knee-high, I side-dress with urea, about 25 kg per mu. I irrigate twice \u2014 once when it is tasseling, and once when the grain is filling. Two pesticide sprays. I do not till the land for maize, just plant straight into the wheat stubble. Saves time and diesel money, and the machine man charges less. I usually get about 600 kg per mu.\n\nI watch my neighbors every day. If they put more fertilizer, I put more. If they spray earlier, I spray earlier. I do not trust new things unless I see them work on someone else's field first. Last year, the dealer tried to sell me some slow-release fertilizer for twice the price. I said no. My way works. I have to balance everything \u2014 seeds, fertilizer, pesticide, hired labor, machine rental \u2014 but I never cut the fertilizer. That is the one thing I do not gamble with.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 20.8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 20.8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm 20.8 mu of wheat-maize rotation by doing what has worked for 30 years and copying my successful neighbors. For wheat, I use improved seeds, hire a rotary tiller, apply a 40 kg base of compound fertilizer per mu plus two urea topdressings totaling 25 kg per mu, irrigate three times, and spray twice. For maize, I plant hybrid seeds directly into wheat stubble with no tillage, apply 30 kg compound fertilizer per mu at planting plus 25 kg urea side-dressed later, irrigate twice, and spray twice. I never cut fertilizer because a bad harvest is far worse than wasting some inputs, and I distrust expensive new products from dealers unless I see them work on a neighbor's field first.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 20.8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 20.8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm 20.8 mu of wheat-maize rotation by doing what has worked for 30 years and copying my successful neighbors. For wheat, I use improved seeds, hire a rotary tiller, apply a 40 kg base of compound fertilizer per mu plus two urea topdressings totaling 25 kg per mu, irrigate three times, and spray twice. For maize, I plant hybrid seeds directly into wheat stubble with no tillage, apply 30 kg compound fertilizer per mu at planting plus 25 kg urea side-dressed later, irrigate twice, and spray twice. I never cut fertilizer because a bad harvest is far worse than wasting some inputs, and I distrust expensive new products from dealers unless I see them work on a neighbor's field first."
+  },
+  "elapsed_seconds": 150.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_MLZ_9",
+  "tier": 3,
+  "provider": "kimi"
+}

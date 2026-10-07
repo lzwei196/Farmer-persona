@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 58 years old and I have farmed this 10.9 mu in Quzhou for 40 years. I finished middle school, so I can read fertilizer labels and calculate costs, but I still trust what I see in my own field more than anything a salesman tells me. Last year my 7 mu of wheat gave me about 530 jin per mu and my 3.9 mu of cotton gave me about 500 jin per mu, so I will stick with almost the same plan this year because changing things is risky.\n\nFor wheat, I sow the improved Shannong variety in October. I spread one 50 kg bag of compound fertilizer (15-15-15) per mu as base, which costs me about 140 yuan per bag, and I top-dress with 20 kg of urea per mu at jointing. I irrigate three times from my well: overwintering, jointing, and grain-filling. I spray herbicide once and insecticide once, so two pesticide applications. I expect about 550 kg per mu if the spring weather is normal.\n\nAfter the wheat comes off in early June, I plant hybrid Zhengdan 958 maize on that same 7 mu. I use no-tillage direct seeding to save labor and diesel. I put down 40 kg of compound fertilizer per mu at planting and 20 kg of urea per mu when the plants are knee-high. I will irrigate twice: once after planting if the soil is dry, and once at the filling stage. Two pesticide sprays: one for weeds and one for corn borer. I expect about 650 kg per mu.\n\nMy 3.9 mu cotton field is different. Cotton needs loose soil, so I plough it in April. I put one 50 kg bag of compound per mu plus 10 kg of potassium chloride because cotton needs more potassium. When it flowers I top-dress with 25 kg of urea per mu. I irrigate three times: seedling, flowering, and boll stage. Cotton pests are bad here, especially bollworm, so I spray five times. I use the improved Bt cotton seed. I hope for 260 kg of seed cotton per mu. I know fertilizer is expensive\u2014one bag of compound is almost 150 yuan now\u2014but I would rather spend the money than risk a bad harvest. A failed crop means my family loses thousands of yuan; wasting half a bag of fertilizer only costs a few dozen yuan. I watch what my neighbors do, and most of them around here use about the same amounts, so I do the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15.0,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 19.0,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 13.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"I farm 10.9 mu in Quzhou with 40 years of experience. I keep 7 mu for my wheat-maize rotation and 3.9 mu for cotton. For wheat I use one 50 kg bag of compound fertilizer per mu plus 20 kg urea, three irrigations, and two sprays. For maize I use no-tillage, 40 kg compound plus 20 kg urea, two irrigations, and two sprays. Cotton gets ploughed land, one bag of compound plus extra potassium chloride and 25 kg urea, three irrigations, and five sprays because bollworm is bad here. I use improved seed for wheat and cotton and hybrid seed for maize. I would rather spend money on fertilizer than risk yield loss, and I follow what my successful neighbors do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15.0,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 19.0,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 13.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "I farm 10.9 mu in Quzhou with 40 years of experience. I keep 7 mu for my wheat-maize rotation and 3.9 mu for cotton. For wheat I use one 50 kg bag of compound fertilizer per mu plus 20 kg urea, three irrigations, and two sprays. For maize I use no-tillage, 40 kg compound plus 20 kg urea, two irrigations, and two sprays. Cotton gets ploughed land, one bag of compound plus extra potassium chloride and 25 kg urea, three irrigations, and five sprays because bollworm is bad here. I use improved seed for wheat and cotton and hybrid seed for maize. I would rather spend money on fertilizer than risk yield loss, and I follow what my successful neighbors do."
+  },
+  "elapsed_seconds": 240.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "AZ_DZL_14",
+  "tier": 3,
+  "provider": "kimi"
+}

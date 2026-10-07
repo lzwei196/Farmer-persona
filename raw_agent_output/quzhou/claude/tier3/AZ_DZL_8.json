@@ -1,0 +1,53 @@
+{
+  "raw_response": "I sit down and think about this year like I think about every year. Fifty years I have been doing this, and my father before me. I do not read books. I know what works because I saw it with my own eyes.\n\nMy land is 20 mu. That is big for an old man with only my wife to help. My son moved to the city long ago. So I must think carefully.\n\n**How I split my land:**\nI will put 15 mu to wheat-maize, same as always. The other 5 mu I keep for cotton. Cotton gives cash in hand, and the buyers still come through our village. Wheat and maize fill the grain bin and the rest we sell.\n\n**Wheat (winter):**\nLast autumn I already planted winter wheat on 15 mu. I used improved seed from the township dealer \u2014 the kind my neighbor Old Wang has used three years running and his harvest was good. Before planting I spread compound fertilizer, about 2 bags per mu (that's 50 kg bag). The nitrogen in that is maybe 15 kg per mu. In spring when the wheat turns green I will top-dress urea \u2014 maybe half a bag per mu, that's another 10 kg of real nitrogen. So together about 25 kg nitrogen per mu. I always put a little extra \u2014 if I put too little and the wheat is yellow, I cry. Too much only costs money. Phosphorus about 8 kg per mu from the compound, potassium maybe 6 kg.\n\nI will water the wheat 4 times from my well \u2014 before winter, green-up, jointing, and grain filling. Spray pesticide 2 times for aphids and rust. I use the rotary blade tractor the village rents out, costs less than ploughing deep. I hope for 450 kg per mu. Last year I got 430.\n\n**Maize (summer):**\nAfter wheat harvest in June, straight away I plant hybrid maize \u2014 everyone uses hybrid now, Zhengdan or similar, whatever the dealer pushes that year. Hybrid is the only way. I put compound fertilizer at planting, maybe 1.5 bags per mu. At the big-bell stage I top-dress urea. Total nitrogen maybe 20 kg per mu. No ploughing \u2014 I just direct-seed into the wheat stubble. That is how everyone does it now, saves labor and my back.\n\nWater maize 2 times if rain is short. Spray once or twice for borer. Expect 550 kg per mu.\n\n**Cotton (5 mu):**\nCotton is trouble \u2014 many sprays, much work. But the price is good. I use improved cotton seed. Nitrogen about 18 kg per mu, split \u2014 some at planting, more when the bolls are setting. Phosphorus 7, potassium 8 \u2014 cotton eats potassium. Water 3 times from the well. Spray 7 times for bollworm and aphids \u2014 cotton without spray is no cotton. Plough the cotton land deep before planting, cotton likes loose soil. Hope for 250 kg seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 25,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 15.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 5.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I am old and it is just me and my wife on 20 mu, so I do what I have always done \u2014 15 mu wheat-maize rotation and 5 mu cotton for cash. I follow what works: improved wheat seed like Old Wang uses, hybrid maize from the dealer, compound fertilizer in bags at planting and urea top-dressing later. I put a little extra fertilizer because a yellow crop breaks my heart more than a few wasted yuan. I water from my well when rain is short, spray cotton many times because bollworm will eat everything otherwise, and use the rented rotary tractor for wheat and no-till for maize to save my back. My yields are what I have gotten these last years \u2014 no reason to expect different.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 15.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 25,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 15.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 5.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I am old and it is just me and my wife on 20 mu, so I do what I have always done \u2014 15 mu wheat-maize rotation and 5 mu cotton for cash. I follow what works: improved wheat seed like Old Wang uses, hybrid maize from the dealer, compound fertilizer in bags at planting and urea top-dressing later. I put a little extra fertilizer because a yellow crop breaks my heart more than a few wasted yuan. I water from my well when rain is short, spray cotton many times because bollworm will eat everything otherwise, and use the rented rotary tractor for wheat and no-till for maize to save my back. My yields are what I have gotten these last years \u2014 no reason to expect different."
+  },
+  "elapsed_seconds": 41.6,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_8",
+  "tier": 3,
+  "provider": "claude"
+}

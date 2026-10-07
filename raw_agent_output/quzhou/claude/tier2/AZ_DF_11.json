@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been farming this land for 30 years. I know Quzhou's soil and weather. My father farmed here too. I do what works \u2014 what my neighbors do, what the village extension station says, what I've seen with my own eyes.\n\nMy 6 mu runs wheat and maize on the same 4 mu, rotating each year like always \u2014 wheat in winter, maize in summer. The other 2 mu I keep for stevia. Stevia brings in cash money, which the wheat and maize don't always do anymore.\n\n**Wheat:** I'll buy improved certified seed from the county seed station, same variety I've used the last few years \u2014 yields are steady. I plow it rotary after the maize comes off in October, then plant. I water three times: the freeze water before winter sets in, then at jointing in March, then at heading. I put down compound fertilizer at planting and urea when it starts jointing. Three pesticide passes \u2014 herbicide in winter, then one spray in spring for disease and one for aphids if they show up.\n\n**Maize:** I use hybrid seed, that's been the standard for 20 years now. I plant directly into the wheat stubble with no extra tillage \u2014 saves time and we always rush at wheat harvest. Summer rains help, so I only irrigate twice \u2014 at planting if the soil is dry, and at tasseling. Two pesticide rounds: herbicide early, then check for corn borer.\n\n**Stevia:** This is the cash crop. I've had it 2 mu for a few years. I use divisions from my own plants \u2014 no need to buy. I prepare the soil in spring with rotary tillage, fertilize lighter than the grains since stevia doesn't need as much nitrogen. I water four times through the season and harvest leaves twice in summer-autumn. I dry and sell to the purchasing station.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"traditional\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 80\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 4 mu to the wheat-maize double-crop rotation on the same plots, which is the backbone of my farming and what I have done for 30 years in Quzhou. Wheat goes in after rotary tillage in October with improved certified seed and three irrigations from well water; maize follows in June with hybrid seed planted no-till into the stubble to save labor at the busy harvest crossover. The remaining 2 mu stay in stevia, my cash crop, managed with lighter fertilizer, four irrigations, and two leaf harvests per year using plant divisions I already have. I keep inputs at levels I can afford and that I know from experience will produce reliable yields on my soil.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "traditional",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 80
+      }
+    ],
+    "reasoning_summary": "I allocate 4 mu to the wheat-maize double-crop rotation on the same plots, which is the backbone of my farming and what I have done for 30 years in Quzhou. Wheat goes in after rotary tillage in October with improved certified seed and three irrigations from well water; maize follows in June with hybrid seed planted no-till into the stubble to save labor at the busy harvest crossover. The remaining 2 mu stay in stevia, my cash crop, managed with lighter fertilizer, four irrigations, and two leaf harvests per year using plant divisions I already have. I keep inputs at levels I can afford and that I know from experience will produce reliable yields on my soil."
+  },
+  "elapsed_seconds": 52.7,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_11",
+  "tier": 2,
+  "provider": "claude"
+}

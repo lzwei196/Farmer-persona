@@ -1,0 +1,66 @@
+{
+  "raw_response": "I have 10.1 mu and four crops to manage. Let me think through this carefully \u2014 I only started farming two years ago, so I watch my neighbors closely and mostly do what they do.\n\n**Splitting my land:**\nMost of my land goes to the wheat-maize double crop like everyone around here \u2014 it's the backbone in Quzhou. I'll put 6.1 mu on wheat-maize rotation. That gives us food for the family and steady grain income. Then 2 mu for chili and 2 mu for eggplant \u2014 vegetables bring more money but they cost more and need more work. I won't plant more vegetables than that because my wife and I can only handle so much picking, and my son is still in school.\n\n**Wheat (winter, 6.1 mu):** Last year I used about 2 bags of compound fertilizer (25 kg each) plus a bag of urea at jointing. That's about 18 kg N, 8 kg P, 6 kg K per mu. Neighbors get 450\u2013500 kg/mu and so did I. I'll do the same \u2014 no reason to change when it worked. Two irrigations from the well (winter and jointing), one spray for aphids and powdery mildew. Rotary tillage because that's what the tractor service offers.\n\n**Maize (summer, 6.1 mu):** After wheat, I plant hybrid maize directly \u2014 no tillage, just seed into the stubble like the agricultural station told us. One bag compound at sowing, one bag urea at big trumpet stage \u2014 roughly 20 kg N, 6 kg P, 5 kg K. One irrigation if July is dry. One pesticide for armyworm. I aim for 550 kg/mu.\n\n**Chili (spring-autumn, 2 mu):** This is where I need to be careful \u2014 chili needs a lot of feeding or the fruits stay small. I'll use manure base plus compound fertilizer, about 28 kg N, 15 kg P, 20 kg K per mu across the season. Drip from the well, 8 irrigations because the ground dries fast in summer. Pest pressure is heavy \u2014 aphids, thrips, anthracnose \u2014 probably 6 sprays. Improved variety seedlings from the county market. If I get 2200 kg/mu I'm happy.\n\n**Eggplant (spring-autumn, 2 mu):** Similar to chili but eggplant eats even more potassium. 30 kg N, 15 kg P, 25 kg K per mu. 10 irrigations \u2014 eggplant wilts fast without water. 7 sprays for whitefly, mites, and fruit rot. Plough before transplanting to loosen the soil deep for the roots. Hybrid seedlings. Aim for 3500 kg/mu.\n\nI'd rather spend a bit extra on fertilizer than lose fruit \u2014 a bad harvest would really hurt us, wasting some fertilizer is just money.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 480\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"chili\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 20,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 2200\n    },\n    {\n      \"crop\": \"eggplant\",\n      \"season\": \"spring\",\n      \"area_mu\": 2.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 25,\n      \"irrigation_times\": 10,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 3500\n    }\n  ],\n  \"reasoning_summary\": \"I put 6.1 mu on wheat-maize rotation like my neighbors in Quzhou because it is the safe backbone crop here, and 2 mu each for chili and eggplant since vegetables pay better but my family can only handle so much picking. Wheat and maize rates match what worked last year \u2014 no reason to change. For chili and eggplant I feed heavier, especially potassium, and irrigate often from the well because vegetables wilt fast and losing fruit would cost me far more than a little extra fertilizer. I am only in my second year so I stay close to what others around me do.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 480
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 1,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "chili",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 20,
+        "irrigation_times": 8,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 2200
+      },
+      {
+        "crop": "eggplant",
+        "season": "spring",
+        "area_mu": 2.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 25,
+        "irrigation_times": 10,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 3500
+      }
+    ],
+    "reasoning_summary": "I put 6.1 mu on wheat-maize rotation like my neighbors in Quzhou because it is the safe backbone crop here, and 2 mu each for chili and eggplant since vegetables pay better but my family can only handle so much picking. Wheat and maize rates match what worked last year \u2014 no reason to change. For chili and eggplant I feed heavier, especially potassium, and irrigate often from the well because vegetables wilt fast and losing fruit would cost me far more than a little extra fertilizer. I am only in my second year so I stay close to what others around me do."
+  },
+  "elapsed_seconds": 41.2,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_5",
+  "tier": 3,
+  "provider": "claude"
+}

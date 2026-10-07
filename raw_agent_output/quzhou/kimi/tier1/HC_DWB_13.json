@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 66 years old and have farmed these fields since I was a young man. I never went to school, but I know this land. Every year I grow winter wheat and summer corn \u2014 that is what we do here in Quzhou. I have about 6 mu of land, and I put all of it into wheat in the autumn, then plant corn right after the wheat comes off in early June. There is barely a week between harvest and planting, so I cannot plough for the corn \u2014 I just drill the seeds straight into the wheat stubble, same as everyone else in the village. For wheat, I rotary-till before sowing.\n\nI buy improved wheat seed from the shop in town \u2014 not the most expensive kind, but the one I have used for years and know it works. For corn, I always buy hybrid seed. My neighbor tried saving his own corn seed once and the yield was terrible, so I never do that.\n\nFor fertilizer, I think in bags, not kilograms. I put down about one 50-jin bag of compound fertilizer per mu for wheat before planting, and then topdress with urea at green-up and again at jointing if the wheat looks yellow. I do roughly the same for corn \u2014 one bag of compound at planting, then urea when the plants are knee-high. I know I probably use a bit more than I need, but I would rather waste a little money than lose half my crop. My son helps me calculate how many bags to buy now, but I decide based on what the fields look like.\n\nI irrigate four times for wheat \u2014 overwinter water, green-up water, jointing water, and one more when the heads are filling. For corn I irrigate twice, at tasseling and grain-filling. Water costs money to pump, but without it nothing grows here on the North China Plain.\n\nI spray herbicide once on each crop, and fungicide on wheat when I see rust. Maybe one insecticide spray if the worms come. That is usually three sprays on wheat and two on corn.\n\nLast year I got about 420 kg of wheat per mu and 500 kg of corn per mu. If the weather is normal this year, I expect about the same. I am too old to try new crops or fancy methods. Wheat and corn have a buyer every year, and my family needs the grain and the cash. That is my plan.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 6,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 420\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 6,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 6 mu in Quzhou for decades and stick to the wheat-maize double crop that everyone here grows. I rotary-till for wheat and no-till for corn because the turnaround between harvest and planting is too tight. I use improved wheat seed and hybrid corn seed from the shop, apply fertilizer by the bag based on what the crop looks like, irrigate four times for wheat and twice for corn, and spray when I see weeds or pests. I expect about 420 kg/mu of wheat and 500 kg/mu of corn if the weather holds, same as last year. At my age I do not experiment \u2014 I do what works.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 6,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 420
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 6,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed 6 mu in Quzhou for decades and stick to the wheat-maize double crop that everyone here grows. I rotary-till for wheat and no-till for corn because the turnaround between harvest and planting is too tight. I use improved wheat seed and hybrid corn seed from the shop, apply fertilizer by the bag based on what the crop looks like, irrigate four times for wheat and twice for corn, and spray when I see weeds or pests. I expect about 420 kg/mu of wheat and 500 kg/mu of corn if the weather holds, same as last year. At my age I do not experiment \u2014 I do what works."
+  },
+  "elapsed_seconds": 191.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 2,
+  "farmer_id": "HC_DWB_13",
+  "tier": 1,
+  "provider": "kimi"
+}

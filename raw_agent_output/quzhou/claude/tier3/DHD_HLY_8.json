@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am an old man, 66 now, been working this land 50 years. My wife and me, just the two of us on 14.5 mu. Let me think how I do this year, same as most years.\n\nWheat first. I plant in October after the maize comes off. I buy two bags of compound fertilizer for each mu \u2014 that's what the dealer in town sells, the 15-15-15 kind, about 50 jin each bag... no wait, one bag is 40 kg. So two bags make 80 kg of compound per mu, mixed into the soil when I plow. Then in spring when the wheat turns green again, I spread one bag of urea per mu, maybe 40 kg. My neighbor Old Wang did this for years and gets good wheat, so I do the same. If I put less I worry the wheat goes yellow and thin.\n\nWater \u2014 I pump from the well. Once before winter so the ground freezes wet, once when it greens up in spring, once when the stalks stand up, once when the ears fill. Four times. If rain comes good maybe three. For spray, once for the weeds in spring, once for the bugs and the head disease near harvest. Two sprays.\n\nI use the rotary machine \u2014 everyone uses it now, cheaper than plowing deep. The tractor man charges by the mu. I buy the wheat seed from the agri-store, they tell me which is good this year, I take what my neighbors took. Improved kind.\n\nMaize I plant right after wheat harvest in June, no time to plow, I just drill seed into the stubble. No-tillage they call it, but I just call it \"planting into the stubble.\" I use hybrid seed for maize, everyone does, the old kind gives nothing. One bag compound per mu at planting, then one bag urea per mu when the plant is knee-high, maybe 40 kg. That's how my son-in-law does it on his land too.\n\nWater for maize \u2014 if summer rains come I don't pump. Usually I pump two times, once after planting if dry, once when it tassels. Spray twice, once for weeds when small, once for the borer worm.\n\nYield \u2014 good year wheat gives me about 500 kg per mu, maize about 600 kg. Bad year less. I count on this.\n\nNow I put it all down:\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 30.4,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 14.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 24.4,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I farm the same way I did last year and the years before \u2014 two bags of compound plus one bag of urea for each mu of wheat, same pattern for maize. I copy what my neighbors do because it works. I put enough fertilizer so the crop does not go yellow \u2014 wasting a little is cheaper than a thin harvest. I water from my well four times for wheat and two times for maize depending on rain. I spray twice each crop, for the weeds and the bugs. I use the rotary tractor before wheat, and for maize I just plant into the stubble. I buy improved wheat seed and hybrid maize seed from the agri-store, whatever the dealer and my neighbors use this year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 14.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 30.4,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 14.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 24.4,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I farm the same way I did last year and the years before \u2014 two bags of compound plus one bag of urea for each mu of wheat, same pattern for maize. I copy what my neighbors do because it works. I put enough fertilizer so the crop does not go yellow \u2014 wasting a little is cheaper than a thin harvest. I water from my well four times for wheat and two times for maize depending on rain. I spray twice each crop, for the weeds and the bugs. I use the rotary tractor before wheat, and for maize I just plant into the stubble. I buy improved wheat seed and hybrid maize seed from the agri-store, whatever the dealer and my neighbors use this year."
+  },
+  "elapsed_seconds": 37.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "DHD_HLY_8",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "I've been farming this land since I was a young man. My father grew wheat and maize on this same plot, and his father before him. The soil here on the North China Plain is good flat ground \u2014 there's no reason to do anything clever. I know what the ground wants and I know what the grain stations will buy.\n\nMy land is about 8 mu total. I'll plant winter wheat this autumn on all of it, then follow with summer maize on the same ground after harvest, like always. That's two crops a year. That's how you make ends meet around here.\n\nFor wheat, I'll use the improved seed from the county seed station \u2014 \"\u77ee\u629758\" type, it's what my neighbors use and yields are reliable. I'll rotary till before sowing, put down base fertilizer, then top-dress at jointing. I'll irrigate three times: once for winter protection in November, once at jointing, once at grain filling. I know the government says to cut to one or two waterings to save groundwater, but three is what the wheat needs to look right and I'm not willing to risk the yield. I'll spray twice for aphids and rust, once more for weeds early on.\n\nFor maize, I'll go straight in after wheat harvest \u2014 no time to lose in June. Hybrid seed, no tilling, just direct seeding into the stubble. Rain is more reliable in summer so I'll only need to water twice if there's a dry spell. Maize needs more nitrogen than wheat so I'll put more down. Two pesticide applications should handle the stalk borers and fall armyworm if it shows up.\n\nI'm 62. My back isn't what it was. I'm not going to experiment with new crops or techniques. This rotation works, the buyers are there, and I know it in my bones.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 62-year-old farmer on the Hebei Plain with lifelong experience defaults to the traditional winter wheat\u2013summer maize double-cropping rotation on 8 mu of flat ground. Improved wheat seed and hybrid maize seed are used because they are locally available and widely trusted, not because of any outside advice. Fertilizer rates reflect conventional regional practice, with higher nitrogen on maize. Three irrigations for wheat reflects old habits and risk aversion toward yield loss, despite groundwater conservation pressure. Maize is no-till direct-seeded into wheat stubble immediately after June harvest to save time. Pesticide applications cover the standard pest and disease pressures for each crop. No diversification or experimentation is attempted \u2014 the grain station accepts wheat and maize, and four decades of experience make this rotation the only sensible choice.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 62-year-old farmer on the Hebei Plain with lifelong experience defaults to the traditional winter wheat\u2013summer maize double-cropping rotation on 8 mu of flat ground. Improved wheat seed and hybrid maize seed are used because they are locally available and widely trusted, not because of any outside advice. Fertilizer rates reflect conventional regional practice, with higher nitrogen on maize. Three irrigations for wheat reflects old habits and risk aversion toward yield loss, despite groundwater conservation pressure. Maize is no-till direct-seeded into wheat stubble immediately after June harvest to save time. Pesticide applications cover the standard pest and disease pressures for each crop. No diversification or experimentation is attempted \u2014 the grain station accepts wheat and maize, and four decades of experience make this rotation the only sensible choice."
+  },
+  "elapsed_seconds": 48.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_8",
+  "tier": 1,
+  "provider": "claude"
+}

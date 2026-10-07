@@ -1,0 +1,40 @@
+{
+  "raw_response": "My family has farmed this land outside Quzhou for three generations. I know this soil. I know this weather. My husband passed four years ago, so I work the plots myself with help from my son during planting and harvest.\n\nWe have 8 mu of flat, irrigated land. Every year it is the same: winter wheat goes in after the autumn harvest, then summer maize after the wheat comes off in June. This rotation is what everyone in the village does. It is what the land knows. Changing it would be foolish \u2014 the markets are there for wheat and maize, and I know exactly what inputs I need.\n\nFor seeds, I buy from the village seed station. They stopped carrying the old local wheat variety years ago. I use the improved wheat seed they sell \u2014 it yields better and the county government has pushed it for years so I trust it now. For maize I use a hybrid, same one my neighbor uses,\u90d1\u5355958 type. I don't experiment.\n\nFertilizer: I apply compound fertilizer (diammonium phosphate) at planting, then urea when the crops are growing. I go by feel and habit \u2014 same amounts as last year since the yield was decent. I don't measure precisely. I lean a bit heavy on nitrogen because I want a full crop.\n\nIrrigation: I use the village's canal system. Wheat needs water in winter (to protect roots from freezing), at jointing, and at heading \u2014 three times at least. Maize I water at planting if dry, then once or twice more depending on rain. Summer rains usually help maize.\n\nPesticide: my son sprays for wheat aphids in May and I'll do a fungicide spray too. Maize rarely needs much \u2014 maybe once for corn borer if it's bad that year.\n\nTillage: the village mechanic does rotary tillage for me with his tractor. I pay him per mu. I can't manage a plough anymore at my age.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 8,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 430\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 8,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 560\n    }\n  ],\n  \"reasoning_summary\": \"A 61-year-old smallholder farmer in Quzhou County, Hebei follows the standard North China Plain double-crop rotation of winter wheat followed by summer maize on 8 mu of irrigated flat land. She uses improved wheat seed and hybrid maize seed sourced from the village station, applies compound fertilizer at planting and urea top-dressing by habit from prior years, irrigates wheat three times (winter, jointing, heading) and maize twice using the village canal, hires a local tractor operator for rotary tillage, and manages pests with two pesticide applications on wheat and one on maize. Decisions are driven entirely by decades of personal experience, local convention, and risk aversion rather than formal agronomic advice.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 8,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 430
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 8,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 560
+      }
+    ],
+    "reasoning_summary": "A 61-year-old smallholder farmer in Quzhou County, Hebei follows the standard North China Plain double-crop rotation of winter wheat followed by summer maize on 8 mu of irrigated flat land. She uses improved wheat seed and hybrid maize seed sourced from the village station, applies compound fertilizer at planting and urea top-dressing by habit from prior years, irrigates wheat three times (winter, jointing, heading) and maize twice using the village canal, hires a local tractor operator for rotary tillage, and manages pests with two pesticide applications on wheat and one on maize. Decisions are driven entirely by decades of personal experience, local convention, and risk aversion rather than formal agronomic advice."
+  },
+  "elapsed_seconds": 38.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DZL_10",
+  "tier": 1,
+  "provider": "claude"
+}

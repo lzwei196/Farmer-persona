@@ -1,0 +1,53 @@
+{
+  "raw_response": "Alright, let me think this through for the year ahead.\n\nI farm 225 mu in Quzhou \u2014 that is a serious operation for one household of four. I cannot manage every mu by hand, so I think in terms of blocks and contract some machinery services for ploughing and harvest. Four years is not long, but I read, I talk to the agricultural station in town, and I compare input prices from two dealers in Quzhou before I buy.\n\n**Land allocation.** My main system is wheat-maize double cropping \u2014 that's what the soil and irrigation here are set up for. I put 150 mu into the wheat-maize rotation: 150 mu winter wheat from October to June, then immediately 150 mu summer maize from June to October on the same ground. The remaining 75 mu I keep in cotton \u2014 my father grew cotton on that block, the ground is sandier there and it does not drain as well for wheat. Cotton also spreads my risk; if wheat price drops I still have cotton.\n\n**Wheat (150 mu, winter).** I use improved variety \u2014 Jimai 22 or similar, certified seed, about 12-13 kg/mu seeding rate. Base fertilizer before sowing: compound 15-15-15 at around 40 kg/mu, then urea topdress at green-up and jointing. Total N roughly 16 kg/mu, P 7 kg/mu, K 6 kg/mu. I irrigate 4 times \u2014 pre-sowing, green-up, jointing, grain-filling \u2014 well water is reliable here. Pesticide 3 times: one for weeds in spring, one for aphids and powdery mildew around heading, one for fusarium head blight if weather turns wet. Rotary tillage after maize stubble \u2014 saves diesel vs deep plough and keeps the schedule tight. I target 520 kg/mu; last year I got around 500, the variety and rates should push it.\n\n**Maize (150 mu, summer).** Hybrid seed, Zhengdan 958 or Denghai type, planted immediately after wheat harvest \u2014 no-tillage direct seeding into wheat stubble saves 7-10 days, which matters for grain filling before autumn cold. N about 18 kg/mu split between base and big-flare stage, P 5 kg/mu, K 5 kg/mu. I irrigate 2 times \u2014 after sowing if dry, and at tasseling. Pesticide 2 times: one for corn borer at whorl stage, one for armyworm if scouting shows them. Target 600 kg/mu.\n\n**Cotton (75 mu, spring).** Improved Bt variety to cut bollworm sprays. Transplanting is too much labor at 75 mu so I direct seed with plastic mulch in April. N 17 kg/mu, P 7 kg/mu, K 9 kg/mu \u2014 cotton needs more potassium for boll development. Irrigate 3 times. Pesticide is the big cost here \u2014 5 applications for aphids, mites, and late-season bollworm even with Bt. Plough the cotton ground because the residue is woody and rotary does not handle it well. Target 260 kg/mu seed cotton.\n\n**Budget logic.** At 225 mu I cannot afford to skimp on N for wheat and maize \u2014 a 50 kg/mu yield loss across 150 mu is far more than the cost of an extra bag of urea. But I also do not over-apply the way my uncle does; I learned in training that excess N on wheat causes lodging, and I saw it happen to him two years ago.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 150.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 520\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 150.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 75.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    }\n  ],\n  \"reasoning_summary\": \"On 225 mu I run wheat-maize double cropping on 150 mu and keep 75 mu in cotton on the sandier block my father used. I use improved and hybrid seeds and stick to balanced NPK rates I learned from training and dealer recommendations \u2014 not pushing N too high on wheat because I saw my uncle's field lodge from overuse. Wheat gets 4 irrigations and 3 sprays because it is my biggest cash crop; maize goes no-till straight into wheat stubble to save the 7-10 days I need for grain filling; cotton gets ploughed ground, higher potassium, and 5 sprays because pest pressure is the real cost driver even with Bt seed. At this scale I cannot afford to skimp on fertilizer \u2014 a yield loss across 150 mu is far more expensive than one extra bag of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 150.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 520
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 150.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 75.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      }
+    ],
+    "reasoning_summary": "On 225 mu I run wheat-maize double cropping on 150 mu and keep 75 mu in cotton on the sandier block my father used. I use improved and hybrid seeds and stick to balanced NPK rates I learned from training and dealer recommendations \u2014 not pushing N too high on wheat because I saw my uncle's field lodge from overuse. Wheat gets 4 irrigations and 3 sprays because it is my biggest cash crop; maize goes no-till straight into wheat stubble to save the 7-10 days I need for grain filling; cotton gets ploughed ground, higher potassium, and 5 sprays because pest pressure is the real cost driver even with Bt seed. At this scale I cannot afford to skimp on fertilizer \u2014 a yield loss across 150 mu is far more expensive than one extra bag of urea."
+  },
+  "elapsed_seconds": 44.3,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_MLZ_3",
+  "tier": 3,
+  "provider": "claude"
+}

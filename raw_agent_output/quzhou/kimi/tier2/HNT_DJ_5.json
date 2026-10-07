@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 74 years old and I have farmed these 5 mu in Quzhou for 40 years. I never went to school, but I know this land with my hands and my eyes. My sons work in the city factory and send money home, but I still grow our own grain \u2014 wheat in winter and corn in summer, same as every family in our village. That is the only rotation I know, and I am too old to gamble on something new.\n\nFor wheat, I will buy improved seed from the village cooperative shop, the same kind my neighbors plant. I stopped saving my own wheat seed years ago because the yield falls. After the corn stalks are cleared in late September, I will hire the rotary tiller to break up the field, spread one bag of compound fertilizer per mu, and sow in early October. When spring comes and the wheat starts jointing, I will spread half a bag of urea on top \u2014 that is what I have always done, and the wheat turns green and strong. I will irrigate three times from our well: once before winter sets in to protect the roots, once at jointing, and once when the heads come out. The pump costs electricity, so three times is all I can afford. I will spray herbicide once in spring, and if the aphids come thick like they did two years ago, I will spray once more. Last year I got about 900 jin per mu, and I expect the same this year if the weather holds.\n\nFor corn, there is no time to rest after wheat harvest in June \u2014 the summer season is short. I will plant hybrid seed straight into the wheat stubble without plowing. I buy the hybrid bags from the shop every year; the old corn seed cannot compete. I put down one bag of compound fertilizer per mu at planting, and that is usually enough. Corn gets more rain than wheat, so I only irrigate twice if July turns dry. I spray once for weeds after the seedlings emerge, and I watch for corn borer \u2014 if I see it, I spray once more. Corn usually gives me about 1,000 jin per mu, which is enough.\n\nI do not change what works. My neighbor tried a new fertilizer last year and his wheat lodged. I will do what my mother taught me, what my neighbors do, and what last year proved.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 3,\n      \"potassium_kg_per_mu\": 3,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed 5 mu in Quzhou for 40 years with no formal schooling, and I follow the wheat-maize double crop that every household here uses. For wheat I buy improved seed, rotary till after corn harvest, apply one bag of compound fertilizer per mu at planting and half a bag of urea at jointing, irrigate three times from the well, and spray twice for weeds and aphids. For corn I plant hybrid seed directly into wheat stubble with no tillage, apply one bag of compound fertilizer, irrigate twice if needed, and spray twice for weeds and borers. I do not experiment \u2014 I copy what my neighbors do and repeat what worked last year, expecting about 900 jin per mu of wheat and 1,000 jin per mu of corn.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 3,
+        "potassium_kg_per_mu": 3,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I have farmed 5 mu in Quzhou for 40 years with no formal schooling, and I follow the wheat-maize double crop that every household here uses. For wheat I buy improved seed, rotary till after corn harvest, apply one bag of compound fertilizer per mu at planting and half a bag of urea at jointing, irrigate three times from the well, and spray twice for weeds and aphids. For corn I plant hybrid seed directly into wheat stubble with no tillage, apply one bag of compound fertilizer, irrigate twice if needed, and spray twice for weeds and borers. I do not experiment \u2014 I copy what my neighbors do and repeat what worked last year, expecting about 900 jin per mu of wheat and 1,000 jin per mu of corn."
+  },
+  "elapsed_seconds": 186.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HNT_DJ_5",
+  "tier": 2,
+  "provider": "kimi"
+}

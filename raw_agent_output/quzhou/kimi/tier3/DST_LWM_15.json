@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 61 years old, finished middle school, and I have farmed these same 10.1 mu for 40 years. With just me and my wife working the land, every yuan I spend on inputs has to count, but a bad harvest would be far worse than wasting a little fertilizer. I mostly do what worked last year and what I see my neighbors doing. Last year my wheat got about 500 kg per mu and my maize about 600 kg per mu, so this year I will keep things steady and maybe push a bit more on fertilizer.\n\nFor winter wheat, I sow in early October. I buy the improved wheat seed from the county supply store \u2014 the same kind my neighbor Li used last year, his wheat stood well. I sow about 17 jin per mu. Before sowing, I run the rotary tiller to chop up the maize stalks and make a flat seedbed. At sowing time, I spread one full bag of compound fertilizer per mu, 50 jin of 15-15-15. Then in March when the wheat turns green, I topdress with 30 jin of urea per mu. I would rather see a little extra green than yellow weak plants. I irrigate twice: once before winter so the wheat does not dry out, and once at jointing in April. I spray herbicide once in early spring, and if I see aphids or rust, I spray fungicide or insecticide once more. I expect 550 kg per mu if the spring weather holds.\n\nFor summer maize, I plant right after wheat harvest in early June. I use hybrid seed, about 5 jin per mu. I do not do deep tillage \u2014 I plant no-till with the seeder so I do not lose moisture and I can finish before the rains come. I put 40 jin of compound fertilizer in the furrow at sowing. At the big trumpet stage in July, I spread another 30 jin of urea per mu. In summer it sometimes rains enough, but I irrigate once at flowering time if it turns dry, and maybe a second time if there is a long hot spell. I spray herbicide before the seedlings emerge, and I keep an eye out for corn borers \u2014 if I see them, I spray insecticide once. I expect about 650 kg per mu.\n\nFertilizer prices went up again this year, but I am not cutting back. I saw what happened to Old Wang two years ago when he tried to save money on urea \u2014 his maize was stunted and he lost half a season.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 21.5,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19.8,\n      \"phosphorus_kg_per_mu\": 6.0,\n      \"potassium_kg_per_mu\": 6.0,\n      \"irrigation_times\": 1,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 650\n    }\n  ],\n  \"reasoning_summary\": \"I stick with what worked last year and what my neighbors do. For wheat, I use improved seed with one 50kg bag of 15-15-15 compound fertilizer per mu at sowing plus 30kg urea topdressing, two irrigations, and two pesticide sprays, expecting 550 kg/mu. For maize, I use hybrid seed with 40kg compound fertilizer at sowing plus 30kg urea at big trumpet, no-tillage planting, one or two irrigations, and two pesticide sprays, expecting 650 kg/mu. I would rather spend extra on fertilizer than risk losing yield, because a bad harvest is a disaster while extra fertilizer is just a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 10.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 21.5,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19.8,
+        "phosphorus_kg_per_mu": 6.0,
+        "potassium_kg_per_mu": 6.0,
+        "irrigation_times": 1,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 650
+      }
+    ],
+    "reasoning_summary": "I stick with what worked last year and what my neighbors do. For wheat, I use improved seed with one 50kg bag of 15-15-15 compound fertilizer per mu at sowing plus 30kg urea topdressing, two irrigations, and two pesticide sprays, expecting 550 kg/mu. For maize, I use hybrid seed with 40kg compound fertilizer at sowing plus 30kg urea at big trumpet, no-tillage planting, one or two irrigations, and two pesticide sprays, expecting 650 kg/mu. I would rather spend extra on fertilizer than risk losing yield, because a bad harvest is a disaster while extra fertilizer is just a cost."
+  },
+  "elapsed_seconds": 87.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DST_LWM_15",
+  "tier": 3,
+  "provider": "kimi"
+}

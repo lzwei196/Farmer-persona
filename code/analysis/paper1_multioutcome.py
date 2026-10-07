@@ -1,0 +1,134 @@
+"""Does dispersion collapse generalise beyond nitrogen rate?
+
+Extends the Paper 1 variance analysis to every continuous outcome the LSMS agents decided
+(nitrogen rate, family labour days, hired labour days) and reports binary-practice rates.
+Writes metrics/paper1_multioutcome.{json,md}.
+"""
+import json, glob, sys
+from pathlib import Path
+import numpy as np, pandas as pd
+from scipy import stats
+
+ROOT = Path(__file__).resolve().parents[2]
+RNG = np.random.default_rng(20260810)
+NBOOT = 400
+PROVIDERS = ["claude", "codex", "kimi"]
+TIERS = [1, 2, 3, 4]
+
+CONT = [("nitrogen_kg_per_ha", "nitrogen_kg_per_ha", "N rate (kg/ha)"),
+        ("family_labor_days", "total_family_labor_days", "family labour (days)"),
+        ("hired_labor_days", "total_hired_labor_days", "hired labour (days)")]
+BINARY = [("inorganic_fertilizer", "inorganic_fertilizer"), ("organic_fertilizer", "organic_fertilizer"),
+          ("improved_seed", "improved"), ("used_pesticides", "used_pesticides"), ("irrigated", "irrigated")]
+
+
+def ksim(a, b):
+    a, b = np.asarray(a, float), np.asarray(b, float)
+    return float(1 - stats.ks_2samp(a, b).statistic) if len(a) > 1 and len(b) > 1 else float("nan")
+
+
+def refs(real, n_draw):
+    real = np.asarray([v for v in real if np.isfinite(v)], float)
+    o = {"n_real": int(len(real)), "mean": float(real.mean()), "sd": float(real.std()),
+         "median": float(np.median(real)), "zero_frac": float((real == 0).mean())}
+    o["ceiling"] = float(np.mean([ksim(RNG.choice(real, n_draw, True), real) for _ in range(NBOOT)]))
+    pos, z = real[real > 0], float((real == 0).mean())
+    if len(pos) > 5:
+        lp = np.log(pos)
+        o["null_shape"] = float(np.mean([ksim(np.where(RNG.random(n_draw) < z, 0.0,
+                             np.exp(RNG.normal(lp.mean(), lp.std(), n_draw))), real) for _ in range(NBOOT)]))
+    else:
+        o["null_shape"] = float("nan")
+    o["null_median"] = ksim(np.full(n_draw, np.median(real)), real)
+    return o
+
+
+def to_bool(x):
+    if isinstance(x, bool): return x
+    if isinstance(x, str):
+        s = x.strip().lower()
+        if s in ("yes", "true", "1"): return True
+        if s in ("no", "false", "0"): return False
+        return None
+    if isinstance(x, (int, float)) and np.isfinite(x): return bool(x)
+    return None
+
+
+def main():
+    df = pd.read_csv(ROOT / "data" / "lsms_4country_full.csv")
+    out = {"continuous": {}, "binary": {}}
+
+    for akey, gkey, label in CONT:
+        real_map = df[gkey].to_dict()
+        real_all = df[gkey].dropna().values
+        out["continuous"][akey] = {"label": label, "reference": refs(real_all, len(df)), "cells": {}}
+        for prov in PROVIDERS:
+            for t in TIERS:
+                A, R = [], []
+                for f in glob.glob(str(ROOT / f"raw_agent_output/lsms/{prov}/tier{t}/*.json")):
+                    d = json.load(open(f)); i = d.get("farmer_idx"); dec = d.get("decision") or {}
+                    if i is None or i not in real_map: continue
+                    try: v = float(dec.get(akey))
+                    except (TypeError, ValueError): continue
+                    r = real_map[i]
+                    if np.isfinite(v) and np.isfinite(r): A.append(v); R.append(r)
+                if len(A) < 20: continue
+                A, R = np.array(A), np.array(R)
+                rp90, rp50 = np.percentile(R, 90), np.median(R)
+                out["continuous"][akey]["cells"][f"{prov}_T{t}"] = {
+                    "n": len(A), "pearson_r": float(stats.pearsonr(A, R)[0]) if A.std() > 0 else float("nan"),
+                    "sd_ratio": float(A.std() / R.std()) if R.std() > 0 else float("nan"),
+                    "mean_ratio": float(A.mean() / R.mean()) if R.mean() else float("nan"),
+                    "p90_ratio": float(np.percentile(A, 90) / rp90) if rp90 else float("nan"),
+                    "median_diff": float(np.median(A) - rp50),
+                    "agent_median": float(np.median(A)), "agent_p90": float(np.percentile(A, 90)),
+                    "ks_sim": ksim(A, R), "agent_zero_frac": float((A == 0).mean())}
+
+    for akey, gkey in BINARY:
+        col = df[gkey]
+        rb = pd.to_numeric(col, errors="coerce").dropna()
+        if len(rb) < 20: continue
+        cells = {}
+        for prov in PROVIDERS:
+            for t in TIERS:
+                vals = []
+                for f in glob.glob(str(ROOT / f"raw_agent_output/lsms/{prov}/tier{t}/*.json")):
+                    b = to_bool((json.load(open(f)).get("decision") or {}).get(akey))
+                    if b is not None: vals.append(b)
+                if len(vals) >= 20: cells[f"{prov}_T{t}"] = float(np.mean(vals))
+        if cells: out["binary"][akey] = {"real_rate": float(rb.mean()), "n_real": int(len(rb)), "agent_rates": cells}
+
+    (ROOT / "metrics").mkdir(parents=True, exist_ok=True)
+    json.dump(out, open(ROOT / "metrics/paper1_multioutcome.json", "w"), indent=1)
+
+    M = ["# Does dispersion collapse generalise beyond nitrogen rate?", "",
+         "Generated by `code/analysis/paper1_multioutcome.py`. LSMS-ISA four-country panel.", ""]
+    for akey, blk in out["continuous"].items():
+        r = blk["reference"]
+        M += [f"## {blk['label']}", "",
+              f"Observed: n={r['n_real']}, mean {r['mean']:.1f}, SD {r['sd']:.1f}, "
+              f"median {r['median']:.1f}, zero fraction {r['zero_frac']:.2f}. "
+              f"Ceiling {r['ceiling']:.3f} · shape null {r['null_shape']:.3f} · median null {r['null_median']:.3f}", "",
+              "| cell | n | r | **SD ratio** | **p90 ratio** | agent median | real median | mean ratio | KS-sim |",
+              "|---|---|---|---|---|---|---|---|---|"]
+        for k, c in blk["cells"].items():
+            M.append(f"| {k} | {c['n']} | {c['pearson_r']:.3f} | **{c['sd_ratio']:.3f}** | "
+                     f"**{c['p90_ratio']:.3f}** | {c['agent_median']:.0f} | {r['median']:.0f} | "
+                     f"{c['mean_ratio']:.3f} | {c['ks_sim']:.3f} |")
+        sds = [c["sd_ratio"] for c in blk["cells"].values() if np.isfinite(c["sd_ratio"])]
+        p90 = [c["p90_ratio"] for c in blk["cells"].values() if np.isfinite(c["p90_ratio"])]
+        M += ["", f"**SD ratio {min(sds):.3f} – {max(sds):.3f}** (median {np.median(sds):.3f}, "
+                  f"{sum(s < 1 for s in sds)}/{len(sds)} below 1.0) · "
+                  f"**p90 ratio {min(p90):.3f} – {max(p90):.3f}** (median {np.median(p90):.3f}, "
+                  f"{sum(s < 1 for s in p90)}/{len(p90)} below 1.0)", ""]
+    M += ["## Binary practice rates (agent vs observed)", "",
+          "| decision | observed | agent range | n cells |", "|---|---|---|---|"]
+    for k, b in out["binary"].items():
+        v = list(b["agent_rates"].values())
+        M.append(f"| {k} | {b['real_rate']:.3f} | {min(v):.3f} – {max(v):.3f} | {len(v)} |")
+    open(ROOT / "metrics/paper1_multioutcome.md", "w").write("\n".join(M) + "\n")
+    print("\n".join(M))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've farmed these 13.1 mu for 15 years, and I know what my family can handle. My wife works at a factory in town, so most days it's just me in the fields. I split the land into two parts: 10 mu for my wheat-maize rotation, and 3.1 mu for cotton.\n\nRight now it's early spring, and my winter wheat needs attention. I'll topdress nitrogen when it greens up and again at jointing. With my well, I can irrigate three times through the season. Two pesticide sprays \u2014 one for weeds, one for diseases if they show up \u2014 should keep it clean. I expect around 460 kg/mu if the weather holds.\n\nCome June, right after wheat harvest, I'll rotary-till that same 10 mu and plant hybrid summer maize. Maize grows fast and doesn't need as much babysitting as cotton. I'll side-dress urea at jointing, irrigate twice, and spray twice. I usually get about 560 kg/mu.\n\nMy cotton goes in late April on the 3.1 mu plot. Cotton is picky \u2014 it needs plenty of potash and regular spraying for bollworm. I'll rotary-till in spring, put down compound fertilizer, and stay on top of the pests with five applications. I'll irrigate three times during flowering and boll development. I know this variety well; it should give me about 85 kg/mu of seed cotton.\n\nI don't chase new fads. My wife's salary covers our child's school fees, so I farm steady \u2014 stick to what I know, don't gamble on strange seeds, and keep the well pump maintained. That's how I'll manage this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"spring\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 460\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 560\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 13,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 85\n    }\n  ],\n  \"reasoning_summary\": \"I manage 10 mu in a wheat-maize rotation and 3.1 mu in cotton because my wife works off-farm and I handle most farmwork alone. Wheat and maize are mechanized and reliable; cotton requires more labor but fits on the smaller plot. I stick to familiar improved varieties for wheat and cotton, and hybrid maize for yield. Fertilizer and irrigation follow what has worked on my well-irrigated land for years.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "spring",
+        "area_mu": 10.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 460
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 10.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 560
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 13,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 85
+      }
+    ],
+    "reasoning_summary": "I manage 10 mu in a wheat-maize rotation and 3.1 mu in cotton because my wife works off-farm and I handle most farmwork alone. Wheat and maize are mechanized and reliable; cotton requires more labor but fits on the smaller plot. I stick to familiar improved varieties for wheat and cotton, and hybrid maize for yield. Fertilizer and irrigation follow what has worked on my well-irrigated land for years."
+  },
+  "elapsed_seconds": 146.6,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 4,
+  "farmer_id": "HQ_QB_4",
+  "tier": 2,
+  "provider": "kimi"
+}

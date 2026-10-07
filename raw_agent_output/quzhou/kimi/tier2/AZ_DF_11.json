@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 46 years old and have been farming this land in Quzhou County for 30 years. My family has four mouths to feed, and our six mu of land must both put food on the table and earn cash. I know every plot of this farm.\n\nMy mainstay is the wheat\u2013maize double crop on four mu. This rotation has never let me down: wheat goes in around late October and comes off in early June, then maize follows immediately and is ready by mid-September. That tight schedule means I cannot afford to waste time between harvest and sowing. For wheat I will rotary-till the field and sow my own saved seed of an improved variety\u2014about 30 jin per mu. Wheat needs water at jointing and filling, so with my well I will irrigate three times. I also know wheat gets leaf diseases and aphids every year, so I spray insecticide twice, herbicide once, and fungicide once. For fertilizer I have learned that 50\u201355 jin of pure nitrogen equivalent, plus compound fertilizer, gives me about 1,000 jin per mu.\n\nFor maize, because I have to plant it the same day wheat comes out, I use no-tillage and direct seeding with hybrid seed I buy in packages\u2014about 1.5 packages per mu. The hybrid vigor pushes yield to 1,300 jin per mu. Maize needs less fertilizer than wheat: one basal dose of compound is enough, and two irrigations carried me through last year\u2019s dry spells. I watch for corn borers and armyworms, so three insecticide sprays, one herbicide, and one fungicide keep the crop clean.\n\nThe remaining two mu I plant to stevia in mid-April. Stevia is more work but the price is good\u2014buyers from the processing plant pay around 6 yuan per jin. I rotary-till, lay plastic mulch, and transplant 8,000 improved seedlings per mu. Stevia is thirsty and loves potassium, so I give it plenty of basal compound plus a topdressing, and I irrigate five times through the summer. It also attracts more pests and weeds than grain crops, so I spray ten times for insects and twice for weeds, and I still have to hand-weed. I expect about 600 jin of dry leaf per mu.\n\nThis is the plan I have used for years, and this year I will do the same.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 53,\n      \"phosphorus_kg_per_mu\": 33,\n      \"potassium_kg_per_mu\": 9,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 1000\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 27,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 1300\n    },\n    {\n      \"crop\": \"stevia\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 36,\n      \"phosphorus_kg_per_mu\": 30,\n      \"potassium_kg_per_mu\": 36,\n      \"irrigation_times\": 5,\n      \"pesticide_applications\": 12,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I have farmed these six mu for 30 years. Four mu stay in the wheat\u2013maize rotation because it provides reliable grain and income; I rotary-till for wheat, no-till for maize to save time between crops, and I irrigate from my well. The other two mu go to stevia, which pays better but needs more water, fertilizer, and pest control. I use saved improved wheat seed, bought hybrid maize packages, and bought stevia seedlings, adjusting inputs based on what has worked year after year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 53,
+        "phosphorus_kg_per_mu": 33,
+        "potassium_kg_per_mu": 9,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 1000
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 27,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 5,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 1300
+      },
+      {
+        "crop": "stevia",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 36,
+        "phosphorus_kg_per_mu": 30,
+        "potassium_kg_per_mu": 36,
+        "irrigation_times": 5,
+        "pesticide_applications": 12,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I have farmed these six mu for 30 years. Four mu stay in the wheat\u2013maize rotation because it provides reliable grain and income; I rotary-till for wheat, no-till for maize to save time between crops, and I irrigate from my well. The other two mu go to stevia, which pays better but needs more water, fertilizer, and pest control. I use saved improved wheat seed, bought hybrid maize packages, and bought stevia seedlings, adjusting inputs based on what has worked year after year."
+  },
+  "elapsed_seconds": 96.7,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_11",
+  "tier": 2,
+  "provider": "kimi"
+}

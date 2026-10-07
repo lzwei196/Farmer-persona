@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 63 this year. I never went to school, not one day. I started following my mother to the fields when I was 13, so I have been farming for 50 years. My land is small, only 4.1 mu, just me and my old man at home. We have a well, so water is not a big worry, but every bag of fertilizer costs real money, so I count it out carefully.\n\nFor wheat, I do what I did last year. Before planting in October, I spread one big bag \u2014 about 100 jin \u2014 of that three-number fertilizer on each mu. The shop calls it 15-15-15. That is four bags for my whole field. Then the rotary tiller comes and churns it into the soil. In March when the wheat turns green, I spread another 15 jin of white urea on each mu. I would rather put a little too much than too little. A bad harvest means no money for the whole year; wasting a bit of fertilizer is just a few yuan lost. I irrigate three times: once when it wakes up, once when it grows tall, and once when the grains are filling. I spray twice \u2014 once for weeds in spring, once for bugs when it heads. My neighbor Wang's family does the same, and they got about 900 jin per mu last year. I expect the same.\n\nFor corn, I plant right after the wheat comes off in June. I put down one big bag of 15-15-15 per mu again, but corn eats more nitrogen, so when the plants are knee-high I add 20 jin of urea per mu. The rotary tiller works the ground after wheat harvest. I irrigate twice if the rain does not come \u2014 once when it is shooting up, and once when the ears are filling. I spray twice, for weeds and for that stem borer worm. If the weather holds, I should get 1,000 jin per mu. I do not hire labor; it is just the two of us. I do not try new tricks. I watch what others do, and I stick to what I know.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14.4,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16.7,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I base everything on what worked last year. On my small 4.1 mu farm, I cannot afford to gamble. I buy one 50 kg bag of 15-15-15 compound fertilizer per mu for both wheat and corn, then top-dress with urea \u2014 15 kg per mu for wheat and 20 kg per mu for corn because corn is hungrier. I would rather spend a little extra on fertilizer than risk a bad harvest. I irrigate wheat three times and corn twice, spray twice for each, and use the rotary tiller before planting. I copy my neighbors, use improved wheat seed and hybrid corn seed, and expect around 450 kg per mu of wheat and 500 kg per mu of corn if the weather holds.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14.4,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16.7,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I base everything on what worked last year. On my small 4.1 mu farm, I cannot afford to gamble. I buy one 50 kg bag of 15-15-15 compound fertilizer per mu for both wheat and corn, then top-dress with urea \u2014 15 kg per mu for wheat and 20 kg per mu for corn because corn is hungrier. I would rather spend a little extra on fertilizer than risk a bad harvest. I irrigate wheat three times and corn twice, spray twice for each, and use the rotary tiller before planting. I copy my neighbors, use improved wheat seed and hybrid corn seed, and expect around 450 kg per mu of wheat and 500 kg per mu of corn if the weather holds."
+  },
+  "elapsed_seconds": 72.0,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_QHD_5",
+  "tier": 3,
+  "provider": "kimi"
+}

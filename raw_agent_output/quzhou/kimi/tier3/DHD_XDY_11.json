@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am 56 years old and I have farmed this 4.5 mu in Quzhou County for 35 years. I have a university degree, so I understand soil nutrient balance and crop growth stages better than some of my neighbors, but this is still a small farm and every yuan of input cost comes out of my household budget. My son and daughter work in Shijiazhuang and send money home, which means I do not have to skip inputs, but I still calculate everything by the bag because waste is still waste.\n\nMy system is winter wheat followed by summer maize. Last year my wheat yielded about 530 kg per mu and my maize yielded about 620 kg per mu. This year I will adjust slightly because fertilizer prices are a bit higher, but I know from experience that cutting nitrogen on wheat or maize costs me more in lost grain than it saves in input costs.\n\nFor winter wheat, I will plant Jimai 22, an improved variety I have used for seven years. It stands well and resists the diseases we get here. I will rotary till after maize harvest to break up the stubble and level the field before sowing in mid-October. For fertilizer, I apply 16 kg of nitrogen per mu total: I put 7 kg N down as compound fertilizer at sowing, and I topdress 9 kg N as urea at the jointing stage in late March. I apply 7 kg of phosphorus per mu and 5 kg of potassium per mu as base fertilizer. Our soil in this part of Quzhou is loamy and medium in phosphorus, and I have tracked this over the years \u2014 cutting phosphorus by even 2 kg saves me about 15 yuan per mu but costs me at least 60 kg in yield, so I will not cut it. I irrigate four times: establishment irrigation right after sowing, winter irrigation before the ground freezes in November, jointing irrigation in late March, and grain-filling irrigation in early May. I spray pesticides three times: herbicide at the three-leaf stage in November, a combined insecticide and fungicide spray at flag leaf stage, and one more insecticide spray if I see aphids in April. Some of my neighbors only spray twice to save money, but I saw stripe rust on their fields last year and mine were clean.\n\nFor summer maize, I plant Zhengdan 958 hybrid right after wheat harvest in early June. There is no time for deep ploughing \u2014 the wheat stubble helps keep moisture and I seed directly using no-tillage. I apply 15 kg of nitrogen per mu: 6 kg N in compound fertilizer at planting, and 9 kg N as urea at the big flare stage when the plants are knee-high. Phosphorus is 5 kg per mu and potassium is 4 kg per mu, all as base fertilizer mixed in the seed row. I irrigate twice: once at planting if the weather is dry, and once at tasseling in late July because that is the stage that determines kernel number. I spray three times: pre-emergence herbicide within two days of sowing, insecticide at the silk stage to control corn borer, and one more insecticide in August if I see armyworm.\n\nI buy all my own inputs and I know the current prices. Urea is about 100 yuan for a 50 kg bag, and compound fertilizer is about 150 yuan per bag. For my 4.5 mu, the total fertilizer cost for both crops runs to about 1,650 yuan. I would rather spend an extra 150 yuan on fertilizer than risk losing even 50 kg of grain per mu. On 4.5 mu, a failed crop is a disaster I cannot absorb. My wife and I do all the field work ourselves \u2014 we do not hire labor because at this scale it is cheaper to work longer hours. I watch what my neighbors do, but I adjust based on what I have calculated myself. If everyone around me cuts fertilizer this year because prices went up, I will still stick to my rates because I have done the arithmetic.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4.5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    }\n  ],\n  \"reasoning_summary\": \"I base my plan on last year's results and my university-level understanding of crop nutrition, but I never forget that 4.5 mu is a small farm where every input must pay for itself. I maintain nitrogen at 16 kg per mu for wheat and 15 kg per mu for maize because I have calculated that yield loss from cutting back costs more than the fertilizer itself. I keep phosphorus and potassium steady for strong root development and stalk strength. I irrigate wheat four times and maize twice at the critical growth stages, and I spray three times per crop because pest and disease damage on a small farm is not something I can afford. My wife and I supply all the labor, and I would rather slightly over-apply fertilizer than risk any yield loss.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4.5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4.5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      }
+    ],
+    "reasoning_summary": "I base my plan on last year's results and my university-level understanding of crop nutrition, but I never forget that 4.5 mu is a small farm where every input must pay for itself. I maintain nitrogen at 16 kg per mu for wheat and 15 kg per mu for maize because I have calculated that yield loss from cutting back costs more than the fertilizer itself. I keep phosphorus and potassium steady for strong root development and stalk strength. I irrigate wheat four times and maize twice at the critical growth stages, and I spray three times per crop because pest and disease damage on a small farm is not something I can afford. My wife and I supply all the labor, and I would rather slightly over-apply fertilizer than risk any yield loss."
+  },
+  "elapsed_seconds": 246.4,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "DHD_XDY_11",
+  "tier": 3,
+  "provider": "kimi"
+}

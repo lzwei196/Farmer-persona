@@ -1,0 +1,40 @@
+{
+  "raw_response": "I am old farmer here in Quzhou. 40 years on this same land. 3.1 mu only, not big. I grow wheat in winter, then maize in summer, same as everyone here. My two sons work in town now, so mostly me and old wife working the field. We use the well for water when sky does not give rain.\n\nI do what I did last year. Last year was okay, not bad. Wheat gave me about 450 kg per mu, maize about 550 kg per mu. Why change?\n\nFor wheat, I plant in October. I buy the improved seed from the village shop, the kind everyone here plants, \"Jimai\" something, I forget the number but the dealer knows. About 15 kg seed per mu. I plough the field first with the small tractor, pay the man 50 yuan per mu.\n\nFertilizer \u2014 I use the compound fertilizer, the 15-15-15 kind, 2 bags per mu before planting, that is 100 kg. Then in spring when wheat turns green I put urea, one bag is 40 kg, I use about half bag per mu, so 20 kg urea. Urea is mostly nitrogen, the dealer told me long ago. I water 3 times \u2014 once after planting, once in spring, once when grain is filling. Pesticide I spray 2 times, once for the aphid and once for the rust if I see it.\n\nFor maize, I plant right after wheat harvest in June, no time to plough, I just use no-till with the seeder, the village has one. Hybrid seed of course, everyone uses hybrid maize now, about 2.5 kg per mu. I put compound fertilizer at planting, 1.5 bags per mu, that is 75 kg. Then when maize is knee-high I topdress urea, about 25 kg per mu. Maize needs more nitrogen than wheat, I learned this from my neighbor Old Wang years ago. Water 2 times if rain is little, sometimes 3. Spray once for the borer worm.\n\nI rather put a little extra fertilizer than lose the harvest. Fertilizer costs maybe 200 yuan extra, but losing 100 kg grain is 250 yuan gone. My field is small, I cannot afford bad year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24.2,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 15,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 3.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 22.75,\n      \"phosphorus_kg_per_mu\": 11.25,\n      \"potassium_kg_per_mu\": 11.25,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 1,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I am 73, farming 3.1 mu wheat-maize for 40 years. I do same as last year because it worked \u2014 wheat 450 kg, maize 550 kg per mu. Buy improved wheat seed and hybrid maize seed from village dealer like everyone. Use 15-15-15 compound fertilizer at planting plus urea topdress, copying what Old Wang and other neighbors do. Plough for wheat, no-till seeder for maize after wheat harvest because no time. Irrigate from well 3 times for wheat, 2 times for maize. Spray aphid and rust for wheat, borer for maize. I add a little extra fertilizer rather than risk losing grain \u2014 small field, cannot afford bad year.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 3.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24.2,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 15,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 3.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 22.75,
+        "phosphorus_kg_per_mu": 11.25,
+        "potassium_kg_per_mu": 11.25,
+        "irrigation_times": 2,
+        "pesticide_applications": 1,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I am 73, farming 3.1 mu wheat-maize for 40 years. I do same as last year because it worked \u2014 wheat 450 kg, maize 550 kg per mu. Buy improved wheat seed and hybrid maize seed from village dealer like everyone. Use 15-15-15 compound fertilizer at planting plus urea topdress, copying what Old Wang and other neighbors do. Plough for wheat, no-till seeder for maize after wheat harvest because no time. Irrigate from well 3 times for wheat, 2 times for maize. Spray aphid and rust for wheat, borer for maize. I add a little extra fertilizer rather than risk losing grain \u2014 small field, cannot afford bad year."
+  },
+  "elapsed_seconds": 30.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_SH_3",
+  "tier": 3,
+  "provider": "claude"
+}

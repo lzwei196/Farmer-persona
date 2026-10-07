@@ -1,0 +1,40 @@
+{
+  "raw_response": "I farm 16.9 mu here in Quzhou. My main crop is cotton like most folks around here, but I also plant some maize for the household and to sell a bit. Let me think about this year.\n\nFor cotton, I will put about 10 mu. Last year I planted Bt cotton \u2014 the seed dealer in town sells bags of good hybrid seed, everyone around here uses it because the bollworm doesn't eat it so bad. I will plough the land first in spring, the soil here is heavy and needs turning. For fertilizer, I do what my brother-in-law does \u2014 one bag of compound fertilizer (25 kg, 15-15-15) as base per mu, then urea at flowering. That gives me about 12 kg nitrogen per mu, 8 phosphorus, 8 potassium. Cotton needs water \u2014 I will irrigate from the well 3 times, at budding, flowering, and boll-filling. Even with Bt seed I still spray \u2014 aphids and spider mites don't care about Bt. I will spray maybe 6 times over the season. Last year I got about 260 kg seed cotton per mu, I hope for same.\n\nFor maize, 6.9 mu. I plant spring maize, hybrid seed \u2014 Zhengdan type from the dealer. Maize eats more nitrogen than cotton. I put about 18 kg N per mu, 6 P, 5 K. One base dressing with compound, then urea topdressing at big trumpet stage. Rotary tillage is enough for maize. Irrigate 2 times \u2014 planting and tasseling. Spray once or twice for corn borer. I usually get around 550 kg per mu.\n\nEvery bag of fertilizer costs real money, so I don't waste, but I don't skimp either \u2014 a bad harvest costs more than an extra bag.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 12,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 260\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"spring\",\n      \"area_mu\": 6.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"I farm the way my neighbors do because it works here. Cotton on 10 mu with Bt hybrid seed, one bag of 15-15-15 compound plus urea topdressing, three well-irrigations, and regular spraying for aphids and mites \u2014 Bt handles bollworm but not the small pests. Maize on the rest, hybrid seed, more nitrogen than cotton because maize is hungry for it, two irrigations, one or two sprays for corn borer. I plough for cotton because the soil is heavy, rotary is enough for maize. I don't cut fertilizer to save money \u2014 a bad harvest costs far more than an extra bag of urea.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 12,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 260
+      },
+      {
+        "crop": "maize",
+        "season": "spring",
+        "area_mu": 6.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "I farm the way my neighbors do because it works here. Cotton on 10 mu with Bt hybrid seed, one bag of 15-15-15 compound plus urea topdressing, three well-irrigations, and regular spraying for aphids and mites \u2014 Bt handles bollworm but not the small pests. Maize on the rest, hybrid seed, more nitrogen than cotton because maize is hungry for it, two irrigations, one or two sprays for corn borer. I plough for cotton because the soil is heavy, rotary is enough for maize. I don't cut fertilizer to save money \u2014 a bad harvest costs far more than an extra bag of urea."
+  },
+  "elapsed_seconds": 30.9,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "YZ_HXZ_15",
+  "tier": 3,
+  "provider": "claude"
+}

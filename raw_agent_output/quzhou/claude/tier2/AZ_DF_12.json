@@ -1,0 +1,53 @@
+{
+  "raw_response": "I've been working this land for thirty years. I know what it needs and what I can handle. My husband and one of my kids do some work in town now, so I can't take on too much labor-heavy work myself. Cotton is hard \u2014 lots of hand-picking, pest management. I'll keep a small plot of it, maybe 2 mu, because it brings extra cash when prices are decent. But most of my land, 5 mu, stays in the wheat-maize rotation. That's what I know best and the market is steady for grain.\n\nFor wheat this winter, I'll use the improved variety I've been buying from the county seed station for the past several years \u2014 not hybrid, but reliable. I'll do three irrigations: once before winter sets in, once at jointing, once at heading. No point overdoing water, it costs electricity to pump. I apply fertilizer in two splits \u2014 basal at planting, topdress at jointing. Around 14 kg nitrogen per mu. I'll rotary till after maize harvest to break up the stubble.\n\nFor summer maize after wheat, I'll go with hybrid seed \u2014 the yield difference is real and the seed isn't that expensive. I'll direct seed after wheat harvest without full tillage, just to save time since there's only a short window. Two irrigations should be enough if summer rains cooperate. Eighteen kilos of nitrogen, side-dressed.\n\nFor cotton, I'll plant in April on the 2 mu I've set aside. It needs more attention \u2014 four irrigations, more sprays for bollworm and aphid. But I manage it myself slowly over the season. I'll rotary till that plot in spring.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 280\n    }\n  ],\n  \"reasoning_summary\": \"I allocate 5 mu to the wheat-maize double-cropping rotation, which is my main income and the system I know best after 30 years; wheat goes in as winter crop with improved seed, three well irrigations, and split nitrogen application around 14 kg/mu, while summer maize follows with hybrid seed and no-till direct seeding to save time and labor given my household's off-farm commitments. The remaining 2 mu goes to cotton, planted in spring, which adds cash income but demands careful pest management and four irrigations; I keep the cotton area small because hand labor for picking and scouting is limited with fewer family members available on-farm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 4,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 280
+      }
+    ],
+    "reasoning_summary": "I allocate 5 mu to the wheat-maize double-cropping rotation, which is my main income and the system I know best after 30 years; wheat goes in as winter crop with improved seed, three well irrigations, and split nitrogen application around 14 kg/mu, while summer maize follows with hybrid seed and no-till direct seeding to save time and labor given my household's off-farm commitments. The remaining 2 mu goes to cotton, planted in spring, which adds cash income but demands careful pest management and four irrigations; I keep the cotton area small because hand labor for picking and scouting is limited with fewer family members available on-farm."
+  },
+  "elapsed_seconds": 45.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_12",
+  "tier": 2,
+  "provider": "claude"
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "*Reasoning as the farmer:*\n\nAiyo, me and this land, we've been together 50 years now. My two boys work in town \u2014 factory jobs, better money than farming \u2014 so most days it's just me and the old lady on these 16.9 mu. Son comes back for the busy weeks, wheat harvest and maize planting, otherwise I hire the combine and the seeder. At my age, I'm not about to be pulling a plow.\n\nI do wheat-maize like everyone in the village. Always have. The land is decent \u2014 not the best, not the worst. I remember three years back we had a dry autumn and my neighbor old Wang planted too early, his wheat came up weak. I waited a week and mine was fine. So I watch the weather, I don't rush.\n\n**Wheat (winter):** I'll plant around October 10-15, depending on soil moisture. I use the \"Jimai 22\" variety \u2014 the seed shop sells it, most of us grow it, good enough. Before planting I put down about 40 kg of compound fertilizer per mu (\u4e8c\u94f5 type, 15-15-15 or thereabouts) \u2014 that's my base. Then at green-up in March I topdress about 15 kg urea. If the wheat looks yellow at jointing I'll add another 10 kg, but usually I don't need to. Works out to maybe 18 kg N per mu total. I water it 3-4 times: once before winter if dry, then green-up, jointing, grain-fill. Well water is metered now, costs real money, so I don't waste it. I spray herbicide once in spring for the broadleaf weeds. Yield \u2014 I usually get around 450 kg/mu, some years better, some worse.\n\n**Maize (summer):** As soon as wheat comes off in early June, I get the no-till planter in \u2014 no time to plow, the village cooperative has one we share. \"Zhengdan 958\" or similar hybrid, whatever the shop has that year. I put 30 kg compound at planting and maybe 15 kg urea at big flare stage. Sometimes I skip the topdress if rain has been good. Irrigation depends \u2014 if July-August rains come proper, I don't water at all. If it's dry I'll water once or twice. Herbicide after emergence, and I watch for corn borer. Yield is usually 500 kg/mu or so.\n\nI'm careful with money. My boys send some back but I don't want to be a burden. Fertilizer prices went up again this year, I heard, so I won't be putting extra on. What worked last year will work this year.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"field_area_mu\": 16.9,\n      \"planting_date\": \"October 10-15\",\n      \"harvest_date\": \"early-mid June\",\n      \"seed_type\": \"improved (Jimai 22 or similar)\",\n      \"seed_cost_yuan_per_mu\": 40,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 18,\n      \"phosphorus_total_kg_per_mu\": 6,\n      \"potassium_total_kg_per_mu\": 6,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"40 kg 15-15-15 compound as base before planting; 15 kg urea topdressed at green-up in March; occasional extra 10 kg urea at jointing if crop looks yellow\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 3,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\"],\n      \"tillage_method\": \"rotary tillage before planting, hired service\",\n      \"labor_family_days\": 15,\n      \"labor_hired_days\": 4,\n      \"yield_expectation_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"field_area_mu\": 16.9,\n      \"planting_date\": \"mid June (right after wheat harvest)\",\n      \"harvest_date\": \"late September\",\n      \"seed_type\": \"hybrid (Zhengdan 958 or similar)\",\n      \"seed_cost_yuan_per_mu\": 55,\n      \"fertilizer_use\": true,\n      \"nitrogen_total_kg_per_mu\": 16,\n      \"phosphorus_total_kg_per_mu\": 5,\n      \"potassium_total_kg_per_mu\": 5,\n      \"fertilizer_applications\": 2,\n      \"fertilizer_timing\": \"30 kg compound at planting; 15 kg urea topdressed at large flare (big trumpet) stage\",\n      \"irrigation_use\": true,\n      \"irrigation_times\": 1,\n      \"pesticide_use\": true,\n      \"pesticide_types\": [\"herbicide\", \"insecticide\"],\n      \"tillage_method\": \"no-till direct seeding with shared cooperative planter\",\n      \"labor_family_days\": 12,\n      \"labor_hired_days\": 3,\n      \"yield_expectation_kg_per_mu\": 500\n    }\n  ],\n  \"total_input_cost_yuan\": 11200,\n  \"reasoning_summary\": \"I've been farming these 16.9 mu for 50 years, wheat-maize double crop like everyone around here. I stick with what works \u2014 Jimai 22 for wheat, a 958-type hybrid for maize, compound fertilizer as base and urea topdress. My sons are off-farm so I rely on hired machinery for the tight wheat-to-maize turnaround and share the cooperative no-till planter. I water wheat 3 times since well water costs money, and only water maize if the summer rains fail. Fertilizer prices are up this year so I'm not adding extra \u2014 last year's rates were fine.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "field_area_mu": 16.9,
+        "planting_date": "October 10-15",
+        "harvest_date": "early-mid June",
+        "seed_type": "improved (Jimai 22 or similar)",
+        "seed_cost_yuan_per_mu": 40,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 18,
+        "phosphorus_total_kg_per_mu": 6,
+        "potassium_total_kg_per_mu": 6,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "40 kg 15-15-15 compound as base before planting; 15 kg urea topdressed at green-up in March; occasional extra 10 kg urea at jointing if crop looks yellow",
+        "irrigation_use": true,
+        "irrigation_times": 3,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide"
+        ],
+        "tillage_method": "rotary tillage before planting, hired service",
+        "labor_family_days": 15,
+        "labor_hired_days": 4,
+        "yield_expectation_kg_per_mu": 450,
+        "nitrogen_kg_per_mu": 18,
+        "area_mu": 16.9,
+        "expected_yield_kg_per_mu": 450,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6
+      },
+      {
+        "crop": "summer maize",
+        "field_area_mu": 16.9,
+        "planting_date": "mid June (right after wheat harvest)",
+        "harvest_date": "late September",
+        "seed_type": "hybrid (Zhengdan 958 or similar)",
+        "seed_cost_yuan_per_mu": 55,
+        "fertilizer_use": true,
+        "nitrogen_total_kg_per_mu": 16,
+        "phosphorus_total_kg_per_mu": 5,
+        "potassium_total_kg_per_mu": 5,
+        "fertilizer_applications": 2,
+        "fertilizer_timing": "30 kg compound at planting; 15 kg urea topdressed at large flare (big trumpet) stage",
+        "irrigation_use": true,
+        "irrigation_times": 1,
+        "pesticide_use": true,
+        "pesticide_types": [
+          "herbicide",
+          "insecticide"
+        ],
+        "tillage_method": "no-till direct seeding with shared cooperative planter",
+        "labor_family_days": 12,
+        "labor_hired_days": 3,
+        "yield_expectation_kg_per_mu": 500,
+        "nitrogen_kg_per_mu": 16,
+        "area_mu": 16.9,
+        "expected_yield_kg_per_mu": 500,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 5
+      }
+    ],
+    "total_input_cost_yuan": 11200,
+    "reasoning_summary": "I've been farming these 16.9 mu for 50 years, wheat-maize double crop like everyone around here. I stick with what works \u2014 Jimai 22 for wheat, a 958-type hybrid for maize, compound fertilizer as base and urea topdress. My sons are off-farm so I rely on hired machinery for the tight wheat-to-maize turnaround and share the cooperative no-till planter. I water wheat 3 times since well water costs money, and only water maize if the summer rains fail. Fertilizer prices are up this year so I'm not adding extra \u2014 last year's rates were fine."
+  },
+  "elapsed_seconds": 44.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HNT_XWJF_12",
+  "tier": 4,
+  "provider": "claude"
+}

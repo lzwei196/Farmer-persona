@@ -1,0 +1,79 @@
+{
+  "raw_response": "I'll reason as this farmer, then give the JSON.\n\n**My thinking:**\n\nI have 10.9 mu. Most of it I plant wheat then maize \u2014 that is what I have always done, same as my neighbors. I keep about 7 mu for wheat-maize. The rest I use for vegetables and melon because they bring more money at market. I give 1 mu to eggplant, 1 mu to tomato, and the last 1.9 mu to watermelon.\n\nFor wheat, I put down one bag of compound (50 jin, the 15-15-15 kind) before planting, and in spring when it turns green I spread 50 jin of urea. That is what I did last year and I got about 450 kg. If I put less, I am scared the wheat will be yellow.\n\nFor maize after wheat, I don't plough, I just push the seed in with the seeder. I buy Zhengdan hybrid from the dealer \u2014 everyone buys it. One bag compound at sowing, then 50 jin urea when it is knee-high. I water 2 times if no rain.\n\nFor eggplant and tomato, I use more fertilizer because they eat a lot. I put 2 bags compound and some chicken manure I buy from the chicken farm, then urea twice during growing. I must spray many times \u2014 if I don't, the bugs eat everything and I lose all money. Water often from the well, maybe every 7-8 days.\n\nWatermelon I plant hybrid seed, put compound plus manure, spray maybe 4 times. Water less than vegetables or the melon is not sweet.\n\nI stick close to what I did last year. Fertilizer is expensive but losing harvest is worse.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 22,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 7.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"eggplant\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 30,\n      \"phosphorus_kg_per_mu\": 15,\n      \"potassium_kg_per_mu\": 25,\n      \"irrigation_times\": 10,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 4000\n    },\n    {\n      \"crop\": \"tomato\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.0,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 28,\n      \"phosphorus_kg_per_mu\": 14,\n      \"potassium_kg_per_mu\": 24,\n      \"irrigation_times\": 8,\n      \"pesticide_applications\": 7,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 4500\n    },\n    {\n      \"crop\": \"watermelon\",\n      \"season\": \"spring\",\n      \"area_mu\": 1.9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 12,\n      \"potassium_kg_per_mu\": 18,\n      \"irrigation_times\": 6,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 3000\n    }\n  ],\n  \"reasoning_summary\": \"I keep 7 mu for wheat-maize like always \u2014 one bag compound plus urea topdress on each, enough water from my well. My 1 mu eggplant, 1 mu tomato, and 1.9 mu watermelon bring cash, so I use more fertilizer and chicken manure and spray often against bugs. I do what worked last year. Fertilizer costs money but a bad harvest is worse, so I give a little extra rather than too little.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 7.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 22,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 7.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "eggplant",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 30,
+        "phosphorus_kg_per_mu": 15,
+        "potassium_kg_per_mu": 25,
+        "irrigation_times": 10,
+        "pesticide_applications": 8,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 4000
+      },
+      {
+        "crop": "tomato",
+        "season": "spring",
+        "area_mu": 1.0,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 28,
+        "phosphorus_kg_per_mu": 14,
+        "potassium_kg_per_mu": 24,
+        "irrigation_times": 8,
+        "pesticide_applications": 7,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 4500
+      },
+      {
+        "crop": "watermelon",
+        "season": "spring",
+        "area_mu": 1.9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 12,
+        "potassium_kg_per_mu": 18,
+        "irrigation_times": 6,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 3000
+      }
+    ],
+    "reasoning_summary": "I keep 7 mu for wheat-maize like always \u2014 one bag compound plus urea topdress on each, enough water from my well. My 1 mu eggplant, 1 mu tomato, and 1.9 mu watermelon bring cash, so I use more fertilizer and chicken manure and spray often against bugs. I do what worked last year. Fertilizer costs money but a bad harvest is worse, so I give a little extra rather than too little."
+  },
+  "elapsed_seconds": 39.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_6",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,40 @@
+{
+  "raw_response": "**My reasoning as this farmer:**\n\nI have been farming this land since I was young, same as my father before me. Here in Quzhou, everyone grows wheat in winter and corn in summer. That is what the land here is good for. I have about 10 mu \u2014 I manage it myself with my wife, though my back is not as strong as it used to be.\n\nI do not overthink these things. I plant winter wheat in October after the summer corn comes off, and I plant corn in June after the wheat is cut. Same rotation I have done for thirty years. My neighbors do the same.\n\nFor wheat, I use the improved seed the village supply co-op sells \u2014 I don't know the variety name well but it has been reliable. For corn, I buy hybrid seed, also from the co-op. The hybrid corn gives more yield. Even I can see that.\n\nFor fertilizer, I put on what my father taught me, maybe a little more now because the soil feels poorer than it used to. I apply the fertilizer in two rounds \u2014 base fertilizer before planting, and top dressing when the plants are growing. I irrigate from the well. Wheat needs water four times at least \u2014 once before winter, once in spring when it greens up, once when the stalk stretches, once when it heads. Corn I water less, maybe twice.\n\nI spray herbicide in spring for the wheat, and I watch for aphids. For corn I spray once for pests. That is usually enough.\n\n---\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"winter wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 10,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 20,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"summer maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 10,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    }\n  ],\n  \"reasoning_summary\": \"A 64-year-old smallholder in Quzhou County with no formal schooling follows the standard winter wheat and summer maize double-cropping rotation on 10 mu of household land, relying on thirty-plus years of inherited and observed practice. Wheat is planted in October after rotary tillage and harvested in June; maize is direct-seeded into the stubble in June and harvested in September. Seed is purchased from the village co-op \u2014 improved variety for wheat, hybrid for maize. Fertilizer rates are moderately high, consistent with the tendency of less-educated farmers to apply extra as insurance. Wheat receives four irrigations from a groundwater well at the standard growth stages; maize receives two. Pesticide use is conventional: herbicide plus two protective sprays for wheat, one pest control pass for maize.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "winter wheat",
+        "season": "winter",
+        "area_mu": 10,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 20,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "summer maize",
+        "season": "summer",
+        "area_mu": 10,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      }
+    ],
+    "reasoning_summary": "A 64-year-old smallholder in Quzhou County with no formal schooling follows the standard winter wheat and summer maize double-cropping rotation on 10 mu of household land, relying on thirty-plus years of inherited and observed practice. Wheat is planted in October after rotary tillage and harvested in June; maize is direct-seeded into the stubble in June and harvested in September. Seed is purchased from the village co-op \u2014 improved variety for wheat, hybrid for maize. Fertilizer rates are moderately high, consistent with the tendency of less-educated farmers to apply extra as insurance. Wheat receives four irrigations from a groundwater well at the standard growth stages; maize receives two. Pesticide use is conventional: herbicide plus two protective sprays for wheat, one pest control pass for maize."
+  },
+  "elapsed_seconds": 42.1,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "NLY_WSZ_11",
+  "tier": 1,
+  "provider": "claude"
+}

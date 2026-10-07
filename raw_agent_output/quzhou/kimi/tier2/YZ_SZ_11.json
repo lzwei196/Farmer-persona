@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have farmed these 6 mu in Quzhou for fifty years. I am seventy-two now, and it is just my wife and me in the household, so I do not take risks and I avoid back-breaking work. My well gives me water when I need it, but pumping costs electricity, so I do not waste a drop.\n\nThis year I will keep 4 mu in my wheat-maize rotation and 2 mu in cotton. The wheat-maize double crop is my backbone\u2014it puts food on the table and the straw feeds my small courtyard animals. I will plant winter wheat on the 4 mu using an improved variety like jimai22. I know this seed; it stands up to our spring winds and does not lodge if I do not get greedy with nitrogen. I will rotary till before sowing, spread about 50 kilograms of compound fertilizer per mu as basal, and topdress with urea at the jointing stage. In total that gives me roughly 24 kg of nitrogen, 6 kg of phosphorus, and 6 kg of potassium per mu. I will irrigate three times from my well: once before winter to protect the seedlings, once at jointing, and once at grain filling. Three sprays will do for wheat\u2014herbicide at sowing, one insecticide in early spring, and a fungicide only if the weather turns damp. I expect about 500 kg per mu, which is what this land has given me for a decade.\n\nAfter I harvest the wheat in early June, I will immediately plant hybrid maize\u2014denghai605, the same seed my neighbors trust. There is no time to plough; I will direct-seed into the wheat stubble with no-tillage to save labor and catch the summer heat. I will put down compound fertilizer at sowing and topdress with urea at the big-trumpet stage, for about 16 kg nitrogen, 7 kg phosphorus, and 7 kg potassium per mu. Maize needs water at silking and grain filling, so two irrigations from my well will be enough. Two pesticide applications: a pre-emergence herbicide and one spray for armyworm if I see damage in the field. I expect about 550 kg per mu.\n\nI keep 2 mu of cotton because the cash income helps pay for my grandchildren\u2019s school fees, but at my age I cannot manage more than 2 mu\u2014the picking and spraying would break my back. I use hybrid guoxinmian seed. Cotton is picky; it needs three irrigations at seedling establishment, flowering, and boll setting. I rotary till in spring and apply compound fertilizer as basal, giving about 8 kg nitrogen, 7 kg phosphorus, and 8 kg potassium per mu\u2014slightly more potassium because cotton bolls need it. The bollworm is my biggest enemy, so I will spray eight times through the season, watching the leaves every morning. I expect about 275 kg of seed cotton per mu.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 4,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 24,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 4,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 7,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 2,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 8,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 8,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 8,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 275\n    }\n  ],\n  \"reasoning_summary\": \"I am seventy-two with only my wife to help, so I keep 4 mu in the reliable wheat-maize double crop and limit cotton to 2 mu to manage labor. I use trusted improved wheat and hybrid maize and cotton varieties, apply moderate fertilizer with compound basal and urea topdressing, irrigate from my well at critical growth stages, and spray pesticides when pests appear\u2014especially frequent sprays on cotton to fight bollworm.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 4,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 24,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 4,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 7,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 2,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 8,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 8,
+        "irrigation_times": 3,
+        "pesticide_applications": 8,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 275
+      }
+    ],
+    "reasoning_summary": "I am seventy-two with only my wife to help, so I keep 4 mu in the reliable wheat-maize double crop and limit cotton to 2 mu to manage labor. I use trusted improved wheat and hybrid maize and cotton varieties, apply moderate fertilizer with compound basal and urea topdressing, irrigate from my well at critical growth stages, and spray pesticides when pests appear\u2014especially frequent sprays on cotton to fight bollworm."
+  },
+  "elapsed_seconds": 247.8,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "YZ_SZ_11",
+  "tier": 2,
+  "provider": "kimi"
+}

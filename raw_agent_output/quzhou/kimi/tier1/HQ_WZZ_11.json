@@ -1,0 +1,40 @@
+{
+  "raw_response": "I never went to school \u2014 can't read a word. But I've been farming these fields for more than 40 years, and I know every ridge and hollow. My father taught me, and now I just do what he did, with changes I picked up from watching my neighbors. I have 5 mu of land here in Quzhou. Every year I plant winter wheat in the fall and summer maize right after the wheat comes off in early June. That's my system. It gives us flour for the year, feed for our pig, and some grain to sell when the price is decent. I thought about cotton, but my wife's hands hurt and picking cotton is hard work. Wheat and maize suit us better.\n\nFor the wheat, I buy improved seeds from the shop in town \u2014 not the old local kind, the newer ones that don't fall over so easy. I always rotary till before sowing in October. I spread about one and a half bags of compound fertilizer per mu before planting, and then in the spring when the wheat greens up, I topdress with urea if it looks pale. I don't have scales \u2014 I just know the scoops \u2014 but it works out to roughly 16 kg of nitrogen per mu, plus some phosphorus and potassium in the compound bag. I irrigate three times: spring green-up, jointing, and grain-filling. The pump costs money, but skipping water is begging for a bad year. I spray twice for weeds and bugs. Last year I got about 450 kg per mu, and I expect about the same.\n\nFor maize, I buy hybrid seed \u2014 one package per mu. Costs more, but the yield is worth it. After wheat harvest there's no time to plow; we plant straight into the stubble, no-tillage. I put down compound fertilizer at planting, about a bag per mu \u2014 roughly 14 kg nitrogen, 5 kg phosphorus, 4 kg potassium per mu. Irrigate twice, spray twice. If the rains don't fail, I should get about 500 kg per mu. I don't chase the highest yield in the village \u2014 I just don't want to lose my shirt.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 5,\n      \"potassium_kg_per_mu\": 4,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 500\n    }\n  ],\n  \"reasoning_summary\": \"I stick with the wheat-maize double crop on all 5 mu because it is what I know, what my neighbors do, and what feeds my family. I use improved wheat seed and hybrid maize seed because they are available in town and give better yields than saved seed. I rotary till for wheat and plant maize no-till because the window between wheat harvest and maize planting is too tight to plow. I apply compound fertilizer by the bag \u2014 enough to avoid a bad year, because losing the crop hurts more than wasting a little fertilizer. I irrigate whenever the crop is thirsty because water is what makes yield here on the North China Plain.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 5,
+        "irrigation_times": 3,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 5,
+        "potassium_kg_per_mu": 4,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 500
+      }
+    ],
+    "reasoning_summary": "I stick with the wheat-maize double crop on all 5 mu because it is what I know, what my neighbors do, and what feeds my family. I use improved wheat seed and hybrid maize seed because they are available in town and give better yields than saved seed. I rotary till for wheat and plant maize no-till because the window between wheat harvest and maize planting is too tight to plow. I apply compound fertilizer by the bag \u2014 enough to avoid a bad year, because losing the crop hurts more than wasting a little fertilizer. I irrigate whenever the crop is thirsty because water is what makes yield here on the North China Plain."
+  },
+  "elapsed_seconds": 161.5,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_WZZ_11",
+  "tier": 1,
+  "provider": "kimi"
+}

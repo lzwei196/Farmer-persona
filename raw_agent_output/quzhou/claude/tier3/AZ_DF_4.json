@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been farming this land for 30 years. My mother and my mother-in-law taught me most of what I know, and I watch what the neighbors do. Whatever works for them usually works for me.\n\nMy 8 mu \u2014 I split it like this: 5 mu I do wheat and corn together, one after the other on the same field. The other 3 mu I plant cotton. That is how I have always done it.\n\n**Wheat** \u2014 I plant in October after the corn is off. I buy the same improved seed the seed shop in town sells, the kind my neighbor Auntie Liu always uses. She gets good wheat so I get the same. When I plant, I put down two big bags of compound fertilizer mixed into the soil \u2014 that is the base. Then in March when the wheat starts shooting up, I put a bag of urea on top. I water the wheat four times: once in November to protect it from the freeze, once in March when it grows fast, once when it flowers, and once when the grain is filling up. I spray for disease and weeds twice. I expect to get around 450 jin per mu \u2014 that is what I got last year.\n\n**Corn** \u2014 Right after I cut the wheat in June, I rush to get the corn in. I use hybrid seed, everyone around here does. I put compound fertilizer down at planting and then when the corn is up to my waist I spread more urea. Corn eats a lot, you cannot be stingy. I water when I plant and once more in August if it does not rain. I spray for corn borer and sometimes for weeds. I expect about 550 jin per mu.\n\n**Cotton** \u2014 Cotton is harder work. I plough that field in spring before planting in late April. Cotton needs more fertilizer spread across more times \u2014 base fertilizer at planting, then more when it starts setting bolls. I water three times. The bugs are the big worry \u2014 I spray four times through the season, mostly for aphids and bollworm. I expect about 250 jin of seed cotton per mu.\n\nI will not cut corners on fertilizer. One year I tried using less and the wheat looked thin. It is not worth risking the harvest to save a bag.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 5,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 9,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 450\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 5,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 10,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 4,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 250\n    }\n  ],\n  \"reasoning_summary\": \"I farm 8 mu split between a 5-mu wheat-maize rotation and 3 mu of cotton, following the same pattern I and my neighbors have used for decades. I use improved wheat seed and hybrid maize seed from the local shop, and hybrid cotton seed. I apply compound fertilizer as a base at planting for all three crops, then top-dress with urea during key growth stages \u2014 I do not reduce fertilizer because a thin harvest costs far more than a bag of fertilizer. With well irrigation I water wheat four times across the season, corn twice, and cotton three times. Cotton gets the most pesticide attention \u2014 four sprays \u2014 because aphids and bollworm can destroy the whole crop. My yield targets match what I got last year: 450 kg/mu wheat, 550 kg/mu maize, and 250 kg/mu seed cotton.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 5,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 9,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 450
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 5,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 10,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 4,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 250
+      }
+    ],
+    "reasoning_summary": "I farm 8 mu split between a 5-mu wheat-maize rotation and 3 mu of cotton, following the same pattern I and my neighbors have used for decades. I use improved wheat seed and hybrid maize seed from the local shop, and hybrid cotton seed. I apply compound fertilizer as a base at planting for all three crops, then top-dress with urea during key growth stages \u2014 I do not reduce fertilizer because a thin harvest costs far more than a bag of fertilizer. With well irrigation I water wheat four times across the season, corn twice, and cotton three times. Cotton gets the most pesticide attention \u2014 four sprays \u2014 because aphids and bollworm can destroy the whole crop. My yield targets match what I got last year: 450 kg/mu wheat, 550 kg/mu maize, and 250 kg/mu seed cotton."
+  },
+  "elapsed_seconds": 60.4,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "AZ_DF_4",
+  "tier": 3,
+  "provider": "claude"
+}

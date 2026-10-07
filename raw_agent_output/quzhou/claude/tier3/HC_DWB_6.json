@@ -1,0 +1,53 @@
+{
+  "raw_response": "I have been working these fields for 40 years, so I know my land well. My 16.1 mu is mostly good loam with irrigation from the well, which gives me flexibility most of my neighbors without wells don't have.\n\nI split my land this way: about 3 mu of cotton on the plot furthest from the house \u2014 that ground is a bit sandier and cotton tolerates it better. The remaining 13.1 mu stays in my wheat-maize double crop, which is the backbone of any Quzhou farm.\n\n**Winter wheat (13.1 mu):** I already planted last October. I use an improved variety \u2014 Jimai 22 or something similar \u2014 because the old local seed can't match the yields. I apply about 18 kg/mu of pure N split between base fertilizer and top-dressing at jointing. Phosphorus I put all at sowing, around 8 kg/mu as P\u2082O\u2085. Potassium 6 kg/mu \u2014 our soil has some native K but not enough. I irrigate 4 times: overwintering, green-up/jointing, heading, and grain-filling. Pesticide 2 times \u2014 once for aphids and once for powdery mildew if I see it. I aim for 500 kg/mu; in a good year I hit 550.\n\n**Summer maize (13.1 mu):** Right after wheat harvest in June, I no-till sow hybrid maize (Zhengdan 958 or Denghai type) with the seeder \u2014 saves time and moisture. N about 16 kg/mu, mostly side-dressed at big-trumpet stage because early N just leaches. P 6 kg/mu, K 6 kg/mu with the starter. Irrigate twice \u2014 after sowing if dry, and at tasseling. Two sprays: one for corn borer, one for armyworm if pressure is high. 550 kg/mu is realistic.\n\n**Cotton (3 mu):** Spring planting in late April. I use improved Bt cotton \u2014 the bollworm problem is much smaller now than 20 years ago, but I still need to spray for aphids, mites, and plant bugs. N 14 kg/mu, P 7 kg/mu, K 10 kg/mu because cotton is a potassium-hungry crop and my yield drops if I skimp. Plough once in spring \u2014 cotton needs a deeper seedbed than maize. Irrigate 3 times. Pesticide about 6 times through the season. I expect 240 kg seed cotton/mu.\n\nI keep my rates a little above the minimum because a bad yield costs far more than a few extra bags of fertilizer. But I am not wasteful \u2014 I learned years ago that over-applying N on wheat just makes it lodge.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 18,\n      \"phosphorus_kg_per_mu\": 8,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 13.1,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 16,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 6,\n      \"irrigation_times\": 2,\n      \"pesticide_applications\": 2,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 550\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 3.0,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 14,\n      \"phosphorus_kg_per_mu\": 7,\n      \"potassium_kg_per_mu\": 10,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 6,\n      \"tillage\": \"plough\",\n      \"expected_yield_kg_per_mu\": 240\n    }\n  ],\n  \"reasoning_summary\": \"I split my 16.1 mu into 13.1 mu wheat-maize double crop on the better ground and 3 mu cotton on the sandier plot. With my well I irrigate generously \u2014 4 times on wheat, 2 on maize, 3 on cotton. I use improved wheat and hybrid maize because the yield gain pays for the seed many times over. Fertilizer rates are a bit above minimum \u2014 18-8-6 on wheat, 16-6-6 on maize, 14-7-10 on cotton \u2014 because a short harvest costs me far more than a few extra bags of compound. Cotton gets the most potassium and the most pesticide passes since it is the hungriest and most pest-prone crop I grow.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 13.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 18,
+        "phosphorus_kg_per_mu": 8,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 4,
+        "pesticide_applications": 2,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 13.1,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 16,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 6,
+        "irrigation_times": 2,
+        "pesticide_applications": 2,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 550
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 3.0,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 14,
+        "phosphorus_kg_per_mu": 7,
+        "potassium_kg_per_mu": 10,
+        "irrigation_times": 3,
+        "pesticide_applications": 6,
+        "tillage": "plough",
+        "expected_yield_kg_per_mu": 240
+      }
+    ],
+    "reasoning_summary": "I split my 16.1 mu into 13.1 mu wheat-maize double crop on the better ground and 3 mu cotton on the sandier plot. With my well I irrigate generously \u2014 4 times on wheat, 2 on maize, 3 on cotton. I use improved wheat and hybrid maize because the yield gain pays for the seed many times over. Fertilizer rates are a bit above minimum \u2014 18-8-6 on wheat, 16-6-6 on maize, 14-7-10 on cotton \u2014 because a short harvest costs me far more than a few extra bags of compound. Cotton gets the most potassium and the most pesticide passes since it is the hungriest and most pest-prone crop I grow."
+  },
+  "elapsed_seconds": 39.8,
+  "model": "claude-cli",
+  "attempts": 1,
+  "farmer_id": "HC_DWB_6",
+  "tier": 3,
+  "provider": "claude"
+}

@@ -1,0 +1,53 @@
+{
+  "raw_response": "I am 38 years old and have farmed 13.1 mu in Quzhou County for 15 years. I finished middle school, so I can read fertilizer bags and calculate costs, but most of what I know comes from doing it year after year and watching which neighbors get good yields. Last year my wheat gave me about 500 kg per mu and my maize about 600 kg per mu, but my cotton only got 100 kg per mu because bollworms came and I tried to save money by spraying only three times. That was a mistake. Losing a quarter of my cotton income hurt far more than the cost of two extra bottles of pesticide would have. This year I will not cut corners on cotton.\n\nMy land is split into 9 mu for wheat-maize double cropping and 4.1 mu for cotton. My wife works at a garment factory in town and my child is in school, so I handle most of the field work myself. I only hire labor at harvest when I rent a combine for wheat and a machine for maize.\n\nFor my **wheat on 9 mu**: I plant improved seed I buy from the county seed station, not the old traditional kind. Every October I do rotary tillage before sowing. My base fertilizer is one 50 kg bag of 15-15-15 compound fertilizer per mu. Then when the wheat greens up in spring, I topdress with 20 kg of urea per mu. That comes to about 17 kg of nitrogen, 7.5 kg of phosphorus, and 7.5 kg of potassium per mu. I irrigate four times \u2014 winter irrigation if it is dry, then at jointing, heading, and grain filling. I spray pesticide three times, mainly for aphids and powdery mildew. I expect 500 kg per mu if the spring rain is decent.\n\nFor **summer maize on the same 9 mu**: After wheat harvest in early June I have almost no time. I use no-tillage seeding if the stubble is not too heavy \u2014 I started doing this after I saw Old Wang get 650 kg per mu with it, and it saves me diesel and time. I plant hybrid maize, the same variety as last year. I put down one 50 kg bag of 15-15-15 compound at sowing, then spread 25 kg of urea at the big trumpet stage. That is about 19 kg nitrogen, 7.5 kg phosphorus, and 7.5 kg potassium per mu. I irrigate three times and spray pesticide three times for armyworm and stem borer. I expect 600 kg per mu.\n\nFor **cotton on 4.1 mu**: I plant improved cotton in late April after rotary tillage. Cotton needs more potassium than grain, so I use 40 kg of 15-15-15 compound plus an extra 10 kg of potash fertilizer per mu as base. Then at flowering I topdress with 20 kg of urea per mu. Total is about 15 kg nitrogen, 6 kg phosphorus, and 12 kg potassium per mu. I irrigate three times. This year I will spray **five times** for bollworm \u2014 not four, not three. Five. I would rather waste two sprays' worth of money than lose yield again. If the worms stay away I expect 120 kg per mu.\n\nI watch every yuan. A 50 kg bag of compound costs about 120 yuan now, and urea is near 100 yuan. But I learned that on my 13 mu, trying to save 200 or 300 yuan on inputs can cost me thousands in lost harvest. I adjust from what I did last year. Change is risky, so I only change what I have seen work on someone else's field first.\n\n```json\n{\n  \"annual_plan\": [\n    {\n      \"crop\": \"wheat\",\n      \"season\": \"winter\",\n      \"area_mu\": 9,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 17,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 4,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 500\n    },\n    {\n      \"crop\": \"maize\",\n      \"season\": \"summer\",\n      \"area_mu\": 9,\n      \"seed_type\": \"hybrid\",\n      \"nitrogen_kg_per_mu\": 19,\n      \"phosphorus_kg_per_mu\": 7.5,\n      \"potassium_kg_per_mu\": 7.5,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 3,\n      \"tillage\": \"no-tillage\",\n      \"expected_yield_kg_per_mu\": 600\n    },\n    {\n      \"crop\": \"cotton\",\n      \"season\": \"spring\",\n      \"area_mu\": 4.1,\n      \"seed_type\": \"improved\",\n      \"nitrogen_kg_per_mu\": 15,\n      \"phosphorus_kg_per_mu\": 6,\n      \"potassium_kg_per_mu\": 12,\n      \"irrigation_times\": 3,\n      \"pesticide_applications\": 5,\n      \"tillage\": \"rotary\",\n      \"expected_yield_kg_per_mu\": 120\n    }\n  ],\n  \"reasoning_summary\": \"I manage 9 mu of wheat-maize double cropping and 4.1 mu of cotton. For wheat I apply one 50 kg bag of 15-15-15 compound plus 20 kg urea per mu, irrigate four times, and spray three times. For maize I use no-tillage seeding after wheat harvest, apply one 50 kg bag of compound plus 25 kg urea per mu, irrigate three times, and spray three times. For cotton I learned last year that skimping on pesticide is false economy, so I apply 40 kg compound plus extra potash and 20 kg urea per mu, irrigate three times, and spray five times for bollworm. I would rather spend too much on inputs than risk losing yield, because a bad harvest is a disaster while wasted fertilizer is only a cost.\"\n}\n```",
+  "decision": {
+    "annual_plan": [
+      {
+        "crop": "wheat",
+        "season": "winter",
+        "area_mu": 9,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 17,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 4,
+        "pesticide_applications": 3,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 500
+      },
+      {
+        "crop": "maize",
+        "season": "summer",
+        "area_mu": 9,
+        "seed_type": "hybrid",
+        "nitrogen_kg_per_mu": 19,
+        "phosphorus_kg_per_mu": 7.5,
+        "potassium_kg_per_mu": 7.5,
+        "irrigation_times": 3,
+        "pesticide_applications": 3,
+        "tillage": "no-tillage",
+        "expected_yield_kg_per_mu": 600
+      },
+      {
+        "crop": "cotton",
+        "season": "spring",
+        "area_mu": 4.1,
+        "seed_type": "improved",
+        "nitrogen_kg_per_mu": 15,
+        "phosphorus_kg_per_mu": 6,
+        "potassium_kg_per_mu": 12,
+        "irrigation_times": 3,
+        "pesticide_applications": 5,
+        "tillage": "rotary",
+        "expected_yield_kg_per_mu": 120
+      }
+    ],
+    "reasoning_summary": "I manage 9 mu of wheat-maize double cropping and 4.1 mu of cotton. For wheat I apply one 50 kg bag of 15-15-15 compound plus 20 kg urea per mu, irrigate four times, and spray three times. For maize I use no-tillage seeding after wheat harvest, apply one 50 kg bag of compound plus 25 kg urea per mu, irrigate three times, and spray three times. For cotton I learned last year that skimping on pesticide is false economy, so I apply 40 kg compound plus extra potash and 20 kg urea per mu, irrigate three times, and spray five times for bollworm. I would rather spend too much on inputs than risk losing yield, because a bad harvest is a disaster while wasted fertilizer is only a cost."
+  },
+  "elapsed_seconds": 234.9,
+  "model": "kimi-cli/kimi-for-coding",
+  "attempts": 1,
+  "farmer_id": "HQ_QB_4",
+  "tier": 3,
+  "provider": "kimi"
+}
